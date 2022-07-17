@@ -86,5 +86,3 @@
 		  
 		      >test
 		  * test
-		  ```python
-		  ```
