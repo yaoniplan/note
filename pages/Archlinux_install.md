@@ -19,3 +19,4 @@ title: Archlinux_install
 	  mkfs.ext4 /dev/root_partition
 	  mkswap /dev
 	  ```
+-
