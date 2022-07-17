@@ -15,6 +15,6 @@
 	  
 	  请在行尾添加“结尾空格”或 HTML 的 <br> 标签来实现换行。
 	  ```python
-	  #但是，Version 0.6.3 的 logseq 无需在行尾添加任何内容，只须键入回车键（enter）即可实现换行
+	  #但是，Version 0.6.3 的 logseq 只须在行尾键入（shift + enter）
 	  ```
 -
