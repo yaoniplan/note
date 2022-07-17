@@ -27,6 +27,5 @@ title: Archlinux_install
 	  swapon /dev/swap_partition
 	  
 	  ```
-	- ```java
-	  
+	- ```
 	  ```
