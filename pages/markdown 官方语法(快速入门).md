@@ -8,7 +8,7 @@
 	  
 	  不要用空格 (spaces) 或制表符 (tabs) 缩进段落。
 	  ```python
-	  #shift + enter(logseq专属)
+	  #shift + enter (logseq专属)
 	  ```
 - 换行
 	- 为了兼容性，
