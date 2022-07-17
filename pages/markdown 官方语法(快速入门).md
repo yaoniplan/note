@@ -210,4 +210,4 @@
 		  # 把 "<" 转为 "&lt;"
 		  # 但是，这在 v0.6.3的logseq 中，不存在(大概是更新时，把这个给本地化了)
 		  ```
--
+- This **word** is bold. This <em>word</em> is italic.
