@@ -25,3 +25,4 @@ title: Archlinux_install
 	  mount /dev/root_partition
 	  mount --mkdir
 	  ```
+-
