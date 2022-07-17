@@ -183,3 +183,6 @@
 			  ```
 - ## 图片语法
 	- ![2022_07_17_62506385_p0.jpg](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adac280bf5-407a-437c-a4b4-0a2d58873c512022_07_17_62506385_p0.jpg?Expires=4811663899&Signature=kNDavZGUFoK2xPmF4drQbJSIYry29~b83Pvwgfe5yia-f27ZW~9oILa46eV4IyoPWE4I3KJvyifzMenxlUWoipzyde~Svig4ra3~eFin203JLkcMvDEG~Pd1r97til8Tz0l6HcvpWR4x4pogBjLPFzBUgzrlT7FZM0AVIhP1sX0tjYqu6Yr6zdURjVAPr9XrwfBZhA7ROM9SK1uF~Yqhp0G2GNEJJv4i7Kp6V0WuZSCLMifZ2Mqq~Wx4ncxS8iyo7AcwDAnkCzqRocqRjbUW~rfFsWyAUUqnM4Uf-6YycuHQgekKXQMjNx9FTwQhYm-X4rHkWRvoN13-UUqTrEXP7A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA "图片title")
+	  
+	  ```python
+	  ```
