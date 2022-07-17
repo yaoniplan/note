@@ -189,5 +189,5 @@
 	  # 圆括号里的链接，可以增加一个可选的图片标题文本。
 	  # 但是，v0.6.3的 logseq,"图片title"无效(bug)
 	  ```
-	- [ "电脑壁纸"](https://archlinux.org)
+	- [](https://archlinux.org)
 -
