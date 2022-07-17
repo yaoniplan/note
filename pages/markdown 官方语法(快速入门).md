@@ -170,4 +170,6 @@
 		  <bob@example.com>
 		  
 		  ```python
+		  # 使用尖括号（很方便地把 URL 或者 Email 地址变成可点击的链接）
 		  ```
+-
