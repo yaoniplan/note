@@ -1,0 +1,19 @@
+---
+title: Archlinux_install
+---
+
+- ==GPT==
+	- 更新系统时钟
+	  
+	  ```
+	  timedatectl set-ntp true
+	  ```
+	- 分区
+	  
+	  ```
+	  cfdisk
+	  ```
+	  ![Example layouts](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada9e2f3aa-3005-45a1-a35f-6b7811a373492022_07_17_Screenshot%20from%202022-07-17%2011-56-01.png?Expires=4811630270&Signature=WqU2-u3hNNa-eGst0nsBm-ReZg36BMzgCrvHuZcrn0XEYQ949~tWlxcyvS9c7wOqZCN5pLcPG0TEkktV4kB2o3RdEcfKZ4QbTByqhoi9F9Ocqe7wm12t5W-2TjLwyWaJQ3k5ZctisXxzrUuB82CDrRjfvqvcMKRmVRQb9o24GVenF8aKTx3mcGE3YrJOoA4hemlluo5uY7LIWGj8zhi-J2BPL2E3~foL0iQ48HMFwrRV6f31NkzZCeLq58d7t7VzkaQMb-s4dNmO8JYZsBDS7Sb5QVbDymgcyAr-uA359gF86J6AE3m~HtL7ibroXiUsWVMciWORe-V-gmbjgfILXQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA){:height 111, :width 402}
+	- 格式化分区
+	  ```
+	  ```
