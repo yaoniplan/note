@@ -110,4 +110,6 @@
 		  # 在 v0.6.3的 logseq 中，无效（bug）
 		  ```
 		- 1. 图片
-		  ![2022_07_17_4_makeup_4k.jpg](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada651e07c-58ab-4781-a43e-a979519434792022_07_17_4_makeup_4k.jpg?Expires=4811648926&Signature=JFTGtmzX-kWONP7~dfBgYmXqyvm-se7U9b6NnWI~f~BrgkyQ7MzFNzzHh7owLeDLSe6YI0fx99e-cHteqCG~9Rrk776lEJEMTiLWAUiGKrMqUUhOtlau03qc~36vfd~c9wI8peHogXjqRRhNRM0jUdFAAo~SF8td6wJSKD1zD4sphYd83b5r47lWUPuVViDlHNlRzJkiSt3pmsI7OCCCs~7IgmR-Jj0gSQhrjTjsXXhQYm5Tnc5LU6jTTP2NZwk67n9Poc82P68D3M-ggSKgx4pF6obmE6IxLJP796OpFUak3tqOWhkkU4zOvXmWvY1tH9i20pqPTK2aAFr6v6LYug__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		  2. 拖动本地照片到 Markdown 应用程序中
+		      ![2022_07_17_4_makeup_4k.jpg](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada651e07c-58ab-4781-a43e-a979519434792022_07_17_4_makeup_4k.jpg?Expires=4811648926&Signature=JFTGtmzX-kWONP7~dfBgYmXqyvm-se7U9b6NnWI~f~BrgkyQ7MzFNzzHh7owLeDLSe6YI0fx99e-cHteqCG~9Rrk776lEJEMTiLWAUiGKrMqUUhOtlau03qc~36vfd~c9wI8peHogXjqRRhNRM0jUdFAAo~SF8td6wJSKD1zD4sphYd83b5r47lWUPuVViDlHNlRzJkiSt3pmsI7OCCCs~7IgmR-Jj0gSQhrjTjsXXhQYm5Tnc5LU6jTTP2NZwk67n9Poc82P68D3M-ggSKgx4pF6obmE6IxLJP796OpFUak3tqOWhkkU4zOvXmWvY1tH9i20pqPTK2aAFr6v6LYug__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		  3. 关闭文件
