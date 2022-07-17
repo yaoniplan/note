@@ -17,6 +17,7 @@ title: Archlinux_install
 	- 格式化分区
 	  ```
 	  mkfs.ext4 /dev/root_partition
-	  mkswap /dev
+	  mkswap /dev/swap_partition
+	  mkfs.fat -F 32 /dev/efi_system_partition
 	  ```
 -
