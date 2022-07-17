@@ -167,4 +167,4 @@
 	  ```
 	- 网址和Email地址
 		- <https://archlinux.org>
-		  <guyue@
+		  <bob@example.com>
