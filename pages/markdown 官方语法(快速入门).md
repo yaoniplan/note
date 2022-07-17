@@ -12,4 +12,4 @@
 	  ```
 - 换行
 	- 为了兼容性，请在行尾添加“结尾空格”或 HTML 的 <br> 标签来实现换行。
-	  Fir
+	  First line with the HTML tag after.<bar>
