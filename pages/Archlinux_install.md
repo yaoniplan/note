@@ -21,3 +21,5 @@ title: Archlinux_install
 	  mkfs.fat -F 32 /dev/efi_system_partition
 	  ```
 	- 挂载分区
+	  ```
+	  ```
