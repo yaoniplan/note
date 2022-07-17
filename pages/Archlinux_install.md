@@ -23,6 +23,6 @@ title: Archlinux_install
 	- 挂载分区
 	  ```
 	  mount /dev/root_partition
-	  mount --mkdir
+	  mount --mkdir /dev/efi_system_part
 	  ```
 -
