@@ -206,6 +206,7 @@
 		- \<
 		  
 		  ```python
-		  # 据说 Markdown 会把 & 转为 &amp; ，把 < 转为 &lt; 。
+		  # 据说 Markdown 会把 & 转为 &amp; 
+		  # 把 < 转为 `&lt;`
 		  ```
 -
