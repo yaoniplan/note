@@ -165,4 +165,4 @@
 	  ```python
 	  # title 放在圆括号中超链接地址的后面，跟超链接地址之间以空格分隔，并放在英文的双引号里
 	  ```
-	- <https://archlinux.org
+	- <https://archlinux.org>
