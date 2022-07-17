@@ -28,6 +28,9 @@ title: Archlinux_install
 	  
 	  ```
 	- ```python
+	  #注释
+	  mount /dev/root_partition
+	  mount --mkdir /dev/efi_system_partition /mnt/boot
 	  
 	  ```
 -
