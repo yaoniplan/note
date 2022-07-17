@@ -10,14 +10,14 @@
 	  ```python
 	  # shift + enter (logseq专属)
 	  ```
-- 换行
+- 换行语法
 	- 为了兼容性，
 	  
 	  请在行尾添加“结尾空格”或 HTML 的 <br> 标签来实现换行。
 	  ```python
 	  # 但是，Version 0.6.3 的 logseq 只须在行尾键入（shift + enter）
 	  ```
-- 强调
+- 强调语法
 	- **粗体**
 	  ```python
 	  # 在要加粗部分的两侧，各添加两个星号
