@@ -20,4 +20,4 @@ title: Archlinux_install
 	  mkswap /dev/swap_partition
 	  mkfs.fat -F 32 /dev/efi_system_partition
 	  ```
--
+	- 挂载分区
