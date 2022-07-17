@@ -18,4 +18,4 @@
 	  #但是，Version 0.6.3 的 logseq 只须在行尾键入（shift + enter）
 	  ```
 - 强调
-	- 粗体
+	-
