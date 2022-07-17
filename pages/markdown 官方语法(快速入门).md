@@ -160,7 +160,7 @@
 	  ```python
 	  # [超链接显示名]（超链接地址）
 	  ```
-	- [给超链接增加 Title](https://markdown.com.cn "超链接 title 是当鼠标悬停在超链接上时")
+	- [给超链接增加 Title](https://markdown.com.cn "超链接 title 是当鼠标悬停在超链接上时，会出现的")
 	  
 	  ```python
 	  ```
