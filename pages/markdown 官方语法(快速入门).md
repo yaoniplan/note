@@ -176,7 +176,7 @@
 		- **强调**链接
 			- 我正在使用 **[代码托管平台](https://github.com)** 来同步笔记内容
 			  我正在使用 *[logseq](https://logseq.com)* 记笔记
-			  [Markdown 官方语法(快速入门)]
+			  [Markdown 官方语法(快速入门)](https://logseq.com/#/page/markdown%20%E5%AE%98%E6%96%B9%E8%AF%AD%E6%B3%95(%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8))
 			  ```python
 			  # （实际上，是给链接语法，用粗体或斜体等强调语法）在链接语法前后，各添加两个星号
 			  ```
