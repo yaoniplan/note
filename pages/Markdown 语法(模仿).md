@@ -73,17 +73,17 @@
 	- ***
 	- ### 粗体和斜体
 	  ：在要强调部分的前后，各添加`***`(三个星号)
-		- ***markdown法：***
+		- ***markdown语法：***
 		  
 		  This is really \*\*\*very*** important text.
-		- ***实际效果：***
+		- ***预览效果：***
 		  
 		  This is really ***very*** important text.
 - ***
 - ## 引用语法
 	- ### 块引用
 	  ：在段落前，添加`>`(大于号也是尖括号)
-		- ***markdown写法：***
+		- ***markdown法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
 		- ***实际效果：***
