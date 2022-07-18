@@ -45,10 +45,9 @@
 	  And the next line.
 	- ***实际效果：***
 	  
-	  First line wi
+	  First line with two spaces after.
 	  
-	  我正在写换行语法的笔记。
-	  而且是它的写法。
+	  And the next line.
 - ***
 - ### 强调语法
 	- #### 粗体
