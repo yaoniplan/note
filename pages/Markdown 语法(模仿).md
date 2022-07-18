@@ -128,7 +128,7 @@
 		  \>\*Everything* is going according to \*\*plan**.
 		- ***预览效果：***
 		  
-		  >#### The quarterly results look great!  
+		  >(请自己尝试，)  
 		  >  
 		  >-Revenue was off the chart.  
 		  >  
