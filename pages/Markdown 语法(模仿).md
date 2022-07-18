@@ -120,10 +120,10 @@
 	  需要进行实验，以查看哪些元素有效。
 		- ***Markdown语法：***
 		  
-		  >#### The quarterly results look great!
-		  >
-		  >-Revenue was off the chart.
-		  >-Profits were higher than ever.
-		  >
-		  >*Everything* is going according to **plan**.
+		  \>#### The quarterly results look great!
+		  \>
+		  \>\-Revenue was off the chart.
+		  \>\-Profits were higher than ever.
+		  \>
+		  \>\*Everything* is going according to \*\*plan**.
 		-
