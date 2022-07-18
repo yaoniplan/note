@@ -268,6 +268,7 @@
 		  \`\`\`json  
 		  {  
 		      "firstName", "John",  
-		      "lastName", "
-		  }
+		      "lastName", "Smith",  
+		      "age": 25  
+		  }  
 		  \`\`\`
