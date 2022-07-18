@@ -63,7 +63,7 @@
 		  I just love **bold text**.
 	- ***
 	- ### 斜体
-	  ：在要强调部分的前后，各添加`*`(一个星号)
+	  ：在要强调部分的前后，各添加 `*` (一个星号)
 		- ***markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
