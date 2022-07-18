@@ -63,7 +63,7 @@
 		  I just love **bold text**.
 	- ***
 	- ### 2. 斜体
-	  在要强调部分的前后，各添加 `*` (一个星号)
+	  在要强调部分的前后，各添加 `*` (一个星号)。
 		- ***Markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
@@ -72,7 +72,7 @@
 		  Italicized text is the *cat's meow*.
 	- ***
 	- ### 3. 粗体和斜体
-	  在要强调部分的前后，各添加 `***` (三个星号)
+	  在要强调部分的前后，各添加 `***` (三个星号)。
 		- ***Markdown语法：***
 		  
 		  This is really \*\*\*very*** important text.
@@ -82,7 +82,7 @@
 - ***
 - ## 引用语法
 	- ### 1. 块引用
-	  在段落前，添加 `>` (大于号)
+	  在段落前，添加 `>` (大于号)。
 		- ***Markdown语法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
