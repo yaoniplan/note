@@ -35,7 +35,7 @@
 - ***
 - ## 换行语法
   ：在结尾添加`“结尾空格”`(两个空格+回车) 或 HTML的 `<br>` 标签
-	- ***markdown写法：***
+	- ***markdown语法：***
 	  
 	  First line with two spaces after.  
 	    
@@ -43,7 +43,7 @@
 	  
 	  First line with the HTML tag after.<br>
 	  And the next line.
-	- ***实际效果：***
+	- ***预览效果：***
 	  
 	  First line with two spaces after.  
 	  
