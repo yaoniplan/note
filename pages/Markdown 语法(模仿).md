@@ -3,7 +3,7 @@
 - ***
 - ### 标题语法
   ：`# `(井号+空格)
-	- ***markdown写法***
+	- ***Markdown语法***
 	  
 	  \# Heading level 1
 	  
