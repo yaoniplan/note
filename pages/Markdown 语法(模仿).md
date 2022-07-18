@@ -55,19 +55,19 @@
 - ## 强调语法
 	- ### 粗体
 	  ：在要强调部分的前后，各添加`**`(两个星号)
-		- ***markdown写法***：
+		- ***markdown语法***：
 		  
 		  I just love \*\*bold text**.
-		- ***实际效果：***
+		- ***预览效果：***
 		  
 		  I just love **bold text**.
 	- ***
 	- ### 斜体
 	  ：在要强调部分的前后，各添加`*`(一个星号)
-		- ***markdown写法：***
+		- ***markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
-		- ***实际效果：***
+		- ***效果：***
 		  
 		  Italicized text is the *cat's meow*.
 	- ***
