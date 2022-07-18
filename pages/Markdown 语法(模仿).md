@@ -52,8 +52,8 @@
 	  First line with the HTML tag after.
 	  And the next line.
 - ***
-- ### 强调语法
-	- #### 粗体
+- ## 强调语法
+	- ### 粗体
 	  ：在要强调部分的前后，各添加`**`(两个星号)
 		- ***markdown写法***：
 		  
@@ -62,7 +62,7 @@
 		  
 		  I just love **bold text**.
 	- ***
-	- #### 斜体
+	- ### 斜体
 	  ：在要强调部分的前后，各添加`*`(一个星号)
 		- ***markdown写法：***
 		  
@@ -71,7 +71,7 @@
 		  
 		  Italicized text is the *cat's meow*.
 	- ***
-	- #### 粗体和斜体
+	- ### 粗体和斜体
 	  ：在要强调部分的前后，各添加`***`(三个星号)
 		- ***markdown写法：***
 		  
@@ -80,8 +80,8 @@
 		  
 		  This is really ***very*** important text.
 - ***
-- ### 引用语法
-	- #### 块引用
+- ## 引用语法
+	- ### 块引用
 	  ：在段落前，添加`>`(大于号也是尖括号)
 		- ***markdown写法：***
 		  
