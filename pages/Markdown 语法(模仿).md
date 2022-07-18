@@ -60,7 +60,7 @@
 		  I just love \*\*bold text**.
 		- ***实际效果：***
 		  
-		  I just love
+		  I just love **bold text**.
 	- ***
 	- #### 斜体
 	  ：在要强调部分的前后，各添加`*`(一个星号)
