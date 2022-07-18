@@ -72,7 +72,7 @@
 		  Italicized text is the *cat's meow*.
 	- ***
 	- ### 粗体和斜体
-	  ：在要强调部分的前后，各添加`***`(三个星号)
+	  ：在要强调部分的前后，各添加 `***` (三个星号)
 		- ***markdown语法：***
 		  
 		  This is really \*\*\*very*** important text.
