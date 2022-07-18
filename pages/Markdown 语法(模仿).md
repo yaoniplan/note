@@ -45,9 +45,11 @@
 	  And the next line.
 	- ***实际效果：***
 	  
-	  First line with two spaces after.
+	  First line with two spaces after.  
 	  
-	  And the next line.
+	  And the next line.  
+	  
+	  First line with the HTML tag after.
 - ***
 - ### 强调语法
 	- #### 粗体
