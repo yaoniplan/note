@@ -81,7 +81,7 @@
 		  This is really ***very*** important text.
 - ***
 - ## 引用语法
-	- ### 1. 块引用
+	- ### 1.块引用
 	  在段落前，添加 `>` (大于号)。
 		- ***Markdown语法：***
 		  
@@ -90,7 +90,7 @@
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
 	- ***
-	- ### 2. 多个段落的块引用
+	- ### 2.多个段落的块引用
 	  在段落之间的空白行，添加 `>` (大于号)。
 		- ***Markdown语法：***
 		  
@@ -103,7 +103,7 @@
 		  >
 		  >The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 	- ***
-	- ### 3. 嵌套块引用
+	- ### 3.嵌套块引用
 	  在要嵌套的段落前，添加 `>>` (两个大于号)。
 		- ***Markdown语法：***
 		  
@@ -144,3 +144,10 @@
 		  3.Third item  
 		  4.Fourth item
 		- ***预览效果：***
+		  
+		  1.First item  
+		  2.Second item  
+		  3.Third item  
+		  4.Fourth item  
+		  
+		  ***
