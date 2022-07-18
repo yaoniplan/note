@@ -137,4 +137,9 @@
 - ## 列表语法
 	- ### 有序列表
 	  在每个列表项前，添加 `数字`(以数字 1 起始) 并紧跟 `英文句点`(.)  。
-		- ***
+		- ***Markdown语法：***
+		  
+		  \1. First item
+		  \2. Second item
+		  \3. Third item
+		  \4. Fourth item
