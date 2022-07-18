@@ -78,7 +78,7 @@
 		  This is really \*\*\*very*** important text.
 		- ***实际效果：***
 		  
-		  这是***粗体和斜体***。
+		  This is really ***very*** important text.
 - ***
 - ### 引用语法
 	- #### 块引用
