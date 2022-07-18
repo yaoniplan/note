@@ -155,14 +155,14 @@
 	  在每个列表项前，添加 `-` (破折号)、 `*` (星号)或 `+` (加号)
 		- ***Markdown语法***
 		  
-		  \-First item
-		  \-Second item
-		  \-Third item
+		  \-First item  
+		  \-Second item  
+		  \-Third item  
 		  \-Fourth item
 		- ***预览效果***
 		  
-		  -First item
-		  -Second item
-		  -Third item
+		  -First item  
+		  -Second item  
+		  -Third item  
 		  -Fourth item
 		-
