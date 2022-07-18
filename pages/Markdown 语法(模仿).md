@@ -21,7 +21,7 @@
 	  (自己尝试，这里就不做演示了)
 - ***
 - ## 段落语法
-  ：`空白行` 分隔，形成段落
+  `空白行` 分隔，形成段落
 	- ***Markdown语法：***
 	  
 	  Don't put tabs or spaces in front of your paragraphs.
@@ -34,7 +34,7 @@
 	  Keep lines left-aligned like this.
 - ***
 - ## 换行语法
-  ：在结尾添加 `“结尾空格”` (两个空格+回车) 或 HTML `<br>` 标签
+  在结尾添加 `“结尾空格”` (两个空格+回车) 或 HTML `<br>` 标签
 	- ***Markdown语法：***
 	  
 	  First line with two spaces after.  
