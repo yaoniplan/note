@@ -3,7 +3,7 @@
 - ***
 - ## 标题语法
   ：`# ` (井号+空格)
-	- ***Markdown语法***
+	- ***Markdown语法：***
 	  
 	  \# Heading level 1
 	  
@@ -35,7 +35,7 @@
 - ***
 - ## 换行语法
   ：在结尾添加 `“结尾空格”` (两个空格+回车) 或 HTML `<br>` 标签
-	- ***markdown语法：***
+	- ***Markdown语法：***
 	  
 	  First line with two spaces after.  
 	    
@@ -55,7 +55,7 @@
 - ## 强调语法
 	- ### 粗体
 	  ：在要强调部分的前后，各添加 `**` (两个星号)
-		- ***markdown语法***：
+		- ***Markdown语法***：
 		  
 		  I just love \*\*bold text**.
 		- ***预览效果：***
@@ -64,7 +64,7 @@
 	- ***
 	- ### 斜体
 	  ：在要强调部分的前后，各添加 `*` (一个星号)
-		- ***markdown语法：***
+		- ***Markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
 		- ***预览效果：***
@@ -73,7 +73,7 @@
 	- ***
 	- ### 粗体和斜体
 	  ：在要强调部分的前后，各添加 `***` (三个星号)
-		- ***markdown语法：***
+		- ***Markdown语法：***
 		  
 		  This is really \*\*\*very*** important text.
 		- ***预览效果：***
@@ -83,7 +83,7 @@
 - ## 引用语法
 	- ### 块引用
 	  ：在段落前，添加 `>` (大于号也称尖括号)
-		- ***markdown语法：***
+		- ***Markdown语法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
 		- ***预览效果：***
@@ -92,4 +92,8 @@
 	- ***
 	- ### 多个段落的块引用
 	  ：在段落之间的空白行，添加 `>` (大于号也称尖括号)
-		- >Dorothy followed her through many of the beatiful rooms in her cas
+		- ***Markdown语法：***
+		  
+		  >Dorothy followed her through many of the beatiful rooms in her castle.
+		  >
+		  >The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
