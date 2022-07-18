@@ -37,10 +37,10 @@
   ：在结尾添加`“结尾空格”`(两个空格+回车) 或 HTML的 `<br>` 标签
 	- ***markdown写法：***
 	  
-	  First line with two spaces after  
-	  而且是它的写法。  
+	  First line with two spaces after.  
+	    
+	  And the next line.
 	  
-	  我正在写换行语法的笔记。<br>
 	  而且是它的写法。
 	- ***实际效果：***
 	  
