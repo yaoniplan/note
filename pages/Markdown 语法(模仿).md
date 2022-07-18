@@ -88,6 +88,6 @@
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
 		- ***实际效果：***
 		  
-		  >这是引用。
+		  >Dorothy followed her through of the beautiful rooms in her castle.
 	- ***
 	-
