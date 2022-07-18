@@ -31,7 +31,7 @@
 	  
 	  Don't put tabs or spaces in front of your paragraphs.
 	  
-	  Paragraph 2.
+	  Keep lines left-aligned like this.
 - ***
 - ### 换行语法
   ：在结尾添加`“结尾空格”`(两个空格+回车) 或 HTML的 `<br>` 标签
