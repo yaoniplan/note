@@ -34,7 +34,7 @@
 	  Keep lines left-aligned like this.
 - ***
 - ## 换行语法
-  ：在结尾添加`“结尾空格”`(两个空格+回车) 或 HTML的 `<br>` 标签
+  ：在结尾添加 `“结尾空格”` (两个空格+回车) 或 HTML的 `<br>` 标签
 	- ***markdown语法：***
 	  
 	  First line with two spaces after.  
@@ -54,7 +54,7 @@
 - ***
 - ## 强调语法
 	- ### 粗体
-	  ：在要强调部分的前后，各添加`**`(两个星号)
+	  ：在要强调部分的前后，各添加 `**` (两个星号)
 		- ***markdown语法***：
 		  
 		  I just love \*\*bold text**.
