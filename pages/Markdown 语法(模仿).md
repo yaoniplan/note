@@ -21,7 +21,7 @@
 	  (请自己尝试，这里就不做演示了)
 - ***
 - ## 段落语法
-  使用 `空白行` 将一行或多行文本进行分隔。
+  使用 `空白行` ，将一行或多行文本进行分隔。
 	- ***Markdown语法：***
 	  
 	  Don't put tabs or spaces in front of your paragraphs.
