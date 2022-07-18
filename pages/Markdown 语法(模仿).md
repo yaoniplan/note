@@ -67,13 +67,13 @@
 		- ***markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
-		- ***效果：***
+		- ***预览效果：***
 		  
 		  Italicized text is the *cat's meow*.
 	- ***
 	- ### 粗体和斜体
 	  ：在要强调部分的前后，各添加`***`(三个星号)
-		- ***markdown写法：***
+		- ***markdown法：***
 		  
 		  This is really \*\*\*very*** important text.
 		- ***实际效果：***
