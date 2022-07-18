@@ -82,7 +82,7 @@
 - ***
 - ## 引用语法
 	- ### 块引用
-	  ：在段落前，添加 `>` (大于号也称尖括号)
+	  在段落前，添加 `>` (大于号也称尖括号)
 		- ***Markdown语法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
@@ -91,7 +91,7 @@
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
 	- ***
 	- ### 多个段落的块引用
-	  ：在段落之间的空白行，添加 `>` (大于号也称尖括号)
+	  在段落之间的空白行，添加 `>` (大于号也称尖括号)
 		- ***Markdown语法：***
 		  
 		  >Dorothy followed her through many of the beatiful rooms in her castle.
