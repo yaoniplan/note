@@ -21,7 +21,7 @@
 	  (自己尝试，这里就不做演示了)
 - ***
 - ## 段落语法
-  ：`空白行`分隔，形成段落
+  ： `空白行` 分隔，形成段落
 	- ***Markdown语法：***
 	  
 	  Don't put tabs or spaces in front of your paragraphs.
