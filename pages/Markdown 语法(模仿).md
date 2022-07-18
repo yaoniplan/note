@@ -39,9 +39,9 @@
 	  
 	  First line with two spaces after.  
 	    
-	  And the next line.
+	  And the next line.  
 	  
-	  First
+	  First line with the HTML tag
 	- ***实际效果：***
 	  
 	  我正在写换行语法的笔记。
