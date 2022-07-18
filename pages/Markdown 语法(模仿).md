@@ -41,7 +41,7 @@
 	    
 	  And the next line.  
 	  
-	  First line with the HTML tag after.<br>
+	  First line with the HTML tag after.\<br>
 	  And the next line.
 	- ***预览效果：***
 	  
@@ -49,7 +49,7 @@
 	  
 	  And the next line.  
 	  
-	  First line with the HTML tag after.  
+	  First line with the HTML tag after.<br>
 	  And the next line.
 - ***
 - ## 强调语法
