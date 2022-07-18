@@ -82,7 +82,7 @@
 - ***
 - ## 引用语法
 	- ### 块引用
-	  ：在段落前，添加`>`(大于号也称尖括号)
+	  ：在段落前，添加 `>` (大于号也称尖括号)
 		- ***markdown语法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
