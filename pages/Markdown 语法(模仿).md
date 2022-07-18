@@ -125,4 +125,4 @@
 		  >-Revenue was off the chart.
 		  >-Profits were higher than ever.
 		  >
-		  >
+		  >*Every
