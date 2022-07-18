@@ -116,7 +116,7 @@
 		  >
 		  >>The witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 	- ***
-	- ### 4.带有其他元素的块引用
+	- ## 4.带有其他元素的块引用
 	  需要进行 `实验` ，以查看哪些元素有效。
 		- ***Markdown语法***
 		  
@@ -135,8 +135,8 @@
 		  >  
 		  >*Everything* is going according to **plan**.
 - ***
-- ## 列表语法
-	- ### 1.有序列表
+- # 列表语法
+	- ## 1.有序列表
 	  在每个列表项前，添加 `数字`(以数字 1 起始) 并紧跟 `英文句点`(.)  。
 		- ***Markdown语法***
 		  
@@ -151,7 +151,7 @@
 		  3.Third item  
 		  4.Fourth item
 	- ***
-	- ### 2.无序列表
+	- ## 2.无序列表
 	  在每个列表项前，添加 `-` (破折号)、 `*` (星号)或 `+` (加号)
 		- ***Markdown语法***
 		  
@@ -166,7 +166,7 @@
 		  -Third item  
 		  -Fourth item
 	- ***
-	- ### 3.在列表中嵌套其他元素
+	- ## 3.在列表中嵌套其他元素
 		- #### 3.1.段落
 		  将该元素缩进 `四个空格` 或 `一个制表符`
 			- ***Markdown语法***
