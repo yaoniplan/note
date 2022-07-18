@@ -126,6 +126,3 @@
 		  \>\-Profits were higher than ever.  
 		  \>  
 		  \>\*Everything* is going according to \*\*plan**.
-		-
-- \#### test
--
