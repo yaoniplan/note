@@ -94,9 +94,9 @@
 	  在段落之间的空白行，添加 `>` (大于号也称尖括号)
 		- ***Markdown语法：***
 		  
-		  \>Dorothy followed her through many of the beatiful rooms in her castle.
+		  \>Dorothy followed her through many of the beautiful rooms in her castle.
 		  \>
 		  \>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 		- ***预览效果：***
 		  
-		  >Dorothy followed her through many of the of the beau
+		  >Dorothy followed her through many of the beautiful rooms in her castle.
