@@ -69,7 +69,7 @@
 		  Italicized text is the \*cat's meow*.
 		- ***实际效果：***
 		  
-		  Italicized text is the *cat't meow*.
+		  Italicized text is the *cat's meow*.
 	- ***
 	- #### 粗体和斜体
 	  ：在要强调部分的前后，各添加`***`(三个星号)
