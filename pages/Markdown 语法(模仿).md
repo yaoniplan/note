@@ -167,7 +167,7 @@
 		  -Fourth item
 	- ***
 	- ### 3.在列表中嵌套其他元素
-		- #### 1.段落
+		- #### 3.1.段落
 		  将该元素缩进 `四个空格` 或 `一个制表符`
 			- ***Markdown语法***
 			  
@@ -181,4 +181,4 @@
 			  -Here's the second list item.  
 			      I need to add another paragraph below the second list item.  
 			  -And here's the third list item.
-		- ### 2.引用块
+		- ### 3.2.引用块
