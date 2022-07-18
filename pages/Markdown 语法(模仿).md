@@ -236,4 +236,4 @@
 		  \1.Open the file containing the Linux mascot.  
 		  \2.Marvel at its beauty.  
 		  
-		          ![Tux,the Linux mascot](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6e5ddd86-5d24-4e52-8406-186ae90b19f0/d6kui4-a6947ccc-515b-481c-807e-6254b83acd45.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZlNWRkZDg2LTVkMjQtNGU1Mi04NDA2LTE4NmFlOTBiMTlmMFwvZDZrdWk0LWE2OTQ3Y2NjLTUxNWItNDgxYy04MDdlLTYyNTRiODNhY2Q0NS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ._GUzUMfuk2AAiQ6NFJW8tle_bAwC2eY0vlhfnhsCah4)
+		          ![Tux,the Linux mascot]()
