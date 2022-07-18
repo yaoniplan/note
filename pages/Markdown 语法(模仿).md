@@ -75,7 +75,7 @@
 	  ：在要强调部分的前后，各添加`***`(三个星号)
 		- ***markdown写法：***
 		  
-		  This text is \*\*\*really important***.
+		  This is really \*\*\*very
 		- ***实际效果：***
 		  
 		  这是***粗体和斜体***。
