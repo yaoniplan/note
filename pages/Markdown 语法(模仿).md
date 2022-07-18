@@ -54,7 +54,7 @@
 - ***
 - ## 强调语法
 	- ### 粗体
-	  ：在要强调部分的前后，各添加 `**` (两个星号)
+	  在要强调部分的前后，各添加 `**` (两个星号)
 		- ***Markdown语法***：
 		  
 		  I just love \*\*bold text**.
@@ -63,7 +63,7 @@
 		  I just love **bold text**.
 	- ***
 	- ### 斜体
-	  ：在要强调部分的前后，各添加 `*` (一个星号)
+	  在要强调部分的前后，各添加 `*` (一个星号)
 		- ***Markdown语法：***
 		  
 		  Italicized text is the \*cat's meow*.
@@ -72,7 +72,7 @@
 		  Italicized text is the *cat's meow*.
 	- ***
 	- ### 粗体和斜体
-	  ：在要强调部分的前后，各添加 `***` (三个星号)
+	  在要强调部分的前后，各添加 `***` (三个星号)
 		- ***Markdown语法：***
 		  
 		  This is really \*\*\*very*** important text.
