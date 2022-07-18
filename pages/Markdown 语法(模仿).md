@@ -128,7 +128,7 @@
 		  \>\*Everything* is going according to \*\*plan**.
 		- ***预览效果：***
 		  
-		  >(请自己尝试，因为会使目录不被易读)  
+		  >(请自己尝试，因为会使目录易读)  
 		  >  
 		  >-Revenue was off the chart.  
 		  >  
