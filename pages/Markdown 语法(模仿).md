@@ -83,10 +83,10 @@
 - ## 引用语法
 	- ### 块引用
 	  ：在段落前，添加`>`(大于号也是尖括号)
-		- ***markdown法：***
+		- ***markdown语法：***
 		  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
-		- ***实际效果：***
+		- ***预览效果：***
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
 	- ***
