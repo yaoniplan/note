@@ -181,8 +181,8 @@
 		  
 		  \        <html>  
 		  \          <head>  
-		              <title>Test</title>  
-		            </head>  
+		  \            <title>Test</title>  
+		  \          </head>  
 		  
 		  \3.Update the title to match the name of your wbsite.
 		- ***预览效果***
