@@ -233,4 +233,5 @@
 	  将图片缩进 `四个空格` 或 `一个制表符`
 		- ***Markdown语法***
 		  
-		  \1.Open the file containing the Linux mascot.
+		  \1.Open the file containing the Linux mascot.  
+		  \2.Marvel at its beauty.
