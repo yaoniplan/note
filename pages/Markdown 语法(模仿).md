@@ -128,7 +128,7 @@
 		  \>\*Everything* is going according to \*\*plan**.
 		- ***预览效果：***
 		  
-		  >(这个元素，请自己尝试，因为会使目录不被易读)  
+		  >(这个元素，请自己尝试，因为放在这里，会使目录不被易读)  
 		  >  
 		  >-Revenue was off the chart.  
 		  >-Profits were higher than ever.    
