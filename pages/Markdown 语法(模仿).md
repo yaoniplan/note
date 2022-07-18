@@ -42,6 +42,7 @@
 	  And the next line.  
 	  
 	  First line with the HTML tag after.<br>
+	  And the next line.
 	- ***实际效果：***
 	  
 	  我正在写换行语法的笔记。
