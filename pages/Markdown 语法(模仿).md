@@ -24,12 +24,12 @@
   ：`空白行`分隔，形成段落
 	- ***Markdown语法：***
 	  
-	  Paragraph 1.
+	  Don't put tabs or spaces in front of your paragraphs.
 	  
-	  Paragraph 2.
+	  Keep lines left-aligned like this.
 	- ***预览效果：***
 	  
-	  Paragraph 1.
+	  Don't put tabs or spaces in front of your paragraphs.
 	  
 	  Paragraph 2.
 - ***
