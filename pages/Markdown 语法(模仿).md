@@ -85,7 +85,7 @@
 	  ：在段落前，添加`>`(大于号也是尖括号)
 		- ***markdown写法：***
 		  
-		  \>Dorothy followe
+		  \>Dorothy followed her through many of the beautiful rooms in her castle.
 		- ***实际效果：***
 		  
 		  >这是引用。
