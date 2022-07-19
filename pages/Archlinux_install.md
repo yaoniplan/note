@@ -43,4 +43,6 @@ title: Archlinux_install
 	  ```
 	- ## 生成文件系统桌面文件
 	  ```python
+	  genfstab -U /mnt >> /mnt/etc/fstab
 	  ```
+	- ##
