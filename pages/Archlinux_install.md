@@ -61,4 +61,7 @@ title: Archlinux_install
 	  ```
 	- ## 设置 locale
 	  ```python
+	  vim /etc/locale.gen
+	  #去掉注释
+	  # en
 	  ```
