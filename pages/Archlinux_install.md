@@ -52,4 +52,5 @@ title: Archlinux_install
 	  systemctl enable NetworkManager
 	  ```
 	- ## 设置时区
-	  ````
+	  ```python
+	  ```
