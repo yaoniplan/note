@@ -268,4 +268,4 @@
 	  
 	  ---
 	  
-	  ...and after a horizon
+	  ...and after a horizontal rule.
