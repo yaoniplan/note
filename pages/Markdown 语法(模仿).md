@@ -37,7 +37,6 @@
 	  
 	  First line with the HTML tag after.<br>
 	  And the next line.
-- ***
 - # 强调语法
 	- ## 1. 粗体
 	  在要强调部分的前后，各添加 `**` (两个星号)。
@@ -45,21 +44,18 @@
 		  I just love \*\*bold text**.
 		- ***预览效果***  
 		  I just love **bold text**.
-	- ***
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加 `*` (一个星号)。
 		- ***Markdown语法***  
 		  Italicized text is the \*cat's meow*.
 		- ***预览效果***  
 		  Italicized text is the *cat's meow*.
-	- ***
 	- ## 3. 粗体和斜体
 	  在要强调部分的前后，各添加 `***` (三个星号)。
 		- ***Markdown语法***  
 		  This is really \*\*\*very*** important text.
 		- ***预览效果***  
 		  This is really ***very*** important text.
-- ***
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加 `>` (大于号)。
@@ -68,7 +64,6 @@
 		- ***预览效果***  
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
-	- ***
 	- ## 2.多个段落的块引用
 	  在段落之间的空白行，添加 `>` (大于号)。
 		- ***Markdown语法***  
@@ -79,7 +74,6 @@
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
 		  >  
 		  >The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-	- ***
 	- ## 3.嵌套块引用
 	  在要嵌套的段落前，添加 `>>` (两个大于号)。
 		- ***Markdown语法***  
