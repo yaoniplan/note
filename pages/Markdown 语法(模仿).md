@@ -290,4 +290,4 @@
 		- ***预览***  
 		  这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
 	- ## 简化的超链接
-	  在URL或email地址前，添加`<`()
+	  在URL或email地址前，添加`<`(小于号)；在
