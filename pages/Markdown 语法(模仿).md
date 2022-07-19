@@ -239,8 +239,8 @@
 		  ```
 		  {
 		  	"firstName": "John",
-		      "lastName": "Smith",
-		      "age": 25
+		  	"lastName": "Smith",
+		  	"age": 25
 		  }
 		  ```
 	- ## 4.语法高亮
