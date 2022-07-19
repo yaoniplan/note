@@ -17,20 +17,20 @@
 	  Don't put tabs or spaces in front of your paragraphs.  
 	  
 	  Keep lines left-aligned like this.
-	- ******  
+	- ***预览***  
 	  Don't put tabs or spaces in front of your paragraphs.  
 	  
 	  Keep lines left-aligned like this.
 - # 换行语法
   在结尾，添加`“结尾空格”`(两个空格+回车)或HTML`<br>`标签。
-	- ***Markdown语法***  
+	- ***写法***  
 	  First line with two spaces after.  
 	    
 	  And the next line.  
 	  
 	  First line with the HTML tag after.\<br>  
 	  And the next line.
-	- ***预览效果***  
+	- ***预览***  
 	  First line with two spaces after.  
 	  
 	  And the next line.  
@@ -40,9 +40,9 @@
 - # 强调语法
 	- ## 1. 粗体
 	  在要强调部分的前后，各添加`**`(两个星号)。
-		- ***Markdown语法***  
+		- ***写法***  
 		  I just love \*\*bold text**.
-		- ***预览效果***  
+		- ***预览***  
 		  I just love **bold text**.
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
