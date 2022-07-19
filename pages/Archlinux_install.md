@@ -57,4 +57,6 @@ title: Archlinux_install
 	  ```
 	- ## 调整硬件时钟
 	  ```python
+	  hwclock --systohc
 	  ```
+	- ##
