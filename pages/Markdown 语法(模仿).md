@@ -214,19 +214,19 @@
 		  4.Fourth item
 - # 代码语法
 	- ## 1.单词或短语代码
-	  将单词或短语包裹在 `反引号`(`) 中。
+	  将单词或短语包裹在`反引号`(`)中。
 		- ***Markdown语法***  
 		  At the command prompt,type \`nano`.
 		- ***预览效果***  
 		  At the command prompt,type `nano`.
 	- ## 2.转义反引号
-	  将单词或短语代码包裹在 `双反引号` (``)中。
+	  将单词或短语代码包裹在`双反引号`(``)中。
 		- ***Markdown语法***  
 		  \`\`Use \`code\` in your Markdown file.``
 		- ***预览效果***  
 		  ``Use `code` in your Markdown file.``
 	- ## 3.代码块
-	  在代码块之前和之后的行上，使用三个 `反引号` (\`\`\`)
+	  在代码块之前和之后的行上，使用三个`反引号`(\`\`\`)
 		- ***Markdown语法***  
 		  \`\`\`  
 		  {  
