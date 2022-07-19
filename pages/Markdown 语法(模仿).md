@@ -269,7 +269,7 @@
 	  \-\-\-
 	  
 	  ...and after a horizontal rule.
-	- ***预览效果***  
+	- ***预览***  
 	  Try to put a blank line before...
 	  
 	  ---
