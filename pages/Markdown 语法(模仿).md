@@ -13,7 +13,7 @@
 	  (请自己尝试，因为标题语法放在这里，会使目录不被易读)
 - # 段落语法
   使用`空白行`，将一行或多行文本进行分隔。
-	- ***Markdown语法***  
+	- ***语法***  
 	  Don't put tabs or spaces in front of your paragraphs.  
 	  
 	  Keep lines left-aligned like this.
