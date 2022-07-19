@@ -75,7 +75,7 @@
 	  vim /etc/hosts
 	  #添加下面三行
 	  127.0.0.1	localhost
-	  ::1			localhost
+	  ::1		localhost
 	  127.0.1.1	ss.localdomain	ss
 	  ```
 	- ## 添加新用户
