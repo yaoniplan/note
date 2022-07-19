@@ -299,4 +299,3 @@
 		  <fake@example.com>
 		-
 - ~~lanzou~~
-- https://flomo-resource.oss-cn-shanghai.aliyuncs.com/notify/pic_review_example.jpg
