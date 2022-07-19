@@ -205,7 +205,7 @@
 		      \-Indented item  
 		      \-Indented item  
 		  \4.Fourth item
-		- ***预览效果***  
+		- ***预览***  
 		  1.First item  
 		  2.Second item  
 		  3.Third item  
