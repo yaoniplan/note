@@ -248,16 +248,16 @@
 		- ***Markdown语法***  
 		  \`\`\`json  
 		  {  
-		      "firstName", "John",  
-		      "lastName", "Smith",  
-		      "age": 25  
+		      "firstName":"John",  
+		      "lastName":"Smith",  
+		      "age":25  
 		  }  
 		  \`\`\`
 		- ***预览效果***  
 		  ```json
 		  {
-		    "firstName": "John",
-		    "lastName": "Smith",
-		    "age": 25
+		    "firstName":"John",
+		    "lastName":"Smith",
+		    "age":25
 		  }
 		  ```
