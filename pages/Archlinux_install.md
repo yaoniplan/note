@@ -25,10 +25,4 @@ title: Archlinux_install
 	  mount --mkdir /dev/efi_system_partition /mnt/boot
 	  swapon /dev/swap_partition
 	  ```
-	- ```python
-	  #注释
-	  mount /dev/root_partition
-	  mount --mkdir /dev/efi_system_partition /mnt/boot
-	  
-	  ```
 -
