@@ -4,7 +4,8 @@ title: Archlinux_install
 
 - # gpt
 	- ## 更新系统时钟  
-	  ```
+	  ```python
+	  
 	  ```
 	- 分区
 	  
