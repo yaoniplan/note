@@ -256,6 +256,8 @@
 		- ***预览效果***  
 		  ```json
 		  {
-		    
+		    "firstName": "John",
+		    "lastName": "Smith",
+		    "age": 25
 		  }
 		  ```
