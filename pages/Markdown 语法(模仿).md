@@ -269,3 +269,10 @@
 	  \-\-\-
 	  
 	  ...and after a horizontal rule.
+	- ***预览效果***  
+	  Try to put a blank line before...
+	  
+	  ---
+	  
+	  ...and after a horizontal rule.
+	-
