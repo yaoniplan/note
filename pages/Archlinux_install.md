@@ -70,4 +70,12 @@ title: Archlinux_install
 	  #添加内容
 	  LANG=en_US.UTF-8
 	  ```
-	- 设置
+	- ## 设置 hostname
+	  ```python
+	  vim /etc/hostname
+	  #添加内容
+	  ss
+	  ```
+	- ## 设置 hosts
+	  ```python
+	  ```
