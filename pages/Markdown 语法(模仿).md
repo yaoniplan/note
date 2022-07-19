@@ -1,6 +1,5 @@
 - # 简介
   Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
-- ***
 - # 标题语法
   在单词或短语前，添加 `# ` (井号+空格)。
 	- ***Markdown语法***  
@@ -12,7 +11,6 @@
 	  \###### Heading level 6
 	- ***预览效果***  
 	  (请自己尝试，因为标题语法放在这里，会使目录不被易读)
-- ***
 - # 段落语法
   使用 `空白行` ，将一行或多行文本进行分隔。
 	- ***Markdown语法***  
@@ -23,7 +21,6 @@
 	  Don't put tabs or spaces in front of your paragraphs.  
 	  
 	  Keep lines left-aligned like this.
-- ***
 - # 换行语法
   在结尾，添加 `“结尾空格”` (两个空格+回车) 或 HTML `<br>` 标签。
 	- ***Markdown语法***  
