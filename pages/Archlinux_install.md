@@ -34,8 +34,6 @@
 	- ## 安装必备包
 	  ```
 	  pacstrap /mnt base linux linux-firmware vim base-devel networkmanager
-	  #启动 NetworkManager
-	  systemctl enable NetworkManager
 	  ```
 	- ## 生成文件系统桌面文件
 	  ```
