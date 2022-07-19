@@ -37,4 +37,5 @@ title: Archlinux_install
 	  ```
 	- ## 安装必备包
 	  ```python
+	  pacstrap /mnt base linux linux-firmware vim base-devel networkmanager
 	  ```
