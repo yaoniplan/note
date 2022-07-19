@@ -28,4 +28,5 @@ title: Archlinux_install
 	  lsblk
 	  ```
 	- ## 换源
-	  ``````
+	  ```python
+	  ```
