@@ -67,21 +67,27 @@ title: Archlinux_install
 	  # zh_CN.UTF-8 UTF-8
 	  locale-gen
 	  vim /etc/locale.conf
-	  #添加内容
+	  #添加下面一行
 	  LANG=en_US.UTF-8
 	  ```
 	- ## 设置 hostname
 	  ```python
 	  vim /etc/hostname
-	  #添加内容
+	  #添加下面一行
 	  ss
 	  ```
 	- ## 设置 hosts
 	  ```python
 	  vim /etc/hosts
-	  #添加内容
+	  #添加下面三行
 	  127.0.0.1	localhost
 	  ::1			localhost
 	  127.0.1.1	ss.localdomain	ss
 	  ```
-	- ##
+	- ## 添加新用户
+	  ```python
+	  useradd -m -G wheel ss
+	  ```
+	- ## 给新用户使用 sudo 的权限
+	  ```python
+	  ```
