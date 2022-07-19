@@ -85,7 +85,6 @@
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
 		  >  
 		  >>The witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-	- ***
 	- ## 4.带有其他元素的块引用
 	  需要进行 `实验` ，以查看哪些元素有效。
 		- ***Markdown语法***  
@@ -102,7 +101,6 @@
 		  >-Profits were higher than ever.  
 		  >  
 		  >*Everything* is going according to **plan**.
-- ***
 - # 列表语法
 	- ## 1.有序列表
 	  在每个列表项前，添加 `数字`(以数字 1 起始) 并紧跟 `英文句点`(.)  。
