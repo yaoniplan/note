@@ -217,7 +217,7 @@
 	  将单词或短语包裹在`反引号`(`)中。
 		- ***Markdown语法***  
 		  At the command prompt,type \`nano`.
-		- ***预览效果***  
+		- ***预览***  
 		  At the command prompt,type `nano`.
 	- ## 2.转义反引号
 	  将单词或短语代码包裹在`双反引号`(``)中。
