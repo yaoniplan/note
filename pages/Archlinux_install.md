@@ -59,4 +59,4 @@ title: Archlinux_install
 	  ```python
 	  hwclock --systohc
 	  ```
-	- ##
+	- ## 设置 locale
