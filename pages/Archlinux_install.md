@@ -5,7 +5,7 @@ title: Archlinux_install
 - # gpt
 	- ## 更新系统时钟  
 	  ```python
-	  
+	  timedatectl set-ntp true
 	  ```
 	- 分区
 	  
