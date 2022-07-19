@@ -45,4 +45,6 @@ title: Archlinux_install
 	  ```python
 	  genfstab -U /mnt >> /mnt/etc/fstab
 	  ```
-	- ##
+	- ## 变成 root 用户
+	  ```python
+	  ```
