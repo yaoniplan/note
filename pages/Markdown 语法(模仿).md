@@ -227,7 +227,7 @@
 		  ``Use `code` in your Markdown file.``
 	- ## 3.代码块
 	  在代码块之前和之后的行上，使用三个`反引号`(\`\`\`)
-		- ***Markdown语法***  
+		- ***写法***  
 		  \`\`\`  
 		  {  
 		      "firstName": "John",  
