@@ -2,7 +2,7 @@
 title: Archlinux_install
 ---
 
-- #
+- # GPT
 	- 更新系统时钟
 	  
 	  ```
