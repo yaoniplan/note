@@ -103,7 +103,7 @@
 		  >*Everything* is going according to **plan**.
 - # 列表语法
 	- ## 1.有序列表
-	  在每个列表项前，添加 `数字`(以数字 1 起始) 并紧跟 `英文句点`(.)  。
+	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
 		- ***Markdown语法***  
 		  1.First item  
 		  2.Second item  
