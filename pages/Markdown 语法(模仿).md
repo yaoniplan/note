@@ -297,6 +297,4 @@
 		- ***预览***  
 		  <https://markdown.com.cn>  
 		  <fake@example.com>
-		- - [ ]test
-		  - [ ]test
-		  - [ ]test
+		-
