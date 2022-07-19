@@ -27,4 +27,5 @@ title: Archlinux_install
 	  #看情况
 	  lsblk
 	  ```
-	-
+	- ## 换源
+	  ``````
