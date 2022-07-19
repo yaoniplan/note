@@ -30,7 +30,7 @@ title: Archlinux_install
 	- ## 换源
 	  ```python
 	  vim /etc/pacman.d/mirrorlist
-	  #添加内容
+	  #添加下面一行
 	  Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 	  #检查源的速度
 	  pacman -Syy
