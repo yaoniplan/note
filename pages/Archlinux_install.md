@@ -36,4 +36,5 @@ title: Archlinux_install
 	  pacman -Syy
 	  ```
 	- ## 安装必备包
-	  ````
+	  ```python
+	  ```
