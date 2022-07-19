@@ -12,4 +12,3 @@ title: Contents
 		- [[markdown 语法]]
 		- [[logseq 语法]]
 		- [[Archlinux_install]]
-		-
