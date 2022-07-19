@@ -62,6 +62,12 @@ title: Archlinux_install
 	- ## 设置 locale
 	  ```python
 	  vim /etc/locale.gen
-	  #去掉注释
-	  # en
+	  #在文件里，去掉下面两行的注释
+	  # en_US.UTF-8 UTF-8
+	  # zh_CN.UTF-8 UTF-8
+	  locale-gen
+	  vim /etc/locale.conf
+	  #添加内容
+	  LANG=en_US.UTF-8
 	  ```
+	- 设置
