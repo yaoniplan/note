@@ -198,7 +198,8 @@
 				  #安装离线字库（方便打字）
 				  sudo pacman -S fcitx5-pinyin-zhwiki
 				  #在桌面环境中
-				  在终端打开 fcitx5-configtool ，
+				  1.在终端打开 fcitx5-configtool 
+				  2.取消 "Only Show Current Language"
 				  ```
 				- ***安装浏览器***
 				  ```
