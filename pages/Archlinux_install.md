@@ -202,7 +202,7 @@
 				  2.取消 "Only Show Current Language" 的勾选
 				  3.双击 Pinyin
 				  4.点击 "Apply" 接着 "Close" 
-				  5.ctrl+spaces
+				  5.ctrl+space （切换拼音和英文的快捷键）
 				  ```
 				- ***安装浏览器***
 				  ```
