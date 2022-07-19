@@ -294,4 +294,7 @@
 		- ***写法***  
 		  \<\https://markdown.com.cn>  
 		  \<fake@example.com>
+		- ***预览***  
+		  <https://markdown.com.cn>  
+		  <fake@example.com>
 		-
