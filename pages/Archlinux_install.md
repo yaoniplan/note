@@ -197,6 +197,8 @@
 				  XMODIFIERS=@im=fcitx
 				  #安装离线字库（方便打字）
 				  sudo pacman -S fcitx5-pinyin-zhwiki
+				  #在桌面环境中
+				  打开 fcitx5-
 				  ```
 				- ***安装浏览器***
 				  ```
