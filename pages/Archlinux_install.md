@@ -17,7 +17,7 @@
 	  ```
 	- ## 挂载分区
 	  ```
-	  mount /dev/root_partition
+	  mount /dev/root_partition /mnt
 	  mount --mkdir /dev/efi_system_partition /mnt/boot
 	  swapon /dev/swap_partition
 	  #看情况
