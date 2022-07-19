@@ -42,7 +42,7 @@
 	- ## 变成 root 用户
 	  ```
 	  arch-chroot /mnt
-	  #启动 NetworkManager
+	  #启用 NetworkManager
 	  systemctl enable NetworkManager
 	  ```
 	- ## 设置时区
