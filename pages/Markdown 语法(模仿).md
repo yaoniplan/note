@@ -158,7 +158,6 @@
 		      >A blockquote would look great below the second list item.  
 		  
 		  -And here's the third list item.
-	- ***
 	- ## 5.在列表中嵌套代码块
 	  将代码块缩进 `八个空格` 或 `两个制表符`
 		- ***Markdown语法***  
@@ -181,7 +180,6 @@
 		            </head>
 		  
 		  3.Update the title to match the name of your website.
-	- ***
 	- ## 在列表中嵌套图片
 	  将图片缩进 `四个空格` 或 `一个制表符`
 		- ***Markdown语法***  
