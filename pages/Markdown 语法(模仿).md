@@ -127,7 +127,7 @@
 		  -Third item  
 		  -Fourth item
 	- ## 3.在列表中嵌套段落
-	  将该元素缩进 `四个空格` 或 `一个制表符`
+	  将该元素缩进`四个空格`或`一个制表符`
 		- ***Markdown语法***  
 		  \-This is the first list item.  
 		  \-Here's the second list item.  
@@ -143,7 +143,7 @@
 		  
 		  -And here's the third list item.
 	- ## 4.在列表中嵌套引用块
-	  同样的，将该元素缩进 `四个空格` 或 `一个制表符`
+	  同样的，将该元素缩进`四个空格`或`一个制表符`
 		- ***Markdown语法***  
 		  \-This is the first item.  
 		  \-Here's the second list item.  
@@ -159,7 +159,7 @@
 		  
 		  -And here's the third list item.
 	- ## 5.在列表中嵌套代码块
-	  将代码块缩进 `八个空格` 或 `两个制表符`
+	  将代码块缩进`八个空格`或`两个制表符`
 		- ***Markdown语法***  
 		  \1.Open the file.  
 		  \2.Find the following code block on line 21:  
@@ -181,7 +181,7 @@
 		  
 		  3.Update the title to match the name of your website.
 	- ## 在列表中嵌套图片
-	  将图片缩进 `四个空格` 或 `一个制表符`
+	  将图片缩进`四个空格`或`一个制表符`
 		- ***Markdown语法***  
 		  \1.Open the file containing the Linux mascot.  
 		  \2.Marvel at its beauty.  
@@ -197,7 +197,7 @@
 		  
 		  3.Close the file.
 	- ## 在列表中嵌套列表
-	  将列表缩进 `四个空格` 或 `一个制表符`
+	  将列表缩进`四个空格`或`一个制表符`
 		- ***Mrakdown语法***  
 		  \1.First item  
 		  \2.Second item  
