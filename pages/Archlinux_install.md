@@ -199,7 +199,10 @@
 				  sudo pacman -S fcitx5-pinyin-zhwiki
 				  #在桌面环境中
 				  1.在终端打开 fcitx5-configtool 
-				  2.取消 "Only Show Current Language"
+				  2.取消 "Only Show Current Language" 的勾选
+				  3.双击 Pinyin
+				  4.点击 "Apply" 接着 "Close" 
+				  5.
 				  ```
 				- ***安装浏览器***
 				  ```
