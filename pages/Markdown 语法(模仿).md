@@ -114,7 +114,6 @@
 		  2.Second item  
 		  3.Third item  
 		  4.Fourth item
-	- ***
 	- ## 2.无序列表
 	  在每个列表项前，添加 `-` (破折号)、 `*` (星号)或 `+` (加号)
 		- ***Markdown语法***  
@@ -127,7 +126,6 @@
 		  -Second item  
 		  -Third item  
 		  -Fourth item
-	- ***
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进 `四个空格` 或 `一个制表符`
 		- ***Markdown语法***  
@@ -144,7 +142,6 @@
 		      I need to add another paragraph below the second list item.  
 		  
 		  -And here's the third list item.
-	- ***
 	- ## 4.在列表中嵌套引用块
 	  同样的，将该元素缩进 `四个空格` 或 `一个制表符`
 		- ***Markdown语法***  
