@@ -20,7 +20,7 @@
 	  mount /dev/root_partition /mnt
 	  mount --mkdir /dev/efi_system_partition /mnt/boot
 	  swapon /dev/swap_partition
-	  #看情况
+	  #看硬盘分区的挂载情况
 	  lsblk
 	  ```
 	- ## 换源
