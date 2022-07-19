@@ -78,4 +78,10 @@ title: Archlinux_install
 	  ```
 	- ## 设置 hosts
 	  ```python
+	  vim /etc/hosts
+	  #添加内容
+	  127.0.0.1	localhost
+	  ::1			localhost
+	  127.0.1.1	ss.localdomain	ss
 	  ```
+	- ##
