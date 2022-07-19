@@ -47,4 +47,9 @@ title: Archlinux_install
 	  ```
 	- ## 变成 root 用户
 	  ```python
+	  arch-chroot /mnt
+	  #如果上面的 NetworkManager 启动失败，请在此尝试（反之，则删除此行及下一行）
+	  systemctl enable NetworkManager
 	  ```
+	- ## 设置时区
+	  ````
