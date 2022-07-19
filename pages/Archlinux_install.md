@@ -110,7 +110,7 @@
 	  grub-install --target=x86_64-efi --efi-directory=/mnt/boot --bootloader-id=GRUB
 	  vim /etc/default/grub
 	  #取消下面一行的注释
-	  # GRUB_DISABLE_OS_PROBER=false
+	  #GRUB_DISABLE_OS_PROBER=false
 	  ```
 	- ## 安装微码
 	  ```
