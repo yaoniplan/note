@@ -298,5 +298,5 @@
 		  <https://markdown.com.cn>  
 		  <fake@example.com>
 		- - [ ]test
-		  -  [ ]test
-		  -  [ ]test
+		  - [ ]test
+		  - [ ]test
