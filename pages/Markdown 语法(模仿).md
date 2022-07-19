@@ -221,7 +221,7 @@
 		  At the command prompt,type `nano`.
 	- ## 2.转义反引号
 	  将单词或短语代码包裹在`双反引号`(``)中。
-		- ***Markdown语法***  
+		- ***写法***  
 		  \`\`Use \`code\` in your Markdown file.``
 		- ***预览***  
 		  ``Use `code` in your Markdown file.``
