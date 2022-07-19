@@ -109,14 +109,14 @@
 		  2.Second item  
 		  3.Third item  
 		  4.Fourth item
-		- ***预览效果***  
+		- ***预览***  
 		  1.First item  
 		  2.Second item  
 		  3.Third item  
 		  4.Fourth item
 	- ## 2.无序列表
 	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
-		- ***Markdown语法***  
+		- ***写法***  
 		  \-First item  
 		  \-Second item  
 		  \-Third item  
