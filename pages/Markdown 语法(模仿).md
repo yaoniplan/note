@@ -54,47 +54,47 @@
 	  在要强调部分的前后，各添加`***`(三个星号)。
 		- ***写法***  
 		  This is really \*\*\*very*** important text.
-		- ***预览效果***  
+		- ***预览***  
 		  This is really ***very*** important text.
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
-		- ***Markdown语法***  
+		- ***写法***  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.
-		- ***预览效果***  
+		- ***预览***  
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
 	- ## 2.多个段落的块引用
 	  在段落之间的空白行，添加`>`(大于号)。
-		- ***Markdown语法***  
+		- ***写法***  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.  
 		  \>  
 		  \>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-		- ***预览效果***  
+		- ***效果***  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
 		  >  
 		  >The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 	- ## 3.嵌套块引用
 	  在要嵌套的段落前，添加`>>`(两个大于号)。
-		- ***Markdown语法***  
+		- ***写法***  
 		  \>Dorothy followed her through many of the beautiful rooms in her castle.  
 		  \>  
 		  \>>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-		- ***预览效果***
+		- ***预览***
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
 		  >  
 		  >>The witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 	- ## 4.带有其他元素的块引用
 	  需要进行`实验`，以查看哪些元素有效。
-		- ***Markdown语法***  
+		- ***写法***  
 		  \>\#### The quarterly results look great!  
 		  \>  
 		  \>\-Revenue was off the chart.  
 		  \>\-Profits were higher than ever.  
 		  \>  
 		  \>\*Everything* is going according to \*\*plan**.
-		- ***预览效果***  
+		- ***预览***  
 		  >(请自己尝试这个元素，因为此元素放在这里，会使目录不被易读)  
 		  >  
 		  >-Revenue was off the chart.  
@@ -104,7 +104,7 @@
 - # 列表语法
 	- ## 1.有序列表
 	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
-		- ***Markdown语法***  
+		- ***写法***  
 		  1.First item  
 		  2.Second item  
 		  3.Third item  
