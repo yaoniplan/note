@@ -53,4 +53,8 @@ title: Archlinux_install
 	  ```
 	- ## 设置时区
 	  ```python
+	  ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+	  ```
+	- ## 调整硬件时钟
+	  ```python
 	  ```
