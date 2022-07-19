@@ -39,3 +39,4 @@ title: Archlinux_install
 	  ```python
 	  pacstrap /mnt base linux linux-firmware vim base-devel networkmanager
 	  ```
+	- ##
