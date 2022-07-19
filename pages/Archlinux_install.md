@@ -1,7 +1,3 @@
----
-title: Archlinux_install
----
-
 - # gpt
 	- ## 更新系统时钟  
 	  ```
@@ -120,7 +116,7 @@ title: Archlinux_install
 	  ```
 	- ## 安装微码
 	  ```
-	  #选择安装：amd的cpu，安装amd-ucode；intel的cpu，安装intel-ucode
+	  #选择安装：amd的cpu，请安装amd-ucode；intel的cpu，请安装intel-ucode
 	  pacman -S intel-ucode
 	  #生成 GRUB 配置以激活加载微码更新
 	  grub-mkconfig -o /boot/grub/grub.cfg
@@ -207,7 +203,7 @@ title: Archlinux_install
 				- ***安装浏览器***
 				  ```
 				  #在桌面环境中
-				  sduo pacman -S git
+				  sudo pacman -S git
 				  git clone 包URL
 				  cd 包名
 				  makepkg -si
