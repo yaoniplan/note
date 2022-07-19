@@ -288,4 +288,5 @@
 		- ***写法***  
 		  这是一个链接 \[Markdown语法]\(\https://markdown.com.cn \"最好的markdown教程")。
 		- ***预览***  
-		  这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")
+		  这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+		-
