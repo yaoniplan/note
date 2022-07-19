@@ -267,3 +267,5 @@
 	  Try to put a blank line before...
 	  
 	  ---
+	  
+	  ...and after a horizon
