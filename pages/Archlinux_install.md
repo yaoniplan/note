@@ -19,8 +19,8 @@ title: Archlinux_install
 	  mkswap /dev/swap_partition
 	  mkfs.fat -F 32 /dev/efi_system_partition
 	  ```
-	- 挂载分区
-	  ```
+	- ## 挂载分区
+	  ```python
 	  mount /dev/root_partition
 	  mount --mkdir /dev/efi_system_partition /mnt/boot
 	  swapon /dev/swap_partition
