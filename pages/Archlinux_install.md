@@ -35,3 +35,5 @@ title: Archlinux_install
 	  #检查源的速度
 	  pacman -Syy
 	  ```
+	- ## 安装必备包
+	  ````
