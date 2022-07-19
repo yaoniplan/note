@@ -46,9 +46,9 @@
 		  I just love **bold text**.
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
-		- ***Markdown语法***  
+		- ***写法***  
 		  Italicized text is the \*cat's meow*.
-		- ***预览效果***  
+		- ***预览***  
 		  Italicized text is the *cat's meow*.
 	- ## 3. 粗体和斜体
 	  在要强调部分的前后，各添加`***`(三个星号)。
