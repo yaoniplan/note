@@ -233,4 +233,5 @@
 	  以`冒号(:)`开头和结尾，并包含表情符号的名称。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 15-29-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada27531ed-57a8-4fc3-beef-6f991bff79562022_07_20_Screenshot%20from%202022-07-20%2015-29-19.png?Expires=4811902178&Signature=CX~TwaqnKjxQuDk~QnMM6-KPQZ-kyePbDJ940YaE7Jw0Kj2Zqg4dtjniceEWhVw6AQAX-nBdc52RCE8MV-kIujihIM9c2ByY18ET1CfT7SGctXxCnnQm54xNdWjG47MBMJDUF~T92Gd-aY-pL7u-wtZvGelnT6jLCBzJ0-zwbd~ztEhc0mz0aespMwOm0SEXXMvijImHu66RZ6fiYeAz4e84N7jtyIe5~Y~~FXU-vUieCkEEnXeBYS16iZVFHOxhHN4nI8Z4T-ooPSVrQzXPdXCEJ7IU6crhcNkLfhFOW4HuZzKUcrS53Ci-R5g5XEerZE~-AITJNr1Qp3iQ4mggJQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 15-29-25.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc2d603e8-cfeb-4ce3-8c3c-0fc4da627fbb2022_07_20_Screenshot%20from%202022-07-20%2015-29-25.png?Expires=4811902196&Signature=E1weqqkppUAun73qHEVkfpzMxYMxWo9TygEJ2L2UKUvFO41936Opz6Gio7uUtejyc1IV720LmOJbg3rNO8Fwr9SBq9GIAWeJ7TgAw1r0w-R9qiAZjbEtgw~ZhiklcZaI8K7S~Gp8l6SwzzwxOSWrItMhs~pxdWzeawnLGHm3u4QFKyWKm7oylrrNxwmmwYM44clvxmhbTOGyOx130Jr1TqGKHr5s5FtzN4jCTueV0S3GCoVZhK-2OkhCSsNUB-pCYsinLKLao7nnzlR-YFUWg3gywVp2mTWa8W3HOMS8feUWMNgvZwQYWZLNP7BPNWgyY440gRr48Lr1NMqXGYBucw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
