@@ -142,8 +142,7 @@
 	  `[超链接显示名](超链接地址)`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-59-13.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addd028a10-87e2-4ab2-a19d-58a02b4e7a5f2022_07_20_Screenshot%20from%202022-07-20%2013-59-13.png?Expires=4811896806&Signature=amExefqJdt6F-RiWcd~u2NQqZdsOnlKDsUQn3zpYWch0AZEUF9zPBb90AAD9uGwy~z-8fkhxWe4C7T66mqG46GqWoHU~g2stUFY~MSvBnGT~tvcQn4Eh7Qq8VYMyl7Ndeyw7AlyS08K3HqfLZ7-~ILJifblNesfVqBdtIwbNcVEFk2g1cjgwKbcOZSTN-zrNVZuJqMUEB5vbelAf-wuFDr5g7j1zMiszEP7BEpTgfjxCXQKZc-L0zRwDyxG5TRqbaElDwRbXR2YKOi1QQ2ypF5-GWFKTduOLzRHOt14vuoYNHmNViKqSUs4rBv8of-SUtV3VgNFWseM5mkbegwRzMA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_image.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6052afc1-19d8-49a1-875e-7ab15a95a5422022_07_20_image.png?Expires=4811885773&Signature=XQBEMjei74zdWHAlN0MVpSnO70BEuO~1EhWRR9eFxKxrZaiSeMlCJ4EQ2Yh-EoOzvQ~4YKOO7unH29rkfJIqF8mpvIxPH1HOUVhWoGlLXX7UXAxPmOX~6Fk6ihgKXT2eW1za4nJaRPHF-NLT7c7be3dRg9wz29cjtNj9guvRhvtCASzjcCFC0k-PvPLLb0Ve9lWn-8uVjN4Sxbm9coE0nKlv3EPZri7~KFfAnU7CCaPhgKujfaWAjTe0qmKsHYmp-fm4aXUJeUV29AgQ~Z2oxBLFZoe8tIyuBegTg~OczytbKUTifYKW33ZN1b4mytOj3K6BGeXp3bi8uWVAHXXJBw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 	- ## 加 Title 的超链接  
 	  title放在圆括号中链接地址的`后面`，并且跟链接地址之间以`空格`分隔。
 		- ***写法***  
