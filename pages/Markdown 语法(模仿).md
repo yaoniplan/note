@@ -92,15 +92,6 @@
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-39-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad378f0c5a-eace-4e30-91e5-1e0158147ae92022_07_20_Screenshot%20from%202022-07-20%2010-39-24.png?Expires=4811884807&Signature=QWV9IWk1VgHG2WkxCFp-6pUAS7UA7sqhXlKf3qlFDjHYIFTQj5uW-QKxvI8ohBDWaNMjnNVJAea2IxGqGoPANyib5pe0127mtqhkIWu3z7mfRO21T6hhP57qrxLBMOkdaUnVnJImFwT4m~o3dn6ZBYH8yc4F1n2qAcWlXyuJgWOcCXtxknQAkI-R94xkVGMiKUWgkmLakdaTL~qG4o71SWYfdc~tTgvg~BZY0iR-Jmw-UUGObYOHmNGqi~m8PjxG5qksyhC8HqI3VAYs9hDszDqUWy5CW5O1VhGd7bIwKsz-YB1bTI58vUXUHGKLUTY0Crt2t4JX6GGbyEISpQbwpQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***
-		  1.Open the file.  
-		  2.Find the following code block on line 21:  
-		  
-		          <html>
-		            <head>
-		              <title>Test</title>
-		            </head>
-		  
-		  3.Update the title to match the name of your website.
 	- ## 在列表中嵌套图片
 	  将图片缩进`四个空格`或`一个制表符`
 		- ***写法***  
