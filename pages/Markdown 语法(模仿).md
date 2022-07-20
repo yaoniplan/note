@@ -123,7 +123,6 @@
 		- ***写法***  
 		  \`\`\`  
 		  {  
-		      "firstName": "John",  
 		      "lastName": "Smith",  
 		      "age": 25  
 		  }  
