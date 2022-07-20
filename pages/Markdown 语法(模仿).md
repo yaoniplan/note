@@ -132,7 +132,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-50-38.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9557bc29-ba61-4154-b51e-edfcc377c9ef2022_07_20_Screenshot%20from%202022-07-20%2010-50-38.png?Expires=4811885472&Signature=IjUIlOsHNOU9fx7H7FKURzWdHdAw11vQML0d~JIjp1pToPXMpM86-bZWfIZHHWqgOTlp0xZaeOKEAZx4psQVMb~R10HGGG-04DTw8ZTfLMQ7V-cILS23Zry51RO-IU6nrcS9uNfNEZZribT-FZZu2WCQ7Fspn~Joib4Z-Q6klMgRwCpYSwvTwyfeaExD~cQu05IPWJN9mZJKxnGHt611M3Y7oePTOG7PD5MW-7sDqQfhSoTlq~xl08PyFHzH~Pp6xhJVZkz0bNHXFdk-bYXr~GZkJXfdji8MyYjXDUbbgWykVCyChsZC4rjY8IRscWk6ZFHUWH3nwdYp7N-t6wbQiQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 分隔线语法
   在单独一行上，使用三个`星号`(\*\*\*)、`破折号`(\-\-\-)或`下划线`(\_\_\_)
-	- ***写法***
+	- ***写法***  
+	  ![2022_07_20_Screenshot from 2022-07-20 10-53-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adff610aaa-8286-4171-8012-1ed499158d052022_07_20_Screenshot%20from%202022-07-20%2010-53-04.png?Expires=4811885620&Signature=K02HzVESQhroyIYJJVpO4m57z61yX65czrecu0plinafm89yTxiusLr-ljBBArIQ37m4Lp9PUTMjMaQ2XMe2sadokheDct9RMqJ~pc4QwGlVUUqd0TPz~e-XY-YwFCg7PosL6g4uPsM6MklxiyRaWhlfiTFvjD4HWfeKe4v3x65oNrVYlvTxgYvkNrukOviJuMU0-Hiq0MbgpDvaEQ4wq464L14~6Azf6hEoTOCHY~RM2cl7e8~0adEO-mSfshU6QzCH1GIYrAtBAh6NCnuJluWmKDHMI6QMuRsyP1JGrc7rN0marcCiZwBfWH-zuVlMDmCgP3Q5tRd~REfuRrEGQQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ***预览***  
 	  Try to put a blank line before...
 	  
