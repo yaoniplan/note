@@ -165,7 +165,8 @@
 	- ## 引用类型的超链接  
 	  分为两部分：与文本保持`內联`的部分、存储在文件中`其他位置`的部分。
 		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 12-02-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad989e5785-e9e2-415c-a76b-31f1a95b26ab2022_07_20_Screenshot%20from%202022-07-20%2012-02-31.png?Expires=4811889783&Signature=TI42Aoy-MuiCHulGhW80Ut-~ec2-JEFRN2TumGPgTh05dxtgbPJL8fHZ2bpWS1oaN~2yhuVa6sRsig0zYckgJQseS0V~v~CYjhaZ4n3AR~OJDoE4-qi-ha7DLr~-tInGky0GTkHiO56lcRp9LdV6LB1mmj32yz3dbt7xk2xOd9qAuUxmgLm~HZAW9EEahI-Caih8t9oehxbGUKh7jsaZgeG0buQ3-bp5BI9kSnXYIXmh7WZMdir7WXIOWoQVGROTD-Khd2fLHeLpWU1yZLUpg39Yac7sely-KeV~xoUy7xUph6mHmt~0FZFbWE9dIbWakwhvwUhDl21AR~TkIMEXTQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		  ![2022_07_20_Screenshot from 2022-07-20 12-02-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad989e5785-e9e2-415c-a76b-31f1a95b26ab2022_07_20_Screenshot%20from%202022-07-20%2012-02-31.png?Expires=4811889783&Signature=TI42Aoy-MuiCHulGhW80Ut-~ec2-JEFRN2TumGPgTh05dxtgbPJL8fHZ2bpWS1oaN~2yhuVa6sRsig0zYckgJQseS0V~v~CYjhaZ4n3AR~OJDoE4-qi-ha7DLr~-tInGky0GTkHiO56lcRp9LdV6LB1mmj32yz3dbt7xk2xOd9qAuUxmgLm~HZAW9EEahI-Caih8t9oehxbGUKh7jsaZgeG0buQ3-bp5BI9kSnXYIXmh7WZMdir7WXIOWoQVGROTD-Khd2fLHeLpWU1yZLUpg39Yac7sely-KeV~xoUy7xUph6mHmt~0FZFbWE9dIbWakwhvwUhDl21AR~TkIMEXTQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-05-47.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc1786cf1-8aa6-4db9-b690-b2da9910cac02022_07_20_Screenshot%20from%202022-07-20%2014-05-47.png?Expires=4811897202&Signature=Zc-x3q42al6XAfYx1bNsDEvtIQFL7Vi4wSeKA1kX-AZmkNN8SXHQGf2pK7bwe1mV3yymjOKscKIoRz4dchMADdY28tXGu-yNUROm~5HmT2VNPX-0d2C3A70AGSHxa41VagyntTqWR~P2C4pCyf8b0fSU02bNeIuGKaeSWiR-OJSxD~05rzZCH~XfkzYYWFAO17lGPPLrZYlNYzgbKoaSe3ExzVqdkGJHR5E~OU2eEbwA~xHYhPgZnmjsTAfcGz~zeNDkxyKpPc3iFA9RdRSLoVTXwWb5AZLkDuq6CxbFVPaoH5AxITi5uauQAFdf~pZzBA9sMVg01fVcriNc3GjhkA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  (无)
 - # 图片语法
