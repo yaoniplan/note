@@ -180,3 +180,4 @@
 	  将图像的Markdown括在方括号中，然后将链接添加在圆括号中。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-43-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9c2979f5-93d9-4d01-9473-57149ac9a73f2022_07_20_Screenshot%20from%202022-07-20%2013-43-10.png?Expires=4811895807&Signature=hfhSwzFJQJ36QAg4d-UhQ36nb0RZ7-HkHLHFuDiha-iUQ4at04bZ02-lZsLoTnXReHp6jwmavx0icdALOvY9iJ1LEzS~~thz81iiIp9bZixZNM8e00Hy~zxEBg62~4Ciu6h0u87e1EwArH8I9ZPM9o~lVU1eGaSK4YFC7E1Cl2NWUNx2qiwgmu45dNPPo~ZtH9UI~sU-4FKXT9vYUTfU8IQicxSMQHqmPXtm6x~L9-OUon3mJPl0SS9MlGJ4qLCP00zgBxEP3dWLMeMwLInDoeqXqVUHb~UT~RiIZyc9fbRazZiexGgPJMModOdapvRHQzQwcMSotEZrY~sbJFudOQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
