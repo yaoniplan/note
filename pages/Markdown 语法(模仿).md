@@ -2,13 +2,7 @@
   Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
-	- ***写法***  
-	  \# Heading level 1  
-	  \## Heading level 2  
-	  \### Heading level 3  
-	  \#### Heading level 4  
-	  \##### Heading level 5  
-	  \###### Heading level 6
+	- ***写法***
 	- ***预览***  
 	  (请自己尝试，因为标题语法放在这里，会使目录不被易读)
 - # 段落语法
