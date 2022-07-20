@@ -221,4 +221,5 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 15-13-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0fdc452d-dcea-4a84-9df4-5ecb38b0f56d2022_07_20_Screenshot%20from%202022-07-20%2015-13-39.png?Expires=4811901444&Signature=AtZcLonMLu~swaHS8V8dVGxhVuLuF-uMx~3a6q4ZL8mQ~IkT77dzUSCypSMfErKJFpr6L6sSdfE2E2FfybH9e6Bdix1LPIQ3SCFxpSS3ZnG-vF2Q9INbjq3ChhTRHnxseCj-PwRhi~In~~mLiO7tPEGE0LGbATdovP0BXGJB70ASiQMUkiY5tEEfihb9DVDmgde6H~DyqwA9h1Tivj88U81MyLWwbGag29TXvnhJKicERIcAHC6aUV2urAEhC8snvCvACGVcQcrzoiuUId5InPiYuDBmlB6kWr7ghQxS5Uf4tI63Vaj-N87N5zWTmmpZrSJZj9BND1uCNYl~Tk3XNQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 注脚语法  
-	  在方括号内，添加`插入符号(^)`和`标识符(数字或单词)`。
+	  在方括号内，添加`插入符号(^)`和`标识符(数字或单词)`。  
+	  在括号内使用另一个插入符号和数字
