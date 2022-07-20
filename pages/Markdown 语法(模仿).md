@@ -85,7 +85,8 @@
 	  将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-29-46.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3dc3300a-2958-4ae0-9beb-5d59a2d39b942022_07_20_Screenshot%20from%202022-07-20%2014-29-46.png?Expires=4811898620&Signature=KW~jZwoo0IVs6SftnKw07o7FE6IT60SRV-zHqW8yT6l1Ao7K-i77IOMCWz8QWc6H8LuN6YE5fx15DBKhmGg9jJBFeYkuhFySPX32lE1~i02LRku3STgK8tWiGfvRQZjB5NyJcBIYEacx1kNawY6rcBLkS-H5zN3ghfVPjuNdyPCeQ5w7ltd7o~oFQ9XU8~aAprpICpY4MNVe0gWhjGcpIibpTg7DcO5bLXPrYt1mjuNMYpxx6O-RsebyUHLXl38ZgWo17evj~VcBuCGFFw-uQ-P4iv7IwPEFl6GTgMBhqNf0uIT0wJbuPZvA2ceRJ~4A~tJWmMuqv3glr1Je4JlQTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-29-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad04c6745f-8506-4e9f-92e1-bd77a8a7132d2022_07_20_Screenshot%20from%202022-07-20%2014-29-58.png?Expires=4811898634&Signature=BXVVb7siYwKP7C9sI9Q4Ke4YtpK5rrOntFBHNv2NMse13GsJvfJ4mo3oirSyTUQW41DXX9D0V3~y4KABrXJAtfnmsfoX9Hm9TYS0~UtHOmsXMjHfy~gpOzEYaCinjWrw6yY9R1oYozvzRDP08oDv2x93D9DdqEo9oh-xGOS7oBjcNKT7RrL5IPCw8sdqdNekqiwr9VHxfU9~~GdNL2ib-LxvPxZDxhAxm-GX1R~PBOxUCoDKHqLEVSWzKlCnlFLfFIFrqbRMM6MBhtwlhWsD0niDMX4QXKM2Vnibx5-l36-0O5AjkHfjVC~ffq7ODEBkSLKoqH-lNshfChr0x5nC4g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.在列表中嵌套引用块
 	  同样的，将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
