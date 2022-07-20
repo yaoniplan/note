@@ -153,7 +153,6 @@
 	- ## 简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 		- ***写法***  
-		  \<\https://markdown.com.cn>  
 		  \<fake@example.com>
 		- ***预览***  
 		  <https://markdown.com.cn>  
