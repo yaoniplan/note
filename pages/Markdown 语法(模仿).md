@@ -135,11 +135,7 @@
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 10-53-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adff610aaa-8286-4171-8012-1ed499158d052022_07_20_Screenshot%20from%202022-07-20%2010-53-04.png?Expires=4811885620&Signature=K02HzVESQhroyIYJJVpO4m57z61yX65czrecu0plinafm89yTxiusLr-ljBBArIQ37m4Lp9PUTMjMaQ2XMe2sadokheDct9RMqJ~pc4QwGlVUUqd0TPz~e-XY-YwFCg7PosL6g4uPsM6MklxiyRaWhlfiTFvjD4HWfeKe4v3x65oNrVYlvTxgYvkNrukOviJuMU0-Hiq0MbgpDvaEQ4wq464L14~6Azf6hEoTOCHY~RM2cl7e8~0adEO-mSfshU6QzCH1GIYrAtBAh6NCnuJluWmKDHMI6QMuRsyP1JGrc7rN0marcCiZwBfWH-zuVlMDmCgP3Q5tRd~REfuRrEGQQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ***预览***  
-	  Try to put a blank line before...
-	  
-	  ---
-	  
-	  ...and after a horizontal rule.
+	  ![2022_07_20_Screenshot from 2022-07-20 10-53-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3f46def5-9fe7-48c6-b2ca-1e987723d2662022_07_20_Screenshot%20from%202022-07-20%2010-53-24.png?Expires=4811885645&Signature=GCI7W8O3KmH~MOrlW0c1NmF0qXRa20vcgWi5OyaojPryV5L8Jpp9215VjLGCQD2x6h2eBcfTDA3PfL6IkWPVBSNMn72zDlsxfk-diRleB9JjZV8B-iAj2BbmmUkE~w23AN8AVMmDjfHzFuiqz4xsqFGxqM8N8rVZ2VUOvlo6e8x0EBc0aERUvd31e~HlUcDiSVEi0HbjtTwZQnD0t9Tz9JfNxFqm3jiexCzkDfuifqEUh8~a0WlibbM3bEkG8CHA4sfmbBlvPsRyM~EhNkD8vW1DnVgDn06X0TqQ3bFm1HbCdwkfQ44~nDhpYm2NBfH4ujy8kQgZlMPyQbmSLc2mcQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 链接语法
 	- ## 超链接
 	  链接文本放在方括号内，链接地址放在后面的圆括号中。
