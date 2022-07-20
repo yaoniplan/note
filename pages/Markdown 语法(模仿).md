@@ -58,13 +58,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-24-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfe971c12-28cb-430f-9c78-2fd4d4f9b6922022_07_20_Screenshot%20from%202022-07-20%2010-24-10.png?Expires=4811883890&Signature=Js0T6nUAOMB93ghsM483de~VPqheLO3IsftUyqJ99ebdHh0~SOF14Rr0xFbRaldSuFox2tkzXUNPskxpaDMTi3nEkNfbDHNYDLxG1YyNxPvRW3MsYpUtpMUHv3P4IJg6DMv92gC7jHufgSbEQEyPlLbMwjeQXCjG63BjgWx4hraQDbgPZpYj1NbHtsKrDhSqqmMveVBXq0DrNZ4DuIct-XSIrWH~5-A01tBtuMsT0xqmHYWE-cGyd~5SNgDmw7kxIlUi7qtE~UgtaT1GO9XxMpAHT9mID8~HGX-lK1UHBJxWIdTo9Mwkl5O00MOBpJ6kpWWHg~k2UbOJIjPUuSSTRg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.带有其他元素的块引用
 	  需要进行`实验`，以查看哪些元素有效。
-		- ***写法***  
-		  \>\#### The quarterly results look great!  
-		  \>  
-		  \>\-Revenue was off the chart.  
-		  \>\-Profits were higher than ever.  
-		  \>  
-		  \>\*Everything* is going according to \*\*plan**.
+		- ***写法***
 		- ***预览***  
 		  >(请自己尝试这个元素，因为此元素放在这里，会使目录不被易读)  
 		  >  
