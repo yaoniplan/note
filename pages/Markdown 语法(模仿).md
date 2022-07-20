@@ -73,7 +73,8 @@
 	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-26-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add83fb5ff-44cd-4bc4-b9c2-493bbc0a948e2022_07_20_Screenshot%20from%202022-07-20%2014-26-28.png?Expires=4811898510&Signature=U1pgifW5fmiOnVZHZGekG2~sVofZ4t04zBY5f6pUBG37w7jVllLTVro6tO9Eh6ctoipk485H~wFLAW3b-U7NhPUvAKLEFqZNb2yiwY4qSHPWpZxlbzzv9rip3QlNppOXujuc0oVUxMDKEi9Zs5m~ZVtbvyxym31yXVMuYR6tYC2zOck8YMRYzZzantJ5QQdtncyOIOXBOin9mx8sIqpyzSV2OZZK~64l6sLFnZgQBu2zCjv-RIe4dLd9DhcFWVItcjRSwH93tarAQNtdb7WiI94u~wO0Qsk0aXMJg5MBtlSv8pXbWtsOTMa5cr5FZrEkfxaJYmN6964pcGb4ue7UQg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-26-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada58883dc-43cc-4728-b3db-774ef0cde5a02022_07_20_Screenshot%20from%202022-07-20%2014-26-34.png?Expires=4811898526&Signature=Ue7COas~IccluR8bODygEBHzDMwSish9pwAi2fv9Z4gEIctlucO2voCIx~ZlEdsQiCFq3MIURkl1KPUOK33CVtSgqCibZgRw0iBfBmda6J983A9CDTLKkLAZkHIpIlBWhw~5l~Uxg0NFp-S23yyFU0OLO8jzEPgvAuuvAJIZ0X0zP-11-~g5Bea0QiW6WkJLU3iAPz-0MRU4JorE1ekCDI-X8poSvZsFYYtObRCvZ8xzZllmgR-XV3pHe-2Oevmf9by7i0yt7P7Dqe4whF9ZB1E6gmREI-AqCjS4YYs8q1YHjx6QvYmnQDxKeSi4S6tsBwYkiDWHfLqXNDYxV-fWeQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.无序列表
 	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
 		- ***写法***  
