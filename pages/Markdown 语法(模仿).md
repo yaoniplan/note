@@ -146,8 +146,7 @@
 		  ![2022_07_20_image.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6052afc1-19d8-49a1-875e-7ab15a95a5422022_07_20_image.png?Expires=4811885773&Signature=XQBEMjei74zdWHAlN0MVpSnO70BEuO~1EhWRR9eFxKxrZaiSeMlCJ4EQ2Yh-EoOzvQ~4YKOO7unH29rkfJIqF8mpvIxPH1HOUVhWoGlLXX7UXAxPmOX~6Fk6ihgKXT2eW1za4nJaRPHF-NLT7c7be3dRg9wz29cjtNj9guvRhvtCASzjcCFC0k-PvPLLb0Ve9lWn-8uVjN4Sxbm9coE0nKlv3EPZri7~KFfAnU7CCaPhgKujfaWAjTe0qmKsHYmp-fm4aXUJeUV29AgQ~Z2oxBLFZoe8tIyuBegTg~OczytbKUTifYKW33ZN1b4mytOj3K6BGeXp3bi8uWVAHXXJBw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 加 Title 的超链接  
 	  title放在圆括号中链接地址的`后面`，并且跟链接地址之间以`空格`分隔。
-		- ***写法***  
-		  这是一个链接 \[Markdown语法]\(\https://markdown.com.cn \"最好的markdown教程")。
+		- ***写法***
 		- ***预览***  
 		  这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
 	- ## 简化的超链接
