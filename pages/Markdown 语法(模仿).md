@@ -177,4 +177,5 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-33-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add48b511e-86fd-4175-8b32-f1d327f6ad9c2022_07_20_Screenshot%20from%202022-07-20%2013-33-19.png?Expires=4811895225&Signature=lmdPa59e-jjFG4RUMUT0VbPtzcLABiaEuGIckwqBFzE6CyUlboObeqev4NR~E3HjsvOswmhingt~ScymJvpodE8q4Bc7LDlJZ60EwqfFq3unCZDf0bNMkeHX2vViVjP80i~86I0D4y6I~aDSQsSWpnOETCRhIvjsKHCM8ubP3L94t67qU3w0CBK25J2akILJTQWQO3rzQb7ffU2BibgTH3g2anNUe-DFtYtEmvIboa7ES0UWzYS5LfItIB94h0jGmdhUhaWoPBYWyjtDJdfXvamHNSDPNaAK~tEDkyprUsA99St-kOgR4E91d-5P5Ea6pY-s6E2R9XDftJPqQUZjBg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 有链接的图片  
-	  将图像的Markdown括在方括号中，
+	  将图像的Markdown括在方括号中，然后将链接添加在圆括号中。
+		- ***写法***
