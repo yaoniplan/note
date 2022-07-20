@@ -27,8 +27,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-06-35.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0d68c740-d694-4265-b135-0578a90c83aa2022_07_20_Screenshot%20from%202022-07-20%2010-06-35.png?Expires=4811882824&Signature=EJ5zQcMGDFg2KZjiE8EAhDheriWe1kEKYj6ALyvUyV9GGXVcOCqOvlI8GhwYHxePuwhdGqK~jVtjRzqJYJ6sm-EGggAxp1u123x-DqsV9AbuDoAuqTOZkokYghUQ6GilG1WyYnyEd0y6FgQ6Fyj9KlTgFFYpv5ceCa4WScIBPBtwvc9LRUkf~mXO0RGV11jS7bLUxy5J7oznTvD3IP7O0azi12nOp-0JrZIs0ceNfbSdn0M-JLqFDeLFusLxj4EbKtgperftZjiu4r-NaLacGrDbIO9YAyq0kWQx0MxSrN8FKwmNsyY57zcRKrRBOHgQYzxIj45tRmyjono1p8k46w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
-		- ***写法***  
-		  Italicized text is the \*cat's meow*.
+		- ***写法***
 		- ***预览***  
 		  Italicized text is the *cat's meow*.
 	- ## 3. 粗体和斜体
