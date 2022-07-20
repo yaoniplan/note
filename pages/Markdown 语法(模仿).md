@@ -169,13 +169,13 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-50.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfcc3a257-7509-46ba-aec1-8b2a960f45252022_07_20_Screenshot%20from%202022-07-20%2014-01-50.png?Expires=4811896962&Signature=M6HVphYOg2BWGIj8pywYrKOHom7Ul8zJ~ajvJ-1-YEo8~MjdGAhNHgqvhz-FrFLt08VdcV3spiFd0uZ3bOxCIHJecs7JOcZqI7is12jXIv0KYC~bOwj~bM7UmoB7iirtiNNwGBp3WDVMtM3Yg-s8FAQaZrDClrRh7Xg8lsM5hFdnGFXuHUwH1nUJVErQglfPU6x9N5IMyovjWdHD1jaYiZZnp-yPg8RrcvSSl3K0XDSaZRM-x2S~owwKkwBc8ghv1WsTUksqgpT7DyNgiDEexjK0yRuBWFpYg-CwLjcmRLDnbNOKShKDsq3rB4tqmmBkQ3wwJXycJFWNIpg2NlnM8w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3.简化的超链接
-		- ### 简化一点的超链接  
+		- ### 1.简化一点的超链接  
 		  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 			- ***写法***  
 			  ![2022_07_20_Screenshot from 2022-07-20 14-02-44.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addf8221e2-cfce-4f2a-aa19-ecbb04c98cd22022_07_20_Screenshot%20from%202022-07-20%2014-02-44.png?Expires=4811897006&Signature=DrYAciOWoTx7eIbNPxS~HgNwFbTmGR1ZVvtTMuuVqGq4lwTu32~iNkjfi-Ul66avLxynF-B73kaH45A6NXv0dimvaFKENrk8MwEWscrXeM~r5vQs5EqyN0pnAwAdDYWGHy9Y9iglaJdJg6QXYdj3pn6DTak9Duz5fv8ODvrkgY69SgXYM5rUw1pZwN50i7cixGIZRFZGzuPVdhskx89XacO1hY7wSR53dXzAdBICUsHwiYfyZdZHFYW3K3M8snkzOTgL3TF723eWiASSMeqGir53fY98xNqfGLrnbSKsQeMaF-2GFVJvJB6N2ikTT6bxLeVO0sWTm8wnh1Umvq-MUw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 			- ***预览***  
 			  ![2022_07_20_Screenshot from 2022-07-20 14-03-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf2e88d97-2f3a-4647-87e1-a0489dc635962022_07_20_Screenshot%20from%202022-07-20%2014-03-34.png?Expires=4811897031&Signature=TrH73MGe~HnozwMLZyeAHTNKmJWt62K16SXQ9SRfG3zUuFVsUUrO1OmKOL5cKzUStbFTX4bolujl7HQC73kY5Zu19756meD8xhqp~SRirgwYNzbsgG2ovKusw08GpK9d1R-qwqAatlyAjQ5RsvA3xLlb7NiPak4VyrPGlnrgJlcwc7dYsfmJHzTf~5qvmDV3Te7Ere1SL8-GMqJEy~RHwGR4Ghv~FJHDzBUqGPcfMGMF1eK3qqPc23Y-KBGlQ~xin84nJTfySUPM06Rl4xFNVKh7aJj4~5XSF06on~xX31McAzsJsmTCg8zwVszeorPV4FHWbpoT8YqrNTtxr9YzXA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ### 更简化的超链接  
+		- ### 2.更简化的超链接  
 		  因为markdown处理器会自动将URL转换为链接。所以请直接输入`URL`。
 			- ***参考***  
 			  ![2022_07_20_Screenshot from 2022-07-20 15-43-42.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4fe038d3-5409-4a2e-a10e-3297b862036a2022_07_20_Screenshot%20from%202022-07-20%2015-43-42.png?Expires=4811903041&Signature=VEVY7UdHXXMkn6PIsBmvQYElzlfBLpoxPz6V5zLpiJ5Dwk4lkDbeE9kWjoAVV4jTQbbwFAkFAdEASLA0DgMn2TsbOt9pU1e-AwYy8~Z82dp3IlAld7MHUjESA-nQZkfhbttihJ61udyijGZwjwCVUuM2aQJvt7iTR7S79IhWYUJZ3Q5xpxZW2cxLj3W-R7RUC2HvjK1TM9kgTY3QivBsVy~GicvUeUDPdn5HD5JMN2pTIwJkfHwCIxNEmqXqbb8gSdWAvR98BqgvxJwlyDk0Tc4uCLfmENnQeVBRbW5YN81QHdol3I0Xu4HRZxm~fI9wtFbnNdql0Xb3fUUZgUqNUQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
