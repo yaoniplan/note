@@ -150,19 +150,19 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade29ce167-5bed-4cf8-9f8f-3e82da8f46482022_07_20_Screenshot%20from%202022-07-20%2014-01-19.png?Expires=4811896938&Signature=Ilz48QTZbOno69YA6IV5~sPsFVD6buEs8ltV0nE301tHnUTOSvOeXdwWBA5A1k3pnUAeWQCrWarCuyyL~meyWT0pnpRzW06CKdh1yoPjuGLsTCDBd0Sdjw~qv-vvwl-A7Lcj~5AUKgGhnM8Z5pFsCR3UH37qehEZJRkcc-Wu-r3sHSsTQ4R3QJq4kIIcycdvPeBcVoXyNQFfwE05Va9fLc~6mB56GHgGY3-imJZ2pfCzb6HMz9w0aQiJNX1-8FMXW2NEFtq3BiPoXmn~-b9uR0cjZIVl3UeSJHQ8J3~EdJ~Df2CmrLnKO6xiwDifqDXjOdCQkZiUFKS6~3Rt3RVUFw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-50.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfcc3a257-7509-46ba-aec1-8b2a960f45252022_07_20_Screenshot%20from%202022-07-20%2014-01-50.png?Expires=4811896962&Signature=M6HVphYOg2BWGIj8pywYrKOHom7Ul8zJ~ajvJ-1-YEo8~MjdGAhNHgqvhz-FrFLt08VdcV3spiFd0uZ3bOxCIHJecs7JOcZqI7is12jXIv0KYC~bOwj~bM7UmoB7iirtiNNwGBp3WDVMtM3Yg-s8FAQaZrDClrRh7Xg8lsM5hFdnGFXuHUwH1nUJVErQglfPU6x9N5IMyovjWdHD1jaYiZZnp-yPg8RrcvSSl3K0XDSaZRM-x2S~owwKkwBc8ghv1WsTUksqgpT7DyNgiDEexjK0yRuBWFpYg-CwLjcmRLDnbNOKShKDsq3rB4tqmmBkQ3wwJXycJFWNIpg2NlnM8w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 简化的超链接
+	- ## 3.简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-02-44.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addf8221e2-cfce-4f2a-aa19-ecbb04c98cd22022_07_20_Screenshot%20from%202022-07-20%2014-02-44.png?Expires=4811897006&Signature=DrYAciOWoTx7eIbNPxS~HgNwFbTmGR1ZVvtTMuuVqGq4lwTu32~iNkjfi-Ul66avLxynF-B73kaH45A6NXv0dimvaFKENrk8MwEWscrXeM~r5vQs5EqyN0pnAwAdDYWGHy9Y9iglaJdJg6QXYdj3pn6DTak9Duz5fv8ODvrkgY69SgXYM5rUw1pZwN50i7cixGIZRFZGzuPVdhskx89XacO1hY7wSR53dXzAdBICUsHwiYfyZdZHFYW3K3M8snkzOTgL3TF723eWiASSMeqGir53fY98xNqfGLrnbSKsQeMaF-2GFVJvJB6N2ikTT6bxLeVO0sWTm8wnh1Umvq-MUw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-03-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf2e88d97-2f3a-4647-87e1-a0489dc635962022_07_20_Screenshot%20from%202022-07-20%2014-03-34.png?Expires=4811897031&Signature=TrH73MGe~HnozwMLZyeAHTNKmJWt62K16SXQ9SRfG3zUuFVsUUrO1OmKOL5cKzUStbFTX4bolujl7HQC73kY5Zu19756meD8xhqp~SRirgwYNzbsgG2ovKusw08GpK9d1R-qwqAatlyAjQ5RsvA3xLlb7NiPak4VyrPGlnrgJlcwc7dYsfmJHzTf~5qvmDV3Te7Ere1SL8-GMqJEy~RHwGR4Ghv~FJHDzBUqGPcfMGMF1eK3qqPc23Y-KBGlQ~xin84nJTfySUPM06Rl4xFNVKh7aJj4~5XSF06on~xX31McAzsJsmTCg8zwVszeorPV4FHWbpoT8YqrNTtxr9YzXA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 带格式化的超链接
+	- ## 4.带格式化的超链接
 	  需要进行`实验`，以查看哪些元素有效。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-03-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf4ac07cc-5da5-4c49-9b89-58c2372e8ef62022_07_20_Screenshot%20from%202022-07-20%2014-03-58.png?Expires=4811897072&Signature=JUZUSkZ4YzcWqWAmGmws8mewb3tVJFzvOKtRyeBFHTu22K25LUgZmBMQ1kSuYT67Q8L3CNNQyyDcF588pz9Cfnf1nmlvnLLZpSymopSVD5lAjB3s8CLqdElSdD7Wo6pfbNBC8jnPiqn2PoKjrxusjK4mA7MSbXitSnC94rkDjVjTBYZCm-DGH6lyHbS3~sD2bW6ytTtwBUVcZsOlgkqClEM-tyS3~Zs5HS-yntmlbKfJkGC59OTuQ3~pt6dNCRd82fB-0Z8R5TQVGX6TENnekZa-bmFEZ4RhyHU8eQcUCTQgER5jvcrbYVbmpc~6gTUetrzP2Li2PDRAWXXLCoQdng__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-04-07.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada9fc4db2-a4ee-4848-a8d2-a687ad1013ed2022_07_20_Screenshot%20from%202022-07-20%2014-04-07.png?Expires=4811897098&Signature=lbwt6w4MJeWDG1N-y~tmAONo9GaIm~0pOl2wl4wwrdzi4KknOgH~Sc~KZt8aHBgrNYGhDiSitgxPnwDaxRCPU7pWcWEkEwOsV4fFnhTS80am96hgdt1h2TZoTdwXqLydyTXUVRcG9vWCI7PfAFyoHKu0jH1KfUEu9RB4NOoEg2pvogvUaR-CCX8sa0~qz8VMbCQFTeN9pL2Kc71c3QyF-gny1Ad90PWNSfG-ZzhbUjuqLuqIrl~KCoCvASP817YRTTXHzxRJl2ZWKDY7mC3kDc1FVlyBILOkQUdhbnNRJ4reJ4H0B6Cpx-7DtAG8ZmpLuT-N-yxQ5~Zw-rnbtbTxpg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 引用类型的超链接  
+	- ## 5.引用类型的超链接  
 	  分为两部分：与文本保持`內联`的部分、存储在文件中`其他位置`的部分。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 12-02-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad989e5785-e9e2-415c-a76b-31f1a95b26ab2022_07_20_Screenshot%20from%202022-07-20%2012-02-31.png?Expires=4811889783&Signature=TI42Aoy-MuiCHulGhW80Ut-~ec2-JEFRN2TumGPgTh05dxtgbPJL8fHZ2bpWS1oaN~2yhuVa6sRsig0zYckgJQseS0V~v~CYjhaZ4n3AR~OJDoE4-qi-ha7DLr~-tInGky0GTkHiO56lcRp9LdV6LB1mmj32yz3dbt7xk2xOd9qAuUxmgLm~HZAW9EEahI-Caih8t9oehxbGUKh7jsaZgeG0buQ3-bp5BI9kSnXYIXmh7WZMdir7WXIOWoQVGROTD-Khd2fLHeLpWU1yZLUpg39Yac7sely-KeV~xoUy7xUph6mHmt~0FZFbWE9dIbWakwhvwUhDl21AR~TkIMEXTQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
@@ -170,7 +170,7 @@
 		- ***预览***  
 		  (无)
 - # 图片语法
-	- ## 图片  
+	- ## 1.图片  
 	  使用感叹号(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。  
 	  `![图片alt](图片链接 "图片title")`
 		- ***写法***  
