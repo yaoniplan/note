@@ -126,7 +126,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-46-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb3d38b87-29c3-45da-885c-61310a892f602022_07_20_Screenshot%20from%202022-07-20%2010-46-16.png?Expires=4811885258&Signature=Jd8xQLydIQRotfmFmoOl0n0Ag7LhVi2MmUMoQ6VTdX~lpRNNvHalTv4USmNOP674-nkPSTIEA8rbzUSI7nT97ILfRmevv8rLxRfKR450SXGJOYWNN6rOoohwkZ-4ne7lmGjNn93YFBje1EqfChfVoawtfxAjkL6Vbcy9OifT8shtovEuLuCLOsYWsmSB-FoTQqWI9X9RDq35FepVsu-c0EVt2NtiguIELO~tKt2kqR8ZKvb1RdTTXQlUOaM-TLgJwUmH8Bri96TJWLcCTYMKk6IUo2kf3m5oVnQgkMvKUj6pAn~lOvYTRsneuJqroXLp7QFLFLKts7w4mIzpTEB7iQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3.代码块
 	  在代码块之前和之后的行上，使用三个`反引号`(\`\`\`)
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-34-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad323c5454-24bb-469d-a6d2-64cb3e5aa2f42022_07_20_Screenshot%20from%202022-07-20%2014-34-16.png?Expires=4811898889&Signature=jZ1ujbCGHloX6rrGA0AA7pWQ9IiEmDbkilLhYn9d4j8wxivWvZ-gNxKgI2djCAFTuOcXGNpmaZblwENlsjPoeYJ748K~G9PtRnhAe4FHM-nXRumVZMbBTuLOkQk8etsnJgh9UxeBieNMWu7FBGvRyRXAKrAFKwLaOJlBvuZhhtVA2ye6-k35ICrQ6Be8s-GILhdatWT9udEaR3G2SpbJPxA~R9wBupwRPunQitLZb8md8ACCnQHNEYKneEQ79j~pvDmUl-a~JjOSr0Fr558dPA7akSz00lq71VMeApwdj~qZNfLbe27jFsOcJSJuM~Hj-B0lfxhiMWXJRnAOs9amJg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-49-06.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb22cabe3-5780-4fe8-8914-4f8baa774e082022_07_20_Screenshot%20from%202022-07-20%2010-49-06.png?Expires=4811885379&Signature=IqH4Be1avyagCjthdxYdcmjkPt2OILp7Td14-2ApqTBfT3xBm0sGGSBvX28QguxpHt6ggKATfkSEANqO-cP1AFSg5QP-yb-x3ZIvjZbnCDh6iVsDvJfDs-Dt3feCwEe1xXLQ5k4bmmhXBC3b0jzzM~f41ZksKcrMLvOQz8VVFOLbWxJoMkus2mWih7fLWyKV3ekJ3-qIqTgySXFa~-7T1uVpdXCelhvf0GUEJBBrYhSmaN637aqLYxiGh~X4IWWgc6pKSlJIAn9HStDC8GZV1bIQe7BbOfpqB~fr1159u4CxNNiALsWhkGDVs98qa9d-o~~3ZIOi0ZQhuNlOas~S3A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.语法高亮
