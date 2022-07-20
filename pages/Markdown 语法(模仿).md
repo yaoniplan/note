@@ -2,7 +2,8 @@
   Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
-	- ***写法***
+	- ***写法***  
+	  ![2022_07_20_Screenshot from 2022-07-20 09-54-43.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3e0a40f2-af63-4bf1-bf4e-d8e8308871782022_07_20_Screenshot%20from%202022-07-20%2009-54-43.png?Expires=4811882106&Signature=SRF2IEZYpGWAOTRL~Y83MdujL1r4cTYl83U9JukP7CmLlBFlZcaOyPkL4nrNzzsMjqbcTGHzl1IDiB7OdkSSyRiwyd3jwEOdmQ-pLRlvvIG79BvQSe3WqjHVX~gisfpSv1YG4tFMktRi1G5KG3Lm0IjjDz1qFCaPy-kK7vycnr1CWJZZtUyUzjXtarZC3z9QYXDr0DxT63flH8QKPfKFDkPvGC~B63M4Y3A7t4gdV5wHISvO8aYr48aOMW~stYNx3RU3rELfXQgYqngd~Had3uxNTja5tfysl3vB6brPbssMowxpklY9hDry3mWFMhJ1Nit4v92jn7SDJyUTORl1fQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ***预览***  
 	  (请自己尝试，因为标题语法放在这里，会使目录不被易读)
 - # 段落语法
