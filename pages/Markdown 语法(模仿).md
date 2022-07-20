@@ -126,7 +126,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-49-06.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb22cabe3-5780-4fe8-8914-4f8baa774e082022_07_20_Screenshot%20from%202022-07-20%2010-49-06.png?Expires=4811885379&Signature=IqH4Be1avyagCjthdxYdcmjkPt2OILp7Td14-2ApqTBfT3xBm0sGGSBvX28QguxpHt6ggKATfkSEANqO-cP1AFSg5QP-yb-x3ZIvjZbnCDh6iVsDvJfDs-Dt3feCwEe1xXLQ5k4bmmhXBC3b0jzzM~f41ZksKcrMLvOQz8VVFOLbWxJoMkus2mWih7fLWyKV3ekJ3-qIqTgySXFa~-7T1uVpdXCelhvf0GUEJBBrYhSmaN637aqLYxiGh~X4IWWgc6pKSlJIAn9HStDC8GZV1bIQe7BbOfpqB~fr1159u4CxNNiALsWhkGDVs98qa9d-o~~3ZIOi0ZQhuNlOas~S3A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.语法高亮
 	  在受防护的代码块之前的`反引号旁边`，`指定`一种`语言`
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-50-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad7a4ecb02-5163-42cc-8dfb-2f63fddf55a32022_07_20_Screenshot%20from%202022-07-20%2010-50-21.png?Expires=4811885452&Signature=KMb1UF~wDyCWdPAKeaDSPkUjsKJ~HMYFGR1qBsWqe3X0btjT9bYRN3XK0xPf4ZwaeUOItsR3bvpk2xhle1lcm188-5d04RlW-~0AZLTItvTS-lgTWdqP56T2Hro4LQJQOdi5XMjP2wVUIoxxcyMKBU7lSfB9jMupV8MdI1WzCwJYacinVdTzwp2gXavMfarumK8GicsV1CgDNhaP7ML7PcKBzfY5YjpYXHwbNdXS-bhjwn1JHS~wkVDEG1rlmIqWI2-H6AVry94eX2GgbmqFB1gTH0If8x6EC2vzwXUM9-ha4hBY2qQFhvWMGfPeQ6u8xUd3FW-QI8fJbzaur1gpXw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ```json
 		  {
