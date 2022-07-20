@@ -4,7 +4,8 @@
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 09-58-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcab53e4c-293c-41e5-b1a9-aeba763c23502022_07_20_Screenshot%20from%202022-07-20%2009-58-59.png?Expires=4811882364&Signature=NXYOCDX1m80m09KyX6CaArWJUIFfqgpQNiKTllbYG~dc0HTqdBpMti8GRhgcWiEs~Ch9tfg-ZXXpWW5uX3qnSQXVvoOqkWUZnDoeG2Kw4x300I3WuYKuVfzgqF~ZTy1wVNAJPzkEq7SFzh8WSsxpoQuhRp-zSdXIXWdJypVZvLfPkta9zdS1jLyipnqTkTnCU~vOtVC4clGdGXlecYcJ7OUiMvr5w~EoOIbuCYi5j3LyQeyCIUIBNfFMS7NtMQ87UegAGGF2kWPKwOGtPGXRyPukUgJiim6~p0tHP4jQMtTUY34c7uE61~CuBhuUs9abOR-q4U-yDBeaWIt1EkrXfQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***
+	- ***预览***  
+	  ![2022_07_20_Screenshot from 2022-07-20 10-00-00.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad06e880ee-4124-404d-9e46-1499b7933a1f2022_07_20_Screenshot%20from%202022-07-20%2010-00-00.png?Expires=4811882417&Signature=kBqZ74Kr2N90bH8FrRoZma4y4flevZOLEvyMKNnzwYpDp8xKMohLJHnJmukcqLDrJi~NjLUzWQtmcpd2FhG8wvUgfIo8fhvwQNSs3XnS7c7Yu3IavQHsiqz7eVh-6yZRs-09uFYoATWm55IY~xlz3yeO1flO6QS~7y2YPa8lKS~NX0cIavNHKt4UxNde15Uni1fxszYi3FG9UpXXG0o61frslCo66FfII44PK2dtCq~6dbCkYWyfs4es-8E50lFVxNWkV5rIUV4pWnITbHtEE6FIZgMZl-iV-ldCsjcXsZxOCtMHgyPcHk~xnqi81bq-w9bZMyNSCG0XO-F4kBtHeA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 段落语法
   使用`空白行`，将一行或多行文本进行分隔。
 	- ***写法***  
