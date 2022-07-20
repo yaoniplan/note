@@ -79,8 +79,7 @@
 	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-26-47.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2646ffff-bb43-45b9-83b6-1ce81e0b51a32022_07_20_Screenshot%20from%202022-07-20%2014-26-47.png?Expires=4811898549&Signature=ZwlWJ535nbnTcvC5hVdQfdqdXYHYhTb8dCbdLqFWGjsyLdWuHg4ieGTm6LGpD-jhfm6X-byM~Ay3wuEg36jXuAUMuRYfHgUbjLgTmN80VH0H48LHKZWjCOIgs1Cp-V23wJVb3PJkpDhXVV0ESfceCXOeIkgewuixyP06hECmTgDOZ9AhnewMpLE2aaufWugxtDIav9PnaFogPvqz8G5wXljfovw48-kodPyAgFNbgoSyVJBmsXy7skfX7hoX2JqVrInni7GyxeJYZO4FfWIf193exsuElc7owooncDeGn7UKJvNgUNgkA6BLUCE-Yg27F0vTxE7bwlNbU4Kd8NivAw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-30-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1d7b02e8-52d7-45da-b059-4839fe5c0e002022_07_20_Screenshot%20from%202022-07-20%2010-30-28.png?Expires=4811884619&Signature=TYAAXauPCKEC17jFiZFFJvpT-wPGd2HFY6IfnCwTFYAFgQX~Y0zGtiIVRWHWxwOrZ59IrxuQDgHlnpRz07WKLKqcXercSL7Cff6lt8rYmJDJGg3DvTkYt4PyheZtGPWkmFrHMwVt51nL2un7M3iSuD6DGh6uQFk-whO9nR2EPDtUZvfLMmL2s37LGR1pCanY1ZzGiJ4wvH~xFi4CaDr6xAgxkHqxDglE21CG7RlVB-mI7XCO7eluG6Vk8BBm84qyRM~AaRduKUwg7M9K5~QQhCQxPvNs9bGh99Ya7Vj4JbttJj~C-203UCh0uuhXytLn9WEvR~IGPLPB4PUMh2ZnWA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
