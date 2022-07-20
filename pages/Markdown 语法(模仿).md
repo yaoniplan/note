@@ -149,7 +149,7 @@
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-57-32.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3bd68a01-2a82-4c40-b319-d6e77fb8da7e2022_07_20_Screenshot%20from%202022-07-20%2010-57-32.png?Expires=4811885902&Signature=JY2CgBIwCv7gikQtYHnKb2SiDAHrH3W7iLDrKp6A1Jc~Jl9bl74opyBMKbIkJ0zPj4-BnbO6UzXzC5vwBmMULLN9cyxiAQbYxiPT0cnBunM5fiqLxf85amsnS~SjM7U548Ojcj66NuDI5chgFwTOqFUo969bJAHaUUpFIbwG5vIJ8T0t9RHYPdeCKrid6isBQgoGe7oXJkQwRV1T3wmLIJedvEjBDMe6njKxWR0wnXKN4ffRH3TP78To6ZnFQrMQHbHYv7~Q5bEpPeRaaIydpCt4H8p~vawllY~wsCSYfA5bnBOjB6vbwtN3oT0VkQoTTsO7Znid0kuFhFASVJFI6A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  这是一个链接 [Markdown语法](https://markdown.com.cn "最好的markdown教程")。
+		  ![2022_07_20_Screenshot from 2022-07-20 10-58-09.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade27a7733-e720-41d7-b85a-b27d67d194692022_07_20_Screenshot%20from%202022-07-20%2010-58-09.png?Expires=4811885924&Signature=Y~vj2E4CAi90xCSM~i~Rh~gyILio9nh~mcR2pQd2dDqd7PVX4Rd-khyn7Mmp2JYexdiRYJfNh0~W4rmcT~89UryB-9nv54RJiEjLggWlOytXCMXQgeksMihHZ3lGkpNq64TPs~xWcOO0M27-WpBN3JTamHLrb9ka0V7uHl5aYpLq7O9cKbLv0WaGlJUOE40m28EJHJgVHwtYU0b9N3dOiw0AVMDbU4rs7niZFoY65qaXyGHDu9fnwGiHNWSNw3YsoqwIhDRQ8EUAMVUvI1yN11b1uFtzrBWL7idh9p8nQnGywRZ5Cb2piieAc9VFI5RGnD-HxOH2t9Xw6sxMbC-JmQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 		- ***写法***  
