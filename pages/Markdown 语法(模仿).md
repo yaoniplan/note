@@ -137,14 +137,14 @@
 	- ***预览***  
 	  ![2022_07_20_Screenshot from 2022-07-20 10-53-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3f46def5-9fe7-48c6-b2ca-1e987723d2662022_07_20_Screenshot%20from%202022-07-20%2010-53-24.png?Expires=4811885645&Signature=GCI7W8O3KmH~MOrlW0c1NmF0qXRa20vcgWi5OyaojPryV5L8Jpp9215VjLGCQD2x6h2eBcfTDA3PfL6IkWPVBSNMn72zDlsxfk-diRleB9JjZV8B-iAj2BbmmUkE~w23AN8AVMmDjfHzFuiqz4xsqFGxqM8N8rVZ2VUOvlo6e8x0EBc0aERUvd31e~HlUcDiSVEi0HbjtTwZQnD0t9Tz9JfNxFqm3jiexCzkDfuifqEUh8~a0WlibbM3bEkG8CHA4sfmbBlvPsRyM~EhNkD8vW1DnVgDn06X0TqQ3bFm1HbCdwkfQ44~nDhpYm2NBfH4ujy8kQgZlMPyQbmSLc2mcQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 链接语法
-	- ## 超链接
+	- ## 1.超链接
 	  链接文本放在方括号内，链接地址放在后面的圆括号中。  
 	  `[超链接显示名](超链接地址)`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-59-13.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addd028a10-87e2-4ab2-a19d-58a02b4e7a5f2022_07_20_Screenshot%20from%202022-07-20%2013-59-13.png?Expires=4811896806&Signature=amExefqJdt6F-RiWcd~u2NQqZdsOnlKDsUQn3zpYWch0AZEUF9zPBb90AAD9uGwy~z-8fkhxWe4C7T66mqG46GqWoHU~g2stUFY~MSvBnGT~tvcQn4Eh7Qq8VYMyl7Ndeyw7AlyS08K3HqfLZ7-~ILJifblNesfVqBdtIwbNcVEFk2g1cjgwKbcOZSTN-zrNVZuJqMUEB5vbelAf-wuFDr5g7j1zMiszEP7BEpTgfjxCXQKZc-L0zRwDyxG5TRqbaElDwRbXR2YKOi1QQ2ypF5-GWFKTduOLzRHOt14vuoYNHmNViKqSUs4rBv8of-SUtV3VgNFWseM5mkbegwRzMA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-59-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8343d82a-bcef-4d7e-a319-2a5c26786ad42022_07_20_Screenshot%20from%202022-07-20%2013-59-34.png?Expires=4811896859&Signature=GXGoPEHvMJzOJUnRFFZeSKa-6Wa~T2PRKXF6VK4ow3I1sl-Zl5Jt75mK5PmbwPx1nSDwV~jBKOW0DAkoLm9~6ABmuwZw~5Bc9EqCYHtDZO58hvk~afCmJzNI9tnnjB44tZ4vLvxjc3W~Qu4HijbM4qnnZ4bM8oBbWEwj3wd-~rfMf1YSA8vXvJCA9rdCDAWXRvTGPBIlHkllO3aVqJoI-A~SNPpLOIhMAAXxEQb0Nu7gPj18n3xvryj3zMooCBL6Nc~daWMYGLLRBKKROuQ7rTelu37MlqQQc-3pqc4eQpEzZ~Dbl7eztwbYTJNaheSNeYx0HAOZTwq448gYug5CNg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 加 Title 的超链接  
+	- ## 2.加 Title 的超链接  
 	  title放在圆括号中链接地址的`后面`，并且跟链接地址之间以`空格`分隔。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade29ce167-5bed-4cf8-9f8f-3e82da8f46482022_07_20_Screenshot%20from%202022-07-20%2014-01-19.png?Expires=4811896938&Signature=Ilz48QTZbOno69YA6IV5~sPsFVD6buEs8ltV0nE301tHnUTOSvOeXdwWBA5A1k3pnUAeWQCrWarCuyyL~meyWT0pnpRzW06CKdh1yoPjuGLsTCDBd0Sdjw~qv-vvwl-A7Lcj~5AUKgGhnM8Z5pFsCR3UH37qehEZJRkcc-Wu-r3sHSsTQ4R3QJq4kIIcycdvPeBcVoXyNQFfwE05Va9fLc~6mB56GHgGY3-imJZ2pfCzb6HMz9w0aQiJNX1-8FMXW2NEFtq3BiPoXmn~-b9uR0cjZIVl3UeSJHQ8J3~EdJ~Df2CmrLnKO6xiwDifqDXjOdCQkZiUFKS6~3Rt3RVUFw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
