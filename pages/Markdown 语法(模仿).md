@@ -19,19 +19,19 @@
 	- ***预览***  
 	  ![2022_07_20_Screenshot from 2022-07-20 10-04-41.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad43bb7131-4166-404d-8c56-8c05ae9550f92022_07_20_Screenshot%20from%202022-07-20%2010-04-41.png?Expires=4811882698&Signature=FKflW-GK~~mp4bH38LR2fawsg-ymy-CCI5G1X4BYKqhpBJiMr3BxyHeN0LcXVHT3RCFCA0S4M8eg1XBXKehRt7gv0tKbQgCwQXKmnffv4T1OK3yPJKYJvAIipdT75iZyNnWjVOjDhZWOBdsNZZ-ybop-vhTxy6TNfr8WNDkhW5BdU6mpVrPrj0EDvyOXEYEEhBz7HxeLYeYuG3xFkUVZuaCmsoRpjy5wgMfhvhcpQ~6ueRRzBoejxuFsNDzVjYwYyj5RAf06bp5s05qH~j-wRGD7cEyIz-TGU3hjMXdZlK0nRi1UgHJOa6p7BX94WpxSJHRIMxVYYE1T-E-ZnGuNzQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 强调语法
-	- ## 1. 粗体
+	- ## 1.粗体
 	  在要强调部分的前后，各添加`**`(两个星号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-06-13.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1a816527-443d-4dbc-a652-82207e3845fb2022_07_20_Screenshot%20from%202022-07-20%2010-06-13.png?Expires=4811882806&Signature=ZOh1eb1asbo3y6aFcbWhhhI7fN-E0t00a5L9qkGm0XheaYvfsng18dQGqWjuWhLrIVS4EAaZR0DSQNjuHK-MqnD4W3ZcrwSLkmQt6dJH9CfN3sYxWUDMyjL9E76a44Y~sGExdqeyXogWzr9zktsvGBRgimx1qXC-7g2nv1Tggppm7LjQZ4O2lEAMyXO7-hnyiOQv8oTNvZM~Ujzhr~Y-T2t6KflkrA-I4FVHWmArQS5CkarC4YeXt9PHxiUe~5YBQ~OQEl38ttUxgEBHoh9wr20uu-sQfF2qov9busn41E-FyYV1EdjMqE3Q5ZLE5G4wMvqtQJCk6bA4oy9CaqcR6Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-06-35.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0d68c740-d694-4265-b135-0578a90c83aa2022_07_20_Screenshot%20from%202022-07-20%2010-06-35.png?Expires=4811882824&Signature=EJ5zQcMGDFg2KZjiE8EAhDheriWe1kEKYj6ALyvUyV9GGXVcOCqOvlI8GhwYHxePuwhdGqK~jVtjRzqJYJ6sm-EGggAxp1u123x-DqsV9AbuDoAuqTOZkokYghUQ6GilG1WyYnyEd0y6FgQ6Fyj9KlTgFFYpv5ceCa4WScIBPBtwvc9LRUkf~mXO0RGV11jS7bLUxy5J7oznTvD3IP7O0azi12nOp-0JrZIs0ceNfbSdn0M-JLqFDeLFusLxj4EbKtgperftZjiu4r-NaLacGrDbIO9YAyq0kWQx0MxSrN8FKwmNsyY57zcRKrRBOHgQYzxIj45tRmyjono1p8k46w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 2. 斜体
+	- ## 2.斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-07-33.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4bbc7e91-8be9-4537-85e2-9191355149542022_07_20_Screenshot%20from%202022-07-20%2010-07-33.png?Expires=4811882895&Signature=k6wX1ewnC8-9C0i1fCdVFkcWJzkYwVR0bD6iJasGRSnp8LCl4eIQudu4Nr1xYKwPoTT7cA9Rq9vBGv9~V00-oc5wd4hy14ETSYrcaQsschzU9fwbek93WBgMxYs8JWaia2QejY~KnmAgimjA73lBijJ1iJIccXFH8Vrr1kuV6kJ6mOa5eQk~EAjZmQpAcLy~KPgsX77CJpsdcEHJZpUY80Ez2EHwlaegkl35FO6QrSwbI8AYHFYNYmNiX3ge~hwfofHHdS5gXGLrAdydcJpJa95gXQJQclm2EEUEqqLB8lgcixwjzvtIZLXV-IM~VN6Io-bYX33OJKUu69rgabCg9g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-07-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9f0d024a-0627-401a-b61b-27ea953a820f2022_07_20_Screenshot%20from%202022-07-20%2010-07-53.png?Expires=4811882908&Signature=kY~ojbE2-5DDX~X7yigySV2R7N9jSnsyDM0XylnsO9JA2RF5TrCRmh0HQKgHbp9fbT~NHq3AHPcgwsOIl84K6KlHJcbq5o2FCu5nVsqS-~gog2GYoQ0g23TnJvsZVFRxGcbeJGYUsiTcVYMfzP5hjQdD3NvkrT7hPT-e-wYLGEOqAhgKSEhO0ycq7xA2AXBPiFswBjQDpQ-RBuT99HsUi6~Z2SQWktrw8w6qiS6Cn0gwefYcUCfX5a~cyw68puIXmdVaVtg40ZgH7JPDcGl57hr5rOAuwhfVDYxy1f60~Wg1oDQ116f2Wpf1ksuj1m5q34Z5mhT953dAEwyCLNcxyw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 3. 粗体和斜体
+	- ## 3.粗体和斜体
 	  在要强调部分的前后，各添加`***`(三个星号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-09-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad46afd60e-5bf4-4b9d-8e82-a380b7cec5ed2022_07_20_Screenshot%20from%202022-07-20%2010-09-16.png?Expires=4811882989&Signature=Evt9MXWpsnLk1ffhFWfrd5wJg0YT84EM5xWS6kDXNqvkFinkWODmnIxc1RZIBkNgjF0hqVM5lrVWgJBis-xdERP74sF~7wyKxwtGwRhkNMbGtZHoEwOjDmHTXLpFNDVnXx0muxc~lZrnowZ8qb29e8y445jfF-~CkS6E1sW49X3dDCJkfE0VeOpAPOY6mUflFL5PQ1YZBdD3QhR7N5DlM~ZegEBJr-YX7-FW78YV6Pefh6j~V8kMqHVjLOa~0SjIi1kLAYS0bG~-XbojDPONcYOEiSY6~h6Az8BineXQjChOm2jgO7By6Da6GFyhoKJjyUCQI6ixW6Bc1xDUPy2i3g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
