@@ -148,7 +148,8 @@
 	  title放在圆括号中链接地址的`后面`，并且跟链接地址之间以`空格`分隔。
 		- ***写法***  
 		  这是一个链接 \[Markdown语法]\(\https://markdown.com.cn \"最好的markdown教程")。
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-55-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3723e8ac-ae80-440e-8d6e-fddc1d8bcc592022_07_20_Screenshot%20from%202022-07-20%2010-55-39.png?Expires=4811885759&Signature=d~C5IqinT81hiIIiWveBGyOcvLB0xjTWNI6jzmwuP8TFEF1PZBjWqdxORYJ2p6O~BWDJJDK8DrEL3vrI~cVWYWc8rIT8s2ItkrCYI78EZFoIKi5CbjLMzUFaQ2YFYPX9LY1zgVLgdWV~UhGYBmZUnHlgKGLtaFCYu-tzEcaE2hGsJMwYa1dMocmPPzv0i64ozwUzX2mZHok73V92yAeaIEapuK4W~DXJL1n2KWJleE5il6X3H83GUTMK8VH-vvBbxdQEn0Prp9ke5ajrd93bENP99D9R8J37iik9fmouVMT6hW6-4lh-ni3c4Py2BGqhwRxPvW6nJb1ieu4VupMBjg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 		- ***写法***  
