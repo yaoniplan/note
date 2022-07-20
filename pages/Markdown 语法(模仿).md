@@ -77,13 +77,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-30-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1d7b02e8-52d7-45da-b059-4839fe5c0e002022_07_20_Screenshot%20from%202022-07-20%2010-30-28.png?Expires=4811884619&Signature=TYAAXauPCKEC17jFiZFFJvpT-wPGd2HFY6IfnCwTFYAFgQX~Y0zGtiIVRWHWxwOrZ59IrxuQDgHlnpRz07WKLKqcXercSL7Cff6lt8rYmJDJGg3DvTkYt4PyheZtGPWkmFrHMwVt51nL2un7M3iSuD6DGh6uQFk-whO9nR2EPDtUZvfLMmL2s37LGR1pCanY1ZzGiJ4wvH~xFi4CaDr6xAgxkHqxDglE21CG7RlVB-mI7XCO7eluG6Vk8BBm84qyRM~AaRduKUwg7M9K5~QQhCQxPvNs9bGh99Ya7Vj4JbttJj~C-203UCh0uuhXytLn9WEvR~IGPLPB4PUMh2ZnWA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进`四个空格`或`一个制表符`
-		- ***写法***  
-		  \-This is the first list item.  
-		  \-Here's the second list item.  
-		  
-		  \    I need to add another paragraph below the second list item.  
-		  
-		  \-And here's the third list item.
+		- ***写法***
 		- ***预览***  
 		  -This is the first list item.  
 		  -Here's the second list item.  
