@@ -132,12 +132,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-50-38.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9557bc29-ba61-4154-b51e-edfcc377c9ef2022_07_20_Screenshot%20from%202022-07-20%2010-50-38.png?Expires=4811885472&Signature=IjUIlOsHNOU9fx7H7FKURzWdHdAw11vQML0d~JIjp1pToPXMpM86-bZWfIZHHWqgOTlp0xZaeOKEAZx4psQVMb~R10HGGG-04DTw8ZTfLMQ7V-cILS23Zry51RO-IU6nrcS9uNfNEZZribT-FZZu2WCQ7Fspn~Joib4Z-Q6klMgRwCpYSwvTwyfeaExD~cQu05IPWJN9mZJKxnGHt611M3Y7oePTOG7PD5MW-7sDqQfhSoTlq~xl08PyFHzH~Pp6xhJVZkz0bNHXFdk-bYXr~GZkJXfdji8MyYjXDUbbgWykVCyChsZC4rjY8IRscWk6ZFHUWH3nwdYp7N-t6wbQiQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 分隔线语法
   在单独一行上，使用三个`星号`(\*\*\*)、`破折号`(\-\-\-)或`下划线`(\_\_\_)
-	- ***写法***  
-	  Try to put a blank line before...
-	  
-	  \-\-\-
-	  
-	  ...and after a horizontal rule.
+	- ***写法***
 	- ***预览***  
 	  Try to put a blank line before...
 	  
