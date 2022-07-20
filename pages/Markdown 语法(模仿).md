@@ -102,19 +102,8 @@
 	- ## 在列表中嵌套列表
 	  将列表缩进`四个空格`或`一个制表符`
 		- ***写法***  
-		  \1.First item  
-		  \2.Second item  
-		  \3.Third item  
-		      \-Indented item  
-		      \-Indented item  
-		  \4.Fourth item
-		- ***预览***  
-		  1.First item  
-		  2.Second item  
-		  3.Third item  
-		      -Indented item  
-		      -Indented item  
-		  4.Fourth item
+		  ![2022_07_20_Screenshot from 2022-07-20 10-43-00.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9af1e6c7-428e-45b5-9a28-faac28b484e42022_07_20_Screenshot%20from%202022-07-20%2010-43-00.png?Expires=4811885126&Signature=ajidzUw50HC4VcDFcZJ~XRtuCynwuamaB66GIyrOgFyqN9k1wRTIwFZHwDV15~d2CicQkh6gAr5Jz~dP7mFsm3JLWTVNn6opXZajm9xB6~ktN2hJJ5jiaBu2gp4VVi-a--g0kXD1ciBV6CLS1ac2dDqknMtKaM7xGsEzQR~y~Y7LSK13SZrTRkdQHJU6qrTLlvEZGMHZgYWU2VcDDq-0EcIYTcL69AgnYl~eT7UcJXfByVvlINqkuhi04h8mD~LdWWfC9PfX5l1U3fkAfmXFIgw3i5D51JIgPPhuTKMaH3xGvaMjXGqFORqW9CbVLI-9BHNdMZT0zxtKUJydxsWvhw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 - # 代码语法
 	- ## 1.单词或短语代码
 	  将单词或短语包裹在`反引号`(`)中。
