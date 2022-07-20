@@ -85,7 +85,8 @@
 	  同样的，将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-37-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add0c96b1d-677b-4b1c-ba44-2162f27bba9f2022_07_20_Screenshot%20from%202022-07-20%2010-37-58.png?Expires=4811884711&Signature=cNKPDP4Xl7a71aQRbr~25458jwUbKSavRCRembgbyNGV3y5rnvAF8xrzPnKNgKomw~ZpJEq7eKPNfbkFAZnA-sVPeHy4rNN3feru8qth8Khs~y1od1BYKthXCWt74jSRgMsEVO9TlM6c~BP4Buo~lTHDxbEJLDtuX4zH~FJ5tAMfCSYwYHcZt~e3TfzyoMG9TZJMsaZkQ73NoOf2FkPxKuIcA7Jqn9p~mVwhxMhzawAwfDdMNG62atGyW4k6muEH67ULS-DMe9Tb9EaHxMGfC7bbfy4eejzIctYQEUdGbogJEjbh74TsLw64SDrGFr7GRxkkVaFpGYE0SubcLvRWaA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-38-09.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad96255667-f23d-4cf2-8686-d0ed23cdb6e42022_07_20_Screenshot%20from%202022-07-20%2010-38-09.png?Expires=4811884730&Signature=mrX1IV~HvdLVhBO0fdFB7gLt9L1KpWLmiV3H3RKRRxOCEwodUUDE-AVO2d7Fj1IoNnxKR6z~YOukjBzz2s1UYKpczQYMeA9Umx94O8r5kgjqkAu7iBxkoyJGk8Pd8HMOOmwWS~uXA81mGZAq5tgiplIi~UirP0sPY~o9KRgwOkNT-X-xg8qxH01xuc~E0FQRTlv3fg6KBm5xkp-RqNenST7IOqeuXZW4gnUbw53P4IIuyqASA~6QVzRLvB6hzlNKiYRliGrzWNREf1n5IbGfgBRct42DMophnvXXcYVoQ5dln-6yC706A7WHvDGMz~ZibAXOWqXJqM8m3ra28xHggA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 5.在列表中嵌套代码块
 	  将代码块缩进`八个空格`或`两个制表符`
 		- ***写法***  
