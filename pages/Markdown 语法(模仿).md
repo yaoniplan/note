@@ -168,8 +168,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade29ce167-5bed-4cf8-9f8f-3e82da8f46482022_07_20_Screenshot%20from%202022-07-20%2014-01-19.png?Expires=4811896938&Signature=Ilz48QTZbOno69YA6IV5~sPsFVD6buEs8ltV0nE301tHnUTOSvOeXdwWBA5A1k3pnUAeWQCrWarCuyyL~meyWT0pnpRzW06CKdh1yoPjuGLsTCDBd0Sdjw~qv-vvwl-A7Lcj~5AUKgGhnM8Z5pFsCR3UH37qehEZJRkcc-Wu-r3sHSsTQ4R3QJq4kIIcycdvPeBcVoXyNQFfwE05Va9fLc~6mB56GHgGY3-imJZ2pfCzb6HMz9w0aQiJNX1-8FMXW2NEFtq3BiPoXmn~-b9uR0cjZIVl3UeSJHQ8J3~EdJ~Df2CmrLnKO6xiwDifqDXjOdCQkZiUFKS6~3Rt3RVUFw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-01-50.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfcc3a257-7509-46ba-aec1-8b2a960f45252022_07_20_Screenshot%20from%202022-07-20%2014-01-50.png?Expires=4811896962&Signature=M6HVphYOg2BWGIj8pywYrKOHom7Ul8zJ~ajvJ-1-YEo8~MjdGAhNHgqvhz-FrFLt08VdcV3spiFd0uZ3bOxCIHJecs7JOcZqI7is12jXIv0KYC~bOwj~bM7UmoB7iirtiNNwGBp3WDVMtM3Yg-s8FAQaZrDClrRh7Xg8lsM5hFdnGFXuHUwH1nUJVErQglfPU6x9N5IMyovjWdHD1jaYiZZnp-yPg8RrcvSSl3K0XDSaZRM-x2S~owwKkwBc8ghv1WsTUksqgpT7DyNgiDEexjK0yRuBWFpYg-CwLjcmRLDnbNOKShKDsq3rB4tqmmBkQ3wwJXycJFWNIpg2NlnM8w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 3.方便的超链接
-		- ### 简化的超链接  
+	- ## 3.简化的超链接
+		- ### 简化一点的超链接  
 		  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 			- ***写法***  
 			  ![2022_07_20_Screenshot from 2022-07-20 14-02-44.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addf8221e2-cfce-4f2a-aa19-ecbb04c98cd22022_07_20_Screenshot%20from%202022-07-20%2014-02-44.png?Expires=4811897006&Signature=DrYAciOWoTx7eIbNPxS~HgNwFbTmGR1ZVvtTMuuVqGq4lwTu32~iNkjfi-Ul66avLxynF-B73kaH45A6NXv0dimvaFKENrk8MwEWscrXeM~r5vQs5EqyN0pnAwAdDYWGHy9Y9iglaJdJg6QXYdj3pn6DTak9Duz5fv8ODvrkgY69SgXYM5rUw1pZwN50i7cixGIZRFZGzuPVdhskx89XacO1hY7wSR53dXzAdBICUsHwiYfyZdZHFYW3K3M8snkzOTgL3TF723eWiASSMeqGir53fY98xNqfGLrnbSKsQeMaF-2GFVJvJB6N2ikTT6bxLeVO0sWTm8wnh1Umvq-MUw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
