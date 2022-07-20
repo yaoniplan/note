@@ -48,7 +48,8 @@
 	  在段落之间的空白行，添加`>`(大于号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-20-54.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb924dc0a-09ab-412a-a31f-713d8c5ab5082022_07_20_Screenshot%20from%202022-07-20%2010-20-54.png?Expires=4811883685&Signature=hjQGVx9H2sC4nG2gq8A3JsS42sOLBlPPow-UPBWrYl~T-NXz3uKw-rT-CjxW7Idv9maG1BRKVnjx6v6XnaPBTnMukwSHeGowJw9GoOMWQs8vZ5D5k2VsArZcqbgm-rEIQ4OhixPqsqXEMKj1gmt-AD9cWVOQd4ZKwVdKmMG5DFke4kMAJy7hPYS~oQ6h9TKVIT1PwT5sYOSeFSEON-Cu0RLS2-hVcGuF9W2uF~mllLMDwOYEybzP929cNs3aAn~qGrRWbPUOP50DII78YKD4zJJmud4oBOKATCiLBZoXat0W3-obaXplS6K-ujfYyYDQGUIWZCyZ7bKJGHLcK2Tg9Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***效果***
+		- ***效果***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-21-12.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcb59fd56-352d-4a60-b523-7f28c24e1eec2022_07_20_Screenshot%20from%202022-07-20%2010-21-12.png?Expires=4811883710&Signature=DOjo~J3Ufv7EMaIqudpX-1DSurwLvsu5qoeO5R9rJ8Vl6m9RkneMeTcuw-kiCc84rFRmmaNmBjQdCCt~FGdcOAGO0qSAKZ65-V0~YhOSB0OP0lbSICH0C-IyjFaAggV0AU2UaITxehDV96X-uBjN0xLfeujYtL4ftpfONfIiw1YPSUeIe6KP-qrF0bP9rlX2DRHNgdthd~G5dVNHJqATQUzDSzh3GAFIC-L4UhlqAjxVPVp9N-J-jZ8coZEg~kcmV4dzRlhsZvUVR~783dC6z6lR2ZoAB75czxOMXX64NmL2tcWf0vmc0Tp8MX7b~ePfMTBh2bQMpCFPYyROchdR4Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3.嵌套块引用
 	  在要嵌套的段落前，添加`>>`(两个大于号)。
 		- ***写法***  
