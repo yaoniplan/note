@@ -40,8 +40,7 @@
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
-		- ***写法***  
-		  \>Dorothy followed her through many of the beautiful rooms in her castle.
+		- ***写法***
 		- ***预览***  
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.
