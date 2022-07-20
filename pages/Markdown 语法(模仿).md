@@ -46,10 +46,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-12-11.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adffca5328-5ef4-4a15-a1a4-46c4c3f2fe4c2022_07_20_Screenshot%20from%202022-07-20%2010-12-11.png?Expires=4811883167&Signature=dfehYunjqoBBY8LZ7zCEX3HXcHxTdXO3Qf9-jO~bLA9M8zZKpj5vefSTr1foTBjAJEjpK5mTpy6BhdXzbYiuLomXeSupD-WmtMg8A0vzVwMDtOrUkhQyHZm8dgh-g~VtCOixcWtxaL~6lp7Ev0twOnwajP2ppTumng322n~HsHLIbeEb4wOUe-eCJrpbTseiykISOnNFp5~SljJgxTOpUeo5t5db4uMLgidbRVZ3B7TJ4gHjGSt-DTyyLbeuwh7gRTybnj2ikM~1N3uy7gXeF6Hr7xQ3Dks0szjPR4D8HoytiNtZKummfbltdaY93q9TkShcU~~BM5-dz4e0IJeiEA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.多个段落的块引用
 	  在段落之间的空白行，添加`>`(大于号)。
-		- ***写法***  
-		  \>Dorothy followed her through many of the beautiful rooms in her castle.  
-		  \>  
-		  \>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+		- ***写法***
 		- ***效果***  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
 		  >  
