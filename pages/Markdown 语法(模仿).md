@@ -138,8 +138,8 @@
 	  ![2022_07_20_Screenshot from 2022-07-20 10-53-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3f46def5-9fe7-48c6-b2ca-1e987723d2662022_07_20_Screenshot%20from%202022-07-20%2010-53-24.png?Expires=4811885645&Signature=GCI7W8O3KmH~MOrlW0c1NmF0qXRa20vcgWi5OyaojPryV5L8Jpp9215VjLGCQD2x6h2eBcfTDA3PfL6IkWPVBSNMn72zDlsxfk-diRleB9JjZV8B-iAj2BbmmUkE~w23AN8AVMmDjfHzFuiqz4xsqFGxqM8N8rVZ2VUOvlo6e8x0EBc0aERUvd31e~HlUcDiSVEi0HbjtTwZQnD0t9Tz9JfNxFqm3jiexCzkDfuifqEUh8~a0WlibbM3bEkG8CHA4sfmbBlvPsRyM~EhNkD8vW1DnVgDn06X0TqQ3bFm1HbCdwkfQ44~nDhpYm2NBfH4ujy8kQgZlMPyQbmSLc2mcQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 链接语法
 	- ## 超链接
-	  链接文本放在方括号内，链接地址放在后面的圆括号中。
-	  \[`超链接显示名`]\(`超链接地址`)
+	  链接文本放在方括号内，链接地址放在后面的圆括号中。  
+	  `[超链接显示名](超链接地址)`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-55-14.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad13c1d87b-dfc3-43a3-8212-3ca3a32971fa2022_07_20_Screenshot%20from%202022-07-20%2010-55-14.png?Expires=4811885749&Signature=Q5AOE94ZLvyRb72o1dVZ5UalN6PpwbqrSCneb5c-b3gsVjIgsmjyPaES89APGe28m~HSUajwAGQUhYTMsYFHiSLgiEYls~bmxxnMgg3sRynQC-d9MioJwHfavftW2xpnjqIh8pQ3~4jrQeuWyOCH2i7hUkG1m7MAESvkhzU6ZNnXw326grvrtlMkSwepYWraJY~7TRg6fQMIYn93K73~L0kbIIDOsvnOvai7iGPe-6EXwh81rTxg8DXkWujygebaSkTABUxhYHeOXLnf1PbnetIBLSmULRSkrLarWk0tIAfm6Q-ibeSfxLXUiZOhvt4kmWCQudS2YzLV0i6hug3X5w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
