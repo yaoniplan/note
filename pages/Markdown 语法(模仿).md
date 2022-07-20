@@ -176,7 +176,10 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-03-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf2e88d97-2f3a-4647-87e1-a0489dc635962022_07_20_Screenshot%20from%202022-07-20%2014-03-34.png?Expires=4811897031&Signature=TrH73MGe~HnozwMLZyeAHTNKmJWt62K16SXQ9SRfG3zUuFVsUUrO1OmKOL5cKzUStbFTX4bolujl7HQC73kY5Zu19756meD8xhqp~SRirgwYNzbsgG2ovKusw08GpK9d1R-qwqAatlyAjQ5RsvA3xLlb7NiPak4VyrPGlnrgJlcwc7dYsfmJHzTf~5qvmDV3Te7Ere1SL8-GMqJEy~RHwGR4Ghv~FJHDzBUqGPcfMGMF1eK3qqPc23Y-KBGlQ~xin84nJTfySUPM06Rl4xFNVKh7aJj4~5XSF06on~xX31McAzsJsmTCg8zwVszeorPV4FHWbpoT8YqrNTtxr9YzXA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ### 更简化的超链接  
 		  因为markdown处理器会自动将URL转换为链接。所以请直接输入URL。
-			- ***参考***
+			- ***参考***  
+			  ![2022_07_20_Screenshot from 2022-07-20 15-43-42.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4fe038d3-5409-4a2e-a10e-3297b862036a2022_07_20_Screenshot%20from%202022-07-20%2015-43-42.png?Expires=4811903041&Signature=VEVY7UdHXXMkn6PIsBmvQYElzlfBLpoxPz6V5zLpiJ5Dwk4lkDbeE9kWjoAVV4jTQbbwFAkFAdEASLA0DgMn2TsbOt9pU1e-AwYy8~Z82dp3IlAld7MHUjESA-nQZkfhbttihJ61udyijGZwjwCVUuM2aQJvt7iTR7S79IhWYUJZ3Q5xpxZW2cxLj3W-R7RUC2HvjK1TM9kgTY3QivBsVy~GicvUeUDPdn5HD5JMN2pTIwJkfHwCIxNEmqXqbb8gSdWAvR98BqgvxJwlyDk0Tc4uCLfmENnQeVBRbW5YN81QHdol3I0Xu4HRZxm~fI9wtFbnNdql0Xb3fUUZgUqNUQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+			- ***预览***  
+			  ![2022_07_20_Screenshot from 2022-07-20 15-43-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad431ab74a-6ef2-4e24-ba06-70e95f954b652022_07_20_Screenshot%20from%202022-07-20%2015-43-49.png?Expires=4811903059&Signature=X-J5EjdniBlhslYYI4ddWQXTFN109xgIlfNifp9WHgJNllOaRk7UTvdfzCmneaU8ldxAEQwVac0Kll8XJnyb16bVZpgvzLqWdy6S5Ck1CTnDNWwpqh28HYGEgHCRGG-Qfrqbn1w3GvbI84iDH5xwby-GdBVxZRkDuEGuhGlSSHhj2hecYiqsNhsWFo3FT5twaRmiQl~FZUTGQkXYmeIgQ1YNg5zDIwWxcJ1LD9Iq3~N~KxSxhoM59V8aO1LiGkZBEl1TM8M94emif6pJsmDM~HZIsa4obUUvk4hvJwFR0pavH8FFUPK6zHrHgK37qzpvbCk0nJlOCsW1~QiOYoo5JA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.带格式化的超链接
 	  需要进行`实验`，以查看哪些元素有效。
 		- ***写法***  
