@@ -82,7 +82,7 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-26-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad21fb35ca-7e48-4600-a2d1-5c4bba879be62022_07_20_Screenshot%20from%202022-07-20%2014-26-55.png?Expires=4811898564&Signature=S3LQxT2hl~2PuYqiOnLffFVGRzH14ET3hFhNVdKuseECxdz72gL1OKCMB5SEIgjWmFJ3QYjTxkz87H6K3ZGvUq9sZmESvrcZz3wGP5qTv08bXHDwrsiyEYYiMFLCzYvXV0XOhCdj1WdYgkdCcGzfJAQMU36W7OWht9g2XRVWv~XMs~TCth7~mRyb~f8LP3I-thamQE-~yfsqQT24eo0UvLkY4-ScMpM1SyjjYvpv0GCBZu~OBc6CiUjPhAdtpZIu07LsIOTbo-qQUO5MwzT-LcGRO5apnOP3C0Fo-J-iy2ls4wnFfC9DUmu7GVCgQHLYCXeRa2HfyX02hgMH4XNTuw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 定义列表  
-	  在第一行键入术语
+	  在第一行键入术语。在下一行，键入一个冒号，后跟
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
