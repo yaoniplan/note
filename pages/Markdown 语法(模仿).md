@@ -41,7 +41,8 @@
 	  在单词前后，使用两个`波浪线`(~~)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-22-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad55b284d6-7e8d-4ec2-8a76-6c8de31c00462022_07_20_Screenshot%20from%202022-07-20%2014-22-59.png?Expires=4811898199&Signature=HypZVQoXzyBcKA2MBDS42~Uc4s6OengmtWsTPYaToOrXpK1xenKIJ9HSwom1DLWvh2~X-EfFV9XCdBqV5KdgVKaxADOalRsFxP9VmZR0Zgo11yu7cfQidHl5232pqccooI-~2r-9Hgn8QNdgtLznLxEwpC4UlN4QJ~M4nFup~3-7wlG0AhkK1Rb5ec0ttUAx7U9~qF8cPVFx0W3s006oUasRf4Tl~znuE~T0-bW5i24b8Modfbw475cGm1fNHZw1xQpOyv-3j5m3sdPYTFLgXYlLX-FmOk4B1X-adQ1KSQ9S5cMlVC4DQgJ6YVRU3WJ-9huZ085H-lPl-oOzOmKztg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-23-06.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad88bf6b36-227e-4655-a404-038ca665cc192022_07_20_Screenshot%20from%202022-07-20%2014-23-06.png?Expires=4811898223&Signature=JCtCILvTY6nPZDuq5XtfkGXzFkS3n7gLbCY3iTRuydZcSTnaFz1dL2CYD7etf~jcOhWTQAdMhEkthdcNjslyDTfJo1FNtHt-YaY2t93p2NUQaWoMxti1mQrG3WMG4xr3GSdxuxoPxmLU2FjqWyGDq6c7KkMEytBFLjKuDM72i0a-qDDT~1ZC6gPqEnNI8Na7C0bQgmN4cFq8Os1H7sGLaehZpjGlP132vqTqXwOAprmGJfZpOiY1A3d9Lb8IwkWaKl7aV~59Oqzpj9txnLGaSrlUfv-JmBc~0w6I~D84a73bnZmLTooJeSjNIR5bJBni4-0MMS8omZ3XMkpTvOtcAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
