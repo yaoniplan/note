@@ -187,8 +187,7 @@
 	  将图像的Markdown括在方括号中，然后将链接添加在圆括号中。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-43-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9c2979f5-93d9-4d01-9473-57149ac9a73f2022_07_20_Screenshot%20from%202022-07-20%2013-43-10.png?Expires=4811895807&Signature=hfhSwzFJQJ36QAg4d-UhQ36nb0RZ7-HkHLHFuDiha-iUQ4at04bZ02-lZsLoTnXReHp6jwmavx0icdALOvY9iJ1LEzS~~thz81iiIp9bZixZNM8e00Hy~zxEBg62~4Ciu6h0u87e1EwArH8I9ZPM9o~lVU1eGaSK4YFC7E1Cl2NWUNx2qiwgmu45dNPPo~ZtH9UI~sU-4FKXT9vYUTfU8IQicxSMQHqmPXtm6x~L9-OUon3mJPl0SS9MlGJ4qLCP00zgBxEP3dWLMeMwLInDoeqXqVUHb~UT~RiIZyc9fbRazZiexGgPJMModOdapvRHQzQwcMSotEZrY~sbJFudOQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 13-44-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6abd5b5f-1695-40d1-a4b7-214817229b2b2022_07_20_Screenshot%20from%202022-07-20%2013-44-16.png?Expires=4811895884&Signature=ec6be3BxzOSj~T9uQ5swR1hbLFa5q43wmZQmq4MSyz-sHl4yCU-I0JROszxy3LSJH4~J0PREhklw3bl5gkM6J6RB7Vjdchg5xUX3ml-2OWH3RjvZZwZw3fF-PMkLS9NieLB441AW-K~-NL7gZf9YtIVTX96m0KEwrNyLU~iNAEjP7KPR4FqCrE7g43IFiWZkANKiDiG00LI~lCBsRtrLxpq~V6HJlCV29bA5JvJ82UGwQwtDwfSBP1yMuAshrJEpWGk7zyf86uekp1CNNKa1WzPMn4fgqTUJnFQzOGt2QLYgF97ik~uFfiY-NrmAtG94i1BYYXaHuuHdpyOwt3uw5Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 - # 转义字符语法  
   在字符前面，添加`反斜杠`(`\`)。
 	- ***写法***  
