@@ -122,7 +122,8 @@
 	  在代码块之前和之后的行上，使用三个`反引号`(\`\`\`)
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-48-30.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf5b611af-8730-4d07-a268-3445b1ed84b12022_07_20_Screenshot%20from%202022-07-20%2010-48-30.png?Expires=4811885358&Signature=hFOuU5sKKWydYWRNRLHZcQ4dPJIe7xyF3yHyFI1XDGc90QsI9445bGb9eWQcjYXmRMMHW5jHMYxrXwp6Hy~TN~~FjlkPNhc9i3oF74ZL6DcMQ3CbF1kgkUPHVtUrcTFOnBwutpz~Z2JxkFOTi~vRXgVJzSWrzpZfqQvqzG5He2sqSBCE3h6QpReS216mEOjEbgupSVGdu1T1S43pvcdQ0vOislc2UW6-B5a02PhHIMepym5bA2xleg27pNHsbwfGZ~WETjmu07ClVe64yd-UAT26TV5bXrh1dL4Av8MOFbr-IEczWBnvA9A0ULCyb0MnhpfuQot4GC6e6mrApsvZ2A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-49-06.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb22cabe3-5780-4fe8-8914-4f8baa774e082022_07_20_Screenshot%20from%202022-07-20%2010-49-06.png?Expires=4811885379&Signature=IqH4Be1avyagCjthdxYdcmjkPt2OILp7Td14-2ApqTBfT3xBm0sGGSBvX28QguxpHt6ggKATfkSEANqO-cP1AFSg5QP-yb-x3ZIvjZbnCDh6iVsDvJfDs-Dt3feCwEe1xXLQ5k4bmmhXBC3b0jzzM~f41ZksKcrMLvOQz8VVFOLbWxJoMkus2mWih7fLWyKV3ekJ3-qIqTgySXFa~-7T1uVpdXCelhvf0GUEJBBrYhSmaN637aqLYxiGh~X4IWWgc6pKSlJIAn9HStDC8GZV1bIQe7BbOfpqB~fr1159u4CxNNiALsWhkGDVs98qa9d-o~~3ZIOi0ZQhuNlOas~S3A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.语法高亮
 	  在受防护的代码块之前的`反引号旁边`，`指定`一种`语言`
 		- ***写法***  
