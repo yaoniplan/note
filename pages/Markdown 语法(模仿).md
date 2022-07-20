@@ -140,7 +140,8 @@
   在单独一行上，使用三个`星号`(\*\*\*)、`破折号`(\-\-\-)或`下划线`(\_\_\_)
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 14-36-26.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad90ec3d06-43e1-464d-9dc7-7179c48e3efe2022_07_20_Screenshot%20from%202022-07-20%2014-36-26.png?Expires=4811899007&Signature=BKmqe5CMBj5HZB4UqzA7CFKjK5AOG2Uj9WSgi11TIUcFsWXq-UZro6QxB~8eKTuai0q6djPyZ8GDiljXZYF4NMAnHn6lS6bs22XZDyKgeQo~zJodW2dx3EyyO0Of7EP11JVzfbz0Lg4rGOfMkoq7D9zlWz9icqub1qaBX5D5Rai-KGkS475-tGCpZCDl6J49~Z68S7RVMj7b2prWGv0l0NXk~lYxzxGxgYLnCpcHJYLZgq9cq6PL9m5r9kd3WiOlsKEuLwsTC~QAE0sJ1dJlkRz5FACVG3wownZqc6-de2bxSHig0aUy5r5Jyshe70-s3rGDFdQxWvRKQfVjHxzljA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***
+	- ***预览***  
+	  ![2022_07_20_Screenshot from 2022-07-20 14-36-35.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad33443ebc-e8d6-47a4-9136-50645909ab562022_07_20_Screenshot%20from%202022-07-20%2014-36-35.png?Expires=4811899026&Signature=hif0qhdTSDWhAKAzl9IdTsXdzmCbP0Lt7pXJbKokkC73zvMMHOhvEfrwrkyKpxZZgbKknqOfHq1Ffo2TqBdyZ3IW2WORc909-J4APQcEWjoI4bMl7y6RTDpxHUSBfA9mz5066cP89ZcXmHXOOAxUg301xp~Y48~RGF~kNj7IQ1qt0DhsVtnXfCP-L2cOnrBrk6GrE9QTX~DKI0SmiSuV258B4EgrXL5QmgVQN6XfjDKSjg3OnZYMR6JWkbCVCyhECWXnzwtbOagHF-rC0LwvJv8PjcEPR7f0RczjL6fJnXdfgjxn5ZQN~yBKWFEbrEnDSxxDwAgsRDuv100ZF2NooA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 链接语法
 	- ## 1.超链接
 	  链接文本放在方括号内，链接地址放在后面的圆括号中。  
