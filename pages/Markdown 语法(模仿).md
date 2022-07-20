@@ -169,4 +169,5 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 11-59-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade952dabf-ea06-40e5-bc16-c4fb3c8d0e5d2022_07_20_Screenshot%20from%202022-07-20%2011-59-55.png?Expires=4811889651&Signature=Xm0U8-hEdWKhm2ntAhkWmtvWCsD4IzUTP0E7qF80HvXVWYPhw1HBl3k2hUTTybwOxpwKJCzWf6KNMExfoEnpP9QMeBuQChcsOwQ8IuMO12D8moh0Qu5xso1GGNdGtwfJhMXeqAGup5Pa5vVh3XMAxCBI9zcMecG6bH9eQmIxhSeZ9O85FcCqCslzR66~LYUzWncyyaJfHi3GtoXBuybus13ifjSuJ3QMITZE1JHzjwQu0PEP1cdk9lKonDusigSMOEAadkzwtFzI5wfRRdmLKoor1Ljfr7I8iTJ9CwwnyICyzKtj1XgwXokMh12v7bVHW8pBo5U7T2l-diPDNNp1wg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  (无)
-- # 图片语法
+- # 图片语法  
+  使用`感叹号`(!)，
