@@ -27,9 +27,10 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-06-35.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0d68c740-d694-4265-b135-0578a90c83aa2022_07_20_Screenshot%20from%202022-07-20%2010-06-35.png?Expires=4811882824&Signature=EJ5zQcMGDFg2KZjiE8EAhDheriWe1kEKYj6ALyvUyV9GGXVcOCqOvlI8GhwYHxePuwhdGqK~jVtjRzqJYJ6sm-EGggAxp1u123x-DqsV9AbuDoAuqTOZkokYghUQ6GilG1WyYnyEd0y6FgQ6Fyj9KlTgFFYpv5ceCa4WScIBPBtwvc9LRUkf~mXO0RGV11jS7bLUxy5J7oznTvD3IP7O0azi12nOp-0JrZIs0ceNfbSdn0M-JLqFDeLFusLxj4EbKtgperftZjiu4r-NaLacGrDbIO9YAyq0kWQx0MxSrN8FKwmNsyY57zcRKrRBOHgQYzxIj45tRmyjono1p8k46w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-07-33.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4bbc7e91-8be9-4537-85e2-9191355149542022_07_20_Screenshot%20from%202022-07-20%2010-07-33.png?Expires=4811882895&Signature=k6wX1ewnC8-9C0i1fCdVFkcWJzkYwVR0bD6iJasGRSnp8LCl4eIQudu4Nr1xYKwPoTT7cA9Rq9vBGv9~V00-oc5wd4hy14ETSYrcaQsschzU9fwbek93WBgMxYs8JWaia2QejY~KnmAgimjA73lBijJ1iJIccXFH8Vrr1kuV6kJ6mOa5eQk~EAjZmQpAcLy~KPgsX77CJpsdcEHJZpUY80Ez2EHwlaegkl35FO6QrSwbI8AYHFYNYmNiX3ge~hwfofHHdS5gXGLrAdydcJpJa95gXQJQclm2EEUEqqLB8lgcixwjzvtIZLXV-IM~VN6Io-bYX33OJKUu69rgabCg9g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  Italicized text is the *cat's meow*.
+		  ![2022_07_20_Screenshot from 2022-07-20 10-07-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9f0d024a-0627-401a-b61b-27ea953a820f2022_07_20_Screenshot%20from%202022-07-20%2010-07-53.png?Expires=4811882908&Signature=kY~ojbE2-5DDX~X7yigySV2R7N9jSnsyDM0XylnsO9JA2RF5TrCRmh0HQKgHbp9fbT~NHq3AHPcgwsOIl84K6KlHJcbq5o2FCu5nVsqS-~gog2GYoQ0g23TnJvsZVFRxGcbeJGYUsiTcVYMfzP5hjQdD3NvkrT7hPT-e-wYLGEOqAhgKSEhO0ycq7xA2AXBPiFswBjQDpQ-RBuT99HsUi6~Z2SQWktrw8w6qiS6Cn0gwefYcUCfX5a~cyw68puIXmdVaVtg40ZgH7JPDcGl57hr5rOAuwhfVDYxy1f60~Wg1oDQ116f2Wpf1ksuj1m5q34Z5mhT953dAEwyCLNcxyw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3. 粗体和斜体
 	  在要强调部分的前后，各添加`***`(三个星号)。
 		- ***写法***  
