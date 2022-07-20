@@ -14,13 +14,7 @@
 	  ![2022_07_20_Screenshot from 2022-07-20 10-01-06.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add5a9c3d0-3072-4df6-bb43-0a02c6ef5e402022_07_20_Screenshot%20from%202022-07-20%2010-01-06.png?Expires=4811882492&Signature=VhsABjifCFwfVNXQexBxnELw2lZnXvpH~v4tmyZ2LMm5kmPnrZtbyMXvO22FBJBC1Mrz8LFuzjIteVpFGxG3T4Dg08pbh70dmblW4atYlo3lEXHtQ1JPOVY~kZOtyXSAr-wCviBmDbH0oaC96hHUEsubtSTISK49F7o~~uJGiHaz5Uau0cf23koBH7uouukl72HU5NoKOsKSH-kKLXRtKtlOSGnbyZZvDf~PVQmOOBBAR3OdWB--pePcF5XlkgBD9vxVQVCPaCBJTURsRx2Es4dUz9SYm31hGSVixuwweprwmQeqNJdBP0g7dSNALa0yGNn4I0uV5GFvFAswieqAhg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 换行语法
   在结尾，添加`“结尾空格”`(两个空格+回车)或HTML`<br>`标签。
-	- ***写法***  
-	  First line with two spaces after.  
-	    
-	  And the next line.  
-	  
-	  First line with the HTML tag after.\<br>  
-	  And the next line.
+	- ***写法***
 	- ***预览***  
 	  First line with two spaces after.  
 	  
