@@ -152,9 +152,9 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-58-09.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade27a7733-e720-41d7-b85a-b27d67d194692022_07_20_Screenshot%20from%202022-07-20%2010-58-09.png?Expires=4811885924&Signature=Y~vj2E4CAi90xCSM~i~Rh~gyILio9nh~mcR2pQd2dDqd7PVX4Rd-khyn7Mmp2JYexdiRYJfNh0~W4rmcT~89UryB-9nv54RJiEjLggWlOytXCMXQgeksMihHZ3lGkpNq64TPs~xWcOO0M27-WpBN3JTamHLrb9ka0V7uHl5aYpLq7O9cKbLv0WaGlJUOE40m28EJHJgVHwtYU0b9N3dOiw0AVMDbU4rs7niZFoY65qaXyGHDu9fnwGiHNWSNw3YsoqwIhDRQ8EUAMVUvI1yN11b1uFtzrBWL7idh9p8nQnGywRZ5Cb2piieAc9VFI5RGnD-HxOH2t9Xw6sxMbC-JmQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 11-00-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adde5fcaff-edc6-46a9-8933-445b87c294722022_07_20_Screenshot%20from%202022-07-20%2011-00-53.png?Expires=4811886075&Signature=A8p4gX33sGE4vg50UFCONm4ID~hOp6Q1oEDcSvFLRXvm6S1WjUVyCDmoqX4oTLx9-2HSDMOqXTlLPb6Vi1GMJBJUAJKautOCIL70hOhaogX3zxBUAV3e~zN5BjWa4Ra0xdGG856im6yQ-E591rxWa9VuDi5L2iGpd45TzXk79i7iye81Ag8yAT8nKSdHQygJQyN0IOhoIDStmEo6-YP6OA9Rx9qHS-HPqXwwwh9PijPN5VGDBhQNV8jtIwQR8YWi7wSwwBkbslxTbVmYkeSi1LX5Jl2kBlFLixekDax~nsySL65hBoYDg6DKUg8Cmnzop9uN4IIs82qMW9Vs53enWw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  <https://markdown.com.cn>  
-		  <fake@example.com>
+		  ![2022_07_20_Screenshot from 2022-07-20 10-59-52.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add55f9ef2-1a8e-4fba-bc93-b4b5566132002022_07_20_Screenshot%20from%202022-07-20%2010-59-52.png?Expires=4811886092&Signature=dsT~-6MbBH6VMquwOmZcwkSwAj9kcoftf5E7ggEy028KI9AFhDFW8eaTflstpULpo1Ld9hhhvNXOenoACRjKixEx~6r83HHpk3EgHHQR9FXWpd-CVjtXybMFVRORG5AMurhUzmEI4~yoyjva9uvFx1Y5bokmWNLb5WttwjRYhfOu1pl-kELVVlwIEfFNx57vM0ZxIWAqzUrgqXp597Km8StyHJCsdTZ7CAZrwKb3aOO017vQWttXSY0ZRQZBdsbqW-R9Yyh~HwbhQ9~jrni82l8-mVG4sLn-7k2eVHxswvC3-KcANbzm8Ci8f5llXTagnOiSn99gwpoDwC9TGRnpFQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		-
 - ~~lanzou~~
