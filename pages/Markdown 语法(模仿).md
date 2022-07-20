@@ -95,8 +95,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-31-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add7945ca2-3dc6-45a2-80c2-62ce480192e22022_07_20_Screenshot%20from%202022-07-20%2014-31-16.png?Expires=4811898690&Signature=DJBtuRmbeM~iMX30nDrp~PJcN7Kz~ZQpqQ5l~TXIW6sA4N5qjdMjpbB7JEb1bCpp3g~p0BYu~fbdYSBQ55j2DfXMGXLVeTIpWogQlzeNP7EAD-g7leoCCx044A9-E2iFpDA5hm0yBczvBAQu0EhFVgeZpl3IIGlduYLTk~CYDRjpB-l48GvNVz4gmx9033BSld81cMcegBgunb~bfOMQS4ioBRpjmXKZM0AwOrRG-ZqAHHL0wEiV3dvRNiu3PKKTDDsYBHBOV9itMexu01vilQhxNwFae8ETflarMqHbwmzpvOYdFljm4nqFGYrmdZBiCjQD5Zr6a8pdV15QRGoB~A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 5.在列表中嵌套代码块
 	  将代码块缩进`八个空格`或`两个制表符`
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-39-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad378f0c5a-eace-4e30-91e5-1e0158147ae92022_07_20_Screenshot%20from%202022-07-20%2010-39-24.png?Expires=4811884807&Signature=QWV9IWk1VgHG2WkxCFp-6pUAS7UA7sqhXlKf3qlFDjHYIFTQj5uW-QKxvI8ohBDWaNMjnNVJAea2IxGqGoPANyib5pe0127mtqhkIWu3z7mfRO21T6hhP57qrxLBMOkdaUnVnJImFwT4m~o3dn6ZBYH8yc4F1n2qAcWlXyuJgWOcCXtxknQAkI-R94xkVGMiKUWgkmLakdaTL~qG4o71SWYfdc~tTgvg~BZY0iR-Jmw-UUGObYOHmNGqi~m8PjxG5qksyhC8HqI3VAYs9hDszDqUWy5CW5O1VhGd7bIwKsz-YB1bTI58vUXUHGKLUTY0Crt2t4JX6GGbyEISpQbwpQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***写法***
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-39-40.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3145f4c6-d7e3-4769-80af-c34e8dfc1a632022_07_20_Screenshot%20from%202022-07-20%2010-39-40.png?Expires=4811884826&Signature=h3swTNSu50nLxTT7DRmgXuh2gEcu9svWarRuwLp30WVpsYlaW1bphncMtVPpHtqy4Vh10yWI3zCYORpWzioYTmLi6vhHdAYq32bD~iE1DtcKWfnf4cqz0Jp22o1idOmqbXtWEChmcgPixe2gGsG0Swlv-P0zhmc2qXR563ZzqPwiYjSxcFayptiLa5YTVzBkYnXf1d77GCGOi98~mZlB2yy0WvTakI2u3qvcoqN~Qz9pW99NU7a~7S9MeYCV1inRr4HREinzT6dKJMCwnP1uE7CzXO3XA2oYvwDCKANINAVuVYgn8SucS5xp~8Vojymufdh2dHqrG2o6Gd35guc2fQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 在列表中嵌套图片
