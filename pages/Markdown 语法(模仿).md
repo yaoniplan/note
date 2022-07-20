@@ -10,10 +10,7 @@
   使用`空白行`，将一行或多行文本进行分隔。
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 09-58-01.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad25205190-cd74-45e5-b2dd-80d95d4fe9922022_07_20_Screenshot%20from%202022-07-20%2009-58-01.png?Expires=4811882291&Signature=hd9mTcbq-4zMEMuuEuZRdj8TNUhDrMkkECplTey-YKik9PSVB806E3jvbxBYxMdxDkSIsV6OxZ-3QOyc0vYmneYla7nmjsD~LVezLAoJTryIiiqNepk-kQSIfP~~ec5kJqIqFJGT~N4aIctuIy-FfosQynB5gVbs584xrtqFAC53k5m~s2blEFFIDt2ReuRUJ1dddg5P~PdivEagI1VVYvUHLkfyeH9uc-QKsnGgA2YjVkTcd-1Vr6075QL3fjzUgnAlwuwHIowRtLPtBRnFX1scXd-QTHYCfW4S3CneySqMHxjf-LXHXYTAE5jCvNDNvYEJABpQG47M4P7R1msRPg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***  
-	  Don't put tabs or spaces in front of your paragraphs.  
-	  
-	  Keep lines left-aligned like this.
+	- ***预览***
 - # 换行语法
   在结尾，添加`“结尾空格”`(两个空格+回车)或HTML`<br>`标签。
 	- ***写法***  
