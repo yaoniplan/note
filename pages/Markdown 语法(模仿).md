@@ -37,7 +37,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-09-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad46afd60e-5bf4-4b9d-8e82-a380b7cec5ed2022_07_20_Screenshot%20from%202022-07-20%2010-09-16.png?Expires=4811882989&Signature=Evt9MXWpsnLk1ffhFWfrd5wJg0YT84EM5xWS6kDXNqvkFinkWODmnIxc1RZIBkNgjF0hqVM5lrVWgJBis-xdERP74sF~7wyKxwtGwRhkNMbGtZHoEwOjDmHTXLpFNDVnXx0muxc~lZrnowZ8qb29e8y445jfF-~CkS6E1sW49X3dDCJkfE0VeOpAPOY6mUflFL5PQ1YZBdD3QhR7N5DlM~ZegEBJr-YX7-FW78YV6Pefh6j~V8kMqHVjLOa~0SjIi1kLAYS0bG~-XbojDPONcYOEiSY6~h6Az8BineXQjChOm2jgO7By6Da6GFyhoKJjyUCQI6ixW6Bc1xDUPy2i3g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-09-30.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad80596dfb-485d-405d-82e8-2a2c5a6c474a2022_07_20_Screenshot%20from%202022-07-20%2010-09-30.png?Expires=4811883006&Signature=ZLABACDsdSCdbsb~A-ug6q0vsxgIvRVi3glAM0iqAEgpW3NC1B4faDZDxbLZaITwKIi0-V-cs~3rHjIKCiDw7nlx1CwGOCKLcTeqlxoDuM56JkLOrg8qOkfxph0KdMTO6Pf8yFI5RV2zyoQm68TwGVrh1-sHbE25ViOr6HsD3itegi9HyeKiQ9MBwPF9GjQh7b6MKgIZwLAYwrd4kqljK8JuRg-1abtWbS0tEBenof1GJH53SsDdVRnJL0IsEUwZvZN79g9KkuxgR~jxb367oplKXbBLF2dChzkjk6H7IPNH6SuA1h-paIajP8bR3QSLJWeawYcG16O6tyWgRAgLLw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ##
+	- ## 4.删除线
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
