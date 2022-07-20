@@ -88,7 +88,7 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-43-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad61dfa95c-10f0-44eb-8e65-147edb957d0e2022_07_20_Screenshot%20from%202022-07-20%2014-43-28.png?Expires=4811899433&Signature=ANsKAQmXqJ-cN6gritDLGMMwNnR~nKDvGuZPntjZ2RCYBh0~44Vom~yKlZcUCQncCwbQhVZX448qEECvCDf~CQSkFFIPcIu~pSaCXpr0BWKzOpmbVg1GnBVh7nSF5gtgMr173h5zVKfAqb2gVQ3anaEYBElwrGl1JAUZ7o33yeO8K2o538Hie9XpJ4bcf3aGzw4nVvniftNRqr998VDv1VqQFt7YolL-oVYgGh9yNK61tptJrsJ1bburkzntbN-uj2MkJm2GSiH3z~Jv4pDcloaJ~JGW7T-339QxwDQUklRUN511wvOaxi4xasYOOoMWaW3L2mh9g40ysXLWZDyS~Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 任务列表  
-	  在任务列表之前，添加`破折号`(-)和`方括号`([])，并在方括号前面加上
+	  在任务列表之前，添加`破折号`(-)和`方括号`([])，并在方括号前面加上`空格`。
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
