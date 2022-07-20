@@ -176,7 +176,7 @@
 			- ***预览***  
 			  ![2022_07_20_Screenshot from 2022-07-20 14-03-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf2e88d97-2f3a-4647-87e1-a0489dc635962022_07_20_Screenshot%20from%202022-07-20%2014-03-34.png?Expires=4811897031&Signature=TrH73MGe~HnozwMLZyeAHTNKmJWt62K16SXQ9SRfG3zUuFVsUUrO1OmKOL5cKzUStbFTX4bolujl7HQC73kY5Zu19756meD8xhqp~SRirgwYNzbsgG2ovKusw08GpK9d1R-qwqAatlyAjQ5RsvA3xLlb7NiPak4VyrPGlnrgJlcwc7dYsfmJHzTf~5qvmDV3Te7Ere1SL8-GMqJEy~RHwGR4Ghv~FJHDzBUqGPcfMGMF1eK3qqPc23Y-KBGlQ~xin84nJTfySUPM06Rl4xFNVKh7aJj4~5XSF06on~xX31McAzsJsmTCg8zwVszeorPV4FHWbpoT8YqrNTtxr9YzXA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ### 更简化的超链接  
-		  因为markdown处理器会自动将URL转换为链接。所以请直接输入URL。
+		  因为markdown处理器会自动将URL转换为链接。所以请直接输入`URL`。
 			- ***参考***  
 			  ![2022_07_20_Screenshot from 2022-07-20 15-43-42.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4fe038d3-5409-4a2e-a10e-3297b862036a2022_07_20_Screenshot%20from%202022-07-20%2015-43-42.png?Expires=4811903041&Signature=VEVY7UdHXXMkn6PIsBmvQYElzlfBLpoxPz6V5zLpiJ5Dwk4lkDbeE9kWjoAVV4jTQbbwFAkFAdEASLA0DgMn2TsbOt9pU1e-AwYy8~Z82dp3IlAld7MHUjESA-nQZkfhbttihJ61udyijGZwjwCVUuM2aQJvt7iTR7S79IhWYUJZ3Q5xpxZW2cxLj3W-R7RUC2HvjK1TM9kgTY3QivBsVy~GicvUeUDPdn5HD5JMN2pTIwJkfHwCIxNEmqXqbb8gSdWAvR98BqgvxJwlyDk0Tc4uCLfmENnQeVBRbW5YN81QHdol3I0Xu4HRZxm~fI9wtFbnNdql0Xb3fUUZgUqNUQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 			- ***预览***  
