@@ -103,8 +103,7 @@
 	  将图片缩进`四个空格`或`一个制表符`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-32-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1f5a3621-d179-45ac-bbf7-0a43c28bf9cc2022_07_20_Screenshot%20from%202022-07-20%2014-32-31.png?Expires=4811898774&Signature=Jg4RAKd8h3JQu1D2QODAbMk8vKuHBZjDU0QtmfMrO1yyr7DyZXe7RNNdJ6UmFyNXUwpI03aFxqRqG~smaXoKEfYFOuuG-1g~2mcQGjRybqcXJ~OgwfmDb3H6kewD4gwxEXaFNexDU~lkjBwe~EAC0XP5RB41JmsNrBKKMhRgedhtJ9GRL6RTi1kjhNW3qrM89tdi9gqLlS4C9OLbW2ORPRq~8K-5kIsii-knZ2W-VxPD9rjCNTKKSivDpIAVts8Ds8CpL-kpqf285bnVdvsUyzg513KbSoDNa9NzgaTF4UOWmfoJoMcSz585I9-fZx50oicgjRdInkqUpzdNEHkeyA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-41-22.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adab313569-94e6-450a-be13-ac7d7e1348e82022_07_20_Screenshot%20from%202022-07-20%2010-41-22.png?Expires=4811885101&Signature=hcdsPfr2objFgUJWtGFPIDxzT7lXHIkHz3HrcLGEXPNKd7CGn312MYW6-sHSNi8avKHlktIO~OaUv8BxGTb3fakR8-y1EV2w-xtiaE9lub8frBLtwAi-K73Ob5MR7B~0~hiXN7qanLBS51ZgyvohFHMqvtijmEM57oZACTNWDcki3CZ9dDjOADHhcoH-Ocx15IqTwKNUXo3pRIblnXXwHSD6VikM6OxGUKEVrswDC4JSlvwVnjVlrPrVu9si6d~r9pSp4pMoLEIPvu6q5bZGtFreYmgAv0UKP0P8kCakSCW38cfLfJgnOBXr4ZUgnWVuOsKEsZ5wQUi6sizC1wreag__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 	- ## 在列表中嵌套列表
 	  将列表缩进`四个空格`或`一个制表符`
 		- ***写法***  
