@@ -169,8 +169,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 11-59-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade952dabf-ea06-40e5-bc16-c4fb3c8d0e5d2022_07_20_Screenshot%20from%202022-07-20%2011-59-55.png?Expires=4811889651&Signature=Xm0U8-hEdWKhm2ntAhkWmtvWCsD4IzUTP0E7qF80HvXVWYPhw1HBl3k2hUTTybwOxpwKJCzWf6KNMExfoEnpP9QMeBuQChcsOwQ8IuMO12D8moh0Qu5xso1GGNdGtwfJhMXeqAGup5Pa5vVh3XMAxCBI9zcMecG6bH9eQmIxhSeZ9O85FcCqCslzR66~LYUzWncyyaJfHi3GtoXBuybus13ifjSuJ3QMITZE1JHzjwQu0PEP1cdk9lKonDusigSMOEAadkzwtFzI5wfRRdmLKoor1Ljfr7I8iTJ9CwwnyICyzKtj1XgwXokMh12v7bVHW8pBo5U7T2l-diPDNNp1wg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  (无)
-- # 图片语法  
-  使用`感叹号`(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。
+- # 图片语法
+	- 使用`感叹号`(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 13-32-23.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0aae00aa-c34d-40d1-8f2c-d78d4b0fbadc2022_07_20_Screenshot%20from%202022-07-20%2013-32-23.png?Expires=4811895169&Signature=eovFg1FRhFGG-EN-hmky~wmmp5k~k0TOH6TbBqe74xjAJsLi-P4D39~EuZPGEKuAd4fUkMkzcZ3GSkKJ-i5M~X551VLfgmIlGFF-37MK-ECiGK5HIui6VWSa92Mj0fv95SC551GOx0rJcJmAdvUaHWyxRcoDWEoNrso-wiDcl20JBxPjE~P-eaFqZtXKCGUvb4Upxg~tx-UJAJOJnFXETrJtqO5tU-QUmF1DOF3CPNGNefWRgmHJs-BA8XIBWNSqcVfyXQUpOWN-xFrmY-FCXhml25NBFThddYCk7YHZM1VxhdAa8ZvhjGlsjayINx0f51aJbaAeZYhPjXMOG-YOrQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ***预览***  
