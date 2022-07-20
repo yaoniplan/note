@@ -116,8 +116,7 @@
 	  将单词或短语代码包裹在`双反引号`(``)中。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-46-02.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf251f292-6d8e-4ec6-9e92-2fa1835a4f4e2022_07_20_Screenshot%20from%202022-07-20%2010-46-02.png?Expires=4811885236&Signature=kAs1jA2FsCguXsUmToy4WAwpijWEzLmggXBhBYXI39glpwvrv0GMNN3MyK8lLKxzMdTWRtxgiaDHmLPtkC4AqdtXWiJWoZhBKCkS8EDeFT1b8ximRPhhB8cdvO5TK6z5X2WlZ4gsX9eXffDbZnCIDbCeoL71a~qP6NaC2W0LUziM7Lri~YKo~1pLv0YPCtdsXNoWteMYUt5Zu4aADSCi8u-5sWvmFGL~XeYnUxEUP0Mtzt1F6lqRoJkmrfPCP3kdcbiugtoUa5wWXAI9WLXRonabF1utGh6XEpWEEJMVXg2OS3DJfUFxBo6-BmzZT18baDPt8~qo6gWbJ-NddXjZsw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ``Use `code` in your Markdown file.``
+		- ***预览***
 	- ## 3.代码块
 	  在代码块之前和之后的行上，使用三个`反引号`(\`\`\`)
 		- ***写法***  
