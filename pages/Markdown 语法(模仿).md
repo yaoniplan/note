@@ -16,13 +16,7 @@
   在结尾，添加`“结尾空格”`(两个空格+回车)或HTML`<br>`标签。
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 10-03-17.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc1c3d079-0af9-4895-a910-fe642fd491842022_07_20_Screenshot%20from%202022-07-20%2010-03-17.png?Expires=4811882610&Signature=Jh7xhy68nkIqzxvGZMF3mRsoHkZHCnuas1oH82T-Dm2Zbhl157XGVODSfgJ-MlSm9mBOVuy600bCTmDmfLYJaVBOMKQtm9jAMdU3zJllOyzXncqA7vjJm~fK2k6f~C3j9Wo3Df3pBvnebsp1wYkaITq8rgsBf4rO0IEs4DVkpjq4IY91ydoQTVbz5p2X8KQRaVOlr0ovA1nJNBqo53b4ClMG7y8EmrsObJJcgDA2wubC-5u5J-BBFBMda~JwW-njiFI8QnC0JJbIDYE15WfxVMmgD3qMemIp5zsDhxRghQo-VFGPljJnbv76OjpsUT-HXDfr~n5iYgYk9TnuE1N5dA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***  
-	  First line with two spaces after.  
-	  
-	  And the next line.  
-	  
-	  First line with the HTML tag after.<br>
-	  And the next line.
+	- ***预览***
 - # 强调语法
 	- ## 1. 粗体
 	  在要强调部分的前后，各添加`**`(两个星号)。
