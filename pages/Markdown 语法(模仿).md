@@ -88,7 +88,7 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-43-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad61dfa95c-10f0-44eb-8e65-147edb957d0e2022_07_20_Screenshot%20from%202022-07-20%2014-43-28.png?Expires=4811899433&Signature=ANsKAQmXqJ-cN6gritDLGMMwNnR~nKDvGuZPntjZ2RCYBh0~44Vom~yKlZcUCQncCwbQhVZX448qEECvCDf~CQSkFFIPcIu~pSaCXpr0BWKzOpmbVg1GnBVh7nSF5gtgMr173h5zVKfAqb2gVQ3anaEYBElwrGl1JAUZ7o33yeO8K2o538Hie9XpJ4bcf3aGzw4nVvniftNRqr998VDv1VqQFt7YolL-oVYgGh9yNK61tptJrsJ1bburkzntbN-uj2MkJm2GSiH3z~Jv4pDcloaJ~JGW7T-339QxwDQUklRUN511wvOaxi4xasYOOoMWaW3L2mh9g40ysXLWZDyS~Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 任务列表  
-	  在任务列表之前，添加`破折号`(`-`)和`方括号`(`[]`)，并在方括号前面加上`空格`。要选择一个复选框，请在`方括号`(`[]`)之间，添加`x`。
+	  在任务列表之前，添加`破折号`(`-`)和`方括号`(`[]`)，并在方括号前面加上`空格`。要选择一个复选框，请在方括号之间，添加`x`。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-50-36.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4e58d98f-21e1-4afb-a2f1-4601560e3eb72022_07_20_Screenshot%20from%202022-07-20%2014-50-36.png?Expires=4811899858&Signature=NrAZgzNaGZadxl6dFBUGn2ouMA0VN1vGs-9-iHADlvOykfdR5TOV7inXZ00jWnFX8Ct6AqX2WwZtPv6X7kRORoZPj4FozMOZJr0~0jj-9ukV8MRYZydIcFzEZBxi7jhD6oNMrSdqkKroOdjWpQ82gY2hnLgvGGvm9BlMm5I-8FIH62fSkf45Lt9pOsHrS-M~VerdBSMApswshZjxAGblRCxF5jd5rHB0nOHX7bkIsQNF32mIhgeIsFdOd--psj0084Pjr1jeLZf71jheQvmjU2C8o2SVKQZvJ4VkATq7lgnjD~JCv-C5OEPPlsUzdXeX0RfCrQQWZ91PsI4OM2FsNg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
