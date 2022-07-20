@@ -58,7 +58,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-24-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfe971c12-28cb-430f-9c78-2fd4d4f9b6922022_07_20_Screenshot%20from%202022-07-20%2010-24-10.png?Expires=4811883890&Signature=Js0T6nUAOMB93ghsM483de~VPqheLO3IsftUyqJ99ebdHh0~SOF14Rr0xFbRaldSuFox2tkzXUNPskxpaDMTi3nEkNfbDHNYDLxG1YyNxPvRW3MsYpUtpMUHv3P4IJg6DMv92gC7jHufgSbEQEyPlLbMwjeQXCjG63BjgWx4hraQDbgPZpYj1NbHtsKrDhSqqmMveVBXq0DrNZ4DuIct-XSIrWH~5-A01tBtuMsT0xqmHYWE-cGyd~5SNgDmw7kxIlUi7qtE~UgtaT1GO9XxMpAHT9mID8~HGX-lK1UHBJxWIdTo9Mwkl5O00MOBpJ6kpWWHg~k2UbOJIjPUuSSTRg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.带有其他元素的块引用
 	  需要进行`实验`，以查看哪些元素有效。
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-26-02.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3baab05e-65ca-4410-99a7-259cbd5db2532022_07_20_Screenshot%20from%202022-07-20%2010-26-02.png?Expires=4811884007&Signature=ZvDbJKtGIxC6p0UHChJ46uET9kS3Hhc6av~hB20Jn~LydX0UTuSHyCNffu1huTNW8UEa0VSwM0Jf0odtJ42vpGKEy35-cjnDe5kEONvGljrNZ~pHLZVTw8OmOpuMwwv9VvKYmIQHSLl57kdrHDCMsdFjF88awrZLzo7ekg4r~MqC7LPGlvjRRx2kjzOwmF9aM0t7aBvrYGWrQ~KdMhI68M~Rf3fl3Is9ULhSZtciKHL3HXhZ9qr3toiZfvdoPZeU35shHK8ABxgZTV1wAMx1w7MvGL0ePFn1-ruD7owzy4OyiM4G0-uVnbjVpMsvF-G1QRixT~msTkAl~EZNFUJHvA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  >(请自己尝试这个元素，因为此元素放在这里，会使目录不被易读)  
 		  >  
