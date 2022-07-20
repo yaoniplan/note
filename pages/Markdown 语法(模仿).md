@@ -212,4 +212,5 @@
 	  使用三个`连字符(---)`创建每列的标题，并使用`管道(|)`分隔每列。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 15-12-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc0a43c11-f168-4fda-a9a1-63bff4bae3762022_07_20_Screenshot%20from%202022-07-20%2015-12-10.png?Expires=4811901189&Signature=a5kvhkcar1VVuGJ3GzE940LZDS-TFgDoqA8cLXVOgv6EiFaK~jxSmdKS1qrEno6ecye8zjXB87jMmKTgiEpsfdz4omrPJIQ0uwK5qi6i1zumfxb90gZ-Tuhky3w3W~~A1azoZr6d24eJJ~F5Ot-oHq1H~8EZuEtJgBR3lGl7Pf2GTwHn0aNgnr6vZzJ34j1AqiDxM3mFiRMoI7u2bcG3thvYso9SSaV4xcYBhF32wdHEnZaZOJzIOGqCFqd~HjfRQKbPbQ1iJi4Zw9Cm8bsRyvG4DyaIcQnMc3qoRhcBBbG5LKVFDOg39Y2gNEVqVoub0JaD77rbcv293HU3Ea9q5g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 15-12-17.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad614c209a-ead8-45e6-ae65-f7600dcc2bf22022_07_20_Screenshot%20from%202022-07-20%2015-12-17.png?Expires=4811901204&Signature=h1UTJLMXsttmSQgsDe1hMgA4~ffxzpg9g2taiNBV80dPdcLo000jcixnFVpTxCmApw6DpJwuGqBk3aNyIQ8Zw7F9J-tRCi2h-ugteBb7l8CTeDx~2I-LNJXxSsWYm3TewPyGg8-kFUFZMR0fFmN-E-alF4OyU3T9AENY8B4UZpffZvpk~qQ70feXFJthHzLWkBcKulCqBru7vwuF4SJbjNQ9Gsd0-ZBS-8ftU5F-wLYcq4nxTluITMqELgH3HNuI29~JdbAfGlJVvw9DTrEqlsvjAvqIGz5fDC1N9IHimf~Ofi6BaeOagyyf3sI7U-5VwNdIig-K97Gi-HYZ24dFiw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
