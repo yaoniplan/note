@@ -71,12 +71,9 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-28-56.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad73c7b12e-e447-4f5a-98ab-39b5827096382022_07_20_Screenshot%20from%202022-07-20%2010-28-56.png?Expires=4811884337&Signature=aUNA0wGyz6h-FfoOegPI05IVErlrjHTw8SKwPRhVvsp-aCIJEl0hyl2XfKZ8JdTvLFXzL4YtN2wVQHDEeeX1B-7ZqJQ63PoaRGaLixwsxd1beZdhjFjQTe2k6mtJuEIPMheIlxkFLBEPMYlBHlHB8MsWOpecPxh02iOpUClpc9lojIg3d5ubfSer33qibCKHGEe5GWiMs3RHYuiswrho0GjyD8xmuv20QmnxYBZAvHi62IiSF4Mz2Xvnd7vmD67EVnGQ3jDnB1YUT~wCvneIXSfbeWNFj7K~lTDnTCyK63Vk1mAdmeftr1YCcMbk4crMRJAxXQIw~IyBQbLpd-MIHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.无序列表
 	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
-		- ***写法***
-		- ***预览***  
-		  -First item  
-		  -Second item  
-		  -Third item  
-		  -Fourth item
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-29-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add32972f9-87cb-4ef0-8255-e5089ade340d2022_07_20_Screenshot%20from%202022-07-20%2010-29-59.png?Expires=4811884374&Signature=dQ74Bi6z6Ax1XAG4PDNVHp1FU9bVz3sMduU7wlnSyX7zjjb2djOocFtTt~Lg7wEi1HrnEfiXpD4N9T90LaOKBJoJ~bzfuqRZIUbB1iZQpPqqcwh6od0R4mzWW3VEvUmpixc2-9v~Tg77WDLGW50ZsO3DUyf3Xq2hd4EhFYYoP6zhixTbBOwoJ73cPv7betSPZdpVINhj~lgLjkmU8MjeewSliXy9FiFpHCBaGINMF41UsIHJ~wwwIlikKwB1piBS-sWJwVgH7NVOQkclsBQyxnZgh-L7e9TcdM8QObZhOdW3HemUkAhWjvWGPlLIauOuLQ~~H4d0fyBYLtjakwtyzg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 	- ## 3.在列表中嵌套段落
 	  将该元素缩进`四个空格`或`一个制表符`
 		- ***写法***  
