@@ -71,8 +71,7 @@
 - # 列表语法
 	- ## 1.有序列表
 	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-28-32.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc98d626d-12d2-42f8-97fa-1309e220fdfb2022_07_20_Screenshot%20from%202022-07-20%2010-28-32.png?Expires=4811884317&Signature=ij176ULZDQi1pw-wcBUA2uO3w11-Vk~SihLWJI-bBczlIE390HCTDai34WrYXO7Psg1LOfgRCX6m2XSVVOb14FSj68PnkAnhx0TksL1coYuL23FtM6z85qW1O0ABcjurP3zXoTZBPUO6kaQ8NxqA22o04gv9Cnk0dtn3P1g~ilWoaZz-DXl6T6qAiKmcthNAkW7Lx-raCrCQmnI9Ix03aDaJHrheWyCqYzxrC0-DeHd8MxQIMZplgAQC~CdAKE6jW5cRZDXwtlI7ktyUYNQkj3~5PCbiUAysVLXrORdUub6IZ2GIjZxGG7ESK-I7Mwm~p1G0GUs7TynvTanl3KDJJA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***写法***
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-28-56.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad73c7b12e-e447-4f5a-98ab-39b5827096382022_07_20_Screenshot%20from%202022-07-20%2010-28-56.png?Expires=4811884337&Signature=aUNA0wGyz6h-FfoOegPI05IVErlrjHTw8SKwPRhVvsp-aCIJEl0hyl2XfKZ8JdTvLFXzL4YtN2wVQHDEeeX1B-7ZqJQ63PoaRGaLixwsxd1beZdhjFjQTe2k6mtJuEIPMheIlxkFLBEPMYlBHlHB8MsWOpecPxh02iOpUClpc9lojIg3d5ubfSer33qibCKHGEe5GWiMs3RHYuiswrho0GjyD8xmuv20QmnxYBZAvHi62IiSF4Mz2Xvnd7vmD67EVnGQ3jDnB1YUT~wCvneIXSfbeWNFj7K~lTDnTCyK63Vk1mAdmeftr1YCcMbk4crMRJAxXQIw~IyBQbLpd-MIHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.无序列表
