@@ -23,8 +23,7 @@
 	  在要强调部分的前后，各添加`**`(两个星号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-06-13.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1a816527-443d-4dbc-a652-82207e3845fb2022_07_20_Screenshot%20from%202022-07-20%2010-06-13.png?Expires=4811882806&Signature=ZOh1eb1asbo3y6aFcbWhhhI7fN-E0t00a5L9qkGm0XheaYvfsng18dQGqWjuWhLrIVS4EAaZR0DSQNjuHK-MqnD4W3ZcrwSLkmQt6dJH9CfN3sYxWUDMyjL9E76a44Y~sGExdqeyXogWzr9zktsvGBRgimx1qXC-7g2nv1Tggppm7LjQZ4O2lEAMyXO7-hnyiOQv8oTNvZM~Ujzhr~Y-T2t6KflkrA-I4FVHWmArQS5CkarC4YeXt9PHxiUe~5YBQ~OQEl38ttUxgEBHoh9wr20uu-sQfF2qov9busn41E-FyYV1EdjMqE3Q5ZLE5G4wMvqtQJCk6bA4oy9CaqcR6Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  I just love **bold text**.
+		- ***预览***
 	- ## 2. 斜体
 	  在要强调部分的前后，各添加`*`(一个星号)。
 		- ***写法***  
