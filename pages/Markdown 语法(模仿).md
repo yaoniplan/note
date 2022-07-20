@@ -41,6 +41,7 @@
 	  在单词前后，使用两个`波浪线`(~~)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-22-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad55b284d6-7e8d-4ec2-8a76-6c8de31c00462022_07_20_Screenshot%20from%202022-07-20%2014-22-59.png?Expires=4811898199&Signature=HypZVQoXzyBcKA2MBDS42~Uc4s6OengmtWsTPYaToOrXpK1xenKIJ9HSwom1DLWvh2~X-EfFV9XCdBqV5KdgVKaxADOalRsFxP9VmZR0Zgo11yu7cfQidHl5232pqccooI-~2r-9Hgn8QNdgtLznLxEwpC4UlN4QJ~M4nFup~3-7wlG0AhkK1Rb5ec0ttUAx7U9~qF8cPVFx0W3s006oUasRf4Tl~znuE~T0-bW5i24b8Modfbw475cGm1fNHZw1xQpOyv-3j5m3sdPYTFLgXYlLX-FmOk4B1X-adQ1KSQ9S5cMlVC4DQgJ6YVRU3WJ-9huZ085H-lPl-oOzOmKztg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
