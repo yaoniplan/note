@@ -72,8 +72,7 @@
 	- ## 1.有序列表
 	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
 		- ***写法***
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-28-56.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad73c7b12e-e447-4f5a-98ab-39b5827096382022_07_20_Screenshot%20from%202022-07-20%2010-28-56.png?Expires=4811884337&Signature=aUNA0wGyz6h-FfoOegPI05IVErlrjHTw8SKwPRhVvsp-aCIJEl0hyl2XfKZ8JdTvLFXzL4YtN2wVQHDEeeX1B-7ZqJQ63PoaRGaLixwsxd1beZdhjFjQTe2k6mtJuEIPMheIlxkFLBEPMYlBHlHB8MsWOpecPxh02iOpUClpc9lojIg3d5ubfSer33qibCKHGEe5GWiMs3RHYuiswrho0GjyD8xmuv20QmnxYBZAvHi62IiSF4Mz2Xvnd7vmD67EVnGQ3jDnB1YUT~wCvneIXSfbeWNFj7K~lTDnTCyK63Vk1mAdmeftr1YCcMbk4crMRJAxXQIw~IyBQbLpd-MIHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
 	- ## 2.无序列表
 	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
 		- ***写法***  
