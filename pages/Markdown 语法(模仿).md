@@ -61,12 +61,7 @@
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-26-02.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3baab05e-65ca-4410-99a7-259cbd5db2532022_07_20_Screenshot%20from%202022-07-20%2010-26-02.png?Expires=4811884007&Signature=ZvDbJKtGIxC6p0UHChJ46uET9kS3Hhc6av~hB20Jn~LydX0UTuSHyCNffu1huTNW8UEa0VSwM0Jf0odtJ42vpGKEy35-cjnDe5kEONvGljrNZ~pHLZVTw8OmOpuMwwv9VvKYmIQHSLl57kdrHDCMsdFjF88awrZLzo7ekg4r~MqC7LPGlvjRRx2kjzOwmF9aM0t7aBvrYGWrQ~KdMhI68M~Rf3fl3Is9ULhSZtciKHL3HXhZ9qr3toiZfvdoPZeU35shHK8ABxgZTV1wAMx1w7MvGL0ePFn1-ruD7owzy4OyiM4G0-uVnbjVpMsvF-G1QRixT~msTkAl~EZNFUJHvA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  >(请自己尝试这个元素，因为此元素放在这里，会使目录不被易读)  
-		  >  
-		  >-Revenue was off the chart.  
-		  >-Profits were higher than ever.  
-		  >  
-		  >*Everything* is going according to **plan**.
+		  ![2022_07_20_Screenshot from 2022-07-20 10-26-27.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addc61f9d3-9e53-4416-9224-85c3bdde6dee2022_07_20_Screenshot%20from%202022-07-20%2010-26-27.png?Expires=4811884032&Signature=Jgsnl4gYsRA-RqNJf60ewmSrYdMoGNuTc~6MMd3ycvTLOYz5mY~if8tGbqhMetX2tJmDwBg25~RmfCUcGkOnQ0GtfbMnb5PUt6h5plGpdJboSzuJU3RCLrfDT3FkjBZMPyRFJlAszki-daY4xtNVcyKlrrf4YmQQxp~eeeauvHzE5pXAk6pV1hVN3XzPBqmR8naJNGk4XL-1O2oEw3yFwXknMk2eYhpfqVGsohs21VxzshZnsgST0dm68klBD7jwDdTvIAeTMBna4TRDT37ouTzQLLl~3ffJS4YMd1QdPOBO1iHgNHjJd7V8SzpNd9f-1itFndTH8mxsUCszaT4ZTQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 列表语法
 	- ## 1.有序列表
 	  在每个列表项前，添加`数字`(以数字 1 起始)并紧跟`英文句点`(.) 。
