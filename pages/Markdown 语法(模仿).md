@@ -132,8 +132,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-34-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addf7f4c95-b259-4947-9e4c-0d1a3048f6192022_07_20_Screenshot%20from%202022-07-20%2014-34-34.png?Expires=4811898913&Signature=Jc-0rF2bwjUbVexLJVm~UOzYMEakEJ8z5~PppAB5ZZYd6-iXa-20gUtbmoP20MCkJWlkKc9Zcqdi~MOkiJJ8Cj5d4r6O~iv6-mh1VNBpMfmabPRdz9PCgRHgF150iHpi~iqchMdxxwx8dfNB~906ywNEdr6md0EehezH561OzDqlNge0nIPJx-HkxysVWlnVziD-4jPQueWeJhThqordflMXQBFJatjVlyuDSH3fLbg2HdNR1EiLKp4ABeEXKSeshGxa8ub7p5hGjWd3eM7ZZHbzE6TN4LrOESFa~k4gGybIBX7fJP-0FAEs8bcNhzAzpZWVsG7NZkXvmFDaxxikTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.语法高亮
 	  在受防护的代码块之前的`反引号旁边`，`指定`一种`语言`
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-50-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad7a4ecb02-5163-42cc-8dfb-2f63fddf55a32022_07_20_Screenshot%20from%202022-07-20%2010-50-21.png?Expires=4811885452&Signature=KMb1UF~wDyCWdPAKeaDSPkUjsKJ~HMYFGR1qBsWqe3X0btjT9bYRN3XK0xPf4ZwaeUOItsR3bvpk2xhle1lcm188-5d04RlW-~0AZLTItvTS-lgTWdqP56T2Hro4LQJQOdi5XMjP2wVUIoxxcyMKBU7lSfB9jMupV8MdI1WzCwJYacinVdTzwp2gXavMfarumK8GicsV1CgDNhaP7ML7PcKBzfY5YjpYXHwbNdXS-bhjwn1JHS~wkVDEG1rlmIqWI2-H6AVry94eX2GgbmqFB1gTH0If8x6EC2vzwXUM9-ha4hBY2qQFhvWMGfPeQ6u8xUd3FW-QI8fJbzaur1gpXw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***写法***
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-50-38.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9557bc29-ba61-4154-b51e-edfcc377c9ef2022_07_20_Screenshot%20from%202022-07-20%2010-50-38.png?Expires=4811885472&Signature=IjUIlOsHNOU9fx7H7FKURzWdHdAw11vQML0d~JIjp1pToPXMpM86-bZWfIZHHWqgOTlp0xZaeOKEAZx4psQVMb~R10HGGG-04DTw8ZTfLMQ7V-cILS23Zry51RO-IU6nrcS9uNfNEZZribT-FZZu2WCQ7Fspn~Joib4Z-Q6klMgRwCpYSwvTwyfeaExD~cQu05IPWJN9mZJKxnGHt611M3Y7oePTOG7PD5MW-7sDqQfhSoTlq~xl08PyFHzH~Pp6xhJVZkz0bNHXFdk-bYXr~GZkJXfdji8MyYjXDUbbgWykVCyChsZC4rjY8IRscWk6ZFHUWH3nwdYp7N-t6wbQiQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 分隔线语法
