@@ -165,5 +165,5 @@
 	- ## 引用类型的超链接  
 	  分为两部分：与文本保持`內联`的部分、存储在文件中`其他位置`的部分。
 		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 12-01-18.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad25b20a22-3886-49e0-bdc3-bbcd66165ca52022_07_20_Screenshot%20from%202022-07-20%2012-01-18.png?Expires=4811889706&Signature=j15T5xh5OUqQEEseeANvua7YcRI4HVRAy~gYDZX1EGgS7gzntPRl6lNQ~SWfOHtbVALaWeVpOisqkkZLynmZog1eyX1a75nN-4Rvp5WEe69pbBSPh89bfkE6ZdH2brTUOe41oOlFbeaSWUwvsn5gyXnTHRf9Nal4M3N-62AWBXFm5el9HmZiG82NM9jL0EhQzyzhGCTDgm84LSzjv-shRb36D3V1frEB-w475C0qElfPkXbN3SZ1T8QWHafPwPYZazLx-vqEcx~GrU2exUomIy0QSF3YG1OFv1fJDpbw5KL7iCQXIzkq8lxROsayopiiycz9AKnI5HujYWZ1E9cBZg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
+		  
 		  ![2022_07_20_Screenshot from 2022-07-20 11-59-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade952dabf-ea06-40e5-bc16-c4fb3c8d0e5d2022_07_20_Screenshot%20from%202022-07-20%2011-59-55.png?Expires=4811889651&Signature=Xm0U8-hEdWKhm2ntAhkWmtvWCsD4IzUTP0E7qF80HvXVWYPhw1HBl3k2hUTTybwOxpwKJCzWf6KNMExfoEnpP9QMeBuQChcsOwQ8IuMO12D8moh0Qu5xso1GGNdGtwfJhMXeqAGup5Pa5vVh3XMAxCBI9zcMecG6bH9eQmIxhSeZ9O85FcCqCslzR66~LYUzWncyyaJfHi3GtoXBuybus13ifjSuJ3QMITZE1JHzjwQu0PEP1cdk9lKonDusigSMOEAadkzwtFzI5wfRRdmLKoor1Ljfr7I8iTJ9CwwnyICyzKtj1XgwXokMh12v7bVHW8pBo5U7T2l-diPDNNp1wg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
