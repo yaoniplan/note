@@ -54,11 +54,8 @@
 	  在要嵌套的段落前，添加`>>`(两个大于号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-23-30.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad269c63f9-37e8-460a-a29d-b1925b2009202022_07_20_Screenshot%20from%202022-07-20%2010-23-30.png?Expires=4811883869&Signature=gu-XFLCY9RTKtjIridYO~btf~r-iVb42jGAQzN~FoQTagz5D322ZRuPqYyVFbMTcjJPKaYxtb9~3Pi05AbrW6Ps6ngXMjniEYEyNt5N-vGqL3yeh8m5pUw5KtNi1S2vElDHAKEHk1t-nrldYJcpiaPxC6WvG5T8jGYdPVus77YnN1gguMgyskRGV2lzpkm6Qpnum-6QdGbNRxUFW2e3HM6Pw-gXErkiFf7QD-vtUTgRVqZgAIQytsnyV09CJuRJkGNNSI72ihdcy3O6AH9PDJP18DBHrA81VpjWReFvEn1EdgfU56QRlHvD0jbv25nKZkl3hLYyjkZgrbPayFL708Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
-		  
-		  >Dorothy followed her through many of the beautiful rooms in her castle.  
-		  >  
-		  >>The witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-24-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfe971c12-28cb-430f-9c78-2fd4d4f9b6922022_07_20_Screenshot%20from%202022-07-20%2010-24-10.png?Expires=4811883890&Signature=Js0T6nUAOMB93ghsM483de~VPqheLO3IsftUyqJ99ebdHh0~SOF14Rr0xFbRaldSuFox2tkzXUNPskxpaDMTi3nEkNfbDHNYDLxG1YyNxPvRW3MsYpUtpMUHv3P4IJg6DMv92gC7jHufgSbEQEyPlLbMwjeQXCjG63BjgWx4hraQDbgPZpYj1NbHtsKrDhSqqmMveVBXq0DrNZ4DuIct-XSIrWH~5-A01tBtuMsT0xqmHYWE-cGyd~5SNgDmw7kxIlUi7qtE~UgtaT1GO9XxMpAHT9mID8~HGX-lK1UHBJxWIdTo9Mwkl5O00MOBpJ6kpWWHg~k2UbOJIjPUuSSTRg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.带有其他元素的块引用
 	  需要进行`实验`，以查看哪些元素有效。
 		- ***写法***  
