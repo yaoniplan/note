@@ -160,7 +160,8 @@
 	  需要进行`实验`，以查看哪些元素有效。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-03-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf4ac07cc-5da5-4c49-9b89-58c2372e8ef62022_07_20_Screenshot%20from%202022-07-20%2014-03-58.png?Expires=4811897072&Signature=JUZUSkZ4YzcWqWAmGmws8mewb3tVJFzvOKtRyeBFHTu22K25LUgZmBMQ1kSuYT67Q8L3CNNQyyDcF588pz9Cfnf1nmlvnLLZpSymopSVD5lAjB3s8CLqdElSdD7Wo6pfbNBC8jnPiqn2PoKjrxusjK4mA7MSbXitSnC94rkDjVjTBYZCm-DGH6lyHbS3~sD2bW6ytTtwBUVcZsOlgkqClEM-tyS3~Zs5HS-yntmlbKfJkGC59OTuQ3~pt6dNCRd82fB-0Z8R5TQVGX6TENnekZa-bmFEZ4RhyHU8eQcUCTQgER5jvcrbYVbmpc~6gTUetrzP2Li2PDRAWXXLCoQdng__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-04-07.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada9fc4db2-a4ee-4848-a8d2-a687ad1013ed2022_07_20_Screenshot%20from%202022-07-20%2014-04-07.png?Expires=4811897098&Signature=lbwt6w4MJeWDG1N-y~tmAONo9GaIm~0pOl2wl4wwrdzi4KknOgH~Sc~KZt8aHBgrNYGhDiSitgxPnwDaxRCPU7pWcWEkEwOsV4fFnhTS80am96hgdt1h2TZoTdwXqLydyTXUVRcG9vWCI7PfAFyoHKu0jH1KfUEu9RB4NOoEg2pvogvUaR-CCX8sa0~qz8VMbCQFTeN9pL2Kc71c3QyF-gny1Ad90PWNSfG-ZzhbUjuqLuqIrl~KCoCvASP817YRTTXHzxRJl2ZWKDY7mC3kDc1FVlyBILOkQUdhbnNRJ4reJ4H0B6Cpx-7DtAG8ZmpLuT-N-yxQ5~Zw-rnbtbTxpg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 引用类型的超链接  
 	  分为两部分：与文本保持`內联`的部分、存储在文件中`其他位置`的部分。
 		- ***写法***  
