@@ -228,4 +228,5 @@
 	- ***预览***  
 	  ![2022_07_20_Screenshot from 2022-07-20 15-22-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3a77977a-1409-43ea-a6fe-ee07f95b6c012022_07_20_Screenshot%20from%202022-07-20%2015-22-04.png?Expires=4811901756&Signature=TEvqqp7TSU30c0-Jsse-K0uVXQvApxNkSjocsuh1kqnaeGAxgWJLmp2ZW3Rgkes9rSgFv5pKoxIs2LYMK25kPg5I0NdlkYPJYM0jmrddmOontKJo8MBS2x8BNScfNYbeXZGtFpuiiV5ghF1zCoTEoC~zjv1pG3TjY2tP0z38EDCirr0JIUs0WvMJmMhV7xBV4YvriwoRRH2hWUui7kdhCqqdDg8YmaskT2UbNqRq7F2UavnGu1n5xwGG1q8SORCoIwBjZq-~po5r0wX6S6DMmmVyAznzjWhDyNkwUZvdiKeW6e-Z4bwvS2X0w8wRSCgJADOA4iM12dkbj1hsfBKJGA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 使用emoji表情
-	- 复制和粘贴表情符号
+	- ## 1.复制和粘贴表情符号
+	-
