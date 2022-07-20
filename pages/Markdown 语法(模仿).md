@@ -52,10 +52,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-21-12.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcb59fd56-352d-4a60-b523-7f28c24e1eec2022_07_20_Screenshot%20from%202022-07-20%2010-21-12.png?Expires=4811883710&Signature=DOjo~J3Ufv7EMaIqudpX-1DSurwLvsu5qoeO5R9rJ8Vl6m9RkneMeTcuw-kiCc84rFRmmaNmBjQdCCt~FGdcOAGO0qSAKZ65-V0~YhOSB0OP0lbSICH0C-IyjFaAggV0AU2UaITxehDV96X-uBjN0xLfeujYtL4ftpfONfIiw1YPSUeIe6KP-qrF0bP9rlX2DRHNgdthd~G5dVNHJqATQUzDSzh3GAFIC-L4UhlqAjxVPVp9N-J-jZ8coZEg~kcmV4dzRlhsZvUVR~783dC6z6lR2ZoAB75czxOMXX64NmL2tcWf0vmc0Tp8MX7b~ePfMTBh2bQMpCFPYyROchdR4Q__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3.嵌套块引用
 	  在要嵌套的段落前，添加`>>`(两个大于号)。
-		- ***写法***  
-		  \>Dorothy followed her through many of the beautiful rooms in her castle.  
-		  \>  
-		  \>>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+		- ***写法***
 		- ***预览***
 		  
 		  >Dorothy followed her through many of the beautiful rooms in her castle.  
