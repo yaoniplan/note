@@ -209,4 +209,4 @@
 	  ![2022_07_20_Screenshot from 2022-07-20 14-16-25.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad391c1e7a-5398-4861-92f3-d36d284f872e2022_07_20_Screenshot%20from%202022-07-20%2014-16-25.png?Expires=4811897822&Signature=MWmXcBBr3~7cESNdT8ELv0pj634thAyQc1LPYVolAs8pfw6-nVALIfThCOZ1l2kj-ZxixhGSBkg7QYMl7maaFE4WYYDt2r~T~9gfNLphlmOIoVue2mgmkpD~cqEfWJ1uoIKozLDiG6tSsi6x7ekSje9F8t5VtBFYz7yEnjgpZsLOEvdjpDQSwLrUb8Ov7~1dm0J1ucI~wMOqDfWJW-kT-BuwAbkkw7njXuMwEFQIFCTda7fH1RgNSDz4CNxF-NNYchW3SQAyZ0sBSML3VWNltmkrInNEBGZ1PHZSqigmmB6nTDwGxckZM1giowPFh2MGQ-QbCWH437wlvc6z5XHzRA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 表格语法
 	- ## 表格  
-	  使用三个`连字符(---)`
+	  使用三个`连字符(---)`创建每列的标题，
