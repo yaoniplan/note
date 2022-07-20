@@ -158,8 +158,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-03-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf2e88d97-2f3a-4647-87e1-a0489dc635962022_07_20_Screenshot%20from%202022-07-20%2014-03-34.png?Expires=4811897031&Signature=TrH73MGe~HnozwMLZyeAHTNKmJWt62K16SXQ9SRfG3zUuFVsUUrO1OmKOL5cKzUStbFTX4bolujl7HQC73kY5Zu19756meD8xhqp~SRirgwYNzbsgG2ovKusw08GpK9d1R-qwqAatlyAjQ5RsvA3xLlb7NiPak4VyrPGlnrgJlcwc7dYsfmJHzTf~5qvmDV3Te7Ere1SL8-GMqJEy~RHwGR4Ghv~FJHDzBUqGPcfMGMF1eK3qqPc23Y-KBGlQ~xin84nJTfySUPM06Rl4xFNVKh7aJj4~5XSF06on~xX31McAzsJsmTCg8zwVszeorPV4FHWbpoT8YqrNTtxr9YzXA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 带格式化的超链接
 	  需要进行`实验`，以查看哪些元素有效。
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 11-11-23.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add616239e-31a1-46ab-ac0a-32d2b2d793162022_07_20_Screenshot%20from%202022-07-20%2011-11-23.png?Expires=4811886716&Signature=fZ-mQEGkD6OrLMphca2UxmTxBbeAYUTsZguycjY7~PyZgACw5l7lhrlrt2M-pdiTujqXb1f7PcMqjTS6acN5retfExFKhB6qV4K5Pfy3Y4C0abN3zZLAGOIub-Ezu8-lPLHSJnsaYnXYDc38EV1NUty~sWuAZq4qfuW~1ZviBFR~FiGR0fvADTGLqNQFGb3oS5VMFFNY0PiHOFVd9KCxZWm8siFmUtPz3qfpMfkxdt5BoZkIpTnber5QaXG31KfRlYZKo6exm-2t7YHFkSYoVTc2cOj8xZrVCQ315hSmq09N96Av7wPR~UY07nMg8JwHHsTTJ6uZL9VyJaDPpurk2A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***写法***
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 11-11-41.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad5f2dec3d-2380-402a-af08-887c3b73365d2022_07_20_Screenshot%20from%202022-07-20%2011-11-41.png?Expires=4811886751&Signature=bnsnYOnXeHgKlZYWyd9BHztT-r~w-lXZXkGjP-endPozwrreBX8DnjzU70UncmeWzjSyk5xOuoUiRWbfBNm5LH~YMY8dd0GgcKkkONeVRYQlraSEscA6fGZj1HQvl3LVJJnDtN8p8kfUhv9wDLoMhREM8lBymB6h5fEdJNTZwHl8nf-yuBrH099vCGA5d5P-agt4mhL63wBh9EXy5w9wI9YcettMswsBCKeslvIpyINSlvUkeeSSBVCtpNuM1USh-PtA9WkLrmGA3S8oPR5Jny6tyvm~dzZvNAvXaYUSOdnyjer2Oh1rFGA8aBpolCDPK7K7CKVsmUrn~TwVFu2Yww__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 引用类型的超链接  
