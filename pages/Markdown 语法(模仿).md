@@ -173,4 +173,6 @@
   使用`感叹号`(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。
 	- ***写法***  
 	  ![2022_07_20_Screenshot from 2022-07-20 13-32-23.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0aae00aa-c34d-40d1-8f2c-d78d4b0fbadc2022_07_20_Screenshot%20from%202022-07-20%2013-32-23.png?Expires=4811895169&Signature=eovFg1FRhFGG-EN-hmky~wmmp5k~k0TOH6TbBqe74xjAJsLi-P4D39~EuZPGEKuAd4fUkMkzcZ3GSkKJ-i5M~X551VLfgmIlGFF-37MK-ECiGK5HIui6VWSa92Mj0fv95SC551GOx0rJcJmAdvUaHWyxRcoDWEoNrso-wiDcl20JBxPjE~P-eaFqZtXKCGUvb4Upxg~tx-UJAJOJnFXETrJtqO5tU-QUmF1DOF3CPNGNefWRgmHJs-BA8XIBWNSqcVfyXQUpOWN-xFrmY-FCXhml25NBFThddYCk7YHZM1VxhdAa8ZvhjGlsjayINx0f51aJbaAeZYhPjXMOG-YOrQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***
+	- ***预览***  
+	  ![2022_07_20_Screenshot from 2022-07-20 13-33-19.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add48b511e-86fd-4175-8b32-f1d327f6ad9c2022_07_20_Screenshot%20from%202022-07-20%2013-33-19.png?Expires=4811895225&Signature=lmdPa59e-jjFG4RUMUT0VbPtzcLABiaEuGIckwqBFzE6CyUlboObeqev4NR~E3HjsvOswmhingt~ScymJvpodE8q4Bc7LDlJZ60EwqfFq3unCZDf0bNMkeHX2vViVjP80i~86I0D4y6I~aDSQsSWpnOETCRhIvjsKHCM8ubP3L94t67qU3w0CBK25J2akILJTQWQO3rzQb7ffU2BibgTH3g2anNUe-DFtYtEmvIboa7ES0UWzYS5LfItIB94h0jGmdhUhaWoPBYWyjtDJdfXvamHNSDPNaAK~tEDkyprUsA99St-kOgR4E91d-5P5Ea6pY-s6E2R9XDftJPqQUZjBg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	-
