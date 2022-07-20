@@ -153,7 +153,7 @@
 	- ## 简化的超链接
 	  在URL或email地址前，添加`<`(小于号)；在其后，添加`>`(大于号)
 		- ***写法***  
-		  \<fake@example.com>
+		  ![2022_07_20_Screenshot from 2022-07-20 10-59-22.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad13051bec-3a15-4006-9c71-fe31d84ddf542022_07_20_Screenshot%20from%202022-07-20%2010-59-22.png?Expires=4811886015&Signature=Gl0BtNzd4qhU~vZt5rZxGN3G41royITFhBUy-s-faYjyCJ2yEx~LBP96wF808UkqwTcg2fSxuqeiLgDv9sIrABNQ3raL37MwgLBzbLH59Aa--2KWJYhSrWPW6SRlk0SUv7PG-uk4csCp0OXXTd8CjllyTdRJNji~Avs5Pbt45XizKNPi~Tb0zYocWpDxa7GaLp2IoOs-S~CtqhYHyX1RBHt-Y6KPsqhY4RTqmRrjrCdNmT-FM8M7h~xt11WpF9Nqnv7LZK~xnwtIVu-3f0m-QrCRMluPibNH7qg5gl1b5m3mKq5oGJO9zaTsPbrIfKsdACHrrK-GXGA~GBMb-H20LQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  <https://markdown.com.cn>  
 		  <fake@example.com>
