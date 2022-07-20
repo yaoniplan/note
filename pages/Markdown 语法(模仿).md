@@ -108,8 +108,7 @@
 - # 代码语法
 	- ## 1.单词或短语代码
 	  将单词或短语包裹在`反引号`(`)中。
-		- ***写法***  
-		  At the command prompt,type \`nano`.
+		- ***写法***
 		- ***预览***  
 		  At the command prompt,type `nano`.
 	- ## 2.转义反引号
