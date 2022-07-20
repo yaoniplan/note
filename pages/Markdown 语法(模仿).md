@@ -98,10 +98,6 @@
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-41-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad70fa5259-aac1-4ad5-8fbe-0a34478e1a692022_07_20_Screenshot%20from%202022-07-20%2010-41-04.png?Expires=4811884983&Signature=PrsmxTHwcCWYQ9oVgjFjFrppdTdrV0Z4AxWD7EgVXZXjHjBWI1Y4acMr8wLu94beQO2kc9qQRVzQvI1JcMTeJGSg5JUZZbp3IisGa7s78wUjOY80tnwU9RBwrMELm5zdRW8-kc0Sr6A4y-Gv9ncd3I3Fu6gjPwd0ZgTR9kNCPoUb9jBNxekOIKntu4belYAjxgUKt4hVE7jlbt057Sl6wl2P1MNgie-HiyyGj55I1KDiAe9nWytchLI-7DKw5J9GBjltVzfVVVQcazESySXT9PvE4OfiiQX8n~wdDv0xi36pUf57qI20V6OEeNLsusR7kMjxsLUISag~MIcIB2cgfQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  1.Open the file containing the Linux mascot.  
-		  2.Marvel at its beauty.  
-		  
-		      ![Tux,the Linux mascot](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1b5766e1-b597-449a-adda-651de1fb5e2b2022_07_18_download.png?Expires=4811749880&Signature=hwi~mikB9RfRmCPuE9qNr5I6pT6uofgF1-H78qgvufDRkshDFJfkEi0GND83yo7Knx6K1Jfiwhqv2Cilhi6NLnertc-aX-7wsY01AOEAiWPC6OtESSOSksZA-IJQNmNvOtkxNemKXjcKQWp1~gBywT5qD1nq-z2zPWmyFWU9h~FoQA0Kd9RKZA5XNHs4604F9rbZ91ACjz6UPxA-j9zUHQOqew0~zgB85UPpIA9JcJEcg2Vj6Q1gRcIg8iAEjjOHWVJ1kGQXCA9V4sG9sw0ndjkp86Lx~YlaVGyCiC69H4WwRKsG7N6oKSNwlGA6oEaIz69MOMykfcma1~j2V7afMQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  
 		  3.Close the file.
 	- ## 在列表中嵌套列表
