@@ -41,10 +41,9 @@
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
 		- ***写法***  
-		  \>Dorothy followed her through many of the beautiful rooms in her castle.
+		  ![2022_07_20_Screenshot from 2022-07-20 10-18-43.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addcf24764-fe4d-4f36-a6da-89d9e4e51fb02022_07_20_Screenshot%20from%202022-07-20%2010-18-43.png?Expires=4811883552&Signature=K~yS82XdY8Ht0MSxgIO4Kw8df0aZOAiQMMb2kxdqvCYbP-SPValTzjN4XzpXtfGhNcKBqIKxy5u1vr-zrkSGCidHqBRN2dlQZsCtgxxaKfJ0baE7Og6ddmr7fxqWiFJ62Whm-dxKHwXgvgJ~a-qMMyehrejk8o16~9OX78FoiOASKI2euTw5Q-RrBZcfxOq2q0FFjQOnNJmeY1To1ecRvQoC~~t29D-XyvE6CbubEAKPAImhYT4H0XLU21AoQUjlOaAwW6yAEeTj~Kgci~pFxTQOiPd7IWJ2TncjTHroynR9kZeEpGGu9Y0x~4YMVfz4KPKLSucoeRDOdAH-v9wqjg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  
-		  >Dorothy followed her through many of the beautiful rooms in her castle.
+		  ![2022_07_20_Screenshot from 2022-07-20 10-18-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0fff999d-5a0f-4312-b984-9de0036fc17a2022_07_20_Screenshot%20from%202022-07-20%2010-18-59.png?Expires=4811883569&Signature=aqTifyyiIXoYZ4R7GO0R7~HojjyveuQAc2vOGhNf9kM~9sWne6uqcuyMCJPSsybao9n7cZGC4ZbxeA1dLbWbACZUdjNe-2k0DQ7eEcqNfta0KedBtpt3k3REDmzOL7cu09ZzWLR-JLLvAaXl~yfzsKX6NAi7QbMFmqHfHxwrM052akeAR29H57wkxgn2Xgz2Ckir2KOCqied8PdfGOKmNBt9m-HjisVkKTvwpCg-Yac~~N8EL3jPFud3Gs2fVv18wMk1wl~ctRrO5qPFnYioeXuXTxEvVP73IJRMbMBU7xhAfQGzlR-Kbviw-ic04TygQfZlYkWFYe67qqLri-226g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.多个段落的块引用
 	  在段落之间的空白行，添加`>`(大于号)。
 		- ***写法***  
