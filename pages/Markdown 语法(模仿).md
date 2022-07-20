@@ -97,7 +97,8 @@
 	  将代码块缩进`八个空格`或`两个制表符`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-31-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad84ce5d6b-2e34-43c0-86e3-4ff25091961e2022_07_20_Screenshot%20from%202022-07-20%2014-31-39.png?Expires=4811898730&Signature=DV19OdodvFNJ2SX40dFjOvCUYJ-X4-9dK9YjjQYnxXWWfkvJpVMQ1GsMuZZDW-v4fuhv-h2eui84upa4pahsjguC~FTse7NC~Z5h4cHL6T2YGCeXZkqX6nJnIeRtU1~K2~1z8pgfIF706LCsGrVlvJR5HvZcBBln1KtVimUkPU4~cbKdEENGvXLac174Oe6dzJzAix2vmkX4L8VhuRcpyI-GMd9uCeHpX6NXBF1lJOy-rFVdKcFLbRJb5OZJnJEU1kmLjZ1i4zgqJTz3W5XeQ1a4TJlL04ho8S0ZE~J7qqOPeUqci~yE2YmKgxXR1INIbD9G3OlPjAClnwdkBX5RdQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-31-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad68ec6622-2274-4d18-b51e-74979ee5cd232022_07_20_Screenshot%20from%202022-07-20%2014-31-49.png?Expires=4811898740&Signature=FN8zdlqLpI-cDa5NJjkCaVBFKrsOgdF1QMolUtIRwCTQtD7bFZMu2oY7Um2XpepiLyJubQU9cuG5DKT1FtFl3hV7qlRVpyI4Cg0FEUnUfoL6BVZdttIqd18rxJS3vBDq-RakJnbBgE6BI00oFF7XxFSzBxo49UcbIAiRuMZOl1VmqN0BoIn-T5bL6qWSJhDgb~vNoPNy1KArc4-41q7MntSD8vbC-rrqrmowwMA7RnxSm~63-cvYloqZZSTreAThjDCoh0ml9JvXDB11R443a2jGZOxQZiSn~zO7PvuZnEADEsCsL~MBuiHO7KHciKRLRVCQ-cstQ2URX7PtWmQEjQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA){:height 283, :width 417}
 	- ## 在列表中嵌套图片
 	  将图片缩进`四个空格`或`一个制表符`
 		- ***写法***  
