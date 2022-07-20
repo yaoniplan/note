@@ -95,13 +95,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-39-40.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3145f4c6-d7e3-4769-80af-c34e8dfc1a632022_07_20_Screenshot%20from%202022-07-20%2010-39-40.png?Expires=4811884826&Signature=h3swTNSu50nLxTT7DRmgXuh2gEcu9svWarRuwLp30WVpsYlaW1bphncMtVPpHtqy4Vh10yWI3zCYORpWzioYTmLi6vhHdAYq32bD~iE1DtcKWfnf4cqz0Jp22o1idOmqbXtWEChmcgPixe2gGsG0Swlv-P0zhmc2qXR563ZzqPwiYjSxcFayptiLa5YTVzBkYnXf1d77GCGOi98~mZlB2yy0WvTakI2u3qvcoqN~Qz9pW99NU7a~7S9MeYCV1inRr4HREinzT6dKJMCwnP1uE7CzXO3XA2oYvwDCKANINAVuVYgn8SucS5xp~8Vojymufdh2dHqrG2o6Gd35guc2fQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 在列表中嵌套图片
 	  将图片缩进`四个空格`或`一个制表符`
-		- ***写法***  
-		  \1.Open the file containing the Linux mascot.  
-		  \2.Marvel at its beauty.  
-		  
-		          \!\[Tux,the Linux mascot](/assets/images/tux.png)  
-		  
-		  3.Close the file.
+		- ***写法***
 		- ***预览***  
 		  1.Open the file containing the Linux mascot.  
 		  2.Marvel at its beauty.  
