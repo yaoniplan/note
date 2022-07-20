@@ -89,7 +89,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-29-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad04c6745f-8506-4e9f-92e1-bd77a8a7132d2022_07_20_Screenshot%20from%202022-07-20%2014-29-58.png?Expires=4811898634&Signature=BXVVb7siYwKP7C9sI9Q4Ke4YtpK5rrOntFBHNv2NMse13GsJvfJ4mo3oirSyTUQW41DXX9D0V3~y4KABrXJAtfnmsfoX9Hm9TYS0~UtHOmsXMjHfy~gpOzEYaCinjWrw6yY9R1oYozvzRDP08oDv2x93D9DdqEo9oh-xGOS7oBjcNKT7RrL5IPCw8sdqdNekqiwr9VHxfU9~~GdNL2ib-LxvPxZDxhAxm-GX1R~PBOxUCoDKHqLEVSWzKlCnlFLfFIFrqbRMM6MBhtwlhWsD0niDMX4QXKM2Vnibx5-l36-0O5AjkHfjVC~ffq7ODEBkSLKoqH-lNshfChr0x5nC4g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.在列表中嵌套引用块
 	  同样的，将该元素缩进`四个空格`或`一个制表符`
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-30-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0575d72a-0c92-4d0c-9128-4b31974d50342022_07_20_Screenshot%20from%202022-07-20%2014-30-53.png?Expires=4811898666&Signature=hN7GbCOhMh~Lw-vVmGCClBv--NbzqHyGdeGOVWhgyWgpIQOeNmsuE0slWi43lQOAmWXv9DWwGw7ljSrRU-PEhgZebpbhuQfSPq7WhAnzZRAIpZRfQa4mFIkJnrEKbOPbfhKGBt77Kcto7RapdJZcbvWmIct3lOfgPtfHGz968WWK9QrGdyKwV-sGGvyXztnqJt-UplfuzsjSLwJ9hY8rSlljQn2~b5RSYumaTK32IJSdIjj4qh7c0SC2vQxzpLzSoS2AlLcbFDcZjqeVWqDZWZExOrPoKDHvmpefyUe1kgu2PhdRsU3OuM7iXYSY5f98u2hft9ZnLG8mVM-hqvWJ2g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-38-09.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad96255667-f23d-4cf2-8686-d0ed23cdb6e42022_07_20_Screenshot%20from%202022-07-20%2010-38-09.png?Expires=4811884730&Signature=mrX1IV~HvdLVhBO0fdFB7gLt9L1KpWLmiV3H3RKRRxOCEwodUUDE-AVO2d7Fj1IoNnxKR6z~YOukjBzz2s1UYKpczQYMeA9Umx94O8r5kgjqkAu7iBxkoyJGk8Pd8HMOOmwWS~uXA81mGZAq5tgiplIi~UirP0sPY~o9KRgwOkNT-X-xg8qxH01xuc~E0FQRTlv3fg6KBm5xkp-RqNenST7IOqeuXZW4gnUbw53P4IIuyqASA~6QVzRLvB6hzlNKiYRliGrzWNREf1n5IbGfgBRct42DMophnvXXcYVoQ5dln-6yC706A7WHvDGMz~ZibAXOWqXJqM8m3ra28xHggA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 5.在列表中嵌套代码块
