@@ -129,13 +129,7 @@
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-50-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad7a4ecb02-5163-42cc-8dfb-2f63fddf55a32022_07_20_Screenshot%20from%202022-07-20%2010-50-21.png?Expires=4811885452&Signature=KMb1UF~wDyCWdPAKeaDSPkUjsKJ~HMYFGR1qBsWqe3X0btjT9bYRN3XK0xPf4ZwaeUOItsR3bvpk2xhle1lcm188-5d04RlW-~0AZLTItvTS-lgTWdqP56T2Hro4LQJQOdi5XMjP2wVUIoxxcyMKBU7lSfB9jMupV8MdI1WzCwJYacinVdTzwp2gXavMfarumK8GicsV1CgDNhaP7ML7PcKBzfY5YjpYXHwbNdXS-bhjwn1JHS~wkVDEG1rlmIqWI2-H6AVry94eX2GgbmqFB1gTH0If8x6EC2vzwXUM9-ha4hBY2qQFhvWMGfPeQ6u8xUd3FW-QI8fJbzaur1gpXw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
-		  ```json
-		  {
-		    "firstName":"John",
-		    "lastName":"Smith",
-		    "age":25
-		  }
-		  ```
+		  ![2022_07_20_Screenshot from 2022-07-20 10-50-38.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9557bc29-ba61-4154-b51e-edfcc377c9ef2022_07_20_Screenshot%20from%202022-07-20%2010-50-38.png?Expires=4811885472&Signature=IjUIlOsHNOU9fx7H7FKURzWdHdAw11vQML0d~JIjp1pToPXMpM86-bZWfIZHHWqgOTlp0xZaeOKEAZx4psQVMb~R10HGGG-04DTw8ZTfLMQ7V-cILS23Zry51RO-IU6nrcS9uNfNEZZribT-FZZu2WCQ7Fspn~Joib4Z-Q6klMgRwCpYSwvTwyfeaExD~cQu05IPWJN9mZJKxnGHt611M3Y7oePTOG7PD5MW-7sDqQfhSoTlq~xl08PyFHzH~Pp6xhJVZkz0bNHXFdk-bYXr~GZkJXfdji8MyYjXDUbbgWykVCyChsZC4rjY8IRscWk6ZFHUWH3nwdYp7N-t6wbQiQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 分隔线语法
   在单独一行上，使用三个`星号`(\*\*\*)、`破折号`(\-\-\-)或`下划线`(\_\_\_)
 	- ***写法***  
