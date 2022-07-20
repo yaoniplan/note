@@ -225,3 +225,4 @@
 	  在括号内使用另一个插入符号和数字添加脚注，并用`冒号(:)`和`文本`。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 15-21-44.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6f856a65-f0a0-403a-ab05-0e06efa4bc3b2022_07_20_Screenshot%20from%202022-07-20%2015-21-44.png?Expires=4811901738&Signature=YkfRlaElOWB2Zpm4JXeHoOYY-BHKy4YLppEPSCpXOtxvdSfh0Sab-YvFDsK3IgSiZ1VM4DpwzecU-iN8MkPXleYOaY9yy-PTpS0SgtWJXT205LKB6J~qPkkd6Eu~07ZxO7PXH9gXoCUe7BrO9eZ8I9RSLRtjfusRoke7VGXLWzju3JQFV7GzLVt6mDmzKotLwHPe0Ed4q5ov-zyY5Eis7MRX3wkU7BVUhAgTz1evTVl3LmjJWmSxewwA15C0W4TkbjbxE-tHi1WoJLq31Tx4RsCW2zLGp20RL~rukukdvfmm7fcQnbqKG8rdJ2JbSp0pEiS8Hwp5Slt7SISEuQOaZg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***
