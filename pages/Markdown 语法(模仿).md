@@ -38,7 +38,7 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-09-30.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad80596dfb-485d-405d-82e8-2a2c5a6c474a2022_07_20_Screenshot%20from%202022-07-20%2010-09-30.png?Expires=4811883006&Signature=ZLABACDsdSCdbsb~A-ug6q0vsxgIvRVi3glAM0iqAEgpW3NC1B4faDZDxbLZaITwKIi0-V-cs~3rHjIKCiDw7nlx1CwGOCKLcTeqlxoDuM56JkLOrg8qOkfxph0KdMTO6Pf8yFI5RV2zyoQm68TwGVrh1-sHbE25ViOr6HsD3itegi9HyeKiQ9MBwPF9GjQh7b6MKgIZwLAYwrd4kqljK8JuRg-1abtWbS0tEBenof1GJH53SsDdVRnJL0IsEUwZvZN79g9KkuxgR~jxb367oplKXbBLF2dChzkjk6H7IPNH6SuA1h-paIajP8bR3QSLJWeawYcG16O6tyWgRAgLLw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.删除线  
-	  在单词前后，使用两个
+	  在单词前后，使用两个``
 - # 引用语法
 	- ## 1.块引用
 	  在段落前，添加`>`(大于号)。
