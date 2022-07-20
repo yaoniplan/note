@@ -165,5 +165,3 @@
 	- ## 引用类型的超链接  
 	  分为两部分：与文本保持`內联`的部分、存储在文件中`其他位置`的部分。
 		- ***写法***
-		- [hobbit-hole][1]
-		- [1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle
