@@ -83,7 +83,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-33-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adb3f8b45a-4290-4d5a-9571-92465d8d22e62022_07_20_Screenshot%20from%202022-07-20%2010-33-53.png?Expires=4811884664&Signature=KJSx4mKKlJVk9~W-QwNr0SoGIE4QFfyGlg1W8M6yI7iWLsKiitalDvs4h4R~wtdI77V6O42MaEc6QKiEfGwPtSvbIuhQdqFP5-YDtFFir31peehXWtxnBK1BsIK42S1Fq8jieI~VkNIkkYD2RKzsK2e2ofpxh3blYP8Tt0yAFoBdYlhTIAqJM~-h~ZuSoDhVXK3DhrL1c~AIBWxZloo1KWeJCmuBDoT-mRpwHzSyXALokHRQ1DCuz2KxUr~J43Rp~t4zLofK0gLhxNhCJ8laY-WphMNMG8ZyAteOy9LXwQI-NTaSMhjOj3rJt4Ewj~-4LawIPBeO4pmiSJ~86l8img__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 4.在列表中嵌套引用块
 	  同样的，将该元素缩进`四个空格`或`一个制表符`
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-37-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add0c96b1d-677b-4b1c-ba44-2162f27bba9f2022_07_20_Screenshot%20from%202022-07-20%2010-37-58.png?Expires=4811884711&Signature=cNKPDP4Xl7a71aQRbr~25458jwUbKSavRCRembgbyNGV3y5rnvAF8xrzPnKNgKomw~ZpJEq7eKPNfbkFAZnA-sVPeHy4rNN3feru8qth8Khs~y1od1BYKthXCWt74jSRgMsEVO9TlM6c~BP4Buo~lTHDxbEJLDtuX4zH~FJ5tAMfCSYwYHcZt~e3TfzyoMG9TZJMsaZkQ73NoOf2FkPxKuIcA7Jqn9p~mVwhxMhzawAwfDdMNG62atGyW4k6muEH67ULS-DMe9Tb9EaHxMGfC7bbfy4eejzIctYQEUdGbogJEjbh74TsLw64SDrGFr7GRxkkVaFpGYE0SubcLvRWaA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  -This is the first item.  
 		  -Here's the second list item.  
