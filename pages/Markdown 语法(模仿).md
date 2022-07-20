@@ -95,7 +95,8 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-39-40.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3145f4c6-d7e3-4769-80af-c34e8dfc1a632022_07_20_Screenshot%20from%202022-07-20%2010-39-40.png?Expires=4811884826&Signature=h3swTNSu50nLxTT7DRmgXuh2gEcu9svWarRuwLp30WVpsYlaW1bphncMtVPpHtqy4Vh10yWI3zCYORpWzioYTmLi6vhHdAYq32bD~iE1DtcKWfnf4cqz0Jp22o1idOmqbXtWEChmcgPixe2gGsG0Swlv-P0zhmc2qXR563ZzqPwiYjSxcFayptiLa5YTVzBkYnXf1d77GCGOi98~mZlB2yy0WvTakI2u3qvcoqN~Qz9pW99NU7a~7S9MeYCV1inRr4HREinzT6dKJMCwnP1uE7CzXO3XA2oYvwDCKANINAVuVYgn8SucS5xp~8Vojymufdh2dHqrG2o6Gd35guc2fQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 在列表中嵌套图片
 	  将图片缩进`四个空格`或`一个制表符`
-		- ***写法***
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-41-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad70fa5259-aac1-4ad5-8fbe-0a34478e1a692022_07_20_Screenshot%20from%202022-07-20%2010-41-04.png?Expires=4811884983&Signature=PrsmxTHwcCWYQ9oVgjFjFrppdTdrV0Z4AxWD7EgVXZXjHjBWI1Y4acMr8wLu94beQO2kc9qQRVzQvI1JcMTeJGSg5JUZZbp3IisGa7s78wUjOY80tnwU9RBwrMELm5zdRW8-kc0Sr6A4y-Gv9ncd3I3Fu6gjPwd0ZgTR9kNCPoUb9jBNxekOIKntu4belYAjxgUKt4hVE7jlbt057Sl6wl2P1MNgie-HiyyGj55I1KDiAe9nWytchLI-7DKw5J9GBjltVzfVVVQcazESySXT9PvE4OfiiQX8n~wdDv0xi36pUf57qI20V6OEeNLsusR7kMjxsLUISag~MIcIB2cgfQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  1.Open the file containing the Linux mascot.  
 		  2.Marvel at its beauty.  
