@@ -103,7 +103,8 @@
 	  将列表缩进`四个空格`或`一个制表符`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-43-00.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad9af1e6c7-428e-45b5-9a28-faac28b484e42022_07_20_Screenshot%20from%202022-07-20%2010-43-00.png?Expires=4811885126&Signature=ajidzUw50HC4VcDFcZJ~XRtuCynwuamaB66GIyrOgFyqN9k1wRTIwFZHwDV15~d2CicQkh6gAr5Jz~dP7mFsm3JLWTVNn6opXZajm9xB6~ktN2hJJ5jiaBu2gp4VVi-a--g0kXD1ciBV6CLS1ac2dDqknMtKaM7xGsEzQR~y~Y7LSK13SZrTRkdQHJU6qrTLlvEZGMHZgYWU2VcDDq-0EcIYTcL69AgnYl~eT7UcJXfByVvlINqkuhi04h8mD~LdWWfC9PfX5l1U3fkAfmXFIgw3i5D51JIgPPhuTKMaH3xGvaMjXGqFORqW9CbVLI-9BHNdMZT0zxtKUJydxsWvhw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-43-18.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1116bafd-b5b7-4c4d-aa98-20e7fc0a5aff2022_07_20_Screenshot%20from%202022-07-20%2010-43-18.png?Expires=4811885141&Signature=SUrXOX3wJE0BGI6HkbyVxJVdzXMo5SgxUCmj9GkR~nzbu~s6nFSfE4aEV6HJ~mOqa1o2e92-FwWXa5uQhk~BxDrywdUjcYyjZgYj3e0P1zyAuKqcfycOT59hOQPOqeevZnhSKI~eQbqULlZUU7MQCuiBNla8MjOfMdwJCjlVo2JxXsPx-o86p~lN8VGqpq6EskfUjAaIiemZJDb3GkbqG22uIDAgV3ftkNngqNETqK-sD0nRj4ekNPSDDF-q~wAAYdL6diCtJMY-kvhMdGkpoazMr~TSeKVcEqcFjJMIjlkvBquUOYFxy-ZvTncQjPqbV-Ri81~j-2LILawr3aAM4w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 代码语法
 	- ## 1.单词或短语代码
 	  将单词或短语包裹在`反引号`(`)中。
