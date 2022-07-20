@@ -181,7 +181,8 @@
 	  `![图片alt](图片链接 "图片title")`
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 13-48-20.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6e2a9853-511f-4834-8cb7-05b0935023372022_07_20_Screenshot%20from%202022-07-20%2013-48-20.png?Expires=4811896118&Signature=hiKxDsuj-VJbjy~W3lq8lglwgy8l-iwQMOmlcQ2nj851SsScwbZVSpPbe2KNRR6k4T42MZhL7AWYS-cQ~VBgGDPQvKjTVtwbGko1Ofw965~ZCok~xXxge2Q3owAiqj4j4scpLwc6THh1SQuWyPPbrvTaLiwMlYo1Eqr0uL9SFHiYFptNNbh~1hvdRJun9~G1C0WjNvdohgCoy~NafhOw5fz1l30PsA3f61cqO7noJwkzGzyRLh~V2ArI7pwOxpqqIQ1RqHt6YgUwAYW52Px2H-sTwBVJ6Rg9P2F5qhp3tiuIl76zD0088oMmCY87ZlFJikBQitEcW483g2Vh7za7AQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-38-08.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade445e061-f434-4ac7-ae4c-12157f5de7e32022_07_20_Screenshot%20from%202022-07-20%2014-38-08.png?Expires=4811899154&Signature=JI0wI0ZptsNDLXv802lXMTyB8tuMieMUaSG~FPzCDiNwKky6VJs0XECquIRmEZEzyvPSs7PX~ZbZKnxqnqiyGBqUVsR0O9Awo9INRPIIXbdrl-TIBz84x9eQ-U~tW4Rt~shjVv43auQxc66ATRD4O6QhN85fAP6kEsemINVrdozUcy4G90LJHHl7rj4plL45aWQo9fjLtwIQ7B89W2ST~Z~HXY-8Eq6znXhFv1KLFo1XoPNap3Jc7RiLgGqp9zq9SCdBIEJoiCnRJ8JcyeP-SObFaqBBzOwEMS-854wryXA3ABxt4oBz9Nx9O9UFtQaysGvJSPa~zTQ3dZq8QcxRWQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.有链接的图片  
 	  将图像的Markdown括在方括号中，然后将链接添加在圆括号中。
 		- ***写法***  
