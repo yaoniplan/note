@@ -110,7 +110,8 @@
 	  将单词或短语包裹在`反引号`(`)中。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-44-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc28232c9-c5ef-4565-9be6-ca91383ead022022_07_20_Screenshot%20from%202022-07-20%2010-44-24.png?Expires=4811885199&Signature=QPzUtm3J-reGdmWI-uE8LVx-Iz1hyCR121BS6O-eTuPEb4a~2bcST-jJiz5Q15w03tXYimnadPkufccwmG~vJUE-etRx53Kozi-pm7bxKSLVXj3MFDCz~GQem-brgvhuLV~xaMJD2d-AdgOojWKsCBfZMH0aDuoNnpy5THaAvVDF6kssYGd6Kq84Q6Pi8qOrgeVJXvLhgwgtkzkQce0zROuLjhG3oHXtnuPm4LjMIADz0mbV9gmnNBklamYtLTMod~q0FEyohppAuFJZASrBD0fWc2CWMaPV1OqD36X46yBePqJ12-cPGsxYT~Vxl2Gv5JpRfqrbY1GeHKmSbMj5Fw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 10-44-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad65ff2eff-10a2-4663-84bb-a96d4089d8632022_07_20_Screenshot%20from%202022-07-20%2010-44-39.png?Expires=4811885219&Signature=Li8MOYHZvTNnxpQ9v79R-EKU5CoFF1KBidEWWqtoXUupsHhFD80Zbh3Am0A-Nvw~rN6hc9wHdYkCARFoQAJWvW91er6~iqQlQTI7vC6-Ku4SVfD63AKPeQuTqRWczPH4mbNqDNJyqwWOnTzhgK6mpCXgwQ-E4z2OQcapGCl6iRtB~anWFWzIM1bWLyXVDLbw~4~2ZcVUenMEeo6gyYSIyxZZjy3JKQnNFx4KC-PWBhR7N8Hgzm9NFTvSH4R18vb22Gb7WO9nSbLUUS8HtRyQJU4NViIR6VXIhSXPaQHNyu5~bRm~MAquo22pPl31NnHP9imvB-a4JXz1PvwmMmAxiA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2.转义反引号
 	  将单词或短语代码包裹在`双反引号`(``)中。
 		- ***写法***  
