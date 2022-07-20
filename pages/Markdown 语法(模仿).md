@@ -42,9 +42,7 @@
 	  在段落前，添加`>`(大于号)。
 		- ***写法***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-11-37.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad98c40254-051e-4a49-93aa-f8e2491efb732022_07_20_Screenshot%20from%202022-07-20%2010-11-37.png?Expires=4811883148&Signature=ahZ69QbD-mEGpFgpqN0pbt3sqmckGrtIJ2vOZt-ZVdQjOaM7ywQk~g5ItRUFBM2HBftinFSpRluF2Huuf6goOjhpwJyQ5pf~JkoGe4asRg1jv9Rp1bkUH2XOC3egkqAIJAR0G6LCfeaX4gw5JbWO661BBN6KPp1KOU~YkNuNLZNdwoKRDhZyPswyfZ~XsR3sMnXGQMVbh7todRG1pCP~g68d8ITaTqsPzjiIRAaprDq2x4W52BLek7UfO6~sunqeCVAV-yFOxhe25bHHS4uOEOsRQxcJxKBPZBpBvuYKt27jm5~-NdhdzqbJ9JtO9up8d5qQlIm-RPZHoZqewMEwEg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  
-		  >Dorothy followed her through many of the beautiful rooms in her castle.
+		- ***预览***
 	- ## 2.多个段落的块引用
 	  在段落之间的空白行，添加`>`(大于号)。
 		- ***写法***  
