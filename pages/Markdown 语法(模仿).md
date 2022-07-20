@@ -89,8 +89,7 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 10-38-09.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad96255667-f23d-4cf2-8686-d0ed23cdb6e42022_07_20_Screenshot%20from%202022-07-20%2010-38-09.png?Expires=4811884730&Signature=mrX1IV~HvdLVhBO0fdFB7gLt9L1KpWLmiV3H3RKRRxOCEwodUUDE-AVO2d7Fj1IoNnxKR6z~YOukjBzz2s1UYKpczQYMeA9Umx94O8r5kgjqkAu7iBxkoyJGk8Pd8HMOOmwWS~uXA81mGZAq5tgiplIi~UirP0sPY~o9KRgwOkNT-X-xg8qxH01xuc~E0FQRTlv3fg6KBm5xkp-RqNenST7IOqeuXZW4gnUbw53P4IIuyqASA~6QVzRLvB6hzlNKiYRliGrzWNREf1n5IbGfgBRct42DMophnvXXcYVoQ5dln-6yC706A7WHvDGMz~ZibAXOWqXJqM8m3ra28xHggA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 5.在列表中嵌套代码块
 	  将代码块缩进`八个空格`或`两个制表符`
-		- ***写法***  
-		  e.
+		- ***写法***
 		- ***预览***
 		  1.Open the file.  
 		  2.Find the following code block on line 21:  
