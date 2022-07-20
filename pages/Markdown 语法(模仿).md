@@ -171,5 +171,4 @@
 		  (无)
 - # 图片语法  
   使用`感叹号`(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。
-	- ***写法***  
-	  ![2022_07_20_Screenshot from 2022-07-20 13-31-27.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada54c6d39-8d14-40bb-a22a-b52b010b5b4c2022_07_20_Screenshot%20from%202022-07-20%2013-31-27.png?Expires=4811895124&Signature=F-AiYr0yeBICZtUCLu1-Jojmcmnc26C~tBsHVFPKQ4vhR89Da1Ime7H839fKDXdxZiPsc9eEDk98-OJwXzw3nR3Bin3ekYNaOk3kZr5BuBdPu-xDJEiZCduV8x9q4z44sYaH8hXBGDsrb3LrOSArqrvPo3li6qfZChimE1kqjmmS~pYl~lK-MUuRbW~r9~y~F0ooWyDAry4zWOiiisa9hIVh8MQO7QkCgQPSqh2bAAYGLHNJgl9fEiiZRDIpvLNAH8jQi5YRJa23cOpqSgq-HRGTrGKqiu82BUUP04~wusNoArOMbaTIstsfczC2gYvcpvWrnB4wDn7iFLAeTRJulQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	- ***写法***
