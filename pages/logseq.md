@@ -37,6 +37,6 @@
 		  查询的条件：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-40-25.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8284848c-eb09-4b5e-92ea-05008296624f2022_07_21_Screenshot%20from%202022-07-21%2016-40-25.png?Expires=4811992857&Signature=LaHuqpXWCIouuZhcLCPP9BzPSEhwjjZsupMf32N8AQntNPWE3OszIzMimBcgu39E16pVhs9zw6fqsmd~xSIlsX24aKMBUYaicOk9ny5Wr1YNySQxOV0qP~tef2~ZL-196FBFhzv7b83n~tBI~bioWMKzRA9XSTSYRNG7GG3JK3wsdGN~FbttCbHLeR7x6JZpxzE6kUA3robM-idNmAcAsvqu3MDFwlfYICC9o1dHMsWsmj4LDm-Hfec~XDrLq9G5gONF7MsZs~EZGbrgXsSGgj93FRaxWMoRW4B4Nulx9CQCpf9XGmc0QsSFj6bEWE7F9O7FRevuGi08CPqjXbrNkQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  todo分几种不同的状态：这里是later(稍后要做的)
-		- {{query (todo)}}
+		- {{query (todo later)}}
 -
 -
