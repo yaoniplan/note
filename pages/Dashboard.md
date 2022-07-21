@@ -3,5 +3,6 @@
 - In progress
 	- {{query (todo now)}}
 - Writing plan
-	- {{query (and (todo later) []])}}
+	- {{query (and (todo later) [[writing]])}}
+	-
 	-
