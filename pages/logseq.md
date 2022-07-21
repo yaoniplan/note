@@ -29,11 +29,12 @@
 			  CLOCK: [2022-07-21 Thu 16:28:52]--[2022-07-21 Thu 16:28:53] =>  00:00:01
 			  :END:
 	- [[query]]
-		- 记录一件事情(比如：洗衣服)  
+		- LATER 记录一件事情(比如：洗衣服)  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-52-04.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad48125d72-6692-4c95-9b8d-0b6b23780a1c2022_07_21_Screenshot%20from%202022-07-21%2016-52-04.png?Expires=4811993633&Signature=F6TEpCkyiVOVN6wcXIFxex84H~Zy7aRSgcp~kY6X0twjHIYt0P3vr9wfY9cI37tKbS6vmmfOinnGK7B72OxOLMYZUphTOEyaVVgkN-CxnfDl1Tsv4DOIZbJJqMMCRfeXGM2zTuX3w1PcMnQd1WsCREavNk8QizhHUGXneWIu6hyJ~zZwLUze2-fO7H6jVzCpaHfexAr8HbZjl4eaFBTP4pXzbEFHbON89GBAmo4LqX6KoFAsYX3Zw1o3gZk5RHryBZF2Fujum4pLJdRvYF1ciZK6k7WHXFmVukUdFHlnDXyq6HoKXT8KAYLD6EETdrDfaZ~UbizWfUCwm~H3fxSlvg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  回车：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-52-32.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfd78a668-484f-4122-a029-1043f84b89e42022_07_21_Screenshot%20from%202022-07-21%2016-52-32.png?Expires=4811993689&Signature=eSvYtBv41d6jHtiBF~0iPUG8qrm4xxt~7Q~NOPh2jzTZmaIDmb~kpgwQlOsWsMTkGE04w28BKqWyN2YHYGWmBIldN35VsiTxyIM7E9~60N40xCkd9xstyWC5OIPSUnHkknpf5wzGaDkjuPythOyMBVOoWVA2DO5dJep-s0Nzm9b02J0imiweJ0HKgUVpR2km5WsZ1jkR3wgTkMdGPjQHm8~UiiiEMh7jd5HJ4WcO2wDWhSZRt5eSW4ZFpDW-4f3uWT8ZwRgdR8wsfUEqmMa2ySM3AUqEhf3dYy276lxsr~nWfER~Nyg6ADjsh~YckQTH0-GaPlVqe5Bj6tq7AUYA6g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
-		  这条稍后要做的事情，就会被添加到[[query]]
+		  这条稍后要做的事情，就会被添加到[[query]]  
+		  洗衣服
 		- 查询稍后要做的item  
 		  写下一个：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
