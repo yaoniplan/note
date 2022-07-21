@@ -15,5 +15,6 @@
 	- 除非是跟具体的某一事情是有关的，才会直接[[检索]][[logseq]]，比如说：我正在写[[logseq]]的基本概念，跟[[logseq]]有强烈的关系，那才会直接[[检索]][[logseq]]，然后进去，记录笔记
 - 基本使用
 	- 打开[[Journals]]，把想法记录下来，比如  
-	  ![2022_07_21_Screenshot from 2022-07-21 16-18-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf6d30f9b-0975-4a44-8bf0-efbcb8ae579c2022_07_21_Screenshot%20from%202022-07-21%2016-18-31.png?Expires=4811991541&Signature=L-z7nlcwBcO49-OD7Hx6lKk-a8rFC6RfpwegmXmb8fgsg9ZN~1A7pUfOgM7Sfgc1znyWYVtMfV0F4JbP2UBb3txWuS2OH0GMXRb3ozgv6f~6OnZLrWViIxr8WN5ctCCKcrZhUboGfF7~wcj0Dja5ArNcEcJ9fXKgd~f9VB4uXJb-XtPee70ElFh6lBiDf3nM-fEw24pW4ZK5V8sDLRmaoGxs6S~ZRB0Th~hTblNWUPd3SojOJoNpR4Crtdx7ZZmc30FumZrxRKgc3RSpOdblHoMnvhq6-nTZDSZXRZAgOpBXPfsptpBiGfDP0DV1uQEk1r5Rf60wyJF6IONasgFjEg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	  ![一个关于todo的使用技巧](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adf6d30f9b-0975-4a44-8bf0-efbcb8ae579c2022_07_21_Screenshot%20from%202022-07-21%2016-18-31.png?Expires=4811991541&Signature=L-z7nlcwBcO49-OD7Hx6lKk-a8rFC6RfpwegmXmb8fgsg9ZN~1A7pUfOgM7Sfgc1znyWYVtMfV0F4JbP2UBb3txWuS2OH0GMXRb3ozgv6f~6OnZLrWViIxr8WN5ctCCKcrZhUboGfF7~wcj0Dja5ArNcEcJ9fXKgd~f9VB4uXJb-XtPee70ElFh6lBiDf3nM-fEw24pW4ZK5V8sDLRmaoGxs6S~ZRB0Th~hTblNWUPd3SojOJoNpR4Crtdx7ZZmc30FumZrxRKgc3RSpOdblHoMnvhq6-nTZDSZXRZAgOpBXPfsptpBiGfDP0DV1uQEk1r5Rf60wyJF6IONasgFjEg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	- 写一篇
 -
