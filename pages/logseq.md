@@ -29,11 +29,13 @@
 			  [[检索]]按下ctrl+k，输入关键词Dashboard，在Todo就可以看到  
 			  ![2022_07_21_Screenshot from 2022-07-21 20-34-07.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad49965067-849c-44ca-8980-68f775550a1d2022_07_21_Screenshot%20from%202022-07-21%2020-34-07.png?Expires=4812007035&Signature=gqLK2xpZ14pTpDsyRXtJrs6hSUjOb14ATGdyGLIvqUR2ZzDAzfWVNSQ~nvU3mPbmhbKQ7hUm86u~LvKH1Vx6t401lF5WAbqiAEJfeOtUgZitetukNn9ZTd8SxIqa~6lo4Ye6aS~W1XG8MPasiWPm3zExnnRHYrOonImTw-fGAoJB2muulEOAeHmUhnF5~fI~wQncmEm5HrAuzKosWE51Mzswxqp0HWAU~4a5v3wqCq6U-iKJDgP81fByI5GDVBgFygs6pwolsbl~gfzeCFDhcjCIkYtMuS-0OoxjmOBTV~D7v52n9bTWCYvFXg5ZslDBpul3lD5jWatw7Rx4pZli0A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ### writing：  
+		  id:: 62d90c64-5e75-4a68-a533-7f3cb63c9c83
 		  :LOGBOOK:
 		  CLOCK: [2022-07-21 Thu 16:28:47]--[2022-07-21 Thu 16:28:49] =>  00:00:02
 		  CLOCK: [2022-07-21 Thu 16:28:51]--[2022-07-21 Thu 16:28:51] =>  00:00:00
 		  CLOCK: [2022-07-21 Thu 16:28:52]--[2022-07-21 Thu 16:28:53] =>  00:00:01
 		  :END:
+		    
 		  回车：  
 		  ![2022_07_21_Screenshot from 2022-07-21 19-51-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad830767f4-30cf-43ea-b98e-9bcd739d542b2022_07_21_Screenshot%20from%202022-07-21%2019-51-24.png?Expires=4812004388&Signature=TQEriQvpMvv1QY8ytQPGOd2pDqdtPoUJFkvla3hXgF2fSq-3QDOAqpGGlXCEnf6DjNlkt7hBkL9W-cafW4g-K3kKYCHLZ3MjCMz5modNh9pNBYC6CGIpnqWpG2H4MdgaPSmH3JIJBk~H1mCBj0E6LmuwvBXM1p6UdMUBT91hEyUB6FJiO-f82Wm4YMaeN328eRpXGfCIqIlvT-jTkjr2TXucLAMCC1O5GOHoOMexUR2lLYpoyJ5NIkKHMB65qWc1SZWSn801D7pMbDYd56V4hFyosPNGzfN4UFhh~jWqUG~69~1MESdZyqikbjsEBgdX4lNaa3jOHM2rPV7jdvbsQg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- [[random-thought]]  
