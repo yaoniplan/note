@@ -43,7 +43,8 @@
 	  输入：  
 	  ![2022_07_21_Screenshot from 2022-07-21 20-16-31.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adea367e8f-2797-4396-bbb8-30b607276d212022_07_21_Screenshot%20from%202022-07-21%2020-16-31.png?Expires=4812005863&Signature=gbXpMQsht0Npe5lMHJmfzzbw3cFx-7mmoV1wTm~s0QKDxWfLW1HBlneDWtWB6EWxieiSmUeiMdI842YYnaNIY~KhiPogVK-saqgOB~Xtby4stgy-oQHkWjto5L5J5vHasTqH8NN8RTWcEorNpOWzA9rjqvIBtCjSRWYjTfEU568MWADNUw~5HU3Tf~AoNGHZfiatlEXnEZ~erqVFJl36gioUBWmTp57V6uPwxDYTOI~Hr1yksLHoIA1rridfwy6EDqLdM1073KFC8J59qSqYI4MBT6tMlaJcFp-g3Cl3JypawtkHPC7DhnCR~54mwy5S5hK81lJOb~YkEJ4c1MRI2g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 	  回车  
-	  ![2022_07_21_Screenshot from 2022-07-21 20-16-51.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad433f5fc8-7109-4f3d-88b5-14d5edee5fa42022_07_21_Screenshot%20from%202022-07-21%2020-16-51.png?Expires=4812005882&Signature=BxMeImmxpV478Qjs0ksWwjfyccbwdKcyXcvAz648Zp-saYmNa-XP~Lw5CswpsxZ86GcKsmBAbFuzVgsSpieV6XV8pBM3cHhgwqZexvFJVjMzy0BLvTcza7rI1o55fYN8MYSLOlHvCDNPtwfR0qixpqubXx8uzSTsiTFwXpRbv38YgWvuRLZaxKqb4LfjvDEPvavuIEkdO2Cjlz9GnJc-4g9aw7KPOOZpjpxqVsUtbeSySnhaiebrtWZ-uG1BhcKiuriq3d-g2U5EBE~jWB2w7jXY6QJ1gTnQDZ30b~8o9NDv-yUpS1wd1jjpaDPXed7PKAV1hAkiEHaMEiFDcPs8aA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	  ![2022_07_21_Screenshot from 2022-07-21 20-16-51.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad433f5fc8-7109-4f3d-88b5-14d5edee5fa42022_07_21_Screenshot%20from%202022-07-21%2020-16-51.png?Expires=4812005882&Signature=BxMeImmxpV478Qjs0ksWwjfyccbwdKcyXcvAz648Zp-saYmNa-XP~Lw5CswpsxZ86GcKsmBAbFuzVgsSpieV6XV8pBM3cHhgwqZexvFJVjMzy0BLvTcza7rI1o55fYN8MYSLOlHvCDNPtwfR0qixpqubXx8uzSTsiTFwXpRbv38YgWvuRLZaxKqb4LfjvDEPvavuIEkdO2Cjlz9GnJc-4g9aw7KPOOZpjpxqVsUtbeSySnhaiebrtWZ-uG1BhcKiuriq3d-g2U5EBE~jWB2w7jXY6QJ1gTnQDZ30b~8o9NDv-yUpS1wd1jjpaDPXed7PKAV1hAkiEHaMEiFDcPs8aA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
+	  进入[[quote]]并收藏[[quote]]这个页面
 	- [[Dashboard]]
 		- [[Todo]]
 			- 1.写下一个：  
