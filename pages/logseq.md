@@ -25,7 +25,7 @@
 			  回车：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-52-32.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfd78a668-484f-4122-a029-1043f84b89e42022_07_21_Screenshot%20from%202022-07-21%2016-52-32.png?Expires=4811993689&Signature=eSvYtBv41d6jHtiBF~0iPUG8qrm4xxt~7Q~NOPh2jzTZmaIDmb~kpgwQlOsWsMTkGE04w28BKqWyN2YHYGWmBIldN35VsiTxyIM7E9~60N40xCkd9xstyWC5OIPSUnHkknpf5wzGaDkjuPythOyMBVOoWVA2DO5dJep-s0Nzm9b02J0imiweJ0HKgUVpR2km5WsZ1jkR3wgTkMdGPjQHm8~UiiiEMh7jd5HJ4WcO2wDWhSZRt5eSW4ZFpDW-4f3uWT8ZwRgdR8wsfUEqmMa2ySM3AUqEhf3dYy276lxsr~nWfER~Nyg6ADjsh~YckQTH0-GaPlVqe5Bj6tq7AUYA6g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 			- 看一个博客没有看完：
-			- https://www.
+			- https://blog.com
 		- 写作相关  
 		  :LOGBOOK:
 		  CLOCK: [2022-07-21 Thu 16:28:47]--[2022-07-21 Thu 16:28:49] =>  00:00:02
