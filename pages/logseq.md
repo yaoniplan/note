@@ -47,11 +47,11 @@
 				  ![2022_07_21_Screenshot from 2022-07-21 16-44-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad940d75ab-2f44-4752-a8fe-f0d27a91f5ff2022_07_21_Screenshot%20from%202022-07-21%2016-44-34.png?Expires=4811993157&Signature=Yu~MgY7H13p5ouyzZEYh5AwEBNDBgHrwFMcjVAiRWNX~RH5z~ta1U64rhkoOJD-~aLfmeq-TSrcBRNKbiDawRIC~Z0557cvfBoXbnmm6DK6mGhmzunGO6P2uVw8tkq07gaA5SqFrCIORxMgoYr91nbgoe6ynZU8Lafj-kynEPLAc76fe4YTNUf1OqOkfQ4YmxAUadMkHMhi4V-xgbTndTC8LaRGMxcCTp9moitTadDXHzI24bW-qZ8FgHjJk-lgpq5tnVdnUcc~tOXPXu6lEtxO6Le0AntACM9hmhpHHXwU2p9OjaSjwcaFi7ewACESheY7ZjTF~Qcsa7X~SiPXQAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 				  5.回车(则会展示单独地[[block]])：  
 				  ![2022_07_21_Screenshot from 2022-07-21 16-48-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2c3f10c6-9407-42b7-83fd-ef8b707de3ec2022_07_21_Screenshot%20from%202022-07-21%2016-48-21.png?Expires=4811993321&Signature=ea3-611WZbUjLrNaAcQt~gu9e0kSJcwN3hHRT-m2dlRlihG6Wmo~MZEXQ~dLCKerG9IOEOR33rzOnVdbHIk~ZEM-06qAOViX4Ne-GVpkfwYpzXSVKygDaSaAdao1-OpoQym7-uXUZqX9mStGofJ4SE6zNpjCD0U9zTkLOC0VwhT73yeYIAvSuhu768K89u61MrdAwG8dmyDaCTF3RMdMz2T-WpQLOMeXCm4pE7IDsBAEkdcNc0aLGhiBqHbMTpdiHaH1pKp0X6Mh82U41v3lKn~Z1nfooItZNDfMc65d2u6KCQJfZEo2S-i2k1yuCe4cdaCjOHfX~CKXm-U0dtXJhA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-				- [[in progress]]
-					- 重复[[Todo]]中的步骤1、2、3
-					- 将步骤4中的later替换成now，并回车  
-					  参考：  
-					  ![2022_07_21_Screenshot from 2022-07-21 17-18-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1c08c836-49b0-4aa9-949f-b3d98205795f2022_07_21_Screenshot%20from%202022-07-21%2017-18-49.png?Expires=4811995162&Signature=AahxJJfLnq1m5-d0DGaKb74KAR5wLc0Y8uKGXqQianIbzr3OwFP34j1DTI4djAK9S8-g-5wYALBM4MItpr-mx15eI4H~a5unHUIkQ2orBL5fBfKYryjs4SwND-MyZVJGPM56fwW0tRPLxUZYXW5X6mXGz5hpaxn1pWfCHMDoiW-JMI~SpUmgH38EZ-SHHDiV4hfEXmL9IxQgeocx0q4C5i04AM2yiuZ0Abkshje5wZiPpmd0MLrHjzZO2Szyn2yHYHHrQfE6wXLPMlKalhJPp1rGIhx1ZM~biKfXiugLxTY5HtASpsJ-uHoVxgijuyjIFkDhTbNx-7sc5IuMeojxHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+			- [[in progress]]
+				- 重复[[Todo]]中的步骤1、2、3
+				- 将步骤4中的later替换成now，并回车  
+				  参考：  
+				  ![2022_07_21_Screenshot from 2022-07-21 17-18-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1c08c836-49b0-4aa9-949f-b3d98205795f2022_07_21_Screenshot%20from%202022-07-21%2017-18-49.png?Expires=4811995162&Signature=AahxJJfLnq1m5-d0DGaKb74KAR5wLc0Y8uKGXqQianIbzr3OwFP34j1DTI4djAK9S8-g-5wYALBM4MItpr-mx15eI4H~a5unHUIkQ2orBL5fBfKYryjs4SwND-MyZVJGPM56fwW0tRPLxUZYXW5X6mXGz5hpaxn1pWfCHMDoiW-JMI~SpUmgH38EZ-SHHDiV4hfEXmL9IxQgeocx0q4C5i04AM2yiuZ0Abkshje5wZiPpmd0MLrHjzZO2Szyn2yHYHHrQfE6wXLPMlKalhJPp1rGIhx1ZM~biKfXiugLxTY5HtASpsJ-uHoVxgijuyjIFkDhTbNx-7sc5IuMeojxHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 				- [[Writing plan]]
 					- 写作相关
 						-
