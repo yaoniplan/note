@@ -53,5 +53,6 @@
 					  参考：  
 					  ![2022_07_21_Screenshot from 2022-07-21 17-18-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1c08c836-49b0-4aa9-949f-b3d98205795f2022_07_21_Screenshot%20from%202022-07-21%2017-18-49.png?Expires=4811995162&Signature=AahxJJfLnq1m5-d0DGaKb74KAR5wLc0Y8uKGXqQianIbzr3OwFP34j1DTI4djAK9S8-g-5wYALBM4MItpr-mx15eI4H~a5unHUIkQ2orBL5fBfKYryjs4SwND-MyZVJGPM56fwW0tRPLxUZYXW5X6mXGz5hpaxn1pWfCHMDoiW-JMI~SpUmgH38EZ-SHHDiV4hfEXmL9IxQgeocx0q4C5i04AM2yiuZ0Abkshje5wZiPpmd0MLrHjzZO2Szyn2yHYHHrQfE6wXLPMlKalhJPp1rGIhx1ZM~biKfXiugLxTY5HtASpsJ-uHoVxgijuyjIFkDhTbNx-7sc5IuMeojxHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 				- [[Writing plan]]
-					- 重复[[Todo]]中的步骤
+					- 重复[[Todo]]中的步骤1、2、3、4
+					-
 		-
