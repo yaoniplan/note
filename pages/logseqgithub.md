@@ -1,3 +1,4 @@
 - 知识管理工具：
+	- logseqgithub
 	- notion
-	-
+	- flomo
