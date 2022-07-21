@@ -60,6 +60,8 @@
 				  ![2022_07_21_Screenshot from 2022-07-21 17-42-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad92818d38-39ee-4d53-bf4b-551311219b8d2022_07_21_Screenshot%20from%202022-07-21%2017-42-24.png?Expires=4811996560&Signature=d-abYmYNM31lw7Q0KX1BDKwOz6GlVFm~U1O~J323lr9xalV-g6WZcoiwQGNq90~cl1KpwCTz~cuHGuSGwPfp-JiZ7tSusjwfJ0BGk6MbY0A7t0PvL42s0tcUQllqUkx0QIuKvAUyynqRmzrwpAnAeHSNF2i7YGEbKrV9mC26onFhSXvJCDXyiqnIwf2G7zyTFsUojzuo8niWi100SE-Y0x4f2ynyZk35fe6-m7yxkrW4vRP2az~1pqWBsnKjK2n0YcqoQdFynxggTsUPKfx4mJVFAXt8q~w0kIwbCFzJhKG9SP84tDXMpXSBbWoGjIwlYdSnLLJBdgv-cjpiY2XH7g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 				- [[Writing plan]]
 					- 重复[[Todo]]中的步骤1、2、3、4
-					- 用and关键词括起来
+					- 用and关键词括起来  
+					  ![2022_07_21_Screenshot from 2022-07-21 17-45-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcb8faa40-6158-4778-a4ee-e3489e6dd14a2022_07_21_Screenshot%20from%202022-07-21%2017-45-59.png?Expires=4811996790&Signature=VMck3rwrZpITlwqFKxFjRQ9JXz0LKMQ4GSym66N30k~lTuqSOtw2LlKGTEd1DYf8EofMwvedoIqXkTEPn4HHvmuzvR1VFRCCuANR27C0ttBhtOTYZpaB37G-Z~Cf4dIzDHabN7o2xqiLRfDrCyN6UUvbrzhnYiL4B-~OugDzPJWibTGmqbfyNNo4HuMRMKioMZ~AvrCW~dM3O6Iz5i8dmaxROTvxOuQczIygQUbz8sabKPqNhpZwt~3cnJG5G8pIhnljSCq9jwgrIVjy0gs54s8~L0WaBzASs-TrluUlc41EpZt8rTWREOTBBgj4~vATtaUZAmJwxC1Qykwr3ztdKQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+					-
 					- {{query (and (todo later))}}
 		-
