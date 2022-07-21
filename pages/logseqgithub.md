@@ -1,5 +1,5 @@
 - 知识管理工具：
-	- logseqgithub
+	- logseq
 	- notion
 	- flomo
 	- mubu
