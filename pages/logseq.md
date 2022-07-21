@@ -35,7 +35,9 @@
 		  回车：  
 		  ![2022_07_21_Screenshot from 2022-07-21 19-51-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad830767f4-30cf-43ea-b98e-9bcd739d542b2022_07_21_Screenshot%20from%202022-07-21%2019-51-24.png?Expires=4812004388&Signature=TQEriQvpMvv1QY8ytQPGOd2pDqdtPoUJFkvla3hXgF2fSq-3QDOAqpGGlXCEnf6DjNlkt7hBkL9W-cafW4g-K3kKYCHLZ3MjCMz5modNh9pNBYC6CGIpnqWpG2H4MdgaPSmH3JIJBk~H1mCBj0E6LmuwvBXM1p6UdMUBT91hEyUB6FJiO-f82Wm4YMaeN328eRpXGfCIqIlvT-jTkjr2TXucLAMCC1O5GOHoOMexUR2lLYpoyJ5NIkKHMB65qWc1SZWSn801D7pMbDYd56V4hFyosPNGzfN4UFhh~jWqUG~69~1MESdZyqikbjsEBgdX4lNaa3jOHM2rPV7jdvbsQg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- [[random-thought]]  
-	  输入：
+	  输入：  
+	  ![2022_07_21_Screenshot from 2022-07-21 20-08-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad86ce80f3-ad4f-4413-8c35-eb92870e3e132022_07_21_Screenshot%20from%202022-07-21%2020-08-49.png?Expires=4812005436&Signature=LL8Wv-bdTcFR74wph-I5WBHqZ1pGKHMd3yeOaVIiQnTtJoJX2d-uyN0QaCxW4-fAppQn6Lsqg15y~vc6-rRFos9DmeBITZZwgg4vHQc-bkPT5mdC7THvnf8~Lk~lAhGdPN-o7xP0OcD4-k5OYJSRWEbRMDcSophfEtQbXxF5EUzStqkHuuLr5QA5xjh2PM-rAF9udFe2iQ7osD2K~ndVXaMUvyICEN0xrfX4Gyc9OVbFQv8d~VmD-gIYG2sTTJzhnBeoAu913SrHwzTNRaEqiNZgCZ1G933qXBC43gKdduxR4-ZLg4HdSfBiqPuS5DB0nrR~37i80HDdQYhs6jSTTA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
+	  回车：
 	- [[Dashboard]]
 		- [[Todo]]
 			- 1.写下一个：  
