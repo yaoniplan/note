@@ -61,5 +61,5 @@
 				- [[Writing plan]]
 					- 重复[[Todo]]中的步骤1、2、3、4
 					- 用and关键词括起来
-					- {{query (todo later)}}
+					- {{query (and (todo later))}}
 		-
