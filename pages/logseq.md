@@ -53,7 +53,7 @@
 		  进入[[quote]]，并收藏[[quote]]这个页面  
 		  ![2022_07_21_Screenshot from 2022-07-21 20-20-12.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add41e7aa2-c346-453f-87b5-d72cea8b86f72022_07_21_Screenshot%20from%202022-07-21%2020-20-12.png?Expires=4812006093&Signature=bxMKnL82pqzl0cLR5vdoPUbuSmIGCTGfMFDrBI-ysGkq-RQAUW6DvnP~~PyGuF3iDdCp4qrMDRZPbqh1az4-lejKEAtK-gKBD4xHUpq81-7kZPCm33Al35L8mm2BtID4BzaAgE01gXfrwDH0HHszsS9EBHVwR4BI34TwvuWoTRFvjycIGFhqWynKR3I94Be27qNOKn4g4wiqs09YRIJkQ4EaNyUVW0jM7P3J9pZZV-yBGqmQXSpHxHE9w07Q7bAhmfFiURedmT~mWwI~K-eiID5RCDh5A4jyKlv2PKJ31Np1FgQ2-XjKJa7oeYpGohQwQqqHBde0FSlYNmZSj1eS7g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- # [[Dashboard]]  
-	  先建一个，
+	  先建一个，[[Dashboard]]
 		- [[Todo]]
 			- 1.写下一个：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
