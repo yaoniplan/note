@@ -172,7 +172,7 @@
  :ref/default-open-blocks-level 2
 
  :ref/linked-references-collapsed-threshold 50
- :favorites []
+ :favorites ["Dashboard"]
  :publishing/all-pages-public? false
  :git-auto-push true
 
