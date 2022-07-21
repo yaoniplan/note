@@ -36,9 +36,6 @@
 		  这条稍后要做的事情，就会被添加到[[query]]  
 		  ![2022_07_21_Screenshot from 2022-07-21 17-02-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adbc5d3814-93dc-47a7-867a-519932ff4eb82022_07_21_Screenshot%20from%202022-07-21%2017-02-21.png?Expires=4811994191&Signature=RaYPlj4CTxbNZUwFTXqbDOtnYfXly7Ub2uat0XCW~aoOi6NMwprJZ8mIvf9DlSgsDuRA0N6CX0wieELdk88j67z8R90Hm4w~gJw6ri1-5n6AyJgXq8gnSsTdZJ36FINJHcIS5T-Yek33Mc4rtAp6cJAiO2qVvRCCtrNWIAQOeUVRgBU0kNM9PYZeFELBM0LcuYsbYY5soAGWo652DOpRlc7NM9KKsXy6Nwu714R42yh8W90LWSdjyqjGKfu-WwclQlPS2hJQU8VLVYn~7cRZjr5vvDJyRmJ3G~4~F~Vh8GPQGGmGiPIy0yjyUA6vOdmBpMghKIHHQbjYiaWE1KTO0g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		-
-		- LATER 写一篇[[logseq 使用技巧]]
-		- LATER 洗衣服
-		-
 		- 查询稍后要做的item  
 		  写下一个：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
