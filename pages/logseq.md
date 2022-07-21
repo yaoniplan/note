@@ -31,9 +31,8 @@
 		  CLOCK: [2022-07-21 Thu 16:28:52]--[2022-07-21 Thu 16:28:53] =>  00:00:01
 		  :END:
 		  输入：  
-		  
-		  回车：  
-		  ![2022_07_21_Screenshot from 2022-07-21 17-42-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad92818d38-39ee-4d53-bf4b-551311219b8d2022_07_21_Screenshot%20from%202022-07-21%2017-42-24.png?Expires=4811996560&Signature=d-abYmYNM31lw7Q0KX1BDKwOz6GlVFm~U1O~J323lr9xalV-g6WZcoiwQGNq90~cl1KpwCTz~cuHGuSGwPfp-JiZ7tSusjwfJ0BGk6MbY0A7t0PvL42s0tcUQllqUkx0QIuKvAUyynqRmzrwpAnAeHSNF2i7YGEbKrV9mC26onFhSXvJCDXyiqnIwf2G7zyTFsUojzuo8niWi100SE-Y0x4f2ynyZk35fe6-m7yxkrW4vRP2az~1pqWBsnKjK2n0YcqoQdFynxggTsUPKfx4mJVFAXt8q~w0kIwbCFzJhKG9SP84tDXMpXSBbWoGjIwlYdSnLLJBdgv-cjpiY2XH7g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		  ![2022_07_21_Screenshot from 2022-07-21 19-52-23.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad89ffa0a5-64d9-4d33-b41d-ff01a984988f2022_07_21_Screenshot%20from%202022-07-21%2019-52-23.png?Expires=4812004377&Signature=Buvsite886pYaCyFAe67Wkhtb8VviL-kIAphqKVtvQ3dpwnC6RhlVm9l26vNDPzN5Bqw2eUV5cldk5KWOHS7fTWclrOcAYqtgdc79Io1UVYXYJci5GKsEMYq~OXjPoUEtspkGDYlLnyZ8aimWdlcfqFSPHP3cVUWFjFFb-0Wo5AjAxZ4SZeKr5cEkYrbksNW9S9fswi7TW5Qajd-oMpimsuaI-ytOrYsD8jSRnm5ucAIBZtfnH0IN1oql46HVxMLegR70QXe3TUNDzkvMlL9AwAetXktTAnX0ZkLZfahYrBqIEHGkf5AggkKAcBBh8OlvIwIKEeqBo0b72nIEaNsuA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA) 
+		  回车：
 		- 关于使用[[logseq]]管理我的生活和笔记 #writing /later
 		-
 	-
