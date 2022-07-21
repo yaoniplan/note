@@ -62,7 +62,9 @@
 					- 重复[[Todo]]中的步骤1、2、3、4
 					- 用and关键词括起来  
 					  ![2022_07_21_Screenshot from 2022-07-21 17-45-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcb8faa40-6158-4778-a4ee-e3489e6dd14a2022_07_21_Screenshot%20from%202022-07-21%2017-45-59.png?Expires=4811996790&Signature=VMck3rwrZpITlwqFKxFjRQ9JXz0LKMQ4GSym66N30k~lTuqSOtw2LlKGTEd1DYf8EofMwvedoIqXkTEPn4HHvmuzvR1VFRCCuANR27C0ttBhtOTYZpaB37G-Z~Cf4dIzDHabN7o2xqiLRfDrCyN6UUvbrzhnYiL4B-~OugDzPJWibTGmqbfyNNo4HuMRMKioMZ~AvrCW~dM3O6Iz5i8dmaxROTvxOuQczIygQUbz8sabKPqNhpZwt~3cnJG5G8pIhnljSCq9jwgrIVjy0gs54s8~L0WaBzASs-TrluUlc41EpZt8rTWREOTBBgj4~vATtaUZAmJwxC1Qykwr3ztdKQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-					- 其次，打上一个[[writing]]的[[tag]]
+					- 其次，打上一个[[writing]]的[[tag]]  
+					  ![2022_07_21_Screenshot from 2022-07-21 17-48-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2dbe015d-630e-4222-ab32-e5c56aa4564d2022_07_21_Screenshot%20from%202022-07-21%2017-48-55.png?Expires=4811997042&Signature=jjxsWdvZo1d2mHXkDqQl-ynBC7yzwCXXLxE7BUxsBq~o5fK7pa-2cuzXOidkYheqztpb0nUxxq2F4ccH9P5w1wkspaEcVnm6VnZRliyaLpYxY67-I24voX6s3nuAVG2s0TzWdQje~EqReCkCZiPqG0eDS~u490zMo7G2mtDwCvWFNXAofK5VRpfbXkDgM0jgIukmNmqdcW2z0E0exxUiPDtOGm9MH4DwM8-vxYsGi0byBKhe9UDeS9It4WCB7Xqabjq0cJNXgSzbuEzSvOoCHicVVUssVkPetHAEmq-gho8~1XDFj05-PM8v4uqbIfoz2IJqH2BfnSfZMnJbU4YQSA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
+					  回车后，参考：
 					- {{query (and (todo later) [[writing]])}}
 					-
 		-
