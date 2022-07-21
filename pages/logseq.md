@@ -49,5 +49,5 @@
 				  ![2022_07_21_Screenshot from 2022-07-21 16-48-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2c3f10c6-9407-42b7-83fd-ef8b707de3ec2022_07_21_Screenshot%20from%202022-07-21%2016-48-21.png?Expires=4811993321&Signature=ea3-611WZbUjLrNaAcQt~gu9e0kSJcwN3hHRT-m2dlRlihG6Wmo~MZEXQ~dLCKerG9IOEOR33rzOnVdbHIk~ZEM-06qAOViX4Ne-GVpkfwYpzXSVKygDaSaAdao1-OpoQym7-uXUZqX9mStGofJ4SE6zNpjCD0U9zTkLOC0VwhT73yeYIAvSuhu768K89u61MrdAwG8dmyDaCTF3RMdMz2T-WpQLOMeXCm4pE7IDsBAEkdcNc0aLGhiBqHbMTpdiHaH1pKp0X6Mh82U41v3lKn~Z1nfooItZNDfMc65d2u6KCQJfZEo2S-i2k1yuCe4cdaCjOHfX~CKXm-U0dtXJhA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 				- [[in progress]]
 					- 重复[[Todo]]中的步骤1、2、3
-					- 将
+					- 将步骤4中的later替换成now，
 		-
