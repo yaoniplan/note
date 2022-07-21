@@ -57,7 +57,7 @@
 		  ![2022_07_21_Screenshot from 2022-07-21 20-56-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade2c49ae3-6b08-49aa-b05e-b33f7f745e702022_07_21_Screenshot%20from%202022-07-21%2020-56-39.png?Expires=4812008261&Signature=nxvGVEzRMmF1LnJxtFaO~ak2zkwSEHQ4i9c~Zos~6VBL2LAh-xqGpKbYI5eXkxDq12co-3fx17q5cTJ1gLcBfthnYxSRAfN7DzpkYInHz-TWMHyeguI~vG55t3VHxyYj7XfmWtClxK~1KpiQT04ejW3BdbwrYoVZs6FatN-Th~DBe58C3FoHGUB~snaDoddxC3xvqklQDaLpIheO~bBb7InVy~-cvvFXas~h9sfS4UrGve7tARnXvwm22eeTdwm8sJ7-ZT2HP2aUowefkaxTVdiX87mM3H0A-AUb6WdoDC~yMPzJi7PDGmldYuHNc54d3rA0-8QyeCCXCrJj~xKuKg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  输入[[Dashboard]]，然后回车，就可以开始下面的步骤了  
 		  ![2022_07_21_Screenshot from 2022-07-21 20-57-15.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad01462345-28b5-4d8b-9291-b552a51e1cae2022_07_21_Screenshot%20from%202022-07-21%2020-57-15.png?Expires=4812008331&Signature=abbf5AtmskflnUzRl~iRZrRY9WIK-NTVdQCQlxzsOoGC3-IJizrdaAI-ubuXwBg-zTMgdb6RqcWWJmr~0lRO~U7XDWT7KjtQ3bBsOwqU~Dcx9YvDPvmGExmeJ-1YMkKowVSboMPWTt1gYkndtRvgxlwjMrvmdJwERl3zDPkDrZpqbYRK977S~3U5dZTqb1X0cm-M3EYA1KN-R9LbmYPXUy6DWZYjPxhB2zNSdwAazCNHK527CEDpzuwTyCQGZACGjxS~pMm851UcvtME7wkRqybZEUNVHfdsQ1Kd-hdqKwsFLaH7rDebrVHNDTgRAIO6mvYjyy3Xw69A2Z~7yAo1fQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- [[Todo]]
+		- ### [[Todo]]
 			- 1.写下一个：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 			  2.回车：  
@@ -68,12 +68,12 @@
 			  ![2022_07_21_Screenshot from 2022-07-21 16-44-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad940d75ab-2f44-4752-a8fe-f0d27a91f5ff2022_07_21_Screenshot%20from%202022-07-21%2016-44-34.png?Expires=4811993157&Signature=Yu~MgY7H13p5ouyzZEYh5AwEBNDBgHrwFMcjVAiRWNX~RH5z~ta1U64rhkoOJD-~aLfmeq-TSrcBRNKbiDawRIC~Z0557cvfBoXbnmm6DK6mGhmzunGO6P2uVw8tkq07gaA5SqFrCIORxMgoYr91nbgoe6ynZU8Lafj-kynEPLAc76fe4YTNUf1OqOkfQ4YmxAUadMkHMhi4V-xgbTndTC8LaRGMxcCTp9moitTadDXHzI24bW-qZ8FgHjJk-lgpq5tnVdnUcc~tOXPXu6lEtxO6Le0AntACM9hmhpHHXwU2p9OjaSjwcaFi7ewACESheY7ZjTF~Qcsa7X~SiPXQAg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 			  5.回车(则会展示单独地[[block]])：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-48-21.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2c3f10c6-9407-42b7-83fd-ef8b707de3ec2022_07_21_Screenshot%20from%202022-07-21%2016-48-21.png?Expires=4811993321&Signature=ea3-611WZbUjLrNaAcQt~gu9e0kSJcwN3hHRT-m2dlRlihG6Wmo~MZEXQ~dLCKerG9IOEOR33rzOnVdbHIk~ZEM-06qAOViX4Ne-GVpkfwYpzXSVKygDaSaAdao1-OpoQym7-uXUZqX9mStGofJ4SE6zNpjCD0U9zTkLOC0VwhT73yeYIAvSuhu768K89u61MrdAwG8dmyDaCTF3RMdMz2T-WpQLOMeXCm4pE7IDsBAEkdcNc0aLGhiBqHbMTpdiHaH1pKp0X6Mh82U41v3lKn~Z1nfooItZNDfMc65d2u6KCQJfZEo2S-i2k1yuCe4cdaCjOHfX~CKXm-U0dtXJhA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- [[in progress]]
+		- ### [[in progress]]
 			- 重复[[Todo]]中的步骤1、2、3
 			- 将步骤4中的later替换成now，并回车  
 			  参考：  
 			  ![2022_07_21_Screenshot from 2022-07-21 17-18-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1c08c836-49b0-4aa9-949f-b3d98205795f2022_07_21_Screenshot%20from%202022-07-21%2017-18-49.png?Expires=4811995162&Signature=AahxJJfLnq1m5-d0DGaKb74KAR5wLc0Y8uKGXqQianIbzr3OwFP34j1DTI4djAK9S8-g-5wYALBM4MItpr-mx15eI4H~a5unHUIkQ2orBL5fBfKYryjs4SwND-MyZVJGPM56fwW0tRPLxUZYXW5X6mXGz5hpaxn1pWfCHMDoiW-JMI~SpUmgH38EZ-SHHDiV4hfEXmL9IxQgeocx0q4C5i04AM2yiuZ0Abkshje5wZiPpmd0MLrHjzZO2Szyn2yHYHHrQfE6wXLPMlKalhJPp1rGIhx1ZM~biKfXiugLxTY5HtASpsJ-uHoVxgijuyjIFkDhTbNx-7sc5IuMeojxHw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- [[Writing plan]]
+		- ### [[Writing plan]]
 			- 重复[[Todo]]中的步骤1、2、3、4
 			- 用and关键词括起来  
 			  ![2022_07_21_Screenshot from 2022-07-21 17-45-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcb8faa40-6158-4778-a4ee-e3489e6dd14a2022_07_21_Screenshot%20from%202022-07-21%2017-45-59.png?Expires=4811996790&Signature=VMck3rwrZpITlwqFKxFjRQ9JXz0LKMQ4GSym66N30k~lTuqSOtw2LlKGTEd1DYf8EofMwvedoIqXkTEPn4HHvmuzvR1VFRCCuANR27C0ttBhtOTYZpaB37G-Z~Cf4dIzDHabN7o2xqiLRfDrCyN6UUvbrzhnYiL4B-~OugDzPJWibTGmqbfyNNo4HuMRMKioMZ~AvrCW~dM3O6Iz5i8dmaxROTvxOuQczIygQUbz8sabKPqNhpZwt~3cnJG5G8pIhnljSCq9jwgrIVjy0gs54s8~L0WaBzASs-TrluUlc41EpZt8rTWREOTBBgj4~vATtaUZAmJwxC1Qykwr3ztdKQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
