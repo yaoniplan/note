@@ -2,3 +2,4 @@
 	- logseqgithub
 	- notion
 	- flomo
+	- mubu
