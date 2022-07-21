@@ -34,7 +34,7 @@
 		  ![2022_07_21_Screenshot from 2022-07-21 17-29-41.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad387199c2-873a-4b9c-a7d2-c0a605e000c22022_07_21_Screenshot%20from%202022-07-21%2017-29-41.png?Expires=4811996484&Signature=P1NAmOVBviU-ofvHT7Taazxx4QZFGpR61or4dveNQnY8mlpqX73IiuaJyzJNSt6hDi9H9aQXxta1jwVlPH~ONHxfSP0HFvHz6r7~BzmbGQO9FIJQ9Ow3hMrAT7QTx-qnivnu633L8CVuw0itNggqz2NYL2hCISh9-oMSbGgueaHzAtdrsVsGbdT~jotAv1mH1qQBjSjEx5~IS9KSouUdgDH00yieS-KF4lEpuwrOulAwiBcI0jYI7O-sHEkY9II5ygI7updNjSmghWfoTOLGQdnnRwjNdFLH~ld9HZSfCvujBh8mby6KMmTmII8X8g1KX~giLOMwlvs~bgfz8vGqeg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  回车：  
 		  ![2022_07_21_Screenshot from 2022-07-21 17-42-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad92818d38-39ee-4d53-bf4b-551311219b8d2022_07_21_Screenshot%20from%202022-07-21%2017-42-24.png?Expires=4811996560&Signature=d-abYmYNM31lw7Q0KX1BDKwOz6GlVFm~U1O~J323lr9xalV-g6WZcoiwQGNq90~cl1KpwCTz~cuHGuSGwPfp-JiZ7tSusjwfJ0BGk6MbY0A7t0PvL42s0tcUQllqUkx0QIuKvAUyynqRmzrwpAnAeHSNF2i7YGEbKrV9mC26onFhSXvJCDXyiqnIwf2G7zyTFsUojzuo8niWi100SE-Y0x4f2ynyZk35fe6-m7yxkrW4vRP2az~1pqWBsnKjK2n0YcqoQdFynxggTsUPKfx4mJVFAXt8q~w0kIwbCFzJhKG9SP84tDXMpXSBbWoGjIwlYdSnLLJBdgv-cjpiY2XH7g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- 关于使用[[logseq]]管理我的生活和笔记/later #writing
+		- TODO 关于使用[[logseq]]管理我的生活和笔记 #writing
 	-
 	-
 	-
