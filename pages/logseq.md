@@ -28,7 +28,7 @@
 			  ![2022_07_21_Screenshot from 2022-07-21 20-31-51.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4005bdf3-634b-4b75-bfd9-285f721edda32022_07_21_Screenshot%20from%202022-07-21%2020-31-51.png?Expires=4812006908&Signature=flTfGvHWyCy7H~pooSRbhzV5QZAKGiipN~09ANizCSgMH-lciSWkMqHi2CPccTlGBWj-afGCJBwyj-Iuo3SJuRP4z-NnkcuO4zmc4uELjMxpWufn~7~MqlcWdl-UH0B45a7tCvW9SUYGrKzzavrNqueOayDtyfGrOy1OQMj4avy~fBESRvK3zevQnuvyZOEcQU~RXqu9VV~qQEkbpI-aru9a8eiRV50NBIdEt~1DMpoNRItFE1GrJuGLri41XSXwl4BGDSUYIrgGlefGNDt1A9nZSnHVOnWgzp2PJJPQL8JH8K8GakBspFvMUmgRqHhZT9xionUpGNSz~1mUKRFxXQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 			  [[检索]]按下ctrl+k，输入关键词Dashboard，在Todo就可以看到  
 			  ![2022_07_21_Screenshot from 2022-07-21 20-34-07.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad49965067-849c-44ca-8980-68f775550a1d2022_07_21_Screenshot%20from%202022-07-21%2020-34-07.png?Expires=4812007035&Signature=gqLK2xpZ14pTpDsyRXtJrs6hSUjOb14ATGdyGLIvqUR2ZzDAzfWVNSQ~nvU3mPbmhbKQ7hUm86u~LvKH1Vx6t401lF5WAbqiAEJfeOtUgZitetukNn9ZTd8SxIqa~6lo4Ye6aS~W1XG8MPasiWPm3zExnnRHYrOonImTw-fGAoJB2muulEOAeHmUhnF5~fI~wQncmEm5HrAuzKosWE51Mzswxqp0HWAU~4a5v3wqCq6U-iKJDgP81fByI5GDVBgFygs6pwolsbl~gfzeCFDhcjCIkYtMuS-0OoxjmOBTV~D7v52n9bTWCYvFXg5ZslDBpul3lD5jWatw7Rx4pZli0A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- 写作相关(输入)：  
+		- wri：  
 		  :LOGBOOK:
 		  CLOCK: [2022-07-21 Thu 16:28:47]--[2022-07-21 Thu 16:28:49] =>  00:00:02
 		  CLOCK: [2022-07-21 Thu 16:28:51]--[2022-07-21 Thu 16:28:51] =>  00:00:00
