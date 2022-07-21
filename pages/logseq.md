@@ -55,7 +55,7 @@
 	- ## [[Dashboard]]
 		- [[检索]]按下ctrl+k，键入[[Dashboard]]，然后回车  
 		  ![2022_07_21_Screenshot from 2022-07-21 20-56-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade2c49ae3-6b08-49aa-b05e-b33f7f745e702022_07_21_Screenshot%20from%202022-07-21%2020-56-39.png?Expires=4812008261&Signature=nxvGVEzRMmF1LnJxtFaO~ak2zkwSEHQ4i9c~Zos~6VBL2LAh-xqGpKbYI5eXkxDq12co-3fx17q5cTJ1gLcBfthnYxSRAfN7DzpkYInHz-TWMHyeguI~vG55t3VHxyYj7XfmWtClxK~1KpiQT04ejW3BdbwrYoVZs6FatN-Th~DBe58C3FoHGUB~snaDoddxC3xvqklQDaLpIheO~bBb7InVy~-cvvFXas~h9sfS4UrGve7tARnXvwm22eeTdwm8sJ7-ZT2HP2aUowefkaxTVdiX87mM3H0A-AUb6WdoDC~yMPzJi7PDGmldYuHNc54d3rA0-8QyeCCXCrJj~xKuKg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
-		  输入[[Dashboard]]，然后回车，就可以
+		  输入[[Dashboard]]，然后回车，就可以开始下面的步骤了
 		- [[Todo]]
 			- 1.写下一个：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
