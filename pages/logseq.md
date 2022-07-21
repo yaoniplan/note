@@ -34,7 +34,8 @@
 		  回车：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-52-32.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adfd78a668-484f-4122-a029-1043f84b89e42022_07_21_Screenshot%20from%202022-07-21%2016-52-32.png?Expires=4811993689&Signature=eSvYtBv41d6jHtiBF~0iPUG8qrm4xxt~7Q~NOPh2jzTZmaIDmb~kpgwQlOsWsMTkGE04w28BKqWyN2YHYGWmBIldN35VsiTxyIM7E9~60N40xCkd9xstyWC5OIPSUnHkknpf5wzGaDkjuPythOyMBVOoWVA2DO5dJep-s0Nzm9b02J0imiweJ0HKgUVpR2km5WsZ1jkR3wgTkMdGPjQHm8~UiiiEMh7jd5HJ4WcO2wDWhSZRt5eSW4ZFpDW-4f3uWT8ZwRgdR8wsfUEqmMa2ySM3AUqEhf3dYy276lxsr~nWfER~Nyg6ADjsh~YckQTH0-GaPlVqe5Bj6tq7AUYA6g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
 		  这条稍后要做的事情，就会被添加到[[query]]
-		- 写一篇
+		- LATER 写一篇[[logseq 使用技巧]]
+		-
 		- 查询稍后要做的item  
 		  写下一个：  
 		  ![2022_07_21_Screenshot from 2022-07-21 16-34-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8083541d-0838-436f-b46e-4d65ab8b94b22022_07_21_Screenshot%20from%202022-07-21%2016-34-58.png?Expires=4811992737&Signature=B9xAUdOOeQYnROC~WUPsofz8WKrTpQlATJLdGZnVUy0t7-MT4g~FPG5zzN7Z6nMeKawTIv8upoOtU8sqDuwBcaXRt53dh8fGMt6Zt79v7uIehxNMUtzAYxEkRUpoQNnkl7wr7YiZoeIXtFqIBk2AOWlOoUkMPDer-PNO8aYcccSGbXeNPdA~nbAsdIsjwFALhPajDfI8S9EhdtRl~NyUvGHdS2dpvG3wcpPzi9K-OdbvnQzM3mP3jpoifJDe7MmAxsvYg~TFqhzayJXnSzR3til7svPKHxh599smxFb573DF2oXDfevEjrHsNIvYBkeK7j--k7SzVcyjiqzKCgbdbA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)  
