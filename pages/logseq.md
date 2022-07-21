@@ -14,8 +14,8 @@
 		- 好处：不需要先把相关内容找出来，然后再填充内容，没有任何心智负担(去找这个笔记应该在哪里的)
 	- 除非是跟具体的某一事情是有关的，才会直接[[检索]][[logseq]]，比如说：我正在写[[logseq]]的基本概念，跟[[logseq]]有强烈的关系，那才会直接[[检索]][[logseq]]，然后进去，记录笔记
 - # 基本使用
-	- ## [[Journals]]
-		- 打开[[Journals]]，把想法记录下来，(变成一个计划任务）
+	- ## Journals
+		- 打开Journals，把想法记录下来，(变成一个计划任务）
 			- 方法1(输入)：  
 			  ![2022_07_21_Screenshot from 2022-07-21 16-29-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad5b2fed3e-d69c-4e2b-8a49-643927195f4a2022_07_21_Screenshot%20from%202022-07-21%2016-29-59.png?Expires=4811992237&Signature=YYnlqPvopeS1mlSYMe~UOSWdDxjU3hqHTYE2cXkkDIOQkI8j3b0r86yXenvOgRxQkd-YQLB8jt-I2MdGc5P33QvKC2ax9mB71CVWmMMEIQ9Xhwjbg5R6p-mdW9ByprWKJIbnodjWOeXF~-QeAVMBK~1aoI8p63jaB9J1QdimPTgDyIut~7F9XHzZlJBsr86VmfdRjRi-8xr2nnbl3jtdw8GckNZcGi6--qbCgdiE7Hqb59v8Phk-ke~Nk7AxXHQjiqRqIQhu1fScA~CkVHrD4kKQo7rrkPeeGpWXzi4~43ZE1MGsi8tWY5Ah74R6XbY5TaFqF8l-L6vHdJSkZCcdFg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)   
 			  然后回车：  
