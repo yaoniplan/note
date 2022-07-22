@@ -6,4 +6,4 @@
 - Writing plan
 	- {{query (and (todo later) [[writing]])}}
 - Done
-	-
+	- {{query (todo )}}
