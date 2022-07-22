@@ -1,7 +1,7 @@
 - # 基础概念
 	- ## page  
 	  组织内容的基本单位是page(页面)  
-	  在每一个page里，可以有很多bloc(块)
+	  在每一个page里，可以有很多block(块)
 		- page名  
 		  每一个page都有一个名字(比如：这个page的名字是[[logseq]])
 	- ## block  
