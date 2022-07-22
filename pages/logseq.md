@@ -2,7 +2,7 @@
 	- ## page  
 	  组织内容的基本单位是page(页面)  
 	  在每一个page里，可以有很多bloc(块)
-		-
+		- page
 	- ## block  
 	  block可以无限嵌套block(有父子层级的关系)
 	-
