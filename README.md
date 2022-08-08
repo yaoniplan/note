@@ -1,0 +1,2 @@
+# note
+open-source life
