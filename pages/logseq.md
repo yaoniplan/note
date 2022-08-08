@@ -109,7 +109,7 @@
 		- ### 6. 提交
 		  ```
 		  git add . #全部添加修改到缓存区  
-		  git config --global user.email "这里输入github的邮箱"
+		  git config --global user.email "这里输入github的邮箱" #对Git进行一些本地配置
 		  git config --global user.name "这里输入github用户名"
 		  git config -l #查看配置信息，其实就是Git的配置文件 .gitconfig
 		  git commit -m '这里输入提交的备注' #将缓存区的修改提交到版本区  
