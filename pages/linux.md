@@ -4,6 +4,7 @@
 		  ```
 		  grep -r '桌面的软件名' /usr/share/applications #查询路径
 		  sudo pacman -Qo 上一个命令查询到的路径 #查询软件包
+		  sudo pacman -Rs 包名
 		  ```
 	- ## 压缩和解压缩
 		- tar  
