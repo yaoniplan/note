@@ -3,6 +3,7 @@
 		- ### 卸载  
 		  ```
 		  grep -r '桌面的软件名' /usr/share/applications
+		  sudo pacman -Qo 
 		  ```
 	- ## 压缩和解压缩
 		- tar  
