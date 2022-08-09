@@ -257,7 +257,6 @@
 - # 注意事项
 	- ## .AppImage文件执行没有反应  
 	  ```
-	  #在原先执行的命令后面添加" --appimage-extract"
 	  ./文件名.AppImage --appimage-extract
 	  ```
 	- ## 两个硬盘共存  
