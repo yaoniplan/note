@@ -249,7 +249,6 @@
 			  ```
 			  系统设置-触控板-单击打开 #在桌面环境中
 			  ```
-	- ## 注意事项
 - # 注意事项
 	- ## .AppImage文件执行没有反应  
 	  ```
@@ -265,6 +264,10 @@
 	- ## 不能粘贴文件(权限不允许)  
 	  ```
 	  sudo nautilus #在终端中，以 root 的权限打开文件管理器（我的是nautilus）
+	  ```
+	- ## invalid or corrupted package(PGP signature)  
+	  ```
+	  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
