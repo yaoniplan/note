@@ -32,4 +32,5 @@
 	  5. [小时百科-专业的数学和物理百科](https://wuli.wiki/index.html)
 	  6. [化学自习室](https://wuli.wiki/index.html)
 	  7. [乐乐课堂：高中化学必修2](https://www.bilibili.com/video/av43523533/)
-	  8. [高考]
+	  8. [高考数学通法逆袭全集](https://www.bilibili.com/video/BV1w7411w7kQ)
+	  9. []
