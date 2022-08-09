@@ -83,8 +83,7 @@
 		- ### 变成 root 用户
 		  ```
 		  arch-chroot /mnt
-		  #启用 NetworkManager
-		  systemctl enable NetworkManager
+		  systemctl enable NetworkManager #启用 NetworkManager
 		  ```
 		- ### 设置时区
 		  ```
@@ -102,8 +101,7 @@
 		  # zh_CN.UTF-8 UTF-8
 		  locale-gen
 		  vim /etc/locale.conf
-		  #添加下面一行
-		  LANG=en_US.UTF-8
+		  LANG=en_US.UTF-8 #添加这一行
 		  ```
 		- ### 设置 hostname
 		  ```
