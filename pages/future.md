@@ -51,4 +51,5 @@
 	  24. [免费学习编程](https://chinese.freecodecamp.org/)
 	  25. [自学计算机科学](https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
 	  26. [GitHub中文社区](https://www.githubs.cn/)
--
+- 1. [可汗学院：函数 - 网易公开课](https://open.163.com/newview/movie/free?pid=MDAPTVFE8&mid=MDAPV0Q3K)
+  2.
