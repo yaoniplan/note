@@ -291,4 +291,4 @@
 		  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 		  ```
 - # 参考资料
-	-
+	- []
