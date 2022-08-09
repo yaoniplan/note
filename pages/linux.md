@@ -10,7 +10,7 @@
 		- ### 更新  
 		  ```
 		  sudo pacman Sy #同步库（顺便可以测试源的速度）
-		  sudo pacman Syu #同步库并更新系统的包
+		  sudo pacman Syu #同步库并更新系统的包（建议安装软件之前更新）
 		  ```
 	- ## 压缩和解压缩
 		- tar  
