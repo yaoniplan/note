@@ -87,6 +87,10 @@
 		- ### 2. 安装 [[Git]]  
 		  ```
 		  sudo pacman -S git #这里以 archlinux 举例
+		  ```
+		- ### 3. 关联 SSH  
+		  免密推送、提高数据传输速度
+		  ```
 		  ssh-keygen #需要按几次回车  
 		  cat ~/.ssh/id_rsa.pub #复制 SSH 密钥，粘贴至github设置中的 SSH keys 中
 		  git clone 以git开头的仓库克隆地址 #克隆远程仓库到本地
