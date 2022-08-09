@@ -35,4 +35,5 @@
 	  8. [高考数学通法逆袭全集](https://www.bilibili.com/video/BV1w7411w7kQ)
 	  9. [高中数学基础与解法全集](https://www.bilibili.com/video/BV147411K7xu?p=104)
 	  10. [高考数学专题复习](https://www.bilibili.com/video/av39031994/?p=9)
-	  11.
+	  11. [高中数学所有解题方法与策略](https://www.bilibili.com/video/BV1X7411F7YF?p=38)
+	  12.
