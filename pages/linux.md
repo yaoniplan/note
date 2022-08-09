@@ -136,8 +136,7 @@
 		  ```
 		  #按照具体情况安装显卡驱动（我的GPU: Intel和AMD ATI的）
 		  pacman -S xf86-video-intel xf86-video-ati
-		  #安装字体（防止乱码）
-		  pacman -S noto-fonts-cjk
+		  pacman -S noto-fonts-cjk #安装字体，防止乱码
 		  ```
 		- ### 在盘上安装 grub
 		  ```
@@ -152,8 +151,7 @@
 		  ```
 		  #按照具体情况安装（amd的cpu，请安装amd-ucode；intel的cpu，请安装intel-ucode）
 		  pacman -S intel-ucode
-		  #生成 GRUB 配置以激活加载微码更新
-		  grub-mkconfig -o /boot/grub/grub.cfg
+		  grub-mkconfig -o /boot/grub/grub.cfg #生成 GRUB 配置以激活加载微码更新
 		  ```
 		- ### dwm(wm待完善)  
 		  安装 windows manager 或 desktop environment  
