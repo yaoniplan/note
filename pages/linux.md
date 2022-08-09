@@ -184,59 +184,56 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
 		- ### 安装 windows manager 或者 desktop environment
-			- #### windows manager
-				- ##### dwm(待完善)
-				  collapsed:: true
-					- ***安装窗口管理器***  
-					  ```
-					  git clone https://git.suckless.org/dwm
-					  cd dwm
-					  sudo make clean install
-					  cd
-					  #接着安装 st 和 dmenu（按照上面的方法，重复一遍）
-					  ```
-					- ***配置窗口启动参数***
-					  ```
-					  cp /etc/X11/xinit/xinitrc ~/.xinitrc
-					  vim ~/.xinitrc
-					  #添加注释
-					  # twm 及其下那些行
-					  #添加下面一行
-					  exec dwm
-					  ```
-					- ***进入窗口环境***
-					  ```
-					  startx
-					  ```
-				- ##### i3wm(待完善)
-				  collapsed:: true
-					- ***安装 xorg-xinit***  
-					  ```
-					  pacman -S xorg-xinit
-					  #配置窗口启动参数
-					  cp /etc/X11/xinit/xinitrc ~/.xinitrc
-					  vim ~/.xinitrc
-					  #添加注释
-					  # twm 及其以下那些行
-					  #添加下面一行
-					  exec i3
-					  ```
-					- ***安装 i3wm***
-					  ```
-					  pacman -S i3
-					  ```
-					- ***安装终端***
-					  ```
-					  pacman -S mate-terminal
-					  ```
-					- ***安装浏览器***  
-					  ```
-					  #切换到新用户下
-					  su ss
-					  git clone 包的URL
-					  cd 包名
-					  makepkg -si
-					  ```
+			- #### dwm(待完善)
+				- ***安装窗口管理器***  
+				  ```
+				  git clone https://git.suckless.org/dwm
+				  cd dwm
+				  sudo make clean install
+				  cd
+				  #接着安装 st 和 dmenu（按照上面的方法，重复一遍）
+				  ```
+				- ***配置窗口启动参数***
+				  ```
+				  cp /etc/X11/xinit/xinitrc ~/.xinitrc
+				  vim ~/.xinitrc
+				  #添加注释
+				  # twm 及其下那些行
+				  #添加下面一行
+				  exec dwm
+				  ```
+				- ***进入窗口环境***
+				  ```
+				  startx
+				  ```
+			- #### i3wm(待完善)
+				- ***安装 xorg-xinit***  
+				  ```
+				  pacman -S xorg-xinit
+				  #配置窗口启动参数
+				  cp /etc/X11/xinit/xinitrc ~/.xinitrc
+				  vim ~/.xinitrc
+				  #添加注释
+				  # twm 及其以下那些行
+				  #添加下面一行
+				  exec i3
+				  ```
+				- ***安装 i3wm***
+				  ```
+				  pacman -S i3
+				  ```
+				- ***安装终端***
+				  ```
+				  pacman -S mate-terminal
+				  ```
+				- ***安装浏览器***  
+				  ```
+				  #切换到新用户下
+				  su ss
+				  git clone 包的URL
+				  cd 包名
+				  makepkg -si
+				  ```
 			- #### desktop environment
 				- ##### gnome
 					- ***安装显示服务***  
