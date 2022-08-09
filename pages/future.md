@@ -56,4 +56,5 @@
   3. [国家高等教育智慧教育平台](https://www.chinaooc.com.cn/home)
   4. [Coursera](https://www.coursera.org/)
   5. [网易云课堂 - 悄悄变强大](https://study.163.com/)
-  6. [慕课网]
+  6. [慕课网-程序员的梦工厂](https://www.imooc.com/)
+  7. []
