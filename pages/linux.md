@@ -183,7 +183,6 @@
 		  #生成 GRUB 配置以激活加载微码更新
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
-		- ### 安装 windows manager 或者 desktop environment
 			- #### dwm(wm待完善)
 				- ***安装窗口管理器***  
 				  ```
