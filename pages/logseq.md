@@ -112,7 +112,7 @@
 		  git commit -m '这里输入提交的备注' #将缓存区的修改提交到版本区  
 		  git branch -avv #查看全部分支信息
 		  ```
-		- ### 7. 推送  
+		- ### 6. 推送  
 		  以上步骤完成后(即logseq自动commit)，需要手动 git push
 		  ```
 		  git push #将本地仓库的新增commit，推送到远程仓库
