@@ -215,8 +215,7 @@
 			- ***安装桌面环境***(不要忘了启用 gdm)  
 			  ```
 			  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
-			  #启用 gdm
-			  systemctl enable gdm
+			  systemctl enable gdm #启用 gdm
 			  ```
 			- ***安装中文输入法***  
 			  ```
