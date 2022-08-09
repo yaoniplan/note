@@ -1,11 +1,13 @@
 - # 常用命令
-	- ## 软件
-		- ### 卸载  
+	- ## archlinux
+		- ### 软件  
 		  ```
+		  #卸载
 		  grep -r '桌面的软件名' /usr/share/applications #查询路径
 		  sudo pacman -Qo 上一个命令查询到的路径 #查询包名
 		  sudo pacman -Rs 包名 #删除其他已安装软件包不需要的软件包及其依赖
 		  ```
+	-
 	- ## 压缩和解压缩
 		- tar  
 		  ```
