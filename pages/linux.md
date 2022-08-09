@@ -184,7 +184,7 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
 		- ### dwm(wm待完善)  
-		  安装wm或de
+		  (可选)安装wm或de
 			- ***安装窗口管理器***  
 			  ```
 			  git clone https://git.suckless.org/dwm
@@ -206,7 +206,8 @@
 			  ```
 			  startx
 			  ```
-		- ### i3wm(wm待完善)
+		- ### i3wm(待完善)  
+		  (可选)windows manager
 			- ***安装 xorg-xinit***  
 			  ```
 			  pacman -S xorg-xinit
