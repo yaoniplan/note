@@ -93,20 +93,17 @@
 		  ```
 		  ssh-keygen #需要按几次回车  
 		  cat ~/.ssh/id_rsa.pub #复制 SSH 密钥，粘贴至github设置中的 SSH keys 中
-		  ```
-		- ### 4. 克隆 [[github]] 上的仓库到本地  
-		  ```
-		  git clone 以git开头的仓库克隆地址 #克隆远程仓库到本地仓库  
+		  git clone 以git开头的仓库克隆地址 #克隆远程仓库到本地
 		  yes #确认连接
 		  ```
-		- ### 5. 修改  
+		- ### 4. 修改  
 		  ```
 		  #修改之前，打开logseq
 		  #设置-多版本控制-开启 Git 自动 commit
 		  #重启
 		  #最后就可以在logseq中愉快的玩耍(修改)了
 		  ```
-		- ### 6. 提交
+		- ### 5. 提交
 		  ```
 		  git add . #全部添加修改到缓存区  
 		  git config --global user.email "这里输入注册github的邮箱" #对Git进行一些本地配置
