@@ -72,4 +72,5 @@
   19. [AI人工智能图片放大](https://bigjpg.com/)
   20. [文叔叔 - 传文件](https://www.wenshushu.cn/)
   21. [瑞克论坛](https://www.ruike1.com/)
-  22.
+  22. [奇它论坛 - 网盘资源分享论坛！](https://bbs.zhiqan.com/)
+  23. [阿里云网盘资源免费]
