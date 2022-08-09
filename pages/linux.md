@@ -59,3 +59,5 @@
 	  #在终端中，以 root 的权限打开文件管理器
 	  sudo nautilus
 	  ```
+- # archlinux
+-
