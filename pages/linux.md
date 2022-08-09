@@ -176,16 +176,16 @@
 		  #取消下面一行的注释
 		  #GRUB_DISABLE_OS_PROBER=false
 		  ```
-		- ## 安装微码
+		- ### 安装微码
 		  ```
 		  #按照具体情况安装（amd的cpu，请安装amd-ucode；intel的cpu，请安装intel-ucode）
 		  pacman -S intel-ucode
 		  #生成 GRUB 配置以激活加载微码更新
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
-		- ## 安装 windows manager 或者 desktop environment
-			- ### windows manager
-				- #### dwm(待完善)
+		- ### 安装 windows manager 或者 desktop environment
+			- #### windows manager
+				- ##### dwm(待完善)
 					- ***安装窗口管理器***  
 					  ```
 					  git clone https://git.suckless.org/dwm
@@ -207,7 +207,7 @@
 					  ```
 					  startx
 					  ```
-				- #### i3wm(待完善)
+				- ##### i3wm(待完善)
 					- ***安装 xorg-xinit***  
 					  ```
 					  pacman -S xorg-xinit
