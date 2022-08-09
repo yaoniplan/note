@@ -88,10 +88,7 @@
 		  ```
 		  sudo pacman -S git #这里以 archlinux 举例
 		  ```
-		- ssh-keygen #需要按几次回车  
-		  cat ~/.ssh/id_rsa.pub #复制 SSH 密钥，粘贴至github设置中的 SSH keys 中
-		  git clone 以git开头的仓库克隆地址 #克隆远程仓库到本地
-		  yes #确认连接
+		-
 		- ### 4. 修改  
 		  ```
 		  #修改之前，打开logseq
