@@ -268,8 +268,7 @@
 	  ```
 	- ## 不能粘贴文件(权限不允许)  
 	  ```
-	  #在终端中，以 root 的权限打开文件管理器
-	  sudo nautilus
+	  sudo nautilus #在终端中，以 root 的权限打开文件管理器（我的是nautilus）
 	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
