@@ -85,7 +85,7 @@
 		  #看硬盘分区的挂载情况
 		  lsblk
 		  ```
-		- ## 换源
+		- ### 换源
 		  ```
 		  vim /etc/pacman.d/mirrorlist
 		  #添加下面一行
@@ -93,29 +93,29 @@
 		  #检查源的速度
 		  pacman -Syy
 		  ```
-		- ## 安装必备包
+		- ### 安装必备包
 		  ```
 		  pacstrap /mnt base linux linux-firmware vim base-devel networkmanager
 		  ```
-		- ## 生成文件系统桌面文件
+		- ### 生成文件系统桌面文件
 		  ```
 		  genfstab -U /mnt >> /mnt/etc/fstab
 		  ```
-		- ## 变成 root 用户
+		- ### 变成 root 用户
 		  ```
 		  arch-chroot /mnt
 		  #启用 NetworkManager
 		  systemctl enable NetworkManager
 		  ```
-		- ## 设置时区
+		- ### 设置时区
 		  ```
 		  ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 		  ```
-		- ## 调整硬件时钟
+		- ### 调整硬件时钟
 		  ```
 		  hwclock --systohc
 		  ```
-		- ## 设置 locale
+		- ### 设置 locale
 		  ```
 		  vim /etc/locale.gen
 		  #在文件里，去掉下面两行的注释
@@ -126,13 +126,13 @@
 		  #添加下面一行
 		  LANG=en_US.UTF-8
 		  ```
-		- ## 设置 hostname
+		- ### 设置 hostname
 		  ```
 		  vim /etc/hostname
 		  #添加下面一行
 		  ss
 		  ```
-		- ## 设置 hosts
+		- ### 设置 hosts
 		  ```
 		  vim /etc/hosts
 		  #添加下面三行
@@ -140,11 +140,11 @@
 		  ::1		localhost
 		  127.0.1.1	ss.localdomain	ss
 		  ```
-		- ## 添加新用户
+		- ### 添加新用户
 		  ```
 		  useradd -m -G wheel ss
 		  ```
-		- ## 给新用户使用 sudo 的权限
+		- ### 给新用户使用 sudo 的权限
 		  ```
 		  #安装编辑器 vi
 		  pacman -S vi
@@ -152,22 +152,22 @@
 		  #去掉下面一行注释
 		  # %wheel ALL=(ALL:ALL)ALL
 		  ```
-		- ## 为新用户设置密码
+		- ### 为新用户设置密码
 		  ```
 		  passwd ss
 		  ```
-		- ## 为 root 用户设置密码
+		- ### 为 root 用户设置密码
 		  ```
 		  passwd root
 		  ```
-		- ## 安装显卡驱动和字体
+		- ### 安装显卡驱动和字体
 		  ```
 		  #按照具体情况安装显卡驱动（我的GPU: Intel和AMD ATI的）
 		  pacman -S xf86-video-intel xf86-video-ati
 		  #安装字体（防止乱码）
 		  pacman -S noto-fonts-cjk
 		  ```
-		- ## 在盘上安装 grub
+		- ### 在盘上安装 grub
 		  ```
 		  pacman -S grub efibootmgr
 		  mount --mkdir /dev/sda1 /mnt/boot
