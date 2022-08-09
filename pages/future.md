@@ -22,4 +22,5 @@
 	  21. [Learn Git Branching](https://oschina.gitee.io/learn-git-branching/)
 	  22. [国家中小学智慧教育平台](https://basic.smartedu.cn/)
 	  23. [乐乐课堂，每天进步多一点！](https://www.leleketang.com/)
-	  24.
+	  24. [高中学习资源 - Dogpile.com Web Search](https://www.dogpile.com/serp?q=%E9%AB%98%E4%B8%AD%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90&sc=VDxbWdHk83gJ00)
+	  25.
