@@ -29,23 +29,23 @@
 		  #解压缩目录及目录内的文件
 		  unzip 文件名.zip
 		  ```
-- ## 网络代理
-	- 终端  
-	  ```
-	  #编辑zshrc文件
-	  sudo vim ~/.zshrc
-	  #添加下面两行代码
-	  alias proxy-on='export http_proxy=127.0.0.1:7890;export https_proxy=$http_proxy'
-	  alias proxy-off='unset http_proxy;unset https_proxy' 
-	  #保存退出,并生效配置
-	  source ~/.zshrc
-	  #开启命令（用的时候输入）
-	  proxy-on
-	  #关闭命令(关闭的时候输入)
-	  proxy-off
-	  #测试
-	  curl cip.cc
-	  ```
+	- ## 网络代理
+		- 终端  
+		  ```
+		  #编辑zshrc文件
+		  sudo vim ~/.zshrc
+		  #添加下面两行代码
+		  alias proxy-on='export http_proxy=127.0.0.1:7890;export https_proxy=$http_proxy'
+		  alias proxy-off='unset http_proxy;unset https_proxy' 
+		  #保存退出,并生效配置
+		  source ~/.zshrc
+		  #开启命令（用的时候输入）
+		  proxy-on
+		  #关闭命令(关闭的时候输入)
+		  proxy-off
+		  #测试
+		  curl cip.cc
+		  ```
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
