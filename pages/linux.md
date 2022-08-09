@@ -184,7 +184,7 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
 		- ### dwm(wm待完善)  
-		  (可选)安装wm或de
+		  (可选)windows manager
 			- ***安装窗口管理器***  
 			  ```
 			  git clone https://git.suckless.org/dwm
@@ -235,7 +235,8 @@
 			  cd 包名
 			  makepkg -si
 			  ```
-		- ### gnome(de)
+		- ### gnome(de)  
+		  (可选)desktop environment
 			- ***安装显示服务***  
 			  ```
 			  pacman -S xorg
