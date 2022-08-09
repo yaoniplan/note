@@ -184,7 +184,8 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
 		- ### dwm(wm待完善)  
-		  安装 windows manager 或 desktop environment(可选)windows manager
+		  安装 windows manager 或 desktop environment  
+		  (可选)windows manager
 			- ***安装窗口管理器***  
 			  ```
 			  git clone https://git.suckless.org/dwm
