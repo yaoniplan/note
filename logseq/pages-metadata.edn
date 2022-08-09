@@ -7,9 +7,6 @@
  {:block/name "archlinux",
   :block/created-at 1658857025622,
   :block/updated-at 1658857025622}
- {:block/name "archlinux_install",
-  :block/created-at 1658857025383,
-  :block/updated-at 1658857025383}
  {:block/name "aug 1st, 2022",
   :block/created-at 1659353879281,
   :block/updated-at 1659533556359}
@@ -70,6 +67,15 @@
  {:block/name "flomo",
   :block/created-at 1658856997571,
   :block/updated-at 1658856997571}
+ {:block/name "future",
+  :block/created-at 1659954827041,
+  :block/updated-at 1659954827041}
+ {:block/name "git",
+  :block/created-at 1659954827038,
+  :block/updated-at 1659954827038}
+ {:block/name "github",
+  :block/created-at 1659954828237,
+  :block/updated-at 1659954828237}
  {:block/name "gmail",
   :block/created-at 1659653907217,
   :block/updated-at 1659653907217}
@@ -126,25 +132,13 @@
   :block/updated-at 1658858141729}
  {:block/name "linux",
   :block/created-at 1658856998051,
-  :block/updated-at 1658934406290}
+  :block/updated-at 1659972532197}
  {:block/name "logseq",
   :block/created-at 1658856997605,
-  :block/updated-at 1658856997605}
- {:block/name "logseq 语法",
-  :block/created-at 1658857025382,
-  :block/updated-at 1658857025382}
+  :block/updated-at 1659973486400}
  {:block/name "markdown",
   :block/created-at 1658857026331,
   :block/updated-at 1658857026331}
- {:block/name "markdown 官方语法(快速入门)",
-  :block/created-at 1658857025376,
-  :block/updated-at 1658857025376}
- {:block/name "markdown 语法",
-  :block/created-at 1658857025380,
-  :block/updated-at 1658857025380}
- {:block/name "markdown 语法(模仿)",
-  :block/created-at 1658857025373,
-  :block/updated-at 1658857025373}
  {:block/name "notion",
   :block/created-at 1658856998047,
   :block/updated-at 1658856998047}
@@ -157,21 +151,18 @@
  {:block/name "quote",
   :block/created-at 1658856997590,
   :block/updated-at 1658856997590}
- {:block/name "random-thought",
-  :block/created-at 1659923141872,
-  :block/updated-at 1659923141872}
  {:block/name "readme",
   :block/created-at 1659923140716,
   :block/updated-at 1659923140716}
  {:block/name "study",
   :block/created-at 1658856997832,
   :block/updated-at 1658856997832}
+ {:block/name "symbol",
+  :block/created-at 1659966704419,
+  :block/updated-at 1659966704419}
  {:block/name "teambition",
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
- {:block/name "test",
-  :block/created-at 1659526024751,
-  :block/updated-at 1659526071529}
  {:block/name "todo",
   :block/created-at 1658858141730,
   :block/updated-at 1658858141730}
@@ -208,15 +199,6 @@
  {:block/name "天翼云盘",
   :block/created-at 1658856998057,
   :block/updated-at 1658856998057}
- {:block/name "学习",
-  :block/created-at 1658857025372,
-  :block/updated-at 1658857025372}
- {:block/name "放松",
-  :block/created-at 1658857025370,
-  :block/updated-at 1658857025370}
- {:block/name "放松、学习",
-  :block/created-at 1658857025365,
-  :block/updated-at 1658857025365}
  {:block/name "时间管理",
   :block/created-at 1659534081066,
   :block/updated-at 1659534081066}
@@ -226,9 +208,6 @@
  {:block/name "检索",
   :block/created-at 1658857025905,
   :block/updated-at 1658857025905}
- {:block/name "模板页面",
-  :block/created-at 1658857025378,
-  :block/updated-at 1658857025378}
  {:block/name "知识管理",
   :block/created-at 1658856997574,
   :block/updated-at 1658856997574}
