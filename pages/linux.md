@@ -272,3 +272,4 @@
 	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
+	- [pacman -ArchWiki](https://wiki.archlinux.org/title/pacman)
