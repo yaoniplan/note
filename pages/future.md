@@ -53,4 +53,5 @@
 	  26. [GitHub中文社区](https://www.githubs.cn/)
 - 1. [可汗学院：函数 - 网易公开课](https://open.163.com/newview/movie/free?pid=MDAPTVFE8&mid=MDAPV0Q3K)
   2. [攻克高中英语单词](https://www.ximalaya.com/album/12728981)
-  3.
+  3. [国家高等教育智慧教育平台](https://www.chinaooc.com.cn/home)
+  4.
