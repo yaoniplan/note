@@ -103,8 +103,7 @@
 		- ### 设置 hostname
 		  ```
 		  vim /etc/hostname
-		  #添加下面一行
-		  ss
+		  ss #添加 hostname,名字任意
 		  ```
 		- ### 设置 hosts
 		  ```
