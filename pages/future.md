@@ -50,4 +50,4 @@
 	  23. [Scratch是全球最大的免费儿童编程社区](https://scratch.mit.edu/)
 	  24. [免费学习编程](https://chinese.freecodecamp.org/)
 	  25. [自学计算机科学](https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
-	  26.
+	  26. [GitHub]
