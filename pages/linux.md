@@ -235,8 +235,8 @@
 					  cd 包名
 					  makepkg -si
 					  ```
-			- ### desktop environment
-				- #### gnome
+			- #### desktop environment
+				- ##### gnome
 					- ***安装显示服务***  
 					  ```
 					  pacman -S xorg
