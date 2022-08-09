@@ -183,104 +183,105 @@
 		  #生成 GRUB 配置以激活加载微码更新
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
-			- #### dwm(wm待完善)
-				- ***安装窗口管理器***  
-				  ```
-				  git clone https://git.suckless.org/dwm
-				  cd dwm
-				  sudo make clean install
-				  cd
-				  #接着安装 st 和 dmenu（按照上面的方法，重复一遍）
-				  ```
-				- ***配置窗口启动参数***
-				  ```
-				  cp /etc/X11/xinit/xinitrc ~/.xinitrc
-				  vim ~/.xinitrc
-				  #添加注释
-				  # twm 及其下那些行
-				  #添加下面一行
-				  exec dwm
-				  ```
-				- ***进入窗口环境***
-				  ```
-				  startx
-				  ```
-			- #### i3wm(wm待完善)
-				- ***安装 xorg-xinit***  
-				  ```
-				  pacman -S xorg-xinit
-				  #配置窗口启动参数
-				  cp /etc/X11/xinit/xinitrc ~/.xinitrc
-				  vim ~/.xinitrc
-				  #添加注释
-				  # twm 及其以下那些行
-				  #添加下面一行
-				  exec i3
-				  ```
-				- ***安装 i3wm***
-				  ```
-				  pacman -S i3
-				  ```
-				- ***安装终端***
-				  ```
-				  pacman -S mate-terminal
-				  ```
-				- ***安装浏览器***  
-				  ```
-				  #切换到新用户下
-				  su ss
-				  git clone 包的URL
-				  cd 包名
-				  makepkg -si
-				  ```
-			- #### gnome(de)
-				- ***安装显示服务***  
-				  ```
-				  pacman -S xorg
-				  ```
-				- ***安装桌面环境***(不要忘了启用 gdm)  
-				  ```
-				  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
-				  #启用 gdm
-				  systemctl enable gdm
-				  ```
-				- ***安装中文输入法***  
-				  ```
-				  #切换到新用户下
-				  su ss
-				  #安装中文输入法必备包
-				  sudo pacman -S fcitx5-im fcitx5-chinese-addons
-				  #修改 /etc/environment 配置文件
-				  sudo vim /etc/environment
-				  #添加下面三行
-				  GTK_IM_MODULE=fcitx
-				  QT_IM_MODULE=fcitx
-				  XMODIFIERS=@im=fcitx
-				  #安装离线字库（方便打字）
-				  sudo pacman -S fcitx5-pinyin-zhwiki
-				  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
-				  cd 包名
-				  makepkg -si
-				  #在桌面环境中
-				  1.在终端打开 fcitx5-configtool 
-				  2.取消 "Only Show Current Language" 的勾选
-				  3.双击 Pinyin
-				  4.点击 "Apply" 接着 "Close" 
-				  5.ctrl+space （切换拼音和英文的快捷键）
-				  ```
-				- ***安装浏览器***
-				  ```
-				  #在桌面环境中
-				  sudo pacman -S git
-				  git clone 包URL
-				  cd 包名
-				  makepkg -si
-				  ```
-				- ***解决触控板触击无反应***
-				  ```
-				  #在桌面环境中
-				  系统设置-触控板-单击打开
-				  ```
+		- ### dwm(wm待完善)  
+		  安装wm或de
+			- ***安装窗口管理器***  
+			  ```
+			  git clone https://git.suckless.org/dwm
+			  cd dwm
+			  sudo make clean install
+			  cd
+			  #接着安装 st 和 dmenu（按照上面的方法，重复一遍）
+			  ```
+			- ***配置窗口启动参数***
+			  ```
+			  cp /etc/X11/xinit/xinitrc ~/.xinitrc
+			  vim ~/.xinitrc
+			  #添加注释
+			  # twm 及其下那些行
+			  #添加下面一行
+			  exec dwm
+			  ```
+			- ***进入窗口环境***
+			  ```
+			  startx
+			  ```
+		- ### i3wm(wm待完善)
+			- ***安装 xorg-xinit***  
+			  ```
+			  pacman -S xorg-xinit
+			  #配置窗口启动参数
+			  cp /etc/X11/xinit/xinitrc ~/.xinitrc
+			  vim ~/.xinitrc
+			  #添加注释
+			  # twm 及其以下那些行
+			  #添加下面一行
+			  exec i3
+			  ```
+			- ***安装 i3wm***
+			  ```
+			  pacman -S i3
+			  ```
+			- ***安装终端***
+			  ```
+			  pacman -S mate-terminal
+			  ```
+			- ***安装浏览器***  
+			  ```
+			  #切换到新用户下
+			  su ss
+			  git clone 包的URL
+			  cd 包名
+			  makepkg -si
+			  ```
+		- ### gnome(de)
+			- ***安装显示服务***  
+			  ```
+			  pacman -S xorg
+			  ```
+			- ***安装桌面环境***(不要忘了启用 gdm)  
+			  ```
+			  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
+			  #启用 gdm
+			  systemctl enable gdm
+			  ```
+			- ***安装中文输入法***  
+			  ```
+			  #切换到新用户下
+			  su ss
+			  #安装中文输入法必备包
+			  sudo pacman -S fcitx5-im fcitx5-chinese-addons
+			  #修改 /etc/environment 配置文件
+			  sudo vim /etc/environment
+			  #添加下面三行
+			  GTK_IM_MODULE=fcitx
+			  QT_IM_MODULE=fcitx
+			  XMODIFIERS=@im=fcitx
+			  #安装离线字库（方便打字）
+			  sudo pacman -S fcitx5-pinyin-zhwiki
+			  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
+			  cd 包名
+			  makepkg -si
+			  #在桌面环境中
+			  1.在终端打开 fcitx5-configtool 
+			  2.取消 "Only Show Current Language" 的勾选
+			  3.双击 Pinyin
+			  4.点击 "Apply" 接着 "Close" 
+			  5.ctrl+space （切换拼音和英文的快捷键）
+			  ```
+			- ***安装浏览器***
+			  ```
+			  #在桌面环境中
+			  sudo pacman -S git
+			  git clone 包URL
+			  cd 包名
+			  makepkg -si
+			  ```
+			- ***解决触控板触击无反应***
+			  ```
+			  #在桌面环境中
+			  系统设置-触控板-单击打开
+			  ```
 	- ## 注意事项
 		- invalid or corrupted package(PGP signature)  
 		  ```
