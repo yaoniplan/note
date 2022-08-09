@@ -67,4 +67,5 @@
   14. [萌战-专注动漫领域优质内容](https://mengzhan1314.com)
   15. [绅士游戏之家](https://ssyxzj.xyz/)
   16. [M站_哔咪动漫](https://www.bimiacg4.net)
-  17. [](https://acl4ssr-sub.github.io)
+  17. [在线订阅转换](https://acl4ssr-sub.github.io)
+  18.
