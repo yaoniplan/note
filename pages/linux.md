@@ -236,7 +236,7 @@
 			  cd 包名
 			  makepkg -si
 			  ```
-		- ### gnome(de)  
+		- ### gnome  
 		  (可选)desktop environment
 			- ***安装显示服务***  
 			  ```
@@ -290,3 +290,5 @@
 		  ```
 		  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 		  ```
+- # 参考资料
+	-
