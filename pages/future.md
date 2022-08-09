@@ -31,3 +31,4 @@
 	  4. [一起题库](https://tiku.17zuoye.com/)
 	  5. [小时百科-专业的数学和物理百科](https://wuli.wiki/index.html)
 	  6. [化学自习室](https://wuli.wiki/index.html)
+	  7. [乐乐课堂：]
