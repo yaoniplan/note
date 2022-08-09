@@ -15,19 +15,14 @@
 	- ## 压缩和解压缩
 		- tar  
 		  ```
-		  #解压 文件名.tar.gz
-		  tar -zxvf 文件名.tar.gz
-		  #解压 文件名.tar.zst
-		  tar -I zstd -xvf 文件名.tar.zst
+		  tar -zxvf 文件名.tar.gz #解压 文件名.tar.gz
+		  tar -I zstd -xvf 文件名.tar.zst #解压 文件名.tar.zst
 		  ```
 		- zip  
 		  ```
-		  #先安装 zip
-		  sudo pacman -S zip
-		  #压缩目录及目录内的文件
-		  zip -r 文件名.zip 文件名
-		  #解压缩目录及目录内的文件
-		  unzip 文件名.zip
+		  sudo pacman -S zip #安装 zip
+		  zip -r 文件名.zip 文件名 #压缩目录及目录内的文件
+		  unzip 文件名.zip #解压缩目录及目录内的文件
 		  ```
 	- ## 网络代理
 		- 终端  
