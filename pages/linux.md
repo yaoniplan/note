@@ -291,4 +291,4 @@
 		  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 		  ```
 - # 参考资料
-	- []
+	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
