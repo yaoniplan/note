@@ -4,9 +4,6 @@
  {:block/name "a",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
- {:block/name "archlinux",
-  :block/created-at 1658857025622,
-  :block/updated-at 1658857025622}
  {:block/name "aug 1st, 2022",
   :block/created-at 1659353879281,
   :block/updated-at 1659533556359}
@@ -28,6 +25,9 @@
  {:block/name "aug 8th, 2022",
   :block/created-at 1659923142740,
   :block/updated-at 1659923142740}
+ {:block/name "aug 9th, 2022",
+  :block/created-at 1660009557596,
+  :block/updated-at 1660009557596}
  {:block/name "b",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -69,7 +69,7 @@
   :block/updated-at 1658856997571}
  {:block/name "future",
   :block/created-at 1659954827041,
-  :block/updated-at 1659954827041}
+  :block/updated-at 1660045280320}
  {:block/name "git",
   :block/created-at 1659954827038,
   :block/updated-at 1659954827038}
@@ -132,10 +132,10 @@
   :block/updated-at 1658858141729}
  {:block/name "linux",
   :block/created-at 1658856998051,
-  :block/updated-at 1659972532197}
+  :block/updated-at 1660040326011}
  {:block/name "logseq",
   :block/created-at 1658856997605,
-  :block/updated-at 1659973486400}
+  :block/updated-at 1660009850592}
  {:block/name "markdown",
   :block/created-at 1658857026331,
   :block/updated-at 1658857026331}
@@ -193,6 +193,9 @@
  {:block/name "兴趣",
   :block/created-at 1658856997597,
   :block/updated-at 1658856997597}
+ {:block/name "同步",
+  :block/created-at 1660009585288,
+  :block/updated-at 1660009585288}
  {:block/name "喜马讲书1-800",
   :block/created-at 1658856997576,
   :block/updated-at 1658856997576}
