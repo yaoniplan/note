@@ -234,55 +234,54 @@
 				  cd 包名
 				  makepkg -si
 				  ```
-			- #### desktop environment
-				- ##### gnome
-					- ***安装显示服务***  
-					  ```
-					  pacman -S xorg
-					  ```
-					- ***安装桌面环境***(不要忘了启用 gdm)  
-					  ```
-					  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
-					  #启用 gdm
-					  systemctl enable gdm
-					  ```
-					- ***安装中文输入法***  
-					  ```
-					  #切换到新用户下
-					  su ss
-					  #安装中文输入法必备包
-					  sudo pacman -S fcitx5-im fcitx5-chinese-addons
-					  #修改 /etc/environment 配置文件
-					  sudo vim /etc/environment
-					  #添加下面三行
-					  GTK_IM_MODULE=fcitx
-					  QT_IM_MODULE=fcitx
-					  XMODIFIERS=@im=fcitx
-					  #安装离线字库（方便打字）
-					  sudo pacman -S fcitx5-pinyin-zhwiki
-					  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
-					  cd 包名
-					  makepkg -si
-					  #在桌面环境中
-					  1.在终端打开 fcitx5-configtool 
-					  2.取消 "Only Show Current Language" 的勾选
-					  3.双击 Pinyin
-					  4.点击 "Apply" 接着 "Close" 
-					  5.ctrl+space （切换拼音和英文的快捷键）
-					  ```
-					- ***安装浏览器***
-					  ```
-					  #在桌面环境中
-					  sudo pacman -S git
-					  git clone 包URL
-					  cd 包名
-					  makepkg -si
-					  ```
-					- ***解决触控板触击无反应***
-					  ```
-					  #在桌面环境中
-					  系统设置-触控板-单击打开
-					  ```
+			- #### gnome
+				- ***安装显示服务***  
+				  ```
+				  pacman -S xorg
+				  ```
+				- ***安装桌面环境***(不要忘了启用 gdm)  
+				  ```
+				  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
+				  #启用 gdm
+				  systemctl enable gdm
+				  ```
+				- ***安装中文输入法***  
+				  ```
+				  #切换到新用户下
+				  su ss
+				  #安装中文输入法必备包
+				  sudo pacman -S fcitx5-im fcitx5-chinese-addons
+				  #修改 /etc/environment 配置文件
+				  sudo vim /etc/environment
+				  #添加下面三行
+				  GTK_IM_MODULE=fcitx
+				  QT_IM_MODULE=fcitx
+				  XMODIFIERS=@im=fcitx
+				  #安装离线字库（方便打字）
+				  sudo pacman -S fcitx5-pinyin-zhwiki
+				  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
+				  cd 包名
+				  makepkg -si
+				  #在桌面环境中
+				  1.在终端打开 fcitx5-configtool 
+				  2.取消 "Only Show Current Language" 的勾选
+				  3.双击 Pinyin
+				  4.点击 "Apply" 接着 "Close" 
+				  5.ctrl+space （切换拼音和英文的快捷键）
+				  ```
+				- ***安装浏览器***
+				  ```
+				  #在桌面环境中
+				  sudo pacman -S git
+				  git clone 包URL
+				  cd 包名
+				  makepkg -si
+				  ```
+				- ***解决触控板触击无反应***
+				  ```
+				  #在桌面环境中
+				  系统设置-触控板-单击打开
+				  ```
 	- ## 注意事项
 		- invalid or corrupted package(PGP signature)  
 		  ```
