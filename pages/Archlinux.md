@@ -225,6 +225,5 @@
 - # 注意事项
 	- invalid or corrupted package(PGP signature)  
 	  ```
-	  #解决方法
-	  pacman -Sy archlinux-keyring
+	  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 	  ```
