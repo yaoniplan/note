@@ -153,7 +153,7 @@
 		  pacman -S intel-ucode
 		  grub-mkconfig -o /boot/grub/grub.cfg #生成 GRUB 配置以激活加载微码更新
 		  ```
-		- ### dwm(wm待完善)  
+		- ### dwm(待完善)  
 		  安装 windows manager 或 desktop environment  
 		  (可选)windows manager
 			- ***安装窗口管理器***  
