@@ -186,6 +186,7 @@
 		- ### 安装 windows manager 或者 desktop environment
 			- #### windows manager
 				- ##### dwm(待完善)
+				  collapsed:: true
 					- ***安装窗口管理器***  
 					  ```
 					  git clone https://git.suckless.org/dwm
@@ -208,6 +209,7 @@
 					  startx
 					  ```
 				- ##### i3wm(待完善)
+				  collapsed:: true
 					- ***安装 xorg-xinit***  
 					  ```
 					  pacman -S xorg-xinit
