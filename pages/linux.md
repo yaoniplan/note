@@ -184,7 +184,7 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg
 		  ```
 		- ### 安装 windows manager 或者 desktop environment
-			- #### dwm(待完善)
+			- #### dwm(wm待完善)
 				- ***安装窗口管理器***  
 				  ```
 				  git clone https://git.suckless.org/dwm
@@ -206,7 +206,7 @@
 				  ```
 				  startx
 				  ```
-			- #### i3wm(待完善)
+			- #### i3wm(wm待完善)
 				- ***安装 xorg-xinit***  
 				  ```
 				  pacman -S xorg-xinit
@@ -234,7 +234,7 @@
 				  cd 包名
 				  makepkg -si
 				  ```
-			- #### gnome
+			- #### gnome(de)
 				- ***安装显示服务***  
 				  ```
 				  pacman -S xorg
