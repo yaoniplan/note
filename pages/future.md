@@ -36,4 +36,5 @@
 	  9. [高中数学基础与解法全集](https://www.bilibili.com/video/BV147411K7xu?p=104)
 	  10. [高考数学专题复习](https://www.bilibili.com/video/av39031994/?p=9)
 	  11. [高中数学所有解题方法与策略](https://www.bilibili.com/video/BV1X7411F7YF?p=38)
-	  12.
+	  12. [高中数学基础合集](https://www.bilibili.com/video/BV1N7411A74L)
+	  13.
