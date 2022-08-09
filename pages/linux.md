@@ -250,10 +250,6 @@
 			  系统设置-触控板-单击打开 #在桌面环境中
 			  ```
 	- ## 注意事项
-		- invalid or corrupted package(PGP signature)  
-		  ```
-		  pacman -Sy archlinux-keyring #更新 archlinux-keyring
-		  ```
 - # 注意事项
 	- ## .AppImage文件执行没有反应  
 	  ```
