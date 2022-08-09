@@ -119,8 +119,7 @@
 		  ```
 		- ### 给新用户使用 sudo 的权限
 		  ```
-		  #安装编辑器 vi
-		  pacman -S vi
+		  pacman -S vi #安装编辑器 vi
 		  visudo
 		  #去掉下面一行注释
 		  # %wheel ALL=(ALL:ALL)ALL
