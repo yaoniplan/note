@@ -57,4 +57,5 @@
   4. [Coursera](https://www.coursera.org/)
   5. [网易云课堂 - 悄悄变强大](https://study.163.com/)
   6. [慕课网-程序员的梦工厂](https://www.imooc.com/)
-  7. []
+  7. [中国大学MOOC_国家精品课程在线学习平台](https://www.icourse163.org/)
+  8. [腾讯]
