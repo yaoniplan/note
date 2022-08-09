@@ -64,16 +64,13 @@
 		  mount /dev/root_partition /mnt
 		  mount --mkdir /dev/efi_system_partition /mnt/boot
 		  swapon /dev/swap_partition
-		  #看硬盘分区的挂载情况
-		  lsblk
+		  lsblk #看硬盘分区的挂载情况
 		  ```
 		- ### 换源
 		  ```
 		  vim /etc/pacman.d/mirrorlist
-		  #添加下面一行
-		  Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
-		  #检查源的速度
-		  pacman -Syy
+		  Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch #添加这一行
+		  pacman -Sy #检查源的速度
 		  ```
 		- ### 安装必备包
 		  ```
