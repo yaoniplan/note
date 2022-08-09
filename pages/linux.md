@@ -200,8 +200,7 @@
 			  ```
 			- ***安装浏览器***  
 			  ```
-			  #切换到新用户下
-			  su ss
+			  su ss #切换到新用户下
 			  git clone 包的URL
 			  cd 包名
 			  makepkg -si
@@ -219,12 +218,9 @@
 			  ```
 			- ***安装中文输入法***  
 			  ```
-			  #切换到新用户下
-			  su ss
-			  #安装中文输入法必备包
-			  sudo pacman -S fcitx5-im fcitx5-chinese-addons
-			  #修改 /etc/environment 配置文件
-			  sudo vim /etc/environment
+			  su ss #切换到新用户下
+			  sudo pacman -S fcitx5-im fcitx5-chinese-addons #安装中文输入法必备包
+			  sudo vim /etc/environment #修改 /etc/environment 配置文件
 			  #添加下面三行
 			  GTK_IM_MODULE=fcitx
 			  QT_IM_MODULE=fcitx
