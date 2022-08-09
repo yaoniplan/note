@@ -76,4 +76,4 @@
   23. [阿里云网盘资源免费分享论坛](https://drivebbs.com/index.php)
   24. [盘盘资源-开放交流，共享资源，走进盘盘！](https://www.panpanr.com/)
   25. [聚BT](https://bbs.jubt.live)
-  26. [阿里云畔]
+  26. [阿里云盘资源论坛 - 自由至上！](https://aliyunpan1.com/)
