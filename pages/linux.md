@@ -154,7 +154,7 @@
 		  grub-mkconfig -o /boot/grub/grub.cfg #生成 GRUB 配置以激活加载微码更新
 		  ```
 		- ### gnome  
-		  安装 windows manager 或 desktop environment 
+		  安装 desktop environment 或 windows manager 
 		  (可选)desktop environment
 			- ***安装显示服务***  
 			  ```
