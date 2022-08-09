@@ -40,4 +40,5 @@
 	  13. [在代码工作室学习 - Code.org](https://studio.code.org/courses)
 	  14. [C++在线工具 | 菜鸟工具](https://c.runoob.com/compile/12/)
 	  15. [在线编程 - 编程中国](http://www.bccn.net/run/)
-	  16.
+	  16. [课程-KuangStudy](https://www.kuangstudy.com/course)
+	  17.
