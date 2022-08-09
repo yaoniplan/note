@@ -271,5 +271,24 @@
 		  ```
 		  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 		  ```
+- # 注意事项
+	- ## .AppImage文件执行没有反应  
+	  ```
+	  #在原先执行的命令后面添加" --appimage-extract"
+	  ./文件名.AppImage --appimage-extract
+	  ```
+	- ## 两个硬盘共存  
+	  ```
+	  #格式化主要存储的硬盘，且不能分区（说明：一个主要装操作系统，另一个主要存储）
+	  #查看要格式化的硬盘
+	  fdisk -l
+	  #格式化主要存储的硬盘（下面的”x“可能是a、b、c、……）
+	  mkfs.ext4 /dev/sdx
+	  ```
+	- ## 不能粘贴文件(权限不允许)  
+	  ```
+	  #在终端中，以 root 的权限打开文件管理器
+	  sudo nautilus
+	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
