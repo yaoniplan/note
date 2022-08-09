@@ -153,8 +153,52 @@
 		  pacman -S intel-ucode
 		  grub-mkconfig -o /boot/grub/grub.cfg #生成 GRUB 配置以激活加载微码更新
 		  ```
-		- ### dwm(待完善)  
-		  安装 windows manager 或 desktop environment  
+		- ### gnome  
+		  安装 windows manager 或 desktop environment 
+		  (可选)desktop environment
+			- ***安装显示服务***  
+			  ```
+			  pacman -S xorg
+			  ```
+			- ***安装桌面环境***(不要忘了启用 gdm)  
+			  ```
+			  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
+			  systemctl enable gdm #启用 gdm
+			  ```
+			- ***安装中文输入法***  
+			  ```
+			  su ss #切换到新用户下
+			  sudo pacman -S fcitx5-im fcitx5-chinese-addons #安装中文输入法必备包
+			  sudo vim /etc/environment #修改 /etc/environment 配置文件
+			  #添加下面三行
+			  GTK_IM_MODULE=fcitx
+			  QT_IM_MODULE=fcitx
+			  XMODIFIERS=@im=fcitx
+			  #安装离线字库（方便打字）
+			  sudo pacman -S fcitx5-pinyin-zhwiki
+			  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
+			  cd 包名
+			  makepkg -si
+			  #在桌面环境中
+			  1.在终端打开 fcitx5-configtool 
+			  2.取消 "Only Show Current Language" 的勾选
+			  3.双击 Pinyin
+			  4.点击 "Apply" 接着 "Close" 
+			  5.ctrl+space （切换拼音和英文的快捷键）
+			  ```
+			- ***安装浏览器***
+			  ```
+			  #在桌面环境中
+			  sudo pacman -S git
+			  git clone 包URL
+			  cd 包名
+			  makepkg -si
+			  ```
+			- ***解决触控板触击无反应***
+			  ```
+			  系统设置-触控板-单击打开 #在桌面环境中
+			  ```
+		- ### dwm(待完善)   
 		  (可选)windows manager
 			- ***安装窗口管理器***  
 			  ```
@@ -204,50 +248,6 @@
 			  git clone 包的URL
 			  cd 包名
 			  makepkg -si
-			  ```
-		- ### gnome  
-		  (可选)desktop environment
-			- ***安装显示服务***  
-			  ```
-			  pacman -S xorg
-			  ```
-			- ***安装桌面环境***(不要忘了启用 gdm)  
-			  ```
-			  pacman -S gonme-shell gnome-control-center gnome-terminal gnome-backgrounds nautilus gdm
-			  systemctl enable gdm #启用 gdm
-			  ```
-			- ***安装中文输入法***  
-			  ```
-			  su ss #切换到新用户下
-			  sudo pacman -S fcitx5-im fcitx5-chinese-addons #安装中文输入法必备包
-			  sudo vim /etc/environment #修改 /etc/environment 配置文件
-			  #添加下面三行
-			  GTK_IM_MODULE=fcitx
-			  QT_IM_MODULE=fcitx
-			  XMODIFIERS=@im=fcitx
-			  #安装离线字库（方便打字）
-			  sudo pacman -S fcitx5-pinyin-zhwiki
-			  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
-			  cd 包名
-			  makepkg -si
-			  #在桌面环境中
-			  1.在终端打开 fcitx5-configtool 
-			  2.取消 "Only Show Current Language" 的勾选
-			  3.双击 Pinyin
-			  4.点击 "Apply" 接着 "Close" 
-			  5.ctrl+space （切换拼音和英文的快捷键）
-			  ```
-			- ***安装浏览器***
-			  ```
-			  #在桌面环境中
-			  sudo pacman -S git
-			  git clone 包URL
-			  cd 包名
-			  makepkg -si
-			  ```
-			- ***解决触控板触击无反应***
-			  ```
-			  系统设置-触控板-单击打开 #在桌面环境中
 			  ```
 - # 注意事项
 	- ## .AppImage文件执行没有反应  
