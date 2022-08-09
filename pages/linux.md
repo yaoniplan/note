@@ -95,10 +95,7 @@
 		  ```
 		- ### 设置 locale
 		  ```
-		  vim /etc/locale.gen
-		  #在文件里，去掉下面两行的注释
-		  # en_US.UTF-8 UTF-8
-		  # zh_CN.UTF-8 UTF-8
+		  vim /etc/locale.gen #去掉这两行注释：en_US.UTF-8 UTF-8;zh_US.UTF-8 UTF-8
 		  locale-gen
 		  vim /etc/locale.conf
 		  LANG=en_US.UTF-8 #添加这一行
