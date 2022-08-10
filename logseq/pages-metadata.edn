@@ -52,9 +52,6 @@
  {:block/name "contents",
   :block/created-at 1658857025385,
   :block/updated-at 1658857025385}
- {:block/name "dashboard",
-  :block/created-at 1658857025317,
-  :block/updated-at 1659526441356}
  {:block/name "doing",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -69,7 +66,7 @@
   :block/updated-at 1658856997571}
  {:block/name "future",
   :block/created-at 1659954827041,
-  :block/updated-at 1660046699364}
+  :block/updated-at 1660055472139}
  {:block/name "git",
   :block/created-at 1659954827038,
   :block/updated-at 1659954827038}
@@ -132,7 +129,7 @@
   :block/updated-at 1658858141729}
  {:block/name "linux",
   :block/created-at 1658856998051,
-  :block/updated-at 1660040326011}
+  :block/updated-at 1660056522232}
  {:block/name "logseq",
   :block/created-at 1658856997605,
   :block/updated-at 1660009850592}
