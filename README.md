@@ -28,7 +28,7 @@
 - ### [PR](https://www.aliyundrive.com/s/69Uz6AP8bib)  
 - ### [摄影](https://www.aliyundrive.com/s/ZsDyJejTf6q)  
 - ### [思维导图](https://www.aliyundrive.com/s/nGYJMkFcvb4)  
-- ## [Anki](https://www.aliyundrive.com/s/VzoUTZn2Ref)  
+- ### [Anki](https://www.aliyundrive.com/s/VzoUTZn2Ref)  
 
 ## 5. 生活  
 - ### [生活管理](https://www.aliyundrive.com/s/8GpUYfBebm3)  
