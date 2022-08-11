@@ -6,7 +6,10 @@
   :block/updated-at 1658858141729}
  {:block/name "aug 10th, 2022",
   :block/created-at 1660122764994,
-  :block/updated-at 1660124597117}
+  :block/updated-at 1660144463923}
+ {:block/name "aug 11th, 2022",
+  :block/created-at 1660147203022,
+  :block/updated-at 1660147203022}
  {:block/name "aug 1st, 2022",
   :block/created-at 1659353879281,
   :block/updated-at 1659533556359}
@@ -69,7 +72,7 @@
   :block/updated-at 1658856997571}
  {:block/name "future",
   :block/created-at 1659954827041,
-  :block/updated-at 1660055472139}
+  :block/updated-at 1660143266072}
  {:block/name "git",
   :block/created-at 1659954827038,
   :block/updated-at 1659954827038}
@@ -159,7 +162,10 @@
   :block/updated-at 1658856997832}
  {:block/name "symbol",
   :block/created-at 1659966704419,
-  :block/updated-at 1659966704419}
+  :block/updated-at 1660143159423}
+ {:block/name "sync",
+  :block/created-at 1660144262339,
+  :block/updated-at 1660144262339}
  {:block/name "teambition",
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
@@ -193,9 +199,6 @@
  {:block/name "兴趣",
   :block/created-at 1658856997597,
   :block/updated-at 1658856997597}
- {:block/name "同步",
-  :block/created-at 1660009585288,
-  :block/updated-at 1660009585288}
  {:block/name "喜马讲书1-800",
   :block/created-at 1658856997576,
   :block/updated-at 1658856997576}
