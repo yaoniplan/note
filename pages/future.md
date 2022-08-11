@@ -81,4 +81,5 @@
 	  2. [免费机场](https://github.com/ermaozi/get_subscribe)
 	  3. [阅读链 - 阅读交流社区](https://www.yuedu.pro/)
 	  4. [全球物流查询平台 | 17TRACK](https://www.17track.net/zh-cn)
-	  5. [fcitx5-an]
+	  5. [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android)
+	  6.
