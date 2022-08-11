@@ -1,31 +1,53 @@
-# note
-open-source life
+# 耀拟计划
+ 为迷茫者提供参考的非营利性计划 -
 
-|                    |   |        |   |              |   |        |
-|:---------------------------------:|:---:|:--------:|:---:|:--------------:|:---:|:--------:|
-|                |   |        |    |              |   |        |
-| 100 - 自我提升                      |   |        |   | 500 - 生活     |   |        |
-| 行动管理                            |   | 阿里云盘链接 |   | 生活管理         |   | 阿里云盘链接 |
-| 时间管理                            |   | 阿里云盘链接 |   | 形象提升         |   | 阿里云盘链接 |
-| 学习效率                            |   | 阿里云盘链接 |   | 健康养生         |   | 阿里云盘链接 |
-| 文笔口才                            |   | 阿里云盘链接 |   | 餐饮美食         |   | 阿里云盘链接 |
-| 思维认知                            |   | 阿里云盘链接 |   | 商业知识         |   | 阿里云盘链接 |
-| 为人处事                            |   | 阿里云盘链接 |   | 情感两性         |   | 阿里云盘链接 |
-| 200 - 幼儿到高中学习资料                 |   |        |   | 兴趣爱好         |   | 阿里云盘链接 |
-| 幼儿教育                            |   | 阿里云盘链接 |   | 600 - 文学修养   |   |        |
-| 小学初中教育                          |   | 阿里云盘链接 |   | 人物传记         |   | 阿里云盘链接 |
-| 高中教育                            |   | 阿里云盘链接 |   | 演讲演说         |   | 阿里云盘链接 |
-| 300 - 计算机编程教程                   |   |        |   | 传统国学         |   | 阿里云盘链接 |
-| 计算机基础                           |   | 阿里云盘链接 |   | 700 - 职场相关   |   |        |
-| Python                          |   | 阿里云盘链接 |   | 职场竞争力        |   | 阿里云盘链接 |
-| Web前端                           |   | 阿里云盘链接 |   | 领导能力         |   | 阿里云盘链接 |
-| Android                         |   | 阿里云盘链接 |   | 项目管理         |   | 阿里云盘链接 |
-| 400 - 软件教程                      |   |        |   | 平面设计         |   | 阿里云盘链接 |
-| PPT教程                           |   | 阿里云盘链接 |   | 人力资源         |   | 阿里云盘链接 |
-| Word教程                          |   | 阿里云盘链接 |   | 自媒体营销        |   | 阿里云盘链接 |
-| Excel教程                         |   | 阿里云盘链接 |   | 文案写作         |   | 阿里云盘链接 |
-| PS教程                            |   | 阿里云盘链接 |   | 各种模板         |   | 阿里云盘链接 |
-| PR教程                            |   | 阿里云盘链接 |   | 800 - 各类考证资料 |   |        |
-| 摄影教程                            |   | 阿里云盘链接 |   | 公务员考试        |   | 阿里云盘链接 |
-| 思维导图教程                          |   | 阿里云盘链接 |   | 驾考资料         |   | 阿里云盘链接 |
-| Anki教程                          |   | 阿里云盘链接 |   |              |   | 阿里云盘链接 |
+<center>100 - 自我提升</center>
+
+[行动管理](https://www.aliyundrive.com/s/keRVra9mtad)  
+[时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)  
+[学习效率](https://www.aliyundrive.com/s/6vgBZbNuE7B)  
+[文笔口才](https://www.aliyundrive.com/s/mVzUeFPvynk)  
+[思维认知](https://www.aliyundrive.com/s/i6Ljb7UBpfj)  
+[为人处事](https://www.aliyundrive.com/s/kqnPnRzRe87)  
+# 200 - 幼儿到高中学习资料
+## [幼儿教育](https://www.aliyundrive.com/s/oAsnmMRy5Wr)  
+## [小学初中教育](https://www.aliyundrive.com/s/ouqWtmdtRyK)  
+## [高中教育](https://www.aliyundrive.com/s/a9UyTthzaRS)  
+# 300 - 计算机编程教程  
+## [计算机基础](https://www.aliyundrive.com/s/k7BcpiMbpgQ)  
+## [Python](https://www.aliyundrive.com/s/XmEsDZd9HoT)  
+## [Web前端](https://www.aliyundrive.com/s/WwaxvMHe4Bh)  
+## [Android](https://www.aliyundrive.com/s/h8L4uCjQCgM)  
+# 400 - 软件教程  
+## [PPT](https://www.aliyundrive.com/s/gS47adUV8do)  
+## [World](https://www.aliyundrive.com/s/tDquMiTfYah)  
+## [Excel](https://www.aliyundrive.com/s/AHKhn3jKyj9)  
+## [PS](https://www.aliyundrive.com/s/QJ24Zzd593T)  
+## [PR](https://www.aliyundrive.com/s/69Uz6AP8bib)  
+## [摄影](https://www.aliyundrive.com/s/ZsDyJejTf6q)  
+## [思维导图](https://www.aliyundrive.com/s/nGYJMkFcvb4)  
+## [Anki](https://www.aliyundrive.com/s/VzoUTZn2Ref)  
+# 500 - 生活  
+## [生活管理](https://www.aliyundrive.com/s/8GpUYfBebm3)  
+## [形象提升](https://www.aliyundrive.com/s/7bLqTKrRGEW)  
+## [健康养生](https://www.aliyundrive.com/s/45CMWsbaDc8)  
+## [餐饮美食](https://www.aliyundrive.com/s/WaQYnnMVgkY)  
+## [商业知识](https://www.aliyundrive.com/s/TpDCTAvydFS)  
+## [情感两性](https://www.aliyundrive.com/s/jq36xkW12vp)  
+## [兴趣爱好](https://www.aliyundrive.com/s/G575najSduc)  
+# 600 - 文学修养  
+## [任务传记](https://www.aliyundrive.com/s/fH3e5fLTT9N)  
+## [演讲演说](https://www.aliyundrive.com/s/b7YY5fHFQcT)  
+## [传统国学](https://www.aliyundrive.com/s/u7RLQphh4kK)  
+# 700 - 职场相关  
+## [职场竞争力](https://www.aliyundrive.com/s/ztrSkNX2rcY)  
+## [领导能力](https://www.aliyundrive.com/s/Y28EmpFgUj4)  
+## [项目管理](https://www.aliyundrive.com/s/Nc9pEyK4Yxz)  
+## [平面设计](https://www.aliyundrive.com/s/f8UgcVDA5Sj)  
+## [人力资源](https://www.aliyundrive.com/s/SmFWT9EpooX)  
+## [自媒体营销](https://www.aliyundrive.com/s/R1MFohENhxM)  
+## [文案写作](https://www.aliyundrive.com/s/Rng1XpTcNnP)  
+## [各种模板](https://www.aliyundrive.com/s/1xpmpgTDF8t)  
+# 800 - 各类考证资料  
+## [公务员考试](https://www.aliyundrive.com/s/akGhEbsPr3q)  
+## [驾考资料](https://www.aliyundrive.com/s/Cwmk6zsE3xT)
