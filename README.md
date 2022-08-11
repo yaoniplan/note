@@ -1,12 +1,12 @@
 # 耀拟计划  
 >为迷茫者提供参考的非营利性计划  
-# 1. 自我提升
-- ## [行动管理](https://www.aliyundrive.com/s/keRVra9mtad)  
-- ## [时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)  
-- ## [学习效率](https://www.aliyundrive.com/s/6vgBZbNuE7B)  
-- ## [文笔口才](https://www.aliyundrive.com/s/mVzUeFPvynk)  
-- ## [思维认知](https://www.aliyundrive.com/s/i6Ljb7UBpfj)  
-- ## [为人处事](https://www.aliyundrive.com/s/kqnPnRzRe87)  
+## 1. 自我提升
+- ### [行动管理](https://www.aliyundrive.com/s/keRVra9mtad)  
+- ### [时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)  
+- ### [学习效率](https://www.aliyundrive.com/s/6vgBZbNuE7B)  
+- ### [文笔口才](https://www.aliyundrive.com/s/mVzUeFPvynk)  
+- ### [思维认知](https://www.aliyundrive.com/s/i6Ljb7UBpfj)  
+- ### [为人处事](https://www.aliyundrive.com/s/kqnPnRzRe87)  
 # 2. 幼儿到高中学习资料
 - ## [幼儿教育](https://www.aliyundrive.com/s/oAsnmMRy5Wr)  
 - ## [小学初中教育](https://www.aliyundrive.com/s/ouqWtmdtRyK)  
