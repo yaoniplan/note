@@ -2,38 +2,38 @@
 >为迷茫者提供参考的非营利性计划  
 
 ## 1. 自我提升
-- [行动管理](https://www.aliyundrive.com/s/keRVra9mtad)  
-- [时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)  
-- [学习效率](https://www.aliyundrive.com/s/6vgBZbNuE7B)  
-- [文笔口才](https://www.aliyundrive.com/s/mVzUeFPvynk)  
-- [思维认知](https://www.aliyundrive.com/s/i6Ljb7UBpfj)  
-- [为人处事](https://www.aliyundrive.com/s/kqnPnRzRe87)  
+- [行动管理](https://www.aliyundrive.com/s/keRVra9mtad "行动管理")  
+- [时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ "时间管理")  
+- [学习效率](https://www.aliyundrive.com/s/6vgBZbNuE7B "学习效率")  
+- [文笔口才](https://www.aliyundrive.com/s/mVzUeFPvynk "文笔口才")  
+- [思维认知](https://www.aliyundrive.com/s/i6Ljb7UBpfj "思维认知")  
+- [为人处事](https://www.aliyundrive.com/s/kqnPnRzRe87 "为人处事")  
 
 ## 2. 幼儿到高中学习资料
-- [幼儿教育](https://www.aliyundrive.com/s/oAsnmMRy5Wr)  
-- [小学初中教育](https://www.aliyundrive.com/s/ouqWtmdtRyK)  
-- [高中教育](https://www.aliyundrive.com/s/a9UyTthzaRS)  
+- [幼儿教育](https://www.aliyundrive.com/s/oAsnmMRy5Wr "幼儿教育")  
+- [小学初中教育](https://www.aliyundrive.com/s/ouqWtmdtRyK "小学初中教育")  
+- [高中教育](https://www.aliyundrive.com/s/a9UyTthzaRS "高中教育")  
 
 ## 3. 计算机编程  
-- [计算机基础](https://www.aliyundrive.com/s/k7BcpiMbpgQ)  
-- [Python](https://www.aliyundrive.com/s/XmEsDZd9HoT)  
-- [Web前端](https://www.aliyundrive.com/s/WwaxvMHe4Bh)  
-- [Android](https://www.aliyundrive.com/s/h8L4uCjQCgM)  
+- [计算机基础](https://www.aliyundrive.com/s/k7BcpiMbpgQ "计算机基础")  
+- [Python](https://www.aliyundrive.com/s/XmEsDZd9HoT "Python")  
+- [Web前端](https://www.aliyundrive.com/s/WwaxvMHe4Bh "Web前端")  
+- [Android](https://www.aliyundrive.com/s/h8L4uCjQCgM "Android")  
 
 ## 4. 软件教程  
-- [PPT](https://www.aliyundrive.com/s/gS47adUV8do)  
-- [World](https://www.aliyundrive.com/s/tDquMiTfYah)  
-- [Excel](https://www.aliyundrive.com/s/AHKhn3jKyj9)  
-- [PS](https://www.aliyundrive.com/s/QJ24Zzd593T)  
-- [PR](https://www.aliyundrive.com/s/69Uz6AP8bib)  
-- [摄影](https://www.aliyundrive.com/s/ZsDyJejTf6q)  
-- [思维导图](https://www.aliyundrive.com/s/nGYJMkFcvb4)  
-- [Anki](https://www.aliyundrive.com/s/VzoUTZn2Ref)  
+- [PPT](https://www.aliyundrive.com/s/gS47adUV8do "PPT")  
+- [World](https://www.aliyundrive.com/s/tDquMiTfYah "World")  
+- [Excel](https://www.aliyundrive.com/s/AHKhn3jKyj9 "Excel")  
+- [PS](https://www.aliyundrive.com/s/QJ24Zzd593T "PS")  
+- [PR](https://www.aliyundrive.com/s/69Uz6AP8bib "PR")  
+- [摄影](https://www.aliyundrive.com/s/ZsDyJejTf6q "摄影")  
+- [思维导图](https://www.aliyundrive.com/s/nGYJMkFcvb4 "思维导图")  
+- [Anki](https://www.aliyundrive.com/s/VzoUTZn2Ref "Anki")  
 
 ## 5. 生活  
-- [生活管理](https://www.aliyundrive.com/s/8GpUYfBebm3)  
-- [形象提升](https://www.aliyundrive.com/s/7bLqTKrRGEW)  
-- [健康养生](https://www.aliyundrive.com/s/45CMWsbaDc8)  
+- [生活管理](https://www.aliyundrive.com/s/8GpUYfBebm3 "生活管理")  
+- [形象提升](https://www.aliyundrive.com/s/7bLqTKrRGEW "形象提升")  
+- [健康养生](https://www.aliyundrive.com/s/45CMWsbaDc8 "健康养生")  
 - [餐饮美食](https://www.aliyundrive.com/s/WaQYnnMVgkY)  
 - [商业知识](https://www.aliyundrive.com/s/TpDCTAvydFS)  
 - [情感两性](https://www.aliyundrive.com/s/jq36xkW12vp)  
