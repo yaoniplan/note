@@ -15,7 +15,10 @@
   :block/updated-at 1660284691871}
  {:block/name "aug 12th, 2022",
   :block/created-at 1660273645784,
-  :block/updated-at 1660301418881}
+  :block/updated-at 1660384728197}
+ {:block/name "aug 13th, 2022",
+  :block/created-at 1660384205226,
+  :block/updated-at 1660384205226}
  {:block/name "aug 1st, 2022",
   :block/created-at 1659353879281,
   :block/updated-at 1659533556359}
@@ -78,7 +81,7 @@
   :block/updated-at 1658856997571}
  {:block/name "future",
   :block/created-at 1659954827041,
-  :block/updated-at 1660279224282}
+  :block/updated-at 1660384264163}
  {:block/name "git",
   :block/created-at 1659954827038,
   :block/updated-at 1659954827038}
