@@ -82,5 +82,5 @@
 	  3. [阅读链 - 阅读交流社区](https://www.yuedu.pro/)
 	  4. [全球物流查询平台 | 17TRACK](https://www.17track.net/zh-cn)
 	  5. [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android)
-	  6. [AGE动漫]([agemys.com(proxy)](https://www.agemys.com/))
+	  6. [AGE动漫](https://www.agemys.com/)
 	  7.
