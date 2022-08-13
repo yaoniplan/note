@@ -12,7 +12,10 @@
   :block/updated-at 1660144463923}
  {:block/name "aug 11th, 2022",
   :block/created-at 1660147203022,
-  :block/updated-at 1660207205543}
+  :block/updated-at 1660284691871}
+ {:block/name "aug 12th, 2022",
+  :block/created-at 1660273645784,
+  :block/updated-at 1660301418881}
  {:block/name "aug 1st, 2022",
   :block/created-at 1659353879281,
   :block/updated-at 1659533556359}
@@ -75,7 +78,7 @@
   :block/updated-at 1658856997571}
  {:block/name "future",
   :block/created-at 1659954827041,
-  :block/updated-at 1660212979817}
+  :block/updated-at 1660279224282}
  {:block/name "git",
   :block/created-at 1659954827038,
   :block/updated-at 1659954827038}
@@ -190,6 +193,9 @@
  {:block/name "vlc",
   :block/created-at 1658856998055,
   :block/updated-at 1658856998055}
+ {:block/name "vscode",
+  :block/created-at 1660284691867,
+  :block/updated-at 1660284691867}
  {:block/name "wait",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -232,6 +238,9 @@
  {:block/name "米斯特软的",
   :block/created-at 1658856997586,
   :block/updated-at 1658856997586}
+ {:block/name "终端",
+  :block/created-at 1660286652523,
+  :block/updated-at 1660286652523}
  {:block/name "耀拟计划",
   :block/created-at 1658856997602,
   :block/updated-at 1658856997602}
