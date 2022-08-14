@@ -57,7 +57,7 @@
   Ctrl + a #将光标移至输入行头，相当于 Home 键
   Ctrl + e #将光标移至输入行末，相当于 End 键
   Ctrl + k #删除从光标所在位置到行末
-  
+  Alt + Backspace #向前删除一个单词
   ```
 - # archlinux
 	- ## gpt
