@@ -58,6 +58,8 @@
   Ctrl + e #将光标移至输入行末，相当于 End 键
   Ctrl + k #删除从光标所在位置到行末
   Alt + Backspace #向前删除一个单词
+  Shift + PgUp #将终端显示向上滚动
+  
   ```
 - # archlinux
 	- ## gpt
