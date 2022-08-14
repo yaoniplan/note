@@ -51,6 +51,12 @@
   ![大致的学习路径](https://doc.shiyanlou.com/linux_base/1-8.png)
 - # 命令行常用快捷键  
   ```
+  Ctrl + d #键盘输入结束或推出终端
+  Ctrl + s #暂停当前程序，暂停后按下任意键恢复运行
+  Ctrl + z #将当前程序放到后台运行，恢复到前台为命令 fg
+  Ctrl + a #将光标移至输入行头，相当于 Home 键
+  Ctrl + e #将光标移至输入行末，相当于 End 键
+  
   ```
 - # archlinux
 	- ## gpt
