@@ -62,8 +62,11 @@
   Alt + Backspace #向前删除一个单词
   Shift + PgUp #将终端显示向上滚动
   Shift + PgDn #将终端显示向下滚动
-  
+  #历史输入命令
+  使用键盘上的方向上键和下键
   ```
+- # Shell 常用
+-
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
