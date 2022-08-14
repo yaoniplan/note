@@ -45,7 +45,8 @@
 		  #测试
 		  curl cip.cc
 		  ```
--
+- # 基本概念  
+  Linux 主要是系统调用和内核
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
