@@ -85,4 +85,5 @@
 	  6. [AGE动漫](https://www.agemys.com/)
 	  7. [机场翻墙订阅转换器](https://subconverter.speedupvpn.com/)
 	  8. [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
-	  9.
+	  9. [1Password 强密码生成器](https://1password.com/zh-cn/password-generator/)
+	  10.
