@@ -63,7 +63,8 @@
   Shift + PgUp #将终端显示向上滚动
   Shift + PgDn #将终端显示向下滚动
   键盘上的方向上键和下键 #历史输入命令
-  man <command_name> #
+  man <command_name> #查看某个命令的说明和使用方式的详细介绍
+  <command_name> --help #快速查看它的某个具体参数的作用
   ```
 - # Shell 常用通配符  
   ```
