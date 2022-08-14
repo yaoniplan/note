@@ -51,6 +51,8 @@
   ![大致的学习路径](https://doc.shiyanlou.com/linux_base/1-8.png)
 - # 命令行常用快捷键  
   ```
+  Tab #Tab 键补全命令、命令参数、目录
+  Ctrl + c #强行终止当前程序
   Ctrl + d #键盘输入结束或推出终端
   Ctrl + s #暂停当前程序，暂停后按下任意键恢复运行
   Ctrl + z #将当前程序放到后台运行，恢复到前台为命令 fg
@@ -59,6 +61,7 @@
   Ctrl + k #删除从光标所在位置到行末
   Alt + Backspace #向前删除一个单词
   Shift + PgUp #将终端显示向上滚动
+  Shift + PgDn #将终端显示向下滚动
   
   ```
 - # archlinux
