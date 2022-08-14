@@ -47,7 +47,9 @@
 		  ```
 - # 基本概念  
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
-- # 学习路径
+- # 学习路径  
+  ![大致的学习路径](https://doc.shiyanlou.com/linux_base/1-8.png)
+-
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
