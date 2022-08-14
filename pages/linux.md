@@ -49,7 +49,9 @@
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
 - # 学习路径  
   ![大致的学习路径](https://doc.shiyanlou.com/linux_base/1-8.png)
--
+- # 命令行常用快捷键  
+  ```
+  ```
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
