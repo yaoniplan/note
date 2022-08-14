@@ -84,4 +84,5 @@
 	  5. [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android)
 	  6. [AGE动漫](https://www.agemys.com/)
 	  7. [机场翻墙订阅转换器](https://subconverter.speedupvpn.com/)
-	  8.
+	  8. [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
+	  9.
