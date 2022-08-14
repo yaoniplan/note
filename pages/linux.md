@@ -46,7 +46,7 @@
 		  curl cip.cc
 		  ```
 - # 基本概念  
-  Linux 主要是系统调用和内核
+  [操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png)
 - # archlinux
 	- ## gpt
 		- ### 更新系统时钟  
