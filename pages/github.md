@@ -6,4 +6,5 @@
   Choose a license template #根据需求，选择对应的许可证
   ```
 - # 参考资料
-	- []
+	- [如何为 Github 的项目添加开源许可证 (license)](https://gxuamethyst.github.io/post/add-license/)
+	-
