@@ -263,6 +263,9 @@
 			  ```
 			- ***快捷键***  
 			  ```
+			  alt + shift + q #退出 dwm
+			  alt + shift + c #关闭窗口
+			  alt + enter #切换窗口
 			  ```
 		- ### i3wm(待完善)  
 		  (可选)windows manager
