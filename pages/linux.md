@@ -215,7 +215,7 @@
 			  XMODIFIERS=@im=fcitx
 			  #安装离线字库（方便打字）
 			  sudo pacman -S fcitx5-pinyin-zhwiki
-			  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git
+			  git clone https://aur.archlinux.org/fcitx5-pinyin-moegirl.git #要在有网络代理的情况下git clone
 			  cd 包名
 			  makepkg -si
 			  #在桌面环境中
@@ -241,6 +241,7 @@
 		  (可选)windows manager
 			- ***安装窗口管理器***  
 			  ```
+			  
 			  git clone https://git.suckless.org/dwm
 			  cd dwm
 			  sudo make clean install
