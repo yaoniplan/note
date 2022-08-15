@@ -261,6 +261,9 @@
 			  ```
 			  startx
 			  ```
+			- ***快捷键***  
+			  ```
+			  ```
 		- ### i3wm(待完善)  
 		  (可选)windows manager
 			- ***安装 xorg-xinit***  
