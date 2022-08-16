@@ -91,3 +91,5 @@
 	  12. [Set up a fully featured arch linux environment from the outset.](https://github.com/LucasWang474/Arch-Configurations)
 	  13. [EF - Linux Made Simple](https://www.youtube.com/c/EFLinuxMadeSimple/playlists)
 	  14. [archinstall-简单脚本安装]
+	  15. [my i3 config](https://github.com/levinit/i3wm-config)
+	  16.
