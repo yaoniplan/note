@@ -87,4 +87,7 @@
 	  8. [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
 	  9. [1Password 强密码生成器](https://1password.com/zh-cn/password-generator/)
 	  10. [虫部落 - 让搜索更简单](https://www.chongbuluo.com)
-	  11.
+	  11. [[linux]] 安装全套教程
+	  12. [Set up a fully featured arch linux environment from the outset.](https://github.com/LucasWang474/Arch-Configurations)
+	  13. [EF - Linux Made Simple](https://www.youtube.com/c/EFLinuxMadeSimple/playlists)
+	  14. [archinstall-简单脚本安装]
