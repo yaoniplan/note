@@ -1,8 +1,4 @@
 - # 常用命令
-	- ## 查找  
-	  ```
-	  find / (查找范围) -name '查找关键字' -type d #目录位置(应用场景：通过ID,查找Extension root directory)
-	  ```
 	- ## archlinux
 		- ### 软件  
 		  ```
