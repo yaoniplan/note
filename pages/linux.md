@@ -189,6 +189,7 @@
 		- ### dwm(待完善)   
 		  (可选)windows manager
 			- ***安装窗口管理器***  
+			    
 			  ```
 			  pacman -S xorg xorg-xinit 
 			  git clone https://git.suckless.org/dwm
