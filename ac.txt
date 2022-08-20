@@ -1,3 +1,4 @@
+animation
 灵剑尊 -  240/307
 武神主宰 - 192/258
 独步逍遥 - 168/235
@@ -98,7 +99,6 @@ blood-c(season 1 end)
 妖精的旋律(season 1 end)
 死囚乐园(season 1 end)
 死亡笔记26(season 1 end) 
-
 学园默示录(boring)
 寄生兽(boring)
 another(boring)
@@ -124,7 +124,7 @@ another(boring)
 刀剑神域(boring)
 
 
-
+comic
 登录武林系统110
 没有道侣就会死35
 傀儡222
