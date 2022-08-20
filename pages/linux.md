@@ -157,8 +157,7 @@
 		  ```
 		- ### 安装显卡驱动
 		  ```
-		  #按照具体情况安装显卡驱动（我的GPU: Intel和AMD ATI的）
-		  pacman -S xf86-video-intel xf86-video-ati 
+		  pacman -S xf86-video-intel xf86-video-ati #按照具体情况安装显卡驱动（我的GPU: Intel和AMD ATI的）
 		  ```
 		- ### 在盘上安装 grub
 		  ```
