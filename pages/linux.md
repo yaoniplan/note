@@ -295,6 +295,7 @@
 	  ```
 	- # 中文乱码  
 	  ```
+	  sudo pacman -S wqy-zenhei //安装 wqy-zenhei 字体，可以防止中文乱码
 	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
