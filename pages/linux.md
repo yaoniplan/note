@@ -164,14 +164,11 @@
 		  pacman -S grub efibootmgr
 		  mount --mkdir /dev/sda1 /mnt/boot
 		  grub-install --target=x86_64-efi --efi-directory=/mnt/boot --bootloader-id=GRUB
-		  vim /etc/default/grub
-		  #取消下面一行的注释
-		  #GRUB_DISABLE_OS_PROBER=false
+		  vim /etc/default/grub #取消这一行的注释，#GRUB_DISABLE_OS_PROBER=false
 		  ```
 		- ### 安装微码
 		  ```
-		  #按照具体情况安装（amd的cpu，请安装amd-ucode；intel的cpu，请安装intel-ucode）
-		  pacman -S intel-ucode
+		  pacman -S intel-ucode #按照具体情况安装（amd的cpu，请安装amd-ucode；intel的cpu，请安装intel-ucode）
 		  grub-mkconfig -o /boot/grub/grub.cfg #生成 GRUB 配置以激活加载微码更新
 		  ```
 		- ### gnome  
