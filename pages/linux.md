@@ -293,6 +293,9 @@
 	  ```
 	  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 	  ```
+	- # 中文乱码  
+	  ```
+	  ```
 - # 参考资料
 	- [Installation guide - ArchWiki](https://wiki.archlinux.org/title/Installation_guide)
 	- [pacman -ArchWiki](https://wiki.archlinux.org/title/pacman)
