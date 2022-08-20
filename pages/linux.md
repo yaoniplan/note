@@ -155,10 +155,10 @@
 		  ```
 		  passwd root
 		  ```
-		- ### 安装显卡驱动和字体
+		- ### 安装显卡驱动
 		  ```
 		  #按照具体情况安装显卡驱动（我的GPU: Intel和AMD ATI的）
-		  pacman -S xf86-video-intel xf86-video-ati noto-fonts-cjk #安装字体，防止乱码
+		  pacman -S xf86-video-intel xf86-video-ati 
 		  ```
 		- ### 在盘上安装 grub
 		  ```
