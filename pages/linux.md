@@ -34,7 +34,7 @@
 	  whoami #查看当前登录用户的用户名
 	  ```
 - # archlinux  
-  建议使用 archinstall (使用前，)
+  *建议使用 archinstall (使用前，先换源，即手动添加一个最快的源)**
 	- ## gpt
 		- ### 更新系统时钟  
 		  ```
