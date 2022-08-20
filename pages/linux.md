@@ -189,7 +189,7 @@
 		- ### dwm(待完善)   
 		  (可选)windows manager
 			- ***安装窗口管理器***  
-			  w3m suckless.org //使用 w3m 终端浏览器  
+			  w3m suckless.org //使用 w3m 文字式网页浏览器  
 			  ```
 			  pacman -S xorg xorg-xinit 
 			  git clone https://git.suckless.org/dwm
