@@ -1,12 +1,3 @@
-- # 常用命令
-	- ## archlinux
-		- ### 软件  
-		  ```
-		  #卸载
-		  grep -r '桌面的软件名' /usr/share/applications #查询路径
-		  sudo pacman -Qo 上一个命令查询到的路径 #查询包名
-		  sudo pacman -Rs 包名 #删除其他已安装软件包不需要的软件包及其依赖
-		  ```
 - # 基本概念  
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
 - # 学习路径  
@@ -42,7 +33,8 @@
 	  ```
 	  whoami #查看当前登录用户的用户名
 	  ```
-- # archlinux
+- # archlinux  
+  建议使用 archinstall (使用前，)
 	- ## gpt
 		- ### 更新系统时钟  
 		  ```
