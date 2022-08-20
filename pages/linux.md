@@ -293,7 +293,7 @@
 	  ```
 	  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 	  ```
-	- # 中文乱码  
+	- ## 字体问题  
 	  ```
 	  sudo pacman -S wqy-zenhei //安装 wqy-zenhei 字体，可以防止中文乱码
 	  ```
