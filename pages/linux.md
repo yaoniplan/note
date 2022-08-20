@@ -7,11 +7,6 @@
 		  sudo pacman -Qo 上一个命令查询到的路径 #查询包名
 		  sudo pacman -Rs 包名 #删除其他已安装软件包不需要的软件包及其依赖
 		  ```
-		- ### 更新  
-		  ```
-		  sudo pacman Sy #同步库（顺便可以测试源的速度）
-		  sudo pacman Syu #同步库并更新系统的包（建议安装软件之前更新）
-		  ```
 - # 基本概念  
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
 - # 学习路径  
