@@ -12,18 +12,6 @@
 		  sudo pacman Sy #同步库（顺便可以测试源的速度）
 		  sudo pacman Syu #同步库并更新系统的包（建议安装软件之前更新）
 		  ```
-	- ## 压缩和解压缩
-		- tar  
-		  ```
-		  tar -zxvf 文件名.tar.gz #解压 文件名.tar.gz
-		  tar -I zstd -xvf 文件名.tar.zst #解压 文件名.tar.zst
-		  ```
-		- zip  
-		  ```
-		  sudo pacman -S zip #安装 zip
-		  zip -r 文件名.zip 文件名 #压缩目录及目录内的文件
-		  unzip 文件名.zip #解压缩目录及目录内的文件
-		  ```
 	- ## 网络代理
 		- 终端  
 		  ```
