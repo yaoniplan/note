@@ -12,23 +12,6 @@
 		  sudo pacman Sy #同步库（顺便可以测试源的速度）
 		  sudo pacman Syu #同步库并更新系统的包（建议安装软件之前更新）
 		  ```
-	- ## 网络代理
-		- 终端  
-		  ```
-		  #编辑zshrc文件
-		  sudo vim ~/.zshrc
-		  #添加下面两行代码
-		  alias proxy-on='export http_proxy=127.0.0.1:7890;export https_proxy=$http_proxy'
-		  alias proxy-off='unset http_proxy;unset https_proxy' 
-		  #保存退出,并生效配置
-		  source ~/.zshrc
-		  #开启命令（用的时候输入）
-		  proxy-on
-		  #关闭命令(关闭的时候输入)
-		  proxy-off
-		  #测试
-		  curl cip.cc
-		  ```
 - # 基本概念  
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
 - # 学习路径  
