@@ -264,9 +264,9 @@
 	  ```
 	  pacman -Sy archlinux-keyring #更新 archlinux-keyring
 	  ```
-	- ## 字体问题  
+	- ## 字体问题  (font)
 	  ```
-	  sudo pacman -S wqy-zenhei //安装 wqy-zenhei 字体（解决中文乱码问题）
+	  sudo pacman -S wqy-zenhei //安装 wqy-microhei 字体（解决中文乱码问题）
 	  sudo pacman -S ttf-jetbrains-mono //安装 ttf-jetbrains-mono 字体（解决英文字体相关问题）
 	  ```
 - # 参考资料
