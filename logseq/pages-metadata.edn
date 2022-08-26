@@ -58,6 +58,9 @@
  {:block/name "aug 25th, 2022",
   :block/created-at 1661426945345,
   :block/updated-at 1661435017433}
+ {:block/name "aug 26th, 2022",
+  :block/created-at 1661503216289,
+  :block/updated-at 1661503216289}
  {:block/name "aug 3rd, 2022",
   :block/created-at 1659489063169,
   :block/updated-at 1659534367273}
@@ -313,6 +316,9 @@
  {:block/name "writing",
   :block/created-at 1658856997604,
   :block/updated-at 1658856997604}
+ {:block/name "zsh",
+  :block/created-at 1661503216282,
+  :block/updated-at 1661503216282}
  {:block/name "亮度",
   :block/created-at 1660638517952,
   :block/updated-at 1660638517952}
