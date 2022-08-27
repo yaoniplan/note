@@ -57,10 +57,13 @@
   :block/updated-at 1661347316868}
  {:block/name "aug 25th, 2022",
   :block/created-at 1661426945345,
-  :block/updated-at 1661435017433}
+  :block/updated-at 1661559638299}
  {:block/name "aug 26th, 2022",
   :block/created-at 1661503216289,
   :block/updated-at 1661503216289}
+ {:block/name "aug 27th, 2022",
+  :block/created-at 1661559183657,
+  :block/updated-at 1661567733561}
  {:block/name "aug 3rd, 2022",
   :block/created-at 1659489063169,
   :block/updated-at 1659534367273}
@@ -136,9 +139,6 @@
  {:block/name "gaps",
   :block/created-at 1661426945323,
   :block/updated-at 1661426945323}
- {:block/name "git",
-  :block/created-at 1659954827038,
-  :block/updated-at 1659954827038}
  {:block/name "github",
   :block/created-at 1659954828237,
   :block/updated-at 1659954828237}
@@ -148,9 +148,6 @@
  {:block/name "google",
   :block/created-at 1658856998053,
   :block/updated-at 1658856998053}
- {:block/name "grep",
-  :block/created-at 1660778414075,
-  :block/updated-at 1660778414075}
  {:block/name "gzip",
   :block/created-at 1660958245916,
   :block/updated-at 1660958245916}
