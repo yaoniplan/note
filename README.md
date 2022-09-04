@@ -50,6 +50,8 @@
 * [公务员考试](https://www.aliyundrive.com/s/akGhEbsPr3q "公务员考试")
 * [驾考资料](https://www.aliyundrive.com/s/Cwmk6zsE3xT "驾考资料")
 # 更新日志
+* 2022-09-04
+* 减少资源 `计算机编程-Python-2021python` # Git 常用命令里连 `git push` 都没有，且有 629 项视频，对参考不友好
 * 原则： 
 * 只添加与资源高度相关的文字
 * 例如：
