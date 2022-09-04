@@ -94,4 +94,5 @@
 	  15. [my i3 config](https://github.com/levinit/i3wm-config)
 	  16. [xnxx](https://www.xnxx.com/)
 	  17. [爱情漫画](https://www.3004aa.cc/)
-	  18.
+	  18. [TheFuture书籍搜索-免费电子书搜索引擎](https://bks.thefuture.top/)
+	  19. [书行天下| PDF电子书学习下载站](https://www.sxpdf.com/)
