@@ -51,6 +51,7 @@
 * [驾考资料](https://www.aliyundrive.com/s/Cwmk6zsE3xT "驾考资料")
 # 更新日志
 * 2022-09-04
+* 增加资源 `计算机编程-Python-Python基础-Python编程：从入门到实践（第2版）.pdf` # 只介绍 Python 3; 目录详尽; 以及其他的一些修订, 详见 `前言`
 * 撤销减少 `计算机编程-Python-2021python` # Git 常用命令里确实是没有 `git push` ，`git push` 是与远程仓库代码托管平台（github, gitlab, etc.）一起使用的(后面几项视频有补充)
 * 减少资源 `计算机编程-Python-2021python` # Git 常用命令里连 `git push` 都没有，且有 629 项视频，对参考不友好
 * 原则： 
