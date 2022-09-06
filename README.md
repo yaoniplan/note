@@ -6,8 +6,8 @@
 * Q: 怎么办？
 * A: 点击 [这里](https://github.com/yaoniplan/note/issues) 浏览或提交 Issue。  
 
-|                                       |                    |                      |
-|:-------------------------------------:|:------------------:|:--------------------:|
+|                                                         |                                                     |                                                     |
+|:-------------------------------------------------------:|:---------------------------------------------------:|:---------------------------------------------------:|
 |**000 - 自我提升**                                       |**300 - 软件教程**                                   |  **500 - 文学修养**  |                  
 |[行动管理](https://www.aliyundrive.com/s/keRVra9mtad)    |[PPT](https://www.aliyundrive.com/s/gS47adUV8do)     |[人物传记](https://www.aliyundrive.com/s/fH3e5fLTT9N)|                  
 |[时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)    |[World](https://www.aliyundrive.com/s/tDquMiTfYah)   |[演讲演说](https://www.aliyundrive.com/s/b7YY5fHFQcT)|                  
