@@ -6,7 +6,7 @@
 * Q: 怎么办？
 * A: 点击 [这里](https://github.com/yaoniplan/note/issues) 浏览或提交 Issue。  
 
-# 收录
+## 收录
 * 阿里云盘图书资源合集https://www.yeeach.com/post/1871
 * 阿里小站阿里云盘资源http://alixiaozhan.xyz
 * 阿里云盘小站阿里云盘资源http://aliyunshare.cn
@@ -82,7 +82,7 @@
 * 860本摄影书籍阿里云盘资源https://www.aliyundrive.com/s/fM8Mc8kXcPs
 * 迅雷小站迅雷官方出品资源小站https://zhan.xunlei.com
 
-# 目录
+## 目录
 * 000 - 自我提升
     * [000 - 行动管理](https://www.aliyundrive.com/s/keRVra9mtad)
     * [010 - 时间管理](https://www.aliyundrive.com/s/1nNrmzRwHJQ)
@@ -133,7 +133,7 @@
     * [700 - 公务员考试](https://www.aliyundrive.com/s/akGhEbsPr3q)
     * [710 - 驾考资料](https://www.aliyundrive.com/s/Cwmk6zsE3xT)
 
-# 更新日志
+## 更新日志
 * 2022-09-04
 * 增加资源 `计算机编程-Python-Python基础-Python编程：从入门到实践（第2版）.pdf` # 只介绍 Python 3; 目录详尽; 以及其他的一些修订, 详见 `前言`
 * 撤销减少 `计算机编程-Python-2021python` # Git 常用命令里确实是没有 `git push` ，`git push` 是与远程仓库代码托管平台（github, gitlab, etc.）一起使用的(后面几项视频有补充)
