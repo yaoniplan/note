@@ -8,26 +8,13 @@
 
 ## 收录
 * 阿里云盘图书资源合集https://www.yeeach.com/post/1871
-* 阿里小站阿里云盘资源http://alixiaozhan.xyz
-* 阿里云盘小站阿里云盘资源http://aliyunshare.cn
-* 云盘资源分享阿里云盘资源https://oook.xyz
 * 云盘资源网https://www.yunpanziyuan.com
 * TG资源网https://pp2x.com
 * TG搬运工https://www.tgporter.net
 * 天翼小站天翼网盘资源https://yun.hei521.cn
 * 阿里云盘资源导航阿里云盘资源导航https://aliyun.panpanr.com
-* 阿里云盘资源永久汇总页阿里云盘资源导航http://alipan.vip
 * OneGO导航OneDrive资源导航https://ionego.net
 * 盘盘资源阿里云盘资源https://www.panpanr.com
-* 网盘资源分享阿里云盘资源https://aliwp.cn
-* 阿里云盘资源论坛阿里云盘资源https://yunpan123.com
-* 找资源阿里云盘资源http://www.zhaoziyuan.top
-* 视界论坛阿里云盘资源https://bbs.outfu.com
-* 阿里大站阿里云盘资源https://pan.3636360.com
-* alifree阿里云盘资源https://alifree.net
-* 阿里云盘资源分享网阿里云盘资源https://ypfx.club
-* 一路有你阿里云盘资源https://00000.host
-* 静然小屋https://share.andrewjr.wang
 * hao.xjj.show阿里云盘资源http://hao.xjj.show
 * 懒人找资源阿里云盘资源http://lazymovie.me
 * 阿里云盘资源大杂烩1海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q
@@ -37,11 +24,9 @@
 * 阿里云盘资源大杂烩5海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DV2pydk5tWFp0TFFv
 * 免费考试课件http://mfkskj.ys168.com
 * 资源汇社区的资源库http://ziyuanhuishequ.ys168.com
-* 鱼果天晴的资源库http://ygtq.uepan.com
 * 中美百万网站66万册电子书访问码：t924， Google Drive资源https://115.com/s/sw313v13zx1#t924
 * Freembook 15.72万册书籍访问码：i8e9https://115.com/s/sw3tgk73fwm#i8e9
 * kindle人全集访问码：y7d4，解压密码：123456https://115.com/s/sw31pj23fwm#y7d4
-* Kindle书库48208册提取码：w7h7https://pan.baidu.com/s/1y6Bo6gIc3ZnPRxYOc43THQ
 * 资源海洋（2.1T）阿里云盘资源，涵盖 设计、编程、工程、教育、情商、社科类等各行各业的课程https://www.aliyundrive.com/s/t3CFX1a7cjj
 * 15T阿里云盘资源https://www.aliyundrive.com/s/1HGQuTVa9zv
 * 770T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/Fc4ENYQKEHj
@@ -63,12 +48,9 @@
 * 樊登读书会-2562份【141GB】阿里云盘资源https://www.aliyundrive.com/s/hVhifmos8YG
 * 樊登电子书各种格式阿里云盘资源https://www.aliyundrive.com/s/jPavQRS5qaB
 * 喜马拉雅100部付费有声读物阿里云盘资源https://www.aliyundrive.com/s/s1Cxi4NGnnL
-* 书库合集访问码：w4d5https://115.com/s/swnhqmd36bj?password=w4d5
 * 经典电子书【珍藏】访问密码：338766，诚通网盘资源https://089u.com/d/3843664-44324790-73fb97
-* 百万教程访问码：2svghttps://cloud.189.cn/web/share?code=JRzayiFneURf
-* 喜马拉雅+得到教程合集访问码：3lpchttps://cloud.189.cn/web/share?code=e6ZZRbZNzMNn
-* 知乎live170音频&知乎盐20篇访问码:vuc4 ，天翼云盘资源https://cloud.189.cn/t/V7vqa2Ibe6nm
-* 200个知乎收费LIVE精品内容合集访问码:qae2 ，天翼云盘资源https://cloud.189.cn/web/share?code=meI3iqVNnuUf
+* 百万教程访问码：2svg https://cloud.189.cn/web/share?code=JRzayiFneURf
+* 喜马拉雅+得到教程合集访问码：3lpc https://cloud.189.cn/web/share?code=e6ZZRbZNzMNn
 * 图灵程序设计丛书302本合集（PDF）阿里云盘资源https://www.aliyundrive.com/s/YVKx3rs6HCH
 * 个人成长类资料合集阿里云盘资源https://www.aliyundrive.com/s/oXf51kSoBcW
 * 两性关系资料合集阿里云盘资源https://www.aliyundrive.com/s/mX966r3kXWx
