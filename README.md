@@ -19,20 +19,13 @@
 * 懒人找资源阿里云盘资源http://lazymovie.me
 * 阿里云盘资源大杂烩1海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q
 * 阿里云盘资源大杂烩2海量阿里云盘资源，以Excel形式分享https://www.kdocs.cn/l/st9zs7OC086m
-* 阿里云盘资源大杂烩3海量阿里云盘资源，以Excel形式分享https://docs.qq.com/doc/DQ01tZG5DUnlmcGFJ
-* 阿里云盘资源大杂烩4海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DREh6WGNsVUV3V0dG
-* 阿里云盘资源大杂烩5海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DV2pydk5tWFp0TFFv
-* 免费考试课件http://mfkskj.ys168.com
 * 资源汇社区的资源库http://ziyuanhuishequ.ys168.com
 * 中美百万网站66万册电子书访问码：t924， Google Drive资源https://115.com/s/sw313v13zx1#t924
 * Freembook 15.72万册书籍访问码：i8e9https://115.com/s/sw3tgk73fwm#i8e9
 * kindle人全集访问码：y7d4，解压密码：123456https://115.com/s/sw31pj23fwm#y7d4
 * 资源海洋（2.1T）阿里云盘资源，涵盖 设计、编程、工程、教育、情商、社科类等各行各业的课程https://www.aliyundrive.com/s/t3CFX1a7cjj
-* 15T阿里云盘资源https://www.aliyundrive.com/s/1HGQuTVa9zv
 * 770T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/Fc4ENYQKEHj
 * 331T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/sjrFLpPV4zJ
-* ePUBee小蜜蜂、我的小书屋等资源合集阿里云盘资源，包含ePUBee小蜜蜂、我的小书屋等资源https://www.aliyundrive.com/s/bwDLGoPfWYV
-* 最大书库阿里云盘资源https://www.aliyundrive.com/s/tp7uS5xDZq9
 * 【得到】2016-2021.9（6年精整）会员课程阿里云盘资源https://www.aliyundrive.com/s/HH5TavykihQ
 * 樊登读书会 2013-2020天翼云盘资源，访问码：tss2https://cloud.189.cn/t/JfQzQbANNBFr
 * 百科全书合集阿里云盘资源https://alywp.net/78nT5T
@@ -43,14 +36,11 @@
 * 一万本PDF格式图书大合集https://www.aliyundrive.com/s/EGuuBYEcZug
 * 机械工业出版社6000册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/xCdPvUn4byQ
 * 清华大学出版社2237册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/BmySGTGCqbB
-* 书籍大全集阿里云盘资源https://www.aliyundrive.com/s/svQkkGyJmzt
 * 34类电子书Epubhttps://www.aliyundrive.com/s/gzw7qp4stw4
 * 樊登读书会-2562份【141GB】阿里云盘资源https://www.aliyundrive.com/s/hVhifmos8YG
 * 樊登电子书各种格式阿里云盘资源https://www.aliyundrive.com/s/jPavQRS5qaB
 * 喜马拉雅100部付费有声读物阿里云盘资源https://www.aliyundrive.com/s/s1Cxi4NGnnL
 * 经典电子书【珍藏】访问密码：338766，诚通网盘资源https://089u.com/d/3843664-44324790-73fb97
-* 百万教程访问码：2svg https://cloud.189.cn/web/share?code=JRzayiFneURf
-* 喜马拉雅+得到教程合集访问码：3lpc https://cloud.189.cn/web/share?code=e6ZZRbZNzMNn
 * 图灵程序设计丛书302本合集（PDF）阿里云盘资源https://www.aliyundrive.com/s/YVKx3rs6HCH
 * 个人成长类资料合集阿里云盘资源https://www.aliyundrive.com/s/oXf51kSoBcW
 * 两性关系资料合集阿里云盘资源https://www.aliyundrive.com/s/mX966r3kXWx
