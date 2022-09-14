@@ -6,54 +6,6 @@
 * Q: 怎么办？
 * A: 点击 [这里](https://github.com/yaoniplan/note/issues) 浏览或提交 Issue。  
 
-## 收录
-* 阿里云盘图书资源合集https://www.yeeach.com/post/1871
-* 云盘资源网https://www.yunpanziyuan.com
-* TG资源网https://pp2x.com
-* TG搬运工https://www.tgporter.net
-* 天翼小站天翼网盘资源https://yun.hei521.cn
-* 阿里云盘资源导航阿里云盘资源导航https://aliyun.panpanr.com
-* OneGO导航OneDrive资源导航https://ionego.net
-* 盘盘资源阿里云盘资源https://www.panpanr.com
-* hao.xjj.show阿里云盘资源http://hao.xjj.show
-* 懒人找资源阿里云盘资源http://lazymovie.me
-* 阿里云盘资源大杂烩1海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q
-* 阿里云盘资源大杂烩2海量阿里云盘资源，以Excel形式分享https://www.kdocs.cn/l/st9zs7OC086m
-* 资源汇社区的资源库http://ziyuanhuishequ.ys168.com
-* 中美百万网站66万册电子书访问码：t924， Google Drive资源https://115.com/s/sw313v13zx1#t924
-* Freembook 15.72万册书籍访问码：i8e9https://115.com/s/sw3tgk73fwm#i8e9
-* kindle人全集访问码：y7d4，解压密码：123456https://115.com/s/sw31pj23fwm#y7d4
-* 资源海洋（2.1T）阿里云盘资源，涵盖 设计、编程、工程、教育、情商、社科类等各行各业的课程https://www.aliyundrive.com/s/t3CFX1a7cjj
-* 770T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/Fc4ENYQKEHj
-* 331T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/sjrFLpPV4zJ
-* 【得到】2016-2021.9（6年精整）会员课程阿里云盘资源https://www.aliyundrive.com/s/HH5TavykihQ
-* 樊登读书会 2013-2020天翼云盘资源，访问码：tss2https://cloud.189.cn/t/JfQzQbANNBFr
-* 百科全书合集阿里云盘资源https://alywp.net/78nT5T
-* 字典合集阿里云盘资源https://www.aliyundrive.com/s/feurZwtFzQ1
-* 中山图书馆阿里云盘资源https://alywp.net/IfWVw
-* 十万十万册图书大合集阿里云盘资源https://www.aliyundrive.com/s/MewDKUKWW9x
-* 经典高品质：5000套优质书籍！（总116.8GB)阿里云盘资源https://www.aliyundrive.com/s/4hqryMPi4q7
-* 一万本PDF格式图书大合集https://www.aliyundrive.com/s/EGuuBYEcZug
-* 机械工业出版社6000册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/xCdPvUn4byQ
-* 清华大学出版社2237册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/BmySGTGCqbB
-* 34类电子书Epubhttps://www.aliyundrive.com/s/gzw7qp4stw4
-* 樊登读书会-2562份【141GB】阿里云盘资源https://www.aliyundrive.com/s/hVhifmos8YG
-* 樊登电子书各种格式阿里云盘资源https://www.aliyundrive.com/s/jPavQRS5qaB
-* 喜马拉雅100部付费有声读物阿里云盘资源https://www.aliyundrive.com/s/s1Cxi4NGnnL
-* 经典电子书【珍藏】访问密码：338766，诚通网盘资源https://089u.com/d/3843664-44324790-73fb97
-* 图灵程序设计丛书302本合集（PDF）阿里云盘资源https://www.aliyundrive.com/s/YVKx3rs6HCH
-* 个人成长类资料合集阿里云盘资源https://www.aliyundrive.com/s/oXf51kSoBcW
-* 两性关系资料合集阿里云盘资源https://www.aliyundrive.com/s/mX966r3kXWx
-* 运动健身教程合集阿里云盘资源https://www.aliyundrive.com/s/DCkcjGqGTkc
-* keep运动健身【合集】阿里云盘资源https://alywp.net/7sz5QFB7
-* 个人Calibre书库阿里云盘资源https://www.yeeach.com/post/1883
-* 2013~2020年万本小说合集https://www.aliyundrive.com/s/698axUAdTB4
-* 8000本电子书https://www.aliyundrive.com/s/QS1JLB77GkT
-* 精细分类电子书https://www.aliyundrive.com/s/u1m8EqoDJ6T
-* 汗青堂丛书(共34册)https://www.aliyundrive.com/s/T48ciZNH9iV
-* 860本摄影书籍阿里云盘资源https://www.aliyundrive.com/s/fM8Mc8kXcPs
-* 迅雷小站迅雷官方出品资源小站https://zhan.xunlei.com
-
 ## 目录
 * 000 - 自我提升
     * [000 - 行动管理](https://www.aliyundrive.com/s/keRVra9mtad)
@@ -104,6 +56,54 @@
 * 700 - 各类考证资料
     * [700 - 公务员考试](https://www.aliyundrive.com/s/akGhEbsPr3q)
     * [710 - 驾考资料](https://www.aliyundrive.com/s/Cwmk6zsE3xT)
+
+## 收录
+* 阿里云盘图书资源合集https://www.yeeach.com/post/1871
+* 云盘资源网https://www.yunpanziyuan.com
+* TG资源网https://pp2x.com
+* TG搬运工https://www.tgporter.net
+* 天翼小站天翼网盘资源https://yun.hei521.cn
+* 阿里云盘资源导航阿里云盘资源导航https://aliyun.panpanr.com
+* OneGO导航OneDrive资源导航https://ionego.net
+* 盘盘资源阿里云盘资源https://www.panpanr.com
+* hao.xjj.show阿里云盘资源http://hao.xjj.show
+* 懒人找资源阿里云盘资源http://lazymovie.me
+* 阿里云盘资源大杂烩1海量阿里云盘资源，以Excel形式分享https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q
+* 阿里云盘资源大杂烩2海量阿里云盘资源，以Excel形式分享https://www.kdocs.cn/l/st9zs7OC086m
+* 资源汇社区的资源库http://ziyuanhuishequ.ys168.com
+* 中美百万网站66万册电子书访问码：t924， Google Drive资源https://115.com/s/sw313v13zx1#t924
+* Freembook 15.72万册书籍访问码：i8e9https://115.com/s/sw3tgk73fwm#i8e9
+* kindle人全集访问码：y7d4，解压密码：123456https://115.com/s/sw31pj23fwm#y7d4
+* 资源海洋（2.1T）阿里云盘资源，涵盖 设计、编程、工程、教育、情商、社科类等各行各业的课程https://www.aliyundrive.com/s/t3CFX1a7cjj
+* 770T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/Fc4ENYQKEHj
+* 331T阿里云盘资源阿里云盘资源，将文件后缀的JPG, 更改为rar或txthttps://www.aliyundrive.com/s/sjrFLpPV4zJ
+* 【得到】2016-2021.9（6年精整）会员课程阿里云盘资源https://www.aliyundrive.com/s/HH5TavykihQ
+* 樊登读书会 2013-2020天翼云盘资源，访问码：tss2https://cloud.189.cn/t/JfQzQbANNBFr
+* 百科全书合集阿里云盘资源https://alywp.net/78nT5T
+* 字典合集阿里云盘资源https://www.aliyundrive.com/s/feurZwtFzQ1
+* 中山图书馆阿里云盘资源https://alywp.net/IfWVw
+* 十万十万册图书大合集阿里云盘资源https://www.aliyundrive.com/s/MewDKUKWW9x
+* 经典高品质：5000套优质书籍！（总116.8GB)阿里云盘资源https://www.aliyundrive.com/s/4hqryMPi4q7
+* 一万本PDF格式图书大合集https://www.aliyundrive.com/s/EGuuBYEcZug
+* 机械工业出版社6000册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/xCdPvUn4byQ
+* 清华大学出版社2237册免费正版图书阿里云盘资源https://www.aliyundrive.com/s/BmySGTGCqbB
+* 34类电子书Epubhttps://www.aliyundrive.com/s/gzw7qp4stw4
+* 樊登读书会-2562份【141GB】阿里云盘资源https://www.aliyundrive.com/s/hVhifmos8YG
+* 樊登电子书各种格式阿里云盘资源https://www.aliyundrive.com/s/jPavQRS5qaB
+* 喜马拉雅100部付费有声读物阿里云盘资源https://www.aliyundrive.com/s/s1Cxi4NGnnL
+* 经典电子书【珍藏】访问密码：338766，诚通网盘资源https://089u.com/d/3843664-44324790-73fb97
+* 图灵程序设计丛书302本合集（PDF）阿里云盘资源https://www.aliyundrive.com/s/YVKx3rs6HCH
+* 个人成长类资料合集阿里云盘资源https://www.aliyundrive.com/s/oXf51kSoBcW
+* 两性关系资料合集阿里云盘资源https://www.aliyundrive.com/s/mX966r3kXWx
+* 运动健身教程合集阿里云盘资源https://www.aliyundrive.com/s/DCkcjGqGTkc
+* keep运动健身【合集】阿里云盘资源https://alywp.net/7sz5QFB7
+* 个人Calibre书库阿里云盘资源https://www.yeeach.com/post/1883
+* 2013~2020年万本小说合集https://www.aliyundrive.com/s/698axUAdTB4
+* 8000本电子书https://www.aliyundrive.com/s/QS1JLB77GkT
+* 精细分类电子书https://www.aliyundrive.com/s/u1m8EqoDJ6T
+* 汗青堂丛书(共34册)https://www.aliyundrive.com/s/T48ciZNH9iV
+* 860本摄影书籍阿里云盘资源https://www.aliyundrive.com/s/fM8Mc8kXcPs
+* 迅雷小站迅雷官方出品资源小站https://zhan.xunlei.com
 
 ## 更新日志
 * 2022-09-04
