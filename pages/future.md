@@ -76,13 +76,10 @@
 	  25. [聚BT](https://bbs.jubt.live)
 	  26. [阿里云盘资源论坛 - 自由至上！](https://aliyunpan1.com/)
 	- 1. [一席](https://yixi.tv/#/home)
-	  2. [免费机场](https://github.com/ermaozi/get_subscribe)
 	  3. [阅读链 - 阅读交流社区](https://www.yuedu.pro/)
 	  4. [全球物流查询平台 | 17TRACK](https://www.17track.net/zh-cn)
 	  5. [fcitx5-android](https://github.com/fcitx5-android/fcitx5-android)
 	  6. [AGE动漫](https://www.agemys.com/)
-	  7. [机场翻墙订阅转换器](https://subconverter.speedupvpn.com/)
-	  8. [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
 	  9. [1Password 强密码生成器](https://1password.com/zh-cn/password-generator/)
 	  10. [虫部落 - 让搜索更简单](https://www.chongbuluo.com)
 	  11. [[linux]] 安装全套教程
@@ -103,4 +100,8 @@
   * [在线抠图软件_图片去除背景|remove.bg](https://www.remove.bg/zh)
   * [AI人工智能图片放大](https://bigjpg.com/)
 - [CosDNA 化妆品成分](https://www.cosdna.com/chs/)
--
+- free_airport
+  * [DogSS](https://www.freedog.pw/)
+  * [机场翻墙订阅转换器](https://subconverter.speedupvpn.com/)
+  * [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
+  * [免费机场](https://github.com/ermaozi/get_subscribe)
