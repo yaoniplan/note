@@ -105,3 +105,4 @@
   * [机场翻墙订阅转换器](https://subconverter.speedupvpn.com/)
   * [免费白嫖公益机场合集](https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html)
   * [免费机场](https://github.com/ermaozi/get_subscribe)
+  * [NovaCloud](https://q88q.site/)
