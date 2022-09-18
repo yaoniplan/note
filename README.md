@@ -1,10 +1,10 @@
 # Yaoniplan
-Q: What is it?
-A: yaoniplan is a non-profit program for the lost.
-Q: Why?
-A: Since most people are building wheels, yaoniplan is determined to speed up the process.
-Q: What should I do?
-A: Click here to browse or submit an issue.
+* Q: What is it?
+* A: yaoniplan is a non-profit program for the lost.
+* Q: Why?
+* A: Since most people are building wheels, yaoniplan is determined to speed up the process.
+* Q: What should I do?
+* A: Click here to browse or submit an issue.
 
 ## Table of contents
 * 000 - Self-improvement
@@ -122,13 +122,11 @@ A: Click here to browse or submit an issue.
 * **Reminder: Please read this statement carefully and thoroughly understand this statement before using the service of Yaoyu Plan (hereinafter referred to as "the Plan"). You may choose not to use the program, but if you use the program, your use will be deemed an endorsement of the entire content of this statement.**
 
 * **1. Third-party related**
-
 * 1.1. The Program is not responsible for any third party issues, including but not limited to any loss or damage caused by any third party.
 
 * 1.2. All third parties linked to by any individual user (hereinafter referred to as "you") who use this plan are made or provided by others, and you may obtain information and enjoy services from such third parties. responsible and do not assume any legal responsibility.
 
 * **2. Contents related to this plan**
-
 * 2.1. All the content of this plan is only used for testing and study and research, and is prohibited for commercial use, and its legality, accuracy, completeness and validity cannot be guaranteed. Please make your own judgment according to the situation, and this plan does not assume any legal responsibility.
 
 * 2.2. Do not use any content of this program for commercial or illegal purposes, otherwise you will be responsible for the consequences. If any unit or individual believes that the relevant content of this plan may be suspected of infringing their legitimate rights and interests, they should promptly notify and provide proof of identity and ownership, and I will delete the relevant content after receiving the certification document.
