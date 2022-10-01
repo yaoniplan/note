@@ -13,11 +13,10 @@
 * 史上最强男主角 - 41
 * 吞噬星空 - 55
 * 我靠充值当武帝 - 33
-* 仙武苍穹 - 31 0330 animation
-* 神级龙卫 - 14
-* 剑仙在此 - 35
-* 神墓 - 10
-* 苍兰诀- 11
+* 仙武苍穹 - 33
+* 神级龙卫 - 15
+* 神墓 - 12
+* 苍兰诀- 12 1140 animation
 * 诛仙 - 09
 * 一念永恒 - 63
 * 斗破苍穹年番 - 10
@@ -250,6 +249,7 @@
 * 
 * 
 * animation
+* 剑仙在此 - 36 Ending of the first season
 * 异世界药局 - 12 # ending
 * 铁拳 - 06 # End of the first season.
 * 转生贤者的异世界生活 - 12 # End of the first season.
