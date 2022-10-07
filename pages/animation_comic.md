@@ -35,7 +35,7 @@
 * 绝代双骄 - 03
 * 万古剑神 - 02
 * 星域四万年 - 03
-* 风姿物语动画第一季 银河篇 - 15 0525 animation
+* 风姿物语动画第二季 仙罗篇 - 02 1500 animation
 *
 *
 * 
@@ -253,7 +253,8 @@
 *
 *
 * animation
-* 剑仙在此 - 36 Ending of the first season
+* 风姿物语动画第一季 银河篇 - 20 End of the first season.
+* 剑仙在此 - 36 End of the first season.
 * 异世界药局 - 12 # ending
 * 铁拳 - 06 # End of the first season.
 * 转生贤者的异世界生活 - 12 # End of the first season.
