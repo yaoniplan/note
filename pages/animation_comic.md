@@ -7,11 +7,9 @@
 * 逆天至尊 - 53/134
 * 凡人修仙传 - 30/70
 * 七界第一仙 - 69
-* 冰火魔厨 - 04/44 1310 animation
-* 君有云 - 24
-* 神印王座 - 26
-* 史上最强男主角 - 41
-* 吞噬星空 - 55
+* 冰火魔厨 - 04/45
+* 史上最强男主角 - 44
+* 吞噬星空 - 55 animation
 * 我靠充值当武帝 - 33
 * 仙武苍穹 - 33
 * 神级龙卫 - 15
@@ -253,6 +251,8 @@
 *
 *
 * animation
+* 神印王座 - 26 End of the first season.
+* 君有云 - 24 End of the first season.
 * 风姿物语动画第一季 银河篇 - 20 End of the first season.
 * 剑仙在此 - 36 End of the first season.
 * 异世界药局 - 12 # ending
