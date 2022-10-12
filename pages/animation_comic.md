@@ -20,11 +20,10 @@
 * 斗破苍穹年番 - 13
 * 星源之主 - 24
 * 神澜奇域无双珠 - 14
-* 星武神诀第二季 - 33 0420 animation
-* 绝世武魂 - 206
-* 在异世界迷宫开后宫第一季 - 12
-* 万古神话 - 18
-* 黑门 - 11
+* 星武神诀第二季 - 35
+* 绝世武魂 - 209
+* 万古神话 - 20
+* 黑门 - 12 0500 animation
 * 战千年第一季 - 12
 * 龙族 - 08
 * 力拔山河兮子唐 - 13
@@ -251,13 +250,14 @@
 *
 *
 * animation
-* 神印王座 - 26 End of the first season.
-* 君有云 - 24 End of the first season.
-* 风姿物语动画第一季 银河篇 - 20 End of the first season.
-* 剑仙在此 - 36 End of the first season.
+* 在异世界迷宫开后宫第一季 - 12 # end of the first season
+* 神印王座 - 26 # end of the first season
+* 君有云 - 24 # end of the first season
+* 风姿物语动画第一季 银河篇 - 20 # end of the first season
+* 剑仙在此 - 36 # end of the first season
 * 异世界药局 - 12 # ending
-* 铁拳 - 06 # End of the first season.
-* 转生贤者的异世界生活 - 12 # End of the first season.
+* 铁拳 - 06 # end of the first season
+* 转生贤者的异世界生活 - 12 # end of the first season
 * 剑道第一仙 - 20 已完结
 * 仙墓 - 17(boring)
 * 人间最得意 - 10(x)
