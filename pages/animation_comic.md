@@ -36,7 +36,6 @@
 * 我想成为影之强者！第一季 - 02
 * 炼气练了3000年 - 03
 * 长夜开拓者 - 01 1535 animation
-* 钢铁侠1 - 011253 movie
 *
 *
 * 
@@ -358,3 +357,8 @@
 * 东京暗鸦(boring)
 * 东京ESP(boring)
 * 刀剑神域(boring)
+*
+*
+*
+* movie
+* 钢铁侠 # end of the first season
