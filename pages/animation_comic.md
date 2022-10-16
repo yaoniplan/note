@@ -3,10 +3,9 @@
 * 武神主宰 - 192/273
 * 独步逍遥 - 168/251
 * 完美世界 - 38/80
-* 妖神记 - 191/274 animation
-* 逆天至尊 - 53/134
-* 凡人修仙传 - 30/70
-* 七界第一仙 - 69
+* 妖神记 - 191/275
+* 逆天至尊 - 53/136
+* 七界第一仙 - 69 animation
 * 冰火魔厨 - 04/45
 * 史上最强男主角 - 44
 * 吞噬星空 - 56
@@ -253,6 +252,7 @@
 *
 *
 * animation
+* 凡人修仙传 - 30/72 end of the second season
 * 黑之召唤士第一季 - 12 # end of the first season
 * 在异世界迷宫开后宫第一季 - 12 # end of the first season
 * 神印王座 - 26 # end of the first season
