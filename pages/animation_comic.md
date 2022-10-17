@@ -1,4 +1,4 @@
-* animation
+### animation
 * 灵剑尊 -  240/323
 * 武神主宰 - 192/273
 * 独步逍遥 - 168/251
@@ -34,10 +34,8 @@
 * 我想成为影之强者！第一季 - 02
 * 炼气练了3000年 - 03
 * 长夜开拓者 - 03
-*
-*
-* 
-* comic
+
+### comic
 * 没有道侣就会死 - 54
 * 傀儡 - 232
 * 秘密教学 - 140
@@ -233,10 +231,8 @@
 * 神的禮物 全
 * 危险的爱全
 * 為爱而生 法葡克超 全
-*
-*
-*
-* comic
+
+### comic
 * 装备我最强- 132 # boring
 * 榜上玩家的归还 - 58 # boring
 * 开局送挂：不按套路修仙 - 65 # boring 月更
@@ -247,10 +243,8 @@
 * 操控者(end)
 * 坏血(end)
 * guard(end)
-*
-*
-*
-* animation
+
+### animation
 * 苍兰诀- 12 end of the first season
 * 凡人修仙传 - 30/72 end of the second season
 * 黑之召唤士第一季 - 12 # end of the first season
@@ -357,8 +351,6 @@
 * 东京暗鸦(boring)
 * 东京ESP(boring)
 * 刀剑神域(boring)
-*
-*
-*
-* movie
+
+### movie
 * 钢铁侠 # end of the first, second and third season
