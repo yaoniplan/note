@@ -16,11 +16,10 @@
 * 诛仙 - 13
 * 一念永恒 - 67
 * 斗破苍穹年番 - 14
-* 星源之主 - 24 animation
-* 神澜奇域无双珠 - 14
-* 星武神诀第二季 - 35
-* 绝世武魂 - 209
-* 万古神话 - 20
+* 星源之主 - 26
+* 星武神诀第二季 - 37
+* 绝世武魂 - 210
+* 万古神话 - 21 animation
 * 黑门 - 12
 * 战千年第一季 - 13
 * 龙族 - 09
@@ -245,8 +244,9 @@
 * guard(end)
 
 ### animation
-* 苍兰诀- 12 end of the first season
-* 凡人修仙传 - 30/72 end of the second season
+* 神澜奇域无双珠 - 15 # end of the first season
+* 苍兰诀- 12 # end of the first season
+* 凡人修仙传 - 30/72 # end of the second season
 * 黑之召唤士第一季 - 12 # end of the first season
 * 在异世界迷宫开后宫第一季 - 12 # end of the first season
 * 神印王座 - 26 # end of the first season
