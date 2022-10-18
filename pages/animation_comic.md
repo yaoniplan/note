@@ -19,11 +19,10 @@
 * 星源之主 - 26
 * 星武神诀第二季 - 37
 * 绝世武魂 - 210
-* 万古神话 - 21 animation
-* 黑门 - 12
-* 战千年第一季 - 13
-* 龙族 - 09
-* 力拔山河兮子唐 - 16
+* 万古神话 - 22
+* 战千年第一季 - 14
+* 龙族 - 10
+* 力拔山河兮子唐 - 17 0350 animation
 * 星河至尊 - 98
 * 绝代双骄 - 04
 * 万古剑神 - 03
@@ -244,6 +243,7 @@
 * guard(end)
 
 ### animation
+* 黑门 - 12 # end of the first season
 * 神澜奇域无双珠 - 15 # end of the first season
 * 苍兰诀- 12 # end of the first season
 * 凡人修仙传 - 30/72 # end of the second season
