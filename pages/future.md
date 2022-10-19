@@ -1,13 +1,16 @@
 # seldom_website
+* V2EX https://v2ex.com/
+* Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
+* Meow.TG-做最懂你的TG搜索 https://meow.tg
+* 大家论坛-大型综合性免费在线教育培训学习考试论坛！英语|财会|计算机|建工|医药|资格|考研|学历|小语种-大家大学|大家学校 https://club.topsage.com/
+* 学吧导航 | 四十万学习爱好者都在用的学霸导航网站 https://www.xue8nav.com/
 * 就诊问问 https://ask.nocode.com
 * 搜狗名医 https://mingyi.sogou.com
-* linux命令 https://wangchujiang.com/linux-command
 * 搜书 https://ebook2.lorefree.com
 * 软件历史版本 https://wandoujia.com
 * 特殊符号 https://cn.piliapp.com/symbol
 * 简易绘图教程 https://easydrawingtutorials.com
 * 默沙东健康手册 https://msdmanuals.cn/home/resources/the-one-page-manual-of-health/one-page-manual-of-health
-* 欧拉计划 https://pe-cn.github.io
 * 张子阳的博客（关于读书-读后感或者内容摘要） https://tracefact.net/reading
 * 战拖与新自我管理 https://zhantuo.com/archives
 * 惜墨博客 https://ximo.blog
@@ -27,7 +30,6 @@
 * 学子备战墙-初高中学习资料分享平台 https://www.xzbzq.com/
 * 第四届微课大赛作品征集活动网网 http://dasai.cnweike.cn/?r=matchV4/search/index&subject=2
 * 考试酷 https://www.examcoo.com/paperlist/index/k/92/p/1
-* 仪表盘|可汗学院 https://zh.khanacademy.org/profile/me/courses
 * 一起题库 https://tiku.17zuoye.com/
 * 小时百科-专业的数学和物理百科 https://wuli.wiki/index.html
 * 化学自习室 https://wuli.wiki/index.html
@@ -37,26 +39,11 @@
 * 高考数学专题复习 https://www.bilibili.com/video/av39031994/?p=9
 * 高中数学所有解题方法与策略 https://www.bilibili.com/video/BV1X7411F7YF?p=38
 * 高中数学基础合集 https://www.bilibili.com/video/BV1N7411A74L
-* 在代码工作室学习 - Code.org https://studio.code.org/courses
-* C++在线工具 | 菜鸟工具 https://c.runoob.com/compile/12/
-* 在线编程 - 编程中国 http://www.bccn.net/run/
-* 课程-KuangStudy https://www.kuangstudy.com/course
-* 我要自学网 https://www.51zxw.net/
-* oeasy http://oeasy.org/
-* 首页 - 廖雪峰的官方网站 https://www.liaoxuefeng.com/
-* 菜鸟教程 - 学的不仅仅是技术，更是梦想！ https://www.runoob.com/
-* 学习 Web 开发 | MDN https://developer.mozilla.org/zh-CN/docs/learn
-* 《郝斌C语言自学教程》 https://www.bilibili.com/video/BV1os411h77o?p=40&spm_id_from=pageDriver
-* Scratch是全球最大的免费儿童编程社区 https://scratch.mit.edu/
-* 免费学习编程 https://chinese.freecodecamp.org/
-* 自学计算机科学 https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
-* GitHub中文社区 https://www.githubs.cn/
 * 可汗学院：函数 - 网易公开课 https://open.163.com/newview/movie/free?pid=MDAPTVFE8&mid=MDAPV0Q3K
 * 攻克高中英语单词 https://www.ximalaya.com/album/12728981
 * 国家高等教育智慧教育平台 https://www.chinaooc.com.cn/home
 * Coursera https://www.coursera.org/
 * 网易云课堂 - 悄悄变强大 https://study.163.com/
-* 慕课网-程序员的梦工厂 https://www.imooc.com/
 * 中国大学MOOC_国家精品课程在线学习平台 https://www.icourse163.org/
 * 腾讯课堂-综合性在线终身学习平台 https://ke.qq.com/
 * 学堂在线 - 精品在线课程学习平台 https://www.xuetangx.com/
@@ -114,13 +101,25 @@
 * 绅士漫画-专注分享汉化本子|邪恶漫画 https://www.hentaicomic.org/
 * 绅士游戏之家 https://ssyxzj.xyz/
 
-* V2EX https://v2ex.com/
-* Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
-* Meow.TG-做最懂你的TG搜索 https://meow.tg
-* 大家论坛-大型综合性免费在线教育培训学习考试论坛！英语|财会|计算机|建工|医药|资格|考研|学历|小语种-大家大学|大家学校 https://club.topsage.com/
-* 学吧导航 | 四十万学习爱好者都在用的学霸导航网站 https://www.xue8nav.com/
-
 ## coding_online
 * DataCamp Learn https://www.datacamp.com/
 * Programiz: Learn to Code for Free https://www.programiz.com/
 * Scrimba https://scrimba.com/
+* 在代码工作室学习 - Code.org https://studio.code.org/courses
+* C++在线工具 | 菜鸟工具 https://c.runoob.com/compile/12/
+* 在线编程 - 编程中国 http://www.bccn.net/run/
+* 课程-KuangStudy https://www.kuangstudy.com/course
+* 我要自学网 https://www.51zxw.net/
+* oeasy http://oeasy.org/
+* 首页 - 廖雪峰的官方网站 https://www.liaoxuefeng.com/
+* 菜鸟教程 - 学的不仅仅是技术，更是梦想！ https://www.runoob.com/
+* 学习 Web 开发 | MDN https://developer.mozilla.org/zh-CN/docs/learn
+* 《郝斌C语言自学教程》 https://www.bilibili.com/video/BV1os411h77o?p=40&spm_id_from=pageDriver
+* Scratch是全球最大的免费儿童编程社区 https://scratch.mit.edu/
+* 免费学习编程 https://chinese.freecodecamp.org/
+* 自学计算机科学 https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
+* GitHub中文社区 https://www.githubs.cn/
+* 仪表盘|可汗学院 https://zh.khanacademy.org/profile/me/courses
+* 慕课网-程序员的梦工厂 https://www.imooc.com/
+* 欧拉计划 https://pe-cn.github.io
+* linux命令 https://wangchujiang.com/linux-command
