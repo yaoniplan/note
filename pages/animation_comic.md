@@ -1,5 +1,5 @@
 ### animation
-* BASTARD！！暗黑破坏神第一季 - 07 animation
+* BASTARD！！暗黑破坏神第一季 - 12 2048 animation
 * 彼得·格里尔的贤者时间 第二季 - 02
 * 灵剑尊 -  240/323
 * 武神主宰 - 192/273
