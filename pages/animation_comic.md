@@ -1,5 +1,5 @@
 ### animation
-* BASTARD！！暗黑破坏神第一季 - 24 1839 animation
+* 最近雇佣的女仆有点怪第一季 - 05 1726 animation
 * 彼得·格里尔的贤者时间 第二季 - 02
 * 灵剑尊 -  240/323
 * 武神主宰 - 192/273
@@ -245,6 +245,7 @@
 * guard(end)
 
 ### animation
+* BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
 * 黑门 - 12 # end of the first season
 * 神澜奇域无双珠 - 15 # end of the first season
 * 苍兰诀- 12 # end of the first season
