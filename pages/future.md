@@ -106,20 +106,20 @@
 * Programiz: Learn to Code for Free https://www.programiz.com/
 * Scrimba https://scrimba.com/
 * 在代码工作室学习 - Code.org https://studio.code.org/courses
-* C++在线工具 | 菜鸟工具 https://c.runoob.com/compile/12/
-* 在线编程 - 编程中国 http://www.bccn.net/run/
-* 课程-KuangStudy https://www.kuangstudy.com/course
 * 我要自学网 https://www.51zxw.net/
 * oeasy http://oeasy.org/
 * 首页 - 廖雪峰的官方网站 https://www.liaoxuefeng.com/
 * 菜鸟教程 - 学的不仅仅是技术，更是梦想！ https://www.runoob.com/
 * 学习 Web 开发 | MDN https://developer.mozilla.org/zh-CN/docs/learn
 * 《郝斌C语言自学教程》 https://www.bilibili.com/video/BV1os411h77o?p=40&spm_id_from=pageDriver
-* Scratch是全球最大的免费儿童编程社区 https://scratch.mit.edu/
 * 免费学习编程 https://chinese.freecodecamp.org/
-* 自学计算机科学 https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
-* GitHub中文社区 https://www.githubs.cn/
 * 仪表盘|可汗学院 https://zh.khanacademy.org/profile/me/courses
 * 慕课网-程序员的梦工厂 https://www.imooc.com/
-* 欧拉计划 https://pe-cn.github.io
 * linux命令 https://wangchujiang.com/linux-command
+* Scratch是全球最大的免费儿童编程社区 https://scratch.mit.edu/
+* 欧拉计划 https://pe-cn.github.io
+* C++在线工具 | 菜鸟工具 https://c.runoob.com/compile/12/
+* 在线编程 - 编程中国 http://www.bccn.net/run/
+* 课程-KuangStudy https://www.kuangstudy.com/course
+* GitHub中文社区 https://www.githubs.cn/
+* 自学计算机科学 https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
