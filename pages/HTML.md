@@ -1,5 +1,11 @@
 - # Introduction
   HTML is the standard markup language for creating Web pages.
+- # Comments syntax
+  On both sides of the content or code, add `<!--` and `-->` respectively
+  * ***Usage***  
+  ![image.png](../assets/image_1666597803068_0.png)
+  * ***Preview***  
+  ![image.png](../assets/image_1666597832974_0.png)
 - # Headings syntax
   On both sides of the content, add `<h1>` and `</h1>` respectively
   * ***Usage***  
