@@ -102,6 +102,9 @@
 * 绅士游戏之家 https://ssyxzj.xyz/
 
 ## coding_online
+* W3Schools Online Web Tutorials https://www.w3schools.com/
+* Your Career in Web Development Starts Here | The Odin Project https://www.theodinproject.com/
+* Codecademy https://www.codecademy.com/
 * DataCamp Learn https://www.datacamp.com/
 * Programiz: Learn to Code for Free https://www.programiz.com/
 * Scrimba https://scrimba.com/
