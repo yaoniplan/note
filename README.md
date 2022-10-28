@@ -11,11 +11,10 @@
 | [Literary accomplishment](https://www.aliyundrive.com/s/wzTwQUVrj2b) | [Various research materials](https://www.aliyundrive.com/s/Tr9YqH6ievH) |
 
 <details><summary></summary>
-<p>
-
-`less is more`
-
-</p>
+<ul>
+<li>less is more</li>
+<li>help others help you</li>
+</ul>
 </details>
 
 <!--
