@@ -87,6 +87,7 @@
 * NovaCloud https://q88q.site/
 
 ## animation_comic
+* 欧乐影院 https://oulevod.tv/
 * 异世界动漫官网_ysjdm.com|ysjdm.net_酷动漫 - 异世界动漫 http://ysjdm8.com/
 * AGE动漫 https://www.agemys.com/
 * 萌战-专注动漫领域优质内容 https://mengzhan1314.com
