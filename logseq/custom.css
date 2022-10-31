@@ -7,7 +7,9 @@ html:not(.is-native-android) {
 }
 #main-content-container .journal h1.title:before,
 #main-content-container .is-journals h1.title:before {
-  content: "🗓";
+  /*
+  content: "🗓"; /* hide the emoji of calendar about journals*/
+  */
   vertical-align: text-bottom;
   margin-right: 0.3em;
   font-size: 0.75em;
