@@ -86,6 +86,7 @@
 * 免费机场 https://github.com/ermaozi/get_subscribe
 
 ## animation_comic
+* 樱花动漫(P)－专注动漫的门户网站 https://www.yhdmp.cc/
 * 欧乐影院 https://oulevod.tv/
 * 异世界动漫官网_ysjdm.com|ysjdm.net_酷动漫 - 异世界动漫 http://ysjdm8.com/
 * AGE动漫 https://www.agemys.com/
