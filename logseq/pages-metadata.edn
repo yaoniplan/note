@@ -7,6 +7,12 @@
  {:block/name "a",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "abbreviation",
+  :block/created-at 1667435254093,
+  :block/updated-at 1667435254093}
+ {:block/name "animation_comic",
+  :block/created-at 1667435259008,
+  :block/updated-at 1667435259008}
  {:block/name "arch",
   :block/created-at 1661092000667,
   :block/updated-at 1661092000667}
@@ -103,6 +109,9 @@
  {:block/name "block",
   :block/created-at 1658857025906,
   :block/updated-at 1658857025906}
+ {:block/name "browser",
+  :block/created-at 1667435254965,
+  :block/updated-at 1667435254965}
  {:block/name "btrfs",
   :block/created-at 1661347316934,
   :block/updated-at 1661347316934}
@@ -121,12 +130,18 @@
  {:block/name "chrome",
   :block/created-at 1658856998052,
   :block/updated-at 1658856998052}
+ {:block/name "computer",
+  :block/created-at 1667435255068,
+  :block/updated-at 1667435255068}
  {:block/name "config",
   :block/created-at 1662519771872,
   :block/updated-at 1662519771872}
  {:block/name "contents",
   :block/created-at 1658857025385,
   :block/updated-at 1658857025385}
+ {:block/name "css",
+  :block/created-at 1667435258742,
+  :block/updated-at 1667435258742}
  {:block/name "doing",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -136,12 +151,18 @@
  {:block/name "dwm",
   :block/created-at 1660638517949,
   :block/updated-at 1660638517949}
+ {:block/name "english",
+  :block/created-at 1667435255044,
+  :block/updated-at 1667435255044}
  {:block/name "exit",
   :block/created-at 1661426945326,
   :block/updated-at 1661426945326}
  {:block/name "favorites",
   :block/created-at 1658858141728,
   :block/updated-at 1658858141728}
+ {:block/name "flameshot",
+  :block/created-at 1667435254176,
+  :block/updated-at 1667435254176}
  {:block/name "flomo",
   :block/created-at 1658856997571,
   :block/updated-at 1658856997571}
@@ -154,6 +175,9 @@
  {:block/name "gaps",
   :block/created-at 1661426945323,
   :block/updated-at 1661426945323}
+ {:block/name "gentoo",
+  :block/created-at 1667435255375,
+  :block/updated-at 1667435255375}
  {:block/name "git",
   :block/created-at 1661568371479,
   :block/updated-at 1661568371479}
@@ -172,12 +196,18 @@
  {:block/name "hotkey",
   :block/created-at 1661092000675,
   :block/updated-at 1661092000675}
+ {:block/name "html",
+  :block/created-at 1667435254586,
+  :block/updated-at 1667435254586}
  {:block/name "i3",
   :block/created-at 1661092000525,
   :block/updated-at 1661092000525}
  {:block/name "i3status",
   :block/created-at 1661426945332,
   :block/updated-at 1661426945332}
+ {:block/name "i3wm",
+  :block/created-at 1667435255420,
+  :block/updated-at 1667435255420}
  {:block/name "idea",
   :block/created-at 1659534252107,
   :block/updated-at 1659534252107}
@@ -190,6 +220,12 @@
  {:block/name "input method",
   :block/created-at 1661426946087,
   :block/updated-at 1661426946087}
+ {:block/name "javascript",
+  :block/created-at 1667435258871,
+  :block/updated-at 1667435258871}
+ {:block/name "json",
+  :block/created-at 1667435258861,
+  :block/updated-at 1667435258861}
  {:block/name "jul 16th, 2022",
   :block/created-at 1658856997351,
   :block/updated-at 1658856997351}
@@ -250,9 +286,93 @@
  {:block/name "notion",
   :block/created-at 1658856998047,
   :block/updated-at 1658856998047}
+ {:block/name "nov 3rd, 2022",
+  :block/created-at 1667435252565,
+  :block/updated-at 1667435252565}
  {:block/name "now",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "oct 11th, 2022",
+  :block/created-at 1667435254788,
+  :block/updated-at 1667435254788}
+ {:block/name "oct 12th, 2022",
+  :block/created-at 1667435254759,
+  :block/updated-at 1667435254759}
+ {:block/name "oct 13th, 2022",
+  :block/created-at 1667435254712,
+  :block/updated-at 1667435254712}
+ {:block/name "oct 14th, 2022",
+  :block/created-at 1667435254693,
+  :block/updated-at 1667435254693}
+ {:block/name "oct 17th, 2022",
+  :block/created-at 1667435254679,
+  :block/updated-at 1667435254679}
+ {:block/name "oct 18th, 2022",
+  :block/created-at 1667435254656,
+  :block/updated-at 1667435254656}
+ {:block/name "oct 19th, 2022",
+  :block/created-at 1667435254629,
+  :block/updated-at 1667435254629}
+ {:block/name "oct 1st, 2022",
+  :block/created-at 1667435254988,
+  :block/updated-at 1667435254988}
+ {:block/name "oct 20th, 2022",
+  :block/created-at 1667435254614,
+  :block/updated-at 1667435254614}
+ {:block/name "oct 21st, 2022",
+  :block/created-at 1667435254587,
+  :block/updated-at 1667435254587}
+ {:block/name "oct 22nd, 2022",
+  :block/created-at 1667435254550,
+  :block/updated-at 1667435254550}
+ {:block/name "oct 23rd, 2022",
+  :block/created-at 1667435254373,
+  :block/updated-at 1667435254373}
+ {:block/name "oct 24th, 2022",
+  :block/created-at 1667435254269,
+  :block/updated-at 1667435254269}
+ {:block/name "oct 25th, 2022",
+  :block/created-at 1667435254186,
+  :block/updated-at 1667435254186}
+ {:block/name "oct 26th, 2022",
+  :block/created-at 1667435254098,
+  :block/updated-at 1667435254098}
+ {:block/name "oct 27th, 2022",
+  :block/created-at 1667435254053,
+  :block/updated-at 1667435254053}
+ {:block/name "oct 28th, 2022",
+  :block/created-at 1667435253913,
+  :block/updated-at 1667435253913}
+ {:block/name "oct 2nd, 2022",
+  :block/created-at 1667435254967,
+  :block/updated-at 1667435254967}
+ {:block/name "oct 30th, 2022",
+  :block/created-at 1667435253796,
+  :block/updated-at 1667435253796}
+ {:block/name "oct 31st, 2022",
+  :block/created-at 1667435253600,
+  :block/updated-at 1667435253600}
+ {:block/name "oct 3rd, 2022",
+  :block/created-at 1667435254940,
+  :block/updated-at 1667435254940}
+ {:block/name "oct 4th, 2022",
+  :block/created-at 1667435254911,
+  :block/updated-at 1667435254911}
+ {:block/name "oct 5th, 2022",
+  :block/created-at 1667435254889,
+  :block/updated-at 1667435254889}
+ {:block/name "oct 6th, 2022",
+  :block/created-at 1667435254854,
+  :block/updated-at 1667435254854}
+ {:block/name "oct 7th, 2022",
+  :block/created-at 1667435254836,
+  :block/updated-at 1667435254836}
+ {:block/name "oct 8th, 2022",
+  :block/created-at 1667435254815,
+  :block/updated-at 1667435254815}
+ {:block/name "oct 9th, 2022",
+  :block/created-at 1667435254801,
+  :block/updated-at 1667435254801}
  {:block/name "outlook",
   :block/created-at 1659588241924,
   :block/updated-at 1659588241924}
@@ -292,12 +412,63 @@
  {:block/name "sep 13th, 2022",
   :block/created-at 1663028594192,
   :block/updated-at 1663030798307}
+ {:block/name "sep 14th, 2022",
+  :block/created-at 1667435255456,
+  :block/updated-at 1667435255456}
+ {:block/name "sep 15th, 2022",
+  :block/created-at 1667435255423,
+  :block/updated-at 1667435255423}
+ {:block/name "sep 16th, 2022",
+  :block/created-at 1667435255392,
+  :block/updated-at 1667435255392}
+ {:block/name "sep 17th, 2022",
+  :block/created-at 1667435255377,
+  :block/updated-at 1667435255377}
+ {:block/name "sep 18th, 2022",
+  :block/created-at 1667435255353,
+  :block/updated-at 1667435255353}
+ {:block/name "sep 19th, 2022",
+  :block/created-at 1667435255335,
+  :block/updated-at 1667435255335}
  {:block/name "sep 1st, 2022",
   :block/created-at 1662341187087,
   :block/updated-at 1662341187087}
+ {:block/name "sep 20th, 2022",
+  :block/created-at 1667435255303,
+  :block/updated-at 1667435255303}
+ {:block/name "sep 21st, 2022",
+  :block/created-at 1667435255291,
+  :block/updated-at 1667435255291}
+ {:block/name "sep 22nd, 2022",
+  :block/created-at 1667435255270,
+  :block/updated-at 1667435255270}
+ {:block/name "sep 23rd, 2022",
+  :block/created-at 1667435255250,
+  :block/updated-at 1667435255250}
+ {:block/name "sep 24th, 2022",
+  :block/created-at 1667435255191,
+  :block/updated-at 1667435255191}
+ {:block/name "sep 25th, 2022",
+  :block/created-at 1667435255161,
+  :block/updated-at 1667435255161}
+ {:block/name "sep 26th, 2022",
+  :block/created-at 1667435255132,
+  :block/updated-at 1667435255132}
+ {:block/name "sep 27th, 2022",
+  :block/created-at 1667435255119,
+  :block/updated-at 1667435255119}
+ {:block/name "sep 28th, 2022",
+  :block/created-at 1667435255093,
+  :block/updated-at 1667435255093}
+ {:block/name "sep 29th, 2022",
+  :block/created-at 1667435255070,
+  :block/updated-at 1667435255070}
  {:block/name "sep 2nd, 2022",
   :block/created-at 1662341187307,
   :block/updated-at 1662341187307}
+ {:block/name "sep 30th, 2022",
+  :block/created-at 1667435255047,
+  :block/updated-at 1667435255047}
  {:block/name "sep 3rd, 2022",
   :block/created-at 1662341187461,
   :block/updated-at 1662341187461}
@@ -325,6 +496,9 @@
  {:block/name "sound",
   :block/created-at 1661426945316,
   :block/updated-at 1661426945316}
+ {:block/name "ssh",
+  :block/created-at 1667435255118,
+  :block/updated-at 1667435255118}
  {:block/name "study",
   :block/created-at 1658856997832,
   :block/updated-at 1658856997832}
@@ -343,6 +517,9 @@
  {:block/name "torrent",
   :block/created-at 1661092000516,
   :block/updated-at 1661092000516}
+ {:block/name "usb",
+  :block/created-at 1667435254936,
+  :block/updated-at 1667435254936}
  {:block/name "v2ex",
   :block/created-at 1658856997579,
   :block/updated-at 1658856997579}
@@ -352,6 +529,9 @@
  {:block/name "vim",
   :block/created-at 1659755212964,
   :block/updated-at 1659755212964}
+ {:block/name "vimium",
+  :block/created-at 1667435254964,
+  :block/updated-at 1667435254964}
  {:block/name "virtualbox",
   :block/created-at 1661092000671,
   :block/updated-at 1661092000671}
