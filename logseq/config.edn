@@ -173,7 +173,7 @@
 
  :ref/linked-references-collapsed-threshold 50
  :favorites ["idea" "quote"]
- :publishing/all-pages-public? false
+ :publishing/all-pages-public? true
  :git-auto-push true
  :feature/enable-timetracking? false
  :feature/enable-flashcards? false
