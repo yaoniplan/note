@@ -18,7 +18,6 @@
 * 我靠充值当武帝 - 43
 * 仙武苍穹 - 43
 * 神级龙卫 - 20
-* 神墓 - 16
 * 诛仙 - 15
 * 一念永恒 - 69
 * 斗破苍穹年番 - 15
@@ -249,6 +248,7 @@
 * guard(end)
 
 ### animation
+* 神墓 - 16 # End of the first season
 * 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
 * BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
 * 黑门 - 12 # end of the first season
