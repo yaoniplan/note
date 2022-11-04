@@ -1,4 +1,10 @@
-# seldom_website
+## School
+* 学校需要-江西省高中学生综合素质评价信息管理系统 https://gzzs.jxedu.gov.cn
+* 学校需要-江西省教育资源公共服务平台 https://basic.jxeduyun.com/desktop/login/#/
+* 学校需要-江西省教育考试院 http://www.jxeea.cn
+* 学校需要-考生体检公众服务 https://tj1.jxeea.cn:82/#/login
+
+## Website
 * V2EX https://v2ex.com/
 * Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
 * Meow.TG-做最懂你的TG搜索 https://meow.tg
@@ -15,10 +21,6 @@
 * 战拖与新自我管理 https://zhantuo.com/archives
 * 惜墨博客 https://ximo.blog
 * 元搜索引擎 searx https://searx.space
-* 学校需要-江西省高中学生综合素质评价信息管理系统 https://gzzs.jxedu.gov.cn
-* 学校需要-江西省教育资源公共服务平台 https://basic.jxeduyun.com/desktop/login/#/
-* 学校需要-江西省教育考试院 http://www.jxeea.cn
-* 学校需要-考生体检公众服务 https://tj1.jxeea.cn:82/#/login
 * 临时短信 https://mytrashmobile.com
 * 图标 https://iconfont.cn
 * 测速网 https://speedtest.cn
