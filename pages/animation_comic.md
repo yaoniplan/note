@@ -22,7 +22,6 @@
 * 一念永恒 - 70
 * 斗破苍穹年番 - 16
 * 星源之主 - 31
-* 星武神诀第二季 - 40
 * 绝世武魂 - 213
 * 万古神话 - 25
 * 战千年第一季 - 16
@@ -248,6 +247,7 @@
 * guard(end)
 
 ### animation
+* 星武神诀第二季 - 40 # End of the second season
 * 神墓 - 16 # End of the first season
 * 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
 * BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
