@@ -3,13 +3,13 @@
 | --- | --- |
 | <a href="https://www.aliyundrive.com/s/9HSuotnTdj2"><i>Improve</i></a> | <a href="https://www.aliyundrive.com/s/tKrX96igcYR">Software</a> |
 | <a href="https://www.aliyundrive.com/s/S4ehaVb2GhL"><i>Programming</i></a> | <a href="https://www.aliyundrive.com/s/ztrSkNX2rcY">Workplace Competitiveness</a> |
-| <a href="https://www.aliyundrive.com/s/8GpUYfBebm3">Life</a> | <a href="(https://www.aliyundrive.com/s/Y28EmpFgUj4">Leadership</a> |
+| <a href="https://www.aliyundrive.com/s/8GpUYfBebm3">Life</a> | <a href="https://www.aliyundrive.com/s/Y28EmpFgUj4">Leadership</a> |
 | <a href="https://www.aliyundrive.com/s/G575najSduc">Hobby</a> | <a href="https://www.aliyundrive.com/s/f8UgcVDA5Sj">Graphic Design</a> |
 | <a href="https://www.aliyundrive.com/s/jq36xkW12vp">Emotion</a> | <a href="https://www.aliyundrive.com/s/SmFWT9EpooX">Human Resources</a> |
 | <a href="https://www.aliyundrive.com/s/45CMWsbaDc8">Health</a> | <a href="https://www.aliyundrive.com/s/R1MFohENhxM">We Media Marketing</a> |
 | <a href="https://www.aliyundrive.com/s/WaQYnnMVgkY">Dining Gastronomy</a> | <a href="https://www.aliyundrive.com/s/Rng1XpTcNnP">Copywriting</a> |
 | <a href="https://www.aliyundrive.com/s/TpDCTAvydFS">Business Knowledge</a> | <a href="https://www.aliyundrive.com/s/1xpmpgTDF8t">Various templates</a> |
-| <a href="https://www.aliyundrive.com/s/wzTwQUVrj2b">Literary accomplishment</a>) | <a href="https://www.aliyundrive.com/s/Tr9YqH6ievH">Various research materials</a> |
+| <a href="https://www.aliyundrive.com/s/wzTwQUVrj2b">Literary accomplishment</a> | <a href="https://www.aliyundrive.com/s/Tr9YqH6ievH">Various research materials</a> |
 
 <!-- Using Markdown -->
 <!--
