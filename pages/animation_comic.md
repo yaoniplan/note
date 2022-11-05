@@ -26,7 +26,6 @@
 * 万古神话 - 27
 * 战千年第一季 - 16
 * 龙族 - 13
-* 力拔山河兮子唐 - 20
 * 星河至尊 - 102
 * 绝代双骄 - 06
 * 万古剑神 - 06
@@ -247,6 +246,7 @@
 * guard(end)
 
 ### animation
+* 力拔山河兮子唐 - 20 # End of the first season
 * 星武神诀第二季 - 40 # End of the second season
 * 神墓 - 16 # End of the first season
 * 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
