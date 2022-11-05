@@ -8,7 +8,7 @@
 | <a href="https://www.aliyundrive.com/s/45CMWsbaDc8">Health</a> | [We Media Marketing](https://www.aliyundrive.com/s/R1MFohENhxM) |
 | <a href="https://www.aliyundrive.com/s/WaQYnnMVgkY">Dining Gastronomy</a> | [Copywriting](https://www.aliyundrive.com/s/Rng1XpTcNnP) |
 | <a href="https://www.aliyundrive.com/s/TpDCTAvydFS">Business Knowledge</a> | [Various templates](https://www.aliyundrive.com/s/1xpmpgTDF8t) |
-| <a href="https://www.aliyundrive.com/s/wzTwQUVrj2b">Literary accomplishment</a>) | [Various research materials](https://www.aliyundrive.com/s/Tr9YqH6ievH) |
+| <a href="https://www.aliyundrive.com/s/wzTwQUVrj2b">Literary accomplishment</a>) | <a href="https://www.aliyundrive.com/s/Tr9YqH6ievH">Various research materials</a> |
 
 <!--
 <details><summary></summary>
