@@ -1,7 +1,7 @@
 | Living | Working |
 | --- | --- |
 | <a href="https://www.aliyundrive.com/s/9HSuotnTdj2"><i>Improve</i></a> | [software](https://www.aliyundrive.com/s/tKrX96igcYR) |
-| <a href="https://www.aliyundrive.com/s/S4ehaVb2GhL"><i>programming</i></a>) | [Workplace Competitiveness](https://www.aliyundrive.com/s/ztrSkNX2rcY) |
+| <a href="https://www.aliyundrive.com/s/S4ehaVb2GhL"><i>programming</i></a> | [Workplace Competitiveness](https://www.aliyundrive.com/s/ztrSkNX2rcY) |
 | [life](https://www.aliyundrive.com/s/8GpUYfBebm3) | [Leadership](https://www.aliyundrive.com/s/Y28EmpFgUj4) |
 | [hobby](https://www.aliyundrive.com/s/G575najSduc) | [Graphic Design](https://www.aliyundrive.com/s/f8UgcVDA5Sj) |
 | [emotion](https://www.aliyundrive.com/s/jq36xkW12vp) | [Human Resources](https://www.aliyundrive.com/s/SmFWT9EpooX) |
