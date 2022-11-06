@@ -20,8 +20,6 @@ body {
   color: #F9FAF8;
 }
 
-.links {
-}
 ul {
   list-style-type: none;
   display: flex;
@@ -32,36 +30,6 @@ a {
   text-decoration: none;
   font-size: 18px;
   color: #E5E7EB;
-}
-
-.hero {
-  display: flex;
-  background-color: #1F2937;
-}
-
-.hero-cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hero-cta h1 {
-  font-size: 48px;
-  color: #F9FAF8;
-}
-
-.hero-cta p {
-  font-size: 18px;
-  color: #E5E7EB;
-}
-
-.hero-cta button {
-  background-color: #3882F6;
-  border: 0;
-  padding: 8px 28px;
-  border-radius: 8px;
-  font-weight: 400;
 }
 
 .image {
