@@ -64,5 +64,6 @@ a {
 }
 
 .quote {
+  background-color: #E5E7EB;
   display: flex;
 }
