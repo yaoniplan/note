@@ -64,10 +64,7 @@ a {
   font-weight: 400;
 }
 
-.one img,
-.two img,
-.three img,
-.four img {
+.info img {
   width: 100px;
   height: 100px;
 }
@@ -82,4 +79,4 @@ a {
   gaps: 52px;
 }
 
-
+.info {}
