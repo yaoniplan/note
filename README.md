@@ -1,30 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-
-  <body>
-    <table style="border:1px solid blue;">
-      <caption>
-      	I am heading
-      </caption>
-      <tr>
-        <td>one</td>
-        <td>two</td>
-      </tr>
-      <tr>
-        <td>three</td>
-        <td>four</td>
-      </tr>
-    </table>
-  </body>
-</html>
-* Test the above code
--->
-
-<!-- Using HTML links-->
 | Living | Working |
 | --- | --- |
 | <a href="https://www.aliyundrive.com/s/9HSuotnTdj2" style="color:red;">Improve</a> | <a href="https://www.aliyundrive.com/s/tKrX96igcYR">Software</a> |
