@@ -5,9 +5,9 @@
   </head>
 
   <body>
-    <table>
+    <table style="border:1px solid blue;">
       <caption>
-        我是标题
+      	I am heading
       </caption>
       <tr>
         <td>one</td>
