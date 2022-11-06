@@ -64,6 +64,13 @@ a {
   font-weight: 400;
 }
 
+.one img,
+.two img,
+.three img,
+.four img {
+  width: 100px;
+  height: 100px;
+}
 .information {
   text-align: center;
 }
