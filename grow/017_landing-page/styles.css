@@ -38,7 +38,7 @@ a {
 .info img {
   width: 100px;
   height: 100px;
-  border: 1px;
+  border: 1px solid green;
 }
 
 .information {
