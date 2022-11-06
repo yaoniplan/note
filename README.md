@@ -1,8 +1,3 @@
-<style>
-  a {
-    font-weight: 700;
-  }
-</style>
 | Living | Working |
 | --- | --- |
 | <span><a href="https://www.aliyundrive.com/s/9HSuotnTdj2" style="color:red;">Improve</a></span> | <a href="https://www.aliyundrive.com/s/tKrX96igcYR">Software</a> |
