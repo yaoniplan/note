@@ -62,3 +62,7 @@ a {
 .info {
   max-width: 150px;
 }
+
+.quote {
+  display: flex;
+}
