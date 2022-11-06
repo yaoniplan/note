@@ -79,4 +79,6 @@ a {
   gaps: 52px;
 }
 
-.info {}
+.info {
+  max-width: 200px;
+}
