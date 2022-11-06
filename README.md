@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,6 +22,7 @@
   </body>
 </html>
 * Test the above code
+-->
 
 <!-- Using HTML links-->
 | Living | Working |
