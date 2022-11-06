@@ -2,31 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title></title>
-    <style type="text/css">
-      table,
-      td {
-        border: 1px solid blue;
-      }
-
-      td {
-        background-color: red;
-        color: yellow;
-        text-align: left;
-        vertical-align: bottom;
-        padding: 30px;
-      }
-
-      table {
-        width: 200px;
-        height: 100px;
-        border-collapse: collapse;
-      }
-
-      caption {
-        caption-side: bottom;
-      }
-    </style>
   </head>
 
   <body>
