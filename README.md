@@ -1,8 +1,8 @@
 <!-- Using HTML links-->
 | Living | Working |
 | --- | --- |
-| <a href="https://www.aliyundrive.com/s/9HSuotnTdj2" style="color:red;"><i>Improve</i></a> | <a href="https://www.aliyundrive.com/s/tKrX96igcYR">Software</a> |
-| <a href="https://www.aliyundrive.com/s/S4ehaVb2GhL"><i>Programming</i></a> | <a href="https://www.aliyundrive.com/s/ztrSkNX2rcY">Workplace Competitiveness</a> |
+| <a href="https://www.aliyundrive.com/s/9HSuotnTdj2" style="color:red;">Improve</a> | <a href="https://www.aliyundrive.com/s/tKrX96igcYR">Software</a> |
+| <a href="https://www.aliyundrive.com/s/S4ehaVb2GhL" style="color:red;">Programming</a> | <a href="https://www.aliyundrive.com/s/ztrSkNX2rcY">Workplace Competitiveness</a> |
 | <a href="https://www.aliyundrive.com/s/8GpUYfBebm3">Life</a> | <a href="https://www.aliyundrive.com/s/Y28EmpFgUj4">Leadership</a> |
 | <a href="https://www.aliyundrive.com/s/G575najSduc">Hobby</a> | <a href="https://www.aliyundrive.com/s/f8UgcVDA5Sj">Graphic Design</a> |
 | <a href="https://www.aliyundrive.com/s/jq36xkW12vp">Emotion</a> | <a href="https://www.aliyundrive.com/s/SmFWT9EpooX">Human Resources</a> |
