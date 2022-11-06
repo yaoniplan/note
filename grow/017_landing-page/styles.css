@@ -50,7 +50,9 @@ a {
   font-size: 36px;
   font-weight: 900;
   color: 1F2937;
+  margin-bottom: 20px;
 }
+
 .container {
   display: flex;
   justify-content: center;
