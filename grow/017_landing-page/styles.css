@@ -73,6 +73,9 @@ a {
   text-align: center;
 }
 
+.title {
+  font-size: 36px;
+}
 .container {
   display: flex;
   justify-content: center;
