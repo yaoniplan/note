@@ -67,3 +67,7 @@ a {
 .information {
   text-align: center;
 }
+
+.info {
+  display: flex;
+}
