@@ -71,10 +71,12 @@ a {
   width: 100px;
   height: 100px;
 }
+
 .information {
   text-align: center;
 }
 
 .info {
   display: flex;
+  justify-content: center;
 }
