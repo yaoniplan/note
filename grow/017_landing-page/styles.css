@@ -53,7 +53,6 @@ a {
 .container {
   display: flex;
   justify-content: center;
-  gaps: 52px;
 }
 
 .info {
