@@ -1,5 +1,7 @@
 <style>
-
+  a {
+    font-weight: 700;
+  }
 </style>
 | Living | Working |
 | --- | --- |
