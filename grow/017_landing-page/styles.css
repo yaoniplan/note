@@ -64,6 +64,11 @@ a {
   font-weight: 400;
 }
 
+.image {
+  width: 200px;
+  height: 100px;
+}
+
 .info img {
   width: 100px;
   height: 100px;
