@@ -34,9 +34,7 @@ a {
 .hero {
   display: flex;
   background-color: #1F2937;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 80px;
+  padding: 80px 0px 80px 0px;
 }
 
 .hero-cta {
