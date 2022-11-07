@@ -84,3 +84,7 @@ a {
   text-align: right;
   padding-right: 44px;
 }
+
+.sign-up {
+  display: flex;
+}
