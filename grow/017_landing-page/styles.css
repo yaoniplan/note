@@ -55,9 +55,10 @@ a {
 .hero-cta button {
   background-color: #3882F6;
   border: 1px solid;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 6px 24px 6px 24px;
   margin-top: 10px;
+  font-weight: 900;
 }
 /*
 .hero img{
