@@ -34,6 +34,8 @@ a {
 .hero {
   display: flex;
   background-color: #1F2937;
+  justify-content: space-between;
+
 }
 
 .hero-cta {
