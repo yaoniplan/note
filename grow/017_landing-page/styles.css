@@ -68,7 +68,7 @@ a {
   background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
-  padding: 64px 200px 64px 200px;
+  padding: 100px 200px 100px 200px;
 }
 
 .quote .quote-paragraph {
