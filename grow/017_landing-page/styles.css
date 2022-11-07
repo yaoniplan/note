@@ -69,12 +69,12 @@ a {
   flex-direction: column;
 }
 
-.quote-paragraph {
+.quote .quote-paragraph {
   font-size: 36px;
   font-style: italic;
   color: #1F2937;
 }
 
-.quote-author {
+.quote .quote-author {
   
 }
