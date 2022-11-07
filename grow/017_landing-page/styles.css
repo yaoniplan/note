@@ -68,6 +68,8 @@ a {
   display: flex;
   flex-direction: column;
   padding: 96px;
+  padding-left: 96px;
+  padding-right: 96px;
 }
 
 .quote .quote-paragraph {
