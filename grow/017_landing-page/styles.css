@@ -96,7 +96,7 @@ a {
 .container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 70px;
 }
 
 .info {
