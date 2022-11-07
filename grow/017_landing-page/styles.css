@@ -74,10 +74,10 @@ a {
 .quote .quote-paragraph {
   font-size: 36px;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 50;
   color: #1F2937;
 }
 
-.quote .quote-paragraph,
 .quote .quote-author {
+  font-weight: 900;
 }
