@@ -74,6 +74,7 @@ a {
 .quote .quote-paragraph {
   font-size: 36px;
   font-style: italic;
+  font-weight: 300;
   color: #1F2937;
 }
 
