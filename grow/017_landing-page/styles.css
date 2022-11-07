@@ -39,6 +39,7 @@ a {
 
 .hero-cta {
   margin-left: 170px;
+  margin-bottom: 50px;
 }
 
 .hero-cta .hero-heading {
@@ -63,8 +64,8 @@ a {
 
 .hero img{
   width: 500px;
-  height: 200px;
-  margin-left: 30px;
+  height: 250px;
+  margin-left: 50px;
   margin-right: 180px;
 }
 /*
