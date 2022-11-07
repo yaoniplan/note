@@ -94,5 +94,6 @@ a {
   border-radius: 8px;
 }
 
-.sign-up-cta {
+.sign-up-cta .paragraph-one {
+  font-size: 700px; 
 }
