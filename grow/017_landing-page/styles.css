@@ -67,3 +67,7 @@ a {
   background-color: #E5E7EB;
   display: flex;
 }
+
+.quote-paragraph {
+  font-size: 36px;
+}
