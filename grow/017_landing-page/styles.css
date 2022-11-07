@@ -49,7 +49,7 @@ a {
 .title {
   font-size: 36px;
   font-weight: 900;
-  color: 1F2937;
+  color: #1F2937;
   margin-bottom: 40px;
 }
 
@@ -71,4 +71,5 @@ a {
 .quote-paragraph {
   font-size: 36px;
   font-style: italic;
+  color: #1F2937;
 }
