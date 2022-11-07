@@ -99,3 +99,7 @@ a {
   font-size: 24px;
   margin-bottom: 4px;
 }
+
+.sign-up-cta .button {
+  justify-content: center;
+}
