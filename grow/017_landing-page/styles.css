@@ -42,6 +42,11 @@ a {
   color: #F9FAF8;
 }
 
+.hero-cta .hero-paragraph {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
 .image {
   width: 200px;
   height: 100px;
