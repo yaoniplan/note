@@ -37,7 +37,7 @@ a {
 }
 
 .hero-cta {
-  padding: 200px 200px 200px 200px;
+  padding: 100px 150px 100px 150px;
 }
 
 .hero-cta .hero-heading {
@@ -49,11 +49,6 @@ a {
 .hero-cta .hero-paragraph {
   font-size: 18px;
   color: #E5E7EB;
-}
-
-.image {
-  width: 200px;
-  height: 100px;
 }
 
 .info img {
