@@ -88,6 +88,7 @@ a {
 .sign-up {
   display: flex;
   margin: 100px 200px 100px 200px;
+  padding: 50px 100px 50px 100px;
   background-color: #3882F6;
   border: 4px;
   border-radius: 8px;
