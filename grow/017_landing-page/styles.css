@@ -51,6 +51,10 @@ a {
   font-size: 18px;
   color: #E5E7EB;
 }
+
+.hero-cta .button {
+  background-color: #3882F6;
+}
 /*
 .hero img{
   width: 500px;
