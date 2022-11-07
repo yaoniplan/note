@@ -104,6 +104,7 @@ a {
 
 .sign-up button {
   background-color: #3882F6;
-  border: 4px;
+  border: 1px solid white;
   border-radius: 4px;
+  padding: 30px 60px 30px 60px;
 }
