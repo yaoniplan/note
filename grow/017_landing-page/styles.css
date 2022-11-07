@@ -36,6 +36,10 @@ a {
   background-color: #1F2937;
 }
 
+.hero-cta {
+  padding: 200px 200px 200px 200px;
+}
+
 .hero-cta .hero-heading {
   font-size: 48px;
   font-weight: 900;
