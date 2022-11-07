@@ -102,5 +102,8 @@ a {
   margin-bottom: 4px;
 }
 
-.sign-up .button {
+.sign-up button {
+  background-color: #3882F6;
+  border: 4px;
+  border-radius: 4px;
 }
