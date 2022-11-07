@@ -87,6 +87,8 @@ a {
 
 .sign-up {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 100px 200px 100px 200px;
   padding: 50px 100px 50px 100px;
   background-color: #3882F6;
@@ -101,5 +103,4 @@ a {
 }
 
 .sign-up-cta .button {
-  padding: 10px 200px 0px 0px;
 }
