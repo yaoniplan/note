@@ -79,6 +79,7 @@ a {
 }
 
 .quote .quote-author {
+  font-size: 30px;
   font-weight: 900;
   text-align: right;
 }
