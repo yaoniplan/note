@@ -101,5 +101,5 @@ a {
 }
 
 .sign-up-cta .button {
-  display: flex;
+  padding: 10px 200px 0px 0px;
 }
