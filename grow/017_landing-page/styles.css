@@ -36,6 +36,12 @@ a {
   background-color: #1F2937;
 }
 
+.hero-cta .hero-heading {
+  font-size: 48px;
+  font-weight: 900;
+  color: #F9FAF8;
+}
+
 .image {
   width: 200px;
   height: 100px;
