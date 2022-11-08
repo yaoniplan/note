@@ -1,12 +1,12 @@
 - # Introduction
   Markdown is a lightweight markup language that allows people to write documents in plain text format that is easy to read and write. The suffix of Markdown files is ".md".
-- # Headings Syntax
+- # Headings syntax
   Before a word or phrase, add number signs and a space (`# `).
 	- ***Usage***  
 	  ![image.png](../assets/image_1667881157261_0.png)
 	- ***Preview***  
 	  ![image.png](../assets/image_1667881192286_0.png)
-- # Lists Syntax
+- # Lists syntax
 	- ## 1. Unordered lists
 	  Before the list item, add a hypen (`-`), a asterisk (`*`) or a plus (`+`).
 		- ***Usage***  
@@ -14,7 +14,7 @@
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
 - # Links syntax
-- # Images Syntax
+- # Images syntax
   Add an exclamation mark (`!`), followed by alt text in square brackets (`[]`), and the **path** or **URL** to the image asset in round brackets (`()`).
 	- ***Usage***  
 	  ![image.png](../assets/image_1667898003344_0.png)
