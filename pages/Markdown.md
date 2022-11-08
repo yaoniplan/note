@@ -1,5 +1,5 @@
-- # 简介
-  Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
+- # Introduction
+Markdown is a lightweight markup language that allows people to write documents in plain text format that is easy to read and write. The suffix of Markdown files is ".md".
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
