@@ -14,7 +14,7 @@
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
 - # Images Syntax
-	- ## 2.
+	- ## 2. Basic Images
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
