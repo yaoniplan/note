@@ -96,7 +96,28 @@ Type `term` on the first line. On the next line, type a `colon` followed by a `s
 - ## 4. Task List
 Before the task list, add a `dash` (`-`) and `square brackets` (`[]`), and put a `space` before the square brackets. To select a checkbox, between square brackets, add `x`.
 - ***Writing***
-![2022_07_20_Screenshot from 2022-07-20 14-50-36.png](https://cdn.l
+![2022_07_20_Screenshot from 2022-07-20 14-50-36.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad4e58d98f-21e1-4afb-a2f1-4601560e3eb72022_07_20_Screenshot%20from%202022-07-20%2014-50-36.png?Expires=4811899858&Signature=NrAZgzNaGZadxl6dFBUGn2ouMA0VN1vGs-9-iHADlvOykfdR5TOV7inXZ00jWnFX8Ct6AqX2WwZtPv6X7kRORoZPj4FozMOZJr0~0jj-9ukV8MRYZydIcFzEZBxi7jhD6oNMrSdqkKroOdjWpQ82gY2hnLgvGGvm9BlMm5I-8FIH62fSkf45Lt9pOsHrS-M~VerdBSMApswshZjxAGblRCxF5jd5rHB0nOHX7bkIsQNF32mIhgeIsFdOd--psj0084Pjr1jeLZf71jheQvmjU2C8o2SVKQZvJ4VkATq7lgnjD~JCv-C5OEPPlsUzdXeX0RfCrQQWZ91PsI4OM2FsNg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-50-40.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add646ae97-f803-42d9-9573-0d817ccbc6452022_07_20_Screenshot%20from%202022-07-20%2014-50-40.png?Expires=4811899873&Signature=ACg69lAnkFeWmI22iuSZjH11y8tvhIWcEUpwV7kxFDuDZOaXs7Q9Nv6Dpk8OGc7eTsPAzW1nW-mj~eJq5vXkgWXEW-zB~lDgcbYyi6N5lahYQ3SMQ~0IWKXX95pmDAvhp7hBAFjlu4mZWdS9Q3g94o9xoPYLSpyZ2euTTqVSwzw5SeVN6H85mZ0WgQiYqbdehI9~U0UvGJYoKgT5q2YF5kJTKi1S5qo~cBsu1-TbCbeJ3lC7Ngt0D8C0nkfoh3GOcAHrG9~jvFG84yKsXFbPVa7FzV99kcgjY3B-itgmptAwe~f8ibBpYMG6zUx8JzjPRV9zIBUv9NoO~tVy-ikI4A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	- ## 5. 在列表中嵌套段落
+	  将该元素缩进`四个空格`或`一个制表符`
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-29-46.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad3dc3300a-2958-4ae0-9beb-5d59a2d39b942022_07_20_Screenshot%20from%202022-07-20%2014-29-46.png?Expires=4811898620&Signature=KW~jZwoo0IVs6SftnKw07o7FE6IT60SRV-zHqW8yT6l1Ao7K-i77IOMCWz8QWc6H8LuN6YE5fx15DBKhmGg9jJBFeYkuhFySPX32lE1~i02LRku3STgK8tWiGfvRQZjB5NyJcBIYEacx1kNawY6rcBLkS-H5zN3ghfVPjuNdyPCeQ5w7ltd7o~oFQ9XU8~aAprpICpY4MNVe0gWhjGcpIibpTg7DcO5bLXPrYt1mjuNMYpxx6O-RsebyUHLXl38ZgWo17evj~VcBuCGFFw-uQ-P4iv7IwPEFl6GTgMBhqNf0uIT0wJbuPZvA2ceRJ~4A~tJWmMuqv3glr1Je4JlQTg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-29-58.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad04c6745f-8506-4e9f-92e1-bd77a8a7132d2022_07_20_Screenshot%20from%202022-07-20%2014-29-58.png?Expires=4811898634&Signature=BXVVb7siYwKP7C9sI9Q4Ke4YtpK5rrOntFBHNv2NMse13GsJvfJ4mo3oirSyTUQW41DXX9D0V3~y4KABrXJAtfnmsfoX9Hm9TYS0~UtHOmsXMjHfy~gpOzEYaCinjWrw6yY9R1oYozvzRDP08oDv2x93D9DdqEo9oh-xGOS7oBjcNKT7RrL5IPCw8sdqdNekqiwr9VHxfU9~~GdNL2ib-LxvPxZDxhAxm-GX1R~PBOxUCoDKHqLEVSWzKlCnlFLfFIFrqbRMM6MBhtwlhWsD0niDMX4QXKM2Vnibx5-l36-0O5AjkHfjVC~ffq7ODEBkSLKoqH-lNshfChr0x5nC4g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	- ## 6. 在列表中嵌套引用块
+	  同样的，将该元素缩进`四个空格`或`一个制表符`
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-30-53.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0575d72a-0c92-4d0c-9128-4b31974d50342022_07_20_Screenshot%20from%202022-07-20%2014-30-53.png?Expires=4811898666&Signature=hN7GbCOhMh~Lw-vVmGCClBv--NbzqHyGdeGOVWhgyWgpIQOeNmsuE0slWi43lQOAmWXv9DWwGw7ljSrRU-PEhgZebpbhuQfSPq7WhAnzZRAIpZRfQa4mFIkJnrEKbOPbfhKGBt77Kcto7RapdJZcbvWmIct3lOfgPtfHGz968WWK9QrGdyKwV-sGGvyXztnqJt-UplfuzsjSLwJ9hY8rSlljQn2~b5RSYumaTK32IJSdIjj4qh7c0SC2vQxzpLzSoS2AlLcbFDcZjqeVWqDZWZExOrPoKDHvmpefyUe1kgu2PhdRsU3OuM7iXYSY5f98u2hft9ZnLG8mVM-hqvWJ2g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-31-16.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add7945ca2-3dc6-45a2-80c2-62ce480192e22022_07_20_Screenshot%20from%202022-07-20%2014-31-16.png?Expires=4811898690&Signature=DJBtuRmbeM~iMX30nDrp~PJcN7Kz~ZQpqQ5l~TXIW6sA4N5qjdMjpbB7JEb1bCpp3g~p0BYu~fbdYSBQ55j2DfXMGXLVeTIpWogQlzeNP7EAD-g7leoCCx044A9-E2iFpDA5hm0yBczvBAQu0EhFVgeZpl3IIGlduYLTk~CYDRjpB-l48GvNVz4gmx9033BSld81cMcegBgunb~bfOMQS4ioBRpjmXKZM0AwOrRG-ZqAHHL0wEiV3dvRNiu3PKKTDDsYBHBOV9itMexu01vilQhxNwFae8ETflarMqHbwmzpvOYdFljm4nqFGYrmdZBiCjQD5Zr6a8pdV15QRGoB~A__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+	- ## 7. 在列表中嵌套代码块
+	  将代码块缩进`八个空格`或`两个制表符`
+		- ***写法***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-31-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad84ce5d6b-2e34-43c0-86e3-4ff25091961e2022_07_20_Screenshot%20from%202022-07-20%2014-31-39.png?Expires=4811898730&Signature=DV19OdodvFNJ2SX40dFjOvCUYJ-X4-9dK9YjjQYnxXWWfkvJpVMQ1GsMuZZDW-v4fuhv-h2eui84upa4pahsjguC~FTse7NC~Z5h4cHL6T2YGCeXZkqX6nJnIeRtU1~K2~1z8pgfIF706LCsGrVlvJR5HvZcBBln1KtVimUkPU4~cbKdEENGvXLac174Oe6dzJzAix2vmkX4L8VhuRcpyI-GMd9uCeHpX6NXBF1lJOy-rFVdKcFLbRJb5OZJnJEU1kmLjZ1i4zgqJTz3W5XeQ1a4TJlL04ho8S0ZE~J7qqOPeUqci~yE2YmKgxXR1INIbD9G3OlPjAClnwdkBX5RdQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		- ***预览***  
+		  ![2022_07_20_Screenshot from 2022-07-20 14-31-49.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad68ec6622-2274-4d18-b51e-74979ee5cd232022_07_20_Screenshot%20from%202022-07-20%2014-31-49.png?Expires=4811898740&Signature=FN8zdlqLpI-cDa5NJjkCaVBFKrsOgdF1QMolUtIRwCTQtD7bFZMu2oY7Um2XpepiLyJubQU9cuG5DKT1FtFl3hV7qlRVpyI4Cg0FEUnUfoL6BVZdttIqd18rxJS3vBDq-RakJnbBgE6BI00oFF7XxFSzBxo49UcbIAiRuMZOl1VmqN0BoIn-T5bL6qWSJhDgb~vNoPNy1KArc4-41q7MntSD8vbC-rrqrmowwMA7RnxSm~63-cvYl
 <!--
 - # 简介
   Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，Markdown文件的后缀名便是“.md”。
