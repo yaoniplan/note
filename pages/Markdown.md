@@ -2,7 +2,7 @@
   Markdown is a lightweight markup language that allows people to write documents in plain text format that is easy to read and write. The suffix of Markdown files is ".md".
 - # Lists Syntax
 	- ## 1. Unordered lists
-	  Before the list item, add `-` (a hypen), `*` (a asterisk) or `+`(a plus).
+	  Before the list item, add a hypen (`-`), a asterisk (`*`) or a plus (`+`).
 		- ***Usage***  
 		  ![image.png](../assets/image_1667878583964_0.png)
 		- ***Preview***  
