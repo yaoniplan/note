@@ -5,7 +5,8 @@
 	  Before the list item, add `-` (a hypen), `*` (a asterisk) or `+`(a plus).
 		- ***Usage***
 		  ![image.png](../assets/image_1667878583964_0.png)
-		- ******
+		- ***Preview***
+		  ![image.png](../assets/image_1667878660414_0.png)
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
