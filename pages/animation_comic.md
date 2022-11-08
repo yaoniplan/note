@@ -1,5 +1,4 @@
 ### animation
-* 月光下的异世界之旅 - 10 0630 animation
 * 间谍过家家 第二季 - 06
 * 异世界归来的舅舅 - 07
 * 我能复制天赋 - 11
@@ -248,6 +247,7 @@
 * guard(end)
 
 ### animation
+* 月光下的异世界之旅 - 12 # End of the first season
 * 力拔山河兮子唐 - 20 # End of the first season
 * 星武神诀第二季 - 40 # End of the second season
 * 神墓 - 16 # End of the first season
