@@ -262,9 +262,9 @@
 		  ![Screenshot from 2022-07-30 16-09-29.png](../assets/Screenshot_from_2022-07-30_16-09-29_1659168617565_0.png)
 		- ***预览***  
 		  ![Screenshot from 2022-07-30 16-09-36.png](../assets/Screenshot_from_2022-07-30_16-09-36_1659168679471_0.png)
-- # 参考资料
-	- [Markdown 官方教程](https://markdown.com.cn/ "Markdown 官方教程")
+- # References
 	- [Markdown Guide](https://www.markdownguide.org/ "Markdown Guide")
+	- [Markdown 官方教程](https://markdown.com.cn/ "Markdown 官方教程")
 	- [Markdown数学公式](https://www.jianshu.com/p/4d823d1b9c71 "Markdown数学公式")
 	  
 	  <!--
