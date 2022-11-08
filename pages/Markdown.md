@@ -16,7 +16,9 @@
 - # Images Syntax
 	- ## 2. Basic Images
 	  Add an exclamation mark (`!`), followed by alt text in square brackets (`[]`), and the path or URL to the image asset in round brackets (`()`).
-		- ***Usage***
+		- ***Usage***  
+		  ![image.png](../assets/image_1667898003344_0.png)
+		- ***Preview***
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
