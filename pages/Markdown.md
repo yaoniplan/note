@@ -1,6 +1,7 @@
 - # Introduction
   Markdown is a lightweight markup language that allows people to write documents in plain text format that is easy to read and write. The suffix of Markdown files is ".md".
-- # Order
+- # Lists
+	- 1.
 - # 标题语法
   在单词或短语前，添加`# `(井号+空格)。
 	- ***写法***  
