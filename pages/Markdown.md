@@ -18,7 +18,7 @@
 	- ***Usage***  
 	  ![image.png](../assets/image_1667905156937_0.png)
 	- ***Preview***  
-	  ![image.png](../assets/image_1667905181920_0.png)
+	  ![image.png](../assets/image_1667905250924_0.png)
 - # Images syntax
   Add an exclamation mark (`!`), followed by alt text in square brackets (`[]`), and the **path** or **URL** to the image asset in round brackets (`()`).
 	- ***Usage***  
