@@ -14,8 +14,8 @@
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
 - # Code syntax
-- Wrap a word or phrase in backticks (==`==)
--
+	- ## 1. Code
+	  Wrap a word or phrase in backticks (==`==)
 - # Links syntax
   Enclose the link text in square brackets (`[]`) and then follow it with the **URL** in round brackets (`()`).
 	- ***Usage***  
