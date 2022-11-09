@@ -13,6 +13,8 @@
 		  ![image.png](../assets/image_1667878583964_0.png)
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
+- # Code syntax
+  On both sides of
 - # Links syntax
   Enclose the link text in square brackets (`[]`) and then follow it with the **URL** in round brackets (`()`).
 	- ***Usage***  
