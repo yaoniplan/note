@@ -14,7 +14,7 @@
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
 - # Code syntax
-  On both sides of
+  On both sides of a word or phrase, add
 - # Links syntax
   Enclose the link text in square brackets (`[]`) and then follow it with the **URL** in round brackets (`()`).
 	- ***Usage***  
