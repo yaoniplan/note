@@ -15,7 +15,7 @@
 		  ![image.png](../assets/image_1667878660414_0.png)
 - # Code syntax
 	- ## 1. Code
-	  Wrap a word or phrase in backticks (==`==)
+	  Enclose words or phrases in backticks (==``==)
 		- ***Usage***  
 		  ![image.png](../assets/image_1667958824498_0.png)
 		- ***Preview***  
