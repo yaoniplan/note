@@ -18,7 +18,8 @@
 	  Wrap a word or phrase in backticks (==`==)
 		- ***Usage***  
 		  ![image.png](../assets/image_1667958824498_0.png)
-		- ***Preview***
+		- ***Preview***  
+		  ![image.png](../assets/image_1667958870285_0.png)
 - # Links syntax
   Enclose the link text in square brackets (`[]`) and then follow it with the **URL** in round brackets (`()`).
 	- ***Usage***  
