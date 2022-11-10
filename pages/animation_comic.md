@@ -1,5 +1,5 @@
 ### animation
-* DOTA：龙之血 - 04 1637 animation # End of the first season
+* DOTA：龙之血 - 06 1612 animation # End of the first season
 * 间谍过家家 第二季 - 06
 * 异世界归来的舅舅 - 07
 * 我能复制天赋 - 11
