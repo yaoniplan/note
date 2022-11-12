@@ -68,7 +68,7 @@
 * 阅读链 - 阅读交流社区 https://www.yuedu.pro/
 * 全球物流查询平台 | 17TRACK https://www.17track.net/zh-cn
 * fcitx5-android https://github.com/fcitx5-android/fcitx5-android
-* 1Password 强密码生成器 https://1password.com/zh-cn/password-generator/
+* Create a strong, secure, & random password | Password Generator | 1Password https://1password.com/password-generator/
 * 虫部落 - 让搜索更简单 https://www.chongbuluo.com
 * my i3 config https://github.com/levinit/i3wm-config
 * TheFuture书籍搜索-免费电子书搜索引擎 https://bks.thefuture.top/
