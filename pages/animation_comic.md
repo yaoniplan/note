@@ -1,5 +1,4 @@
 ### animation
-* DOTA：龙之血 - 08 2347 animation # End of the first and second season
 * 间谍过家家 第二季 - 06
 * 异世界归来的舅舅 - 07
 * 我能复制天赋 - 11
@@ -247,6 +246,7 @@
 * guard(end)
 
 ### animation
+* DOTA：龙之血 - 08 # End of the first, second and third season
 * 月光下的异世界之旅 - 12 # End of the first season
 * 力拔山河兮子唐 - 20 # End of the first season
 * 星武神诀第二季 - 40 # End of the second season
