@@ -32,3 +32,5 @@ function playRound(playerSelection, computerSelection) {
   } else {
     return "Evenly matched"
 }
+
+console.log(playerSelection)
