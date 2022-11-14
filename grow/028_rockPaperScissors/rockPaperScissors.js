@@ -18,9 +18,13 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection = "rock" && computerSelection = "Scissors") {
     return `You win! ${playerSelection} beats ${computerSelection}`
   } else if (playerSeleciton = "paper" && computerSelection = "Rock") {
-    return `You win! ${computerSelection} beats ${playerSelection}`
+    return `You win! ${playerSelection} beats ${computerSelection}`
   } else if (playerSeleciton = "paper" && computerSelection = "Scissors") {
     return `You lose! ${computerSelection} beats ${playerSelection}`
+  } else if (playerSeleciton = "scissors" && computerSelection = "Rock") {
+    return `You lose! ${computerSelection} beats ${playerSelection}`
+  } else if (playerSeleciton = "scissors" && computerSelection = "Paper") {
+    return `You win! ${playerSelection} beats ${computerSelection}`
 }
 
 function game() {
