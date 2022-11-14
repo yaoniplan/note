@@ -17,22 +17,22 @@ function playRound() {
   if (playerSelection === "rock" && computerSelection === "Rock") {
     console.log("Evenly matched!");
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
-    console.log("You lose! Paper beats rock");
+    console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
   } else if (playerSelection === "rock" && computerSelection === "Scissors") {
-    console.log("You win! Rock beats scissors");
+    console.log(`You win! ${playerSelection} beats ${computerSelection}`);
   } else if (playerSelection === "paper" && computerSelection === "Rock") {
-    console.log("You win! ${playerSelection} beats ${computerSelection}");
+    console.log(`You win! ${playerSelection} beats ${computerSelection}`);
   } else if (playerSelection === "paper" && computerSelection === "Paper") {
     console.log("Evenly matched!");
   } else if (playerSelection === "paper" && computerSelection === "Scissors") {
-    console.log("You lose! ${computerSelection} beats ${playerSelection}");
+    console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
   } else if (playerSelection === "scissors" && computerSelection === "Rock") {
-    console.log("You lose! ${computerSelection} beats ${playerSelection}");
+    console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
-    console.log("You win! ${playerSelection} beats ${computerSelection}");
+    console.log(`You win! ${playerSelection} beats ${computerSelection}`);
   } else if (playerSelection === "scissors" && computerSelection === "scissors"){
     console.log("Evenly matched!");
   }
 }
 
-console.log(playRound());
+playRound();
