@@ -30,7 +30,7 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSeleciton === "scissors" && computerSelection === "Paper") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
   } else {
-    console.log("Evenly matched"
+    console.log("Evenly matched");
 }
 
 console.log(playerSelection);
