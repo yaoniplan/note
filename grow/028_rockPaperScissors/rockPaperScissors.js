@@ -1,5 +1,6 @@
 let randomNumber = Math.floor(Math.random() * 3);
-const playerSelection
+const playerSelection = prompt("What's your selection?");
+const computerSelection = getComputerChoice();
 
 function getComputerChoice() {
   if (randomNumber === 0) {
@@ -13,4 +14,9 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
   if 
+}
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+  }
 }
