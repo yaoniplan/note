@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
     return "Evenly matched"
 }
 
+console.log(playRound(playerSelection, computerSelection));
+
 function game() {
-  for (let i = 0; i < 5; i++) {
-  }
 }
