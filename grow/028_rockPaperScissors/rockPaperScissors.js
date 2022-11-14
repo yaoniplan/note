@@ -1,4 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 3);
+const playerSelection
 
 function getComputerChoice() {
   if (randomNumber === 0) {
@@ -10,4 +11,6 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
+function playRound(playerSelection, computerSelection) {
+  if 
+}
