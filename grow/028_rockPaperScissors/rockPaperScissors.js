@@ -1,5 +1,6 @@
 let randomNumber = Math.floor(Math.random() * 3);
 const playerSelection = prompt("What's your selection? rock, paper or scissors?");
+console.log(playerSelection);
 const computerSelection = getComputerChoice();
 
 function getComputerChoice() {
@@ -11,7 +12,7 @@ function getComputerChoice() {
     console.log("Scissors");
   }
 }
-
+/*
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock" && computerSelection === "Rock") {
     console.log("Evenly matched!");
@@ -32,5 +33,4 @@ function playRound(playerSelection, computerSelection) {
   } else {
     console.log("Evenly matched");
 }
-
-console.log(playerSelection);
+*/
