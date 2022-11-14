@@ -49,6 +49,8 @@ function game() {
     playRound();
     console.log(playerScore);
     console.log(computerScore);
+    let playerScore = 0;
+    let computerScore = 0;
   }
 }
 
