@@ -1,5 +1,5 @@
 ### animation
-* JOKERGAME
+* joker game
 * 间谍过家家 第二季 - 07
 * 异世界归来的舅舅 - 07
 * 我能复制天赋 - 13
