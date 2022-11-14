@@ -13,7 +13,14 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  if 
+  if (playerSelection = "rock" && computerSelection = "Paper") {
+    return `You lose! ${computerSelection} beats ${playerSelection}`
+  } else if (playerSelection = "rock" && computerSelection = "Scissors") {
+    return `You win! ${playerSelection} beats ${computerSelection}`
+  } else if (playerSeleciton = "paper" && computerSelection = "Rock") {
+    return `You win! ${computerSelection} beats ${playerSelection}`
+  } else if (playerSeleciton = "paper" && computerSelection = "Scissors") {
+    return `You lose! ${computerSelection} beats ${playerSelection}`
 }
 
 function game() {
