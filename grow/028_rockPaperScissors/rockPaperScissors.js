@@ -1,5 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 3);
-const playerSelection = prompt("What's your selection?");
+const playerSelection = prompt("What's your selection? rock, paper or scissors?");
 const computerSelection = getComputerChoice();
 
 function getComputerChoice() {
