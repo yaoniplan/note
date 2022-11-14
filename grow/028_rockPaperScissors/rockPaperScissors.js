@@ -36,6 +36,7 @@ function playRound() {
 
 function game() {
   for (let i = 0; i < 5; i++) {
+    playerSelection = prompt("What's your selection? rock, paper or scissors?");
     playRound();
   }
 }
