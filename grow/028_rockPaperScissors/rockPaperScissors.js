@@ -47,9 +47,9 @@ function game() {
     const playerSelection = prompt("What's your selection? rock, paper or scissors?");
     const computerSelection = getComputerChoice();
     playRound();
+    console.log(playerScore);
+    console.log(computerScore);
   }
 }
 
 game();
-console.log(playerScore);
-console.log(computerScore);
