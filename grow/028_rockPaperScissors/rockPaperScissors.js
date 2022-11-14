@@ -36,7 +36,7 @@ function playRound() {
     return computerScore + 1;
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
-    rerurn playerScore + 1;
+    return playerScore + 1;
   } else {
     console.log("Evenly matched!");
   }
@@ -51,3 +51,5 @@ function game() {
 }
 
 game();
+console.log(playerScore);
+console.log(computerScore);
