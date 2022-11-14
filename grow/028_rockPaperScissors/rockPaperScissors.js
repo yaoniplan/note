@@ -33,4 +33,4 @@ function playRound(playerSelection, computerSelection) {
     return "Evenly matched"
 }
 
-console.log(playRound(playerSelection, computerSelection));
+playRound(playerSelection, computerSelection)
