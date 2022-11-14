@@ -13,7 +13,7 @@ function getComputerChoice() {
   }
 }
 
-function playRound(playerSelection, computerSelection) {
+function playRound() {
   if (playerSelection === "rock" && computerSelection === "Rock") {
     console.log("Evenly matched!");
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
@@ -35,4 +35,4 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-console.log(playRound(playerSelection, computerSelection));
+console.log(playRound());
