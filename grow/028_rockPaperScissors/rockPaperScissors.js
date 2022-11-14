@@ -1,15 +1,14 @@
 let randomNumber = Math.floor(Math.random() * 3);
 const playerSelection = prompt("What's your selection? rock, paper or scissors?");
-console.log(playerSelection);
 const computerSelection = getComputerChoice();
 
 function getComputerChoice() {
   if (randomNumber === 0) {
-    console.log("Rock");
+    return "Rock";
   } else if (randomNumber === 1) {
-    console.log("Paper");
+    return "Paper";
   } else {
-    console.log("Scissors");
+    return "Scissors";
   }
 }
 
