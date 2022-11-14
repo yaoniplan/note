@@ -1,5 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 3);
-const playerSelection;
+const playerSelection = prompt("What's your selection? rock, paper or scissors?");
 const computerSelection = getComputerChoice();
 let playerScore = 0;
 let computerScore = 0;
