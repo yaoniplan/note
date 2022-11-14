@@ -19,18 +19,24 @@ function playRound() {
     console.log("Evenly matched!");
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    return computerScore + 1;
   } else if (playerSelection === "rock" && computerSelection === "Scissors") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    return playerScore + 1;
   } else if (playerSelection === "paper" && computerSelection === "Rock") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    return playerScore + 1;
   } else if (playerSelection === "paper" && computerSelection === "Paper") {
     console.log("Evenly matched!");
   } else if (playerSelection === "paper" && computerSelection === "Scissors") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    return computerScore + 1;
   } else if (playerSelection === "scissors" && computerSelection === "Rock") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    return computerScore + 1;
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    rerurn playerScore + 1;
   } else {
     console.log("Evenly matched!");
   }
