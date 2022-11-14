@@ -15,22 +15,31 @@ function getComputerChoice() {
 function playRound() {
   if (playerSelection === "rock" && computerSelection === "Rock") {
     console.log("Evenly matched!");
+    break;
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    break;
   } else if (playerSelection === "rock" && computerSelection === "Scissors") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    break;
   } else if (playerSelection === "paper" && computerSelection === "Rock") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    break;
   } else if (playerSelection === "paper" && computerSelection === "Paper") {
     console.log("Evenly matched!");
+    break;
   } else if (playerSelection === "paper" && computerSelection === "Scissors") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    break;
   } else if (playerSelection === "scissors" && computerSelection === "Rock") {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+    break;
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+    break;
   } else {
     console.log("Evenly matched!");
+    break;
   }
 }
 
