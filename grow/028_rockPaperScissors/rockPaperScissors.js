@@ -7,11 +7,11 @@ console.log(computerSelection);
 
 function getComputerChoice() {
   if (randomNumber === 0) {
-    console.log("Rock");
+    return "Rock";
   } else if (randomNumber === 1) {
-    console.log("Paper");
+    return "Paper";
   } else {
-    console.log("Scissors");
+    return "Scissors";
   }
 }
 
@@ -43,4 +43,4 @@ function game() {
   }
 }
 */
-// playRound();
+playRound();
