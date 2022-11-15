@@ -31,7 +31,7 @@ function playRound() {
     console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     console.log(`You win! ${playerSelection} beats ${computerSelection}`);
-  } else {
+  } else if (playerSelection === "scissors") && computerSelection === "Scissors"{
     console.log("Evenly matched!");
   }
 }
