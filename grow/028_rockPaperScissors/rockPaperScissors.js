@@ -10,7 +10,7 @@ function getComputerChoice() {
 }
 
 // References: https://stackoverflow.com/questions/71856095/am-i-on-the-right-track-rock-paper-scissors-javascript
-function playRound(palyerSelection, computerSelection) {
+function playRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return 0;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
