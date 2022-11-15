@@ -31,10 +31,20 @@ function playRound(playerSelection, computerSelection) {
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
 
+// References: https://stackoverflow.com/questions/52404412/rock-paper-scissors-game-repeating-for-5-rounds
 for (let i = 0; i < 5; i++) {
   let playerSelection = prompt("What's your selection? rock, paper or scissors?");
   let computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
   console.log(`playerScore: ${playerScore}`);
   console.log(`computerScore: ${computerScore}`);
+  if (i === 4) {
+    if (playerScore === computerScore) {
+      return `Draw!`
+    } else if (playerScore > computerScore) {
+      return `You win!`
+    } else {
+      return `You lose!`
+    }
+  }
 }
