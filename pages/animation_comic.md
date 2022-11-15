@@ -16,7 +16,6 @@
 * 逆天至尊 - 53/145
 * 七界第一仙 - 79
 * 冰火魔厨 - 04/50
-* 史上最强男主角 - 48
 * 吞噬星空 - 60
 * 我靠充值当武帝 - 43
 * 仙武苍穹 - 43
@@ -248,6 +247,7 @@
 * guard(end)
 
 ### animation
+* 史上最强男主角 - 48 # End of the first season
 * DOTA：龙之血 - 08 # End of the first, second and third season
 * 月光下的异世界之旅 - 12 # End of the first season
 * 力拔山河兮子唐 - 20 # End of the first season
