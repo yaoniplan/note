@@ -1,4 +1,4 @@
-function computerChoice() {
+function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
     return "rock";
@@ -34,7 +34,7 @@ let computerScore = parseInt(0);
 // References: https://stackoverflow.com/questions/52404412/rock-paper-scissors-game-repeating-for-5-rounds
 for (let i = 0; i < 5; i++) {
   let playerSelection = prompt("What's your selection? rock, paper or scissors?");
-  let computerSelection = computerChoice();
+  let computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
   console.log(`playerScore: ${playerScore}`);
   console.log(`computerScore: ${computerScore}`);
