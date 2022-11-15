@@ -26,6 +26,7 @@ function playRound(palyerSelection, computerSelection) {
 
 let playerScore = parseInt(0);
 let computerScore = parseInt(0);
-const playerSelection = prompt("What's your selection? rock, paper or scissors?");
-const computerSelection = getComputerChoice();
+let playerSelection = prompt("What's your selection? rock, paper or scissors?");
+let computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection))
 console.log(playRound(playerSelection, computerSelection))
