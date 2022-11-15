@@ -15,10 +15,8 @@ function getComputerChoice() {
 }
 
 function playRound(palyerSelection, computerSelection) {
-  playerSelection
-  computerSelection
-  if (playerSelection === "rock" && computerSelection === "Rock") {
-    return "Evenly matched!";
+  if (playerSelection === computerSelection) {
+    return `Draw! you all play ${playerSelection}`;
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
     return `You lose! ${computerSelection} beats ${playerSelection}`);
     computerScore += 1;
@@ -28,8 +26,6 @@ function playRound(palyerSelection, computerSelection) {
   } else if (playerSelection === "paper" && computerSelection === "Rock") {
     return `You win! ${playerSelection} beats ${computerSelection}`);
     playerScore += 1;
-  } else if (playerSelection === "paper" && computerSelection === "Paper") {
-    return "Evenly matched!");
   } else if (playerSelection === "paper" && computerSelection === "Scissors") {
     return `You lose! ${computerSelection} beats ${playerSelection}`);
     computerScore += 1;
@@ -39,8 +35,6 @@ function playRound(palyerSelection, computerSelection) {
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     return `You win! ${playerSelection} beats ${computerSelection}`);
     playerScore += 1;
-  } else if (playerSelection === "scissors" && computerSelection === "Scissors") {
-    return "Evenly matched!");
   }
 }
 /*
