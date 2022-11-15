@@ -3,6 +3,7 @@ const playerSelection = prompt("What's your selection? rock, paper or scissors?"
 const computerSelection = getComputerChoice();
 let playerScore = 0;
 let computerScore = 0;
+console.log(computerSelection);
 
 function getComputerChoice() {
   if (randomNumber === 0) {
