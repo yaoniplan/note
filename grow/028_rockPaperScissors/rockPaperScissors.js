@@ -13,28 +13,24 @@ function getComputerChoice() {
     return "Scissors";
   }
 }
-
+// References: https://stackoverflow.com/questions/71856095/am-i-on-the-right-track-rock-paper-scissors-javascript
 function playRound(palyerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return `Draw! you all play ${playerSelection}`;
   } else if (playerSelection === "rock" && computerSelection === "Paper") {
     return `You lose! ${computerSelection} beats ${playerSelection}`);
-    computerScore += 1;
   } else if (playerSelection === "rock" && computerSelection === "Scissors") {
     return `You win! ${playerSelection} beats ${computerSelection}`);
-    playerScore += 1;
   } else if (playerSelection === "paper" && computerSelection === "Rock") {
     return `You win! ${playerSelection} beats ${computerSelection}`);
-    playerScore += 1;
   } else if (playerSelection === "paper" && computerSelection === "Scissors") {
     return `You lose! ${computerSelection} beats ${playerSelection}`);
-    computerScore += 1;
   } else if (playerSelection === "scissors" && computerSelection === "Rock") {
     return `You lose! ${computerSelection} beats ${playerSelection}`);
-    computerScore += 1;
   } else if (playerSelection === "scissors" && computerSelection === "Paper") {
     return `You win! ${playerSelection} beats ${computerSelection}`);
-    playerScore += 1;
+  } else {
+    return `You lose! ${computerSelection} beats ${playerSelection}`;
   }
 }
 /*
