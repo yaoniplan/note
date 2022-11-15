@@ -40,11 +40,11 @@ for (let i = 0; i < 5; i++) {
   console.log(`computerScore: ${computerScore}`);
   if (i === 4) {
     if (playerScore === computerScore) {
-      return 'Draw!';
+      console.log('Draw!');
     } else if (playerScore > computerScore) {
-      return 'You win!';
+      console.log('You win!');
     } else {
-      return 'You lose!';
+      console.log('You lose!');
     }
   }
 }
