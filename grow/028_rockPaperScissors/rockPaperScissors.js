@@ -35,13 +35,11 @@ function playRound() {
     console.log("Evenly matched!");
   }
 }
-
+/*
 function game() {
   for (let i = 0; i < 5; i++) {
     playRound();
   }
 }
-
-game();
-console.log(playerScore);
-console.log(computerScore);
+*/
+playRound();
