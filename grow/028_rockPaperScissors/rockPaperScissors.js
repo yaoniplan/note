@@ -44,10 +44,10 @@ function playRound() {
 
 function game() {
   for (let i = 0; i < 5; i++) {
-    const playerSelection = prompt("What's your selection? rock, paper or scissors?");
-    const computerSelection = getComputerChoice();
     playRound();
   }
 }
 
 game();
+console.log(playerScore);
+console.log(computerScore);
