@@ -12,15 +12,15 @@ function getComputerChoice() {
 // References: https://stackoverflow.com/questions/71856095/am-i-on-the-right-track-rock-paper-scissors-javascript
 function playRound(palyerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
-    return `Draw! you all play ${playerSelection}`;
+    return 0;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
-    return `You win! rock beats scissors`;
+    return 1;
   } else if (playerSelection === "paper" && computerSelection === "rock") {
-    return `You win! paper beats rock`;
+    return 1;
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
-    return `You win! scissors beats paper`;
+    return 1;
   } else {
-    return `You lose! ${computerSelection} beats ${playerSelection}`;
+    return -1;
   }
 }
 
