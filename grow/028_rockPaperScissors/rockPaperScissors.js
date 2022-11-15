@@ -51,6 +51,6 @@ function game() {
 playRound(playerSelection, computerSelection);
 console.log(computerScore);
 console.log(playerScore);
-playRound();
+playRound(playerSelection, computerSelection);
 console.log(computerScore);
 console.log(playerScore);
