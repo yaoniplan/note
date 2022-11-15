@@ -1,11 +1,11 @@
 function getComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
-    return "Rock";
+    return "rock";
   } else if (randomNumber === 1) {
-    return "Paper";
+    return "paper";
   } else {
-    return "Scissors";
+    return "scissors";
   }
 }
 
@@ -14,11 +14,11 @@ function playRound(palyerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
     return `Draw! you all play ${playerSelection}`;
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
-    return `You win! rock beats scissors`);
+    return `You win! rock beats scissors`;
   } else if (playerSelection === "paper" && computerSelection === "rock") {
-    return `You win! paper beats rock`);
+    return `You win! paper beats rock`;
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
-    return `You win! scissors beats paper`);
+    return `You win! scissors beats paper`;
   } else {
     return `You lose! ${computerSelection} beats ${playerSelection}`;
   }
