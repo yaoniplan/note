@@ -1232,6 +1232,7 @@ exec i3-config-wizard
 #
 ```
 
+<!-- Backup at 2022-10-18 -->
 <!--
 - # 基本概念  
   ![操作系统在整个计算机系统的角色](https://doc.shiyanlou.com/linux_base/1-1.png "操作系统在整个计算机系统的角色")
