@@ -22,16 +22,15 @@ export no_proxy="localhost, 127.0.0.1"
 #    - ▇ Block
 #    - _ Underline
 #    - | Beam
-
 cursor:
   style:
-    shape: Beam
+    shape: Beam 
     blinking: Always
   blink_interval: 160
 
   vi_mode_style:
     shape: Beam
-  thickness: 0.16
+  thickness: 0.15
 ```
 
 ## gentoo_x11-wm_i3-gaps_config
