@@ -300,7 +300,7 @@
   :block/updated-at 1668501597509}
  {:block/name "nov 16th, 2022",
   :block/created-at 1668561682427,
-  :block/updated-at 1668563440091}
+  :block/updated-at 1668563511442}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
@@ -545,8 +545,8 @@
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
  {:block/name "terminal",
-  :block/created-at 1668562804422,
-  :block/updated-at 1668562804422}
+  :block/created-at 1668563511440,
+  :block/updated-at 1668563511440}
  {:block/name "todo",
   :block/created-at 1658858141730,
   :block/updated-at 1658858141730}
