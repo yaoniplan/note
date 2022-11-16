@@ -19,14 +19,19 @@ export no_proxy="localhost, 127.0.0.1"
 ```
 # "~/.config/alacritty/alacritty.yml"
 
+# Values for `shape`:
+#    - ▇ Block
+#    - _ Underline
+#    - | Beam
+
 cursor:
   style:
-    shape: Underline
+    shape: Beam
     blinking: Always
   blink_interval: 160
 
   vi_mode_style:
-    shape: Underline
+    shape: Beam
   thickness: 0.16
 ```
 
