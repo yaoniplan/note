@@ -18,7 +18,6 @@ export no_proxy="localhost, 127.0.0.1"
 ## gentoo_x11-terms_alacritty.yml
 ```
 # "~/.config/alacritty/alacritty.yml"
-
 # Values for `shape`:
 #    - ▇ Block
 #    - _ Underline
