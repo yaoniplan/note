@@ -2,8 +2,8 @@
   :block/created-at 1661347317061,
   :block/updated-at 1661347317061}
  {:block/name "2",
-  :block/created-at 1668471557842,
-  :block/updated-at 1668471557842}
+  :block/created-at 1668561687148,
+  :block/updated-at 1668561687148}
  {:block/name "69c70d17-e030-491a-976a-d57da21160b2",
   :block/created-at 1658856997341,
   :block/updated-at 1658856997341}
@@ -13,6 +13,9 @@
  {:block/name "abbreviation",
   :block/created-at 1667435254093,
   :block/updated-at 1667435254093}
+ {:block/name "alacritty",
+  :block/created-at 1668562811132,
+  :block/updated-at 1668562811132}
  {:block/name "animation_comic",
   :block/created-at 1667435259008,
   :block/updated-at 1667435259008}
@@ -295,6 +298,9 @@
  {:block/name "nov 15th, 2022",
   :block/created-at 1668471552778,
   :block/updated-at 1668501597509}
+ {:block/name "nov 16th, 2022",
+  :block/created-at 1668561682427,
+  :block/updated-at 1668562849767}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
@@ -538,6 +544,9 @@
  {:block/name "teambition",
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
+ {:block/name "terminal",
+  :block/created-at 1668562804422,
+  :block/updated-at 1668562804422}
  {:block/name "todo",
   :block/created-at 1658858141730,
   :block/updated-at 1658858141730}
