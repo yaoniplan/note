@@ -1,4 +1,5 @@
 ### animation
+* 百炼成神
 * B: The Beginning / B：彼之初
 * joker game / 鬼牌游戏
 * 间谍过家家 第二季 - 07
