@@ -2,8 +2,8 @@
   :block/created-at 1661347317061,
   :block/updated-at 1661347317061}
  {:block/name "2",
-  :block/created-at 1668647045735,
-  :block/updated-at 1668647045735}
+  :block/created-at 1668670505382,
+  :block/updated-at 1668670505382}
  {:block/name "69c70d17-e030-491a-976a-d57da21160b2",
   :block/created-at 1658856997341,
   :block/updated-at 1658856997341}
@@ -133,6 +133,9 @@
  {:block/name "card",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "chmod",
+  :block/created-at 1668670995940,
+  :block/updated-at 1668670995940}
  {:block/name "chrome",
   :block/created-at 1658856998052,
   :block/updated-at 1658856998052}
@@ -306,7 +309,7 @@
   :block/updated-at 1668600085026}
  {:block/name "nov 17th, 2022",
   :block/created-at 1668647034764,
-  :block/updated-at 1668658628645}
+  :block/updated-at 1668671090336}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
