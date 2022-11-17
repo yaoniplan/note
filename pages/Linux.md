@@ -124,6 +124,9 @@ bindsym Print exec flameshot gui
 exec --no-startup-id pulseaudio
 
 # Brightness ("/sys/class" "backlight" "radeon" "brightness")
+
+# Git automatically
+exec ~/note/.github/autoGit.sh
 ```
 
 ## gentoo_x11-wm_i3-gaps_config_example
