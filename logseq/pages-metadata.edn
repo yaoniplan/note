@@ -157,6 +157,9 @@
  {:block/name "dwm",
   :block/created-at 1660638517949,
   :block/updated-at 1660638517949}
+ {:block/name "emulation",
+  :block/created-at 1668658628642,
+  :block/updated-at 1668658628642}
  {:block/name "english",
   :block/created-at 1667435255044,
   :block/updated-at 1667435255044}
@@ -303,7 +306,7 @@
   :block/updated-at 1668600085026}
  {:block/name "nov 17th, 2022",
   :block/created-at 1668647034764,
-  :block/updated-at 1668656155202}
+  :block/updated-at 1668658628645}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
@@ -418,6 +421,9 @@
  {:block/name "python",
   :block/created-at 1660638517961,
   :block/updated-at 1660638517961}
+ {:block/name "qemu",
+  :block/created-at 1668658374281,
+  :block/updated-at 1668658374281}
  {:block/name "quote",
   :block/created-at 1658856997590,
   :block/updated-at 1658856997590}
