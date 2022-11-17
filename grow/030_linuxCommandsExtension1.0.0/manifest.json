@@ -1,0 +1,7 @@
+{
+"manifest_version":3,
+"name":"Linux Commands",
+"description":"View commands easily as you browse the web.",
+"version":"1.0.0",
+"action":{"default_popup":"popup.html", "default_icon":{"16":"icons/16.png"}, "32":"icons/32.png"}
+}
