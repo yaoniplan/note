@@ -303,7 +303,7 @@
   :block/updated-at 1668600085026}
  {:block/name "nov 17th, 2022",
   :block/created-at 1668647034764,
-  :block/updated-at 1668654321173}
+  :block/updated-at 1668656155202}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
@@ -589,6 +589,9 @@
  {:block/name "wallpaper",
   :block/created-at 1661426946084,
   :block/updated-at 1661426946084}
+ {:block/name "wayland",
+  :block/created-at 1668656155198,
+  :block/updated-at 1668656155198}
  {:block/name "wm",
   :block/created-at 1661092000677,
   :block/updated-at 1661092000677}
