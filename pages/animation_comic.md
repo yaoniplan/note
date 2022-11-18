@@ -26,8 +26,7 @@
 * 斗破苍穹年番 - 18
 * 星源之主 - 35
 * 绝世武魂 - 219
-* 万古神话 - 31 animation
-* 战千年第一季 - 16
+* 万古神话 - 31
 * 龙族 - 13
 * 星河至尊 - 104
 * 绝代双骄 - 07
@@ -248,6 +247,7 @@
 * guard(end)
 
 ### animation
+* 战千年第一季 - 16 # End of the first season
 * 史上最强男主角 - 48 # End of the first season
 * DOTA：龙之血 - 08 # End of the first, second and third season
 * 月光下的异世界之旅 - 12 # End of the first season
