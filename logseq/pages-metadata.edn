@@ -433,9 +433,6 @@
  {:block/name "quote",
   :block/created-at 1658856997590,
   :block/updated-at 1658856997590}
- {:block/name "readme",
-  :block/created-at 1659923140716,
-  :block/updated-at 1659923140716}
  {:block/name "redshift",
   :block/created-at 1661426946077,
   :block/updated-at 1661426946077}
