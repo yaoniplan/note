@@ -8,6 +8,7 @@
 * 学校需要-考生体检公众服务 https://tj1.jxeea.cn:82/#/login
 
 ## website
+* SearXNG on ebnar https://searx.ebnar.xyz/
 * Download Youtube music, download mp3 from Youtube online - SnapInsta https://snapinsta.io/en/convert-youtube-mp3
 * V2EX https://v2ex.com/
 * Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
