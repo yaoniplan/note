@@ -1,6 +1,6 @@
 ### animation
 * 百炼成神 04
-* B: The Beginning / B：彼之初 04 animation
+* B: The Beginning / B：彼之初 06 0601 animation
 * joker game / 鬼牌游戏
 * 间谍过家家 第二季 - 07
 * 异世界归来的舅舅 - 07
