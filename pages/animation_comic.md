@@ -1,6 +1,5 @@
 ### animation
 * 百炼成神 04
-* B: The Beginning / B：彼之初 12 0237
 * joker game / 鬼牌游戏
 * 间谍过家家 第二季 - 07
 * 异世界归来的舅舅 - 07
@@ -247,6 +246,7 @@
 * guard(end)
 
 ### animation
+* B: The Beginning / B：彼之初 12 # End of the first season
 * 战千年第一季 - 16 # End of the first season
 * 史上最强男主角 - 48 # End of the first season
 * DOTA：龙之血 - 08 # End of the first, second and third season
