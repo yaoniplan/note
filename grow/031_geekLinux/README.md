@@ -527,6 +527,28 @@ sudo emerge --ask x11-misc/dmenu
 ```
 
 # References
+```
+yaoniplan@yaoniplan ~ $ screenfetch
+         -/oyddmdhs+:.                yaoniplan@yaoniplan
+     -odNMMMMMMMMNNmhy+-`             OS: Gentoo 2.9
+   -yNMMMMMMMMMMMNNNmmdhy+-           Kernel: x86_64 Linux 6.0.9-gentoo
+ `omMMMMMMMMMMMMNmdmmmmddhhy/`        Uptime: 0m
+ omMMMMMMMMMMMNhhyyyohmdddhhhdo`      Packages: 648
+.ydMMMMMMMMMMdhs++so/smdddhhhhdm+`    Shell: bash 5.1.16
+ oyhdmNMMMMMMMNdyooydmddddhhhhyhNd.   Resolution: 1366x768
+  :oyhhdNNMMMMMMMNNNmmdddhhhhhyymMh   WM: i3
+    .:+sydNMMMMMNNNmmmdddhhhhhhmMmy   GTK Theme: Adwaita [GTK3]
+       /mMMMMMMNNNmmmdddhhhhhmMNhs:   Disk: 17G / 196G (9%)
+    `oNMMMMMMMNNNmmmddddhhdmMNhs+`    CPU: Intel Core i5-3230M @ 4x 3.2GHz
+  `sNMMMMMMMMNNNmmmdddddmNMmhs/.      GPU: AMD/ATI Seymour [Radeon HD 6400M/7400M Series]
+ /NMMMMMMMMNNNNmmmdddmNMNdso:`        RAM: 1432MiB / 11857MiB
++MMMMMMMNNNNNmmmmdmNMNdso/-
+yMMNNNNNNNmmmmmNNMmhs+/-`
+/hMMNNNNNNNNMNdhs++/-`
+`/ohdmmddhys+++/:.`
+  `-//////:--.
+yaoniplan@yaoniplan ~ $
+```
 * https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation
 * https://mirrors.ustc.edu.cn/help/gentoo-portage.html
 * https://blog.yangmame.org/Gentoo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
