@@ -1,6 +1,5 @@
 ### animation
 * 百炼成神 04
-* joker game / 鬼牌游戏 - 06 0212 animation
 * 间谍过家家 第二季 - 07
 * 异世界归来的舅舅 - 07
 * 我能复制天赋 - 13
@@ -246,6 +245,7 @@
 * guard(end)
 
 ### animation
+* joker game / 鬼牌游戏 - 12 # End of the first season
 * B: The Beginning / B：彼之初 - 12 # End of the first season
 * 战千年第一季 - 16 # End of the first season
 * 史上最强男主角 - 48 # End of the first season
