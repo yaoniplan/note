@@ -125,19 +125,21 @@ sync-type = rsync
 sync-uri = rsync://rsync.mirrors.ustc.edu.cn/gentoo-portage/
 auto-sync = yes
 ```
-### Configure Gentoo-zh ebuild repository(Optional)
-#```
-#vim /mnt/gentoo/etc/portage/repos.conf/lyman.conf
-#mkdir -p /var/lib/layman/gentoo-zh
-#```
-#### References
-#```
-#[gentoo-zh]
-#location = /var/lib/layman/gentoo-zh
-#sync-type = git
-#sync-uri = https://github.com/microcai/gentoo-zh.git
-#auto-sync = yes
-#```
+## Configure Gentoo-zh ebuild repository(Optional)
+```
+
+vim /mnt/gentoo/etc/portage/repos.conf/lyman.conf
+mkdir -p /var/lib/layman/gentoo-zh
+```
+### References
+```
+[gentoo-zh]
+location = /var/lib/layman/gentoo-zh
+sync-type = git
+sync-uri = https://github.com/microcai/gentoo-zh.git
+auto-sync = yes
+
+```
 ## Copy DNS info
 ```
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
