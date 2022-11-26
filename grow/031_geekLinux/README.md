@@ -553,3 +553,5 @@ yaoniplan@yaoniplan ~ $
 * https://mirrors.ustc.edu.cn/help/gentoo-portage.html
 * https://blog.yangmame.org/Gentoo%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.html
 * https://www.bilibili.com/video/BV1ny4y1i7G6?p=2
+* [I3wm 配置思路 ｜ 千玄洞](https://zjuyk.gitlab.io/posts/i3wm-config/)
+* [介绍 - i3wm 用户说明书](https://zjuyk.site/i3wm-userguide-zh/)
