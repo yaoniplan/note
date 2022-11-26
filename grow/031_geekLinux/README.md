@@ -127,7 +127,6 @@ auto-sync = yes
 ```
 ## Configure Gentoo-zh ebuild repository(Optional)
 ```
-
 vim /mnt/gentoo/etc/portage/repos.conf/lyman.conf
 mkdir -p /var/lib/layman/gentoo-zh
 ```
@@ -138,7 +137,6 @@ location = /var/lib/layman/gentoo-zh
 sync-type = git
 sync-uri = https://github.com/microcai/gentoo-zh.git
 auto-sync = yes
-
 ```
 ## Copy DNS info
 ```
