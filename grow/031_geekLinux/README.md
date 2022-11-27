@@ -436,62 +436,6 @@ yaoniplan ALL=(ALL:ALL) ALL
 ## Notes
 * `echo "complete -cf sudo" >> /home/yaoniplan/.bashrc` # Configure bash completion, replace "yaoniplan" with your username
 
-## Configure Wayland
-```
-sudo emerge --ask dev-libs/wayland
-sudo vim /etc/portage/make.conf
-sudo emerge --ask --verbose --update --deep --newuse @world
-```
-### References
-```
-USE="wayland"
-```
-## Configure SwayWM
-```
-sudo emerge --ask gui-wm/sway
-mkdir -p ~/.config/sway/
-cp /etc/sway/config ~/.config/sway/
-sudo vim /home/yaoniplan/.bash_profile
-sudo vim /usr/sbin/sway_luncher
-XDG_RUNTIME_DIR=/run/usr/1000 sway
-```
-### References
-```
-#!/bin/bash
-if test -z "${XDG_RUNTIME_DIR}"; then
-    export XDG_RUNTIME_DIR=/tmp/${UID}-runtime-dir
-    if ! test -d "${XDG_RUNTIME_DIR}"; then
-        mkdir "${XDG_RUNTIME_DIR}"
-        chmod 0700 "${XDG_RUNTIME_DIR}"
-    fi
-fi
-```
-### Notes
-* `dbus-run-session sway` # Execute sway
-## Configure Alacritty
-```
-sudo emerge --ask alacritty
-mkdir -p ~/.config/alacritty
-sudo vim ~/.config/alacritty/alacritty.yml
-sudo env-update && source /etc/profile
-```
-### References
-```
-# Values for `shape`:
-#    - ▇ Block
-#    - _ Underline
-#    - | Beam
-cursor:
-  style:
-    shape: Beam
-    blinking: Always
-  blink_interval: 160
-
-  vi_mode_style:
-    shape: Beam
-  thickness: 0.15
-```
-
 # WM
 ```
 sudo emerge --ask xorg-server
