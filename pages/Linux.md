@@ -41,11 +41,6 @@ cursor:
 # Mod1 is "alt" (you can view the modifier keys by typing "xmodmap" in terminal if you had downloaded "xmodmap")
 set $mod Mod1
 
-# Audio_PulseAudio (F10 is "+10%", F9 is "-10%", F11 is "mute" in my laptop)
-bindsym $mod+F10 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym $mod+F9 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym $mod+F11 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-
 # terminal (e.g. alacritty, fish, ,kitty, st, etc.)
 bindsym $mod+Return exec alacritty
 
@@ -120,9 +115,6 @@ for_window [class="^Logseq$"] move scratchpad
 # Screenshot (install "media-gfx/flameshot")
 bindsym Print exec flameshot gui
  
-# Audio
-exec --no-startup-id pulseaudio
-
 # Brightness ("/sys/class" "backlight" "radeon" "brightness")
 
 # Git automatically
