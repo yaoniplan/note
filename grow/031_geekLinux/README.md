@@ -491,18 +491,6 @@ cursor:
     shape: Beam
   thickness: 0.15
 ```
-## Configure google-chrome
-```
-sudo emerge --ask www-client/google-chrome
-sudo vim ~/.config/sway/config
-```
-### References
-```
-# www-client/google-chrom
-assign [class="^Google-chrome$"] number 1
-exec google-chrome-stable -enable-features=UseOzonePlatform -ozone-platform=wayland
-```
-* https://wiki.gentoo.org/wiki/Wayland
 
 # WM
 ```
