@@ -522,7 +522,6 @@ exec i3
 sudo emerge --ask redshift
 sudo emerge --ask flameshot
 sudo emerge --ask feh
-sudo emerge --ask pulseaudio
 sudo emerge --ask x11-misc/dmenu
 ```
 
