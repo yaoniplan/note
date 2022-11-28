@@ -11,7 +11,6 @@
 * 武神主宰 - 192/285
 * 独步逍遥 - 168/263
 * 完美世界 - 38/86
-* 妖神记 - 191/276
 * 逆天至尊 - 53/145
 * 七界第一仙 - 79
 * 冰火魔厨 - 04/50
@@ -245,6 +244,7 @@
 * guard(end)
 
 ### animation
+* 妖神记 - 191/276 # End of the fifth season
 * joker game / 鬼牌游戏 - 12 # End of the first season
 * B: The Beginning / B：彼之初 - 12 # End of the first season
 * 战千年第一季 - 16 # End of the first season
