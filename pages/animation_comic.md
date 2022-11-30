@@ -24,7 +24,6 @@
 * 星源之主 - 38
 * 绝世武魂 - 222
 * 万古神话 - 34
-* 龙族 - 16
 * 星河至尊 - 108
 * 绝代双骄 - 09
 * 万古剑神 - 09
@@ -244,6 +243,7 @@
 * guard(end)
 
 ### animation
+* 龙族 - 16 # End of the first season
 * 妖神记 - 191/276 # End of the fifth season
 * joker game / 鬼牌游戏 - 12 # End of the first season
 * B: The Beginning / B：彼之初 - 12 # End of the first season
