@@ -4,12 +4,6 @@
  {:block/name "69c70d17-e030-491a-976a-d57da21160b2",
   :block/created-at 1658856997341,
   :block/updated-at 1658856997341}
- {:block/name "[gentoo-zh]",
-  :block/created-at 1669346448700,
-  :block/updated-at 1669346448700}
- {:block/name "```",
-  :block/created-at 1669346448682,
-  :block/updated-at 1669346448682}
  {:block/name "a",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -22,6 +16,9 @@
  {:block/name "animation_comic",
   :block/created-at 1667435259008,
   :block/updated-at 1667435259008}
+ {:block/name "application",
+  :block/created-at 1670309566403,
+  :block/updated-at 1670309566403}
  {:block/name "arch",
   :block/created-at 1661092000667,
   :block/updated-at 1661092000667}
@@ -109,9 +106,6 @@
  {:block/name "aug 8th, 2022",
   :block/created-at 1659923142740,
   :block/updated-at 1659923142740}
- {:block/name "auto-sync",
-  :block/created-at 1669346448685,
-  :block/updated-at 1669346448685}
  {:block/name "b",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -130,12 +124,6 @@
  {:block/name "c",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
- {:block/name "canceled",
-  :block/created-at 1658858141729,
-  :block/updated-at 1658858141729}
- {:block/name "cancelled",
-  :block/created-at 1658858141729,
-  :block/updated-at 1658858141729}
  {:block/name "card",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -145,6 +133,12 @@
  {:block/name "chrome",
   :block/created-at 1658856998052,
   :block/updated-at 1658856998052}
+ {:block/name "cli",
+  :block/created-at 1670309565793,
+  :block/updated-at 1670309565793}
+ {:block/name "command",
+  :block/created-at 1670309566386,
+  :block/updated-at 1670309566386}
  {:block/name "computer",
   :block/created-at 1667435255068,
   :block/updated-at 1667435255068}
@@ -157,6 +151,24 @@
  {:block/name "css",
   :block/created-at 1668814999797,
   :block/updated-at 1668814999797}
+ {:block/name "dec 2nd, 2022",
+  :block/created-at 1670309567148,
+  :block/updated-at 1670309567148}
+ {:block/name "dec 3rd, 2022",
+  :block/created-at 1670309567336,
+  :block/updated-at 1670309567336}
+ {:block/name "dec 4th, 2022",
+  :block/created-at 1670309567424,
+  :block/updated-at 1670309567424}
+ {:block/name "dec 5th, 2022",
+  :block/created-at 1670309567594,
+  :block/updated-at 1670309567594}
+ {:block/name "dec 6th, 2022",
+  :block/created-at 1670309567709,
+  :block/updated-at 1670309567709}
+ {:block/name "dm",
+  :block/created-at 1670309566053,
+  :block/updated-at 1670309566053}
  {:block/name "doing",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -175,6 +187,9 @@
  {:block/name "exit",
   :block/created-at 1661426945326,
   :block/updated-at 1661426945326}
+ {:block/name "extensions",
+  :block/created-at 1670309567558,
+  :block/updated-at 1670309567558}
  {:block/name "favorites",
   :block/created-at 1658858141728,
   :block/updated-at 1658858141728}
@@ -208,6 +223,12 @@
  {:block/name "google",
   :block/created-at 1658856998053,
   :block/updated-at 1658856998053}
+ {:block/name "google translate",
+  :block/created-at 1670309567567,
+  :block/updated-at 1670309567567}
+ {:block/name "gtk",
+  :block/created-at 1670309566410,
+  :block/updated-at 1670309566410}
  {:block/name "gzip",
   :block/created-at 1660958245916,
   :block/updated-at 1660958245916}
@@ -286,9 +307,9 @@
  {:block/name "linux",
   :block/created-at 1668568717633,
   :block/updated-at 1668568717633}
- {:block/name "location",
-  :block/created-at 1669346448696,
-  :block/updated-at 1669346448696}
+ {:block/name "linuxn",
+  :block/created-at 1670309566413,
+  :block/updated-at 1670309566413}
  {:block/name "logseq",
   :block/created-at 1658856997605,
   :block/updated-at 1660009850592}
@@ -304,9 +325,6 @@
  {:block/name "math",
   :block/created-at 1660778413821,
   :block/updated-at 1660778413821}
- {:block/name "mkdir",
-  :block/created-at 1669346448672,
-  :block/updated-at 1669346448672}
  {:block/name "notion",
   :block/created-at 1658856998047,
   :block/updated-at 1658856998047}
@@ -325,6 +343,18 @@
  {:block/name "nov 25th, 2022",
   :block/created-at 1669346292781,
   :block/updated-at 1669346292781}
+ {:block/name "nov 26th, 2022",
+  :block/created-at 1670309566070,
+  :block/updated-at 1670309566070}
+ {:block/name "nov 27th, 2022",
+  :block/created-at 1670309566451,
+  :block/updated-at 1670309566451}
+ {:block/name "nov 28th, 2022",
+  :block/created-at 1670309566845,
+  :block/updated-at 1670309566845}
+ {:block/name "nov 30th, 2022",
+  :block/created-at 1670309566995,
+  :block/updated-at 1670309566995}
  {:block/name "nov 3rd, 2022",
   :block/created-at 1667435252565,
   :block/updated-at 1667689833428}
@@ -442,6 +472,9 @@
  {:block/name "qemu",
   :block/created-at 1668658374281,
   :block/updated-at 1668658374281}
+ {:block/name "qt",
+  :block/created-at 1670309566396,
+  :block/updated-at 1670309566396}
  {:block/name "quote",
   :block/created-at 1658856997590,
   :block/updated-at 1658856997590}
@@ -568,18 +601,15 @@
  {:block/name "sync",
   :block/created-at 1660144262339,
   :block/updated-at 1660144262339}
- {:block/name "sync-type",
-  :block/created-at 1669346448694,
-  :block/updated-at 1669346448694}
- {:block/name "sync-uri",
-  :block/created-at 1669346448688,
-  :block/updated-at 1669346448688}
  {:block/name "teambition",
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
  {:block/name "terminal",
   :block/created-at 1668563511440,
   :block/updated-at 1668563511440}
+ {:block/name "theme",
+  :block/created-at 1670309566408,
+  :block/updated-at 1670309566408}
  {:block/name "todo",
   :block/created-at 1658858141730,
   :block/updated-at 1658858141730}
