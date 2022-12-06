@@ -205,6 +205,5 @@
  ;; ignore #+keyword: for parsing page references in orgmode
  ;; :ignored-page-references-keywords #{"author" "startup"}
 
- ;; Enable grammar
  :enable-grammarly? true
  }
