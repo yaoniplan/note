@@ -58,7 +58,7 @@
 		  |[[markdown]]语法|高亮|表格或代码语法|
 		-
 - # 知识管理工具
-	- [[logseq]]
+	- [[Logseq]]
 	- notion
 	- flomo
 	- mubu
