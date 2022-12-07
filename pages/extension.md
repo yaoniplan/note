@@ -1,1 +1,1 @@
-- alias
+alias:: extensions
