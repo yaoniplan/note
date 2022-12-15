@@ -1,6 +1,3 @@
-## color
-* honeydew
-
 ## website
 * Interactive Vim tutorial https://www.openvim.com/tutorial.html
 * MP4 to GIF - online-convert.com https://image.online-convert.com/convert/mp4-to-gif

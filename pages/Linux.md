@@ -89,14 +89,12 @@ bar {
 # Redshift (install "x11-misc/redshift")
 exec --no-startup-id redshift -O 1800
  
-# Gaps (install "x11-wm/i3-gaps")
-for_window [class="^.*"] border pixel 0
- 
 # Wallpaper (install "media-gfx/feh")
 exec --no-startup-id feh --bg-scale ~/app/i3/gentoo_media-gfx_feh_wallpaper/dark.jpg
  
 # Proxy (clash-for-windows)
-exec --no-startup-id ~/app/Clash\ for\ Windows-0.20.5-x64-linux/cfw
+exec --no-startup-id clash
+#exec --no-startup-id ~/app/Clash\ for\ Windows-0.20.5-x64-linux/cfw
  
 # Assign
 assign [class="^Google-chrome$"] number 1
@@ -116,9 +114,34 @@ for_window [class="^Logseq$"] move scratchpad
 bindsym Print exec flameshot gui
  
 # Brightness ("/sys/class" "backlight" "radeon" "brightness")
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+exec xbacklight -set 70
 
 # Git automatically
-exec ~/note/.github/autoGit.sh
+#exec ~/note/.github/autoGit.sh
+
+# Theme colors
+# class                 border  bground text    indicator child_border
+client.focused          #84FFFF #5E81AC #E5E9F0 #E5E9F0   #ECECEC 
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+# Window
+for_window [class="^.*"] border pixel 2 
+
+# Gaps
+gaps inner 6
+gaps outer 4
+smart_gaps on
+smart_borders on
+
+# I3lock (a screen locker)
+bindsym $mod+o exec i3lock -c 000000
 ```
 
 ## gentoo_x11-wm_i3-gaps_config_example
