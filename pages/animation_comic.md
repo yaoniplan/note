@@ -3,7 +3,7 @@
 * 百炼成神 07
 * 间谍过家家 (第一季+第二季) - 12+11
 * 异世界归来的舅舅 - 10
-* 我能看到成功率/I can see the success rate (第一季+第二季+第三季+第四季) - 26+26+30+48:26 animation https://www.youtube.com/watch?v=ctv8Hm9B-xY&list=PL7RWlrbEwKUPt5oaTL1I7hTn6UO4Nm7Lo&index=5
+* 我能看到成功率/I can see the success rate (第一季+第二季+第三季+第四季) - 26+26+30+33 animation https://www.youtube.com/watch?v=WOahQz3woP8&list=PL7RWlrbEwKUPt5oaTL1I7hTn6UO4Nm7Lo&index=34 
 * 我能复制天赋 - 16
 * 石少侠 精编版 - 18
 * 银河之心 - 07

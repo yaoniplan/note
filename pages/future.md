@@ -6,7 +6,6 @@
 * school needs 江西省教育考试院 http://www.jxeea.cn
 * school needs 考生体检公众服务 https://tj1.jxeea.cn:82/#/login
 * 铜钟: Listen to all the music in one place. https://tonzhon.com/
-* SearXNG on ebnar https://searx.ebnar.xyz/
 * Download Youtube music, download mp3 from Youtube online - SnapInsta https://snapinsta.io/en/convert-youtube-mp3
 * V2EX https://v2ex.com/
 * Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
@@ -89,6 +88,7 @@
 * 机场翻墙订阅转换器 https://subconverter.speedupvpn.com/
 * 免费白嫖公益机场合集 https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
 * 免费机场 https://github.com/ermaozi/get_subscribe
+* freefq/free: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 https://github.com/freefq/free
 
 ## animation_comic
 * 樱花动漫(P)－专注动漫的门户网站 https://www.yhdmp.cc/
