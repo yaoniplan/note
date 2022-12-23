@@ -489,7 +489,7 @@ emerge-webrsync
 
 # Update system
 ```
-emerge --update --ask @world
+emerge -avuDN @world
 ```
 
 # References

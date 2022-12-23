@@ -92,7 +92,6 @@
 
 ## animation_comic
 * 樱花动漫(P)－专注动漫的门户网站 https://www.yhdmp.cc/
-* 异世界动漫官网_ysjdm.com|ysjdm.net_酷动漫 - 异世界动漫 http://ysjdm8.com/
 * AGE动漫 https://www.agemys.com/
 * 萌战-专注动漫领域优质内容 https://mengzhan1314.com
 * M站_哔咪动漫 https://www.bimiacg4.net

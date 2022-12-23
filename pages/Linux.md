@@ -90,7 +90,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+#bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec rofi run -show drun
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -246,7 +247,7 @@ assign [class="^Google-chrome$"] number 1
 exec google-chrome-stable
  
 # Text editor (logseq)
-exec ~/app/Logseq-linux-x64/Logseq
+exec Logseq
  
 # Scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -257,9 +258,11 @@ for_window [class="^Logseq$"] move scratchpad
 bindsym Print exec flameshot gui
  
 # Brightness ("/sys/class" "backlight" "radeon" "brightness")
+# Keep the backlight between 0% and 50% or your body
+# will feel uncomfortable.
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-exec xbacklight -set 70
+exec xbacklight -set 50
 
 # Theme colors
 # class                 border  bground text    indicator child_border

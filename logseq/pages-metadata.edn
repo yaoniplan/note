@@ -4,24 +4,45 @@
  {:block/name "69c70d17-e030-491a-976a-d57da21160b2",
   :block/created-at 1658856997341,
   :block/updated-at 1658856997341}
+ {:block/name "[gentoo-zh]",
+  :block/created-at 1671433102849,
+  :block/updated-at 1671433102849}
+ {:block/name "```",
+  :block/created-at 1671433102752,
+  :block/updated-at 1671433102752}
  {:block/name "a",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
  {:block/name "abbreviation",
   :block/created-at 1667435254093,
   :block/updated-at 1667435254093}
+ {:block/name "advanced linux sound architecture",
+  :block/created-at 1671754790313,
+  :block/updated-at 1671754790313}
  {:block/name "alacritty",
   :block/created-at 1668563205913,
   :block/updated-at 1668563205913}
+ {:block/name "alsa",
+  :block/created-at 1671754790311,
+  :block/updated-at 1671754790311}
  {:block/name "animation_comic",
   :block/created-at 1667435259008,
   :block/updated-at 1667435259008}
+ {:block/name "api",
+  :block/created-at 1671754790300,
+  :block/updated-at 1671754790300}
  {:block/name "application",
   :block/created-at 1670309566403,
   :block/updated-at 1670309566403}
+ {:block/name "application programming interface",
+  :block/created-at 1671754790302,
+  :block/updated-at 1671754790302}
  {:block/name "arch",
   :block/created-at 1661092000667,
   :block/updated-at 1661092000667}
+ {:block/name "audio",
+  :block/created-at 1671672248139,
+  :block/updated-at 1671672248139}
  {:block/name "aug 10th, 2022",
   :block/created-at 1660122764994,
   :block/updated-at 1660144463923}
@@ -106,6 +127,9 @@
  {:block/name "aug 8th, 2022",
   :block/created-at 1659923142740,
   :block/updated-at 1659923142740}
+ {:block/name "auto-sync",
+  :block/created-at 1671433102770,
+  :block/updated-at 1671433102770}
  {:block/name "b",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -115,6 +139,9 @@
  {:block/name "block",
   :block/created-at 1658857025906,
   :block/updated-at 1658857025906}
+ {:block/name "brightness",
+  :block/created-at 1671585255273,
+  :block/updated-at 1671585255273}
  {:block/name "browser",
   :block/created-at 1667435254965,
   :block/updated-at 1667435254965}
@@ -124,21 +151,39 @@
  {:block/name "c",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "canceled",
+  :block/created-at 1671433146965,
+  :block/updated-at 1671433146965}
+ {:block/name "cancelled",
+  :block/created-at 1671433146966,
+  :block/updated-at 1671433146966}
  {:block/name "card",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "character encoding",
+  :block/created-at 1671424674562,
+  :block/updated-at 1671424674562}
  {:block/name "chmod",
   :block/created-at 1668670995940,
   :block/updated-at 1668670995940}
  {:block/name "chrome",
   :block/created-at 1658856998052,
   :block/updated-at 1658856998052}
+ {:block/name "clash",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "cli",
   :block/created-at 1670309565793,
   :block/updated-at 1670309565793}
  {:block/name "command",
   :block/created-at 1670309566386,
   :block/updated-at 1670309566386}
+ {:block/name "compiler",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
+ {:block/name "computed tomography scan",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
  {:block/name "computer",
   :block/created-at 1667435255068,
   :block/updated-at 1667435255068}
@@ -151,9 +196,42 @@
  {:block/name "css",
   :block/created-at 1668814999797,
   :block/updated-at 1668814999797}
+ {:block/name "ct scan",
+  :block/created-at 1671424674565,
+  :block/updated-at 1671424674565}
+ {:block/name "dec 10th, 2022",
+  :block/created-at 1670630400000,
+  :block/updated-at 1670630400000}
+ {:block/name "dec 11th, 2022",
+  :block/created-at 1670716800000,
+  :block/updated-at 1670716800000}
+ {:block/name "dec 13th, 2022",
+  :block/created-at 1670889600000,
+  :block/updated-at 1670889600000}
+ {:block/name "dec 16th, 2022",
+  :block/created-at 1671148800000,
+  :block/updated-at 1671148800000}
+ {:block/name "dec 17th, 2022",
+  :block/created-at 1671235200000,
+  :block/updated-at 1671436526200}
+ {:block/name "dec 18th, 2022",
+  :block/created-at 1671321600000,
+  :block/updated-at 1671623014377}
+ {:block/name "dec 19th, 2022",
+  :block/created-at 1671408000000,
+  :block/updated-at 1671440943410}
+ {:block/name "dec 21st, 2022",
+  :block/created-at 1671585253151,
+  :block/updated-at 1671607761287}
+ {:block/name "dec 22nd, 2022",
+  :block/created-at 1671638400540,
+  :block/updated-at 1671676527872}
+ {:block/name "dec 23rd, 2022",
+  :block/created-at 1671754786739,
+  :block/updated-at 1671766933183}
  {:block/name "dec 2nd, 2022",
   :block/created-at 1670309567148,
-  :block/updated-at 1670309567148}
+  :block/updated-at 1671762857756}
  {:block/name "dec 3rd, 2022",
   :block/created-at 1670309567336,
   :block/updated-at 1670309567336}
@@ -166,6 +244,12 @@
  {:block/name "dec 6th, 2022",
   :block/created-at 1670309567709,
   :block/updated-at 1670309567709}
+ {:block/name "dec 7th, 2022",
+  :block/created-at 1670371200000,
+  :block/updated-at 1670371200000}
+ {:block/name "dec 8th, 2022",
+  :block/created-at 1670457600000,
+  :block/updated-at 1670457600000}
  {:block/name "dm",
   :block/created-at 1670309566053,
   :block/updated-at 1670309566053}
@@ -178,6 +262,9 @@
  {:block/name "dwm",
   :block/created-at 1660638517949,
   :block/updated-at 1660638517949}
+ {:block/name "ebuild repository",
+  :block/created-at 1671592193195,
+  :block/updated-at 1671592193195}
  {:block/name "emulation",
   :block/created-at 1668658628642,
   :block/updated-at 1668658628642}
@@ -187,6 +274,9 @@
  {:block/name "exit",
   :block/created-at 1661426945326,
   :block/updated-at 1661426945326}
+ {:block/name "extension",
+  :block/created-at 1671424674565,
+  :block/updated-at 1671424674565}
  {:block/name "extensions",
   :block/created-at 1670309567558,
   :block/updated-at 1670309567558}
@@ -211,18 +301,36 @@
  {:block/name "gentoo",
   :block/created-at 1667435255375,
   :block/updated-at 1667435255375}
+ {:block/name "gentoo linux",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
+ {:block/name "gg",
+  :block/created-at 1671424674565,
+  :block/updated-at 1671424674565}
+ {:block/name "gif",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "git",
   :block/created-at 1661568371479,
   :block/updated-at 1661568371479}
  {:block/name "github",
   :block/created-at 1659954828237,
   :block/updated-at 1659954828237}
+ {:block/name "global speed",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "gmail",
   :block/created-at 1659653907217,
   :block/updated-at 1659653907217}
+ {:block/name "good game",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
  {:block/name "google",
   :block/created-at 1658856998053,
   :block/updated-at 1658856998053}
+ {:block/name "google chrome",
+  :block/created-at 1671424674564,
+  :block/updated-at 1671424674564}
  {:block/name "google translate",
   :block/created-at 1670309567567,
   :block/updated-at 1670309567567}
@@ -247,15 +355,36 @@
  {:block/name "i3wm",
   :block/created-at 1667435255420,
   :block/updated-at 1667435255420}
+ {:block/name "id",
+  :block/created-at 1671424674567,
+  :block/updated-at 1671424674567}
  {:block/name "idea",
   :block/created-at 1659534252107,
   :block/updated-at 1659534252107}
+ {:block/name "identity document",
+  :block/created-at 1671424674564,
+  :block/updated-at 1671424674564}
+ {:block/name "idiom",
+  :block/created-at 1671585255821,
+  :block/updated-at 1671585255821}
+ {:block/name "imagemagick",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
+ {:block/name "import",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
  {:block/name "in-progress",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
  {:block/name "inbox",
   :block/created-at 1658856997842,
   :block/updated-at 1658856997842}
+ {:block/name "init",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
+ {:block/name "initialization",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
  {:block/name "input method",
   :block/created-at 1661426946087,
   :block/updated-at 1661426946087}
@@ -301,6 +430,12 @@
  {:block/name "jul 31st, 2022",
   :block/created-at 1659353879764,
   :block/updated-at 1659353879764}
+ {:block/name "k",
+  :block/created-at 1671424674562,
+  :block/updated-at 1671424674562}
+ {:block/name "kilo",
+  :block/created-at 1671424674567,
+  :block/updated-at 1671424674567}
  {:block/name "later",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -310,9 +445,18 @@
  {:block/name "linuxn",
   :block/created-at 1670309566413,
   :block/updated-at 1670309566413}
+ {:block/name "llvm",
+  :block/created-at 1671424674562,
+  :block/updated-at 1671424674562}
+ {:block/name "location",
+  :block/created-at 1671433102829,
+  :block/updated-at 1671433102829}
  {:block/name "logseq",
   :block/created-at 1658856997605,
   :block/updated-at 1660009850592}
+ {:block/name "logseq-vim-shortcuts",
+  :block/created-at 1671415646235,
+  :block/updated-at 1671415646235}
  {:block/name "man",
   :block/created-at 1662341187071,
   :block/updated-at 1662341187071}
@@ -325,6 +469,9 @@
  {:block/name "math",
   :block/created-at 1660778413821,
   :block/updated-at 1660778413821}
+ {:block/name "mkdir",
+  :block/created-at 1671433102688,
+  :block/updated-at 1671433102688}
  {:block/name "notion",
   :block/created-at 1658856998047,
   :block/updated-at 1658856998047}
@@ -348,10 +495,10 @@
   :block/updated-at 1670309566070}
  {:block/name "nov 27th, 2022",
   :block/created-at 1670309566451,
-  :block/updated-at 1670309566451}
+  :block/updated-at 1671670723482}
  {:block/name "nov 28th, 2022",
   :block/created-at 1670309566845,
-  :block/updated-at 1670309566845}
+  :block/updated-at 1671672654640}
  {:block/name "nov 30th, 2022",
   :block/created-at 1670309566995,
   :block/updated-at 1670309566995}
@@ -454,9 +601,15 @@
  {:block/name "oct 9th, 2022",
   :block/created-at 1667435254801,
   :block/updated-at 1667435254801}
+ {:block/name "openrc",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "outlook",
   :block/created-at 1659588241924,
   :block/updated-at 1659588241924}
+ {:block/name "patches",
+  :block/created-at 1671764088887,
+  :block/updated-at 1671764088887}
  {:block/name "position",
   :block/created-at 1661347316938,
   :block/updated-at 1661347316938}
@@ -487,6 +640,9 @@
  {:block/name "regex",
   :block/created-at 1662341185975,
   :block/updated-at 1662341185975}
+ {:block/name "screen resolution",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "screenshot",
   :block/created-at 1661426945321,
   :block/updated-at 1661426945321}
@@ -583,15 +739,33 @@
  {:block/name "shell",
   :block/created-at 1661427123953,
   :block/updated-at 1661427123953}
+ {:block/name "shortcut keys",
+  :block/created-at 1671424674564,
+  :block/updated-at 1671424674564}
  {:block/name "shutdown",
   :block/created-at 1667745342793,
   :block/updated-at 1667745342793}
+ {:block/name "simple terminal",
+  :block/created-at 1671754789692,
+  :block/updated-at 1671754789692}
+ {:block/name "slang",
+  :block/created-at 1671424674565,
+  :block/updated-at 1671424674565}
+ {:block/name "solid-state drive",
+  :block/created-at 1671424674567,
+  :block/updated-at 1671424674567}
  {:block/name "sound",
   :block/created-at 1661426945316,
   :block/updated-at 1661426945316}
+ {:block/name "ssd",
+  :block/created-at 1671424674563,
+  :block/updated-at 1671424674563}
  {:block/name "ssh",
   :block/created-at 1667435255118,
   :block/updated-at 1667435255118}
+ {:block/name "st",
+  :block/created-at 1671754789694,
+  :block/updated-at 1671754789694}
  {:block/name "study",
   :block/created-at 1658856997832,
   :block/updated-at 1658856997832}
@@ -601,6 +775,12 @@
  {:block/name "sync",
   :block/created-at 1660144262339,
   :block/updated-at 1660144262339}
+ {:block/name "sync-type",
+  :block/created-at 1671433102809,
+  :block/updated-at 1671433102809}
+ {:block/name "sync-uri",
+  :block/created-at 1671433102790,
+  :block/updated-at 1671433102790}
  {:block/name "teambition",
   :block/created-at 1659755147377,
   :block/updated-at 1659755147377}
@@ -616,12 +796,27 @@
  {:block/name "torrent",
   :block/created-at 1661092000516,
   :block/updated-at 1661092000516}
+ {:block/name "ui",
+  :block/created-at 1671424674562,
+  :block/updated-at 1671424674562}
+ {:block/name "unicode transformation format - 8-bit",
+  :block/created-at 1671424674565,
+  :block/updated-at 1671424674565}
+ {:block/name "usage",
+  :block/created-at 1671672252062,
+  :block/updated-at 1671672252062}
  {:block/name "usb",
   :block/created-at 1667435254936,
   :block/updated-at 1667435254936}
+ {:block/name "utf-8",
+  :block/created-at 1671424674566,
+  :block/updated-at 1671424674566}
  {:block/name "v2ex",
   :block/created-at 1658856997579,
   :block/updated-at 1658856997579}
+ {:block/name "variable",
+  :block/created-at 1671593117444,
+  :block/updated-at 1671593117444}
  {:block/name "ventoy",
   :block/created-at 1659353879592,
   :block/updated-at 1659353879592}
@@ -682,6 +877,9 @@
  {:block/name "天翼云盘",
   :block/created-at 1658856998057,
   :block/updated-at 1658856998057}
+ {:block/name "惨不忍睹",
+  :block/created-at 1671585255820,
+  :block/updated-at 1671585255820}
  {:block/name "截图",
   :block/created-at 1660779986729,
   :block/updated-at 1660779986729}
