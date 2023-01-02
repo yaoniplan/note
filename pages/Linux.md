@@ -338,7 +338,7 @@ ZFS			sys-fs/zfs
 ```
 
 # Select boot loader
-## GRUB(UEFI)
+## GRUB (UEFI)
 ```
 echo 'GRUB_PLATFORMS="efi-64"' >> /etc/portage/make.conf
 emerge -q sys-boot/grub

@@ -1,4 +1,6 @@
 ## website
+* 没有最好只有最适合 https://98017.github.io/dh/
+* Awesome Wallpapers - wallhaven.cc https://wallhaven.cc/
 * Interactive Vim tutorial https://www.openvim.com/tutorial.html
 * MP4 to GIF - online-convert.com https://image.online-convert.com/convert/mp4-to-gif
 * school needs 江西省高中学生综合素质评价信息管理系统 https://gzzs.jxedu.gov.cn
@@ -9,7 +11,6 @@
 * Download Youtube music, download mp3 from Youtube online - SnapInsta https://snapinsta.io/en/convert-youtube-mp3
 * V2EX https://v2ex.com/
 * Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
-* Meow.TG-做最懂你的TG搜索 https://meow.tg
 * 大家论坛-大型综合性免费在线教育培训学习考试论坛！英语|财会|计算机|建工|医药|资格|考研|学历|小语种-大家大学|大家学校 https://club.topsage.com/
 * 学吧导航 | 四十万学习爱好者都在用的学霸导航网站 https://www.xue8nav.com/
 * 就诊问问 https://ask.nocode.com
@@ -23,7 +24,7 @@
 * 战拖与新自我管理 https://zhantuo.com/archives
 * 惜墨博客 https://ximo.blog
 * 元搜索引擎 searx https://searx.space
-* 临时短信 https://mytrashmobile.com
+* Verify WhatsApp or Facebook without phone - verify without a SIM or mobile https://mytrashmobile.com
 * 图标 https://iconfont.cn
 * 测速网 https://speedtest.cn
 * Learn Git Branching https://oschina.gitee.io/learn-git-branching/
@@ -84,8 +85,7 @@
 * AI人工智能图片放大 https://bigjpg.com/
 
 ## network_proxy
-* 机场翻墙订阅转换器 https://subconverter.speedupvpn.com/
-* 免费白嫖公益机场合集 https://jichangtj.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
+* subscription converter https://subconverter.speedupvpn.com/
 * 免费机场 https://github.com/ermaozi/get_subscribe
 * freefq/free: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 https://github.com/freefq/free
 
@@ -96,9 +96,6 @@
 * M站_哔咪动漫 https://www.bimiacg4.net
 * xnxx https://www.xnxx.com/
 * 18comic https://18comic.org/
-* 18comic_china_line1 https://jmcomic2.moe/?shunt=1
-* 18comic_china_line2 https://jmcomic2.moe/?shunt=2
-* 18comic_china_line3 https://jmcomic2.moe/?shunt=3
 * 禁漫天堂發布頁 https://jmcomic.bet/
 * 爱情漫画 https://www.3004aa.cc/
 * 绅士漫画-专注分享汉化本子|邪恶漫画 https://www.hentaicomic.org/

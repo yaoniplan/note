@@ -1,5 +1,6 @@
 #! /bin/sh
-#  .gitconfig doas.conf .tmux.conf st environment i3/config
+#  .gitconfig doas.conf .tmux.conf st environment i3/config /etc/portage/make.conf
+ln -sf /home/yaoniplan/note/grow/033_dotfiles/make.conf /etc/portage/make.conf
 ln -sf /home/yaoniplan/note/grow/033_dotfiles/.gitconfig /home/yaoniplan/.gitconfig
 ln -sf /home/yaoniplan/note/grow/033_dotfiles/doas.conf /etc/doas.conf
 ln -sf /home/yaoniplan/note/grow/033_dotfiles/.tmux.conf /home/yaoniplan/.tmux.conf

@@ -1,3 +1,6 @@
+# Update link
+* https://github.com/yaoniplan/note/blob/5a4b116730bf4cad8e5a2eab094c4e8fdd8ac3f4/pages/Linux.md
+
 # livegui password
 ```
 ctrl alt f1 # new a terminal

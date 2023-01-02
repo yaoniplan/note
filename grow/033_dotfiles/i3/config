@@ -223,7 +223,6 @@ bindsym $mod+Shift+s exec flameshot gui
 # will feel uncomfortable.
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
-exec xbacklight -set 50
 
 # Theme colors
 # class                 border  bground text    indicator child_border
