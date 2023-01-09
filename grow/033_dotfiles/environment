@@ -1,9 +1,0 @@
-#
-# This file is parsed by pam_env module
-#
-# Syntax: simple "KEY=VAL" pairs on separate lines
-#
-# Proxy
-export http_proxy="127.0.0.1:7890"
-export https_proxy="127.0.0.1:7890"
-export no_proxy="localhost, 127.0.0.1"

@@ -1,4 +1,7 @@
 ## website
+* Perplexity AI: Ask Anything https://www.perplexity.ai/
+* 百度网盘资源分享_云盘资源分享网_云盘资源网 https://www.yunpanziyuan.com/
+* UP云搜 - 最全阿里云盘资源搜索神器 https://www.upyunso.com/
 * 没有最好只有最适合 https://98017.github.io/dh/
 * Awesome Wallpapers - wallhaven.cc https://wallhaven.cc/
 * Interactive Vim tutorial https://www.openvim.com/tutorial.html
@@ -26,7 +29,6 @@
 * 元搜索引擎 searx https://searx.space
 * Verify WhatsApp or Facebook without phone - verify without a SIM or mobile https://mytrashmobile.com
 * 图标 https://iconfont.cn
-* 测速网 https://speedtest.cn
 * Learn Git Branching https://oschina.gitee.io/learn-git-branching/
 * 国家中小学智慧教育平台 https://basic.smartedu.cn/
 * 乐乐课堂，每天进步多一点！ https://www.leleketang.com/
@@ -69,14 +71,13 @@
 * fcitx5-android https://github.com/fcitx5-android/fcitx5-android
 * Create a strong, secure, & random password | Password Generator | 1Password https://1password.com/password-generator/
 * 虫部落 - 让搜索更简单 https://www.chongbuluo.com
-* my i3 config https://github.com/levinit/i3wm-config
 * TheFuture书籍搜索-免费电子书搜索引擎 https://bks.thefuture.top/
 * 书行天下| PDF电子书学习下载站 https://www.sxpdf.com/
 * CosDNA 化妆品成分 https://www.cosdna.com/chs/
 
 ## virus_detection
 * VirusTotal - Home https://www.virustotal.com/gui/home/upload
-* 关于Jotti的恶意软件扫描系统 https://virusscan.jotti.org/
+* Jotti's malware scan https://virusscan.jotti.org/
 * VirScan - 多引擎文件在线检测平台 https://www.virscan.org/
 
 ## picture_related
@@ -85,11 +86,13 @@
 * AI人工智能图片放大 https://bigjpg.com/
 
 ## network_proxy
+* 首页 — iKuuu VPN https://ikuuu.co/user
 * subscription converter https://subconverter.speedupvpn.com/
 * 免费机场 https://github.com/ermaozi/get_subscribe
 * freefq/free: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 https://github.com/freefq/free
 
 ## animation_comic
+* http://www.ysjdm3.com/
 * 樱花动漫(P)－专注动漫的门户网站 https://www.yhdmp.cc/
 * AGE动漫 https://www.agemys.com/
 * 萌战-专注动漫领域优质内容 https://mengzhan1314.com
@@ -125,5 +128,4 @@
 * C++在线工具 | 菜鸟工具 https://c.runoob.com/compile/12/
 * 在线编程 - 编程中国 http://www.bccn.net/run/
 * 课程-KuangStudy https://www.kuangstudy.com/course
-* GitHub中文社区 https://www.githubs.cn/
 * 自学计算机科学 https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md

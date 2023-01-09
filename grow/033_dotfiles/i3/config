@@ -217,7 +217,7 @@ for_window [class="^Logseq$"] move scratchpad
  
 # Screenshot (install "media-gfx/flameshot")
 bindsym $mod+Shift+s exec flameshot gui
- 
+
 # Brightness ("/sys/class" "backlight" "radeon" "brightness")
 # Keep the backlight between 0% and 50% or your body
 # will feel uncomfortable.
