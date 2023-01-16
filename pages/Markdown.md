@@ -1,44 +1,44 @@
-- # Introduction
-  title:: Markdown
+- ## Introduction
   Markdown is a lightweight markup language that allows people to write documents in plain text format that is easy to read and write. The suffix of Markdown files is ".md".
-- # Headings syntax
+- ## Headings syntax
   Before a word or phrase, add number signs and a space (`# `).
 	- ***Usage***  
 	  ![image.png](../assets/image_1667881157261_0.png)
 	- ***Preview***  
 	  ![image.png](../assets/image_1667881192286_0.png)
-- # Lists syntax
-	- ## 1. Unordered lists
+- ## Lists syntax
+	- ### 1. Unordered lists
 	  Before the list item, add a hypen (`-`), a asterisk (`*`) or a plus (`+`).
 		- ***Usage***  
 		  ![image.png](../assets/image_1667878583964_0.png)
 		- ***Preview***  
 		  ![image.png](../assets/image_1667878660414_0.png)
-- # Code syntax
-	- ## 1. Code
-	  Enclose words or phrases in backticks (==``==)
+- ## Code syntax
+	- ### 1. Code
+	  Enclose words or phrases in backticks (<code>``</code>)
 		- ***Usage***  
 		  ![image.png](../assets/image_1667958824498_0.png)
 		- ***Preview***  
 		  ![image.png](../assets/image_1667958870285_0.png)
-- # Links syntax
+- ## Links syntax
   Enclose the link text in square brackets (`[]`) and then follow it with the **URL** in round brackets (`()`).
 	- ***Usage***  
 	  ![image.png](../assets/image_1667905156937_0.png)
 	- ***Preview***  
 	  ![image.png](../assets/image_1667905250924_0.png)
-- # Images syntax
+- ## Images syntax
   Add an exclamation mark (`!`), followed by alt text in square brackets (`[]`), and the **path** or **URL** to the image asset in round brackets (`()`).
 	- ***Usage***  
 	  ![image.png](../assets/image_1667898003344_0.png)
 	- ***Preview***  
 	  ![image.png](../assets/image_1667898083143_0.png)
-- # 标题语法
-  在单词或短语前，添加`# `(井号+空格)。
-	- ***写法***  
-	  ![2022_07_20_Screenshot from 2022-07-20 09-58-59.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adcab53e4c-293c-41e5-b1a9-aeba763c23502022_07_20_Screenshot%20from%202022-07-20%2009-58-59.png?Expires=4811882364&Signature=NXYOCDX1m80m09KyX6CaArWJUIFfqgpQNiKTllbYG~dc0HTqdBpMti8GRhgcWiEs~Ch9tfg-ZXXpWW5uX3qnSQXVvoOqkWUZnDoeG2Kw4x300I3WuYKuVfzgqF~ZTy1wVNAJPzkEq7SFzh8WSsxpoQuhRp-zSdXIXWdJypVZvLfPkta9zdS1jLyipnqTkTnCU~vOtVC4clGdGXlecYcJ7OUiMvr5w~EoOIbuCYi5j3LyQeyCIUIBNfFMS7NtMQ87UegAGGF2kWPKwOGtPGXRyPukUgJiim6~p0tHP4jQMtTUY34c7uE61~CuBhuUs9abOR-q4U-yDBeaWIt1EkrXfQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ***预览***  
-	  ![2022_07_20_Screenshot from 2022-07-20 10-00-00.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad06e880ee-4124-404d-9e46-1499b7933a1f2022_07_20_Screenshot%20from%202022-07-20%2010-00-00.png?Expires=4811882417&Signature=kBqZ74Kr2N90bH8FrRoZma4y4flevZOLEvyMKNnzwYpDp8xKMohLJHnJmukcqLDrJi~NjLUzWQtmcpd2FhG8wvUgfIo8fhvwQNSs3XnS7c7Yu3IavQHsiqz7eVh-6yZRs-09uFYoATWm55IY~xlz3yeO1flO6QS~7y2YPa8lKS~NX0cIavNHKt4UxNde15Uni1fxszYi3FG9UpXXG0o61frslCo66FfII44PK2dtCq~6dbCkYWyfs4es-8E50lFVxNWkV5rIUV4pWnITbHtEE6FIZgMZl-iV-ldCsjcXsZxOCtMHgyPcHk~xnqi81bq-w9bZMyNSCG0XO-F4kBtHeA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+- ## Tables syntax
+	- ### 1. Tables
+	  Use three hyphens (`---`) to create header, and use pipes (`|`) to separate
+		- ***Usage***
+		  ![MarkdownTables01.png](../assets/MarkdownTables01_1673865627153_0.png)
+		- ***Preview***
+		  ![MarkdownTables02.png](../assets/MarkdownTables02_1673865636987_0.png)
 - # 段落语法
   使用`空白行`，将一行或多行文本进行分隔。
 	- ***写法***  
@@ -114,12 +114,6 @@
 		  ![2022_07_20_Screenshot from 2022-07-20 14-26-28.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262add83fb5ff-44cd-4bc4-b9c2-493bbc0a948e2022_07_20_Screenshot%20from%202022-07-20%2014-26-28.png?Expires=4811898510&Signature=U1pgifW5fmiOnVZHZGekG2~sVofZ4t04zBY5f6pUBG37w7jVllLTVro6tO9Eh6ctoipk485H~wFLAW3b-U7NhPUvAKLEFqZNb2yiwY4qSHPWpZxlbzzv9rip3QlNppOXujuc0oVUxMDKEi9Zs5m~ZVtbvyxym31yXVMuYR6tYC2zOck8YMRYzZzantJ5QQdtncyOIOXBOin9mx8sIqpyzSV2OZZK~64l6sLFnZgQBu2zCjv-RIe4dLd9DhcFWVItcjRSwH93tarAQNtdb7WiI94u~wO0Qsk0aXMJg5MBtlSv8pXbWtsOTMa5cr5FZrEkfxaJYmN6964pcGb4ue7UQg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 14-26-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ada58883dc-43cc-4728-b3db-774ef0cde5a02022_07_20_Screenshot%20from%202022-07-20%2014-26-34.png?Expires=4811898526&Signature=Ue7COas~IccluR8bODygEBHzDMwSish9pwAi2fv9Z4gEIctlucO2voCIx~ZlEdsQiCFq3MIURkl1KPUOK33CVtSgqCibZgRw0iBfBmda6J983A9CDTLKkLAZkHIpIlBWhw~5l~Uxg0NFp-S23yyFU0OLO8jzEPgvAuuvAJIZ0X0zP-11-~g5Bea0QiW6WkJLU3iAPz-0MRU4JorE1ekCDI-X8poSvZsFYYtObRCvZ8xzZllmgR-XV3pHe-2Oevmf9by7i0yt7P7Dqe4whF9ZB1E6gmREI-AqCjS4YYs8q1YHjx6QvYmnQDxKeSi4S6tsBwYkiDWHfLqXNDYxV-fWeQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-	- ## 2. 无序列表
-	  在每个列表项前，添加`-`(破折号)、`*`(星号)或`+`(加号)
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 14-26-47.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2646ffff-bb43-45b9-83b6-1ce81e0b51a32022_07_20_Screenshot%20from%202022-07-20%2014-26-47.png?Expires=4811898549&Signature=ZwlWJ535nbnTcvC5hVdQfdqdXYHYhTb8dCbdLqFWGjsyLdWuHg4ieGTm6LGpD-jhfm6X-byM~Ay3wuEg36jXuAUMuRYfHgUbjLgTmN80VH0H48LHKZWjCOIgs1Cp-V23wJVb3PJkpDhXVV0ESfceCXOeIkgewuixyP06hECmTgDOZ9AhnewMpLE2aaufWugxtDIav9PnaFogPvqz8G5wXljfovw48-kodPyAgFNbgoSyVJBmsXy7skfX7hoX2JqVrInni7GyxeJYZO4FfWIf193exsuElc7owooncDeGn7UKJvNgUNgkA6BLUCE-Yg27F0vTxE7bwlNbU4Kd8NivAw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 14-26-55.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad21fb35ca-7e48-4600-a2d1-5c4bba879be62022_07_20_Screenshot%20from%202022-07-20%2014-26-55.png?Expires=4811898564&Signature=S3LQxT2hl~2PuYqiOnLffFVGRzH14ET3hFhNVdKuseECxdz72gL1OKCMB5SEIgjWmFJ3QYjTxkz87H6K3ZGvUq9sZmESvrcZz3wGP5qTv08bXHDwrsiyEYYiMFLCzYvXV0XOhCdj1WdYgkdCcGzfJAQMU36W7OWht9g2XRVWv~XMs~TCth7~mRyb~f8LP3I-thamQE-~yfsqQT24eo0UvLkY4-ScMpM1SyjjYvpv0GCBZu~OBc6CiUjPhAdtpZIu07LsIOTbo-qQUO5MwzT-LcGRO5apnOP3C0Fo-J-iy2ls4wnFfC9DUmu7GVCgQHLYCXeRa2HfyX02hgMH4XNTuw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 3. 定义列表  
 	  在第一行键入`术语`。在下一行，键入一个`冒号`，后跟一个`空格`和`定义`。
 		- ***写法***  
@@ -163,12 +157,6 @@
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 10-43-18.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad1116bafd-b5b7-4c4d-aa98-20e7fc0a5aff2022_07_20_Screenshot%20from%202022-07-20%2010-43-18.png?Expires=4811885141&Signature=SUrXOX3wJE0BGI6HkbyVxJVdzXMo5SgxUCmj9GkR~nzbu~s6nFSfE4aEV6HJ~mOqa1o2e92-FwWXa5uQhk~BxDrywdUjcYyjZgYj3e0P1zyAuKqcfycOT59hOQPOqeevZnhSKI~eQbqULlZUU7MQCuiBNla8MjOfMdwJCjlVo2JxXsPx-o86p~lN8VGqpq6EskfUjAaIiemZJDb3GkbqG22uIDAgV3ftkNngqNETqK-sD0nRj4ekNPSDDF-q~wAAYdL6diCtJMY-kvhMdGkpoazMr~TSeKVcEqcFjJMIjlkvBquUOYFxy-ZvTncQjPqbV-Ri81~j-2LILawr3aAM4w__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 代码语法
-	- ## 1. 单词或短语代码
-	  将单词或短语包裹在`反引号`(`)中。
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-44-24.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc28232c9-c5ef-4565-9be6-ca91383ead022022_07_20_Screenshot%20from%202022-07-20%2010-44-24.png?Expires=4811885199&Signature=QPzUtm3J-reGdmWI-uE8LVx-Iz1hyCR121BS6O-eTuPEb4a~2bcST-jJiz5Q15w03tXYimnadPkufccwmG~vJUE-etRx53Kozi-pm7bxKSLVXj3MFDCz~GQem-brgvhuLV~xaMJD2d-AdgOojWKsCBfZMH0aDuoNnpy5THaAvVDF6kssYGd6Kq84Q6Pi8qOrgeVJXvLhgwgtkzkQce0zROuLjhG3oHXtnuPm4LjMIADz0mbV9gmnNBklamYtLTMod~q0FEyohppAuFJZASrBD0fWc2CWMaPV1OqD36X46yBePqJ12-cPGsxYT~Vxl2Gv5JpRfqrbY1GeHKmSbMj5Fw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 10-44-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad65ff2eff-10a2-4663-84bb-a96d4089d8632022_07_20_Screenshot%20from%202022-07-20%2010-44-39.png?Expires=4811885219&Signature=Li8MOYHZvTNnxpQ9v79R-EKU5CoFF1KBidEWWqtoXUupsHhFD80Zbh3Am0A-Nvw~rN6hc9wHdYkCARFoQAJWvW91er6~iqQlQTI7vC6-Ku4SVfD63AKPeQuTqRWczPH4mbNqDNJyqwWOnTzhgK6mpCXgwQ-E4z2OQcapGCl6iRtB~anWFWzIM1bWLyXVDLbw~4~2ZcVUenMEeo6gyYSIyxZZjy3JKQnNFx4KC-PWBhR7N8Hgzm9NFTvSH4R18vb22Gb7WO9nSbLUUS8HtRyQJU4NViIR6VXIhSXPaQHNyu5~bRm~MAquo22pPl31NnHP9imvB-a4JXz1PvwmMmAxiA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 转义反引号
 	  将单词或短语代码包裹在`双反引号`(``)中。
 		- ***写法***  
@@ -194,13 +182,6 @@
 	- ***预览***  
 	  ![2022_07_20_Screenshot from 2022-07-20 14-36-35.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad33443ebc-e8d6-47a4-9136-50645909ab562022_07_20_Screenshot%20from%202022-07-20%2014-36-35.png?Expires=4811899026&Signature=hif0qhdTSDWhAKAzl9IdTsXdzmCbP0Lt7pXJbKokkC73zvMMHOhvEfrwrkyKpxZZgbKknqOfHq1Ffo2TqBdyZ3IW2WORc909-J4APQcEWjoI4bMl7y6RTDpxHUSBfA9mz5066cP89ZcXmHXOOAxUg301xp~Y48~RGF~kNj7IQ1qt0DhsVtnXfCP-L2cOnrBrk6GrE9QTX~DKI0SmiSuV258B4EgrXL5QmgVQN6XfjDKSjg3OnZYMR6JWkbCVCyhECWXnzwtbOagHF-rC0LwvJv8PjcEPR7f0RczjL6fJnXdfgjxn5ZQN~yBKWFEbrEnDSxxDwAgsRDuv100ZF2NooA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 链接语法
-	- ## 1. 超链接
-	  链接文本放在方括号内，链接地址放在后面的圆括号中。  
-	  `[超链接显示名](超链接地址)`
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 13-59-13.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262addd028a10-87e2-4ab2-a19d-58a02b4e7a5f2022_07_20_Screenshot%20from%202022-07-20%2013-59-13.png?Expires=4811896806&Signature=amExefqJdt6F-RiWcd~u2NQqZdsOnlKDsUQn3zpYWch0AZEUF9zPBb90AAD9uGwy~z-8fkhxWe4C7T66mqG46GqWoHU~g2stUFY~MSvBnGT~tvcQn4Eh7Qq8VYMyl7Ndeyw7AlyS08K3HqfLZ7-~ILJifblNesfVqBdtIwbNcVEFk2g1cjgwKbcOZSTN-zrNVZuJqMUEB5vbelAf-wuFDr5g7j1zMiszEP7BEpTgfjxCXQKZc-L0zRwDyxG5TRqbaElDwRbXR2YKOi1QQ2ypF5-GWFKTduOLzRHOt14vuoYNHmNViKqSUs4rBv8of-SUtV3VgNFWseM5mkbegwRzMA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 13-59-34.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad8343d82a-bcef-4d7e-a319-2a5c26786ad42022_07_20_Screenshot%20from%202022-07-20%2013-59-34.png?Expires=4811896859&Signature=GXGoPEHvMJzOJUnRFFZeSKa-6Wa~T2PRKXF6VK4ow3I1sl-Zl5Jt75mK5PmbwPx1nSDwV~jBKOW0DAkoLm9~6ABmuwZw~5Bc9EqCYHtDZO58hvk~afCmJzNI9tnnjB44tZ4vLvxjc3W~Qu4HijbM4qnnZ4bM8oBbWEwj3wd-~rfMf1YSA8vXvJCA9rdCDAWXRvTGPBIlHkllO3aVqJoI-A~SNPpLOIhMAAXxEQb0Nu7gPj18n3xvryj3zMooCBL6Nc~daWMYGLLRBKKROuQ7rTelu37MlqQQc-3pqc4eQpEzZ~Dbl7eztwbYTJNaheSNeYx0HAOZTwq448gYug5CNg__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 加 Title 的超链接  
 	  title放在圆括号中链接地址的`后面`，并且跟链接地址之间以`空格`分隔。
 		- ***写法***  
@@ -234,13 +215,6 @@
 		- ***预览***  
 		  (无)
 - # 图片语法
-	- ## 1. 图片  
-	  使用感叹号(!)，然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后，可以增加一个可选的图片标题文本。  
-	  `![图片alt](图片链接 "图片title")`
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 13-48-20.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad6e2a9853-511f-4834-8cb7-05b0935023372022_07_20_Screenshot%20from%202022-07-20%2013-48-20.png?Expires=4811896118&Signature=hiKxDsuj-VJbjy~W3lq8lglwgy8l-iwQMOmlcQ2nj851SsScwbZVSpPbe2KNRR6k4T42MZhL7AWYS-cQ~VBgGDPQvKjTVtwbGko1Ofw965~ZCok~xXxge2Q3owAiqj4j4scpLwc6THh1SQuWyPPbrvTaLiwMlYo1Eqr0uL9SFHiYFptNNbh~1hvdRJun9~G1C0WjNvdohgCoy~NafhOw5fz1l30PsA3f61cqO7noJwkzGzyRLh~V2ArI7pwOxpqqIQ1RqHt6YgUwAYW52Px2H-sTwBVJ6Rg9P2F5qhp3tiuIl76zD0088oMmCY87ZlFJikBQitEcW483g2Vh7za7AQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 14-38-08.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ade445e061-f434-4ac7-ae4c-12157f5de7e32022_07_20_Screenshot%20from%202022-07-20%2014-38-08.png?Expires=4811899154&Signature=JI0wI0ZptsNDLXv802lXMTyB8tuMieMUaSG~FPzCDiNwKky6VJs0XECquIRmEZEzyvPSs7PX~ZbZKnxqnqiyGBqUVsR0O9Awo9INRPIIXbdrl-TIBz84x9eQ-U~tW4Rt~shjVv43auQxc66ATRD4O6QhN85fAP6kEsemINVrdozUcy4G90LJHHl7rj4plL45aWQo9fjLtwIQ7B89W2ST~Z~HXY-8Eq6znXhFv1KLFo1XoPNap3Jc7RiLgGqp9zq9SCdBIEJoiCnRJ8JcyeP-SObFaqBBzOwEMS-854wryXA3ABxt4oBz9Nx9O9UFtQaysGvJSPa~zTQ3dZq8QcxRWQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 有链接的图片  
 	  将图像的Markdown括在方括号中，然后将链接添加在圆括号中。
 		- ***写法***  
@@ -254,16 +228,10 @@
 	- ***预览***  
 	  ![2022_07_20_Screenshot from 2022-07-20 14-16-25.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad391c1e7a-5398-4861-92f3-d36d284f872e2022_07_20_Screenshot%20from%202022-07-20%2014-16-25.png?Expires=4811897822&Signature=MWmXcBBr3~7cESNdT8ELv0pj634thAyQc1LPYVolAs8pfw6-nVALIfThCOZ1l2kj-ZxixhGSBkg7QYMl7maaFE4WYYDt2r~T~9gfNLphlmOIoVue2mgmkpD~cqEfWJ1uoIKozLDiG6tSsi6x7ekSje9F8t5VtBFYz7yEnjgpZsLOEvdjpDQSwLrUb8Ov7~1dm0J1ucI~wMOqDfWJW-kT-BuwAbkkw7njXuMwEFQIFCTda7fH1RgNSDz4CNxF-NNYchW3SQAyZ0sBSML3VWNltmkrInNEBGZ1PHZSqigmmB6nTDwGxckZM1giowPFh2MGQ-QbCWH437wlvc6z5XHzRA__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 表格语法
-	- ## 1. 表格  
-	  使用三个`连字符(---)`创建每列的标题，并使用`管道(|)`分隔每列。
-		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 15-12-10.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262adc0a43c11-f168-4fda-a9a1-63bff4bae3762022_07_20_Screenshot%20from%202022-07-20%2015-12-10.png?Expires=4811901189&Signature=a5kvhkcar1VVuGJ3GzE940LZDS-TFgDoqA8cLXVOgv6EiFaK~jxSmdKS1qrEno6ecye8zjXB87jMmKTgiEpsfdz4omrPJIQ0uwK5qi6i1zumfxb90gZ-Tuhky3w3W~~A1azoZr6d24eJJ~F5Ot-oHq1H~8EZuEtJgBR3lGl7Pf2GTwHn0aNgnr6vZzJ34j1AqiDxM3mFiRMoI7u2bcG3thvYso9SSaV4xcYBhF32wdHEnZaZOJzIOGqCFqd~HjfRQKbPbQ1iJi4Zw9Cm8bsRyvG4DyaIcQnMc3qoRhcBBbG5LKVFDOg39Y2gNEVqVoub0JaD77rbcv293HU3Ea9q5g__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
-		- ***预览***  
-		  ![2022_07_20_Screenshot from 2022-07-20 15-12-17.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad614c209a-ead8-45e6-ae65-f7600dcc2bf22022_07_20_Screenshot%20from%202022-07-20%2015-12-17.png?Expires=4811901204&Signature=h1UTJLMXsttmSQgsDe1hMgA4~ffxzpg9g2taiNBV80dPdcLo000jcixnFVpTxCmApw6DpJwuGqBk3aNyIQ8Zw7F9J-tRCi2h-ugteBb7l8CTeDx~2I-LNJXxSsWYm3TewPyGg8-kFUFZMR0fFmN-E-alF4OyU3T9AENY8B4UZpffZvpk~qQ70feXFJthHzLWkBcKulCqBru7vwuF4SJbjNQ9Gsd0-ZBS-8ftU5F-wLYcq4nxTluITMqELgH3HNuI29~JdbAfGlJVvw9DTrEqlsvjAvqIGz5fDC1N9IHimf~Ofi6BaeOagyyf3sI7U-5VwNdIig-K97Gi-HYZ24dFiw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 	- ## 2. 对齐的表格  
 	  在标题行中连字符的左侧，右侧或两侧，添加`冒号(:)`，将列中的文本对齐到左侧，右侧或中心
 		- ***写法***  
-		  ![2022_07_20_Screenshot from 2022-07-20 15-13-33.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2541bb58-c726-43df-b6e4-6298a4b7432c2022_07_20_Screenshot%20from%202022-07-20%2015-13-33.png?Expires=4811901416&Signature=MfXNpCon~Taubyr~CAWCeUKZUAWFSREbwI66uRFeQGzIs~TVKg2-t2xwpluswAoKBoAvxV2fC0DYHvvkTiMKw~t8QPMYjdcgxdGD735dKaArP55LwLpztM0xJTr5qbl1WH05UGwb7mphaWycVt5Uw8d-osgPbNU6~WPsNPil43gOwCT1b9R5AbfAdJaH~~0nOWUpqQ2T5uy7ZGPiIlKSFvtKdtnEkvl4syTbjvcg4a1s8FBpdjyNlf4mz1CVpqbRO6SvAkBZ9wxsESVoeGDPIpPHcUITi7uWjN5yNyYhnhyypNvY8WPzWiH~XUkX~bR9FfdwccaA501uZTJrZDQimw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
+		  ![2022_07_20_Screenshot from 2022-07-20 15-13-33.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad2541bb58-c726-43df-b6e4-6298a4b7432c2022_07_20_Screenshot%20from%202022-07-20%2015-13-33.png?Expires=4811901416&Signature=MfXNpCon~Taubyr~CAWCeUKZUAWFSREbwI66uRFeQGzIs~TVKg2-t2xwpluswAoKBoAvxV2fC0DYHvvkTiMKw~t8QPMYjdcgxdGD735dKaArP55LwLpztM0xJTr5qbl1WH05UGwb7mphaWycVt5Uw8d-osgPbNU6~WPsNPil43gOwCT1b9R5AbfAdJaH~~0nOWUpqQ2T5uy7ZGPiIlKSFvtKdtnEkvl4syTbjvcg4a1s8FBpdjyNlf4mz1CVpqbRO6SvAkBZ9wxsESVoeGDPIpPHcUITi7uWjN5yNyYhnhyypNvY8WPzWiH~XUkX~bR9FfdwccaA501uZTJrZDQimw__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA){:height 118, :width 449}
 		- ***预览***  
 		  ![2022_07_20_Screenshot from 2022-07-20 15-13-39.png](https://cdn.logseq.com/%2F998c98bb-79e1-4005-aff0-0375729262ad0fdc452d-dcea-4a84-9df4-5ecb38b0f56d2022_07_20_Screenshot%20from%202022-07-20%2015-13-39.png?Expires=4811901444&Signature=AtZcLonMLu~swaHS8V8dVGxhVuLuF-uMx~3a6q4ZL8mQ~IkT77dzUSCypSMfErKJFpr6L6sSdfE2E2FfybH9e6Bdix1LPIQ3SCFxpSS3ZnG-vF2Q9INbjq3ChhTRHnxseCj-PwRhi~In~~mLiO7tPEGE0LGbATdovP0BXGJB70ASiQMUkiY5tEEfihb9DVDmgde6H~DyqwA9h1Tivj88U81MyLWwbGag29TXvnhJKicERIcAHC6aUV2urAEhC8snvCvACGVcQcrzoiuUId5InPiYuDBmlB6kWr7ghQxS5Uf4tI63Vaj-N87N5zWTmmpZrSJZj9BND1uCNYl~Tk3XNQ__&Key-Pair-Id=APKAJE5CCD6X7MP6PTEA)
 - # 注脚语法  

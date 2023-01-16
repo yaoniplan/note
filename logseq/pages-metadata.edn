@@ -55,9 +55,6 @@
  {:block/name "aug 14th, 2022",
   :block/created-at 1660587474067,
   :block/updated-at 1660587580669}
- {:block/name "aug 15th, 2022",
-  :block/created-at 1660587473952,
-  :block/updated-at 1660587576350}
  {:block/name "aug 16th, 2022",
   :block/created-at 1660587477898,
   :block/updated-at 1660587477898}
@@ -93,7 +90,7 @@
   :block/updated-at 1661559638299}
  {:block/name "aug 26th, 2022",
   :block/created-at 1661503216289,
-  :block/updated-at 1661503216289}
+  :block/updated-at 1673360053428}
  {:block/name "aug 27th, 2022",
   :block/created-at 1661559183657,
   :block/updated-at 1661567733561}
@@ -133,9 +130,15 @@
  {:block/name "b",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "backtick",
+  :block/created-at 1673759554172,
+  :block/updated-at 1673759554172}
  {:block/name "bar",
   :block/created-at 1661347316939,
   :block/updated-at 1661347316939}
+ {:block/name "bash",
+  :block/created-at 1673569549811,
+  :block/updated-at 1673569549811}
  {:block/name "block",
   :block/created-at 1658857025906,
   :block/updated-at 1658857025906}
@@ -160,6 +163,9 @@
  {:block/name "card",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
+ {:block/name "caret",
+  :block/created-at 1673677170106,
+  :block/updated-at 1673677170106}
  {:block/name "character encoding",
   :block/created-at 1671424674562,
   :block/updated-at 1671424674562}
@@ -204,7 +210,7 @@
   :block/updated-at 1670630400000}
  {:block/name "dec 11th, 2022",
   :block/created-at 1670716800000,
-  :block/updated-at 1673062914930}
+  :block/updated-at 1673505224817}
  {:block/name "dec 13th, 2022",
   :block/created-at 1670889600000,
   :block/updated-at 1670889600000}
@@ -222,13 +228,13 @@
   :block/updated-at 1671440943410}
  {:block/name "dec 21st, 2022",
   :block/created-at 1671585253151,
-  :block/updated-at 1671937918408}
+  :block/updated-at 1673533378649}
  {:block/name "dec 22nd, 2022",
   :block/created-at 1671638400540,
   :block/updated-at 1671676527872}
  {:block/name "dec 23rd, 2022",
   :block/created-at 1671754786739,
-  :block/updated-at 1672105619998}
+  :block/updated-at 1673852801363}
  {:block/name "dec 25th, 2022",
   :block/created-at 1671926827356,
   :block/updated-at 1671965477596}
@@ -319,6 +325,9 @@
  {:block/name "favorites",
   :block/created-at 1658858141728,
   :block/updated-at 1658858141728}
+ {:block/name "feh",
+  :block/created-at 1673421889051,
+  :block/updated-at 1673421889051}
  {:block/name "flameshot",
   :block/created-at 1667435254176,
   :block/updated-at 1667435254176}
@@ -427,6 +436,27 @@
  {:block/name "input method",
   :block/created-at 1661426946087,
   :block/updated-at 1661426946087}
+ {:block/name "jan 10th, 2023",
+  :block/created-at 1673327215022,
+  :block/updated-at 1673361944245}
+ {:block/name "jan 11th, 2023",
+  :block/created-at 1673396803966,
+  :block/updated-at 1673707084450}
+ {:block/name "jan 12th, 2023",
+  :block/created-at 1673569549849,
+  :block/updated-at 1673569549849}
+ {:block/name "jan 13th, 2023",
+  :block/created-at 1673569548021,
+  :block/updated-at 1673709577476}
+ {:block/name "jan 14th, 2023",
+  :block/created-at 1673625601370,
+  :block/updated-at 1673704580529}
+ {:block/name "jan 15th, 2023",
+  :block/created-at 1673746392014,
+  :block/updated-at 1673864199404}
+ {:block/name "jan 16th, 2023",
+  :block/created-at 1673798402506,
+  :block/updated-at 1673864370241}
  {:block/name "jan 2nd, 2023",
   :block/created-at 1672625206745,
   :block/updated-at 1672643755418}
@@ -435,7 +465,7 @@
   :block/updated-at 1672793545239}
  {:block/name "jan 4th, 2023",
   :block/created-at 1672793543669,
-  :block/updated-at 1672820950725}
+  :block/updated-at 1673235348909}
  {:block/name "jan 5th, 2023",
   :block/created-at 1673135965340,
   :block/updated-at 1673135965340}
@@ -444,7 +474,7 @@
   :block/updated-at 1673135965735}
  {:block/name "jan 8th, 2023",
   :block/created-at 1673135963614,
-  :block/updated-at 1673230438676}
+  :block/updated-at 1673688563165}
  {:block/name "jan 9th, 2023",
   :block/created-at 1673221572854,
   :block/updated-at 1673234877777}
@@ -525,7 +555,7 @@
   :block/updated-at 1661092000683}
  {:block/name "markdown",
   :block/created-at 1667874610211,
-  :block/updated-at 1667972227829}
+  :block/updated-at 1673866211416}
  {:block/name "math",
   :block/created-at 1660778413821,
   :block/updated-at 1660778413821}
@@ -576,7 +606,7 @@
   :block/updated-at 1667956668595}
  {:block/name "nov 9th, 2022",
   :block/created-at 1667955812677,
-  :block/updated-at 1668047652320}
+  :block/updated-at 1673759578611}
  {:block/name "now",
   :block/created-at 1658858141729,
   :block/updated-at 1658858141729}
@@ -603,7 +633,7 @@
   :block/updated-at 1667435254629}
  {:block/name "oct 1st, 2022",
   :block/created-at 1667435254988,
-  :block/updated-at 1667435254988}
+  :block/updated-at 1673854487240}
  {:block/name "oct 20th, 2022",
   :block/created-at 1667435254614,
   :block/updated-at 1667435254614}
@@ -627,7 +657,7 @@
   :block/updated-at 1667976677323}
  {:block/name "oct 27th, 2022",
   :block/created-at 1667435254053,
-  :block/updated-at 1667435254053}
+  :block/updated-at 1673854400455}
  {:block/name "oct 28th, 2022",
   :block/created-at 1667435253913,
   :block/updated-at 1667435253913}
@@ -667,9 +697,15 @@
  {:block/name "outlook",
   :block/created-at 1659588241924,
   :block/updated-at 1659588241924}
+ {:block/name "patch",
+  :block/created-at 1673746397311,
+  :block/updated-at 1673746397311}
  {:block/name "ph",
   :block/created-at 1673141651494,
   :block/updated-at 1673141651494}
+ {:block/name "plugins",
+  :block/created-at 1673753545490,
+  :block/updated-at 1673753545490}
  {:block/name "png",
   :block/created-at 1673135965331,
   :block/updated-at 1673135965331}
@@ -682,6 +718,9 @@
  {:block/name "potential of hydrogen",
   :block/created-at 1673141645140,
   :block/updated-at 1673141645140}
+ {:block/name "prompt",
+  :block/created-at 1673569549814,
+  :block/updated-at 1673569549814}
  {:block/name "proxy",
   :block/created-at 1661347317071,
   :block/updated-at 1661347317071}
@@ -712,6 +751,9 @@
  {:block/name "regex",
   :block/created-at 1662341185975,
   :block/updated-at 1662341185975}
+ {:block/name "rofi",
+  :block/created-at 1673859244275,
+  :block/updated-at 1673859244275}
  {:block/name "screen resolution",
   :block/created-at 1671424674566,
   :block/updated-at 1671424674566}
@@ -795,7 +837,7 @@
   :block/updated-at 1662341187512}
  {:block/name "sep 5th, 2022",
   :block/created-at 1662341184470,
-  :block/updated-at 1662343842506}
+  :block/updated-at 1673659001054}
  {:block/name "sep 6th, 2022",
   :block/created-at 1662519772131,
   :block/updated-at 1662519772131}
@@ -937,6 +979,9 @@
  {:block/name "writing",
   :block/created-at 1658856997604,
   :block/updated-at 1658856997604}
+ {:block/name "zoom in",
+  :block/created-at 1673608661406,
+  :block/updated-at 1673608661406}
  {:block/name "zsh",
   :block/created-at 1661503216282,
   :block/updated-at 1661503216282}

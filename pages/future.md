@@ -13,9 +13,8 @@
 * 铜钟: Listen to all the music in one place. https://tonzhon.com/
 * Download Youtube music, download mp3 from Youtube online - SnapInsta https://snapinsta.io/en/convert-youtube-mp3
 * V2EX https://v2ex.com/
-* Guerrilla_Mail_disposable_temporary_email_address  https://www.guerrillamail.com/
+* ✉ Guerrilla Mail - Disposable Temporary E-Mail Address https://www.guerrillamail.com/
 * 大家论坛-大型综合性免费在线教育培训学习考试论坛！英语|财会|计算机|建工|医药|资格|考研|学历|小语种-大家大学|大家学校 https://club.topsage.com/
-* 学吧导航 | 四十万学习爱好者都在用的学霸导航网站 https://www.xue8nav.com/
 * 就诊问问 https://ask.nocode.com
 * 搜狗名医 https://mingyi.sogou.com
 * 搜书 https://ebook2.lorefree.com
@@ -28,7 +27,7 @@
 * 惜墨博客 https://ximo.blog
 * 元搜索引擎 searx https://searx.space
 * Verify WhatsApp or Facebook without phone - verify without a SIM or mobile https://mytrashmobile.com
-* 图标 https://iconfont.cn
+* iconfont-阿里巴巴矢量图标库 https://iconfont.cn
 * Learn Git Branching https://oschina.gitee.io/learn-git-branching/
 * 国家中小学智慧教育平台 https://basic.smartedu.cn/
 * 乐乐课堂，每天进步多一点！ https://www.leleketang.com/
@@ -92,7 +91,6 @@
 * freefq/free: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 https://github.com/freefq/free
 
 ## animation_comic
-* http://www.ysjdm3.com/
 * 樱花动漫(P)－专注动漫的门户网站 https://www.yhdmp.cc/
 * AGE动漫 https://www.agemys.com/
 * 萌战-专注动漫领域优质内容 https://mengzhan1314.com
