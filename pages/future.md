@@ -1,4 +1,8 @@
 ## website
+* KnowledgeManagementSystems - InstallGentoo Wiki https://wiki.installgentoo.com/wiki/KnowledgeManagementSystems
+* Typing Practice https://www.keybr.com/
+* 个人私藏：推荐7个好用到爆的实用网站，建议收藏 - 发现创造 - 虫部落 https://www.chongbuluo.com/thread-14675-1-1.html
+* Wormhole - Simple, private file sharing https://wormhole.app/
 * Perplexity AI: Ask Anything https://www.perplexity.ai/
 * 百度网盘资源分享_云盘资源分享网_云盘资源网 https://www.yunpanziyuan.com/
 * UP云搜 - 最全阿里云盘资源搜索神器 https://www.upyunso.com/
@@ -85,7 +89,6 @@
 * AI人工智能图片放大 https://bigjpg.com/
 
 ## network_proxy
-* 首页 — iKuuu VPN https://ikuuu.co/user
 * subscription converter https://subconverter.speedupvpn.com/
 * 免费机场 https://github.com/ermaozi/get_subscribe
 * freefq/free: 翻墙、免费翻墙、免费科学上网、免费节点、免费梯子、免费ss/v2ray/trojan节点、蓝灯、谷歌商店、翻墙梯子 https://github.com/freefq/free

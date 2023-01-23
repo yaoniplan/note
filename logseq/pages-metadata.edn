@@ -90,7 +90,7 @@
   :block/updated-at 1661559638299}
  {:block/name "aug 26th, 2022",
   :block/created-at 1661503216289,
-  :block/updated-at 1673360053428}
+  :block/updated-at 1673940737333}
  {:block/name "aug 27th, 2022",
   :block/created-at 1661559183657,
   :block/updated-at 1661567733561}
@@ -234,7 +234,7 @@
   :block/updated-at 1671676527872}
  {:block/name "dec 23rd, 2022",
   :block/created-at 1671754786739,
-  :block/updated-at 1673852801363}
+  :block/updated-at 1673880802837}
  {:block/name "dec 25th, 2022",
   :block/created-at 1671926827356,
   :block/updated-at 1671965477596}
@@ -348,7 +348,7 @@
   :block/updated-at 1667435255375}
  {:block/name "gentoo linux",
   :block/created-at 1671424674563,
-  :block/updated-at 1671424674563}
+  :block/updated-at 1673925049028}
  {:block/name "gg",
   :block/created-at 1671424674565,
   :block/updated-at 1671424674565}
@@ -400,9 +400,6 @@
  {:block/name "i3status",
   :block/created-at 1661426945332,
   :block/updated-at 1661426945332}
- {:block/name "i3wm",
-  :block/created-at 1667435255420,
-  :block/updated-at 1667435255420}
  {:block/name "id",
   :block/created-at 1671424674567,
   :block/updated-at 1671424674567}
@@ -447,16 +444,22 @@
   :block/updated-at 1673569549849}
  {:block/name "jan 13th, 2023",
   :block/created-at 1673569548021,
-  :block/updated-at 1673709577476}
+  :block/updated-at 1673922662164}
  {:block/name "jan 14th, 2023",
   :block/created-at 1673625601370,
-  :block/updated-at 1673704580529}
+  :block/updated-at 1673879987356}
  {:block/name "jan 15th, 2023",
   :block/created-at 1673746392014,
-  :block/updated-at 1673864199404}
+  :block/updated-at 1673961524277}
  {:block/name "jan 16th, 2023",
   :block/created-at 1673798402506,
-  :block/updated-at 1673864370241}
+  :block/updated-at 1673935505454}
+ {:block/name "jan 17th, 2023",
+  :block/created-at 1673915923113,
+  :block/updated-at 1673961972451}
+ {:block/name "jan 18th, 2023",
+  :block/created-at 1674002279933,
+  :block/updated-at 1674002569522}
  {:block/name "jan 2nd, 2023",
   :block/created-at 1672625206745,
   :block/updated-at 1672643755418}
@@ -474,7 +477,7 @@
   :block/updated-at 1673135965735}
  {:block/name "jan 8th, 2023",
   :block/created-at 1673135963614,
-  :block/updated-at 1673688563165}
+  :block/updated-at 1673925286751}
  {:block/name "jan 9th, 2023",
   :block/created-at 1673221572854,
   :block/updated-at 1673234877777}
@@ -913,6 +916,9 @@
  {:block/name "tmux",
   :block/created-at 1671926828953,
   :block/updated-at 1671926828953}
+ {:block/name "tmux-tilish",
+  :block/created-at 1673945145760,
+  :block/updated-at 1673945145760}
  {:block/name "todo",
   :block/created-at 1658858141730,
   :block/updated-at 1658858141730}
@@ -947,11 +953,14 @@
   :block/created-at 1659353879592,
   :block/updated-at 1659353879592}
  {:block/name "vim",
-  :block/created-at 1659755212964,
-  :block/updated-at 1659755212964}
+  :block/created-at 1673960216838,
+  :block/updated-at 1673960216838}
  {:block/name "vimium",
   :block/created-at 1667435254964,
   :block/updated-at 1667435254964}
+ {:block/name "vimwiki",
+  :block/created-at 1673961970432,
+  :block/updated-at 1673961970432}
  {:block/name "virtualbox",
   :block/created-at 1661092000671,
   :block/updated-at 1661092000671}
