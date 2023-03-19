@@ -1,4 +1,59 @@
-- #### Search for a piece of music
+- #### Set some configuraton for VimWiki
+    - `vim ~/.vimrc`
+      ```vim
+      " Make plugins named VimWiki work
+      set nocompatible
+      filetype plugin on
+      syntax on
+      
+      " Use Markdown syntax for VimWiki
+      " Replace `diary/` with `journals/`
+      let g:vimwiki_list = [{
+          \ 'path': '~/test/',
+          \ 'diary_rel_path': 'journals/',
+          \ 'syntax': 'markdown',
+          \ 'ext': '.md'}]
+      " Replace `[Vim](Vim)` with `[Vim](Vim.md)`
+      " Refer to https://github.com/vimwiki/vimwiki/issues/1210
+      let g:vimwiki_markdown_link_ext = 1
+      " Disable all Concealing (level: 0-3)
+      let g:vimwiki_conceallevel = 3
+      " Disable URL shortening
+      let g:vimwiki_url_maxsave = 0
+      " Replace spaces in the file names with underscores
+      let g:vimwiki_links_space_char = '_'
+      ```
+- ---
+- #### Use a development branch in Git
+    - First use
+      ```
+      git branch development
+      git checkout development
+      git add testDevelopment.md
+      git commit -m "Add testDevelopment.md"
+      ```
+    - Push the code
+      ```
+      git push origin development
+      git checkout master
+      git merge development
+      git push origin master
+      ```
+- ***Notes***
+    - If you want to stay on the development branch to push the code
+        - `git push origin development` # Push to the development branch
+        - `git push origin development:master` # Push to the master branch
+    - `git branch --all` # View all branches
+    - `git pull` # Someone else pulls the code
+    - `git push --all origin` # Push all branches to GitHub
+    - `git branch -d dev` # Delete a branch locally
+    - Because using two repositories is a bit cumbersome.
+- ***References***
+    - ChatGPT
+    - https://stackoverflow.com/questions/14168677/merge-development-branch-with-master/14169244#14169244
+    - https://github.com/xx025/carrot
+- ---
+- #### Search for a piece of music in search bar of Chromium
     - `8am I can see the success rate`
 - ***Notes***
     - `8am` # Music name
@@ -11,6 +66,8 @@
     - Command-line calculator
     - A password manager
     - A weather app
+- ***Notes***
+    - Because the default shell of most Linux distributions is bash.
 - ***References***
     - ChatGPT
 - ---
@@ -724,10 +781,15 @@
     - https://wiki.gentoo.org/wiki/Netifrc
 - ---
 - #### Use SSH without password in Unix-like
-    - `ssh-copy-id heting@192.168.10.100` # Run it in local
+    - `ssh-copy-id git@192.168.10.100` # Run it in local
 - ***Notes***
-    - `heting@192.168.10.100` # Replace it with server
+    - `git@192.168.10.100` # Replace it with server
     - In fact, it appends client's *id_rsa.pub* file to server's *~/.ssh/authorized_keys* file
+        - `ssh-keygen` # Solve the problem
+          ```
+          yaoniplan@ubuntu2204:~$ ssh-copy-id git@192.168.10.100
+          /usr/bin/ssh-copy-id: ERROR: No identities found
+          ```
 - ***References***
     - https://wiki.gentoo.org/wiki/SSH#Server
 - ---
@@ -923,11 +985,11 @@
 - #### Install Docker in Ubuntu Server 22.04
     - Follow the steps of this [website](https://docs.docker.com/engine/install/ubuntu/)
 - ***Notes***
-    - `sudo usermod -aG docker heting` # Add the user to the docker group in Linux
+    - `doas usermod -aG docker heting` # Add the user to the docker group
         - `-a` # Append
         - `-G` # Group
         - `heting` # Replace it with your user
-    - `reboot` # Make the changes effective
+    - `doas reboot` # Make the changes effective
     - `docker --version` # Verify the installation
 - ***References***
     - `man usermod`
@@ -995,7 +1057,7 @@
     - `man rsync`
     - https://stackoverflow.com/questions/11557114/cp-r-without-hidden-files/11557219#11557219
 - ---
-- #### Rename the branch from main to master in Git
+- #### Rename the branch from "main" to "master" in Git
     - `git branch --move main master`
     - `git push origin --set-upstream master`
 - ***Notes***
@@ -1003,6 +1065,14 @@
     - `git push origin --delete main` # Delete the *main* remote branch
     - `git branch --delete main` # Delete the *main* local branch
     - Because the default branch is master in Git
+    - Toggle the default branch of settings of a GitHub repository to master to solve the problem
+      ```
+      yaoniplan@tux /tmp/note $ git push origin --delete main
+      To github.com:yaoniplan/note.git
+       ! [remote rejected] main (refusing to delete the current branch: refs/heads/main)
+      error: failed to push some refs to 'github.com:y
+      aoniplan/note.git'
+      ```
 - ***References***
     - `git branch --help`
     - `git push --help`
@@ -2500,7 +2570,7 @@
 - ---
 - #### Replace tab characters with spaces in Vim
     - `vim ~/.vimrc`
-      ```
+      ```vim
       " Use spaces for indenting
       set expandtab " Replace tab characters with spaces
       set tabstop=4 " Insert 4 spaces when expandtab is enabled
@@ -2509,7 +2579,7 @@
 - ***References***
     - https://codingshower.com/vim-set-tab-to-n-spaces/
 - ---
-- #### The punctuation of at sign is `@`
+- #### The punctuation of "at sign" is "@".
 - ***References***
     - https://en.wikipedia.org/wiki/At_sign
 - ---
@@ -2634,15 +2704,12 @@
 	- https://github.com/junegunn/vim-plug/wiki/tutorial
 - ---
 - #### Use Vim plugins manager
-	- `vim ~/.vimrc`
+	- `vim ~/.vimrc` # A small configuration
 	  ```vim
-	  " Plugins will be downloaded under the specified directory.
 	  call plug#begin()
-	  
-	  " Lists of plugins
-	  Plug 'tpope/vim-sensible'
-	  
-	  " List ends here. Plugins become visible to Vim after this call.
+      Plug 'vimwiki/vimwiki'
+      Plug 'sunaku/tmux-navigate'
+      Plug 'dbridges/vim-markdown-runner'
 	  call plug#end()
 	  ```
 	- `:source ~/.vimrc` # Restart Vim
@@ -2660,7 +2727,7 @@
         - `:PlugUpgrade`
 - ***References***
     - https://github.com/junegunn/vim-plug
-	- [tutorial · junegunn/vim-plug Wiki](https://github.com/junegunn/vim-plug/wiki/tutorial)
+	- https://github.com/junegunn/vim-plug/wiki/tutorial
 - ---
 - #### Use Bash
 	- `Ctrl-p` # The previous command
@@ -3099,13 +3166,13 @@
 	- ![2022-12-26_11-31.png](../assets/2022-12-26_11-31_1672025500536_0.png)
 	- ![2022-12-26_11-32.png](../assets/2022-12-26_11-32_1672025553418_0.png)
 	- [Where can we check how old is a github account ? : github](https://www.reddit.com/r/github/comments/b3tdg2/where_can_we_check_how_old_is_a_github_account/)- ---
-- The #abbreviation of [[HyperText Markup Language]] is #HTML.
+- The #abbreviation of "HyperText Markup Language" is "HTML".
 - ***Notes***
 	- A markup language
 	- A file format
 - ***References***
-	- ![2022-12-25_18-46.png](../assets/2022-12-25_18-46_1671965225091_0.png)
-	- [HTML - Wikipedia](https://en.wikipedia.org/wiki/HTML)
+    - ![2022-12-25_18-46.png](../assets/2022-12-25_18-46_1671965225091_0.png)
+    - https://en.wikipedia.org/wiki/HTML
 - ---
 - #### The punctuation of "tilde" is "~".
 - ***References***
@@ -3134,7 +3201,7 @@
 	- `man ln`
 	- https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/
 - ---
-- #### Copy text from #tmux to clipboard in #Linux
+- #### Copy text from tmux to clipboard in Linux
 	- `doas vim /etc/tmux.conf`
 	  ```
 	  bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
@@ -3147,7 +3214,7 @@
 - ***References***
 	- ![2022-12-25_09-51.png](../assets/2022-12-25_09-51_1671933133240_0.png)
 	- `man xclip`
-	- [tmux in practice: integration with system clipboard](https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/)
+	- https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
 - #### Use tmux
     - `tmux attach-session -t 1` # Attach session 1 if you quit the terminal accidentaly
         - `kitty` # Replace it with your terminal
@@ -3744,32 +3811,29 @@
 	- ![image.png](../assets/image_1670207778824_0.png)
 	- https://en.wikipedia.org/wiki/European_Union
 - ---
-- #### Copy text from #Vim to external application without using mouse
-	- `Shift v` # Select what you want to copy **before copying**
-	- `"+y` # Copy text from Vim
-	- `Ctrl v` # Paste text to external application (e.g. *web browser*, *instant messaging*, etc.)
+- #### Copy text from Vim to external application without using mouse
+    - `Shift-v` # Visual line mode
+    - `"+y` # Copy text from Vim
+    - `Ctrl-v` # Paste text to external application (e.g. *web browser*, *instant messaging*, etc.)
 - ***Notes***
-	- `Shift v` # Means pressing *Shift* and *v* **together**
-		- Use other commands (e.g. *j*, *k*, etc.) if you want to select more information
-	- `"+y` # Means pressing *"*, *+* and *y* **one by one**
-		- `y` # Stand for **yank** (in other editors is called **copy**)
-	- `Ctrl v` # Means pressing *Ctrl* and *v* **together**
-	- If your clipboard is not working
-		- `:version` # Check the clipboard feature in #Vim
-		  ![2022-12-17_16-09.png](../assets/2022-12-17_16-09_1671264573981_0.png)
-		- `sudo vim /etc/portage/package.use/zz-autounmask` # Edit and Add the USE flag to enable the clipboard feature
-		  ```
-		  # required by app-editors/vim
-		  app-editors/vim X
-		  ```
-		  ![2022-12-17_16-10.png](../assets/2022-12-17_16-10_1671264653139_0.png)
-		- `sudo emerge -q app-editors/vim` # Recompile it to enable the USE flag
+    - `"+y` # Means pressing *"*, *+* and *y* **one by one**
+        - `y` # Yank
+    - If your clipboard is not working
+        - `:version` # Check the clipboard feature in Vim
+          ![2022-12-17_16-09.png](../assets/2022-12-17_16-09_1671264573981_0.png)
+        - `sudo vim /etc/portage/package.use/zz-autounmask` # Edit and Add the USE flag to enable the clipboard feature
+          ```
+          # required by app-editors/vim
+          app-editors/vim X
+          ```
+          ![2022-12-17_16-10.png](../assets/2022-12-17_16-10_1671264653139_0.png)
+        - `sudo emerge -q app-editors/vim` # Recompile it to enable the USE flag
 - ***References***
-	- ![image.png](../assets/image_1670203463820_0.png)
-	- ![image.png](../assets/image_1670203935654_0.png)
-	- ![image.png](../assets/image_1670204012402_0.png)
-	- [How can I copy text to the system clipboard from Vim? - Vi and Vim Stack Exchange](https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim)
-	- [Vim - Gentoo Wiki](https://wiki.gentoo.org/wiki/Vim)
+    - ![image.png](../assets/image_1670203463820_0.png)
+    - ![image.png](../assets/image_1670203935654_0.png)
+    - ![image.png](../assets/image_1670204012402_0.png)
+    - https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
+    - https://wiki.gentoo.org/wiki/Vim
 - ---
 - #### I am trying to mix and not just handedness. #Idea
 - ***References***
@@ -4734,16 +4798,7 @@
   * ![image.png](../assets/image_1666497331311_0.png)
   * ![image.png](../assets/image_1666497547737_0.png) 
   * [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)
-- [[Vim]]Line number show
-  * `:set number`
-  * ***Notes***
-  * `:set nonumber` # Line number hide
-  * ***References***
-  * ![image.png](../assets/image_1666517250071_0.png) 
-  * ![image.png](../assets/image_1666517474153_0.png) 
-  * ![image.png](../assets/image_1666516747325_0.png)
-  * [How to Show Line Numbers in Vim / Vi | Linuxize](https://linuxize.com/post/how-to-show-line-numbers-in-vim/)
--- [[HTML]] Declaration
+- [[HTML]] Declaration
   ```html
   <!DOCTYPE html>
   ```
@@ -5098,13 +5153,9 @@
   * ![image.png](../assets/image_1664760950267_0.png)
   * ![image.png](../assets/image_1664761013877_0.png)
   * https://askubuntu.com/questions/372607/how-to-create-a-bootable-ubuntu-usb-flash-drive-from-terminal
-- I need to spend a lot of time cleaning the HP laptop (e.g. electric fan, GPU, etc.) because it has a lot of screws. #Idea
-  
-  * ***References***
-  * [HP 1000 Laptop Disassembly | Fan Cleaning | Replace Parts](https://www.youtube.com/watch?v=p7XZNsNLQss)
-- docker test
-  * ![image.png](../assets/image_1664792374929_0.png)
--
+- #### I need to spend a lot of time cleaning the HP laptop (e.g. electric fan, GPU, etc.) because it has a lot of screws. #Idea
+- ***References***
+    - https://www.youtube.com/watch?v=p7XZNsNLQss
 - [[Vimium]]temporarily disable vimium
   * `i` # ignore all commands of vimium by hitting this key (`i` is `insert`)
   * ***Notes***
@@ -6295,18 +6346,12 @@
   * **如果出现 zsh 没有生效的情况，请注销并重新登陆**
   * `ctrl + shift + e` # If your zsh is't work, then please use hotkey `ctrl + shift + e` to exit i3 in your i3wm.(After exiting i3, you need input your password to start i3.)
   * ***参考资料***
-  * [romkatv/powerlevel10k](https://github.com/romkatv/powerlevel10k#installation)
+  * https://github.com/romkatv/powerlevel10k#installation
 - [[linux]]手动挂载 U 盘或硬盘
   * `sudo mount /dev/sdx /mnt` //将 `/dev/sdx` 挂载在 `/mnt` 目录下
   * ***注意事项***
   * `/dev/sdx` //这里的 `x` 可以是 abc……(请用 `sudo fdisk -l` 查看要挂载的盘)
   * `/mnt` //这里的 `/mnt` 只是一个存在的目录，方便 `cd /mnt` 来进行各种操作 (你可以自定义一个存在的目录 `/mnt`)
-- [[Vim]]复制到系统剪贴板
-  * `{Visual}"+y` //将所选文本复制到系统剪贴板 (在 `Visual` 模式下，移动光标选中文本，然后依次按下这三个符号 `"` `+` `y`，接着可以在浏览器中使用快捷键 `ctrl + v` 粘贴了)
-  * ***注意事项***
-  * `vim --version | grep "clipboard"` //检查当前版本的 Vim ，是否显示 `+clipboard` (若不支持，请安装 gvim)
-  * ***参考资料***
-  * [一文搞懂vim复制粘贴](https://www.cnblogs.com/huahuayu/p/12235242.html "一文搞懂vim复制粘贴")
 - [[git]] 修改 commit 的注释
   * `git commit --amend` //此时会进入文本编辑器，修改注释后保存退出即可
   * ***参考资料***
@@ -6371,10 +6416,6 @@
   * gnome-terminal
   * alacritty # 2022-09-05 还在使用
 - 虚拟机 vmware-workstation 在 archlinux 中，与 qemu 一样折腾 #Idea
-- [[Vim]] [[hotkey]]显示行号
-  * `:set number` //显示行号
-  * ***注意事项***
-  * 退出 vim 后，再次打开 vim 则不显示，需再次输入 `:set number`
 - ---
 - #### Decompress a ".gz" file
     - `gzip -d testData.gz`
