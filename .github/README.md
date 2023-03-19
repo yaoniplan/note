@@ -9,7 +9,7 @@
       " Use Markdown syntax for VimWiki
       " Replace `diary/` with `journals/`
       let g:vimwiki_list = [{
-          \ 'path': '~/test/',
+          \ 'path': '~/note/',
           \ 'diary_rel_path': 'journals/',
           \ 'syntax': 'markdown',
           \ 'ext': '.md'}]
@@ -52,6 +52,17 @@
     - ChatGPT
     - https://stackoverflow.com/questions/14168677/merge-development-branch-with-master/14169244#14169244
     - https://github.com/xx025/carrot
+- ---
+- #### Use the "$(())" construct to perform basic arithmetic operatons in Bash
+    - `echo $((7 / 2))` # "3"
+- ***Notes***
+    - Because to check if it is an odd or even day
+      ```bash
+      dayOfWeek=$(date +%u)
+      if (( ($dayOfWeek / 2) * 2 == $dayOfWeek ))
+      ```
+- ***References***
+    - ChatGPT
 - ---
 - #### Search for a piece of music in search bar of Chromium
     - `8am I can see the success rate`
@@ -1208,7 +1219,7 @@
     - `links ip4.me`
     - `curl -4 ifconfig.co`
 - ---
-- #### The abbreviation of Domain Name System is DNS
+- #### The abbreviation of "Domain Name System" is "DNS".
     - A system
 - ***References***
     - https://en.wikipedia.org/wiki/Domain_Name_System
@@ -3893,21 +3904,21 @@
 - ***References***
 	- https://wiki.gentoo.org/wiki/St
 - ---
-- #### Solve error about module repository #Gentoo #Linux
-	- `sudo emerge eselect-repository`
-	- ***Notes***
-		- **Error**
-			- ```
-			  yaoniplan@yaoniplan ~ $ eselect repository enable torbrowser
-			  !!! Error: Can't load module repository
-			  exiting
-			  yaoniplan@yaoniplan ~ $
-			  ```
-	- ***References***
-		- ![image.png](../assets/image_1669969037006_0.png)
-		- ![image.png](../assets/image_1669968750028_0.png)
-		- ![image.png](../assets/image_1669969330050_0.png)
-		- [swift-overlay/README.md at main · luliu/swift-overlay](https://github.com/luliu/swift-overlay/blob/main/README.md)
+- #### Solve error about module repository Gentoo Linux
+    - `sudo emerge eselect-repository`
+- ***Notes***
+    - Error
+      ```
+      yaoniplan@yaoniplan ~ $ eselect repository enable torbrowser
+      !!! Error: Can't load module repository
+      exiting
+      yaoniplan@yaoniplan ~ $
+      ```
+- ***References***
+    - ![image.png](../assets/image_1669969037006_0.png)
+    - ![image.png](../assets/image_1669968750028_0.png)
+    - ![image.png](../assets/image_1669969330050_0.png)
+    - https://github.com/luliu/swift-overlay/blob/main/README.md
 - ---
 - #### Draw only if more than one container is in the workspace #i3
 	- ```
@@ -4563,8 +4574,8 @@
   * ***References***
   * ![image.png](../assets/image_1666672033870_0.png)
   * ![image.png](../assets/image_1666672446082_0.png) 
-  * [note/README.md at main · yaoniplan/note](https://github.com/yaoniplan/note/blob/5cf3fb4fb65540ac253d217e396f107fa131d7df/README.md)
-  * [How to comment out stuff in Markdown on GitHub?](https://gist.github.com/jonikarppinen/47dc8c1d7ab7e911f4c9)
+  * https://github.com/yaoniplan/note/blob/5cf3fb4fb65540ac253d217e396f107fa131d7df/README.md
+  * https://gist.github.com/jonikarppinen/47dc8c1d7ab7e911f4c9
   ---
 - #### Commit message rules in Git
     - Separate subject from body with a blank line

@@ -1,9 +1,9 @@
 # Important and urgent
-Untrack some dotfiles
-    For compatibility with server
+Use the dotfiles in remote and local
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
+Delete the repository name "test"
 http://natas0.natas.labs.overthewire.org
 1. g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
 2. h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
