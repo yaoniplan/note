@@ -4586,8 +4586,8 @@
     - Wrap the body at 72 characters
     - Use the body to explain what and why vs. how
 - ***Notes***
-    - `git commit -m 'foo'` # Write the subject line to replace "foo"
-    - `git commit --amend` # Write the body (The "amend" means to merge the commit)
+    - `git commit -m 'foo'` # Write the subject line
+    - `git commit --amend` # Write the body
 - ***References***
     - ![image.png](../assets/image_1666685073963_0.png)
     - https://cbea.ms/git-commit/
@@ -5090,8 +5090,9 @@
   * ***References***
   * ![image.png](../assets/image_1665281199847_0.png)
   * ![image.png](../assets/image_1665281355196_0.png)
--- I participated in a game about "shiyanlou_100th_floor_2022-09-15_2022-10-14". #Idea
--- #### Symbol wiki
+-- #### I participated in a game about "shiyanlou_100th_floor_2022-09-15_2022-10-14". #Idea
+- ---
+- #### Symbol wiki
   * https://en.wikipedia.org/wiki/Punctuation
   * https://zh.wikipedia.org/wiki/%E6%A0%87%E7%82%B9%E7%AC%A6%E5%8F%B7
 - ---
@@ -5164,9 +5165,11 @@
   * ![image.png](../assets/image_1664760950267_0.png)
   * ![image.png](../assets/image_1664761013877_0.png)
   * https://askubuntu.com/questions/372607/how-to-create-a-bootable-ubuntu-usb-flash-drive-from-terminal
+- ---
 - #### I need to spend a lot of time cleaning the HP laptop (e.g. electric fan, GPU, etc.) because it has a lot of screws. #Idea
 - ***References***
     - https://www.youtube.com/watch?v=p7XZNsNLQss
+- ---
 - [[Vimium]]temporarily disable vimium
   * `i` # ignore all commands of vimium by hitting this key (`i` is `insert`)
   * ***Notes***
@@ -5296,7 +5299,9 @@
   * `~/.ssh/known_hosts` # rename it. (for example: `mv ~/.ssh/known_hosts ~/.ssh/known_hosts_old.old`)
   * `ssh user@ipaddress` # enter it. (for example: `ssh root@192.168.10.110`)
   * ***References***
-  * [关于ssh登录出现异常警告：WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!](https://www.cnblogs.com/johnchain/archive/2013/04/08/3006631.html)- I'll try gentoo linux. # learn snapshot, backup, restore, software, etc. #Idea
+  * https://www.cnblogs.com/johnchain/archive/2013/04/08/3006631.html
+- ---
+- I'll try gentoo linux. # learn snapshot, backup, restore, software, etc. #Idea
 -- #### Cut hair process
     - `hairpin` # pin or hold hair
     - `spray bottle` # make hair wet
@@ -5345,8 +5350,9 @@
   ```
   * ***References***
   * ![image.png](../assets/image_1664021314006_0.png)
-  * [Organizing information with collapsed sections](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections)
--- #### Solve the problem about hunchback
+  * https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-collapsed-sections
+- ---
+- #### Solve the problem about hunchback
     - Reduce usage of eyes
     - Focus on abdomen and chest
 - ***Notes***
