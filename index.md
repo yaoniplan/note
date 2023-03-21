@@ -1,9 +1,11 @@
 # Important and urgent
 Use the dotfiles in remote and local
+Change the ~/.local/bin/autoGitPush.sh
+    1, 3, 5, 7 # Master bransh
+    every day # Development branch
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
-Delete the repository name "test"
 http://natas0.natas.labs.overthewire.org
 1. g9D9cREhslqBKtcA2uocGHPfMZVzeFK6
 2. h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7

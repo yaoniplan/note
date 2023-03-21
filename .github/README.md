@@ -44,7 +44,6 @@
         - `git push origin development` # Push to the development branch
         - `git push origin development:master` # Push to the master branch
     - `git branch --all` # View all branches
-    - `git pull` # Someone else pulls the code
     - `git push --all origin` # Push all branches to GitHub
     - `git branch -d dev` # Delete a branch locally
     - Because using two repositories is a bit cumbersome.
@@ -58,10 +57,11 @@
 - ***Notes***
     - Because to check if it is an odd or even day
       ```bash
-      dayOfWeek=$(date +%u)
-      if (( ($dayOfWeek / 2) * 2 == $dayOfWeek ))
+      if [[ $(( $(date +%-j) % 2)) -eq 0 ]]; then
       ```
+        - `-` # Do not pad the field
 - ***References***
+    - `man date`
     - ChatGPT
 - ---
 - #### Search for a piece of music in search bar of Chromium
@@ -1047,8 +1047,8 @@
     - https://en.wikipedia.org/wiki/Pretty_Good_Privacy
 - ---
 - #### Add multiple push URL in Git
-    - `git remote set-url --add --push origin git@192.168.10.100:/var/git/test.git`
-    - `git remote set-url --add --push origin git@github.com:yaoniplan/test.git`
+    - `git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git`
+    - `git remote set-url --add --push origin git@github.com:yaoniplan/note.git`
 - ***Notes***
     - `git remote --verbose` # Check Git remote URL
     - `git remote set-url origin git@192.168.10.100:/var/git/learnPerl.git` # Update the origin URL
@@ -4380,13 +4380,13 @@
 - ***References***
 	- ![image.png](../assets/image_1667745772612_0.png)
 	- ![image.png](../assets/image_1667745850629_0.png)
-	- [Linux中Shutdown命令实现定时自动关机_阿德0307的博客-CSDN博客](https://blog.csdn.net/xmc281141947/article/details/61191212)- ---
-- I'm trying to complete my [[GitHub]]. #Idea
+	- [Linux中Shutdown命令实现定时自动关机_阿德0307的博客-CSDN博客](https://blog.csdn.net/xmc281141947/article/details/61191212)- I'm trying to complete my GitHub. #Idea
 - ***References***
-	- ![image.png](../assets/image_1667689932734_0.png)
-	-
-	- ![image.png](../assets/image_1667524928897_0.png)
-	- [pengx17 (Peng Xiao)](https://github.com/pengx17)- Push using [[Git]] automatically
+    - ![image.png](../assets/image_1667689932734_0.png)
+    - ![image.png](../assets/image_1667524928897_0.png)
+    - https://github.com/pengx17
+- ---
+- Push using [[Git]] automatically
 	- "~/.config/shell/autoGit.sh"
 	  ```sh
 	  #!/bin/sh
