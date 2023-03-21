@@ -1,3 +1,69 @@
+- #### Modify the last commit message in Git
+    - `dotfiles commit --amend -m "Push to master branch on odd days"`
+- ***Notes***
+    - `dotfiles push origin development -f` # Solve the problem
+      ```
+      yaoniplan@ubuntu2204:~$ dotfiles push origin development
+      To 192.168.10.100:/var/git/dotfiles.git
+       ! [rejected]        development -> development (non-fast-forward)
+      error: failed to push some refs to '192.168.10.100:/var/git/dotfiles.git'
+      hint: Updates were rejected because the tip of your current branch is behind
+      hint: its remote counterpart. Integrate the remote changes (e.g.
+      hint: 'git pull ...') before pushing again.
+      hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+      ```
+    - `dotfiles pull origin development` # Someone else pull the development branch
+- ***References***
+    - ChatGPT
+- ---
+- #### Set the default editor to Vim in Ubuntu Server 22.04
+    - `vim ~/.bashrc`
+      ```
+      export VISUAL=vim
+      export EDITOR=vim
+      ```
+- ***Notes***
+    - `source ~/.bashrc` # Make the changes effective
+- ***References***
+    - ChatGPT
+- ---
+- #### Change a repository description for GitHub via command line
+    - Type in terminal
+      ```
+      curl -L \
+        -X PATCH \
+        -H "Accept: application/vnd.github+json" \
+        -H "Authorization: Bearer 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" \
+        -H "X-GitHub-Api-Version: 2022-11-28" \
+        https://api.github.com/repos/yaoniplan/dotfiles \
+        -d '{"description":"Minimal dotfiles in Linux server"}'
+      ```
+- ***Notes***
+    - `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` # Replace it with your GitHub PAT
+        - Get it in "Personal access tokens" of "Developer settings"
+        - Remember to click the "repo" checkbox to grant this token access to the repository
+    - `yaoniplan/dotfiles` # Replace it with your user and repository name
+    - `Minimal dotfiles in Linux server` # Replace it with your desired description
+- ***References***
+    - ChatGPT
+    - https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#update-a-repository
+- ---
+- #### Paste content from clipboard to dmenu
+    - `$(xclip -o)`
+- ***Notes***
+    - `doas emerge -aq x11-misc/xclip` # Install it if you don't have it
+    - `mpv --speed=2 $(xclip -o)` # Type it before you pressed `Ctrl-c` to copy content
+- ***References***
+    - ChatGPT
+- ---
+- #### The abbreviation of "personal access token" is "PAT".
+    - A string
+    - To authenticate
+- ***Notes***
+    - Because to use GitHub PAT to change a repository description via command line
+- ***References***
+    - https://en.wikipedia.org/wiki/Personal_access_token
+- ---
 - #### Set some configuraton for VimWiki
     - `vim ~/.vimrc`
       ```vim
@@ -47,8 +113,14 @@
     - `git push --all origin` # Push all branches to GitHub
     - `git branch -d dev` # Delete a branch locally
     - Because using two repositories is a bit cumbersome.
+    - `git clone git@192.168.10.100:/var/git/note.git --branch development` # Solve the problem
+      ```
+      warning: remote HEAD refers to nonexistent ref, unable to checkout
+      ```
+        - `git push origin development:master` # You don't push your master branch to `git@192.168.10.100:/var/git/note.git`
 - ***References***
     - ChatGPT
+    - https://stackoverflow.com/questions/41269587/github-clone-repo-error-warning-remote-head-refers-to-nonexistent-ref-unable/41269696#41269696
     - https://stackoverflow.com/questions/14168677/merge-development-branch-with-master/14169244#14169244
     - https://github.com/xx025/carrot
 - ---
@@ -57,7 +129,7 @@
 - ***Notes***
     - Because to check if it is an odd or even day
       ```bash
-      if [[ $(( $(date +%-j) % 2)) -eq 0 ]]; then
+      if [[ $(( $(date +%-j) % 2)) -eq 1 ]]; then
       ```
         - `-` # Do not pad the field
 - ***References***
@@ -4978,7 +5050,7 @@
   * ![image.png](../assets/image_1666430907703_0.png)
   * ![image.png](../assets/image_1666431460568_0.png)
   * ![image.png](../assets/image_1666432411721_0.png)
-  * [How can I fix git commit error "Waiting for your editor to close the file..." with Vs Code? - Stack Overflow](https://stackoverflow.com/questions/52195877/how-can-i-fix-git-commit-error-waiting-for-your-editor-to-close-the-file-wi)
+  * https://stackoverflow.com/questions/52195877/how-can-i-fix-git-commit-error-waiting-for-your-editor-to-close-the-file-wi
 -
 - [[html]]paragraph element
   * `<p>some text content</p>`
@@ -5436,8 +5508,7 @@
   * `:n` # You will edit the next file after you copy. (You can select where you want to copy via enter "`v`", then you can copy via enter "`y`".)
   * `p` # You can paste it via enter "`p`"
   * ***References***
-  * [How to Copy and Paste content from one file to Another file in VI Editor?](https://www.youtube.com/watch?v=YS9PZJ-c7ps)
--
+  * https://www.youtube.com/watch?v=YS9PZJ-c7ps
 - #### Check memory in Linux
     - `cat /proc/meminfo | less`
 - ***Notes***

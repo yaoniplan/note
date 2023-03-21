@@ -1,8 +1,5 @@
 # Important and urgent
-Use the dotfiles in remote and local
-Change the ~/.local/bin/autoGitPush.sh
-    1, 3, 5, 7 # Master bransh
-    every day # Development branch
+sync the date and time in Ubuntu Server 22.04
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
