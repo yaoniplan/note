@@ -1,3 +1,20 @@
+- #### Display the correct date and time in Ubuntu Server 22.04
+    - `doas timedatectl set-timezone Asia/Shanghai`
+- ***Notes***
+    - `timedatectl` # View the current timezone
+    - `Asia/Shanghai` # Replace it with your desired timezone
+        - `timedatectl list-timezones` # List all timezones
+- ***References***
+    - `man timedatectl`
+    - ChatGPT
+- ---
+- #### Use the "man" tool in Linux
+    - `ma` # Mark with "a" letter
+- ***Notes***
+    - `'a` # Go to the "a" mark
+- ***References***
+    - `h`
+- ---
 - #### Modify the last commit message in Git
     - `dotfiles commit --amend -m "Push to master branch on odd days"`
 - ***Notes***
@@ -63,6 +80,19 @@
     - Because to use GitHub PAT to change a repository description via command line
 - ***References***
     - https://en.wikipedia.org/wiki/Personal_access_token
+- ---
+- #### Use Codeium to autocomplete in Vim
+    - `:Codeium Auth`
+- ***Notes***
+    - `vim ~/.vimrc` # Install it if you don't have it
+      ```vim
+      Plug 'Exafunction/codeium.vim'
+      ```
+        - `source ~/.vimrc`
+        - `:PlugInstall`
+- ***References***
+    - `:help Codeium`
+    - https://github.com/Exafunction/codeium.vim#-installation-options
 - ---
 - #### Set some configuraton for VimWiki
     - `vim ~/.vimrc`
@@ -265,7 +295,7 @@
     - ![2023-03-13_14:58:24.png](../assets/2023-03-13_14:58:24.png)
 - ---
 - #### Use the "mpv" command
-    - `mpv --speed=2 URLOfTheVideo`
+    - `mpv --speed=2 --fs=yes URLOfTheVideo`
 - ***Notes***
     - `o` # Show progress bar
     - `f` # Full screen
@@ -992,7 +1022,6 @@
       / # Mount Path
       /folder/hereIsRootFolderID # Root folder id
       useYourMobilePhoneToGet # Refresh token
-      /s/hereIsShareID # Share id
       Name # Order by
       Ascending # Order direction
       ```
@@ -6139,10 +6168,9 @@
 	- `git reset --hard 8172b02`
 	- `git push -f`
 - ***Notes***
-	- `git log` # Show commit logs (e.g. *8172b02...*, *e3bd5dd...*, etc)
-	- `git reset --hard 8172b02` # Revert to the *8172b02...* version
-	- `git push -f`
-		- `-f` # Force
+    - `git log` # Show commit logs (e.g. 8172b02..., e3bd5dd..., etc)
+    - `git reset --hard 8172b02` # Revert to the 8172b02... version
+    - `-f` # Force
 	- `git reflog` # Show all commit logs (including discarded version)
 - ***References***
 	- ![image.png](../assets/image_1662372438709_0.png)

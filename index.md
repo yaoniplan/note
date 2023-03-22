@@ -1,5 +1,5 @@
 # Important and urgent
-sync the date and time in Ubuntu Server 22.04
+Push code automatically in Git
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
