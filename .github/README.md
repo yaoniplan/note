@@ -15,6 +15,17 @@
 - ***References***
     - `h`
 - ---
+- #### Upgrade the Vim in Ubuntu Server 22.04
+    - `doas add-apt-repository ppa:jonathonf/vim`
+    - `doas apt update`
+    - `doas apt install vim`
+- ***Notes***
+    - `vim --version` # Check the version
+    - Because it is necessary to meet the useage conditions of "Codeium".
+- ***References***
+    - `man vim`
+    - ChatGPT
+- ---
 - #### Modify the last commit message in Git
     - `dotfiles commit --amend -m "Push to master branch on odd days"`
 - ***Notes***
@@ -81,7 +92,7 @@
 - ***References***
     - https://en.wikipedia.org/wiki/Personal_access_token
 - ---
-- #### Use Codeium to autocomplete in Vim
+- #### Use "Codeium" to autocomplete in Vim
     - `:Codeium Auth`
 - ***Notes***
     - `vim ~/.vimrc` # Install it if you don't have it
@@ -1006,7 +1017,7 @@
       ```
     - https://wiki.gentoo.org/wiki//etc/portage/package.license
 - ---
-- #### Use AList in Docker
+- #### Use "AList" in Docker
     - SFTP
       ```
       /Backup # Mount Path
@@ -1046,8 +1057,6 @@
     - Add README.md (Two methods)
         - Upload README.md
         - Add Markdown content to "Readme" in "Metas"
-    - Hide folder
-        - Type `/Baidu/apps` into "Hide files" in global settings
     - Replace logo and favicon
         - Upload images
         - Copy link
@@ -6631,7 +6640,7 @@
   1. sudo pacman -S alsa-utils //安装 alsa-utils  
   2. alsamixer //通过 alsamixer 调节  
   参考资料  
-  [archlinux alsa安装，音量设置和音量信息保存](https://itcn.blog/p/5223635363.html)
+  https://itcn.blog/p/5223635363.html
 - [[linux]] [[色温]] 调节  
   1. sudo pacman -S redshift //安装 redshift
   2. redshift -O 1500 //设置固定色温

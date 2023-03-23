@@ -145,7 +145,7 @@
 - https://www.deepl.com/translator
 
 ## E-mail
-- https://tempmailo.com/
+- http://mail.0du.win/
 - https://temp-mail.org/en/
 - https://mail.google.com/mail/u/0/#inbox
 - https://outlook.live.com/mail/0/junkemail
