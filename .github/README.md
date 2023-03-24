@@ -1,3 +1,23 @@
+- #### The abbreviation of "automated teller machine" is "ATM".
+    - A device
+    - To perform transactions
+- ***References***
+    - https://en.wikipedia.org/wiki/Automated_teller_machine
+- ---
+- #### The abbreviation of "artificial intelligence" is AI.
+    - An intelligence
+- ***References***
+    - https://en.wikipedia.org/wiki/Artificial_intelligence
+- ---
+- #### Add string "230317" to the beginning of each file name in one-liner Bash
+    - `for f in *; do mv "$f" "230217$f"; done`
+- ***Notes***
+    - `f` # A variable
+    - `for f in *; do mv "$f" "${f:6}"; done` # Remove the first 6 letters
+- ***References***
+    - ChatGPT
+    - ![2023-03-23_22:32:46.png](../assets/2023-03-23_22:32:46.png)
+- ---
 - #### Display the correct date and time in Ubuntu Server 22.04
     - `doas timedatectl set-timezone Asia/Shanghai`
 - ***Notes***
@@ -173,6 +193,8 @@
       if [[ $(( $(date +%-j) % 2)) -eq 1 ]]; then
       ```
         - `-` # Do not pad the field
+    - Perform floating point arithmetic operations
+        - `echo "scale=2; 7 / 2" | bc` # "3.50"
 - ***References***
     - `man date`
     - ChatGPT
@@ -228,7 +250,7 @@
     - `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
 - ***Notes***
     - `-i` # Identity
-    - `sshkey.private` # Replace it with remote private key
+    - `sshkey.private` # Replace it with remote private key file
 - ***References***
     - `man ssh`
     - https://explainshell.com/explain?cmd=ssh+-i+sshkey.private+bandit14%40localhost
@@ -392,16 +414,6 @@
     - `man screen`
     - ChatGPT
 - ---
-- #### Remove the first four letters of filenames using Perl
-    - `perl -e 'for (@ARGV) { ($new = $_) =~ s/^.{4}//; rename $_, $new }' *`
-- ***Notes***
-    - `-e` # Execute
-    - `$new` # A variable
-    - `$_` # The current filename
-- ***References***
-    - ChatGPT
-    - ![2023-03-10_23:57:00.png](../assets/2023-03-10_23:57:00.png)
-- ---
 - #### Mount the AList to the local dirctory using Rclone
     - `rclone config`
       ```
@@ -487,7 +499,7 @@
         - Open https://cloud.google.com/console
         - Click "OAuth consent screen" in "APIs & Services"
         - Select "External" in "User type"
-        - Add your E-mail account in "Test users"
+        - Add your email account in "Test users"
     - Add some APIs in "Library"
         - Cloud Search API
         - Google Drive API
@@ -772,7 +784,7 @@
     - `about:profiles`
         - `cd /home/yaoniplan/.mozilla/firefox/3y390lx5.default-release/`
         - `mkdir chrome/`
-        - Put *userChrome.css* file into *chrome/* directory
+        - Put userChrome.css file into chrome/ directory
     - Close the Firefox and then open it # Make the changes effective
 - ***References***
     - ![2023-03-05_15:58:55.png](../assets/2023-03-05_15:58:55.png)
@@ -783,7 +795,7 @@
     - Click the three vertical dots
     - Click the full screen mode icon
 - ***Notes***
-    - Click the X button # Exit the full screen mode
+    - Click the "X" button # Exit the full screen mode
 - ***References***
     - https://www.businessinsider.com/guides/tech/how-to-full-screen-google-chrome
 - ---

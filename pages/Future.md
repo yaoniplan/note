@@ -123,7 +123,7 @@
 - https://pe-cn.github.io
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
-## Chatbot
+## Artificial intelligence
 - https://github.com/xx025/carrot
 - https://www.perplexity.ai/
 - https://platform.openai.com/onboarding

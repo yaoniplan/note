@@ -1,5 +1,7 @@
 # Important and urgent
 Push code automatically in Git
+867c346ad5ff494a4352bf8216221fde
+149f1aeddb2bc6c21e589bec122d27c1
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
