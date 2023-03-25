@@ -1,8 +1,62 @@
+- #### View Git commit messages in one-line format
+    - `git log --oneline`
+- ***Notes***
+    - Because for faster viewing of recent commits.
+- ***References***
+    - ChatGPT
+- ---
+- #### Set the Referer header to desired value
+    ```
+    curl --user natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm --referer http://natas5.natas.labs.overthewire.org/ http://natas4.natas.labs.overthewire.org/
+    ```
+- ***Notes***
+    - Because to pass the Natas4 level of overthewire.org.
+- ***References***
+    - `man curl`
+    - https://github.com/psmiraglia/ctf/blob/master/overthewire/natas/natas04.md
+- ---
+- #### Convert hexadecimal string to binary data of ASCII characters
+    - `echo 3d3d516343746d4d6d6c315669563362 | xxd -r -p`
+- ***Notes***
+    - `-r` # Revert
+    - `-p` # Plain
+    - `==QcCtmMml1ViV3b` # Output
+    - Because to pass the Natas8 level of overthewire.org.
+- ***References***
+    - `man xxd`
+    - ChatGPT
+- ---
+- #### Reverse a string in Linux
+    - `echo "==QcCtmMml1ViV3b" | rev`
+- ***Notes***
+    - `b3ViV1lmMmtCcQ==` # Output
+    - Because to pass the Natas8 level of overthewire.org.
+- ***References***
+    - ChatGPT
+- ---
+- #### Install Node.js and npm in Ubuntu Server 22.04
+    - `doas apt update`
+    - `doas apt install nodejs npm -y`
+    - `git clone https://github.com/KrauseFx/markdown-to-html-github-style`
+    - `cd markdown-to-html-github-style/`
+    - `npm install`
+    - `node convert.js .`
+- ***Notes***
+    - ``
+- ***References***
+    - ChatGPT
+    - https://github.com/KrauseFx/markdown-to-html-github-style
+- ---
 - #### The abbreviation of "automated teller machine" is "ATM".
     - A device
     - To perform transactions
 - ***References***
     - https://en.wikipedia.org/wiki/Automated_teller_machine
+- ---
+- #### The abbreviation of "large language model" is "LLM".
+    - A language model
+- ***References***
+    - https://en.wikipedia.org/wiki/Large_language_model
 - ---
 - #### The abbreviation of "artificial intelligence" is AI.
     - An intelligence
@@ -1032,13 +1086,13 @@
 - #### Use "AList" in Docker
     - SFTP
       ```
-      /Backup # Mount Path
+      /backupPrivateFiles # Mount Path
       Name # Order by
       Descending # Order direction
-      192.168.10.105:22 # Address
+      192.168.10.100:22 # Address
       yaoniplan # Username
       ****** # Password
-      /mnt/Toshiba # Root folder path
+      /mnt/backupPrivateFiles # Root folder path
       ```
     - AliyundriveOpen
       ```
@@ -1858,9 +1912,11 @@
     - https://overthewire.org/wargames/bandit/bandit10.html
 - ---
 - #### Use base64 to decode
-    - `base64 -d ./data.txt`
+    - `echo "b3ViV1lmMmtCcQ==" | base64 -d`
 - ***Notes***
+    - `|` # Redirect the output
     - `-d` # Decode
+    - Because to pass the Natas8 level of overthewire.org.
 - ***References***
     - `man base64`
     - ![2023-02-06_20:06:11.png](../assets/2023-02-06_20:06:11.png)

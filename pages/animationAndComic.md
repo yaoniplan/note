@@ -1,5 +1,5 @@
 ### Animation
-- Lupine the Third / 鲁邦三世 (Season1+2) - (23+075) animation
+- Lupine the Third / 鲁邦三世 (Season1+2) - (23+083) animation
 - 炼气十万年 - 13
 - 万事屋斋藤到异世界 - 11
 - 阿鲁斯的巨兽 - 11

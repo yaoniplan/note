@@ -167,12 +167,11 @@
 ## Committed message
 - https://github.com/search?o=desc&q=author%3AZekumoru&s=committer-date&type=Commits
 
-## Study method
+## Study methods
 - https://limboy.me/posts/words-to-myself/
 - https://limboy.me/posts/what-i-wish-i-knew-when-i-was-20/
 - https://jovica.org/posts/advanced_learner/
 - https://www.yuque.com/supermemo/wiki/20rules
-- http://super-memory.com/articles/20rules.htm
 
 ## Short message service
 - https://anonymsms.com/

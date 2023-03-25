@@ -1,7 +1,5 @@
 # Important and urgent
 Push code automatically in Git
-867c346ad5ff494a4352bf8216221fde
-149f1aeddb2bc6c21e589bec122d27c1
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
@@ -10,9 +8,11 @@ http://natas0.natas.labs.overthewire.org
 2. h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7
 3. G6ctbMJ5Nb4cbFwhpMPSvxGHhQ7I6W8Q
 4. tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm
+5. Z0NsrtIkJoKALBCLi5eqFfcRN82Au2oD
+6. fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
+7. jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr
+8. a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB
+9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 # Not urgent not important
 Delete all workflows of GitHub Actions
-Use the DWM, Emacs, Sed
-https://www.softether.org/4-docs/1-manual/7._Installing_SoftEther_VPN_Server/7.3_Install_on_Linux_and_Initial_Configurations
-https://www.gentoo.site/viewtopic.php?id=541
-https://quickref.me/chatgpt
+Use the DWM, Emacs
