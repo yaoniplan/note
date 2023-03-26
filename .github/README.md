@@ -1,3 +1,16 @@
+- #### The abbriviation of "Transport Layer Security" is "TLS".
+    - A protocol
+- ***Notes***
+    - Because to redirect all requests from HTTP to HTTPS.
+- ***References***
+    - https://en.wikipedia.org/wiki/Transport_Layer_Security
+- ---
+- #### Redirect all requests from HTTP to HTTPS in Cloudflare
+    - Full # in "Overview" of "SSL/TLS"
+    - Always Use HTTPS # in "Edge Certificates" of "SSL/TLS"
+- ***References***
+    - ChatGPT
+- ---
 - #### View Git commit messages in one-line format
     - `git log --oneline`
 - ***Notes***
@@ -41,8 +54,6 @@
     - `cd markdown-to-html-github-style/`
     - `npm install`
     - `node convert.js .`
-- ***Notes***
-    - ``
 - ***References***
     - ChatGPT
     - https://github.com/KrauseFx/markdown-to-html-github-style
@@ -58,7 +69,7 @@
 - ***References***
     - https://en.wikipedia.org/wiki/Large_language_model
 - ---
-- #### The abbreviation of "artificial intelligence" is AI.
+- #### The abbreviation of "artificial intelligence" is "AI".
     - An intelligence
 - ***References***
     - https://en.wikipedia.org/wiki/Artificial_intelligence
@@ -1586,13 +1597,13 @@
 - #### Create a domain name with "eu.org"
     - GitHub pages, Cloudflare, eu.org
 - ***Notes***
+    - May take a day to fetch HTTPS
     - GitHub pages
-        - A repository named yaoniplan.github.io
-        - Custom domain
-        - Enforce HTTPS
+        - A repository named "yaoniplan.github.io"
+        - Custom domain is "yaoniplan.eu.org"
     - Cloudflare
-        - CNAME, www, yaoniplan.github.io, Proxied
-    - In order to test a website
+        - CNAME, @, yaoniplan.github.io, Proxied, Auto
+    - eu.org
     - I don't need it on February 21, 2023.
         - Just need a local IP address (e.g. *192.168.10.100*)
     - Why I don't need it?
@@ -4679,9 +4690,9 @@
 	- ![image.png](../assets/image_1667112924162_0.png)
 	- ![image.png](../assets/image_1667111715985_0.png)
 	- ![image.png](../assets/image_1667111924903_0.png)
-	- [mendax1234/logseq-cusgit-theme: A customisable GitHub like theme for logseq.](https://github.com/mendax1234/logseq-cusgit-theme)
+	- https://github.com/mendax1234/logseq-cusgit-theme
 - ---
--- #### The punctuation of "hyphen" is "-"
+- #### The punctuation of "hyphen" is "-"
 - ***References***
 	- ![image.png](../assets/image_1666937284752_0.png)
 	- https://en.wikipedia.org/wiki/Hyphen

@@ -1,19 +1,15 @@
-- # Header
+- # "Markdown"
+- # Headings
     ```
     # Heading level 1
     ```
-- # Paragraph
+- # Paragraphs
     ```
     Paragraph one.
 
     Paragraph two.
     ```
-- # Newline 
-    ```
-    The first line.  
-    The second line.
-    ```
-- # Emphasize 
+- # Emphasize
     - ## 1. Bold
       ```
       The **bold** text.
@@ -140,7 +136,7 @@
       ```
       ``The `code` text.``
       ```
-    - ## 3. Code block
+    - ## 3. Code blocks
       <pre><code>
       ```
       {
@@ -160,7 +156,7 @@
       }
       ```
       </code></pre>
-- # Separator line 
+- # Horizontal rule
   ```
   ---
   ```

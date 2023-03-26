@@ -180,8 +180,8 @@
 
 ## Social media
 - https://web.telegram.org/z/
-- https://bilibili.com/search
-- https://www.zhihu.com/search
+- https://bilibili.com/
+- https://www.zhihu.com/
 - https://v2ex.com/
 - https://www.chongbuluo.com
 - https://youtube.com/
