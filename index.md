@@ -1,7 +1,7 @@
 # Important and urgent
 Push code automatically in Git
+[HTML](pages/HTML.md)
 Debug some bugs
-    Hyperlinks # Not supported click
     Code blocks # Not supported syntax highlighting
 # Important not urgent
 Change the switches of keyboard for a computer

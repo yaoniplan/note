@@ -1,3 +1,16 @@
+- #### Install PHP in Linux
+    - `doas emerge dev-lang/php` # In Gentoo Linux
+    - `doas apt install php` # In Ubuntu Server 22.04
+- ***Notes***
+    - Sovle the problem "/bin/bash: line 1: php: command not found"
+- ***References***
+    - ChatGPT
+- ---
+- #### Display the difference after using git add
+    - `git diff --cached`
+- ***References***
+    - ChatGPT
+- ---
 - #### The abbriviation of "Transport Layer Security" is "TLS".
     - A protocol
 - ***Notes***
@@ -6,10 +19,13 @@
     - https://en.wikipedia.org/wiki/Transport_Layer_Security
 - ---
 - #### Redirect all requests from HTTP to HTTPS in Cloudflare
-    - Full # in "Overview" of "SSL/TLS"
-    - Always Use HTTPS # in "Edge Certificates" of "SSL/TLS"
+    - Full
+        - In "Overview" of "SSL/TLS"
+    - Always Use HTTPS 
+        - In "Edge Certificates" of "SSL/TLS"
 - ***References***
     - ChatGPT
+    - https://dash.cloudflare.com/
 - ---
 - #### View Git commit messages in one-line format
     - `git log --oneline`
@@ -20,7 +36,11 @@
 - ---
 - #### Set the Referer header to desired value
     ```
-    curl --user natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm --referer http://natas5.natas.labs.overthewire.org/ http://natas4.natas.labs.overthewire.org/
+    curl --user \
+    natas4:tKOcJIbzM4lTs8hbCmzn5Zr4434fGZQm \
+    --referer \
+    http://natas5.natas.labs.overthewire.org/ \
+    http://natas4.natas.labs.overthewire.org/
     ```
 - ***Notes***
     - Because to pass the Natas4 level of overthewire.org.
@@ -1221,7 +1241,7 @@
 - ***References***
     - https://superuser.com/questions/41378/how-to-search-for-selected-text-in-vim
 - ---
-- #### The abbreviation of "continuous integration" / "continuous deployment" is "CI/CD"
+- #### The abbreviation of "continuous integration" / "continuous deployment" is "CI" / "CD"
     - Automation
 - ***References***
     - https://nn.ci/posts/github-actions.html
@@ -1595,28 +1615,19 @@
     - https://ostechnix.com/set-static-ip-address-and-dns-on-freebsd/
 - ---
 - #### Create a domain name with "eu.org"
-    - GitHub pages, Cloudflare, eu.org
-- ***Notes***
-    - May take a day to fetch HTTPS
     - GitHub pages
         - A repository named "yaoniplan.github.io"
-        - Custom domain is "yaoniplan.eu.org"
+        - Custom domain to "yaoniplan.eu.org"
     - Cloudflare
         - CNAME, @, yaoniplan.github.io, Proxied, Auto
     - eu.org
-    - I don't need it on February 21, 2023.
-        - Just need a local IP address (e.g. *192.168.10.100*)
-    - Why I don't need it?
-        - Resolve domain name to server public IP address
-        - AAAA, www.yaoniplan.eu.org, *yourIPv6*
-        - A, yaoniplan.eu.org, *yourIPv4*
-    - What is the public IP address?
-        - Visible on the internet (Instead of on the home network)
+- ***Notes***
+    - Public IP address
+        - Visible on the internet instead of on the home network
 - ***References***
     - https://nic.eu.org/
     - https://dash.cloudflare.com/
-    - https://www.bilibili.com/video/BV1TB4y1Q7b5/
-    - https://qr.ae/prWFbq
+    - https://www.quora.com/How-do-I-know-whether-an-IP-address-is-public-or-local/
     - https://www.youtube.com/watch?v=In3UZAYiP2c
 - ---
 - #### The abbreviation of Free Berkeley Software Distribution is FreeBSD
@@ -5184,12 +5195,13 @@
   * ![image.png](../assets/image_1666345355999_0.png)
   * https://www.w3schools.com/html/html_intro.asp
 -
-- google
-  * `time` # last_year-(if there are too few results)last_2_or_3_years-(if changes)last_month
-  * `quotation_marks` # ""
-  * `excluding_words` # -
-  * ***References***
-  * https://codinginflow.com/google-programming-questions
+- #### Search syntax in Google
+    - `artificial intelligence after:2023/03/27`
+- ***Notes***
+    - `after:2023/03/20` # Time
+- ***References***
+    - ChatGPT
+- ---
 - [[linux]]gentoo remove software and dependencies
   * `sudo emerge --depclean picom`
   * ***References***
