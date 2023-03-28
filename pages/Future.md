@@ -100,7 +100,6 @@
 - https://jmcomic.bet/
 - https://www.3004aa.cc/
 - https://www.hentaicomic.org/
-- https://ssyxzj.xyz/
 
 ## Programming
 - https://www.shiyanlou.com/

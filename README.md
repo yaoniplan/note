@@ -26,7 +26,6 @@
     - Because to test whether the changes takes effect when run the following command
         - `vim ~/.tmux.conf`
           ```
-          # Retain more history when scrolling up
           set -g history-limit 50000
           ```
         - `tmux source-file ~/.tmux.conf`
@@ -41,15 +40,6 @@
         - marked.min.js
 - ***References***
     - ChatGPT
-- ---
-- #### Understand the "infinite monkey theorem"
-    - Infinite time
-    - Monkey hit keys
-- ***Notes***
-    - Shakespeare's Hamlet
-    - Events with nonzore probability almost surely occur
-- ***References***
-    - https://en.wikipedia.org/wiki/Infinite_monkey_theorem
 - ---
 - #### Install PHP in Linux
     - `doas emerge dev-lang/php` # In Gentoo Linux
