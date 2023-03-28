@@ -1,16 +1,4 @@
-- ## "learnHTML"
-- ## A simple index.html template
-    ```html
-    <!DOCTYPE html>
-    <html>
-         <head>
-              <title>yaoniplan</title>
-         </head>
-         <body>
-              Hello, world!
-         </body>
-    </html>
-    ```
+- # "learnHTML"
 - ## Declaration
     ```
     <!DOCTYPE html>
