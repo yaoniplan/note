@@ -1,4 +1,4 @@
-- #### Run an ".appimage" file
+- #### Run an ".AppImage" file
     - `./Cursor-0.1.9.AppImage`
 - ***Notes***
     - `Cursor-0.1.9.AppImage` # Replace it with your desired appimage
@@ -2441,7 +2441,6 @@
     - https://github.com/lervag/wiki.vim/issues/101#issuecomment-718284921
     - https://github.com/lervag/wiki.vim/blob/master/doc/wiki.txt#L178
 - ---
-- ---
 - #### Solve the problem about image path in GitHub
     - Remove `..` and then `git push`
 - ***References***
@@ -4367,7 +4366,6 @@
 - ***References***
     - https://wiki.gentoo.org/wiki/Chrome
 - ---
-- ---
 - SDDM theme #Gentoo #Linux #DM
 	- `sudo cp -r ~/sddm-chili-0.1.5 /usr/share/sddm/themes/`
 	- `sudo vim /usr/share/sddm/sddm.conf.d/00default.conf`
@@ -4480,7 +4478,7 @@
     - `man zip`
     - ![image.png](../assets/image_1669360589011_0.png)
 - ---
-- Do not use "sudo **rm -rf** test/" unless you used "sudo **cp -r** test/" before. #Idea #Linux
+- Do not use "sudo rm -rf test/" unless you used "sudo cp -r test/ /tmp/" before. #Idea #Linux
 - ---
 - dark theme #Ventoy #CLI
 	- `sudo ./VentoyPlugson.sh /dev/sdc` # Type it in your Shell (terminal)
