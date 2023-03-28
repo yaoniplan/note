@@ -1,3 +1,46 @@
+- #### Run an ".appimage" file
+    - `./Cursor-0.1.9.AppImage`
+- ***Notes***
+    - `Cursor-0.1.9.AppImage` # Replace it with your desired appimage
+    - `chmod u+x Cursor-0.1.9.AppImage` # Make it executable if permission denied
+    - `./Cursor-0.1.9.AppImage --appimage-extract` # Solve the problem
+      ```
+      yaoniplan@tux ~ $ ./Cursor-0.1.9.AppImage
+      dlopen(): error loading libfuse.so.2
+      
+      AppImages require FUSE to run.
+      You might still be able to extract the contents of this AppImage
+      if you run it with the --appimage-extract option.
+      See https://github.com/AppImage/AppImageKit/wiki/FUSE
+      for more information
+      ```
+- ***References***
+    - ChatGPT
+- ---
+- #### Run a command 20 times in one-liner Bash
+    - `for times in {1..20}; do treeLike.sh note/; done`
+- ***Notes***
+    - `times` # Replace it with your desired variable name
+    - `20` # Replace it with your desired times
+    - `treeLike.sh note/` # Replace it with your desired command
+    - Because to test whether the changes takes effect when run the following command
+        - `vim ~/.tmux.conf`
+          ```
+          set -g history-limit 50000
+          ```
+        - `tmux source-file ~/.tmux.conf`
+- ***References***
+    - ChatGPT
+- ---
+- #### Correct the format of JavaScript code
+    - https://beautifier.io
+    - https://prettier.io/
+- ***Notes***
+    - Because to make the code more readable
+        - marked.min.js
+- ***References***
+    - ChatGPT
+- ---
 - #### Install PHP in Linux
     - `doas emerge dev-lang/php` # In Gentoo Linux
     - `doas apt install php` # In Ubuntu Server 22.04
@@ -1135,7 +1178,7 @@
       ```
     - Lanzou
       ```
-      /APK # Mount Path
+      /androidSoftware # Mount Path
       Name # Order by
       Descending # Order direction
       Cookie # Type
@@ -3426,7 +3469,7 @@
 	- ![2022-12-25_09-51.png](../assets/2022-12-25_09-51_1671933133240_0.png)
 	- `man xclip`
 	- https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
-- #### Use tmux
+- #### Use "tmux"
     - `tmux attach-session -t 1` # Attach session 1 if you quit the terminal accidentaly
         - `kitty` # Replace it with your terminal
         - `tmux ls`
@@ -4801,375 +4844,12 @@
   * [Full stop - Wikipedia](https://en.wikipedia.org/wiki/Full_stop)
   ---
 -
-- [[HTML]]Cascading Style Sheets `CSS`
-  * ***References***
-  * ![image.png](../assets/image_1666564175640_0.png)
-  * [HTML Styles CSS](https://www.w3schools.com/html/html_css.asp)
-- [[HTML]]CSS Inline
-  ```html
-  <h1 style="color:red;">Hello Yaoniplan</h1>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666566786973_0.png)
-- [[HTML]]CSS Internal
-  ```html
-  <head>
-  <style>
-  body {background-color:powderblue;}
-  h1 {color:red;}
-  p {color:red;}
-  </style>
-  </head>
-  <body>
-  <h1>Hello Yaoniplan</h1>
-  <p>Yaoniplan</p>
-  </body>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666567690501_0.png)
-- [[HTML]]CSS External
-  * index.html
-  ```html
-  <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>Hello Yaoniplan</h1>
-    <p>Yaoniplan</p>
-  </body>
-  ```
-  * styles.css
-  ```css
-  body {
-    background-color:powderblue;
-  }
-  h1 {
-    color:blue;
-  }
-  p {
-    color:red;
-  }
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666568716621_0.png)
-- [[HTML]]CSS Colors Fonts Sizes
-  ```html
-  <head>
-    <style>
-      h1 {
-        color:blue;
-        font-family:verdana;
-        font-size:300%;
-      }
-      p {
-        color:red;
-        font-family:courier;
-        font-size:160%;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hello Yaoniplan</h1>
-    <p>Yaoniplan.</p>
-  </body>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666569668888_0.png)
-- [[HTML]]CSS Border
-  ```css
-  p {
-    border:2px solid powderblue;
-  }
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666570686855_0.png)
-- [[HTML]]CSS Padding
-  ```css
-  p {
-    border:2px solid powderblue;
-    padding:30px;
-  }
-  ```
-  * ***Notes***
-  * `padding` # a space between the text and the border
-  * ***References***
-  * ![image.png](../assets/image_1666571237516_0.png)
-- [[HTML]]CSS Margin
-  ```css
-  p {
-    border:2px solid powderblue;
-    margin:50px;
-  }
-  ```
-  * ***Notes***
-  * `margin` # a space outside the border
-  * ***References***
-  * ![image.png](../assets/image_1666571804596_0.png)
-- [[HTML]]CSS External Link
-  ```html
-  <link rel="stylesheet" href="https://w3schools.com/html/styles.css">
-  ```
-  * or
-  ```html
-  <link rel="stylesheet" href="/html/styles.css">
-  ```
-  * or
-  ```html
-  <link rel="stylesheet" href="styles.css">
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666572922562_0.png)
-  * ![image.png](../assets/image_1666572949325_0.png)
-  * ![image.png](../assets/image_1666573005144_0.png)
+- #### The abbreviation of "Cascading Style Sheets" is "CSS".
+- ***References***
+    - ![image.png](../assets/image_1666564175640_0.png)
+    - https://www.w3schools.com/html/html_css.asp
 - I will write an extension (e.g. linux commands) of google chrome. #Idea
--- [[HTML]]Superscripted `<sup>`
-  ```html
-  This is <sup>superscripted</sup> text (e.g. WWW<sup>[1]</sup>)
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666477080431_0.png)
-- [[HTML]]Abbreviation `<abbr>`
-  ```html
-  The <abbr title="World Health Organization">WHO</abbr> was founded in 1948
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666479026369_0.png)
-- [[HTML]]Address `<address>`
-  ```html
-  <address>
-  Written by Yaoniplan<br>
-  Visit us at:<br>
-  Github.com/yaoniplan<br>
-  Fuzhou, Jiangxi<br>
-  China
-  </address>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666480513032_0.png)
-- [[HTML]]Comments
-  ```html
-  <!-- Write your comments here -->
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666482172592_0.png)
-- [[HTML]]Colors background
-  ```html
-  <h1 style="background-color:Tomato;">Hello Yaoniplan</h1>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666487827081_0.png)
-- [[HTML]]Colors text
-  ```html
-  <h3 style="color:Tomato;">Hello Yaoniplan</h3>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666488334965_0.png)
-- [[HTML]]Colors border
-  ```html
-  <h1 style="border:2px solid Tomato;">Hello Yaoniplan</h1>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666489352664_0.png)
-- [[HTML]]Colors RGB
-  ```html
-  <h1 style="background-color:rgb(255, 0, 0);">Hello Yaoniplan</h1>
-  ```
-  * ***Notes***
-  * `255` `0` # intensity (between 0 and 255) of the color
-  * `rgb(255, 0, 0)` # rgb(red, green, blue)
-  * `rgb(0, 0, 0)` # black
-  * `rgb(255, 255, 255)` # white
-  * ***References*** 
-  * ![image.png](../assets/image_1666492616642_0.png) 
-  * ![image.png](../assets/image_1666490508059_0.png)
-  * [HTML RGB and RGBA Colors](https://www.w3schools.com/html/html_colors_rgb.asp)
-- [[HTML]]Colors RGBA
-  ```html
-  <h1 style="background-color:rgba(255, 0, 0, 0.0);">Hello Yaoniplan</h1>
-  ```
-  * ***Notes***
-  * `a` # alpha
-  * `0.0` # the opacity of the color
-  * `1.0` # not transparent at all
-  * ***References***
-  * ![image.png](../assets/image_1666495735665_0.png) 
-  * ![image.png](../assets/image_1666495598796_0.png)
-  * [HTML RGB and RGBA Colors](https://www.w3schools.com/html/html_colors_rgb.asp)
-- [[HTML]]Colors HEX
-  ```html
-  #rrggbb
-  ```
-  * ***Notes***
-  * `HEX` # Hexadecimal
-  * `rr` # red
-  * `gg` # green
-  * `bb` # blue
-  * `00` `ff` # between 00 and ff (same as decimal 0-255)
-  * ***References***
-  * ![image.png](../assets/image_1666497331311_0.png)
-  * ![image.png](../assets/image_1666497547737_0.png) 
-  * [HTML HEX Colors](https://www.w3schools.com/html/html_colors_hex.asp)
-- [[HTML]] Declaration
-  ```html
-  <!DOCTYPE html>
-  ```
-  * ***Notes***
-  * `<!DOCTYPE html>` # Declaration for HTML5
-  * ***References***
-  * ![image.png](../assets/image_1666393489743_0.png)
-  * [HTML Basic](https://www.w3schools.com/html/html_basic.asp)
-- [[HTML]] Heading
-  ```html
-  <h1>This is heading 1</h1>
-  ```
-  * ***Notes***
-  * `h` # Heading
-  * `<h1>` # Heading 1 tag
-  * ***References***
-  * ![image.png](../assets/image_1666394930480_0.png)
-  * ![image.png](../assets/image_1666395000340_0.png)
-  * [HTML Basic](https://www.w3schools.com/html/html_basic.asp)
-- [[HTML]] Paragraph
-  ```html
-  <p>This is a paragraph.</p>
-  ```
-  * ***Notes***
-  * `p` # Paragraph
-  * ***References***
-  * ![image.png](../assets/image_1666395408793_0.png)
-  * ![image.png](../assets/image_1666395455138_0.png)
-  * [HTML](https://www.w3schools.com/html/html_basic.asp)
-- [[HTML]] Link
-  ```html
-  <a href="https://github.com/yaoniplan/note">yaoniplan</a>
-  ```
-  * ***Notes***
-  * `a` # anchor
-  * `href` # hyperlink reference
-  * ***References***
-  * ![image.png](../assets/image_1666396520740_0.png)
-  * ![image.png](../assets/image_1666396576533_0.png)
-  * ![image.png](../assets/image_1666396956767_0.png) 
-  * [Links and Images | The Odin Project](https://www.theodinproject.com/lessons/foundations-links-and-images)
-- [[HTML]] Image
-  ```html
-  <img src="https://github.com/yaoniplan/note/raw/39392a2f4d5cae08e3cc1751b04c59b6bef776cb/assets/dark_1662509469645_0.jpg" alt="wallpaper_dark.jpg">
-  ```
-  * ***Notes***
-  * `img` # image
-  * `src` # source
-  * `alt` # alternative text
-  * ***References***
-  * ![image.png](../assets/image_1666400341164_0.png) 
-  * ![image.png](../assets/image_1666399686004_0.png)
-  * ![image.png](../assets/image_1666399848043_0.png)
-  * ![image.png](../assets/image_1666399906243_0.png)
-  * [HTML Basic](https://www.w3schools.com/html/html_basic.asp)
-  * [Links and Images | The Odin Project](https://www.theodinproject.com/lessons/foundations-links-and-images)
-- [[HTML]] A line break
-  ```html
-  <p>This is a <br> paragraph with a line break.</p>
-  ```
-  * ***Notes***
-  * `br` # break
-  * ***References***
-  * ![image.png](../assets/image_1666401977852_0.png) 
-  * ![image.png](../assets/image_1666401868733_0.png)
-  * [HTML Elements](https://www.w3schools.com/html/html_elements.asp)
-- [[HTML]] Attribute `name="value"`
-  * ***References***
-  * ![image.png](../assets/image_1666402674460_0.png)
-  * ![image.png](../assets/image_1666403177384_0.png)
-  * ![image.png](../assets/image_1666403235193_0.png)
-  * ![image.png](../assets/image_1666403284987_0.png)
-  * ![image.png](../assets/image_1666403326940_0.png)
-  * ![image.png](../assets/image_1666403360953_0.png)
-  * ![image.png](../assets/image_1666403407739_0.png)
-  * ![image.png](../assets/image_1666403446057_0.png)
-  * ![image.png](../assets/image_1666403570721_0.png)
-  * ![image.png](../assets/image_1666403656144_0.png)
-  * [HTML Attributes](https://www.w3schools.com/html/html_attributes.asp)
-- [[HTML]] Horizontal rule `hr`
-  * ***References***
-  * ![image.png](../assets/image_1666406444643_0.png)
-  * ![image.png](../assets/image_1666406582453_0.png)
-  * [HTML Paragraphs](https://www.w3schools.com/html/html_paragraphs.asp)
-- [[HTML]] Style attribute
-  ```html
-  <tagname style="property:value;">
-  ```
-  * ***Notes***
-  * `property` # a CSS property
-  * `value` # a CSS value
-  * ***References***
-  * ![image.png](../assets/image_1666409220190_0.png)
-  * ![image.png](../assets/image_1666409430125_0.png)
-  * ![image.png](../assets/image_1666409491677_0.png)
-  * ![image.png](../assets/image_1666409560795_0.png)
-  * ![image.png](../assets/image_1666409632478_0.png)
-  * ![image.png](../assets/image_1666409699480_0.png)
-  * ![image.png](../assets/image_1666409752965_0.png)
-  * ![image.png](../assets/image_1666409815611_0.png)
-  * ![image.png](../assets/image_1666410299641_0.png)
-  * ![image.png](../assets/image_1666410402994_0.png)
-  * ![image.png](../assets/image_1666410552101_0.png)
-  * ![image.png](../assets/image_1666410695975_0.png)
-  * ![image.png](../assets/image_1666410821720_0.png)
-- ---
-- [[HTML]]Bold `<b>`
-  ```html
-  <b>This text is bold</b>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666424856553_0.png)
-- [[HTML]]Strong importance `<strong>`
-  ```html
-  <strong>This text is important</strong>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666425278418_0.png)
-- [[HTML]]Italic `<i>`
-  ```html
-  <i>This text is italic</i>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666425677407_0.png)
-- [[HTML]]Emphasized `<em>`
-  ```html
-  <em>This text is emphasized</em>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666426815060_0.png)
-- [[HTML]]Smaller `<small>`
-  ```html
-  <small>This is some smaller text</small>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666427173977_0.png)
-- [[HTML]]Marked `<mark>`
-  ```html
-  Do not forget to buy <mark>milk</mark> today
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666427562518_0.png)
-- [[HTML]]Deleted `<del>`
-  ```html
-  My favorite color is <del>blue</del> red
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666427875545_0.png)
-- [[HTML]]Inserted `<ins>`
-  ```html
-  My favorite color is <del>blue</del> <ins>red</ins>
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666428519662_0.png)
-- [[HTML]]Subscripted `<sub>`
-  ```html
-  This is <sub>subscripted</sub> text (e.g. H<sub>2</sub>O)
-  ```
-  * ***References***
-  * ![image.png](../assets/image_1666429094516_0.png)
+-
 - [[Git]]edit comments
   * `git commit --amend`
   * ***Notes***
@@ -5180,21 +4860,10 @@
   * ![image.png](../assets/image_1666432411721_0.png)
   * https://stackoverflow.com/questions/52195877/how-can-i-fix-git-commit-error-waiting-for-your-editor-to-close-the-file-wi
 -
-- [[html]]paragraph element
-  * `<p>some text content</p>`
-  * ***Notes***
-  * `p` # Paragraph
-  * `<p>` # Opening tag
-  * `</p>` # Closing tag
-  * `some text content` # Content
-  * ***References***
-  * ![image.png](../assets/image_1666313436071_0.png)
-  * [Elements and Tags | The Odin Project](https://www.theodinproject.com/lessons/foundations-elements-and-tags)
-- [[HTML]]Hyper Text Markup Language `HTML`
-  * ***References***
-  * ![image.png](../assets/image_1666345355999_0.png)
-  * https://www.w3schools.com/html/html_intro.asp
--
+- #### The abbreviation of "HyperText Markup Language" is "HTML".
+- ***References***
+    - https://en.wikipedia.org/wiki/HTML
+- ---
 - #### Search syntax in Google
     - `artificial intelligence after:2023/03/27`
 - ***Notes***

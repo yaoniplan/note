@@ -1,8 +1,9 @@
 # Important and urgent
 Push code automatically in Git
-[HTML](pages/HTML.md)
-Debug some bugs
-    Code blocks # Not supported syntax highlighting
+[learnHTML](pages/learnHTML.md)
+    Merge the information of learnHTML
+Merge notes of extension of Linux commands
+Record the backupPrivateFiles process
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important

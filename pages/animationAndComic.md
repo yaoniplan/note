@@ -1,5 +1,5 @@
 ### Animation
-- Lupine the Third / 鲁邦三世 (Season1+2) - (23+091) animation 0709
+- Lupine the Third / 鲁邦三世 (Season1+2) - (23+093) animation 0107
 - 炼气十万年 - 14
 - 万事屋斋藤到异世界 - 12
 - 爹地拍档 - 12
@@ -19,11 +19,11 @@
 - 一念永恒 (第一季+第二季) - 52+38
 - 斗破苍穹年番 - 37
 - 绝世武魂 - 256
-- 万古神话 - 67 animation
-- 星河至尊 - 144
+- 万古神话 - 68 animation
+- 星河至尊 - 145
 - 万古剑神 - 26
-- Show Time! ~想要做唱歌的大姐姐/Show Time! 唱歌的大姐姐也想做 (Season1+2) - 08+07 http://www.dmd85.com/play/2356-2-7.html
-- 关于邻家的天使大人不知不觉把我惯成了废人这档子事 - 11
+- Show Time! ~想要做唱歌的大姐姐/Show Time! 唱歌的大姐姐也想做 (Season1+2) - 08+08
+- 关于邻家的天使大人不知不觉把我惯成了废人这档子事 - 12
 
 ### Comic
 - 没有道侣就会死 - 54
