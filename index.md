@@ -1,7 +1,5 @@
 # Important and urgent
 Push code automatically in Git
-[learnHTML](pages/learnHTML.md)
-    Merge the information of learnHTML
 Merge notes of extension of Linux commands
 Record the backupPrivateFiles process
 # Important not urgent

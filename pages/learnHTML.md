@@ -1,39 +1,39 @@
-- # "learnHTML"
-- # A simple index.html template
-```html
-<!DOCTYPE html>
-<html>
-     <head>
-          <title>yaoniplan</title>
-     </head>
-     <body>
-          Hello, world!
-     </body>
-</html>
-```
-- # Declaration
+- ## "learnHTML"
+- ## A simple index.html template
+    ```html
+    <!DOCTYPE html>
+    <html>
+         <head>
+              <title>yaoniplan</title>
+         </head>
+         <body>
+              Hello, world!
+         </body>
+    </html>
+    ```
+- ## Declaration
     ```
     <!DOCTYPE html>
     ```
-- # Comments
+- ## Comments
     ```
     <!-- Write your comments here. -->
     ```
-- # Headings
+- ## Headings
     ```
     <h1>Heading 1</h1>
     ```
-- # Links
+- ## Links
     ```
     <!-- a: Anchor; href: Hyperlink reference -->
     <a href="https://github.com/yaoniplan/note">yaoniplan</a>
     ```
-- # Images
+- ## Images
     ```
     <!-- img: Image; src: Source; alt: Alternative -->
     <img src="wallpaperDark.jpg" alt="wallpaperDark.jpg">
     ```
-- # Attributes
+- ## Attributes
     ```
     <!-- The href attribute -->
     <a href="https://github.com/yaoniplan/note">yaoniplan</a>
@@ -50,63 +50,63 @@
     <!-- The title attribute -->
     <p title="I'm a tooltip">This is a paragraph.</p>
     ```
-- # Elements
-    - ## 1. Paragraphs
+- ## Elements
+    - ### 1. Paragraphs
         ```
         <p>Paragraph 1</p>
         ```
-    - ## 2. Horizontal rules
+    - ### 2. Horizontal rules
         ```
         <hr>
         ```
-    - ## 3. Line Breaks
+    - ### 3. Line Breaks
         ```
         <br>
         ```
-    - ## 4. The Poem Problem
+    - ### 4. The Poem Problem
         ```
         <pre>
           The first line of the poem
           The second line of the poem
         </pre>
         ```
-    - # Text formatting
-        - ## 1. Bold
+    - ### Text formatting
+        - #### 1. Bold
             ```
             <b>Bold text.</b>
             <!-- <strong>Bold text.</strong> -->
             ```
-        - ## 2. Italic
+        - #### 2. Italic
             ```
             <i>Italic text.</i>
             <!-- <em>Emphasized text.</em> -->
             ```
-        - ## 3. Smaller
+        - #### 3. Smaller
             ```
             <small>Smaller text.</small>
             ```
-        - ## 4. Marked or Highlighted
+        - #### 4. Marked or Highlighted
             ```
             <mark>Marked text.</mark>
             ```
-        - ## 5. Deleted
+        - #### 5. Deleted
             ```
             <del>Deleted text.</del>
             ```
-        - ## 6. Inserted
+        - #### 6. Inserted
             ```
             <ins>Inserted text.</ins>
             ```
-        - ## 7. Subscripted
+        - #### 7. Subscripted
             ```
             <sub>Subscripted text.</sub>
             ```
-        - ## 8. Superscripted
+        - #### 8. Superscripted
             ```
             <sup>Superscripted text.</sup>
             ```
-    - # CSS
-        - Inline
+    - ### CSS
+        - #### Inline
           ```
           <body>
             <h1 style="background-color:Tomato;">Hello, yaoniplan!</h1> <!-- Colors background -->
@@ -120,7 +120,7 @@
             <h1 style="text-align:center;">Centered heading.</h1> <!-- Text alignment -->
           </body>
           ```
-        - Internal
+        - #### Internal
           ```
           <head>
             <style>
@@ -134,7 +134,7 @@
             <p>yaoniplan</p>
           </body>
           ```
-    - External
+    - ### External
         - `vim index.html`
           ```
           <head>
@@ -157,58 +157,58 @@
             color:red;
           }
           ```
-    - Colors and Fonts
-      ```
-      <head>
-        <style>
-          h1 {
-            color:blue;
-            font-family:verdana;
-            font-size:300%;
-          }
-          p {
-            color:red;
-            font-family:courier;
-            font-size:160%;
-          }
-        </style>
-      </head>
-      <body>
-        <h1>Hello, yaoniplan!</h1>
-        <p>yaoniplan</p>
-      </body>
-      ```
-    - Border
-      ```
-      <style>
-        p {
-          border:2px solid powderblue;
-        }
-      </style>
-      ```
-    - Padding
-      ```
-      <style>
-        p {
-          border:2px solid powderblue;
-          padding:30px; // A space between the text and the border
-        }
-      </style>
-      ```
-    - Margin
-      ```
-      <style>
-        p {
-          border:2px solid powderblue;
-          margin:50px; // A space outside the border
-        }
-      </style>
-      ```
-    - External links
-      ```
-      <head>
-        <link rel="stylesheet" href="https://w3schools.com/html/styles.css">
-        <!-- <link rel="stylesheet" href="/html/styles.css"> -->
-        <!-- <link rel="stylesheet" href="styles.css"> -->
-      </head>
-      ```
+        - #### Colors and Fonts
+          ```
+          <head>
+            <style>
+              h1 {
+                color:blue;
+                font-family:verdana;
+                font-size:300%;
+              }
+              p {
+                color:red;
+                font-family:courier;
+                font-size:160%;
+              }
+            </style>
+          </head>
+          <body>
+            <h1>Hello, yaoniplan!</h1>
+            <p>yaoniplan</p>
+          </body>
+          ```
+        - #### Border
+          ```
+          <style>
+            p {
+              border:2px solid powderblue;
+            }
+          </style>
+          ```
+        - #### Padding
+          ```
+          <style>
+            p {
+              border:2px solid powderblue;
+              padding:30px; // A space between the text and the border
+            }
+          </style>
+          ```
+        - #### Margin
+          ```
+          <style>
+            p {
+              border:2px solid powderblue;
+              margin:50px; // A space outside the border
+            }
+          </style>
+          ```
+        - #### External links
+          ```
+          <head>
+            <link rel="stylesheet" href="https://w3schools.com/html/styles.css">
+            <!-- <link rel="stylesheet" href="/html/styles.css"> -->
+            <!-- <link rel="stylesheet" href="styles.css"> -->
+          </head>
+          ```
