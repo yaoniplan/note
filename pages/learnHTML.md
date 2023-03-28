@@ -39,60 +39,57 @@
     <p title="I'm a tooltip">This is a paragraph.</p>
     ```
 - ## Elements
-    - ### 1. Paragraphs
+    - ### Paragraphs
         ```
         <p>Paragraph 1</p>
         ```
-    - ### 2. Horizontal rules
+    - ### Horizontal rules
         ```
         <hr>
         ```
-    - ### 3. Line Breaks
+    - ### Line Breaks
         ```
         <br>
         ```
-    - ### 4. The Poem Problem
+    - ### Bold
+        ```
+        <b>Bold text.</b>
+        ```
+    - ### Italic
+        ```
+        <i>Italic text.</i>
+        ```
+    - ### Smaller
+        ```
+        <small>Smaller text.</small>
+        ```
+    - ### Marked or Highlighted
+        ```
+        <mark>Marked text.</mark>
+        ```
+    - ### Deleted
+        ```
+        <del>Deleted text.</del>
+        ```
+    - ### Inserted
+        ```
+        <ins>Inserted text.</ins>
+        ```
+    - ### Subscripted
+        ```
+        <sub>Subscripted text.</sub>
+        ```
+    - ### Superscripted
+        ```
+        <sup>Superscripted text.</sup>
+        ```
+    - ### The Poem Problem
         ```
         <pre>
           The first line of the poem
           The second line of the poem
         </pre>
         ```
-    - ### Text formatting
-        - #### 1. Bold
-            ```
-            <b>Bold text.</b>
-            <!-- <strong>Bold text.</strong> -->
-            ```
-        - #### 2. Italic
-            ```
-            <i>Italic text.</i>
-            <!-- <em>Emphasized text.</em> -->
-            ```
-        - #### 3. Smaller
-            ```
-            <small>Smaller text.</small>
-            ```
-        - #### 4. Marked or Highlighted
-            ```
-            <mark>Marked text.</mark>
-            ```
-        - #### 5. Deleted
-            ```
-            <del>Deleted text.</del>
-            ```
-        - #### 6. Inserted
-            ```
-            <ins>Inserted text.</ins>
-            ```
-        - #### 7. Subscripted
-            ```
-            <sub>Subscripted text.</sub>
-            ```
-        - #### 8. Superscripted
-            ```
-            <sup>Superscripted text.</sup>
-            ```
     - ### CSS
         - #### Inline
           ```
