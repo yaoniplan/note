@@ -1765,7 +1765,7 @@
 - ***References***
     - https://en.wikipedia.org/wiki/Operating_system
 - ---
-- #### Try to use the script in the dmenu instead of in the terminal.
+- #### Try to use the script in the dmenu instead of in the terminal. #idea
 - ---
 - #### The abbreviation of "Chat Generative Pre-trained Transformer" is "ChatGPT".
 - ***Notes***
@@ -2174,7 +2174,9 @@
     - ![2023-02-11_12:39:35.gif](../assets/2023-02-11_12:39:35.gif)
     - https://superuser.com/questions/134901/whats-the-difference-between-scp-and-sftp/1028877#1028877
 - ---
-- #### The abbreviation of Extensible Firmware Interface is EFI
+- #### The abbreviation of "Extensible Firmware Interface" is "EFI".
+- ***References***
+    - https://en.wikipedia.org/wiki/EFI_system_partition
 - ---
 - #### Check who and what in Unix-like
     - `w`
@@ -2255,14 +2257,17 @@
     - Remote
 - ***References***
     - https://medium.com/@vinaymodepalli/cool-things-to-do-with-a-linux-server-b7035635b31d
+- ---
 - #### Send character to clipboard in Linux
     - ``echo "`date +%F_%T`.gif" | xclip -selection clipboard``
 - ***References***
     - ![2023-01-30_17:06:06.gif](../assets/2023-01-30_17:06:06.gif)
     - https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard/5130969#5130969
+- ---
 - #### Semicolon do at shell script
     - Put two or more commands on the same line
     - Execute commands in order
+- ***Notes***
     - `sleep 3s; notifi-send "test"`
         - Execute the *sleep* command first and then execute the *notify-send* command
 - ***References***
@@ -2444,7 +2449,8 @@
 - ***References***
     <!-- Add a demo.gif here -->
     - https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit/1186549#1186549
-- #### The abbreviation of RXVT is "our extended virtual terminal"
+- ---
+- #### The abbreviation of "our extended virtual terminal" is "RXVT".
 - ***References***
     - https://en.wikipedia.org/wiki/Rxvt
 - ---
@@ -2515,6 +2521,7 @@
     - `@d` # Playback recording *d*
 - ***References***
     - https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs#:~:text=To%20start%20recording%2C%20press%20q,keystrokes%20to%20the%20specified%20register.
+- ---
 - #### Use Bash
     - `Ctrl-r` # Reverse search history command
         - `vim -c` # Type it in terminal, it may display `vim -c VimwikiIndex`
@@ -2586,7 +2593,7 @@
     - `find . -name '*.txt' -exec rename txt wiki {} \;`
 - ***Notes***
     - `-exec` # Execute
-    - `find . -name "*.md" -exec rename -a _ - {} \;` # Rename underscores (`_`) to hyphens (`-`)
+    - `find . -name "*.md" -exec rename -a _ - {} \;` # Rename underscores to hyphens
         - `-a` # All
 - ***References***
     - `man rename`
@@ -2818,7 +2825,7 @@
     - https://vi.stackexchange.com/questions/19357/search-through-entire-vimwiki#:~:text=Vimwiki%20has%20a%20simple%20search,help%20pages%20%3Ah%20%3AVimwikiSearch%20.
     - https://github.com/vimwiki/vimwiki
 - ---
-- #### Replace `lsof` command with `ps` command
+- #### Replace "lsof" command with "ps" command
     - `ps aux | grep clash`
     - `kill 3828`
 - ***Notes***
@@ -2994,24 +3001,10 @@
     - https://github.com/junegunn/vim-plug
 	- https://github.com/junegunn/vim-plug/wiki/tutorial
 - ---
-- #### Use Bash
-	- `Ctrl-p` # The previous command
-	- `Ctrl-Left` or Alt-b or Esc then b # Move the cursor back one word
-	- `Ctrl-Right` or Alt-c or Esc then f # Move the cursor forward one word
-	- `Ctrl-h` # Backspace
-	- `Ctrl-d` # Delete
-		- `d` # Delete
-	- `Ctrl-u` # Delete left of the cursor
-	- `Ctrl-k` # Delete right of the cursor
-	- `bind -lp` # Show all shortcuts
-	- `Ctrl-j` # Enter
-- References
-	- `rofi -show keys`
-	- [bash - How to use arguments from previous command? - Stack Overflow](https://stackoverflow.com/questions/4009412/how-to-use-arguments-from-previous-command)
-- ---
 - #### Enable Vi mode in the Linux shell
     - `set -o vi`
 - ***Notes***
+    - `Ctrl-[` # The same as `Esc` key
     - `k` # The same as `Ctrl-p` of Emacs mode
     - `/` # The same as `Ctrl-r` of Emacs mode
     - `set -o` # Show the current settings
@@ -3364,18 +3357,19 @@
 - #### Eating fried food can seriously damage body organs (e.g. mouth, throat, etc.). #idea
 - ---
 - #### Check dependencies of a package in [[Gentoo Linux]]
-	- `equery g x11-misc/cdm`
+    - `equery g x11-misc/cdm`
 - ***Notes***
-	- `equery g x11-misc/cdm`
-		- `g` # graph
-		- `emerge -s CDM` # Search in ebuild repository if you don't know its full name
-			- `-s` # Search
+    - `equery g x11-misc/cdm`
+        - `g` # graph
+        - `emerge -s CDM` # Search in ebuild repository if you don't know its full name
+             - `-s` # Search
 - ***References***
-	- ![2022-12-31_09-59.png](../assets/2022-12-31_09-59_1672451978986_0.png)
-	- ![2022-12-31_10-07.png](../assets/2022-12-31_10-07_1672452436735_0.png)
-	- `equery --help`
-	- `man emerge`
-	- [Equery - Gentoo Wiki](https://wiki.gentoo.org/wiki/Equery)- ---
+    - ![2022-12-31_09-59.png](../assets/2022-12-31_09-59_1672451978986_0.png)
+    - ![2022-12-31_10-07.png](../assets/2022-12-31_10-07_1672452436735_0.png)
+    - `equery --help`
+    - `man emerge`
+    - https://wiki.gentoo.org/wiki/Equery
+- ---
 - #### The syntax of the if-else condition in #shell script
   ```Shell
   if [condition]
@@ -3386,8 +3380,10 @@
   fi
   ```
 - ***References***
-	- [How to Use if-else in Shell Scripts? | DigitalOcean](https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts)
-- #### Dust damages the lungs. #Idea- ---
+    - https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts
+- ---
+- #### Dust damages the lungs. #Idea
+- ---
 - #### Execute a script at boot time in [[Gentoo Linux]] with #OpenRC
 	- `doas vim /etc/local.d/script.start`
 	- `doas chmod a+x /etc/local.d/script.start`
@@ -3430,16 +3426,7 @@
 - ***References***
 	- ![2022-12-26_11-31.png](../assets/2022-12-26_11-31_1672025500536_0.png)
 	- ![2022-12-26_11-32.png](../assets/2022-12-26_11-32_1672025553418_0.png)
-	- [Where can we check how old is a github account ? : github](https://www.reddit.com/r/github/comments/b3tdg2/where_can_we_check_how_old_is_a_github_account/)- ---
-- The #abbreviation of "HyperText Markup Language" is "HTML".
-- ***Notes***
-	- A markup language
-	- A file format
-- ***References***
-    - ![2022-12-25_18-46.png](../assets/2022-12-25_18-46_1671965225091_0.png)
-    - https://en.wikipedia.org/wiki/HTML
-- ---
-- #### The punctuation of "tilde" is "~".
+	- [Where can we check how old is a github account ? : github](https://www.reddit.com/r/github/comments/b3tdg2/where_can_we_check_how_old_is_a_github_account/)- #### The punctuation of "tilde" is "~".
 - ***References***
 	- ![2022-12-25_16-48.png](../assets/2022-12-25_16-48_1671958089734_0.png)
 	- https://en.wikipedia.org/wiki/Tilde
@@ -3467,19 +3454,20 @@
 	- https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/
 - ---
 - #### Copy text from tmux to clipboard in Linux
-	- `doas vim /etc/tmux.conf`
-	  ```
-	  bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
-	  ```
+    - `doas vim /etc/tmux.conf`
+      ```
+      bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+     ```
 - ***Notes***
-	- `"xclip -i -f -selection primary | xclip -i -selection clipboard"`
-		- `-i` # -in
-		- `-f` # -filter
-		- `doas emerge -aq x11-misc/xclip` # Install it to use the *xclip* command
+    - `"xclip -i -f -selection primary | xclip -i -selection clipboard"`
+        - `-i` # -in
+        - `-f` # -filter
+        - `doas emerge -aq x11-misc/xclip` # Install it to use the *xclip* command
 - ***References***
-	- ![2022-12-25_09-51.png](../assets/2022-12-25_09-51_1671933133240_0.png)
-	- `man xclip`
-	- https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
+    - ![2022-12-25_09-51.png](../assets/2022-12-25_09-51_1671933133240_0.png)
+    - `man xclip`
+    - https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
+- ---
 - #### Use "tmux"
     - `tmux attach-session -t 1` # Attach session 1 if you quit the terminal accidentaly
         - `kitty` # Replace it with your terminal
@@ -4871,7 +4859,11 @@
   * https://stackoverflow.com/questions/52195877/how-can-i-fix-git-commit-error-waiting-for-your-editor-to-close-the-file-wi
 -
 - #### The abbreviation of "HyperText Markup Language" is "HTML".
+- ***Notes***
+    - A markup language
+    - A file format
 - ***References***
+    - ![2022-12-25_18-46.png](../assets/2022-12-25_18-46_1671965225091_0.png)
     - https://en.wikipedia.org/wiki/HTML
 - ---
 - #### Search syntax in Google
@@ -4918,10 +4910,11 @@
   * ***References***
   * ![image.png](../assets/image_1665626170935_0.png)
   * [Colon (punctuation) - Wikipedia](https://en.wikipedia.org/wiki/Colon_(punctuation))
--- [[symbol]]semicolon or semi-colon `;`
-  * ***References***
-  * ![image.png](../assets/image_1665537388800_0.png)
-  * [Semicolon - Wikipedia](https://en.wikipedia.org/wiki/Semicolon)
+-- #### The punctuation of "semicolon" is ";".
+- ***References***
+    - ![image.png](../assets/image_1665537388800_0.png)
+    - https://en.wikipedia.org/wiki/Semicolon
+- ---
 - [[symbol]]comma `,`
   * ***References***
   * ![image.png](../assets/image_1665537876655_0.png)
@@ -4946,7 +4939,8 @@
   * ***References***
   * ![image.png](../assets/image_1665544017306_0.png)
   * [关于“小于/等于/大于”的英文缩写](https://blog.csdn.net/weixin_38092213/article/details/85315538)
--- #### Sort by file size in Linux
+-
+- #### Sort by file size in Linux
     - `ls -lS ~/note/pages/`
 - ***Notes***
     - `-S` # Size

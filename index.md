@@ -1,4 +1,5 @@
 # Important and urgent
+Check the script named "~/.local/bin/autoGitPush.sh"
 Merge notes of extension of Linux commands
 Record the backupPrivateFiles process
 # Important not urgent
