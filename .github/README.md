@@ -2319,6 +2319,7 @@
     - Press `Ctrl-z` and then type `bg`
 - ***References***
     - <!-- Add a demo.png here -->
+- ---
 - #### Write an infinite loop in shell script
     - `vim ~/.local/bin/timerOfTomato.sh`
       ```
@@ -3356,13 +3357,12 @@
 	- [Dollar sign - Wikipedia](https://en.wikipedia.org/wiki/Dollar_sign)- ---
 - #### Eating fried food can seriously damage body organs (e.g. mouth, throat, etc.). #idea
 - ---
-- #### Check dependencies of a package in [[Gentoo Linux]]
+- #### Check dependencies of a package in Gentoo Linux
     - `equery g x11-misc/cdm`
 - ***Notes***
     - `equery g x11-misc/cdm`
         - `g` # graph
-        - `emerge -s CDM` # Search in ebuild repository if you don't know its full name
-             - `-s` # Search
+        - `emerge --search CDM` # Search in ebuild repository if you don't know its full name
 - ***References***
     - ![2022-12-31_09-59.png](../assets/2022-12-31_09-59_1672451978986_0.png)
     - ![2022-12-31_10-07.png](../assets/2022-12-31_10-07_1672452436735_0.png)
@@ -4579,10 +4579,10 @@
 	- ![image.png](../assets/image_1667973510383_0.png)
 	- [Question mark - Wikipedia](https://en.wikipedia.org/wiki/Question_mark)
 - ---
-- #### The #punctuation of #Backtick is <code>`</code>
+- #### The punctuation of "backtick" is <code>"`"</code>.
 - ***References***
-	- ![image.png](../assets/image_1667958422314_0.png)
-	- [Backtick - Wikipedia](https://en.wikipedia.org/wiki/Backtick)
+    - ![image.png](../assets/image_1667958422314_0.png)
+    - https://en.wikipedia.org/wiki/Backtick
 - #### The abbreviation of "Incorporation" is "Inc".
 - ***References***
     - ![image.png](../assets/image_1667909309416_0.png)

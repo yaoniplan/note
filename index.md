@@ -1,6 +1,6 @@
 # Important and urgent
-Check the script named "~/.local/bin/autoGitPush.sh"
 Merge notes of extension of Linux commands
+Remove file CSS.md
 Record the backupPrivateFiles process
 # Important not urgent
 Change the switches of keyboard for a computer

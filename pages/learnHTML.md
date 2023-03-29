@@ -91,6 +91,12 @@
         </pre>
         ```
     - ### CSS
+        - #### Comments
+          ```
+          <style>
+          /* Write comments here. */
+          </style>
+          ```
         - #### Inline
           ```
           <body>
