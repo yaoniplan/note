@@ -1,5 +1,4 @@
 # Important and urgent
-Push code automatically in Git
 Merge notes of extension of Linux commands
 Record the backupPrivateFiles process
 # Important not urgent

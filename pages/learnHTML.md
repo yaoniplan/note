@@ -63,7 +63,7 @@
         ```
         <small>Smaller text.</small>
         ```
-    - ### Marked or Highlighted
+    - ### Marked
         ```
         <mark>Marked text.</mark>
         ```
