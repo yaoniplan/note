@@ -1,4 +1,4 @@
-# Way to get poor
+# "getPoor"
 - Unable to go into production
 - No main business direction
 - Entertain yourself

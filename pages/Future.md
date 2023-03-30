@@ -1,4 +1,4 @@
-## Website
+## "Website"
 - https://www.toptal.com/project-managers/tomato-timer#
 - https://new.polebrief.com/edit
 - https://terminal.sexy/
@@ -139,10 +139,6 @@
 ## Typing practice
 - https://qwerty.liumingye.cn/
 - https://www.keybr.com/
-
-## Translator
-- https://translate.google.com/?sl=zh-CN&tl=en&op=translate
-- https://www.deepl.com/translator
 
 ## E-mail
 - http://mail.0du.win/

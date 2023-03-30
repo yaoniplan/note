@@ -3,7 +3,7 @@
     - Lupine the Third
     - https://en.wikipedia.org/wiki/Interpol
 - ---
-- #### Run an ".AppImage" file
+- #### Run an ".AppImage" file in Linux
     - `./Cursor-0.1.9.AppImage`
 - ***Notes***
     - `Cursor-0.1.9.AppImage` # Replace it with your desired appimage
@@ -469,11 +469,12 @@
     - `find . -maxdepth 1 -type f -not -name "*.c" -delete`
 - ***Notes***
     - `-maxdepth 1` # Only the current directory
+    - `f` # File
 - ***References***
     - ChatGPT
     - ![2023-03-13_14:58:24.png](../assets/2023-03-13_14:58:24.png)
 - ---
-- #### Use the "mpv" command
+- #### Use the "mpv" command in Linux
     - `mpv --speed=2 --fs=yes URLOfTheVideo`
 - ***Notes***
     - `o` # Show progress bar

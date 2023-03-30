@@ -1,5 +1,4 @@
 # Important and urgent
-Record the backupPrivateFiles process
 # Important not urgent
 Change the switches of keyboard for a computer
 # Urgent not important
