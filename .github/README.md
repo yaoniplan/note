@@ -1,3 +1,8 @@
+- #### The abbreviation of "International Criminal Police Organization" is "ICPO".
+- ***References***
+    - Lupine the Third
+    - https://en.wikipedia.org/wiki/Interpol
+- ---
 - #### Run an ".AppImage" file
     - `./Cursor-0.1.9.AppImage`
 - ***Notes***
@@ -14,6 +19,7 @@
       See https://github.com/AppImage/AppImageKit/wiki/FUSE
       for more information
       ```
+        - `./squashfs-root/AppRun`
 - ***References***
     - ChatGPT
 - ---
@@ -47,7 +53,7 @@
     - Monkey hit keys
 - ***Notes***
     - Shakespeare's Hamlet
-    - Events with nonzore probability almost surely occur
+    - Events with nonzero probability almost surely occur
 - ***References***
     - https://en.wikipedia.org/wiki/Infinite_monkey_theorem
 - ---
@@ -447,7 +453,7 @@
     - https://mirrors.tuna.tsinghua.edu.cn/help/pypi/
 - ---
 - #### Reverse the order of thousand of files in Linux when using the cat command
-    - `cat $(ls /home/yaoniplan/test/journals/*.md | sort -r) > /home/yaoniplan/test/.github/README.md`
+    - `cat $(ls ~/note/journals/*.md | sort -r) > ~/note/.github/README.md`
 - ***Notes***
     - `-r` # Reverse
 - ***References***
@@ -3983,13 +3989,14 @@
 - ***References***
 	- ![image.png](../assets/image_1670389149552_0.png)
 	- ![image.png](../assets/image_1670389328281_0.png)
-	- [polywock/globalSpeed: Web extension to set a default speed for video and audio](https://github.com/polywock/globalSpeed)
+	- https://github.com/polywock/globalSpeed
 - ---
 - #### Stop forgetting to breathe #Idea
 	- Exhale on the effort
 - ***References***
 	- ![image.png](../assets/image_1670376973969_0.png)
-	- [Don't Forget to Breathe - YouTube](https://www.youtube.com/watch?v=LxD3e-K9vug)- #### Enable spell checker in the #Logseq #application
+	- [Don't Forget to Breathe - YouTube](https://www.youtube.com/watch?v=LxD3e-K9vug)
+- #### Enable spell checker in the #Logseq #application
 	- A red underline will be displayed when the spelling is wrong.
 - ***References***
 	- ![image.png](../assets/image_1670332008376_0.png)
@@ -4571,7 +4578,7 @@
 - ***References***
 	- ![image.png](../assets/image_1668047651523_0.png)
 	- ![image.png](../assets/image_1667981146323_0.png)
-	- [JavaScript Developer Tools | The Odin Project](https://www.theodinproject.com/lessons/foundations-javascript-developer-tools)
+	- https://www.theodinproject.com/lessons/foundations-javascript-developer-tools
 - ---
 - # Add a [[punctuation]]
   Question mark (`?`)
@@ -4846,8 +4853,14 @@
 - ***References***
     - ![image.png](../assets/image_1666564175640_0.png)
     - https://www.w3schools.com/html/html_css.asp
-- I will write an extension (e.g. linux commands) of google chrome. #Idea
--
+- ---
+- I will write an extension (e.g. Linux commands) of google chrome. #Idea
+- ***Notes***
+    - Two methods in English
+        - `man date`
+        - `date --help`
+        - Replace the "date" command with your desired program.
+- ---
 - [[Git]]edit comments
   * `git commit --amend`
   * ***Notes***
@@ -6600,7 +6613,6 @@
   4. hotpe
 -- in the [[future]] 笔记本电脑电池，询问注意事项(充不了电，真的难受) #Idea
 -- notion的docx文件导入失败，网络不稳定，决定放弃使用,而且同步的文件没有保障[[notion]] #Idea
-- 写一个 [[chrome]] 扩展，用来在当前页面查询[[linux]]命令 #Idea
 - 添加 [[Google]] 账户
 	- 1. 手机打开`Google设置`
 	  2. 点击`xxx@gmail.com`
@@ -6622,12 +6634,6 @@
   4. 选择转换类型 Audio-MP3
   5. 接着选择目标地址
   6. 点击`start`
-- DONE 写一个 chrome 插件(在当前页面，查询linux命令)  
-  1. HTML
-  2. CSS
-  3. JavaScript
-  4. 参考资料[zhihu](https://www.zhihu.com/question/20179805)
-  5.
 - DONE 修改[[阿里云盘]]和[[天翼云盘]]在手机端的密码(需要验证手机号的验证码)
 - DONE 修改关于[[耀拟计划]] & 免责声明
 - DONE 写一篇如何添加谷歌账号的 #writing

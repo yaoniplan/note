@@ -1,6 +1,4 @@
 # Important and urgent
-Merge notes of extension of Linux commands
-Remove file CSS.md
 Record the backupPrivateFiles process
 # Important not urgent
 Change the switches of keyboard for a computer
