@@ -1,3 +1,47 @@
+- #### The abbreviation of "pickup artist" is "PUA".
+    - Inner game
+        - Understanding of psychology
+        - Confidence
+        - Self-esteem
+        - Social skills
+        - Physical fitness
+        - Fashion sense
+        - grooming
+    - Outer game
+        - Interactive
+- ***Notes***
+    - A woman
+        - A target
+    - A process
+        - A game
+    - Raise his own value and lower her value
+        - A strategy
+- ***References***
+    - Lupine the Third
+    - https://en.wikipedia.org/wiki/Pickup_artist
+- ---
+- #### The abbreviation of "Thursday" is "Thu".
+    - The god of thunder
+        - Mythological figures
+    - Jupiter
+        - Celestial bodies
+    - The fourth of the week
+- ***Notes***
+    - Because weather apps display this abbreviation.
+- ***References***
+    - ChatGPT
+- ---
+- #### Read input of a user in Bash
+    - `read -p "Enter a city name: " city`
+- ***Notes***
+    - `-p` # Prompt
+    - `Enter a city name: ` # Replace it with your desired prompt message
+    - `city` # Replace it with your desired variable name
+    - Because to write a application to get weather information.
+- ***References***
+    - `read --help`
+    - ChatGPT
+- ---
 - #### The abbreviation of "International Criminal Police Organization" is "ICPO".
 - ***References***
     - Lupine the Third
@@ -51,8 +95,8 @@
 - #### Understand the "infinite monkey theorem"
     - Infinite time
     - Monkey hit keys
-- ***Notes***
     - Shakespeare's Hamlet
+- ***Notes***
     - Events with nonzero probability almost surely occur
 - ***References***
     - https://en.wikipedia.org/wiki/Infinite_monkey_theorem
@@ -245,6 +289,7 @@
 - #### Paste content from clipboard to dmenu
     - `$(xclip -o)`
 - ***Notes***
+    - `-o` # Out
     - `doas emerge -aq x11-misc/xclip` # Install it if you don't have it
     - `mpv --speed=2 $(xclip -o)` # Type it before you pressed `Ctrl-c` to copy content
 - ***References***
@@ -3146,9 +3191,11 @@
 - #### Undo `git add`
 	- `git reset` # All
 	- `git reset ~/.config/i3/config` # A file
+- ***Notes***
+    - Because to remove a file from the index without changing anything else.
 - ***References***
 	- ![2023-01-11_09-13.png](../assets/2023-01-11_09-13_1673399609678_0.png)
-	- [How do I undo 'git add' before commit? - Stack Overflow](https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit)
+	- https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
 - ---
 - #### Set random wallpaper with #Feh
 	- `crontab -e`

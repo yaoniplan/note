@@ -153,9 +153,6 @@
 - https://bks.thefuture.top/
 - https://www.sxpdf.com/
 
-## Weather
-- https://www.google.com/search?q=Dongxiang%2C+Fuzhou%2C+Jiangxi%2C+China+today%27s+weather
-
 ## Cloud space
 - http://192.168.10.100:5244/
 - https://aliyundrive.com/drive

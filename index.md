@@ -7,3 +7,4 @@ http://natas0.natas.labs.overthewire.org
 # Not urgent not important
 Delete all workflows of GitHub Actions
 Use the DWM, Emacs
+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
