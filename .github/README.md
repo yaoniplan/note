@@ -27,7 +27,7 @@
 - ***References***
     - ChatGPT
 - ---
-- #### Install version "9999" of a package in Gentoo Linux
+- #### Install package with version "9999" in Gentoo Linux
     - `doas vim /etc/portage/package.accept_keywords`
       ```
       media-video/mpv **
@@ -675,6 +675,8 @@
       q # q) Quit config
       ```
     - `doas mkdir /mnt/testAliyundrive/`
+    - `doas chown -R yaoniplan:yaoniplan /mnt/testAliyundrive/`
+        - `yaoniplan` # Replace it with your user
     - `rclone mount aliyundrive:/ /mnt/testAliyundrive/`
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
