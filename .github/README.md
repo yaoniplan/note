@@ -27,17 +27,6 @@
 - ***References***
     - ChatGPT
 - ---
-- #### Move junk email to inbox in Outlook
-    - Name the rule "moveJunkEmailToInbox"
-    - Add a condition of "Apply to all messages"
-    - Add a action of "Move to" and "Inbox"
-    - Click the "Stop processing more rules" checkbox
-- ***Notes***
-    - Write the rule in "Rules" of "Mail" of "Settings"
-    - Because some messages will be identified as spam.
-- ***References***
-    - ChatGPT
-- ---
 - #### Install version "9999" of a package in Gentoo Linux
     - `doas vim /etc/portage/package.accept_keywords`
       ```
@@ -6684,14 +6673,17 @@
 	- 分布式
 	- 日常使用
 	- 系统管理
--- [[gmail]][[邮箱]]自动[[转发]]垃圾邮件
-  1. 点击***创建过滤器***
-  2. 在包含字词中，填写 ***is:spam***
-  3. 点击***创建过滤器***，并点击***确定***
-  4. 勾选***不要将其发送至垃圾邮件***
-  5. 点击***创建过滤器***(ok)
+-- #### Move spam to inbox automatically in Gmail
+    - Click "Create a new filter" in "Settings"
+    - Type "is:spam" in the "Has the words"
+    - Click "Create filter" and "OK"
+    - Click "Never send it to Spam" checkbox
+    - Click "Create filter"
+- ***Notes***
+    - Because to unify all mail.
+- ---
 - 我认为， [[Logseq]] 只适合用来做笔记，不适合用来 [[时间管理]]#idea
--- DONE 改密码  
+- DONE 改密码  
   1. 简单的(随机密码)
   2. 重要的
   注意：  
