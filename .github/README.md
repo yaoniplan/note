@@ -1,3 +1,65 @@
+- #### Delete all workflows of GitHub Actions
+    - `#Current.iim`
+      ```
+   	  VERSION BUILD=1011 RECORDER=CR
+   	  SET !LOOP 2
+    
+   	  ' Do something with the current data source line, such as filling out a form field
+   	  TAG POS=1 TYPE=SUMMARY ATTR=TXT:Delete<SP>workflow<SP>run
+   	  TAG POS=1 TYPE=BUTTON FORM=ACTION:/yaoniplan/note/actions/runs/* ATTR=TXT:Yes,<SP>permanently<SP>delete<SP>this<SP>workflow<SP>run
+   	  WAIT SECONDS=3
+
+  	  ' End the loop
+  	  SET !LOOP EVAL("{{!LOOP}}-1000")
+      ```
+        - Click "Record Macro" button to start recording
+        - Click the "Save Page" button to save it
+        - Click the "Play Loop" button to start the loop
+- ***Notes***
+    - `yaoniplan/note` # Replace it with your user name and repository name
+    - `3` # Replace it with your desired waitting seconds
+    - Install an extension named "iMacros" if you don't have it
+    - Disadvantage
+        - Take about 3 hours if you have three thousand workflows
+    - Advantage
+        - Click automatically
+        - Run it in FireFox when you are using Chromium
+- ***References***
+    - ChatGPT
+- ---
+- #### Move junk email to inbox in Outlook
+    - Name the rule "moveJunkEmailToInbox"
+    - Add a condition of "Apply to all messages"
+    - Add a action of "Move to" and "Inbox"
+    - Click the "Stop processing more rules" checkbox
+- ***Notes***
+    - Write the rule in "Rules" of "Mail" of "Settings"
+    - Because some messages will be identified as spam.
+- ***References***
+    - ChatGPT
+- ---
+- #### Install version "9999" of a package in Gentoo Linux
+    - `doas vim /etc/portage/package.accept_keywords`
+      ```
+      media-video/mpv **
+      ```
+    - `doas emerge -aq media-video/mpv`
+- ***References***
+    - https://www.youtube.com/watch?v=MmvzAHjgd0Y
+- ---
+- #### Disable quick find in Firefox
+    - Set the following option to "false"
+      ```
+      accessibility.typeaheadfind
+      accessibility.typeaheadfind.autostart
+      accessibility.typeaheadfind.manual
+      ```
+- ***Notes***
+    - Because to use a extension named "Vimium C".
+- ***References***
+    - `about:config`
+    - https://support.mozilla.org/en-US/questions/1273459
+- ---
 - #### The abbreviation of "pickup artist" is "PUA".
     - Inner game
         - Understanding of psychology
@@ -20,12 +82,17 @@
     - Lupine the Third
     - https://en.wikipedia.org/wiki/Pickup_artist
 - ---
+- #### The abbreviation of "chief executive officer" is "CEO".
+    - Sam Altman is the CEO of OpenAI.
+- ***References***
+    - https://en.wikipedia.org/wiki/Chief_executive_officer
+- ---
 - #### The abbreviation of "Thursday" is "Thu".
     - The god of thunder
         - Mythological figures
     - Jupiter
         - Celestial bodies
-    - The fourth of the week
+    - The fourth day of the week
 - ***Notes***
     - Because weather apps display this abbreviation.
 - ***References***
@@ -4884,6 +4951,8 @@
 - ***Notes***
     - `git commit -m 'foo'` # Write the subject line
     - `git commit --amend` # Write the body
+    - If applied, this commit will
+        - Complete the subject line above
 - ***References***
     - ![image.png](../assets/image_1666685073963_0.png)
     - https://cbea.ms/git-commit/

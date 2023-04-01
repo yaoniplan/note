@@ -56,7 +56,6 @@
 - https://drivebbs.com/index.php
 - https://www.panpanr.com/
 - https://bbs.jubt.live
-- https://aliyunpan1.com/
 - https://yixi.tv/#/home
 - https://www.yuedu.pro/
 - https://www.17track.net/zh-cn
@@ -93,13 +92,10 @@
 - https://www.agemys.com/
 - http://www.dmd85.com/
 - https://yuc.wiki/202301/
-- https://mengzhan1314.com
 - https://www.bimiacg4.net
 - https://www.xnxx.com/
-- https://18comic.org/
-- https://jmcomic.bet/
-- https://www.3004aa.cc/
 - https://www.hentaicomic.org/
+- https://www.wmhm28.com/
 
 ## Programming
 - https://www.shiyanlou.com/
@@ -131,10 +127,7 @@
 
 ## Web crawler
 - https://www.alipansou.com/
-- https://www.fastsoso.cn/
 - https://feiyu100.cn/
-- https://www.yunpanziyuan.com/
-- https://www.upyunso.com/
 
 ## Typing practice
 - https://qwerty.liumingye.cn/
@@ -176,5 +169,4 @@
 - https://bilibili.com/
 - https://www.zhihu.com/
 - https://v2ex.com/
-- https://www.chongbuluo.com
 - https://youtube.com/

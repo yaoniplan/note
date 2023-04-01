@@ -5,6 +5,6 @@ Change the switches of keyboard for a computer
 http://natas0.natas.labs.overthewire.org
 9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 # Not urgent not important
-Delete all workflows of GitHub Actions
 Use the DWM, Emacs
-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
+Know the source of weather information in wttr.in
+Merge some websites
