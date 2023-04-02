@@ -1,3 +1,18 @@
+- #### Use wget to download files to the specified directory
+    - `vim ~/.local/bin/getWeatherInformation.sh`
+      ```bash
+      # Create a temporary directory to store the file
+      temporaryDir=$(mktemp --directory)
+      
+      # Download the weather image and save it to the temporary directory
+      wget -P "$temporaryDir" "https://wttr.in/$city.png"
+      ```
+- ***Notes***
+    - `-P` # Prefix
+- ***References***
+    - `man wget`
+    - ChatGPT
+- ---
 - #### Delete all workflows of GitHub Actions
     - `#Current.iim`
       ```
@@ -3976,7 +3991,7 @@
 	- ![image.png](../assets/image_1670749822852_0.png)
 	- [K - Wikipedia](https://en.wikipedia.org/wiki/K#:~:text=In%20the%20International%20System%20of,km%20signifies%20a%20thousand%20metres.)
 - ---
-- #### Use Clash
+- #### Use "Clash"
 	- `chmod u+x clash-linux-amd64-v1.12.0` # Run this command after [downloading](https://github.com/Dreamacro/clash/releases) and decompressing
 	- `mv clash-linux-amd64-v1.12.0 clash`
 	- `sudo mv clash /usr/local/bin/`
