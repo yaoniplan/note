@@ -16,16 +16,16 @@
 - #### Delete all workflows of GitHub Actions
     - `#Current.iim`
       ```
-   	  VERSION BUILD=1011 RECORDER=CR
-   	  SET !LOOP 2
+      VERSION BUILD=1011 RECORDER=CR
+      SET !LOOP 2
     
-   	  ' Do something with the current data source line, such as filling out a form field
-   	  TAG POS=1 TYPE=SUMMARY ATTR=TXT:Delete<SP>workflow<SP>run
-   	  TAG POS=1 TYPE=BUTTON FORM=ACTION:/yaoniplan/note/actions/runs/* ATTR=TXT:Yes,<SP>permanently<SP>delete<SP>this<SP>workflow<SP>run
-   	  WAIT SECONDS=3
+      ' Do something with the current data source line, such as filling out a form field
+      TAG POS=1 TYPE=SUMMARY ATTR=TXT:Delete<SP>workflow<SP>run
+      TAG POS=1 TYPE=BUTTON FORM=ACTION:/yaoniplan/note/actions/runs/* ATTR=TXT:Yes,<SP>permanently<SP>delete<SP>this<SP>workflow<SP>run
+      WAIT SECONDS=3
 
-  	  ' End the loop
-  	  SET !LOOP EVAL("{{!LOOP}}-1000")
+      ' End the loop
+      SET !LOOP EVAL("{{!LOOP}}-1000")
       ```
         - Click "Record Macro" button to start recording
         - Click the "Save Page" button to save it
@@ -2229,7 +2229,7 @@
     - https://askubuntu.com/questions/484510/how-to-run-top-command-1-time-and-exit/484515#484515
     - https://devhints.io/top
 - ---
-- #### Remove the "Permission denied" message
+- #### Redirect standard error stream to null
     - `find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null`
 - ***Notes***
     - `-user` # Own by user
@@ -2238,7 +2238,15 @@
         - `bandit6` # A group
     - `2>` # Redirect stderr
     - `/dev/null` # Null
+    - `vim ~/.local/bin/getIPInformation.sh`
+      ```
+      # Output the result using notify-send if available, echo otherwise
+      if ! notify-send "$outputResult" 2>/dev/null; then
+          echo "$outputResult"
+      fi
+      ```
 - ***References***
+    - ChatGPT
     - `man find`
     - ![2023-02-05_20:53:19.gif](../assets/2023-02-05_20:53:19.gif)
     - https://askubuntu.com/questions/350208/what-does-2-dev-null-mean/350216#350216
@@ -2729,6 +2737,11 @@
 - ---
 - #### Use Git
     - `git restore .config/i3/config` # Discard changes of the file
+    - `git checkout -b bugFix` # The same as the following two commands
+        - `git branch bugFix` # Create a new branch
+        - `git checkout bugFix` # Switch to the branch
+- ***References***
+    - https://learngitbranching.js.org/
 - ---
 - #### Display `$PATH`
     - `echo $PATH`

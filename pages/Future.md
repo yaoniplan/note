@@ -7,16 +7,12 @@
 - https://basic.jxeduyun.com/desktop/login/#/
 - http://www.jxeea.cn
 - https://tj1.jxeea.cn:82/#/login
-- https://snapinsta.io/en/convert-youtube-mp3
 - https://www.guerrillamail.com/
 - https://club.topsage.com/
-- https://ask.nocode.com
 - https://mingyi.sogou.com
-- https://ebook2.lorefree.com
 - https://wandoujia.com
 - https://cn.piliapp.com/symbol
 - https://easydrawingtutorials.com
-- https://msdmanuals.cn/home/resources/the-one-page-manual-of-health/one-page-manual-of-health
 - https://ximo.blog
 - https://searx.space
 - https://iconfont.cn
@@ -169,3 +165,7 @@
 - https://www.zhihu.com/
 - https://v2ex.com/
 - https://youtube.com/
+
+## Video and audio
+- https://ytgoconverter.com/en56/
+- https://www.yt2conv.com/v102/
