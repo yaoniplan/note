@@ -16,7 +16,6 @@
 - https://ximo.blog
 - https://searx.space
 - https://iconfont.cn
-- https://oschina.gitee.io/learn-git-branching/
 - https://basic.smartedu.cn/
 - https://www.leleketang.com/
 - http://www.leleketang.com/let3/knowledges.php?grade_id=30
@@ -26,7 +25,6 @@
 - https://www.examcoo.com/paperlist/index/k/92/p/1
 - https://tiku.17zuoye.com/
 - https://wuli.wiki/index.html
-- https://wuli.wiki/index.html
 - https://www.bilibili.com/video/av43523533/
 - https://www.bilibili.com/video/BV1w7411w7kQ
 - https://www.bilibili.com/video/BV147411K7xu?p=104
@@ -34,7 +32,6 @@
 - https://www.bilibili.com/video/BV1X7411F7YF?p=38
 - https://www.bilibili.com/video/BV1N7411A74L
 - https://open.163.com/newview/movie/free?pid=MDAPTVFE8&mid=MDAPV0Q3K
-- https://www.ximalaya.com/album/12728981
 - https://www.chinaooc.com.cn/home
 - https://www.coursera.org/
 - https://study.163.com/
@@ -45,13 +42,7 @@
 - https://www.mooc.cn/
 - https://open.163.com/
 - https://www.wenshushu.cn/
-- https://www.ruike1.com/
-- https://bbs.zhiqan.com/
-- https://drivebbs.com/index.php
-- https://www.panpanr.com/
-- https://bbs.jubt.live
 - https://yixi.tv/#/home
-- https://www.yuedu.pro/
 - https://www.17track.net/zh-cn
 - https://www.cosdna.com/chs/
 
@@ -61,10 +52,10 @@
 - https://www.virscan.org/
 
 ## Picture
+- https://image.online-convert.com/convert/mp4-to-gif
 - https://web.baimiaoapp.com/
 - https://www.remove.bg/zh
 - https://bigjpg.com/
-- https://image.online-convert.com/convert/mp4-to-gif
 
 ## Network proxy
 - http://yacd.haishan.me/#/
@@ -121,6 +112,9 @@
 - https://huggingface.co/spaces/togethercomputer/OpenChatKit
 
 ## Web crawler
+- https://www.panpanr.com/
+- https://drivebbs.com/index.php
+- https://www.ruike1.com/
 - https://www.alipansou.com/
 - https://feiyu100.cn/
 
@@ -140,6 +134,7 @@
 - https://cloudconvert.com/pdf-to-epub
 - https://bks.thefuture.top/
 - https://www.sxpdf.com/
+- https://www.yuedu.pro/
 
 ## Cloud space
 - http://192.168.10.100:5244/
@@ -155,9 +150,9 @@
 - https://www.yuque.com/supermemo/wiki/20rules
 
 ## Short message service
+- https://mytrashmobile.com
 - https://anonymsms.com/
 - https://smsreceivefree.com/
-- https://mytrashmobile.com
 
 ## Social media
 - https://web.telegram.org/z/

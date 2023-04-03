@@ -1,3 +1,9 @@
+- #### The abbreviation of "Bourne Again Shell" is "Bash".
+    - Born again
+- ***References***
+    - https://www.linkedin.com/learning/learning-bash-scripting-17063287/what-s-bash?autoplay=true&trk=learning-course_tocItem&upsellOrderOrigin=lynda_redirect_learning
+    - https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+- ---
 - #### Use wget to download files to the specified directory
     - `vim ~/.local/bin/getWeatherInformation.sh`
       ```bash
@@ -4885,9 +4891,8 @@
 	- ![image.png](../assets/image_1667111924903_0.png)
 	- https://github.com/mendax1234/logseq-cusgit-theme
 - ---
-- #### The punctuation of "hyphen" is "-"
+- #### The punctuation of "hyphen" is "-".
 - ***References***
-	- ![image.png](../assets/image_1666937284752_0.png)
 	- https://en.wikipedia.org/wiki/Hyphen
 - ---
 - [[GitHub]]repository created time (date)
