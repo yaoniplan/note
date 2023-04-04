@@ -1,6 +1,6 @@
 ### "Animation"
+- Lupine the Third / 鲁邦三世 (Season1+2) - (23+133) animation
 - 画江湖之不良人 (season1+2+3+4+5+6) 54+40+40+13+12+06
-- Lupine the Third / 鲁邦三世 (Season1+2) - (23+128) animation 0710
 - 炼气十万年 - 15
 - 万事屋斋藤到异世界 - 12
 - 爹地拍档 - 12

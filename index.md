@@ -1,6 +1,10 @@
 # Important and urgent
+Encrypt compressed file
 # Important not urgent
-[learnJavaScript](pages/learnJavaScript.md)
+Optimize the website "yaoniplan.eu.org"
+    Improve loading speed
+    Refactor index.html
+    [learnJavaScript](pages/learnJavaScript.md)
 Change the switches of keyboard for a computer
 # Urgent not important
 http://natas0.natas.labs.overthewire.org

@@ -1,7 +1,25 @@
+- #### The abbreviation of "full high definition" is "FHD".
+    - A graphics display resolution of 1920x1080 pixels.
+- ***Notes***
+    - `1920` # Width
+    - `1080` # Height
+    - Because this abbreviation can be seen on some website video players.
+- ***References***
+    - https://en.wikipedia.org/wiki/Graphics_display_resolution
+- ---
 - #### The abbreviation of "Bourne Again Shell" is "Bash".
     - Born again
 - ***References***
     - https://en.wikipedia.org/wiki/Bash_(Unix_shell)
+- ---
+- #### Enable support for ANSI escape codes when using the less command
+    - `curl wttr.in | less -R`
+- ***Notes***
+    - `-R` # Raw
+- ***References***
+    - `man less`
+    - ChatGPT
+    - ![2023-04-03_18:55:54.gif](../assets/2023-04-03_18:55:54.gif)
 - ---
 - #### Use wget to download files to the specified directory
     - `vim ~/.local/bin/getWeatherInformation.sh`
@@ -276,7 +294,7 @@
     - https://en.wikipedia.org/wiki/Artificial_intelligence
 - ---
 - #### Add string "230317" to the beginning of each file name in one-liner Bash
-    - `for f in *; do mv "$f" "230217$f"; done`
+    - `for f in *; do mv "$f" "230317$f"; done`
 - ***Notes***
     - `f` # A variable
     - `for f in *; do mv "$f" "${f:6}"; done` # Remove the first 6 letters
@@ -3065,7 +3083,9 @@
 - ***References***
 	- [newmanls/rofi-themes-collection: Themes Collection for Rofi Launcher](https://github.com/newmanls/rofi-themes-collection)
 - ---
-- #### Use #Vim
+- #### Use "Vim"
+    - `Ctrl-r` # Redo
+    - `u` # Undo
 	- `gM` # Move cursor to the middle of a line
 	- `r` # Replace
 	- Mark
@@ -3863,7 +3883,7 @@
 - ***References***
 	- https://wiki.gentoo.org/wiki/OpenRC_to_systemd_Cheatsheet
 - ---
-- #### Modify #brightness in [[Gentoo Linux]]
+- #### Modify brightness in Gentoo Linux
 	- `sudo emerge -aq sys-power/acpilight`
 	- `sudo usermod -a -G video yaoniplan`
 	- `sudo vim /etc/udev/rules.d/90-backlight.rules`
@@ -3887,8 +3907,8 @@
 	- ![2022-12-17_20-41.png](../assets/2022-12-17_20-41_1671280886497_0.png)
 	- ![2022-12-17_20-22.png](../assets/2022-12-17_20-22_1671279775584_0.png)
 	- `man usermod`
-	- [How to Add User to Group in Linux | Linuxize](https://linuxize.com/post/how-to-add-user-to-group-in-linux/)
-	- [Yuri D'Elia / acpilight · GitLab](https://gitlab.com/wavexx/acpilight)
+	- https://linuxize.com/post/how-to-add-user-to-group-in-linux/
+	- https://gitlab.com/wavexx/acpilight
 - ---
 - #### Remove packages form the operating system in Gentoo Linux
 	- `sudo emerge --depclean x11-apps/xbacklight`
@@ -4119,7 +4139,7 @@
 	- ![image.png](../assets/image_1670417121867_0.png)
 	- [The Ultimate Guide to Aliases in Logseq | Aryan Sawhney](https://aryansawhney.com/pages/the-ultimate-guide-to-aliases-in-logseq/)
 - ---
-- #### Disable all hotkeys except itself for the [[Global Speed]] #extension
+- #### Disable all hotkeys except itself for the Global Speed extension
 	- `Shift q` # Press the *Shift* key and *q* key together
 - ***Notes***
 	- `except itself` # This means enabling the hotkey (*Shift q*) only
@@ -4687,13 +4707,6 @@
 - ***References***
 	- ![image.png](../assets/image_1668566884845_0.png)
 - ---
-- background opacity #Terminal #Alacritty
-	- `opacity: 0.95`
-- ***Notes***
-	- **delete *whitespace* at the beginning of the line** when you have the following error
-	  ![image.png](../assets/image_1668563159415_0.png)
-- ***References***
-	- [Switching To The Alacritty Terminal Emulator - YouTube](https://www.youtube.com/watch?v=PZPMvTvUf1Y)
 - ---
 - View all commits of a user #GitHub
 	- `https://github.com/search?q=author:yaoniplan` # Change user "yaoniplan" to yours
@@ -4918,18 +4931,21 @@
 	- ![image.png](../assets/image_1666856965138_0.png)
 	- [Clear Search Highlight in Vim — tech.serhatteker.com](https://tech.serhatteker.com/post/2020-03/clear-search-highlight-in-vim/)
 - ---
-- [[Vim]]add text to the end of specified lines
-	- `:26,31s/$/<\/li>/`
+- #### Add string to the end of specified lines in Vim
+    - `:'<,'>s/$/<\/li>/`
 - ***Notes***
-	- `26,31` # lines 26 to 31 (A line number range)
-	- `$` # The end of line
-	- `backslash` # Escape character
+    - `:'<,'>`
+        - `V` # Select lines in visual line mode
+        - `:` # See the format
+    - `s` # Substitute
+    - `$` # The end of line
+    - `<\/li>` # Replace it with your desired string
+        - `backslash` # Escape character
 - ***References***
-	- ![image.png](../assets/image_1666861974899_0.png)
-	- ![image.png](../assets/image_1666862102097_0.png)
-	- [editing - How to insert text at beginning of a multi-line selection in vi/Vim - Stack Overflow](https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim)
+    - ![image.png](../assets/image_1666861974899_0.png)
+    - ![image.png](../assets/image_1666862102097_0.png)
+    - https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim
 - ---
--
 - [[abbreviation]]"Massive open online course" (`MOOC`)
 - ***References***
 	- ![image.png](../assets/image_1666751423434_0.png)
@@ -5814,11 +5830,6 @@
   * ![Syu.png](../assets/Syu_1662509519457_0.png)
 - [[linux]] [[i3]] [[config]] `.config/i3/config` (2022-09-07)
   [config](../assets/_1662511000824_0config)
-- my laptop brightness (2022-09-07)
-  * `4822` # max_brightness (最大亮度)
-  * `2500` # brightness (亮度，目前的)
-  * ***参考资料***
-  * ![image.png](../assets/image_1662511487799_0.png)
 - [[linux]] [[i3]] my i3status `/etc/i3status.conf` (2022-09-07)
   * [i3status.conf](../assets/i3status_1662511857709_0.conf)
   * ![2022-09-07_08-53.png](../assets/2022-09-07_08-53_1662512093531_0.png)
@@ -6688,7 +6699,6 @@
   2. 退学原因：没有办法同时兼顾ta喜欢的和ta不喜欢的课程，疲于应付功课  
   3. 总结：学历很重要，且不建议退学，除非已经铺好后路、拥有解决问题的能力- [[symbol]] `^`插入符
 - [[symbol]] `~`波浪号
--- [[Vim]]普通模式下，`u`(撤销)`ctrl + r`(反撤销)
 -- 我认为，手机端开源输入法并不怎么方便(大概是我不会配置的原因，然后Gboard-Google键盘凑合用了) #Idea
 - 我认为，初步 [[study]] 管理系统由以下部分组成：  
   1. 笔记([[Logseq]])

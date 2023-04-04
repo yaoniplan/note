@@ -1,4 +1,5 @@
 ## "Website"
+- https://www.xue8nav.com/
 - https://www.toptal.com/project-managers/tomato-timer#
 - https://new.polebrief.com/edit
 - https://terminal.sexy/
@@ -136,10 +137,6 @@
 - https://www.sxpdf.com/
 - https://www.yuedu.pro/
 
-## Cloud space
-- http://192.168.10.100:5244/
-- https://aliyundrive.com/drive
-
 ## Committed message
 - https://github.com/search?o=desc&q=author%3AZekumoru&s=committer-date&type=Commits
 
@@ -153,13 +150,6 @@
 - https://mytrashmobile.com
 - https://anonymsms.com/
 - https://smsreceivefree.com/
-
-## Social media
-- https://web.telegram.org/z/
-- https://bilibili.com/
-- https://www.zhihu.com/
-- https://v2ex.com/
-- https://youtube.com/
 
 ## Video and audio
 - https://ytgoconverter.com/en56/
