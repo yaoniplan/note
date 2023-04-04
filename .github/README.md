@@ -1,5 +1,6 @@
 - #### The abbreviation of "full high definition" is "FHD".
-    - A graphics display resolution of 1920x1080 pixels.
+    - A graphics display resolution
+    - 1920x1080 pixels
 - ***Notes***
     - `1920` # Width
     - `1080` # Height
@@ -19,7 +20,7 @@
 - ***References***
     - `man less`
     - ChatGPT
-    - ![2023-04-03_18:55:54.gif](../assets/2023-04-03_18:55:54.gif)
+    - ![2023-04-03_18-55.gif](../assets/2023-04-03_18-55.gif)
 - ---
 - #### Use wget to download files to the specified directory
     - `vim ~/.local/bin/getWeatherInformation.sh`
