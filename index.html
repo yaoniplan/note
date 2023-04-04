@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yaoniplan</title>
+  <link rel="yaoniplan" href="https://avatars.githubusercontent.com/u/104973099?v=4">
+  <link rel="stylesheet" type="text/css" href="github-markdown-dark.css">
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+  </style>
+  <script src="marked.min.js"></script>
+</head>
+<body>
+  <div id="markdown-content" class="markdown-body"></div>
+
+  <script>
+    // Function to load file contents using AJAX
+    function loadFile(url, callback) {
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          callback(xhr.responseText);
+        }
+      };
+      xhr.open('GET', url, true);
+      xhr.send();
+    }
+
+    // Load the markdown file content using AJAX
+    loadFile('https://raw.githubusercontent.com/yaoniplan/note/development/.github/README.md', function(markdown) {
+
+      // Parse the Markdown content into HTML using marked()
+      const html = marked(markdown);
+
+      // Insert the parsed HTML into the designated HTML element
+      const markdownEl = document.querySelector('#markdown-content');
+      markdownEl.innerHTML = html;
+    });
+  </script>
+</body>
+</html>
