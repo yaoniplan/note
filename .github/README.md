@@ -1,3 +1,36 @@
+- #### Change naming rules from "2023-04-05_10:27:31" to "2023-04-05_10-27". #idea
+    - `Colon` # Need escape character
+    - `31` # Minutes are enough
+- ---
+- #### The abbreviation of "Uniform Resource Locator" is "URL".
+    - `https://yaoniplan.eu.org/index.html`
+- ***Notes***
+    - `https` # A protocol
+    - `yaoniplan.eu.org` # A hostname
+    - `index.html` # A filename
+- ***References***
+    - https://en.wikipedia.org/wiki/URL
+- ---
+- #### The abbreviation of "Hypertext Transfer Protocol Secure" is "HTTPS".
+    - An extension of "HTTP"
+        - A protocol
+- ***References***
+    - https://en.wikipedia.org/wiki/HTTPS
+    - https://en.wikipedia.org/wiki/HTTP
+- ---
+- #### The abbreviation of "Unix System Resources" is "usr".
+    - A directory
+    - In Unix-like operating system
+- ***References***
+    - ChatGPT
+- ---
+- #### View the default browser in Linux
+    - `xdg-settings get default-web-browser`
+- ***Notes***
+    - Because to use the command `xdg-open https://yaoniplan.eu.org`
+- ***References***
+    - ChatGPT
+- ---
 - #### The abbreviation of "full high definition" is "FHD".
     - A graphics display resolution
     - 1920x1080 pixels
@@ -494,8 +527,6 @@
 - #### Learn some Bash projects to master it quickly
     - A backup script
     - Automate system updates
-    - Build a file manager
-    - Command-line calculator
     - A password manager
     - A weather app
 - ***Notes***
@@ -2952,7 +2983,7 @@
 - ***References***
     - https://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files#:~:text=Disabling%20swap%20files,setlocal%20swapfile%20while%20running%20Vim.
 - ---
-- #### Use VimWiki
+- #### Use "VimWiki"
     - `:VimwikiTable 4cols 6rows` # Create a table with 4 cols and 6 rows
     - `:VimwikiGenerateLinks` # Generate links of wiki pages automatically
     - `]]` # Next header
@@ -6718,7 +6749,8 @@
 	- 分布式
 	- 日常使用
 	- 系统管理
--- #### Move spam to inbox automatically in Gmail
+- ---
+- #### Move spam to inbox automatically in Gmail
     - Click "Create a new filter" in "Settings"
     - Type "is:spam" in the "Has the words"
     - Click "Create filter" and "OK"
@@ -6734,7 +6766,8 @@
   注意：  
   1. 密码过渡载体flomo的密码，越简单好记越好  
   2. 密码管理chrome的密码，用自己的超强密码
--- DONE 查重 [[耀拟计划]]
+- ---
+- DONE 查重 [[耀拟计划]]
 - >提问之前
   在你准备要通过电子邮件、新闻群组或者聊天室提出技术问题前，请先做到以下事情：
   1. 尝试在你准备提问的论坛的旧文章中搜索答案。
