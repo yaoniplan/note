@@ -3905,9 +3905,9 @@
 	- A #init system
 - ***References***
 	- ![2022-12-18_18-44.png](../assets/2022-12-18_18-44_1671360297378_0.png)
-	- [OpenRC - Wikipedia](https://en.wikipedia.org/wiki/OpenRC)
+	- https://en.wikipedia.org/wiki/OpenRC
 - ---
-- #### Use OpenRC
+- #### Use "OpenRC"
 	- `doas rc-service display-manager status`
 	- `doas rc-service display-manager start`
 	- `doas rc-update del display-manager default`
