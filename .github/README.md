@@ -27,9 +27,13 @@
 - #### View the default browser in Linux
     - `xdg-settings get default-web-browser`
 - ***Notes***
-    - Because to use the command `xdg-open https://yaoniplan.eu.org`
+    - Because to use the command `xdg-open https://yaoniplan.eu.org`.
 - ***References***
     - ChatGPT
+- ---
+- #### Maxima needs to be discovered by Bole to play a role.
+- ***References***
+    - Lupine the Third
 - ---
 - #### The abbreviation of "full high definition" is "FHD".
     - A graphics display resolution
@@ -4626,7 +4630,7 @@
 		- https://askubuntu.com/questions/43458/how-can-i-take-a-screenshot-of-the-login-screen
 		- [MarianArlt/sddm-chili: The hottest theme around for SDDM, the Simple Desktop Display Manager.](https://github.com/MarianArlt/sddm-chili)
 - ---
-- SDDM Usage #Gentoo #Linux #DM
+- SDDM Usage Gentoo Linux DM
 	- `sudo emerge --ask x11-misc/sddm` # Install **x11-misc/sddm**
 	- `sudo usermod -a -G video sddm` # Add the **sddm** to the **video** group
 - ***Notes***

@@ -1,3 +1,4 @@
+# "installGentooLinux"
 # livegui password
 ```
 Ctrl-Alt-F1 # new a terminal
