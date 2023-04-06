@@ -74,9 +74,8 @@
 - https://github.com/freefq/free
 
 ## Animation and comic
-- http://www.p5mh.com/
-- https://www.79hm.com/
-- https://www.abamh.com/
+- https://www.tuwenhanman.com/
+- http://ikanhm.top/
 - http://www.ysjdm3.com/
 - https://anime1.io/
 - https://www.agemys.com/
@@ -85,7 +84,6 @@
 - https://www.bimiacg4.net
 - https://www.xnxx.com/
 - https://www.hentaicomic.org/
-- https://www.wmhm28.com/
 
 ## Programming
 - https://www.shiyanlou.com/
