@@ -6,6 +6,24 @@
 - ***References***
     - https://en.wikipedia.org/wiki/Window_manager
 - ---
+- #### Use "dmenu" in Gentoo Linux
+    - Change the font size
+      ```
+      static const char *fonts[] = {
+          "monospace:size=23"
+      };
+      ```
+- ***Notes***
+    - `doas vim /etc/portage/package.use/zz-autounmask`
+      ```
+      # Save configuration after reinstalling
+      # Required by /etc/portage/savedconfig/x11-misc/dmenu
+      x11-misc/dmenu savedconfig
+      ```
+      - `doas emerge -q x11-misc/dmenu` # Make the changes effective
+- ***References***
+    - ``
+- ---
 - #### Change naming rules from "2023-04-05_10:27:31" to "2023-04-05_10-27". #idea
     - `Colon` # Need escape character
     - `31` # Minutes are enough
@@ -6689,13 +6707,15 @@
   参考资料  
   [$](https://zh.wikipedia.org/wiki/$ "$")
 -- [[linux]] 折腾 [[dwm]] 好累啊(主要是资源质量太低、时效性短，虽然 [[dwm]] 简洁高效，但是要配置的东西太多了，比如：显示亮度、没声音、网络代理、截图(据说 grim 可用)、笔记本触摸板……)
-- [[linux]] [[亮度]] 命令调节(这里的 intel 可能是 nv)  
 - ---
-- #### Modify brightness in Linux
+- #### Modify brightness or backlight in Linux
     - `doas vim /sys/class/backlight/intel_backlight/brightness`
 - ***Notes***
     - View maximum brightness
         - `cat /sys/class/backlight/intel_backlight/max_brightnes`
+    - `intel_backlight` # Replace it your graphics card model
+- ***References***
+    - ChatGPT
 - ---
 - [[linux]] 隐藏文件和目录  
   1. mv 文件名或目录名 .文件名或.目录名 //在文件名或目录名前，添加一个英文句点(`.`)
