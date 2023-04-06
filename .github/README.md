@@ -1,3 +1,11 @@
+- #### The abbreviation of "window manager" is "WM".
+    - A software
+- ***Notes***
+    - Because trying to use DWM after using i3.
+        - `D` # Dynamic
+- ***References***
+    - https://en.wikipedia.org/wiki/Window_manager
+- ---
 - #### Change naming rules from "2023-04-05_10:27:31" to "2023-04-05_10-27". #idea
     - `Colon` # Need escape character
     - `31` # Minutes are enough
@@ -31,9 +39,65 @@
 - ***References***
     - ChatGPT
 - ---
-- #### Maxima needs to be discovered by Bole to play a role.
+- #### Maxima needs to be used by Bole to play its value. #idea
 - ***References***
     - Lupine the Third
+- ---
+- #### Use "DWM" in Gentoo Linux
+    - `Alt-Shift-Enter` # New a terminal
+    - `Alt-Shift-q` # Quit the DWM
+    - `Alt-2` # Go to the number 2 workspace
+    - `Alt-p` # Run the dmenu
+    - Layout of workspace
+        - `Alt-t` # Tiled
+        - `Alt-f` # Floating
+        - `Alt-m` # Monocle
+    - `Alt-Enter` # Toggle windows between master and stack
+    - `Alt-d`
+    - `Alt-i`
+- ***Notes***
+    - `doas vim /etc/portage/package.use/zz-autounmask`
+      ```
+      # Save configuration after reinstalling
+      # Required by /etc/portage/savedconfig/x11-wm/dwm
+      x11-wm/dwm savedconfig
+      ```
+    - `vim ~/.xprofile`
+      ```
+      # Excute automatically when start X11 session
+      redshift -O 1500 &
+      clash &
+      feh --bg-fill /home/yaoniplan/note/assets/dark.jpg &
+      ```
+    - `doas vim /etc/portage/savedconfig/x11-wm/dwm-6.3`
+      ```c
+      /* Change the terminal command from `st` to `kitty tmux` */
+      static const char *termcmd[]  = { "kitty", "tmux", NULL };
+      /* Disable status bar */
+      static const int showbar            = 0;
+      /* Disable border of windows */
+      static const unsigned int borderpx  = 0;
+      /* Bind shorcut keys "Alt-Shift-o" to programs command `i3lock -c 000000` */
+      static const char *i3lockcmd[] = { "i3lock", "-c", "000000", NULL }
+      static Key keys[] = {
+          { MODKEY|ShiftMask, XK_o, spawn, {.v = i3lockcmd } },
+      };
+      /* Assign applications to workspace */
+      static const Rule rules[] = {
+          /* xprop(1):
+           *  WM_CLASS(STRING) = instance, class
+           *  WM_NAME(STRING) = title
+           */
+          /* class      instance    title       tags mask     isfloating   monitor */
+          { "Chromium-browser-chromium", "chromium-broser-chromium", NULL, 1, 0, -1 },
+      };
+      ```
+        - `doas emerge -q x11-wm/dwm` # Recompile it to make the changes effective
+- ***References***
+    - ChatGPT
+    - https://fedoramagazine.org/lets-try-dwm-dynamic-window-manger/
+    - https://dwm.suckless.org/tutorial/
+    - https://wiki.gentoo.org/wiki/Dwm
 - ---
 - #### The abbreviation of "full high definition" is "FHD".
     - A graphics display resolution
@@ -3094,31 +3158,6 @@
     - https://github.com/sunaku/tmux-navigate
 	- https://github.com/jabirali/tmux-tilish
 - ---
-- #### Use #Rofi theme
-	  ```
-	  git clone https://github.com/newmanls/rofi-themes-collection
-	  cd rofi-themes-collection
-	  mkdir -p ~/.local/share/rofi/themes/
-	  cp ./* ~/.local/share/rofi/themes/
-	  ```
-	- `rofi -show drun` # Show drun mode
-- ***Notes***
-	- `Rofi Theme Selector` # Type it in Rofi search bar
-		- `Enter` # Preview
-		- `Esc` # Cancel
-		- `Alt-a` # Accept
-	- Beautiful
-		- |theme|theme|theme|theme|
-		  |---|---|---|---|
-		  |spotlight-dark|squared-nord|rounded-blue-dark|dmenu by Qball|
-		  |nord-TwoLines|nord-oneline|sidebar-v2 by Qball|
-	- features
-		- Font: big
-		- Color: dark
-		- Icon (optional)
-- ***References***
-	- [newmanls/rofi-themes-collection: Themes Collection for Rofi Launcher](https://github.com/newmanls/rofi-themes-collection)
-- ---
 - #### Use "Vim"
     - `Ctrl-r` # Redo
     - `u` # Undo
@@ -3213,6 +3252,7 @@
       # Enable Vi mode
       set -o vi
       ```
+        - `set -o emacs` # Enable Emacs mode
 - ***References***
     - ChatGPT
 	- https://wiki.gentoo.org/wiki/Bash
@@ -3593,8 +3633,8 @@
 	  ```
 	  #!/usr/bin/env bash
 	  
-	  # Set the brightness to 30% (1465/4882)
-	  echo 1465 > /sys/class/backlight/intel_backlight/brightness
+	  # Set the brightness to 20% (976/4882)
+	  echo 976 > /sys/class/backlight/intel_backlight/brightness
 	  ```
 		- A script about brightness
 - ***References***
@@ -3954,9 +3994,9 @@
 	- ![2022-12-17_19-07.png](../assets/2022-12-17_19-07_1671275269285_0.png)
 	  ![2022-12-17_19-09.png](../assets/2022-12-17_19-09_1671275401713_0.png)
 - ***References***
-	- ![2022-12-17_19-03.png](../assets/2022-12-17_19-03_1671274992516_0.png)
 	- `man emerge`
-	- [software installation - Safely uninstall a package in Gentoo - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/42783/safely-uninstall-a-package-in-gentoo)
+	- ![2022-12-17_19-03.png](../assets/2022-12-17_19-03_1671274992516_0.png)
+	- https://unix.stackexchange.com/questions/42783/safely-uninstall-a-package-in-gentoo
 - ---
 - #### Update the whole system in [[Gentoo Linux]]
 	- `sudo emerge -avuDN @world`
@@ -4333,7 +4373,7 @@
 	- https://stackoverflow.com/questions/16572611/vim-find-pattern-on-currently-line-only
 - ---
 - #### Install ST (simple terminal) in Gentoo Linux
-	- `sudo vim /etc/portage/package.use/zz-autounmask`
+	- `doas vim /etc/portage/package.use/zz-autounmask`
 	  ```
 	  # required by /etc/portage/savedconfig/x11-terms/st
 	  x11-terms/st savedconfig
@@ -4437,7 +4477,7 @@
 	- ***References***
 		- ![image.png](../assets/image_1669564625171_0.png)
 		- ![image.png](../assets/image_1669564715389_0.png)
-		- [EliverLara/Nordic: Dark Gtk3.20+ theme created using the awesome Nord color pallete.](https://github.com/EliverLara/Nordic#installation)
+		- https://github.com/EliverLara/Nordic#installation
 - ---
 - Extract (decompress) `.tar.xz` file #Linux #Command
 	- `tar -xf Nordic-darker-v40.tar.xz`
@@ -5862,7 +5902,7 @@
   * [如何更改 linux 文件的拥有者和用户组 (chown 和 chgrp)](https://blog.csdn.net/hudashi/article/details/7797393)
   * ![image.png](../assets/image_1662508864227_0.png)
 - wallpaper (2022-09-07)
-  * ![dark.jpg](../assets/dark_1662509469645_0.jpg)
+  * ![dark.jpg](../assets/dark.jpg)
   * ![Syu.png](../assets/Syu_1662509519457_0.png)
 - [[linux]] [[i3]] [[config]] `.config/i3/config` (2022-09-07)
   [config](../assets/_1662511000824_0config)
@@ -6395,7 +6435,7 @@
   * ***Notice***
   * `locate i3status` //查找 i3status 的配置文件 (使用 locate 命令)
 - ---
-- #### Use the locate command to look for a file in Linux
+- #### Use "locate" to look for a file in Linux
     - `locate filename`
 - ***Notes***
     - `doas emerge -aq sys-apps/mlocate` # Install it in Gentoo Linux
@@ -6650,9 +6690,13 @@
   [$](https://zh.wikipedia.org/wiki/$ "$")
 -- [[linux]] 折腾 [[dwm]] 好累啊(主要是资源质量太低、时效性短，虽然 [[dwm]] 简洁高效，但是要配置的东西太多了，比如：显示亮度、没声音、网络代理、截图(据说 grim 可用)、笔记本触摸板……)
 - [[linux]] [[亮度]] 命令调节(这里的 intel 可能是 nv)  
-  1. sudo vim /sys/class/backlight/intel_backlight/brightness //修改亮度
-  2. cat /sys/class/backlight/intel_backlight/max_brightnes //查看最大亮度
-- [[linux]] fcitx5([[输入法]]) 在 kitty(终端) 下不能输入中文(亲测，~~据说 alacritty 也是~~，`alacritty` 2022-09-05 能输入中文)
+- ---
+- #### Modify brightness in Linux
+    - `doas vim /sys/class/backlight/intel_backlight/brightness`
+- ***Notes***
+    - View maximum brightness
+        - `cat /sys/class/backlight/intel_backlight/max_brightnes`
+- ---
 - [[linux]] 隐藏文件和目录  
   1. mv 文件名或目录名 .文件名或.目录名 //在文件名或目录名前，添加一个英文句点(`.`)
 - [[linux]] 安装全套教程  
