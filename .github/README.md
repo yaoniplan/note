@@ -1,3 +1,45 @@
+- #### Set the file type to C programming language in Vim
+    - `:set ft=c`
+- ***Notes***
+    - `ft` # File type
+    - `c` # C programming language
+    - Because to make the following file code more readable.
+        - `doas vim /etc/portage/savedconfig/x11-wm/dwm-6.3`
+- ***References***
+    - ChatGPT
+    - https://medium.com/@dme86/using-dwm-on-gentoo-7b6049c2d8ae
+- ---
+- #### Extract a ".rar" file in Linux
+    - `rar x userChromeForFirefox.rar /tmp/testRAR/`
+- ***Notes***
+    - `x` # Extract
+    - `/tmp/testRAR/` # Replace it with your desired decompression path
+- ***References***
+    - ChatGPT
+    - `rar -? | less`
+ ---
+- #### Patch for DWM in Gentoo Linux
+    - Patch in /etc/portage/patches/x11-wm/dwm/
+      ```
+      doas mkdir -p /etc/portage/patches/x11-wm/dwm
+      doas cp 01-dwm-scratchpad-20221102-ba56fe9.diff /etc/portage/patches/x11-wm/dwm
+      doas emerge -q x11-wm/dwm
+      ```
+    - `Alt-Shift-q` # Quit the DWM to make the changes effective
+- ***Notes***
+    - Maybe need to edit the following file manually
+        - `doas vim /etc/portage/savedconfig/x11-wm/dwm-9999`
+          ```
+          /* Solve a problem about `scratchpadname` and `togglescratch` */
+          static const char scratchpadname[] = "scratchpad";
+          static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "97x16", NULL };
+          { MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
+          ```
+- ***References***
+    - ChatGPT
+    - https://dwm.suckless.org/patches/scratchpad/
+    - https://wiki.gentoo.org/wiki/Dwm#Patches_in_.2Fetc.2Fportage.2Fpatches.2Fcategory.2Fapplication
+- ---
 - #### The abbreviation of "window manager" is "WM".
     - A software
 - ***Notes***
@@ -4834,6 +4876,8 @@
 	- [Question mark - Wikipedia](https://en.wikipedia.org/wiki/Question_mark)
 - ---
 - #### The punctuation of "backtick" is <code>"`"</code>.
+    - Another name
+        - "grave"
 - ***References***
     - ![image.png](../assets/image_1667958422314_0.png)
     - https://en.wikipedia.org/wiki/Backtick
@@ -6559,10 +6603,6 @@
 - [[i3]] [[hotkey]]layout toggle split
   * mod + shift + up/down/left/right //切换分裂布局
 -
-- 经测试，linux 可以使用输入法的终端 #Idea 
-  * xfce4-terminal
-  * gnome-terminal
-  * alacritty # 2022-09-05 还在使用
 - 虚拟机 vmware-workstation 在 archlinux 中，与 qemu 一样折腾 #Idea
 - ---
 - #### Decompress a ".gz" file
@@ -6799,8 +6839,8 @@
   1. ta退过学，退学前，就已经写了7年代码  
   2. 退学原因：没有办法同时兼顾ta喜欢的和ta不喜欢的课程，疲于应付功课  
   3. 总结：学历很重要，且不建议退学，除非已经铺好后路、拥有解决问题的能力- [[symbol]] `^`插入符
-- [[symbol]] `~`波浪号
--- 我认为，手机端开源输入法并不怎么方便(大概是我不会配置的原因，然后Gboard-Google键盘凑合用了) #Idea
+-
+- 我认为，手机端开源输入法并不怎么方便(大概是我不会配置的原因，然后Gboard-Google键盘凑合用了) #Idea
 - 我认为，初步 [[study]] 管理系统由以下部分组成：  
   1. 笔记([[Logseq]])
   2. 代办事项([[teambition]])
