@@ -1303,19 +1303,20 @@
         - Docker
 - ---
 - #### Set static IP address in Gentoo Linux
-    - `vim /etc/conf.d/net.eno1`
+    - `doas vim /etc/conf.d/net.eno1`
       ```
-      config_eno1="192.168.10.105 netmask 255.255.255.0"
+      config_eno1="192.168.10.105/24"
       routes_eno1="default via 192.168.10.1"
       dns_servers_eno1="192.168.10.1"
       ```
     - `ln -s /etc/init.d/net.lo /etc/init.d/net.eno1` # Create symlinks
-    - `rc-service net.eno1 restart` # Restart the interface
+    - `doas /etc/init.d/net.eno1 restart` # Restart the interface
     - `rc-update add net.eno1 default` # Enable at boot
 - ***Notes***
     - `eno1` # Replace it with interface name
         - `ifconfig` # Get interface name
     - `192.168.10.105` # Replace it with static IP address
+        - May need to test to see if the IP address in already in use.
     - `192.168.10.1` # Replace it with gateway
         - `netstat -rn` # Get gateway
     - Because to use SSH

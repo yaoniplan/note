@@ -77,6 +77,9 @@ http://natas9.natas.labs.overthewire.org
 
 ## Animation and comic
 - https://2khanman.com/
+- http://www.p5mh.com/
+- https://nnhanman.com
+- https://www.yeseimg.com/
 - http://www.ysjdm3.com/
 - https://anime1.io/
 - https://www.agemys.com/
