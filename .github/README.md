@@ -14,6 +14,7 @@
 - ***Notes***
     - `x` # Extract
     - `/tmp/testRAR/` # Replace it with your desired decompression path
+    - `doas emerge -aq app-arch/rar` # Install it in Gentoo Linux
 - ***References***
     - ChatGPT
     - `rar -? | less`
@@ -63,8 +64,6 @@
       x11-misc/dmenu savedconfig
       ```
       - `doas emerge -q x11-misc/dmenu` # Make the changes effective
-- ***References***
-    - ``
 - ---
 - #### Change naming rules from "2023-04-05_10:27:31" to "2023-04-05_10-27". #idea
     - `Colon` # Need escape character
