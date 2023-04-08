@@ -8,7 +8,7 @@
     - `about:config`
     - ChatGPT
 - ---
-- #### View a list of "about" pages
+- #### View a list of "about" pages in Firefox
     - `about:about`
 - ***Notes***
     - Because to quickly view some commonly used "about" pages.
