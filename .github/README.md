@@ -1,8 +1,27 @@
-- #### Set the file type to C programming language in Vim
-    - `:set ft=c`
+- #### Set DPI in Firefox
+    - `layout.css.devPixelsPerPx`
+        - 1.2
 - ***Notes***
-    - `ft` # File type
+    - `1.2` # Replace it with your desired DPI
+    - Because to make web content more readable.
+- ***References***
+    - `about:config`
+    - ChatGPT
+- ---
+- #### View a list of "about" pages
+    - `about:about`
+- ***Notes***
+    - Because to quickly view some commonly used "about" pages.
+        - `about:config`
+        - `about:preferences`
+        - `about:addons`
+- ---
+- #### Set the file type for a file in Vim
+    - `:set filetype=c`
+- ***Notes***
     - `c` # C programming language
+    - Turn off the file type
+        - `set filetype=off`
     - Because to make the following file code more readable.
         - `doas vim /etc/portage/savedconfig/x11-wm/dwm-6.3`
 - ***References***
@@ -1280,16 +1299,16 @@
       ```
     - Select "Number", click plus button, and write down "1"
 - ***Notes***
-    - Warning: the method is suitable for google.com, github.com, duckduckgo.com, etc.
+    - Warning: It does not work in 2023-04-08.
 - ***References***
     - https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/
 - ---
-- #### Disable smooth scroll in Firefox
+- #### Disable smooth scrolling in Firefox
     - `about:config`
       ```
       general.smoothScroll
       ```
-    - Toggle it from true to false
+    - Toggle it from "true" to "false"
 - ---
 - #### Solve a problem about Qutebrowser
     - `export XDG_RUNTIME_DIR="/tmp/runtime-yaoniplan"`

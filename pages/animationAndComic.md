@@ -1,17 +1,13 @@
 ### "Animation"
-- Lupine the Third / 鲁邦三世 (Season1+2) - (23+149) animation 1318
-- 画江湖之不良人 (season1+2+3+4+5+6) 54+40+40+13+12+06
-- 炼气十万年 - 15
-- 万事屋斋藤到异世界 - 12
-- 爹地拍档 - 12
-- 冰剑的魔术师将要统一世界 - 12
-- 九州缥缈录 - 12
-- 冰海战记 (season1+2) - 24+12
-- 异世界悠闲农家 - 12
-- 神印王座 - 48
-- 百炼成神 - 23
-- 灵剑尊 -  240/370
-- 武神主宰 - 192/319
+- Lupine the Third / 鲁邦三世 (Season1+2) - (23+150) animation
+- 画江湖之不良人 (season1+2+3+4+5+6) 54+40+40+13+12+07
+- 炼气十万年 - 18
+- 九州缥缈录 - 13
+- 冰海战记 (season1+2) - 24+13
+- 神印王座 - 49
+- 百炼成神 - 24
+- 灵剑尊 -  240/372
+- 武神主宰 - 192/319 animation
 - 独步逍遥 - 168/299
 - 完美世界 - 38/104
 - 逆天至尊 - 53/184
@@ -233,6 +229,10 @@
 - guard(end)
 
 ### Animation
+- 异世界悠闲农家 - 12 # End of the first season
+- 冰剑的魔术师将要统一世界 - 12 # End of the first season
+- 爹地拍档 - 12 # End of the first season
+- 万事屋斋藤到异世界 - 12 # End of the first season
 - 关于邻家的天使大人不知不觉把我惯成了废人这档子事 - 12 # End of the first season
 - 万古剑神 - 26 # End of the first season
 - 阿鲁斯的巨兽 - 12 0407 # It is boring
