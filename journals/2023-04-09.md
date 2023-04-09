@@ -8,7 +8,7 @@
 - #### Display the last committed complete content of a file in Git
     - `git show 97671e3:index.html`
 - ***Notes***
-    - `8e657a1:index.html` # Get it by using the following command
+    - `97671e3:index.html` # Get it by using the following command
         - `git log -1 --name-only`
     - `s testIndex.html` # Save file as testIndex.html in the less command interface
 - ***References***
