@@ -23,6 +23,7 @@
   </style>
 </head>
 <body>
+  <input type="text" id="url-input">
   <div id="markdown-content" class="markdown-body"></div>
 
   <script>
@@ -31,24 +32,28 @@
     const markdownUrl = urlParams.get('url');
 
     // If no URL is specified, use the default URL
-    const defaultUrl = 'https://raw.githubusercontent.com/yaoniplan/note/development/.github/README.md';
+    const defaultUrl = `https://raw.githubusercontent.com/yaoniplan/note/development/.github/README.md`;
     const url = markdownUrl || defaultUrl;
 
-    // Load the markdown file content using fetch()
-    fetch(url)
-      .then(response => response.text()) // Parse the response as text
-      .then(markdown => {
-
-        // Parse the Markdown content into HTML using marked()
+    const fetchMarkdown = async (url) => {
+      try {
+        const response = await fetch(url);
+        const markdown = await response.text();
         const html = marked(markdown);
-
-        // Insert the parsed HTML into the designated HTML element
         const markdownEl = document.querySelector('#markdown-content');
         markdownEl.innerHTML = html;
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('Error loading markdown file:', error);
-      });
+      }
+    }
+
+    fetchMarkdown(url);
+
+    const urlInput = document.querySelector('#url-input');
+    urlInput.addEventListener('input', (event) => {
+      const newUrl = event.target.value;
+      fetchMarkdown(newUrl);
+    });
   </script>
 </body>
 </html>

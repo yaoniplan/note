@@ -1,8 +1,8 @@
 ## "learnPython"
-# References
+## References
     - https://cs231n.github.io/python-numpy-tutorial/
 
-# Classic quicksort algorithm
+## Classic quicksort algorithm
 ```python
 def quicksort(arr):
     if len(arr) <= 1:
@@ -17,7 +17,7 @@ print(quicksort([3,6,8,10,1,2,1]))
 # "[1, 1, 2, 3, 6, 8, 10]"
 ```
 
-# Basic data types
+## Basic data types
 ```python
 x = 3
 print(type(x))  # "<class 'int'>"
@@ -35,7 +35,7 @@ print(type(y))  # "<class 'float'>"
 print(y, y + 1, y * 2, y ** 2)  # "2.5 3.5 5.0 6.25"
 ```
 
-# Booleans
+## Booleans
 ```python
 t = True
 f = False
@@ -46,7 +46,7 @@ print(not t)    # "False"
 print(t != f)   # "True"
 ```
 
-# Strings
+## Strings
 ```python
 hello = 'hello'
 world = "world"

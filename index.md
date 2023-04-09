@@ -1,3 +1,4 @@
 Encrypt compressed file
 Use bookmarksManager and passwordsManager in dmenu
-Add a feature to parse other Markdown file
+Write a crawler
+Parse raw Markdown URL when typing the URL

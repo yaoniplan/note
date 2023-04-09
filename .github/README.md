@@ -1,3 +1,11 @@
+- #### Open the history sidebar in Firefox
+    - `Ctrl-h`
+- ***Notes***
+    - Because to remove focus of search bar.
+- ***References***
+    - ChatGPT
+- ---
+- https://www.youtube.com/watch?v=bw_M7q3Mtag
 - #### Set DPI in Firefox
     - `layout.css.devPixelsPerPx`
         - 1.2
@@ -3602,10 +3610,10 @@
 	- [How to Choose a Toothbrush](https://www.goldenstatedentistry.com/blog/how-to-choose-a-toothbrush#:~:text=Any%20toothbrush%20you%20choose%20should,if%20excessive%20force%20is%20applied.)
 	- https://github.com/yaoniplan/note/issues/17#issue-1464378817
 - ---
-- #### The #abbreviation of [[potential of hydrogen]] is #pH.
+- #### The abbreviation of "potential of hydrogen" is "pH".
 - ***References***
 	- ![2023-01-08_09-36.png](../assets/2023-01-08_09-36_1673141798107_0.png)
-	- [pH - Wikipedia](https://en.wikipedia.org/wiki/PH)
+	- https://en.wikipedia.org/wiki/PH
 - ---
 - #### Choose a soap
 	- `pH` `fatty acids` `glycerin`
