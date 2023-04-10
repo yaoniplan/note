@@ -116,6 +116,7 @@ http://natas9.natas.labs.overthewire.org
 - https://www.perplexity.ai/
 - https://platform.openai.com/onboarding
 - https://huggingface.co/spaces/togethercomputer/OpenChatKit
+- https://chat.lmsys.org/
 
 ## Web crawler
 - https://www.alipansou.com/

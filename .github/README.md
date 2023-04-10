@@ -1,3 +1,41 @@
+- #### Understand "crocodile tears"
+    - A display
+        - Emotion
+- ***Notes***
+    - Pretend to be sad
+    - Shed fake tears
+- ***References***
+    - TEAM PLAY # TEAM, P, and LAY
+    - https://en.wikipedia.org/wiki/Crocodile_tears
+- ---
+- #### Change the temporary directory in one-liner of Linux
+    - `cd "$(mktemp -d)"`
+- ***Notes***
+    - `mktemp` # Make a temporary file
+    - `-d` # Directory
+    - Because to test an urgent command.
+- ***References***
+    - `man mktemp`
+    - ChatGPT
+- ---
+- #### Replace spaces in all filenames with underscores in one-liner of Linux
+    - `for f in *; do mv "$f" "$(echo "$f" | sed 's/ /_/g')"; done`
+- ***Notes***
+    -  Because it is more convenient to read in terminal.
+- ***References***
+    - ChatGPT
+    - ![2023-04-10_13-20.png](../assets/2023-04-10_13-20.png)
+- ---
+- #### Set the default application in Linux
+    - `xdg-mime default feh.desktop image/png`
+- ***Notes***
+    - `feh.desktop`
+        - `cat /usr/share/applications/` # Get applications
+    - Because to use the Feh program to view images with PNG suffix.
+        - It is more convenient in terminal.
+- ***References***
+    - ChatGPT
+- ---
 - #### Open the history sidebar in Firefox
     - `Ctrl-h`
 - ***Notes***
@@ -15,7 +53,14 @@
     - ChatGPT
     - `h`
 - ---
-- https://www.youtube.com/watch?v=bw_M7q3Mtag
+- #### View the creation time of a file in Linux
+    - `stat b.txt`
+- ***Notes***
+    - `b.txt` # Replace it with a file name
+- ***References***
+    - ChatGPT
+    - ![2023-04-09_22-39.png](../assets/2023-04-09_22-39.png)
+- ---
 - #### Set DPI in Firefox
     - `layout.css.devPixelsPerPx`
         - 1.2
@@ -499,6 +544,7 @@
 - ***References***
     - ChatGPT
     - ![2023-03-23_22:32:46.png](../assets/2023-03-23_22:32:46.png)
+    - ![2023-04-10_14-31.png](../assets/2023-04-10_14-31.png)
 - ---
 - #### Display the correct date and time in Ubuntu Server 22.04
     - `doas timedatectl set-timezone Asia/Shanghai`
