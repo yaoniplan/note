@@ -29,12 +29,19 @@
 - #### Set the default application in Linux
     - `xdg-mime default feh.desktop image/png`
 - ***Notes***
-    - `feh.desktop`
-        - `cat /usr/share/applications/` # Get applications
-    - Because to use the Feh program to view images with PNG suffix.
+    - `feh.desktop` # Get the application
+        - `cat /usr/share/applications/`
+    - `png` # Replace it with other format (e.g. gif)
+    - Because to use the Feh program to view images.
         - It is more convenient in terminal.
 - ***References***
     - ChatGPT
+- ---
+- #### The abbreviation of "not safe for work" is "NSFW".
+    - A slang
+    - To warn
+- ***References***
+    - https://en.wikipedia.org/wiki/Not_safe_for_work
 - ---
 - #### Open the history sidebar in Firefox
     - `Ctrl-h`
@@ -57,6 +64,7 @@
     - `stat b.txt`
 - ***Notes***
     - `b.txt` # Replace it with a file name
+    - Because to know how long the crawler script has been working.
 - ***References***
     - ChatGPT
     - ![2023-04-09_22-39.png](../assets/2023-04-09_22-39.png)
@@ -5138,7 +5146,7 @@
 	- ![image.png](../assets/image_1666822882901_0.png)
 	- ![image.png](../assets/image_1666822939055_0.png)
 	- ![image.png](../assets/image_1670469335477_0.png)
-	- [How To Check Creation Date for Any GitHub Repository](https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html)
+	- https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html
 - ---
 - [[abbreviation]]"Graphics interchange format" (`GIF`)
 - ***References***
