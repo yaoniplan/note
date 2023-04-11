@@ -62,6 +62,21 @@
     - ChatGPT
     - ![2023-04-11_15-44.png](../assets/2023-04-11_15-44.png)
 - ---
+- #### Act as an IT expert in ChatGPT
+  ```
+  I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is ""
+  ```
+- ***Notes***
+    - My second problem is "Explain the meaning of 'IT'"
+- ***References***
+    - https://github.com/f/awesome-chatgpt-prompts#act-as-an-it-expert
+- ---
+- #### The abbreviation of "information technology" is "IT".
+    - A branch
+        - Computer science
+- ***References***
+    - https://en.wikipedia.org/wiki/Information_technology
+- ---
 - #### Understand "crocodile tears"
     - A display
         - Emotion
