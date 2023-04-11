@@ -29,7 +29,7 @@
 - ***References***
     - ChatGPT
 - ---
-- #### Put a Bash function in one file and call it in another file
+- #### Call a Bash function in another file
     - `vim ~/.local/bin/master.sh`
       ```
       notification() {
@@ -50,8 +50,9 @@
       sleep "$1"; notification
       ```
 - ***Notes***
-    - `source master.sh` # To source the file
+    - `source master.sh` # Source the file
         - `chmod u+x ~/.local/bin/master.sh`
+    - Because to improve the code reusability.
 - ***References***
     - ChatGPT
 - ---
@@ -68,6 +69,7 @@
   ```
 - ***Notes***
     - My second problem is "Explain the meaning of 'IT'"
+    - Because to get accurate results whthin a range.
 - ***References***
     - https://github.com/f/awesome-chatgpt-prompts#act-as-an-it-expert
 - ---
