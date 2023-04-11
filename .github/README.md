@@ -5,8 +5,7 @@
           sleep "$1"
           notify-send "$notificationMessage" &
 
-          for i in {1..2}
-          do
+          for i in {1..2}; do
               paplay "$audioFile"
           done
       }
@@ -26,7 +25,7 @@
     - Surround variables with double quotes
         - `"$1"`
         - `"$notificationMessage"`
-        - `$audioFile`
+        - `"$audioFile"`
 - ***References***
     - ChatGPT
 - ---
@@ -36,8 +35,7 @@
       notification() {
           notify-send "$notificationMessage" &
 
-          for i in {1..2}
-          do
+          for i in {1..2}; do
               paplay "$audioFile"
           done
       }
@@ -56,6 +54,13 @@
         - `chmod u+x ~/.local/bin/master.sh`
 - ***References***
     - ChatGPT
+- ---
+- #### Decompress a ".tar.bz2" file in Linux
+    - `tar --bzip2 -xf aspell6-en-2020.12.07-0.tar.bz2`
+- ***References***
+    - `man tar`
+    - ChatGPT
+    - ![2023-04-11_15-44.png](../assets/2023-04-11_15-44.png)
 - ---
 - #### Understand "crocodile tears"
     - A display

@@ -1,11 +1,12 @@
 ### "Animation"
+- Dead Mount Death Play / 亡骸游戏 - 01
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 01
 - 向涟苍士献上纯洁 - #NSFW 01
 - 无神世界中的神明活动 - 01
 - 地狱乐 - 02
 - Heavenly Delusion / 天国大魔境 - 01
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+01
-- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+02)
+- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+02) animation
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+07
 - 炼气十万年 - 18
 - 九州缥缈录 - 13
