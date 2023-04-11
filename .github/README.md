@@ -1,3 +1,62 @@
+- #### Write a function in Bash
+    - `vim ~/.local/bin/remindMe.sh`
+      ```
+      notification() {
+          sleep "$1"
+          notify-send "$notificationMessage" &
+
+          for i in {1..2}
+          do
+              paplay "$audioFile"
+          done
+      }
+      ```
+- ***Notes***
+    - Before defining the function
+      ```
+      # Set variables
+      notificationMessage="Time is up!"
+      audioFile="/home/yaoniplan/note/assets/doorbell.mp3"
+      ```
+    - After defining the function
+      ```
+      # Call the function
+      notification "$1"
+      ```
+    - Surround variables with double quotes
+        - `"$1"`
+        - `"$notificationMessage"`
+        - `$audioFile`
+- ***References***
+    - ChatGPT
+- ---
+- #### Put a Bash function in one file and call it in another file
+    - `vim ~/.local/bin/master.sh`
+      ```
+      notification() {
+          notify-send "$notificationMessage" &
+
+          for i in {1..2}
+          do
+              paplay "$audioFile"
+          done
+      }
+      ```
+    - `vim ~/.local/bin/remindMe.sh`
+      ```
+      notificationMessage="Time is up!"
+      audioFile="/home/yaoniplan/note/assets/doorbell.mp3"
+      
+      source master.sh
+      
+      sleep "$1"; notification
+      ```
+- ***Notes***
+    - `source master.sh` # To source the file
+        - `chmod u+x ~/.local/bin/master.sh`
+- ***References***
+    - ChatGPT
+- ---
 - #### Understand "crocodile tears"
     - A display
         - Emotion
