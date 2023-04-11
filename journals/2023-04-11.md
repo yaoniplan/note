@@ -74,8 +74,7 @@
     - https://github.com/f/awesome-chatgpt-prompts#act-as-an-it-expert
 - ---
 - #### The abbreviation of "information technology" is "IT".
-    - A branch
-        - Computer science
+    - A branch of computer science
 - ***References***
     - https://en.wikipedia.org/wiki/Information_technology
 - ---
