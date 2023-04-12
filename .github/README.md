@@ -1,3 +1,16 @@
+- #### Enable the Browser Toolbox mode in Firefox
+    - `about:config` # Set them to true
+      ```
+      devtools.chrome.enabled
+      devtools.debugger.remote-enabled
+      ```
+    - `Ctrl-Shift-Alt-i` # Open the Browser Toolbox
+- ***Notes***
+    - Because to customize the Firefox theme with CSS.
+- ***References***
+    - ChatGPT
+    - https://www.youtube.com/watch?v=bw_M7q3Mtag
+- ---
 - #### Write a function in Bash
     - `vim ~/.local/bin/remindMe.sh`
       ```
@@ -1389,12 +1402,6 @@
       #PlacesChevron {
         list-style-image: url("chrome://browser/skin/bookmark.svg") !important;
       }
-      
-      /* 全屏后，浏览器上部会在屏幕范围外面多出大约7px的空间，导致地址栏超出屏幕外 */
-      /* 修复全屏顶部元素溢出屏幕上面 */
-      /* :root[tabsintitlebar][sizemode="maximized"] #navigator-toolbox {
-        padding-top: 7px !important;
-      } */
       ```
 - ***Notes***
     - `about:config`
@@ -1406,7 +1413,6 @@
     - Close the Firefox and then open it # Make the changes effective
 - ***References***
     - ![2023-03-05_15:58:55.png](../assets/2023-03-05_15:58:55.png)
-    - https://github.com/dave-luna/Compact-Firefox-UI
     - https://github.com/MapoMagpie/firefox-compact-ui
 - ---
 - #### Set full screen in Chromium
@@ -4918,7 +4924,7 @@
 		- CDM
 		- Without (script)
 - ***References***
-	- [SDDM - Gentoo Wiki](https://wiki.gentoo.org/wiki/SDDM)
+	- https://wiki.gentoo.org/wiki/SDDM
 - ---
 - "Miscellaneous" (`Misc`) #abbreviation
 - ***References***
