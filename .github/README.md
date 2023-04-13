@@ -1,3 +1,40 @@
+- #### Add the line number plus one to the end of each line in Vim
+    - `:%s/$/\=printf('%02d', line('.')+1).'.MP4'/g`
+- ***Notes***
+    - `\=` # Expression
+    - `printf()` # A funcation
+    - `%02d`
+        - An integer
+        - Zero-padding
+        - Two digits
+    - `line('.')+1` # The line number plus one
+    - `:%s/\v\d{2}\.MP4$//g` # Remove what this command generates
+        - `\v` # Very magic mode
+        - `\d{2}` # Two digits
+        - `\` # Escape character
+- ***References***
+    - ChatGPT
+- ---
+- #### The abbreviation of "GNU Privacy Guard" is "GPG".
+    - A software
+- ***Notes***
+    - Because to encrypt private files.
+- ***References***
+    - ChatGPT
+    - https://en.wikipedia.org/wiki/GNU_Privacy_Guard
+- ---
+- #### Use "gpg"
+    - `gpg --gen-key` # Generate key pair
+        - Type your name, email, and passphrase
+    - `gpg --output public.key --armor --export yaoniplan@gmail.com` # Export publick key to a file
+    - `gpg --recipient yaoniplan@gmail.com --encrypt 2023-03-22.tar.gz` # Encrypt file
+- ***Notes***
+    - `passphrase` # Strong, otherwise it will not pass
+    - `yaoniplan@gmail.com` # Replace it with your email
+- ***References***
+    - `man gpg`
+    - ChatGPT
+- ---
 - #### Enable the Browser Toolbox mode in Firefox
     - `about:config` # Set them to true
       ```
@@ -10,6 +47,83 @@
 - ***References***
     - ChatGPT
     - https://www.youtube.com/watch?v=bw_M7q3Mtag
+- ---
+- #### Hide toolbox automatically in Firefox
+    - `vim ~/.mozilla/firefox/3y390lx5.default-release/chrome/userChrome.css`
+      ```css
+      :root{
+        --uc-autohide-toolbox-delay: 200ms; /* Wait 0.1s before hiding toolbars */
+        --uc-toolbox-rotation: 82deg;  /* This may need to be lower on mac - like 75 or so */
+      }
+      
+      :root[sizemode="maximized"]{
+        --uc-toolbox-rotation: 88.5deg;
+      }
+      
+      @media  (-moz-platform: windows),
+              (-moz-os-version: windows-win7),
+              (-moz-os-version: windows-win10){
+      
+        #navigator-toolbox:not(:-moz-lwtheme){ background-color: -moz-dialog !important; }
+      }
+      
+      :root[sizemode="fullscreen"],
+      #navigator-toolbox[inFullscreen]{ margin-top: 0 !important; }
+      
+      #navigator-toolbox{
+        position: fixed !important;
+        display: block;
+        background-color: var(--lwt-accent-color,black) !important;
+        transition: transform 82ms linear, opacity 82ms linear !important;
+        transition-delay: var(--uc-autohide-toolbox-delay) !important;
+        transform-origin: top;
+        transform: rotateX(var(--uc-toolbox-rotation));
+        opacity: 0;
+        line-height: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      
+      
+      /* #mainPopupSet:hover ~ box > toolbox, */
+      /* Uncomment the above line to make toolbar visible if some popup is hovered */
+      #navigator-toolbox:hover,
+      #navigator-toolbox:focus-within{
+        transition-delay: 33ms !important;
+        transform: rotateX(0);
+        opacity: 1;
+      }
+      
+      #navigator-toolbox > *{ line-height: normal; pointer-events: auto }
+      
+      #navigator-toolbox,
+      #navigator-toolbox > *{
+        width: 100vw;
+        -moz-appearance: none !important;
+      }
+      
+      /* These two exist for oneliner compatibility */
+      #nav-bar{ width: var(--uc-navigationbar-width,100vw) }
+      #TabsToolbar{ width: calc(100vw - var(--uc-navigationbar-width,0px)) }
+      
+      /* Don't apply transform before window has been fully created */
+      :root:not([sessionrestored]) #navigator-toolbox{ transform:none !important }
+      
+      :root[customizing] #navigator-toolbox{
+        position: relative !important;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+      
+      #navigator-toolbox[inFullscreen] > #PersonalToolbar,
+      #PersonalToolbar[collapsed="true"]{ display: none }
+      ```
+- ***Notes***
+    - Because to get more space when not focused.
+        - `Ctrl-l` # Focus it
+        - It is better to combine the [oneliner](https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/navbar_tabs_oneliner_menu_buttons_on_right.css) mode.
+- ***References***
+    - https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_toolbox.css
 - ---
 - #### Write a function in Bash
     - `vim ~/.local/bin/remindMe.sh`
@@ -957,7 +1071,7 @@
     - ![2023-03-13_14:58:24.png](../assets/2023-03-13_14:58:24.png)
 - ---
 - #### Use the "mpv" command in Linux
-    - `mpv --speed=2 --fs=yes URLOfTheVideo`
+    - `mpv --speed=2 --fullscreen URLOfTheVideo`
 - ***Notes***
     - `o` # Show progress bar
     - `f` # Full screen

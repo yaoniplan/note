@@ -1,4 +1,5 @@
 ### "Animation"
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+50+37
 - Mashle: Magic and Muscles / 物理魔法使马修 - 01
 - Dead Mount Death Play / 亡骸游戏 - 01
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 01
@@ -7,7 +8,7 @@
 - 地狱乐 - 02
 - Heavenly Delusion / 天国大魔境 - 01
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+01
-- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+04) animation
+- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+07) animation 1009
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+07
 - 炼气十万年 - 18
 - 九州缥缈录 - 13
@@ -305,7 +306,6 @@
 - 石少侠 精编版 - 18 # End of the first season
 - 仙武苍穹 - 48 # End of the first season
 - 龙族 - 16 # End of the first season
-- 妖神记 - 191/276 # End of the fifth season
 - joker game / 鬼牌游戏 - 12 # End of the first season
 - B: The Beginning / B：彼之初 - 12 # End of the first season
 - 战千年第一季 - 16 # End of the first season
