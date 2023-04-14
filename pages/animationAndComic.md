@@ -1,4 +1,5 @@
 ### "Animation"
+- 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+50+37
 - Mashle: Magic and Muscles / 物理魔法使马修 - 01
 - Dead Mount Death Play / 亡骸游戏 - 01
@@ -8,7 +9,7 @@
 - 地狱乐 - 02
 - Heavenly Delusion / 天国大魔境 - 01
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+01
-- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+07) animation 1009
+- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+12) animation
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+07
 - 炼气十万年 - 18
 - 九州缥缈录 - 13

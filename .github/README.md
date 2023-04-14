@@ -212,7 +212,7 @@
     - Pretend to be sad
     - Shed fake tears
 - ***References***
-    - TEAM PLAY # TEAM, P, and LAY
+    - TEAM PLAY # TEAM, P, and LAY #NSFW
     - https://en.wikipedia.org/wiki/Crocodile_tears
 - ---
 - #### Change the temporary directory in one-liner of Linux
@@ -1176,8 +1176,25 @@
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
     - `rclone lsd aliyundrive:/` # Check it
+    - Solve the problem
+      ```
+      2023/04/13 23:05:24 Fatal error: failed to mount FUSE fs: fusermount: exec: "fusermount": executable file not found in $PATH
+      ```
+        - `ln -s /usr/bin/fusermount3 /usr/bin/fusermount`
+    - Solve the problem
+      ```
+      2023/04/14 02:48:01 ERROR : selfImprovement/thinkingCognition/个人爆发式成长的25种思维/01第1讲 筛选思维：随意选择的人生，不值得一过(01).wma: vfs cache: failed to download: vfs reader: failed to write to cache file: 403 Forbidden
+      ```
+        - Change "302 redirect" to "native proxy" in "WebDAV policy"
+    - Mount to another computer without Rclone
+        - `doas emerge -q net-fs/sshfs`
+        - `sshfs yaoniplan@192.168.10.100:/mnt/testAliyundriveOne/ /mnt/aliyundrive/` # Mount
+        - `fusermount3 -u /mnt/aliyundrive/` # Unmount
 - ***References***
     - ChatGPT
+    - https://github.com/alist-org/alist/discussions/1724#discussioncomment-3901460
+    - https://github.com/rclone/rclone/issues/6856#issuecomment-1479853571
+    - https://wiki.gentoo.org/wiki/Filesystem_in_Userspace
     - https://www.youtube.com/watch?v=hoUPP1aLE60
 - ---
 - #### There is no right to choose. #idea
@@ -4904,34 +4921,32 @@
     - ![image.png](../assets/image_1669535179450_0.png)
     - https://zjuyk.gitlab.io/posts/i3wm-config/
 - ---
-- #### Enable #audio or #sound in [[Gentoo Linux]]
+- #### Enable audio or sound in Gentoo Linux
 	- `cd /usr/src/linux`
-	- `sudo make menuconfig`
-	- `sudo make -j6`
-	- `sudo make modules_install`
-	- `sudo make install`
-	- `sudo euse -E alsa`
-	- `sudo emerge -avuDN @world`
-	- `sudo emerge -aq media-sound/alsa-utils`
-	- `sudo gpasswd -a yaoniplan audio`
-	- `sudo rc-update add alsasound boot`
+	- `doas make menuconfig`
+	- `doas make -j6`
+	- `doas make modules_install`
+	- `doas make install`
+	- `doas euse -E alsa`
+	- `doas emerge -avuDN @world`
+	- `doas emerge -aq media-sound/alsa-utils`
+	- `doas gpasswd -a yaoniplan audio`
+	- `doas rc-update add alsasound boot`
 	- `alsamixer`
 - ***Notes***
-	- `cd /usr/src/linux/`
-		- Copy **.config** file to the */usr/src/linux/* directory if you have used [[Gentoo Linux]]
-	- `sudo make menuconfig` # Refer this [link](https://wiki.gentoo.org/wiki/ALSA#Hardware_detection) to activate kernel options
+	- `doas make menuconfig` # Refer this [link](https://wiki.gentoo.org/wiki/ALSA#Hardware_detection) to activate kernel options
 		- `lspci | grep -i audio` # List all PCI devices and print lines containing *audio* ignoring case
 			- `lspci` # List all PCI devices
 			- `-i` # --ignore-case
-	- `sudo euse -E alsa` # Enable the USE flag (*alsa*) in */etc/portage/make.conf*
+	- `doas euse -E alsa` # Enable the USE flag (*alsa*) in */etc/portage/make.conf*
 		- `-E` # --enable
-		- `sudo emerge -aq app-portage/gentoolkit` # Install it to use the *euse* command
-	- `sudo gpasswd -a yaoniplan audio` # Add the user to the group
+		- `doas emerge -aq app-portage/gentoolkit` # Install it to use the *euse* command
+	- `doas gpasswd -a yaoniplan audio` # Add the user to the group
 		- `-a` # --add
 		- `yaoniplan` # Replace it with a name of your user
 		- `audio` # A group
 		- `grep audio /etc/group` # Print lines containing *audio* in */etc/group* file
-	- `sudo rc-update add alsasound boot` # Add the service to the runlevel by using *OpenRC*
+	- `doas rc-update add alsasound boot` # Add the service to the runlevel by using *OpenRC*
 		- `alsasound` # A service
 		- `boot` # A runlevel
 	- `alsamixer`

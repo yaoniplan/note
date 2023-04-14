@@ -62,12 +62,8 @@ http://natas9.natas.labs.overthewire.org
 
 ## Network proxy
 - http://yacd.haishan.me/#/
-- https://ins.ins66.com/#/dashboard
-- https://sub.ssrsub.com/#/dashboard
-- https://acyun.cf/#/dashboard
-- https://starsea.vip/#/dashboard
 - https://xn--mesv7f5toqlp.com/#/dashboard
-- https://xn--9kqu12djx2a.net/#/dashboard
+- https://sub.ssrsub.com/#/dashboard
 - https://user.bafang.vip/#/dashboard
 - https://www.askahh.com/index.php/archives/101/
 - https://jichangtuijian.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
