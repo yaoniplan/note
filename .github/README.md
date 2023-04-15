@@ -1804,15 +1804,6 @@
       Name # Order by
       Ascending # Order direction
       ```
-    - Lanzou
-      ```
-      /androidSoftware # Mount Path
-      Name # Order by
-      Descending # Order direction
-      Cookie # Type
-      networkMydisk.phpCookie # Cookie
-      https://wwee.lanzouy.com # ShareUrl
-      ```
 - ***Notes***
     - Install AList if you don't have it
         - `docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name="alist" xhofe/alist:latest`
@@ -1834,7 +1825,6 @@
     - https://github.com/alist-org/alist/issues/829#issuecomment-1080066329
     - https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515
     - https://github.com/alist-org/alist/issues/2668#issuecomment-1345480664
-    - https://alist.nn.ci/guide/drivers/lanzou.html
     - https://alist.nn.ci/guide/drivers/aliyundrive_open.html
     - https://alist.nn.ci/guide/drivers/sfpt.html
     - https://github.com/alist-org/alist/issues/2267
@@ -3284,6 +3274,8 @@
     - https://phoenixnap.com/kb/vim-show-line-numbers#
 - ---
 - #### Use Vim
+    - `Ctrl-r` # Redo
+    - `u` # Undo
     - `.` # Repeat last change
     - `vU` # Uppercase
         - `v` # Visual mode
@@ -3324,6 +3316,7 @@
 - ***References***
     - `:help /\v`
     - `:help .`
+	- ![2023-01-16_11-50.png](../assets/2023-01-16_11-50_1673841050235_0.png)
     - https://stackoverflow.com/questions/2946051/changing-case-in-vim/2946054#2946054
     - https://m4xshen.me/posts/vim-basic-commands/
     - https://unix.stackexchange.com/questions/114264/is-there-a-command-reverse-search-in-vim
@@ -3525,20 +3518,6 @@
 - ***References***
     - https://github.com/sunaku/tmux-navigate
 	- https://github.com/jabirali/tmux-tilish
-- ---
-- #### Use "Vim"
-    - `Ctrl-r` # Redo
-    - `u` # Undo
-	- `gM` # Move cursor to the middle of a line
-	- `r` # Replace
-	- Mark
-		- `m + a` # Mark as a
-		- <code>` + a</code> # Jump to mark a
-- ***Notes***
-	- Try it https://github.com/hackjutsu/vim-cheatsheet
-- ***References***
-	- ![2023-01-16_11-50.png](../assets/2023-01-16_11-50_1673841050235_0.png)
-	- [How do I move the cursor to the center of current line? - Vi and Vim Stack Exchange](https://vi.stackexchange.com/questions/2462/how-do-i-move-the-cursor-to-the-center-of-current-line)
 - ---
 - #### Set dark theme in #Linux
 	- `vim ~/.config/gtk-3.0/settings.ini`
@@ -3948,14 +3927,15 @@
 - ***References***
 	- ![2023-01-05_11-55.png](../assets/2023-01-05_11-55_1672890964860_0.png)
 	- [Portable Network Graphics - Wikipedia](https://en.wikipedia.org/wiki/Portable_Network_Graphics)- ---
-- #### Print system information in #Shell
+- #### Print system information in Shell
 	- `uname`
 - ***Notes***
 	- `uname -a`
 		- `-a` # All
 - ***References***
 	- ![2023-01-04_16-27.png](../assets/2023-01-04_16-27_1672820843229_0.png)
-	- `man uname`- ---
+	- `man uname`
+- ---
 - #### Reasons for the air switch to trip: overload protection, circuit short circuit and leakage. #idea
 - ***References***
 	- ![2023-01-03_10-21.png](../assets/2023-01-03_10-21_1672712511898_0.png)
@@ -6596,7 +6576,6 @@
   * [045 45-Linux命令-04-ifconfig查询网卡信息.mp4](https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08)
 -- 2022-09-01，yaoniplan 完全转移更新平台(从腾讯文档转移至github)
   * ***参考资料***
-  * [耀拟计划-v2.1.06-2022-09-01历史记录.zip - lanzou.com](https://wwd.lanzouy.com/iOIdp0arhxle)
   * [耀拟计划-v2.1.06-2022-09-01历史记录.zip - github.ocm](../assets/耀拟计划-v2.1.06-2022-09-01历史记录_1662006139225_0.zip) 
   * [耀拟计划-v2.1.06.csv - github.com](../assets/耀拟计划-v2.1.06_1662006018132_0.csv)
   * [耀拟计划-v2.1.06-更新日志.csv - github.com](../assets/耀拟计划-v2.1.06-更新日志_1662006046744_0.csv)
@@ -6619,7 +6598,8 @@
   * ***参考资料***
   * ![image.png](../assets/image_1662033934069_0.png)
   * [Python3 简明教程 - 运算符和表达式](https://www.lanqiao.cn/courses/596/)
--- [[i3]]默认配置文件目录 (2022-08-31)
+-
+- [[i3]]默认配置文件目录 (2022-08-31)
   * `.config/i3/config` //位于 `/home/你的用户名/` 下面
 - * `a = f(1, 2) + g(3, 4)` //参数列表中，在`,` 后面添加一个空格；在运算符周围各添加一个空格
   * ***参考资料***
