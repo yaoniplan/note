@@ -1,3 +1,8 @@
+- #### Improve the website speed of yaoniplan.eu.org
+    - Lazy load images
+- ***References***
+    - ChatGPT
+- ---
 - #### Use "docker-compose" in Ubuntu Server 22.04
     - `vim ~/.config/clash/docker-compose.yml`
       ```
