@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>yaoniplan</title>
-  <link rel="stylesheet" type="text/css" href="github-markdown-dark.css">
-  <script src="marked.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/github-markdown-dark.css" defer>
   <style>
     .markdown-body {
       box-sizing: border-box;
@@ -25,9 +24,10 @@
 <body>
   <div id="markdown-content" class="markdown-body"></div>
 
+  <script src="./assets/marked.min.js" defer></script>
   <script>
     // Load the markdown file content using fetch()
-    fetch('https://raw.githubusercontent.com/yaoniplan/note/development/.github/README.md')
+    fetch('./assets/yaoniplan.md')
       .then(response => response.text()) // Parse the response as text
       .then(markdown => {
 
