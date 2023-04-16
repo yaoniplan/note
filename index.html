@@ -25,6 +25,7 @@
   <div id="markdown-content" class="markdown-body"></div>
 
   <script src="./assets/marked.min.js"></script>
+  <script src="./assets/lazysizes.min.js" async></script>
   <script>
     // Load the markdown file content using fetch()
     fetch('./assets/yaoniplan.md')
@@ -37,11 +38,15 @@
         // Insert the parsed HTML into the designated HTML element
         const markdownEl = document.querySelector('#markdown-content');
         markdownEl.innerHTML = html;
+
+        // Trigger lazy loading for images
+        if ('lazySizes' in window) {
+          lazySizes.init();
+        }
       })
       .catch(error => {
         console.error('Error loading markdown file:', error);
       });
   </script>
-  <script src="./assets/lazysizes.min.js"></script>
 </body>
 </html>
