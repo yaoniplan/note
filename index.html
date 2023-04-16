@@ -34,33 +34,34 @@
         const html = marked(markdown);
 
         // Insert the parsed HTML into the designated HTML element
-        const markdownEl = document.querySelector('#markdown-content');
-        markdownEl.innerHTML = html;
+        const markdownEls = document.querySelectorAll('.markdown-body');
+        markdownEls.forEach(markdownEl => {
+          markdownEl.innerHTML = html;
 
-        // Trigger lazy loading for images
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              const src = img.getAttribute('data-src');
-              img.setAttribute('src', src);
-              observer.unobserve(img);
-            }
+          // Trigger lazy loading for images
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                const src = img.getAttribute('data-src');
+                img.src = src;
+                observer.unobserve(img);
+              }
+            });
+          });
+
+          const images = markdownEl.querySelectorAll('img[data-src]');
+          images.forEach(img => {
+            observer.observe(img);
           });
         });
-
-        const images = document.querySelectorAll('img[data-src]');
-        images.forEach(img => {
-          observer.observe(img);
-        });
-
       })
       .catch(error => {
         console.error('Error loading markdown file:', error);
       });
   </script>
 
-  <script async src="./assets/marked.min.js"></script>
-  <script async src="./assets/lazysizes.min.js"></script>
+  <script defer src="./assets/marked.min.js"></script>
+  <script defer src="./assets/lazysizes.min.js"></script>
 </body>
 </html>
