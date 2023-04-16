@@ -56,6 +56,7 @@
 - ***References***
     - ChatGPT
     - `docker-compose up --help | less`
+    - ![2023-04-16_18-39.png](../assets/2023-04-16_18-39.png)
     - https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/
     - https://blog.vicat.top/archives/linux通过clash来科学上网#2-正戏进阶
 - ---
