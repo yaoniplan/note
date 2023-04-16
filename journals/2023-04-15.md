@@ -28,15 +28,15 @@
     - `docker-compose restart` # Restart
 - ***Notes***
     - `/home/yaoniplan/.config/clash` # Replace it with your path of the config.yaml file
-    - In web browser
+    - In Chromium
         - `192.168.10.100:9091` # The clash dashboard
         - `vim ~/.config/clash/config.yaml` # Solve a problem about "Failed to connect" of "API Bash URL"
           ```
           external-controller: 0.0.0.0:9090
           ```
-    - In Linux
+    - In Gentoo Linux
         - `vim ~/.bash_profile`
-          ```
+          ```bash
           export http_proxy="192.168.10.100:7890"
           export https_proxy="192.168.10.100:7890"
           export no_proxy="localhost, 192.168.10.100"
@@ -52,6 +52,7 @@
       192.168.10.100 # Server
       7891 # Port
       ```
+    - Because to run the network proxy in the server.
 - ***References***
     - ChatGPT
     - `docker-compose up --help | less`
