@@ -24,8 +24,6 @@
 <body>
   <div id="markdown-content" class="markdown-body"></div>
 
-  <script src="./assets/marked.min.js"></script>
-  <script src="./assets/lazysizes.min.js" async></script>
   <script>
     // Load the markdown file content using fetch()
     fetch('./assets/yaoniplan.md')
@@ -40,13 +38,29 @@
         markdownEl.innerHTML = html;
 
         // Trigger lazy loading for images
-        if ('lazySizes' in window) {
-          lazySizes.init();
-        }
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              const src = img.getAttribute('data-src');
+              img.setAttribute('src', src);
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        const images = document.querySelectorAll('img[data-src]');
+        images.forEach(img => {
+          observer.observe(img);
+        });
+
       })
       .catch(error => {
         console.error('Error loading markdown file:', error);
       });
   </script>
+
+  <script async src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
 </body>
 </html>
