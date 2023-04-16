@@ -1,3 +1,62 @@
+- #### Use "docker-compose" in Ubuntu Server 22.04
+    - `vim ~/.config/clash/docker-compose.yml`
+      ```
+      version: '3.7'
+      
+      services:
+        clash:
+          image: dreamacro/clash
+          container_name: clash
+          restart: always
+          volumes:
+            - /home/yaoniplan/.config/clash:/root/.config/clash
+          ports:
+            - 7890:7890
+            - 7891:7891
+            - 9090:9090
+            
+        clash_dashboard:
+          image: haishanh/yacd
+          container_name: clash_dashboard
+          restart: always
+          depends_on:
+            - clash
+          ports:
+            - 9091:80
+      ```
+    - `docker-compose up --detach` # Run in the background
+    - `docker-compose restart` # Restart
+- ***Notes***
+    - `/home/yaoniplan/.config/clash` # Replace it with your path of the config.yaml file
+    - In web browser
+        - `192.168.10.100:9091` # The clash dashboard
+        - `vim ~/.config/clash/config.yaml` # Solve a problem about "Failed to connect" of "API Bash URL"
+          ```
+          external-controller: 0.0.0.0:9090
+          ```
+    - In Linux
+        - `vim ~/.bash_profile`
+          ```
+          export http_proxy="192.168.10.100:7890"
+          export https_proxy="192.168.10.100:7890"
+          export no_proxy="localhost, 192.168.10.100"
+          ```
+    - In Android
+      ```
+      # HTTP
+      Manual # Proxy settings
+      192.168.10.100 # Proxy hostname
+      7890 # Proxy port
+      
+      # SOCKS5
+      192.168.10.100 # Server
+      7891 # Port
+      ```
+- ***References***
+    - `docker-compose up --help | less`
+    - https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/
+    - https://blog.vicat.top/archives/linux通过clash来科学上网#2-正戏进阶
+- ---
 - #### Add the line number plus one to the end of each line in Vim
     - `:%s/$/\=printf('%02d', line('.')+1).'.MP4'/g`
 - ***Notes***
@@ -1162,20 +1221,26 @@
       ```
       n # n) New remote
       aliyundrive # name
-      45 # Storage of WebDAV
+      31 # Storage of WebDAV
       http://192.168.10.100:5244/dav # URL
-      1 # vendor of Nextcloud
-      admin # user
-      y # y) Yes this is OK (default)
+      4 # vendor of other
+      admin # user of AList
+      ****** # password of AList
+      the rest of options are the default
       q # q) Quit config
       ```
-    - `doas mkdir /mnt/testAliyundrive/`
-    - `doas chown -R yaoniplan:yaoniplan /mnt/testAliyundrive/`
+    - `doas mkdir /mnt/aliyundrive/`
+    - `doas chown -R yaoniplan:yaoniplan /mnt/aliyundrive/`
         - `yaoniplan` # Replace it with your user
-    - `rclone mount aliyundrive:/ /mnt/testAliyundrive/`
+    - `rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full`
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
     - `rclone lsd aliyundrive:/` # Check it
+    - `crontab -e` # Run it at boot in Ubuntu Server 22.04
+      ```
+      @reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full &
+      ```
+        - `/usr/bin/rclone` # Get it by running `which rclone`
     - Solve the problem
       ```
       2023/04/13 23:05:24 Fatal error: failed to mount FUSE fs: fusermount: exec: "fusermount": executable file not found in $PATH
@@ -1186,12 +1251,17 @@
       2023/04/14 02:48:01 ERROR : selfImprovement/thinkingCognition/个人爆发式成长的25种思维/01第1讲 筛选思维：随意选择的人生，不值得一过(01).wma: vfs cache: failed to download: vfs reader: failed to write to cache file: 403 Forbidden
       ```
         - Change "302 redirect" to "native proxy" in "WebDAV policy"
-    - Mount to another computer without Rclone
+    - Mount to another computer
         - `doas emerge -q net-fs/sshfs`
-        - `sshfs yaoniplan@192.168.10.100:/mnt/testAliyundriveOne/ /mnt/aliyundrive/` # Mount
-        - `fusermount3 -u /mnt/aliyundrive/` # Unmount
+        - `sshfs yaoniplan@192.168.10.100:/mnt/aliyundrive/ /mnt/aliyundrive/` # Mount
+        - `fusermount -u /mnt/aliyundrive/` # Unmount
+        - `vim ~/.xprofile` # Run it at boot in Gentoo Linux
+          ```
+          sshfs yaoniplan@192.168.10.100:/mnt/aliyundrive/ /mnt/aliyundrive/ &
+          ```
 - ***References***
     - ChatGPT
+    - https://rclone.org/install/#run-periodically-from-cron
     - https://github.com/alist-org/alist/discussions/1724#discussioncomment-3901460
     - https://github.com/rclone/rclone/issues/6856#issuecomment-1479853571
     - https://wiki.gentoo.org/wiki/Filesystem_in_Userspace
@@ -1570,16 +1640,17 @@
     - https://v2ex.com/t/921010#reply140
 - ---
 - #### Compress a directory in Unix-like
-    - `tar -cf 220901yaoniplanMigratePlatform.tar .`
-    - `gzip 220901yaoniplanMigratePlatform.tar`
+    - `tar -cf getUsername.tar getUsername/`
+    - `gzip getUsername.tar`
 - ***Notes***
     - `-c` # Create
     - `-f` # File
+    - `getUsername/` # Replace it with your desired compressed directory
     - If you want higher compression.
         - `gzip` # Replace it with `xz`
 - ***References***
     - `man tar`
-    - ![2023-03-05_10:52:14.png](../assets/2023-03-05_10:52:14.png)
+    - ![2023-04-16_13-29.png](../assets/2023-04-16_13-29.png)
 - ---
 - #### Set dark mode in Firefox
     - `about:config`
@@ -1876,10 +1947,11 @@
     - https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/
 - ---
 - #### Use the "docker" command
+    - `docker search clash` # Search to get the full name
     - `docker rm -f aliyunpan-sync` # Remove a container
+        - `docker ps` # Get "NAMES" of containers
     - `docker rmi tickstep/aliyunpan-sync:v0.2.6` # Remove a image
-    - `docker ps` # Get "NAMES" of containers
-    - `docker images` # Get "REPOSITORY" and "TAG" of images
+        - `docker images` # Get "REPOSITORY" and "TAG" of images
     - `docker stop aliyundrive-webdav`
     - `docker start aliyundrive-webdav`
 - ***Notes***
@@ -4453,7 +4525,7 @@
 	- ![image.png](../assets/image_1670749822852_0.png)
 	- [K - Wikipedia](https://en.wikipedia.org/wiki/K#:~:text=In%20the%20International%20System%20of,km%20signifies%20a%20thousand%20metres.)
 - ---
-- #### Use "Clash"
+- #### Use "clash"
 	- `chmod u+x clash-linux-amd64-v1.12.0` # Run this command after [downloading](https://github.com/Dreamacro/clash/releases) and decompressing
 	- `mv clash-linux-amd64-v1.12.0 clash`
 	- `sudo mv clash /usr/local/bin/`
@@ -4477,7 +4549,7 @@
 		- `http://yacd.haishan.me/` # Another GUI
 		- `vim ~/.config/clash/config.yaml`
 		  ```
-		  external-controller: 127.0.0.1:9090
+		  external-controller: 0.0.0.0:9090
 		  ```
 		- `http://127.0.0.1:9090/`
 	- Solve the problem about **address already in use**
@@ -5434,7 +5506,7 @@
     - ![image.png](../assets/image_1666564175640_0.png)
     - https://www.w3schools.com/html/html_css.asp
 - ---
-- I will write an extension (e.g. Linux commands) of google chrome. #Idea
+- #### I will write an extension (e.g. Linux commands) of google chrome. #Idea
 - ***Notes***
     - Two methods in English
         - `man date`
