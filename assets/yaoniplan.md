@@ -826,7 +826,6 @@
 - ***References***
     - ChatGPT
     - ![2023-03-23_22:32:46.png](../assets/2023-03-23_22:32:46.png)
-    - ![2023-04-10_14-31.png](../assets/2023-04-10_14-31.png)
 - ---
 - #### Display the correct date and time in Ubuntu Server 22.04
     - `doas timedatectl set-timezone Asia/Shanghai`
