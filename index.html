@@ -29,7 +29,7 @@
   <script>
     async function loadMarkdown() {
       try {
-        const response = await fetch('./assets/.yaoniplan.md');
+        const response = await fetch('./assets/yaoniplan.txt');
         const markdown = await response.text();
 
         // Parse the Markdown content into HTML using marked()
