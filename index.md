@@ -1,2 +1,2 @@
 Use bookmarksManager and passwordsManager in dmenu
-Improve the speed of yaoniplan.eu.org
+Check some installed packages in Gentoo Linux
