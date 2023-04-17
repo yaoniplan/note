@@ -44,6 +44,12 @@
         images.forEach(img => {
           img.loading = 'lazy';
         });
+
+        // Add lazy loading for yaoniplan.txt
+        const yaoniplanEl = document.createElement('script');
+        yaoniplanEl.src = './assets/yaoniplan.txt';
+        yaoniplanEl.className = 'lazyload';
+        markdownEl.appendChild(yaoniplanEl);
       } catch (error) {
         console.error('Error loading markdown file:', error);
       }
