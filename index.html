@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>yaoniplan</title>
-  <link rel="stylesheet" href="./assets/github-markdown-dark.css">
+  <link rel="stylesheet" type="text/css" href="github-markdown-dark.css">
+  <script src="marked.min.js" defer></script>
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="markdown-content"></div>
+  <div id="markdown-content" class="markdown-body"></div>
 
-  <script src="./assets/marked.min.js"></script>
   <script>
+    // Load the markdown file content using fetch()
     fetch('./assets/yaoniplan.txt')
-      .then(response => response.text())
+      .then(response => response.text()) // Parse the response as text
       .then(markdown => {
-        document.querySelector('#markdown-content').innerHTML = marked(markdown);
+
+        // Parse the Markdown content into HTML using marked()
+        const html = marked(markdown);
+
+        // Insert the parsed HTML into the designated HTML element
+        const markdownEl = document.querySelector('#markdown-content');
+        markdownEl.innerHTML = html;
       })
       .catch(error => {
         console.error('Error loading markdown file:', error);

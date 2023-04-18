@@ -1,3 +1,10 @@
+- #### Check some installed packages in Gentoo Linux
+    - `qlist -I`
+- ***Notes***
+    - `-I` # Installed
+- ***References***
+    - ChatGPT
+- ---
 - #### Buy some eggs in supermarket
     - Check the expiration date
         - A bright yolk and a firm egg white
@@ -4471,6 +4478,17 @@
 	  ```
 		- `sudo emerge --depclean` # Remove obsolete packages
 		- `sudo emerge @preserved-rebuild` # Clean up the old library version
+    - Solve the problem
+      ```
+       * IMPORTANT: 5 config files in '/etc' need updating.
+       * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
+       * sections of the emerge man page to learn how to update config files.
+       * After world updates, it is important to remove obsolete packages with
+       * emerge --depclean. Refer to `man emerge` for more information.
+      ```
+        - `doas etc-update` # Update all config files in '/ect'
+        - `doas emerge --depclean` # Remove obsolete packages
+        - `doas reboot`
 - ***References***
 	- ![2022-12-17_18-41.png](../assets/2022-12-17_18-41_1671273677089_0.png)
 	- `man emerge`
