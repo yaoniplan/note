@@ -443,7 +443,7 @@ doas emerge -avuDN @world
 ```
 
 # References
-```
+```bash
 yaoniplan@yaoniplan ~ $ screenfetch
          -/oyddmdhs+:.                yaoniplan@yaoniplan
      -odNMMMMMMMMNNmhy+-`             OS: Gentoo 2.9
@@ -464,9 +464,6 @@ yMMNNNNNNNmmmmmNNMmhs+/-`
 `/ohdmmddhys+++/:.`
   `-//////:--.
 yaoniplan@yaoniplan ~ $
-```
-```
-
 ```
 * https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation
 * https://mirrors.ustc.edu.cn/help/gentoo-portage.html
