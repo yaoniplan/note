@@ -11,6 +11,18 @@
 - ***References***
     - ChatGPT
 - ---
+- #### Delete the current file in Vim
+    - `:!mv % /tmp`
+- ***Notes***
+    - `:` # Command mode
+    - `!` # Execute in a shell
+    - `mv` # Move
+    - `%` # Current file name
+    - `/tmp` # Temporary directory
+    - Because to iterate over outdated files.
+- ***References***
+    - ChatGPT
+- ---
 - #### Improve the website speed of yaoniplan.eu.org
     - Lazy load images
 - ***References***
@@ -863,7 +875,7 @@
     - `doas apt install vim`
 - ***Notes***
     - `vim --version` # Check the version
-    - Because it is necessary to meet the useage conditions of "Codeium".
+    - Because it is necessary to meet the usage conditions of "Codeium".
 - ***References***
     - `man vim`
     - ChatGPT
@@ -6610,12 +6622,6 @@
     - ![image.png](../assets/image_1662357498836_0.png)
     - https://www.chongbuluo.com/forum.php?mod=viewthread&tid=11022
 - ---
-- [[Git]]查看提交历史 # 应用场景：查看 commit sha 值
-  * `git log` # 查看提交历史
-  * ***参考资料***
-  * ![image.png](../assets/image_1662365890298_0.png) 
-  * [Git - 查看提交历史](https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2)
-- ---
 - #### Reset to a previous version
 	- `git log`
 	- `git reset --hard 8172b02`
@@ -6666,7 +6672,7 @@
   * ![image.png](../assets/image_1662102184320_0.png)
   * ![image.png](../assets/image_1662102409468_0.png)
   * [045 45-Linux命令-04-ifconfig查询网卡信息.mp4](https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08)
--- 2022-09-01，yaoniplan 完全转移更新平台(从腾讯文档转移至github)
+-- 2022-09-01，yaoniplan 完全转移更新平台(从腾讯文档转移至GitHub)
   * ***参考资料***
   * [耀拟计划-v2.1.06-2022-09-01历史记录.zip - github.ocm](../assets/耀拟计划-v2.1.06-2022-09-01历史记录_1662006139225_0.zip) 
   * [耀拟计划-v2.1.06.csv - github.com](../assets/耀拟计划-v2.1.06_1662006018132_0.csv)
@@ -6824,8 +6830,6 @@
 	- https://www.youtube.com/watch?v=lvLExb1SUzM&ab_channel=EF-LinuxMadeSimple
 	- https://i3wm.org/docs/userguide.html#assign_workspace
 - ---
-- [[Vim]]回到上次光标位置
-  * `ctrl + o` //返回上次光标所在位置
 - 今天(2022-08-26)，查看 archiso 的 shell，它的默认 shell 为 zsh 
   * 总结：可以使用 zsh 的快捷键，进行操作 archiso
   * ***参考资料***
@@ -7076,17 +7080,14 @@
   1. git add . //添加到缓存区(在同步的目录下)
   2. git commit -m 'remark' //提交到版本区(remark 可以换成其他备注信息)
   3. git push //推送到远程仓库
-- [[linux]] [[音量]] [[声音]] 调节  
-  1. sudo pacman -S alsa-utils //安装 alsa-utils  
-  2. alsamixer //通过 alsamixer 调节  
-  参考资料  
-  https://itcn.blog/p/5223635363.html
-- [[linux]] [[色温]] 调节  
-  1. sudo pacman -S redshift //安装 redshift
-  2. redshift -O 1500 //设置固定色温
-  3. redshift -x //重置色温
-  参考资料  
-  [适用于 Linux 的最佳夜灯应用](https://itcn.blog/p/5223635363.html)
+- #### Set color temperature in Linux
+    - `redshift -O 1500` # One-shot
+- ***Notes***
+    - `redshift -x` # Reset
+    - `doas emerge -q x11-misc/redshift` # Install it
+- ***References***
+    - `man redshift`
+- ---
 - [[截图]] 软件(sudo pacman -S [[包名]] )  
   1. Spectacle  
   2. deepin-screen-recorder  
@@ -7191,6 +7192,7 @@
   10. **Theme**: breeze(*sudo pacman -S breeze*)
   11. **Icons**: candy-icons(*git clone https://aur.archlinux.org/candy-icons-git.git*)
 - ![80grz78ctfh91_1660544487184_0.png](../assets/80grz78ctfh91_1660544487184_0_1661309910444_0.png)
+- https://www.reddit.com/r/unixporn/comments/wn8yy5/dwm_guess_which_os_i_use/
 - [[notion]] 工具太杂，不像是使用工具，反而是被工具使用 #Idea
 - [[vscode]] 打开 [[终端]]  
   1. 查看(`View`)-终端(`Terminal`)
@@ -7246,14 +7248,6 @@
     - Because to unify all mail.
 - ---
 - 我认为， [[Logseq]] 只适合用来做笔记，不适合用来 [[时间管理]]#idea
-- DONE 改密码  
-  1. 简单的(随机密码)
-  2. 重要的
-  注意：  
-  1. 密码过渡载体flomo的密码，越简单好记越好  
-  2. 密码管理chrome的密码，用自己的超强密码
-- ---
-- DONE 查重 [[耀拟计划]]
 - >提问之前
   在你准备要通过电子邮件、新闻群组或者聊天室提出技术问题前，请先做到以下事情：
   1. 尝试在你准备提问的论坛的旧文章中搜索答案。
@@ -7276,15 +7270,13 @@
 - in the [[future]] ，专业大概率选择 [[计算机科学与技术]]
 - >虽千万人吾往矣(即使面对千万人的阻止，我也要勇往直前) #quote
 -- 在学习 [[Logseq]] 使用的过程中，了解到okr(目标与关键结果)是一套管理方法 #Idea
-- DONE 进一步学习使用 [[Logseq]]的方法  
-  参考资料  
-  [我的 logseq 使用习惯](https://limboy.me/posts/logseq/)
 - in the [[future]] 自己制作适合自己的 winpe(别人的不放心)
   1. wepe
   2. edgeless
   3. firpe
   4. hotpe
--- in the [[future]] 笔记本电脑电池，询问注意事项(充不了电，真的难受) #Idea
+-
+- in the [[future]] 笔记本电脑电池，询问注意事项(充不了电，真的难受) #Idea
 -- notion的docx文件导入失败，网络不稳定，决定放弃使用,而且同步的文件没有保障[[notion]] #Idea
 - 添加 [[Google]] 账户
 	- 1. 手机打开`Google设置`
@@ -7296,10 +7288,6 @@
 	  7. 点击`创建您自己的 Gmail 地址`-输入名字-`下一步`
 	  8. 输入密码-`下一步`
 	  9. 大致就ok了
-- DONE 清理inbox  
-  1. 书签
-  2. 云空间
-  3. 邮箱
 - mp4转mp3  
   1. 下载 [[vlc]]
   2. 找到转换
@@ -7307,95 +7295,29 @@
   4. 选择转换类型 Audio-MP3
   5. 接着选择目标地址
   6. 点击`start`
-- DONE 修改[[阿里云盘]]和[[天翼云盘]]在手机端的密码(需要验证手机号的验证码)
-- DONE 修改关于[[耀拟计划]] & 免责声明
-- DONE 写一篇如何添加谷歌账号的 #writing
 - 现在先优化 [[Logseq]]到这种程度，在未来的使用中，再继续优化调整 #Idea
-- DONE 资源去重：[[耀拟计划]]-自我提升-学习管理-学习方法 https://www.aliyundrive.com/drive/folder/61b86b0ee182fb3c8dcf4470b2084cd56df49512
-- DONE 初步建立适合自己的[[study]]管理系统(在[[耀拟计划]]-自我提升-学习管理中) #writing
 - in the [[future]] 自建网盘。原因：可以实现webdav服务 #Idea
 - >时间如逆旅，我亦是行人 #quote
 - >average of five(五人平均值) #quote
-- DONE 清理[[inbox]]-机械硬盘
 - 我认为，关于 [[study]] 的工具，[[Logseq]]和[[flomo]]笔记软件同时使用效果会更好 #Idea
-- DONE 上传 [[喜马讲书1-800]] 至 [[阿里云盘]]
-- DONE 在 [[v2ex]] 上，搜 [[退学]]
-- DONE 关于使用 [[Logseq]] 管理我的生活和笔记 #writing
 - 我今天听到[[Logseq]]的一个节目，他里面提到如何更好的使用 [[Logseq]] 来管理他的生活和笔记 #Idea
 - >贫穷与自由罢了 #quote
-- DONE https://www.aliyundrive.com/s/FWxDP3GgrG5/folder/6287975e70060c49dc65438c9ac73bed13297359
 - >把它扁平化的记下来(而不是有刻意组织地把它记下来)，然后通过backthink(回想)，通过tag，让它们在将来的某一天，被你查询，被你发现，那么你的这条笔记就是有意义的 #quote
-- DONE https://www.aliyundrive.com/s/rWkG5BkJLFu
-- DONE https://www.aliyundrive.com/s/Y3UYiLCps7j/folder/61dda1dce52858abca89432e8e4bf2905fa7ede6
-- DONE https://www.aliyundrive.com/s/3ygDuayt6BM/folder/61dfb86f6640a1fa8da54548bee24522cee73087
-- DONE https://www.aliyundrive.com/s/c1BNWUkS3UE/folder/615dcd7b9ec6a0bc34cd41ebb01cfcadc9df62e6
-- DONE https://www.aliyundrive.com/s/cpxmYVHoY4q/folder/6178d1b601719f776e2140689297991f7c4354f1
-- DONE 取消[[兴趣]]-[[耀拟计划]]-在线提交建议
-- DONE 测试todo与later
-- DONE 测试todo与later
 - 我认为，在使用Dashboard的Todo和In progress时，还是later方便一点(todo vs later) #Idea
-- DONE 修改[[耀拟计划]]的宣传文件 https://www.aliyundrive.com/drive/folder/62c8eaa0e3a0b612114547f6ac4ab66c08dba880  ，并写入更新日志 https://docs.qq.com/sheet/DYlRqQ0tBWWJZSEdl?tab=uhz4u8&_t=1658375938155
-- DONE 优化[[Logseq]] #writing 
-- DONE 找一些适合自己的关于 [[study]] 的工具
-- ToDoList
-    - 重要且紧急
+- Todo
+    - Important and urgent
+      ```
       
       ```
-      # 学习 markdown
-      # 编写 [[Archlinux_install]]
+    - Important not urgent
       ```
-    - 重要不紧急
       
       ```
-      已完成# 下载 喜马讲书101-200
+    - Urgent not important
       ```
-    - 紧急不重要
       
       ```
-      # 在书签中，添加 github.com
+    - Not urgent not important
       ```
-    - 不紧急也不重要
       
       ```
-      # 恢复heting笔记本电脑的开机引导
-      ```
-- ToDoList
-	- 重要且紧急
-	  
-	  ```
-	  
-	  ```
-	- 重要不紧急
-	  
-	  ```
-	  
-	  ```
-	- 紧急不重要
-	  
-	  ```
-	  
-	  ```
-	- 不紧急也不重要
-	  
-	  ```
-	  
-	  ```
-- 日记功能
-- 块(block)(这个地方就是一个块)
-- enter 新建一个块
-- backsapce 删除块
-- shift + enter 在块内换行
-  test
-  test
-	- tab (缩进)
-	- test
-	- test
-		- test
-			- test
-			- test
-			- test
-- tab + shift(减少缩进)
-- 引用
-	- 按下 复制
-- [[笔记1]]
-	- [[笔记二]]
