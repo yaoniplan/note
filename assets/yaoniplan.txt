@@ -1,3 +1,22 @@
+- #### Use "memos" in Docker-compose
+    - `vim ~/.config/memos/docker-compose.yml`
+      ```
+      version: "3.0"
+      services:
+        memos:
+          image: neosmemo/memos:latest
+          container_name: memos
+          volumes:
+            - ~/.config/memos/:/var/opt/memos
+          ports:
+            - 5230:5230
+      ```
+    - `docker-compose up --detach` # Run in the background
+- ***Notes***
+    - `192.168.10.100:5230` # Run in Chromium
+- ***References***
+    - https://usememos.com/docs/install/docker#docker-compose
+- ---
 - #### Check some installed packages in Gentoo Linux
     - `qlist -I`
 - ***Notes***
@@ -15,6 +34,9 @@
     - Store After buying eggs
         - In original carton
         - In the fridge
+    - Because there are many benefits of eating eggs.
+        - Rich in nutrients: The protein for muscles, vitamin D for bones, and fats for disease (e.g. heart, inflammation, etc.)
+        - Manage weight: A low-calorie food, and make you feel fuller
 - ***References***
     - ChatGPT
 - ---
@@ -1989,7 +2011,7 @@
     - `docker search clash` # Search to get the full name
     - `docker rm -f aliyunpan-sync` # Remove a container
         - `docker ps` # Get "NAMES" of containers
-    - `docker rmi tickstep/aliyunpan-sync:v0.2.6` # Remove a image
+    - `docker rmi tickstep/aliyunpan-sync:v0.2.6 -f` # Remove a image
         - `docker images` # Get "REPOSITORY" and "TAG" of images
     - `docker stop aliyundrive-webdav`
     - `docker start aliyundrive-webdav`
@@ -5319,14 +5341,16 @@
 	- test_image
 	- test_image
 	- test_link
-- [[Shutdown]] in [[Linux]]
+- #### Use "shutdown" in Linux
 	- `shutdown -h 23:00` # Shut down at 23:00 today
 - ***Notes***
 	- `shutdown -h +30` # Shut down after thirty minutes
 - ***References***
 	- ![image.png](../assets/image_1667745772612_0.png)
 	- ![image.png](../assets/image_1667745850629_0.png)
-	- [Linux中Shutdown命令实现定时自动关机_阿德0307的博客-CSDN博客](https://blog.csdn.net/xmc281141947/article/details/61191212)- I'm trying to complete my GitHub. #Idea
+	- https://blog.csdn.net/xmc281141947/article/details/61191212
+- ---
+- I'm trying to complete my GitHub. #Idea
 - ***References***
     - ![image.png](../assets/image_1667689932734_0.png)
     - ![image.png](../assets/image_1667524928897_0.png)
@@ -7321,8 +7345,7 @@
 - 我今天听到[[Logseq]]的一个节目，他里面提到如何更好的使用 [[Logseq]] 来管理他的生活和笔记 #Idea
 - >贫穷与自由罢了 #quote
 - >把它扁平化的记下来(而不是有刻意组织地把它记下来)，然后通过backthink(回想)，通过tag，让它们在将来的某一天，被你查询，被你发现，那么你的这条笔记就是有意义的 #quote
-- 我认为，在使用Dashboard的Todo和In progress时，还是later方便一点(todo vs later) #Idea
-- Todo
+- To do
     - Important and urgent
       ```
       
