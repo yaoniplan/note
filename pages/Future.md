@@ -61,7 +61,6 @@ http://natas9.natas.labs.overthewire.org
 - https://bigjpg.com/
 
 ## Network proxy
-- http://yacd.haishan.me/#/
 - https://sockboom.tv/user/
 - https://sub.ssrsub.com/#/dashboard
 - https://www.askahh.com/index.php/archives/101/
@@ -71,7 +70,7 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/freefq/free
 
 ## Animation and comic
-- http://www.ysjdm3.com/
+- http://www.ysjdm1.com/
 - https://2khanman.com/
 - http://www.p5mh.com/
 - https://nnhanman.com

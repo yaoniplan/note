@@ -1,21 +1,17 @@
 ### "Animation"
 - 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+50+37
-- Mashle: Magic and Muscles / 物理魔法使马修 - 01
-- Dead Mount Death Play / 亡骸游戏 - 01
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 01
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+29
+- Mashle: Magic and Muscles / 物理魔法使马修 - 02
+- Dead Mount Death Play / 亡骸游戏 - 02
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 03
 - 向涟苍士献上纯洁 - #NSFW 01
-- 无神世界中的神明活动 - 01
 - 地狱乐 - 02
-- Heavenly Delusion / 天国大魔境 - 01
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+01
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+02
 - Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+12) animation
-- 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+07
-- 炼气十万年 - 18
-- 九州缥缈录 - 13
-- 冰海战记 (Part1+2) - 24+13
-- 神印王座 - 49
-- 百炼成神 - 24
+- 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+08
+- 炼气十万年 - 21
+- 神印王座 - 51
+- 百炼成神 - 25
 - 灵剑尊 -  240/372
 - 武神主宰 - 192/321
 - 独步逍遥 - 168/301
@@ -238,6 +234,10 @@
 - guard(end)
 
 ### Animation
+- 冰海战记 (Part1+2) - 24+15 1438 # It is boring
+- 九州缥缈录 - 13 # End of the first part
+- Heavenly Delusion / 天国大魔境 - 02 2042 # It is boring
+- 无神世界中的神明活动 - 02 0603 # It is boring
 - Show Time! ~想要做唱歌的大姐姐/Show Time! 唱歌的大姐姐也想做 (Season1+2) - 08+08 # End of the second season
 - 异世界悠闲农家 - 12 # End of the first season
 - 冰剑的魔术师将要统一世界 - 12 # End of the first season
