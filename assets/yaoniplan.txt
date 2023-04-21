@@ -70,7 +70,7 @@
 - ***Notes***
     - `doas systemctl stop apache2` # Stop it before disabling
     - `apache2` # Replace it with your desired service
-    - Because to solve a proble about "address already in use".
+    - Because to solve a problem about "address already in use".
 - ***References***
     - ChatGPT
 - ---
