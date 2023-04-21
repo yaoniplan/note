@@ -1,3 +1,14 @@
+- #### Remove the notification of full screen in Firefox
+    - Change the value from "3000" to "0"
+      ```
+      full-screen-api.warning.timeout
+      ```
+- ***Notes***
+    - Because to be quiet.
+- ***References***
+    - `about:config`
+    - ChatGPT
+- ---
 - #### Replace menuconfig with nconfig in Linux
     - `doas make nconfig`
 - ***Notes***
