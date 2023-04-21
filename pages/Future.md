@@ -71,12 +71,12 @@ http://natas9.natas.labs.overthewire.org
 
 ## Animation and comic
 - http://www.ysjdm1.com/
+- https://www.agemys.com/ # Dark mode and optimized caching system in Firefox
 - https://2khanman.com/
 - http://www.p5mh.com/
 - https://nnhanman.com
 - https://www.yeseimg.com/
 - https://anime1.io/
-- https://www.agemys.com/
 - http://www.dmd85.com/
 - https://yuc.wiki/202301/
 - https://www.bimiacg4.net

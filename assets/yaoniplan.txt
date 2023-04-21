@@ -1,3 +1,28 @@
+- #### Replace menuconfig with nconfig in Linux
+    - `doas make nconfig`
+- ***Notes***
+    - `cd /usr/src/linux/` # Change into the Linux source directory before using
+    - `Ctrl-[` # Esc key
+    - `Ctrl-j` # Enter key
+    - Because modifying kernel options is more friendly.
+        - Dark mode
+        - Exact search mode
+- ***References***
+    - ChatGPT
+    - Fn-1
+- ---
+- #### Enable "~amd64" for Gentoo Linux
+    - `doas vim /etc/portage/make.conf`
+      ```
+      ACCEPT_KEYWORDS="~amd64"
+      ```
+- ***Notes***
+    - `doas emerge --sync` # Update the package list
+    - `doas emerge -avuDN @world` # Upgrade the system to the latest version
+    - `doas reboot` # Make changes effective
+- ***References***
+    - ChatGPT
+- ---
 - #### Use "memos" in Docker-compose
     - `vim ~/.config/memos/docker-compose.yml`
       ```
@@ -33,6 +58,8 @@
           command: ["--highlightsyntax", "--private"]
       ```
     - `docker-compose up --detach` # Run in the background
+- ***Notes***
+    - `192.168.10.100` # Run in Chromium
 - ***References***
     - ChatGPT
     - https://microbin.eu/quickstart/
@@ -51,6 +78,7 @@
     - `qlist -I`
 - ***Notes***
     - `-I` # Installed
+    - Because to remove unnecessary packages to reduce the time that compile system.
 - ***References***
     - ChatGPT
 - ---
@@ -116,6 +144,7 @@
     - `docker-compose up --detach` # Run in the background
     - `docker-compose restart` # Restart
 - ***Notes***
+    - `doas apt install docker-compose` # Install it before using
     - `/home/yaoniplan/.config/clash` # Replace it with your path of the config.yaml file
     - In Chromium
         - `192.168.10.100:9091` # The clash dashboard
@@ -274,6 +303,7 @@
         - `Ctrl-l` # Focus it
         - It is better to combine the [oneliner](https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/navbar_tabs_oneliner_menu_buttons_on_right.css) mode.
 - ***References***
+    - ![2023-04-20_19-42.gif](../assets/2023-04-20_19-42.gif)
     - https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_toolbox.css
 - ---
 - #### Write a function in Bash
@@ -1712,6 +1742,8 @@
     - Click the full screen mode icon
 - ***Notes***
     - Click the "X" button # Exit the full screen mode
+    - Another way
+        - `Fn-11` # Press it
 - ***References***
     - https://www.businessinsider.com/guides/tech/how-to-full-screen-google-chrome
 - ---
@@ -1991,7 +2023,7 @@
     - https://alist.nn.ci/guide/drivers/sfpt.html
     - https://github.com/alist-org/alist/issues/2267
 - ---
-- #### Use shasum to verify the checksum in Unix-like
+- #### Use "shasum" to verify the checksum in Unix-like
     - `shasum -a 256 ubuntu-22.04.2-live-server-amd64.iso`
 - ***Notes***
     - `-a` # Algorithm
@@ -4490,54 +4522,53 @@
 	- https://gitlab.com/wavexx/acpilight
 - ---
 - #### Remove packages form the operating system in Gentoo Linux
-	- `sudo emerge --depclean x11-apps/xbacklight`
+    - `sudo emerge -c x11-apps/xbacklight`
 - ***Notes***
-	- `doas emerge -c app-admin/sudo`
-		- `-c` # Replace *--depclean* with *-c*
-	- ![2022-12-17_19-07.png](../assets/2022-12-17_19-07_1671275269285_0.png)
-	  ![2022-12-17_19-09.png](../assets/2022-12-17_19-09_1671275401713_0.png)
+    - `-c` # Depclean
 - ***References***
-	- `man emerge`
-	- ![2022-12-17_19-03.png](../assets/2022-12-17_19-03_1671274992516_0.png)
-	- https://unix.stackexchange.com/questions/42783/safely-uninstall-a-package-in-gentoo
+    - `man emerge`
+    - ![2022-12-17_19-07.png](../assets/2022-12-17_19-07_1671275269285_0.png)
+    - ![2022-12-17_19-09.png](../assets/2022-12-17_19-09_1671275401713_0.png)
+    - https://unix.stackexchange.com/questions/42783/safely-uninstall-a-package-in-gentoo
+    - https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Working#Removing_software
 - ---
 - #### Update the whole system in Gentoo Linux
 	- `sudo emerge -avuDN @world`
 - ***Notes***
-	- `-a` # --ask
-	- `-v` # --verbose
-	- `-u` # --update
-	- `-D` # --deep
-	- `-N` # --newuse
-	- If you have the problem
-	  ```
+    - `-a` # --ask
+    - `-v` # --verbose
+    - `-u` # --update
+    - `-D` # --deep
+    - `-N` # --newuse
+    - If you have the problem
+      ```
 	  !!! existing preserved libs:
-	  >>> package: x11-libs/libdrm-2.4.114
-	   *  - /usr/lib64/libdrm_amdgpu.so.1
-	   *  - /usr/lib64/libdrm_amdgpu.so.1.0.0
-	   *      used by /usr/lib64/xorg/modules/drivers/amdgpu_drv.so (x11-drivers/xf86-video-amdgpu-22.0.0)
-	  Use emerge @preserved-rebuild to rebuild packages using these libraries
-	   * After world updates, it is important to remove obsolete packages with
-	   * emerge --depclean. Refer to `man emerge` for more information.
-	  ```
-		- `sudo emerge --depclean` # Remove obsolete packages
-		- `sudo emerge @preserved-rebuild` # Clean up the old library version
+      >>> package: x11-libs/libdrm-2.4.114
+           *  - /usr/lib64/libdrm_amdgpu.so.1
+               *  - /usr/lib64/libdrm_amdgpu.so.1.0.0
+               *      used by /usr/lib64/xorg/modules/drivers/amdgpu_drv.so (x11-drivers/xf86-video-amdgpu-22.0.0)
+              Use emerge @preserved-rebuild to rebuild packages using these libraries
+               * After world updates, it is important to remove obsolete packages with
+               * emerge --depclean. Refer to `man emerge` for more information.
+              ```
+        - `sudo emerge --depclean` # Remove obsolete packages
+        - `sudo emerge @preserved-rebuild` # Clean up the old library version
     - Solve the problem
       ```
-       * IMPORTANT: 5 config files in '/etc' need updating.
-       * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
-       * sections of the emerge man page to learn how to update config files.
-       * After world updates, it is important to remove obsolete packages with
-       * emerge --depclean. Refer to `man emerge` for more information.
-      ```
+               * IMPORTANT: 5 config files in '/etc' need updating.
+               * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
+               * sections of the emerge man page to learn how to update config files.
+               * After world updates, it is important to remove obsolete packages with
+               * emerge --depclean. Refer to `man emerge` for more information.
+              ```
         - `doas etc-update` # Update all config files in '/ect'
         - `doas emerge --depclean` # Remove obsolete packages
         - `doas reboot`
 - ***References***
-	- ![2022-12-17_18-41.png](../assets/2022-12-17_18-41_1671273677089_0.png)
-	- `man emerge`
-	- [Upgrading Gentoo - Gentoo Wiki](https://wiki.gentoo.org/wiki/Upgrading_Gentoo)
-	- [@preserved-rebuild - Gentoo Wiki](https://wiki.gentoo.org/wiki/Preserved-rebuild)
+    - ![2022-12-17_18-41.png](../assets/2022-12-17_18-41_1671273677089_0.png)
+    - `man emerge`
+    - https://wiki.gentoo.org/wiki/Upgrading_Gentoo
+    - https://wiki.gentoo.org/wiki/Preserved-rebuild
 - ---
 - #### The abbreviation of the "Unicode Transformation Format - 8-bit" is the "UTF-8". #Idea
 - ***Notes***
@@ -5634,13 +5665,6 @@
 - ***References***
     - ChatGPT
 - ---
-- [[linux]]gentoo remove software and dependencies
-  * `sudo emerge --depclean picom`
-  * ***References***
-  * ![image.png](../assets/image_1666232633848_0.png)
-  * ![image.png](../assets/image_1666232722653_0.png)
-  * [Gentoo Linux amd64 Handbook: Working with Gentoo - Gentoo Wiki](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Working#Removing_software)
--
 - [[linux]]Command-line interface `CLI`
   * ***References***
   * ![image.png](../assets/image_1666150034002_0.png)
