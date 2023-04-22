@@ -31,6 +31,7 @@
     - `doas emerge --sync` # Update the package list
     - `doas emerge -avuDN @world` # Upgrade the system to the latest version
     - `doas reboot` # Make changes effective
+    - Warning: This will become unstable unless you are an adventurer.
 - ***References***
     - ChatGPT
 - ---
