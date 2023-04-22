@@ -384,10 +384,10 @@
 - ---
 - #### Act as an IT expert in ChatGPT
   ```
-  I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is ""
+  I want you to act as an IT Expert. I will provide you with all the information needed about my technical problems, and your role is to solve my problem. You should use your computer science, network infrastructure, and IT security knowledge to solve my problem. Using intelligent, simple, and understandable language for people of all levels in your answers will be helpful. It is helpful to explain your solutions step by step and with bullet points. Try to avoid too many technical details, but use them when necessary. I want you to reply with the solution, not write any explanations. My first problem is 
   ```
 - ***Notes***
-    - My second problem is "Explain the meaning of 'IT'"
+    - My next problem is "Explain the meaning of 'IT'"
     - Because to get accurate results whthin a range.
 - ***References***
     - https://github.com/f/awesome-chatgpt-prompts#act-as-an-it-expert
@@ -485,6 +485,7 @@
         - `about:config`
         - `about:preferences`
         - `about:addons`
+        - `about:profiles`
 - ---
 - #### Set the file type for a file in Vim
     - `:set filetype=c`
@@ -1287,8 +1288,12 @@
       permit :wheel
       ```
 - ***Notes***
-    - `wheel` # A group
-    - Because is easy to use
+    - `sudo apt install doas` # Install it if you does not have it
+    - `sudo groupadd wheel` # Create a group
+    - `sudo usermod -aG wheel yaoniplan` # Add yaoniplan to wheel
+        - `yaoniplan` # Replace it with your user
+    - `sudo reboot` # Make changes effective
+    - Because is easy to use.
 - ***References***
     - `man doas.conf`
     - ChatGPT
@@ -1994,6 +1999,7 @@
     - SFTP
       ```
       /backupPrivateFiles # Mount Path
+      native proxy # WebDAV policy
       Name # Order by
       Descending # Order direction
       192.168.10.100:22 # Address
@@ -2004,6 +2010,7 @@
     - AliyundriveOpen
       ```
       / # Mount Path
+      native proxy # WebDAV policy
       /folder/hereIsRootFolderID # Root folder id
       useYourMobilePhoneToGet # Refresh token
       Name # Order by
@@ -2057,6 +2064,7 @@
       #HandleLidSwitch=suspend
       HandleLidSwitch=ignore
       ```
+    - `sudo reboot` # Make chages effective
 - ***Notes***
     - Solve the problem
       ```
@@ -2066,7 +2074,7 @@
 - ***References***
     - https://askubuntu.com/questions/113824/how-to-keep-ssh-server-running-with-laptop-lid-closed/1371882#1371882
 - ---
-- #### Install Docker in Ubuntu Server 22.04
+- #### Install "Docker" in Ubuntu Server 22.04
     - Follow the steps of this [website](https://docs.docker.com/engine/install/ubuntu/)
 - ***Notes***
     - `doas usermod -aG docker heting` # Add the user to the docker group

@@ -70,6 +70,7 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/freefq/free
 
 ## Animation and comic
+- http://agedm1.com/
 - http://www.ysjdm1.com/
 - https://www.agemys.com/
 - https://2khanman.com/
