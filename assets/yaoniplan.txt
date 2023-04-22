@@ -155,7 +155,7 @@
     - `docker-compose up --detach` # Run in the background
     - `docker-compose restart` # Restart
 - ***Notes***
-    - `doas apt install docker-compose` # Install it before using
+    - `doas apt install docker-compose` # Install it before installing Docker
     - `/home/yaoniplan/.config/clash` # Replace it with your path of the config.yaml file
     - In Chromium
         - `192.168.10.100:9091` # The clash dashboard
@@ -1369,7 +1369,7 @@
     - `doas mkdir /mnt/aliyundrive/`
     - `doas chown -R yaoniplan:yaoniplan /mnt/aliyundrive/`
         - `yaoniplan` # Replace it with your user
-    - `rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full`
+    - `rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full &`
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
     - `rclone lsd aliyundrive:/` # Check it
@@ -1438,7 +1438,25 @@
     - `192.168.10.100` # Replace it with your desired IP address
     - `192.168.10.1`
         - `ip route` # Get the gateway
-    - Because to use SSH
+    - Because to use SSH.
+    - Solve the problem
+      ```
+      yaoniplan@tux ~/.ssh $ ssh yaoniplan@192.168.10.100
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+      IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+      Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+      It is also possible that a host key has just been changed.
+      The fingerprint for the ED25519 key sent by the remote host is
+      SHA256:JddSjxtS7Ttn4RQVnVlP69ssgmsL024E5k9FnBNYFVs.
+      Please contact your system administrator.
+      Add correct host key in /home/yaoniplan/.ssh/known_hosts to get rid of this message.
+      Offending ECDSA key in /home/yaoniplan/.ssh/known_hosts:3
+      Host key for 192.168.10.100 has changed and you have requested strict checking.
+      Host key verification failed.
+      ```
+        - `mv .ssh/know_hosts .ssh/know_hosts.old`
 - ***References***
     - ChatGPT
 - ---
@@ -1924,8 +1942,8 @@
     - Follow steps of the [website](https://ubuntu.com/server/docs/installation)
         - Install OpenSSH server
 - ***Notes***
-    - `vim /etc/apt/sources.list` # Change mirrors
-        - Replace `http://security.ubuntu.com/` with `https://mirrors.ustc.edu.cn/`
+    - `doas vim /etc/apt/sources.list` # Change mirrors
+        - Replace `http://security.ubuntu.com` with `https://mirrors.ustc.edu.cn`
 - ***References***
     - https://mirrors.ustc.edu.cn/help/ubuntu.html
 - ---
@@ -2034,6 +2052,7 @@
         - Paste it to "Logo" and "Favicon" in style settings
 - ***References***
     - Add a demo.gif here
+    - https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml
     - https://github.com/alist-org/alist/issues/829#issuecomment-1080066329
     - https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515
     - https://github.com/alist-org/alist/issues/2668#issuecomment-1345480664
@@ -2077,10 +2096,10 @@
 - #### Install "Docker" in Ubuntu Server 22.04
     - Follow the steps of this [website](https://docs.docker.com/engine/install/ubuntu/)
 - ***Notes***
-    - `doas usermod -aG docker heting` # Add the user to the docker group
+    - `doas usermod -aG docker yaoniplan` # Add the user to the docker group
         - `-a` # Append
         - `-G` # Group
-        - `heting` # Replace it with your user
+        - `yaoniplan` # Replace it with your user
     - `doas reboot` # Make the changes effective
     - `docker --version` # Verify the installation
 - ***References***
@@ -3982,7 +4001,8 @@
     - First use
       ```
       git init --bare $HOME/.dotfiles
-      alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/'
+      echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/'" >> $HOME/.bashrc
+      source ~/.bashrc
       dotfiles config --local status.showUntrackedFiles no
       dotfiles status
       dotfiles add .bashrc
@@ -4281,6 +4301,8 @@
 	- `C-b :` # Prompt for a command (Vim-like)
 		- `kill-session -t 15` # Kill session 15
 			- `-t` # Target
+        - `kill-window -t 1` # Kill window 1
+        - `kill-pane -t 1` # Kill pane 1
 		- `split-window` # Split window
 			- `C-b arrowKey` # Change the active pane
 			- `split-window -h` # Horizontal
