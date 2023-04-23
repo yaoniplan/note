@@ -1,7 +1,6 @@
 ### "Animation"
 - 熊熊勇闯异世界 - 03 0605
 - 六道的恶女们 - 02
-- 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013 animation
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+29
 - Mashle: Magic and Muscles / 物理魔法使马修 - 02
 - Dead Mount Death Play / 亡骸游戏 - 02
@@ -9,7 +8,7 @@
 - 向涟苍士献上纯洁 - #NSFW 01
 - 地狱乐 - 02
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+02
-- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+12) animation
+- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+16) animation
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+08
 - 炼气十万年 - 21
 - 神印王座 - 51
@@ -236,6 +235,7 @@
 - guard(end)
 
 ### Animation
+- 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013 # It is boring
 - 冰海战记 (Part1+2) - 24+15 1438 # It is boring
 - 九州缥缈录 - 13 # End of the first part
 - Heavenly Delusion / 天国大魔境 - 02 2042 # It is boring

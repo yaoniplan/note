@@ -1,3 +1,53 @@
+- #### Enable ccache in Gentoo Linux
+    - `doas emerge dev-util/ccache`
+    - `doas vim /etc/portage/make.conf`
+      ```
+      FEATURES="ccache"
+      CCACHE_DIR="/var/cache/ccache"
+      ```
+- ***Notes***
+    - `doas vim /var/cache/ccache/ccache.conf`
+      ```
+      max_size = 100.0G
+      umask = 002
+      hash_dir = false
+      compiler_check = %compiler% -dumpversion
+      cache_dir_levels = 3
+      compression = true
+      compression_level = 1
+      ```
+    - `ccache -s` # Show statistics
+    - Because to continue to compile Chromium when the compilation fails.
+- ***References***
+    - ChatGPT
+    - `ccache --help`
+    - https://wiki.gentoo.org/wiki/Ccache
+- ---
+- #### Use "reader" in Docker-compose
+    - `vim ~/.config/reader/docker-compose.yml`
+      ```
+      version: '3.1'
+      services:
+        reader:
+          image: hectorqin/reader:openj9-latest
+          container_name: reader
+          restart: always
+          ports:
+            - 4396:8080
+          volumes:
+            - ~/.config/reader/logs:/logs
+            - ~/.config/reader/storage:/storage
+          environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - READER_APP_USERBOOKLIMIT=200
+            - READER_APP_CACHECHAPTERCONTENT=true
+      ```
+- ***Notes***
+    - `docker-compose up --detach` # Run in the background
+    - `192.168.10.100:4396` # Run in Chromium
+- ***References***
+    - https://github.com/hectorqin/reader/blob/387beb9f90f100cddcc0973408efbca47ea46489/docker-compose.yml
+- ---
 - #### Remove the notification of full screen in Firefox
     - Change the value from "3000" to "0"
       ```
@@ -138,7 +188,7 @@
           container_name: clash
           restart: always
           volumes:
-            - /home/yaoniplan/.config/clash:/root/.config/clash
+            - ~/.config/clash:/root/.config/clash
           ports:
             - 7890:7890
             - 7891:7891
@@ -157,7 +207,7 @@
     - `docker-compose restart` # Restart
 - ***Notes***
     - `doas apt install docker-compose` # Install it before installing Docker
-    - `/home/yaoniplan/.config/clash` # Replace it with your path of the config.yaml file
+    - `~/.config/clash` # Replace it with your path of the config.yaml file
     - In Chromium
         - `192.168.10.100:9091` # The clash dashboard
         - `vim ~/.config/clash/config.yaml` # Solve a problem about "Failed to connect" of "API Base URL"
@@ -228,7 +278,7 @@
     - ChatGPT
 - ---
 - #### Enable the Browser Toolbox mode in Firefox
-    - `about:config` # Set them to true
+    - Set them to true
       ```
       devtools.chrome.enabled
       devtools.debugger.remote-enabled
@@ -237,6 +287,7 @@
 - ***Notes***
     - Because to customize the Firefox theme with CSS.
 - ***References***
+    - `about:config`
     - ChatGPT
     - https://www.youtube.com/watch?v=bw_M7q3Mtag
 - ---
@@ -2084,7 +2135,7 @@
       #HandleLidSwitch=suspend
       HandleLidSwitch=ignore
       ```
-    - `sudo reboot` # Make chages effective
+    - `sudo reboot` # Make changes effective
 - ***Notes***
     - Solve the problem
       ```
@@ -2097,7 +2148,7 @@
 - #### Install "Docker" in Ubuntu Server 22.04
     - Follow the steps of this [website](https://docs.docker.com/engine/install/ubuntu/)
 - ***Notes***
-    - `doas usermod -aG docker yaoniplan` # Add the user to the docker group
+    - `doas usermod -aG docker yaoniplan` # Run the command without password
         - `-a` # Append
         - `-G` # Group
         - `yaoniplan` # Replace it with your user
@@ -4014,13 +4065,11 @@
     - Second machine
       ```
       git clone --bare https://github.com/yaoniplan/dotfiles.git $HOME/.dotfiles
-      alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/'
+      echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/'" >> $HOME/.bashrc
       dotfiles checkout
       dotfiles config --local status.showUntrackedFiles no
       ```
 - ***Notes***
-    - `/usr/bin/git` # Replace it with your location of Git
-        - `which git` # Run it to get the location of Git
     - `dotfiles config --local status.showUntrackedFiles no` # Hide untracked files
     - Replace *.bashrc* with your dotfiles
     - Replace *yaoniplan* with your user name
@@ -4584,25 +4633,25 @@
     - `-N` # --newuse
     - If you have the problem
       ```
-	  !!! existing preserved libs:
+      !!! existing preserved libs:
       >>> package: x11-libs/libdrm-2.4.114
            *  - /usr/lib64/libdrm_amdgpu.so.1
-               *  - /usr/lib64/libdrm_amdgpu.so.1.0.0
-               *      used by /usr/lib64/xorg/modules/drivers/amdgpu_drv.so (x11-drivers/xf86-video-amdgpu-22.0.0)
-              Use emerge @preserved-rebuild to rebuild packages using these libraries
-               * After world updates, it is important to remove obsolete packages with
-               * emerge --depclean. Refer to `man emerge` for more information.
-              ```
+           *  - /usr/lib64/libdrm_amdgpu.so.1.0.0
+           *      used by /usr/lib64/xorg/modules/drivers/amdgpu_drv.so (x11-drivers/xf86-video-amdgpu-22.0.0)
+          Use emerge @preserved-rebuild to rebuild packages using these libraries
+           * After world updates, it is important to remove obsolete packages with
+           * emerge --depclean. Refer to `man emerge` for more information.
+      ```
         - `sudo emerge --depclean` # Remove obsolete packages
         - `sudo emerge @preserved-rebuild` # Clean up the old library version
     - Solve the problem
       ```
-               * IMPORTANT: 5 config files in '/etc' need updating.
-               * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
-               * sections of the emerge man page to learn how to update config files.
-               * After world updates, it is important to remove obsolete packages with
-               * emerge --depclean. Refer to `man emerge` for more information.
-              ```
+       * IMPORTANT: 5 config files in '/etc' need updating.
+       * See the CONFIGURATION FILES and CONFIGURATION FILES UPDATE TOOLS
+       * sections of the emerge man page to learn how to update config files.
+       * After world updates, it is important to remove obsolete packages with
+       * emerge --depclean. Refer to `man emerge` for more information.
+      ```
         - `doas etc-update` # Update all config files in '/ect'
         - `doas emerge --depclean` # Remove obsolete packages
         - `doas reboot`
@@ -4885,7 +4934,6 @@
 	- https://www.makeuseof.com/open-browser-extensions-keyboard-shortcut/
 - ---
 - #### The abbreviation of the "European Union" is "EU".
-- ***Notes***
 	- In Europe
 	- A union
 	- 27 member states
@@ -5078,7 +5126,7 @@
 		- [How to Uncompress Tar.xz Files?](https://linuxhint.com/uncompress-tar-xz-files/)
 - ---
 - Solve problem about "echo", ">>" and permission #Linux #Command
-	- `sudo echo "=x11-base/xorg-server-1.11.99.2" | sudo tee -a /etc/portage/package.unmask`
+	- `echo "=x11-base/xorg-server-1.11.99.2" | sudo tee -a /etc/portage/package.unmask`
 	- ***Notes***
 		- `tee` # Replace **output redirection** (e.g. **>** and **>>**)
 		- `-a` # Append
