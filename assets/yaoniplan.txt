@@ -1,3 +1,20 @@
+- #### Protect spine #idea
+    - When looking up
+        - Pull the chin up
+    - When pressing the neck
+        - Rotate to that hand
+    - Surrounding the shoulder joint
+        - Shake hands, directly in front of shoulder joint
+        - Pull elbows up to the top
+        - Pull apart on both sides
+- ***Notes***
+    - Don't bow the head
+- ***References***
+    - ![2023-04-24_15-06.png](../assets/2023-04-24_15-06.png)
+    - ![2023-04-24_15-24.png](../assets/2023-04-24_15-24.png)
+    - ![2023-04-24_15-52.gif](../assets/2023-04-24_15-52.gif)
+    - https://m.youtube.com/watch?v=udAhvg1ANLM
+- ---
 - #### Enable ccache in Gentoo Linux
     - `doas emerge dev-util/ccache`
     - `doas vim /etc/portage/make.conf`
@@ -557,10 +574,12 @@
     - `x` # Extract
     - `/tmp/testRAR/` # Replace it with your desired decompression path
     - `doas emerge -aq app-arch/rar` # Install it in Gentoo Linux
+    - Extract a ".exe" file in Linux
+        - `rar x ximaBooks1-100.exe ./001_100/`
 - ***References***
     - ChatGPT
     - `rar -? | less`
- ---
+- ---
 - #### Patch for DWM in Gentoo Linux
     - Patch in /etc/portage/patches/x11-wm/dwm/
       ```
@@ -4624,7 +4643,8 @@
     - https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Working#Removing_software
 - ---
 - #### Update the whole system in Gentoo Linux
-	- `sudo emerge -avuDN @world`
+    - `doas emerge --sync` # Update the package list
+	- `doas emerge -avuDN @world`
 - ***Notes***
     - `-a` # --ask
     - `-v` # --verbose

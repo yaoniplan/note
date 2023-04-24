@@ -5,7 +5,7 @@
 - Mashle: Magic and Muscles / 物理魔法使马修 - 02
 - Dead Mount Death Play / 亡骸游戏 - 02
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 03
-- 向涟苍士献上纯洁 - #NSFW 01
+- 向涟苍士献上纯洁 - #NSFW 03
 - 地狱乐 - 02
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+02
 - Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+16) animation
