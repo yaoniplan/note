@@ -61,6 +61,7 @@ http://natas9.natas.labs.overthewire.org
 - https://bigjpg.com/
 
 ## Network proxy
+- https://ikuuu.eu/user
 - https://sockboom.tv/user/
 - https://sub.ssrsub.com/#/dashboard
 - https://www.askahh.com/index.php/archives/101/
