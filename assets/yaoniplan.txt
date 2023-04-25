@@ -7,13 +7,32 @@
         - Shake hands, directly in front of shoulder joint
         - Pull elbows up to the top
         - Pull apart on both sides
+    - When looking at the phone
+        - Put elbow ten centimeters forward
+        - Bring elbow close to the chest muscles
+    - When looking at computer
+        - Keep elbows directly below shoulder joint
+        - Let eyes look at the top line
 - ***Notes***
     - Don't bow the head
+        - Because it compresses the spine.
 - ***References***
     - ![2023-04-24_15-06.png](../assets/2023-04-24_15-06.png)
     - ![2023-04-24_15-24.png](../assets/2023-04-24_15-24.png)
     - ![2023-04-24_15-52.gif](../assets/2023-04-24_15-52.gif)
+    - ![2023-04-25_15-41.png](../assets/2023-04-25_15-41.png)
+    - ![2023-04-25_16-05.png](../assets/2023-04-25_16-05.png)
     - https://m.youtube.com/watch?v=udAhvg1ANLM
+- ---
+- #### Understtand tuberculosis
+    - A sickness
+- ***Notes***
+    - Bacteria
+        - Crowded or dirty places
+    - A weak immune system
+- ***References***
+    - ChatGPT
+    - Georg Riemann
 - ---
 - #### Enable ccache in Gentoo Linux
     - `doas emerge dev-util/ccache`
@@ -110,6 +129,7 @@
         memos:
           image: neosmemo/memos:latest
           container_name: memos
+          restart: always
           volumes:
             - ~/.config/memos/:/var/opt/memos
           ports:
@@ -1334,8 +1354,12 @@
     - ![2023-03-13_14:58:24.png](../assets/2023-03-13_14:58:24.png)
 - ---
 - #### Use the "mpv" command in Linux
-    - `mpv --speed=2 --fullscreen URLOfTheVideo`
+    - `mpv --speed=2 --fullscreen "URLOfTheVideo"`
 - ***Notes***
+    - `--http-proxy=http://192.168.10.100:7890` # Use network proxy
+    - `<` # Go backward in the playlist
+    - `/` # Decrease volume
+    - `}` # Double speed
     - `o` # Show progress bar
     - `f` # Full screen
     - `q` # Quit
@@ -1440,13 +1464,13 @@
     - `doas mkdir /mnt/aliyundrive/`
     - `doas chown -R yaoniplan:yaoniplan /mnt/aliyundrive/`
         - `yaoniplan` # Replace it with your user
-    - `rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full &`
+    - `rclone mount aliyundrive:/ /mnt/aliyundrive/`
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
     - `rclone lsd aliyundrive:/` # Check it
     - `crontab -e` # Run it at boot in Ubuntu Server 22.04
       ```
-      @reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/ --vfs-cache-mode=full &
+      @reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/
       ```
         - `/usr/bin/rclone` # Get it by running `which rclone`
     - Solve the problem
