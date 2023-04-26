@@ -1,2 +1,2 @@
 Use passwordsManager in dmenu
-Test network proxy
+Start Ubuntu Server 22.04 automatically when connecting to power

@@ -1356,6 +1356,7 @@
 - #### Use the "mpv" command in Linux
     - `mpv --speed=2 --fullscreen "URLOfTheVideo"`
 - ***Notes***
+    - `Fn-8` # Show playlist
     - `--http-proxy=http://192.168.10.100:7890` # Use network proxy
     - `<` # Go backward in the playlist
     - `/` # Decrease volume
@@ -1464,13 +1465,13 @@
     - `doas mkdir /mnt/aliyundrive/`
     - `doas chown -R yaoniplan:yaoniplan /mnt/aliyundrive/`
         - `yaoniplan` # Replace it with your user
-    - `rclone mount aliyundrive:/ /mnt/aliyundrive/`
+    - `rclone mount aliyundrive:/ /mnt/aliyundrive/ &`
 - ***Notes***
     - `doas apt install rclone` # Install it in Ubuntu Server 22.04
     - `rclone lsd aliyundrive:/` # Check it
     - `crontab -e` # Run it at boot in Ubuntu Server 22.04
       ```
-      @reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/
+      @reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/ &
       ```
         - `/usr/bin/rclone` # Get it by running `which rclone`
     - Solve the problem
