@@ -1,3 +1,31 @@
+- #### Start Ubuntu Server 22.04 automatically when connecting to power
+    - Set options in BIOS 
+- ***Notes***
+    - Warning: I did not find the relevant options, maybe the computer is too low-level.
+- ***References***
+    - https://superuser.com/questions/984934/i-want-my-pc-to-turn-on-automatically-when-power-is-connected/1532389#1532389
+- ---
+- #### Combine todo and passwords manager in dmenu
+    - `height=$(wc -l "$file" | awk '{print $1}')`
+    - `cmd=$(dmenu -l "$height" -p "$prompt" "$@" < "$file")`
+    - `while [ -n "$cmd" ]; do`
+    - `if grep -q "^$cmd\$" "$file"; then`
+- ***Notes***
+    - `-l` # Lines
+    - `-p` # Prompt
+    - `$@` # All arguments
+    - `<` # Redirect input from a file to command
+    - `-n` # Not empty
+    - `-q` # Quiet
+    - `^` # The beginning of a line
+    - `\` # Escape character
+    - `$` # The end of a line
+    - `-v` # Invert
+- ***References***
+    - ChatGPT
+    - `help test`
+    - https://tools.suckless.org/dmenu/scripts/todo
+- ---
 - #### Protect spine #idea
     - When looking up
         - Pull the chin up
@@ -221,7 +249,7 @@
       
       services:
         clash:
-          image: dreamacro/clash
+          image: dreamacro/clash:latest
           container_name: clash
           restart: always
           volumes:
@@ -232,7 +260,7 @@
             - 9090:9090
             
         clash_dashboard:
-          image: haishanh/yacd
+          image: haishanh/yacd:latest
           container_name: clash_dashboard
           restart: always
           depends_on:
@@ -241,8 +269,9 @@
             - 9091:80
       ```
     - `docker-compose up --detach` # Run in the background
-    - `docker-compose restart` # Restart
 - ***Notes***
+    - `docker-compose stop` # Stop
+    - `docker-compose restart` # Restart
     - `doas apt install docker-compose` # Install it before installing Docker
     - `~/.config/clash` # Replace it with your path of the config.yaml file
     - In Chromium
@@ -1356,8 +1385,9 @@
 - #### Use the "mpv" command in Linux
     - `mpv --speed=2 --fullscreen "URLOfTheVideo"`
 - ***Notes***
+    - `--playlist=computerScience.txt`
     - `Fn-8` # Show playlist
-    - `--http-proxy=http://192.168.10.100:7890` # Use network proxy
+    - `--http-proxy=http://192.168.10.100:7890`
     - `<` # Go backward in the playlist
     - `/` # Decrease volume
     - `}` # Double speed
@@ -2204,10 +2234,10 @@
     - https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/
 - ---
 - #### Use the "docker" command
-    - `docker rmi a3adcb495939` # Remove a image
-        - `docker images` # Get "IMAGE ID"
     - `docker stop a3a15b7a4419 && docker rm a3a15b7a4419` # Stop and remove a container
         - `docker ps` # Get "CONTAINER ID"
+    - `docker rmi a3adcb495939` # Remove a image
+        - `docker images` # Get "IMAGE ID"
     - `docker search clash` # Search to get the full name
 - ***References***
     - ChatGPT
@@ -4378,54 +4408,44 @@
     - https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
 - ---
 - #### Use "tmux"
+    - `C-b ?` # Help
     - `tmux attach-session -t 1` # Attach session 1 if you quit the terminal accidentaly
-        - `kitty` # Replace it with your terminal
-        - `tmux ls`
-        - `tmux attach-session -t 1`
-            - `1` # Replace it with your target
-    - `C-b l` # Return to the last used window
-	- `C-b w` # Window of tree mode
-	- `C-b s` # Session of tree mode
-	- `C-b c` # Create window
-	- `C-b l` # Last window (previously used)
-	- `C-b "` # Split vertically
-	- `C-b ;` # Last pane (previously used)
-	- `C-b L` # Last session (previously used)
-	- `C-b space` # switch to the next layout
-	- `C-b :` # Prompt for a command (Vim-like)
-		- `kill-session -t 15` # Kill session 15
-			- `-t` # Target
+    - `C-b w` # Window of tree mode
+    - `C-b s` # Session of tree mode
+    - `C-b c` # Create window
+    - `C-b l` # Last window (previously used)
+    - `C-b "` # Split vertically
+    - `C-b ;` # Last pane (previously used)
+    - `C-b L` # Last session (previously used)
+    - `C-b space` # switch to the next layout
+    - `C-b :` # Prompt for a command (Vim-like)
+        - `kill-session -t 15` # Kill session target 15
         - `kill-window -t 1` # Kill window 1
         - `kill-pane -t 1` # Kill pane 1
-		- `split-window` # Split window
-			- `C-b arrowKey` # Change the active pane
-			- `split-window -h` # Horizontal
-			- `split-window -v` # Vertical
-		- `attach -t 1` # attach session 1
-		- `rename-session 0` # Rename session (active) to 0
-		- `rename-window 1` # Rename window (active) to 1
-		- `source-file ~/.tmux.conf` # Reload the Tmux configuration file
-	- `C-b [` # Refer this [link](https://man.openbsd.org/tmux#WINDOWS_AND_PANES)
-		- `Space` # Select what you want to copy
-		- `Enter` # copy after select what you want to copy
-	- `C-b ]` # paste
-	- `C-b =` # Buffer mode
-	- `tmux ls`
-	- `C-b ?`
+        - `C-b arrowKey` # Change the active pane
+        - `split-window -h` # Horizontal
+        - `split-window -v` # Vertical
+        - `attach -t 1` # attach session 1
+        - `rename-session 0` # Rename session (active) to 0
+        - `rename-window 1` # Rename window (active) to 1
+        - `source-file ~/.tmux.conf` # Reload the Tmux configuration file
+    - `C-b [`
+        - `Space` # Select what you want to copy
+        - `Enter` # copy after select what you want to copy
+    - `C-b ]` # paste
+    - `C-b =` # Buffer mode
+    - `tmux ls`
 - ***Notes***
-	- `tmux ls` # List all sessions
-		- `ls` # list-sessions
+    - `tmux ls` # List all sessions
+        - `ls` # list-sessions
     - `tmux kill-server` # kill all server (e.g. sessions, windows, and panes)
-	- `C-b ?` # List key bindings
-		- `C-b` # A prefix key (Means pressing the `Ctrl` key and `b` together)
-		- `?` # Press the `?` key after that
 - ***References***
-	- `man tmux`
-	- ![tmux_status_line_diagram.png](../assets/tmux_status_line_diagram_1671845222091_0.png)
+    - `man tmux`
+    - ![tmux_status_line_diagram.png](../assets/tmux_status_line_diagram_1671845222091_0.png)
     - https://leimao.github.io/blog/Tmux-Tutorial/
-	- https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd
-	- https://github.com/tmux/tmux/wiki/Getting-Started
-	- https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/
+    - https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd
+    - https://github.com/tmux/tmux/wiki/Getting-Started
+    - https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/
 - ---
 - #### Replace sudo with doas in Gentoo Linux
 	- `sudo emerge -aq app-admin/doas`
