@@ -71,16 +71,19 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/freefq/free
 
 ## Animation and comic
+- https://www.ikanbot.com/
+- https://www.yhdmhy.com/
+- https://www.bimiacg4.net/
+- https://anime1.io/
+- https://www.you97.com/
 - http://www.ysjdm1.com/
 - https://www.agemys.com/
 - https://2khanman.com/
 - http://www.p5mh.com/
 - https://nnhanman.com
 - https://www.yeseimg.com/
-- https://anime1.io/
 - http://www.dmd85.com/
 - https://yuc.wiki/202304/
-- https://www.bimiacg4.net
 - https://www.xnxx.com/
 - https://www.hentaicomic.org/
 

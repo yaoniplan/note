@@ -26,6 +26,21 @@
     - `help test`
     - https://tools.suckless.org/dmenu/scripts/todo
 - ---
+- #### The abbreviation of "Random Access Memory" is "RAM".
+    - Store date temporarily
+        - The computer is currently using
+- ***References***
+    - https://en.wikipedia.org/wiki/Random-access_memory
+- ---
+- #### The abbreviation of "Central Processing Unit" is "CPU".
+    - A brain
+- ***Notes***
+    - Has multiple cores
+    - Generate heat
+        - A cooling system
+- ***References***
+    - ChatGPT
+- ---
 - #### Protect spine #idea
     - When looking up
         - Pull the chin up
@@ -1157,7 +1172,13 @@
     - `-o` # Out
     - `doas emerge -aq x11-misc/xclip` # Install it if you don't have it
     - `mpv --speed=2 $(xclip -o)` # Type it before you pressed `Ctrl-c` to copy content
+    - Another way
+        - `$(xsel -ob)`
+        - `xsel` # X selection
+        - `-o` # Output
+        - `-b` # Clipboard
 - ***References***
+    - `man xsel`
     - ChatGPT
 - ---
 - #### The abbreviation of "personal access token" is "PAT".
@@ -1385,6 +1406,7 @@
 - #### Use the "mpv" command in Linux
     - `mpv --speed=2 --fullscreen "URLOfTheVideo"`
 - ***Notes***
+    - `m` # Mute
     - `--playlist=computerScience.txt`
     - `Fn-8` # Show playlist
     - `--http-proxy=http://192.168.10.100:7890`
