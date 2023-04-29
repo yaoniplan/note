@@ -1,3 +1,32 @@
+- #### The abbreviation of "Stream Editor" is "sed".
+    - `sh semester | grep --ignore-case "date" | sed 's/date: //g' > ~/last-modified.txt`
+- ***Notes***
+    - `echo '#!/usr/bin/env bash' > semester`
+        - Surround "!" with single quotes to solve the problem
+          ```
+          -bash: !/usr/bin/env: event not found
+          ```
+- ***References***
+    - `man sed`
+    - `cat semester`
+      ```
+      #!/usr/bin/env bash
+      curl --head --silent https://google.com
+      ```
+    - `cat ~/last-modified.txt`
+      ```
+      Sat, 29 Apr 2023 01:21:44 GMT
+      ```
+    - https://missing-semester-cn.github.io/2020/course-shell/
+- ---
+- #### View temperature of CPU in Linux
+    - `cat /sys/class/thermal/thermal_zone0/temp`
+- ***Notes***
+    - `34000` # Millidegrees Celsius
+        - 34000 / 1000 = 34
+- ***References***
+    - ChatGPT
+- ---
 - #### Start Ubuntu Server 22.04 automatically when connecting to power
     - Set options in BIOS 
 - ***Notes***
@@ -5,7 +34,7 @@
 - ***References***
     - https://superuser.com/questions/984934/i-want-my-pc-to-turn-on-automatically-when-power-is-connected/1532389#1532389
 - ---
-- #### Combine todo and passwords manager in dmenu
+- #### Use todo in dmenu
     - `height=$(wc -l "$file" | awk '{print $1}')`
     - `cmd=$(dmenu -l "$height" -p "$prompt" "$@" < "$file")`
     - `while [ -n "$cmd" ]; do`
@@ -4430,14 +4459,13 @@
     - https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/
 - ---
 - #### Use "tmux"
+    - `C-b ;` # Last pane (previously used)
     - `C-b ?` # Help
-    - `tmux attach-session -t 1` # Attach session 1 if you quit the terminal accidentaly
     - `C-b w` # Window of tree mode
     - `C-b s` # Session of tree mode
     - `C-b c` # Create window
     - `C-b l` # Last window (previously used)
     - `C-b "` # Split vertically
-    - `C-b ;` # Last pane (previously used)
     - `C-b L` # Last session (previously used)
     - `C-b space` # switch to the next layout
     - `C-b :` # Prompt for a command (Vim-like)
@@ -4460,6 +4488,7 @@
 - ***Notes***
     - `tmux ls` # List all sessions
         - `ls` # list-sessions
+    - `tmux attach-session -t 1` # Attach session 1
     - `tmux kill-server` # kill all server (e.g. sessions, windows, and panes)
 - ***References***
     - `man tmux`
