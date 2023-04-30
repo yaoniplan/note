@@ -1,5 +1,7 @@
 ### "Animation"
-- 勇者死了 - 03 0925 animation
+- Now and Then, Here and There / 此时此刻的我 - 04 1014 animation
+- 赘婿 - 02
+- 勇者死了 - 04
 - 一世独尊 - 06
 - 火凤燎原 - 02
 - 六道的恶女们 - 03
