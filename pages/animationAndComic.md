@@ -1,5 +1,5 @@
 ### "Animation"
-- Now and Then, Here and There / 此时此刻的我 - 08 animation
+- Now and Then, Here and There / 此时此刻的我 - 08
 - 赘婿 - 02
 - 勇者死了 - 04
 - 一世独尊 - 06
