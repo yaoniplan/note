@@ -1,13 +1,10 @@
 ### "Animation"
-- Now and Then, Here and There / 此时此刻的我 - 08
-- 赘婿 - 02
+- 赘婿 - 03
 - 勇者死了 - 04
 - 一世独尊 - 06
 - 火凤燎原 - 02
-- 六道的恶女们 - 03
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+31
-- Mashle: Magic and Muscles / 物理魔法使马修 - 03
-- Dead Mount Death Play / 亡骸游戏 - 03
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+32
+- Mashle: Magic and Muscles / 物理魔法使马修 - 04
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 04
 - 向涟苍士献上纯洁 - #NSFW 04
 - 地狱乐 - 04
@@ -237,6 +234,9 @@
 - guard(end)
 
 ### Animation
+- Dead Mount Death Play / 亡骸游戏 - 04 1010 # Slow pace
+- 六道的恶女们 - 04 # For children or teens
+- Now and Then, Here and There / 此时此刻的我 - 13 # End of the first part.
 - Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+16) # It is boring
 - 熊熊勇闯异世界 - 03 0605 # It is boring
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+59 # End of the second part
