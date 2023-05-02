@@ -22,6 +22,61 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="enable-dark-mode-for-pdf-file-in-firefox">Enable dark mode for PDF file in Firefox</h4>
+<ul>
+<li><code>Ctrl-Shift-i</code> # Paste it in &quot;Console&quot;<pre><code>// When using in-browser PDF viewer, you can inspect it and run this in the console
+// It&#39;s using CSS Blending to invert the colors of the PDF 
+function togglePDFDarkMode() {
+  var cover = document.createElement(&quot;div&quot;);
+  let inversion = `
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    mix-blend-mode: difference;
+    z-index: 1;
+    `
+  if (document.body.contains(cover)) {
+    document.body.removeChild(cover);
+  } else {
+    cover.setAttribute(&quot;style&quot;, inversion);
+    document.body.appendChild(cover);
+  }
+}
+togglePDFDarkMode();
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-02_10-57.png" alt="2023-05-02_10-57.png"></li>
+<li><a href="https://gist.github.com/sneakyness/4fc195912152827a3499f7bf38590aa1">https://gist.github.com/sneakyness/4fc195912152827a3499f7bf38590aa1</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="enable-vi-mode-in-python-interpreter">Enable Vi mode in Python interpreter</h4>
+<ul>
+<li><code>Ctrl-Alt-j</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.inputrc</code> # Another way<pre><code>set editing-mode vi
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://stackoverflow.com/questions/537522/standard-python-interpreter-has-a-vi-command-mode/538573#538573">https://stackoverflow.com/questions/537522/standard-python-interpreter-has-a-vi-command-mode/538573#538573</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="remove-blank-lines-in-vim">Remove blank lines in Vim</h4>
 <ul>
 <li><code>:%s/^\n//g</code></li>
@@ -40,16 +95,21 @@
 </ul>
 <hr>
 <ul>
-<li><h4 id="clear-the-interpreter-console-in-python">Clear the interpreter console in Python</h4>
+<li><h4 id="clear-the-python-interpreter-in-linux">Clear the Python interpreter in Linux</h4>
 <ul>
 <li><code>Ctrl-l</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Another way<pre><code>import os
+os.system(&#39;clear&#39;)
+</code></pre>
+</li>
 <li>Because to clear the screen like in Linux.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 <li><a href="https://stackoverflow.com/questions/517970/how-to-clear-the-interpreter-console/37925455#37925455">https://stackoverflow.com/questions/517970/how-to-clear-the-interpreter-console/37925455#37925455</a></li>
 </ul>
 </li>
@@ -68,6 +128,24 @@
 <li><em><strong>References</strong></em><ul>
 <li><code>man python</code></li>
 <li><a href="https://stackoverflow.com/questions/5280178/how-do-i-load-a-file-into-the-python-console/5280210#5280210">https://stackoverflow.com/questions/5280178/how-do-i-load-a-file-into-the-python-console/5280210#5280210</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="convert-file-names-from-tranditional-chinese-to-simplified-chinese">Convert file names from Tranditional Chinese to Simplified Chinese</h4>
+<ul>
+<li><code>for f in *.mp4; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | opencc -c t2s.json)&quot;; done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-c</code> # Config</li>
+<li><code>doas apt install opencc</code> # Install it in Ubuntu Server 22.04</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>opencc --help</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
