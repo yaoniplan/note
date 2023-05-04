@@ -72,7 +72,6 @@ http://natas9.natas.labs.overthewire.org
 
 ## Animation and comic
 - http://agedm3.com/
-- https://anime1.io/
 - http://www.ysjdm1.com/
 - https://www.agemys.com/
 - https://2khanman.com/
