@@ -22,6 +22,69 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-bash">Use &quot;Bash&quot;</h4>
+<ul>
+<li><code>if [[ n -eq 42 ]]; then</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>n</code> # A variable name</li>
+<li><code>-eq</code> # Equal</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man bash</code> # Search &quot;-eq&quot;</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="manage-plugins-with-built-in-package-manager-in-vim">Manage plugins with built-in package manager in Vim</h4>
+<ul>
+<li><code>mkdir -p ~/.vim/pack/vendor/start/</code></li>
+<li><code>git clone https://github.com/vimwiki/vimwiki.git ~/.vim/pack/vendor/start/</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Update a plugin<ul>
+<li><code>git -C ~/.vim/pack/vendor/start/vimwiki/ pull</code></li>
+</ul>
+</li>
+<li>Remove a plugin<ul>
+<li><code>mv ~/.vim/pack/vendor/start/vimwiki/ /tmp/</code></li>
+</ul>
+</li>
+<li>Because it is more convenient than traditional plugin managers.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><a href="https://missing-semester-cn.github.io/2020/editors/">https://missing-semester-cn.github.io/2020/editors/</a></li>
+<li><a href="https://vimhelp.org/repeat.txt.html#packages">https://vimhelp.org/repeat.txt.html#packages</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-spacemacs-in-emacs">Use &quot;Spacemacs&quot; in Emacs</h4>
+<ul>
+<li><code>emacs</code> # Start</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas emerge -aq app-editors/emacs</code> # Install in Gentoo Linux</li>
+<li><code>git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><a href="https://wiki.gentoo.org/wiki/Spacemacs">https://wiki.gentoo.org/wiki/Spacemacs</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="enable-dark-mode-for-pdf-file-in-firefox">Enable dark mode for PDF file in Firefox</h4>
 <ul>
 <li><code>Ctrl-Shift-i</code> # Paste it in &quot;Console&quot;<pre><code>// When using in-browser PDF viewer, you can inspect it and run this in the console
@@ -194,6 +257,7 @@ os.system(&#39;clear&#39;)
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>.</code> # Any single character</li>
 <li>Because to modify file name in batches.</li>
 </ul>
 </li>
@@ -261,7 +325,10 @@ curl --head --silent https://google.com
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-g</code> # Global</li>
 <li><code>doas emerge -aq net-libs/nodejs</code> # Install it in Gentoo Linux</li>
-<li>Because to convert Markdown to HTML in script.</li>
+<li>Because to convert Markdown to HTML in script.<ul>
+<li><code>marked -i yaoniplan.md -o yaoniplan.html</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -4092,6 +4159,7 @@ inoremap ``` ```&lt;CR&gt;```&lt;Up&gt;
 <li><em><strong>Notes</strong></em><ul>
 <li><code>( ()</code> # Replace it with others (e.g. <em>[ []</em>, <em>{ {}</em>, <em>&lt; &lt;&gt;</em>, <em>&#39; &#39;&#39;</em>, <em>&quot; &quot;&quot;</em>)</li>
 <li><code>&lt;Left&gt;</code> # The left arrow key</li>
+<li>Warning: Not recommended because it will conflict with replication.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -6198,7 +6266,7 @@ nnoremap &lt;C-L&gt; &lt;C-W&gt;l
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-bash">Use Bash</h4>
+<li><h4 id="use-bash-1">Use Bash</h4>
 <ul>
 <li><code>Ctrl-r</code> # Reverse search history command<ul>
 <li><code>vim -c</code> # Type it in terminal, it may display <code>vim -c VimwikiIndex</code></li>
