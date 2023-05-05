@@ -22,6 +22,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="rename-file-in-perl">Rename file in Perl</h4>
+<ul>
+<li><code>perl -e &#39;foreach $file (glob(&quot;B站*&quot;)) { $newname = $file; $newname =~ s/B站-?//g; rename $file, $newname; }&#39;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-e</code> # Execute</li>
+<li><code>glob</code> # Global</li>
+<li><code>?</code> # Zero or one</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>perldoc -f rename</code><ul>
+<li><code>-f</code> # Function</li>
+</ul>
+</li>
+<li><img src="../assets/2023-05-05_12-56.png" alt="2023-05-05_12-56.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-bash">Use &quot;Bash&quot;</h4>
 <ul>
 <li><code>if [[ n -eq 42 ]]; then</code></li>
@@ -70,10 +93,19 @@
 <ul>
 <li><h4 id="use-spacemacs-in-emacs">Use &quot;Spacemacs&quot; in Emacs</h4>
 <ul>
+<li><code>C-c C-o</code> # Open URL<ul>
+<li>Click</li>
+</ul>
+</li>
+<li><code>SPC /</code> # Search string<ul>
+<li><code>SPC s p</code></li>
+</ul>
+</li>
 <li><code>emacs</code> # Start</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>SPC</code> # Space key</li>
 <li><code>doas emerge -aq app-editors/emacs</code> # Install in Gentoo Linux</li>
 <li><code>git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d</code></li>
 </ul>
@@ -1212,10 +1244,14 @@ sleep &quot;$1&quot;; notification
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>feh.desktop</code> # Get the application<ul>
-<li><code>cat /usr/share/applications/</code></li>
+<li><code>ls /usr/share/applications/</code></li>
 </ul>
 </li>
 <li><code>png</code> # Replace it with other format (e.g. gif)</li>
+<li>Another way<ul>
+<li><code>xdg-settings set default-web-browser firefox.desktop</code></li>
+</ul>
+</li>
 <li>Because to use the Feh program to view images.<ul>
 <li>It is more convenient in terminal.</li>
 </ul>
