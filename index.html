@@ -93,18 +93,29 @@
 <ul>
 <li><h4 id="use-spacemacs-in-emacs">Use &quot;Spacemacs&quot; in Emacs</h4>
 <ul>
+<li><code>SPC f t</code> # File tree</li>
+<li><code>SPC x y</code> # Yank after selecting a region<ul>
+<li><code>vim ~/.spacemacs</code> # Or <code>SPC f e d</code><pre><code>;; List of configuration layers to load.
+dotspacemacs-configuration-layers
+&#39;((xclipboard :variables xclipboard-enable-cliphist t))
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>C-c C-o</code> # Open URL<ul>
-<li>Click</li>
+<li><code>SPC m RET</code></li>
+<li><code>SPC m f</code></li>
 </ul>
 </li>
 <li><code>SPC /</code> # Search string<ul>
-<li><code>SPC s p</code></li>
+<li><code>SPC s p</code> # Search project</li>
 </ul>
 </li>
 <li><code>emacs</code> # Start</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>RET</code> # Return key</li>
 <li><code>SPC</code> # Space key</li>
 <li><code>doas emerge -aq app-editors/emacs</code> # Install in Gentoo Linux</li>
 <li><code>git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d</code></li>
@@ -113,6 +124,7 @@
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><a href="https://wiki.gentoo.org/wiki/Spacemacs">https://wiki.gentoo.org/wiki/Spacemacs</a></li>
+<li><a href="https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org#L1">https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org#L1</a></li>
 </ul>
 </li>
 </ul>
