@@ -22,6 +22,90 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="find-a-file-in-the-current-directory">Find a file in the current directory</h4>
+<ul>
+<li><code>find . -name &quot;github*&quot;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>*</code> # Zero or more</li>
+<li><code>-type f</code> # File</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Output<pre><code>./github
+./github-actions
+./assets/github-markdown-dark.css
+</code></pre>
+</li>
+<li><code>man find</code></li>
+<li>ChatGPT</li>
+<li><img src="../assets/2023-05-06_00-13.png" alt="2023-05-06_00-13.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="understand-dreaming-of-home-and-mother">Understand &quot;Dreaming of Home and Mother&quot;</h4>
+<ul>
+<li>Melody of English</li>
+<li>Lyrics of Japanese<ul>
+<li>Translate it to Chinese</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Songbie">https://en.wikipedia.org/wiki/Songbie</a></li>
+<li><a href="https://www.youtube.com/watch?v=vdm7845EW8M">https://www.youtube.com/watch?v=vdm7845EW8M</a> # English version</li>
+<li><a href="https://www.youtube.com/watch?v=ak7IfDqvaPY">https://www.youtube.com/watch?v=ak7IfDqvaPY</a> # Japanese version</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="insert-paragraphs-into-the-top-of-a-text-file-in-sed">Insert paragraphs into the top of a text file in sed</h4>
+<pre><code>sed -i &#39;1i\
+&lt;!DOCTYPE html&gt;\
+&lt;html&gt;\
+&lt;head&gt;\
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\
+  &lt;title&gt;yaoniplan&lt;/title&gt;\
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/github-markdown-dark.css&quot;&gt;\
+  &lt;style&gt;\
+    .markdown-body {\
+      box-sizing: border-box;\
+      min-width: 200px;\
+      max-width: 980px;\
+      margin: 0 auto;\
+      padding: 45px;\
+    }\
+    @media (max-width: 767px) {\
+      .markdown-body {\
+        padding: 15px;\
+      }\
+    }\
+  &lt;/style&gt;\
+&lt;/head&gt;\
+&lt;body&gt;\
+  &lt;article class=&quot;markdown-body&quot;&gt;&#39; $directory.html
+</code></pre>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-i</code> # In place</li>
+<li><code>1</code> # The first line</li>
+<li><code>i</code> # Insert</li>
+<li><code>\</code> # Escape the newline character</li>
+<li>Because to convert Markdown to HTML.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="rename-file-in-perl">Rename file in Perl</h4>
 <ul>
 <li><code>perl -e &#39;foreach $file (glob(&quot;B站*&quot;)) { $newname = $file; $newname =~ s/B站-?//g; rename $file, $newname; }&#39;</code></li>
@@ -31,10 +115,16 @@
 <li><code>-e</code> # Execute</li>
 <li><code>glob</code> # Global</li>
 <li><code>?</code> # Zero or one</li>
+<li>Another way<ul>
+<li><code>for f in B站*; do mv &quot;$f&quot; $(echo &quot;$f&quot; | sed -E &#39;s/B站-?//g&#39;); done</code></li>
+<li><code>-E</code> # Extended</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+<li><code>man sed</code></li>
 <li><code>perldoc -f rename</code><ul>
 <li><code>-f</code> # Function</li>
 </ul>
@@ -124,7 +214,7 @@ dotspacemacs-configuration-layers
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><a href="https://wiki.gentoo.org/wiki/Spacemacs">https://wiki.gentoo.org/wiki/Spacemacs</a></li>
-<li><a href="https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org#L1">https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org#L1</a></li>
+<li><a href="https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org">https://github.com/syl20bnr/spacemacs/blob/e4b20f797d9e7a03d9a5603942c4a51ea19047b2/layers/%2Btools/xclipboard/README.org</a></li>
 </ul>
 </li>
 </ul>
@@ -1215,7 +1305,7 @@ sleep &quot;$1&quot;; notification
 <ul>
 <li><h4 id="change-the-temporary-directory-in-one-liner-of-linux">Change the temporary directory in one-liner of Linux</h4>
 <ul>
-<li><code>cd &quot;$(mktemp -d)&quot;</code></li>
+<li><code>cd $(mktemp -d)</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -7308,7 +7398,7 @@ inactive-opcity = 0.4;
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-feh">Use Feh</h4>
+<li><h4 id="use-feh">Use &quot;feh&quot;</h4>
 <ul>
 <li><code>feh ~/app/wallpaper/</code> # Enable slideshow mode<ul>
 <li><code>~/app/wallpaper/</code> # A directory including many images</li>
@@ -7320,26 +7410,11 @@ inactive-opcity = 0.4;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>feh -i ~/app/wallpaper/</code> # Enable index mode<ul>
-<li><code>-i</code> # Index</li>
-</ul>
-</li>
-<li><code>feh -m ~/app/wallpaper/</code> # Enable montage mode<ul>
-<li><code>-m</code> # Montage</li>
-</ul>
-</li>
-<li><code>feh -t ~/app/wallpaper/</code> # Enable thumbnail mode<ul>
-<li><code>-t</code> # Thumbnails</li>
-</ul>
-</li>
-<li><code>feh -w ~/app/wallpaper/</code> # Enable multiwindow mode<ul>
-<li><code>-w</code> # Multiwindow</li>
-</ul>
-</li>
-<li><code>feh -l ~/app/wallpaper/</code> # Enable list mode<ul>
-<li><code>-l</code> # List</li>
-</ul>
-</li>
+<li><code>feh -i ~/app/wallpaper/</code> # Index</li>
+<li><code>feh -m ~/app/wallpaper/</code> # Montage</li>
+<li><code>feh -t ~/app/wallpaper/</code> # Thumbnails</li>
+<li><code>feh -w ~/app/wallpaper/</code> # Multiwindow</li>
+<li><code>feh -l ~/app/wallpaper/</code> # List</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -7878,6 +7953,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>C-b L</code> # Last session (previously used)</li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
+<li><code>move-window -t 2:2</code> # Move window to another session</li>
 <li><code>kill-session -t 15</code> # Kill session target 15</li>
 <li><code>kill-window -t 1</code> # Kill window 1</li>
 <li><code>kill-pane -t 1</code> # Kill pane 1</li>
@@ -8639,8 +8715,11 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>except itself</code> # This means enabling the hotkey (<em>Shift q</em>) only</li>
-<li><code>Global Speed</code> # A [[Google Chrome]] #extension to set the speed of web pages</li>
-<li><code>Shift q</code> # To avoid hotkeys conflicts with other #extension (e.g. #Vimium )</li>
+<li><code>Global Speed</code> # A Google Chrome extension to set the speed of web pages<ul>
+<li><code>Ctrl-m</code> # Mute</li>
+</ul>
+</li>
+<li><code>Shift q</code> # To avoid hotkeys conflicts with other extension (e.g. Vimium )</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
