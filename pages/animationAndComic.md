@@ -1,4 +1,5 @@
 ### "Animation"
+- Edens Zero - 15 animation
 - 仙武传 - 08
 - 遮天 - 03
 - 剑域风云 (Part1+2) - 40+33
