@@ -304,8 +304,8 @@ togglePDFDarkMode();
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Another way<pre><code>import os
-os.system(&#39;clear&#39;)
+<li>Another way<pre><code>&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.system(&#39;clear&#39;)
 </code></pre>
 </li>
 <li>Because to clear the screen like in Linux.</li>
@@ -6156,7 +6156,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-notify-send">Use notify-send</h4>
+<li><h4 id="use-notify-send">Use &quot;notify-send&quot;</h4>
 <ul>
 <li><code>notify-send &quot;$(cal)&quot;</code><ul>
 <li><code>cal</code> # A shell command about calendar</li>
@@ -6166,10 +6166,8 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Install notify-send<ul>
-<li><code>doas emerge -aq x11-libs/libnotify</code><ul>
-<li><code>doas emerge -aq x11-misc/dunst</code> # Try it if <em>libnotify</em> doesn&#39;t work</li>
-</ul>
-</li>
+<li><code>doas emerge -aq x11-libs/libnotify</code></li>
+<li><code>doas emerge -aq x11-misc/notification-daemon</code></li>
 </ul>
 </li>
 <li>Solve the problem<pre><code>Error spawning command line “dbus-launch --autolaunch=450faa763c2a5a8029678965639ae3a2 --binary-syntax --close-stderr”: Child process exited with code 1
@@ -7246,7 +7244,7 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 </ul>
 <hr>
 <ul>
-<li><h4 id="set-rounded-corners-and-opacity-in-i3">Set rounded corners and opacity in #i3</h4>
+<li><h4 id="set-rounded-corners-and-opacity-in-i3">Set rounded corners and opacity in i3</h4>
 <ul>
 <li><code>doas emerge -aq x11-misc/picom</code></li>
 <li><code>vim ~/.config/i3/config</code><pre><code>exec picom --daemon
@@ -7960,7 +7958,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>C-b L</code> # Last session (previously used)</li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
-<li><code>join-pane</code> # Join pane</li>
+<li><code>join-pane -t 1</code> # Join pane</li>
 <li><code>break-pane</code> # Break pane to a window</li>
 <li><code>move-window -t 2:2</code> # Move window to another session</li>
 <li><code>kill-session -t 15</code> # Kill session target 15</li>
@@ -9567,23 +9565,31 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li>dark theme #Ventoy #CLI<ul>
-<li><code>sudo ./VentoyPlugson.sh /dev/sdc</code> # Type it in your Shell (terminal)</li>
-<li><code>http://127.0.0.1:24681</code> # Type it in your browser</li>
+<li><h4 id="set-dark-mode-in-ventoy">Set dark mode in Ventoy</h4>
+<ul>
+<li><code>doas ./VentoyPlugson.sh /dev/sdc</code></li>
+<li><code>http://127.0.0.1:24681</code></li>
+<li>Change the &quot;display_mode&quot; in &quot;Theme Plugin&quot; from &quot;GUI&quot; to &quot;CLI&quot;</li>
+</ul>
+</li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>/dev/sdc</code> # Your block device name (e.g. /dev/sda, /dev/sdb, etc.) by typing &quot;lsblk&quot; in your Shell (terminal)</li>
+<li><code>doas mount /dev/sdc1 /mnt/SanDisk</code> # Mount it before using the command</li>
+<li><code>/dev/sdc</code> # Replace it with your block device<ul>
+<li><code>lsblk</code> # Get it (e.g. /dev/sda, /dev/sdb, etc.)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1669358377096_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1669358556131_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1669358913831_0.png" alt="image.png"></li>
-<li><a href="https://www.ventoy.net/en/plugin_plugson.html">Plugson . Ventoy</a></li>
+<li><a href="https://www.ventoy.net/en/plugin_plugson.html">https://www.ventoy.net/en/plugin_plugson.html</a></li>
+<li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+<hr>
 <hr>
 <ul>
 <li>Superscripted #Markdown<ul>

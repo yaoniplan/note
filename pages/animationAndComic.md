@@ -1,5 +1,5 @@
 ### "Animation"
-- Edens Zero - 22 0842 animation
+- Blade & Soul - 02 1616 animation https://www.youtube.com/watch?v=dANELEOj9WA
 - 仙武传 - 08
 - 遮天 - 03
 - 剑域风云 (Part1+2) - 40+33
@@ -238,6 +238,7 @@
 - guard(end)
 
 ### Animation
+- Edens Zero (Part1+2) - 25+01 # Plot predictable
 - Dead Mount Death Play / 亡骸游戏 - 04 1010 # Slow pace
 - 六道的恶女们 - 04 # For children or teens
 - Now and Then, Here and There / 此时此刻的我 - 13 # End of the first part.
