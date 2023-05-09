@@ -22,6 +22,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="clone-a-development-branch-of-repository-with-git">Clone a development branch of repository with Git</h4>
+<ul>
+<li><code>git clone -b development git@192.168.10.100:/var/git/note.git</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-b</code> # Branch</li>
+<li><code>development</code> # Replace it with your branch name</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>git clone --help</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="find-a-file-in-the-current-directory">Find a file in the current directory</h4>
 <ul>
 <li><code>find . -name &quot;github*&quot;</code></li>
@@ -98,7 +116,10 @@
 <li><code>-i</code> # In place</li>
 <li><code>1</code> # The first line</li>
 <li><code>i</code> # Insert</li>
-<li><code>\</code> # Escape the newline character</li>
+<li><code>\</code> # Escape the newline character<ul>
+<li>No space after backslash</li>
+</ul>
+</li>
 <li><code>~/note/index.html</code> # Replace it with your index.html</li>
 <li>Because to convert Markdown to HTML.</li>
 </ul>
@@ -457,7 +478,7 @@ curl --head --silent https://google.com
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-npm">Use &quot;npm&quot;</h4>
+<li><h4 id="the-abbreviation-of-node-package-manager-is-npm">The abbreviation of &quot;Node Package Manager&quot; is &quot;npm&quot;.</h4>
 <ul>
 <li><code>doas npm install -g marked</code> # Install a package</li>
 </ul>
@@ -3841,7 +3862,7 @@ dns_servers_eno1=&quot;192.168.10.1&quot;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>git@192.168.10.100</code> # Replace it with server</li>
-<li>In fact, it appends client&#39;s <em>id_rsa.pub</em> file to server&#39;s <em>~/.ssh/authorized_keys</em> file<ul>
+<li>In fact, it appends client&#39;s <em>id_rsa.pub</em> content to server&#39;s <em>~/.ssh/authorized_keys</em> file<ul>
 <li><code>ssh-keygen</code> # Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh-copy-id git@192.168.10.100
 /usr/bin/ssh-copy-id: ERROR: No identities found
 </code></pre>
@@ -6790,25 +6811,28 @@ set -g @continuum-save-interval &#39;1&#39;
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-cron">Use Cron</h4>
+<li><h4 id="use-crontab">Use &quot;crontab&quot;</h4>
 <ul>
 <li><code>crontab -e</code><pre><code>* * * * /bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
 @reboot /usr/bin/touch /home/yaoniplan/testTwo.md
-30 16 * * * /bin/bash $HOME/.local/bin/autoGitPush.sh
+30 16 * * * /bin/bash $HOME/.local/bin/pushCode.sh
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>* * * * *</code> # Every minute when the computer is running</li>
-<li><code>/bin/bash</code> # Path of command</li>
+<li><code>/bin/bash</code> # Path of command<ul>
+<li><code>which bash</code> # Get it</li>
+</ul>
+</li>
 <li><code>/home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh</code> # Argument of command</li>
 <li><code>@reboot</code> # Every time when the computer is turned on</li>
 <li><code>30 16 * * *</code> # 16:30 every day</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://stackoverflow.com/questions/34753831/execute-a-shell-script-everyday-at-specific-time">linux - Execute a shell script everyday at specific time - Stack Overflow</a></li>
+<li><a href="https://stackoverflow.com/questions/34753831/execute-a-shell-script-everyday-at-specific-time">https://stackoverflow.com/questions/34753831/execute-a-shell-script-everyday-at-specific-time</a></li>
 <li><a href="https://github.com/tmux-plugins/tmux-continuum/issues/99#issuecomment-992457058">https://github.com/tmux-plugins/tmux-continuum/issues/99#issuecomment-992457058</a></li>
 </ul>
 </li>
@@ -7455,6 +7479,7 @@ dotfiles push -u origin master
 </li>
 <li>Second machine<pre><code>git clone --bare https://github.com/yaoniplan/dotfiles.git $HOME/.dotfiles
 echo &quot;alias dotfiles=&#39;/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
+source ~/.bashrc
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
 </code></pre>
@@ -7463,8 +7488,8 @@ dotfiles config --local status.showUntrackedFiles no
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>dotfiles config --local status.showUntrackedFiles no</code> # Hide untracked files</li>
-<li>Replace <em>.bashrc</em> with your dotfiles</li>
-<li>Replace <em>yaoniplan</em> with your user name</li>
+<li>Replace &quot;.bashrc&quot; with your file name (e.g. .zshrc)</li>
+<li>Replace &quot;yaoniplan&quot; with your user name</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -9578,6 +9603,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><code>lsblk</code> # Get it (e.g. /dev/sda, /dev/sdb, etc.)</li>
 </ul>
 </li>
+<li>Warning: It has some bugs about displaying.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
