@@ -21,29 +21,28 @@
 </head>
 <body>
   <article class="markdown-body">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>yaoniplan</title>
-  <link rel="stylesheet" href="assets/github-markdown-dark.css">
-  <style>
-    .markdown-body {
-      box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
-    }
-    @media (max-width: 767px) {
-      .markdown-body {
-        padding: 15px;
-      }
-    }
-  </style>
-</head>
-<body>
-  <article class="markdown-body">
+<ul>
+<li><h4 id="the-abbreviation-of-carbon-monoxide-is-co">The abbreviation of &quot;carbon monoxide&quot; is &quot;CO&quot;.</h4>
+<ul>
+<li>A gas</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Bind to hemoblobin<ul>
+<li>Does not carry oxygen</li>
+<li>Feel dizzy</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li>In the fire</li>
+<li><a href="https://en.wikipedia.org/wiki/Carbon_monoxide">https://en.wikipedia.org/wiki/Carbon_monoxide</a></li>
+</ul>
+</li>
+</ul>
+<hr>
 <ul>
 <li><h4 id="clone-a-development-branch-of-repository-with-git">Clone a development branch of repository with Git</h4>
 <ul>
@@ -72,7 +71,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-g</code> # Global</li>
-<li><code>tmux source-file ~/.tmux.conf</code> # Make the changes effective</li>
+<li><code>tmux source-file ~/.tmux.conf</code> # Make changes effective</li>
 <li>Because to show more space.</li>
 </ul>
 </li>
@@ -4904,8 +4903,11 @@ Include conf/extra/httpd-ssl.conf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6</code> # Replace it with your UUID of block device</li>
-<li><code>/mnt/Toshiba/</code> # Replace it with your mount point</li>
+<li><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6</code> # Replace it with your UUID of block device<ul>
+<li><code>doas blkid</code> # Get it</li>
+</ul>
+</li>
+<li><code>/mnt/Toshiba</code> # Replace it with your mount point</li>
 <li><code>ext4</code> # Replace it with your type of block device</li>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
 <li>Mount all filesystems without rebooting<ul>
@@ -4919,7 +4921,6 @@ Include conf/extra/httpd-ssl.conf
 <li><code>man mount</code></li>
 <li><code>man lsblk</code></li>
 <li><code>man chown</code></li>
-<li><code>doas blkid</code></li>
 <li><a href="https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/">https://www.howtogeek.com/444814/how-to-write-an-fstab-file-on-linux/</a></li>
 </ul>
 </li>
@@ -13482,9 +13483,6 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 </ul>
 </li>
 </ul>
-  </article>
-</body>
-</html>
   </article>
 </body>
 </html>
