@@ -91,6 +91,7 @@
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-s</code> # Shell</li>
 <li><code>cat /etc/shells</code> # List shells</li>
+<li><code>echo $SHELL</code> # View the current shell</li>
 <li><code>doas reboot</code> # Make changes effective</li>
 </ul>
 </li>
@@ -2868,10 +2869,17 @@ git push origin master
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>head readme</code> # Replace it with your desired command</li>
+<li>Specify PATH in ssh command<pre><code>ssh -t yaoniplan@192.168.10.100 &#39;export PATH=$PATH:$HOME/.local/bin; backupPrivatefiles.sh&#39;
+</code></pre>
+<ul>
+<li><code>-t</code> # Tty</li>
+</ul>
+</li>
 <li>Because to pass the level about &quot;logout when logging in with SSH&quot;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 <li><img src="../assets/2023-03-15_12:17:57.png" alt="2023-03-15_12:17:57.png"></li>
 <li><a href="https://mayadevbe.me/posts/overthewire/bandit/level19/">https://mayadevbe.me/posts/overthewire/bandit/level19/</a></li>
 </ul>
@@ -5038,7 +5046,7 @@ ifconfig_re0=&quot;DHCP&quot;
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-abbreviation-of-free-berkeley-software-distribution-is-freebsd">The abbreviation of Free Berkeley Software Distribution is FreeBSD</h4>
+<li><h4 id="the-abbreviation-of-free-berkeley-software-distribution-is-freebsd">The abbreviation of &quot;Free Berkeley Software Distribution&quot; is &quot;FreeBSD&quot;.</h4>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>An operating system</li>
@@ -5962,7 +5970,7 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-ssh">Use SSH</h4>
+<li><h4 id="use-ssh">Use &quot;ssh&quot;</h4>
 <ul>
 <li><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></li>
 </ul>
@@ -5978,9 +5986,16 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </li>
 <li><code>-p</code> # Port</li>
 <li><code>2220</code> # Port</li>
-<li>OpenRC in Gentoo Linux<ul>
+<li>In OpenRC<ul>
 <li><code>doas rc-update add sshd default</code> # Add <em>sshd</em> to the <em>default</em> runlevel</li>
 <li><code>doas rc-service sshd status</code> # Get <em>sshd</em> service status</li>
+</ul>
+</li>
+<li>In SystemD<ul>
+<li><code>doas systemctl start sshd</code> # Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh yaoniplan@192.168.10.105
+ssh: connect to host 192.168.10.105 port 22: Connection refused
+</code></pre>
+</li>
 </ul>
 </li>
 <li>If you use USB to share WIFI with your phone, your connection may not respond, the solution is to connect with a network cable</li>
@@ -8123,6 +8138,13 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.tmux.conf</code> # solve a problem about <code>join-pane -t 0</code><pre><code># Set the base index to one
+set -g base-index 1
+</code></pre>
+<ul>
+<li>Quit and open tmux to make changes effective</li>
+</ul>
+</li>
 <li><code>tmux ls</code> # List all sessions<ul>
 <li><code>ls</code> # list-sessions</li>
 </ul>
@@ -8134,6 +8156,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><em><strong>References</strong></em><ul>
 <li><code>man tmux</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
+<li><a href="https://wiki.gentoo.org/wiki/Tmux">https://wiki.gentoo.org/wiki/Tmux</a></li>
 <li><a href="https://github.com/jbranchaud/til/blob/master/tmux/break-current-pane-out-to-separate-window.md">https://github.com/jbranchaud/til/blob/master/tmux/break-current-pane-out-to-separate-window.md</a></li>
 <li><a href="https://leimao.github.io/blog/Tmux-Tutorial/">https://leimao.github.io/blog/Tmux-Tutorial/</a></li>
 <li><a href="https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd">https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd</a></li>
