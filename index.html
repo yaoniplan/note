@@ -40,6 +40,85 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="hide-status-bar-in-tmux">Hide status bar in tmux</h4>
+<ul>
+<li><code>vim ~/.tmux.conf</code><pre><code>set-option -g status off
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-g</code> # Global</li>
+<li><code>tmux source-file ~/.tmux.conf</code> # Make the changes effective</li>
+<li>Because to show more space.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man tmux</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="change-shell-from-zsh-to-bash-in-linux">Change shell from zsh to bash in Linux</h4>
+<ul>
+<li><code>chsh -s /bin/bash</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-s</code> # Shell</li>
+<li><code>cat /etc/shells</code> # List shells</li>
+<li><code>doas reboot</code> # Make changes effective</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>man chsh</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-intelligence-quotient-is-iq">The abbreviation of &quot;intelligence quotient&quot; is &quot;IQ&quot;.</h4>
+<ul>
+<li>A score<ul>
+<li>Mental age / chronological age</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><a href="https://en.wikipedia.org/wiki/Intelligence_quotient">https://en.wikipedia.org/wiki/Intelligence_quotient</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="redirect-all-output-in-linux">Redirect all output in Linux</h4>
+<ul>
+<li><code>redshift -O 1500 &amp;&gt;/dev/null &amp;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>&amp;</code> # Standard output and standard error</li>
+<li><code>/dev/null</code> # Empty file</li>
+<li>Because to run a script silently.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>man bash</code><ul>
+<li><code>/&amp;&gt;</code></li>
+<li><code>/dev/null</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="find-a-file-in-the-current-directory">Find a file in the current directory</h4>
 <ul>
 <li><code>find . -name &quot;github*&quot;</code></li>
@@ -1728,6 +1807,7 @@ x11-wm/dwm savedconfig
 <li><code>vim ~/.xprofile</code><pre><code># Excute automatically when start X11 session
 redshift -O 1500 &amp;
 feh --bg-fill /home/yaoniplan/note/assets/dark.jpg &amp;
+clash &amp;
 </code></pre>
 </li>
 <li><code>doas vim /etc/portage/savedconfig/x11-wm/dwm-9999</code><pre><code class="language-c">/* Change the terminal command from `st` to `kitty tmux` */
@@ -7944,7 +8024,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><h4 id="copy-text-from-tmux-to-clipboard-in-linux">Copy text from tmux to clipboard in Linux</h4>
 <ul>
-<li><code>doas vim /etc/tmux.conf</code><pre><code>bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel &quot;xclip -i -f -selection primary | xclip -i -selection clipboard&quot;
+<li><code>doas vim ~/.tmux.conf</code><pre><code>bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel &quot;xclip -i -f -selection primary | xclip -i -selection clipboard&quot;
 </code></pre>
 </li>
 </ul>
@@ -8928,6 +9008,7 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li>If your clipboard is not working<ul>
 <li><code>:version</code> # Check the clipboard feature in Vim
 <img src="../assets/2022-12-17_16-09_1671264573981_0.png" alt="2022-12-17_16-09.png"></li>
+<li><code>doas apt install vim-gtk3</code> # In Debian-based distribution</li>
 <li><code>sudo vim /etc/portage/package.use/zz-autounmask</code> # Edit and Add the USE flag to enable the clipboard feature<pre><code># required by app-editors/vim
 app-editors/vim X
 </code></pre>
@@ -12933,10 +13014,6 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li>我的 i3 网络代理之路<ul>
 <li><img src="../assets/chromium_%E6%88%90%E5%8A%9F%E4%BB%A3%E7%90%86_2022-08-22_16-15-32_1661159702161_0.png" alt="chromium 成功代理 2022-08-22 16-15-32.png"></li>
 <li><img src="../assets/%E6%B5%8F%E8%A7%88%E5%99%A8_%E7%BB%88%E7%AB%AF_%E6%88%90%E5%8A%9F%E4%BB%A3%E7%90%86_2022-08-22_16-40-25_1661159787172_0.png" alt="浏览器 终端 成功代理 2022-08-22 16-40-25.png"></li>
-</ul>
-</li>
-<li>[[arch]] [[linux]] [[i3]]锁<ul>
-<li><code>i3lock</code> //命令行输入，即可锁屏</li>
 </ul>
 </li>
 <li>[[arch]] [[linux]] [[i3]]文件管理器<ul>

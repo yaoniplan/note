@@ -1,15 +1,13 @@
 ### "Animation"
-- Blade & Soul - 02 1616 animation https://www.youtube.com/watch?v=dANELEOj9WA
-- 仙武传 - 08
+- 仙武传 - 09
 - 遮天 - 03
-- 剑域风云 (Part1+2) - 40+33
-- 赘婿 - 03
+- 剑域风云 (Part1+2) - 40+34
 - 勇者死了 - 05
 - 一世独尊 - 08
 - 火凤燎原 - 03
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+34
 - Mashle: Magic and Muscles / 物理魔法使马修 - 05
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 05
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 06 0555 animation
 - 向涟苍士献上纯洁 - #NSFW 04
 - 地狱乐 - 05
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+05
@@ -238,6 +236,8 @@
 - guard(end)
 
 ### Animation
+- 赘婿 - 04 1523 # Commercials and alternate history that lowers intelligence quotient
+- Blade & Soul - 02 # Not found resource
 - Edens Zero (Part1+2) - 25+01 # Plot predictable
 - Dead Mount Death Play / 亡骸游戏 - 04 1010 # Slow pace
 - 六道的恶女们 - 04 # For children or teens
