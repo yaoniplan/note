@@ -28,7 +28,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Bind to hemoblobin<ul>
+<li>Bind to hemoglobin<ul>
 <li>Does not carry oxygen</li>
 <li>Feel dizzy</li>
 </ul>
@@ -6933,6 +6933,16 @@ set -g @continuum-save-interval &#39;1&#39;
 <li><code>/home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh</code> # Argument of command</li>
 <li><code>@reboot</code> # Every time when the computer is turned on</li>
 <li><code>30 16 * * *</code> # 16:30 every day</li>
+<li>Make the changes effective<ul>
+<li>In OpenRC<pre><code>doas rc-update add cronie default
+doas /etc/init.d/cronie start
+</code></pre>
+</li>
+<li>In SystemD<pre><code>doas systemctl start cronie.service
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
