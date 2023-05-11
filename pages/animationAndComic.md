@@ -18,8 +18,8 @@
 - 灵剑尊 -  240/381
 - 武神主宰 - 192/331
 - 独步逍遥 - 168/310
-- 完美世界 - 38/109 animation
-- Against the Sky Supreme / 逆天至尊 - 53/194
+- 完美世界 - 38/109
+- Against the Sky Supreme / 逆天至尊 - 53/194 animation
 - 冰火魔厨 - 04/75
 - 一念永恒 (Part1+2) - 52+43
 - 斗破苍穹年番 - 42

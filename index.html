@@ -22,6 +22,31 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-systemctl">Use &quot;systemctl&quot;</h4>
+<ul>
+<li><code>doas systemctl enable cronie</code><ul>
+<li><code>doas /etc/init.d/cronie start</code></li>
+<li>Every time at boot time</li>
+</ul>
+</li>
+<li><code>doas systemctl start cronie</code><ul>
+<li><code>doas rc-update add cronie default</code></li>
+<li>Once now</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>cronie</code> # Replace it with your service</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.gentoo.org/wiki/OpenRC_to_systemd_Cheatsheet">https://wiki.gentoo.org/wiki/OpenRC_to_systemd_Cheatsheet</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-carbon-monoxide-is-co">The abbreviation of &quot;carbon monoxide&quot; is &quot;CO&quot;.</h4>
 <ul>
 <li>A gas</li>
@@ -39,6 +64,18 @@
 <li>ChatGPT</li>
 <li>In the fire</li>
 <li><a href="https://en.wikipedia.org/wiki/Carbon_monoxide">https://en.wikipedia.org/wiki/Carbon_monoxide</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-teletypewriter-is-tty">The abbreviation of &quot;teletypewriter&quot; is &quot;tty&quot;.</h4>
+<ul>
+<li>A command</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Tty_(Unix)">https://en.wikipedia.org/wiki/Tty_(Unix)</a></li>
 </ul>
 </li>
 </ul>
@@ -1483,7 +1520,8 @@ sleep &quot;$1&quot;; notification
 </ul>
 </li>
 <li>Because to use the Feh program to view images.<ul>
-<li>It is more convenient in terminal.</li>
+<li>It is more convenient in VimWiki.</li>
+<li><code>q</code> # Quit</li>
 </ul>
 </li>
 </ul>
@@ -3019,11 +3057,16 @@ git push origin master
 <li>Play video smoothly</li>
 </ul>
 </li>
+<li><code>doas emerge -aq net-misc/yt-dlp</code><ul>
+<li>Play url of the website (e.g. YouTube, Bilibili, etc.)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><code>man mpv</code></li>
+<li><a href="https://wiki.gentoo.org/wiki/Mpv">https://wiki.gentoo.org/wiki/Mpv</a></li>
 </ul>
 </li>
 </ul>
@@ -3579,165 +3622,6 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because for future reference.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="set-compact-ui-in-firefox">Set compact UI in Firefox</h4>
-<ul>
-<li><code>vim userChrome.css</code><pre><code class="language-css">:root {
-  --globle-height: 28px !important;
-  /* 地址栏最小宽度 */
-  --url-container-width: 250px !important;
-  /* 地址栏最大宽度 */
-  --url-container-max-width: 600px !important;
-  --url-container-max-height: 28px !important;
-  --urlbar-min-height: 28px !important;
-  /* 标签页非选中宽度 */
-  --tab-min-width-c: 100px !important;
-  /* 标签页选中宽度 */
-  --tab-max-width-c: 200px !important;
-  --tab-min-height: 26px !important;
-  --tab-max-height: 26px !important;
-}
-
-:root[uidensity=&quot;compact&quot;] {
-  --tab-min-height: var(--globle-height) !important;
-}
-
-:root[uidensity=&quot;compact&quot;] #urlbar {
-  min-height: var(--globle-height) !important;
-}
-
-/* 隐藏元素 */
-/* 忘记是什么了 */
-#navigator-toolbox #titlebar #toolbar-menubar, 
-hbox.titlebar-spacer:nth-child(3),
-hbox.titlebar-spacer:nth-child(1),
-/* 标签页关闭按钮 */.tab-close-button,
-/* 新建标签页按钮 */#tabs-newtab-button,
-/* 地址栏前进按钮 */ #navigator-toolbox #nav-bar #nav-bar-customization-target #back-button,
-/* 地址栏后退按钮 */#navigator-toolbox #nav-bar #nav-bar-customization-target #forward-button,
-/* 地址栏搜索图标 */#identity-box,
-/* 地址栏安全图标 */#tracking-protection-icon-container,
-/* 地址栏背景元素 */#urlbar-background {
-  display: none !important;
-}
-
-/* 设置整个导航工具栏为弹性盒模型，反转地址栏和标签栏的位置 */
-#navigator-toolbox {
-  /* position: relative !important; */
-  display: flex !important;
-  justify-content: start !important;
-  flex-direction: row-reverse !important;
-  flex-wrap: wrap !important;
-}
-
-#navigator-toolbox &gt; #titlebar {
-  -moz-appearance: unset !important;
-  margin-left: 1px !important;
-  flex: 1 !important;
-  height: var(--globle-height) !important;
-}
-
-/* flex设置为0后，max-width无效，因此不用设置max-width + !important，
-    从而导致关闭标签后max-width因为!important属性而无法设置为空，进而导致标签无法关闭的bug */
-.tabbrowser-tab:-moz-lwtheme {
-  width: var(--tab-min-width-c) !important;
-  -moz-box-flex: 0 !important;
-}
-
-.tabbrowser-tab[visuallyselected=&quot;true&quot;] {
-  width: var(--tab-max-width-c) !important;
-}
-
-.tab-background {
-  height: 28px !important;
-  border-radius: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-.tab-content {
-  padding: 0 5px !important;
-  height: 28px !important;
-}
-
-/* 地址栏,消除一些边距 */
-#nav-bar,
-#nav-bar-customization-target,
-#urlbar-container {
-  margin: 0px !important;
-  padding: 0px !important;
-  height: var(--globle-height) !important;
-}
-
-#urlbar-container {
-  min-width: var(--url-container-width) !important;
-  height: var(--url-container-max-height) !important;
-  max-height: var(--url-container-max-height) !important;
-}
-
-/* 地址栏宽度动画 */
-#nav-bar &gt; #nav-bar-customization-target &gt; #urlbar-container {
-  width: var(--url-container-width) !important;
-  transition: width 400ms !important;
-}
-#nav-bar
-  &gt; #nav-bar-customization-target
-  &gt; #urlbar-container:hover:focus-within {
-  width: var(--url-container-max-width) !important;
-  transition: width 400ms !important;
-}
-
-#urlbar[breakout]:hover &gt; vbox.urlbarView {
-  display: block !important;
-}
-
-#urlbar &gt; vbox.urlbarView {
-  background-color: #37363ac9 !important;
-  display: none !important;
-}
-
-/* 书签栏 */
-#PersonalToolbar {
-  width: 28px !important;
-  height: 28px !important;
-  padding-inline: 0 !important;
-  margin-right: 1px !important;
-}
-
-/* 书签列表中的元素长宽 */
-menuitem.bookmark-item {
-  min-width: 20em !important;
-  max-width: 20em !important;
-}
-
-/* 修改书签组图标 */
-#PlacesChevron {
-  list-style-image: url(&quot;chrome://browser/skin/bookmark.svg&quot;) !important;
-}
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>about:config</code><ul>
-<li><code>toolkit.legacyUserProfileCustomizations.stylesheets</code> # Set to &quot;true&quot;</li>
-</ul>
-</li>
-<li><code>about:profiles</code><ul>
-<li><code>cd /home/yaoniplan/.mozilla/firefox/3y390lx5.default-release/</code></li>
-<li><code>mkdir chrome/</code></li>
-<li>Put userChrome.css file into chrome/ directory</li>
-</ul>
-</li>
-<li>Close the Firefox and then open it # Make the changes effective</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-03-05_15:58:55.png" alt="2023-03-05_15:58:55.png"></li>
-<li><a href="https://github.com/MapoMagpie/firefox-compact-ui">https://github.com/MapoMagpie/firefox-compact-ui</a></li>
 </ul>
 </li>
 </ul>
@@ -5406,7 +5290,8 @@ doas make install
 <li>tdrop # Not used yet because of too many dependencies</li>
 <li>qterminal # It works but quits when not focused</li>
 <li>tilda # It will create a new workspace</li>
-<li>guake # Iw works well</li>
+<li>guake # It works well</li>
+<li>yakuake # It works well on KDE</li>
 </ul>
 </li>
 </ul>
@@ -5992,7 +5877,8 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li>In SystemD<ul>
-<li><code>doas systemctl start sshd</code> # Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh yaoniplan@192.168.10.105
+<li><code>doas systemctl enable sshd</code> # Every time at boot time</li>
+<li><code>doas systemctl start sshd</code> # Once now<pre><code>yaoniplan@ubuntu2204:~$ ssh yaoniplan@192.168.10.105
 ssh: connect to host 192.168.10.105 port 22: Connection refused
 </code></pre>
 </li>
@@ -6953,7 +6839,8 @@ set -g @continuum-save-interval &#39;1&#39;
 doas /etc/init.d/cronie start
 </code></pre>
 </li>
-<li>In SystemD<pre><code>doas systemctl start cronie.service
+<li>In SystemD<pre><code>doas systemctl enable cronie
+doas systemctl start cronie
 </code></pre>
 </li>
 </ul>
@@ -9071,6 +8958,9 @@ app-editors/vim X
 </code></pre>
 <img src="../assets/2022-12-17_16-10_1671264653139_0.png" alt="2022-12-17_16-10.png"></li>
 <li><code>sudo emerge -q app-editors/vim</code> # Recompile it to enable the USE flag</li>
+<li><code>vim ~/.vimrc</code> # If the above methods does not work<pre><code>set clipboard+=unnamedplus
+</code></pre>
+</li>
 </ul>
 </li>
 </ul>
@@ -9079,11 +8969,13 @@ app-editors/vim X
 <li><img src="../assets/image_1670203463820_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670203935654_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670204012402_0.png" alt="image.png"></li>
+<li><a href="https://forum.manjaro.org/t/how-to-use-clipboard-on-vim-via-manjaro-kde/58826/8">https://forum.manjaro.org/t/how-to-use-clipboard-on-vim-via-manjaro-kde/58826/8</a></li>
 <li><a href="https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim">https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Vim">https://wiki.gentoo.org/wiki/Vim</a></li>
 </ul>
 </li>
 </ul>
+<hr>
 <hr>
 <ul>
 <li><h4 id="i-am-trying-to-mix-and-not-just-handedness-idea">I am trying to mix and not just handedness. #Idea</h4>
@@ -11077,7 +10969,7 @@ You can edit this.
 <li><a href="https://www.reddit.com/r/i3wm/comments/a6wk3h/what_are_mods_2_and_3/">What are Mods2 and 3?</a></li>
 </ul>
 </li>
-<li>[[linux]] <code>mkfs</code> # <code>make file system</code> shengchengwenjianxitong<ul>
+<li>[[linux]] <code>mkfs</code> # <code>make file system</code><ul>
 <li><em><strong>Reference</strong></em></li>
 <li><img src="../assets/image_1663210862359_0.png" alt="image.png"></li>
 </ul>
@@ -11536,10 +11428,6 @@ You can edit this.
 <li>[[linux]] [[i3]] my i3status <code>/etc/i3status.conf</code> (2022-09-07)<ul>
 <li><a href="../assets/i3status_1662511857709_0.conf">i3status.conf</a></li>
 <li><img src="../assets/2022-09-07_08-53_1662512093531_0.png" alt="2022-09-07_08-53.png"></li>
-</ul>
-</li>
-<li>[[linux]] [[i3]] my environment <code>/etc/environment</code> (2022-09-07)<ul>
-<li><a href="../assets/_1662512962570_0environment">environment</a></li>
 </ul>
 </li>
 <li>my chinese font (2022-09-07)<ul>
