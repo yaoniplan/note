@@ -66,7 +66,7 @@
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-abbreviation-of-desktop-environment-of-de">The abbreviation of &quot;Desktop Environment&quot; of &quot;DE&quot;.</h4>
+<li><h4 id="the-abbreviation-of-desktop-environment-is-de">The abbreviation of &quot;Desktop Environment&quot; is &quot;DE&quot;.</h4>
 <ul>
 <li>A bundle of programs</li>
 </ul>
@@ -158,7 +158,11 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-s</code> # Shell</li>
-<li><code>cat /etc/shells</code> # List shells</li>
+<li><code>chsh -l</code> # List shells<ul>
+<li><code>-l</code> # List</li>
+<li><code>cat /etc/shells</code> # Another way</li>
+</ul>
+</li>
 <li><code>echo $SHELL</code> # View the current shell</li>
 <li><code>doas reboot</code> # Make changes effective</li>
 </ul>
@@ -466,24 +470,6 @@ togglePDFDarkMode();
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://stackoverflow.com/questions/537522/standard-python-interpreter-has-a-vi-command-mode/538573#538573">https://stackoverflow.com/questions/537522/standard-python-interpreter-has-a-vi-command-mode/538573#538573</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="remove-blank-lines-in-vim">Remove blank lines in Vim</h4>
-<ul>
-<li><code>:%s/^\n//g</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>^</code> # Beginning of line</li>
-<li><code>\n</code> # Newline</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>:help \n</code></li>
-<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -2518,7 +2504,7 @@ http://natas4.natas.labs.overthewire.org/
 </ul>
 <hr>
 <ul>
-<li><h4 id="display-the-correct-date-and-time-in-ubuntu-server-2204">Display the correct date and time in Ubuntu Server 22.04</h4>
+<li><h4 id="display-the-correct-date-and-time-in-systemd">Display the correct date and time in Systemd</h4>
 <ul>
 <li><code>doas timedatectl set-timezone Asia/Shanghai</code></li>
 </ul>
@@ -5003,24 +4989,13 @@ ifconfig_re0=&quot;DHCP&quot;
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-abbreviation-of-manual-is-man-in-unix-like">The abbreviation of manual is man in Unix-like</h4>
+<li><h4 id="the-abbreviation-of-manual-is-man-in-unix-like">The abbreviation of &quot;manual&quot; is &quot;man&quot; in Unix-like.</h4>
+<ul>
+<li>Find a man if you have problems</li>
+</ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man man</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="mount-a-hard-drive-in-unix-like">Mount a hard drive in Unix-like</h4>
-<ul>
-<li><code>mkdir /mnt/yourHardDriveName/</code></li>
-<li><code>mount /mnt/yourHardDriveName/</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>umount /mnt/yourHardDriveName/</code> # Unmount</li>
-<li>Mount in an empty directory under the <em>/mnt/</em> directory</li>
 </ul>
 </li>
 </ul>
@@ -6731,6 +6706,7 @@ set number
 <ul>
 <li><h4 id="use-vim">Use &quot;vim&quot;</h4>
 <ul>
+<li><code>o</code> # Insert a new line below the cursor</li>
 <li><code>Ctrl-r</code> # Redo</li>
 <li><code>u</code> # Undo</li>
 <li><code>daw</code> # Delete a word<ul>
@@ -7442,24 +7418,6 @@ inactive-opcity = 0.4;
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-12_18-32_1673519575373_0.png" alt="2023-01-12_18-32.png"></li>
 <li><code>man unzip</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="undo-git-add">Undo <code>git add</code></h4>
-<ul>
-<li><code>git reset</code> # All</li>
-<li><code>git reset ~/.config/i3/config</code> # A file</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to remove a file from the index without changing anything else.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-01-11_09-13_1673399609678_0.png" alt="2023-01-11_09-13.png"></li>
-<li><a href="https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit">https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit</a></li>
 </ul>
 </li>
 </ul>
@@ -9003,9 +8961,6 @@ app-editors/vim X
 </code></pre>
 <img src="../assets/2022-12-17_16-10_1671264653139_0.png" alt="2022-12-17_16-10.png"></li>
 <li><code>sudo emerge -q app-editors/vim</code> # Recompile it to enable the USE flag</li>
-<li><code>vim ~/.vimrc</code> # If the above methods does not work<pre><code>set clipboard+=unnamedplus
-</code></pre>
-</li>
 </ul>
 </li>
 </ul>
@@ -9014,7 +8969,6 @@ app-editors/vim X
 <li><img src="../assets/image_1670203463820_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670203935654_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670204012402_0.png" alt="image.png"></li>
-<li><a href="https://forum.manjaro.org/t/how-to-use-clipboard-on-vim-via-manjaro-kde/58826/8">https://forum.manjaro.org/t/how-to-use-clipboard-on-vim-via-manjaro-kde/58826/8</a></li>
 <li><a href="https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim">https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Vim">https://wiki.gentoo.org/wiki/Vim</a></li>
 </ul>
@@ -9149,21 +9103,6 @@ yaoniplan@yaoniplan ~ $
 </ul>
 <hr>
 <ul>
-<li><h4 id="draw-only-if-more-than-one-container-is-in-the-workspace-i3">Draw only if more than one container is in the workspace #i3</h4>
-<ul>
-<li><pre><code>smart_gaps on
-smart_boards on
-</code></pre>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1669780064903_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1669780320669_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1669780442071_0.png" alt="image.png"></li>
-<li><a href="https://www.reddit.com/r/i3wm/comments/kjzehs/is_possible_to_add_gaps_when_only_one_window_is/">Is possible to add gaps when only one window is open? : i3wm</a>- ---</li>
-</ul>
-</li>
-</ul>
-</li>
 <li><h4 id="choose-a-keyboard-for-a-computer">Choose a keyboard for a #computer</h4>
 <ul>
 <li><code>Mechanical</code> <code>fast response</code> <code>PBT</code></li>
@@ -10581,18 +10520,6 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li><code>man cp</code> # have a problem finding a man</li>
 </ul>
 </li>
-<li>[[linux]] [[gentoo]]ssh iso # enter code in gentoo iso<pre><code>/etc/init.d/sshd start
-passwd root
-</code></pre>
-</li>
-<li>[[Vim]] insert a new line hotkey shotcuts<ul>
-<li><code>o</code> # insert a new line below the cursor (a lowercase letter) (of course, a uppercase letter <code>O</code> is above the cursor)</li>
-<li><em><strong>References</strong></em></li>
-<li><code>:help o</code> # enter it in vim with normal mode.</li>
-<li><img src="../assets/image_1664507849438_0.png" alt="image.png"></li>
-<li><code>vimtutor</code> # enter it in terminal of shell (But it only has basic commands.)</li>
-</ul>
-</li>
 <li><ul>
 <li>v5.0.0 EFI, linux swap 24GiB, no encryption, /dev/sda, desktop-systemd, gentoo cn mirror, no ~amd64, run mirrorselect, screenfetch, vim, i3-gaps, sddm # install compelete.</li>
 <li>v4.0.0 EFI, linux swap, no encryption, /dev/sda, systemd, gentoo cn mirror, no ~amd64, run mirrorselect, screenfetch # install compelete.</li>
@@ -10687,13 +10614,6 @@ w # write partitions to disk and exit
 </ul>
 <hr>
 <ul>
-<li>[[linux]] time date<ul>
-<li><code>sudo date 092823442022</code> # manually set date (<code>092823442022</code> is <code>2022-09-28 23:44:00</code>)</li>
-<li><em><strong>References</strong></em></li>
-<li><img src="../assets/image_1664380138610_0.png" alt="image.png"></li>
-</ul>
-</li>
-<li></li>
 <li>[[Git]] ignore files<ul>
 <li><code>.gitignore</code> # You can add what you want to ignore in the file.</li>
 <li><code>.git/info/exclude</code> # You can add what (e.g. <code>logseq/bak</code>) you want to ignore in the file. (after you changed directory (e.g. <code>cd ~/note</code>) of your repository)</li>
@@ -10925,17 +10845,9 @@ You can edit this.
 </li>
 <li><blockquote>
 <p>There is no tiger in the mountain, the monkey is the king. #quote
--- [[linux]] check time date</p>
+-- [[python]] name good habits</p>
 </blockquote>
 <ul>
-<li><code>date</code> # You can see local time.</li>
-<li><code>timedatectl</code> # You can see detailed information about time.</li>
-<li><em><strong>References</strong></em></li>
-<li><img src="../assets/image_1663557676224_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1663557706387_0.png" alt="image.png"></li>
-</ul>
-</li>
-<li>[[python]] name good habits<ul>
 <li><code>in English</code> # You can fluently read english tutorial after a while.</li>
 <li><code>camelCase</code> # lower camel case</li>
 <li><code>CamelCase</code> # upper camel case</li>
@@ -11297,13 +11209,28 @@ You can edit this.
 </li>
 </ul>
 </li>
-<li>[[Git]] 撤销 <code>git add .</code><ul>
-<li><code>git reset HEAD</code></li>
-<li><img src="../assets/image_1662701856440_0.png" alt="image.png"></li>
-<li><em><strong>参考资料</strong></em></li>
-<li><img src="../assets/image_1662701948003_0.png" alt="image.png"></li>
-<li><a href="https://blog.csdn.net/u011442726/article/details/94588440">git 如何取消 add 操作</a>
--- [[python]] 认识 Python</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="undo-git-add">Undo <code>git add</code></h4>
+<ul>
+<li><code>git reset</code> # All</li>
+<li><code>git reset ~/.config/i3/config</code> # A file</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to remove a file from the index without changing anything else.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-01-11_09-13_1673399609678_0.png" alt="2023-01-11_09-13.png"></li>
+<li><a href="https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit">https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[python]] 认识 Python<ul>
 <li><em><strong>进入 Python 开发环境</strong></em><ul>
 <li><code>python3</code> # 调用 interpreter (口译员；解释器) </li>
 <li><img src="../assets/image_1662597572591_0.png" alt="image.png"> </li>
@@ -11443,14 +11370,6 @@ You can edit this.
 </ul>
 </li>
 <li></li>
-<li>[[linux]] [[arch]]挂载 u 盘<ul>
-<li><del><code>sudo pacman -S udisks2</code> # 安装 udisks2 (之后再测试是否一定要安装)</del> (经测试不需要安装 udisks2)</li>
-<li><code>mkdir linshi</code> # 生成目录 (用来挂载的)</li>
-<li><code>sudo mount /dev/sdc1 ~/linshi</code> # 挂载 <code>/dev/sdc1</code> 在 <code>~/linshi</code> 下</li>
-<li><em><strong>参考资料</strong></em></li>
-<li><img src="../assets/image_1662507031034_0.png" alt="image.png"></li>
-</ul>
-</li>
 <li>[[linux]] <code>chown -R owner:group file</code><ul>
 <li><code>chown</code> # change owner (改变拥有者)</li>
 <li><code>-R</code> # R:recursive (递归的) (应用场景：连同目录及其下的所有文件及目录)</li>
@@ -12470,12 +12389,25 @@ You can edit this.
 </ul>
 <hr>
 <ul>
-<li>[[Vim]]删除空行<ul>
-<li><code>:g/^$/d</code></li>
-<li><em><strong>参考资料</strong></em></li>
-<li><a href="https://www.jianshu.com/p/61b75308d63a">vim删除空行</a></li>
+<li><h4 id="remove-blank-lines-in-vim">Remove blank lines in Vim</h4>
+<ul>
+<li><code>:%s/^\n//g</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>^</code> # Beginning of line</li>
+<li><code>\</code> # Escape</li>
+<li><code>n</code> # Newline</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>:help \n</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>英语 <code>, etc.</code> (等等) 使用<ul>
 <li><code>comic1, comic2, etc.</code> # 漫画1, 漫画2, 等等。</li>
 <li><em><strong>注意事项</strong></em></li>
@@ -12484,9 +12416,12 @@ You can edit this.
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662286718634_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1662286755402_0.png" alt="image.png"></li>
-<li><a href="https://blog.csdn.net/Anne033/article/details/121046075">学术英语：关于such as, for example, etc., and so on, i.e., 和e.g.的使用</a>
--- 断电半小时(今年断电次数有点多)，考虑备用能源(发电机……) in the future #Idea
--- [[linux]] <code>command [-options] [parameter]</code></li>
+<li><a href="https://blog.csdn.net/Anne033/article/details/121046075">学术英语：关于such as, for example, etc., and so on, i.e., 和e.g.的使用</a></li>
+</ul>
+</li>
+<li></li>
+<li>断电半小时(今年断电次数有点多)，考虑备用能源(发电机……) in the future #Idea
+-- [[linux]] <code>command [-options] [parameter]</code><ul>
 <li><code>command [-options] [parameter]</code> # 终端命令格式</li>
 <li><em><strong>注意事项</strong></em></li>
 <li><code>command</code> # 命令名</li>
@@ -12517,15 +12452,6 @@ You can edit this.
 <li><img src="../assets/%E8%80%80%E6%8B%9F%E8%AE%A1%E5%88%92-v2.1.06_1662006066216_0.png" alt="耀拟计划-v2.1.06.png -github.com"></li>
 <li><img src="../assets/%E8%80%80%E6%8B%9F%E8%AE%A1%E5%88%92-v2.1.06-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97_1662006078134_0.png" alt="耀拟计划-v2.1.06-更新日志.png - github.com"></li>
 <li><a href="../assets/%E8%80%80%E6%8B%9F%E8%AE%A1%E5%88%92-v2.1.06-all_1662006096051_0.xlsx">耀拟计划-v2.1.06-all.xlsx - github.com</a></li>
-</ul>
-</li>
-<li><blockquote>
-<p>有问题找男人 #quote</p>
-</blockquote>
-<ul>
-<li><em><strong>参考资料</strong></em></li>
-<li>[[linux]]<a href="%E6%89%8B%E5%86%8C">[man]</a>命令 # man: manual (手册)</li>
-<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">018 18-Linux命令-06-查阅查阅终端命令帮助信息.mp4</a></li>
 </ul>
 </li>
 <li>[[python]] <code>x op= expression</code><ul>
@@ -12786,16 +12712,34 @@ for_window [class=&quot;^st-256color$&quot;] move scratchpad
 <li><code>bindsym Print exec flameshot gui</code> //开启截图 (如果没有 flameshot 的话，请安装 flameshot)</li>
 </ul>
 </li>
-<li>[[i3]] [[gaps]]<pre><code>for_window [class=&quot;^.*&quot;] border pixel 6 //隐藏窗口标题栏，并设置窗口边框像素（可以自定义数字）
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-gaps-in-i3">Set gaps in i3</h4>
+<pre><code>for_window [class=&quot;^.*&quot;] border pixel 6 //隐藏窗口标题栏，并设置窗口边框像素（可以自定义数字）
 gaps inner 5 //相邻 window（窗口）之间的距离
 gaps outer 0 //window（窗口）与屏幕边缘之间的距离
 smart_gaps on //如果 workspace（工作空间）只有一个 window（窗口），将禁用 gaps（间隙）
 </code></pre>
-<ul>
-<li><em><strong>References(参考)</strong></em></li>
-<li><a href="https://wiki.gentoo.org/wiki/I3#Configuring_gaps_between_tiled_windows_.28i3-gaps_only.29" title="i3 - Gentoo Wiki">i3 - Gentoo Wiki</a></li>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Draw only if more than one container is in the workspace<pre><code>smart_gaps on
+smart_boards on
+</code></pre>
+</li>
 </ul>
 </li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1669780064903_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1669780320669_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1669780442071_0.png" alt="image.png"></li>
+<li><a href="https://www.reddit.com/r/i3wm/comments/kjzehs/is_possible_to_add_gaps_when_only_one_window_is/">https://www.reddit.com/r/i3wm/comments/kjzehs/is_possible_to_add_gaps_when_only_one_window_is/</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/I3#Configuring_gaps_between_tiled_windows_.28i3-gaps_only.29">https://wiki.gentoo.org/wiki/I3#Configuring_gaps_between_tiled_windows_.28i3-gaps_only.29</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[i3]] [[exit]]<ul>
 <li><code>bindsym $mod+Shift+e exit</code> //退出 i3，不用鼠标 (移除 &quot;exec ……&quot; 这个警告，并添加 &quot;exit&quot;)</li>
 </ul>
@@ -12837,12 +12781,6 @@ smart_gaps on //如果 workspace（工作空间）只有一个 window（窗口�
 </ul>
 <hr>
 <ul>
-<li>[[linux]][[Vim]]粘贴<ul>
-<li><code>&quot;*p</code> //从系统剪贴板粘贴到vim (复制之后，在vim中使用这个命令)</li>
-<li><em><strong>References</strong></em></li>
-<li><a href="https://www.cnblogs.com/huahuayu/p/12235242.html" title="一文搞懂vim复制粘贴">一文搞懂vim复制粘贴</a></li>
-</ul>
-</li>
 <li>[[i3]]workspace(工作区)图标<ul>
 <li>将复制的图标粘贴到如图所示的位置</li>
 <li><img src="../assets/image_1661419717703_0.png" alt="image.png"> </li>
@@ -12878,13 +12816,27 @@ echo &#39;source ~/powerlevel10k/powerlevel10k.zsh-theme&#39; &gt;&gt;~/.zshrc
 <li><a href="https://github.com/romkatv/powerlevel10k#installation">https://github.com/romkatv/powerlevel10k#installation</a></li>
 </ul>
 </li>
-<li>[[linux]]手动挂载 U 盘或硬盘<ul>
-<li><code>sudo mount /dev/sdx /mnt</code> //将 <code>/dev/sdx</code> 挂载在 <code>/mnt</code> 目录下</li>
-<li><em><strong>注意事项</strong></em></li>
-<li><code>/dev/sdx</code> //这里的 <code>x</code> 可以是 abc……(请用 <code>sudo fdisk -l</code> 查看要挂载的盘)</li>
-<li><code>/mnt</code> //这里的 <code>/mnt</code> 只是一个存在的目录，方便 <code>cd /mnt</code> 来进行各种操作 (你可以自定义一个存在的目录 <code>/mnt</code>)</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="mount-a-hard-drive-temporarily-in-unix-like">Mount a hard drive temporarily in Unix-like</h4>
+<ul>
+<li><code>doas mkdir /mnt/isoFile/</code></li>
+<li><code>doas mount /dev/sdc1 /mnt/isoFile/</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>umount /mnt/isoFile/</code> # Unmount</li>
+<li><code>/dev/sdc1</code> # Replace it with block device (e.g. /dev/sdb)<ul>
+<li><code>lsblk</code> # Get it</li>
+</ul>
+</li>
+<li>Mount in an empty directory under the <em>/mnt/</em> directory</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[git]] 修改 commit 的注释<ul>
 <li><code>git commit --amend</code> //此时会进入文本编辑器，修改注释后保存退出即可</li>
 <li><em><strong>参考资料</strong></em></li>
@@ -12953,11 +12905,6 @@ XMODIFIERS=@im=fcitx //添加这一行
 <ul>
 <li><em><strong>参考资料</strong></em></li>
 <li><a href="https://zjuyk.site/i3wm-userguide-zh/%E9%85%8D%E7%BD%AEi3bar/%E4%BD%8D%E7%BD%AE.html">https://zjuyk.site/i3wm-userguide-zh/%E9%85%8D%E7%BD%AEi3bar/%E4%BD%8D%E7%BD%AE.html</a></li>
-</ul>
-</li>
-<li>[[Vim]]行内移动光标<ul>
-<li><code>w</code> //下一个单词的词首</li>
-<li><code>b</code> //上一个单词词首</li>
 </ul>
 </li>
 <li>[[i3]] [[hotkey]]layout toggle split<ul>
