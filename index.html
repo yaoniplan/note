@@ -47,6 +47,37 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="try-some-wm-or-de-in-virtualbox">Try some WM or DE in VirtualBox</h4>
+<ul>
+<li>Desktop Environment<ul>
+<li>Deepin</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>``</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>``</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-desktop-environment-of-de">The abbreviation of &quot;Desktop Environment&quot; of &quot;DE&quot;.</h4>
+<ul>
+<li>A bundle of programs</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Desktop_environment">https://en.wikipedia.org/wiki/Desktop_environment</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-carbon-monoxide-is-co">The abbreviation of &quot;carbon monoxide&quot; is &quot;CO&quot;.</h4>
 <ul>
 <li>A gas</li>
@@ -4038,14 +4069,14 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 <ul>
 <li><h4 id="use-alist-in-docker">Use &quot;AList&quot; in Docker</h4>
 <ul>
-<li>SFTP<pre><code>/backupPrivateFiles # Mount Path
+<li>SFTP<pre><code>/recordGrowth # Mount Path
 native proxy # WebDAV policy
 Name # Order by
 Descending # Order direction
 192.168.10.100:22 # Address
 yaoniplan # Username
 ****** # Password
-/mnt/backupPrivateFiles # Root folder path
+/mnt/recordGrowth # Root folder path
 </code></pre>
 </li>
 <li>AliyundriveOpen<pre><code>/ # Mount Path
@@ -4796,10 +4827,10 @@ Include conf/extra/httpd-ssl.conf
 <ul>
 <li><h4 id="mount-the-hard-disk-permanently-in-linux">Mount the hard disk permanently in Linux</h4>
 <ul>
-<li><code>doas vim /etc/fstab</code><pre><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6   /mnt/Toshiba ext4 defaults       0 0
+<li><code>doas vim /etc/fstab</code><pre><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6   /mnt/recordGrowth ext4 defaults       0 0
 </code></pre>
 </li>
-<li><code>doas chown -R yaoniplan:yaoniplan /mnt/Toshiba/</code><ul>
+<li><code>doas chown -R yaoniplan:yaoniplan /mnt/recordGrowth/</code><ul>
 <li>Solve the problem about operation not permitted</li>
 </ul>
 </li>
@@ -4810,7 +4841,7 @@ Include conf/extra/httpd-ssl.conf
 <li><code>doas blkid</code> # Get it</li>
 </ul>
 </li>
-<li><code>/mnt/Toshiba</code> # Replace it with your mount point</li>
+<li><code>/mnt/recordGrowth</code> # Replace it with your mount point</li>
 <li><code>ext4</code> # Replace it with your type of block device</li>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
 <li>Mount all filesystems without rebooting<ul>
@@ -6698,11 +6729,14 @@ set number
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-vim">Use Vim</h4>
+<li><h4 id="use-vim">Use &quot;vim&quot;</h4>
 <ul>
 <li><code>Ctrl-r</code> # Redo</li>
 <li><code>u</code> # Undo</li>
+<li><code>daw</code> # Delete a word<ul>
 <li><code>.</code> # Repeat last change</li>
+</ul>
+</li>
 <li><code>vU</code> # Uppercase<ul>
 <li><code>v</code> # Visual mode</li>
 </ul>

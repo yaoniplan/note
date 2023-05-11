@@ -1,11 +1,33 @@
 # "installGentooLinux"
 # livegui password
 ```
-Ctrl-Alt-F1 # new a terminal
-su root
-passwd gentoo
-Ctrl-Alt-F7 # return login
-# enter password just configured
+# Change mirror
+sudo vim /etc/portage/make.conf
+GENTOO_MIRRORS="https://mirrors.ustc.edu.cn/gentoo/"
+# Sync package list
+sudo emerge-webrsync
+# Install doas
+sudo emerge -aq doas
+sudo passwd gentoo
+sudo vim /etc/doas.conf
+permit :wheel
+```
+```
+gentoo@livecd ~ $ sudo emerge -aq doas
+!!! Section 'gentoo' in repos.conf has location attribute set to nonexistent directory: '/var/db/repos/gentoo'
+!!! Invalid Repository Location (not a dir): '/var/db/repos/gentoo'
+
+
+!!! /etc/portage/make.profile is not a symlink and will probably prevent most merges.
+!!! It should point into a profile within /var/db/repos/gentoo/profiles/
+!!! (You can safely ignore this message when syncing. It's harmless.)
+
+
+!!! Your current profile is invalid. If you have just changed your profile
+!!! configuration, you should revert back to the previous configuration.
+!!! Allowed actions are limited to --help, --info, --search, --sync, and
+!!! --version.
+gentoo@livecd ~ $ 
 ```
 
 # Substitute root user
