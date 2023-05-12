@@ -22,6 +22,36 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="rename-file-name-in-batches">Rename file name in batches</h4>
+<ul>
+<li><code>for f in *; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>[0-9]</code> # One character from this set</li>
+<li><code>\</code> # Escape</li>
+<li><code>{6}</code> # A quantifier</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li>Output<pre><code>[yaoniplan@tux tmp.8x9UnjDpkt]$ ls
+IMG20230512081957.jpg  REC20230512090514.mp3
+[yaoniplan@tux tmp.8x9UnjDpkt]$ for f in *; do mv &quot;$f&quot; &quot;${f:5}&quot;; done
+[yaoniplan@tux tmp.8x9UnjDpkt]$ ls
+230512081957.jpg  230512090514.mp3
+[yaoniplan@tux tmp.8x9UnjDpkt]$ for f in *; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;
+s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
+[yaoniplan@tux tmp.8x9UnjDpkt]$ ls
+230512seeADentist.jpg  230512seeADentist.mp3
+[yaoniplan@tux tmp.8x9UnjDpkt]$
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-systemctl">Use &quot;systemctl&quot;</h4>
 <ul>
 <li><code>doas systemctl enable cronie</code><ul>
@@ -73,6 +103,38 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Desktop_environment">https://en.wikipedia.org/wiki/Desktop_environment</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-trans">Use &quot;trans&quot;</h4>
+<ul>
+<li><code>trans :zh narrator</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-player mpv</code> # Player<ul>
+<li><code>vim ~/.config/mpv/mpv.conf</code><pre><code>--http-proxy=http://192.168.10.100:7890
+</code></pre>
+</li>
+</ul>
+</li>
+<li><code>-proxy 192.168.10.100:7890</code> # Proxy</li>
+<li><code>doas emerge -aq app-i18n/translate-shell</code> # Install in Gentoo Linux</li>
+<li>Disadvantages<ul>
+<li>Playback &quot;Translations of &quot; during speech</li>
+</ul>
+</li>
+<li>Advantages<ul>
+<li>Run in terminal</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man trans</code></li>
+<li><a href="https://github.com/soimort/translate-shell/issues/408">https://github.com/soimort/translate-shell/issues/408</a></li>
 </ul>
 </li>
 </ul>
@@ -496,7 +558,7 @@ togglePDFDarkMode();
 </ul>
 <hr>
 <ul>
-<li><h4 id="load-a-file-into-the-python-console">Load a file into the Python console</h4>
+<li><h4 id="load-a-file-into-the-python-interpreter">Load a file into the Python interpreter</h4>
 <ul>
 <li><code>python -i testCard.py</code></li>
 </ul>
@@ -4055,14 +4117,14 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 <ul>
 <li><h4 id="use-alist-in-docker">Use &quot;AList&quot; in Docker</h4>
 <ul>
-<li>SFTP<pre><code>/recordGrowth # Mount Path
+<li>SFTP<pre><code>/grow # Mount Path
 native proxy # WebDAV policy
 Name # Order by
 Descending # Order direction
 192.168.10.100:22 # Address
 yaoniplan # Username
 ****** # Password
-/mnt/recordGrowth # Root folder path
+/mnt/grow # Root folder path
 </code></pre>
 </li>
 <li>AliyundriveOpen<pre><code>/ # Mount Path
@@ -4813,10 +4875,10 @@ Include conf/extra/httpd-ssl.conf
 <ul>
 <li><h4 id="mount-the-hard-disk-permanently-in-linux">Mount the hard disk permanently in Linux</h4>
 <ul>
-<li><code>doas vim /etc/fstab</code><pre><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6   /mnt/recordGrowth ext4 defaults       0 0
+<li><code>doas vim /etc/fstab</code><pre><code>UUID=f75f68b6-d1b3-4062-9a22-7dbff615efb6   /mnt/grow ext4 defaults       0 0
 </code></pre>
 </li>
-<li><code>doas chown -R yaoniplan:yaoniplan /mnt/recordGrowth/</code><ul>
+<li><code>doas chown -R yaoniplan:yaoniplan /mnt/grow/</code><ul>
 <li>Solve the problem about operation not permitted</li>
 </ul>
 </li>
@@ -4827,7 +4889,7 @@ Include conf/extra/httpd-ssl.conf
 <li><code>doas blkid</code> # Get it</li>
 </ul>
 </li>
-<li><code>/mnt/recordGrowth</code> # Replace it with your mount point</li>
+<li><code>/mnt/grow</code> # Replace it with your mount point</li>
 <li><code>ext4</code> # Replace it with your type of block device</li>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
 <li>Mount all filesystems without rebooting<ul>
@@ -5863,9 +5925,14 @@ root       pts/0    192.168.10.105   8:38AM     - w
 <li><code>$1</code> # The first argument</li>
 <li><code>$0</code> # The name of the script</li>
 <li><code>$@</code> # A list of all arguments</li>
+<li><code>$*</code> # Expand all arguments to a single word<ul>
+<li><code>trans :zh &quot;$*&quot;</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 <li><a href="https://www.redhat.com/sysadmin/process-script-inputs">https://www.redhat.com/sysadmin/process-script-inputs</a></li>
 </ul>
 </li>
@@ -9710,7 +9777,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </li>
 </ul>
 <hr>
-<hr>
 <ul>
 <li>The punctuation of &quot;Underscore&quot; is &quot;_&quot;.</li>
 <li><em><strong>References</strong></em><ul>
@@ -9728,7 +9794,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </li>
 </ul>
 <hr>
-<hr>
 <ul>
 <li>View all commits of a user #GitHub<ul>
 <li><code>https://github.com/search?q=author:yaoniplan</code> # Change user &quot;yaoniplan&quot; to yours</li>
@@ -9742,9 +9807,13 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1668499494795_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1668499822180_0.png" alt="image.png"></li>
-<li><a href="https://webapps.stackexchange.com/questions/54148/can-i-view-all-time-all-repo-commits-of-a-user-at-github">Can I view all time all repo commits of a user at GitHub? - Web Applications Stack Exchange</a>- I am trying to replace pages (e.g. abbreviation, punctuation, etc.) with tags. #Idea- ---</li>
+<li><a href="https://webapps.stackexchange.com/questions/54148/can-i-view-all-time-all-repo-commits-of-a-user-at-github">https://webapps.stackexchange.com/questions/54148/can-i-view-all-time-all-repo-commits-of-a-user-at-github</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
+<li>I am trying to replace pages (e.g. abbreviation, punctuation, etc.) with tags. #Idea- ---</li>
 <li><h1 id="add-a-abbreviation">Add a [[abbreviation]]</h1>
 Yet Another Multicolumn Layout (<code>YAML</code>)</li>
 <li><em><strong>References</strong></em><ul>
@@ -9920,24 +9989,6 @@ exec ~/.config/shell/autoGit.sh
 <li>change sleep 540 to 20</li>
 <li>It doesn&#39;t work about commit message again</li>
 <li>Change &quot;;&quot; to &quot;:&quot;</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>Set the date and time permanently in [[Linux]]<ul>
-<li><code>sudo timedatectl set-time &#39;06:52:00&#39;</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>sudo timedatectl set-time &#39;2022-11-03 06:57:00&#39;</code> # If you want to change the date and time</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1667429608754_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1667429741856_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1667430437533_0.png" alt="image.png"></li>
-<li><a href="https://unix.stackexchange.com/questions/302754/how-to-set-the-date-time-permanently">command line - how to set the date &amp; time Permanently - Unix &amp; Linux Stack Exchange</a></li>
 </ul>
 </li>
 </ul>
@@ -10331,13 +10382,7 @@ exec ~/.config/shell/autoGit.sh
 </li>
 <li>I have a dream to build Iron Man. #Idea</li>
 <li></li>
-<li>[[Vim]]view the filename<ul>
-<li><code>:f</code> # in normal mode</li>
-<li><em><strong>References</strong></em></li>
-<li><img src="../assets/image_1665281199847_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1665281355196_0.png" alt="image.png">
--- #### I participated in a game about &quot;shiyanlou_100th_floor_2022-09-15_2022-10-14&quot;. #Idea</li>
-</ul>
+<li><h4 id="i-participated-in-a-game-about-shiyanlou_100th_floor_2022-09-15_2022-10-14-idea">I participated in a game about &quot;shiyanlou_100th_floor_2022-09-15_2022-10-14&quot;. #Idea</h4>
 </li>
 </ul>
 <hr>
@@ -10488,6 +10533,7 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <ul>
 <li>Press <code>1</code> followed by <code>Ctrl-g</code> # Method one</li>
 <li><code>:set laststatus=2</code> # Method two</li>
+<li><code>:f</code> # Method three</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -10495,8 +10541,8 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li><img src="../assets/image_1666859986313_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1664599143765_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1664599170405_0.png" alt="image.png"></li>
-<li><a href="https://unix.stackexchange.com/questions/111558/how-can-i-constantly-see-the-current-filename-in-vim">How can I constantly see the current filename in vim?</a></li>
-<li><a href="https://codeyarns.com/tech/2014-02-13-how-to-view-full-path-of-file-in-vim.html#gsc.tab=0">Code Yarns – How to view full path of file in Vim</a></li>
+<li><a href="https://unix.stackexchange.com/questions/111558/how-can-i-constantly-see-the-current-filename-in-vim">https://unix.stackexchange.com/questions/111558/how-can-i-constantly-see-the-current-filename-in-vim</a></li>
+<li><a href="https://codeyarns.com/tech/2014-02-13-how-to-view-full-path-of-file-in-vim.html#gsc.tab=0">https://codeyarns.com/tech/2014-02-13-how-to-view-full-path-of-file-in-vim.html#gsc.tab=0</a></li>
 </ul>
 </li>
 </ul>
@@ -10661,14 +10707,6 @@ w # write partitions to disk and exit
 </ul>
 <hr>
 <ul>
-<li>[[linux]] check SHA256<ul>
-<li><code>sha256sum filename</code> # check SHA256 of filename. (for example: <code>sha256sum clonezilla-live-3.0.1-8-amd64.iso</code>)</li>
-<li><em><strong>References</strong></em></li>
-<li><img src="../assets/image_1663978817179_0.png" alt="image.png"></li>
-<li><code>man sha256sum</code></li>
-<li><img src="../assets/image_1663978918136_0.png" alt="image.png"></li>
-</ul>
-</li>
 <li>[[linux]] backup and restore os with clonezilla<ul>
 <li><img src="../assets/image_1664010786020_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1664010868879_0.png" alt="image.png"></li>
@@ -10970,11 +11008,6 @@ You can edit this.
 </ul>
 </li>
 <li></li>
-<li>[[Vim]] <code>daw</code> # <code>delete a word</code> (删除光标所在单词)<ul>
-<li><em><strong>参考资料</strong></em></li>
-<li><a href="https://blog.csdn.net/grey_csdn/article/details/72355735">VIM 单词删除技巧</a></li>
-</ul>
-</li>
 <li>[[Python]] <code>1 &gt; 2 and not 1 &gt; 3 or 2 &gt; 3</code> priority (优先)<ul>
 <li>等价于 <code>((1 &gt; 2) and (not (1 &gt; 3))) or (2 &gt; 3)</code></li>
 <li><code>(False and (not False)) or False</code> # 算术运算符 &gt; 逻辑运算符</li>
@@ -10982,8 +11015,12 @@ You can edit this.
 <li><code>False or False</code> # 逻辑运算符 <code>and</code></li>
 <li><code>False</code> # 逻辑运算符 <code>or</code></li>
 <li><em><strong>总结</strong></em>: 算术运算符 &gt; 逻辑运算符(not &gt; and &gt; or)</li>
-<li><img src="../assets/image_1663036739210_0.png" alt="image.png">
--- #### Use Vimium<ul>
+<li><img src="../assets/image_1663036739210_0.png" alt="image.png"></li>
+</ul>
+</li>
+<li></li>
+<li><h4 id="use-vimium">Use Vimium</h4>
+<ul>
 <li><code>d</code> # Down<ul>
 <li><code>Space</code> # In Chromium</li>
 </ul>
@@ -10995,8 +11032,6 @@ You can edit this.
 <li><code>f</code> # Feature<ul>
 <li>And then press capital leters</li>
 <li>Will open a link in a new tab</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -11385,13 +11420,6 @@ You can edit this.
 <li>wallpaper (2022-09-07)<ul>
 <li><img src="../assets/dark.jpg" alt="dark.jpg"></li>
 <li><img src="../assets/Syu_1662509519457_0.png" alt="Syu.png"></li>
-</ul>
-</li>
-<li>[[linux]] [[i3]] [[config]] <code>.config/i3/config</code> (2022-09-07)
-<a href="../assets/_1662511000824_0config">config</a></li>
-<li>[[linux]] [[i3]] my i3status <code>/etc/i3status.conf</code> (2022-09-07)<ul>
-<li><a href="../assets/i3status_1662511857709_0.conf">i3status.conf</a></li>
-<li><img src="../assets/2022-09-07_08-53_1662512093531_0.png" alt="2022-09-07_08-53.png"></li>
 </ul>
 </li>
 <li>my chinese font (2022-09-07)<ul>
@@ -12826,7 +12854,7 @@ echo &#39;source ~/powerlevel10k/powerlevel10k.zsh-theme&#39; &gt;&gt;~/.zshrc
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>umount /mnt/isoFile/</code> # Unmount</li>
+<li><code>doas umount /mnt/isoFile/</code> # Unmount</li>
 <li><code>/dev/sdc1</code> # Replace it with block device (e.g. /dev/sdb)<ul>
 <li><code>lsblk</code> # Get it</li>
 </ul>
