@@ -114,12 +114,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>-player mpv</code> # Player<ul>
-<li><code>vim ~/.config/mpv/mpv.conf</code><pre><code>--http-proxy=http://192.168.10.100:7890
-</code></pre>
-</li>
-</ul>
-</li>
+<li><code>-player mpg123</code> # Player</li>
 <li><code>-proxy 192.168.10.100:7890</code> # Proxy</li>
 <li><code>doas emerge -aq app-i18n/translate-shell</code> # Install in Gentoo Linux</li>
 <li>Disadvantages<ul>
@@ -3136,7 +3131,12 @@ git push origin master
 <li><code>m</code> # Mute</li>
 <li><code>--playlist=computerScience.txt</code></li>
 <li><code>Fn-8</code> # Show playlist</li>
-<li><code>--http-proxy=http://192.168.10.100:7890</code></li>
+<li><code>--http-proxy=http://192.168.10.100:7890</code><ul>
+<li><code>vim ~/.config/mpv/mpv.conf</code> # Another way<pre><code>--http-proxy=http://192.168.10.100:7890
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>&lt;</code> # Go backward in the playlist</li>
 <li><code>/</code> # Decrease volume</li>
 <li><code>}</code> # Double speed</li>
