@@ -114,9 +114,14 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>zh</code> # Replace it with country code (e.g. en)<ul>
+<li><code>trans -list-all</code> # Get it</li>
+</ul>
+</li>
 <li><code>-player mpg123</code> # Player</li>
 <li><code>-proxy 192.168.10.100:7890</code> # Proxy</li>
 <li><code>doas emerge -aq app-i18n/translate-shell</code> # Install in Gentoo Linux</li>
+<li>Because to learn an unclear word.</li>
 <li>Disadvantages<ul>
 <li>Playback &quot;Translations of &quot; during speech</li>
 </ul>
@@ -1180,6 +1185,11 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Update a Docker image<ul>
+<li><code>docker-compose pull</code> # Pull the latest version</li>
+<li><code>docker-compose up --detach</code></li>
+</ul>
+</li>
 <li><code>docker-compose stop</code> # Stop</li>
 <li><code>docker-compose restart</code> # Restart</li>
 <li><code>doas apt install docker-compose</code> # Install it before installing Docker</li>
@@ -4163,10 +4173,23 @@ Ascending # Order direction
 <li>Paste it to &quot;Logo&quot; and &quot;Favicon&quot; in style settings</li>
 </ul>
 </li>
+<li>Open in external application<ul>
+<li>In &quot;External previews&quot;<pre><code class="language-json">{
+  &quot;wma&quot;: {
+    &quot;VLC&quot;: &quot;vlc://$url&quot;
+  }
+}
+</code></pre>
+</li>
+</ul>
+<pre><code>
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>Add a demo.gif here</li>
+<li><a href="https://github.com/alist-org/alist/issues/4160">https://github.com/alist-org/alist/issues/4160</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml">https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515">https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515</a></li>
@@ -5969,6 +5992,17 @@ ssh: connect to host 192.168.10.105 port 22: Connection refused
 </ul>
 </li>
 <li>If you use USB to share WIFI with your phone, your connection may not respond, the solution is to connect with a network cable</li>
+<li>Solve the problem in Systemd<pre><code>[yaoniplan@tux ~]$ doas systemctl status ssh
+doas (yaoniplan@tux) password:
+Unit ssh.service could not be found.
+[yaoniplan@tux ~]$
+</code></pre>
+<ul>
+<li><code>doas emerge -aq net-misc/openssh</code> # Install it in Gentoo Linux</li>
+<li><code>doas systemctl enable sshd</code> # Every time at boot time</li>
+<li><code>doas systemctl start sshd</code> # Once now</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
