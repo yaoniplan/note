@@ -166,7 +166,7 @@ mount --make-rslave /mnt/gentoo/dev
 mount --bind /run /mnt/gentoo/run
 mount --make-slave /mnt/gentoo/run
 ```
-* `--make-rslave` # Add the above three sentences if you are systemd
+* `--make-rslave` # Add the above three sentences if you are Systemd
 ## Enter new environment
 ```
 chroot /mnt/gentoo /bin/bash
