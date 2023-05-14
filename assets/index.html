@@ -22,8 +22,9 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4 id="use-bspwm-wm-in-linux">Use Bspwm WM in Linux</h4>
+<li><h4 id="use-bspwm-wm-in-linux">Use &quot;Bspwm&quot; WM in Linux</h4>
 <ul>
+<li><code>Super-Shift-w</code> # Kill a window</li>
 <li><code>Super-Space</code> # Run dmenu</li>
 <li><code>Super-Alt-q</code> # Quit Bspwm</li>
 <li><code>Super-Enter</code> # New a terminal</li>
@@ -71,7 +72,71 @@ note
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-awesome-wm">Use Awesome WM</h4>
+<li><h4 id="use-sudo-in-linux">Use &quot;sudo&quot; in Linux</h4>
+<ul>
+<li><code>su root</code> # Substitude to root user</li>
+<li><code>visudo</code> # Use Vi to edit the sudoers file<pre><code>yaoniplan ALL=(ALL) ALL
+</code></pre>
+<ul>
+<li><code>doas pacman -S vi</code> # Install in Arch Linux</li>
+</ul>
+</li>
+<li><code>exit</code> # Exit the root user</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>[sudo] password for yaoniplan: 
+yaoniplan is not in the sudoers file.
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="disable-the-reflector-tool-in-arch-linux">Disable the Reflector tool in Arch Linux</h4>
+<ul>
+<li><code>sudo systemctl stop reflector.timer</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to set a specifier mirror in iso.<ul>
+<li><code>vim /etc/pacman.d/mirrorlist</code><pre><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="list-font-in-linux">List font in Linux</h4>
+<ul>
+<li><code>fc-list</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>fc</code> # Font config</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>man fc-list</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-awesome-wm-in-linux">Use &quot;Awesome&quot; WM in Linux</h4>
 <ul>
 <li><code>Super-j</code> # Move cusor</li>
 <li><code>Super-Shift-c</code> # Kill a program</li>
@@ -85,6 +150,18 @@ note
 <li><code>echo &quot;startx&quot; &gt;&gt; ~/.bash_profile</code></li>
 </ul>
 </li>
+<li>Configure file<ul>
+<li><code>mkdir --parents ~/.config/awesome/</code></li>
+<li><code>cp /etc/xdg/awesome/rc.lua ~/.config/awesome/rc.lua</code></li>
+</ul>
+</li>
+<li>Set the font<ul>
+<li><code>vim ~/.config/awesome/rc.lua</code><pre><code>beautiful.font = &quot;DejaVu Sans Mono 10&quot;
+</code></pre>
+</li>
+<li><code>awesome -r</code> # Reload to make changes effective</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -96,8 +173,8 @@ note
 <ul>
 <li><h4 id="use-aur-in-arch-linux">Use AUR in Arch Linux</h4>
 <ul>
-<li><code>git clone https://aur.archlinux.org/yay.git</code></li>
-<li><code>makepkg -si</code></li>
+<li><code>git clone https://aur.archlinux.org/yay.git ~/.config/yay/</code></li>
+<li><code>cd ~/.config/yay/; makepkg -si</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -105,11 +182,19 @@ note
 <li><a href="https://aur.archlinux.org/packages">https://aur.archlinux.org/packages</a> # Get it</li>
 </ul>
 </li>
-<li>Another way</li>
+<li><code>makepkg -si</code> # Enable network proxy to improve the speed before using the command<ul>
+<li><code>vim ~/.bash_profile</code><pre><code>export http_proxy=&quot;192.168.10.100:7890&quot;
+export https_proxy=&quot;192.168.10.100:7890&quot;
+export no_proxy=&quot;localhost, 192.168.10.100&quot;
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+<li><a href="https://github.com/Jguer/yay">https://github.com/Jguer/yay</a></li>
 </ul>
 </li>
 </ul>
@@ -427,7 +512,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 &lt;head&gt;\
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\
   &lt;title&gt;yaoniplan&lt;/title&gt;\
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/github-markdown-dark.css&quot;&gt;\
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/github-markdown-dark.css&quot;&gt;\
   &lt;style&gt;\
     .markdown-body {\
       box-sizing: border-box;\
@@ -9157,7 +9242,8 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li><code>:version</code> # Check the clipboard feature in Vim
 <img src="../assets/2022-12-17_16-09_1671264573981_0.png" alt="2022-12-17_16-09.png"></li>
 <li><code>doas apt install vim-gtk3</code> # In Debian-based distribution</li>
-<li><code>sudo vim /etc/portage/package.use/zz-autounmask</code> # Edit and Add the USE flag to enable the clipboard feature<pre><code># required by app-editors/vim
+<li><code>doas pacman -S gvim</code> # In Arch Linux</li>
+<li><code>sudo vim /etc/portage/package.use/zz-autounmask</code> # Add the USE flag to enable the clipboard feature<pre><code># required by app-editors/vim
 app-editors/vim X
 </code></pre>
 <img src="../assets/2022-12-17_16-10_1671264653139_0.png" alt="2022-12-17_16-10.png"></li>
