@@ -136,6 +136,25 @@ yaoniplan is not in the sudoers file.
 </ul>
 <hr>
 <ul>
+<li><h4 id="add-a-user-in-arch-linux">Add a user in Arch Linux</h4>
+<ul>
+<li><code>sudo useradd -m yaoniplan</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-m</code> # Create user&#39;s home directory</li>
+<li><code>passwd yaoniplan</code> # Change user password</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>man passwd</code></li>
+<li><code>man useradd</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-awesome-wm-in-linux">Use &quot;Awesome&quot; WM in Linux</h4>
 <ul>
 <li><code>Super-j</code> # Move cusor</li>
@@ -188,6 +207,7 @@ export https_proxy=&quot;192.168.10.100:7890&quot;
 export no_proxy=&quot;localhost, 192.168.10.100&quot;
 </code></pre>
 </li>
+<li><code>doas reboot</code> # Make changes effective</li>
 </ul>
 </li>
 </ul>
@@ -259,7 +279,6 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <ul>
 <li>Window manager<ul>
 <li>Bspwm</li>
-<li>Hyprland</li>
 <li>Awesome # A fork of DWM</li>
 <li>i3 # To beginner</li>
 <li>DWM # Build from source code</li>
@@ -6657,15 +6676,53 @@ nnoremap &lt;C-L&gt; &lt;C-W&gt;l
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.Xresources</code><pre><code>&gt;=x11-terms/rxvt-unicode-9.30 perl xft
+<li>Set a color theme<pre><code>! Colors
+URxvt*background: #000000
+URxvt*foreground: #B2B2B2
+! black
+URxvt*color0:  #000000
+URxvt*color8:  #686868
+! red
+URxvt*color1:  #B21818
+URxvt*color9:  #FF5454
+! green
+URxvt*color2:  #18B218
+URxvt*color10: #54FF54
+! yellow
+URxvt*color3:  #B26818
+URxvt*color11: #FFFF54
+! blue
+URxvt*color4:  #1818B2
+URxvt*color12: #5454FF
+! purple
+URxvt*color5:  #B218B2
+URxvt*color13: #FF54FF
+! cyan
+URxvt*color6:  #18B2B2
+URxvt*color14: #54FFFF
+! white
+URxvt*color7:  #B2B2B2
+URxvt*color15: #FFFFFF
+</code></pre>
+</li>
+<li>Disable scroll bar<pre><code>URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.scrollBar_floating: false
+URxvt.scrollstyle: rxvt
+</code></pre>
+</li>
+<li>Set font<pre><code>URxvt.font xft:Ubuntu Mono:style=regular
+</code></pre>
+</li>
+<li><code>xrdb ~/.Xresources</code> # Reload the configuration</li>
+<li><code>urxvt -fn &quot;xft:Ubuntu Mono:style=regular&quot;</code> # Test a font</li>
+<li><code>doas vim /etc/portage/package.use</code> # In Gentoo Linux<pre><code>x11-terms/rxvt-unicode-9.30 perl xft
 </code></pre>
 <ul>
 <li><code>perl</code> # Support perl script</li>
 <li><code>xft</code> # Support for XFT font renderer</li>
 </ul>
 </li>
-<li><code>xrdb ~/.Xresources</code> # Reload the configuration</li>
-<li><code>urxvt -fn &quot;xft:Ubuntu Mono:style=regular&quot;</code> # Test a font</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
