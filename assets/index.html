@@ -22,6 +22,143 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-tilda-in-dwm">Use &quot;tilda&quot; in DWM</h4>
+<ul>
+<li><code>tilda --command tmux</code> # Run the tmux command at startup</li>
+<li><code>doas vi ~/.config/dwm-6.4/config.h</code><pre><code class="language-c">static const Rule rules[] = {
+    /* class      instance    title       tags mask     isfloating   monitor */
+    { &quot;Tilda&quot;,    NULL,       NULL,       0,            1,           -1 },
+};
+</code></pre>
+<ul>
+<li><code>doas make clean install ~/.config/dwm-6.4/</code> # Compile to make changes effective</li>
+</ul>
+</li>
+<li><code>tilda -C</code> # Config<pre><code># General
+0 # Auto Hide Delay of &quot;Auto Hide&quot;
+Hide when Tilda loses focus
+
+# Appearance
+50.00 # Percentage of Height
+70.00 # Percentage of Width
+Centered Hotizontally # Position
+
+# Keybindings
+&lt;Alt&gt;a # Pull Down Terminal
+</code></pre>
+<ul>
+<li><code>vi ~/.config/tilda/config_0</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas pacman -S tilda</code> # Install in Arch Linux</li>
+<li><code>Alt-Shift-q</code> # Quit to make all changes effective</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><code>tilda --help</code></li>
+<li><a href="https://wiki.archlinux.org/title/Dwm#Using_Tilda_with_dwm">https://wiki.archlinux.org/title/Dwm#Using_Tilda_with_dwm</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-the-escape-time-to-0-in-vim">Set the escape time to 0 in Vim</h4>
+<ul>
+<li><code>vi ~/.vimrc</code><pre><code>&quot; Set escape time to 0
+set timeoutlen=0 ttimeoutlen=0
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because for faster response.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-vi-in-linux">Use &quot;vi&quot; in Linux</h4>
+<ul>
+<li><code>1G</code> # Move cursor to the first line</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to try to replace Vim with Vi.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="as-long-as-it-works-idea">As long as it works. #idea</h4>
+<ul>
+<li>Perfectionism can consume a lot of time in some cases.</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because failing too much wears out patience.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="install-dwm-from-source-code-in-linux">Install &quot;DWM&quot; from source code in Linux</h4>
+<ul>
+<li><code>git clone https://git.suckless.org/dwm ~/.config/dwm/</code><ul>
+<li><code>w3m suckless.org</code> # Second way that improve the speed</li>
+<li><code>links suckless.org</code> # Third way that improve the speed</li>
+</ul>
+</li>
+<li><code>cd ~/.config/dwm/; sudo make clean install</code> # Compile it</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install some dependencies beforing compiling<ul>
+<li><code>sudo pacman -S base-devel libx11 libxinerama libxft xorg xorg-xinit</code></li>
+</ul>
+</li>
+<li>Make the notify-send command works<ul>
+<li><code>vim ~/.xinitrc</code><pre><code>exec dbus-launch --sh-syntax --exit-with-session dwm
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Turn off the display of the following message<pre><code>/usr/lib/Xorg.wrap: Only console users are allowed to run the X server
+xinit: giving up
+xinit: unable to connect to X server: Connection refused
+xinit: server error
+Couldn&#39;t get a file descriptor referring to the console.
+</code></pre>
+<ul>
+<li><code>vim ~/.bash_profile</code><pre><code class="language-bash">if [ -z &quot;${DISPLAY}&quot; ] &amp;&amp; [ &quot;${XDG_VTNR}&quot; -eq 1 ]; then
+  exec startx
+fi
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+<li><a href="https://wiki.gentoo.org/wiki/Dwm">https://wiki.gentoo.org/wiki/Dwm</a></li>
+<li><a href="https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login">https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-bspwm-wm-in-linux">Use &quot;Bspwm&quot; WM in Linux</h4>
 <ul>
 <li><code>Super-Shift-w</code> # Kill a window</li>
@@ -60,8 +197,7 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
-<li><code>command --help</code></li>
-<li>Output<pre><code>[yaoniplan@tux ~]$ if command -v redshift &amp;&gt;/dev/null; then ls; fi
+<li><code>command --help</code><pre><code>[yaoniplan@tux ~]$ if command -v redshift &amp;&gt;/dev/null; then ls; fi
 [yaoniplan@tux ~]$ if command -v ls &amp;&gt;/dev/null; then ls; fi
 note
 [yaoniplan@tux ~]$
@@ -100,7 +236,10 @@ yaoniplan is not in the sudoers file.
 <ul>
 <li><h4 id="disable-the-reflector-tool-in-arch-linux">Disable the Reflector tool in Arch Linux</h4>
 <ul>
-<li><code>sudo systemctl stop reflector.timer</code></li>
+<li><code>systemctl stop reflector.timer</code><ul>
+<li><code>mv /etc/xdg/reflector/reflector.conf /tmp/</code> # Another way</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -396,7 +535,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <ul>
 <li><h4 id="hide-status-bar-in-tmux">Hide status bar in tmux</h4>
 <ul>
-<li><code>vim ~/.tmux.conf</code><pre><code>set-option -g status off
+<li><code>vim ~/.tmux.conf</code><pre><code>set -g status off
 </code></pre>
 </li>
 </ul>
@@ -906,7 +1045,8 @@ curl --head --silent https://google.com
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-g</code> # Global</li>
-<li><code>doas emerge -aq net-libs/nodejs</code> # Install it in Gentoo Linux</li>
+<li><code>doas emerge -aq net-libs/nodejs</code> # Install in Gentoo Linux</li>
+<li><code>doas pacman -S npm</code> # Install in Arch Linux</li>
 <li>Because to convert Markdown to HTML in script.<ul>
 <li><code>marked -i yaoniplan.md -o yaoniplan.html</code></li>
 </ul>
@@ -2142,6 +2282,7 @@ x11-misc/dmenu savedconfig
 <ul>
 <li><h4 id="use-dwm-in-gentoo-linux">Use &quot;DWM&quot; in Gentoo Linux</h4>
 <ul>
+<li><code>Alt-Tab</code> # Switch to previous workspace</li>
 <li><code>Alt-Shift-Enter</code> # New a terminal</li>
 <li><code>Alt-Shift-q</code> # Quit the DWM</li>
 <li><code>Alt-2</code> # Go to the number 2 workspace</li>
@@ -2176,7 +2317,7 @@ static const int showbar            = 0;
 /* Disable border of windows */
 static const unsigned int borderpx  = 0;
 /* Bind shorcut keys &quot;Alt-Shift-o&quot; to programs command `slock` */
-static const char *slockcmd[] = { &quot;slock&quot;, NULL }
+static const char *slockcmd[] = { &quot;slock&quot;, NULL };
 static Key keys[] = {
     { MODKEY|ShiftMask, XK_o, spawn, {.v = slockcmd } },
 };
@@ -3729,6 +3870,9 @@ Host key verification failed.
 export GOOGLE_DEFAULT_CLIENT_ID=&quot;696256159994-krng5vgpj2p2f9neqrn46j58q201b0j0.apps.googleusercontent.com&quot;
 export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&quot;
 </code></pre>
+<ul>
+<li>Replace them with yours</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -3761,9 +3905,17 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </li>
 </ul>
 </li>
+<li>In Arch Linux<ul>
+<li><code>vim ~/.config/chromium-flags.conf</code><pre><code>--force-dark-mode
+--enable-features=WebUIDarkMode
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.archlinux.org/title/Chromium#Dark_mode">https://wiki.archlinux.org/title/Chromium#Dark_mode</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Chromium#Enable_dark_theme_for_pages_.28prefers-color-scheme.29">https://wiki.gentoo.org/wiki/Chromium#Enable_dark_theme_for_pages_.28prefers-color-scheme.29</a></li>
 </ul>
 </li>
@@ -4017,6 +4169,8 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/">https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/</a> # Try it</li>
+<li><a href="https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark">https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark</a> # It works, but override all default themes</li>
 <li><a href="https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/">https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/</a></li>
 </ul>
 </li>
@@ -6506,7 +6660,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><h4 id="use-notify-send">Use &quot;notify-send&quot;</h4>
 <ul>
 <li><code>notify-send &quot;$(cal)&quot;</code><ul>
-<li><code>cal</code> # A shell command about calendar</li>
+<li><code>cal</code> # Replace it with other command (e.g. date)</li>
 </ul>
 </li>
 </ul>
@@ -6526,10 +6680,21 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </li>
 </ul>
 </li>
+<li>Solve the problem<pre><code>GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+</code></pre>
+<ul>
+<li><code>doas vim /usr/share/dbus-1/services/org.freedesktop.Notifications.service</code><pre><code>[D-BUS Service]
+Name=org.freedesktop.Notifications
+Exec=/usr/lib/notification-daemon-1.0/notification-daemon
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man cal</code></li>
+<li><a href="https://wiki.archlinux.org/title/Desktop_notifications">https://wiki.archlinux.org/title/Desktop_notifications</a></li>
 <li><a href="https://specifications.freedesktop.org/icon-naming-spec/latest/ar01s04.html">https://specifications.freedesktop.org/icon-naming-spec/latest/ar01s04.html</a></li>
 <li><a href="https://unix.stackexchange.com/questions/701206/how-do-i-notify-send-a-long-command">https://unix.stackexchange.com/questions/701206/how-do-i-notify-send-a-long-command</a></li>
 <li><a href="https://stackoverflow.com/questions/20285697/error-in-spawning-a-dbus-launch-what-is-that">https://stackoverflow.com/questions/20285697/error-in-spawning-a-dbus-launch-what-is-that</a></li>
@@ -7048,6 +7213,7 @@ set number
 <ul>
 <li><h4 id="use-vim">Use &quot;vim&quot;</h4>
 <ul>
+<li><code>v&gt;</code> # Indent current line (like <code>&gt;l</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
 <li><code>Ctrl-r</code> # Redo</li>
 <li><code>u</code> # Undo</li>
@@ -7450,6 +7616,7 @@ gtk-application-prefer-dark-theme=1
 </ul>
 </li>
 <li><code>doas reboot</code> # Make it work</li>
+<li>It works on the notify-send command.</li>
 </ul>
 </li>
 <li>References<ul>
@@ -8305,26 +8472,30 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><h4 id="copy-text-from-tmux-to-clipboard-in-linux">Copy text from tmux to clipboard in Linux</h4>
 <ul>
-<li><code>doas vim ~/.tmux.conf</code><pre><code>bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel &quot;xclip -i -f -selection primary | xclip -i -selection clipboard&quot;
+<li><code>doas vim ~/.tmux.conf</code><pre><code># Enable Vi-style key bindings
+set -g mode-keys vi
 </code></pre>
+<ul>
+<li><code>Space</code> # Begin select</li>
+<li><code>Enter</code> # Copy and exit</li>
+</ul>
 </li>
 </ul>
-<pre><code>
-</code></pre>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>&quot;xclip -i -f -selection primary | xclip -i -selection clipboard&quot;</code><ul>
-<li><code>-i</code> # -in</li>
-<li><code>-f</code> # -filter</li>
-<li><code>doas emerge -aq x11-misc/xclip</code> # Install it to use the <em>xclip</em> command</li>
-</ul>
+<li><code>doas vim ~/.tmux.conf</code><pre><code># Use Vi-style copy and paste commands
+bind-key -T copy-mode-vi &#39;v&#39; send -X begin-selection
+bind-key -T copy-mode-vi &#39;y&#39; send-keys -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
+
+# Use Ctrl-v to paste from system clipboard
+bind-key -n C-v run &quot;xclip -o | tmux load-buffer - ; tmux paste-buffer&quot;
+</code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2022-12-25_09-51_1671933133240_0.png" alt="2022-12-25_09-51.png"></li>
-<li><code>man xclip</code></li>
-<li><a href="https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/">https://www.freecodecamp.org/news/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b/</a></li>
+<li>ChatGPT</li>
+<li><code>man tmux</code> # <code>/mode-keys</code></li>
 </ul>
 </li>
 </ul>
@@ -8332,6 +8503,8 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><h4 id="use-tmux">Use &quot;tmux&quot;</h4>
 <ul>
+<li><code>C-b C-o</code> # Move lower pane up (Make sure the cursor is in the up pane)</li>
+<li><code>C-b {</code> # Move the current pane up</li>
 <li><code>C-b !</code> # Break pane to a window</li>
 <li><code>C-b z</code> # Zoom</li>
 <li><code>C-b ;</code> # Last pane (previously used)</li>
@@ -8371,6 +8544,13 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.tmux.conf</code> # Set the escape time to 0<pre><code># Set the escape time to 0
+set -sg escape-time 0
+</code></pre>
+<ul>
+<li><code>-s</code> # Sessions</li>
+</ul>
+</li>
 <li><code>vim ~/.tmux.conf</code> # solve a problem about <code>join-pane -t 0</code><pre><code># Set the base index to one
 set -g base-index 1
 </code></pre>
@@ -8442,17 +8622,14 @@ permit nopass yaoniplan cmd poweroff
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-abbreviation-of-advanced-linux-sound-architecture-is-alsa-idea">The #abbreviation of [[Advanced Linux Sound Architecture]] is #ALSA. #Idea</h4>
+<li><h4 id="the-abbreviation-of-advanced-linux-sound-architecture-is-alsa">The abbreviation of &quot;Advanced Linux Sound Architecture&quot; is &quot;ALSA&quot;.</h4>
 <ul>
-<li><img src="../assets/2022-12-22_09-37_1671673115158_0.png" alt="2022-12-22_09-37.png"></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
 <li>A software framework</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture">Advanced Linux Sound Architecture - Wikipedia</a></li>
+<li><img src="../assets/2022-12-22_09-37_1671673115158_0.png" alt="2022-12-22_09-37.png"></li>
+<li><a href="https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture">https://en.wikipedia.org/wiki/Advanced_Linux_Sound_Architecture</a></li>
 </ul>
 </li>
 </ul>
@@ -9759,21 +9936,24 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 </ul>
 </li>
 <li><strong>Try this first</strong>: Install <strong>media-sound/pulseaudio</strong> if your keyboard doesn&#39;t control the sound # Refer this <a href="https://wiki.gentoo.org/wiki/PulseAudio">link</a> to install it<ul>
-<li>Because it use <strong>pactl</strong> to adjust volume in #PulseAudio in [[Gentoo Linux]] by default<ul>
-<li><code>pactl</code> # #PulseAudio control</li>
-</ul>
-</li>
+<li>Because it use <strong>pactl</strong> to adjust volume in PulseAudio in Gentoo Linux by default</li>
+<li><code>pactl set-sink-volume @DEFAULT_SINK@ +10%</code> # Increase the volume by ten percent</li>
+<li><code>pactl set-sink-volume @DEFAULT_SINK@ -10%</code> # Decrease the volume by ten percent</li>
+<li><code>pactl set-sink-mute @DEFAULT_SINK@ toggle</code> # Toggle mute</li>
+<li><code>pactl</code> # Pulse audio control</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man pactl</code></li>
 <li><code>man rc-update</code></li>
 <li><code>man gpasswd</code></li>
 <li><code>man euse</code></li>
 <li><code>man grep</code></li>
 <li><code>man lspci</code></li>
-<li><a href="https://wiki.gentoo.org/wiki/ALSA">ALSA - Gentoo Wiki</a></li>
+<li><img src="../assets/image_1661396054219_0.png" alt="image.png"> </li>
+<li><a href="https://wiki.gentoo.org/wiki/ALSA">https://wiki.gentoo.org/wiki/ALSA</a></li>
 </ul>
 </li>
 </ul>
