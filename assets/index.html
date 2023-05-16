@@ -129,7 +129,7 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Install some dependencies beforing compiling<ul>
+<li>Install some dependencies before compiling<ul>
 <li><code>sudo pacman -S base-devel libx11 libxinerama libxft xorg xorg-xinit</code></li>
 </ul>
 </li>
@@ -4175,6 +4175,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/">https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/</a> # Try it</li>
+<li><a href="https://userstyles.org/styles/158321/global-dark-style-everything-to-dark-2018">https://userstyles.org/styles/158321/global-dark-style-everything-to-dark-2018</a></li>
 <li><a href="https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark">https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark</a> # It works, but override all default themes</li>
 <li><a href="https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/">https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/</a></li>
 </ul>
@@ -6679,10 +6680,8 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li>Solve the problem<pre><code>Error spawning command line “dbus-launch --autolaunch=450faa763c2a5a8029678965639ae3a2 --binary-syntax --close-stderr”: Child process exited with code 1
 </code></pre>
 <ul>
-<li><code>export $(dbus-launch)</code> # Temporary</li>
-<li><code>vim ~/.bashrc</code> # Permanently<pre><code>export $(dbus-launch) # Make notify-send work
-</code></pre>
-</li>
+<li><code>export $(dbus-launch)</code> # Temporarily</li>
+<li><code>echo &#39;export $(dbus-launch)&#39; &gt;&gt; ~/.bashrc</code> # Permanently</li>
 </ul>
 </li>
 <li>Solve the problem<pre><code>GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
