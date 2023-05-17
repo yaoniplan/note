@@ -170,12 +170,8 @@
       [Markdown Guide](https://markdownguide.org "Markdown Guide")
       ```
     - ## 3. Simplified hyperlinks
-    - ### 1. Simplified hyperlink
       ```
       <https://markdownguide.org>
-      ```
-    - ### 2. Simplified hyperlinks
-      ```
       https://markdown.org
       ```
     - ## 4. Formatted hyperlinks
@@ -201,7 +197,7 @@
       ```
       | t   | t   | t   |
       | :-- | :-: | --: |
-      | t   | t   | t   |
+      | t   | ttt |   t |
       ```
 - # Use emoji expression
     - ## 1. Copy and paste emoji
@@ -218,4 +214,4 @@
 - # References
     - https://www.markdownguide.org/
     - https://markdown.com.cn/
-    - https://www.jianshu.com/p/4d823d1b9c71
+    - https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71

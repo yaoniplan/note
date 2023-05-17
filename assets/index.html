@@ -22,9 +22,25 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="detect-if-a-command-is-running-in-linux-bash-script">Detect if a command is running in Linux Bash script</h4>
+<ul>
+<li><code>if ps aux | grep -v grep | grep timerOfTomato.sh &amp;&gt;/dev/null; then</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-v</code> # Invert match</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man grep</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-tilda-in-dwm">Use &quot;tilda&quot; in DWM</h4>
 <ul>
-<li><code>tilda --command tmux</code> # Run the tmux command at startup</li>
 <li><code>doas vi ~/.config/dwm-6.4/config.h</code><pre><code class="language-c">static const Rule rules[] = {
     /* class      instance    title       tags mask     isfloating   monitor */
     { &quot;Tilda&quot;,    NULL,       NULL,       0,            1,           -1 },
@@ -53,6 +69,7 @@ Centered Horizontally # Position
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>tilda --command tmux</code> # Run the tmux command at startup</li>
 <li><code>doas pacman -S tilda</code> # Install in Arch Linux</li>
 <li><code>Alt-Shift-q</code> # Quit to make all changes effective</li>
 <li>Because it can act as a drop-down terminal and scratchpad.</li>
@@ -131,6 +148,7 @@ set timeoutlen=0 ttimeoutlen=0
 <li><em><strong>Notes</strong></em><ul>
 <li>Install some dependencies before compiling<ul>
 <li><code>sudo pacman -S base-devel libx11 libxinerama libxft xorg xorg-xinit</code></li>
+<li><a href="https://packages.gentoo.org/packages/x11-wm/dwm/dependencies">https://packages.gentoo.org/packages/x11-wm/dwm/dependencies</a></li>
 </ul>
 </li>
 <li>Make the notify-send command works<ul>
@@ -282,12 +300,13 @@ yaoniplan is not in the sudoers file.
 <ul>
 <li><h4 id="add-a-user-in-arch-linux">Add a user in Arch Linux</h4>
 <ul>
-<li><code>sudo useradd -m yaoniplan</code></li>
+<li><code>doas useradd -m yaoniplan</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-m</code> # Create user&#39;s home directory</li>
-<li><code>passwd yaoniplan</code> # Change user password</li>
+<li><code>doas passwd yaoniplan</code> # Change user password</li>
+<li><code>su yaoniplan</code> # Substitue to the user</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -429,7 +448,6 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li>Desktop environment<ul>
-<li>Deepin</li>
 <li>KDE</li>
 </ul>
 </li>
@@ -3546,13 +3564,14 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>sudo apt install doas</code> # Install it if you does not have it</li>
-<li><code>sudo groupadd wheel</code> # Create a group</li>
-<li><code>sudo usermod -aG wheel yaoniplan</code> # Add yaoniplan to wheel<ul>
+<li><code>su root</code> # Substitute to root user</li>
+<li><code>apt install doas</code> # Install it if you does not have it</li>
+<li><code>groupadd wheel</code> # Create a group</li>
+<li><code>usermod -aG wheel yaoniplan</code> # Add yaoniplan to wheel<ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
 </ul>
 </li>
-<li><code>sudo reboot</code> # Make changes effective</li>
+<li>Close and open terminal to make changes effective</li>
 <li>Because is easy to use.</li>
 </ul>
 </li>
@@ -3631,6 +3650,12 @@ git push origin master
 <ul>
 <li><h4 id="use-the-screen-command-in-ubuntu-server-2204">Use the &quot;screen&quot; command in Ubuntu Server 22.04</h4>
 <ul>
+<li><code>screen</code><ul>
+<li><code>Ctrl-a k</code> # Kill a window</li>
+<li><code>Ctrl-a c</code> # Create a window</li>
+<li><code>Ctrl-a n</code> # Switch between window</li>
+</ul>
+</li>
 <li><code>Ctrl-a :</code><ul>
 <li><code>sessionname learnBash</code> # Rename the current session name</li>
 </ul>
@@ -3778,23 +3803,30 @@ network:
 </ul>
 </li>
 <li>Because to use SSH.</li>
-<li>Solve the problem<pre><code>yaoniplan@tux ~/.ssh $ ssh yaoniplan@192.168.10.100
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
-Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-It is also possible that a host key has just been changed.
-The fingerprint for the ED25519 key sent by the remote host is
-SHA256:JddSjxtS7Ttn4RQVnVlP69ssgmsL024E5k9FnBNYFVs.
-Please contact your system administrator.
-Add correct host key in /home/yaoniplan/.ssh/known_hosts to get rid of this message.
-Offending ECDSA key in /home/yaoniplan/.ssh/known_hosts:3
-Host key for 192.168.10.100 has changed and you have requested strict checking.
-Host key verification failed.
+<li>Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh-copy-id yaoniplan@192.168.10.105
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: &quot;/home/yaoniplan/.ssh/id_rsa.pub&quot;
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+ERROR: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ERROR: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+ERROR: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+ERROR: It is also possible that a host key has just been changed.
+ERROR: The fingerprint for the ED25519 key sent by the remote host is
+ERROR: SHA256:nHN0tokxVW4e5DV4Irvf7EM6dAWRbX/LHPzir2DDxsk.
+ERROR: Please contact your system administrator.
+ERROR: Add correct host key in /home/yaoniplan/.ssh/known_hosts to get rid of this message.
+ERROR: Offending ECDSA key in /home/yaoniplan/.ssh/known_hosts:10
+ERROR:   remove with:
+ERROR:   ssh-keygen -f &quot;/home/yaoniplan/.ssh/known_hosts&quot; -R &quot;192.168.10.105&quot;
+ERROR: Host key for 192.168.10.105 has changed and you have requested strict checking.
+ERROR: Host key verification failed.
 </code></pre>
 <ul>
-<li><code>mv .ssh/know_hosts .ssh/know_hosts.old</code></li>
+<li><code>ssh-keygen -f &quot;/home/yaoniplan/.ssh/known_hosts&quot; -R &quot;192.168.10.105&quot;</code></li>
+<li><code>-f</code> # Filename</li>
+<li><code>-R</code> # Remove</li>
 </ul>
 </li>
 </ul>
@@ -4545,8 +4577,6 @@ Ascending # Order direction
 </code></pre>
 </li>
 </ul>
-<pre><code>
-</code></pre>
 </li>
 </ul>
 </li>
@@ -5576,7 +5606,7 @@ git push origin master
 <ul>
 <li><h4 id="add-a-user-to-a-group-in-linux">Add a user to a group in Linux</h4>
 <ul>
-<li><code>gpasswd -a yaoniplan vboxusers</code></li>
+<li><code>doas gpasswd -a yaoniplan vboxusers</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -7217,7 +7247,7 @@ set number
 <ul>
 <li><h4 id="use-vim">Use &quot;vim&quot;</h4>
 <ul>
-<li><code>v&gt;</code> # Indent current line (like <code>&gt;l</code>)</li>
+<li><code>&gt;&gt;</code> # Indent current line (like <code>&gt;l</code>, <code>v&gt;</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
 <li><code>Ctrl-r</code> # Redo</li>
 <li><code>u</code> # Undo</li>
@@ -8478,28 +8508,19 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><code>doas vim ~/.tmux.conf</code><pre><code># Enable Vi-style key bindings
 set -g mode-keys vi
-</code></pre>
-<ul>
-<li><code>Space</code> # Begin select</li>
-<li><code>Enter</code> # Copy and exit</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>doas vim ~/.tmux.conf</code><pre><code># Use Vi-style copy and paste commands
-bind-key -T copy-mode-vi &#39;v&#39; send -X begin-selection
-bind-key -T copy-mode-vi &#39;y&#39; send-keys -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
 
-# Use Ctrl-v to paste from system clipboard
-bind-key -n C-v run &quot;xclip -o | tmux load-buffer - ; tmux paste-buffer&quot;
+# Use Vi-style copy and paste commands
+bind -T copy-mode-vi &#39;v&#39; send -X begin-selection
+bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
 </code></pre>
 </li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em>
+  - <code>doas emerge -aq x11-misc/xclip</code> # Install in Gentoo Linux</li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
 <li><code>man tmux</code> # <code>/mode-keys</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -11382,6 +11403,10 @@ You can edit this.
 <li><em><strong>Notes</strong></em><ul>
 <li><code>proc</code> # Process</li>
 <li><code>meminfo</code> # Memory information</li>
+<li><code>free -h</code>  # Another way<ul>
+<li><code>-h</code> # Human</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -13513,33 +13538,34 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li>sudo pacman -Rs 包名 //删除软件包和不需要的依赖</li>
 </ol>
 </li>
-<li>[[linux]] [[虚拟机]] [[virtualbox]]使用<ol>
-<li>sudo pacman -S virtualbox virtualbox-host-modules-arch //安装 virtualbox，内核是 linux 的选择 virtualbox-host-modules-arch；内核是 linux 其他版的请详见参考资料</li>
-<li>sudo modprobe vboxdrv //加载 virtualbox kernel modules</li>
-<li>sudo modprobe vboxnetadp vboxnetflt //使用 bridged 和 host-only networking 功能</li>
-</ol>
+<li><h4 id="install-virtualbox-in-arch-linux">Install &quot;virtualbox&quot; in Arch Linux</h4>
 <ul>
-<li><strong>注意事项</strong></li>
-<li><strong>打开刚安装好的 virtualbox 时</strong></li>
+<li><code>doas pacman -S virtualbox virtualbox-host-modules-arch</code> # Install packages</li>
+<li><code>doas modprobe vboxdrv vboxnetadp vboxnetflt</code> # Load modules</li>
+<li><code>doas gpasswd --add yaoniplan vboxusers</code> # Use USB</li>
 </ul>
-<ol>
-<li>Default Machine Folder //更改默认的文件夹</li>
-<li>Update //取消检测更新</li>
-<li>enable efi //开启 efi (对操作系统有好处，在安装前的设置中)</li>
-<li>host + f //full the screen(host: right + ctrl，这是 hotkey)</li>
-</ol>
-<ul>
-<li><strong>安装完操作系统后</strong></li>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas reboot</code> # Make all changes effective</li>
+<li>New install<pre><code># Preferences of File
+## General
+/home/yaoniplan/.config/virtualbox/ # Default Machine Folder
+## Input
+Auto Capture Keyboard # Extended Features (Turn off it)
+</code></pre>
+</li>
 </ul>
 <ol>
 <li>remove filename.iso //移除 iso 文件，解决再次进入 Live 系统问题(在安装后)</li>
-<li>turn off <code>Auto Capture Keyboard</code> //关掉自动捕获键盘，解决 i3 快捷键冲突，导致不能使用 i3 的 <code>$mod</code> (组合键) 的问题 (在 Input 下面)</li>
 </ol>
-<ul>
-<li><strong>参考资料</strong></li>
-<li><a href="https://wiki.archlinux.org/title/VirtualBox">VirtualBox - ArchWiki</a></li>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.archlinux.org/title/VirtualBox">https://wiki.archlinux.org/title/VirtualBox</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li>[[linux]] [[arch]] [[i3]] [[wm]] [[hotkey]](alt: mod1; super: mod4)<ul>
 <li>mod + enter //终端</li>
 <li>mod + d //搜索</li>
