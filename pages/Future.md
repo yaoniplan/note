@@ -128,13 +128,8 @@ http://natas9.natas.labs.overthewire.org
 - https://www.aliyundrive.com/s/oXf51kSoBcW
 - https://www.aliyundrive.com/s/mX966r3kXWx
 - https://www.aliyundrive.com/s/DCkcjGqGTkc
-- https://www.aliyundrive.com/s/698axUAdTB4
-- https://www.aliyundrive.com/s/QS1JLB77GkT
-- https://www.aliyundrive.com/s/4hqryMPi4q7
-- https://www.aliyundrive.com/s/EGuuBYEcZug
-- https://www.aliyundrive.com/s/xCdPvUn4byQ
-- https://www.aliyundrive.com/s/BmySGTGCqbB
-- https://www.aliyundrive.com/s/gzw7qp4stw4
+- https://www.aliyundrive.com/s/698axUAdTB4 # Novels
+- https://www.aliyundrive.com/s/QS1JLB77GkT # Novels
 
 ## Typing practice
 - https://qwerty.liumingye.cn/

@@ -39,6 +39,26 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="move-a-window-from-one-session-to-another-in-tmux">Move a window from one session to another in tmux</h4>
+<ul>
+<li><code>tmux move-window -t 1:2</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-t</code> # Target (To)</li>
+<li><code>1</code> # Session name</li>
+<li><code>2</code> # Window name</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-17_21-43.png" alt="2023-05-17_21-43.png"></li>
+<li><code>man tmux</code> # <code>/move-window</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-tilda-in-dwm">Use &quot;tilda&quot; in DWM</h4>
 <ul>
 <li><code>doas vi ~/.config/dwm-6.4/config.h</code><pre><code class="language-c">static const Rule rules[] = {
@@ -73,6 +93,10 @@ Centered Horizontally # Position
 <li><code>doas pacman -S tilda</code> # Install in Arch Linux</li>
 <li><code>Alt-Shift-q</code> # Quit to make all changes effective</li>
 <li>Because it can act as a drop-down terminal and scratchpad.</li>
+<li>It&#39;s a little tasteless.<ul>
+<li>We already have st and dmenu.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -113,7 +137,10 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to try to replace Vim with Vi.</li>
+<li>Because to try to replace Vim with Vi and for portability.<ul>
+<li>Use external scripts and commands</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -155,6 +182,7 @@ set timeoutlen=0 ttimeoutlen=0
 <li><code>vim ~/.xinitrc</code><pre><code>exec dbus-launch --sh-syntax --exit-with-session dwm
 </code></pre>
 </li>
+<li><code>echo &#39;export $(dbus-launch)&#39; &gt;&gt; ~/.bashrc</code></li>
 </ul>
 </li>
 <li>Turn off the display of the following message<pre><code>/usr/lib/Xorg.wrap: Only console users are allowed to run the X server
@@ -259,10 +287,7 @@ yaoniplan is not in the sudoers file.
 <ul>
 <li><h4 id="disable-the-reflector-tool-in-arch-linux">Disable the Reflector tool in Arch Linux</h4>
 <ul>
-<li><code>systemctl stop reflector.timer</code><ul>
-<li><code>mv /etc/xdg/reflector/reflector.conf /tmp/</code> # Another way</li>
-</ul>
-</li>
+<li><code>systemctl stop reflector.timer</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -3526,6 +3551,7 @@ git push origin master
 </li>
 <li><code>doas emerge -aq net-misc/yt-dlp</code><ul>
 <li>Play url of the website (e.g. YouTube, Bilibili, etc.)</li>
+<li>May need to restart OS</li>
 </ul>
 </li>
 </ul>
@@ -5732,15 +5758,19 @@ git push origin master
 </ul>
 <hr>
 <ul>
-<li><h4 id="disable-audio-bell-in-kitty">Disable audio bell in kitty</h4>
+<li><h4 id="use-kitty">Use &quot;kitty&quot;</h4>
 <ul>
-<li><code>vim ~/.config/kitty/kitty.conf</code><pre><code>enable_audio_bell no
+<li><code>vim ~/.config/kitty/kitty.conf</code><pre><code># Disable audio bell
+enable_audio_bell no
+
+# Set font size
+font_size 18.0
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>For quiet</li>
+<li>Because for quiet and readability.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5881,19 +5911,19 @@ doas make install
 </ul>
 <hr>
 <ul>
-<li><h4 id="replace-the-import-command-with-scrot">Replace the import command with scrot</h4>
+<li><h4 id="use-scrot">Use &quot;scrot&quot;</h4>
 <ul>
-<li><code>scrot -u $HOME/$(date +%F_%T).png</code></li>
+<li><code>scrot --focused $HOME/$(date +%F_%T).png</code> # Focus a window</li>
+<li><code>scrot --select $HOME/&quot;$fileName&quot;</code> # Select a reactangle</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>-u</code> # Focused window</li>
 <li><code>scrot $HOME/$(date +%F_%T).png</code> # The full screen by default</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-02-06_11:47:12.png" alt="2023-02-06_11:47:12.png"></li>
 <li><code>man scrot</code></li>
+<li><a href="https://wiki.archlinux.org/title/Dwm#Taking_screenshots">https://wiki.archlinux.org/title/Dwm#Taking_screenshots</a></li>
 </ul>
 </li>
 </ul>
@@ -6603,8 +6633,7 @@ Unit ssh.service could not be found.
 soundNotification() {
 paplay /usr/share/sounds/alsa/Noise.wav
 }
-while true
-do
+while true; do
     soundNotification
     sleep 900
     soundNotification
@@ -7917,7 +7946,7 @@ inactive-opcity = 0.4;
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-12_19-07_1673521689908_0.png" alt="2023-01-12_19-07.png"></li>
 <li><img src="../assets/demo_1673521633245_0.gif" alt="demo.gif"></li>
-<li><a href="https://github.com/starship/starship">starship/starship: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!</a></li>
+<li><a href="https://github.com/starship/starship">https://github.com/starship/starship</a></li>
 </ul>
 </li>
 </ul>
@@ -9960,8 +9989,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 <li>Press the <code>Escape</code> key to exit the interface</li>
 </ul>
 </li>
-<li><strong>Try this first</strong>: Install <strong>media-sound/pulseaudio</strong> if your keyboard doesn&#39;t control the sound # Refer this <a href="https://wiki.gentoo.org/wiki/PulseAudio">link</a> to install it<ul>
-<li>Because it use <strong>pactl</strong> to adjust volume in PulseAudio in Gentoo Linux by default</li>
+<li>Enable audio or volume in Linux with pipeware<ul>
 <li><code>pactl set-sink-volume @DEFAULT_SINK@ +10%</code> # Increase the volume by ten percent</li>
 <li><code>pactl set-sink-volume @DEFAULT_SINK@ -10%</code> # Decrease the volume by ten percent</li>
 <li><code>pactl set-sink-mute @DEFAULT_SINK@ toggle</code> # Toggle mute</li>
@@ -9978,6 +10006,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 <li><code>man grep</code></li>
 <li><code>man lspci</code></li>
 <li><img src="../assets/image_1661396054219_0.png" alt="image.png"> </li>
+<li><a href="https://wiki.archlinux.org/title/Dwm#Adjusting_volume">https://wiki.archlinux.org/title/Dwm#Adjusting_volume</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/ALSA">https://wiki.gentoo.org/wiki/ALSA</a></li>
 </ul>
 </li>
@@ -10429,8 +10458,7 @@ Use <code>headings</code> <code>unordered lists</code> <code>images</code> <code
 <ul>
 <li>Push using [[Git]] automatically<ul>
 <li>&quot;~/.config/shell/autoGit.sh&quot;<pre><code class="language-sh">#!/bin/sh
-while :
-do
+while true; do
   cd ~/note
   sleep 20
   git add *
@@ -13555,9 +13583,6 @@ Auto Capture Keyboard # Extended Features (Turn off it)
 </code></pre>
 </li>
 </ul>
-<ol>
-<li>remove filename.iso //移除 iso 文件，解决再次进入 Live 系统问题(在安装后)</li>
-</ol>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://wiki.archlinux.org/title/VirtualBox">https://wiki.archlinux.org/title/VirtualBox</a></li>
