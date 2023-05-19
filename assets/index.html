@@ -22,6 +22,61 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="set-an-alias-in-linux-bash">Set an alias in Linux Bash</h4>
+<ul>
+<li><code>alias dotfiles=&#39;/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;</code><ul>
+<li><code>dotfiles</code> # Replace it with your desired alias</li>
+<li>Put your desired command into single quotes</li>
+<li>Put it into <code>~/.bashrc</code> and <code>source ~/.bashrc</code> to make it effective permanently</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>alias dotfiles</code> # Display the alias</li>
+<li><code>unalias dotfiles</code> # unalias the alias<ul>
+<li><code>\dotfiles</code> # Another way</li>
+</ul>
+</li>
+<li><code>vi ~/.ssh/config</code> # Set an alias for ssh<pre><code>Host yaoniplan
+    User yaoniplan
+    HostName 192.168.10.100
+    IdentityFile ~/.ssh/id_rsa
+</code></pre>
+<ul>
+<li><code>yaoniplan</code> # Replace it with your user</li>
+<li><code>192.168.10.100</code> # Replace it with your host name</li>
+<li><code>ssh yaoniplan</code> # The same as <code>ssh yaoniplan@192.168.10.100</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>unalias --help</code></li>
+<li><a href="https://missing-semester-cn.github.io/2020/command-line/">https://missing-semester-cn.github.io/2020/command-line/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="understand-rhapsody-in-blue">Understand &quot;Rhapsody in Blue&quot;</h4>
+<ul>
+<li>A music<ul>
+<li>Piano</li>
+<li>Jazz</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Rhapsody_in_Blue">https://en.wikipedia.org/wiki/Rhapsody_in_Blue</a></li>
+<li><a href="https://www.youtube.com/watch?v=ie-TS-BitnQ">https://www.youtube.com/watch?v=ie-TS-BitnQ</a></li>
+<li><a href="https://blog.lhp-pku.top/2023/05/17/middleschool/">https://blog.lhp-pku.top/2023/05/17/middleschool/</a> # 蓝色狂想曲</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="detect-if-a-command-is-running-in-linux-bash-script">Detect if a command is running in Linux Bash script</h4>
 <ul>
 <li><code>if ps aux | grep -v grep | grep timerOfTomato.sh &amp;&gt;/dev/null; then</code></li>
@@ -29,6 +84,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-v</code> # Invert match</li>
+<li><code>timerOfTomato.sh</code> # Replace it with your desired command</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -1006,12 +1062,21 @@ togglePDFDarkMode();
 <ul>
 <li><h4 id="use-ffmpeg-to-cut-video-files">Use &quot;ffmpeg&quot; to cut video files</h4>
 <ul>
-<li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code></li>
+<li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
+<li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c copy output.wma</code> # Merge videos<ul>
+<li><code>vi fileList.txt</code><pre><code>file &#39;output01.wma&#39;
+file &#39;output02.wma&#39;
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-i</code> # Input</li>
 <li><code>-ss</code> # Specify starting</li>
+<li><code>-f</code> # Format</li>
+<li><code>concat</code> # Concatenate</li>
 <li>Because to remove a commercial.</li>
 </ul>
 </li>
@@ -8563,6 +8628,7 @@ bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selec
 <ul>
 <li><h4 id="use-tmux">Use &quot;tmux&quot;</h4>
 <ul>
+<li><code>C-b ,</code> # Rename the current window</li>
 <li><code>C-b C-o</code> # Move lower pane up (Make sure the cursor is in the up pane)</li>
 <li><code>C-b {</code> # Move the current pane up</li>
 <li><code>C-b !</code> # Break pane to a window</li>
@@ -8594,7 +8660,7 @@ bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selec
 </ul>
 </li>
 <li><code>C-b [</code><ul>
-<li><code>Space</code> # Select what you want to copy</li>
+<li><code>Ctrl-Space</code> # Select what you want to copy</li>
 <li><code>Enter</code> # copy after select what you want to copy</li>
 </ul>
 </li>
