@@ -1,4 +1,5 @@
 ### "Animation"
+- top10ModelsOfDeepThinking # 08
 - 不灭神王 - 06
 - 仙武传 - 10
 - 遮天 - 05

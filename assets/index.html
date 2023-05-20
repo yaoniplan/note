@@ -34,7 +34,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>alias dotfiles</code> # Display the alias</li>
-<li><code>unalias dotfiles</code> # unalias the alias<ul>
+<li><code>unalias dotfiles</code> # unalias<ul>
 <li><code>\dotfiles</code> # Another way</li>
 </ul>
 </li>
@@ -70,8 +70,26 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Rhapsody_in_Blue">https://en.wikipedia.org/wiki/Rhapsody_in_Blue</a></li>
-<li><a href="https://www.youtube.com/watch?v=ie-TS-BitnQ">https://www.youtube.com/watch?v=ie-TS-BitnQ</a></li>
+<li><a href="https://www.youtube.com/watch?v=ie-TS-BitnQ">https://www.youtube.com/watch?v=ie-TS-BitnQ</a> # From <em>Fantasia 2000</em></li>
 <li><a href="https://blog.lhp-pku.top/2023/05/17/middleschool/">https://blog.lhp-pku.top/2023/05/17/middleschool/</a> # 蓝色狂想曲</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-sbin-is-system-binary">The abbreviation of &quot;/sbin&quot; is &quot;system binary&quot;.</h4>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://missing-semester-cn.github.io/2020/qa/">https://missing-semester-cn.github.io/2020/qa/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-systemd-is-system-daemon">The abbreviation of &quot;systemd&quot; is &quot;system daemon&quot;.</h4>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://missing-semester-cn.github.io/2020/potpourri/">https://missing-semester-cn.github.io/2020/potpourri/</a></li>
 </ul>
 </li>
 </ul>
@@ -341,13 +359,13 @@ yaoniplan is not in the sudoers file.
 </ul>
 <hr>
 <ul>
-<li><h4 id="disable-the-reflector-tool-in-arch-linux">Disable the Reflector tool in Arch Linux</h4>
+<li><h4 id="disable-reflector-tool-in-arch-linux">Disable &quot;reflector&quot; tool in Arch Linux</h4>
 <ul>
-<li><code>systemctl stop reflector.timer</code></li>
+<li><code>systemctl stop reflector</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to set a specifier mirror in iso.<ul>
+<li>Because to set a specifier mirror in the Live CD.<ul>
 <li><code>vim /etc/pacman.d/mirrorlist</code><pre><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 </code></pre>
 </li>
@@ -356,6 +374,7 @@ yaoniplan is not in the sudoers file.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/uk/rookie/basic_install?id=_0-disable-reflector">https://archlinuxstudio.github.io/ArchLinuxTutorial/#/uk/rookie/basic_install?id=_0-disable-reflector</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -524,15 +543,16 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li>Window manager<ul>
 <li>Bspwm (2023-05-16)</li>
 <li>Awesome (2023-05-16) # A fork of DWM</li>
-<li>i3 (2022-08-20) # To beginner</li>
 <li>DWM (2023-04-05) # Build from source code</li>
+<li>i3 (2022-08-20) # To beginners</li>
 </ul>
 </li>
-<li>Desktop environment (Aim for beginners)<ul>
-<li>GNOME (2022-07-16)</li>
+<li>Desktop environment<ul>
+<li>Xfce (2023-05-20)</li>
 <li>MATE (2023-05-18)</li>
 <li>Deepin (2023-05-16)</li>
 <li>KDE (2023-05-15)</li>
+<li>GNOME (2022-07-16)</li>
 </ul>
 </li>
 </ul>
@@ -549,8 +569,14 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li>A bundle of programs</li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Aim for beginners</li>
+<li>Out of the box</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Desktop_environment">https://en.wikipedia.org/wiki/Desktop_environment</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Out_of_the_box_(feature)">https://en.wikipedia.org/wiki/Out_of_the_box_(feature)</a></li>
 </ul>
 </li>
 </ul>
@@ -1062,6 +1088,7 @@ togglePDFDarkMode();
 <ul>
 <li><h4 id="use-ffmpeg-to-cut-video-files">Use &quot;ffmpeg&quot; to cut video files</h4>
 <ul>
+<li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
 <li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c copy output.wma</code> # Merge videos<ul>
 <li><code>vi fileList.txt</code><pre><code>file &#39;output01.wma&#39;
@@ -1320,7 +1347,7 @@ curl --head --silent https://google.com
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
-<li>Georg Riemann</li>
+<li><a href="https://en.wikipedia.org/wiki/Bernhard_Riemann">https://en.wikipedia.org/wiki/Bernhard_Riemann</a></li>
 </ul>
 </li>
 </ul>
@@ -2410,8 +2437,8 @@ x11-misc/dmenu savedconfig
 </ul>
 </li>
 <li><code>Alt-Enter</code> # Toggle windows between master and stack</li>
-<li><code>Alt-d</code></li>
-<li><code>Alt-i</code></li>
+<li><code>Alt-d</code> # Decrease</li>
+<li><code>Alt-i</code> # Increase</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -13414,7 +13441,7 @@ smart_boards on
 <li><a href="https://fontawesome.com/cheatsheet" title="Cheatsheet - Font Awesome">免费复制图标网站</a> //<code>ctrl + c</code> 即可复制 (如果找不到可以复制的图标的话)</li>
 <li>如果没有awesome字体，请安装 ttf-font-awesome</li>
 <li><em><strong>References</strong></em></li>
-<li><a href="https://www.youtube.com/watch?v=Bw5sDLOvN20&ab_channel=GerryStudios">Instalar y configurar a tope i3wm</a></li>
+<li><a href="https://www.youtube.com/watch?v=Bw5sDLOvN20&ab_channel=GerryStudios">https://www.youtube.com/watch?v=Bw5sDLOvN20&amp;ab_channel=GerryStudios</a></li>
 </ul>
 </li>
 <li>主机快照timeshift(快照可存其他盘，非系统盘) future #Idea</li>
@@ -13638,6 +13665,9 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li>sudo pacman -Rs 包名 //删除软件包和不需要的依赖</li>
 </ol>
 </li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="install-virtualbox-in-arch-linux">Install &quot;virtualbox&quot; in Arch Linux</h4>
 <ul>
 <li><code>doas pacman -S virtualbox virtualbox-host-modules-arch</code> # Install packages</li>
@@ -13650,6 +13680,7 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li>New install<pre><code># Preferences of File
 ## General
 /home/yaoniplan/.config/virtualbox/ # Default Machine Folder
+
 ## Input
 Auto Capture Keyboard # Extended Features (Turn off it)
 </code></pre>
@@ -13754,8 +13785,8 @@ Auto Capture Keyboard # Extended Features (Turn off it)
 </ol>
 </li>
 <li>[[linux]] 安装全套教程  <ol>
-<li><a href="https://github.com/LucasWang474/Arch-Configurations">Set up a fully featured arch linux environment from the outset.</a></li>
-<li><a href="https://www.youtube.com/c/EFLinuxMadeSimple/playlists">EF - Linux Made Simple</a></li>
+<li><a href="https://github.com/LucasWang474/Arch-Configurations">https://github.com/LucasWang474/Arch-Configurations</a></li>
+<li><a href="https://www.youtube.com/c/EFLinuxMadeSimple/playlists">https://www.youtube.com/c/EFLinuxMadeSimple/playlists</a></li>
 <li>[archinstall-简单脚本安装]</li>
 </ol>
 </li>
