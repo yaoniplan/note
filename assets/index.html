@@ -24,16 +24,87 @@
 <ul>
 <li><h4 id="search-for-content-in-c-language-on-github">Search for content in C language on GitHub</h4>
 <ul>
-<li><code>language:c todo</code></li>
+<li><code>language:C todo</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>c</code> # Replace it with other programming language</li>
+<li><code>C</code> # Replace it with other language (e.g. Bash, Python etc.)</li>
 <li><code>created:2020-01-01..2021-01-01</code> # Created date</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="install-gentoo-linux-in-docker-on-arch-linux">Install Gentoo Linux in Docker on Arch Linux</h4>
+<ul>
+<li><code>doas docker pull gentoo/stage3:latest</code> # Download About 400 Mb</li>
+<li><code>doas docker run -it gentoo/stage3:latest /bin/bash</code> # Run it</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas pacman -S docker</code> # Install in Arch Linux</li>
+<li><code>doas systemctl start docker</code> # Once now</li>
+<li>Restart and interact with the last exited Docker container<ul>
+<li><code>doas docker start a38ab0552048</code></li>
+<li><code>doas docker exec -it a38ab0552048 /bin/bash</code></li>
+</ul>
+</li>
+<li>Because someone in the group shared the news of success.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-21_18-44.png" alt="2023-05-21_18-44.png"></li>
+<li><code>docker exec --help</code><ul>
+<li><code>-i</code> # Interactive</li>
+<li><code>-t</code> # Tty</li>
+</ul>
+</li>
+<li><code>docker ps --help</code><ul>
+<li><code>docker ps --all</code> # Get CONTAINER ID (e.g. a38ab0552048)</li>
+</ul>
+</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="delete-the-fifth-through-seventh-lines-from-a-file-with-sed">Delete the fifth through seventh lines from a file with sed</h4>
+<ul>
+<li><code>sed -i &#39;5,7d&#39; ~/.ssh/config</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-i</code> # In place</li>
+<li><code>d</code> # Delete</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-21_19-45.png" alt="2023-05-21_19-45.png"></li>
+<li><code>man sed</code> # <code>/delete</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="number-the-output-line-in-linux">Number the output line in Linux</h4>
+<ul>
+<li><code>cat -n ~/.ssh/config</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-n</code> # Number</li>
+<li>Because suitable for files with fewer lines in teaching.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-21_20-08.png" alt="2023-05-21_20-08.png"></li>
+<li><code>man cat</code> # <code>/number</code></li>
 </ul>
 </li>
 </ul>
@@ -4838,7 +4909,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 <li><h4 id="use-the-docker-command">Use the &quot;docker&quot; command</h4>
 <ul>
 <li><code>docker stop a3a15b7a4419 &amp;&amp; docker rm a3a15b7a4419</code> # Stop and remove a container<ul>
-<li><code>docker ps</code> # Get &quot;CONTAINER ID&quot;</li>
+<li><code>docker ps --all</code> # Get &quot;CONTAINER ID&quot;</li>
 </ul>
 </li>
 <li><code>docker rmi a3adcb495939</code> # Remove a image<ul>
