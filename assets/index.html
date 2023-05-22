@@ -134,7 +134,6 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-05-22_13-51.png" alt="2023-05-22_13-51.png"></li>
-<li><img src="../assets/2023-05-21_20-08.png" alt="2023-05-21_20-08.png"></li>
 <li><code>man nl</code></li>
 <li><code>man cat</code> # <code>/number</code></li>
 </ul>
@@ -2108,7 +2107,7 @@ sleep &quot;$1&quot;; notification
 <li><em><strong>Notes</strong></em><ul>
 <li><code>source $HOME/.local/bin/master.sh</code> # Source the file<ul>
 <li><code>chmod u+x ~/.local/bin/master.sh</code></li>
-<li>Use the full path when souce a file</li>
+<li>Use full path to avoid errors when souce a file</li>
 </ul>
 </li>
 <li>Because to improve the code reusability.</li>
@@ -7669,16 +7668,16 @@ set -g @continuum-save-interval &#39;1&#39;
 <ul>
 <li><h4 id="use-crontab">Use &quot;crontab&quot;</h4>
 <ul>
-<li><code>crontab -e</code><pre><code>* * * * /bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
+<li><code>crontab -e</code><pre><code>* * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
 @reboot /usr/bin/touch /home/yaoniplan/testTwo.md
-30 16 * * * /bin/bash $HOME/.local/bin/pushCode.sh
+30 16 * * * /usr/bin/bash $HOME/.local/bin/pushCode.sh
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>* * * * *</code> # Every minute when the computer is running</li>
-<li><code>/bin/bash</code> # Path of command<ul>
+<li><code>/usr/bin/bash</code> # Path of command<ul>
 <li><code>which bash</code> # Get it</li>
 </ul>
 </li>
