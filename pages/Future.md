@@ -104,7 +104,6 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
 ## Artificial intelligence
-- http://chat.bulita.cn/
 - https://github.com/muzihuaner/chatgpt-sites
 - https://www.perplexity.ai/
 - https://platform.openai.com/onboarding

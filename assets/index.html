@@ -22,6 +22,32 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="understand-twinkle-twinkle-little-star">Understand &quot;Twinkle, Twinkle, Little Star&quot;</h4>
+<ul>
+<li>A lullaby<ul>
+<li>From a poem</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Lyrics (The first part)<ul>
+<li>Twinkle, twinkle, little star,</li>
+<li>How I wonder what you are!</li>
+<li>Up above the world so high,</li>
+<li>Like a diamond in the sky.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Your Lie in April # Animation</li>
+<li><a href="https://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star">https://en.wikipedia.org/wiki/Twinkle,_Twinkle,_Little_Star</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="search-for-content-in-c-language-on-github">Search for content in C language on GitHub</h4>
 <ul>
 <li><code>language:C todo</code></li>
@@ -99,11 +125,17 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-n</code> # Number</li>
+<li>Another way<ul>
+<li><code>nl ~/.ssh/config</code> # Number lines</li>
+</ul>
+</li>
 <li>Because suitable for files with fewer lines in teaching.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-22_13-51.png" alt="2023-05-22_13-51.png"></li>
 <li><img src="../assets/2023-05-21_20-08.png" alt="2023-05-21_20-08.png"></li>
+<li><code>man nl</code></li>
 <li><code>man cat</code> # <code>/number</code></li>
 </ul>
 </li>
@@ -149,7 +181,7 @@
 <ul>
 <li><h4 id="understand-rhapsody-in-blue">Understand &quot;Rhapsody in Blue&quot;</h4>
 <ul>
-<li>A music<ul>
+<li>A piece of music<ul>
 <li>Piano</li>
 <li>Jazz</li>
 </ul>
@@ -361,11 +393,18 @@ fi
 </li>
 </ul>
 </li>
-<li><code>xrandr -q</code></li>
+<li>Set resolution if it is not clear<pre><code>xrandr --output LVDS-1 --mode 1280x720
+</code></pre>
+<ul>
+<li><code>LVDS-1</code> # Replace it with your screen name</li>
+<li><code>1280x720</code> # Replace it with your desired resolution</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+<li><code>xrandr --query</code></li>
 <li><a href="https://wiki.gentoo.org/wiki/Dwm">https://wiki.gentoo.org/wiki/Dwm</a></li>
 <li><a href="https://www.bilibili.com/video/BV1qP4y1L7dH/">https://www.bilibili.com/video/BV1qP4y1L7dH/</a></li>
 <li><a href="https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login">https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login</a></li>
@@ -498,13 +537,14 @@ yaoniplan is not in the sudoers file.
 <li><code>doas passwd yaoniplan</code> # Change user password</li>
 <li><code>su yaoniplan</code> # Substitue to the user</li>
 <li>Delete the user in Arch Linux<ul>
-<li><code>doas --remove yaoniplan</code> # Remove the home directory</li>
+<li><code>doas userdel --remove yaoniplan</code> # Remove the home directory</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+<li><code>man userdel</code> # <code>/home</code></li>
 <li><code>man passwd</code></li>
 <li><code>man useradd</code></li>
 </ul>
@@ -3723,9 +3763,20 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>--shuffle</code> # Random playback</li>
+<li><code>--sub-file-paths=barrage/</code> # For animation<ul>
+<li><code>barrage/</code> # Replace it with your directory including subtitles</li>
+<li><code>--sub-file=&quot;barrage/01单调·多彩.ass&quot;</code> # For movie</li>
+</ul>
+</li>
+<li><code>--shuffle</code> # Random playback<ul>
+<li>For music</li>
+</ul>
+</li>
 <li><code>--no-video</code> # For audio only</li>
-<li><code>m</code> # Mute</li>
+<li><code>m</code> # Mute<ul>
+<li>For NSFW</li>
+</ul>
+</li>
 <li><code>--playlist=computerScience.txt</code></li>
 <li><code>Fn-8</code> # Show playlist</li>
 <li><code>--http-proxy=http://192.168.10.100:7890</code><ul>
@@ -8740,28 +8791,6 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 <hr>
 <ul>
-<li><h4 id="copy-text-from-tmux-to-clipboard-in-linux">Copy text from tmux to clipboard in Linux</h4>
-<ul>
-<li><code>doas vim ~/.tmux.conf</code><pre><code># Enable Vi-style key bindings
-set -g mode-keys vi
-
-# Use Vi-style copy and paste commands
-bind -T copy-mode-vi &#39;v&#39; send -X begin-selection
-bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em>
-  - <code>doas emerge -aq x11-misc/xclip</code> # Install in Gentoo Linux</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>man tmux</code> # <code>/mode-keys</code></li>
-<li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4 id="use-tmux">Use &quot;tmux&quot;</h4>
 <ul>
 <li><code>C-b ,</code> # Rename the current window</li>
@@ -8772,11 +8801,9 @@ bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selec
 <li><code>C-b ;</code> # Last pane (previously used)</li>
 <li><code>C-b ?</code> # Help</li>
 <li><code>C-b w</code> # Window of tree mode</li>
-<li><code>C-b s</code> # Session of tree mode</li>
 <li><code>C-b c</code> # Create window</li>
 <li><code>C-b l</code> # Last window (previously used)</li>
 <li><code>C-b &quot;</code> # Split vertically</li>
-<li><code>C-b L</code> # Last session (previously used)</li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
 <li><code>kill-pane</code></li>
@@ -8795,17 +8822,20 @@ bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selec
 <li><code>source-file ~/.tmux.conf</code> # Reload the Tmux configuration file</li>
 </ul>
 </li>
-<li><code>C-b [</code><ul>
-<li><code>Ctrl-Space</code> # Select what you want to copy</li>
-<li><code>Enter</code> # copy after select what you want to copy</li>
-</ul>
-</li>
-<li><code>C-b ]</code> # paste</li>
-<li><code>C-b =</code> # Buffer mode</li>
-<li><code>tmux ls</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.tmux.conf</code> # Copy text from tmux to clipboard in Linux<pre><code># Enable Vi-style key bindings
+set -g mode-keys vi
+
+# Use Vi-style copy and paste commands
+bind -T copy-mode-vi &#39;v&#39; send -X begin-selection
+bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
+</code></pre>
+<ul>
+<li><code>doas emerge -aq x11-misc/xclip</code> # Install in Gentoo Linux</li>
+</ul>
+</li>
 <li><code>vim ~/.tmux.conf</code> # Set the escape time to 0<pre><code># Set the escape time to 0
 set -sg escape-time 0
 </code></pre>
@@ -8829,7 +8859,7 @@ set -g base-index 1
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man tmux</code></li>
+<li><code>man tmux</code> # <code>/mode-keys</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
 <li><a href="https://wiki.gentoo.org/wiki/Tmux">https://wiki.gentoo.org/wiki/Tmux</a></li>
 <li><a href="https://github.com/jbranchaud/til/blob/master/tmux/break-current-pane-out-to-separate-window.md">https://github.com/jbranchaud/til/blob/master/tmux/break-current-pane-out-to-separate-window.md</a></li>
