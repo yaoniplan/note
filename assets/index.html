@@ -48,6 +48,24 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="view-system-log-in-systemd">View system log in Systemd</h4>
+<ul>
+<li><code>journalctl -e</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-e</code> # End</li>
+<li>Because to debug scripts that don&#39;t work properly.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man journalctl</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="search-for-content-in-c-language-on-github">Search for content in C language on GitHub</h4>
 <ul>
 <li><code>language:C todo</code></li>
@@ -67,8 +85,8 @@
 <ul>
 <li><h4 id="install-gentoo-linux-in-docker-on-arch-linux">Install Gentoo Linux in Docker on Arch Linux</h4>
 <ul>
-<li><code>doas docker pull gentoo/stage3:latest</code> # Download about 400 Mb</li>
-<li><code>doas docker run -it gentoo/stage3:latest /bin/bash</code> # Run</li>
+<li><code>doas docker pull gentoo/stage3:latest</code></li>
+<li><code>doas docker run -it gentoo/stage3:latest /bin/bash</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -107,6 +125,14 @@
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-i</code> # In place</li>
 <li><code>d</code> # Delete</li>
+<li>Delete the fifth line with sed<ul>
+<li><code>sed -i &#39;5d&#39; ~/.bash_profile</code></li>
+</ul>
+</li>
+<li>Delete the last line with sed<ul>
+<li><code>sed -i &#39;$d&#39; ~/.bash_profile</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -125,7 +151,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-n</code> # Number</li>
-<li>Another way<ul>
+<li>Another way (Does not number blank lines)<ul>
 <li><code>nl ~/.ssh/config</code> # Number lines</li>
 </ul>
 </li>
@@ -8043,9 +8069,11 @@ call plug#end()
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>Ctrl-[</code> # The same as <code>Esc</code> key</li>
+<li><code>Ctrl-[</code> # The same as <code>Esc</code> key<ul>
 <li><code>k</code> # The same as <code>Ctrl-p</code> of Emacs mode</li>
 <li><code>/</code> # The same as <code>Ctrl-r</code> of Emacs mode</li>
+</ul>
+</li>
 <li><code>set -o</code> # Show the current settings</li>
 <li><code>vim ~/.bashrc</code> # Enable by default<pre><code class="language-bash"># Enable Vi mode
 set -o vi

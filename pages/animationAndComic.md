@@ -1,5 +1,5 @@
 ### "Animation"
-- Your Lie in April / 四月是你的谎言 - 11 0601
+- Your Lie in April / 四月是你的谎言 - 11
 - A brief history - 13
 - 真武巅峰 (Part1+2) - 40+05
 - top10ModelsOfDeepThinking # 08
