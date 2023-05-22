@@ -2098,7 +2098,7 @@ notification &quot;$1&quot;
 <li><code>vim ~/.local/bin/remindMe.sh</code><pre><code>notificationMessage=&quot;Time is up!&quot;
 audioFile=&quot;/home/yaoniplan/note/assets/doorbell.mp3&quot;
 
-source master.sh
+source $HOME/.local/bin/master.sh
 
 sleep &quot;$1&quot;; notification
 </code></pre>
@@ -2106,8 +2106,9 @@ sleep &quot;$1&quot;; notification
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>source master.sh</code> # Source the file<ul>
+<li><code>source $HOME/.local/bin/master.sh</code> # Source the file<ul>
 <li><code>chmod u+x ~/.local/bin/master.sh</code></li>
+<li>Use the full path when souce a file</li>
 </ul>
 </li>
 <li>Because to improve the code reusability.</li>
