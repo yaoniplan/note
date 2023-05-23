@@ -37,12 +37,18 @@
 </ul>
 </li>
 <li>Enable colors with the ANSI escape codes<ul>
+<li><code>\[\e[1;32m\]</code> # Set the color to bold green</li>
+<li><code>\[\e[0m\]</code> # Reset the color to the default</li>
 <li><code>\e[</code> # Escape</li>
-<li><code>32</code> # Color code</li>
+<li><code>1;</code> # Bold</li>
+<li><code>32</code> # Green color code</li>
+<li><code>34</code> # Blue color code</li>
+<li><code>0</code> # Reset</li>
+<li><code>m</code> # Mark the end</li>
 </ul>
 </li>
 <li>Set prompt string permanently<ul>
-<li><code>vi ~/.bashrc</code><pre><code>export PS1=&#39;\n\W\n&gt; &#39;
+<li><code>vi ~/.bashrc</code><pre><code>export PS1=&#39;\[\e[1;32m\]\u@\h\[\e[0m\] \[\e[1;34m\]\w \$\[\e[0m\] &#39;
 </code></pre>
 </li>
 <li><code>source ~/.bashrc</code></li>
@@ -51,6 +57,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-23_20-06.png" alt="2023-05-23_20-06.png"></li>
 <li><code>grep &quot;PS1&quot; ~/.bashrc</code></li>
 <li><code>echo $PS1</code></li>
 <li><a href="https://missing-semester-cn.github.io/2020/command-line/">https://missing-semester-cn.github.io/2020/command-line/</a> # $PS1</li>
@@ -4497,7 +4504,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 <hr>
 <ul>
-<li><h4 id="trying-to-build-a-blog">Trying to build a blog</h4>
+<li><h4 id="trying-to-build-a-blog-2023-03-04">Trying to build a blog (2023-03-04)</h4>
 <ul>
 <li>No comment system</li>
 <li>Markdowm # Simple</li>
@@ -4507,7 +4514,6 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://blog.est.im/">https://blog.est.im/</a></li>
-<li><a href="https://v2ex.com/t/921010#reply140">https://v2ex.com/t/921010#reply140</a></li>
 </ul>
 </li>
 </ul>
@@ -8259,7 +8265,7 @@ inactive-opcity = 0.4;
 </ul>
 <hr>
 <ul>
-<li><h4 id="set-prompt-for-bash">Set #prompt for #Bash</h4>
+<li><h4 id="set-prompt-for-bash">Set prompt for Bash</h4>
 <ul>
 <li><code>doas emerge -q app-shells/starship</code> # Install Starship</li>
 <li><code>vim ~/.bashrc</code> # Setup the Shell (Bash) to use Starship<pre><code>eval &quot;$(starship init bash)&quot;
