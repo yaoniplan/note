@@ -22,6 +22,52 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="set-prompt-string-in-linux-bash">Set prompt string in Linux Bash</h4>
+<ul>
+<li><code>PS1=&#39;[\u@\h \W]\$ &#39;</code><pre><code>[yaoniplan@tux ~]$ 
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>\</code> # Escape<ul>
+<li><code>u</code> # User</li>
+<li><code>h</code> # Hostname</li>
+<li><code>W</code> # Working directory</li>
+</ul>
+</li>
+<li>Enable colors with the ANSI escape codes<ul>
+<li><code>\e[</code> # Escape</li>
+<li><code>32</code> # Color code</li>
+</ul>
+</li>
+<li>Set prompt string permanently<ul>
+<li><code>vi ~/.bashrc</code><pre><code>export PS1=&#39;\n\W\n&gt; &#39;
+</code></pre>
+</li>
+<li><code>source ~/.bashrc</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>grep &quot;PS1&quot; ~/.bashrc</code></li>
+<li><code>echo $PS1</code></li>
+<li><a href="https://missing-semester-cn.github.io/2020/command-line/">https://missing-semester-cn.github.io/2020/command-line/</a> # $PS1</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-prompt-string-1-is-ps1">The abbreviation of &quot;Prompt String 1&quot; is &quot;PS1&quot;.</h4>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt">https://en.wikipedia.org/wiki/Command-line_interface#Command_prompt</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="understand-twinkle-twinkle-little-star">Understand &quot;Twinkle, Twinkle, Little Star&quot;</h4>
 <ul>
 <li>A lullaby<ul>
@@ -85,7 +131,6 @@
 <ul>
 <li><h4 id="install-gentoo-linux-in-docker-on-arch-linux">Install Gentoo Linux in Docker on Arch Linux</h4>
 <ul>
-<li><code>doas docker pull gentoo/stage3:latest</code></li>
 <li><code>doas docker run -it gentoo/stage3:latest /bin/bash</code></li>
 </ul>
 </li>
@@ -108,7 +153,7 @@
 </ul>
 </li>
 <li><code>docker ps --help</code><ul>
-<li><code>docker ps --all</code> # Get CONTAINER ID (e.g. a38ab0552048)</li>
+<li><code>doas docker ps --all</code> # Get CONTAINER ID (e.g. a38ab0552048)</li>
 </ul>
 </li>
 <li>ChatGPT</li>
@@ -161,7 +206,8 @@
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-05-22_13-51.png" alt="2023-05-22_13-51.png"></li>
 <li><code>man nl</code></li>
-<li><code>man cat</code> # <code>/number</code></li>
+<li><code>man cat</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -2588,7 +2634,7 @@ x11-misc/dmenu savedconfig
 <li><code>Alt-Shift-c</code> # Kill a window</li>
 <li><code>Alt-leftMouse</code> # Drag window</li>
 <li><code>Alt-rightMouse</code> # Resize window</li>
-<li><code>Alt-middleMouse</code> # Restore the state before dragging</li>
+<li><code>Alt-middleMouse</code> # Restore the previous state after dragging</li>
 <li><code>Alt-Tab</code> # Switch to previous workspace</li>
 <li><code>Alt-Shift-Enter</code> # New a terminal</li>
 <li><code>Alt-Shift-q</code> # Quit the DWM</li>
