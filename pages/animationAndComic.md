@@ -1,29 +1,27 @@
 ### "Animation"
-- Your Lie in April / 四月是你的谎言 - 17 animation
 - A brief history - 13
-- 真武巅峰 (Part1+2) - 40+05
 - top10ModelsOfDeepThinking # 08
+- 真武巅峰 (Part1+2) - 40+06
 - 不灭神王 - 06
-- 仙武传 - 10
-- 遮天 - 05
-- 剑域风云 (Part1+2) - 40+37
+- 仙武传 - 11
+- 遮天 - 06
+- 剑域风云 (Part1+2) - 40+38
 - 勇者死了 - 07
-- 一世独尊 - 11
-- 火凤燎原 - 04
+- 一世独尊 - 13
+- 火凤燎原 - 05
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+37
 - Mashle: Magic and Muscles / 物理魔法使马修 - 06
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 07
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 08
 - 向涟苍士献上纯洁 - #NSFW 04
-- 地狱乐 - 07
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+06
-- 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+12
-- 炼气十万年 - 29
+- 地狱乐 - 08
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+07
+- 炼气十万年 - 31
 - 神印王座 - 55
-- 百炼成神 - 29
-- 灵剑尊 -  240/383
-- 武神主宰 - 192/333
-- 独步逍遥 - 168/313
-- 完美世界 - 38/110
+- 百炼成神 - 30
+- 灵剑尊 -  240/385
+- 武神主宰 - 192/335
+- 独步逍遥 - 168/314
+- 完美世界 - 38/111
 - Against the Sky Supreme / 逆天至尊 - 53/197
 - 冰火魔厨 - 04/77
 - 一念永恒 (Part1+2) - 52+46
@@ -241,6 +239,8 @@
 - guard(end)
 
 ### Animation
+- 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+12 # End of the sixth part
+- Your Lie in April / 四月是你的谎言 - 22 # End of the first part
 - 赘婿 - 04 1523 # Commercials and alternate history that lowers intelligence quotient
 - Blade & Soul - 02 # Not found resource
 - Edens Zero (Part1+2) - 25+01 # Plot predictable

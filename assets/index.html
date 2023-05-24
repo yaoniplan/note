@@ -10746,24 +10746,6 @@ Use <code>headings</code> <code>unordered lists</code> <code>images</code> <code
 <li>test_link</li>
 </ul>
 </li>
-<li><h4 id="use-shutdown-in-linux">Use &quot;shutdown&quot; in Linux</h4>
-<ul>
-<li><code>shutdown -h 23:00</code> # Shut down at 23:00 today</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>shutdown -h +30</code> # Shut down after thirty minutes</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1667745772612_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1667745850629_0.png" alt="image.png"></li>
-<li><a href="https://blog.csdn.net/xmc281141947/article/details/61191212">https://blog.csdn.net/xmc281141947/article/details/61191212</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li>I&#39;m trying to complete my GitHub. #Idea</li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1667689932734_0.png" alt="image.png"></li>
@@ -12270,11 +12252,6 @@ You can edit this.
 <li><code>wqy-microhei</code> # 安装中文字体 <code>wqy-microhei</code> (有效解决中文乱码问题)</li>
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662522157245_0.png" alt="image.png"></li>
-</ul>
-</li>
-<li>[[linux]] <code>shutdown</code><ul>
-<li><code>shutdown now</code> # 关机 (now: 现在) (或者在终端输入 <code>poweroff</code> ，如果你喜欢的话)</li>
-<li><code>shutdown -r now</code> # 重启 (<code>r</code>: reboot , now: 现在) (或者在终端输入 <code>reboot</code>，如果你喜欢的话)</li>
 </ul>
 </li>
 <li><blockquote>
@@ -14045,11 +14022,32 @@ Auto Capture Keyboard # Extended Features (Turn off it)
 <li>写入：输入 <code>:</code> ，在 <code>:</code> 后面输入 <code>w</code> (write)，写入(保存)；  </li>
 <li>退出：在 <code>:</code> 后面输入 <code>q</code> (quit)，退出文件；   强制退出：在 <code>:</code> 后面输入 <code>q!</code> )</li>
 </ol>
+</li>
+</ul>
+<hr>
 <ul>
-<li><code>shutdown now</code> 或 <code>poweroff</code> //关机</li>
-<li><code>reboot</code> //重启</li>
+<li><h4 id="use-shutdown-in-linux">Use &quot;shutdown&quot; in Linux</h4>
+<ul>
+<li><code>shutdown -h 23:00</code> # Shut down at 23:00 today</li>
+<li><code>shutdown -h +30</code> # Shut down after thirty minutes</li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-h</code> # Halt</li>
+<li><code>shutdown -h now</code> # The same as <code>poweroff</code></li>
+<li><code>shtdown -r now</code> # The same as <code>reboot</code></li>
+<li><code>-r</code> # Reboot</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man shutdown</code></li>
+<li><img src="../assets/image_1667745772612_0.png" alt="image.png"></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[outlook]] [[邮箱]] 每周只能添加两个别名</li>
 <li>#linux <a href="https://blog.51cto.com/u_6364219/4920283">Shell</a><pre><code>su 新用户名 #切换成新用户
 sudo pacman -S zsh #安装 zsh
