@@ -1,4 +1,9 @@
 ### "Animation"
+- 黑之宣告第一季 - 00
+- 弹丸论破3 -The End of 希望之峰学园- - 00
+- 钱进球场 - 00
+- 灰与幻想的格林姆迦尔 - 00
+- Death Parade / 死亡游行 - 05 1842 animation
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 真武巅峰 (Part1+2) - 40+06
@@ -22,12 +27,11 @@
 - 武神主宰 - 192/335
 - 独步逍遥 - 168/314
 - 完美世界 - 38/111
-- Against the Sky Supreme / 逆天至尊 - 53/197
-- 冰火魔厨 - 04/77
-- 一念永恒 (Part1+2) - 52+46
-- 斗破苍穹年番 - 44
-- 绝世武魂 - 271
-- 万古神话 - 83
+- Against the Sky Supreme / 逆天至尊 - 53/199
+- 一念永恒 (Part1+2) - 52+47
+- 斗破苍穹年番 - 45
+- 绝世武魂 - 273
+- 万古神话 - 84
 - 星河至尊 - 157
 
 ### Comic
@@ -239,6 +243,7 @@
 - guard(end)
 
 ### Animation
+- 冰火魔厨 - 04/78 1122 # For children or teens and slow pace
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+12 # End of the sixth part
 - Your Lie in April / 四月是你的谎言 - 22 # End of the first part
 - 赘婿 - 04 1523 # Commercials and alternate history that lowers intelligence quotient

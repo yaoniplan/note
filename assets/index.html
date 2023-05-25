@@ -22,6 +22,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="set-mirror-in-nixos">Set mirror in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>nix.settings.substituters = [
+  &quot;https://mirrors.ustc.edu.cn/nix-channels/store&quot;
+];
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Set mirror temporarily<pre><code>nixos-install --option substituters https://mirrors.ustc.edu.cn/nix-channels/store
+</code></pre>
+</li>
+<li>Because to improve the speed when using command <code>nixos-install</code>.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-prompt-string-in-linux-bash">Set prompt string in Linux Bash</h4>
 <ul>
 <li><code>PS1=&#39;[\u@\h \W]\$ &#39;</code><pre><code>[yaoniplan@tux ~]$ 
@@ -13739,7 +13762,7 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li><code>mount /dev/sda2 /mnt -o subvol=/@</code> //使用 <code>fdisk -l</code> 和 <code>lsblk</code> 来获取对应信息</li>
 <li><code>arch-chroot /mnt</code> //进入 Linux filesystem</li>
 <li><em><strong>参考资料</strong></em></li>
-<li><a href="https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3" title="Chroot into a btrfs uefi system from live media">Chroot into a btrfs uefi system from live media</a></li>
+<li><a href="https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3">https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3</a></li>
 </ul>
 </li>
 <li>[[arch]] [[linux]] [[i3]] [[bar]] [[position]] 状态栏位置(底部或顶部)<ul>
