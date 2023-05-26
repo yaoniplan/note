@@ -22,6 +22,35 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-the-iso-file-to-enter-the-system-in-nixos">Use the ISO file to enter the system in NixOS</h4>
+<ul>
+<li><code>mount /dev/disk/by-label/nixos /mnt</code></li>
+<li><code>mount /dev/disk/by-label/boot /mnt/boot</code></li>
+<li><code>swapon /dev/sda2</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>When booting<pre><code>Reboot Into Firmware Interface
+Boot Manager
+UEFI VBOX CD-ROM VB2-01700376
+</code></pre>
+</li>
+<li><code>sudo --login</code> # Substitute to root user</li>
+<li><code>setfont ter-v32n</code> # Increase the font size</li>
+<li><code>nano /mnt/etc/nixos/configuration.nix</code> # Edit the configuration file</li>
+<li><code>nixos-install</code> # Install system</li>
+<li>Because to edit the <code>configuration.nix</code> file when can&#39;t log in to the system.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.org/download.html#nixos-iso">https://nixos.org/download.html#nixos-iso</a> # Minimal ISO image (64-bit Intel/AMD)</li>
+<li><a href="https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-installing">https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-installing</a></li>
+<li><a href="https://www.youtube.com/watch?v=IdoCOqkAexY">https://www.youtube.com/watch?v=IdoCOqkAexY</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-mirror-in-nixos">Set mirror in NixOS</h4>
 <ul>
 <li><code>vim /etc/nixos/configuration.nix</code><pre><code>nix.settings.substituters = [
@@ -80,7 +109,6 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-05-23_20-06.png" alt="2023-05-23_20-06.png"></li>
-<li><code>grep &quot;PS1&quot; ~/.bashrc</code></li>
 <li><code>echo $PS1</code></li>
 <li><a href="https://missing-semester-cn.github.io/2020/command-line/">https://missing-semester-cn.github.io/2020/command-line/</a> # $PS1</li>
 <li>ChatGPT</li>
@@ -324,6 +352,7 @@
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-v</code> # Invert match</li>
 <li><code>timerOfTomato.sh</code> # Replace it with your desired command</li>
+<li><code>if pgrep tilda; then</code> # Another way (Does not work for scripts)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -3865,20 +3894,14 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>--sub-file-paths=barrage/</code> # For animation<ul>
-<li><code>barrage/</code> # Replace it with your directory including subtitles</li>
-<li><code>--sub-file=&quot;barrage/01单调·多彩.ass&quot;</code> # For movie</li>
+<li><code>--sub-file-paths=subtitles/</code> # For animation<ul>
+<li><code>subtitles/</code> # Replace it with your directory including subtitles</li>
+<li><code>--sub-file=&quot;subtitles/01.ass&quot;</code> # For movie</li>
 </ul>
 </li>
-<li><code>--shuffle</code> # Random playback<ul>
-<li>For music</li>
-</ul>
-</li>
+<li><code>--shuffle</code> # Random playback (For music)</li>
 <li><code>--no-video</code> # For audio only</li>
-<li><code>m</code> # Mute<ul>
-<li>For NSFW</li>
-</ul>
-</li>
+<li><code>m</code> # Mute (For NSFW)</li>
 <li><code>--playlist=computerScience.txt</code></li>
 <li><code>Fn-8</code> # Show playlist</li>
 <li><code>--http-proxy=http://192.168.10.100:7890</code><ul>
@@ -8928,10 +8951,8 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.tmux.conf</code> # Copy text from tmux to clipboard in Linux<pre><code># Enable Vi-style key bindings
+<li><code>vim ~/.tmux.conf</code> # Copy text from tmux to clipboard in Linux<pre><code># Enable Vi mode
 set -g mode-keys vi
-
-# Use Vi-style copy and paste commands
 bind -T copy-mode-vi &#39;v&#39; send -X begin-selection
 bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
 </code></pre>
@@ -10587,15 +10608,46 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li>Usage #QEMU #Emulation #Gentoo #Linux<ul>
-<li><code>sudo qemu-system-x86_64 -display gtk -m 20G -boot d -vga std -cdrom ~/app/archlinux-2022.08.05-x86_64.iso</code><ul>
+<li><h4 id="use-qemu-in-linux">Use &quot;qemu&quot; in Linux</h4>
+<ul>
+<li>Create a disk image<ul>
+<li><code>qemu-img create -f qcow2 testQemu.cow 24G</code></li>
+</ul>
+</li>
+<li>Install the OS<pre><code>qemu-system-x86_64 -m 8G -enable-kvm \
+  -bios /usr/share/ovmf/x64/OVMF.fd \
+  -cdrom /mnt/grow/230504archlinux-2023.05.03-x86_64.iso \
+  -drive file=testQemu.cow,format=qcow2 \
+  -boot order=d
+</code></pre>
+</li>
+<li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 2 -enable-kvm \
+  -nic user,hostfwd=tcp::60022-:22 \
+  testQemu.cow -audiodev pa,id=sound0 \
+  -device ich9-intel-hda \
+  -device hda-output,audiodev=sound0
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-bios /usr/share/ovmf/x64/OVMF.fd</code> # 64bit UEFI</li>
+<li><code>ssh yaoniplan@192.168.10.105 -p 60022</code> # Connect it</li>
+<li><code>doas pacman -S qemu-full</code> # Install dependencies</li>
+<li><code>doas pacman -S remmina</code> # Install the VNC client (Another way)<pre><code># Click the &quot;New connection profile&quot; icon
+Remmina VNC plugin for GNOME and KVM # Protocol
+localhost:5900 # Server
+# Click the &quot;Save&quot; button
+# Double-click to connect the VNC server
+</code></pre>
+</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1668658549725_0.png" alt="image.png"></li>
-<li><a href="https://wiki.gentoo.org/wiki/QEMU/Options">QEMU/Options - Gentoo Wiki</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="https://pkgbuild.com/~tpowa/archboot/web/archboot.html">https://pkgbuild.com/~tpowa/archboot/web/archboot.html</a></li>
+<li><a href="https://leedev.org/2015/12/13/arch-linux-qemu.html">https://leedev.org/2015/12/13/arch-linux-qemu.html</a></li>
+<li><a href="https://ict4g.net/adolfo/notes/admin/qemu-virtual-machines.html">https://ict4g.net/adolfo/notes/admin/qemu-virtual-machines.html</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -13302,7 +13354,7 @@ You can edit this.
 <li><code>parameter</code> # 参数</li>
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662090282113_0.png" alt="image.png"></li>
-<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">017 17-Linux命令-05-终端命令格式.mp4</a></li>
+<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08</a></li>
 </ul>
 </li>
 <li>[[linux]] <code>ip address | grep inet</code><ul>
@@ -13315,8 +13367,11 @@ You can edit this.
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662102184320_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1662102409468_0.png" alt="image.png"></li>
-<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">045 45-Linux命令-04-ifconfig查询网卡信息.mp4</a>
--- 2022-09-01，yaoniplan 完全转移更新平台(从腾讯文档转移至GitHub)</li>
+<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08</a></li>
+</ul>
+</li>
+<li></li>
+<li>2022-09-01，yaoniplan 完全转移更新平台(从腾讯文档转移至GitHub)<ul>
 <li><em><strong>参考资料</strong></em></li>
 <li><a href="../assets/%E8%80%80%E6%8B%9F%E8%AE%A1%E5%88%92-v2.1.06-2022-09-01%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95_1662006139225_0.zip">耀拟计划-v2.1.06-2022-09-01历史记录.zip - github.ocm</a> </li>
 <li><a href="../assets/%E8%80%80%E6%8B%9F%E8%AE%A1%E5%88%92-v2.1.06_1662006018132_0.csv">耀拟计划-v2.1.06.csv - github.com</a></li>
@@ -13758,13 +13813,21 @@ XMODIFIERS=@im=fcitx //添加这一行
 </code></pre>
 </li>
 <li></li>
-<li>[[arch]] [[linux]] [[btrfs]] arch-chroot使用<ul>
-<li><code>mount /dev/sda2 /mnt -o subvol=/@</code> //使用 <code>fdisk -l</code> 和 <code>lsblk</code> 来获取对应信息</li>
-<li><code>arch-chroot /mnt</code> //进入 Linux filesystem</li>
-<li><em><strong>参考资料</strong></em></li>
+<li><h4 id="use-arch-chroot-in-arch-linux-on-btrfs">Use &quot;arch-chroot&quot; in Arch Linux on btrfs</h4>
+<ul>
+<li><code>mount /dev/sda2 /mnt -o subvol=/@</code></li>
+<li><code>arch-chroot /mnt</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>lsblk</code></li>
+<li><code>fdisk -l</code></li>
 <li><a href="https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3">https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li>[[arch]] [[linux]] [[i3]] [[bar]] [[position]] 状态栏位置(底部或顶部)<ul>
 <li><em><strong>语法</strong></em></li>
 <li><code>position top|bottom</code></li>
