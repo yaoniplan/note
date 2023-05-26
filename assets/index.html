@@ -290,7 +290,6 @@ UEFI VBOX CD-ROM VB2-01700376
 <li><code>vi ~/.ssh/config</code> # Set an alias for ssh<pre><code>Host yaoniplan
     User yaoniplan
     HostName 192.168.10.100
-    IdentityFile ~/.ssh/id_rsa
 </code></pre>
 <ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
@@ -9552,7 +9551,7 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 <li><code>chmod u+x clash-linux-amd64-v1.12.0</code> # Run this command after <a href="https://github.com/Dreamacro/clash/releases">downloading</a> and decompressing</li>
 <li><code>mv clash-linux-amd64-v1.12.0 clash</code></li>
 <li><code>sudo mv clash /usr/local/bin/</code></li>
-<li><code>clash</code> # Initialization</li>
+<li><code>clash</code> # Initialize</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -10622,6 +10621,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </code></pre>
 </li>
 <li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 2 -enable-kvm \
+  -bios /usr/share/ovmf/x64/OVMF.fd \
   -nic user,hostfwd=tcp::60022-:22 \
   testQemu.cow -audiodev pa,id=sound0 \
   -device ich9-intel-hda \
