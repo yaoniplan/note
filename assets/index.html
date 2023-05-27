@@ -22,6 +22,62 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="the-abbreviation-of-qemu-copy-on-write-2-is-qcow2">The abbreviation of &quot;QEMU Copy On Write 2&quot; is &quot;qcow2&quot;.</h4>
+<ul>
+<li>A format</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use qemu command.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-parted">Use &quot;parted&quot;</h4>
+<ul>
+<li><code>parted /dev/sda -- rm 3</code> # Remove the third partition (/dev/sda3)</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because typed the wrong command accidentally when partitioning.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>lsblk</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="delete-redundant-directories-in-linux">Delete redundant directories in Linux</h4>
+<ul>
+<li><code>ls -1dr &quot;$destinationDir&quot;/* | tail -&quot;$quantityToDelete&quot; | xargs rm -rf</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-1</code> # One per line</li>
+<li><code>-d</code> # Directory</li>
+<li><code>-r</code> # Reverse</li>
+<li><code>xargs</code> # Execute arguments</li>
+<li>Because to backup files with a scirpt automatically.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man ls</code></li>
+<li><code>man xargs</code></li>
+<li><img src="../assets/2023-05-26_22-43.png" alt="2023-05-26_22-43.png"></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-the-iso-file-to-enter-the-system-in-nixos">Use the ISO file to enter the system in NixOS</h4>
 <ul>
 <li><code>mount /dev/disk/by-label/nixos /mnt</code></li>
@@ -37,7 +93,7 @@ UEFI VBOX CD-ROM VB2-01700376
 </li>
 <li><code>sudo --login</code> # Substitute to root user</li>
 <li><code>setfont ter-v32n</code> # Increase the font size</li>
-<li><code>nano /mnt/etc/nixos/configuration.nix</code> # Edit the configuration file</li>
+<li><code>vim /mnt/etc/nixos/configuration.nix</code> # Edit the configuration file</li>
 <li><code>nixos-install</code> # Install system</li>
 <li>Because to edit the <code>configuration.nix</code> file when can&#39;t log in to the system.</li>
 </ul>
@@ -4221,6 +4277,7 @@ ERROR: Host key verification failed.
 </code></pre>
 <ul>
 <li><code>ssh-keygen -f &quot;/home/yaoniplan/.ssh/known_hosts&quot; -R &quot;192.168.10.105&quot;</code></li>
+<li><code>192.168.10.105</code> # Replace it with your error (e.g. [192.168.10.105]:60022)</li>
 <li><code>-f</code> # Filename</li>
 <li><code>-R</code> # Remove</li>
 </ul>
@@ -7550,9 +7607,12 @@ cp ./* ~/.local/share/rofi/themes/
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-git">Use Git</h4>
+<li><h4 id="use-git">Use &quot;git&quot;</h4>
 <ul>
-<li><code>git restore .config/i3/config</code> # Discard changes of the file</li>
+<li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>
+<li><code>git restore .</code> # Restore all files</li>
+</ul>
+</li>
 <li><code>git checkout -b bugFix</code> # The same as the following two commands<ul>
 <li><code>git branch bugFix</code> # Create a new branch</li>
 <li><code>git checkout bugFix</code> # Switch to the branch</li>
@@ -7561,6 +7621,7 @@ cp ./* ~/.local/share/rofi/themes/
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>git restore --help</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
 </ul>
 </li>
@@ -7657,6 +7718,7 @@ set number
 <ul>
 <li><h4 id="use-vim">Use &quot;vim&quot;</h4>
 <ul>
+<li><code>%</code> # Jump the cursor to matching bracket</li>
 <li><code>&gt;&gt;</code> # Indent current line (like <code>&gt;l</code>, <code>v&gt;</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
 <li><code>Ctrl-r</code> # Redo</li>
@@ -8770,17 +8832,13 @@ complete -F _todo todocli
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-syntax-of-the-if-else-condition-in-shell-script">The syntax of the if-else condition in #shell script</h4>
-<pre><code class="language-Shell">if [condition]
-then
-   statement1
-else
-   statement2
-fi
-</code></pre>
+<li><h4 id="write-a-conditional-judgment-in-linux-bash">Write a conditional judgment in Linux Bash</h4>
+<ul>
+<li><code>if [[ &quot;$numberOfFiles&quot; -gt 30 ]]; then</code></li>
+</ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts">https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -10615,6 +10673,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </li>
 <li>Install the OS<pre><code>qemu-system-x86_64 -m 8G -enable-kvm \
   -bios /usr/share/ovmf/x64/OVMF.fd \
+  -nic user,hostfwd=tcp::60022-:22 \
   -cdrom /mnt/grow/230504archlinux-2023.05.03-x86_64.iso \
   -drive file=testQemu.cow,format=qcow2 \
   -boot order=d
