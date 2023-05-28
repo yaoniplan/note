@@ -55,6 +55,222 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="search-for-package-names-in-nixos">Search for package names in NixOS</h4>
+<ul>
+<li><code>nix-env -qaP wqy-microhei</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-q</code> # Query</li>
+<li><code>-a</code> # Available</li>
+<li><code>-P</code> # Path</li>
+<li>Another way<ul>
+<li><a href="https://search.nixos.org/">https://search.nixos.org/</a></li>
+</ul>
+</li>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>users.users.yaoniplan = {
+  packages = with pkgs; [
+    wqy_microhei
+  ];
+};
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-05-27_22-46.png" alt="2023-05-27_22-46.png"></li>
+<li><code>man nix-env</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="install-kde-plasma-in-nixos">Install KDE Plasma in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>services.xserver.enable true;
+services.xserver.displayManager.sddm.enable = true;
+services.xserver.desktopManager.plasma5.enable = true;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nixos-rebuild switch --option substituters https://mirrors.ustc.edu.cn/nix-channels/store</code> # Rebuild to make changes effective</li>
+<li>Use Wayland (It has some bugs)<ul>
+<li>Select &quot;Plasma (Wayland)&quot; of Desktop Session in SDDM</li>
+</ul>
+</li>
+<li>Because to master it quickly.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/">https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/</a></li>
+<li><a href="https://nixos.wiki/wiki/KDE">https://nixos.wiki/wiki/KDE</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-ssh-in-nixos">Use ssh in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code># Enable the OpenSSH daemon in NixOS
+services.openssh.enable = true;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use the command <code>ssh yaoniplan@192.168.10.105 -p 60022</code> in another computer.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="install-packages-for-root-user-in-nixos">Install packages for root user in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code># List packages installed in system profile. To search, run:
+# $ nix search wget
+environment.systemPackages = with pkgs; [
+  vim
+  git
+  wget
+];
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use vim to edit configuration.nix file.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="add-a-user-to-multiple-groups-in-nixos">Add a user to multiple groups in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code># Define a user account. Don&#39;t forget to set a passwd with `passwd`.
+users.users.yaoniplan = {
+  isNormalUser = true;
+  extraGroups = [ &quot;wheel&quot; &quot;networkmanager&quot; ]; # Enable `sudo` for the user.
+  packages = with pkgs; [
+    git
+    vim
+    wget
+  ];
+};
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use the sudo command <code>sudo chown -R yaoniplan:yaoniplan /mnt/yaoniplan/</code>.<ul>
+<li><code>groupadd yaoniplan</code> # Add a group in Linux to solve the problem<pre><code>[root@tux:~]# chown -R yaoniplan:yaoniplan /mnt/yaoniplan/
+chown: invalid group: ‘yaoniplan:yaoniplan’
+
+[root@tux:~]#
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.org/manual/nixos/stable/index.html#sec-user-management">https://nixos.org/manual/nixos/stable/index.html#sec-user-management</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="enable-sound-or-volume-in-nixos">Enable sound or volume in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code># Enable sound.
+sound.enable = true;
+hardware.pulseaudio.enable = true;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-time-zone-in-nixos">Set time zone in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>time.timeZone = &quot;Asia/Shanghai&quot;;`
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>timedatectl</code> # View the current time zone</li>
+<li><code>Asia/Shanghai</code> # Replace it with your desired time zone<ul>
+<li><code>timedatectl list-timezones</code> # List all time zones</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-locale-in-nixos">Set locale in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>i18n.defaultLocale = &quot;en_US.UTF-8&quot;;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because English is the common language of the open source world.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-hostname-in-nixos">Set hostname in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>networking.hostname = &quot;tux&quot;; # Define your hostname.
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>tux</code> # Replace it with yours</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-network-configuration-in-nixos">Set network configuration in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>networking.networkmanager.enable = true;
+users.users.yaoniplan = {
+  extraGroups = [ &quot;networkmanager&quot; ];
+};
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>yaoniplan</code> # Replace it with your user</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.org/manual/nixos/stable/index.html#sec-networkmanager">https://nixos.org/manual/nixos/stable/index.html#sec-networkmanager</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-keymap-in-nixos">Set keymap in NixOS</h4>
+<ul>
+<li><code>vim /etc/nixos/configuration.nix</code><pre><code>services.xserver.layout = &quot;us&quot;;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="delete-redundant-directories-in-linux">Delete redundant directories in Linux</h4>
 <ul>
 <li><code>ls -1dr &quot;$destinationDir&quot;/* | tail -&quot;$quantityToDelete&quot; | xargs rm -rf</code></li>
@@ -95,6 +311,7 @@ UEFI VBOX CD-ROM VB2-01700376
 <li><code>setfont ter-v32n</code> # Increase the font size</li>
 <li><code>vim /mnt/etc/nixos/configuration.nix</code> # Edit the configuration file</li>
 <li><code>nixos-install</code> # Install system</li>
+<li><code>sudo nixos-rebuild switch</code></li>
 <li>Because to edit the <code>configuration.nix</code> file when can&#39;t log in to the system.</li>
 </ul>
 </li>
@@ -119,6 +336,9 @@ UEFI VBOX CD-ROM VB2-01700376
 <li><em><strong>Notes</strong></em><ul>
 <li>Set mirror temporarily<pre><code>nixos-install --option substituters https://mirrors.ustc.edu.cn/nix-channels/store
 </code></pre>
+<ul>
+<li><code>nixos-install</code> # Replace it with your desired comand (e.g. <code>nixos-rebuild switch</code>)</li>
+</ul>
 </li>
 <li>Because to improve the speed when using command <code>nixos-install</code>.</li>
 </ul>
@@ -3949,6 +4169,7 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>G</code> # Increase size of subtitle</li>
 <li><code>--sub-file-paths=subtitles/</code> # For animation<ul>
 <li><code>subtitles/</code> # Replace it with your directory including subtitles</li>
 <li><code>--sub-file=&quot;subtitles/01.ass&quot;</code> # For movie</li>
@@ -4018,7 +4239,7 @@ git push origin master
 <li><em><strong>Notes</strong></em><ul>
 <li><code>su root</code> # Substitute to root user</li>
 <li><code>apt install doas</code> # Install it if you does not have it</li>
-<li><code>groupadd wheel</code> # Create a group</li>
+<li><code>groupadd wheel</code> # Create a group in Linux</li>
 <li><code>usermod -aG wheel yaoniplan</code> # Add yaoniplan to wheel<ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
 </ul>
@@ -4137,7 +4358,7 @@ git push origin master
 <li><h4 id="mount-the-alist-to-the-local-dirctory-using-rclone">Mount the AList to the local dirctory using Rclone</h4>
 <ul>
 <li><code>rclone config</code><pre><code>n # n) New remote
-aliyundrive # name
+yaoniplan # name
 31 # Storage of WebDAV
 http://192.168.10.100:5244/dav # URL
 4 # vendor of other
@@ -4147,18 +4368,18 @@ the rest of options are the default
 q # q) Quit config
 </code></pre>
 </li>
-<li><code>doas mkdir /mnt/aliyundrive/</code></li>
-<li><code>doas chown -R yaoniplan:yaoniplan /mnt/aliyundrive/</code><ul>
+<li><code>doas mkdir /mnt/yaoniplan/</code></li>
+<li><code>doas chown -R yaoniplan:yaoniplan /mnt/yaoniplan/</code><ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
 </ul>
 </li>
-<li><code>rclone mount aliyundrive:/ /mnt/aliyundrive/ &amp;</code></li>
+<li><code>rclone mount yaoniplan:/ /mnt/yaoniplan/ &amp;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>doas apt install rclone</code> # Install it in Ubuntu Server 22.04</li>
-<li><code>rclone lsd aliyundrive:/</code> # Check it</li>
-<li><code>crontab -e</code> # Run it at boot in Ubuntu Server 22.04<pre><code>@reboot /usr/bin/rclone mount aliyundrive:/ /mnt/aliyundrive/ &amp;
+<li><code>rclone lsd yaoniplan:/</code> # Check it</li>
+<li><code>crontab -e</code> # Run it at boot in Ubuntu Server 22.04<pre><code>@reboot /usr/bin/rclone mount yaoniplan:/ /mnt/yaoniplan/ &amp;
 </code></pre>
 <ul>
 <li><code>/usr/bin/rclone</code> # Get it by running <code>which rclone</code></li>
@@ -4178,9 +4399,9 @@ q # q) Quit config
 </li>
 <li>Mount to another computer<ul>
 <li><code>doas emerge -q net-fs/sshfs</code></li>
-<li><code>sshfs yaoniplan@192.168.10.100:/mnt/aliyundrive/ /mnt/aliyundrive/</code> # Mount</li>
-<li><code>fusermount -u /mnt/aliyundrive/</code> # Unmount</li>
-<li><code>vim ~/.xprofile</code> # Run it at boot in Gentoo Linux<pre><code>sshfs yaoniplan@192.168.10.100:/mnt/aliyundrive/ /mnt/aliyundrive/ &amp;
+<li><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/</code> # Mount</li>
+<li><code>fusermount -u /mnt/yaoniplan/</code> # Unmount</li>
+<li><code>vim ~/.xprofile</code> # Run it at boot in Gentoo Linux<pre><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/ &amp;
 </code></pre>
 </li>
 <li>Wraning: It has some errors when play videos.</li>
@@ -4996,6 +5217,7 @@ Ascending # Order direction
 native proxy # WebDAV policy
 the phone number used to log in # Username
 ******* # Password
+**** # Validate code
 /folder/hereIsRootFolderID # Root folder id
 Turn on # No use ocr
 </code></pre>
@@ -10668,7 +10890,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><h4 id="use-qemu-in-linux">Use &quot;qemu&quot; in Linux</h4>
 <ul>
 <li>Create a disk image<ul>
-<li><code>qemu-img create -f qcow2 testQemu.cow 24G</code></li>
+<li><code>qemu-img create -f qcow2 testQemu.cow 100G</code></li>
 </ul>
 </li>
 <li>Install the OS<pre><code>qemu-system-x86_64 -m 8G -enable-kvm \
@@ -10679,7 +10901,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
   -boot order=d
 </code></pre>
 </li>
-<li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 2 -enable-kvm \
+<li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 4 -enable-kvm \
   -bios /usr/share/ovmf/x64/OVMF.fd \
   -nic user,hostfwd=tcp::60022-:22 \
   testQemu.cow -audiodev pa,id=sound0 \
@@ -10715,7 +10937,7 @@ localhost:5900 # Server
 <li>Wayland is a <strong>display server protocol</strong> that seeks to replace X11. #Linux #Wayland<ul>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1668656110539_0.png" alt="image.png"></li>
-<li><a href="https://www.cbtnuggets.com/blog/technology/networking/why-use-wayland-versus-x11">Why Use Wayland versus X11? | CBT Nuggets</a></li>
+<li><a href="https://www.cbtnuggets.com/blog/technology/networking/why-use-wayland-versus-x11">https://www.cbtnuggets.com/blog/technology/networking/why-use-wayland-versus-x11</a></li>
 </ul>
 </li>
 </ul>

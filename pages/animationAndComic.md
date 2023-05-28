@@ -1,8 +1,6 @@
 ### "Animation"
 - 黑之宣告第一季 - 00
 - 弹丸论破3 -The End of 希望之峰学园- - 00
-- 钱进球场 - 00
-- 灰与幻想的格林姆迦尔 - 00
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 真武巅峰 (Part1+2) - 40+06
@@ -242,6 +240,7 @@
 - guard(end)
 
 ### Animation
+- Grimgar of Fantasy and Ash / 灰与幻想的格林姆迦尔 - 12 # Team: tank, logistics, captain (End of the first part)
 - Death Parade / 死亡游行 - 12 # End of the first part
 - 冰火魔厨 - 04/78 1122 # For children or teens and slow pace
 - 画江湖之不良人 (Part1+2+3+4+5+6) 54+40+40+13+12+12 # End of the sixth part
