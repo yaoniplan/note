@@ -22,6 +22,38 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="understand-please-give-me-wings">Understand &quot;Please Give Me Wings&quot;</h4>
+<ul>
+<li>A song<ul>
+<li>folk</li>
+<li>Japanese</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Danganronpa # Animation</li>
+<li><a href="https://en.wikipedia.org/wiki/Tsubasa_o_Kudasai">https://en.wikipedia.org/wiki/Tsubasa_o_Kudasai</a></li>
+<li><a href="https://www.youtube.com/watch?v=dmo9SMswttQ">https://www.youtube.com/watch?v=dmo9SMswttQ</a> # English version</li>
+<li><a href="https://www.youtube.com/watch?v=5ZXquiMoyjY">https://www.youtube.com/watch?v=5ZXquiMoyjY</a> # Japanese version</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="insert-a-string-at-the-the-beginning-of-the-line-in-vi">Insert a string at the the beginning of the line in Vi</h4>
+<ul>
+<li><code>%s/^/xdg-open /g</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>xdg-open </code> # Replace it with your desired string</li>
+<li>Because to open URL in batches.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-qemu-copy-on-write-2-is-qcow2">The abbreviation of &quot;QEMU Copy On Write 2&quot; is &quot;qcow2&quot;.</h4>
 <ul>
 <li>A format</li>
@@ -100,7 +132,7 @@ services.xserver.desktopManager.plasma5.enable = true;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>nixos-rebuild switch --option substituters https://mirrors.ustc.edu.cn/nix-channels/store</code> # Rebuild to make changes effective</li>
-<li>Use Wayland (It has some bugs)<ul>
+<li>Use Wayland (Warning: It has some bugs)<ul>
 <li>Select &quot;Plasma (Wayland)&quot; of Desktop Session in SDDM</li>
 </ul>
 </li>
@@ -630,7 +662,10 @@ UEFI VBOX CD-ROM VB2-01700376
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-v</code> # Invert match</li>
 <li><code>timerOfTomato.sh</code> # Replace it with your desired command</li>
-<li><code>if pgrep tilda; then</code> # Another way (Does not work for scripts)</li>
+<li><code>if ! pgrep tilda; then</code> # Another way (Does not work for scripts)<ul>
+<li><code>!</code> # Not</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -643,12 +678,13 @@ UEFI VBOX CD-ROM VB2-01700376
 <ul>
 <li><h4 id="move-a-window-from-one-session-to-another-in-tmux">Move a window from one session to another in tmux</h4>
 <ul>
-<li><code>tmux move-window -t 1:2</code></li>
+<li><code>tmux move-window -s 0:1 -t 1:2</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-s</code> # Source</li>
+<li><code>0</code> # Session name</li>
 <li><code>-t</code> # Target (To)</li>
-<li><code>1</code> # Session name</li>
 <li><code>2</code> # Window name</li>
 </ul>
 </li>
@@ -775,6 +811,13 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Patching<ul>
+<li>Download a patch <a href="https://dwm.suckless.org/patches/uselessgap/">https://dwm.suckless.org/patches/uselessgap/</a></li>
+<li><code>cd ~/.config/dwm/</code></li>
+<li><code>patch -p1 &lt; ~/dwm-uselessgap-20211119-58414bee958f2.diff</code></li>
+<li><code>doas make clean install</code></li>
+</ul>
+</li>
 <li>Install some dependencies before compiling<ul>
 <li><code>sudo pacman -S base-devel libx11 libxinerama libxft xorg xorg-xinit</code></li>
 <li><a href="https://packages.gentoo.org/packages/x11-wm/dwm/dependencies">https://packages.gentoo.org/packages/x11-wm/dwm/dependencies</a></li>
@@ -1302,6 +1345,10 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>*</code> # Zero or more</li>
 <li>Filter<ul>
 <li><code>-type f</code> # File</li>
+</ul>
+</li>
+<li>Another way<ul>
+<li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
 </ul>
@@ -4287,12 +4334,16 @@ git push origin master
 <ul>
 <li><h4 id="run-the-c-program-in-linux">Run the C program in Linux</h4>
 <ul>
-<li><code>gcc factorial.c -o factorial</code></li>
-<li><code>./factorial</code> # Run the program</li>
+<li><code>gcc learnC.c</code></li>
+<li><code>./a.out</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>gcc factorial.c -o factorial</code> # Compile<ul>
 <li><code>-o</code> # Outfile</li>
+</ul>
+</li>
+<li><code>./factorial</code> # Run the program</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5216,15 +5267,6 @@ Name # Order by
 Ascending # Order direction
 </code></pre>
 </li>
-<li>189CloudPC<pre><code>/audio # Mount Path
-native proxy # WebDAV policy
-the phone number used to log in # Username
-******* # Password
-**** # Validate code
-/folder/hereIsRootFolderID # Root folder id
-Turn on # No use ocr
-</code></pre>
-</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -5267,7 +5309,6 @@ Turn on # No use ocr
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>Add a demo.gif here</li>
-<li><a href="https://alist.nn.ci/guide/drivers/189.html#personal-cloud">https://alist.nn.ci/guide/drivers/189.html#personal-cloud</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160">https://github.com/alist-org/alist/issues/4160</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml">https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
@@ -7942,7 +7983,7 @@ set number
 <hr>
 <ul>
 <li><h4 id="use-vim">Use &quot;vim&quot;</h4>
-<ul>
+  <code>:set paste</code> # Fix indentation issues when pasting<ul>
 <li><code>%</code> # Jump the cursor to matching bracket</li>
 <li><code>&gt;&gt;</code> # Indent current line (like <code>&gt;l</code>, <code>v&gt;</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
@@ -8547,22 +8588,35 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 </ul>
 <hr>
 <ul>
-<li><h4 id="set-rounded-corners-and-opacity-in-i3">Set rounded corners and opacity in i3</h4>
+<li><h4 id="use-picom">Use &quot;picom&quot;</h4>
 <ul>
-<li><code>doas emerge -aq x11-misc/picom</code></li>
-<li><code>vim ~/.config/i3/config</code><pre><code>exec picom --daemon
+<li>Rounded corner<pre><code>corner-radius = 10;
 </code></pre>
 </li>
-<li><code>vim ~/.config/picom.conf</code><pre><code># Set rounded corners
-corner-radius = 10;
-# Set opacity
-inactive-opcity = 0.4;
+<li>Opacity<pre><code>opacity-rule = [
+    &quot;80:class_g = &#39;firefox&#39;&quot;,
+    &quot;80:class_g = &#39;st-256color&#39;&quot;
+];
+</code></pre>
+</li>
+<li>Background blur<pre><code>backend = &quot;glx&quot;;
+blur-method = &quot;dual_kawase&quot;;
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>doas reboot</code> # Make Picom work when first used</li>
+<li><code>xprop</code> # Get the class_g (e.g. <em>Chromium</em>)<pre><code>WM_CLASS(STRING) = &quot;chromium&quot;, &quot;Chromium&quot;
+</code></pre>
+</li>
+<li><code>vim ~/.config/picom.conf</code> # Edit the configuration file</li>
+<li><code>doas emerge -aq x11-misc/picom</code> # Install the package</li>
+<li>Make the changes effective<ul>
+<li><code>ps aux | grep picom</code> # Get the PID</li>
+<li><code>kill yourPID</code> # Kill it</li>
+<li><code>picom &amp;</code> # Enable it again</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>

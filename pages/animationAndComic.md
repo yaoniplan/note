@@ -1,6 +1,7 @@
 ### "Animation"
+- learnC - 12 0130
 - 黑之宣告第一季 - 00
-- Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1) - 13+05 1113
+- Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1) - 13+08 0930
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 真武巅峰 (Part1+2) - 40+06
