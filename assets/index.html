@@ -43,12 +43,16 @@
 <ul>
 <li><h4 id="insert-a-string-at-the-the-beginning-of-the-line-in-vi">Insert a string at the the beginning of the line in Vi</h4>
 <ul>
-<li><code>%s/^/xdg-open /g</code></li>
+<li><code>:%s/^/xdg-open /g</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>xdg-open </code> # Replace it with your desired string</li>
 <li>Because to open URL in batches.</li>
+<li><code>:%s/$/ \&amp;/g</code> # Insert a string at the end of the line in Vi<ul>
+<li>Because to download multiple files at the same time.</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -317,12 +321,15 @@ users.users.yaoniplan = {
 <li><code>-r</code> # Reverse</li>
 <li><code>xargs</code> # Execute arguments</li>
 <li>Because to backup files with a scirpt automatically.</li>
+<li>Another way<pre><code>ls -1d &quot;$destinationDir&quot;/* | head -&quot;$quantityToDelete&quot; | xargs rm -rf
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man ls</code></li>
 <li><code>man xargs</code></li>
-<li><img src="../assets/2023-05-26_22-43.png" alt="2023-05-26_22-43.png"></li>
+<li><img src="../assets/2023-05-31_10-55.png" alt="2023-05-31_10-55.png"></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -4449,6 +4456,7 @@ q # q) Quit config
 </code></pre>
 <ul>
 <li>Change &quot;302 redirect&quot; to &quot;native proxy&quot; in &quot;WebDAV policy&quot;</li>
+<li><code>rclone mount testDAVOne:/ /mnt/testDAVOne/ --header &quot;Referer:&quot;</code> # Another way</li>
 </ul>
 </li>
 <li>Mount to another computer<ul>
@@ -4464,12 +4472,13 @@ q # q) Quit config
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><a href="https://github.com/alist-org/alist/discussions/630#discussioncomment-2424414">https://github.com/alist-org/alist/discussions/630#discussioncomment-2424414</a></li>
 <li><a href="https://rclone.org/install/#run-periodically-from-cron">https://rclone.org/install/#run-periodically-from-cron</a></li>
 <li><a href="https://github.com/alist-org/alist/discussions/1724#discussioncomment-3901460">https://github.com/alist-org/alist/discussions/1724#discussioncomment-3901460</a></li>
 <li><a href="https://github.com/rclone/rclone/issues/6856#issuecomment-1479853571">https://github.com/rclone/rclone/issues/6856#issuecomment-1479853571</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Filesystem_in_Userspace">https://wiki.gentoo.org/wiki/Filesystem_in_Userspace</a></li>
 <li><a href="https://www.youtube.com/watch?v=hoUPP1aLE60">https://www.youtube.com/watch?v=hoUPP1aLE60</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -5296,7 +5305,7 @@ Ascending # Order direction
 </ul>
 </li>
 <li>Open in external application<ul>
-<li>In &quot;External previews&quot;<pre><code class="language-json">{
+<li>In &quot;External previews&quot; of Preview of Settings<pre><code class="language-json">{
   &quot;wma&quot;: {
     &quot;VLC&quot;: &quot;vlc://$url&quot;
   }
@@ -7728,6 +7737,7 @@ URxvt.scrollstyle: rxvt
 <ul>
 <li><h4 id="use-bash-1">Use Bash</h4>
 <ul>
+<li><code>Ctrl-d</code> # Detach (The same as <code>exit</code>)</li>
 <li><code>Ctrl-r</code> # Reverse search history command<ul>
 <li><code>vim -c</code> # Type it in terminal, it may display <code>vim -c VimwikiIndex</code></li>
 </ul>
@@ -9114,6 +9124,10 @@ complete -F _todo todocli
 <li><h4 id="write-a-conditional-judgment-in-linux-bash">Write a conditional judgment in Linux Bash</h4>
 <ul>
 <li><code>if [[ &quot;$numberOfFiles&quot; -gt 30 ]]; then</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-gt</code> # Greater than</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -13639,6 +13653,10 @@ You can edit this.
 <li><code>git reset --hard 8172b02</code> # Revert to the 8172b02... version</li>
 <li><code>-f</code> # Force</li>
 <li><code>git reflog</code> # Show all commit logs (including discarded version)</li>
+<li>Warning: The method is not recommended. (Make sure what you discarded is less important)<ul>
+<li><code>git status</code> # Make sure all changes are pushed to the remote before using the command</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
