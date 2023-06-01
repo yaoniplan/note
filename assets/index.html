@@ -1180,6 +1180,8 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-engine</code> # Specify a translation engine</li>
+<li><code>-list-engines</code> # List translation engines</li>
 <li><code>zh</code> # Replace it with country code (e.g. en)<ul>
 <li><code>trans -list-all</code> # Get it</li>
 </ul>
@@ -1361,14 +1363,9 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>Output<pre><code>./github
-./github-actions
-./assets/github-markdown-dark.css
-</code></pre>
-</li>
 <li><code>man find</code></li>
-<li>ChatGPT</li>
 <li><img src="../assets/2023-05-06_00-13.png" alt="2023-05-06_00-13.png"></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -7329,8 +7326,15 @@ Unit ssh.service could not be found.
 <li>Press <code>Ctrl-z</code> and then type <code>bg</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>for f in *; do rsync -av &quot;$f&quot; ~/glassShrine/ &amp; done</code> # Another way<ul>
+<li><code>&amp;</code> # Run in the background</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li><!-- Add a demo.png here --></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -9906,7 +9910,7 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Configure #Clash<ul>
+<li>Configure Clash<ul>
 <li><code>mv yourClashConfig.yaml config.yaml</code> # Rename it to <em>config.yaml</em> after downloading <em>yourClashConfig.yaml</em></li>
 <li><code>cp config.yaml ~/.config/clash/config.yaml</code></li>
 </ul>
@@ -9920,8 +9924,8 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </li>
 </ul>
 </li>
-<li>Enable #Clash<ul>
-<li><code>clash</code> # Type it in your terminal (e.g. #Alacritty )</li>
+<li>Enable Clash<ul>
+<li><code>clash</code> # Type it in your terminal</li>
 </ul>
 </li>
 <li>Optional: Set temporarily<ul>

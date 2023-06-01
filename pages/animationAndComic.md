@@ -1,12 +1,10 @@
 ### "Animation"
 - learnC - 12 0130
-- 黑之宣告第一季 - 00
-- Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2) - 13+11+03 animation
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 真武巅峰 (Part1+2) - 40+06
-- 不灭神王 - 06
-- 仙武传 - 11
+- 真武巅峰 (Part1+2) - 40+08
+- 不灭神王 - 08
+- 仙武传 - 11 animation
 - 遮天 - 06
 - 剑域风云 (Part1+2) - 40+38
 - 勇者死了 - 07
@@ -241,6 +239,7 @@
 - guard(end)
 
 ### Animation
+- Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
 - Grimgar of Fantasy and Ash / 灰与幻想的格林姆迦尔 - 12 # Team: tank, logistics, captain (End of the first part)
 - Death Parade / 死亡游行 - 12 # End of the first part
 - 冰火魔厨 - 04/78 1122 # For children or teens and slow pace
