@@ -1,13 +1,14 @@
 ### "Animation"
-- learnC - 12 0130
+- 镖人 - 02
+- learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 真武巅峰 (Part1+2) - 40+08
 - 不灭神王 - 08
-- 仙武传 - 11 animation
+- 仙武传 - 12
 - 遮天 - 06
 - 剑域风云 (Part1+2) - 40+38
-- 勇者死了 - 07
+- 勇者死了 - 09 1106 animation
 - 一世独尊 - 13
 - 火凤燎原 - 05
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+37

@@ -22,6 +22,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="move-no-space-files-to-temporary-directory-in-linux-bash-one-liner">Move no space files to temporary directory in Linux Bash one-liner</h4>
+<ul>
+<li><code>for f in {01..23}*; do if [[ ! &quot;$f&quot; =~ &quot; &quot; ]]; mv &quot;$f&quot; /tmp/; fi; done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>!</code> # Not</li>
+<li><code>=~</code> # Regular expression</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="understand-please-give-me-wings">Understand &quot;Please Give Me Wings&quot;</h4>
 <ul>
 <li>A song<ul>
@@ -50,6 +67,7 @@
 <li><code>xdg-open </code> # Replace it with your desired string</li>
 <li>Because to open URL in batches.</li>
 <li><code>:%s/$/ \&amp;/g</code> # Insert a string at the end of the line in Vi<ul>
+<li><code>%s/ \&amp;$//g</code> # Remove it</li>
 <li>Because to download multiple files at the same time.</li>
 </ul>
 </li>
@@ -863,6 +881,7 @@ fi
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><code>xrandr --query</code></li>
+<li><a href="https://www.bilibili.com/video/BV1pr4y1U78u/">https://www.bilibili.com/video/BV1pr4y1U78u/</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Dwm">https://wiki.gentoo.org/wiki/Dwm</a></li>
 <li><a href="https://www.bilibili.com/video/BV1qP4y1L7dH/">https://www.bilibili.com/video/BV1qP4y1L7dH/</a></li>
 <li><a href="https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login">https://wiki.archlinux.org/title/Xinit#Autostart_X_at_login</a></li>
@@ -2497,7 +2516,7 @@ devtools.debugger.remote-enabled
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-04-20_19-42.gif" alt="2023-04-20_19-42.gif"></li>
+<li><img src="../assets/2023-06-01_23-18.gif" alt="2023-06-01_23-18.gif"></li>
 <li><a href="https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_toolbox.css">https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/autohide_toolbox.css</a></li>
 </ul>
 </li>
@@ -4253,6 +4272,8 @@ git push origin master
 <li><code>doas emerge -aq net-misc/yt-dlp</code><ul>
 <li>Play url of the website (e.g. YouTube, Bilibili, etc.)</li>
 <li>May need to restart OS</li>
+<li><code>yt-dlp --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=ie-TS-BitnQ</code> # Download the audio file in MP3 format</li>
+<li><code>yt-dlp --extract-audio --audio-format mp3 --batch-file aolaStar.txt</code></li>
 </ul>
 </li>
 </ul>
@@ -8604,17 +8625,29 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 <ul>
 <li><h4 id="use-picom">Use &quot;picom&quot;</h4>
 <ul>
-<li>Rounded corner<pre><code>corner-radius = 10;
+<li>Fading<pre><code>fadind = true;
+fade-in-step = 0.01;
+fade-out-step = 0.01;
 </code></pre>
 </li>
-<li>Opacity<pre><code>opacity-rule = [
-    &quot;80:class_g = &#39;firefox&#39;&quot;,
+<li>Shadow<pre><code>shadow = true;
+</code></pre>
+</li>
+<li>Rounded corner<pre><code>corner-radius = 9;
+backend = &quot;glx&quot;;
+</code></pre>
+</li>
+<li>Opacity<pre><code>active-opacity = 1.0;
+inactive-opacity = 0.8;
+frame-opacity = 0.8;
+
+opacity-rule = [
     &quot;80:class_g = &#39;st-256color&#39;&quot;
 ];
 </code></pre>
 </li>
-<li>Background blur<pre><code>backend = &quot;glx&quot;;
-blur-method = &quot;dual_kawase&quot;;
+<li>Background blur<pre><code>blur-method = &quot;dual_kawase&quot;;
+backend = &quot;glx&quot;;
 </code></pre>
 </li>
 </ul>
@@ -8757,21 +8790,22 @@ blur-method = &quot;dual_kawase&quot;;
 <ul>
 <li><h4 id="use-feh">Use &quot;feh&quot;</h4>
 <ul>
-<li><code>feh ~/app/wallpaper/</code> # Enable slideshow mode<ul>
-<li><code>~/app/wallpaper/</code> # A directory including many images</li>
-<li><code>leftArrowKey</code> # Previous image</li>
-<li><code>upArrowKey</code> # Zoom in</li>
-<li><code>Ctrl+Delete</code> # Delete the current image</li>
+<li><code>feh /mnt/grow/220824wallpaper/</code> # Enable slideshow mode<ul>
+<li><code>Ctrl-upArrow</code> # Move up</li>
+<li><code>leftArrow</code> # Previous image</li>
+<li><code>upArrow</code> # Zoom in</li>
+<li><code>Ctrl-Delete</code> # Delete the current image</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>feh -i ~/app/wallpaper/</code> # Index</li>
-<li><code>feh -m ~/app/wallpaper/</code> # Montage</li>
-<li><code>feh -t ~/app/wallpaper/</code> # Thumbnails</li>
-<li><code>feh -w ~/app/wallpaper/</code> # Multiwindow</li>
-<li><code>feh -l ~/app/wallpaper/</code> # List</li>
+<li><code>/mnt/grow/220824wallpaper/</code> # Replace it with your directory including wallpaper</li>
+<li><code>feh -i /mnt/grow/220824wallpaper/</code> # Index</li>
+<li><code>feh -m /mnt/grow/220824wallpaper/</code> # Montage</li>
+<li><code>feh -t /mnt/grow/220824wallpaper/</code> # Thumbnails</li>
+<li><code>feh -w /mnt/grow/220824wallpaper/</code> # Multiwindow</li>
+<li><code>feh -l /mnt/grow/220824wallpaper/</code> # List</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
