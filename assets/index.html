@@ -22,6 +22,45 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="simulate-middle-mouse-button-in-vimium-c">Simulate middle mouse button in Vimium C</h4>
+<ul>
+<li>Custom key mappings<pre><code>map gm LinkHints.activateHover $then=&quot;$D+mid_click&quot;
+run &lt;v-mid_click&gt; sim_mid#mousedown+$D+sim_mid#mouseup+$D+lh_open
+run &lt;v-sim_mid&gt; dispatchEvent#button=1&amp;type=$s mask
+map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false direct=&quot;hovered&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Click on the letter <code>g</code>, then on the letter <code>m</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/891#issuecomment-1483856671">https://github.com/gdh1995/vimium-c/issues/891#issuecomment-1483856671</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="simulate-hover-in-vimium-c">Simulate hover in Vimium C</h4>
+<ul>
+<li>Custom key mappings<pre><code>map gh LinkHints.activateHover
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Require fine-tuning to fully function.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562">https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="move-no-space-files-to-temporary-directory-in-linux-bash-one-liner">Move no space files to temporary directory in Linux Bash one-liner</h4>
 <ul>
 <li><code>for f in {01..23}*; do if [[ ! &quot;$f&quot; =~ &quot; &quot; ]]; mv &quot;$f&quot; /tmp/; fi; done</code></li>
@@ -102,6 +141,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-partitioning">https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-partitioning</a></li>
 <li><code>lsblk</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -4999,7 +5039,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 <li><h4 id="use-vimium-c-for-hint">Use Vimium C for hint</h4>
 <ul>
 <li>Custom key mappings<pre><code>unmap F
-map gh LinkHints.activate button=&quot;right&quot; # Right click
+map gr LinkHints.activate button=&quot;right&quot; # Right click
 
 env files host=&quot;http://192.168.10.100:5244/&quot;
 env telegramImages host=&quot;https://web.telegram.org/z/&quot;
@@ -8626,8 +8666,6 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 <li><h4 id="use-picom">Use &quot;picom&quot;</h4>
 <ul>
 <li>Fading<pre><code>fadind = true;
-fade-in-step = 0.01;
-fade-out-step = 0.01;
 </code></pre>
 </li>
 <li>Shadow<pre><code>shadow = true;
@@ -8865,11 +8903,14 @@ dotfiles config --local status.showUntrackedFiles no
 <ul>
 <li><h4 id="replace-etcenvironment-with-bash_profile-in-linux">Replace /etc/environment with ~/.bash_profile in #Linux</h4>
 <ul>
-<li><code>vim ~/.bash_profile</code><pre><code># Proxy
+<li><code>vim ~/.bash_profile</code><pre><code># Set proxy
 export http_proxy=&quot;127.0.0.1:7890&quot;
 export https_proxy=&quot;127.0.0.1:7890&quot;
 export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </code></pre>
+<ul>
+<li>Put them at the top of the file</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -8882,6 +8923,7 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </ul>
 </li>
 </ul>
+<hr>
 <hr>
 <ul>
 <li><h4 id="1-inch--254-centimeters-idea">1 inch = 2.54 centimeters #Idea</h4>
@@ -11775,7 +11817,7 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li><code>esc</code> # exit and enable vimium by hitting this key</li>
 <li><em><strong>References</strong></em></li>
 <li><img src="../assets/image_1664681977520_0.png" alt="image.png"></li>
-<li><a href="https://github.com/philc/vimium">philc/vimium: The hacker&#39;s browser.</a></li>
+<li><a href="https://github.com/philc/vimium">https://github.com/philc/vimium</a></li>
 </ul>
 </li>
 </ul>
@@ -11905,11 +11947,15 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 </li>
 <li>[[computer]] [[linux]] [[gentoo]] I need a computer that can replace the CPU when the computer compiling or building on gentoo. #Idea</li>
 <li>[[i3]] If you don&#39;t input any keys with keyboard in terminal.<ul>
-<li><code>ctrl + z</code> # use <code>ctrl</code> and <code>z</code> hotkey, then you your terminal will fine.
--- #### Partition fdisk in Linux<ul>
-<li><code>fdisk /dev/sda</code></li>
+<li><code>ctrl + z</code> # use <code>ctrl</code> and <code>z</code> hotkey, then you your terminal will fine.</li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="partition-fdisk-in-linux">Partition fdisk in Linux</h4>
+<ul>
+<li><code>fdisk /dev/sda</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -11929,6 +11975,36 @@ w # write partitions to disk and exit
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>Example<table>
+<thead>
+<tr>
+<th>Mount point</th>
+<th>Partition</th>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/mnt/boot</td>
+<td>/dev/ESP</td>
+<td>EFI</td>
+<td>300 MiB</td>
+</tr>
+<tr>
+<td>[SWAP]</td>
+<td>/dev/swap</td>
+<td>Linux swap</td>
+<td>512 MiB</td>
+</tr>
+<tr>
+<td>/mnt</td>
+<td>/dev/root</td>
+<td>Linux x86-64 root</td>
+<td>The rest</td>
+</tr>
+</tbody></table>
+</li>
+<li><a href="https://wiki.archlinux.org/title/Installation_guide#Example_layouts">https://wiki.archlinux.org/title/Installation_guide#Example_layouts</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks#Partitioning_the_disk_with_GPT_for_UEFI">https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/Disks#Partitioning_the_disk_with_GPT_for_UEFI</a></li>
 </ul>
 </li>

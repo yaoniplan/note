@@ -8,21 +8,20 @@
 - 仙武传 - 12
 - 遮天 - 06
 - 剑域风云 (Part1+2) - 40+38
-- 勇者死了 - 09 1106 animation
-- 一世独尊 - 13
-- 火凤燎原 - 05
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+37
-- Mashle: Magic and Muscles / 物理魔法使马修 - 06
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 08
-- 向涟苍士献上纯洁 - #NSFW 04
+- 勇者死了 - 09
+- 一世独尊 - 15
+- 火凤燎原 - 06
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+41
+- Mashle: Magic and Muscles / 物理魔法使马修 - 07
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 09
 - 地狱乐 - 08
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+07
-- 炼气十万年 - 31
-- 神印王座 - 55
-- 百炼成神 - 30
-- 灵剑尊 -  240/385
-- 武神主宰 - 192/335
-- 独步逍遥 - 168/314
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+09
+- 炼气十万年 - 33
+- 神印王座 - 57
+- 百炼成神 - 32
+- 灵剑尊 -  240/388
+- 武神主宰 - 192/337
+- 独步逍遥 - 168/316 animation
 - 完美世界 - 38/111
 - Against the Sky Supreme / 逆天至尊 - 53/199
 - 一念永恒 (Part1+2) - 52+47
@@ -240,6 +239,7 @@
 - guard(end)
 
 ### Animation
+- 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
 - Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
 - Grimgar of Fantasy and Ash / 灰与幻想的格林姆迦尔 - 12 # Team: tank, logistics, captain (End of the first part)
 - Death Parade / 死亡游行 - 12 # End of the first part
