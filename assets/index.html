@@ -22,9 +22,30 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4 id="simulate-middle-mouse-button-in-vimium-c">Simulate middle mouse button in Vimium C</h4>
+<li><h4 id="stop-a-process-in-linux">Stop a process in Linux</h4>
 <ul>
-<li>Custom key mappings<pre><code>map gm LinkHints.activateHover $then=&quot;$D+mid_click&quot;
+<li><code>kill -STOP 508</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>508</code> # Replace it with your process ID<ul>
+<li><code>ps aux | grep mpv</code></li>
+</ul>
+</li>
+<li><code>kill -CONT 508</code> # Continue</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-06-04_09-21.png" alt="2023-06-04_09-21.png"></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="simulate-middle-mouse-button-and-jump-to-new-page-in-vimium-c">Simulate middle mouse button and jump to new page in Vimium C</h4>
+<ul>
+<li>Custom key mappings<pre><code>map gn LinkHints.activateHover $then=&quot;$D+mid_click&quot;
 run &lt;v-mid_click&gt; sim_mid#mousedown+$D+sim_mid#mouseup+$D+lh_open
 run &lt;v-sim_mid&gt; dispatchEvent#button=1&amp;type=$s mask
 map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false direct=&quot;hovered&quot;
@@ -33,7 +54,7 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Click on the letter <code>g</code>, then on the letter <code>m</code></li>
+<li>Click on the letter <code>g</code>, then on the letter <code>n</code></li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -52,6 +73,7 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: Require fine-tuning to fully function.</li>
+<li>Click on the letter <code>g</code>, then on the letter <code>h</code></li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -1532,6 +1554,10 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><em><strong>Notes</strong></em><ul>
 <li><code>n</code> # A variable name</li>
 <li><code>-eq</code> # Equal</li>
+<li><code>if [[ -n &quot;$1&quot; ]]; then</code><ul>
+<li><code>-n</code> # Not empty</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -4282,6 +4308,7 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--mute=yes</code> # For NSFW</li>
 <li><code>G</code> # Increase size of subtitle</li>
 <li><code>--sub-file-paths=subtitles/</code> # For animation<ul>
 <li><code>subtitles/</code> # Replace it with your directory including subtitles</li>

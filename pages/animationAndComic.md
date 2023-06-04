@@ -1,4 +1,6 @@
 ### "Animation"
+- おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02
+- 赎罪日 - #NSFW 03
 - 镖人 - 02
 - learnC - 16 0714
 - A brief history - 13
@@ -21,14 +23,13 @@
 - 百炼成神 - 32
 - 灵剑尊 -  240/388
 - 武神主宰 - 192/337
-- 独步逍遥 - 168/316 animation
-- 完美世界 - 38/111
-- Against the Sky Supreme / 逆天至尊 - 53/199
-- 一念永恒 (Part1+2) - 52+47
-- 斗破苍穹年番 - 45
-- 绝世武魂 - 273
-- 万古神话 - 84
-- 星河至尊 - 157
+- 独步逍遥 - 168/317
+- 完美世界 - 38/113
+- Against the Sky Supreme / 逆天至尊 - 53/202
+- 一念永恒 (Part1+2) - 52+48
+- 斗破苍穹年番 - 46
+- 绝世武魂 - 275
+- 万古神话 - 87
 
 ### Comic
 - 没有道侣就会死 - 54
@@ -239,6 +240,7 @@
 - guard(end)
 
 ### Animation
+- 星河至尊 - 157 # End of the first part
 - 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
 - Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
 - Grimgar of Fantasy and Ash / 灰与幻想的格林姆迦尔 - 12 # Team: tank, logistics, captain (End of the first part)
