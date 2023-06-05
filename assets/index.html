@@ -22,6 +22,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="simulate-a-mouse-double-click-in-vimium-c">Simulate a mouse double click in Vimium C</h4>
+<ul>
+<li>Custom key mappings<pre><code>map gd LinkHints.activate dblclick
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Click on the letter <code>g</code>, then on the letter <code>d</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/382#issuecomment-917538351">https://github.com/gdh1995/vimium-c/issues/382#issuecomment-917538351</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="stop-a-process-in-linux">Stop a process in Linux</h4>
 <ul>
 <li><code>kill -STOP 508</code></li>
@@ -38,6 +56,34 @@
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-06-04_09-21.png" alt="2023-06-04_09-21.png"></li>
 <li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-awk">Use &quot;awk&quot;</h4>
+<ul>
+<li><code>kill -STOP $(ps aux | grep -v grep | grep aola | awk &#39;{ print $2 }&#39;)</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>$2</code> # Second column</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Manipulate columnar data # ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-vimium-c">Use &quot;Vimium C&quot;</h4>
+<ul>
+<li><code>W</code> # Move current tab to next window</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>?</code></li>
 </ul>
 </li>
 </ul>
@@ -898,6 +944,11 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Unpatching<ul>
+<li><code>cd ~/.config/dwm/</code></li>
+<li><code>git checkout .</code></li>
+</ul>
+</li>
 <li>Patching<ul>
 <li>Download a patch <a href="https://dwm.suckless.org/patches/uselessgap/">https://dwm.suckless.org/patches/uselessgap/</a></li>
 <li><code>cd ~/.config/dwm/</code></li>
@@ -4308,6 +4359,7 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--start=00:54:00</code> # For test</li>
 <li><code>--mute=yes</code> # For NSFW</li>
 <li><code>G</code> # Increase size of subtitle</li>
 <li><code>--sub-file-paths=subtitles/</code> # For animation<ul>

@@ -240,6 +240,7 @@
 - guard(end)
 
 ### Animation
+- Demon Lord, Retry! / 重来吧，魔王大人！- 12 # End of the first season
 - 星河至尊 - 157 # End of the first part
 - 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
 - Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
