@@ -240,6 +240,8 @@
 - guard(end)
 
 ### Animation
+- (18禁アニメ) THE レイプマン RAPEMAN アニメ・バージョン「Target1由香」「Target2真紀」- #NSFW 01 # End of the first part
+- ミネルバの剣士 - 05 #NSFW End of the first part
 - Demon Lord, Retry! / 重来吧，魔王大人！- 12 # End of the first season
 - 星河至尊 - 157 # End of the first part
 - 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
