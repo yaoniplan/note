@@ -1,35 +1,33 @@
 ### "Animation"
-- おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02
-- 赎罪日 - #NSFW 03
-- 镖人 - 02
+- 镖人 - 04
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 真武巅峰 (Part1+2) - 40+08
-- 不灭神王 - 08
-- 仙武传 - 12
-- 遮天 - 06
-- 剑域风云 (Part1+2) - 40+38
+- 真武巅峰 (Part1+2) - 40+10
+- 不灭神王 - 09
+- 仙武传 - 13
+- 遮天 - 08
+- 剑域风云 (Part1+2) - 40+43
 - 勇者死了 - 09
-- 一世独尊 - 15
-- 火凤燎原 - 06
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+41
-- Mashle: Magic and Muscles / 物理魔法使马修 - 07
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 09
-- 地狱乐 - 08
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+09
-- 炼气十万年 - 33
-- 神印王座 - 57
+- 一世独尊 - 17
+- 火凤燎原 - 07
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+43
+- Mashle: Magic and Muscles / 物理魔法使马修 - 08
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 10
+- 地狱乐 - 09
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+10
+- 炼气十万年 - 35
+- 神印王座 - 58
 - 百炼成神 - 32
-- 灵剑尊 -  240/388
-- 武神主宰 - 192/337
-- 独步逍遥 - 168/317
-- 完美世界 - 38/113
-- Against the Sky Supreme / 逆天至尊 - 53/202
-- 一念永恒 (Part1+2) - 52+48
-- 斗破苍穹年番 - 46
-- 绝世武魂 - 275
-- 万古神话 - 87
+- 灵剑尊 -  240/389
+- 武神主宰 - 192/339
+- 独步逍遥 - 168/319
+- 完美世界 - 38/114
+- Against the Sky Supreme / 逆天至尊 - 53/204
+- 一念永恒 (Part1+2) - 52+49
+- 斗破苍穹年番 - 47
+- 绝世武魂 - 277
+- 万古神话 - 89
 
 ### Comic
 - 没有道侣就会死 - 54
@@ -240,6 +238,8 @@
 - guard(end)
 
 ### Animation
+- ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 03 # Episode 4 will be released in Japan on June 30th https://tube.hentaistream.com/tsugunai-episode-04
+- おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02 # Update too slow
 - 新・エンジェル - #NSFW 05 # End of the first part
 - プリンセス ロード〜薔薇と髑髏の紋章〜 - #NSFW 01 # The rest of the resources were not found
 - THE レイプマン RAPEMAN アニメ・バージョン「Target1由香」「Target2真紀」- #NSFW 01 # End of the first part
