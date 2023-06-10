@@ -112,6 +112,10 @@ http://natas9.natas.labs.overthewire.org
 - https://chat.lmsys.org/
 
 ## Web crawler
+- https://yougit.net/
+- https://pan.ccof.cc/
+- https://www.upyunso.com/
+- https://www.cuppaso.fun/
 - https://www.alipansou.com/
 - https://feiyu100.cn/
 - https://www.panpanr.com/

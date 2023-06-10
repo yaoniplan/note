@@ -22,6 +22,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="solve-the-problem-in-nix">Solve the problem in Nix</h4>
+<pre><code>export NIX_EXPERIMENTAL_FEATURES=&quot;nix-command flakes&quot;
+nix build --extra-experimental-features &quot;nix-command flakes&quot;
+</code></pre>
+</li>
+<li><em><strong>Notes</strong></em><pre><code>$ export NIX_EXPERIMENTAL_FEATURES=&quot;nix-command flakes&quot;
+nix build --extra-experimental-features nix-command
+error: experimental Nix feature &#39;flakes&#39; is disabled; use &#39;--extra-experimental-features flakes&#39; to override
+$
+</code></pre>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="simulate-a-mouse-double-click-in-vimium-c">Simulate a mouse double click in Vimium C</h4>
 <ul>
 <li>Custom key mappings<pre><code>map gd LinkHints.activate dblclick
@@ -634,15 +652,18 @@ UEFI VBOX CD-ROM VB2-01700376
 <ul>
 <li><h4 id="install-gentoo-linux-in-docker-on-arch-linux">Install Gentoo Linux in Docker on Arch Linux</h4>
 <ul>
-<li><code>doas docker run -it gentoo/stage3:latest /bin/bash</code></li>
+<li><code>doas docker run -i -t gentoo/stage3 bash</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-i</code> # Interactive</li>
+<li><code>-t</code> # Tty</li>
+<li><code>gentoo/stage3</code> # Replace it with your desired Linux (e.g. <em>nixos/nix</em>)</li>
 <li><code>doas pacman -S docker</code> # Install in Arch Linux</li>
 <li><code>doas systemctl start docker</code> # Once now</li>
 <li>Restart and interact with the last exited Docker container<ul>
 <li><code>doas docker start a38ab0552048</code></li>
-<li><code>doas docker exec -it a38ab0552048 /bin/bash</code></li>
+<li><code>doas docker exec -i -t a38ab0552048 bash</code></li>
 </ul>
 </li>
 <li>Because someone in the group shared the news of success.</li>
@@ -650,11 +671,7 @@ UEFI VBOX CD-ROM VB2-01700376
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-05-21_18-44.png" alt="2023-05-21_18-44.png"></li>
-<li><code>docker exec --help</code><ul>
-<li><code>-i</code> # Interactive</li>
-<li><code>-t</code> # Tty</li>
-</ul>
-</li>
+<li><code>docker exec --help</code></li>
 <li><code>docker ps --help</code><ul>
 <li><code>doas docker ps --all</code> # Get CONTAINER ID (e.g. a38ab0552048)</li>
 </ul>
@@ -10093,8 +10110,8 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </ul>
 </li>
 <li>Optional: Set temporarily<ul>
-<li><a href="http://clash.razord.top/">http://clash.razord.top/</a></li>
-<li><a href="http://yacd.haishan.me/">http://yacd.haishan.me/</a></li>
+<li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
+<li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
 </ul>
 </li>
 <li>Solve the problem about <strong>address already in use</strong><pre><code>ERRO[0438] Start Mixed(http+socks) server error: listen tcp 127.0.0.1:7890: bind: address already in use
