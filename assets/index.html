@@ -22,6 +22,39 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-nix">Use &quot;nix&quot;</h4>
+<ul>
+<li><code>nix-env --install htop</code></li>
+<li><code>nix-env --uninstall htop</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas vim /etc/nix/nix.conf</code> # Set mirror in Nix<pre><code>substituters = https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org/
+</code></pre>
+<ul>
+<li><code>nix-channel --add https://mirrors.ustc.edu.cn/nix-channels/nixpkgs-unstable nixpkgs</code></li>
+<li><code>nix-channel --update</code></li>
+</ul>
+</li>
+<li><code>curl -L https://nixos.org/nix/install | sh</code> # Install<ul>
+<li><code>-L</code> # Location</li>
+<li><code>wget -O- https://nixos.org/nix/install | sh</code> # Another way to install</li>
+<li><code>-O-</code> # The same as <code>-L</code> of <code>curl</code></li>
+<li><code>. /home/yaoniplan/.nix-profile/etc/profile.d/nix.sh</code> # Apply changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
+<li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
+<li><code>man curl</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="solve-the-problem-in-nix">Solve the problem in Nix</h4>
 <pre><code>export NIX_EXPERIMENTAL_FEATURES=&quot;nix-command flakes&quot;
 nix build --extra-experimental-features &quot;nix-command flakes&quot;
@@ -280,6 +313,31 @@ services.xserver.desktopManager.plasma5.enable = true;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Enable autologin in SDDM<pre><code>services.xserver.displayManager.autoLogin.enable = true;
+services.xserver.displayManager.autoLogin.user = &quot;yaoniplan&quot;;
+</code></pre>
+<ul>
+<li>When no password is set for the user</li>
+</ul>
+</li>
+<li>Install Awesome WM in NixOS<pre><code>services.xserver = {
+  enable = true;
+
+  displayManager = {
+    sddm.enable = true;
+    defaultSession = &quot;none+awesome&quot;;
+  };
+  
+  windowManager.awesome = {
+    enable = true;
+    luaModules = with pkgs.luaPackages; [
+      luarocks # is the package manager for Lua modules
+      luadbi-mysql # Database abstraction layer
+    ];
+  };
+};
+</code></pre>
+</li>
 <li><code>nixos-rebuild switch --option substituters https://mirrors.ustc.edu.cn/nix-channels/store</code> # Rebuild to make changes effective</li>
 <li>Use Wayland (Warning: It has some bugs)<ul>
 <li>Select &quot;Plasma (Wayland)&quot; of Desktop Session in SDDM</li>
@@ -289,6 +347,8 @@ services.xserver.desktopManager.plasma5.enable = true;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
+<li><a href="https://nixos.wiki/wiki/Awesome">https://nixos.wiki/wiki/Awesome</a></li>
 <li><a href="https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/">https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/</a></li>
 <li><a href="https://nixos.wiki/wiki/KDE">https://nixos.wiki/wiki/KDE</a></li>
 </ul>
@@ -498,7 +558,7 @@ UEFI VBOX CD-ROM VB2-01700376
 <li><code>setfont ter-v32n</code> # Increase the font size</li>
 <li><code>vim /mnt/etc/nixos/configuration.nix</code> # Edit the configuration file</li>
 <li><code>nixos-install</code> # Install system</li>
-<li><code>sudo nixos-rebuild switch</code></li>
+<li><code>nixos-rebuild switch</code></li>
 <li>Because to edit the <code>configuration.nix</code> file when can&#39;t log in to the system.</li>
 </ul>
 </li>
@@ -515,6 +575,7 @@ UEFI VBOX CD-ROM VB2-01700376
 <ul>
 <li><code>vim /etc/nixos/configuration.nix</code><pre><code>nix.settings.substituters = [
   &quot;https://mirrors.ustc.edu.cn/nix-channels/store&quot;
+  &quot;https://cache.nixos.org&quot;
 ];
 </code></pre>
 </li>
@@ -1215,6 +1276,7 @@ export no_proxy=&quot;localhost, 192.168.10.100&quot;
 <li><code>doas reboot</code> # Make changes effective</li>
 </ul>
 </li>
+<li>The abbreviation of &quot;Arch User Repository&quot; is &quot;AUR&quot;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -7238,6 +7300,11 @@ root       pts/0    192.168.10.105   8:38AM     - w
 <ul>
 <li><h4 id="read-input-in-shell-script">Read input in Shell script</h4>
 <ul>
+<li><code>$#</code> # Number of argument<ul>
+<li><code>if [[ &quot;$#&quot; -eq 2 ]]; then</code></li>
+<li><code>elif [[ &quot;$#&quot; -eq 1 ]]; then</code></li>
+</ul>
+</li>
 <li><code>$1</code> # The first argument</li>
 <li><code>$0</code> # The name of the script</li>
 <li><code>$@</code> # A list of all arguments</li>
@@ -7531,12 +7598,19 @@ done
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-wget">Use wget</h4>
+<li><h4 id="use-wget">Use &quot;wget&quot;</h4>
 <ul>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Improve download speed (If slow)<pre><code>export http_proxy=&quot;192.168.10.105:7890&quot;
+export https_proxy=&quot;192.168.10.105:7890&quot;
+</code></pre>
+<ul>
+<li><code>unset http_proxy https_proxy</code> # Unset</li>
+</ul>
+</li>
 <li><code>-r</code> # Recursive</li>
 <li><code>-np</code> # No-parent</li>
 <li><code>-nH</code> # No-host-directories (e.g. <em>data.gpo.zugaina.org/</em>)</li>
@@ -7554,6 +7628,7 @@ done
 <li><img src="../assets/2023-01-28_21:59:03.gif" alt="2023-01-28_21:59:03.gif"></li>
 <li><a href="https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776">https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776</a></li>
 <li><a href="https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730">https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -11186,12 +11261,15 @@ localhost:5900 # Server
 </ul>
 <hr>
 <ul>
-<li>Wayland is a <strong>display server protocol</strong> that seeks to replace X11. #Linux #Wayland<ul>
+<li><h4 id="understand-wayland">Understand &quot;Wayland&quot;</h4>
+<ul>
+<li>A display server protocol</li>
+<li>Replace X11</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1668656110539_0.png" alt="image.png"></li>
 <li><a href="https://www.cbtnuggets.com/blog/technology/networking/why-use-wayland-versus-x11">https://www.cbtnuggets.com/blog/technology/networking/why-use-wayland-versus-x11</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
