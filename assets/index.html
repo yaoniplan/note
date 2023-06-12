@@ -22,13 +22,37 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="make-bashrc-effective-when-new-a-terminal">Make .bashrc effective when new a terminal</h4>
+<ul>
+<li><code>vim ~/.bash_profile</code><pre><code>if [[ -f ~/.bashrc ]]; then source ~/.bashrc; fi
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-f</code> # File</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-nix">Use &quot;nix&quot;</h4>
 <ul>
+<li><code>nix-shell --packages git</code></li>
 <li><code>nix-env --install htop</code></li>
 <li><code>nix-env --uninstall htop</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Uninstall itself<ul>
+<li><code>doas systemctl stop nix-daemon.socket nix-daemon.service</code> # Stop it</li>
+<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-profile ~/.nix-defexpr ~/.nix-channels</code> # Uninstall</li>
+</ul>
+</li>
 <li><code>doas vim /etc/nix/nix.conf</code> # Set mirror in Nix<pre><code>substituters = https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org/
 </code></pre>
 <ul>
@@ -46,6 +70,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html">http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
 <li><code>man curl</code></li>
@@ -131,10 +156,18 @@ $
 <ul>
 <li><h4 id="use-vimium-c">Use &quot;Vimium C&quot;</h4>
 <ul>
+<li><code>map &lt;c-m&gt; toggleMuteTab</code> # Ctrl-m</li>
+<li><code>yv</code> # Select text and enter visual mode (Locate line)<ul>
+<li><code>y</code> # Yank</li>
+<li><code>v</code> # Visual</li>
+</ul>
+</li>
 <li><code>W</code> # Move current tab to next window</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034">https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034</a></li>
+<li><a href="https://github.com/gdh1995/vimium-c/discussions/794#discussion-4551520">https://github.com/gdh1995/vimium-c/discussions/794#discussion-4551520</a></li>
 <li><code>?</code></li>
 </ul>
 </li>
@@ -183,7 +216,7 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 <ul>
 <li><h4 id="move-no-space-files-to-temporary-directory-in-linux-bash-one-liner">Move no space files to temporary directory in Linux Bash one-liner</h4>
 <ul>
-<li><code>for f in {01..23}*; do if [[ ! &quot;$f&quot; =~ &quot; &quot; ]]; mv &quot;$f&quot; /tmp/; fi; done</code></li>
+<li><code>for f in {01..23}*; do if [[ ! &quot;$f&quot; =~ &quot; &quot; ]];then mv &quot;$f&quot; /tmp/; fi; done</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -582,7 +615,7 @@ UEFI VBOX CD-ROM VB2-01700376
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Set mirror temporarily<pre><code>nixos-install --option substituters https://mirrors.ustc.edu.cn/nix-channels/store
+<li>Set mirror temporarily<pre><code>nixos-install --option substituters &quot;https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org&quot;
 </code></pre>
 <ul>
 <li><code>nixos-install</code> # Replace it with your desired comand (e.g. <code>nixos-rebuild switch</code>)</li>
@@ -1223,6 +1256,8 @@ yaoniplan is not in the sudoers file.
 <ul>
 <li><h4 id="use-awesome-wm-in-linux">Use &quot;Awesome&quot; WM in Linux</h4>
 <ul>
+<li><code>Ctrl-Super-r</code> # Reload awesome</li>
+<li><code>Super-s</code> # Show hotkeys</li>
 <li><code>Super-j</code> # Move cusor</li>
 <li><code>Super-Shift-c</code> # Kill a program</li>
 <li><code>Super-Enter</code> # New a terminal</li>
@@ -1251,6 +1286,7 @@ yaoniplan is not in the sudoers file.
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://wiki.gentoo.org/wiki/Awesome">https://wiki.gentoo.org/wiki/Awesome</a></li>
+<li><code>less /etc/xdg/awesome/rc.lua</code> # <code>/modkey</code></li>
 </ul>
 </li>
 </ul>
@@ -1926,6 +1962,7 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4 id="use-sed">Use &quot;sed&quot;</h4>
 <ul>
+<li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code></li>
 <li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;)&quot;; done</code></li>
 </ul>
 </li>
@@ -1935,8 +1972,9 @@ file &#39;output02.wma&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><img src="../assets/2023-06-11_21-44.png" alt="2023-06-11_21-44.png"></li>
 <li><img src="../assets/2023-04-30_20-54.png" alt="2023-04-30_20-54.png"></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -3444,7 +3482,7 @@ accessibility.typeaheadfind.manual
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to use a extension named &quot;Vimium C&quot;.</li>
+<li>Because to use a extension named <em>Vimium C</em>.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -4782,9 +4820,9 @@ ERROR: Host key verification failed.
 </code></pre>
 <ul>
 <li><code>ssh-keygen -f &quot;/home/yaoniplan/.ssh/known_hosts&quot; -R &quot;192.168.10.105&quot;</code></li>
-<li><code>192.168.10.105</code> # Replace it with your error (e.g. [192.168.10.105]:60022)</li>
 <li><code>-f</code> # Filename</li>
 <li><code>-R</code> # Remove</li>
+<li><code>192.168.10.105</code> # Replace it with your error (e.g. <em>[192.168.10.105]:60022</em>)</li>
 </ul>
 </li>
 </ul>
@@ -4929,7 +4967,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 <li>Not supported on &quot;view-source:&quot; pages.</li>
 </ul>
 </li>
-<li>Because to run a extension named &quot;Vimium C&quot;<ul>
+<li>Because to run a extension named <em>Vimium C</em><ul>
 <li><code>Run on chrome://*/* pages</code></li>
 <li><code>Run on Chrome&#39;s native New Tab Page</code></li>
 </ul>
@@ -7202,7 +7240,7 @@ fi
 </ul>
 <hr>
 <ul>
-<li><h4 id="the-abbreviation-of-secure-file-transfer-program-is-sftp">The abbreviation of Secure File Transfer Program is sftp</h4>
+<li><h4 id="the-abbreviation-of-secure-file-transfer-program-is-sftp">The abbreviation of &quot;Secure File Transfer Program&quot; is &quot;SFTP&quot;</h4>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man sftp</code></li>
@@ -7231,22 +7269,27 @@ fi
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-sftp-to-copy-remote-file-to-here">Use sftp to copy remote file to here</h4>
+<li><h4 id="use-sftp">Use &quot;sftp&quot;</h4>
 <ul>
 <li><code>sftp root@192.168.10.100:/root/test.md .</code></li>
+<li><code>sftp -P 60022 yaoniplan@192.168.10.105:/etc/nixos/configuration.nix /tmp/</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-P</code> # Port</li>
 <li><code>root</code> # Replace it with your user</li>
 <li><code>192.168.10.100</code> # Replace it with your remote ip address</li>
 <li><code>/root/test.md</code> # Replace it with your remote file</li>
 <li><code>.</code> # Replace it with a directory that you want to put</li>
+<li><code>scp -P 60022 yaoniplan@192.168.10.105:/etc/nixos/configuration.nix /tmp/</code> # Another way</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man sftp</code></li>
 <li><img src="../assets/2023-02-11_12:39:35.gif" alt="2023-02-11_12:39:35.gif"></li>
 <li><a href="https://superuser.com/questions/134901/whats-the-difference-between-scp-and-sftp/1028877#1028877">https://superuser.com/questions/134901/whats-the-difference-between-scp-and-sftp/1028877#1028877</a></li>
+<li><code>man scp</code></li>
+<li><code>man sftp</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -8161,12 +8204,11 @@ cp ./* ~/.local/share/rofi/themes/
 <li><h4 id="add-a-directory-to-path-permanently">Add a directory to <code>$PATH</code> permanently</h4>
 <ul>
 <li><code>vim ~/.bash_profile</code><pre><code class="language-sh"># Set PATH to execute scripts anywhere if it exists
-if [ -d &quot;$HOME/.local/bin/&quot; ] ; then
+if [[ -d &quot;$HOME/.local/bin/&quot; ]]; then
     export PATH=&quot;$PATH:$HOME/.local/bin/&quot;
 fi
 </code></pre>
-</li>
-<li>Make it work<ul>
+<ul>
 <li>Close your terminal, then open your terminal</li>
 <li><code>echo $PATH</code> # Check it</li>
 </ul>
@@ -8175,6 +8217,7 @@ fi
 </li>
 <li><h4 id="notes"><em><strong>Notes</strong></em></h4>
 <ul>
+<li><code>-d</code> # Directory</li>
 <li>Advantages<ul>
 <li>Execute scripts anywhere</li>
 </ul>
@@ -9048,7 +9091,7 @@ backend = &quot;glx&quot;;
 <li><h4 id="manage-dotfiles-with-git">Manage dotfiles with Git</h4>
 <ul>
 <li>First use<pre><code>git init --bare $HOME/.dotfiles
-echo &quot;alias dotfiles=&#39;/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
+echo &quot;alias dotfiles=&#39;git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
 source ~/.bashrc
 dotfiles config --local status.showUntrackedFiles no
 dotfiles status
@@ -9059,7 +9102,7 @@ dotfiles push -u origin master
 </code></pre>
 </li>
 <li>Second machine<pre><code>git clone --bare https://github.com/yaoniplan/dotfiles.git $HOME/.dotfiles
-echo &quot;alias dotfiles=&#39;/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
+echo &quot;alias dotfiles=&#39;git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
 source ~/.bashrc
 dotfiles checkout
 dotfiles config --local status.showUntrackedFiles no
@@ -14340,18 +14383,25 @@ smart_boards on
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-locate-to-look-for-a-file-in-linux">Use &quot;locate&quot; to look for a file in Linux</h4>
+<li><h4 id="use-locate">Use &quot;locate&quot;</h4>
 <ul>
-<li><code>locate filename</code></li>
+<li><code>locate awesome</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>awesome</code> # Replace it with your desired file name</li>
 <li><code>doas emerge -aq sys-apps/mlocate</code> # Install it in Gentoo Linux</li>
 <li><code>doas updatedb</code> # Update the database before locating</li>
+<li><code>doas groupadd mlocate</code> # Add a group to solve the problem<pre><code>[yaoniplan@tux:~]$ sudo updatedb
+updatedb: can not find group `mlocate&#39;
+[yaoniplan@tux:~]$
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://askubuntu.com/questions/800347/cant-locate-a-directory-using-locate">https://askubuntu.com/questions/800347/cant-locate-a-directory-using-locate</a>?</li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -14361,7 +14411,7 @@ smart_boards on
 <li>将复制的图标粘贴到如图所示的位置</li>
 <li><img src="../assets/image_1661419717703_0.png" alt="image.png"> </li>
 <li><em><strong>Notice</strong></em></li>
-<li><a href="https://fontawesome.com/cheatsheet" title="Cheatsheet - Font Awesome">免费复制图标网站</a> //<code>ctrl + c</code> 即可复制 (如果找不到可以复制的图标的话)</li>
+<li><a href="https://fontawesome.com/cheatsheet">https://fontawesome.com/cheatsheet</a> //<code>ctrl + c</code> 即可复制 (如果找不到可以复制的图标的话)</li>
 <li>如果没有awesome字体，请安装 ttf-font-awesome</li>
 <li><em><strong>References</strong></em></li>
 <li><a href="https://www.youtube.com/watch?v=Bw5sDLOvN20&ab_channel=GerryStudios">https://www.youtube.com/watch?v=Bw5sDLOvN20&amp;ab_channel=GerryStudios</a></li>
