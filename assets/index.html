@@ -40,14 +40,62 @@
 </ul>
 <hr>
 <ul>
+<li><h4 id="fix-rate-limiting-issures-in-github">Fix rate limiting issures in GitHub</h4>
+<ul>
+<li><code>doas vim /etc/nix/nix.conf</code><pre><code>access-tokens = github.com=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
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>export GITHUB_TOKEN=&quot;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&quot;</code> # Another way<ul>
+<li>Warning: It does not work sometimes.</li>
+</ul>
+</li>
+<li><code>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</code> # Replace it with your PAT<ul>
+<li>In &quot;Personal access tokens&quot; of &quot;Developer Settings&quot;</li>
+<li>May need to grant &#39;repo&#39; access</li>
+</ul>
+</li>
+<li>Sovle the problem<pre><code>yaoniplan@tux /tmp/tmp.ItcK2amanT $ nix flake new -t templates#go-hello .
+error:
+       … while fetching the input &#39;github:NixOS/templates&#39;
+
+       error: unable to download &#39;https://api.github.com/repos/NixOS/templates/commits/HEAD&#39;: HTTP error 403
+
+       response body:
+
+       {&quot;message&quot;:&quot;API rate limit exceeded for 35.77.62.80. (But here&#39;s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting&quot;}
+yaoniplan@tux /tmp/tmp.ItcK2amanT $
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://discourse.nixos.org/t/flakes-provide-github-api-token-for-rate-limiting/18609">https://discourse.nixos.org/t/flakes-provide-github-api-token-for-rate-limiting/18609</a></li>
+<li><img src="../assets/2023-06-12_21-57.png" alt="2023-06-12_21-57.png"></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-nix">Use &quot;nix&quot;</h4>
 <ul>
-<li><code>nix-shell --packages git</code></li>
-<li><code>nix-env --install htop</code></li>
+<li><code>nix flake show</code> # Show the outputs</li>
+<li><code>nix-shell --packages git</code> # Install a package temporarily<ul>
+<li><code>nix-shell rust.nix</code> # Start an interactive shell</li>
+</ul>
+</li>
+<li><code>nix-env --install htop</code> # Install a package permantently</li>
 <li><code>nix-env --uninstall htop</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Enable flakes<ul>
+<li><code>echo &#39;experimental-features = nix-command flakes&#39; &gt;&gt; /etc/nix/nix.conf</code></li>
+</ul>
+</li>
 <li>Uninstall itself<ul>
 <li><code>doas systemctl stop nix-daemon.socket nix-daemon.service</code> # Stop it</li>
 <li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-profile ~/.nix-defexpr ~/.nix-channels</code> # Uninstall</li>
@@ -64,12 +112,14 @@
 <li><code>-L</code> # Location</li>
 <li><code>wget -O- https://nixos.org/nix/install | sh</code> # Another way to install</li>
 <li><code>-O-</code> # The same as <code>-L</code> of <code>curl</code></li>
-<li><code>. /home/yaoniplan/.nix-profile/etc/profile.d/nix.sh</code> # Apply changes</li>
+<li><code>source ~/.nix-profile/etc/profile.d/nix.sh</code> # Apply changes</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>nix flake --help</code></li>
+<li><a href="https://ghedam.at/a-tour-of-nix-flakes">https://ghedam.at/a-tour-of-nix-flakes</a></li>
 <li><a href="http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html">http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
@@ -157,7 +207,7 @@ $
 <li><h4 id="use-vimium-c">Use &quot;Vimium C&quot;</h4>
 <ul>
 <li><code>map &lt;c-m&gt; toggleMuteTab</code> # Ctrl-m</li>
-<li><code>yv</code> # Select text and enter visual mode (Locate line)<ul>
+<li><code>yv</code> # Ctrl-f and <code>v</code> or <code>V</code><ul>
 <li><code>y</code> # Yank</li>
 <li><code>v</code> # Visual</li>
 </ul>
@@ -14129,11 +14179,15 @@ You can edit this.
 </blockquote>
 <ul>
 <li><em><strong>参考资料</strong></em></li>
-<li><a href="https://toutyrater.github.io/">前言 · V2Ray 配置指南|V2Ray 白话文教程</a></li>
+<li><a href="https://toutyrater.github.io/">https://toutyrater.github.io/</a></li>
 </ul>
 </li>
-<li>[[linux]]代理配置先用着 clash-for-windows (闭源+广告) ，毕竟代理需求已经实现，先把计算机科学与技术的基础能力提升上去，再去考虑这些问题，<em><strong>计划下一步：使用 v2ray-core</strong></em> (否则只能是被卖了，还在帮他人数钱，并洋洋自得毫不自知) #Idea
--- &gt;xx只有高低之分，没有贵贱之别 #quote</li>
+<li>[[linux]]代理配置先用着 clash-for-windows (闭源+广告) ，毕竟代理需求已经实现，先把计算机科学与技术的基础能力提升上去，再去考虑这些问题，<em><strong>计划下一步：使用 v2ray-core</strong></em> (否则只能是被卖了，还在帮他人数钱，并洋洋自得毫不自知) #Idea</li>
+<li></li>
+<li><blockquote>
+<p>xx只有高低之分，没有贵贱之别 #quote</p>
+</blockquote>
+</li>
 <li><blockquote>
 <p>展露出强大的实力才能震慑住宵小之辈，但也只能是宵小之辈 #quote</p>
 </blockquote>

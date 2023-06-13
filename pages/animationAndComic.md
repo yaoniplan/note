@@ -1,5 +1,4 @@
 ### "Animation"
-playWithMPV.sh --sub-file="http://abnormalize.icu/d/%E9%87%8C%E7%95%AA/1969-1994/1994-07-21%20%E7%86%B1%E7%A0%82%E3%81%AE%E6%83%91%E6%98%9F%EF%BC%8D%E5%A5%B3%E5%85%AC%E5%AE%89%E5%AE%98%E3%82%B1%E3%82%A4%E3%83%88/(18%E7%A6%81%E3%82%A2%E3%83%8B%E3%83%A1%20%E7%84%A1%E4%BF%AE%E6%AD%A3)%20%E7%86%B1%E7%A0%82%E3%81%AE%E6%83%91%E6%98%9FII%20%EF%BD%9E%E6%80%A7%E3%81%AE%E7%89%9D%E7%8A%AC%E3%82%B1%E3%82%A4%E3%83%88%EF%BD%9E.ass" "http://abnormalize.icu/d/%E9%87%8C%E7%95%AA/1969-1994/1994-07-21%20%E7%86%B1%E7%A0%82%E3%81%AE%E6%83%91%E6%98%9F%EF%BC%8D%E5%A5%B3%E5%85%AC%E5%AE%89%E5%AE%98%E3%82%B1%E3%82%A4%E3%83%88/(18%E7%A6%81%E3%82%A2%E3%83%8B%E3%83%A1%20%E7%84%A1%E4%BF%AE%E6%AD%A3)%20%E7%86%B1%E7%A0%82%E3%81%AE%E6%83%91%E6%98%9FII%20%EF%BD%9E%E6%80%A7%E3%81%AE%E7%89%9D%E7%8A%AC%E3%82%B1%E3%82%A4%E3%83%88%EF%BD%9E.mp4" # 002821
 - 镖人 - 04
 - learnC - 16 0714
 - A brief history - 13
@@ -239,6 +238,8 @@ playWithMPV.sh --sub-file="http://abnormalize.icu/d/%E9%87%8C%E7%95%AA/1969-1994
 - guard(end)
 
 ### Animation
+- おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
+- 熱砂の惑星 - #NSFW 02 # Stockholm syndrome (Apply and prevent)
 - ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 03 # Episode 4 will be released in Japan on June 30th https://tube.hentaistream.com/tsugunai-episode-04
 - おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02 # Update too slow
 - 新・エンジェル - #NSFW 05 # End of the first part
