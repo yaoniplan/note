@@ -22,6 +22,33 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="set-the-environment-variable-locale_archive-in-nix">Set the environment variable LOCALE_ARCHIVE in Nix</h4>
+<ul>
+<li><code>echo &#39;export LOCALE_ARCHIVE=&quot;/usr/lib/locale-archive&quot;&#39; &gt;&gt; ~/.bashrc</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ nix shell nixpkgs#cowsay --command cowsay Hello, yaoniplan!
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+        LANGUAGE = (unset),
+        LC_ALL = (unset),
+        LANG = &quot;en_US.UTF-8&quot;
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale (&quot;C&quot;).
+</code></pre>
+</li>
+<li><code>source ~/.bashrc</code> # Remember to make it effective</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.wiki/wiki/Locales">https://nixos.wiki/wiki/Locales</a></li>
+<li><img src="../assets/2023-06-14_15-11.png" alt="2023-06-14_15-11.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="make-bashrc-effective-when-new-a-terminal">Make .bashrc effective when new a terminal</h4>
 <ul>
 <li><code>vim ~/.bash_profile</code><pre><code>if [[ -f ~/.bashrc ]]; then source ~/.bashrc; fi
@@ -82,18 +109,24 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <ul>
 <li><h4 id="use-nix">Use &quot;nix&quot;</h4>
 <ul>
+<li><code>nix develop</code> # Enter a development environment after writing flake.nix<ul>
 <li><code>nix flake show</code> # Show the outputs</li>
-<li><code>nix-shell --packages git</code> # Install a package temporarily<ul>
+</ul>
+</li>
+<li><code>nix shell nixpkgs#git</code> # Install a package temporarily<ul>
 <li><code>nix-shell rust.nix</code> # Start an interactive shell</li>
 </ul>
 </li>
-<li><code>nix-env --install htop</code> # Install a package permantently</li>
-<li><code>nix-env --uninstall htop</code></li>
+<li><code>nix profile install nixpkgs#hello</code> # Install a package permantently<ul>
+<li><code>nix profile remove /nix/store/2g3jazymqbjw9c390c3b7vw8xq3r8iny-hello-2.12.1</code> # Remove it</li>
+<li><code>nix profile list</code> # List installed packages</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Enable flakes<ul>
-<li><code>echo &#39;experimental-features = nix-command flakes&#39; &gt;&gt; /etc/nix/nix.conf</code></li>
+<li><code>echo &quot;experimental-features = nix-command flakes&quot; &gt;&gt; /etc/nix/nix.conf</code></li>
 </ul>
 </li>
 <li>Uninstall itself<ul>
@@ -118,11 +151,14 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>nix flake --help</code></li>
+<li><a href="https://nixos.wiki/wiki/Flakes">https://nixos.wiki/wiki/Flakes</a></li>
+<li><a href="https://www.youtube.com/watch?v=o1Y7rWrPEO8">https://www.youtube.com/watch?v=o1Y7rWrPEO8</a></li>
 <li><a href="https://ghedam.at/a-tour-of-nix-flakes">https://ghedam.at/a-tour-of-nix-flakes</a></li>
 <li><a href="http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html">http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
+<li><code>nix profile --help</code></li>
+<li><code>nix flake --help</code></li>
 <li><code>man curl</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -5790,7 +5826,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 <hr>
 <ul>
-<li><h4 id="add-multiple-push-url-in-git">Add multiple push URL in Git</h4>
+<li><h4 id="add-multiple-push-urls-in-git">Add multiple push URLs in Git</h4>
 <ul>
 <li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code></li>
 <li><code>git remote set-url --add --push origin git@github.com:yaoniplan/note.git</code></li>
@@ -5798,7 +5834,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
-<li><code>git remote set-url origin git@192.168.10.100:/var/git/note.git</code> # Update the origin URL</li>
+<li><code>git remote set-url --push origin git@192.168.10.100:/var/git/note.git</code> # Update the origin URL</li>
 <li><code>git remote set-url --delete --push origin git@github.com:yaoniplan/note.git</code> # Delete the push URL</li>
 </ul>
 </li>
@@ -6533,13 +6569,10 @@ cd
 mkdir .ssh/ &amp;&amp; chmod 700 .ssh/
 touch .ssh/authorized_keys &amp;&amp; chmod 600 .ssh/authorized_keys
 cat /tmp/id_rsa.yaoniplan.pub &gt;&gt; ~/.ssh/authorized_keys
-cd /var/git/
-mkdir test.git/ &amp;&amp; cd test.git/
-git init --bare
+git init --bare /var/git/myFirstFlake.git
 </code></pre>
 </li>
-<li>Client<pre><code>mkdir test/ &amp;&amp; cd test/
-git init
+<li>Client<pre><code>git init ~/myFirstFlake
 echo &quot;# test&quot; &gt;&gt; README.md &amp;&amp; git add --all
 git commit -m &quot;Add README.md&quot;
 git remote add origin git@192.168.10.100:/var/git/test.git
