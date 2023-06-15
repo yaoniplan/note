@@ -22,6 +22,27 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="stitch-two-images-in-linux">Stitch two images in Linux</h4>
+<ul>
+<li><code>convert +append 230614102157.jpg 230614102435.jpg 221128keyboardManual.jpg</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Vertically<ul>
+<li><code>+</code> # Replace it with hyphen (<code>-</code>)</li>
+</ul>
+</li>
+<li><code>doas pacman -S imagemagick</code> # Install the dependency</li>
+<li><code>convert -append math01.png math02.png -append math03.png math04.png -append mathVertically.png</code> # Stitch four images</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-the-environment-variable-locale_archive-in-nix">Set the environment variable LOCALE_ARCHIVE in Nix</h4>
 <ul>
 <li><code>echo &#39;export LOCALE_ARCHIVE=&quot;/usr/lib/locale-archive&quot;&#39; &gt;&gt; ~/.bashrc</code></li>
@@ -67,7 +88,7 @@ perl: warning: Falling back to the standard locale (&quot;C&quot;).
 </ul>
 <hr>
 <ul>
-<li><h4 id="fix-rate-limiting-issures-in-github">Fix rate limiting issures in GitHub</h4>
+<li><h4 id="fix-api-rate-limiting-issures-in-github">Fix API rate limiting issures in GitHub</h4>
 <ul>
 <li><code>doas vim /etc/nix/nix.conf</code><pre><code>access-tokens = github.com=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
 </code></pre>
@@ -109,12 +130,14 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <ul>
 <li><h4 id="use-nix">Use &quot;nix&quot;</h4>
 <ul>
-<li><code>nix develop</code> # Enter a development environment after writing flake.nix<ul>
-<li><code>nix flake show</code> # Show the outputs</li>
+<li><code>nix search nixpkgs#firefox</code> # Search for the package<ul>
+<li><code>nix search nixpkgs opencv</code> # Another way</li>
 </ul>
 </li>
+<li><code>nix develop</code> # Enter a development environment after writing flake.nix</li>
 <li><code>nix shell nixpkgs#git</code> # Install a package temporarily<ul>
-<li><code>nix-shell rust.nix</code> # Start an interactive shell</li>
+<li><code>nix shell nixpkgs#firefox --command firefox yourURL</code> # Use temporarily</li>
+<li><code>nix-shell --packages python310Packages.numpy python310Packages.opencv4</code> # Another way</li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#hello</code> # Install a package permantently<ul>
@@ -131,7 +154,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </li>
 <li>Uninstall itself<ul>
 <li><code>doas systemctl stop nix-daemon.socket nix-daemon.service</code> # Stop it</li>
-<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-profile ~/.nix-defexpr ~/.nix-channels</code> # Uninstall</li>
+<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-{,profile,defexpr,channels}</code> # Uninstall</li>
 </ul>
 </li>
 <li><code>doas vim /etc/nix/nix.conf</code> # Set mirror in Nix<pre><code>substituters = https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org/
@@ -151,10 +174,10 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://xeiaso.net/blog/nix-flakes-1-2022-02-21">https://xeiaso.net/blog/nix-flakes-1-2022-02-21</a></li>
 <li><a href="https://nixos.wiki/wiki/Flakes">https://nixos.wiki/wiki/Flakes</a></li>
 <li><a href="https://www.youtube.com/watch?v=o1Y7rWrPEO8">https://www.youtube.com/watch?v=o1Y7rWrPEO8</a></li>
 <li><a href="https://ghedam.at/a-tour-of-nix-flakes">https://ghedam.at/a-tour-of-nix-flakes</a></li>
-<li><a href="http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html">http://sandervanderburg.blogspot.com/2020/07/on-using-nix-and-docker-as-deployment.html</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
 <li><code>nix profile --help</code></li>
@@ -3145,7 +3168,7 @@ sleep &quot;$1&quot;; notification
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to quickly view some commonly used &quot;about&quot; pages.<ul>
 <li><code>about:config</code></li>
-<li><code>about:preferences</code></li>
+<li><code>about:preferences</code> # Type &#39;version&#39; to check it</li>
 <li><code>about:addons</code></li>
 <li><code>about:profiles</code></li>
 </ul>
@@ -6569,10 +6592,10 @@ cd
 mkdir .ssh/ &amp;&amp; chmod 700 .ssh/
 touch .ssh/authorized_keys &amp;&amp; chmod 600 .ssh/authorized_keys
 cat /tmp/id_rsa.yaoniplan.pub &gt;&gt; ~/.ssh/authorized_keys
-git init --bare /var/git/myFirstFlake.git
+git init --bare /var/git/myFirstFlake.git/
 </code></pre>
 </li>
-<li>Client<pre><code>git init ~/myFirstFlake
+<li>Client<pre><code>git init ~/myFirstFlake/
 echo &quot;# test&quot; &gt;&gt; README.md &amp;&amp; git add --all
 git commit -m &quot;Add README.md&quot;
 git remote add origin git@192.168.10.100:/var/git/test.git
@@ -10772,7 +10795,7 @@ yaoniplan@yaoniplan ~ $
 </ul>
 <hr>
 <ul>
-<li><h4 id="choose-a-keyboard-for-a-computer">Choose a keyboard for a #computer</h4>
+<li><h4 id="choose-a-keyboard-for-a-computer">Choose a keyboard for a computer</h4>
 <ul>
 <li><code>Mechanical</code> <code>fast response</code> <code>PBT</code></li>
 </ul>
@@ -15080,9 +15103,9 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li>手机打开<code>Google设置</code></li>
 <li>点击<code>xxx@gmail.com</code></li>
 <li>点击<code>再添加一个账号</code>(等待核对信息)</li>
-<li>点击<code>创建账号</code>-<code>为我自己创建</code></li>
+<li>点击<code>创建账号</code> - <code>为我自己创建</code></li>
 <li>输入<code>名字</code></li>
-<li>完善<code>基本信息</code>-<code>下一步</code></li>
+<li>完善<code>基本信息</code> - <code>下一步</code></li>
 <li>点击<code>创建您自己的 Gmail 地址</code>-输入名字-<code>下一步</code></li>
 <li>输入密码-<code>下一步</code></li>
 <li>大致就ok了</li>
