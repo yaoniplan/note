@@ -32,12 +32,32 @@
 <li><code>+</code> # Replace it with hyphen (<code>-</code>)</li>
 </ul>
 </li>
-<li><code>doas pacman -S imagemagick</code> # Install the dependency</li>
-<li><code>convert -append math01.png math02.png -append math03.png math04.png -append mathVertically.png</code> # Stitch four images</li>
+<li><code>nix profile install nixpkgs#imagemagick</code> # Install the dependency</li>
+<li><code>convert -append math01.png math02.png -append math03.png math04.png -append mathVertically.png</code> # Stitch four images<ul>
+<li><code>convert -append math{01..04}.png mathVertically.png</code> # Another way</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-gnu-image-manipulation-program-is-gimp">The abbreviation of &quot;GNU Image Manipulation Program&quot; is &quot;GIMP&quot;.</h4>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to edit a PDF file to remove some commercials.<ul>
+<li>LibreOffice (Achieve the purpose)</li>
+<li>Open (Ctrl-o) - Frame the part (Click and drag) - Backspace - Export as PDF</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>nix search nixpkgs#gimp</code></li>
 </ul>
 </li>
 </ul>
@@ -9164,6 +9184,7 @@ backend = &quot;glx&quot;;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>d</code> # Draw filename</li>
 <li><code>/mnt/grow/220824wallpaper/</code> # Replace it with your directory including wallpaper<ul>
 <li><code>http://192.168.10.100:5244/d/grow/2023-06-06/230605takeTheAdmissionTicketAboutExamination.jpg</code> # Use URL of image (Another way)</li>
 </ul>
