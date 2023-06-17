@@ -1,33 +1,32 @@
 ### "Animation"
-- 镖人 - 04
+- 镖人 - 06
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 真武巅峰 (Part1+2) - 40+10
-- 不灭神王 - 09
-- 仙武传 - 13
-- 遮天 - 08
+- 真武巅峰 (Part1+2) - 40+12
+- 不灭神王 - 10
+- 仙武传 - 14
+- 遮天 - 09
 - 剑域风云 (Part1+2) - 40+43
-- 勇者死了 - 09
-- 一世独尊 - 17
-- 火凤燎原 - 07
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+43
-- Mashle: Magic and Muscles / 物理魔法使马修 - 08
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 10
-- 地狱乐 - 09
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+10
-- 炼气十万年 - 35
-- 神印王座 - 58
-- 百炼成神 - 32
-- 灵剑尊 -  240/389
-- 武神主宰 - 192/339
-- 独步逍遥 - 168/319
-- 完美世界 - 38/114
-- Against the Sky Supreme / 逆天至尊 - 53/204
-- 一念永恒 (Part1+2) - 52+49
-- 斗破苍穹年番 - 47
-- 绝世武魂 - 277
-- 万古神话 - 89
+- 勇者死了 - 11
+- 一世独尊 - 19
+- 火凤燎原 - 08
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+45
+- Mashle: Magic and Muscles / 物理魔法使马修 - 09
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 11
+- 地狱乐 - 10
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+11
+- 炼气十万年 - 37
+- 百炼成神 - 34
+- 灵剑尊 -  240/392
+- 武神主宰 - 192/341
+- 独步逍遥 - 168/321
+- 完美世界 - 38/115
+- Against the Sky Supreme / 逆天至尊 - 53/206
+- 一念永恒 (Part1+2) - 52+50
+- 斗破苍穹年番 - 48
+- 绝世武魂 - 279
+- 万古神话 - 91
 
 ### Comic
 - 没有道侣就会死 - 54
@@ -238,6 +237,7 @@
 - guard(end)
 
 ### Animation
+- 神印王座 - 59 1425 # Slow pace
 - おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
 - 熱砂の惑星 - #NSFW 02 # Stockholm syndrome (Apply and prevent)
 - ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 03 # Episode 4 will be released in Japan on June 30th https://tube.hentaistream.com/tsugunai-episode-04

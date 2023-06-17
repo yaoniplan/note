@@ -17,10 +17,160 @@
         padding: 15px;
       }
     }
+    html {
+      background-color: #0d1117
+    }
   </style>
 </head>
 <body>
   <article class="markdown-body">
+<ul>
+<li><h4 id="set-background-color-in-html">Set background color in HTML</h4>
+<ul>
+<li><code>vi ~/note/assets/index.html</code><pre><code>html {
+  background-color: #0d1117;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>html</code> # Replace it with <code>body</code> (Is ok)</li>
+<li>Because to enable dark mode fully.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-tldr">Use &quot;tldr&quot;</h4>
+<ul>
+<li><code>tldr links</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>links</code> # Replace it with your desired command</li>
+<li><code>nix shell nixpkgs#tldr</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-links">Use &quot;links&quot;</h4>
+<ul>
+<li><code>links yaoniplan.eu.org</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Scoll pages<ul>
+<li><code>Ctrl-f</code> # Forward</li>
+<li><code>Ctrl-b</code> # Backward</li>
+<li><code>Ctrl-p</code> # Previous</li>
+<li><code>Ctrl-n</code> # Next</li>
+<li><code>]</code> # Right</li>
+</ul>
+</li>
+<li><code>/nix&quot;</code> # Search<ul>
+<li><code>n</code> # Next</li>
+</ul>
+</li>
+<li><code>yaoniplan.eu.org</code> # Replace it with your desired URL (e.g. <em>suckless.org</em>)</li>
+<li><code>nix shell nixpkgs#links2</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man links</code></li>
+<li><code>tldr links</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="make-nix-profilebin-effective-in-dmenu">Make .nix-profile/bin/ effective in Dmenu</h4>
+<ul>
+<li><code>vi ~/.bash_profile</code><pre><code>if [[ -d &quot;$HOME/.nix-profile/bin/&quot; ]]; then
+    export PATH=&quot;$PATH:$HOME/.nix-profile/bin/&quot;
+fi
+</code></pre>
+</li>
+<li><code>reboot</code></li>
+<li><code>rm ~/.cache/dmenu_run</code> # Clear cache</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="show-the-last-second-content-from-clipboard">Show the last second content from clipboard</h4>
+<ul>
+<li><code>xclip -out -selection clipboard | tail -2 | head -1</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>xsel --output --clipboard | tail -2 | head -1</code> # Another way</li>
+<li><code>nix profile install nixpkgs#xsel nixpkgs#xclip</code> # Install dependencies</li>
+<li>Because to be placed in the script.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man xsel</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-pandoc">Use &quot;pandoc&quot;</h4>
+<ul>
+<li><code>pandoc -s --katex -o index.html index.md</code> # Use mathematical formulas in Markdown</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-s</code> # Standalone</li>
+<li><code>-o</code> # Output</li>
+<li><code>nix profile install nixpkgs#pandoc</code> # Install the dependency</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-mathematical-formulas-in-markdown">Use mathematical formulas in Markdown</h4>
+<ul>
+<li><code>${{-b \pm \sqrt{b^2 - 4ac}} \over {2a}}$</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>\pm</code> # Plus or minus</li>
+<li><code>\sqrt{b^2 - 4ac}</code> # Square root</li>
+<li><code>^</code> # Superscript</li>
+<li><code>\over</code> # Fraction (Numerator divided by denominator)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>${{-b \pm \sqrt{b^2 - 4ac}} \over {2a}}$ # Output</li>
+<li><a href="https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/">https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/</a></li>
+<li><a href="https://rmd4sci.njtierney.com/math">https://rmd4sci.njtierney.com/math</a></li>
+<li><a href="https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html">https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html</a></li>
+<li><a href="https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71">https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
 <ul>
 <li><h4 id="stitch-two-images-in-linux">Stitch two images in Linux</h4>
 <ul>
@@ -3298,6 +3448,7 @@ static const char *scratchpadcmd[] = { &quot;st&quot;, &quot;-t&quot;, scratchpa
 <ul>
 <li><h4 id="use-dmenu-in-gentoo-linux">Use &quot;dmenu&quot; in Gentoo Linux</h4>
 <ul>
+<li><code>Ctrl-y</code> # Paste</li>
 <li>Change the font size<pre><code>static const char *fonts[] = {
     &quot;monospace:size=23&quot;
 };
