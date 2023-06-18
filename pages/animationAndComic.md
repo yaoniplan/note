@@ -237,6 +237,7 @@
 - guard(end)
 
 ### Animation
+- Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
 - 神印王座 - 59 1425 # Slow pace
 - おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
 - 熱砂の惑星 - #NSFW 02 # Stockholm syndrome (Apply and prevent)

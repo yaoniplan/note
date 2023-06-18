@@ -4,6 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>yaoniplan</title>
   <link rel="stylesheet" href="../assets/github-markdown-dark.css">
+  <link rel="stylesheet" href="../assets/katex.min.css">
+  <script defer src="../assets/katex.min.js"></script>
+  <script defer src="../assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+  <script>
+    // Render all KaTeX expressions on the page
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ]
+      });
+    });
+  </script>
   <style>
     .markdown-body {
       box-sizing: border-box;
@@ -17,25 +31,74 @@
         padding: 15px;
       }
     }
-    html {
-      background-color: #0d1117
+    body {
+      background-color: #0d1117;
     }
   </style>
 </head>
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="if-z--2i-over-1i2i5-then-overlinez">If $z = {{2+i} \over {1+i^2+i^5}}$, then $\overline{z}=$</h4>
+<ul>
+<li>$i^2=-1$ # Imaginary unit i formula</li>
+<li>If $z=a+bi$, then $\overline {z}=a-bi$ # Complex conjugate formula</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>$i^5$ # $i^2 i^2 i$ (Simplify)</li>
+<li>$2+i \over i$ # $(2+i)i \over ii$ (Algebra)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>College Entrance Math in Jiangxi</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="if-the-sets-ur-mxx1-nx-1x2-then-xx-ge-2">If the sets $U=R$, $M=\{x|x&lt;1\}$, $N=\{x|-1&lt;x&lt;2\}$, then $\{x|x \ge 2\}=$</h4>
+<ul>
+<li>$C_u(M \cup N)$ # $U-(M \cup N)$<ul>
+<li>$C_u$ # Complement</li>
+<li>$\cup$ # Union of sets</li>
+<li>$U$ # Universal set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>$\{x|x \ge 2\}$ # $U-(M \cup N)$<ul>
+<li>$M \cup N$ # $\{x|x&lt;2\}$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>College Entrance Math in Jiangxi</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-background-color-in-html">Set background color in HTML</h4>
 <ul>
-<li><code>vi ~/note/assets/index.html</code><pre><code>html {
-  background-color: #0d1117;
-}
+<li><code>vi ~/note/assets/index.html</code><pre><code>&lt;head&gt;
+  &lt;style&gt;
+    html {
+      background-color: #0d1117;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>html</code> # Replace it with <code>body</code> (Is ok)</li>
+<li><code>0d1117</code> # Replace it with your desired color code in hexadecimal format</li>
 <li>Because to enable dark mode fully.</li>
 </ul>
 </li>
@@ -69,6 +132,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-r</code> # Reload</li>
 <li>Scoll pages<ul>
 <li><code>Ctrl-f</code> # Forward</li>
 <li><code>Ctrl-b</code> # Backward</li>
@@ -81,7 +145,10 @@
 <li><code>n</code> # Next</li>
 </ul>
 </li>
-<li><code>yaoniplan.eu.org</code> # Replace it with your desired URL (e.g. <em>suckless.org</em>)</li>
+<li><code>yaoniplan.eu.org</code> # Replace it with your desired URL (e.g. <em>suckless.org</em>)<ul>
+<li><code>~/note/assets/index.html</code> # Local HTML file is also fine</li>
+</ul>
+</li>
 <li><code>nix shell nixpkgs#links2</code> # Install dependencies temporarily</li>
 </ul>
 </li>
@@ -100,7 +167,7 @@
 fi
 </code></pre>
 </li>
-<li><code>reboot</code></li>
+<li><code>reboot</code> # Reboot the operating system</li>
 <li><code>rm ~/.cache/dmenu_run</code> # Clear cache</li>
 </ul>
 </li>
@@ -111,20 +178,20 @@ fi
 </ul>
 <hr>
 <ul>
-<li><h4 id="show-the-last-second-content-from-clipboard">Show the last second content from clipboard</h4>
+<li><h4 id="understand-b84-w58-h83">Understand &quot;B84 W58 H83&quot;</h4>
 <ul>
-<li><code>xclip -out -selection clipboard | tail -2 | head -1</code></li>
+<li><code>B</code> # Bust</li>
+<li><code>84</code> # 84 cm</li>
+<li><code>W</code> # Waist</li>
+<li><code>H</code> # Hip</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>xsel --output --clipboard | tail -2 | head -1</code> # Another way</li>
-<li><code>nix profile install nixpkgs#xsel nixpkgs#xclip</code> # Install dependencies</li>
-<li>Because to be placed in the script.</li>
+<li>To determine the appropriate site of clothing</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man xsel</code></li>
-<li>ChatGPT</li>
+<li>Dragon Knight III (ドラゴンナイトIII) #NSFW</li>
 </ul>
 </li>
 </ul>
@@ -132,16 +199,89 @@ fi
 <ul>
 <li><h4 id="use-pandoc">Use &quot;pandoc&quot;</h4>
 <ul>
-<li><code>pandoc -s --katex -o index.html index.md</code> # Use mathematical formulas in Markdown</li>
+<li><code>pandoc -s --katex -o index.html index.md</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/notes/assets/index.html</code> # Another way<pre><code>&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css&quot; integrity=&quot;sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js&quot; integrity=&quot;sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js&quot; integrity=&quot;sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05&quot; crossorigin=&quot;anonymous&quot; onload=&quot;renderMathInElement(document.body);&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script&gt;
+    // Render all KaTeX expressions on the page
+    document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: &quot;$$&quot;, right: &quot;$$&quot;, display: true },
+          { left: &quot;$&quot;, right: &quot;$&quot;, display: false }
+        ]
+      });
+    });
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+</li>
+<li><code>vi ~/note/assets/index.html</code> # Another way<pre><code>&lt;head&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css&quot; integrity=&quot;sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI&quot; crossorigin=&quot;anonymous&quot;&gt;
+  &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js&quot; integrity=&quot;sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script defer src=&quot;https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js&quot; integrity=&quot;sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+      document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+          renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: &#39;$$&#39;, right: &#39;$$&#39;, display: true},
+                {left: &#39;$&#39;, right: &#39;$&#39;, display: false},
+                {left: &#39;\\(&#39;, right: &#39;\\)&#39;, display: false},
+                {left: &#39;\\[&#39;, right: &#39;\\]&#39;, display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+          });
+      });
+  &lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+</li>
+<li><code>vi ~/note/assets/index.html</code> # Another way<pre><code>&lt;head&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<ul>
+<li>Warning: Does not work for inline mode</li>
+</ul>
+</li>
+<li><code>vi ~/note/assets/index.html</code> # Another way<pre><code>&lt;head&gt;
+  &lt;script src=&quot;https://polyfill.io/v3/polyfill.min.js?features=es6&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<ul>
+<li>Warning: Use <code>\( ... \)</code> instead of <code>$ ... $</code></li>
+</ul>
+</li>
+<li><code>vi ~/note/assets/index.html</code> # Another way<pre><code>&lt;head&gt;
+  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;../assets/mathjax-config.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<ul>
+<li><code>vi ~/note/assets/mathjax-config.min.js</code><pre><code>MathJax.Hub.Config({tex2jax:{inlineMath:[[&#39;$&#39;,&#39;$&#39;],[&quot;\\(&quot;,&quot;\\)&quot;]],processEscapes:!0}});
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>-s</code> # Standalone</li>
 <li><code>-o</code> # Output</li>
 <li><code>nix profile install nixpkgs#pandoc</code> # Install the dependency</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://katex.org/docs/autorender.html">https://katex.org/docs/autorender.html</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -150,20 +290,24 @@ fi
 <ul>
 <li><h4 id="use-mathematical-formulas-in-markdown">Use mathematical formulas in Markdown</h4>
 <ul>
-<li><code>${{-b \pm \sqrt{b^2 - 4ac}} \over {2a}}$</code></li>
+<li><code>$\\{x|x \ge 2\\}=U-(M \cup N)$</code> # $\{x|x \ge 2\}=U-(M \cup N)$</li>
+<li><code>$\overline {z}=$</code> # $\overline {z}=$</li>
+<li><code>$-b \pm \sqrt{b^2-4ac} \over 2a$</code> # $-b \pm \sqrt{b^2-4ac} \over 2a$</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>_</code> # Subscript</li>
+<li><code>\cup</code> # Union</li>
+<li><code>\ge</code> # Greater than or equal to</li>
 <li><code>\pm</code> # Plus or minus</li>
-<li><code>\sqrt{b^2 - 4ac}</code> # Square root</li>
+<li><code>\sqrt{b^2-4ac}</code> # Square root</li>
 <li><code>^</code> # Superscript</li>
 <li><code>\over</code> # Fraction (Numerator divided by denominator)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>${{-b \pm \sqrt{b^2 - 4ac}} \over {2a}}$ # Output</li>
+<li><a href="https://wumbo.net/symbols/union/">https://wumbo.net/symbols/union/</a></li>
 <li><a href="https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/">https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/</a></li>
-<li><a href="https://rmd4sci.njtierney.com/math">https://rmd4sci.njtierney.com/math</a></li>
 <li><a href="https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html">https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html</a></li>
 <li><a href="https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71">https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71</a></li>
 <li>ChatGPT</li>
@@ -319,7 +463,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Enable flakes<ul>
-<li><code>echo &quot;experimental-features = nix-command flakes&quot; &gt;&gt; /etc/nix/nix.conf</code></li>
+<li><code>doas echo &quot;experimental-features = nix-command flakes&quot; &gt;&gt; /etc/nix/nix.conf</code></li>
 </ul>
 </li>
 <li>Uninstall itself<ul>
@@ -2313,6 +2457,10 @@ curl --head --silent https://google.com
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>doas npm uninstall -g marked-katex-extension</code> # Uninstall<ul>
+<li><code>npm list -g</code> # List installed packages</li>
+</ul>
+</li>
 <li><code>-g</code> # Global</li>
 <li><code>doas emerge -aq net-libs/nodejs</code> # Install in Gentoo Linux</li>
 <li><code>doas pacman -S npm</code> # Install in Arch Linux</li>
@@ -2325,6 +2473,7 @@ curl --head --silent https://google.com
 <li><em><strong>References</strong></em><ul>
 <li><code>man npm</code></li>
 <li><a href="https://github.com/markedjs/marked">https://github.com/markedjs/marked</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -9325,6 +9474,9 @@ backend = &quot;glx&quot;;
 <ul>
 <li><h4 id="use-feh">Use &quot;feh&quot;</h4>
 <ul>
+<li><code>n</code> # Next image</li>
+<li><code>!</code> # Zoom the image to fill the size of window (like <code>--bg-fill</code>)</li>
+<li><code>Alt-upArrow</code> # Scroll up one page</li>
 <li><code>feh /mnt/grow/220824wallpaper/</code> # Enable slideshow mode<ul>
 <li><code>Ctrl-upArrow</code> # Move up</li>
 <li><code>leftArrow</code> # Previous image</li>
@@ -9560,9 +9712,6 @@ complete -F _todo todocli
 <li><a href="https://skinkraft.com/blogs/articles/how-to-choose-the-right-soap-for-your-skin-type#:~:text=Look%20for%20ingredients%20like%20salicylic,your%20soap%20is%20non%2Dcomedogenic">https://skinkraft.com/blogs/articles/how-to-choose-the-right-soap-for-your-skin-type#:~:text=Look%20for%20ingredients%20like%20salicylic,your%20soap%20is%20non%2Dcomedogenic</a>.</li>
 </ul>
 </li>
-</ul>
-<hr>
-<ul>
 <li><h4 id="downgrade-for-software-in-gentoo-linux">Downgrade for software in [[Gentoo Linux]]</h4>
 <ul>
 <li><code>doas emerge =media-gfx/flameshot-11.0.0</code></li>
@@ -9624,21 +9773,26 @@ complete -F _todo todocli
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-06_15-24_1672989908182_0.png" alt="2023-01-06_15-24.png"></li>
 <li><img src="../assets/Screenshot_2023-01-06-15-06-20-28_1672989484784_0.png" alt="Screenshot_2023-01-06-15-06-20-28.png"></li>
-<li><img src="../assets/Screenshot_2023-01-06-15-10-38-45_1672989496310_0.png" alt="Screenshot_2023-01-06-15-10-38-45.png">- ---</li>
+<li><img src="../assets/Screenshot_2023-01-06-15-10-38-45_1672989496310_0.png" alt="Screenshot_2023-01-06-15-10-38-45.png"></li>
 </ul>
 </li>
-<li><h4 id="the-abbreviation-of-portable-network-graphics-is-png">The #abbreviation of [[Portable Network Graphics]] is #PNG.</h4>
-</li>
-<li><em><strong>Notes</strong></em><ul>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-portable-network-graphics-is-png">The abbreviation of &quot;Portable Network Graphics&quot; is &quot;PNG&quot;.</h4>
+<ul>
 <li>A format</li>
 <li>Lossless</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-05_11-55_1672890964860_0.png" alt="2023-01-05_11-55.png"></li>
-<li><a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">Portable Network Graphics - Wikipedia</a>- ---</li>
+<li><a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics">https://en.wikipedia.org/wiki/Portable_Network_Graphics</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="print-system-information-in-shell">Print system information in Shell</h4>
 <ul>
 <li><code>uname</code></li>
@@ -9658,14 +9812,18 @@ complete -F _todo todocli
 </li>
 </ul>
 <hr>
+<hr>
 <ul>
 <li><h4 id="reasons-for-the-air-switch-to-trip-overload-protection-circuit-short-circuit-and-leakage-idea">Reasons for the air switch to trip: overload protection, circuit short circuit and leakage. #idea</h4>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-03_10-21_1672712511898_0.png" alt="2023-01-03_10-21.png"></li>
-<li><a href="https://www.quisure-circuit-breaker.com/blog-technology-cause-analysis-and-treatment-of-air-switch-trip.html#:~:text=There%20are%20generally%20four%20reasons,the%20air%20switch%20to%20trip.">Cause analysis and treatment of air switch trip | Quisure Circuit Breaker</a>- ---</li>
+<li><a href="https://www.quisure-circuit-breaker.com/blog-technology-cause-analysis-and-treatment-of-air-switch-trip.html#:~:text=There%20are%20generally%20four%20reasons,the%20air%20switch%20to%20trip.">Cause analysis and treatment of air switch trip | Quisure Circuit Breaker</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-punctuation-of-dollar-sign-is-">The #punctuation of [[dollar sign]] is <code>$</code>.</h4>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -11513,7 +11671,8 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li>Usage #Chmod #Linux<ul>
+<li><h4 id="use-chmod">Use &quot;chmod&quot;</h4>
+<ul>
 <li><code>sudo chmod -R 777 ~/note/grow/029_googleTranslateExtension2.0.12_0/</code></li>
 </ul>
 </li>
@@ -11521,7 +11680,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><code>-R</code> # recursive</li>
 <li><code>777</code> # the first &quot;7&quot; are permissions of <strong>user</strong>; the second &quot;7&quot; are permissions of <strong>user&#39;s group</strong>; the third &quot;7&quot; are permissions of <strong>others</strong><ul>
 <li><code>permissions</code> # read, write and execute</li>
-<li><code>7</code> # $2^2$ + $2^1$ + $2^0$</li>
+<li><code>7</code> # $2^2 + 2^1 + 2^0$</li>
 </ul>
 </li>
 </ul>
