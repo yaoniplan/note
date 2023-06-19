@@ -114,6 +114,40 @@ fi
 </ul>
 <hr>
 <ul>
+<li><h4 id="set-a-static-ip-in-arch-linux">Set a static IP in Arch Linux</h4>
+<ul>
+<li><code>doas vim /etc/systemd/network/enp2s0.network</code><pre><code>[Match]
+Name=enp2s0
+
+[Network]
+DHCP=no
+Address=192.168.10.100/24
+Gateway=192.168.10.1
+</code></pre>
+</li>
+<li><code>doas systemctl enable systemd-networkd.service</code> # Run at boot time</li>
+<li><code>doas systemctl restart systemd-networkd.service</code> # Apply changes</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>enp2s0</code> # Replace it with your interface name<ul>
+<li><code>ip address</code> # Get it</li>
+</ul>
+</li>
+<li><code>192.168.10.100</code> # Replace it with your desired static IP address</li>
+<li><code>192.168.10.1</code> # Replace it with your default gataway<ul>
+<li><code>ip route | awk &#39;/default/ {print $3}&#39;</code> # Get it</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="if-z2i-over-1i2i5-then-barz">If $z={2+i \over 1+i^2+i^5}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
@@ -5296,6 +5330,10 @@ network:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>enp2s0</code> # Replace it with your interface name<ul>
+<li><code>ip address</code> # Get it</li>
+</ul>
+</li>
 <li><code>192.168.10.100</code> # Replace it with your desired IP address</li>
 <li><code>192.168.10.1</code><ul>
 <li><code>ip route</code> # Get the gateway</li>
