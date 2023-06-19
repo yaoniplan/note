@@ -1,0 +1,1 @@
+/home/yaoniplan/note/journals/2023-06-19.md

@@ -39,7 +39,82 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4 id="if-z2i-over-1i2i5-then-overline-z">If $z={2+i \over 1+i^2+i^5}$, then $\overline {z}=$</h4>
+<li><h4 id="the-abbreviation-of-local-area-network-is-lan">The abbreviation of &quot;Local Area Network&quot; is &quot;LAN&quot;.</h4>
+<ul>
+<li>A computer network<ul>
+<li>Interconnect computers</li>
+<li>Within a limited area</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Local_area_network">https://en.wikipedia.org/wiki/Local_area_network</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="enable-the-docker-daemon-in-nix">Enable the docker daemon in Nix</h4>
+<ul>
+<li><code>doas dockerd &amp;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~/testMath $ docker ps
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+yaoniplan@tux ~/testMath $
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/docker/for-linux/issues/535#issuecomment-676861423">https://github.com/docker/for-linux/issues/535#issuecomment-676861423</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="check-if-a-file-is-a-symbolic-link-in-bash">Check if a file is a symbolic link in Bash</h4>
+<ul>
+<li><code>vi ~/.local/bin/convertMarkdownToHtml.sh</code><pre><code>if [[ -L $HOME/note/README.md ]]; then
+    ln -s $(find $HOME/note/journals/ | tail -1) $HOME/note/README.md
+fi
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-L</code> # Link</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man bash</code> # <code>/-L</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-abbreviation-of-digital-versatile-disc-is-dvd">The abbreviation of &quot;Digital Versatile Disc&quot; is &quot;DVD&quot;.</h4>
+<ul>
+<li>A format</li>
+<li>To Store data</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to replace Linux server with other Linux distributions.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/DVD">https://en.wikipedia.org/wiki/DVD</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="if-z2i-over-1i2i5-then-barz">If $z={2+i \over 1+i^2+i^5}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
 <li>If $z=a+bi$, then $\overline {z}=a-bi$ # Complex conjugate formula</li>
@@ -187,7 +262,7 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>To determine the appropriate site of clothing</li>
+<li>To determine the appropriate size of clothing</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -8078,6 +8153,7 @@ export https_proxy=&quot;192.168.10.105:7890&quot;
 </code></pre>
 <ul>
 <li><code>unset http_proxy https_proxy</code> # Unset</li>
+<li><code>--no-proxy</code> # Another way</li>
 </ul>
 </li>
 <li><code>-r</code> # Recursive</li>
