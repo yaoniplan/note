@@ -22,7 +22,7 @@
     - `vi ~/.local/bin/convertMarkdownToHtml.sh`
       ```
       if [[ -L $HOME/note/README.md ]]; then
-          ln -s $(find $HOME/note/journals/ | tail -1) $HOME/note/README.md
+          ln -s $(ls -1 $HOME/note/journals/* | tail -1) $HOME/note/README.md
       fi
       ```
 - ***Notes***

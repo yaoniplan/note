@@ -79,7 +79,7 @@ yaoniplan@tux ~/testMath $
 <li><h4 id="check-if-a-file-is-a-symbolic-link-in-bash">Check if a file is a symbolic link in Bash</h4>
 <ul>
 <li><code>vi ~/.local/bin/convertMarkdownToHtml.sh</code><pre><code>if [[ -L $HOME/note/README.md ]]; then
-    ln -s $(find $HOME/note/journals/ | tail -1) $HOME/note/README.md
+    ln -s $(ls -1 $HOME/note/journals/* | tail -1) $HOME/note/README.md
 fi
 </code></pre>
 </li>
@@ -148,10 +148,10 @@ Gateway=192.168.10.1
 </ul>
 <hr>
 <ul>
-<li><h4 id="if-z2i-over-1i2i5-then-barz">If $z={2+i \over 1+i^2+i^5}$, then $\bar{z}=$</h4>
+<li><h4 id="if-zfrac2ii2i5-then-barz">If $z={\frac{2+i}{i^2+i^5}}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
-<li>If $z=a+bi$, then $\overline {z}=a-bi$ # Complex conjugate formula</li>
+<li>If $z=a+bi$, then $\bar{z}=a-bi$ # Complex conjugate formula</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -5834,6 +5834,7 @@ map &lt;v-lh&gt; LinkHints.activate
 <ul>
 <li><h4 id="find-a-linux-distribution-suitable-for-use-as-a-server">Find a Linux distribution suitable for use as a server</h4>
 <ul>
+<li>Arch Linux (2023-06-19)</li>
 <li>Ubuntu Server 22.04 (2023-02-28)</li>
 </ul>
 </li>
