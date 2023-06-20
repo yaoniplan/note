@@ -39,6 +39,123 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="set-a-mirror-in-docker">Set a mirror in Docker</h4>
+<ul>
+<li><code>doas vi /etc/docker/daemon.json</code><pre><code>{
+  &quot;registry-mirrors&quot;: [&quot;https://docker.nju.edu.cn/&quot;]
+}
+</code></pre>
+</li>
+<li><code>doas systemctl restart docker</code> # Restart docker to apply changes</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>https://docker.nju.edu.cn/</code> # Replace it with a registry mirror in your country</li>
+<li><code>docker info</code> # Check the information about &#39;Registry Mirrors&#39;</li>
+<li>Because to improve the speed of downloading Docker images.<ul>
+<li><a href="https://github.com/docker/for-linux/issues/1430">https://github.com/docker/for-linux/issues/1430</a> # Another way</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm">https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm</a></li>
+<li>Google # <code>registry mirrors site:edu.cn</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="set-the-environment-variable-editor-in-nix">Set the environment variable EDITOR in Nix</h4>
+<ul>
+<li><code>echo &#39;export EDITOR=&quot;/home/yaoniplan/.nix-profile/bin/vi&quot;&#39; &gt;&gt; ~/.bashrc</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>source ~/.bashrc</code> # Remember to make it effective</li>
+<li><code>/home/yaoniplan/.nix-profile/bin/vi</code> # Replace it with your desired editor<ul>
+<li><code>which vi</code> # Get it</li>
+<li><code>echo $EDITOR</code> # Check it</li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>[yaoniplan@tux ~]$ crontab -e
+no crontab for yaoniplan - using an empty one
+/bin/sh: line 1: /usr/bin/vi: No such file or directory
+crontab: &quot;/usr/bin/vi&quot; exited with status 127
+[yaoniplan@tux ~]$
+</code></pre>
+<ul>
+<li><code>EDITOR=$(which vi) crontab -e</code> # Try to use other editor (e.g. <em>emacs</em>, <em>nano</em>, etc.)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-emacs">Use &quot;emacs&quot;</h4>
+<ul>
+<li>Delete the current line<ul>
+<li><code>Ctrl-a</code> # Move the cursor to the beginning of the line</li>
+<li><code>Ctrl-k</code> # Delete to end of line</li>
+</ul>
+</li>
+<li><code>Ctrl-x u</code> # Undo</li>
+<li><code>Ctrl-e</code> # Move the cursor to the the end of a line</li>
+<li><code>Ctrl-x Ctrl-c</code> # Quit the emacs</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix shell nixpkgs#emacs</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-nano">Use &quot;nano&quot;</h4>
+<ul>
+<li><code>Ctrl-c</code> # Break the current operation (Like Shell)</li>
+<li><code>Alt-u</code> # Undo (Like Vi&#39;s <code>u</code>)</li>
+<li><code>Ctrl-h</code> # Delete one letter to the left (Like Vi)</li>
+<li><code>Ctrl-x</code> # Exit the nano</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix shell nixpkgs#nano</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-less">Use &quot;less&quot;</h4>
+<ul>
+<li><code>less ~/.bashrc ~/.bash_profile</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>:n</code> # Next file</li>
+<li><code>:p</code> # Previous file</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>h</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-local-area-network-is-lan">The abbreviation of &quot;Local Area Network&quot; is &quot;LAN&quot;.</h4>
 <ul>
 <li>A computer network<ul>
@@ -58,7 +175,8 @@
 <ul>
 <li><h4 id="enable-the-docker-daemon-in-nix">Enable the docker daemon in Nix</h4>
 <ul>
-<li><code>doas dockerd &amp;</code></li>
+<li><code>doas dockerd</code> # Run the docker daemon</li>
+<li><code>bg</code> # Type this command after pressing &#39;Ctrl-z&#39;</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -78,8 +196,8 @@ yaoniplan@tux ~/testMath $
 <ul>
 <li><h4 id="check-if-a-file-is-a-symbolic-link-in-bash">Check if a file is a symbolic link in Bash</h4>
 <ul>
-<li><code>vi ~/.local/bin/convertMarkdownToHtml.sh</code><pre><code>if [[ -L $HOME/note/README.md ]]; then
-    ln -s $(ls -1 $HOME/note/journals/* | tail -1) $HOME/note/README.md
+<li><code>vi ~/.local/bin/convertMarkdownToHtml.sh</code><pre><code>if [[ ! -f &quot;$readmeFile&quot; || -L &quot;$readmeFile&quot; ]]; then
+    ln -s $(ls -1 &quot;$journalsDir&quot;/* | tail -1) &quot;$readmeFile&quot;
 fi
 </code></pre>
 </li>
@@ -415,6 +533,8 @@ fi
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://docs.moodle.org/402/en/Using_TeX_Notation">https://docs.moodle.org/402/en/Using_TeX_Notation</a></li>
+<li><a href="http://www.cs.put.poznan.pl/ksiek/latexmath.html">http://www.cs.put.poznan.pl/ksiek/latexmath.html</a></li>
 <li><a href="https://wumbo.net/symbols/union/">https://wumbo.net/symbols/union/</a></li>
 <li><a href="https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/">https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/</a></li>
 <li><a href="https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html">https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html</a></li>
@@ -572,7 +692,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Enable flakes<ul>
-<li><code>doas echo &quot;experimental-features = nix-command flakes&quot; &gt;&gt; /etc/nix/nix.conf</code></li>
+<li><code>echo &quot;experimental-features = nix-command flakes&quot; | doas tee -a /etc/nix/nix.conf</code></li>
 </ul>
 </li>
 <li>Uninstall itself<ul>
@@ -671,7 +791,7 @@ $
 <ul>
 <li><h4 id="use-awk">Use &quot;awk&quot;</h4>
 <ul>
-<li><code>kill -STOP $(ps aux | grep -v grep | grep aola | awk &#39;{ print $2 }&#39;)</code></li>
+<li><code>kill -STOP $(ps aux | grep -v grep | grep aola | awk &#39;{print $2}&#39;)</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -1546,7 +1666,7 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-vi-in-linux">Use &quot;vi&quot; in Linux</h4>
+<li><h4 id="use-vi">Use &quot;vi&quot;</h4>
 <ul>
 <li><code>1G</code> # Move cursor to the first line</li>
 </ul>
@@ -2125,7 +2245,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 <hr>
 <ul>
-<li><h4 id="find-a-file-in-the-current-directory">Find a file in the current directory</h4>
+<li><h4 id="use-find">Use &quot;find&quot;</h4>
 <ul>
 <li><code>find . -name &quot;github*&quot;</code></li>
 </ul>
@@ -2133,10 +2253,12 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><em><strong>Notes</strong></em><ul>
 <li><code>*</code> # Zero or more</li>
 <li>Filter<ul>
+<li><code>-type d</code> # Directory</li>
 <li><code>-type f</code> # File</li>
 </ul>
 </li>
 <li>Another way<ul>
+<li><code>find /mnt/grow/ -type d | grep -i books</code></li>
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
@@ -5083,16 +5205,14 @@ git push origin master
 </ul>
 <hr>
 <ul>
-<li><h4 id="replace-sudo-with-doas-in-ubuntu-server-2204">Replace &quot;Sudo&quot; with &quot;Doas&quot; in Ubuntu Server 22.04</h4>
+<li><h4 id="use-doas">Use &quot;doas&quot;</h4>
 <ul>
-<li><code>sudo vim /etc/doas.conf</code><pre><code>permit :wheel
-</code></pre>
-</li>
+<li><code>echo &#39;permit :wheel&#39; &gt;&gt; /etc/doas.conf</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>su root</code> # Substitute to root user</li>
-<li><code>apt install doas</code> # Install it if you does not have it</li>
+<li><code>apt install doas</code> # Install dependencies</li>
 <li><code>groupadd wheel</code> # Create a group in Linux</li>
 <li><code>usermod -aG wheel yaoniplan</code> # Add yaoniplan to wheel<ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
@@ -6196,7 +6316,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>doas usermod -aG docker yaoniplan</code> # Run the command without password<ul>
+<li><code>doas usermod -a -G docker yaoniplan</code> # Run the command without password<ul>
 <li><code>-a</code> # Append</li>
 <li><code>-G</code> # Group</li>
 <li><code>yaoniplan</code> # Replace it with your user</li>
@@ -6215,7 +6335,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-the-docker-command">Use the &quot;docker&quot; command</h4>
+<li><h4 id="use-docker">Use &quot;docker&quot;</h4>
 <ul>
 <li><code>docker stop a3a15b7a4419 &amp;&amp; docker rm a3a15b7a4419</code> # Stop and remove a container<ul>
 <li><code>docker ps --all</code> # Get &quot;CONTAINER ID&quot;</li>
@@ -8653,7 +8773,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><code>gawk &#39;/use/ &amp;&amp; /bash/; BEGIN{IGNORECASE=1}&#39; test/diary/*</code></li>
 <li><code>gawk &#39;BEGIN{IGNORECASE=1} /use/ &amp;&amp; /bash/&#39; test/diary/*</code></li>
-<li><code>Width=$(xwininfo --root | gawk &#39;/Width/ { print $2 }&#39;)</code></li>
+<li><code>Width=$(xwininfo --root | gawk &#39;/Width/ {print $2}&#39;)</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -9490,7 +9610,7 @@ backend = &quot;glx&quot;;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://st.suckless.org/patches/alpha/">st - simple terminal | suckless.org software that sucks less</a></li>
+<li><a href="https://st.suckless.org/patches/alpha/">https://st.suckless.org/patches/alpha/</a></li>
 <li><a href="https://wiki.gentoo.org/wiki//etc/portage/patches">/etc/portage/patches - Gentoo Wiki</a></li>
 </ul>
 </li>
@@ -9633,7 +9753,7 @@ backend = &quot;glx&quot;;
 </ul>
 <hr>
 <ul>
-<li><h4 id="manage-dotfiles-with-git">Manage dotfiles with Git</h4>
+<li><h4 id="use-dotfiles">Use &quot;dotfiles&quot;</h4>
 <ul>
 <li>First use<pre><code>git init --bare $HOME/.dotfiles
 echo &quot;alias dotfiles=&#39;git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
@@ -10760,6 +10880,22 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.bashrc</code><pre><code>setProxy() {
+    export http_proxy=&quot;192.168.10.105:7890&quot;
+    export https_proxy=&quot;192.168.10.105:7890&quot;
+    export no_proxy=&quot;localhost. 127.0.0.1&quot;
+}
+
+unsetProxy() {
+    unset http_proxy https_proxy no_proxy
+}
+</code></pre>
+<ul>
+<li><code>source ~/.bashrc</code> # Remember to make it effective</li>
+<li><code>setProxy</code></li>
+<li><code>unsetProxy</code></li>
+</ul>
+</li>
 <li>Configure Clash<ul>
 <li><code>mv yourClashConfig.yaml config.yaml</code> # Rename it to <em>config.yaml</em> after downloading <em>yourClashConfig.yaml</em></li>
 <li><code>cp config.yaml ~/.config/clash/config.yaml</code></li>
@@ -15401,7 +15537,7 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li><strong>WM</strong>: <a href="https://dwm.suckless.org/">dwm</a>(with <a href="https://dwm.suckless.org/patches/vanitygaps/">vanitygaps</a> patch)</li>
 <li><strong>Compositor</strong>: <a href="https://aur.archlinux.org/packages/picom-jonaburg-git">picom</a>(<em>sudo pacman -S picom</em>)</li>
 <li><strong>Colours</strong>: <code>#FAE100</code>, <code>#32DBF0</code></li>
-<li><strong>dwm bar</strong>: <a href="https://github.com/drkhsh/slstatus">slstatus</a>(<em>git clone <a href="https://git.suckless.org/slstatus">https://git.suckless.org/slstatus</a></em>)</li>
+<li><strong>dwm bar</strong>: <a href="https://github.com/drkhsh/slstatus">slstatus</a>(<em>git clone <a href="https://git.suck">https://git.suck</a> \over 1+less.org/slstatus</em>)</li>
 <li><strong>Terminal</strong>: <a href="https://wiki.archlinux.org/title/Kitty">kitty</a>(<em>sudo pacman -S kitty</em>)</li>
 <li><strong>Shell theme</strong>: a custom <a href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a> config</li>
 <li><strong>Font</strong>: <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>(<em>sudo pacman -S ttf-jetbrains-mono</em>)</li>
@@ -15541,7 +15677,6 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li>hotpe</li>
 </ol>
 </li>
-<li></li>
 <li>in the [[future]] 笔记本电脑电池，询问注意事项(充不了电，真的难受) #Idea
 -- notion的docx文件导入失败，网络不稳定，决定放弃使用,而且同步的文件没有保障[[notion]] #Idea</li>
 <li>添加 [[Google]] 账户<ul>
