@@ -39,6 +39,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-jupyter">Use &quot;jupyter&quot;</h4>
+<ul>
+<li><code>jupyter notebook</code><ul>
+<li>New # Python 3</li>
+<li><code>print(&quot;Hello, yaoniplan!&quot;)</code> # <code>Shift-Enter</code></li>
+<li><code>Ctrl-s</code> # Save file</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix-shell --packages jupyter</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/jupyter/notebook">https://github.com/jupyter/notebook</a></li>
+<li><code>nix-shell --help</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-a-mirror-in-docker">Set a mirror in Docker</h4>
 <ul>
 <li><code>doas vi /etc/docker/daemon.json</code><pre><code>{
@@ -99,6 +122,9 @@ crontab: &quot;/usr/bin/vi&quot; exited with status 127
 <ul>
 <li><h4 id="use-emacs">Use &quot;emacs&quot;</h4>
 <ul>
+<li><code>Ctrl-x Ctrl-s</code> # Save file</li>
+<li><code>Ctrl-y</code> # Paste contents deleted by the shortbut key just now</li>
+<li><code>Ctrl-w</code> # Delete to beginning of line</li>
 <li>Delete the current line<ul>
 <li><code>Ctrl-a</code> # Move the cursor to the beginning of the line</li>
 <li><code>Ctrl-k</code> # Delete to end of line</li>
@@ -141,16 +167,47 @@ crontab: &quot;/usr/bin/vi&quot; exited with status 127
 <ul>
 <li><h4 id="use-less">Use &quot;less&quot;</h4>
 <ul>
-<li><code>less ~/.bashrc ~/.bash_profile</code></li>
+<li><code>less ~/.bash{rc,_profile}</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>~/.bash{rc,_profile}</code> # <code>~/.bashrc</code> and <code>~/.bash_profile</code></li>
 <li><code>:n</code> # Next file</li>
 <li><code>:p</code> # Previous file</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>h</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="run-a-web-server-in-docker">Run a web server in Docker</h4>
+<ul>
+<li><code>vi ~/note/Dockerfile</code><pre><code>FROM nginx:latest
+COPY . /usr/share/nginx/html/
+</code></pre>
+</li>
+<li><code>docker build --tag yaoniplan ~/note/</code> # Build a Docker image</li>
+<li><code>docker run --publish 8000:80 yaoniplan</code> # Run the Docker container</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>yaoniplan</code> # Replace it with your desired name</li>
+<li><code>8000</code> # Replace it with your desired port<ul>
+<li><code>192.168.10.105:8000</code> # Run in Chromium</li>
+</ul>
+</li>
+<li>Update it<ul>
+<li><code>docker build --tag yaoniplan:0.0.1 note/</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -266,7 +323,7 @@ Gateway=192.168.10.1
 </ul>
 <hr>
 <ul>
-<li><h4 id="if-zfrac2ii2i5-then-barz">If $z={\frac{2+i}{i^2+i^5}}$, then $\bar{z}=$</h4>
+<li><h4 id="if-zfrac2iii2i5-then-barz">If $z={\frac{2+i}{i+i^2+i^5}}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
 <li>If $z=a+bi$, then $\bar{z}=a-bi$ # Complex conjugate formula</li>
@@ -681,6 +738,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <li><code>nix shell nixpkgs#git</code> # Install a package temporarily<ul>
 <li><code>nix shell nixpkgs#firefox --command firefox yourURL</code> # Use temporarily</li>
 <li><code>nix-shell --packages python310Packages.numpy python310Packages.opencv4</code> # Another way</li>
+<li><code>nix shell nixpkgs#fortune nixpkgs#cowsay --command bash -c &quot;fortune | cowsay&quot;</code></li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#hello</code> # Install a package permantently<ul>
@@ -697,7 +755,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </li>
 <li>Uninstall itself<ul>
 <li><code>doas systemctl stop nix-daemon.socket nix-daemon.service</code> # Stop it</li>
-<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-{,profile,defexpr,channels}</code> # Uninstall</li>
+<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-{profile,defexpr,channels}</code> # Uninstall</li>
 </ul>
 </li>
 <li><code>doas vim /etc/nix/nix.conf</code> # Set mirror in Nix<pre><code>substituters = https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org/
@@ -1668,6 +1726,10 @@ set timeoutlen=0 ttimeoutlen=0
 <ul>
 <li><h4 id="use-vi">Use &quot;vi&quot;</h4>
 <ul>
+<li>Use four space for indenting<ul>
+<li><code>:set tabstop=4</code></li>
+</ul>
+</li>
 <li><code>1G</code> # Move cursor to the first line</li>
 </ul>
 </li>
@@ -1679,6 +1741,7 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>:set all</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -3054,8 +3117,10 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>doas systemctl stop apache2</code> # Stop it before disabling</li>
+<li><code>doas systemctl stop apache2</code> # Stop it before disabling<ul>
 <li><code>apache2</code> # Replace it with your desired service</li>
+</ul>
+</li>
 <li>Because to solve a problem about &quot;address already in use&quot;.</li>
 </ul>
 </li>
@@ -5212,7 +5277,7 @@ git push origin master
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>su root</code> # Substitute to root user</li>
-<li><code>apt install doas</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#doas</code> # Install dependencies</li>
 <li><code>groupadd wheel</code> # Create a group in Linux</li>
 <li><code>usermod -aG wheel yaoniplan</code> # Add yaoniplan to wheel<ul>
 <li><code>yaoniplan</code> # Replace it with your user</li>
@@ -8150,9 +8215,14 @@ Unit ssh.service could not be found.
 <li><code>echo &quot;`date +%F_%T`.gif&quot; | xclip -selection clipboard</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>xclip -selection clipboard</code> # The same as <code>xsel --input --clipboard</code></li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-30_17:06:06.gif" alt="2023-01-30_17:06:06.gif"></li>
 <li><a href="https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard/5130969#5130969">https://stackoverflow.com/questions/5130968/how-can-i-copy-the-output-of-a-command-directly-into-my-clipboard/5130969#5130969</a></li>
+<li><code>man xsel</code></li>
 </ul>
 </li>
 </ul>
