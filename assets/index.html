@@ -41,7 +41,19 @@
 <ul>
 <li><h4 id="use-jupyter">Use &quot;jupyter&quot;</h4>
 <ul>
-<li><code>jupyter notebook</code><ul>
+<li><code>Esc</code> # Return to command mode (Vi-like)<ul>
+<li><code>z</code> # Undo</li>
+<li><code>Shift-m</code> # Merge a cell below</li>
+<li><code>m</code> # Markdown</li>
+<li><code>y</code> # Code</li>
+<li><code>j / k</code> # Down / Up (Vi-like)</li>
+<li><code>Enter</code> # Insert (Vi-like)</li>
+<li><code>dd</code> # Delete current cell (Vi-like)</li>
+<li><code>a</code> # Above the current cell (Insert a new cell)</li>
+<li><code>b</code> # Below (Insert a new cell)</li>
+</ul>
+</li>
+<li>First use<ul>
 <li>New # Python 3</li>
 <li><code>print(&quot;Hello, yaoniplan!&quot;)</code> # <code>Shift-Enter</code></li>
 <li><code>Ctrl-s</code> # Save file</li>
@@ -50,10 +62,12 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>nix-shell --packages jupyter</code> # Install dependencies temporarily</li>
+<li><code>nix-shell --command &#39;jupyter notebook&#39; --packages jupyter</code> # Use temporarily</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://melaniewalsh.github.io/Intro-Cultural-Analytics/02-Python/EXTRA-Jupyter-Tips-Tricks.html">https://melaniewalsh.github.io/Intro-Cultural-Analytics/02-Python/EXTRA-Jupyter-Tips-Tricks.html</a></li>
+<li><a href="https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook">https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook</a></li>
 <li><a href="https://github.com/jupyter/notebook">https://github.com/jupyter/notebook</a></li>
 <li><code>nix-shell --help</code></li>
 <li>ChatGPT</li>
@@ -192,14 +206,12 @@ COPY . /usr/share/nginx/html/
 </li>
 <li><code>docker build --tag yaoniplan ~/note/</code> # Build a Docker image</li>
 <li><code>docker run --publish 8000:80 yaoniplan</code> # Run the Docker container</li>
+<li><code>192.168.10.105:8000</code> # Run in Chromium</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>yaoniplan</code> # Replace it with your desired name</li>
-<li><code>8000</code> # Replace it with your desired port<ul>
-<li><code>192.168.10.105:8000</code> # Run in Chromium</li>
-</ul>
-</li>
+<li><code>8000</code> # Replace it with your desired port</li>
 <li>Update it<ul>
 <li><code>docker build --tag yaoniplan:0.0.1 note/</code></li>
 </ul>
@@ -323,7 +335,7 @@ Gateway=192.168.10.1
 </ul>
 <hr>
 <ul>
-<li><h4 id="if-zfrac2iii2i5-then-barz">If $z={\frac{2+i}{i+i^2+i^5}}$, then $\bar{z}=$</h4>
+<li><h4 id="if-zfrac2i1i2i5-then-barz">If $z={\frac{2+i}{1+i^2+i^5}}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
 <li>If $z=a+bi$, then $\bar{z}=a-bi$ # Complex conjugate formula</li>
@@ -574,28 +586,26 @@ fi
 <ul>
 <li><h4 id="use-mathematical-formulas-in-markdown">Use mathematical formulas in Markdown</h4>
 <ul>
+<li><code>$\frac{2+i}{i}$</code> # $\frac{2+i}{i}$</li>
 <li><code>$\\{x|x \ge 2\\}=U-(M \cup N)$</code> # $\{x|x \ge 2\}=U-(M \cup N)$</li>
-<li><code>$\overline {z}=$</code> # $\overline {z}=$</li>
-<li><code>$-b \pm \sqrt{b^2-4ac} \over 2a$</code> # $-b \pm \sqrt{b^2-4ac} \over 2a$</li>
+<li><code>$\bar{z}=$</code> # $\bar{z}=$</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>_</code> # Subscript</li>
+<li><code>^{}</code> # Superscript</li>
+<li><code>\frac{}{}</code> # Fraction<ul>
+<li><code>\over</code> # Another way (Numberator divided by denomiator)</li>
+</ul>
+</li>
+<li><code>_{}</code> # Subscript</li>
 <li><code>\cup</code> # Union</li>
 <li><code>\ge</code> # Greater than or equal to</li>
-<li><code>\pm</code> # Plus or minus</li>
-<li><code>\sqrt{b^2-4ac}</code> # Square root</li>
-<li><code>^</code> # Superscript</li>
-<li><code>\over</code> # Fraction (Numerator divided by denominator)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">https://en.wikibooks.org/wiki/LaTeX/Mathematics</a></li>
 <li><a href="https://docs.moodle.org/402/en/Using_TeX_Notation">https://docs.moodle.org/402/en/Using_TeX_Notation</a></li>
-<li><a href="http://www.cs.put.poznan.pl/ksiek/latexmath.html">http://www.cs.put.poznan.pl/ksiek/latexmath.html</a></li>
 <li><a href="https://wumbo.net/symbols/union/">https://wumbo.net/symbols/union/</a></li>
-<li><a href="https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/">https://damienbod.com/2022/06/06/using-math-expressions-in-github-markdown/</a></li>
-<li><a href="https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html">https://learninglab.gitlabpages.inria.fr/mooc-rr/mooc-rr-ressources/module1/ressources/introduction_to_markdown.html</a></li>
-<li><a href="https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71">https://web.archive.org/web/20230517050630/https://www.jianshu.com/p/4d823d1b9c71</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -608,15 +618,11 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Vertically<ul>
-<li><code>+</code> # Replace it with hyphen (<code>-</code>)</li>
+<li>Vertically (Like a waterfall)<ul>
+<li><code>convert -append math{01..04}.png mathVertically.png</code></li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#imagemagick</code> # Install the dependency</li>
-<li><code>convert -append math01.png math02.png -append math03.png math04.png -append mathVertically.png</code> # Stitch four images<ul>
-<li><code>convert -append math{01..04}.png mathVertically.png</code> # Another way</li>
-</ul>
-</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -736,6 +742,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </li>
 <li><code>nix develop</code> # Enter a development environment after writing flake.nix</li>
 <li><code>nix shell nixpkgs#git</code> # Install a package temporarily<ul>
+<li><code>nix-shell --command &#39;jupyter notebook&#39; --packages jupyter</code> # Use temporarily</li>
 <li><code>nix shell nixpkgs#firefox --command firefox yourURL</code> # Use temporarily</li>
 <li><code>nix-shell --packages python310Packages.numpy python310Packages.opencv4</code> # Another way</li>
 <li><code>nix shell nixpkgs#fortune nixpkgs#cowsay --command bash -c &quot;fortune | cowsay&quot;</code></li>
@@ -3710,27 +3717,6 @@ sleep &quot;$1&quot;; notification
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="display-the-last-committed-complete-content-of-a-file-in-git">Display the last committed complete content of a file in Git</h4>
-<ul>
-<li><code>git show 97671e3:index.html</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>97671e3:index.html</code> # Get it by using the following command<ul>
-<li><code>git log -1 --name-only</code></li>
-</ul>
-</li>
-<li><code>s testIndex.html</code> # Save file as testIndex.html in the less command interface</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><code>h</code></li>
 </ul>
 </li>
 </ul>
@@ -8901,6 +8887,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4 id="use-git">Use &quot;git&quot;</h4>
 <ul>
+<li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
 <li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>
 <li><code>git restore .</code> # Restore all files</li>
 </ul>
@@ -8912,9 +8899,19 @@ cp ./* ~/.local/share/rofi/themes/
 </li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>97671e3:index.html</code> # Get it by using the following command<ul>
+<li><code>git log -1 --name-only</code></li>
+</ul>
+</li>
+<li><code>s testIndex.html</code> # Save file as testIndex.html in the less command interface</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
 <li><code>git restore --help</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
+<li><code>h</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
