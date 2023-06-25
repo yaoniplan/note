@@ -82,7 +82,6 @@ http://natas9.natas.labs.overthewire.org
 - https://www.yeseimg.com/
 - http://www.dmd85.com/
 - https://yuc.wiki/202304/
-- https://www.hentaicomic.org/
 
 ## Programming
 - https://www.shiyanlou.com/

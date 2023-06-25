@@ -39,6 +39,19 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="the-abbreviation-of-trade-mark-is-tm">The abbreviation of &quot;trade mark&quot; is &quot;TM&quot;.</h4>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because see it on some websites.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Trademark">https://en.wikipedia.org/wiki/Trademark</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="simulate-mobile-devices-in-chromium">Simulate mobile devices in Chromium</h4>
 <ul>
 <li><code>Ctrl-Shift-c</code> # Open the developer tools and inspect elements</li>
@@ -682,7 +695,7 @@ fi
 <li><code>\times</code></li>
 <li><code>^{}</code> # Superscript</li>
 <li><code>\frac{}{}</code> # Fraction<ul>
-<li><code>\over</code> # Another way (Numberator divided by denomiator)</li>
+<li><code>\over</code> # Another way (Numerator divided by denominator)</li>
 </ul>
 </li>
 <li><code>_{}</code> # Subscript</li>
@@ -782,7 +795,7 @@ perl: warning: Falling back to the standard locale (&quot;C&quot;).
 </ul>
 <hr>
 <ul>
-<li><h4 id="fix-api-rate-limiting-issures-in-github">Fix API rate limiting issures in GitHub</h4>
+<li><h4 id="fix-api-rate-limiting-issues-in-github">Fix API rate limiting issues in GitHub</h4>
 <ul>
 <li><code>doas vim /etc/nix/nix.conf</code><pre><code>access-tokens = github.com=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
 </code></pre>
@@ -877,7 +890,6 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
 <li><code>nix profile --help</code></li>
-<li><code>nix flake --help</code></li>
 <li><code>man curl</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -8170,6 +8182,7 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>ssh yaoniplan@192.168.10.100 &#39;bash -c &quot;source ~/.local/bin/runContainer.sh&quot;&#39; &amp;</code> # Execute command temporarily</li>
 <li><code>bandit0</code> # Username<ul>
 <li><code>whoami</code> # Check user name</li>
 </ul>
@@ -8975,6 +8988,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4 id="use-git">Use &quot;git&quot;</h4>
 <ul>
+<li><code>dotfiles push git@192.168.10.100:/var/git/dotfiles.git development</code> # Push to a specific remote URL</li>
 <li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
 <li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>
 <li><code>git restore .</code> # Restore all files</li>
