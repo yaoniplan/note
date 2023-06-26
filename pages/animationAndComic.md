@@ -1,19 +1,17 @@
 ### "Animation"
-- Rick and Morty - (Part1+2+3+4+5) #NSFW 11+10+10+10+05 1232 https://alist.shenzjd.com/天翼云盘/影视/瑞克和莫蒂/s05
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 镖人 - 06
-- 真武巅峰 (Part1+2) - 40+14
-- 不灭神王 - 10
-- 仙武传 - 15
+- 镖人 - 07
+- 真武巅峰 (Part1+2) - 40+15
+- 不灭神王 - 11
+- 仙武传 - 16
 - 遮天 - 10
-- 剑域风云 (Part1+2) - 40+46
-- 勇者死了 - 11
-- 一世独尊 - 21
-- 火凤燎原 - 09
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+47
-- Mashle: Magic and Muscles / 物理魔法使马修 - 10
+- 剑域风云 (Part1+2) - 40+48
+- 一世独尊 - 22
+- 火凤燎原 - 10
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+48
+- Mashle: Magic and Muscles / 物理魔法使马修 - 11
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 12
 - 地狱乐 - 11
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+11
@@ -238,6 +236,8 @@
 - guard(end)
 
 ### Animation
+- 勇者死了 - 12 # End of the first part
+- Rick and Morty - (Part1+2+3+4+5+6) #NSFW 11+10+10+10+10+06 # Fun seems to be gone
 - Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
 - 神印王座 - 59 1425 # Slow pace
 - おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban

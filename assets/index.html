@@ -39,7 +39,37 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4 id="if-o-be-the-coordinate-origin-of-the-plane-coordinate-system-randomly-pick-a-point-in-the-area-xy1≤x2y2≤4-and-record-this-point-as-a---then-the-probability-that-the-inclination-angle-of-straight-line-oa-is-not-greater-than-fracpi4-is">If $O$ be the coordinate origin of the plane coordinate system, randomly pick a point in the area ${(x,y)|1≤x^{2}+y^{2}≤4}$, and record this point as $A $ , then the probability that the inclination angle of straight line $OA$ is not greater than $\frac{\pi}{4}$ is</h4>
+<li><h4 id="merge-the-10-commmits-into-1-commit-in-git">Merge the 10 commmits into 1 commit in Git</h4>
+<ul>
+<li><code>git rebase --interactive HEAD~10</code></li>
+<li>Replace &#39;pick&#39; with &#39;squash&#39;<pre><code># Except the first one
+pick commit1hash Commit message 1
+squash commit2hash Commit message 2
+squash commit3hash Commit message 3
+...
+</code></pre>
+</li>
+<li><code>git log</code> # Verify it</li>
+<li><code>git push origin development --force</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: This is potentially destructive unless you are an adventurer.</li>
+<li>Pull the code in server<ul>
+<li><code>git pull origin development --rebase</code></li>
+</ul>
+</li>
+<li><code>git commit --amend</code> # Modify the latest commit message</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="if-o-be-the-coordinate-origin-of-the-plane-coordinate-system-randomly-pick-a-point-a-in-the-area-xy1le-x2y2le-4-then-the-probability-that-the-inclination-angle-of-straight-line-oa-is-not-greater-than-fracpi4-is">If $O$ be the coordinate origin of the plane coordinate system, randomly pick a point $A$ in the area $\{(x,y)|1\le x^{2}+y^{2}\le 4\}$, then the probability that the inclination angle of straight line $OA$ is not greater than $\frac{\pi}{4}$ is</h4>
 <ul>
 <li>$(x-a)^2+(y-b)^2=r^2$ # Circle equation</li>
 <li>$radians=\frac{degrees}{180\degree}\times \pi$ # The conversion formula</li>
@@ -53,6 +83,7 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-06-26_19-46.png" alt="2023-06-26_19-46.png"></li>
+<li><a href="https://en.wikipedia.org/wiki/Slope#Algebra_and_geometry">https://en.wikipedia.org/wiki/Slope#Algebra_and_geometry</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Radian">https://en.wikipedia.org/wiki/Radian</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Circle">https://en.wikipedia.org/wiki/Circle</a></li>
 <li>College Entrance Math in Jiangxi</li>
@@ -9759,7 +9790,7 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 <ul>
 <li><h4 id="use-picom">Use &quot;picom&quot;</h4>
 <ul>
-<li>Fading<pre><code>fadind = true;
+<li>Fading<pre><code>fading = true;
 </code></pre>
 </li>
 <li>Shadow<pre><code>shadow = true;
