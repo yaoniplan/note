@@ -1,5 +1,5 @@
 ### "Animation"
-- Rick and Morty - (Part1+2+3+4+5) #NSFW 11+10+10+10+02 https://alist.shenzjd.com/天翼云盘/影视/瑞克和莫蒂/s04
+- Rick and Morty - (Part1+2+3+4+5) #NSFW 11+10+10+10+05 1232 https://alist.shenzjd.com/天翼云盘/影视/瑞克和莫蒂/s05
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
