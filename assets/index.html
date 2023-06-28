@@ -39,6 +39,31 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="if-the-function-fxsin-wxvarphi-in-the-interval-fracpi6frac2pi3-increases-monotonously-the-straight-line-xfracpi6-and-xfrac2pi3-are-the-two-symmetry-axes-of-the-image-of-the-function-yfx-then-f-frac5pi12">If the function $f(x)=\sin (wx+\varphi)$ in the interval $(\frac{\pi}{6},\frac{2\pi}{3})$ increases monotonously, the straight line $x=\frac{\pi}{6}$ and $x=\frac{2\pi}{3}$ are the two symmetry axes of the image of the function $y=f(x)$, then $f(-\frac{5\pi}{12})=$</h4>
+<ul>
+<li>$T=\frac{2\pi}{|w|}$ # The formula for period</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Get the value of $w$<ul>
+<li>$\frac{T}{2}=\frac{2\pi}{3}-\frac{\pi}{6}$</li>
+</ul>
+</li>
+<li>Get the value of $\varphi$<ul>
+<li>$2\times \frac{2\pi}{3}+\varphi=\frac{\pi}{2}$</li>
+</ul>
+</li>
+<li>$\sin(-\frac{5\pi}{3})$ # $\sin(-\frac{5\pi}{3}+2\pi)$</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>College Entrance Math in Jiangxi</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="merge-the-10-commmits-into-1-commit-in-git">Merge the 10 commmits into 1 commit in Git</h4>
 <ul>
 <li><code>git rebase --interactive HEAD~10</code></li>
@@ -143,6 +168,7 @@ squash commit3hash Commit message 3
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Division_by_zero">https://en.wikipedia.org/wiki/Division_by_zero</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Exponentiation">https://en.wikipedia.org/wiki/Exponentiation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Even_and_odd_functions#Even_functions">https://en.wikipedia.org/wiki/Even_and_odd_functions#Even_functions</a></li>
 <li>College Entrance Math in Jiangxi</li>
 <li>ChatGPT</li>
 </ul>
@@ -206,13 +232,35 @@ squash commit3hash Commit message 3
 <li><code>Ctrl-s</code> # Save file</li>
 </ul>
 </li>
+<li>Set dark mode<ul>
+<li><code>!pip install jupyterthemes</code> # Install dependencies</li>
+<li><code>!jt --list</code> # List available themes</li>
+<li><code>!jt --theme gruvboxd</code> # Need to restart the jupyter server to apply changes</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>nix-shell --command &#39;jupyter notebook&#39; --packages jupyter</code> # Use temporarily</li>
+<li>In Docker-compose<ul>
+<li><code>vim ~/.config/notebook/docker-compose.yml</code><pre><code>version: &#39;3&#39;
+services:
+  jupyter:
+    image: jupyter/base-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/home/yaoniplan/
+</code></pre>
+</li>
+<li><code>docker exec -i -t notebook-jupyter-1 jupyter server list</code> # Get tocken</li>
+<li><code>192.168.10.100:8888/tree/</code> # Run in a browser on another computer</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://stackoverflow.com/questions/46510192/change-the-theme-in-jupyter-notebook/46561480#46561480">https://stackoverflow.com/questions/46510192/change-the-theme-in-jupyter-notebook/46561480#46561480</a></li>
 <li><a href="https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook">https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook</a></li>
 <li><a href="https://github.com/jupyter/notebook">https://github.com/jupyter/notebook</a></li>
 <li><code>nix-shell --help</code></li>

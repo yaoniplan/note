@@ -14,18 +14,17 @@
 - Mashle: Magic and Muscles / 物理魔法使马修 - 11
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 12
 - 地狱乐 - 12
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+11
-- 炼气十万年 - 39
-- 百炼成神 - 34
-- 灵剑尊 -  240/393
-- 武神主宰 - 192/343
-- 独步逍遥 - 168/323
-- 完美世界 - 38/115
-- Against the Sky Supreme / 逆天至尊 - 207
+- 炼气十万年 - 41
+- 百炼成神 - 35
+- 灵剑尊 -  240/395
+- 武神主宰 - 192/345
+- 独步逍遥 - 168/324
+- 完美世界 - 38/116
+- Against the Sky Supreme / 逆天至尊 - 209
 - 一念永恒 (Part1+2) - 52+51
-- 斗破苍穹年番 - 49
-- 绝世武魂 - 281
-- 万古神话 - 93
+- 斗破苍穹年番 - 50
+- 绝世武魂 - 282
+- 万古神话 - 94
 
 ### Comic
 - 没有道侣就会死 - 54
@@ -236,6 +235,7 @@
 - guard(end)
 
 ### Animation
+- Dr.Stone / 石纪元 (Part1+2+3) 24+11+11 # End of the third part
 - 勇者死了 - 12 # End of the first part
 - Rick and Morty - (Part1+2+3+4+5+6) #NSFW 11+10+10+10+10+06 # Fun seems to be gone
 - Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
