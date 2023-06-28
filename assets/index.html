@@ -39,6 +39,76 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-vlc">Use &quot;vlc&quot;</h4>
+<ul>
+<li><code>vlc yourURL</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Options<ul>
+<li><code>--fullscreen</code></li>
+<li><code>--rate 2</code></li>
+</ul>
+</li>
+<li>Hotkeys<ul>
+<li><code>Ctrl-q</code> # Quit VLC</li>
+<li><code>f</code> # Full screen</li>
+<li><code>m</code> # Mute</li>
+<li><code>]</code> # Speed up</li>
+<li><code>Space</code> # pause</li>
+</ul>
+</li>
+<li><code>nix shell nixpkgs#vlc</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Tools - Preferences - Hotkeys</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-smplayer">Use &quot;smplayer&quot;</h4>
+<ul>
+<li><code>Shift-t</code> # Increase substitle size</li>
+<li><code>Ctrl-q</code> # Quit it</li>
+<li><code>smplayer yourURL</code></li>
+<li><code>-sub &quot;yourSubtitlesName&quot;</code> # Subtitles</li>
+<li><code>f</code> # Full screen</li>
+<li><code>}</code> # Double speed</li>
+<li><code>m</code> # Mute</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix shell nixpkgs#smplayer</code> # Install dependencies temporarily</li>
+<li>Because to player video more stable.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man mplayer</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-audacious">Use &quot;audacious&quot;</h4>
+<ul>
+<li><code>audacious yourAudioFile</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-q</code> # Quit it</li>
+<li><code>nix shell nixpkgs#audacious</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="if-the-function-fxsin-wxvarphi-in-the-interval-fracpi6frac2pi3-increases-monotonously-the-straight-line-xfracpi6-and-xfrac2pi3-are-the-two-symmetry-axes-of-the-image-of-the-function-yfx-then-f-frac5pi12">If the function $f(x)=\sin (wx+\varphi)$ in the interval $(\frac{\pi}{6},\frac{2\pi}{3})$ increases monotonously, the straight line $x=\frac{\pi}{6}$ and $x=\frac{2\pi}{3}$ are the two symmetry axes of the image of the function $y=f(x)$, then $f(-\frac{5\pi}{12})=$</h4>
 <ul>
 <li>$T=\frac{2\pi}{|w|}$ # The formula for period</li>
@@ -253,6 +323,7 @@ services:
       - ./:/home/yaoniplan/
 </code></pre>
 </li>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
 <li><code>docker exec -i -t notebook-jupyter-1 jupyter server list</code> # Get tocken</li>
 <li><code>192.168.10.100:8888/tree/</code> # Run in a browser on another computer</li>
 </ul>
@@ -7763,22 +7834,6 @@ doas make install
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-wget-to-continue-the-broken-download">Use Wget to continue the broken download</h4>
-<ul>
-<li><code>wget -c https://download.fedoraproject.org/pub/fedora/linux/releases/37/Server/x86_64/iso/Fedora-Server-dvd-x86_64-37-1.7.iso</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>-c</code> # Continue</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>man wget</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4 id="drop-down-terminal-in-i3">Drop down terminal in i3</h4>
 <ul>
 <li><code>vim ~/.config/i3/config</code><pre><code>for_window [class=&quot;^kitty$&quot;] floating enable, move absolute position 0px 0px, resize set 1366px 400px, move scratchpad
@@ -8583,6 +8638,7 @@ done
 <ul>
 <li><h4 id="use-wget">Use &quot;wget&quot;</h4>
 <ul>
+<li><code>wget --continue yourURL</code> # Continue interrupted download</li>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
 </ul>
 </li>
@@ -8609,6 +8665,7 @@ export https_proxy=&quot;192.168.10.105:7890&quot;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man wget</code></li>
 <li><img src="../assets/2023-01-28_21:59:03.gif" alt="2023-01-28_21:59:03.gif"></li>
 <li><a href="https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776">https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776</a></li>
 <li><a href="https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730">https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730</a></li>
