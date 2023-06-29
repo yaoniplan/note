@@ -70,6 +70,7 @@
 <ul>
 <li><h4 id="use-smplayer">Use &quot;smplayer&quot;</h4>
 <ul>
+<li><code>-speed 2</code></li>
 <li><code>Ctrl-p</code> # Preferences</li>
 <li><code>Shift-t</code> # Increase substitle size</li>
 <li><code>Ctrl-q</code> # Quit it</li>
@@ -15890,22 +15891,25 @@ git clone https://github.com/romkatv/powerlevel10k.git //下载 powerlevel10k
 sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k/powerlevel10k.zsh-theme
 </code></pre>
 </li>
-<li>#linux dwm  <ol>
-<li><strong>WM</strong>: <a href="https://dwm.suckless.org/">dwm</a>(with <a href="https://dwm.suckless.org/patches/vanitygaps/">vanitygaps</a> patch)</li>
-<li><strong>Compositor</strong>: <a href="https://aur.archlinux.org/packages/picom-jonaburg-git">picom</a>(<em>sudo pacman -S picom</em>)</li>
-<li><strong>Colours</strong>: <code>#FAE100</code>, <code>#32DBF0</code></li>
-<li><strong>dwm bar</strong>: <a href="https://github.com/drkhsh/slstatus">slstatus</a>(<em>git clone <a href="https://git.suck">https://git.suck</a> \over 1+less.org/slstatus</em>)</li>
-<li><strong>Terminal</strong>: <a href="https://wiki.archlinux.org/title/Kitty">kitty</a>(<em>sudo pacman -S kitty</em>)</li>
-<li><strong>Shell theme</strong>: a custom <a href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a> config</li>
-<li><strong>Font</strong>: <a href="https://www.jetbrains.com/lp/mono/">JetBrains Mono</a>(<em>sudo pacman -S ttf-jetbrains-mono</em>)</li>
-<li><strong>Wallpaper</strong>: <a href="https://imgur.com/14AnL7O">some text on a black background</a>(he made it himself)(the other font is <a href="https://www.cufonfonts.com/font/eternal-ui">Eternal UI</a>)</li>
-<li><strong>Dotfiles</strong>: <a href="https://codeberg.org/bankenstein/dwm">him dwm build</a></li>
-<li><strong>Theme</strong>: breeze(<em>sudo pacman -S breeze</em>)</li>
-<li><strong>Icons</strong>: candy-icons(<em>git clone <a href="https://aur.archlinux.org/candy-icons-git.git">https://aur.archlinux.org/candy-icons-git.git</a></em>)</li>
-</ol>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-pacman">Use &quot;pacman&quot;</h4>
+<ul>
+<li><code>pacman --sync mplayer</code> # Install a package</li>
+</ul>
 </li>
-<li><img src="../assets/80grz78ctfh91_1660544487184_0_1661309910444_0.png" alt="80grz78ctfh91_1660544487184_0.png"></li>
-<li><a href="https://www.reddit.com/r/unixporn/comments/wn8yy5/dwm_guess_which_os_i_use/">https://www.reddit.com/r/unixporn/comments/wn8yy5/dwm_guess_which_os_i_use/</a></li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>pacman --remove --recursive mplayer</code> # Remove a package with dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man pacman</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[notion]] 工具太杂，不像是使用工具，反而是被工具使用 #Idea</li>
 <li>[[vscode]] 打开 [[终端]]  <ol>
 <li>查看(<code>View</code>)-终端(<code>Terminal</code>)</li>
