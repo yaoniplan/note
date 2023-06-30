@@ -235,6 +235,9 @@
 - guard(end)
 
 ### Animation
+- 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
+    - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
+    - https://ja.wikipedia.org/wiki/堕靡泥の星
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+11 # End of the third part
 - 勇者死了 - 12 # End of the first part
 - Rick and Morty - (Part1+2+3+4+5+6) #NSFW 11+10+10+10+10+06 # Fun seems to be gone

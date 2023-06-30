@@ -70,13 +70,26 @@
 <ul>
 <li><h4 id="use-smplayer">Use &quot;smplayer&quot;</h4>
 <ul>
-<li><code>-speed 2</code></li>
+<li><code>vi ~/.config/smplayer/smplayer.ini</code><pre><code>[gui]
+close_on_finish=true
+compact_mode=true
+fullscreen=true
+[advanced]
+actions_to_run=fullscreen
+</code></pre>
+</li>
+<li><code>Ctrl-l</code> # Playlist</li>
+<li><code>Ctrl-c</code> # Compact mode</li>
+<li><code>-close-at-end</code></li>
 <li><code>Ctrl-p</code> # Preferences</li>
 <li><code>Shift-t</code> # Increase substitle size</li>
 <li><code>Ctrl-q</code> # Quit it</li>
 <li><code>smplayer yourURL</code></li>
 <li><code>-sub &quot;yourSubtitlesName&quot;</code> # Subtitles</li>
-<li><code>f</code> # Full screen</li>
+<li><code>f</code> # Full screen<ul>
+<li><code>-fullscreen</code></li>
+</ul>
+</li>
 <li><code>}</code> # Double speed</li>
 <li><code>m</code> # Mute</li>
 </ul>
@@ -87,10 +100,12 @@
 </ul>
 </li>
 <li><code>nix shell nixpkgs#smplayer</code> # Install dependencies temporarily</li>
-<li>Because to play video online more stable.</li>
+<li>Because to play videos online more stably.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.smplayer.info/en/faq">https://www.smplayer.info/en/faq</a></li>
+<li><code>man smplayer</code></li>
 <li><code>man mplayer</code></li>
 <li>ChatGPT</li>
 </ul>
