@@ -41,21 +41,42 @@
 <ul>
 <li><h4 id="use-networkmanager">Use &quot;NetworkManager&quot;</h4>
 <ul>
-<li><code>nmcli device wifi list</code> # List</li>
-<li><code>nmcli device wifi connect yourNetworkName password yourPassword</code> # Connect</li>
+<li><code>nmcli device wifi connect yourSSID password yourPassword</code> # Connect</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>nmcli device wifi list</code> # Get the SSID</li>
 <li>Unconnect<ul>
-<li><code>nmcli device status</code> # Status</li>
-<li><code>nmcli device disconnect wlo1</code> # Disconnect</li>
+<li><code>nmcli device disconnect yourDEVICE</code> # Disconnect</li>
+<li><code>nmcli device status</code> # Get the DEVICE</li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#networkmanager</code> # Install dependencies</li>
 <li>Because to connect to WiFi when there is no network cable.</li>
+<li>Solve the problem<pre><code>[yaoniplan@tux ~]$ lspci
+...
+03:00.0 Network controller: Broadcom Inc. and subsidiaries BCM43142 802.11b/g/n (rev 01)
+[yaoniplan@tux ~]$ nmcli device wifi list
+[yaoniplan@tux ~]$
+</code></pre>
+<ul>
+<li><code>doas pacman --sync broadcom-wl</code> # Install the correct driver</li>
+<li><code>doas reboot</code> # Reboot to make it effective</li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>[yaoniplan@tux ~]$ nmcli device wifi connect CMCC-ENQy password 1234567a
+Error: Failed to add/activate new connection: Not authorized to control networking.
+[yaoniplan@tux ~]$
+</code></pre>
+<ul>
+<li><code>doas nmcli device wifi connect CMCC-ENQy password 1234567a</code> # Run the command with root privileges</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>lspci</code> # List all PCI devices</li>
+<li><code>nmcli</code> # Network manager command line</li>
 <li>ChatGPT</li>
 </ul>
 </li>
