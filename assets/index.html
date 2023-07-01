@@ -39,6 +39,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-networkmanager">Use &quot;NetworkManager&quot;</h4>
+<ul>
+<li><code>nmcli device wifi list</code> # List</li>
+<li><code>nmcli device wifi connect yourNetworkName password yourPassword</code> # Connect</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Unconnect<ul>
+<li><code>nmcli device status</code> # Status</li>
+<li><code>nmcli device disconnect wlo1</code> # Disconnect</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#networkmanager</code> # Install dependencies</li>
+<li>Because to connect to WiFi without a network cable.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-vlc">Use &quot;vlc&quot;</h4>
 <ul>
 <li><code>vlc yourURL</code></li>
