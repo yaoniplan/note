@@ -115,7 +115,6 @@ http://natas9.natas.labs.overthewire.org
 - https://ai3.gptforlove.com/#/chat/1002
 - https://c.binjie.fun/#/chat/1688452827209
 - https://chat.free2gpt.xyz/
-- https://www.perplexity.ai/
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
 
