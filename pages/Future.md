@@ -106,6 +106,18 @@ http://natas9.natas.labs.overthewire.org
 
 ## Artificial intelligence
 - https://github.com/muzihuaner/chatgpt-sites
+- http://chat.newstop.uk/#/chat
+- https://chat.getgpt.world/
+- https://chatbot.theb.ai/#/chat/1002
+- https://chat.jinshutuan.com/#/chat/1685338936338
+- https://dev.yqcloud.top/#/chat/1685338818260
+- http://nav.mindog.icu/
+- https://github.com/lzwme/chatgpt-sites
+- https://ai3.gptforlove.com/#/chat/1002
+- https://c.binjie.fun/#/chat/1688452827209
+- https://chat.free2gpt.xyz/
+- https://chat.getgpt.world/
+- http://ai1.douresources.com/#/chat/1688453172346
 - https://www.perplexity.ai/
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
