@@ -85,7 +85,6 @@ http://natas9.natas.labs.overthewire.org
 
 ## Programming
 - https://www.shiyanlou.com/
-- https://devdocs.io/
 - https://www.w3schools.com/
 - https://www.theodinproject.com/
 - https://www.codecademy.com/
@@ -114,7 +113,6 @@ http://natas9.natas.labs.overthewire.org
 - http://nav.mindog.icu/
 - https://ai3.gptforlove.com/#/chat/1002
 - https://c.binjie.fun/#/chat/1688452827209
-- https://chat.free2gpt.xyz/
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
 
