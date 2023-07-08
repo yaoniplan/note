@@ -2875,6 +2875,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-ne</code> # Not equal</li>
 <li><code>n</code> # A variable name</li>
 <li><code>-eq</code> # Equal</li>
 <li><code>if [[ -n &quot;$1&quot; ]]; then</code><ul>
@@ -16041,6 +16042,10 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>doas pacman --remove --recursive mplayer</code> # Remove a package with dependencies</li>
+<li><code>doas pacman --sync --refresh --refresh --sysupgrade</code> # Upgrade the system<ul>
+<li>Solve a problem that the package cannot be installed</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
