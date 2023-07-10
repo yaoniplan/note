@@ -2,7 +2,7 @@
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 镖人 - 07
+- 镖人 - 09
 - 真武巅峰 (Part1+2) - 40+15
 - 不灭神王 - 11
 - 仙武传 - 16
