@@ -3,7 +3,7 @@
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 镖人 - 09
-- 真武巅峰 (Part1+2) - 40+15
+- 真武巅峰 (Part1+2) - 40+19
 - 不灭神王 - 11
 - 仙武传 - 16
 - 遮天 - 10
