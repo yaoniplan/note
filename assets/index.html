@@ -39,7 +39,7 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4 id="math-various-phone-number-formats-in-vim">Math various phone number formats in Vim</h4>
+<li><h4 id="match-various-phone-number-formats-in-vim">Match various phone number formats in Vim</h4>
 <ul>
 <li><code>/[0-9]\{11}/</code> # Match eleven consecutive digits (e.g. 12345678901)</li>
 <li><code>/[0-9]\{3} [0-9]\{4} [0-9]\{4}/</code> # (e.g. 123 4567 8901)</li>
@@ -216,7 +216,11 @@ Error: Failed to add/activate new connection: Not authorized to control networki
 <ul>
 <li><h4 id="use-smplayer">Use &quot;smplayer&quot;</h4>
 <ul>
-<li><code>vi ~/.config/smplayer/smplayer.ini</code><pre><code>[gui]
+<li><code>vi ~/.config/smplayer/smplayer.ini</code><pre><code>[%General]
+global_speed=true
+speed=2
+
+[gui]
 close_on_finish=true
 compact_mode=true
 fullscreen=true
@@ -760,8 +764,8 @@ Address=192.168.10.100/24
 Gateway=192.168.10.1
 </code></pre>
 </li>
-<li><code>doas systemctl enable systemd-networkd.service</code> # Run at boot time</li>
-<li><code>doas systemctl restart systemd-networkd.service</code> # Apply changes</li>
+<li><code>doas systemctl enable systemd-networkd</code> # Run at boot time</li>
+<li><code>doas systemctl restart systemd-networkd</code> # Apply changes</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -9349,6 +9353,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4 id="use-git">Use &quot;git&quot;</h4>
 <ul>
+<li><code>dotfiles commit --message=&quot;Set the default volume to 60 percent (without any arguments)&quot;</code> # Set commit message</li>
 <li><code>dotfiles push git@192.168.10.100:/var/git/dotfiles.git development</code> # Push to a specific remote URL</li>
 <li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
 <li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>

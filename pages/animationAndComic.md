@@ -1,28 +1,26 @@
 ### "Animation"
+- 大主宰 - 04
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 镖人 - 09
 - 真武巅峰 (Part1+2) - 40+19
-- 不灭神王 - 11
-- 仙武传 - 16
-- 遮天 - 10
-- 剑域风云 (Part1+2) - 40+48
-- 一世独尊 - 22
-- 火凤燎原 - 10
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+48
-- Mashle: Magic and Muscles / 物理魔法使马修 - 11
-- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 12
-- 地狱乐 - 12
-- 炼气十万年 - 41
-- 百炼成神 - 35
-- 灵剑尊 -  240/395
-- 武神主宰 - 192/345
-- 独步逍遥 - 168/324
-- 完美世界 - 38/116
-- Against the Sky Supreme / 逆天至尊 - 209
-- 一念永恒 (Part1+2) - 52+51
-- 斗破苍穹年番 - 50
+- 不灭神王 - 12
+- 仙武传 - 18
+- 遮天 - 12
+- 剑域风云 (Part1+2) - 40+52
+- 一世独尊 - 25
+- 火凤燎原 - 12
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52
+- 炼气十万年 - 45
+- 百炼成神 - 37
+- 灵剑尊 -  240/399
+- 武神主宰 - 192/349
+- 独步逍遥 - 168/328
+- 完美世界 - 38/118
+- Against the Sky Supreme / 逆天至尊 - 213
+- 一念永恒 (Part1+2) - 52+53
+- 斗破苍穹年番 - 50 animation
 - 绝世武魂 - 282
 - 万古神话 - 94
 
@@ -235,6 +233,9 @@
 - guard(end)
 
 ### Animation
+- 地狱乐 - 13 # End of the first part
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
+- Mashle: Magic and Muscles / 物理魔法使马修 - 12 # End of the first part
 - 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
     - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
     - https://ja.wikipedia.org/wiki/堕靡泥の星
