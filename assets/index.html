@@ -9374,9 +9374,26 @@ cp ./* ~/.local/share/rofi/themes/
 </ul>
 </li>
 <li><code>s testIndex.html</code> # Save file as testIndex.html in the less command interface</li>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ dotfiles push origin development
+Everything up-to-date
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+yaoniplan@tux ~ $ 
+</code></pre>
+<ul>
+<li><code>doas vi /etc/resolv.conf</code><pre><code>nameserver 8.8.4.4
+nameserver 8.8.8.8
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://codetryout.com/github-temporary-failure-in-name-resolution/">https://codetryout.com/github-temporary-failure-in-name-resolution/</a></li>
 <li><code>git restore --help</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
 <li><code>h</code></li>
