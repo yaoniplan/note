@@ -71,6 +71,7 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/freefq/free
 
 ## Animation and comic
+- http://www.yinghuavideo.com/new/
 - http://abnormalize.icu/里番
 - http://eroanimedougakan.blog.fc2.com/
 - http://agedm3.com/
@@ -81,7 +82,6 @@ http://natas9.natas.labs.overthewire.org
 - https://nnhanman.com
 - https://www.yeseimg.com/
 - http://www.dmd85.com/
-- https://yuc.wiki/202304/
 
 ## Programming
 - https://www.shiyanlou.com/
