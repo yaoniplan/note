@@ -14,10 +14,7 @@
 - 堀与宫村2023
 - 谎言游戏
 - 庙不可言
-- 莱莎的炼金工房～常暗女王与秘密藏身处
-- 绫岛奇谭/AYAKA
-- 十方剑圣
-- 圣墟
+- 莱莎的炼金工房～常暗女王与秘密藏身处 - 4402 animation
 - 其实我是最强的？ - 01
 - 死神少爷与黑女仆 (Part1+2) - 12+01
 - 真阳武神 - 01
@@ -265,6 +262,8 @@
 - guard(end)
 
 ### Animation
+- AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen year olds
+- 十方剑圣 - 02 0354 # Old story
 - 地狱乐 - 13 # End of the first part
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
 - Mashle: Magic and Muscles / 物理魔法使马修 - 12 # End of the first part
