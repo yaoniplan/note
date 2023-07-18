@@ -11,10 +11,8 @@
 - 我与超人的冒险
 - 死神千年血战篇
 - 永生之十年之约
-- 堀与宫村2023
-- 谎言游戏
-- 庙不可言
-- 莱莎的炼金工房～常暗女王与秘密藏身处 - 4402 animation
+- 堀与宫村 - 02 1218 animation
+- 庙不可言 - 02
 - 其实我是最强的？ - 01
 - 死神少爷与黑女仆 (Part1+2) - 12+01
 - 真阳武神 - 01
@@ -262,6 +260,8 @@
 - guard(end)
 
 ### Animation
+- 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen year olds
+- 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen year olds
 - AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen year olds
 - 十方剑圣 - 02 0354 # Old story
 - 地狱乐 - 13 # End of the first part
