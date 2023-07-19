@@ -1,17 +1,15 @@
 ### "Animation"
-- 夫妇联欢~回不去的夜晚
-- BanG Dream! Its MyGO!!!!!
-- 转生成自动贩卖机的我今天也在迷宫徘徊
--  圣者无双～上班族、在异世界的存活之道
-- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力
-- 混世机甲
-- 七魔剑支配天下
-- AI电子基因
-- 虽然等级只有1级但固有技能是最强的
-- 我与超人的冒险
-- 死神千年血战篇
-- 永生之十年之约
-- 堀与宫村 - 02 1218 animation
+- 夫妇联欢~回不去的夜晚 #NSFW - 01
+- BanG Dream! Its MyGO!!!!! - 04 animation
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 01
+-  圣者无双～上班族、在异世界的存活之道 - 01
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
+- AI电子基因 - 01
+- 虽然等级只有1级但固有技能是最强的 - 01
+- My Adventures With Superman / 我与超人的冒险 - 01
+- 死神千年血战篇 - cloud space
+- 永生 (Part1+2) - 12+03
+- 堀与宫村 - 06 0440 animation
 - 庙不可言 - 02
 - 其实我是最强的？ - 01
 - 死神少爷与黑女仆 (Part1+2) - 12+01
@@ -52,9 +50,9 @@
 - 万古神话 - 99
 
 ### Comic
-- 没有道侣就会死 - 54
-- 傀儡 - 232
-- 秘密教学 - 140
+- 没有道侣就会死 - 90
+- 傀儡 - 277
+- 秘密教学 - 180
 - 满溢游泳池 - 77
 - 谁说理组没正妹 - 43
 - 从1级开始的异世界骑士 - 206
@@ -260,6 +258,8 @@
 - guard(end)
 
 ### Animation
+- 混世机甲 - 01 1214 # The voice actors do not match their lips
+- 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen year olds
 - 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen year olds
 - 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen year olds
 - AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen year olds
@@ -417,7 +417,6 @@
 - 雪鹰领主-52/67（看不下去了）
 - 平凡职业成就世界最强 第二季-04/12（第二季完结）
 - 失格纹的最强贤者-01/12（完结）
-- 永生-09 /12（第一季完结）
 - 万域之王-09/11（剧情缓慢）
 - 兵主奇魂-05/12（第一季完结）
 - 盾之勇者成名录第二季 - 02（看不下去了）
