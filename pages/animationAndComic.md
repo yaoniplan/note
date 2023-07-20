@@ -8,7 +8,7 @@
 - My Adventures With Superman / 我与超人的冒险 - 02
 - 死神千年血战篇 - 03 animation cloud space
 - 永生 (Part1+2) - 12+03
-- 堀与宫村 - 06 0440 animation
+- 堀与宫村 (Part1+2) - 10+00 animation cloud space
 - 庙不可言 - 02
 - 其实我是最强的？ - 01
 - 死神少爷与黑女仆 (Part1+2) - 12+01
