@@ -106,7 +106,6 @@ http://natas9.natas.labs.overthewire.org
 ## Artificial intelligence
 - https://github.com/lzwme/chatgpt-sites
 - http://chat.newstop.uk/#/chat
-- https://chat.getgpt.world/
 - https://chat.jinshutuan.com/#/chat/1685338936338
 - https://dev.yqcloud.top/#/chat/1685338818260
 - http://nav.mindog.icu/

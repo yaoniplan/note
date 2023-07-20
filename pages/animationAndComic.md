@@ -1,13 +1,12 @@
 ### "Animation"
 - 夫妇联欢~回不去的夜晚 #NSFW - 01
-- BanG Dream! Its MyGO!!!!! - 04 animation
-- 转生成自动贩卖机的我今天也在迷宫徘徊 - 01
--  圣者无双～上班族、在异世界的存活之道 - 01
-- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
-- AI电子基因 - 01
-- 虽然等级只有1级但固有技能是最强的 - 01
-- My Adventures With Superman / 我与超人的冒险 - 01
-- 死神千年血战篇 - cloud space
+- BanG Dream! Its MyGO!!!!! - 05
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 02
+-  圣者无双～上班族、在异世界的存活之道 - 02
+- AI电子基因 - 02
+- 虽然等级只有1级但固有技能是最强的 - 02
+- My Adventures With Superman / 我与超人的冒险 - 02
+- 死神千年血战篇 - 03 animation cloud space
 - 永生 (Part1+2) - 12+03
 - 堀与宫村 - 06 0440 animation
 - 庙不可言 - 02
@@ -258,6 +257,7 @@
 - guard(end)
 
 ### Animation
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen year olds
 - 混世机甲 - 01 1214 # The voice actors do not match their lips
 - 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen year olds
 - 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen year olds

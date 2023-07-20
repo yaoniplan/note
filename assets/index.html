@@ -53,6 +53,7 @@
 <ul>
 <li><h4 id="use-siri">Use &quot;siri&quot;</h4>
 <ul>
+<li><code>8904 - 1367</code> # Calculate</li>
 <li><code>Play a podcast about computer</code> # Prepare for posts that need English communication<ul>
 <li><code>Stop podcast</code> # Stop</li>
 <li><code>Continue podcast</code> # Continue</li>
@@ -562,6 +563,7 @@ squash commit3hash Commit message 3
 services:
   jupyter:
     image: jupyter/base-notebook
+    restart: always
     ports:
       - 8888:8888
     volumes:
