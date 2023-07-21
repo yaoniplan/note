@@ -39,6 +39,25 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-sct">Use &quot;sct&quot;</h4>
+<ul>
+<li><code>sct 1500</code> # Set color temperature to 1500K</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>sct</code> # Reset to the default value (e.g. 6500)</li>
+<li><code>nix profile install nixpkgs#sct</code> # Install dependencies</li>
+<li>Because it is easy to use.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man sct</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="act-as-a-position-interviewer-in-chatgpt">Act as a position interviewer in ChatGPT</h4>
 <pre><code>I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the position position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is &quot;Hi&quot;I want you to act as an interviewer. I will be the candidate and you will ask me the interview questions for the position position. I want you to only reply as the interviewer. Do not write all the conservation at once. I want you to only do the interview with me. Ask me the questions and wait for my answers. Do not write explanations. Ask me the questions one by one like an interviewer does and wait for my answers. My first sentence is &quot;Hi&quot;
 </code></pre>
@@ -16038,14 +16057,14 @@ Auto Capture Keyboard # Extended Features (Turn off it)
 <li>git push //推送到远程仓库</li>
 </ol>
 </li>
-<li><h4 id="set-color-temperature-in-linux">Set color temperature in Linux</h4>
+<li><h4 id="use-redshift">Use &quot;redshift&quot;</h4>
 <ul>
 <li><code>redshift -O 1500</code> # One-shot</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>redshift -x</code> # Reset</li>
-<li><code>doas emerge -q x11-misc/redshift</code> # Install it</li>
+<li><code>nix shell nixpkgs#redshift</code> # Install dependencies temporarily</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
