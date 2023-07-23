@@ -52,14 +52,10 @@
 - 没有道侣就会死 - 90
 - 傀儡 - 277
 - 秘密教学 - 180
-- 满溢游泳池 - 77
-- 谁说理组没正妹 - 43
-- 从1级开始的异世界骑士 - 206
-- 开局签到至尊丹田 - 164
-- 超级神基因 - 81
-- 最强饭桶 - 65
-- 帝王app - 29
-- 美丽新世界 - 154
+- 谁说理组没正妹 - 87
+- 开局签到至尊丹田 - 256
+- 超级神基因 - 170
+- 帝王app - 75
 - 暖味，完結
 - 神级公务员,完结
 - 死了都要ai爱，完结
@@ -208,6 +204,10 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 满溢游泳池 - 105 # End
+- 从1级开始的异世界骑士 - 206 # The plot is too slow
+- 最强饭桶 - 86 # Reduce intelligence quotient
+- 美丽新世界 - 157 # Reduce intelligence quotient 
 - 超导体鲁蛇/可愛的家夥/Sweet Guy # 看过，再看觉得 boring
 - 妖女之祸 # 看过，再看大概现实本就如此残酷
 - 偷窥第一季完結 # 看过，再看封面就看不下去
@@ -490,4 +490,4 @@
 ### Movie
 - The Legend of 1900 / 海上钢琴师 # End
 - Avatar / 阿凡达 # End of the first, second season.
-- Iron Man / 钢铁侠 # end of the first, second and third season
+- Iron Man / 钢铁侠 # End of the first, second and third season
