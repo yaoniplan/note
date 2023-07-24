@@ -31,19 +31,16 @@
 - 真武巅峰 (Part1+2) - 40+23
 - 不灭神王 - 14
 - 仙武传 - 20
-- 遮天 - 12 animation
-- 剑域风云 (Part1+2) - 40+52
-- 一世独尊 - 25
-- 火凤燎原 - 12
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52
-- 炼气十万年 - 45
-- 百炼成神 - 37
-- 灵剑尊 -  240/399
-- 武神主宰 - 192/349
-- 独步逍遥 - 168/328
-- 完美世界 - 38/118
-- Against the Sky Supreme / 逆天至尊 - 213
-- 一念永恒 (Part1+2) - 52+53
+- 遮天 - 14
+- The Ravages of Time / 火凤燎原 - 14
+- 炼气十万年 - 48
+- 百炼成神 - 39
+- 灵剑尊 -  240/402
+- 武神主宰 - 192/352
+- 独步逍遥 - 168/332
+- 完美世界 - 38/120
+- Against the Sky Supreme / 逆天至尊 - 217
+- 一念永恒 (Part1+2) - 52+54
 - 斗破苍穹年番 - 52
 - 绝世武魂 - 287
 - 万古神话 - 99
@@ -257,6 +254,9 @@
 - guard(end)
 
 ### Animation
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
+- 一世独尊 - 26 # The plot is too corny
+- 剑域风云 (Part1+2) - 40+52 # End of the second part
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen year olds
 - 混世机甲 - 01 1214 # The voice actors do not match their lips
 - 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen year olds
