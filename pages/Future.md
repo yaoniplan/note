@@ -111,7 +111,6 @@ http://natas9.natas.labs.overthewire.org
 - https://chat.jinshutuan.com/#/chat/1685338936338
 - https://dev.yqcloud.top/#/chat/1685338818260
 - http://nav.mindog.icu/
-- https://ai3.gptforlove.com/#/chat/1002
 - https://c.binjie.fun/#/chat/1688452827209
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
