@@ -139,7 +139,7 @@
 <li>Eight nine zero four minus one three six seven</li>
 </ul>
 </li>
-<li><code>Play podcasts about computer</code> # Prepare for posts that need English communication<ul>
+<li><code>Play podcasts computer</code> # Prepare for posts that need English communication<ul>
 <li><code>Stop podcasts</code> # Stop</li>
 <li><code>Continue podcasts</code> # Continue</li>
 </ul>
@@ -156,7 +156,6 @@
 <li><code>What is the weather today</code> # Get weather information</li>
 <li><code>Open Translate</code> # Open the application</li>
 <li><code>Record voice memo</code> # Record a conversation</li>
-<li><code>Play music</code> # Play live music</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -3282,6 +3281,7 @@ togglePDFDarkMode();
 <ul>
 <li><h4 id="use-ffmpeg-to-cut-video-files">Use &quot;ffmpeg&quot; to cut video files</h4>
 <ul>
+<li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
 <li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c copy output.wma</code> # Merge videos<ul>
@@ -5818,6 +5818,11 @@ git push origin master
 <ul>
 <li><h4 id="use-mpv">Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
+<li><code>--vf=hflip</code> # Horizontal flip (Like in phone)</li>
+<li><code>--profile=low-latency --untimed</code> # Low latency</li>
+</ul>
+</li>
 <li><code>mpv --speed=2 --fullscreen &quot;URLOfTheVideo&quot;</code></li>
 </ul>
 </li>
