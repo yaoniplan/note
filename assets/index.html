@@ -375,6 +375,7 @@ Error: Failed to add/activate new connection: Not authorized to control networki
 <ul>
 <li><code>vi ~/.config/smplayer/smplayer.ini</code><pre><code>[%General]
 global_speed=true
+mute=true
 speed=2
 
 [gui]
@@ -3060,12 +3061,17 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-bash">Use &quot;Bash&quot;</h4>
+<li><h4 id="use-bash">Use &quot;bash&quot;</h4>
 <ul>
+<li><code>while true; do smplayer &#39;yourURL&#39; &amp;&amp; [[ $? -eq 0 ]]; done</code><ul>
+<li>Execute the command until it succeeds</li>
+</ul>
+</li>
 <li><code>if [[ n -eq 42 ]]; then</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>$?</code> # Exit status</li>
 <li><code>-ne</code> # Not equal</li>
 <li><code>n</code> # A variable name</li>
 <li><code>-eq</code> # Equal</li>
