@@ -79,7 +79,6 @@ http://natas9.natas.labs.overthewire.org
 - https://www.agemys.com/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
-- https://2khanman.com/
 - http://www.p5mh.com/
 - https://nnhanman.com
 - https://www.yeseimg.com/
