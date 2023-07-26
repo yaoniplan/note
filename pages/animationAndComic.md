@@ -3,11 +3,11 @@
 - BanG Dream! Its MyGO!!!!! - 06
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 03
 - 圣者无双～上班族、在异世界的存活之道 - 03
-- AI电子基因 - 02
-- 虽然等级只有1级但固有技能是最强的 - 02
-- My Adventures With Superman / 我与超人的冒险 - 02
+- AI电子基因 - 03
+- 虽然等级只有1级但固有技能是最强的 - 03
+- My Adventures With Superman / 我与超人的冒险 - 04
 - 死神千年血战篇 - 03 animation cloud space
-- 永生 (Part1+2) - 12+03
+- 永生 (Part1+2) - 12+03 animation
 - 堀与宫村 (Part1+2) - 10+00 animation cloud space
 - 庙不可言 - 02
 - 其实我是最强的？ - 03
