@@ -6,7 +6,7 @@
 - AI电子基因 - 03
 - 虽然等级只有1级但固有技能是最强的 - 03
 - My Adventures With Superman / 我与超人的冒险 - 04
-- 死神千年血战篇 - 03 animation cloud space
+- 死神千年血战篇 (Part1+2) - 13+02
 - 永生 (Part1+2) - 12+03 animation
 - 堀与宫村 (Part1+2) - 10+00 animation cloud space
 - 庙不可言 - 02
