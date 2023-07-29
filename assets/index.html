@@ -3197,6 +3197,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <ul>
 <li><h4 id="use-bash">Use &quot;bash&quot;</h4>
 <ul>
+<li><code>if [[ -x /usr/bin/rsync ]]; then</code></li>
 <li><code>while true; do smplayer &#39;yourURL&#39; &amp;&amp; [[ $? -eq 0 ]]; done</code><ul>
 <li>Execute the command until it succeeds</li>
 <li><code>Ctrl-c</code> # Stop it</li>
@@ -3206,6 +3207,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-x</code> # Exist and executable</li>
 <li><code>$?</code> # Exit status</li>
 <li><code>-ne</code> # Not equal</li>
 <li><code>n</code> # A variable name</li>
@@ -7078,7 +7080,7 @@ Ascending # Order direction
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>Add a demo.gif here</li>
-<li><a href="https://github.com/alist-org/alist/issues/4160">https://github.com/alist-org/alist/issues/4160</a></li>
+<li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml">https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515">https://github.com/alist-org/alist/issues/2668#issuecomment-1345132515</a></li>
