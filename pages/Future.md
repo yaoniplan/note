@@ -119,7 +119,6 @@ http://natas9.natas.labs.overthewire.org
 - https://yougit.net/
 - https://pan.ccof.cc/
 - https://www.upyunso.com/
-- https://www.cuppaso.fun/
 - https://feiyu100.cn/
 - https://www.panpanr.com/
 - https://drivebbs.com/index.php
