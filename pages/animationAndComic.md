@@ -13,12 +13,11 @@
 - 勇者赫鲁库 - 01
 - 总之就是非常可爱 - 02
 - 我的幸福婚约 - 01
-- 白圣女与黑牧师 - 00 animation
-- 山海际会 - 00
-- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 00
-- 咒术回战 - 00
-- 伊甸星原 - 00
-- 间谍教室 - 00
+- 白圣女与黑牧师 - 01
+- 山海际会 - 01
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
+- 咒术回战 - 01 cloud space
+- 间谍教室 - 01 1601 animation
 - 打工吧！魔王大人 - 00
 - 浪客剑心 - 00
 - 戍天伏魔录 - 00
@@ -322,7 +321,7 @@
 - Your Lie in April / 四月是你的谎言 - 22 # End of the first part
 - 赘婿 - 04 1523 # Commercials and alternate history that lowers intelligence quotient
 - Blade & Soul - 02 # Not found resource
-- Edens Zero (Part1+2) - 25+01 # Plot predictable
+- Edens Zero / 伊甸星原 (Part1+2) - 25+01 # Plot predictable
 - Dead Mount Death Play / 亡骸游戏 - 04 1010 # Slow pace
 - 六道的恶女们 - 04 # For children or teens
 - Now and Then, Here and There / 此时此刻的我 - 13 # End of the first part.
