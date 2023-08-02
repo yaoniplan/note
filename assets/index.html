@@ -64,9 +64,14 @@
 <hr>
 <ul>
 <li><h4 id="some-abbreviations-about-theory-driving-license-test">Some abbreviations about theory driving license test</h4>
+<ul>
+<li>The abbreviation of &quot;lane departure warning&quot; is &quot;LDW&quot;.</li>
+<li>The abbreviation of &quot;Autonomous Lane-changing Assistant&quot; is &quot;ALC&quot;.</li>
+</ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="http://www.liuwenhao.me/?p=4902">http://www.liuwenhao.me/?p=4902</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lane_departure_warning_system">https://en.wikipedia.org/wiki/Lane_departure_warning_system</a></li>
+<li><a href="https://web.archive.org/web/20230802030249/http://www.liuwenhao.me/?p=4902">https://web.archive.org/web/20230802030249/http://www.liuwenhao.me/?p=4902</a></li>
 </ul>
 </li>
 </ul>
@@ -7107,7 +7112,6 @@ yaoniplan # Username
 </li>
 <li>AliyundriveOpen<pre><code>/ # Mount Path
 native proxy # WebDAV policy
-/folder/hereIsRootFolderID # Root folder id
 useYourMobilePhoneToGet # Refresh token
 Name # Order by
 Ascending # Order direction
@@ -7118,7 +7122,7 @@ Ascending # Order direction
 <li><em><strong>Notes</strong></em><ul>
 <li>Install AList if you don&#39;t have it<ul>
 <li><code>docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name=&quot;alist&quot; xhofe/alist:latest</code></li>
-<li><code>docker exec -it alist ./alist admin</code> # Get admin user&#39;s information</li>
+<li><code>docker exec -i -t alist ./alist admin</code> # Get admin user&#39;s information</li>
 </ul>
 </li>
 <li>Refresh pages (Two methods)<ul>
