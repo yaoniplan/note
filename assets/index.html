@@ -53,10 +53,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>It all depends on how you spend your time</li>
+<li>Almost everyone knows that whether you can build a happy life and achieve success is related to how you use your time</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://archive.org/download/1._20230802">https://archive.org/download/1._20230802</a></li>
 <li>Rockefeller letters</li>
 </ul>
 </li>
@@ -10395,23 +10396,38 @@ call plug#end()
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>Ctrl-[</code> # The same as <code>Esc</code> key<ul>
+<li><code>Ctrl-l</code> # Clear screen</li>
 <li><code>k</code> # The same as <code>Ctrl-p</code> of Emacs mode</li>
 <li><code>/</code> # The same as <code>Ctrl-r</code> of Emacs mode</li>
 </ul>
 </li>
 <li><code>set -o</code> # Show the current settings</li>
-<li><code>vim ~/.bashrc</code> # Enable by default<pre><code class="language-bash"># Enable Vi mode
+<li><code>vi ~/.bashrc</code> # Method one that enable by default<pre><code class="language-bash"># Enable Vi mode
 set -o vi
+bind -m vi-command &#39;Control-l: clear-screen&#39;
+bind -m vi-insert &#39;Control-l: clear-screen&#39;
 </code></pre>
 <ul>
 <li><code>set -o emacs</code> # Enable Emacs mode</li>
 </ul>
 </li>
+<li><code>vi ~/.inputrc</code> # Method two that enable by default<pre><code>set editing-mode vi
+$if mode=vi
+
+set keymap vi-command
+Control-l: clear-screen
+
+set keymap vi-insert
+Control-l: clear-screen
+$endif
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><a href="https://unix.stackexchange.com/questions/104094/is-there-any-way-to-enable-ctrll-to-clear-screen-when-set-o-vi-is-set/104101#104101">https://unix.stackexchange.com/questions/104094/is-there-any-way-to-enable-ctrll-to-clear-screen-when-set-o-vi-is-set/104101#104101</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Bash">https://wiki.gentoo.org/wiki/Bash</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
