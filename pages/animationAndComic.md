@@ -1,10 +1,7 @@
 ### "Animation"
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 04
-- 虫王战队超王者 - 10 0336 animation
-- 幻日的夜羽 - 01
-- 英雄教室 - 01
-- 黑暗集会 - 01
-- 租借女友 - 03
+- 虫王战队超王者 - 13
+- 租借女友 - 05 2038 animation cloud space
 - 四格勇者 - 03
 - 女神有点灵 - 02
 - 物物语 - 01
@@ -16,7 +13,7 @@
 - 白圣女与黑牧师 - 01
 - 山海际会 - 01
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
-- Jujutsu Kaisen / 咒术回战 - 04 0429 cloud space
+- Jujutsu Kaisen / 咒术回战 - 08 1202 cloud space
 - Spy room / 间谍教室 - 01
 - 打工吧！魔王大人 - 01
 - 浪客剑心 - 01
@@ -280,6 +277,9 @@
 - guard(end)
 
 ### Animation
+- 黑暗集会 - 02 # Horror theme
+- 英雄教室 - 03 # The target audience is thirteen or fourteen year olds
+- 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen year olds
 - Expanding Sky! Precure光之美少女 - 01 # The target audience is children.
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
 - 一世独尊 - 26 # The plot is too corny

@@ -105,11 +105,14 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
 ## Artificial intelligence
+- https://github.com/xx025/carrot
 - https://github.com/lzwme/chatgpt-sites
-- http://chat.newstop.uk/#/chat
-- https://chat.jinshutuan.com/#/chat/1685338936338
-- https://dev.yqcloud.top/#/chat/1685338818260
-- http://nav.mindog.icu/
+- https://chat.owen666.top/
+- https://chatg.free2gpt.xyz/
+- https://chat.closeai.me/#/chat
+- https://1.b88.asia/#/chat/1002
+- https://13.c11r.cc/#/chat/1002
+- https://chat.ftool.top/
 - https://c.binjie.fun/#/chat/1688452827209
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
