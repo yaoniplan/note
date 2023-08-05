@@ -55,6 +55,7 @@
 </li>
 <li><code>Ctrl-f</code> # Find</li>
 <li><code>Ctrl-g</code> # Go to a specific line</li>
+<li><code>Ctrl-p</code> # Quick open a file by name</li>
 <li><code>nix shell nixpkgs#vscode</code> # Install dependencies temporarily</li>
 </ul>
 </li>
@@ -4223,6 +4224,10 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Access the shell of the container<ul>
+<li><code>docker-compose exec yourApp sh</code></li>
+</ul>
+</li>
 <li>Update a Docker image<ul>
 <li><code>docker-compose pull</code> # Pull the latest version</li>
 <li><code>docker-compose up --detach</code></li>
