@@ -13,7 +13,7 @@
 - 白圣女与黑牧师 - 01
 - 山海际会 - 01
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
-- Jujutsu Kaisen / 咒术回战 - 08 1202 cloud space
+- Jujutsu Kaisen / 咒术回战 - 18 0101 animation cloud space
 - Spy room / 间谍教室 - 01
 - 打工吧！魔王大人 - 01
 - 浪客剑心 - 01
