@@ -2,14 +2,10 @@
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 04
 - 虫王战队超王者 - 13
 - Rent A Girlfriend / 租借女友 - 09 0653 animation cloud space
-- 四格勇者 - 03
-- 女神有点灵 - 02
-- 物物语 - 01
-- 披着狼皮的羊 - 01
-- 无脑魔女 - 02
-- 勇者赫鲁库 - 01
-- 总之就是非常可爱 - 02
-- 我的幸福婚约 - 01
+- 四格勇者 - 04
+- 物物语 - 03 1722 animation
+- 总之就是非常可爱 - 05 animation
+- My Happy Marriage / 我的幸福婚约 - 04
 - 白圣女与黑牧师 - 01
 - 山海际会 - 01
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
@@ -277,6 +273,10 @@
 - guard(end)
 
 ### Animation
+- 勇者赫鲁库 - 03 1022 # The plot progress is too slow
+- 无脑魔女 - 05 # The target audience is thirteen or fourteen year olds
+- 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen year olds
+- 女神有点灵 - 05 1049 # The target audience is thirteen or fourteen year olds
 - 黑暗集会 - 02 # Horror theme
 - 英雄教室 - 03 # The target audience is thirteen or fourteen year olds
 - 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen year olds
