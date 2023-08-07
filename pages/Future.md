@@ -111,7 +111,6 @@ http://natas9.natas.labs.overthewire.org
 - https://chatg.free2gpt.xyz/
 - https://chat.closeai.me/#/chat
 - https://13.c11r.cc/#/chat/1002
-- https://chat.ftool.top/
 - https://c.binjie.fun/#/chat/1688452827209
 - https://platform.openai.com/onboarding
 - https://chat.lmsys.org/
