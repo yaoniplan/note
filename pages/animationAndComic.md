@@ -1,7 +1,7 @@
 ### "Animation"
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 04
 - 虫王战队超王者 - 13
-- Rent A Girlfriend / 租借女友 - 09 0653 animation cloud space
+- Rent A Girlfriend / 租借女友 (Part1+2) - 12+07 0850 animation cloud space
 - 四格勇者 - 04
 - 物物语 - 03 1722 animation
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+3) - 12+00 animation
@@ -9,7 +9,7 @@
 - 白圣女与黑牧师 - 01
 - 山海际会 - 01
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
-- Jujutsu Kaisen / 咒术回战 - 18 0101 animation cloud space
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+03 animation
 - Spy room / 间谍教室 - 01
 - 打工吧！魔王大人 - 01
 - 浪客剑心 - 01
@@ -40,29 +40,28 @@
 - 五行战神 - 16
 - 堕玄师 - 06
 - 喜欢的人忘记戴眼镜了 - 04
-- 不死女 轮堂鸦夜 - 04
-- 沧元图 - 07
-- 大主宰 - 07
+- 不死女 轮堂鸦夜 - 05
+- 沧元图 - 08
+- 大主宰 - 08
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 镖人 - 12
-- 真武巅峰 (Part1+2) - 40+24
-- 不灭神王 - 15
-- 仙武传 - 20
-- 遮天 - 15
-- The Ravages of Time / 火凤燎原 - 14
-- 炼气十万年 - 49
-- 百炼成神 - 40
-- 灵剑尊 -  240/404
-- 武神主宰 - 192/353
-- 独步逍遥 - 168/333
-- 完美世界 - 38/121
-- Against the Sky Supreme / 逆天至尊 - 218
-- 一念永恒 (Part1+2) - 52+54
-- 斗破苍穹年番 - 54
-- 绝世武魂 - 291
-- 万古神话 - 103
+- 镖人 - 13
+- 真武巅峰 (Part1+2) - 40+26
+- 不灭神王 - 16
+- 仙武传 - 22
+- 遮天 - 16
+- The Ravages of Time / 火凤燎原 - 16
+- 炼气十万年 - 52
+- 百炼成神 - 41
+- 灵剑尊 -  240/406
+- 武神主宰 - 192/356
+- 独步逍遥 - 168/336
+- 完美世界 - 38/122
+- Against the Sky Supreme / 逆天至尊 - 221
+- 斗破苍穹年番 - 56
+- 绝世武魂 - 294
+- 万古神话 - 106
 
 ### Comic
 - 没有道侣就会死 - 90
@@ -273,6 +272,7 @@
 - guard(end)
 
 ### Animation
+- 一念永恒 (Part1+2) - 52+54 # End of the second part
 - 勇者赫鲁库 - 03 1022 # The plot progress is too slow
 - 无脑魔女 - 05 # The target audience is thirteen or fourteen year olds
 - 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen year olds
