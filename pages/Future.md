@@ -108,7 +108,7 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/xx025/carrot
 - https://github.com/lzwme/chatgpt-sites
 - https://chat.owen666.top/
-- https://chatg.free2gpt.xyz/
+- https://chati.free2gpt.xyz/
 - https://chat.closeai.me/#/chat
 - https://13.c11r.cc/#/chat/1002
 - https://c.binjie.fun/#/chat/1688452827209
