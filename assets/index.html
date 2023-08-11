@@ -39,6 +39,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="record-screen-in-linux">Record screen in Linux</h4>
+<ul>
+<li><code>ffmpeg -f x11grab -video_size 1366x768 -framerate 60 -i :0.0 -c:v libx264 $(date +%F_%H-%M).mp4</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>xdpyinfo | grep dimensions | awk &#39;{print $2}&#39;</code> # Get the resolution (e.g. <em>1366x768</em>)</li>
+<li><code>60</code> # Replace it with your disired frame rate</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="output-the-multiplication-table-in-c">Output the multiplication table in C</h4>
 <ul>
 <li><code>vi multiplicationTable.c</code><pre><code>#include &lt;stdio.h&gt;
@@ -75,6 +92,7 @@ int main()
 1*9=9   2*9=18  3*9=27  4*9=36  5*9=45  6*9=54  7*9=63  8*9=72  9*9=81
 </code></pre>
 </li>
+<li><a href="https://archive.org/download/c-c-qq">https://archive.org/download/c-c-qq</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -484,6 +502,12 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4 id="use-siri">Use &quot;siri&quot;</h4>
 <ul>
+<li><code>Set an alarm at fourteen</code> # Lunch break from 13:40<ul>
+<li><code>Show alarms</code></li>
+<li><code>Disable / Delete alarms</code></li>
+<li><code>All of them</code></li>
+</ul>
+</li>
 <li><code>Remind me to learn Reminders at 15:55 today</code> # Use Reminders</li>
 <li><code>Create a new event</code> # Use Calendar<ul>
 <li><code>Learn Calendar</code> # Title it</li>

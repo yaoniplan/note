@@ -3,8 +3,8 @@
 - 虫王战队超王者 - 13
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
 - 四格勇者 - 05
-- 物物语 - 03 animation
-- Fly Me to the Moon / 总之就是非常可爱 (Part1+3) - 12+00 animation
+- 物物语 (Part1+2) - 12+06
+- Fly Me to the Moon / 总之就是非常可爱 (Part1+2) - 12+00 animation
 - My Happy Marriage / 我的幸福婚约 - 04
 - 白圣女与黑牧师 - 01
 - 山海际会 - 01
