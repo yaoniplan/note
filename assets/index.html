@@ -39,6 +39,41 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="record-screen-to-a-gif-file-with-ffmpeg">Record screen to a GIF file with ffmpeg</h4>
+<ul>
+<li><code>ffmpeg -f x11grab -s 1366x768 -i :0 -t 10 -r 60 $(date +%F_%H-%M).gif</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warnning: The clarity quality is a bit low</li>
+<li><code>xdpyinfo | grep dimensions | awk &#39;{print $2}&#39;</code> # Get screen resolution</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="enable-a-http-server-to-share-files-temporarily">Enable a HTTP server to share files temporarily</h4>
+<ul>
+<li><code>python -m http.server -d /mnt/grow/ 8080</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>/mnt/grow/</code> # Replace it with the directory you want to share</li>
+<li><code>http://192.168.10.105:8080</code> # View it in local area network</li>
+<li><code>nix shell nixpkgs#python310Packages.httpserver</code> # Install dependencies temporarily</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://root.nix.dk/en/network-notes/basic-samba-setup-and-troubleshooting">https://root.nix.dk/en/network-notes/basic-samba-setup-and-troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="record-screen-in-linux">Record screen in Linux</h4>
 <ul>
 <li><code>ffmpeg -f x11grab -video_size 1366x768 -framerate 60 -i :0.0 -c:v libx264 $(date +%F_%H-%M).mp4</code></li>
@@ -1790,6 +1825,17 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ nix-shell -p nix-info --run &quot;nix-info -m&quot;
+error:
+     … &lt;borked&gt;
+
+       at «none»:0: (source not available)
+     ...
+</code></pre>
+<ul>
+<li><code>nix-channel --update</code></li>
+</ul>
+</li>
 <li>Enable flakes<ul>
 <li><code>echo &quot;experimental-features = nix-command flakes&quot; | doas tee -a /etc/nix/nix.conf</code></li>
 </ul>
@@ -1816,6 +1862,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/NixOS/nix/issues/7937#issuecomment-1455013868">https://github.com/NixOS/nix/issues/7937#issuecomment-1455013868</a></li>
 <li><a href="https://xeiaso.net/blog/nix-flakes-1-2022-02-21">https://xeiaso.net/blog/nix-flakes-1-2022-02-21</a></li>
 <li><a href="https://nixos.wiki/wiki/Flakes">https://nixos.wiki/wiki/Flakes</a></li>
 <li><a href="https://www.youtube.com/watch?v=o1Y7rWrPEO8">https://www.youtube.com/watch?v=o1Y7rWrPEO8</a></li>
