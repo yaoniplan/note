@@ -39,6 +39,48 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="output-chess-board-in-c">Output chess board in C</h4>
+<ul>
+<li><code>vi ~/chessBoard.c</code><pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int i, j;
+    for (i = 0; i &lt; 8; i++) {
+        for (j = 0; j &lt; 8; j++) {
+            if ((i + j) % 2 == 0)
+                printf(&quot;██&quot;) // Output black square
+            else
+                printf(&quot;  &quot;); // Output white square, two spaces
+        }
+        printf(&quot;\n&quot;);
+    }
+    return 0;
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run<pre><code>██  ██  ██  ██
+  ██  ██  ██  ██
+██  ██  ██  ██
+  ██  ██  ██  ██
+██  ██  ██  ██
+  ██  ██  ██  ██
+██  ██  ██  ██
+  ██  ██  ██  ██
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://archive.org/download/c-100_20230813">https://archive.org/download/c-100_20230813</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="record-screen-to-a-gif-file-with-ffmpeg">Record screen to a GIF file with ffmpeg</h4>
 <ul>
 <li><code>ffmpeg -f x11grab -s 1366x768 -i :0 -t 10 -r 60 $(date +%F_%H-%M).gif</code></li>
@@ -722,6 +764,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Take the bus to the local job market # The price is cheaper than taking a taxi, but it takes more time than taking a taxi</li>
 <li>Laundry, shower and brush teeth # Before the roomates come back</li>
 <li>Charge the primary phone # Before sleeping</li>
+<li>Put away the umbrella that block the sun # After arriving at a location</li>
 </ul>
 </li>
 <li>The situation of a restaurant interviewed<ul>
@@ -731,6 +774,18 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Dining table and stools: Stone and metal, wood</li>
 <li>Light bulb: White, hang</li>
 <li>Electric fan: Black, hang</li>
+</ul>
+</li>
+<li>Second phone<ul>
+<li>Record (Before the communication interview)</li>
+<li>Clock (When sleeping at night)</li>
+<li>Game manager (Build a reward and punishment mechanism to motivate)</li>
+<li>Exercise (Sweating every day makes the body organs go on the road of sustainable development)</li>
+<li>Music (When taking a shower)</li>
+</ul>
+</li>
+<li>Before going to other cities<ul>
+<li>Bring backpack and suitcase</li>
 </ul>
 </li>
 </ul>
@@ -1825,6 +1880,17 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ nix search nixpkgs#excel
+error:
+       … while fetching the input &#39;github:NixOS/nixpkgs/nixpkgs-unstable&#39;
+
+       error: creating directory &#39;/nix/store/tmp-2004-1&#39;: Permission denied
+yaoniplan@tux ~ $
+</code></pre>
+<ul>
+<li><code>doas chown -R $(whoami) /nix/store/</code> # Change the owner</li>
+</ul>
+</li>
 <li>Solve the problem<pre><code>yaoniplan@tux ~ $ nix-shell -p nix-info --run &quot;nix-info -m&quot;
 error:
      … &lt;borked&gt;

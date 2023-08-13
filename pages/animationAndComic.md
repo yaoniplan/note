@@ -6,9 +6,8 @@
 - 物物语 (Part1+2) - 12+06
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2) - 12+13 animation
 - My Happy Marriage / 我的幸福婚约 - 06
-- 山海际会 - 10 animation
-- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 01
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+03 animation
+- 山海际会 - 20 animation
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05 0959 animation
 - Spy room / 间谍教室 - 01
 - 打工吧！魔王大人 - 01
 - 浪客剑心 - 01
@@ -271,6 +270,7 @@
 - guard(end)
 
 ### Animation
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 # The plot is too flat
 - 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen year olds
 - 一念永恒 (Part1+2) - 52+54 # End of the second part
 - 勇者赫鲁库 - 03 1022 # The plot progress is too slow
