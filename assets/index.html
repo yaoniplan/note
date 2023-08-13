@@ -48,9 +48,9 @@ int main() {
     for (i = 0; i &lt; 8; i++) {
         for (j = 0; j &lt; 8; j++) {
             if ((i + j) % 2 == 0)
-                printf(&quot;██&quot;) // Output black square
+                printf(&quot;██&quot;) // Output white square
             else
-                printf(&quot;  &quot;); // Output white square, two spaces
+                printf(&quot;  &quot;); // Output black square, two spaces
         }
         printf(&quot;\n&quot;);
     }
@@ -61,19 +61,11 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run<pre><code>██  ██  ██  ██
-  ██  ██  ██  ██
-██  ██  ██  ██
-  ██  ██  ██  ██
-██  ██  ██  ██
-  ██  ██  ██  ██
-██  ██  ██  ██
-  ██  ██  ██  ██
-</code></pre>
-</li>
+<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-08-13_11-05.png" alt="2023-08-13_11-05.png"></li>
 <li><a href="https://archive.org/download/c-100_20230813">https://archive.org/download/c-100_20230813</a></li>
 <li>ChatGPT</li>
 </ul>
