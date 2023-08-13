@@ -69,6 +69,22 @@ int main() {
 </ul>
 <hr>
 <ul>
+<li><h4 id="use-gtts-cli">Use &quot;gtts-cli&quot;</h4>
+<ul>
+<li><code>gtts-cli &quot;$(date +%F)&quot; | mpg123 -</code> # Speech date</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#python310Packages.gtts</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="record-screen-to-a-gif-file-with-ffmpeg">Record screen to a GIF file with ffmpeg</h4>
 <ul>
 <li><code>ffmpeg -f x11grab -s 1366x768 -i :0 -t 10 -r 60 $(date +%F_%H-%M).gif</code></li>
@@ -2868,6 +2884,7 @@ set timeoutlen=0 ttimeoutlen=0
 <ul>
 <li><h4 id="use-vi">Use &quot;vi&quot;</h4>
 <ul>
+<li><code>:%s/espeak/gtts\-cli/g</code> # Replace espeak with gtts-cli globally</li>
 <li>Use four space for indenting temporarily<ul>
 <li><code>:set tabstop=4</code></li>
 </ul>
