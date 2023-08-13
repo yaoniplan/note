@@ -4,7 +4,7 @@
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
 - 四格勇者 - 05
 - 物物语 (Part1+2) - 12+06
-- Fly Me to the Moon / 总之就是非常可爱 (Part1+2) - 12+13 animation
+- Fly Me to the Moon / 总之就是非常可爱 (Part1+2) - 13+15 1207 animation
 - My Happy Marriage / 我的幸福婚约 - 06
 - 山海际会 - 20 animation
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05 0959 animation
