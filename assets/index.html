@@ -44,13 +44,12 @@
 <li><code>vi ~/chessBoard.c</code><pre><code>#include &lt;stdio.h&gt;
 
 int main() {
-    int i, j;
-    for (i = 0; i &lt; 8; i++) {
-        for (j = 0; j &lt; 8; j++) {
+    for (int i = 0; i &lt; 8; i++) {
+        for (int j = 0; j &lt; 8; j++) {
             if ((i + j) % 2 == 0)
-                printf(&quot;██&quot;) // Output white square
+                printf(&quot;██&quot;); // Output white square
             else
-                printf(&quot;  &quot;); // Output black square, two spaces
+                printf(&quot;  &quot;); // Output black square with two spaces
         }
         printf(&quot;\n&quot;);
     }
@@ -60,12 +59,9 @@ int main() {
 </li>
 </ul>
 </li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run</li>
-</ul>
-</li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-08-13_11-05.png" alt="2023-08-13_11-05.png"></li>
+<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run
+<img src="../assets/2023-08-13_11-05.png" alt="2023-08-13_11-05.png"></li>
 <li><a href="https://archive.org/download/c-100_20230813">https://archive.org/download/c-100_20230813</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -130,9 +126,8 @@ int main() {
 <li><code>vi multiplicationTable.c</code><pre><code>#include &lt;stdio.h&gt;
 
 int main() {
-    int i=0, j=0;
-    for(i=1; i&lt;10; i++) {
-        for(j=1; j&lt;i+1; j++) {
+    for(int i = 1; i &lt; 10; i++) {
+        for(int j = 1; j &lt;= i; j++) {
             printf(&quot;%d*%d=%d\t&quot;, j, i, j*i);
         }
         printf(&quot;\n&quot;);
@@ -144,6 +139,15 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>int</code> # Integer</li>
+<li><code>for(int i = 1; i &lt; 10; i++)</code> # Incrementing the value of &quot;i&quot; from 1 to 9<ul>
+<li><code>for()</code> # For loop</li>
+<li><code>int i = 1</code> # Initialize the variable &quot;i&quot; with the value &quot;1&quot;</li>
+<li><code>i &lt; 10</code> # Check the condition</li>
+<li><code>i++</code> # Increment (e.g. <em>i = i + 1</em>)</li>
+</ul>
+</li>
+<li><code>%d</code> # Placeholder</li>
 <li><code>\t</code> # Tab character</li>
 <li><code>\n</code> # Newline character</li>
 </ul>
@@ -10045,6 +10049,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4 id="use-git">Use &quot;git&quot;</h4>
 <ul>
+<li><code>dotfiles ls-files</code> # List tracked files</li>
 <li><code>dotfiles commit --message=&quot;Set the default volume to 60 percent (without any arguments)&quot;</code> # Set commit message</li>
 <li><code>dotfiles push git@192.168.10.100:/var/git/dotfiles.git development</code> # Push to a specific remote URL</li>
 <li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
@@ -10084,6 +10089,7 @@ nameserver 8.8.8.8
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://hedzr.com/devops/git/git-tips-ls-tree-or-files/">https://hedzr.com/devops/git/git-tips-ls-tree-or-files/</a></li>
 <li><a href="https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911">https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911</a></li>
 <li><code>git restore --help</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
