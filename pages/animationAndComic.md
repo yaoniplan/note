@@ -9,8 +9,7 @@
 - 山海际会 - 20
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05
 - Spy Room / 间谍教室 - 02 animation
-- 打工吧！魔王大人 (Part1+2) - 12+06 0344 animation
-- 浪客剑心 - 01
+- Rurouni Kenshin / 浪客剑心 - 01
 - 戍天伏魔录 - 01
 - 剑骨 - 01
 - 时光代理人 - 01
@@ -270,6 +269,7 @@
 - guard(end)
 
 ### Animation
+- 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 # The plot is too flat
 - 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen year olds
 - 一念永恒 (Part1+2) - 52+54 # End of the second part
