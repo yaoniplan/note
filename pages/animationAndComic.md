@@ -1,5 +1,4 @@
 ### "Animation"
-- Modern Times # 00:20:35
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 04
 - 虫王战队超王者 - 13
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
@@ -516,6 +515,11 @@
 - 刀剑神域(boring)
 
 ### Movie
+- The Girl Who Leapt Through Time / 穿越时空的少女 # Time waits for no one
+- Forrest Gump / 阿甘正传 # God rewards work
+- Alita: Battle Angel / 阿丽塔：战斗天使 # End of the first part
+    - Hardware limit
+- Modern Times / 摩登时代 # End
 - The Shawshank Redemption / 肖申克的救赎 # End
 - The Legend of 1900 / 海上钢琴师 # End
 - Avatar / 阿凡达 # End of the first, second season.

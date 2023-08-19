@@ -56,6 +56,7 @@
 <li>Light behind foucs (Silhouettes, Backlight)</li>
 </ul>
 </li>
+<li>Element (e.g. point, line, surface, etc.)</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -293,7 +294,7 @@ int main() {
 </ul>
 </li>
 <li>Indicative signs<ul>
-<li>Blue</li>
+<li>Blue without text</li>
 </ul>
 </li>
 <li>Warrning signs<ul>
@@ -1219,6 +1220,59 @@ squash commit3hash Commit message 3
 <li><code>!jt --reset</code> # Reset to the defualt theme</li>
 </ul>
 </li>
+<li>Import and use matplotlib<pre><code>pip install matplotlib # Install dependencies
+x = [1, 2, 3, 4, 5] # Assign list to variable
+y = [2, 3, 4, 5, 6]
+
+from matplotlib import pyplot as plt # Set an alias to &#39;plt&#39;
+fig1 = plt.figure(figsize=(5, 5)) # 5 rows and 5 colums
+plt.plot(x, y) # Linear graph (Replace plot with scatter to draw a scatterplot)
+plt.title(&#39;y vs x&#39;)
+plt.xlabel(&#39;x&#39;)
+plt.ylabel(&#39;y&#39;)
+plt.show()
+</code></pre>
+</li>
+<li>Import numpy, generate and manipulate arrays<pre><code>import numpy as np
+a = np.eye(5) # Generate an array
+print(type(a))
+print(a)
+
+b = np.ones([5, 5]) # Generate an array of 5 rows and 5 columns with all 1s
+print(type(b))
+print(b)
+print(b.shape)
+
+c = a + b # Array addition operation
+print(type(c))
+print(c.shape)
+print(c)
+</code></pre>
+</li>
+<li>Import and use pandas<pre><code>import pandas as pd
+data = pd.read_csv(&#39;data.csv&#39;) # Read the file called &#39;data.csv&#39;
+
+print(type(data))
+print(data)
+
+x = data.loc[:, &#39;x&#39;] # Locate the data in the column called &#39;x&#39;
+print(type(x))
+y = data.loc[:, &#39;y&#39;]
+print(y)
+
+c = data.loc[:, &#39;x&#39;][y &gt; 50] # Add conditions with &#39;y&#39; greater than 50
+print(c)
+
+data_array = np.array(data) # Convert type to array
+print(type(data_array))
+print(data_array)
+
+data_new = data + 10
+data_new.head()
+
+data_new.to_csv(&#39;data_new.csv&#39;) # Save the file as &#39;data_new.csv&#39;
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -1243,6 +1297,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://archive.org/download/1-6-pandas-numpy-matplotlib">https://archive.org/download/1-6-pandas-numpy-matplotlib</a></li>
 <li><a href="https://github.com/jupyter/notebook/issues/5286">https://github.com/jupyter/notebook/issues/5286</a></li>
 <li><a href="https://stackoverflow.com/questions/46510192/change-the-theme-in-jupyter-notebook/46561480#46561480">https://stackoverflow.com/questions/46510192/change-the-theme-in-jupyter-notebook/46561480#46561480</a></li>
 <li><a href="https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook">https://www.codecademy.com/article/getting-more-out-of-jupyter-notebook</a></li>
@@ -6446,6 +6501,7 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
 <li>Solve a problem about has no sound<ul>
 <li><code>-ao=pulse</code></li>
 </ul>
