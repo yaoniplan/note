@@ -42,6 +42,7 @@
 <li><h4 id="acquire-skills-of-taking-a-photo">Acquire skills of taking a photo</h4>
 <ul>
 <li>Highlight a focus<ul>
+<li>Blur background (Press focus)</li>
 <li>Leading line</li>
 <li>Center of vision (Horizontally and vertically divided into thirds)</li>
 <li>By chiaroscuro</li>
@@ -846,6 +847,16 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Laundry, shower and brush teeth # Before the roomates come back</li>
 <li>Charge the primary phone # Before sleeping</li>
 <li>Put away the umbrella that block the sun # After arriving at a location</li>
+<li>Pay the part-time job salary to the individual # Have a good relationship with college classmates and teachers</li>
+<li>Fall in lov # Low cast</li>
+<li>Be a soldier # Bonus and veterans certificate</li>
+<li>Communication skills and personal appearance</li>
+<li>Money and emotion</li>
+<li>Greet often to understand the world</li>
+<li>Make a schedule and stick it on the wall</li>
+<li>Learn to cook for them and for yourself</li>
+<li>Go to public places (e.g. library, shopping mall, etc.) to release stress</li>
+<li>Remember that children can do anything as long as they don&#39;t violate the law</li>
 </ul>
 </li>
 <li>The situation of a restaurant interviewed<ul>
@@ -10215,7 +10226,8 @@ cp ./* ~/.local/share/rofi/themes/
 </li>
 </ul>
 </li>
-<li><em><strong>Notes</strong></em><ul>
+<li><p><em><strong>Notes</strong></em></p>
+<ul>
 <li><code>97671e3:index.html</code> # Get it by using the following command<ul>
 <li><code>git log -1 --name-only</code></li>
 </ul>
@@ -10237,9 +10249,26 @@ nameserver 8.8.8.8
 </li>
 </ul>
 </li>
-</ul>
+<li>Solve the problem<pre><code>
+</code></pre>
 </li>
-<li><em><strong>References</strong></em><ul>
+</ul>
+<p>   yaoniplan@tux ~ $ dotfiles push origin development
+   ssh: connect to host github.com port 22: Connection timed out
+   fatal: Could not read from remote repository.</p>
+<p>   Please make sure you have the correct access rights
+   and the repository exists.
+   yaoniplan@tux ~ $
+    <code>      - `vi ~/.ssh/config`        </code>
+        Host github.com
+          Hostname ssh.github.com
+          Port 443
+        ```
+      - <code>ssh -T git@github.com</code></p>
+</li>
+<li><p><em><strong>References</strong></em></p>
+<ul>
+<li><a href="https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794">https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794</a></li>
 <li><a href="https://hedzr.com/devops/git/git-tips-ls-tree-or-files/">https://hedzr.com/devops/git/git-tips-ls-tree-or-files/</a></li>
 <li><a href="https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911">https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911</a></li>
 <li><code>git restore --help</code></li>
