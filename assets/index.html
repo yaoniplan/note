@@ -6523,13 +6523,14 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--save-position-on-quit</code> # Watch later</li>
 <li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
 <li>Solve a problem about has no sound<ul>
 <li><code>-ao=pulse</code></li>
 </ul>
 </li>
 <li>For Music<ul>
-<li><code>--loop-playlist</code></li>
+<li><code>--loop-playlist</code> # Loop infinitely (The same as <code>L</code>)</li>
 <li><code>--shuffle</code> # Random playback</li>
 <li><code>--no-video</code> # For audio only</li>
 </ul>
@@ -11164,9 +11165,14 @@ backend = &quot;glx&quot;;
 <ul>
 <li><h4 id="use-feh">Use &quot;feh&quot;</h4>
 <ul>
+<li>Fill window<ul>
+<li><code>feh --keep-zoom-vp {1..9}.jpg</code></li>
+<li><code>feh --zoom 80 {1..9}.jpg</code></li>
 <li><code>feh --scale-down {1..9}.jpg</code> # View them with automatically zoon</li>
+</ul>
+</li>
 <li><code>feh --bg-fill $HOME/note/assets/dark.jpg</code> # Set wallpaper</li>
-<li><code>n</code> # Next image</li>
+<li><code>n / space</code> # Next image</li>
 <li><code>!</code> # Zoom the image to fill the size of window (like <code>--bg-fill</code>)</li>
 <li><code>Alt-upArrow</code> # Scroll up one page</li>
 <li><code>feh /mnt/grow/220824wallpaper/</code> # Enable slideshow mode<ul>

@@ -46,17 +46,16 @@
 - 不灭神王 - 16
 - 仙武传 - 22
 - 遮天 - 16
-- The Ravages of Time / 火凤燎原 - 16
-- 炼气十万年 - 52
-- 百炼成神 - 41
-- 灵剑尊 -  240/406
-- 武神主宰 - 192/356
-- 独步逍遥 - 168/336
-- 完美世界 - 38/122
-- Against the Sky Supreme / 逆天至尊 - 221
-- 斗破苍穹年番 - 56
-- 绝世武魂 - 294
-- 万古神话 - 106
+- 炼气十万年 - 53
+- 百炼成神 - 42
+- 灵剑尊 - 240/407
+- 武神主宰 - 192/357
+- 独步逍遥 - 168/338
+- 完美世界 - 38/123
+- Against the Sky Supreme / 逆天至尊 - 223
+- 斗破苍穹年番 - 57
+- 绝世武魂 - 295
+- 万古神话 - 108
 
 ### Comic
 - 没有道侣就会死 - 90
@@ -267,6 +266,7 @@
 - guard(end)
 
 ### Animation
+- The Ravages of Time / 火凤燎原 - 16 # End of the first part
 - 剑骨 - 05 0541 # The plot is too corny
 - 戍天伏魔录 - 02 # The target audience is thirteen or fourteen year olds
 - 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
