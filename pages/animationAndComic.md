@@ -1,6 +1,6 @@
 ### "Animation"
-- 僵尸百分百～在变成僵尸之前想做的100件事～ - 04
-- 虫王战队超王者 - 13
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 05
+- 虫王战队超王者 - 14 # 1744 animation
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
 - 四格勇者 - 05
 - 物物语 (Part1+2) - 12+06
@@ -36,16 +36,15 @@
 - 堕玄师 - 06
 - 喜欢的人忘记戴眼镜了 - 04
 - 不死女 轮堂鸦夜 - 05
-- 沧元图 - 08
-- 大主宰 - 08
+- 沧元图 - 10
+- 大主宰 - 09
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 镖人 - 13
-- 真武巅峰 (Part1+2) - 40+26
-- 不灭神王 - 16
-- 仙武传 - 22
-- 遮天 - 16
+- 镖人 - 14
+- 不灭神王 - 17
+- 仙武传 - 23
+- 遮天 - 18
 - 炼气十万年 - 53
 - 百炼成神 - 42
 - 灵剑尊 - 240/407
@@ -266,6 +265,7 @@
 - guard(end)
 
 ### Animation
+- 真武巅峰 (Part1+2) - 40+26 # End of the second part
 - The Ravages of Time / 火凤燎原 - 16 # End of the first part
 - 剑骨 - 05 0541 # The plot is too corny
 - 戍天伏魔录 - 02 # The target audience is thirteen or fourteen year olds
@@ -516,7 +516,7 @@
 
 ### Movie
 - https://en.wikipedia.org/wiki/List_of_highest-grossing_films
-- The Avengers / 复仇者联盟 # End of the part one # 00:30:00
+- The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
 - Ready Player One / 头号玩家 # Punk defeats Cyber
 - Titanic / 泰坦尼克号 # You jump, i jump
