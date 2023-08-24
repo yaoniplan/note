@@ -2990,13 +2990,13 @@ UEFI VBOX CD-ROM VB2-01700376
 <ul>
 <li><h4 id="use-tilda-in-dwm">Use &quot;tilda&quot; in DWM</h4>
 <ul>
-<li><code>doas vi ~/.config/dwm-6.4/config.h</code><pre><code class="language-c">static const Rule rules[] = {
+<li><code>doas vi ~/.config/dwm/config.h</code><pre><code class="language-c">static const Rule rules[] = {
     /* class      instance    title       tags mask     isfloating   monitor */
     { &quot;Tilda&quot;,    NULL,       NULL,       0,            1,           -1 },
 };
 </code></pre>
 <ul>
-<li><code>doas make clean install ~/.config/dwm-6.4/</code> # Compile to make changes effective</li>
+<li><code>cd ~/.config/dwm/ &amp;&amp; doas make clean install</code> # Compile to make changes effective</li>
 </ul>
 </li>
 <li><code>tilda -C</code> # Config<pre><code># General

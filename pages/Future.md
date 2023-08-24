@@ -75,7 +75,6 @@ http://natas9.natas.labs.overthewire.org
 - http://www.yinghuavideo.com/new/
 - http://abnormalize.icu/里番
 - http://eroanimedougakan.blog.fc2.com/
-- https://www.agemys.com/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
 - http://www.p5mh.com/
@@ -141,6 +140,7 @@ http://natas9.natas.labs.overthewire.org
 - https://temp-mail.org/en/
 
 ## E-book
+- https://mozilla.github.io/pdf.js/web/viewer.html
 - https://singlelogin.me/
 - https://pgaskin.net/ePubViewer/
 - https://epub-reader.online/#

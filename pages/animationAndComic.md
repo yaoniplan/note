@@ -20,18 +20,16 @@
 - AI电子基因 - 04
 - 虽然等级只有1级但固有技能是最强的 - 03
 - My Adventures With Superman / 我与超人的冒险 - 04
-- 死神千年血战篇 (Part1+2) - 13+03
-- 永生 (Part1+2) - 12+06
-- 堀与宫村 (Part1+2) - 10+04 animation
-- 庙不可言 - 03
-- 其实我是最强的？ - 04
-- 死神少爷与黑女仆 (Part1+2) - 12+03
-- 真阳武神 - 06
-- 政宗君的复仇 (Part1+2) - 12+04
-- LV1魔王与独居废勇者 - 05
-- 公司里的小小前辈 - 03
-- 奇异贤伴 黑色天使 SYNDUALITY Noir - 03
-- 满怀美梦的少年是现实主义者 - 04
+- 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
+- 永生 (Part1+2) - 12+08
+- 堀与宫村 (Part1+2) - 10+05 animation
+- 庙不可言 - 07
+- 其实我是最强的？ - 05 animation
+- 死神少爷与黑女仆 (Part1+2) - 12+06 animation
+- 真阳武神 - 08
+- 政宗君的复仇 (Part1+2) - 12+06 animation
+- 公司里的小小前辈 - 06 0349 # animation
+- 满怀美梦的少年是现实主义者 - 08
 - 五行战神 - 21
 - 堕玄师 - 09
 - 沧元图 - 10
@@ -55,6 +53,7 @@
 - 万古神话 - 110
 
 ### Comic
+- Panty Note / 裤裤笔记 - 166
 - 没有道侣就会死 - 90
 - 傀儡 - 277
 - 秘密教学 - 180
@@ -263,6 +262,8 @@
 - guard(end)
 
 ### Animation
+- LV1魔王与独居废勇者 - 06 0839 # The plot is too slow
+- 奇异贤伴 黑色天使 SYNDUALITY Noir - 04 # Resources loading freezes
 - 喜欢的人忘记戴眼镜了 - 07 1836 # The plot is too exaggerated
 - 不死女 轮堂鸦夜 - 06 1629 # The plot is too flat
 - 真武巅峰 (Part1+2) - 40+26 # End of the second part
