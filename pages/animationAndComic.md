@@ -17,9 +17,9 @@
 - BanG Dream! Its MyGO!!!!! - 07
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 04
 - 圣者无双～上班族、在异世界的存活之道 - 04
-- AI电子基因 - 04
-- 虽然等级只有1级但固有技能是最强的 - 03
-- My Adventures With Superman / 我与超人的冒险 - 04
+- AI电子基因 - 07
+- 虽然等级只有1级但固有技能是最强的 - 07
+- My Adventures With Superman / 我与超人的冒险 - 08
 - 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
 - 永生 (Part1+2) - 12+08
 - 堀与宫村 (Part1+2) - 10+05 animation
@@ -53,6 +53,7 @@
 - 万古神话 - 110
 
 ### Comic
+- 卖身给上司 - 95
 - Panty Note / 裤裤笔记 - 166
 - 没有道侣就会死 - 90
 - 傀儡 - 277

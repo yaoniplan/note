@@ -39,6 +39,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="the-abbreviation-of-mi-is-mile">The abbreviation of &quot;mi&quot; is &quot;mile&quot;.</h4>
+<ul>
+<li>An unit of distance</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because saw it in the map software.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Mile">https://en.wikipedia.org/wiki/Mile</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-uxplay">Use &quot;uxplay&quot;</h4>
 <ul>
 <li><code>uxplay</code></li>
@@ -701,7 +717,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>All of them</code></li>
 </ul>
 </li>
-<li><code>Remind me to learn Reminders at 15:55 today</code> # Use Reminders</li>
+<li><code>Remind me to learn Reminders at 15:55 today</code> # Use Reminders<ul>
+<li><code>Show reminders</code></li>
+</ul>
+</li>
 <li><code>Create a new event</code> # Use Calendar<ul>
 <li><code>Learn Calendar</code> # Title it</li>
 <li><code>Right now</code> # One hour from now</li>
@@ -733,7 +752,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Stop the timer</code> # Stop it</li>
 </ul>
 </li>
-<li><code>What is the weather today</code> # Get weather information</li>
+<li><code>What is the weather today</code> # Use Weather<ul>
+<li><code>When is sunrise</code></li>
+</ul>
+</li>
 <li><code>Open Translate</code> # Open the application</li>
 <li><code>Record voice memo</code> # Record a conversation</li>
 <li><code>Increase volume by 40 percent</code><ul>
@@ -755,6 +777,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/">https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/</a></li>
 <li><a href="https://developer.apple.com/siri/">https://developer.apple.com/siri/</a></li>
 <li>iPhone 14 Pro</li>
 <li>ChatGPT</li>
@@ -6546,6 +6569,10 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Alt-Hyphen</code> # Zoom out video<ul>
+<li><code>Alt-Down</code> # Move video up</li>
+</ul>
+</li>
 <li><code>--save-position-on-quit</code> # Watch later</li>
 <li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
 <li>Solve a problem about has no sound<ul>
@@ -9691,7 +9718,7 @@ Unit ssh.service could not be found.
 <li><code>vim ~/.local/bin/timerOfTomato.sh</code><pre><code>#! /bin/sh
 
 soundNotification() {
-paplay /usr/share/sounds/alsa/Noise.wav
+    paplay /usr/share/sounds/alsa/Noise.wav
 }
 while true; do
     soundNotification
