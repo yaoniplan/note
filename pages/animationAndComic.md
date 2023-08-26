@@ -11,16 +11,12 @@
 - Spy Room / 间谍教室 - 02 animation
 - Rurouni Kenshin / 浪客剑心 - 05 animation
 - Link Click / 时光代理人 (Part1+2) - 11+02
-- 能干的猫今天也忧郁 - 01
-- 风火战纪 - 01
-- 夫妇联欢~回不去的夜晚 #NSFW - 03
-- BanG Dream! Its MyGO!!!!! - 07
-- 转生成自动贩卖机的我今天也在迷宫徘徊 - 04
-- 圣者无双～上班族、在异世界的存活之道 - 04
+- 能干的猫今天也忧郁 - 04 animation
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 08
+- 圣者无双～上班族、在异世界的存活之道 - 08
 - AI电子基因 - 07
 - 虽然等级只有1级但固有技能是最强的 - 07
 - My Adventures With Superman / 我与超人的冒险 - 08
-- 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
 - 永生 (Part1+2) - 12+08
 - 堀与宫村 (Part1+2) - 10+05 animation
 - 庙不可言 - 07
@@ -263,6 +259,10 @@
 - guard(end)
 
 ### Animation
+- 风火战纪 - 01 animation # The plot is too corny
+- 夫妇联欢~回不去的夜晚 #NSFW - 03 # Resources loading freezes
+- BanG Dream! Its MyGO!!!!! - 10 0618 # Target audience is female
+- 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
 - LV1魔王与独居废勇者 - 06 0839 # The plot is too slow
 - 奇异贤伴 黑色天使 SYNDUALITY Noir - 04 # Resources loading freezes
 - 喜欢的人忘记戴眼镜了 - 07 1836 # The plot is too exaggerated

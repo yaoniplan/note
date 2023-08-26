@@ -177,8 +177,8 @@ int main() {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run
-<img src="../assets/2023-08-13_11-05.png" alt="2023-08-13_11-05.png"></li>
+<li><code>gcc ~/chessBoard.c &amp;&amp; ./a.out</code> # Compile and run</li>
+<li><img src="../assets/2023-08-13_11-05.png" alt="2023-08-13_11-05.png"></li>
 <li><a href="https://archive.org/download/c-100_20230813">https://archive.org/download/c-100_20230813</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -393,6 +393,7 @@ int main() {
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-c</code> # Count</li>
+<li><code>ping -6 yourIPV6Address</code> # Ping an IPV6 address</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -711,6 +712,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4 id="use-siri">Use &quot;siri&quot;</h4>
 <ul>
+<li><code>Shutdown</code> # Poweroff<ul>
+<li><code>Yes</code> # Confirm</li>
+</ul>
+</li>
 <li><code>Set an alarm at fourteen</code> # Lunch break from 13:40<ul>
 <li><code>Show alarms</code></li>
 <li><code>Disable / Delete alarms</code></li>
@@ -2830,6 +2835,19 @@ UEFI VBOX CD-ROM VB2-01700376
 </ul>
 </li>
 <li>Because someone in the group shared the news of success.</li>
+<li><code>vi ~/.config/gentoo/docker-compose.yml</code><pre><code>version:: &#39;3&#39;
+
+services:
+  gentoo:
+    image: gentoo/stage3
+    restart: always
+    tty: true
+    stdin_open: true
+    volumes:
+      - ~/.config/gentoo:/data
+    command: bash -c &quot;while :; do sleep 1; done&quot;
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5042,7 +5060,11 @@ sleep &quot;$1&quot;; notification
 <li><code>ls /usr/share/applications/</code></li>
 </ul>
 </li>
-<li><code>png</code> # Replace it with other format (e.g. gif)</li>
+<li><code>image/png</code> # Replace it with other MIME type<ul>
+<li><code>xdg-mime query filetype /path/to/image.png</code> # Method one</li>
+<li><code>file --mime /mnt/grow/230811seeADentist.jpg</code> # Method two</li>
+</ul>
+</li>
 <li>Another way<ul>
 <li><code>xdg-settings set default-web-browser firefox.desktop</code></li>
 </ul>
