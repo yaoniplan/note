@@ -39,6 +39,39 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-debian-linux-in-docker">Use Debian Linux in Docker</h4>
+<ul>
+<li><code>apt install curl --yes</code> # Install a package<ul>
+<li><code>apt update</code> # Update it before Installing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/.config/debian/docker-compose.yml</code><pre><code>version: &#39;3&#39;
+
+services:
+  debian:
+    image: debian
+    restart: always
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./data:/data  # Add any volumes you want to mount
+</code></pre>
+<ul>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-mi-is-mile">The abbreviation of &quot;mi&quot; is &quot;mile&quot;.</h4>
 <ul>
 <li>An unit of distance</li>
@@ -12422,7 +12455,7 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 <li><code>vim ~/.bashrc</code><pre><code>setProxy() {
     export http_proxy=&quot;192.168.10.105:7890&quot;
     export https_proxy=&quot;192.168.10.105:7890&quot;
-    export no_proxy=&quot;localhost. 127.0.0.1&quot;
+    export no_proxy=&quot;localhost, 127.0.0.1&quot;
 }
 
 unsetProxy() {

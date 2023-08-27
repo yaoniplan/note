@@ -10,7 +10,7 @@
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05
 - Spy Room / 间谍教室 - 02 animation
 - Rurouni Kenshin / 浪客剑心 - 05 animation
-- Link Click / 时光代理人 (Part1+2) - 11+02
+- Link Click / 时光代理人 (Part1+2) - 11+08
 - 能干的猫今天也忧郁 - 04 animation
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 08
 - 圣者无双～上班族、在异世界的存活之道 - 08
