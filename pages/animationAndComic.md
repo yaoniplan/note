@@ -2,11 +2,10 @@
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 05
 - 虫王战队超王者 - 14 # 1744 animation
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
-- 四格勇者 - 05
-- 物物语 (Part1+2) - 12+06
-- Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+03
-- My Happy Marriage / 我的幸福婚约 - 06
-- 山海际会 - 20
+- 四格勇者 - 08
+- Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
+- My Happy Marriage / 我的幸福婚约 - 08
+- 山海际会 - 22
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05
 - Spy Room / 间谍教室 - 02 animation
 - Rurouni Kenshin / 浪客剑心 - 05 animation
@@ -49,6 +48,7 @@
 - 万古神话 - 110
 
 ### Comic
+- 陌生的未婚妻 - 31
 - 卖身给上司 - 95
 - Panty Note / 裤裤笔记 - 166
 - 没有道侣就会死 - 90
@@ -259,6 +259,7 @@
 - guard(end)
 
 ### Animation
+- 物物语 (Part1+2) - 12+06 # The plot is too gentle
 - 风火战纪 - 01 animation # The plot is too corny
 - 夫妇联欢~回不去的夜晚 #NSFW - 03 # Resources loading freezes
 - BanG Dream! Its MyGO!!!!! - 10 0618 # Target audience is female
