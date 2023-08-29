@@ -1,7 +1,7 @@
 ### "Animation"
-- 僵尸百分百～在变成僵尸之前想做的100件事～ - 05
-- 虫王战队超王者 - 14 # 1744 animation
-- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+05
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 06
+- 虫王战队超王者 - 19 animation
+- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+07
 - 四格勇者 - 08
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
 - My Happy Marriage / 我的幸福婚约 - 08

@@ -48,6 +48,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Set mirror<ul>
+<li><code>sudo sed -i &#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39; /etc/apt/sources.list</code></li>
+<li><code>sudo sed -i &#39;s/http/https/g&#39; /etc/apt/sources.list</code></li>
+</ul>
+</li>
 <li><code>vi ~/.config/debian/docker-compose.yml</code><pre><code>version: &#39;3&#39;
 
 services:
@@ -66,6 +71,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/debian.html">https://mirrors.ustc.edu.cn/help/debian.html</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -757,7 +763,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li><code>Remind me to learn Reminders at 15:55 today</code> # Use Reminders<ul>
-<li><code>Show reminders</code></li>
+<li><code>Show / read reminders</code></li>
+<li><code>Remind me about this tomorrow at 10 AM</code> # Title of email or website</li>
 </ul>
 </li>
 <li><code>Create a new event / Schedule purchase breakfast at 7 AM tomorrow</code> # Use Calendar<ul>
@@ -4392,7 +4399,6 @@ services:
       - ~/.config/reader/storage:/storage
     environment:
       - SPRING_PROFILES_ACTIVE=prod
-      - READER_APP_USERBOOKLIMIT=200
       - READER_APP_CACHECHAPTERCONTENT=true
 </code></pre>
 </li>
@@ -4401,11 +4407,32 @@ services:
 <li><em><strong>Notes</strong></em><ul>
 <li><code>docker-compose up --detach</code> # Run in the background</li>
 <li><code>192.168.10.100:4396</code> # Run in Chromium</li>
+<li>Support webview<pre><code>      - READER_APP_REMOTEWEBVIEWAPI=http://readerwebview:8050
+  readerwebview:
+    image: hectorqin/remote-webview
+    container_name: readerwebview
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    environment:
+        - TZ=Asia/Shanghai
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: reader readerwebview watchtower --cleanup --schedule &quot;0 0 4 * * *&quot;
+volumes:
+  reader:
+  readerwebview:
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://www.yckceo.com/yuedu/shuyuan/index.html">https://www.yckceo.com/yuedu/shuyuan/index.html</a> # Book sources</li>
-<li><a href="https://github.com/hectorqin/reader/blob/387beb9f90f100cddcc0973408efbca47ea46489/docker-compose.yml">https://github.com/hectorqin/reader/blob/387beb9f90f100cddcc0973408efbca47ea46489/docker-compose.yml</a></li>
+<li><a href="https://github.com/hectorqin/reader/blob/c47f870ecc55fa2345527b248111a33a5c9af45a/docker-compose.yml">https://github.com/hectorqin/reader/blob/c47f870ecc55fa2345527b248111a33a5c9af45a/docker-compose.yml</a></li>
 </ul>
 </li>
 </ul>
@@ -4676,6 +4703,7 @@ services:
 </ul>
 </li>
 <li><code>docker-compose stop</code> # Stop</li>
+<li><code>docker-compose down</code> # Stop and remove containers</li>
 <li><code>docker-compose restart</code> # Restart</li>
 <li><code>doas apt install docker-compose</code> # Install it before installing Docker</li>
 <li><code>latest</code> # Latest tag</li>
@@ -6617,6 +6645,7 @@ git push origin master
 <ul>
 <li><h4 id="use-mpv">Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>Shift-i</code> # Information</li>
 <li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
 <li><code>--vf=hflip</code> # Horizontal flip (Like in phone)</li>
 <li><code>--profile=low-latency --untimed</code> # Low latency</li>
