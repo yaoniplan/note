@@ -1,5 +1,4 @@
 ### "Animation"
-- Ultraman Tiga / 迪迦奥特曼 - 23
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 06
 - 虫王战队超王者 - 19 animation
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+07
@@ -40,16 +39,16 @@
 - 炼气十万年 - 57
 - 百炼成神 - 43
 - 灵剑尊 - 240/411
-- 武神主宰 - 192/361
-- 独步逍遥 - 168/340
-- 完美世界 - 38/124
-- Against the Sky Supreme / 逆天至尊 - 225
-- 斗破苍穹年番 - 58
-- 绝世武魂 - 298
-- 万古神话 - 110
+- 武神主宰 - 192/361 animation
+- 独步逍遥 - 168/343
+- 完美世界 - 38/125
+- Against the Sky Supreme / 逆天至尊 - 227
+- 斗破苍穹年番 - 59
+- 绝世武魂 - 301
+- 万古神话 - 113
 
 ### Comic
-- 今晚就决定吃你了 - 90
+- 今晚就决定吃你了 - 90 # Method: Page 28, 50
 - 陌生的未婚妻 - 31
 - 卖身给上司 - 95
 - Panty Note / 裤裤笔记 - 166
@@ -261,6 +260,7 @@
 - guard(end)
 
 ### Animation
+- Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
 - 风火战纪 - 01 animation # The plot is too corny
 - 夫妇联欢~回不去的夜晚 #NSFW - 03 # Resources loading freezes
