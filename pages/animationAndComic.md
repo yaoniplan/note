@@ -22,24 +22,22 @@
 - 其实我是最强的？ - 05 animation
 - 死神少爷与黑女仆 (Part1+2) - 12+06 animation
 - 真阳武神 - 08
-- 政宗君的复仇 (Part1+2) - 12+06 animation
-- 公司里的小小前辈 - 06 0349 # animation
-- 满怀美梦的少年是现实主义者 - 08
-- 五行战神 - 21
-- 堕玄师 - 09
-- 沧元图 - 10
-- 大主宰 - 10
+- 政宗君的复仇 (Part1+2) - 12+07 1451 animation
+- 公司里的小小前辈 - 07
+- 满怀美梦的少年是现实主义者 - 09
+- 堕玄师 - 10
+- 沧元图 - 12
+- 大主宰 - 12
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 镖人 - 15
-- 不灭神王 - 18
-- 仙武传 - 24
-- 遮天 - 18
-- 炼气十万年 - 57
-- 百炼成神 - 43
-- 灵剑尊 - 240/411
-- 武神主宰 - 192/361 animation
+- 不灭神王 - 19
+- 仙武传 - 25
+- 遮天 - 20
+- 炼气十万年 - 59
+- 百炼成神 - 45
+- 灵剑尊 - 240/414
+- 武神主宰 - 192/363
 - 独步逍遥 - 168/343
 - 完美世界 - 38/125
 - Against the Sky Supreme / 逆天至尊 - 227
@@ -260,6 +258,8 @@
 - guard(end)
 
 ### Animation
+- 五行战神 - 21 # Resources loading freezes
+- 镖人 - 15 # End of the first part
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
 - 风火战纪 - 01 animation # The plot is too corny
@@ -520,7 +520,7 @@
 - 刀剑神域(boring)
 
 ### Movie
-- https://en.wikipedia.org/wiki/List_of_highest-grossing_films
+- The Truman Show / 楚门的世界 005542
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
 - Ready Player One / 头号玩家 # Punk defeats Cyber
