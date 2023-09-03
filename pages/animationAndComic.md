@@ -18,11 +18,11 @@
 - My Adventures With Superman / 我与超人的冒险 - 08
 - 永生 (Part1+2) - 12+08
 - 堀与宫村 (Part1+2) - 10+05 animation
-- 庙不可言 - 07
-- 其实我是最强的？ - 05 animation
-- 死神少爷与黑女仆 (Part1+2) - 12+06 animation
-- 真阳武神 - 08
-- 政宗君的复仇 (Part1+2) - 12+07 1451 animation
+- 庙不可言 - 08
+- 其实我是最强的？ - 07
+- 死神少爷与黑女仆 (Part1+2) - 12+08
+- 真阳武神 - 09
+- 政宗君的复仇 (Part1+2) - 12+09
 - 公司里的小小前辈 - 07
 - 满怀美梦的少年是现实主义者 - 09
 - 堕玄师 - 10
@@ -520,7 +520,7 @@
 - 刀剑神域(boring)
 
 ### Movie
-- The Truman Show / 楚门的世界 005542
+- The Truman Show / 楚门的世界 010553
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
 - Ready Player One / 头号玩家 # Punk defeats Cyber
