@@ -10,14 +10,12 @@
 - Spy Room / 间谍教室 - 02 animation
 - Rurouni Kenshin / 浪客剑心 - 05 animation
 - Link Click / 时光代理人 (Part1+2) - 11+08
-- 能干的猫今天也忧郁 - 04 animation
-- 转生成自动贩卖机的我今天也在迷宫徘徊 - 08
-- 圣者无双～上班族、在异世界的存活之道 - 08
-- AI电子基因 - 07
-- 虽然等级只有1级但固有技能是最强的 - 07
-- My Adventures With Superman / 我与超人的冒险 - 08
-- 永生 (Part1+2) - 12+08
-- 堀与宫村 (Part1+2) - 10+05 animation
+- 能干的猫今天也忧郁 - 07 1617
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 09
+- 圣者无双～上班族、在异世界的存活之道 - 09
+- AI电子基因 - 08
+- 虽然等级只有1级但固有技能是最强的 - 09
+- 永生 (Part1+2) - 12+10
 - 庙不可言 - 08
 - 其实我是最强的？ - 07
 - 死神少爷与黑女仆 (Part1+2) - 12+08
@@ -258,6 +256,8 @@
 - guard(end)
 
 ### Animation
+- My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
+- 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
 - 五行战神 - 21 # Resources loading freezes
 - 镖人 - 15 # End of the first part
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
@@ -520,7 +520,7 @@
 - 刀剑神域(boring)
 
 ### Movie
-- The Truman Show / 楚门的世界 010553
+- The Truman Show / 楚门的世界 # Just keep looking and you will find the life you want
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
 - Ready Player One / 头号玩家 # Punk defeats Cyber
