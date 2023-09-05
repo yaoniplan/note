@@ -7,10 +7,9 @@
 - My Happy Marriage / 我的幸福婚约 - 08
 - 山海际会 - 22
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05
-- Spy Room / 间谍教室 - 02 animation
-- Rurouni Kenshin / 浪客剑心 - 05 animation
-- Link Click / 时光代理人 (Part1+2) - 11+08
-- 能干的猫今天也忧郁 - 07 1617
+- Spy Room / 间谍教室 - 03 1317 animation
+- Link Click / 时光代理人 (Part1+2) - 11+09
+- 能干的猫今天也忧郁 - 09
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 09
 - 圣者无双～上班族、在异世界的存活之道 - 09
 - AI电子基因 - 08
@@ -256,6 +255,7 @@
 - guard(end)
 
 ### Animation
+- Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
 - My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
 - 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
 - 五行战神 - 21 # Resources loading freezes
@@ -520,6 +520,9 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Joker / 小丑 003836
+    - https://www.4kvm.net/movies/小丑
+    - https://xiaobaotv.net/index.php/vod/detail/id/20281.html
 - The Truman Show / 楚门的世界 # Just keep looking and you will find the life you want
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
