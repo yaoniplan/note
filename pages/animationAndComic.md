@@ -520,9 +520,10 @@
 - 刀剑神域(boring)
 
 ### Movie
-- Joker / 小丑 003836
-    - https://www.4kvm.net/movies/小丑
-    - https://xiaobaotv.net/index.php/vod/detail/id/20281.html
+- https://www.wangfei.de/
+- EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
+- Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
+- Joker / 小丑 # What should people at the bottom of society do to become happy?
 - The Truman Show / 楚门的世界 # Just keep looking and you will find the life you want
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
