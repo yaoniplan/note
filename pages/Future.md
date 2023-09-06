@@ -77,10 +77,11 @@ http://natas9.natas.labs.overthewire.org
 - http://eroanimedougakan.blog.fc2.com/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
+- http://www.aabamh.com
+- https://toptoon.life
 - http://www.p5mh.com/
 - https://nnhanman.com
 - https://www.yeseimg.com/
-- http://www.dmd85.com/
 
 ## Programming
 - https://www.shiyanlou.com/
