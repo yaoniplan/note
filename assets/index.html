@@ -4552,9 +4552,14 @@ services:
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>192.168.10.100:5230</code> # Run in Chromium</li>
+<li>Warning: Vercel is used to deploy static websites. (Like GitHub Pages)<ul>
+<li>Cannot run Docker image</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/usememos/memos/issues/1975#issuecomment-1656998750">https://github.com/usememos/memos/issues/1975#issuecomment-1656998750</a></li>
 <li><a href="https://usememos.com/docs/install/docker#docker-compose">https://usememos.com/docs/install/docker#docker-compose</a></li>
 </ul>
 </li>
@@ -5255,8 +5260,14 @@ sleep &quot;$1&quot;; notification
 <li><code>about:preferences</code> # Type &#39;version&#39; to check it</li>
 <li><code>about:addons</code></li>
 <li><code>about:profiles</code></li>
+<li><code>about:privatebrowsing</code> # Then click &#39;Open a Private Window&#39;</li>
+<li><code>Ctrl-Shift-p</code> # The same as the action above</li>
 </ul>
 </li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -7751,11 +7762,6 @@ yaoniplan # Username
 /mnt/grow # Root folder path
 </code></pre>
 </li>
-<li>139Yun<pre><code>/chinaMobile # Mount Path
-useYourChromiumToGet # Authorization
-useYourChromiumToGet # Root folder id
-</code></pre>
-</li>
 <li>AliyundriveOpen<pre><code>/ # Mount Path
 useYourPhoneToGet # Refresh token
 Name # Order by
@@ -7803,7 +7809,6 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://alist.nn.ci/guide/drivers/139.html#cloud-id">https://alist.nn.ci/guide/drivers/139.html#cloud-id</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml">https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
@@ -9192,12 +9197,11 @@ version for the right syntax to use near
 <ul>
 <li><h4 id="use-base64-to-decode">Use base64 to decode</h4>
 <ul>
-<li><code>echo &quot;b3ViV1lmMmtCcQ==&quot; | base64 -d</code></li>
+<li><code>echo &quot;b3ViV1lmMmtCcQ==&quot; | base64 --decode</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>|</code> # Redirect the output</li>
-<li><code>-d</code> # Decode</li>
 <li>Because to pass the Natas8 level of overthewire.org.</li>
 </ul>
 </li>
