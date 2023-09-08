@@ -675,6 +675,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4 id="some-tips-in-iphone-14-pro">Some tips in iPhone 14 Pro</h4>
 <ul>
+<li>Maps<ul>
+<li>Double-click the navigation icon in upper right corner (Combine compass)</li>
+</ul>
+</li>
 <li>Shortcuts<ul>
 <li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
 <li>The add icon - Add Action - Apps - Shadowrocket - Start Shadowrocket - done</li>
@@ -8096,13 +8100,14 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-curl">Use curl</h4>
+<li><h4 id="use-curl">Use &quot;curl&quot;</h4>
 <ul>
 <li><code>curl -v yaoniplan.eu.org</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-v</code> # Verbose</li>
+<li><code>--max-time 10</code> # Stop the curl command after 10 seconds</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -9708,6 +9713,7 @@ Unit ssh.service could not be found.
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>xclip -selection clipboard</code> # The same as <code>xsel --input --clipboard</code></li>
+<li><code>mpv --speed=2 --fullscreen --mute=yes $(xsel --output --clipboard)</code> # Paste by default</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>

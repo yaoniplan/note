@@ -1,22 +1,22 @@
 ### "Animation"
 - 第一序列 - 09
-- 僵尸百分百～在变成僵尸之前想做的100件事～ - 06
-- 虫王战队超王者 - 19 animation
-- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+07
-- 四格勇者 - 08
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 07
+- 虫王战队超王者 - 27
+- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+08
+- 四格勇者 - 09
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
-- My Happy Marriage / 我的幸福婚约 - 08
-- 山海际会 - 22
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+05
+- My Happy Marriage / 我的幸福婚约 - 10
+- 山海际会 - 24
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+07
 - Spy Room / 间谍教室 - 08 animation
-- Link Click / 时光代理人 (Part1+2) - 11+09
+- Link Click / 时光代理人 (Part1+2) - 11+10
 - 能干的猫今天也忧郁 - 09
-- 转生成自动贩卖机的我今天也在迷宫徘徊 - 09
-- 圣者无双～上班族、在异世界的存活之道 - 09
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 10
+- 圣者无双～上班族、在异世界的存活之道 - 10
 - AI电子基因 - 08
 - 虽然等级只有1级但固有技能是最强的 - 09
 - 永生 (Part1+2) - 12+10
-- 庙不可言 - 08
+- 庙不可言 - 08 animation
 - 其实我是最强的？ - 07
 - 死神少爷与黑女仆 (Part1+2) - 12+08
 - 真阳武神 - 09
@@ -521,6 +521,8 @@
 - 刀剑神域(boring)
 
 ### Movie
+- 星际效应
+- 天能
 - https://www.wangfei.de/
 - EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
 - Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
