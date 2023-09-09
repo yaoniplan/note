@@ -24,18 +24,18 @@
 - 公司里的小小前辈 - 08
 - 满怀美梦的少年是现实主义者 - 10
 - 堕玄师 - 11
-- 沧元图 - 12 animation
-- 大主宰 - 12
+- 沧元图 - 13
+- 大主宰 - 13
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 不灭神王 - 19
-- 仙武传 - 25
-- 遮天 - 20
-- 炼气十万年 - 59
-- 百炼成神 - 45
-- 灵剑尊 - 240/414
-- 武神主宰 - 192/363
+- 仙武传 - 26
+- 遮天 - 21
+- 炼气十万年 - 62
+- 百炼成神 - 46
+- 灵剑尊 - 240/416
+- 武神主宰 - 192/363 animation
 - 独步逍遥 - 168/343
 - 完美世界 - 38/125
 - Against the Sky Supreme / 逆天至尊 - 227
@@ -521,8 +521,7 @@
 - 刀剑神域(boring)
 
 ### Movie
-- 星际效应
-- 天能
+- Interstellar / 星际效应 # 001534
 - https://www.wangfei.de/
 - EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
 - Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
