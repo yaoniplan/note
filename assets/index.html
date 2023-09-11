@@ -39,6 +39,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="become-a-real-rich-man">Become a &quot;real rich man&quot;</h4>
+<ul>
+<li>Meditate &quot;I am a real rich man&quot; in your heart</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Treat all people and things with the standard</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>``</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="understand-three-laws-of-robotics">Understand &quot;Three Laws of Robotics&quot;</h4>
 <ol start="0">
 <li>Not injure humanity</li>
@@ -778,9 +794,12 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Traffic police gesture</li>
 </ul>
 </li>
+<li><code>Subject two</code> # Practice driving, examination room simulation, and two exam opportnities (2023-09-11)</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Bring ID card before the exam</li>
+<li>Pay after each exam appointment</li>
 <li>Because to prepare for posts that need a driver&#39;s license.</li>
 </ul>
 </li>
@@ -10434,8 +10453,7 @@ cp ./* ~/.local/share/rofi/themes/
 </li>
 </ul>
 </li>
-<li><p><em><strong>Notes</strong></em></p>
-<ul>
+<li><em><strong>Notes</strong></em><ul>
 <li><code>97671e3:index.html</code> # Get it by using the following command<ul>
 <li><code>git log -1 --name-only</code></li>
 </ul>
@@ -10457,25 +10475,26 @@ nameserver 8.8.8.8
 </li>
 </ul>
 </li>
-<li>Solve the problem<pre><code>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ dotfiles push origin development
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+yaoniplan@tux ~ $
+</code></pre>
+<ul>
+<li><code>vi ~/.ssh/config</code><pre><code>Host github.com
+  Hostname ssh.github.com
+  Port 443
 </code></pre>
 </li>
+<li><code>ssh -T git@github.com</code></li>
 </ul>
-<p>   yaoniplan@tux ~ $ dotfiles push origin development
-   ssh: connect to host github.com port 22: Connection timed out
-   fatal: Could not read from remote repository.</p>
-<p>   Please make sure you have the correct access rights
-   and the repository exists.
-   yaoniplan@tux ~ $
-    <code>      - `vi ~/.ssh/config`        </code>
-        Host github.com
-          Hostname ssh.github.com
-          Port 443
-        ```
-      - <code>ssh -T git@github.com</code></p>
 </li>
-<li><p><em><strong>References</strong></em></p>
-<ul>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
 <li><a href="https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794">https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794</a></li>
 <li><a href="https://hedzr.com/devops/git/git-tips-ls-tree-or-files/">https://hedzr.com/devops/git/git-tips-ls-tree-or-files/</a></li>
 <li><a href="https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911">https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911</a></li>

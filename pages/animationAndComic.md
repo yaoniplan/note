@@ -521,8 +521,12 @@
 - 刀剑神域(boring)
 
 ### Movie
-- Interstellar / 星际效应 # 001534
-- https://www.wangfei.de/
+- 大佛普拉斯
+- 同学麦娜丝
+- 本杰明巴顿奇事
+- https://movie.douban.com/top250
+- Oppenheimer / 奥本海默 # Do not forget who we are when making a significant contribution
+- Interstellar / 星际效应 # Do meaningful things
 - EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
 - Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
 - Joker / 小丑 # What should people at the bottom of society do to become happy?
