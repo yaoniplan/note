@@ -39,6 +39,45 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="the-abbreviation-of-music-video-is-mv">The abbreviation of &quot;music video&quot; is &quot;MV&quot;.</h4>
+<ul>
+<li>Marketing</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Most pop music has MVs.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Music_video">https://en.wikipedia.org/wiki/Music_video</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-tailscale">Use &quot;tailscale&quot;</h4>
+<ul>
+<li><code>doas tailscale up --accept-dns=false --advertise-rroutes=192.168.10.0/24</code></li>
+<li><a href="https://login.tailscale.com/admin/machines">https://login.tailscale.com/admin/machines</a> # Open in web browser<ul>
+<li>Click on &#39;192.168.10.0/24&#39; of &#39;Subnet routes&#39; in &#39;Edit route settings of server&#39;</li>
+<li>Click on &#39;Disable key expiry&#39; to extend time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas pacman --sync tailscale</code> # Install the dependencies</li>
+<li><code>doas systemctl enable --now tailscaled</code> # Enable daemon now and at boot</li>
+<li>Install this app for each device (e.g. Linux, Android, iPhone, etc.) you want to connect</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/adyanth/openwrt-tailscale-enabler#readme">https://github.com/adyanth/openwrt-tailscale-enabler#readme</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="become-a-real-rich-man">Become a &quot;real rich man&quot;</h4>
 <ul>
 <li>Meditate &quot;I am a real rich man&quot; in your heart</li>
@@ -1861,6 +1900,7 @@ Gateway=192.168.10.1
 <li><h4 id="use-links">Use &quot;links&quot;</h4>
 <ul>
 <li><code>links yaoniplan.eu.org</code></li>
+<li><code>links -dump https://example.com &gt; output.txt</code> # Save as a text file</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -4779,6 +4819,7 @@ services:
 <li><code>docker-compose up --detach</code></li>
 </ul>
 </li>
+<li><code>docker-compose logs</code> # View logs</li>
 <li><code>docker-compose stop</code> # Stop</li>
 <li><code>docker-compose down</code> # Stop and remove containers</li>
 <li><code>docker-compose restart</code> # Restart</li>
