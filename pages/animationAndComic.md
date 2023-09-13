@@ -521,9 +521,8 @@
 - 刀剑神域(boring)
 
 ### Movie
-- 大佛普拉斯
-- 同学麦娜丝
-- 本杰明巴顿奇事
+- Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
+- 同学麦娜丝 #NSFW
 - https://movie.douban.com/top250
 - Oppenheimer / 奥本海默 # Do not forget who we are when making a significant contribution
 - Interstellar / 星际效应 # Do meaningful things
