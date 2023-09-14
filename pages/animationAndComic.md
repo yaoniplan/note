@@ -521,6 +521,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
 - Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
 - 同学麦娜丝 #NSFW
 - https://movie.douban.com/top250
