@@ -40,6 +40,63 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="add-an-icon-to-a-website">Add an icon to a website</h4>
+<ul>
+<li><code>vi ~/note/index.html</code><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel=&quot;icon&quot; href=&quot;../assets/favicon.png&quot; type=&quot;image/png&quot;&gt;
+  ...
+&lt;head&gt;
+...
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>../assets/favicon.png</code> # Replace it with path to your favicon file</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-slash">Use &quot;slash&quot;</h4>
+<ul>
+<li><code>192.168.10.100:5231</code> # Open in web browser</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/.config/slash/docker-compose.yml</code><pre><code>version: &#39;3&#39;
+services:
+  slash:
+    image: yourselfhosted/slash:latest
+    container_name: slash
+    ports:
+      - 5231:5231
+    volumes:
+      - slash:/var/opt/slash
+    restart: unless-stopped
+
+volumes:
+  slash:
+</code></pre>
+<ul>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/boojack/slash/blob/main/docker-compose.yml">https://github.com/boojack/slash/blob/main/docker-compose.yml</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="the-abbreviation-of-music-video-is-mv">The abbreviation of &quot;music video&quot; is &quot;MV&quot;.</h4>
 <ul>
 <li>Marketing</li>
@@ -4497,7 +4554,7 @@ compression_level = 1
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-reader-in-docker-compose">Use &quot;reader&quot; in Docker-compose</h4>
+<li><h4 id="use-reader">Use &quot;reader&quot;</h4>
 <ul>
 <li><code>vim ~/.config/reader/docker-compose.yml</code><pre><code>version: &#39;3.1&#39;
 services:
@@ -10510,7 +10567,13 @@ and the repository exists.
 yaoniplan@tux ~ $ 
 </code></pre>
 <ul>
-<li><code>doas vi /etc/resolv.conf</code><pre><code>nameserver 8.8.4.4
+<li>Method one<pre><code>nmcli connection show # Get NAME (e.g. eno1)
+nmcli connection modify eno1 ipv4.dns &quot;8.8.4.4 8.8.8.8&quot;
+nmcli connection modify eno1 ipv6.dns &quot;2001:4860:4860::8844 2001:4860:4860::8888&quot;
+doas systemctl restart NetworkManager # Make changes effective
+</code></pre>
+</li>
+<li><code>doas vi /etc/resolv.conf</code> # Method two that the file will be cleared by NetworkManager sometimes<pre><code>nameserver 8.8.4.4
 nameserver 8.8.8.8
 </code></pre>
 </li>
