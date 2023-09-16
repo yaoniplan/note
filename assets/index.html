@@ -8045,6 +8045,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 <ul>
 <li><h4 id="use-docker">Use &quot;docker&quot;</h4>
 <ul>
+<li><code>docker logs searxng</code> # The same as <code>docker-compose logs</code></li>
 <li><code>docker container prune</code> # Prune stopped containers</li>
 <li><code>docker ps --format &quot;{{.ID}} {{.Ports}}&quot;</code> # To write a conditional judgement</li>
 <li><code>docker stop a3a15b7a4419 &amp;&amp; docker rm a3a15b7a4419</code> # Stop and remove a container<ul>
@@ -8056,6 +8057,16 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 </li>
 <li><code>docker search clash</code> # Search to get the full name</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Push Docker image to Docker Hub<ul>
+<li><code>docker build --tag yaoniplan/note:latest +%F) ~/note/</code> # In path including Dockerfile</li>
+<li><code>docker tag yaoniplan/note:latest yaoniplan/note:$(date +%F)</code> # Create a tag</li>
+<li><code>docker push yaoniplan/note:latest</code> # Push the date-tagged image</li>
+<li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the latest-tagged image</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>

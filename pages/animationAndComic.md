@@ -5,13 +5,11 @@
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+09
 - 四格勇者 - 10
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
-- My Happy Marriage / 我的幸福婚约 - 11 1900 animation
-- 山海际会 - 24
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+07
-- Spy Room / 间谍教室 - 08 animation
-- Link Click / 时光代理人 (Part1+2) - 11+10
-- 能干的猫今天也忧郁 - 09
-- 转生成自动贩卖机的我今天也在迷宫徘徊 - 10
+- My Happy Marriage / 我的幸福婚约 - 11
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+08
+- Link Click / 时光代理人 (Part1+2) - 11+11
+- The Masterful cat Is Depressed Again Today / 能干的猫今天也忧郁 - 10
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 11
 - 圣者无双～上班族、在异世界的存活之道 - 10
 - AI电子基因 - 08
 - 虽然等级只有1级但固有技能是最强的 - 09
@@ -256,6 +254,8 @@
 - guard(end)
 
 ### Animation
+- Spy Room / 间谍教室 - 08 # The plot is gentle
+- 山海际会 - 25 # End of the first part
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
 - My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
 - 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
