@@ -40,6 +40,37 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-watchtower">Use &quot;watchtower&quot;</h4>
+<ul>
+<li>Because to update Docker containers automatically</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/.config/watchtower</code><pre><code>version: &#39;3&#39;
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 3600
+</code></pre>
+<ul>
+<li><code>3600</code> # Replace it with your desired seconds</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/containrrr/watchtower/discussions/1689">https://github.com/containrrr/watchtower/discussions/1689</a></li>
+<li><a href="https://ryanccn.dev/posts/vps-docker-compose-traefik/#watchtower">https://ryanccn.dev/posts/vps-docker-compose-traefik/#watchtower</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="add-an-icon-to-a-website">Add an icon to a website</h4>
 <ul>
 <li><code>vi ~/note/index.html</code><pre><code>&lt;!DOCTYPE html&gt;
@@ -7891,7 +7922,7 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-alist-in-docker">Use &quot;AList&quot; in Docker</h4>
+<li><h4 id="use-alist">Use &quot;alist&quot;</h4>
 <ul>
 <li>SFTP<pre><code>/grow # Mount Path
 Name # Order by
@@ -8063,8 +8094,8 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 <li>Push Docker image to Docker Hub<ul>
 <li><code>docker build --tag yaoniplan/note:latest +%F) ~/note/</code> # In path including Dockerfile</li>
 <li><code>docker tag yaoniplan/note:latest yaoniplan/note:$(date +%F)</code> # Create a tag</li>
-<li><code>docker push yaoniplan/note:latest</code> # Push the date-tagged image</li>
-<li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the latest-tagged image</li>
+<li><code>docker push yaoniplan/note:latest</code> # Push the latest-tagged image</li>
+<li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the date-tagged image</li>
 </ul>
 </li>
 </ul>

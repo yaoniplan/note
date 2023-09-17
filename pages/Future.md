@@ -104,6 +104,7 @@ http://natas9.natas.labs.overthewire.org
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 
 ## Artificial intelligence
+- https://bard.google.com/
 - https://github.com/xx025/carrot
 - https://github.com/lzwme/chatgpt-sites
 - https://c.binjie.fun/#/chat/1688452827209
