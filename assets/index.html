@@ -4615,15 +4615,6 @@ services:
     restart: always
     environment:
       - TZ=Asia/Shanghai
-  watchtower:
-    image: containrrr/watchtower
-    container_name: watchtower
-    restart: always
-    environment:
-        - TZ=Asia/Shanghai
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: reader readerwebview watchtower --cleanup --schedule &quot;0 0 4 * * *&quot;
 volumes:
   reader:
   readerwebview:
@@ -8092,7 +8083,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Push Docker image to Docker Hub<ul>
-<li><code>docker build --tag yaoniplan/note:latest +%F) ~/note/</code> # In path including Dockerfile</li>
+<li><code>docker build --tag yaoniplan/note:latest ~/note/</code> # In path including Dockerfile</li>
 <li><code>docker tag yaoniplan/note:latest yaoniplan/note:$(date +%F)</code> # Create a tag</li>
 <li><code>docker push yaoniplan/note:latest</code> # Push the latest-tagged image</li>
 <li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the date-tagged image</li>

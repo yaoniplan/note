@@ -12,9 +12,8 @@
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 11
 - 圣者无双～上班族、在异世界的存活之道 - 11
 - AI电子基因 - 10
-- 虽然等级只有1级但固有技能是最强的 - 09 animation
-- 永生 (Part1+2) - 12+10
-- 庙不可言 - 09
+- 虽然等级只有1级但固有技能是最强的 - 11
+- 庙不可言 - 10 animation
 - 其实我是最强的？ - 08
 - The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+09
 - 真阳武神 - 10
@@ -254,6 +253,7 @@
 - guard(end)
 
 ### Animation
+- 永生 (Part1+2) - 12+10 # End of the second part
 - Spy Room / 间谍教室 - 08 # The plot is gentle
 - 山海际会 - 25 # End of the first part
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
