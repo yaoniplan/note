@@ -7934,7 +7934,24 @@ Ascending # Order direction
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Install AList if you don&#39;t have it<ul>
-<li><code>docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name=&quot;alist&quot; xhofe/alist:latest</code></li>
+<li><code>vi ~/.config/alist/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
+services:
+  alist:
+    restart: always
+    volumes:
+      - &#39;~/.config/alist:/opt/alist/data&#39;
+    ports:
+      - &#39;5244:5244&#39;
+      - &#39;5245:5245&#39;
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      - TZ=UTC
+    container_name: alist
+    image: &#39;xhofe/alist:latest&#39;
+</code></pre>
+</li>
 <li><code>docker exec -i -t alist ./alist admin</code> # Get admin user&#39;s information</li>
 </ul>
 </li>
@@ -7971,6 +7988,7 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/alist-org/alist/blob/main/docker-compose.yml">https://github.com/alist-org/alist/blob/main/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml">https://github.com/alist-org/alist/blob/340cb940e321acb19754ccb0c4bb6df0ce29b2be/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
