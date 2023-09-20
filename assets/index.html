@@ -46,7 +46,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vi ~/.config/watchtower</code><pre><code>version: &#39;3&#39;
+<li><code>vi ~/.config/watchtower/docker-compose.yml</code><pre><code>version: &#39;3&#39;
 services:
   watchtower:
     image: containrrr/watchtower
@@ -54,9 +54,12 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/localtime:/etc/localtime:ro
     command: --interval 3600
 </code></pre>
 <ul>
+<li><code>/etc/localtime:/etc/localtime:ro</code> # Synchonize the time zone (Between host and Docker container)</li>
+<li><code>ro</code> # Read-only</li>
 <li><code>3600</code> # Replace it with your desired seconds</li>
 </ul>
 </li>
