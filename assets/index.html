@@ -40,6 +40,27 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="rename-file-in-batches">Rename file in batches</h4>
+<ul>
+<li><code>for file in *.m4a; do mv &quot;$file&quot; &quot;$(echo &quot;$file&quot; | sed -E &#39;s/\[[0-9]+\]//g&#39;)&quot;; done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-E</code> # Extended regular expressions</li>
+<li><code>[0-9]</code> # Any single digit from 0 to 9</li>
+<li><code>+</code> # One or more times</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-09-21_10-07.png" alt="2023-09-21_10-07.png"></li>
+<li><code>yt-dlp --output &quot;%(title)s.%(ext)s&quot; https://www.ximalaya.com/album/31923706</code></li>
+<li><code>man sed</code> # <code>/-E</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-watchtower">Use &quot;watchtower&quot;</h4>
 <ul>
 <li>Because to update Docker containers automatically</li>
@@ -149,7 +170,7 @@ volumes:
 <ul>
 <li><h4 id="use-tailscale">Use &quot;tailscale&quot;</h4>
 <ul>
-<li><code>doas tailscale up --accept-dns=false --advertise-rroutes=192.168.10.0/24</code></li>
+<li><code>doas tailscale up --accept-dns=false --advertise-routes=192.168.10.0/24</code></li>
 <li><a href="https://login.tailscale.com/admin/machines">https://login.tailscale.com/admin/machines</a> # Open in web browser<ul>
 <li>Click on &#39;192.168.10.0/24&#39; of &#39;Subnet routes&#39; in &#39;Edit route settings of server&#39;</li>
 <li>Click on &#39;Disable key expiry&#39; to extend time</li>
@@ -13706,10 +13727,15 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><em><strong>Notes</strong></em><ul>
 <li><code>zip</code><ul>
 <li><code>doas emerge -aq zip</code> # Install it if you do not have it</li>
+<li><code>nix-shell --packages zip</code> # Method two</li>
 </ul>
 </li>
 <li><code>-r</code> # Recursive</li>
 <li><code>wallpaper/</code> # A folder you want to compress</li>
+<li><code>zip -er 21.zip 00*</code><ul>
+<li><code>-e</code> # Encrypt</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
