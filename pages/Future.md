@@ -113,8 +113,6 @@ http://natas9.natas.labs.overthewire.org
 
 ## Web crawler
 - https://www.alipansou.com/
-- https://yougit.net/
-- https://pan.ccof.cc/
 - https://www.upyunso.com/
 - https://feiyu100.cn/
 - https://www.panpanr.com/

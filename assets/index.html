@@ -40,6 +40,31 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-ish">Use &quot;ish&quot;</h4>
+<ul>
+<li><code>df -h</code> # Check disk free</li>
+<li><code>id / whoami</code> # Check current user</li>
+<li>Use ssh<pre><code>apk update &amp;&amp; apk upgrade # Refresh
+apk add openssh-client # Install dependencies (e.g. openssh)
+useradd yaoniplan &amp;&amp; su yaoniplan # Add and substitute a user
+ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication keys for ssh and connect server
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>apk update &amp;&amp; apk upgrade</code> # Run before using and make sure free access to the internet</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.youtube.com/watch?v=-VBMYK3Sy54">https://www.youtube.com/watch?v=-VBMYK3Sy54</a></li>
+<li><a href="https://www.youtube.com/watch?v=R44NXv7QUek">https://www.youtube.com/watch?v=R44NXv7QUek</a></li>
+<li><code>man ssh-keygen</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="rename-file-in-batches">Rename file in batches</h4>
 <ul>
 <li><code>for file in *.m4a; do mv &quot;$file&quot; &quot;$(echo &quot;$file&quot; | sed -E &#39;s/\[[0-9]+\]//g&#39;)&quot;; done</code></li>
@@ -4719,7 +4744,7 @@ volumes:
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-memos-in-docker-compose">Use &quot;memos&quot; in Docker-compose</h4>
+<li><h4 id="use-memos">Use &quot;memos&quot;</h4>
 <ul>
 <li><code>vim ~/.config/memos/docker-compose.yml</code><pre><code>version: &quot;3.0&quot;
 services:

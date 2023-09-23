@@ -1,4 +1,7 @@
 ### "Animation"
+- learnC - 16 0714
+- A brief history - 13
+- top10ModelsOfDeepThinking # 08
 - 第一序列 - 10
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 07
 - 虫王战队超王者 - 28
@@ -22,16 +25,12 @@
 - 满怀美梦的少年是现实主义者 - 12
 - 堕玄师 - 13
 - 沧元图 - 15
-- 大主宰 - 13
-- learnC - 16 0714
-- A brief history - 13
-- top10ModelsOfDeepThinking # 08
+- 大主宰 - 14
 - 不灭神王 - 19
-- 仙武传 - 26
-- 遮天 - 21
-- 炼气十万年 - 62
-- 百炼成神 - 46
-- 灵剑尊 - 240/416
+- 遮天 - 23
+- 炼气十万年 - 65
+- 百炼成神 - 48
+- 灵剑尊 - 240/420
 - 武神主宰 - 192/365
 - 独步逍遥 - 168/345
 - 完美世界 - 38/127
@@ -253,6 +252,7 @@
 - guard(end)
 
 ### Animation
+- 仙武传 - 26 # End of the first part
 - 永生 (Part1+2) - 12+10 # End of the second part
 - Spy Room / 间谍教室 - 08 # The plot is gentle
 - 山海际会 - 25 # End of the first part
