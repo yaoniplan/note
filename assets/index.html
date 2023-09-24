@@ -43,23 +43,37 @@
 <li><h4 id="use-ish">Use &quot;ish&quot;</h4>
 <ul>
 <li><code>df -h</code> # Check disk free</li>
-<li><code>id / whoami</code> # Check current user</li>
-<li>Use ssh<pre><code>apk update &amp;&amp; apk upgrade # Refresh
-apk add openssh-client # Install dependencies (e.g. openssh)
+<li><code>id</code> # Check current user (Like <code>whoami</code>)</li>
+<li>Connect to your server<pre><code>apk add openssh # Install dependencies
 useradd yaoniplan &amp;&amp; su yaoniplan # Add and substitute a user
-ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication keys for ssh and connect server
+ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication keys for ssh and then connect
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>apk update &amp;&amp; apk upgrade</code> # Run before using and make sure free access to the internet</li>
+<li>Terminate SSH connection<ul>
+<li><code>Ctrl-b d</code> # Detach the current session if using tmux</li>
+<li><code>logout</code> # Exit the login shell</li>
+</ul>
+</li>
+<li><code>vi /etc/apk/repositories</code> # Set mirror<pre><code>https://mirrors.ustc.edu.cn/alpine/latest-stable/main
+https://mirrors.ustc.edu.cn/alpine/latest-stable/community
+</code></pre>
+<ul>
+<li><code>apk update</code> # Update repository indexes to take effect</li>
+</ul>
+</li>
+<li><code>apk update &amp;&amp; apk upgrade</code> # Run before installing packages (Make sure free access to the internet)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/alpine.html">https://mirrors.ustc.edu.cn/help/alpine.html</a></li>
 <li><a href="https://www.youtube.com/watch?v=-VBMYK3Sy54">https://www.youtube.com/watch?v=-VBMYK3Sy54</a></li>
 <li><a href="https://www.youtube.com/watch?v=R44NXv7QUek">https://www.youtube.com/watch?v=R44NXv7QUek</a></li>
+<li><code>apk -h</code></li>
 <li><code>man ssh-keygen</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -104,7 +118,7 @@ services:
     command: --interval 3600
 </code></pre>
 <ul>
-<li><code>/etc/localtime:/etc/localtime:ro</code> # Synchonize the time zone (Between host and Docker container)</li>
+<li><code>/etc/localtime:/etc/localtime</code> # Synchonize the time zone (Between host and Docker container)</li>
 <li><code>ro</code> # Read-only</li>
 <li><code>3600</code> # Replace it with your desired seconds</li>
 </ul>
@@ -2055,7 +2069,7 @@ Gateway=192.168.10.1
 <li><code>n</code> # Next</li>
 </ul>
 </li>
-<li><code>yaoniplan.eu.org</code> # Replace it with your desired URL (e.g. <em>suckless.org</em>)<ul>
+<li><code>yaoniplan.eu.org</code> # Replace it with your desired URL (e.g. <em>suckless.org</em>, <em>192.168.10.100:2003</em>, etc.)<ul>
 <li><code>~/note/assets/index.html</code> # Local HTML file is also fine</li>
 </ul>
 </li>
@@ -8001,6 +8015,7 @@ services:
     image: &#39;xhofe/alist:latest&#39;
 </code></pre>
 </li>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
 <li><code>docker exec -i -t alist ./alist admin</code> # Get admin user&#39;s information</li>
 </ul>
 </li>
