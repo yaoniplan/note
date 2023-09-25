@@ -509,6 +509,7 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: This method is only suitable for small files.</li>
 <li><code>/mnt/grow/</code> # Replace it with the directory you want to share</li>
 <li><code>http://192.168.10.105:8080</code> # View it in local area network</li>
 <li><code>nix shell nixpkgs#python310Packages.httpserver</code> # Install dependencies temporarily</li>
@@ -4791,18 +4792,19 @@ services:
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-microbin-in-docker-compose">Use &quot;MicroBin&quot; in Docker-compose</h4>
+<li><h4 id="use-microbin">Use &quot;microbin&quot;</h4>
 <ul>
 <li><code>vim ~/.config/microbin/docker-compose.yml</code><pre><code>version: &#39;3&#39;
 
 services:
-  paste:
+  microbin:
     image: danielszabo99/microbin
+    container_name: microbin
     restart: always
     ports:
-      - &quot;80:8080&quot;
+      - &quot;31000:8080&quot;
     volumes:
-      - ~/.config/microbin:/app/pasta_data
+      - ./microbin_data:/app/microbin_data
     command: [&quot;--highlightsyntax&quot;, &quot;--private&quot;]
 </code></pre>
 </li>
@@ -4810,13 +4812,14 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>192.168.10.100</code> # Run in Chromium</li>
+<li>Warning: Feature copy text does not work</li>
+<li><code>192.168.10.100:31000</code> # Run in web browser</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275">https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275</a></li>
+<li><a href="https://github.com/szabodanika/microbin/blob/master/compose.yaml">https://github.com/szabodanika/microbin/blob/master/compose.yaml</a></li>
 <li>ChatGPT</li>
-<li><a href="https://microbin.eu/quickstart/">https://microbin.eu/quickstart/</a></li>
-<li><a href="https://microbin.eu/documentation/">https://microbin.eu/documentation/</a></li>
 </ul>
 </li>
 </ul>
