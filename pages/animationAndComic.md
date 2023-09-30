@@ -1,4 +1,5 @@
 ### "Animation"
+- https://gist.github.com/IsaacXen/874c59aec92a13f30728aecdabb9ea80#file-hls-only # 2020 00:58:46
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
