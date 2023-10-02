@@ -1839,13 +1839,13 @@ COPY . /usr/share/nginx/html/
 </code></pre>
 </li>
 <li><code>docker build --tag yaoniplan ~/note/</code> # Build a Docker image</li>
-<li><code>docker run --publish 8000:80 yaoniplan</code> # Run the Docker container</li>
-<li><code>192.168.10.105:8000</code> # Run in Chromium</li>
+<li><code>docker run --detach --publish 2003:80 yaoniplan</code> # Run the Docker container</li>
+<li><code>192.168.10.105:2003</code> # Run in Chromium</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>yaoniplan</code> # Replace it with your desired name</li>
-<li><code>8000</code> # Replace it with your desired port</li>
+<li><code>2003</code> # Replace it with your desired port</li>
 <li>Update it<ul>
 <li><code>docker build --tag yaoniplan:0.0.1 note/</code></li>
 </ul>
@@ -3898,12 +3898,13 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <ul>
 <li><h4 id="clone-a-development-branch-of-repository-with-git">Clone a development branch of repository with Git</h4>
 <ul>
-<li><code>git clone -b development git@192.168.10.100:/var/git/note.git</code></li>
+<li><code>git clone -b development git@192.168.10.100:/var/git/bookmark.git/ ~/.config/bookmark/</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-b</code> # Branch</li>
 <li><code>development</code> # Replace it with your branch name</li>
+<li><code>~/.config/bookmark/</code> # Replace it with destination path (Optional)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -8158,6 +8159,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 <ul>
 <li><h4 id="use-docker">Use &quot;docker&quot;</h4>
 <ul>
+<li><code>docker images nginx</code> # Check the size of an image</li>
 <li><code>docker logs searxng</code> # The same as <code>docker-compose logs</code></li>
 <li><code>docker container prune</code> # Prune stopped containers</li>
 <li><code>docker ps --format &quot;{{.ID}} {{.Ports}}&quot;</code> # To write a conditional judgement</li>
@@ -13821,21 +13823,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><img src="../assets/image_1669358913831_0.png" alt="image.png"></li>
 <li><a href="https://www.ventoy.net/en/plugin_plugson.html">https://www.ventoy.net/en/plugin_plugson.html</a></li>
 <li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<hr>
-<ul>
-<li>Superscripted #Markdown<ul>
-<li><code>$2^0$ + $2^1$ + $2^2$</code></li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1668673468941_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1668673541829_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1668673233635_0.png" alt="image.png"></li>
-<li><a href="https://www.jianshu.com/p/4d823d1b9c71">Markdown数学公式 - 简书</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

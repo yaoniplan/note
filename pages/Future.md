@@ -84,7 +84,6 @@ http://natas9.natas.labs.overthewire.org
 - https://www.yeseimg.com/
 
 ## Programming
-- https://www.shiyanlou.com/
 - https://www.w3schools.com/
 - https://www.theodinproject.com/
 - https://www.codecademy.com/
@@ -102,6 +101,7 @@ http://natas9.natas.labs.overthewire.org
 - https://scratch.mit.edu/
 - https://pe-cn.github.io
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
+- https://www.shiyanlou.com/
 
 ## Artificial intelligence
 - https://gptpool.cn/
@@ -149,9 +149,6 @@ http://natas9.natas.labs.overthewire.org
 - https://bks.thefuture.top/
 - https://www.sxpdf.com/
 - https://www.yuedu.pro/
-
-## Committed message
-- https://github.com/search?o=desc&q=author%3AZekumoru&s=committer-date&type=Commits
 
 ## Study methods
 - https://limboy.me/posts/words-to-myself/

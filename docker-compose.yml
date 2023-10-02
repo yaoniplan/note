@@ -1,0 +1,8 @@
+version: '3'
+services:
+  note:
+    image: yaoniplan/note:latest
+    container_name: note
+    restart: always
+    ports:
+      - 2003:80

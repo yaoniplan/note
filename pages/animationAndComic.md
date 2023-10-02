@@ -3,10 +3,10 @@
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 第一序列 - 11
-- 僵尸百分百～在变成僵尸之前想做的100件事～ - 08
-- 虫王战队超王者 - 29 0855 animation
-- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+09
+- 第一序列 - 12
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
+- 虫王战队超王者 - 30
+- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+11 animation
 - 四格勇者 - 10
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
 - My Happy Marriage / 我的幸福婚约 - 11
