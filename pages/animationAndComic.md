@@ -6,12 +6,8 @@
 - 第一序列 - 12
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
 - 虫王战队超王者 - 30
-- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+11 animation
-- 四格勇者 - 10
-- Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04
-- My Happy Marriage / 我的幸福婚约 - 11
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+08
-- Link Click / 时光代理人 (Part1+2) - 11+11
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+10
+- Link Click / 时光代理人 (Part1+2) - 11+11 animatiton
 - The Masterful cat Is Depressed Again Today / 能干的猫今天也忧郁 - 10
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 11
 - 圣者无双～上班族、在异世界的存活之道 - 11
@@ -253,6 +249,10 @@
 - guard(end)
 
 ### Animation
+- My Happy Marriage / 我的幸福婚约 - 12 0705 # The plot is too gentle
+- Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04 # The plot is gentle
+- 四格勇者 - 10 # The plot is gentle
+- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+12 # The plot is gentle
 - 仙武传 - 26 # End of the first part
 - 永生 (Part1+2) - 12+10 # End of the second part
 - Spy Room / 间谍教室 - 08 # The plot is gentle
