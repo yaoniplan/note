@@ -7,8 +7,7 @@
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
 - 虫王战队超王者 - 30
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+10
-- Link Click / 时光代理人 (Part1+2) - 11+11 animatiton
-- The Masterful cat Is Depressed Again Today / 能干的猫今天也忧郁 - 10
+- Link Click / 时光代理人 (Part1+2) - 11+12
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 11
 - 圣者无双～上班族、在异世界的存活之道 - 11
 - AI电子基因 - 10
@@ -249,6 +248,7 @@
 - guard(end)
 
 ### Animation
+- The Masterful cat Is Depressed Again Today / 能干的猫今天也忧郁 - 11 0210 # The plot is too gentle
 - My Happy Marriage / 我的幸福婚约 - 12 0705 # The plot is too gentle
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04 # The plot is gentle
 - 四格勇者 - 10 # The plot is gentle
