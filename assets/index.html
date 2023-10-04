@@ -40,6 +40,33 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-smb">Use &quot;smb&quot;</h4>
+<ul>
+<li><code>doas vi /etc/samba/smb.conf</code><pre><code>[yaoniplan]
+path = /mnt
+writable = yes
+browsable = yes
+public = no
+valid users = yaoniplan, root
+</code></pre>
+</li>
+<li><code>doas smbpasswd -a yaoniplan</code> # Set SMB password for your user</li>
+<li><code>doas systemctl restart smb</code> # Restart to Take effect</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>/mnt</code> # Replace it with a directory you want to share</li>
+<li><code>doas pacman --sync samba</code> # Install dependencies</li>
+<li>Because it needs to be used on devices or software that does not support WebDAV.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.danielmartingonzalez.com/en/samba-server-in-debian/">https://www.danielmartingonzalez.com/en/samba-server-in-debian/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-ish">Use &quot;ish&quot;</h4>
 <ul>
 <li><code>df -h</code> # Check disk free</li>
@@ -914,6 +941,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Download a proxy sofware (e.g. Shadowrocket)<ul>
 <li><a href="https://ccbaohe.vip/appleID.html">https://ccbaohe.vip/appleID.html</a> # Get a Apple ID that has already purchased Shadowrocket</li>
 <li><a href="https://ikuuu.art/user/tutorial?os=ios&client=shadowrocket">https://ikuuu.art/user/tutorial?os=ios&amp;client=shadowrocket</a> # Import subscriptions according to the tutorial</li>
+<li><a href="https://github.com/hiddify/Hiddify-Server/wiki/Tutorial-for-ShadowRocket-app">https://github.com/hiddify/Hiddify-Server/wiki/Tutorial-for-ShadowRocket-app</a> # Some useful settings</li>
 </ul>
 </li>
 <li>Disadvantages<ul>
