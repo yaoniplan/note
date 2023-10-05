@@ -10,9 +10,9 @@
 - Link Click / 时光代理人 (Part1+2) - 11+12
 - 虽然等级只有1级但固有技能是最强的 - 12
 - 庙不可言 - 12
-- 其实我是最强的？ - 11 animation
-- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+11
-- 真阳武神 - 12
+- 其实我是最强的？ - 12
+- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12
+- 真阳武神 - 13 animation
 - 政宗君的复仇 (Part1+2) - 12+12
 - 公司里的小小前辈 - 10
 - 满怀美梦的少年是现实主义者 - 12

@@ -55,6 +55,7 @@ valid users = yaoniplan, root
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: The speed is slower than WebDAV. (Sometimes freeze)</li>
 <li><code>/mnt</code> # Replace it with a directory you want to share</li>
 <li><code>doas pacman --sync samba</code> # Install dependencies</li>
 <li>Because it needs to be used on devices or software that does not support WebDAV.</li>
@@ -62,6 +63,54 @@ valid users = yaoniplan, root
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://www.danielmartingonzalez.com/en/samba-server-in-debian/">https://www.danielmartingonzalez.com/en/samba-server-in-debian/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-node">Use &quot;node&quot;</h4>
+<ul>
+<li><code>node main.js</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix shell nixpkgs#nodejs</code> # Install denpendencies</li>
+<li>Because we need to see the output of the file.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>vim main.js</code><pre><code>const notes = [&#39;do&#39;, &#39;re&#39;, &#39;me&#39;];
+
+notes.forEach((note) =&gt; console.log(note));
+</code></pre>
+</li>
+<li><a href="https://dev.to/i3uckwheat/understanding-callbacks-2o9e">https://dev.to/i3uckwheat/understanding-callbacks-2o9e</a></li>
+<li><a href="https://www.theodinproject.com/lessons/nodejs-introduction-what-is-nodejs">https://www.theodinproject.com/lessons/nodejs-introduction-what-is-nodejs</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="add-utf-8-encoding-support-to-html-file">Add UTF-8 encoding support to HTML file</h4>
+<ul>
+<li><code>vi ~/note/index.html</code><pre><code>...
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  ...
+&lt;/head&gt;
+...
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to display Chinese characters properly in HTML file for Docker image</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -8170,6 +8219,12 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Reduce the size of a Docker image<ul>
+<li><code>vi ~/note/.dockerignore</code> # Exclude during the build process<pre><code>.git
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Push Docker image to Docker Hub<ul>
 <li><code>docker build --tag yaoniplan/note:latest ~/note/</code> # In path including Dockerfile</li>
 <li><code>docker tag yaoniplan/note:latest yaoniplan/note:$(date +%F)</code> # Create a tag</li>
