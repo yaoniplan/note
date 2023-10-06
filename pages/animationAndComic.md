@@ -12,14 +12,12 @@
 - 庙不可言 - 12
 - 其实我是最强的？ - 12
 - The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12
-- 真阳武神 - 13 animation
-- 政宗君的复仇 (Part1+2) - 12+12
-- 公司里的小小前辈 - 10
-- 满怀美梦的少年是现实主义者 - 12
-- 堕玄师 - 13
-- 沧元图 - 15
-- 大主宰 - 14
-- 不灭神王 - 19
+- 真阳武神 - 14
+- 公司里的小小前辈 - 12
+- 堕玄师 - 15
+- 沧元图 - 17
+- 大主宰 - 17
+- 不灭神王 - 19 animation
 - 遮天 - 23
 - 炼气十万年 - 65
 - 百炼成神 - 48
@@ -245,6 +243,8 @@
 - guard(end)
 
 ### Animation
+- 满怀美梦的少年是现实主义者 - 12 # End of the first part
+- 政宗君的复仇 (Part1+2) - 12+12 # End of the second part
 - AI电子基因 - 11 # The plot is too gentle
 - 圣者无双～上班族、在异世界的存活之道 - 12 # End of the first part
 - 转生成自动贩卖机的我今天也在迷宫徘徊 - 12 # End of the first part
