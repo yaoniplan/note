@@ -17,9 +17,8 @@
 - 堕玄师 - 15
 - 沧元图 - 17
 - 大主宰 - 17
-- 不灭神王 - 19 animation
-- 遮天 - 23
-- 炼气十万年 - 65
+- 遮天 - 25
+- 炼气十万年 - 67 0823 animation
 - 百炼成神 - 48
 - 灵剑尊 - 240/420
 - 武神主宰 - 192/369
@@ -243,6 +242,7 @@
 - guard(end)
 
 ### Animation
+- 不灭神王 - 19 # Update speed is slow
 - 满怀美梦的少年是现实主义者 - 12 # End of the first part
 - 政宗君的复仇 (Part1+2) - 12+12 # End of the second part
 - AI电子基因 - 11 # The plot is too gentle
