@@ -1,5 +1,5 @@
 ### "Animation"
-- https://gist.github.com/IsaacXen/874c59aec92a13f30728aecdabb9ea80#file-hls-only # 2020 00:58:46
+- https://gist.github.com/IsaacXen/874c59aec92a13f30728aecdabb9ea80#file-hls-only # 2021 00:09:27
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
@@ -18,11 +18,11 @@
 - 沧元图 - 17
 - 大主宰 - 17
 - 遮天 - 25
-- 炼气十万年 - 67 0823 animation
-- 百炼成神 - 48
-- 灵剑尊 - 240/420
-- 武神主宰 - 192/369
-- 独步逍遥 - 168/348
+- 炼气十万年 - 69
+- 百炼成神 - 50
+- 灵剑尊 - 240/424
+- 武神主宰 - 192/373
+- 独步逍遥 - 168/350 0248 animation
 - 完美世界 - 38/129
 - Against the Sky Supreme / 逆天至尊 - 233
 - 斗破苍穹年番 - 62
