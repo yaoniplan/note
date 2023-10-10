@@ -26,8 +26,8 @@
 - 完美世界 - 38/131
 - Against the Sky Supreme / 逆天至尊 - 239
 - 斗破苍穹年番 - 65
-- 绝世武魂 - 309 0738 animation
-- 万古神话 - 119
+- 绝世武魂 - 312
+- 万古神话 - 124
 
 ### Comic
 - 今晚就决定吃你了 - 90 # Method: Page 28, 50
@@ -522,6 +522,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- https://alist.qyide.com/
 - Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
 - Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
 - 同学麦娜丝 #NSFW
