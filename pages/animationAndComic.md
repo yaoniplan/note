@@ -3,12 +3,11 @@
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 第一序列 - 12
+- 第一序列 - 13
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
-- 虫王战队超王者 - 30
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+10
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+11
 - Link Click / 时光代理人 (Part1+2) - 11+12
-- 虽然等级只有1级但固有技能是最强的 - 12
+- 虽然等级只有1级但固有技能是最强的 - 12 animation
 - 庙不可言 - 12
 - 其实我是最强的？ - 12
 - The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12
@@ -242,6 +241,7 @@
 - guard(end)
 
 ### Animation
+- 虫王战队超王者 - 30 # The plot is gentle
 - 不灭神王 - 19 # Update speed is slow
 - 满怀美梦的少年是现实主义者 - 12 # End of the first part
 - 政宗君的复仇 (Part1+2) - 12+12 # End of the second part
