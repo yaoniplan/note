@@ -1,4 +1,61 @@
 ### "Animation"
+- 地下忍者 - 01
+- 恶魔法则 - 04
+- 哥布林杀手 - (Part1+2) 00+01
+- 葬送的芙莉莲 - 01 animation
+- 经验丰富的你和经验为零的我交往的故事 - 01
+- 高达创战元宇宙 - 01
+- 七魔剑支配天下 - 00 animation
+- 催眠麦克风 = 00
+- 不死不幸 - 00
+- 女友成双 - 00
+- 破灭之国 - 00
+- 神澜奇域无双珠 - 15
+- 逆天邪神3D - 00
+- 特搜组大吾救国的橘色部队 - 00
+- 家里蹲吸血姬的郁闷 - 00
+- 铁路浪漫谭 - 00
+- 世界尽头的圣骑士 - 00
+- 希望的力量～大人光之美少女'23～ - 00
+- 间谍过家家 (season1+2) - 12+13
+- 新上司是天然呆 - 00
+- 狩龙人拉格纳 - 00
+- 归还者的魔法要特别 - 00
+- 猪肝倒是热热再吃啊 - 00
+- 我们的雨色协议 - 00
+- 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 00
+- 武映三千道 - 10
+- 圣墟 - 00
+- 航海王总集篇 - 00
+- 傲世九重天 - 00
+- 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 00
+- 偶像大师 百万现场 - 00
+- 凹凸魔女的母女故事 - 00
+- OVERTAKE！ - 00
+- 超超超超超喜欢你的100个女朋友 - 00
+- 暴食狂战士 - 00
+- 头文字D - 00
+- 锦衣神匠 - 00
+- 仙逆 - 00
+- 三十六骑 - 00
+- 境界战机：极钢的装鬼 - 00
+- 靠着魔法药水在异世界活下去！ - 00
+- 星灵感应 - 00
+- 米奇与达利 - 00
+- 鸭乃桥论的禁忌推理 - 00
+- 川越 Boys Sing - 00
+- 我推是反派大小姐 - 00
+- 腼腆英雄 - 00
+- 圣剑学院的魔剑使 - 00
+- 某大叔的VRMMO活动记 - 00
+- B-PROJECT ～热烈＊Love Call～ - 00
+- 修罗武神 - 00
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+59
+- 九辰风云录 - 00
+- 圣女魔力无所不能 - 00
+- Paradox Live the Animation - 01 1110 animation
+- 七大罪 默示录的四骑士 - 01
+- 洪荒灵尊 - 13
 - https://gist.github.com/IsaacXen/874c59aec92a13f30728aecdabb9ea80#file-hls-only # 2021 00:09:27
 - learnC - 16 0714
 - A brief history - 13
@@ -7,13 +64,6 @@
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+11
 - Link Click / 时光代理人 (Part1+2) - 11+12
-- 虽然等级只有1级但固有技能是最强的 - 12 animation
-- 庙不可言 - 12
-- 其实我是最强的？ - 12
-- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12
-- 真阳武神 - 14
-- 公司里的小小前辈 - 12
-- 堕玄师 - 15
 - 沧元图 - 17
 - 大主宰 - 17
 - 遮天 - 25
@@ -241,6 +291,16 @@
 - guard(end)
 
 ### Animation
+- 少年歌行外传 暗河传 - 01 1442 # The target audience is thirteen or fourteen year olds
+- 有药 - 01 02:00 # The target audience is thirteen or fourteen year olds
+- 魔装传说 - 01 0446 # The target audience is thirteen or fourteen year olds
+- 堕玄师 - 15 # End of the first part
+- 公司里的小小前辈 - 12 # End of the first part
+- 真阳武神 - 14 # End of the first part
+- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12 # End of the second part
+- 其实我是最强的？ - 12 # End of the first part
+- 庙不可言 - 12 # End of the first part
+- 虽然等级只有1级但固有技能是最强的 - 12 # End of the first part
 - 虫王战队超王者 - 30 # The plot is gentle
 - 不灭神王 - 19 # Update speed is slow
 - 满怀美梦的少年是现实主义者 - 12 # End of the first part
@@ -334,7 +394,6 @@
 - Now and Then, Here and There / 此时此刻的我 - 13 # End of the first part.
 - Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+16) # It is boring
 - 熊熊勇闯异世界 - 03 0605 # It is boring
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+59 # End of the second part
 - 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013 # It is boring
 - 冰海战记 (Part1+2) - 24+15 1438 # It is boring
 - 九州缥缈录 - 13 # End of the first part
@@ -381,7 +440,6 @@
 - 物之古物奇谭 - 03 0734 # It's boring
 - 诛仙 (Season1) - 26 # End of the first season
 - 狗与剪刀的正确用法 - 12 # End of the first season
-- 间谍过家家 (season1+2) - 12+13 # End of the second season
 - 出包王女 - 06 0304 # It's boring
 - 宇崎酱想要玩耍 (season1+2) - 12+13 # End of the second season
 - 致不灭的你 (第一季+第二季) - 20+11 1252 # It's boring
@@ -421,7 +479,6 @@
 - 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
 - BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
 - 黑门 - 12 # end of the first season
-- 神澜奇域无双珠 - 15 # end of the first season
 - 苍兰诀- 12 # end of the first season
 - 凡人修仙传 - 30/72 # end of the second season
 - 黑之召唤士第一季 - 12 # end of the first season
@@ -462,7 +519,6 @@
 - 我的异界之旅 - 40（已完结）
 - 万族之劫 第二季 - 30/16（看不下去）
 - 史上最强大魔王转生为村民A - 06（看不下去）
-- 武映三千道 - 10（已完结）
 - 时空之隙 - 06（看不下去）
 - 骸骨骑士大人异世界冒险中 - 07（看不下去）
 - 乙女游戏世界对路人角色很不友好 - 07（看不下去）

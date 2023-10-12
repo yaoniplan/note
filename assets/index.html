@@ -2321,13 +2321,14 @@ fi
 </ul>
 <hr>
 <ul>
-<li><h4 id="stitch-two-images-in-linux">Stitch two images in Linux</h4>
+<li><h4 id="use-convert">Use &quot;convert&quot;</h4>
 <ul>
 <li><code>convert +append 230614102157.jpg 230614102435.jpg 221128keyboardManual.jpg</code></li>
+<li><code>convert 231012seeADentist.HEIC 231012seeADentist.png</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Vertically (Like a waterfall)<ul>
+<li>Stitch images vertically (Like a waterfall)<ul>
 <li><code>convert -append math{01..04}.png mathVertically.png</code></li>
 </ul>
 </li>
@@ -4415,6 +4416,7 @@ togglePDFDarkMode();
 <ul>
 <li><h4 id="use-ffmpeg">Use &quot;ffmpeg&quot;</h4>
 <ul>
+<li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format</li>
 <li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
