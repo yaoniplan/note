@@ -5,11 +5,11 @@
 - 葬送的芙莉莲 - 01 animation
 - 经验丰富的你和经验为零的我交往的故事 - 01
 - 高达创战元宇宙 - 01
-- 七魔剑支配天下 - 00 animation
-- 催眠麦克风 = 00
-- 不死不幸 - 00
-- 女友成双 - 00
-- 破灭之国 - 00
+- 七魔剑支配天下 - 01 animatin
+- 催眠麦克风 - (Part1+2) 00+01
+- 不死不幸 - 01
+- 女友成双 - 01
+- 破灭之国 - 01 0920 animation
 - 神澜奇域无双珠 - 15
 - 逆天邪神3D - 00
 - 特搜组大吾救国的橘色部队 - 00
@@ -579,6 +579,8 @@
 
 ### Movie
 - https://alist.qyide.com/
+- Ice Age / 冰川时代 # (Part1)
+    - https://alist.qyide.com/阿里云盘/电影/动漫%204K%20持续更新/B%20冰川时代%207部%204K%20HDR
 - Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
 - Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
 - 同学麦娜丝 #NSFW
