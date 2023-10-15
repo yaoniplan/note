@@ -162,6 +162,7 @@ http://natas9.natas.labs.overthewire.org
 - https://smsreceivefree.com/
 
 ## Video and audio
+- https://fdownload.app/en/facebook-to-mp3
 - https://convertio.co/azw3-epub/
 - https://spotifydown.com/
 - https://youtube4kdownloader.com/en63/download-bilibili-mp4.html
