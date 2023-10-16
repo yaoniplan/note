@@ -23,11 +23,9 @@
 - 猪肝倒是热热再吃啊 - 01
 - 我们的雨色协议 - 01
 - 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 01
-- 武映三千道 - 10
-- 圣墟 - 00
-- 航海王总集篇 - 00
-- 傲世九重天 - 00
-- 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 00
+- 武映三千道 - 28
+- 傲世九重天 - 01
+- 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 01 animation
 - 偶像大师 百万现场 - 00
 - 凹凸魔女的母女故事 - 00
 - OVERTAKE！ - 00
@@ -290,6 +288,8 @@
 - guard(end)
 
 ### Animation
+- 航海王总集篇 - 00 # Resources were not found
+- 圣墟 - 00 # dynamic comic
 - 希望的力量～大人光之美少女'23～ - 01 # The target audience is women.
 - 少年歌行外传 暗河传 - 01 1442 # The target audience is thirteen or fourteen year olds
 - 有药 - 01 02:00 # The target audience is thirteen or fourteen year olds
