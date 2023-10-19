@@ -73,7 +73,6 @@ http://natas9.natas.labs.overthewire.org
 ## Animation and comic
 - http://agedm3.com/
 - http://www.yinghuavideo.com/new/
-- http://abnormalize.icu/里番
 - http://eroanimedougakan.blog.fc2.com/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/

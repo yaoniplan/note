@@ -40,36 +40,34 @@
 - 星灵感应 - 01
 - 米奇与达利 - 02
 - 鸭乃桥论的禁忌推理 - 01
-- 川越 Boys Sing - 00
-- 我推是反派大小姐 - 00
-- 腼腆英雄 - 00
-- 圣剑学院的魔剑使 - 00
-- 某大叔的VRMMO活动记 - 00
-- B-PROJECT ～热烈＊Love Call～ - 00
-- 修罗武神 - 00
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+59
-- 九辰风云录 - 00
-- 圣女魔力无所不能 - 00
+- 川越 Boys Sing - 02
+- 我推是反派大小姐 - 02
+- 腼腆英雄 - 01
+- 圣剑学院的魔剑使 - 01
+- 某大叔的VRMMO活动记 - 01
+- B-PROJECT ～热烈＊Love Call～ - 01
+- 修罗武神 - 02
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+63
+- 九辰风云录 - 01
+- 圣女魔力无所不能 - (Part1+2) 00+01
 - Paradox Live the Animation - 01 1110 animation
-- 七大罪 默示录的四骑士 - 01
-- 洪荒灵尊 - 13
-- https://gist.github.com/IsaacXen/874c59aec92a13f30728aecdabb9ea80#file-hls-only # 2021 00:09:27
+- 七大罪 默示录的四骑士 - 02
+- 洪荒灵尊 - 15
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 第一序列 - 13
+- 第一序列 - 15
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+11
-- Link Click / 时光代理人 (Part1+2) - 11+12
-- 沧元图 - 17
-- 大主宰 - 17
-- 遮天 - 25
-- 炼气十万年 - 69
-- 百炼成神 - 50
-- 灵剑尊 - 240/424
-- 武神主宰 - 192/373
-- 独步逍遥 - 168/353
-- 完美世界 - 38/131
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+12
+- 沧元图 - 18
+- 大主宰 - 18
+- 遮天 - 27
+- 炼气十万年 - 73
+- 百炼成神 - 51
+- 灵剑尊 - 240/427
+- 武神主宰 - 192/376
+- 独步逍遥 - 168/357
+- 完美世界 - 38/131 animation
 - Against the Sky Supreme / 逆天至尊 - 239
 - 斗破苍穹年番 - 65
 - 绝世武魂 - 312
@@ -288,6 +286,7 @@
 - guard(end)
 
 ### Animation
+- Link Click / 时光代理人 (Part1+2) - 11+12 # Resources were not found
 - 航海王总集篇 - 00 # Resources were not found
 - 圣墟 - 00 # dynamic comic
 - 希望的力量～大人光之美少女'23～ - 01 # The target audience is women.
