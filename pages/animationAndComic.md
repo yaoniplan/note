@@ -67,11 +67,11 @@
 - 灵剑尊 - 240/427
 - 武神主宰 - 192/376
 - 独步逍遥 - 168/357
-- 完美世界 - 38/131 animation
-- Against the Sky Supreme / 逆天至尊 - 239
-- 斗破苍穹年番 - 65
-- 绝世武魂 - 312
-- 万古神话 - 124
+- 完美世界 - 38/132
+- Against the Sky Supreme / 逆天至尊 - 241
+- 斗破苍穹年番 - 66
+- 绝世武魂 - 315
+- 万古神话 - 127
 
 ### Comic
 - 今晚就决定吃你了 - 90 # Method: Page 28, 50
@@ -578,7 +578,7 @@
 
 ### Movie
 - https://alist.qyide.com/
-- Ice Age / 冰川时代 # (Part1)
+- Ice Age / 冰川时代 # (Part1+2)
     - https://alist.qyide.com/阿里云盘/电影/动漫%204K%20持续更新/B%20冰川时代%207部%204K%20HDR
 - Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
 - Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW

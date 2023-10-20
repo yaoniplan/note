@@ -103,9 +103,7 @@ http://natas9.natas.labs.overthewire.org
 - https://www.shiyanlou.com/
 
 ## Artificial intelligence
-- https://gptpool.cn/
 - https://github.com/xx025/carrot
-- https://github.com/lzwme/chatgpt-sites
 - https://c.binjie.fun/#/chat/1688452827209
 - https://platform.openai.com/onboarding
 - https://bard.google.com/
