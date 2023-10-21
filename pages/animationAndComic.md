@@ -1,7 +1,5 @@
 ### "Animation"
-- 地下忍者 - 01
-- 恶魔法则 - 04
-- 哥布林杀手 - (Part1+2) 00+01
+- 恶魔法则 - 06
 - 葬送的芙莉莲 - 01 animation
 - 经验丰富的你和经验为零的我交往的故事 - 01
 - 高达创战元宇宙 - 01
@@ -286,6 +284,8 @@
 - guard(end)
 
 ### Animation
+- 哥布林杀手 - (Part1+2) 00+02 2006 # The plot is not attractive enough
+- 地下忍者 - 02 2036 # The plot is a bit abnormal
 - Link Click / 时光代理人 (Part1+2) - 11+12 # Resources were not found
 - 航海王总集篇 - 00 # Resources were not found
 - 圣墟 - 00 # dynamic comic
