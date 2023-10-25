@@ -1,15 +1,11 @@
 ### "Animation"
 - 恶魔法则 - 06
-- 葬送的芙莉莲 - 01 animation
-- 经验丰富的你和经验为零的我交往的故事 - 01
-- 高达创战元宇宙 - 01
-- 七魔剑支配天下 - 01 animatin
-- 催眠麦克风 - (Part1+2) 00+01
-- 不死不幸 - 01
-- 女友成双 - 01
-- 破灭之国 - 01
-- 神澜奇域无双珠 - 44
-- 逆天邪神3D - 01
+- 经验丰富的你和经验为零的我交往的故事 - 03
+- 催眠麦克风 - (Part1+2) 00+03
+- 不死不幸 - 03
+- 破灭之国 - 03
+- 神澜奇域无双珠 - 45
+- 逆天邪神3D - 01 animation
 - 特搜组大吾救国的橘色部队 - 01
 - 家里蹲吸血姬的郁闷 - 01
 - 铁路浪漫谭 - (Part1+2) 00+01
@@ -284,6 +280,10 @@
 - guard(end)
 
 ### Animation
+- 女友成双 - 01 # Resources loading freezes
+- 七魔剑支配天下 - 02 # The target audience is thirteen or fourteen year olds
+- 高达创战元宇宙 - 03 # The target audience is thirteen or fourteen year olds
+- 葬送的芙莉莲 - 02 # The plot is too slow
 - 哥布林杀手 - (Part1+2) 00+02 2006 # The plot is not attractive enough
 - 地下忍者 - 02 2036 # The plot is a bit abnormal
 - Link Click / 时光代理人 (Part1+2) - 11+12 # Resources were not found
