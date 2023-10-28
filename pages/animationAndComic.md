@@ -5,11 +5,10 @@
 - 不死不幸 - 03
 - 破灭之国 - 03
 - 神澜奇域无双珠 - 45
-- 逆天邪神3D - 01 animation
-- 特搜组大吾救国的橘色部队 - 01
-- 家里蹲吸血姬的郁闷 - 01
-- 铁路浪漫谭 - (Part1+2) 00+01
-- 世界尽头的圣骑士 - (Part1+2) 00+01
+- 逆天邪神3D - 07
+- 特搜组大吾救国的橘色部队 - 04
+- 家里蹲吸血姬的郁闷 - 03
+- 铁路浪漫谭 - (Part1+2) 00+03
 - 间谍过家家 (season1+2) - 12+13
 - 新上司是天然呆 - 01
 - 狩龙人拉格纳 - 01
@@ -44,25 +43,22 @@
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+63
 - 九辰风云录 - 01
 - 圣女魔力无所不能 - (Part1+2) 00+01
-- Paradox Live the Animation - 01 1110 animation
-- 七大罪 默示录的四骑士 - 02
-- 洪荒灵尊 - 15
+- Paradox Live the Animation - 04
+- 七大罪 默示录的四骑士 - 03
+- 洪荒灵尊 - 17
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 第一序列 - 15
-- 僵尸百分百～在变成僵尸之前想做的100件事～ - 09
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+12
-- 沧元图 - 18
-- 大主宰 - 18
-- 遮天 - 27
-- 炼气十万年 - 73
-- 百炼成神 - 51
-- 灵剑尊 - 240/427
-- 武神主宰 - 192/376
-- 独步逍遥 - 168/357
-- 完美世界 - 38/132
-- Against the Sky Supreme / 逆天至尊 - 241
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+13
+- 沧元图 - 20
+- 大主宰 - 19
+- 遮天 - 28
+- 炼气十万年 - 75
+- 百炼成神 - 52
+- 武神主宰 - 192/379
+- 独步逍遥 - 168/359
+- 完美世界 - 38/134
+- Against the Sky Supreme / 逆天至尊 - 241 animation
 - 斗破苍穹年番 - 66
 - 绝世武魂 - 315
 - 万古神话 - 127
@@ -280,6 +276,10 @@
 - guard(end)
 
 ### Animation
+- 灵剑尊 - 240/429 0801 # The plot is too slow
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 09 # End of the first part
+- 第一序列 - 16 # End of the first part 
+- 世界尽头的圣骑士 - (Part1+2) 00+02 # The plot is too slow
 - 女友成双 - 01 # Resources loading freezes
 - 七魔剑支配天下 - 02 # The target audience is thirteen or fourteen year olds
 - 高达创战元宇宙 - 03 # The target audience is thirteen or fourteen year olds

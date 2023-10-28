@@ -85,7 +85,6 @@ http://natas9.natas.labs.overthewire.org
 ## Programming
 - https://www.w3schools.com/
 - https://www.theodinproject.com/
-- https://www.codecademy.com/
 - https://www.datacamp.com/
 - https://www.programiz.com/
 - https://scrimba.com/
