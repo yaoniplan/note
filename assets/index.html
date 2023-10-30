@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="the-abbreviation-of-all-clear-is-ac">The abbreviation of &quot;All Clear&quot; is &quot;AC&quot;.</h4>
+<ul>
+<li>In a calculator</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because we saw it in an electronic calculator.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="set-a-mirror-for-npm">Set a mirror for npm</h4>
 <ul>
 <li><code>vi ~/.npmrc</code><pre><code>registry=https://npmreg.proxy.ustclug.org/
@@ -4434,7 +4450,12 @@ togglePDFDarkMode();
 <ul>
 <li><h4 id="use-ffmpeg">Use &quot;ffmpeg&quot;</h4>
 <ul>
-<li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format</li>
+<li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format<ul>
+<li><code>for f in *.mp4; do ffmpeg -i &quot;$f&quot; &quot;${f%.mp4}.mp3&quot;&amp; done</code> # In batch</li>
+<li><code>%</code> # Remove <code>.mp4</code></li>
+<li><code>&amp;</code> # In the background</li>
+</ul>
+</li>
 <li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
@@ -8243,6 +8264,13 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 <ul>
 <li><h4 id="use-docker">Use &quot;docker&quot;</h4>
 <ul>
+<li><code>docker cp docker cp 11a6a5e253d7:/app /tmp/tmp.fWaKJndURz/</code> # Copy source code<ul>
+<li><code>11a6a5e253d7</code> # Container ID</li>
+<li><code>/app</code> # Working directory</li>
+<li><code>/tmp/tmp.fWaKJndURz</code> # Destination directory</li>
+</ul>
+</li>
+<li><code>docker run --interactive --tty yaoniplan/diary sh</code> # View source code</li>
 <li><code>docker images nginx</code> # Check the size of an image</li>
 <li><code>docker logs searxng</code> # The same as <code>docker-compose logs</code></li>
 <li><code>docker container prune</code> # Prune stopped containers</li>
