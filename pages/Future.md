@@ -88,7 +88,6 @@ http://natas9.natas.labs.overthewire.org
 - https://www.datacamp.com/
 - https://www.programiz.com/
 - https://scrimba.com/
-- https://studio.code.org/courses
 - https://www.51zxw.net/
 - https://www.runoob.com/
 - https://developer.mozilla.org/zh-CN/docs/learn
@@ -103,7 +102,6 @@ http://natas9.natas.labs.overthewire.org
 
 ## Artificial intelligence
 - https://github.com/xx025/carrot
-- https://chat.lmsys.org/
 - https://bard.google.com/
 
 ## Web crawler
