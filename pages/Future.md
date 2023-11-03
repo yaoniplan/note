@@ -88,7 +88,6 @@ http://natas9.natas.labs.overthewire.org
 - https://www.datacamp.com/
 - https://www.programiz.com/
 - https://scrimba.com/
-- https://www.51zxw.net/
 - https://www.runoob.com/
 - https://developer.mozilla.org/zh-CN/docs/learn
 - https://www.bilibili.com/video/BV1os411h77o?p=40&spm_id_from=pageDriver
