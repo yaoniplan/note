@@ -543,7 +543,7 @@
 - 谎颜 - 16（完结）
 - 搜玄录之宸灵纪 - 合集篇（第一季完结）
 - 万古仙穹 - 12（第一二三四季完结）
-- 东京残响（第一季完结）
+- Terror in Resonance / 东京残响（第一季完结）
 - blood-c(season 1 end)
 - 死亡代理人(season 1 end)
 - 骷髅人(season 1 end)
@@ -577,6 +577,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Ex Machina / 机械姬
 - https://alist.qyide.com/
 - Ice Age / 冰川时代 # (Part1+2+3+Christmas+)
     - https://alist.qyide.com/阿里云盘/电影/动漫%204K%20持续更新/B%20冰川时代%207部%204K%20HDR
