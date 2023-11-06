@@ -9,10 +9,9 @@
 - 家里蹲吸血姬的郁闷 - 04
 - 铁路浪漫谭 - (Part1+2) 00+03 animation
 - 间谍过家家 (season1+2) - 12+13+01
-- 新上司是天然呆 - 01
-- 狩龙人拉格纳 - 01
-- 归还者的魔法要特别 - 01
-- 猪肝倒是热热再吃啊 - 01
+- Ragna Crimson / 狩龙人拉格纳 - 06
+- A Returner's Magic Should Be Special / 归还者的魔法要特别 - 03 animation
+- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 01
 - 我们的雨色协议 - 01
 - 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 01
 - 武映三千道 - 28
@@ -275,6 +274,7 @@
 - guard(end)
 
 ### Animation
+- My New Boss Is Goofy / 新上司是天然呆 - 02 1521 # It is too exaggerated.
 - 神澜奇域无双珠 - 45 # End
 - 灵剑尊 - 240/429 0801 # The plot is too slow
 - 僵尸百分百～在变成僵尸之前想做的100件事～ - 09 # End of the first part
