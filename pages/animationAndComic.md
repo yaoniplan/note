@@ -11,16 +11,13 @@
 - 间谍过家家 (season1+2) - 12+13+01
 - Ragna Crimson / 狩龙人拉格纳 - 06
 - A Returner's Magic Should Be Special / 归还者的魔法要特别 - 03 animation
-- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 01
-- 我们的雨色协议 - 01
-- 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 01
-- 武映三千道 - 28
-- 傲世九重天 - 01
-- 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 03
-- 偶像大师 百万现场 - 01
-- 凹凸魔女的母女故事 - 01
-- OVERTAKE！ - 01
-- 超超超超超喜欢你的100个女朋友 - 01
+- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 02 animation
+- Protocol: Rain / 我们的雨色协议 - 03 animation
+- 武映三千道 - 34
+- 傲世九重天 - 07
+- Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 07
+- OVERTAKE! - 02 animation
+- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 01
 - 暴食狂战士 - 03
 - 极速车魂 - 01
 - 锦衣神匠 - 07
@@ -274,6 +271,9 @@
 - guard(end)
 
 ### Animation
+- The Family Circumstances of the Irregular Witch / 凹凸魔女的母女故事 - 02 0635 # The audience may be female.
+- The Idolmaster Million Live! / 偶像大师 百万现场 - 01 # The target audience is women.
+- Tearmoon Empire / 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 02 0431 # The target audience is women.
 - My New Boss Is Goofy / 新上司是天然呆 - 02 1521 # It is too exaggerated.
 - 神澜奇域无双珠 - 45 # End
 - 灵剑尊 - 240/429 0801 # The plot is too slow
