@@ -17,10 +17,10 @@
 - 傲世九重天 - 07
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 07
 - OVERTAKE! - 02 animation
-- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 01
-- 暴食狂战士 - 03
-- 极速车魂 - 01
-- 锦衣神匠 - 07
+- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 # animation
+- Berserk of Gluttony / 暴食狂战士 - 04 animation
+- MF Ghost / 极速车魂 - 06
+- 锦衣神匠 - 09 # animation
 - 仙逆 - 06
 - 三十六骑 - 01
 - 境界战机：极钢的装鬼 - 01
