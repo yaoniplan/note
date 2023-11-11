@@ -20,22 +20,13 @@
 - The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 # animation
 - Berserk of Gluttony / 暴食狂战士 - 04 animation
 - MF Ghost / 极速车魂 - 06
-- 锦衣神匠 - 09 # animation
-- 仙逆 - 06
-- 三十六骑 - 01
-- 境界战机：极钢的装鬼 - 01
-- 靠着魔法药水在异世界活下去！ - 01
-- 星灵感应 - 01
-- 米奇与达利 - 02
-- 鸭乃桥论的禁忌推理 - 01
-- 川越 Boys Sing - 02
-- 我推是反派大小姐 - 02
-- 腼腆英雄 - 01
-- 圣剑学院的魔剑使 - 01
-- 某大叔的VRMMO活动记 - 01
-- B-PROJECT ～热烈＊Love Call～ - 01
-- 修罗武神 - 02
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+63
+- 锦衣神匠 - 10
+- 仙逆 - 09
+- 三十六骑 - 06
+- Migi & Dali / 米奇与达利 - 06
+- I'm in Love with the Villainess / 我推是反派大小姐 - 06
+- 修罗武神 - 08
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+66
 - 九辰风云录 - 01
 - 圣女魔力无所不能 - (Part1+2) 00+01
 - Paradox Live the Animation - 04
@@ -271,6 +262,15 @@
 - guard(end)
 
 ### Animation
+- B-PROJECT ～热烈＊Love Call～ - 02 # The plot is a bit confusing
+- A Playthrough of a Certain Dude's VRMMO Life / 某大叔的VRMMO活动记 - 02 1814 # The plot is slow
+- The Demon Sword Master of Excalibur Academy / 圣剑学院的魔剑使 - 02 0031 # The plot is slow
+- SHY / 腼腆英雄 - 02 0506 # The target audience may be female.
+- Kawagoe Boys Sing / 川越 Boys Sing - 04 0524 # The plot is too gentle
+- Ron Kamonohashi / 鸭乃桥论的禁忌推理 - 02 0633 # The plot is too slow
+- Stardust Telepath / 星灵感应 - 02 0036 # The target audience may be female.
+- I Shall Survive Using Potitons! / 靠着魔法药水在异世界活下去！ - 02 0441 # The target audience may be female.
+- Amaim Warrior at the Borderline / 境界战机：极钢的装鬼 - 02 0426 # The plot is too slow.
 - The Family Circumstances of the Irregular Witch / 凹凸魔女的母女故事 - 02 0635 # The audience may be female.
 - The Idolmaster Million Live! / 偶像大师 百万现场 - 01 # The target audience is women.
 - Tearmoon Empire / 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 02 0431 # The target audience is women.
@@ -370,7 +370,8 @@
 - 神印王座 - 59 1425 # Slow pace
 - おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
 - 熱砂の惑星 - #NSFW 02 # Stockholm syndrome (Apply and prevent)
-- ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 03 # Episode 4 will be released in Japan on June 30th https://tube.hentaistream.com/tsugunai-episode-04
+- Tsugunai / ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 04 # End of the part one
+    - https://tube.hentaistream.com/tsugunai-episode-04
 - おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02 # Update too slow
 - 新・エンジェル - #NSFW 05 # End of the first part
 - プリンセス ロード〜薔薇と髑髏の紋章〜 - #NSFW 01 # The rest of the resources were not found
@@ -577,6 +578,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- X-Men # (Part2011+2016)
 - Ex Machina / 机械姬
 - https://alist.qyide.com/
 - Ice Age / 冰川时代 # (Part1+2+3+Christmas+)

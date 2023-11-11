@@ -365,10 +365,17 @@ services:
 <li><code>doas pacman --sync tailscale</code> # Install the dependencies</li>
 <li><code>doas systemctl enable --now tailscaled</code> # Enable daemon now and at boot</li>
 <li>Install this app for each device (e.g. Linux, Android, iPhone, etc.) you want to connect</li>
+<li>Use Funnel<pre><code>tailscale cert
+tailscale cert server.tail471ed.ts.net
+doas tailscale serve https / http://127.0.0.1:2004
+doas tailscale funnel 443 on
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/adyanth/openwrt-tailscale-enabler#readme">https://github.com/adyanth/openwrt-tailscale-enabler#readme</a></li>
+<li><a href="https://www.dongvps.com/2023-05-29/tailscale-funnel/">https://www.dongvps.com/2023-05-29/tailscale-funnel/</a></li>
 </ul>
 </li>
 </ul>
