@@ -27,7 +27,7 @@
 - I'm in Love with the Villainess / 我推是反派大小姐 - 06
 - 修罗武神 - 08
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+66
-- 九辰风云录 - 01
+- 九辰风云录 - 21
 - 圣女魔力无所不能 - (Part1+2) 00+01
 - Paradox Live the Animation - 04
 - 七大罪 默示录的四骑士 - 03
