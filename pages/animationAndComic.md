@@ -27,18 +27,16 @@
 - I'm in Love with the Villainess / 我推是反派大小姐 - 06
 - 修罗武神 - 08
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+66
-- 九辰风云录 - 21
-- 圣女魔力无所不能 - (Part1+2) 00+01
+- 九辰风云录 - 37
 - Paradox Live the Animation - 04
-- 七大罪 默示录的四骑士 - 03
-- 洪荒灵尊 - 17
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 05
+- 洪荒灵尊 - 21
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+13
-- 沧元图 - 20
-- 大主宰 - 19
-- 遮天 - 28
+- 沧元图 - 22
+- 大主宰 - 22
+- Shrouding the Heavens / 遮天 - 28
 - 炼气十万年 - 75
 - 百炼成神 - 52
 - 武神主宰 - 192/379
@@ -262,6 +260,8 @@
 - guard(end)
 
 ### Animation
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.
+- The Saint's Magic Power Is Omnipotent / 圣女魔力无所不能 - (Part1+2) 00+02 1649 # The plot is slow.
 - B-PROJECT ～热烈＊Love Call～ - 02 # The plot is a bit confusing
 - A Playthrough of a Certain Dude's VRMMO Life / 某大叔的VRMMO活动记 - 02 1814 # The plot is slow
 - The Demon Sword Master of Excalibur Academy / 圣剑学院的魔剑使 - 02 0031 # The plot is slow
