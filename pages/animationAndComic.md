@@ -36,16 +36,15 @@
 - top10ModelsOfDeepThinking # 08
 - 沧元图 - 22
 - 大主宰 - 22
-- Shrouding the Heavens / 遮天 - 28
-- 炼气十万年 - 75
-- 百炼成神 - 52
-- 武神主宰 - 192/379
+- Shrouding the Heavens / 遮天 - 30
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 80
+- 武神主宰 - 192/384
 - 独步逍遥 - 168/359
-- 完美世界 - 38/134
-- Against the Sky Supreme / 逆天至尊 - 244
-- 斗破苍穹年番 - 67
-- 绝世武魂 - 317
-- 万古神话 - 127
+- Perfect World / 完美世界 - 38/136
+- Against the Sky Supreme / 逆天至尊 - 249
+- Fights Break Sphere / 斗破苍穹年番 - 70
+- 绝世武魂 - 322
+- 万古神话 - 134
 
 ### Comic
 - 今晚就决定吃你了 - 90 # Method: Page 28, 50
@@ -260,6 +259,7 @@
 - guard(end)
 
 ### Animation
+- Apotheosis / 百炼成神 - 52 # End of the first part
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.
 - The Saint's Magic Power Is Omnipotent / 圣女魔力无所不能 - (Part1+2) 00+02 1649 # The plot is slow.
 - B-PROJECT ～热烈＊Love Call～ - 02 # The plot is a bit confusing
