@@ -1,12 +1,11 @@
 ### "Animation"
-- 恶魔法则 - 08
-- 经验丰富的你和经验为零的我交往的故事 - 05
-- 催眠麦克风 - (Part1+2) 00+05
-- 不死不幸 - 05
-- 破灭之国 - 05
-- 逆天邪神3D - 08
-- 特搜组大吾救国的橘色部队 - 05
-- 家里蹲吸血姬的郁闷 - 04
+- Law of Devil / 恶魔法则 - 09
+- 经验丰富的你和经验为零的我交往的故事 - 06
+- 不死不幸 - 06
+- 破灭之国 - 06
+- 逆天邪神3D - 10
+- 特搜组大吾救国的橘色部队 - 06
+- 家里蹲吸血姬的郁闷 - 04 animation
 - 铁路浪漫谭 - (Part1+2) 00+03 animation
 - 间谍过家家 (season1+2) - 12+13+01
 - Ragna Crimson / 狩龙人拉格纳 - 06
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 催眠麦克风 - (Part1+2) 00+06 # The plot is slow
 - Apotheosis / 百炼成神 - 52 # End of the first part
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.
 - The Saint's Magic Power Is Omnipotent / 圣女魔力无所不能 - (Part1+2) 00+02 1649 # The plot is slow.
@@ -579,10 +579,9 @@
 
 ### Movie
 - X-Men # (Part2011+2016)
-- Ex Machina / 机械姬
+- Ex Machina / 机械姬 # Accelerating the era of artificial intelligence
 - https://alist.qyide.com/
 - Ice Age / 冰川时代 # (Part1+2+3+Christmas+)
-    - https://alist.qyide.com/阿里云盘/电影/动漫%204K%20持续更新/B%20冰川时代%207部%204K%20HDR
 - Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
 - Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
 - 同学麦娜丝 #NSFW

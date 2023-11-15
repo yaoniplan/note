@@ -114,13 +114,7 @@ http://natas9.natas.labs.overthewire.org
 - https://www.yunpanziyuan.com/
 - https://yun.hei521.cn/
 - https://aliyun.panpanr.com/
-- http://lazymovie.me/
-- https://docs.qq.com/sheet/DVHpJVmRhT3ViV09Q
-- https://www.kdocs.cn/l/st9zs7OC086m
 - http://ziyuanhuishequ.ysepan.com/
-- https://www.aliyundrive.com/s/hVhifmos8YG
-- https://www.aliyundrive.com/s/jPavQRS5qaB
-- https://www.aliyundrive.com/s/oXf51kSoBcW
 
 ## Typing practice
 - https://qwerty.liumingye.cn/
