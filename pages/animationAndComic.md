@@ -5,9 +5,9 @@
 - 破灭之国 - 06
 - 逆天邪神3D - 10
 - 特搜组大吾救国的橘色部队 - 06
-- 家里蹲吸血姬的郁闷 - 04 animation
-- 铁路浪漫谭 - (Part1+2) 00+03 animation
-- 间谍过家家 (season1+2) - 12+13+01
+- 家里蹲吸血姬的郁闷 - 06
+- 铁路浪漫谭 - (Part1+2) 00+06
+- Spy x Family / 间谍过家家 (season1+2) - 12+13+04 animation
 - Ragna Crimson / 狩龙人拉格纳 - 06
 - A Returner's Magic Should Be Special / 归还者的魔法要特别 - 03 animation
 - Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 02 animation
@@ -579,7 +579,7 @@
 
 ### Movie
 - X-Men # (Part2011+2016)
-- Ex Machina / 机械姬 # Accelerating the era of artificial intelligence
+- Ex Machina / 机械姬 #NSFW # Accelerating the era of artificial intelligence
 - https://alist.qyide.com/
 - Ice Age / 冰川时代 # (Part1+2+3+Christmas+)
 - Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
