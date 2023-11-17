@@ -7,10 +7,9 @@
 - 特搜组大吾救国的橘色部队 - 06
 - 家里蹲吸血姬的郁闷 - 06
 - 铁路浪漫谭 - (Part1+2) 00+06
-- Spy x Family / 间谍过家家 (season1+2) - 12+13+04 animation
-- Ragna Crimson / 狩龙人拉格纳 - 06
-- A Returner's Magic Should Be Special / 归还者的魔法要特别 - 03 animation
-- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 02 animation
+- Spy x Family / 间谍过家家 (season1+2) - 12+13+06
+- Ragna Crimson / 狩龙人拉格纳 - 07
+- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 04 animation
 - Protocol: Rain / 我们的雨色协议 - 03 animation
 - 武映三千道 - 34
 - 傲世九重天 - 07
@@ -258,6 +257,7 @@
 - guard(end)
 
 ### Animation
+- A Returner's Magic Should Be Special / 归还者的魔法要特别 - 04 0847 # The plot is slow
 - 催眠麦克风 - (Part1+2) 00+06 # The plot is slow
 - Apotheosis / 百炼成神 - 52 # End of the first part
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.

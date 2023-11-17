@@ -2546,7 +2546,10 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <li><code>nix search nixpkgs opencv</code> # Another way</li>
 </ul>
 </li>
+<li><code>nix flake new --template github:the-nix-way/dev-templates#node testNode</code> # Create a <em>node</em> project in directory <em>testNode</em><ul>
 <li><code>nix develop</code> # Enter a development environment after writing flake.nix</li>
+</ul>
+</li>
 <li><code>nix shell nixpkgs#git</code> # Install a package temporarily<ul>
 <li><code>nix-shell --command &#39;jupyter notebook&#39; --packages jupyter</code> # Use temporarily</li>
 <li><code>nix shell nixpkgs#firefox --command firefox yourURL</code> # Use temporarily</li>
@@ -2610,6 +2613,7 @@ error:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/the-nix-way/dev-templates">https://github.com/the-nix-way/dev-templates</a></li>
 <li><a href="https://github.com/NixOS/nix/issues/7937#issuecomment-1455013868">https://github.com/NixOS/nix/issues/7937#issuecomment-1455013868</a></li>
 <li><a href="https://xeiaso.net/blog/nix-flakes-1-2022-02-21">https://xeiaso.net/blog/nix-flakes-1-2022-02-21</a></li>
 <li><a href="https://nixos.wiki/wiki/Flakes">https://nixos.wiki/wiki/Flakes</a></li>
@@ -4632,10 +4636,17 @@ curl --head --silent https://google.com
 <li><code>marked -i yaoniplan.md -o yaoniplan.html</code></li>
 </ul>
 </li>
+<li>Solve the problem about SQLite3<ul>
+<li><code>npm uninstall sqlite3</code></li>
+<li><code>npm --force cache clean</code></li>
+<li><code>doas npm install sqlite3</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man npm</code></li>
+<li><a href="https://discuss.codecademy.com/t/problem-installing-sqlite3/434837/26">https://discuss.codecademy.com/t/problem-installing-sqlite3/434837/26</a></li>
 <li><a href="https://github.com/markedjs/marked">https://github.com/markedjs/marked</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -11294,7 +11305,7 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>ps</code> # Process</li>
+<li><code>ps</code> # Process status</li>
 <li><code>a</code> # All</li>
 <li><code>u</code> # User</li>
 <li><code>x</code> # Use with the <code>a</code> option</li>
