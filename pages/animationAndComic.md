@@ -9,24 +9,19 @@
 - 铁路浪漫谭 - (Part1+2) 00+06
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+06
 - Ragna Crimson / 狩龙人拉格纳 - 07
-- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 04 animation
-- Protocol: Rain / 我们的雨色协议 - 03 animation
-- 武映三千道 - 34
-- 傲世九重天 - 07
+- 武映三千道 - 36
+- 傲世九重天 - 08
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 07
-- OVERTAKE! - 02 animation
-- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 # animation
-- Berserk of Gluttony / 暴食狂战士 - 04 animation
-- MF Ghost / 极速车魂 - 06
-- 锦衣神匠 - 10
-- 仙逆 - 09
-- 三十六骑 - 06
-- Migi & Dali / 米奇与达利 - 06
-- I'm in Love with the Villainess / 我推是反派大小姐 - 06
-- 修罗武神 - 08
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+66
-- 九辰风云录 - 37
-- Paradox Live the Animation - 04
+- Berserk of Gluttony / 暴食狂战士 - 07
+- MF Ghost / 极速车魂 - 07
+- 锦衣神匠 - 11
+- 仙逆 - 10
+- 三十六骑 - 07
+- Migi & Dali / 米奇与达利 - 07
+- 修罗武神 - 09
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+67
+- 九辰风云录 - 39
+- Paradox Live the Animation - 04 animation
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 05
 - 洪荒灵尊 - 21
 - learnC - 16 0714
@@ -257,6 +252,11 @@
 - guard(end)
 
 ### Animation
+- I'm in Love with the Villainess / 我推是反派大小姐 - 07 0716 # The plot is slow
+- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 0250 # The plot is slow
+- OVERTAKE! - 03 0446 # The plot is slow
+- Protocol: Rain / 我们的雨色协议 - 04 0510 # The plot is slow
+- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 06 1418 # The plot is slow
 - A Returner's Magic Should Be Special / 归还者的魔法要特别 - 04 0847 # The plot is slow
 - 催眠麦克风 - (Part1+2) 00+06 # The plot is slow
 - Apotheosis / 百炼成神 - 52 # End of the first part
