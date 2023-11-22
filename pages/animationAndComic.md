@@ -1,5 +1,25 @@
 ### "Animation"
-- Law of Devil / 恶魔法则 - 09
+- 仙武传 - 35
+- 万界至尊 (Part1+2)- 50+14 animation
+- 七侯笔录 - 00
+- 明日方舟：冬隐归路 - 00
+- 十方武圣 - 00
+- 太一剑仙传 - 00
+- 大小姐与看门狗 - 00
+- 柚木家的四兄弟 - 00
+- 仙魔大战 - 00
+- 因想当冒险者而前往大都市的女儿已经升到了S级 - 00
+- 不死不灭之少年出山 - 00
+- 超时空护卫队 - 00
+- 近战法师 - 00
+- 赛马娘 Pretty Derby Season 3 - 00
+- 绊之Allele - 00
+- 异空战歌 - 00
+- 16bit的感动 ANOTHER LAYER - 00
+- KAMIERABI - 00
+- 我想成为影之强者! - (Part1+2) 20+00
+- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 00
+- Law of Devil / 恶魔法则 - 10
 - 经验丰富的你和经验为零的我交往的故事 - 06
 - 不死不幸 - 06
 - 破灭之国 - 06
@@ -21,23 +41,22 @@
 - 修罗武神 - 09
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+67
 - 九辰风云录 - 39
-- Paradox Live the Animation - 04 animation
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 05
-- 洪荒灵尊 - 21
+- 洪荒灵尊 - 24
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 沧元图 - 22
-- 大主宰 - 22
-- Shrouding the Heavens / 遮天 - 30
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 80
-- 武神主宰 - 192/384
-- 独步逍遥 - 168/359
-- Perfect World / 完美世界 - 38/136
-- Against the Sky Supreme / 逆天至尊 - 249
-- Fights Break Sphere / 斗破苍穹年番 - 70
-- 绝世武魂 - 322
-- 万古神话 - 134
+- 沧元图 - 23
+- 大主宰 - 23
+- Shrouding the Heavens / 遮天 - 31
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 82
+- 武神主宰 - 192/386
+- 独步逍遥 - 168/365
+- Perfect World / 完美世界 - 38/137
+- Against the Sky Supreme / 逆天至尊 - 250
+- Fights Break Sphere / 斗破苍穹年番 - 71
+- 绝世武魂 - 324
+- 万古神话 - 135
 
 ### Comic
 - 今晚就决定吃你了 - 90 # Method: Page 28, 50
@@ -252,6 +271,7 @@
 - guard(end)
 
 ### Animation
+- Paradox Live the Animation - 05 0551 # The plot is slow
 - I'm in Love with the Villainess / 我推是反派大小姐 - 07 0716 # The plot is slow
 - The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 0250 # The plot is slow
 - OVERTAKE! - 03 0446 # The plot is slow
@@ -312,7 +332,6 @@
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04 # The plot is gentle
 - 四格勇者 - 10 # The plot is gentle
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+12 # The plot is gentle
-- 仙武传 - 26 # End of the first part
 - 永生 (Part1+2) - 12+10 # End of the second part
 - Spy Room / 间谍教室 - 08 # The plot is gentle
 - 山海际会 - 25 # End of the first part
@@ -410,7 +429,6 @@
 - 大雪海的凯纳 - 11 0644 # It is boring
 - 英雄王，为了穷尽武道而转生～然后，成为世界最强的见习骑士♀～ - 10 0051 # It is boring
 - 尼尔:机械纪元 - 06 0421 # It is boring
-- 我想成为影之强者/想要成为影之实力者 - 20 # End of the first season
 - 风姿物语 (第一季+第二季) - 20+20 # End of the second season
 - 狩火之王 - 07 # It is boring
 - 银砂糖师与黑妖精 - 09 0227 # It is boring
@@ -578,6 +596,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Braveheart
 - X-Men # (Part2011+2016)
 - Ex Machina / 机械姬 #NSFW # Accelerating the era of artificial intelligence
 - https://alist.qyide.com/
