@@ -1,15 +1,13 @@
 ### "Animation"
 - 仙武传 - 35
-- 万界至尊 (Part1+2)- 50+14 animation
-- 七侯笔录 - 00
-- 明日方舟：冬隐归路 - 00
-- 十方武圣 - 00
-- 太一剑仙传 - 00
-- 大小姐与看门狗 - 00
-- 柚木家的四兄弟 - 00
-- 仙魔大战 - 00
-- 因想当冒险者而前往大都市的女儿已经升到了S级 - 00
-- 不死不灭之少年出山 - 00
+- 万界至尊 (Part1+2)- 50+16
+- 七侯笔录 - 05
+- 十方武圣 - 03
+- 太一剑仙传 - 03
+- 大小姐与看门狗 - 01
+- 柚木家的四兄弟 - 01
+- My Daughter Left the Nest and Returned an S-Rank Adventurer / 因想当冒险者而前往大都市的女儿已经升到了S级 - 01
+- 不死不灭之少年出山 - 00 animation
 - 超时空护卫队 - 00
 - 近战法师 - 00
 - 赛马娘 Pretty Derby Season 3 - 00
@@ -271,6 +269,8 @@
 - guard(end)
 
 ### Animation
+- 仙魔大战 - 01 1052 # The target audience is thirteen or fourteen year olds
+- 明日方舟：冬隐归路 - 01 0509 # The plot is slow
 - Paradox Live the Animation - 05 0551 # The plot is slow
 - I'm in Love with the Villainess / 我推是反派大小姐 - 07 0716 # The plot is slow
 - The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 0250 # The plot is slow
