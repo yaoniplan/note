@@ -2,22 +2,15 @@
 - 仙武传 - 35
 - 万界至尊 (Part1+2)- 50+16
 - 七侯笔录 - 05
-- 十方武圣 - 03
-- 太一剑仙传 - 03
-- 大小姐与看门狗 - 01
-- 柚木家的四兄弟 - 01
-- My Daughter Left the Nest and Returned an S-Rank Adventurer / 因想当冒险者而前往大都市的女儿已经升到了S级 - 01
-- 不死不灭之少年出山 - 00 animation
-- 超时空护卫队 - 00
-- 近战法师 - 00
-- 赛马娘 Pretty Derby Season 3 - 00
-- 绊之Allele - 00
-- 异空战歌 - 00
-- 16bit的感动 ANOTHER LAYER - 00
-- KAMIERABI - 00
-- 我想成为影之强者! - (Part1+2) 20+00
-- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 00
-- Law of Devil / 恶魔法则 - 10
+- 十方武圣 - 04
+- 太一剑仙传 - 07
+- A Girl & Her Guard Dog / 大小姐与看门狗 - 09
+- The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 02
+- 不死不灭之少年出山 - 03
+- 近战法师 - 06
+- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+08
+- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 01 animation
+- Law of Devil / 恶魔法则 - 11
 - 经验丰富的你和经验为零的我交往的故事 - 06
 - 不死不幸 - 06
 - 破灭之国 - 06
@@ -269,6 +262,13 @@
 - guard(end)
 
 ### Animation
+- KAMIERABI - 02 0653 # The plot is slow
+- 16bit的感动 ANOTHER LAYER - 05 1851 # The plot is slow
+- 异空战歌 - 15 # End of the first part
+- My Daughter Left the Nest and Returned an S-Rank Adventurer / 因想当冒险者而前往大都市的女儿已经升到了S级 - 02 # The plot is slow
+- 绊之Allele第二季 - 00+01 0008 # The target audience may be female.
+- 赛马娘 Pretty Derby Season 3 - 01 # The target audience may be female.
+- 超时空护卫队 - 01 0004 # The is a TV drama.
 - 仙魔大战 - 01 1052 # The target audience is thirteen or fourteen year olds
 - 明日方舟：冬隐归路 - 01 0509 # The plot is slow
 - Paradox Live the Animation - 05 0551 # The plot is slow
