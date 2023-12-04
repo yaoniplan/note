@@ -13,15 +13,15 @@
 - Law of Devil / 恶魔法则 - 12
 - 经验丰富的你和经验为零的我交往的故事 - 08
 - 不死不幸 - 08
-- The Kingdoms of Ruin / 破灭之国 - 06
-- 逆天邪神3D - 10
-- 特搜组大吾救国的橘色部队 - 06
-- 家里蹲吸血姬的郁闷 - 06
-- 铁路浪漫谭 - (Part1+2) 00+06
-- Spy x Family / 间谍过家家 (season1+2) - 12+13+06
-- Ragna Crimson / 狩龙人拉格纳 - 07
-- 武映三千道 - 36
-- 傲世九重天 - 08
+- The Kingdoms of Ruin / 破灭之国 - 09
+- 逆天邪神3D - 13
+- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 10
+- The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 08
+- 铁路浪漫谭 - (Part1+2) 00+09
+- Spy x Family / 间谍过家家 (season1+2) - 12+13+09
+- Ragna Crimson / 狩龙人拉格纳 - 10
+- 武映三千道 - 41
+- 傲世九重天 - 08 animation
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 07
 - Berserk of Gluttony / 暴食狂战士 - 07
 - MF Ghost / 极速车魂 - 07
