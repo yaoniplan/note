@@ -41,6 +41,53 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-yt-dlp">Use &quot;yt-dlp&quot;</h4>
+<ul>
+<li><code>yt-dlp &quot;yourPlaylist&quot;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>--yes-playlist</code> # Download the playlist</li>
+<li><code>--output</code> # Output filename template<ul>
+<li><code>%(playlist)s/</code> # A folder</li>
+<li><code>%(playlist_index)s</code> # A sequence</li>
+<li><code>%(title)s</code> # A file name</li>
+<li><code>.%(ext)s</code> # A file extensions</li>
+</ul>
+</li>
+<li><code>&quot;</code> # Enclose in quotes if URL contains special characters (e.g. <code>&amp;</code>)</li>
+<li><code>nix shell nixpkgs#yt-dlp</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man yt-dlp</code> # <code>/template examples</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-anki">Use &quot;anki&quot;</h4>
+<ul>
+<li><code>u</code> # Undo</li>
+<li><code>4</code> # Easy</li>
+<li><code>Space</code> # Next step and card</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Sync speed is slow<ul>
+<li>Self-hosted sync server does not work</li>
+</ul>
+</li>
+<li><code>yay --sync anki</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ankicommunity/anki-sync-server/issues/164">https://github.com/ankicommunity/anki-sync-server/issues/164</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="understand-active-learning">Understand &quot;active learning&quot;</h4>
 <ul>
 <li>Group discussion</li>

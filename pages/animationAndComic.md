@@ -22,9 +22,7 @@
 - Ragna Crimson / 狩龙人拉格纳 - 10
 - 武映三千道 - 41
 - 傲世九重天 - 10
-- Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 07
-- Berserk of Gluttony / 暴食狂战士 - 07
-- MF Ghost / 极速车魂 - 07
+- MF Ghost / 极速车魂 - 10
 - 锦衣神匠 - 11
 - 仙逆 - 10
 - 三十六骑 - 07
@@ -262,6 +260,8 @@
 - guard(end)
 
 ### Animation
+- Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
+- Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow
 - KAMIERABI - 02 0653 # The plot is slow
 - 16bit的感动 ANOTHER LAYER - 05 1851 # The plot is slow
 - 异空战歌 - 15 # End of the first part
