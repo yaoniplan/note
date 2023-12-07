@@ -41,9 +41,39 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="monitor-network-traffic">Monitor network traffic</h4>
+<ul>
+<li><code>btop</code></li>
+<li><code>ip -human-readable -statistics link show enp2s0</code></li>
+<li><code>bmon</code></li>
+<li><code>doas iftop</code></li>
+<li><code>vnstat -l</code></li>
+<li><code>nload -u M -U G enp2s0</code><ul>
+<li><code>-u M</code> # Unit in Megabytes</li>
+<li><code>-U G</code> # Unit of the total amount of data in Gigabytes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>enp2s0</code> # Use command <code>ip address</code> to get device name</li>
+<li><code>nix shell nixpkgs#nload</code> # Install dependencies<ul>
+<li>Replace <code>nload</code> with other dependencies (e.g. <code>vnstat</code>, <code>iftop</code>, <code>bmon</code>, <code>btop</code>, etc.)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal">https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal</a></li>
+<li><code>man nload</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-yt-dlp">Use &quot;yt-dlp&quot;</h4>
 <ul>
-<li><code>yt-dlp &quot;yourPlaylist&quot;</code></li>
+<li><code>yt-dlp &quot;yourPlaylistURL&quot;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -52,7 +82,7 @@
 <li><code>%(playlist)s/</code> # A folder</li>
 <li><code>%(playlist_index)s</code> # A sequence</li>
 <li><code>%(title)s</code> # A file name</li>
-<li><code>.%(ext)s</code> # A file extensions</li>
+<li><code>.%(ext)s</code> # A file extension</li>
 </ul>
 </li>
 <li><code>&quot;</code> # Enclose in quotes if URL contains special characters (e.g. <code>&amp;</code>)</li>
@@ -9741,6 +9771,24 @@ version for the right syntax to use near
 <li><code>2</code> # The second option is &quot;[2]   vi&quot;</li>
 <li><code>. /etc/profile</code> # Update the variable</li>
 <li>For <code>crontab -e</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="use-tree">Use &quot;tree&quot;</h4>
+<ul>
+<li><code>tree -L 2 .</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>tree -L 1 {01..10}</code></li>
+<li><code>-L</code> # Level</li>
+<li><code>.</code> # Your directory</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man tree</code></li>
 </ul>
 </li>
 </ul>
