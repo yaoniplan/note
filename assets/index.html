@@ -41,22 +41,41 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-termux">Use &quot;termux&quot;</h4>
+<ul>
+<li>Connect to your server<pre><code>pkg upgrade &amp;&amp; pkg install openssh # Upgrade and install dependencies
+ssh yaoniplan@192.168.10.100 # Connect to your server
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://f-droid.org/repo/com.termux_118.apk">https://f-droid.org/repo/com.termux_118.apk</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="monitor-network-traffic">Monitor network traffic</h4>
 <ul>
-<li><code>btop</code></li>
-<li><code>ip -human-readable -statistics link show enp2s0</code></li>
-<li><code>bmon</code></li>
-<li><code>doas iftop</code></li>
-<li><code>vnstat -l</code></li>
 <li><code>nload -u M -U G enp2s0</code><ul>
 <li><code>-u M</code> # Unit in Megabytes</li>
 <li><code>-U G</code> # Unit of the total amount of data in Gigabytes</li>
+<li><code>enp2s0</code> # Use command <code>ip address</code> to get device name</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>enp2s0</code> # Use command <code>ip address</code> to get device name</li>
+<li>Other methods<ul>
+<li><code>btop</code> # Use shortcut key <code>Ctrl-minus</code> to adjust terminal size</li>
+<li><code>cat /proc/net/dev | grep enp2s0</code></li>
+<li><code>ip -human-readable -statistics link show enp2s0</code></li>
+<li><code>bmon</code></li>
+<li><code>doas iftop</code></li>
+<li><code>vnstat -l</code></li>
+</ul>
+</li>
 <li><code>nix shell nixpkgs#nload</code> # Install dependencies<ul>
 <li>Replace <code>nload</code> with other dependencies (e.g. <code>vnstat</code>, <code>iftop</code>, <code>bmon</code>, <code>btop</code>, etc.)</li>
 </ul>

@@ -24,10 +24,9 @@
 - 傲世九重天 - 10
 - MF Ghost / 极速车魂 - 10
 - 锦衣神匠 - 13
-- 仙逆 - 13
+- 仙逆 - 13 animation
 - 三十六骑 - 10
 - Migi & Dali / 米奇与达利 - 10
-- 修罗武神 - 09 animation
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+67
 - 九辰风云录 - 39
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 05
@@ -260,6 +259,7 @@
 - guard(end)
 
 ### Animation
+- 修罗武神 - 16 # End of the first part
 - Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow
 - KAMIERABI - 02 0653 # The plot is slow
