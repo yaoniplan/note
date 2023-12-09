@@ -127,10 +127,30 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li>Self-hosted sync server does not work</li>
 </ul>
 </li>
+<li><code>vi ~/.config/anki/docker-compose.yml</code><pre><code>services:
+  anki-desktop:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./Anki2:/config/app/Anki2
+      - ./backups:/config/app/backups
+    ports:
+      - 3000:3000
+      # Anki Connect port
+      - 8765:8765
+</code></pre>
+<ul>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
+<li><code>192.168.10.100:3000</code> # Run in web browser</li>
+<li>Put your file <em>apkg</em> into directory <em>Anki2</em></li>
+</ul>
+</li>
 <li><code>yay --sync anki</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/mlcivilengineer/anki-desktop-docker">https://github.com/mlcivilengineer/anki-desktop-docker</a></li>
 <li><a href="https://github.com/ankicommunity/anki-sync-server/issues/164">https://github.com/ankicommunity/anki-sync-server/issues/164</a></li>
 </ul>
 </li>

@@ -24,12 +24,12 @@
 - 傲世九重天 - 10
 - MF Ghost / 极速车魂 - 10
 - 锦衣神匠 - 13
-- 仙逆 - 13 animation
+- 仙逆 - 13
 - 三十六骑 - 10
 - Migi & Dali / 米奇与达利 - 10
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+67
-- 九辰风云录 - 39
-- Seven Deadly Sins / 七大罪 默示录的四骑士 - 05
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+70
+- 九辰风云录 - 40
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 05 animation
 - 洪荒灵尊 - 24
 - learnC - 16 0714
 - A brief history - 13
