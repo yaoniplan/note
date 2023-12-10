@@ -29,8 +29,8 @@
 - Migi & Dali / 米奇与达利 - 10
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+70
 - 九辰风云录 - 40
-- Seven Deadly Sins / 七大罪 默示录的四骑士 - 05 animation
-- 洪荒灵尊 - 24
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 08
+- 洪荒灵尊 - 24 animation
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
