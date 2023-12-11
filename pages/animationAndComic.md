@@ -30,13 +30,12 @@
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+70
 - 九辰风云录 - 40
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 08
-- 洪荒灵尊 - 24 animation
+- 洪荒灵尊 - 30
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 沧元图 - 23
-- 大主宰 - 23
-- Shrouding the Heavens / 遮天 - 31
+- 大主宰 - 26
+- Shrouding the Heavens / 遮天 - 32 0320 animation
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 82
 - 武神主宰 - 192/386
 - 独步逍遥 - 168/365
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 沧元图 - 26 # End of the first part
 - 修罗武神 - 16 # End of the first part
 - Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow

@@ -50,8 +50,8 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/termux/termux-app#GitHub">https://github.com/termux/termux-app#GitHub</a></li>
-<li><a href="https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush">https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush</a><ul>
+<li><a href="https://github.com/termux/termux-app#GitHub">https://github.com/termux/termux-app#GitHub</a><ul>
+<li><a href="https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush">https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush</a></li>
 <li>Click a latest workflow run results</li>
 <li>Search string <em>android-5-github-debug_universal</em> and then click it</li>
 </ul>
@@ -128,35 +128,27 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: Sync speed is slow<ul>
-<li>Self-hosted sync server does not work</li>
-</ul>
-</li>
-<li><code>vi ~/.config/anki/docker-compose.yml</code><pre><code>services:
-  anki-desktop:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    volumes:
-      - ./Anki2:/config/app/Anki2
-      - ./backups:/config/app/backups
-    ports:
-      - 3000:3000
-      # Anki Connect port
-      - 8765:8765
+<li>Sync server<pre><code>python3 -m venv ~/.config/anki/
+~/.config/anki/bin/pip install anki
+MAX_SYNC_PAYLOAD_MEGS=500; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
 </code></pre>
 <ul>
-<li><code>docker-compose up --detach</code> # Run in the background</li>
-<li><code>192.168.10.100:3000</code> # Run in web browser</li>
-<li>Put your file <em>apkg</em> into directory <em>Anki2</em></li>
+<li>Client<pre><code>http://192.168.10.100:8080/ # In &#39;Self-hosted sync server&#39; of &#39;Syncing&#39;
+admin # In &#39;user&#39; of &#39;Synchronize&#39;
+****** # In &#39;password&#39; of &#39;Synchronize&#39;
+</code></pre>
+</li>
+<li>Crontab<pre><code>@reboot MAX_SYNC_PAYLOAD_MEGS=500; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
+</code></pre>
+</li>
+<li>Click the sync button to sync the progress before and after learning</li>
 </ul>
 </li>
 <li><code>yay --sync anki</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/mlcivilengineer/anki-desktop-docker">https://github.com/mlcivilengineer/anki-desktop-docker</a></li>
-<li><a href="https://github.com/ankicommunity/anki-sync-server/issues/164">https://github.com/ankicommunity/anki-sync-server/issues/164</a></li>
+<li><a href="https://docs.ankiweb.net/sync-server.html#with-pip">https://docs.ankiweb.net/sync-server.html#with-pip</a></li>
 </ul>
 </li>
 </ul>
@@ -10174,7 +10166,11 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </li>
 <li><code>$1</code> # The first argument</li>
 <li><code>$0</code> # The name of the script</li>
-<li><code>$@</code> # A list of all arguments</li>
+<li><code>$@</code> # A list of all arguments<ul>
+<li><code>${@:2}</code> # All arguments starting from the second argument</li>
+<li>Used when developing scripts with options (e.g. <code>takeAMemo.sh --no-clipboard yourContent</code>)</li>
+</ul>
+</li>
 <li><code>$*</code> # Expand all arguments to a single word<ul>
 <li><code>trans :zh &quot;$*&quot;</code></li>
 </ul>
@@ -14520,94 +14516,169 @@ exec ~/.config/shell/autoGit.sh
 </li>
 </ul>
 <hr>
-<h2 id="---i-am-trying-out-plugins-and-themes-for-logseq-idea----------logseqplugin-logseq-plugin-vim-shortcuts-------j--move-down-------k--move-up-------i--insert-cursor-at-the-beginnig-of-the-line-------a--insert-cursor-at-the-end-of-the-line-------o--insert-cursor-to-the-next-line-------g--scroll-to-bottom---notes-------111j--scroll-to-bottom-means-move-down-111-lines-------optional-change-default-shortcut-keys-eg-gg-for-the-plugin-logseq-vim-shortcuts--and-the-application-logseq------------sudo-vim-logseqsettingslogseq-vim-shortcutsjson-----------json------------top-g-g----------------------change-it-after-pressing-the-g-key-and-the-s-key-to-display-this-page-----------imagepng---references-------imagepng-------vipzhichenglogseq-plugin-vim-shortcuts-add-part-of-vim-key-bindings-experience-to-logseq---------logseqplugin-logseq-plugin-bullet-threading---references-------imagepng-------pengx17logseq-plugin-bullet-threading-add-bullet-threading-to-your-active-blocks-in-logseq---------logseqtheme-logseq-cusgit-theme-------vim-notelogseqcustomcss--copy-the-whole-content-of-customcss-to-yours---references-------imagepng-------imagepng-------imagepng-------httpsgithubcommendax1234logseq-cusgit-theme----------the-punctuation-of-hyphen-is-----references-------httpsenwikipediaorgwikihyphen---------githubrepository-created-time-date-------httpsapigithubcomreposyaoniplannote---notes-------api--add-it-before-the-githubcom-------repos--add-it-after-the-githubcom-------note--remove-the-slash--after-the-repository-name-note---references-------imagepng-------imagepng-------imagepng-------httpswwwilovefreesoftwarecom16programmingcheck-creation-date-github-repositoryhtml---------abbreviationgraphics-interchange-format-gif---references-------imagepng-------gif---wikipedia---------vimhighlight-disable-temporarily-------noh---references-------imagepng-------imagepng-------clear-search-highlight-in-vim--techserhattekercom----------add-string-to-the-end-of-specified-lines-in-vim-------sli---notes------------------v--select-lines-in-visual-line-mode-------------see-the-format-------s--substitute---------the-end-of-line-------li--replace-it-with-your-desired-string-----------backslash--escape-character---references-------imagepng-------imagepng-------httpsstackoverflowcomquestions253380how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim---------abbreviationmassive-open-online-course-mooc---references-------imagepng-------massive-open-online-course---wikipedia----------the-brain-grows-most-by-getting-questions-wrong-not-right-quote----as-long-as-we-embrace-struggle-and-mistakes-we-can-learn-anything-quote-idea---references-------imagepng-------httpswwwkhanacademyorgcollege-careers-moretalks-and-interviewstalks-and-interviews-unitconversations-with-salathe-learning-myth-why-ill-never-tell-my-son-hes-smart------">-- I am trying out plugins and themes for Logseq. #Idea
-- ---
-- #### [[Logseq]]plugin &quot;logseq-plugin-vim-shortcuts&quot;
-    - <code>j</code> # move down
-    - <code>k</code> # move up
-    - <code>i</code> # insert cursor at the beginnig of the line
-    - <code>a</code> # insert cursor at the end of the line
-    - <code>o</code> # insert cursor to the next line
-    - <code>G</code> # scroll to bottom
-- <em><strong>Notes</strong></em>
-    - <code>111j</code> # scroll to bottom (means move down 111 lines)
-    - Optional: Change default [[shortcut keys]] (e.g. <em>gg</em>) for the plugin (#Logseq-vim-shortcuts ) and the #application (#Logseq )
-        - <code>sudo vim ~/.logseq/settings/logseq-vim-shortcuts.json</code>
-          <code>json           	&quot;top&quot;: &quot;g g&quot;,           </code>
-        - Change it after pressing the <em>g</em> key and the <em>s</em> key to display this page
-          <img src="../assets/image_1670922753697_0.png" alt="image.png">
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1670828087730_0.png" alt="image.png">
-    - <a href="https://github.com/vipzhicheng/logseq-plugin-vim-shortcuts">vipzhicheng/logseq-plugin-vim-shortcuts: Add part of VIM key bindings experience to Logseq</a>
-- ---
-- [[Logseq]]plugin &quot;logseq-plugin-bullet-threading&quot;
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1667099250987_0.png" alt="image.png">
-    - <a href="https://github.com/pengx17/logseq-plugin-bullet-threading">pengx17/logseq-plugin-bullet-threading: Add bullet threading to your active blocks in Logseq.</a>
-- ---
-- [[Logseq]]theme &quot;logseq-cusgit-theme&quot;
-    - <code>vim ~/note/logseq/custom.css</code> # Copy the whole content of custom.css to yours
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1667112924162_0.png" alt="image.png">
-    - <img src="../assets/image_1667111715985_0.png" alt="image.png">
-    - <img src="../assets/image_1667111924903_0.png" alt="image.png">
-    - <a href="https://github.com/mendax1234/logseq-cusgit-theme">https://github.com/mendax1234/logseq-cusgit-theme</a>
-- ---
-- #### The punctuation of &quot;hyphen&quot; is &quot;-&quot;.
-- <em><strong>References</strong></em>
-    - <a href="https://en.wikipedia.org/wiki/Hyphen">https://en.wikipedia.org/wiki/Hyphen</a>
-- ---
-- [[GitHub]]repository created time (date)
-    - <code>https://api.github.com/repos/yaoniplan/note</code>
-- <em><strong>Notes</strong></em>
-    - <code>api.</code> # Add it before the &quot;github.com/&quot;
-    - <code>repos/</code> # Add it after the &quot;github.com/&quot;
-    - <code>note</code> # Remove the slash (<em>/</em>) after the repository name (<em>note</em>)
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666822882901_0.png" alt="image.png">
-    - <img src="../assets/image_1666822939055_0.png" alt="image.png">
-    - <img src="../assets/image_1670469335477_0.png" alt="image.png">
-    - <a href="https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html">https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html</a>
-- ---
-- [[abbreviation]]&quot;Graphics interchange format&quot; (<code>GIF</code>)
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666839996535_0.png" alt="image.png">
-    - <a href="https://en.wikipedia.org/wiki/GIF">GIF - Wikipedia</a>
-- ---
-- [[Vim]]highlight disable temporarily
-    - <code>:noh</code>
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666858502150_0.png" alt="image.png">
-    - <img src="../assets/image_1666856965138_0.png" alt="image.png">
-    - <a href="https://tech.serhatteker.com/post/2020-03/clear-search-highlight-in-vim/">Clear Search Highlight in Vim — tech.serhatteker.com</a>
-- ---
-- #### Add string to the end of specified lines in Vim
-    - <code>:&#39;&lt;,&#39;&gt;s/$/&lt;\/li&gt;/</code>
-- <em><strong>Notes</strong></em>
-    - <code>:&#39;&lt;,&#39;&gt;</code>
-        - <code>V</code> # Select lines in visual line mode
-        - <code>:</code> # See the format
-    - <code>s</code> # Substitute
-    - <code>$</code> # The end of line
-    - <code>&lt;\/li&gt;</code> # Replace it with your desired string
-        - <code>backslash</code> # Escape character
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666861974899_0.png" alt="image.png">
-    - <img src="../assets/image_1666862102097_0.png" alt="image.png">
-    - <a href="https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim">https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim</a>
-- ---
-- [[abbreviation]]&quot;Massive open online course&quot; (<code>MOOC</code>)
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666751423434_0.png" alt="image.png">
-    - <a href="https://en.wikipedia.org/wiki/Massive_open_online_course">Massive open online course - Wikipedia</a>
-- ---
-- &gt; The brain grows most by getting questions wrong, not right. #quote
-- &gt; As long as we embrace struggle and mistakes, we can learn anything. #quote #Idea
-- <em><strong>References</strong></em>
-    - <img src="../assets/image_1666753114705_0.png" alt="image.png">
-    - <a href="https://www.khanacademy.org/college-careers-more/talks-and-interviews/talks-and-interviews-unit/conversations-with-sal/a/the-learning-myth-why-ill-never-tell-my-son-hes-smart">https://www.khanacademy.org/college-careers-more/talks-and-interviews/talks-and-interviews-unit/conversations-with-sal/a/the-learning-myth-why-ill-never-tell-my-son-hes-smart</a>
-- ---</h2>
 <ul>
+<li>I am trying out plugins and themes for Logseq. #Idea</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="logseqplugin-logseq-plugin-vim-shortcuts">[[Logseq]]plugin &quot;logseq-plugin-vim-shortcuts&quot;</h4>
+<ul>
+<li><code>j</code> # move down</li>
+<li><code>k</code> # move up</li>
+<li><code>i</code> # insert cursor at the beginnig of the line</li>
+<li><code>a</code> # insert cursor at the end of the line</li>
+<li><code>o</code> # insert cursor to the next line</li>
+<li><code>G</code> # scroll to bottom</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>111j</code> # scroll to bottom (means move down 111 lines)</li>
+<li>Optional: Change default [[shortcut keys]] (e.g. <em>gg</em>) for the plugin (#Logseq-vim-shortcuts ) and the #application (#Logseq )<ul>
+<li><code>sudo vim ~/.logseq/settings/logseq-vim-shortcuts.json</code><pre><code class="language-json">    &quot;top&quot;: &quot;g g&quot;,
+</code></pre>
+</li>
+<li>Change it after pressing the <em>g</em> key and the <em>s</em> key to display this page
+<img src="../assets/image_1670922753697_0.png" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1670828087730_0.png" alt="image.png"></li>
+<li><a href="https://github.com/vipzhicheng/logseq-plugin-vim-shortcuts">vipzhicheng/logseq-plugin-vim-shortcuts: Add part of VIM key bindings experience to Logseq</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[Logseq]]plugin &quot;logseq-plugin-bullet-threading&quot;</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1667099250987_0.png" alt="image.png"></li>
+<li><a href="https://github.com/pengx17/logseq-plugin-bullet-threading">pengx17/logseq-plugin-bullet-threading: Add bullet threading to your active blocks in Logseq.</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[Logseq]]theme &quot;logseq-cusgit-theme&quot;<ul>
+<li><code>vim ~/note/logseq/custom.css</code> # Copy the whole content of custom.css to yours</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1667112924162_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1667111715985_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1667111924903_0.png" alt="image.png"></li>
+<li><a href="https://github.com/mendax1234/logseq-cusgit-theme">https://github.com/mendax1234/logseq-cusgit-theme</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="the-punctuation-of-hyphen-is--">The punctuation of &quot;hyphen&quot; is &quot;-&quot;.</h4>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Hyphen">https://en.wikipedia.org/wiki/Hyphen</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[GitHub]]repository created time (date)<ul>
+<li><code>https://api.github.com/repos/yaoniplan/note</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>api.</code> # Add it before the &quot;github.com/&quot;</li>
+<li><code>repos/</code> # Add it after the &quot;github.com/&quot;</li>
+<li><code>note</code> # Remove the slash (<em>/</em>) after the repository name (<em>note</em>)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666822882901_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1666822939055_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1670469335477_0.png" alt="image.png"></li>
+<li><a href="https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html">https://www.ilovefreesoftware.com/16/programming/check-creation-date-github-repository.html</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[abbreviation]]&quot;Graphics interchange format&quot; (<code>GIF</code>)</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666839996535_0.png" alt="image.png"></li>
+<li><a href="https://en.wikipedia.org/wiki/GIF">GIF - Wikipedia</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[Vim]]highlight disable temporarily<ul>
+<li><code>:noh</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666858502150_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1666856965138_0.png" alt="image.png"></li>
+<li><a href="https://tech.serhatteker.com/post/2020-03/clear-search-highlight-in-vim/">Clear Search Highlight in Vim — tech.serhatteker.com</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4 id="add-string-to-the-end-of-specified-lines-in-vim">Add string to the end of specified lines in Vim</h4>
+<ul>
+<li><code>:&#39;&lt;,&#39;&gt;s/$/&lt;\/li&gt;/</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>:&#39;&lt;,&#39;&gt;</code><ul>
+<li><code>V</code> # Select lines in visual line mode</li>
+<li><code>:</code> # See the format</li>
+</ul>
+</li>
+<li><code>s</code> # Substitute</li>
+<li><code>$</code> # The end of line</li>
+<li><code>&lt;\/li&gt;</code> # Replace it with your desired string<ul>
+<li><code>backslash</code> # Escape character</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666861974899_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1666862102097_0.png" alt="image.png"></li>
+<li><a href="https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim">https://stackoverflow.com/questions/253380/how-to-insert-text-at-beginning-of-a-multi-line-selection-in-vi-vim</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>[[abbreviation]]&quot;Massive open online course&quot; (<code>MOOC</code>)</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666751423434_0.png" alt="image.png"></li>
+<li><a href="https://en.wikipedia.org/wiki/Massive_open_online_course">Massive open online course - Wikipedia</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><blockquote>
+<p>The brain grows most by getting questions wrong, not right. #quote</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>As long as we embrace struggle and mistakes, we can learn anything. #quote #Idea</p>
+</blockquote>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1666753114705_0.png" alt="image.png"></li>
+<li><a href="https://www.khanacademy.org/college-careers-more/talks-and-interviews/talks-and-interviews-unit/conversations-with-sal/a/the-learning-myth-why-ill-never-tell-my-son-hes-smart">https://www.khanacademy.org/college-careers-more/talks-and-interviews/talks-and-interviews-unit/conversations-with-sal/a/the-learning-myth-why-ill-never-tell-my-son-hes-smart</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li></li>
 <li>[[Flameshot]]screenshot (capture) full screen<ul>
 <li><code>Ctrl + c</code> # Copy to clipboard</li>
 <li><em><strong>Notes</strong></em></li>
