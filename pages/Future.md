@@ -107,6 +107,7 @@ http://natas9.natas.labs.overthewire.org
 ## Web crawler
 - https://www.alipansou.com/
 - https://www.upyunso.com/
+- https://lzpanx.com/
 - https://feiyu100.cn/
 - https://www.panpanr.com/
 - https://drivebbs.com/index.php
