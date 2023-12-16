@@ -129,12 +129,34 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem by importing media files in batches<pre><code>    Error playing audio. This can be
+caused by a corrupt file, a file iOS does
+  not support (eg .ogg), or an mp3 file
+         incorrectly named .wav
+
+            hair1.wav: Error
+      Domain=NSOSStatusErrorDomain
+        Code=1685348671 &quot;(null)&quot;
+</code></pre>
+<ul>
+<li>Get media file directory path<pre><code>curl localhost:8765 --request POST --data \
+&#39;{
+    &quot;action&quot;: &quot;getMediaDirPath&quot;,
+    &quot;version&quot;: 6
+}&#39;
+</code></pre>
+</li>
+<li><code>cp -r ~/testWAV/*.mp3 ~/.local/share/Anki2/User\ 1/collection.media/</code></li>
+<li>Use &#39;Find and Replace&#39; to replace <em>wav</em> with <em>mp3</em></li>
+<li>Install an addon named &#39;AnkiConnect&#39; before running command</li>
+</ul>
+</li>
 <li>Sync server<pre><code>python3 -m venv ~/.config/anki/
 ~/.config/anki/bin/pip install anki
 MAX_SYNC_PAYLOAD_MEGS=500; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
 </code></pre>
 <ul>
-<li>Client<pre><code>http://192.168.10.100:8080/ # In &#39;Self-hosted sync server&#39; of &#39;Syncing&#39;
+<li>Client (e.g. Linux, Android, iOS, etc.)<pre><code>http://192.168.10.100:8080/ # In &#39;Self-hosted sync server&#39; of &#39;Syncing&#39;
 admin # In &#39;user&#39; of &#39;Synchronize&#39;
 ****** # In &#39;password&#39; of &#39;Synchronize&#39;
 </code></pre>
@@ -149,6 +171,8 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://foosoft.net/projects/anki-connect/index.html#media-actions">https://foosoft.net/projects/anki-connect/index.html#media-actions</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/22180094">https://zhuanlan.zhihu.com/p/22180094</a> # media</li>
 <li><a href="https://docs.ankiweb.net/sync-server.html#with-pip">https://docs.ankiweb.net/sync-server.html#with-pip</a></li>
 </ul>
 </li>
@@ -482,7 +506,7 @@ services:
 <li><code>doas pacman --sync tailscale</code> # Install the dependencies</li>
 <li><code>doas systemctl enable --now tailscaled</code> # Enable daemon now and at boot</li>
 <li>Install this app for each device (e.g. Linux, Android, iPhone, etc.) you want to connect</li>
-<li>Use Funnel (Not recommended)<pre><code>tailscale cert
+<li>Use Funnel (Not recommended: slow)<pre><code>tailscale cert
 tailscale cert server.tail471ed.ts.net
 doas tailscale serve https / http://127.0.0.1:2004
 doas tailscale funnel 443 on

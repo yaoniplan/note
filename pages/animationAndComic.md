@@ -1,12 +1,8 @@
 ### "Animation"
-- The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
-    - Funny style
 - 仙武传 - 38
 - 万界至尊 (Part1+2)- 50+20
-- 十方武圣 - 04
-- 太一剑仙传 - 07
-- A Girl & Her Guard Dog / 大小姐与看门狗 - 09
-- The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 02
+- 十方武圣 - 07
+- 太一剑仙传 - 10
 - 不死不灭之少年出山 - 03
 - 近战法师 - 06
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+08
@@ -259,6 +255,10 @@
 - guard(end)
 
 ### Animation
+- The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 03 # The plot is slow
+- A Girl & Her Guard Dog / 大小姐与看门狗 - 10 0535 # The plot is slow
+- The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
+    - Funny style
 - 七侯笔录 - 07 1501 # The plot is slow
 - 沧元图 - 26 # End of the first part
 - 修罗武神 - 16 # End of the first part
