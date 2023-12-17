@@ -4332,6 +4332,12 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
+<li>Move all files in subdirectory to current directory<pre><code>find {01..08}/ -maxdepth 1 -type d -exec mv {} . \;
+</code></pre>
+<ul>
+<li><code>{01..08}/</code> # Replace it with your subdirectory</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -4667,7 +4673,7 @@ togglePDFDarkMode();
 <li><h4 id="use-ffmpeg">Use &quot;ffmpeg&quot;</h4>
 <ul>
 <li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format<ul>
-<li><code>for f in *.mp4; do ffmpeg -i &quot;$f&quot; &quot;${f%.mp4}.mp3&quot;&amp; done</code> # In batch</li>
+<li><code>for f in *.mp4; do ffmpeg -i &quot;$f&quot; &quot;${f%.mp4}.mp3&quot;&amp; done</code> # In batches</li>
 <li><code>%</code> # Remove extension (e.g. <code>.mp4</code>)</li>
 <li><code>&amp;</code> # In the background</li>
 </ul>
@@ -7300,7 +7306,10 @@ git push origin master
 </li>
 </ul>
 </li>
-<li><code>&lt;</code> # Go backward in the playlist</li>
+<li><code>mpv yourM3UFileIncludingM3U8URLs</code> # play internet protocol television<ul>
+<li><code>&gt;</code> # Go forward in the playlist</li>
+</ul>
+</li>
 <li><code>/</code> # Decrease volume</li>
 <li><code>}</code> # Double speed</li>
 <li><code>o</code> # Show progress bar</li>
