@@ -6,7 +6,6 @@
 - 不死不灭之少年出山 - 06
 - 近战法师 - 07
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+11
-- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 09
 - Law of Devil / 恶魔法则 - 12
 - 经验丰富的你和经验为零的我交往的故事 - 08
 - 不死不幸 - 08
@@ -255,6 +254,7 @@
 - guard(end)
 
 ### Animation
+- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 11 # The plot is slow
 - The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 03 # The plot is slow
 - A Girl & Her Guard Dog / 大小姐与看门狗 - 10 0535 # The plot is slow
 - The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
