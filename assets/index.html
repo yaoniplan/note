@@ -7534,7 +7534,9 @@ q # q) Quit config
 <li>Mount to another computer<ul>
 <li><code>doas emerge -q net-fs/sshfs</code></li>
 <li><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/</code> # Mount</li>
-<li><code>fusermount -u /mnt/yaoniplan/</code> # Unmount</li>
+<li><code>fusermount -u /mnt/yaoniplan/</code> # Unmount that solve the problem<pre><code>yaoniplan@tux ~ $ &lt;3&gt;ERROR : /mnt/music/: Unmounted rclone mount
+</code></pre>
+</li>
 <li><code>vim ~/.xprofile</code> # Run it at boot in Gentoo Linux<pre><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/ &amp;
 </code></pre>
 </li>

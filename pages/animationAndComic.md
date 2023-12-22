@@ -6,12 +6,12 @@
 - 不死不灭之少年出山 - 06
 - 近战法师 - 07
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+11
-- Law of Devil / 恶魔法则 - 12
-- 经验丰富的你和经验为零的我交往的故事 - 08
-- 不死不幸 - 08
-- The Kingdoms of Ruin / 破灭之国 - 09
-- 逆天邪神3D - 13
-- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 10
+- Law of Devil / 恶魔法则 - 14
+- 经验丰富的你和经验为零的我交往的故事 - 11
+- Undead Unluck / 不死不幸 - 11
+- The Kingdoms of Ruin / 破灭之国 - 11
+- 逆天邪神3D - 15
+- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 10 animation
 - The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 08
 - 铁路浪漫谭 - (Part1+2) 00+09
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+09
@@ -42,6 +42,9 @@
 - 万古神话 - 142
 
 ### Comic
+- 初次深交，请多指教 - 27
+- 邪教教主 - 07
+- 色雕英雄传:一捅天下 - 09
 - 今晚就决定吃你了 - 90 # Method: Page 28, 50
 - 陌生的未婚妻 - 31
 - 卖身给上司 - 95
