@@ -7306,7 +7306,7 @@ git push origin master
 </li>
 </ul>
 </li>
-<li><code>mpv yourM3UFileIncludingM3U8URLs</code> # play internet protocol television<ul>
+<li><code>mpv yourM3UFileIncludingM3U8URLs</code> # play internet protocol television (e.g. <a href="https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u">https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u</a>)<ul>
 <li><code>&lt;</code> # Go backward in the playlist</li>
 </ul>
 </li>
@@ -7488,7 +7488,7 @@ git push origin master
 </ul>
 <hr>
 <ul>
-<li><h4 id="mount-the-alist-to-the-local-dirctory-using-rclone">Mount the AList to the local dirctory using Rclone</h4>
+<li><h4 id="use-rclone">Use &quot;rclone&quot;</h4>
 <ul>
 <li><code>rclone config</code><pre><code>n # n) New remote
 yaoniplan # name
@@ -7500,16 +7500,25 @@ admin # user of AList
 the rest of options are the default
 q # q) Quit config
 </code></pre>
+<ul>
+<li><code>vi ~/.config/rclone/rclone.conf</code> # Another way<pre><code>[yaoniplan]
+type = webdav
+url = http://192.168.10.100:5244/dav
+vendor = other
+user = admin
+pass = H2bvDv2jDfEuI3fMJ263WjkI
+</code></pre>
 </li>
-<li><code>doas mkdir /mnt/yaoniplan/</code></li>
-<li><code>doas chown -R yaoniplan:yaoniplan /mnt/yaoniplan/</code><ul>
-<li><code>yaoniplan</code> # Replace it with your user</li>
 </ul>
 </li>
-<li><code>rclone mount yaoniplan:/ /mnt/yaoniplan/ &amp;</code></li>
+<li><code>doas mkdir /mnt/$(whoami)/</code></li>
+<li><code>doas chown -R $(whoami):$(whoami) /mnt/$(whoami)/</code></li>
+<li><code>rclone mount yaoniplan:/ /mnt/$(whoami)/ &amp;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>rclone copy music:/ ~/music/</code> # Copy from remote to local</li>
+<li>Because to mount the AList to the local directory.</li>
 <li><code>doas apt install rclone</code> # Install it in Ubuntu Server 22.04</li>
 <li><code>rclone lsd yaoniplan:/</code> # Check it</li>
 <li><code>crontab -e</code> # Run it at boot in Ubuntu Server 22.04<pre><code>@reboot /usr/bin/rclone mount yaoniplan:/ /mnt/yaoniplan/ &amp;
@@ -11084,7 +11093,8 @@ and the repository exists.
 yaoniplan@tux ~ $ 
 </code></pre>
 <ul>
-<li>Method one<pre><code>nmcli connection show # Get NAME (e.g. eno1)
+<li>Method one<pre><code>doas systemctl disable systemd-resolved
+nmcli connection show # Get NAME (e.g. eno1)
 nmcli connection modify eno1 ipv4.dns &quot;8.8.4.4 8.8.8.8&quot;
 nmcli connection modify eno1 ipv6.dns &quot;2001:4860:4860::8844 2001:4860:4860::8888&quot;
 doas systemctl restart NetworkManager # Make changes effective

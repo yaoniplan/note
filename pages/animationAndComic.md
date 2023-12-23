@@ -11,7 +11,6 @@
 - Undead Unluck / 不死不幸 - 11
 - The Kingdoms of Ruin / 破灭之国 - 11
 - 逆天邪神3D - 15
-- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 10 animation
 - The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 08
 - 铁路浪漫谭 - (Part1+2) 00+09
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+09
@@ -257,6 +256,7 @@
 - guard(end)
 
 ### Animation
+- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 12 0138 # It might be more interesting if science ficiton or other elements can be added
 - 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 11 # The plot is slow
 - The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 03 # The plot is slow
 - A Girl & Her Guard Dog / 大小姐与看门狗 - 10 0535 # The plot is slow
