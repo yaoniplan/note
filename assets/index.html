@@ -41,6 +41,31 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-ipython">Use &quot;ipython&quot;</h4>
+<ul>
+<li><code>~/.config/ipython/ipython</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.ipython/profile_default/ipython_config.py</code><pre><code>c.TerminalInteractiveShell.editing_mode = &#39;vi&#39;
+c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
+</code></pre>
+</li>
+<li>Install dependencies<ul>
+<li><code>python -m venv ~/.config/ipython/</code> # Create a virtual environment using the built-in <code>venv</code> module</li>
+<li><code>~/.config/ipython/bin/pip install ipython</code> # Install IPython in the virtual environment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ipython/ipython/issues/13443#issuecomment-1032753703">https://github.com/ipython/ipython/issues/13443#issuecomment-1032753703</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-termux">Use &quot;termux&quot;</h4>
 <ul>
 <li>Connect to your server<pre><code>pkg upgrade &amp;&amp; pkg install openssh # Upgrade and install dependencies
@@ -4333,7 +4358,10 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
-<li>Move all files in subdirectory to current directory<pre><code>find {01..08}/ -maxdepth 1 -type d -exec mv {} . \;
+<li>Move all FLV files in subdirectories to the current directory<pre><code>find . -maxdepth 2 -type f -name &quot;*.flv&quot; -exec mv {} . \;
+</code></pre>
+</li>
+<li>Move all files in subdirectories to the current directory<pre><code>find {01..08}/ -maxdepth 1 -type d -exec mv {} . \;
 </code></pre>
 <ul>
 <li><code>{01..08}/</code> # Replace it with your subdirectory</li>
@@ -11094,7 +11122,7 @@ and the repository exists.
 yaoniplan@tux ~ $ 
 </code></pre>
 <ul>
-<li>Method one<pre><code>doas systemctl disable systemd-resolved
+<li>Method one<pre><code>doas systemctl disable systemd-resolved # May cause the web proxy to become unavaliable
 nmcli connection show # Get NAME (e.g. eno1)
 nmcli connection modify eno1 ipv4.dns &quot;8.8.4.4 8.8.8.8&quot;
 nmcli connection modify eno1 ipv6.dns &quot;2001:4860:4860::8844 2001:4860:4860::8888&quot;
@@ -12151,7 +12179,7 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>todocli</code> # A alias<ul>
+<li><code>todocli</code> # An alias<ul>
 <li><code>vim ~/.bashrc</code><pre><code>alias todocli=todo.sh
 complete -F _todo todocli
 </code></pre>
@@ -12567,7 +12595,8 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>C-b &quot;</code> # Split vertically</li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
-<li><code>kill-pane</code></li>
+<li><code>new-window</code> # New a window</li>
+<li><code>kill-pane</code> # The same as <code>C-b x</code></li>
 <li><code>join-pane -t 1</code> # Join pane</li>
 <li><code>break-pane</code> # Break pane to a window</li>
 <li><code>move-window -t 2:2</code> # Move window to another session</li>
