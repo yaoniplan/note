@@ -41,13 +41,43 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="add-zero-padding-to-file-name">Add zero padding to file name</h4>
+<ul>
+<li><code>for f in {1..9}; do old=&quot;Python3($f).flv&quot;; new=&quot;Python3(0$f).flv&quot;; mv &quot;$old&quot; &quot;$new&quot;; done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because sometimes the tenth file doesn&#39;t get sorted correctly.</li>
+<li>Another method<pre><code>for f in *; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed -E &#39;s/\(([0-9])\)/\(0\1\)/&#39;)&quot;; done
+</code></pre>
+<ul>
+<li><code>-E</code> # Regular expression</li>
+<li><code>\(</code> # Escape it and match <code>(</code> (The same as <code>\)</code>)</li>
+<li><code>()</code> # A capture group</li>
+<li><code>[]</code> # Character set</li>
+<li><code>0-9</code> # Match any digit from 0 to 9</li>
+<li><code>\1</code> # A backreference to the first captured group</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-12-25_19-30.png" alt="2023-12-25_19-30.png"></li>
+<li><img src="../assets/2023-12-25_20-45.png" alt="2023-12-25_20-45.png"></li>
+<li><a href="https://stackoverflow.com/questions/60994956/adding-zero-padding-to-file-name-with-bash/60995027#60995027">https://stackoverflow.com/questions/60994956/adding-zero-padding-to-file-name-with-bash/60995027#60995027</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-ipython">Use &quot;ipython&quot;</h4>
 <ul>
 <li><code>~/.config/ipython/ipython</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.ipython/profile_default/ipython_config.py</code><pre><code>c.TerminalInteractiveShell.editing_mode = &#39;vi&#39;
+<li><code>vi ~/.ipython/profile_default/ipython_config.py</code><pre><code>c.TerminalInteractiveShell.editing_mode = &#39;vi&#39;
 c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
 </code></pre>
 </li>
@@ -127,11 +157,11 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>--yes-playlist</code> # Download the playlist</li>
-<li><code>--output</code> # Output filename template<ul>
-<li><code>%(playlist)s/</code> # A folder</li>
+<li><code>--output</code> # Output filename template (e.g. <code>&quot;%(title)s.%(ext)s&quot;</code>)<ul>
+<li><code>&quot;%(playlist)s/</code> # A folder</li>
 <li><code>%(playlist_index)s</code> # A sequence</li>
 <li><code>%(title)s</code> # A file name</li>
-<li><code>.%(ext)s</code> # A file extension</li>
+<li><code>.%(ext)s&quot;</code> # A file extension</li>
 </ul>
 </li>
 <li><code>&quot;</code> # Enclose in quotes if URL contains special characters (e.g. <code>&amp;</code>)</li>
@@ -1231,7 +1261,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>The add icon - Add Action - Open URLs - vlc-xcallback://x-callback-url/stream?url=<em>yourURL</em> - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
 <li>The add icon - Add Action - Dismiss Siri and Continue - Set Voice &amp; Data (4G, Primary) - done # <a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a>, <a href="https://www.reddit.com/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
 <li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
-<li>The add icon - Add Action - Apps - Shadowrocket - Start Shadowrocket - done</li>
+<li>The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done</li>
 </ul>
 </li>
 <li>Text<ul>
@@ -7302,6 +7332,7 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>mpv --skip-download --write-subs yourURL</code> # download subtitles only</li>
 <li><code>Alt-Hyphen</code> # Zoom out video<ul>
 <li><code>Alt-Down</code> # Move video up</li>
 </ul>
