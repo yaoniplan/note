@@ -41,6 +41,60 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-aria2">Use &quot;aria2&quot;</h4>
+<ul>
+<li><code>doas aria2c --conf-path=/etc/aria2/aria2.conf</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install aria2<pre><code>nix profile install nixpkgs#aria2
+doas mkdir /etc/aria2/
+doas touch /etc/aria2/aria2.session
+doas chmod 777 /etc/aria2/aria2.session
+</code></pre>
+</li>
+<li><code>doas vi /etc/aria2/aria2.conf</code> # Config <em>aria2.conf</em><pre><code># Modify the file saving directory by yourself
+dir=/home/yaoniplan/
+disable-ipv6=true
+ 
+# The purpose of opening rpc is for web management
+enable-rpc=true
+rpc-allow-origin-all=true
+rpc-listen-all=true
+#rpc-listen-port=6800
+# Breakpoint resume
+continue=true
+input-file=/etc/aria2/aria2.session
+save-session=/etc/aria2/aria2.session
+ 
+# Maximum number of simultaneous download tasks
+max-concurrent-downloads=20
+ 
+save-session-interval=120
+ 
+# Http/FTP related
+connect-timeout=120
+#lowest-speed-limit=10K
+#Number of connections to the same server
+max-connection-per-server=10
+#max-file-not-found=2
+# Minimum file fragment size, the upper limit of the number of download threads depends on how many fragments can be divided, which is important for small files
+min-split-size=10M
+# Maximum number of threads for a single file, recommended routing value: 5
+split=10
+check-certificate=false
+#http-no-cache=true
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://blog.csdn.net/shixiaolu63/article/details/81744636">https://blog.csdn.net/shixiaolu63/article/details/81744636</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="add-zero-padding-to-file-name">Add zero padding to file name</h4>
 <ul>
 <li><code>for f in {1..9}; do old=&quot;Python3($f).flv&quot;; new=&quot;Python3(0$f).flv&quot;; mv &quot;$old&quot; &quot;$new&quot;; done</code></li>
