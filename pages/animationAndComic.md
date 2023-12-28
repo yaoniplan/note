@@ -13,9 +13,9 @@
 - 逆天邪神3D - 15
 - 铁路浪漫谭 - (Part1+2) 00+12
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+12
-- Ragna Crimson / 狩龙人拉格纳 - 11 animation
-- 武映三千道 - 41
-- 傲世九重天 - 10
+- Ragna Crimson / 狩龙人拉格纳 - 12
+- 武映三千道 - 48
+- 傲世九重天 - 10 animation
 - MF Ghost / 极速车魂 - 10
 - 锦衣神匠 - 13
 - 仙逆 - 13
