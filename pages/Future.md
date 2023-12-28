@@ -75,6 +75,7 @@ http://natas9.natas.labs.overthewire.org
 - https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
+- https://hanman.cyou/ # References: https://www.yy123.cyou/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
 - https://toptoon.life
