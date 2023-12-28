@@ -75,11 +75,10 @@ http://natas9.natas.labs.overthewire.org
 - https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
+- https://hanman.cyou/ # References: https://www.yy123.cyou/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
-- http://www.aabamh.com
 - https://toptoon.life
-- http://www.p5mh.com/
 - https://nnhanman.com
 - https://www.yeseimg.com/
 
