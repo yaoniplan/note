@@ -15,11 +15,10 @@
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+12
 - Ragna Crimson / 狩龙人拉格纳 - 12
 - 武映三千道 - 48
-- 傲世九重天 - 10 animation
-- MF Ghost / 极速车魂 - 10
-- 锦衣神匠 - 13
-- 仙逆 - 13
-- 三十六骑 - 10
+- 傲世九重天 - 12
+- MF Ghost / 极速车魂 - 12
+- 仙逆 - 16
+- 三十六骑 - 10 animation
 - Migi & Dali / 米奇与达利 - 10
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+70
 - 九辰风云录 - 40
@@ -255,6 +254,7 @@
 - guard(end)
 
 ### Animation
+- 锦衣神匠 - 13 # End of the first part
 - The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 09 1201 # The plot is slow
 - Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 12 0138 # It might be more interesting if science ficiton or other elements can be added
 - 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 11 # The plot is slow
