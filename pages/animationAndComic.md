@@ -18,9 +18,7 @@
 - 傲世九重天 - 12
 - MF Ghost / 极速车魂 - 12
 - 仙逆 - 16
-- 三十六骑 - 10 animation
-- Migi & Dali / 米奇与达利 - 10
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+70
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+70 animation
 - 九辰风云录 - 40
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 08
 - 洪荒灵尊 - 30
@@ -254,6 +252,8 @@
 - guard(end)
 
 ### Animation
+- Migi & Dali / 米奇与达利 - 13 # End of the first part
+- 三十六骑 - 10 0248 # The plot is slow
 - 锦衣神匠 - 13 # End of the first part
 - The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 09 1201 # The plot is slow
 - Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 12 0138 # It might be more interesting if science ficiton or other elements can be added
