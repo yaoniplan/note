@@ -18,9 +18,9 @@
 - 傲世九重天 - 12
 - MF Ghost / 极速车魂 - 12
 - 仙逆 - 16
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+70 animation
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+73
 - 九辰风云录 - 40
-- Seven Deadly Sins / 七大罪 默示录的四骑士 - 08
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 08 animation
 - 洪荒灵尊 - 30
 - learnC - 16 0714
 - A brief history - 13
