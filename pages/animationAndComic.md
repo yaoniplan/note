@@ -20,8 +20,8 @@
 - 仙逆 - 16
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+73
 - 九辰风云录 - 40
-- Seven Deadly Sins / 七大罪 默示录的四骑士 - 08 animation
-- 洪荒灵尊 - 30
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 11
+- 洪荒灵尊 - 33 animation
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
