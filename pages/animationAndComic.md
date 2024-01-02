@@ -21,13 +21,13 @@
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+73
 - 九辰风云录 - 40
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 11
-- 洪荒灵尊 - 33 animation
+- 洪荒灵尊 - 35
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 26
-- Shrouding the Heavens / 遮天 - 34
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 88
+- 大主宰 - 29
+- Shrouding the Heavens / 遮天 - 37
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 92 animation
 - 武神主宰 - 192/392
 - 独步逍遥 - 168/372
 - Perfect World / 完美世界 - 38/140
@@ -612,6 +612,7 @@
 - https://movie.douban.com/top250
 - Oppenheimer / 奥本海默 # Do not forget who we are when making a significant contribution
     - Father of atomic bomb
+    - https://www.youtube.com/watch?v=n8H7Jibx-c0 # 'Now I am Become Death, the Destroyer of Worlds'
 - Interstellar / 星际效应 # Do meaningful things
 - EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
 - Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
@@ -620,7 +621,7 @@
 - The Avengers / 复仇者联盟 # End of the part one # 01:24:00
     - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
 - Ready Player One / 头号玩家 # Punk defeats Cyber
-- Titanic / 泰坦尼克号 # You jump, i jump
+- Titanic / 泰坦尼克号 # 'You jump, i jump'
 - The Girl Who Leapt Through Time / 穿越时空的少女 # Time waits for no one
 - Forrest Gump / 阿甘正传 # God rewards work
 - Alita: Battle Angel / 阿丽塔：战斗天使 # End of the first part

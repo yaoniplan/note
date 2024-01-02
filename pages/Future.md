@@ -1,6 +1,6 @@
 ## "Website"
-http://natas9.natas.labs.overthewire.org
-9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
+- https://test.ustc.edu.cn/
+- http://natas9.natas.labs.overthewire.org # 9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 - https://www.xue8nav.com/
 - https://www.toptal.com/project-managers/tomato-timer#
 - https://new.polebrief.com/edit
