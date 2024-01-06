@@ -1,6 +1,6 @@
 ### "Animation"
-- 仙武传 - 38
-- 万界至尊 (Part1+2)- 50+20
+- 仙武传 - 41
+- 万界至尊 (Part1+2)- 50+20 animation
 - 十方武圣 - 07
 - 太一剑仙传 - 10
 - 不死不灭之少年出山 - 06
@@ -30,11 +30,11 @@
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 94
 - 武神主宰 - 192/399
 - 独步逍遥 - 168/378
-- Perfect World / 完美世界 - 38/140 animation
-- Against the Sky Supreme / 逆天至尊 - 257
-- 斗破苍穹年番 - 74
-- 绝世武魂 - 330
-- 万古神话 - 142
+- Perfect World / 完美世界 - 38/143
+- Against the Sky Supreme / 逆天至尊 - 263
+- 斗破苍穹年番 - 77
+- 绝世武魂 - 337
+- 万古神话 - 149
 
 ### Comic
 - 初次深交，请多指教 - 27

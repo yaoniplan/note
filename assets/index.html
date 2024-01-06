@@ -41,6 +41,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-mov-cli">Use &quot;mov-cli&quot;</h4>
+<ul>
+<li><code>mov-cli</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to watch a foreign movie.</li>
+<li><code>pipx install mov-cli</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/mov-cli/mov-cli?tab=readme-ov-file#usage">https://github.com/mov-cli/mov-cli?tab=readme-ov-file#usage</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="make-a-contribution-in-github">Make a contribution in GitHub</h4>
 <ul>
 <li>Push a request (Contributor)<ul>
@@ -339,6 +356,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>pipx upgrade mov-cli</code> # Upgrade</li>
 <li><code>pipx list</code> # List installed packages</li>
 <li><code>pipx uninstall animdl</code> # Uninstall</li>
 <li><code>nix shell nixpkgs#pipx</code> # Install dependencies</li>
@@ -4482,7 +4500,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li>Move all FLV files in subdirectories to the current directory<pre><code>find . -maxdepth 2 -type f -name &quot;*.flv&quot; -exec mv {} . \;
 </code></pre>
 </li>
-<li>Move all files in subdirectories to the current directory<pre><code>find {01..08}/ -maxdepth 1 -type d -exec mv {} . \;
+<li>Move all files in subdirectories to the current directory<pre><code>find {01..08}/ -maxdepth 1 -type f -exec mv {} . \;
 </code></pre>
 <ul>
 <li><code>{01..08}/</code> # Replace it with your subdirectory</li>
@@ -4863,6 +4881,7 @@ file &#39;output02.wma&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>for f in *; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/ //g&#39;)&quot;; done</code> # Remove all spaces in file names</li>
 <li><code>.</code> # Any single character</li>
 <li>Because to modify file name in batches.</li>
 </ul>

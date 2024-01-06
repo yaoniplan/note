@@ -100,7 +100,7 @@
 - https://www.shiyanlou.com/
 
 ## Artificial intelligence
-- https://char.openai.com # New Incognito Window (Ctrl-Shift-N), A foreign email
+- https://char.openai.com # Sign up: New Incognito Window (Ctrl-Shift-N), A foreign email
 - https://github.com/xx025/carrot
 - https://bard.google.com/
 
