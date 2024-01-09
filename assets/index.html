@@ -144,7 +144,7 @@ check-certificate=false
 <ul>
 <li><h4 id="add-zero-padding-to-file-name">Add zero padding to file name</h4>
 <ul>
-<li><code>for f in {1..9}; do old=&quot;Python3($f).flv&quot;; new=&quot;Python3(0$f).flv&quot;; mv &quot;$old&quot; &quot;$new&quot;; done</code></li>
+<li><code>for n in {1..9}; do old=&quot;Python3($n).flv&quot;; new=&quot;Python3(0$n).flv&quot;; mv &quot;$old&quot; &quot;$new&quot;; done</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -1503,6 +1503,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Settings<ul>
+<li><code>Next song</code> # Play next music (Doesn&#39;t work: <code>Previous song</code>)</li>
 <li><code>Restart this device</code> # Solve some bugs</li>
 <li><code>Enable Night Shift</code> # Protect eyes</li>
 <li><code>What date is it</code> # Replace <code>it</code> with <code>tomorrow</code> (Or the day after tomorrow)</li>
@@ -7491,6 +7492,10 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># D removes the current file
+D run rm &quot;${path}&quot;; playlist-remove current
+</code></pre>
+</li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
 <li><code>mpv --skip-download --write-subs yourURL</code> # download subtitles only</li>
 <li><code>Alt-Hyphen</code> # Zoom out video<ul>
@@ -7559,11 +7564,13 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><code>man mpv</code> # <code>/Cache$</code></li>
 <li><a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=281480">https://bbs.archlinux.org/viewtopic.php?id=281480</a></li>
-<li><a href="https://wiki.gentoo.org/wiki/Mpv">https://wiki.gentoo.org/wiki/Mpv</a></li>
+<li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
+<li><a href="https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265">https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/Mpv#Key_bindings">https://wiki.gentoo.org/wiki/Mpv#Key_bindings</a></li>
+<li><code>man mpv</code> # <code>/Cache$</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -8572,6 +8579,11 @@ sys-kernel/linux-firmware @BINARY-REDISTRIBUTABLE
 <ul>
 <li><h4 id="use-alist">Use &quot;alist&quot;</h4>
 <ul>
+<li>AList V3<pre><code>/websiteName # Mount Path
+/ # Root folder path (All or a specific folder)
+/websiteURL # Url
+</code></pre>
+</li>
 <li>SFTP<pre><code>/grow # Mount Path
 Name # Order by
 Descending # Order direction
@@ -8646,6 +8658,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path">https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/main/docker-compose.yml">https://github.com/alist-org/alist/blob/main/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/829#issuecomment-1080066329">https://github.com/alist-org/alist/issues/829#issuecomment-1080066329</a></li>
@@ -12208,6 +12221,7 @@ backend = &quot;glx&quot;;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-O GB18030</code> # If file name displays garbled characters</li>
 <li><code>-d</code> # Directory</li>
 <li><code>./</code> # The current directory</li>
 <li><code>FiraCode/</code> A directory</li>
@@ -12215,6 +12229,7 @@ backend = &quot;glx&quot;;
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-12_18-32_1673519575373_0.png" alt="2023-01-12_18-32.png"></li>
+<li><a href="https://stackoverflow.com/questions/28249384/decompress-zip-with-given-encoding/45583116#45583116">https://stackoverflow.com/questions/28249384/decompress-zip-with-given-encoding/45583116#45583116</a></li>
 <li><code>man unzip</code></li>
 </ul>
 </li>

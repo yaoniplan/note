@@ -24,8 +24,9 @@
 - 碰之道 - 00
 - 大王饶命 - 00
 - 凡人修仙传 - 00
-- 指尖相触，恋恋不舍 - 00
-- 物理魔法使马修 第二季 - 00
+- 凡人修仙传 - 30/72 # end of the second season
+- 指尖相触，恋恋不舍 - 01
+- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+01
 - 我独自升级 - 01
 - 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 01
 - 师士传说 - 01
@@ -414,7 +415,6 @@
 - 十方剑圣 - 02 0354 # Old story
 - 地狱乐 - 13 # End of the first part
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
-- Mashle: Magic and Muscles / 物理魔法使马修 - 12 # End of the first part
 - 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
     - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
     - https://ja.wikipedia.org/wiki/堕靡泥の星
@@ -534,7 +534,6 @@
 - BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
 - 黑门 - 12 # end of the first season
 - 苍兰诀- 12 # end of the first season
-- 凡人修仙传 - 30/72 # end of the second season
 - 黑之召唤士第一季 - 12 # end of the first season
 - 在异世界迷宫开后宫第一季 - 12 # end of the first season
 - 君有云 - 24 # end of the first season
