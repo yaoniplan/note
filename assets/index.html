@@ -41,6 +41,26 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4 id="use-fzf">Use &quot;fzf&quot;</h4>
+<ul>
+<li><code>vi ~/.bashrc</code> # Bind <code>Ctrl-j</code> key to <code>Enter</code> key (Like Bash)<pre><code>export FZF_DEFAULT_OPTS=&quot;--bind=ctrl-j:accept&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>source ~/.bashrc</code> # Make it effective</li>
+<li>Because &quot;ani-cli&quot; depends on &#39;fzf&#39;.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797">https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4 id="use-mov-cli">Use &quot;mov-cli&quot;</h4>
 <ul>
 <li><code>mov-cli</code></li>
@@ -178,7 +198,7 @@ check-certificate=false
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vi ~/.ipython/profile_default/ipython_config.py</code><pre><code>c.TerminalInteractiveShell.editing_mode = &#39;vi&#39;
+<li><code>vi ~/.ipython/profile_default/ipython_config.py</code> # Enable vi mode<pre><code>c.TerminalInteractiveShell.editing_mode = &#39;vi&#39;
 c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
 </code></pre>
 </li>
@@ -375,13 +395,19 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>cat ~/.local/state/ani-cli/ani-hsts</code> # View history<ul>
+<li><code>tac ~/.local/state/ani-cli/ani-hsts | less</code> # Another way</li>
+</ul>
+</li>
 <li>Issues: Can&#39;t add a source (Cause: Watermark, not many sources, etc.)</li>
 <li><code>Terror in Resonance</code> # Replace it with your desired animation name</li>
 <li><code>yay --sync ani-cli</code> # Install the dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/pystardust/ani-cli/discussions/1003#discussioncomment-4815461">https://github.com/pystardust/ani-cli/discussions/1003#discussioncomment-4815461</a></li>
 <li><a href="https://www.youtube.com/watch?v=gscwIwRaIo8">https://www.youtube.com/watch?v=gscwIwRaIo8</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
