@@ -4190,15 +4190,15 @@ export https_proxy=&quot;192.168.10.100:7890&quot;
 export no_proxy=&quot;localhost, 192.168.10.100&quot;
 </code></pre>
 </li>
-<li><code>doas reboot</code> # Make changes effective</li>
+<li>Log out and log back to make changes effective</li>
 </ul>
 </li>
-<li>The abbreviation of &quot;Arch User Repository&quot; is &quot;AUR&quot;.</li>
+<li>The abbreviation of &quot;arch user repository&quot; is &quot;aur&quot;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
 <li><a href="https://github.com/Jguer/yay">https://github.com/Jguer/yay</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -4310,6 +4310,11 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Examples<ul>
+<li><code>trans -player mpg123 zh:en &quot;$*&quot;</code> # Translate Pinyin to English</li>
+<li><code>trans -player mpg123 :zh &quot;$*&quot; | less -R</code> # Translate English to Chinese</li>
+</ul>
+</li>
 <li><code>-engine</code> # Specify a translation engine</li>
 <li><code>-list-engines</code> # List translation engines</li>
 <li><code>zh</code> # Replace it with country code (e.g. en)<ul>
@@ -8743,7 +8748,7 @@ doas systemctl enable docker --enable # Enable now
 doas gpasswd --add $(whoami) docker # Add user to Docker group
 </code></pre>
 <ul>
-<li>Log out and log back to make it effective</li>
+<li>Log out and log back to make changes effective</li>
 </ul>
 </li>
 </ul>
@@ -8867,7 +8872,7 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
-<li><code>git remote set-url --push origin git@192.168.10.100:/var/git/note.git</code> # Update the origin URL</li>
+<li><code>git remote set-url --push origin git@192.168.10.100:/var/git/note.git</code> # Update the push URL</li>
 <li><code>git remote set-url --delete --push origin git@github.com:yaoniplan/note.git</code> # Delete the push URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
 </ul>
@@ -16342,6 +16347,31 @@ You can edit this.
 </ul>
 </li>
 <li></li>
+<li><h4 id="display-user-name">Display user name</h4>
+<ul>
+<li><code>whoami</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Other methods<ul>
+<li><code>echo $USER</code></li>
+<li><code>echo $LOGNAME</code></li>
+<li><code>id --user --name</code></li>
+<li><code>who</code></li>
+<li><code>logname</code></li>
+</ul>
+</li>
+<li>Because to share reuse scripts with everyone.Because to share reuse scripts with everyone.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man id</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[linux]] <code>chown -R owner:group file</code><ul>
 <li><code>chown</code> # change owner (改变拥有者)</li>
 <li><code>-R</code> # R:recursive (递归的) (应用场景：连同目录及其下的所有文件及目录)</li>
