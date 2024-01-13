@@ -6,8 +6,7 @@
 - 万古狂帝
 - 修罗武神
 - 神藏
-- 枕刀歌
-- 武双姝 animation
+- 枕刀歌 02 animation
 - 弱角友崎同学 (Part1+2) 00+01
 - 为了在异世界也能抚摸毛茸茸而努力 - 01
 - 异修罗 - 01
@@ -281,6 +280,7 @@
 - guard(end)
 
 ### Animation
+- 武双姝 12 # End of the first part
 - 命运拳台 - 01 0530 # Target audience is 13 or 14 years old
 - The Dangers in My Heart / 我心里危险的东西 第二季 - 00+01 # It's emotional.
 - Migi & Dali / 米奇与达利 - 13 # End of the first part
@@ -603,7 +603,7 @@
 - 无赖勇者的鬼畜美学(season 1 end)
 - 妖精的旋律(season 1 end)
 - 死囚乐园(season 1 end)
-- 死亡笔记26(season 1 end) 
+- Death Note / 死亡笔记26(season 1 end) 
 - 学园默示录(boring)
 - 寄生兽(boring)
 - another(boring)

@@ -108,55 +108,17 @@
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-aria2">Use &quot;aria2&quot;</h4>
+<li><h4 id="use-aria2c">Use &quot;aria2c&quot;</h4>
 <ul>
-<li><code>doas aria2c --conf-path=/etc/aria2/aria2.conf</code></li>
+<li><code>aria2c yourURL</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Install aria2<pre><code>nix profile install nixpkgs#aria2
-doas mkdir /etc/aria2/
-doas touch /etc/aria2/aria2.session
-doas chmod 777 /etc/aria2/aria2.session
-</code></pre>
-</li>
-<li><code>doas vi /etc/aria2/aria2.conf</code> # Config <em>aria2.conf</em><pre><code># Modify the file saving directory by yourself
-dir=/home/yaoniplan/
-disable-ipv6=true
- 
-# The purpose of opening rpc is for web management
-enable-rpc=true
-rpc-allow-origin-all=true
-rpc-listen-all=true
-#rpc-listen-port=6800
-# Breakpoint resume
-continue=true
-input-file=/etc/aria2/aria2.session
-save-session=/etc/aria2/aria2.session
- 
-# Maximum number of simultaneous download tasks
-max-concurrent-downloads=20
- 
-save-session-interval=120
- 
-# Http/FTP related
-connect-timeout=120
-#lowest-speed-limit=10K
-#Number of connections to the same server
-max-connection-per-server=10
-#max-file-not-found=2
-# Minimum file fragment size, the upper limit of the number of download threads depends on how many fragments can be divided, which is important for small files
-min-split-size=10M
-# Maximum number of threads for a single file, recommended routing value: 5
-split=10
-check-certificate=false
-#http-no-cache=true
-</code></pre>
-</li>
+<li><code>nix profile install nixpkgs#aria2</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://blog.csdn.net/shixiaolu63/article/details/81744636">https://blog.csdn.net/shixiaolu63/article/details/81744636</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -194,7 +156,7 @@ check-certificate=false
 <ul>
 <li><h4 id="use-ipython">Use &quot;ipython&quot;</h4>
 <ul>
-<li><code>~/.config/ipython/ipython</code></li>
+<li><code>~/.config/ipython/bin/ipython</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -3047,8 +3009,9 @@ $
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-vimium-c">Use &quot;Vimium C&quot;</h4>
+<li><h4 id="use-vimium-c">Use &quot;vimium c&quot;</h4>
 <ul>
+<li><code>gf</code> # Go to the next frame</li>
 <li><code>map &lt;c-m&gt; toggleMuteTab</code> # Ctrl-m</li>
 <li><code>yv</code> # Ctrl-f and <code>v</code> or <code>V</code><ul>
 <li><code>y</code> # Yank</li>
@@ -4082,7 +4045,11 @@ note
 <li><code>visudo</code> # Use Vi to edit the sudoers file<pre><code>yaoniplan ALL=(ALL) ALL
 </code></pre>
 <ul>
-<li><code>doas pacman -S vi</code> # Install in Arch Linux</li>
+<li><code>pacman --sync vi</code> # Install Vi to solve the problem<pre><code>[root@tux yaoniplan]# visudo 
+visudo: no editor found (editor path = /usr/bin/vi)
+[root@tux yaoniplan]#
+</code></pre>
+</li>
 </ul>
 </li>
 <li><code>exit</code> # Exit the root user</li>
@@ -4112,6 +4079,7 @@ yaoniplan is not in the sudoers file.
 <li><code>vim /etc/pacman.d/mirrorlist</code><pre><code>Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 </code></pre>
 </li>
+<li><code>pacman --sync --refresh</code> # Test speed</li>
 </ul>
 </li>
 </ul>
@@ -4282,6 +4250,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>cronie</code> # Replace it with your service</li>
+<li><code>doas systemctl enable cronie --now</code> # One command that combines them</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5555,7 +5524,7 @@ services:
 <li><code>docker-compose stop</code> # Stop</li>
 <li><code>docker-compose down</code> # Stop and remove containers</li>
 <li><code>docker-compose restart</code> # Restart</li>
-<li><code>doas apt install docker-compose</code> # Install it before installing Docker</li>
+<li><code>doas apt install docker-compose</code> # Install it after installing Docker</li>
 <li><code>latest</code> # Latest tag</li>
 <li><code>~/.config/clash</code> # Replace it with your path of the config.yaml file</li>
 <li>In Chromium<ul>
@@ -8755,7 +8724,7 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 <hr>
 <ul>
-<li><h4 id="install-docker-in-ubuntu-server-2204">Install &quot;Docker&quot; in Ubuntu Server 22.04</h4>
+<li><h4 id="install-docker-in-ubuntu-server-2204">Install &quot;docker&quot; in Ubuntu Server 22.04</h4>
 <ul>
 <li>Follow the steps of this <a href="https://docs.docker.com/engine/install/ubuntu/">website</a></li>
 </ul>
@@ -8769,12 +8738,21 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </li>
 <li><code>doas reboot</code> # Make the changes effective</li>
 <li><code>docker --version</code> # Verify the installation</li>
+<li>In Arch Linux<pre><code>doas pacman --sync docker # Install dependencies
+doas systemctl enable docker --enable # Enable now
+doas gpasswd --add $(whoami) docker # Add user to Docker group
+</code></pre>
+<ul>
+<li>Log out and log back to make it effective</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/">https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/</a></li>
 <li><code>man usermod</code></li>
 <li><code>man docker</code></li>
-<li><a href="https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/">https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -9764,9 +9742,18 @@ git push origin master
 <li><code>hostname</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Other methods<ul>
+<li><code>echo $HOSTNAME</code> # Check the environment variable</li>
+<li><code>cat /etc/hostname</code> # Check the file</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man hostname</code></li>
 <li><a href="https://man.freebsd.org/cgi/man.cgi?hostname(1)">https://man.freebsd.org/cgi/man.cgi?hostname(1)</a></li>
+<li><code>man hostname</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -10393,7 +10380,7 @@ fi
 </ul>
 <hr>
 <ul>
-<li><h4 id="use-rsync-to-copy-file-from-one-server-to-another">Use rsync to copy file from one server to another</h4>
+<li><h4 id="use-rsync">Use &quot;rsync&quot;</h4>
 <ul>
 <li><code>rsync -av test.md yaoniplan@192.168.10.106:/home/yaoniplan/</code></li>
 </ul>
@@ -10401,6 +10388,7 @@ fi
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-a</code> # --archive</li>
 <li><code>-v</code> # --verbose</li>
+<li>Because to copy file from one server to another.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -10518,7 +10506,7 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>ssh yaoniplan@192.168.10.100 &quot;bash -lc &#39;source ~/.local/bin/downloadOffline.sh \&quot;$clipboardContent\&quot;&#39;&quot;</code> # Use local <a href="variable.md">variable</a></li>
+<li><code>ssh yaoniplan@192.168.10.100 &quot;bash -lc &#39;source ~/.local/bin/downloadOffline.sh \&quot;$clipboardContent\&quot;&#39;&quot;</code> # Use local variable</li>
 <li><code>ssh yaoniplan@192.168.10.100 &#39;bash -c &quot;source ~/.local/bin/runContainer.sh&quot;&#39; &amp;</code> # Execute command temporarily</li>
 <li><code>bandit0</code> # Username<ul>
 <li><code>whoami</code> # Check user name</li>
@@ -14531,21 +14519,21 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><h4 id="use-qemu-in-linux">Use &quot;qemu&quot; in Linux</h4>
 <ul>
 <li>Create a disk image<ul>
-<li><code>qemu-img create -f qcow2 testQemu.cow 100G</code></li>
+<li><code>qemu-img create -f qcow2 ~/testQemu.cow 100G</code></li>
 </ul>
 </li>
 <li>Install the OS<pre><code>qemu-system-x86_64 -m 8G -enable-kvm \
   -bios /usr/share/ovmf/x64/OVMF.fd \
   -nic user,hostfwd=tcp::60022-:22 \
   -cdrom /mnt/grow/230504archlinux-2023.05.03-x86_64.iso \
-  -drive file=testQemu.cow,format=qcow2 \
+  -drive file=~/testQemu.cow,format=qcow2 \
   -boot order=d
 </code></pre>
 </li>
 <li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 4 -enable-kvm \
   -bios /usr/share/ovmf/x64/OVMF.fd \
   -nic user,hostfwd=tcp::60022-:22 \
-  testQemu.cow -audiodev pa,id=sound0 \
+  ~/testQemu.cow -audiodev pa,id=sound0 \
   -device ich9-intel-hda \
   -device hda-output,audiodev=sound0
 </code></pre>
@@ -14553,6 +14541,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-display sdl,gl=on -vga virtio</code> # Enable 3D acceleration if you cannot enter the desktop after entering the password in the window manager</li>
 <li><code>-bios /usr/share/ovmf/x64/OVMF.fd</code> # 64bit UEFI</li>
 <li><code>ssh yaoniplan@192.168.10.105 -p 60022</code> # Connect it</li>
 <li><code>doas pacman -S qemu-full</code> # Install dependencies</li>
