@@ -40,6 +40,48 @@
 </head>
 <body>
   <article class="markdown-body">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yaoniplan</title>
+  <link rel="icon" href="../assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/github-markdown-dark.css">
+  <link rel="stylesheet" href="../assets/katex.min.css">
+  <script defer src="../assets/katex.min.js"></script>
+  <script defer src="../assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+  <script>
+    // Render all KaTeX expressions on the page
+    document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false }
+        ]
+      });
+    });
+  </script>
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
+      }
+    }
+    body {
+      background-color: #0d1117;
+    }
+  </style>
+</head>
+<body>
+  <article class="markdown-body">
 <ul>
 <li><h4 id="use-fzf">Use &quot;fzf&quot;</h4>
 <ul>
@@ -18476,6 +18518,9 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 </ul>
 </li>
 </ul>
+  </article>
+</body>
+</html>
   </article>
 </body>
 </html>
