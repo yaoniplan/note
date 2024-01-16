@@ -41,6 +41,38 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;tofi&quot;</h4>
+<ul>
+<li><code>tofi-run | xargs hyprctl dispatch exec</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/tofi/config</code> # Set font<pre><code>font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
+</code></pre>
+<ul>
+<li><code>fc-list | grep -i fira</code> # Get font file path</li>
+</ul>
+</li>
+<li>Support hotkey<ul>
+<li><code>Ctrl-n/p</code> # Next or previous (<code>Ctrl-j/k</code> is OK)</li>
+<li><code>Ctrl-w</code> # Clear a word</li>
+<li><code>Ctrl-u</code> # Clear a line</li>
+<li><code>Ctrl-c</code> # Close Tofi</li>
+</ul>
+</li>
+<li><code>yay --sync tofi</code> # Install dependencies</li>
+<li>Because to execute scripts quickly. (Like &quot;dmenu&quot;)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
+<li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
+<li><a href="https://github.com/philj56/tofi/issues/55#issuecomment-1292147720">https://github.com/philj56/tofi/issues/55#issuecomment-1292147720</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Display unicode characters</h4>
 <ul>
 <li><code>doas pacman --sync noto-fonts-cjk</code></li>
@@ -175,7 +207,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>``</li>
+<li>Because to experience the animation special effects on Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -10678,9 +10710,9 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li>In Systemd<ul>
-<li><code>doas systemctl enable sshd</code> # Every time at boot time</li>
-<li><code>doas systemctl start sshd</code> # Once now<pre><code>yaoniplan@ubuntu2204:~$ ssh yaoniplan@192.168.10.105
-ssh: connect to host 192.168.10.105 port 22: Connection refused
+<li><code>doas systemctl enable sshd --now</code> # Enable sshd now on the machine you want to connect to solve the problem<pre><code>[yaoniplan@tux ~]$ ssh yaoniplan
+ssh: connect to host 100.80.81.110 port 22: Connection refused
+[yaoniplan@tux ~]$
 </code></pre>
 </li>
 </ul>
