@@ -41,12 +41,67 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;w3m&quot;</h4>
+<ul>
+<li><code>w3m ~/note/index.html</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Other tools<ul>
+<li><code>lynx ~/note/index.html</code></li>
+</ul>
+</li>
+<li><code>nix profile install nixpgks#w3m</code> # Install dependencies (e.g. <code>lynx</code>)</li>
+<li>Because to check notes quickly.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Write a function in Vim</h4>
+<ul>
+<li><code>vim ~/.vimrc</code><pre><code class="language-vim">&quot; Insert code block
+function! InsertCodeBlock()
+    &quot; Check if the line has a four-space indent
+    if getline(line(&#39;.&#39;)) =~ &#39;^    &#39;
+        call append(line(&#39;.&#39;), [&#39;      ```&#39;, &#39;      &#39;, &#39;      ```&#39;])
+        execute &quot;normal! 2j&quot;
+        &quot; Enter insert mode at the end of line (Like &#39;A&#39; key)
+        startinsert!
+    else
+        call append(line(&#39;.&#39;), [&#39;          ```&#39;, &#39;          &#39;, &#39;          ```&#39;])
+        execute &quot;normal! 2j&quot;
+        startinsert!
+    endif
+endfunction
+
+command! InsertCodeBlock :call InsertCodeBlock()
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use markdown to write some reusable documents.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;tofi&quot;</h4>
 <ul>
 <li><code>tofi-run | xargs hyprctl dispatch exec</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--require-match=false</code> # Accept arguments</li>
 <li><code>vim ~/.config/tofi/config</code> # Set font<pre><code>font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </code></pre>
 <ul>
@@ -65,6 +120,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/philj56/tofi/issues/34#issuecomment-1259924025">https://github.com/philj56/tofi/issues/34#issuecomment-1259924025</a></li>
 <li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
 <li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
 <li><a href="https://github.com/philj56/tofi/issues/55#issuecomment-1292147720">https://github.com/philj56/tofi/issues/55#issuecomment-1292147720</a></li>
@@ -9175,12 +9231,20 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>curl -u 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: https://api.github.com/repos/philj56/tofi</code> # Solve the problem<pre><code>{&quot;message&quot;:&quot;API rate limit exceeded for 18.182.47.148. (But here&#39;s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting&quot;}
+</code></pre>
+<ul>
+<li><code>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</code> # Replace it with your personal access token</li>
+<li><code>curl -i https://api.github.com/rate_limit</code> # Check the rate limit information (e.g. limit: 60 requests per hour)</li>
+</ul>
+</li>
 <li><code>-v</code> # Verbose</li>
 <li><code>--max-time 10</code> # Stop the curl command after 10 seconds</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man curl</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
