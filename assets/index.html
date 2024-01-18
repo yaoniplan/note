@@ -52,7 +52,7 @@
 </ul>
 </li>
 <li><code>nix profile install nixpgks#w3m</code> # Install dependencies (e.g. <code>lynx</code>)</li>
-<li>Because to check notes quickly.</li>
+<li>Because to check notes quickly. (Like &quot;links&quot;)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -68,7 +68,9 @@
 function! InsertCodeBlock()
     &quot; Check if the line has a four-space indent
     if getline(line(&#39;.&#39;)) =~ &#39;^    &#39;
+        &quot; Append text below the current line
         call append(line(&#39;.&#39;), [&#39;      ```&#39;, &#39;      &#39;, &#39;      ```&#39;])
+        &quot; Move cursor down twice
         execute &quot;normal! 2j&quot;
         &quot; Enter insert mode at the end of line (Like &#39;A&#39; key)
         startinsert!
@@ -85,10 +87,12 @@ command! InsertCodeBlock :call InsertCodeBlock()
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>:InsertCodeBlock</code> # Use the command to call the function</li>
 <li>Because to use markdown to write some reusable documents.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>Add a demo.gif here</li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -1149,10 +1153,16 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>nix profile install nixpkgs#python310Packages.gtts</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#python311Packages.gtts</code> # Install dependencies</li>
+<li><code>gtts-cli -l en -o e.mp3 &quot;hello test for ai&quot; --debug</code> # Debug<pre><code>...
+Error: Failed to connect. Probable cause: Unknown
+...
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/pndurette/gTTS/discussions/275#discussioncomment-351592">https://github.com/pndurette/gTTS/discussions/275#discussioncomment-351592</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>

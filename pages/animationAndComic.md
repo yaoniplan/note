@@ -1,16 +1,11 @@
 ### "Animation"
-- 星灵感应
-- 爱犬讯号 - 03 animation
+- 爱犬讯号 - 03
 - 师兄啊师兄 - 19
 - 从红月开始 - 05
 - 万古狂帝 - 04
 - 神藏 - 10
-- 枕刀歌 02 animation
-- 弱角友崎同学 (Part1+2) 00+01
-- 为了在异世界也能抚摸毛茸茸而努力 - 01
-- 异修罗 - 01
-- 深渊游戏 - 01
-- 迷宫饭 - 01
+- 深渊游戏 - 07
+- 迷宫饭 - 01 animation
 - 魔都精兵的奴隶 - 01
 - 秒杀外挂太强了，异世界的家伙们根本就不是对手 - 01
 - 魁拔之殊途 - 01
@@ -279,6 +274,11 @@
 - guard(end)
 
 ### Animation
+- Ishura / 异修罗 - 02 0521 # Plot may be slow.
+- Fluffy Paradise / 为了在异世界也能抚摸毛茸茸而努力 - 02 0800 # Target audience may be 13 or 14 years old.
+- 弱角友崎同学 (Part1+2) 00+02 0835 # Target audience may be 13 or 14 years old.
+- 枕刀歌 02 # Picture quality is unique.
+- Stardust Telepath / 星灵感应 - 01 0405 # The target audience may be female.
 - 武双姝 12 # End of the first part
 - 命运拳台 - 01 0530 # Target audience is 13 or 14 years old
 - The Dangers in My Heart / 我心里危险的东西 第二季 - 00+01 # It's emotional.
@@ -304,7 +304,7 @@
 - 绊之Allele第二季 - 00+01 0008 # The target audience may be female.
 - 赛马娘 Pretty Derby Season 3 - 01 # The target audience may be female.
 - 超时空护卫队 - 01 0004 # The is a TV drama.
-- 仙魔大战 - 01 1052 # The target audience is thirteen or fourteen year olds
+- 仙魔大战 - 01 1052 # The target audience is thirteen or fourteen years old
 - 明日方舟：冬隐归路 - 01 0509 # The plot is slow
 - Paradox Live the Animation - 05 0551 # The plot is slow
 - I'm in Love with the Villainess / 我推是反派大小姐 - 07 0716 # The plot is slow
@@ -336,8 +336,8 @@
 - 第一序列 - 16 # End of the first part 
 - 世界尽头的圣骑士 - (Part1+2) 00+02 # The plot is too slow
 - 女友成双 - 01 # Resources loading freezes
-- 七魔剑支配天下 - 02 # The target audience is thirteen or fourteen year olds
-- 高达创战元宇宙 - 03 # The target audience is thirteen or fourteen year olds
+- 七魔剑支配天下 - 02 # The target audience is thirteen or fourteen years old
+- 高达创战元宇宙 - 03 # The target audience is thirteen or fourteen years old
 - 葬送的芙莉莲 - 02 # The plot is too slow
 - 哥布林杀手 - (Part1+2) 00+02 2006 # The plot is not attractive enough
 - 地下忍者 - 02 2036 # The plot is a bit abnormal
@@ -345,9 +345,9 @@
 - 航海王总集篇 - 00 # Resources were not found
 - 圣墟 - 00 # dynamic comic
 - 希望的力量～大人光之美少女'23～ - 01 # The target audience is women.
-- 少年歌行外传 暗河传 - 01 1442 # The target audience is thirteen or fourteen year olds
-- 有药 - 01 02:00 # The target audience is thirteen or fourteen year olds
-- 魔装传说 - 01 0446 # The target audience is thirteen or fourteen year olds
+- 少年歌行外传 暗河传 - 01 1442 # The target audience is thirteen or fourteen years old
+- 有药 - 01 02:00 # The target audience is thirteen or fourteen years old
+- 魔装传说 - 01 0446 # The target audience is thirteen or fourteen years old
 - 堕玄师 - 15 # End of the first part
 - 公司里的小小前辈 - 12 # End of the first part
 - 真阳武神 - 14 # End of the first part
@@ -388,28 +388,28 @@
 - 真武巅峰 (Part1+2) - 40+26 # End of the second part
 - The Ravages of Time / 火凤燎原 - 16 # End of the first part
 - 剑骨 - 05 0541 # The plot is too corny
-- 戍天伏魔录 - 02 # The target audience is thirteen or fourteen year olds
+- 戍天伏魔录 - 02 # The target audience is thirteen or fourteen years old
 - 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 # The plot is too flat
-- 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen year olds
+- 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen years old
 - 一念永恒 (Part1+2) - 52+54 # End of the second part
 - 勇者赫鲁库 - 03 1022 # The plot progress is too slow
-- 无脑魔女 - 05 # The target audience is thirteen or fourteen year olds
-- 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen year olds
-- 女神有点灵 - 05 1049 # The target audience is thirteen or fourteen year olds
+- 无脑魔女 - 05 # The target audience is thirteen or fourteen years old
+- 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen years old
+- 女神有点灵 - 05 1049 # The target audience is thirteen or fourteen years old
 - 黑暗集会 - 02 # Horror theme
-- 英雄教室 - 03 # The target audience is thirteen or fourteen year olds
-- 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen year olds
+- 英雄教室 - 03 # The target audience is thirteen or fourteen years old
+- 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen years old
 - Expanding Sky! Precure光之美少女 - 01 # The target audience is children.
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
 - 一世独尊 - 26 # The plot is too corny
 - 剑域风云 (Part1+2) - 40+52 # End of the second part
-- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen year olds
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen years old
 - 混世机甲 - 01 1214 # The voice actors do not match their lips
-- 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen year olds
-- 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen year olds
-- 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen year olds
-- AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen year olds
+- 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen years old
+- 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen years old
+- 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen years old
+- AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen years old
 - 十方剑圣 - 02 0354 # Old story
 - 地狱乐 - 13 # End of the first part
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
