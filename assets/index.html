@@ -105,8 +105,10 @@ command! InsertCodeBlock :call InsertCodeBlock()
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>--require-match=false</code> # Accept arguments</li>
-<li><code>vim ~/.config/tofi/config</code> # Set font<pre><code>font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
+<li><code>vim ~/.config/tofi/config</code><pre><code># Accept arguments
+require-match = true
+# Set fonts
+font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </code></pre>
 <ul>
 <li><code>fc-list | grep -i fira</code> # Get font file path</li>
@@ -477,6 +479,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--max-downloads 1</code> # Download the latest one</li>
 <li><code>--yes-playlist</code> # Download the playlist</li>
 <li><code>--output</code> # Output filename template (e.g. <code>&quot;%(title)s.%(ext)s&quot;</code>)<ul>
 <li><code>&quot;%(playlist)s/</code> # A folder</li>

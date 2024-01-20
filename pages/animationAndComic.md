@@ -5,10 +5,9 @@
 - 万古狂帝 - 04
 - 神藏 - 10
 - 深渊游戏 - 07
-- 迷宫饭 - 01 animation
-- 魔都精兵的奴隶 - 01
-- 秒杀外挂太强了，异世界的家伙们根本就不是对手 - 01
-- 魁拔之殊途 - 01
+- Delicious in Dungeon / 迷宫饭 - 02
+- Chained Soldier / 魔都精兵的奴隶 - 02
+- 魁拔之殊途 - 12 animation
 - 佐佐木与文鸟小哔 - 01
 - 事与愿违的不死冒险者 - 01
 - 独步万古 - 32
@@ -274,6 +273,7 @@
 - guard(end)
 
 ### Animation
+- My Instant Death Ability Is So Overpowered / 秒杀外挂太强了，异世界的家伙们根本就不是对手 - 03 0909 # Plot may be slow.
 - Ishura / 异修罗 - 02 0521 # Plot may be slow.
 - Fluffy Paradise / 为了在异世界也能抚摸毛茸茸而努力 - 02 0800 # Target audience may be 13 or 14 years old.
 - 弱角友崎同学 (Part1+2) 00+02 0835 # Target audience may be 13 or 14 years old.
