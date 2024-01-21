@@ -269,11 +269,21 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Bind `Super-f` key to toggle full screen
+bind = $mainMod, F, fullscreen, 0
+# Bind `Super-l` key to lock screen
+bind = $mainMod, L, exec, swaylock --color 000000; hyprctl dispatch dpms off
+misc {
+    mouse_move_enables_dpms = false
+    key_press_enables_dpms = true
+}
+</code></pre>
+</li>
 <li>Because to experience the animation special effects on Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>vim ~/.config/hypr/hyprland.conf</code></li>
+<li><a href="https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/">https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/</a></li>
 </ul>
 </li>
 </ul>
@@ -12493,6 +12503,7 @@ backend = &quot;glx&quot;;
 <li><code>-d</code> # Directory</li>
 <li><code>./</code> # The current directory</li>
 <li><code>FiraCode/</code> A directory</li>
+<li><code>nix profile install nixpkgs#unzip</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
