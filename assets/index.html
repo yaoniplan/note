@@ -41,6 +41,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;swhkd&quot;</h4>
+<ul>
+<li><code>pkexec swhkd --debug --config ~/.config/hypr/swhkdrc</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>swhks &amp;</code> # Run it before using the above command</li>
+<li><code>yay --sync swhkd-bin</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/EdenQwQ/hyprland-dots/blob/main/.config/autostart-scripts/autostart-wayland">https://github.com/EdenQwQ/hyprland-dots/blob/main/.config/autostart-scripts/autostart-wayland</a></li>
+<li><code>man swhkd</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;w3m&quot;</h4>
 <ul>
 <li><code>w3m ~/note/index.html</code></li>
@@ -101,7 +119,7 @@ command! InsertCodeBlock :call InsertCodeBlock()
 <ul>
 <li><h4>Use &quot;tofi&quot;</h4>
 <ul>
-<li><code>tofi-run | xargs hyprctl dispatch exec</code></li>
+<li><code>tofi-run | xargs sh -c</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -283,6 +301,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/">https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/">https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/</a></li>
 </ul>
 </li>
@@ -13719,7 +13738,7 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 <ul>
 <li><h4>Use &quot;clash&quot;</h4>
 <ul>
-<li><code>chmod u+x clash-linux-amd64-v1.12.0</code> # Run this command after <a href="https://github.com/Dreamacro/clash/releases">downloading</a> and decompressing</li>
+<li><code>chmod u+x clash-linux-amd64-v1.12.0</code> # Run this command after <a href="https://web.archive.org/web/20231003084307/https://github.com/Dreamacro/clash/releases">downloading</a> and decompressing</li>
 <li><code>mv clash-linux-amd64-v1.12.0 clash</code></li>
 <li><code>sudo mv clash /usr/local/bin/</code></li>
 <li><code>clash</code> # Initialize</li>

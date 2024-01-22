@@ -12,11 +12,11 @@
 - 独步万古 - 35
 - The Wrong Way to Use Healing Magic / 治愈魔法的错误使用方法 - 03
 - 大王饶命 - (Part1+2) 12+02
-- 凡人修仙传 - 83 animation
-- 指尖相触，恋恋不舍 - 01
-- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+01
-- 我独自升级 - 01
-- 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 01
+- 凡人修仙传 - 84
+- 指尖相触，恋恋不舍 - 03
+- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+03
+- Solo Leveling / 我独自升级 - 03
+- The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 01
 - 师士传说 - 01
 - 仙武传 - 41
 - 万界至尊 (Part1+2)- 50+30
