@@ -84,8 +84,8 @@
 <ul>
 <li><code>vim ~/.vimrc</code><pre><code class="language-vim">&quot; Insert code block
 function! InsertCodeBlock()
-    &quot; Check if the line has a four-space indent
-    if getline(line(&#39;.&#39;)) =~ &#39;^    &#39;
+    &quot; Check if the current line has a four-space indent
+    if indent(&#39;.&#39;) == 4
         &quot; Append text below the current line
         call append(line(&#39;.&#39;), [&#39;      ```&#39;, &#39;      &#39;, &#39;      ```&#39;])
         &quot; Move cursor down twice
@@ -119,12 +119,22 @@ command! InsertCodeBlock :call InsertCodeBlock()
 <ul>
 <li><h4>Use &quot;tofi&quot;</h4>
 <ul>
-<li><code>tofi-run | xargs sh -c</code></li>
+<li><code>tofi-run &quot;$@&quot; | ${SHELL:-&quot;/bin/sh&quot;}</code><ul>
+<li><code>tofi-run --require-match=false | sh</code> # It&#39;s ok.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>&quot;$@&quot;</code> # All arguments</li>
+<li><code>${SHELL}</code> # The value of the SHELL environment variable</li>
+<li><code>:-</code> # Specify a default value if the variable is not set<ul>
+<li><code>&quot;/bin/sh&quot;</code> # A specified value</li>
+<li>Use default shell (if <code>echo $SHELL</code> is not empty) or /bin/sh</li>
+</ul>
+</li>
 <li><code>vim ~/.config/tofi/config</code><pre><code># Accept arguments
-require-match = true
+require-match = false
 # Set fonts
 font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </code></pre>
@@ -148,6 +158,8 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
 <li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
 <li><a href="https://github.com/philj56/tofi/issues/55#issuecomment-1292147720">https://github.com/philj56/tofi/issues/55#issuecomment-1292147720</a></li>
+<li><code>man 5 tofi</code> # <code>/require</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -1670,6 +1682,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Disadvantages<ul>
+<li>Charging is slow in winter (Charged 37% in 76 minutes)</li>
 <li>There is no useful e-book reader (e.g. Moon+ Reader), web browser (e.g. Kiwi Browser), or web proxy tool (e.g. Clash)</li>
 <li>Heavier than Android # It is tired to hold with one hand, it is also heavy in my pocket</li>
 <li>WiFi receiving signal ability is weaker than Android</li>
@@ -5616,6 +5629,7 @@ services:
 <li><code>192.168.10.100:5230</code> # Run in Chromium</li>
 <li>Warning: Vercel is used to deploy static websites. (Like GitHub Pages)<ul>
 <li>Cannot run Docker image</li>
+<li>Loading is slow unless connected to Wi-Fi</li>
 </ul>
 </li>
 </ul>
@@ -11136,25 +11150,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Set the background of feh to black</h4>
-<ul>
-<li><code>vim ~/.config/feh/themes</code><pre><code>feh --image-bg black
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>mkdir ~/.config/feh/</code> # Make the directory If you don&#39;t have it</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-01-27_18:14:43.gif" alt="2023-01-27_18:14:43.gif"></li>
-<li><a href="https://unix.stackexchange.com/questions/426526/how-to-permanently-set-default-color-of-fehs-background-to-black/673439#673439">https://unix.stackexchange.com/questions/426526/how-to-permanently-set-default-color-of-fehs-background-to-black/673439#673439</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use &quot;notify-send&quot;</h4>
 <ul>
 <li><code>notify-send &quot;$(cal)&quot;</code><ul>
@@ -12577,6 +12572,12 @@ backend = &quot;glx&quot;;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/feh/themes</code> # Set the background to black<pre><code>feh --image-bg black
+</code></pre>
+<ul>
+<li><code>mkdir ~/.config/feh/</code> # Make the directory If you don&#39;t have it</li>
+</ul>
+</li>
 <li><code>d</code> # Draw filename</li>
 <li><code>/mnt/grow/220824wallpaper/</code> # Replace it with your directory including wallpaper<ul>
 <li><code>http://192.168.10.100:5244/d/grow/2023-06-06/230605takeTheAdmissionTicketAboutExamination.jpg</code> # Use URL of image (Another way)</li>
@@ -12590,11 +12591,11 @@ backend = &quot;glx&quot;;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-01-11_23-36_1673451418603_0.png" alt="2023-01-11_23-36.png"></li>
-<li><img src="../assets/2023-01-11_23-37_1673451488291_0.png" alt="2023-01-11_23-37.png"></li>
-<li><code>man feh</code></li>
-<li><a href="https://unix.stackexchange.com/questions/255693/how-do-i-delete-images-from-disk-using-feh">https://unix.stackexchange.com/questions/255693/how-do-i-delete-images-from-disk-using-feh</a></li>
+<li><img src="../assets/2023-01-27_18:14:43.gif" alt="2023-01-27_18:14:43.gif"></li>
+<li><a href="https://unix.stackexchange.com/questions/426526/how-to-permanently-set-default-color-of-fehs-background-to-black/673439#673439">https://unix.stackexchange.com/questions/426526/how-to-permanently-set-default-color-of-fehs-background-to-black/673439#673439</a></li>
+<li><a href="https://unix.stackexchange.com/questions/255693/how-do-i-delete-images-from-disk-using-feh/255697#255697">https://unix.stackexchange.com/questions/255693/how-do-i-delete-images-from-disk-using-feh/255697#255697</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Feh">https://wiki.gentoo.org/wiki/Feh</a></li>
+<li><code>man feh</code> # <code>/ctrl\+delete</code></li>
 </ul>
 </li>
 </ul>
@@ -14599,12 +14600,16 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 </ul>
 <hr>
 <ul>
-<li>SDDM theme #Gentoo #Linux #DM<ul>
-<li><code>sudo cp -r ~/sddm-chili-0.1.5 /usr/share/sddm/themes/</code></li>
+<li><h4>Use &quot;sddm&quot; theme in Gentoo Linux</h4>
+<ul>
+<li><code>git clone https://github.com/MarianArlt/sddm-chili</code></li>
+<li><code>sudo mv ~/sddm-chili /usr/share/sddm/themes/</code></li>
 <li><code>sudo vim /usr/share/sddm/sddm.conf.d/00default.conf</code><pre><code>[Theme]
 # Current theme name
-Current=sddm-chili-0.1.5
+Current=sddm-chili
 </code></pre>
+</li>
+</ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>/usr/share/sddm/sddm.conf.d/00default.conf</code> # SDDM&#39;s config file<ul>
@@ -14612,30 +14617,46 @@ Current=sddm-chili-0.1.5
 <li><code>locate sddm.conf</code> # Locate file including &quot;sddm.conf&quot; text</li>
 </ul>
 </li>
-<li><code>sudo emerge --ask dev-qt/qtquickcontrols</code> # Solve an error about <em>file:///usr/share/sddm/themes/sddm-chili-0.1.5/Main.qml:22:1: module &quot;QtQuick.Controls&quot; is not installed</em></li>
-<li><code>sudo emerge --ask dev-qt/qtgraphicaleffects</code> # Solve an error about <em>file:///usr/share/sddm/themes/sddm-chili-0.1.5/components/Wallpaper.qml:21:1: module &quot;QtGraphicalEffects&quot; is not installed</em></li>
-<li><code>sudo vim /usr/share/sddm/themes/sddm-chili-0.1.5/theme.conf</code> # Customize the theme
-<code>[General] background=assets/background.png  # Resolution of your screen by typing &quot;screenfetch&quot; or &quot;neofetch&quot; in your Shell (Terminal) ScreenWidth=1366 ScreenHeight=768  blur=true recursiveBlurLoops=4 recursiveBlurRadius=15  PasswordFieldOutlined=false  PowerIconSize= # Size (between 10 and 16) of font FontPointSize=15 # Pixel size of avatar AvatarPixelSize=200  translationReboot= translationSuspend= translationPowerOff=</code></li>
+<li><code>sudo emerge --ask dev-qt/qtquickcontrols</code> # Solve an error<pre><code>file:///usr/share/sddm/themes/sddm-chili//Main.qml:22:1: module &quot;QtQuick.Controls&quot; is not installed
+</code></pre>
+</li>
+<li><code>sudo emerge --ask dev-qt/qtgraphicaleffects</code> # Solve an error<pre><code>file:///usr/share/sddm/themes/sddm-chili//components/Wallpaper.qml:21:1: module &quot;QtGraphicalEffects&quot; is not installed
+</code></pre>
+</li>
+<li><code>sudo vim /usr/share/sddm/themes/sddm-chili/theme.conf</code> # Customize the theme<pre><code># Screen resolution (Use command: screenfetch or neofetch)
+ScreenWidth=1366
+ScreenHeight=768
+
+# Size (between 10 and 16) of font
+FontPointSize=15
+# Pixel size of avatar
+AvatarPixelSize=150
+</code></pre>
+</li>
 <li><code>/usr/share/sddm/faces/yaoniplan.face.icon</code> # Avatar file<ul>
-<li><code>/usr/share/sddm/faces/</code> # add your coustomized picture to the avatar folder</li>
+<li><code>/usr/share/sddm/faces/</code> # Add your coustomized picture to the avatar folder</li>
 <li><code>yaoniplan</code> # change it into yours user name</li>
 <li><code>.face.icon</code> # Keep it default</li>
 </ul>
 </li>
+<li>Change date and time format<ul>
+<li><code>sudo vim /usr/share/sddm/themes/sddm-chili/Main.qml</code><pre><code>                        text = new Date().toLocaleString(Qt.locale(&quot;en_US&quot;), &quot;ddd dd MMMM yyyy, hh:mm&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Optional: Take a screenshot of the login screen<ul>
-<li><code>sddm-greeter --test-mode --theme /usr/share/sddm/themes/sddm-chili-0.1.5/</code> # Type it in your terminal</li>
+<li><code>sddm-greeter --test-mode --theme /usr/share/sddm/themes/sddm-chili/</code></li>
 <li>Press the <strong>print screen</strong> key to take a screenshot</li>
 </ul>
 </li>
 <li>Solve the problem about white background
 <img src="../assets/2022-12-16_15-48_1671176977155_0.png" alt="2022-12-16_15-48.png"><ul>
-<li>Convert <em>background.jpg</em> file to <em>background.png</em> file (Make sure the image file extension is <em>png</em>)<ul>
-<li>Make sure there is a <em>background.png</em> file in the <code>/usr/share/sddm/themes/sddm-chili-0.1.5/assets/</code> directory</li>
-<li><code>sudo vim /usr/share/sddm/themes/sddm-chili-0.1.5/theme.conf</code><pre><code>[General]
+<li>Convert <em>background.jpg</em> file to <em>background.png</em> file (Make sure the image file extension is <em>png</em>)</li>
+<li>Make sure there is a <em>background.png</em> file in the <code>/usr/share/sddm/themes/sddm-chili/assets/</code> directory</li>
+<li><code>sudo vim /usr/share/sddm/themes/sddm-chili/theme.conf</code><pre><code>[General]
 background=assets/background.png
 </code></pre>
-</li>
-</ul>
 </li>
 </ul>
 </li>
@@ -14644,11 +14665,9 @@ background=assets/background.png
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1670848483176_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670848867986_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1669474198529_0.png" alt="image.png"></li>
+<li><a href="https://github.com/MarianArlt/sddm-chili/issues/15#issuecomment-1764010005">https://github.com/MarianArlt/sddm-chili/issues/15#issuecomment-1764010005</a></li>
 <li><a href="https://askubuntu.com/questions/43458/how-can-i-take-a-screenshot-of-the-login-screen">https://askubuntu.com/questions/43458/how-can-i-take-a-screenshot-of-the-login-screen</a></li>
-<li><a href="https://github.com/MarianArlt/sddm-chili">MarianArlt/sddm-chili: The hottest theme around for SDDM, the Simple Desktop Display Manager.</a></li>
-</ul>
-</li>
+<li><a href="https://github.com/MarianArlt/sddm-chili">https://github.com/MarianArlt/sddm-chili</a></li>
 </ul>
 </li>
 </ul>

@@ -16,11 +16,10 @@
 - 指尖相触，恋恋不舍 - 03
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+03
 - Solo Leveling / 我独自升级 - 03
-- The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 01
-- 师士传说 - 01
-- 仙武传 - 41
-- 万界至尊 (Part1+2)- 50+30
-- 十方武圣 - 10
+- 师士传说 - 18
+- 仙武传 - 44
+- 万界至尊 (Part1+2)- 50+34
+- 十方武圣 - 12
 - 太一剑仙传 - 10 animation
 - 不死不灭之少年出山 - 06
 - 近战法师 - 07
@@ -271,6 +270,7 @@
 - guard(end)
 
 ### Animation
+- The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 03 0122 # Plot may be slow.
 - Pon no Michi / 碰之道 - 03 0952 # Daily life of playing mahjong
 - Sasaki and Peeps / 佐佐木与文鸟小哔 - 02 1144 # Plot may be slow. If I had the same abilities as the protagonist, I will ...
 - My Instant Death Ability Is So Overpowered / 秒杀外挂太强了，异世界的家伙们根本就不是对手 - 03 0909 # Plot may be slow.
