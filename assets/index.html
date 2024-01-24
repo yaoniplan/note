@@ -14557,11 +14557,13 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 <li>Press the <code>Escape</code> key to exit the interface</li>
 </ul>
 </li>
-<li>Enable audio or volume in Linux with pipeware<ul>
+<li>Use &quot;pactl&quot;<ul>
+<li><code>pactl list sinks</code> # Display the current volume level</li>
 <li><code>pactl set-sink-volume @DEFAULT_SINK@ +10%</code> # Increase the volume by ten percent</li>
 <li><code>pactl set-sink-volume @DEFAULT_SINK@ -10%</code> # Decrease the volume by ten percent</li>
 <li><code>pactl set-sink-mute @DEFAULT_SINK@ toggle</code> # Toggle mute</li>
 <li><code>pactl</code> # Pulse audio control</li>
+<li>Because enable audio or volume in Linux with pipeware.</li>
 </ul>
 </li>
 </ul>
