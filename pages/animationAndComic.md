@@ -22,10 +22,9 @@
 - 十方武圣 - 12
 - 太一剑仙传 - 16
 - 不死不灭之少年出山 - 11
-- 近战法师 - 08 animation
-- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+11
-- Law of Devil / 恶魔法则 - 14
-- 经验丰富的你和经验为零的我交往的故事 - 11
+- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12
+- Law of Devil / 恶魔法则 - 18
+- 经验丰富的你和经验为零的我交往的故事 - 12 1102 animation
 - Undead Unluck / 不死不幸 - 11
 - The Kingdoms of Ruin / 破灭之国 - 11
 - 逆天邪神3D - 15
@@ -270,6 +269,7 @@
 - guard(end)
 
 ### Animation
+- 近战法师 - 09 0104 # Plot may be slow.
 - The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 03 0122 # Plot may be slow.
 - Pon no Michi / 碰之道 - 03 0952 # Daily life of playing mahjong
 - Sasaki and Peeps / 佐佐木与文鸟小哔 - 02 1144 # Plot may be slow. If I had the same abilities as the protagonist, I will ...
