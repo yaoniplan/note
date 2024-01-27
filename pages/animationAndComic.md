@@ -28,17 +28,12 @@
 - Undead Unluck / 不死不幸 - 15
 - The Kingdoms of Ruin / 破灭之国 - 12
 - 逆天邪神3D - 20
-- 铁路浪漫谭 - (Part1+2) 00+12 animation
-- Spy x Family / 间谍过家家 (season1+2) - 12+13+12
-- Ragna Crimson / 狩龙人拉格纳 - 12
-- 武映三千道 - 48
-- 傲世九重天 - 12
-- MF Ghost / 极速车魂 - 12
-- 仙逆 - 16
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+73
-- 九辰风云录 - 40
-- Seven Deadly Sins / 七大罪 默示录的四骑士 - 11
-- 洪荒灵尊 - 35
+- 铁路浪漫谭 - (Part1+2) 00+13
+- Ragna Crimson / 狩龙人拉格纳 - 14
+- 武映三千道 - 56
+- 仙逆 - 20
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+77
+- 洪荒灵尊 - 39 animation
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
@@ -269,6 +264,12 @@
 - guard(end)
 
 ### Animation
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 13 0956 # Plot may be slow.
+- 九辰风云录 - 40 # End of the first part
+- MF Ghost / 极速车魂 - 12 # End of the first part
+- 傲世九重天 - 12 # End of the first part
+- 王者荣耀：荣耀之章 - 01 # There are advertisements at the beginning and end, for marketing purposes
+- Spy x Family / 间谍过家家 (season1+2) - 12+13+12 # End
 - 近战法师 - 09 0104 # Plot may be slow.
 - The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 03 0122 # Plot may be slow.
 - Pon no Michi / 碰之道 - 03 0952 # Daily life of playing mahjong

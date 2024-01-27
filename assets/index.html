@@ -41,6 +41,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;gammastep&quot;</h4>
+<ul>
+<li><code>gammastep -O 1500 &amp;</code> # One-shot</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to set color temperature in Wayland.</li>
+<li><code>nix profile install nixpkgs#gammastep</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/wayland/comments/si49y1/redshift_alternatives_for_wayland/i90wwmb/">https://old.reddit.com/r/wayland/comments/si49y1/redshift_alternatives_for_wayland/i90wwmb/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;swhkd&quot;</h4>
 <ul>
 <li><code>pkexec swhkd --debug --config ~/.config/hypr/swhkdrc</code></li>
@@ -1614,6 +1631,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: does not support Wayland</li>
 <li><code>sct</code> # Reset to the default value (e.g. 6500K)</li>
 <li><code>nix profile install nixpkgs#sct</code> # Install dependencies</li>
 <li>Because it is simpler than &quot;redshift&quot;.</li>
