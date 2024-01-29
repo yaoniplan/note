@@ -33,15 +33,15 @@
 - 武映三千道 - 56
 - 仙逆 - 20
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+77
-- 洪荒灵尊 - 39 animation
+- 洪荒灵尊 - 42
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 29
-- Shrouding the Heavens / 遮天 - 37
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 94
-- 武神主宰 - 192/399
-- 独步逍遥 - 168/378
+- 大主宰 - 33
+- Shrouding the Heavens / 遮天 - 41
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 102
+- 武神主宰 - 192/406
+- 独步逍遥 - 168/383 animation
 - Perfect World / 完美世界 - 38/143
 - Against the Sky Supreme / 逆天至尊 - 263
 - 斗破苍穹年番 - 77
