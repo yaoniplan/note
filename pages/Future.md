@@ -69,12 +69,15 @@
 - https://acl4ssr-sub.github.io/
 - https://github.com/ermaozi/get_subscribe
 - https://github.com/freefq/free
+- https://www.burstlinker.com/
 
 ## Animation and comic
+- https://www.agedm.org/
 - http://agedm3.com/
 - https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
+- https://theporndude.com/
 - https://hanman.cyou/ # References: https://www.yy123.cyou/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/

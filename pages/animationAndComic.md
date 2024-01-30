@@ -1,11 +1,9 @@
 ### "Animation"
-- 爱犬讯号 - 03
-- 师兄啊师兄 - 19
-- 从红月开始 - 05
-- 万古狂帝 - 04
-- 神藏 - 10
-- 深渊游戏 - 07
-- Delicious in Dungeon / 迷宫饭 - 02
+- 师兄啊师兄 - 21
+- 万古狂帝 - 05
+- 神藏 - 12
+- 深渊游戏 - 09
+- Delicious in Dungeon / 迷宫饭 - 02 animation
 - Chained Soldier / 魔都精兵的奴隶 - 02
 - 魁拔之殊途 - 12
 - The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 03
@@ -41,12 +39,12 @@
 - Shrouding the Heavens / 遮天 - 41
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 102
 - 武神主宰 - 192/406
-- 独步逍遥 - 168/383 animation
-- Perfect World / 完美世界 - 38/143
-- Against the Sky Supreme / 逆天至尊 - 263
-- 斗破苍穹年番 - 77
-- 绝世武魂 - 337
-- 万古神话 - 149
+- 独步逍遥 - 168/386
+- Perfect World / 完美世界 - 38/147
+- Against the Sky Supreme / 逆天至尊 - 270
+- 斗破苍穹年番 - 81
+- 绝世武魂 - 344
+- 万古神话 - 156
 
 ### Comic
 - 初次深交，请多指教 - 27
@@ -264,6 +262,8 @@
 - guard(end)
 
 ### Animation
+- 从红月开始 - 07 0651 # Plot may be slow.
+- Dog Signal / 爱犬讯号 - 04 0354 # Dog training tips, but I don't have a puppy at home
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 13 0956 # Plot may be slow.
 - 九辰风云录 - 40 # End of the first part
 - MF Ghost / 极速车魂 - 12 # End of the first part
