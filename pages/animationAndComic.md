@@ -3,12 +3,10 @@
 - 万古狂帝 - 05
 - 神藏 - 12
 - 深渊游戏 - 09
-- Delicious in Dungeon / 迷宫饭 - 02 animation
-- Chained Soldier / 魔都精兵的奴隶 - 02
-- 魁拔之殊途 - 12
-- The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 03
-- 独步万古 - 35
-- The Wrong Way to Use Healing Magic / 治愈魔法的错误使用方法 - 03
+- 魁拔之殊途 - 13
+- The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 04
+- 独步万古 - 38
+- The Wrong Way to Use Healing Magic / 治愈魔法的错误使用方法 - 03 animation
 - 大王饶命 - (Part1+2) 12+02
 - 凡人修仙传 - 84
 - 指尖相触，恋恋不舍 - 03
@@ -262,6 +260,8 @@
 - guard(end)
 
 ### Animation
+- Chained Soldier / 魔都精兵的奴隶 - 03 0524 # Plot may be slow.
+- Delicious in Dungeon / 迷宫饭 - 03 0534 # Plot may be slow.
 - 从红月开始 - 07 0651 # Plot may be slow.
 - Dog Signal / 爱犬讯号 - 04 0354 # Dog training tips, but I don't have a puppy at home
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 13 0956 # Plot may be slow.

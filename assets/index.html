@@ -82,6 +82,10 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Scroll page<ul>
+<li><code>Ctrl-n</code> # Next line</li>
+</ul>
+</li>
 <li>Other tools<ul>
 <li><code>lynx ~/note/index.html</code></li>
 </ul>
@@ -452,7 +456,7 @@ misc {
 <ul>
 <li><h4>Use &quot;ipython&quot;</h4>
 <ul>
-<li><code>~/.config/ipython/bin/ipython</code></li>
+<li><code>ipython</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -460,17 +464,12 @@ misc {
 c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
 </code></pre>
 </li>
-<li>Install dependencies<ul>
-<li><code>python -m venv ~/.config/ipython/</code> # Create a virtual environment using the built-in <code>venv</code> module</li>
-<li><code>~/.config/ipython/bin/pip install ipython</code> # Install IPython in the virtual environment</li>
-</ul>
-</li>
+<li><code>pipx install ipython</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="http://www.codebaoku.com/jupyter/jupyter-index.html">http://www.codebaoku.com/jupyter/jupyter-index.html</a></li>
 <li><a href="https://github.com/ipython/ipython/issues/13443#issuecomment-1032753703">https://github.com/ipython/ipython/issues/13443#issuecomment-1032753703</a></li>
-<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -588,8 +587,8 @@ caused by a corrupt file, a file iOS does
 <li>Install an addon named &#39;AnkiConnect&#39; before running command</li>
 </ul>
 </li>
-<li>Sync server<pre><code>python3 -m venv ~/.config/anki/
-~/.config/anki/bin/pip install anki
+<li>Sync server<pre><code>python -m venv ~/.config/anki/ # Create a virtual environment using the built-in `venv` module
+~/.config/anki/bin/pip install anki # Install anki.syncserver in the virtual environment
 MAX_SYNC_PAYLOAD_MEGS=500; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
 </code></pre>
 <ul>
@@ -611,6 +610,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li><a href="https://foosoft.net/projects/anki-connect/index.html#media-actions">https://foosoft.net/projects/anki-connect/index.html#media-actions</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/22180094">https://zhuanlan.zhihu.com/p/22180094</a> # media</li>
 <li><a href="https://docs.ankiweb.net/sync-server.html#with-pip">https://docs.ankiweb.net/sync-server.html#with-pip</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -639,7 +639,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li><code>pipx upgrade mov-cli</code> # Upgrade</li>
 <li><code>pipx list</code> # List installed packages</li>
 <li><code>pipx uninstall animdl</code> # Uninstall</li>
-<li><code>nix shell nixpkgs#pipx</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#pipx</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5656,7 +5656,7 @@ services:
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/usememos/memos/issues/1975#issuecomment-1656998750">https://github.com/usememos/memos/issues/1975#issuecomment-1656998750</a></li>
-<li><a href="https://usememos.com/docs/install/docker#docker-compose">https://usememos.com/docs/install/docker#docker-compose</a></li>
+<li><a href="https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml">https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml</a></li>
 </ul>
 </li>
 </ul>

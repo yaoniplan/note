@@ -72,8 +72,8 @@
 - https://www.burstlinker.com/
 
 ## Animation and comic
-- https://www.agedm.org/
 - http://agedm3.com/
+- https://www.agedm.org/
 - https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
