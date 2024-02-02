@@ -82,7 +82,6 @@
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
 - https://toptoon.life
-- https://nnhanman.com
 - https://www.yeseimg.com/
 
 ## Programming
@@ -148,7 +147,6 @@
 
 ## Short message service
 - https://mytrashmobile.com
-- https://anonymsms.com/
 - https://smsreceivefree.com/
 
 ## Video and audio
