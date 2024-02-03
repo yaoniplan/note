@@ -147,6 +147,7 @@ command! InsertCodeBlock :call InsertCodeBlock()
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Disadvantages: it has no completion feature.</li>
 <li><code>&quot;$@&quot;</code> # All arguments</li>
 <li><code>${SHELL}</code> # The value of the SHELL environment variable</li>
 <li><code>:-</code> # Specify a default value if the variable is not set<ul>
@@ -957,9 +958,12 @@ services:
 <li>Install this app for each device (e.g. Linux, Android, iPhone, etc.) you want to connect</li>
 <li>Use Funnel (Not recommended: slow)<pre><code>tailscale cert
 tailscale cert server.tail471ed.ts.net
-doas tailscale serve https / http://127.0.0.1:2004
-doas tailscale funnel 443 on
+doas tailscale serve --bg http://127.0.0.1:2004
+doas tailscale funnel --bg 2004
 </code></pre>
+<ul>
+<li><a href="https://login.tailscale.com/admin/dns">https://login.tailscale.com/admin/dns</a> # Enable &#39;HTTPS Certificates&#39; before running the above code</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -18579,12 +18583,15 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li><em><strong>Notes</strong></em><ul>
 <li><code>doas pacman --remove --recursive mplayer</code> # Remove a package with dependencies</li>
 <li><code>doas pacman --sync --refresh --sysupgrade</code> # Upgrade the system<ul>
-<li>Solve a problem that the package cannot be installed</li>
 <li>Solve a problem that command not found</li>
 </ul>
 </li>
 <li><code>doas pacman --sync archlinux-keyring</code><ul>
 <li>Solve a problem that package is marginal trust</li>
+</ul>
+</li>
+<li><code>doas pacman --sync --refresh</code> # Sync package databases<ul>
+<li>Solve a problem that the package cannot be installed</li>
 </ul>
 </li>
 </ul>

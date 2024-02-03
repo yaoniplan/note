@@ -11,8 +11,8 @@
 - 指尖相触，恋恋不舍 - 04
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+04
 - Solo Leveling / 我独自升级 - 04
-- 师士传说 - 18 animation
-- 仙武传 - 44
+- 师士传说 - 21
+- 仙武传 - 44 animation
 - 万界至尊 (Part1+2)- 50+34
 - 十方武圣 - 12
 - 太一剑仙传 - 16
