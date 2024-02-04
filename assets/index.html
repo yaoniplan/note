@@ -41,6 +41,108 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;wlsunset&quot;</h4>
+<ul>
+<li><code>wlsunset -l 28.2 -L 116.6</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-l</code> # Latitude</li>
+<li><code>-L</code> # Longitude</li>
+<li><a href="https://www.google.com/maps?q=Dongxiang+Fuzhou+Jiangxi+China">https://www.google.com/maps?q=Dongxiang+Fuzhou+Jiangxi+China</a><ul>
+<li><code>Dongxiang+Fuzhou+Jiangxi+China</code> # Replace it with your location</li>
+<li>Right-click the geographical location on the map</li>
+<li>Click on the pop-up latitude and longitude to copy it</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#wlsunset</code> # Install dependencies</li>
+<li>Because it has a timing feature. (Work at sunrise and rest at sunset)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/kennylevinsen/wlsunset#Example">https://github.com/kennylevinsen/wlsunset#Example</a></li>
+<li><code>wlsunset -h</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;mako&quot;</h4>
+<ul>
+<li><code>notify-send &quot;Hello, $(whoami)!&quot; &quot;This is a example notification.&quot;</code><ul>
+<li><code>mako</code> # Run in the background</li>
+</ul>
+</li>
+<li><code>vim ~/.config/mako/config</code><pre><code>sort=-time
+layer=overlay
+background-color=#2e34407f
+width=450
+height=150
+border-size=3
+border-color=#99c0d0
+# Rounded corners
+border-radius=12
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=0
+font=&quot;Noto Sans CJK SC&quot; 14
+margin=12
+padding=12,20
+
+[urgency=low]
+border-color=#cccccc
+
+[urgency=normal]
+border-color=#99c0d0
+
+[urgency=critical]
+border-color=#bf616a
+default-timeout=0
+</code></pre>
+<ul>
+<li><code>7f</code> # Alpha channel (transparent)</li>
+<li><code>makoctl reload</code> # Reload configuration file to make changes effective</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use the fastest notification daemon on Wayland.</li>
+<li><code>doas pacman --sync mako</code> # Install dependencies</li>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ mako
+Failed to acquire service name: File exists
+Is a notification daemon already running?
+yaoniplan@tux ~ $
+</code></pre>
+<ul>
+<li>Check for running notification daemons (e.g. xfce4-notifyd, gnome-shell)<pre><code>pgrep dunst # Check for Dunst
+</code></pre>
+</li>
+<li>Stop existing daemons (e.g. xfce4-notifyd, gnome-shell)<pre><code>pkill dunst # Stop Dunst
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ notify-send
+-bash: notify-send: command not found
+yaoniplan@tux ~ $
+</code></pre>
+<ul>
+<li><code>doas pacman --sync libnotify</code> # The <code>notify-send</code> command is part of the <code>notify-send</code> package</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://cascade.moe/posts/hyprland-configure/#mako">https://cascade.moe/posts/hyprland-configure/#mako</a></li>
+<li><code>man 5 mako</code> # <code>/COLORS</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;gammastep&quot;</h4>
 <ul>
 <li><code>gammastep -O 1500 &amp;</code> # One-shot</li>
@@ -155,7 +257,12 @@ command! InsertCodeBlock :call InsertCodeBlock()
 <li>Use default shell (if <code>echo $SHELL</code> is not empty) or /bin/sh</li>
 </ul>
 </li>
-<li><code>vim ~/.config/tofi/config</code><pre><code># Accept arguments
+<li><code>vim ~/.config/tofi/config</code><pre><code># Show a text cursor in the input field
+text-cursor = true
+text-cursor-style = block
+# Transparency (#RRGGBBAA)
+background-color = #00000000
+# Accept arguments
 require-match = false
 # Set fonts
 font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
@@ -180,7 +287,7 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
 <li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
 <li><a href="https://github.com/philj56/tofi/issues/55#issuecomment-1292147720">https://github.com/philj56/tofi/issues/55#issuecomment-1292147720</a></li>
-<li><code>man 5 tofi</code> # <code>/require</code></li>
+<li><code>man 5 tofi</code> # <code>/require</code> <code>/COLORS</code> <code>/cursor</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -958,7 +1065,7 @@ services:
 <li>Install this app for each device (e.g. Linux, Android, iPhone, etc.) you want to connect</li>
 <li>Use Funnel (Not recommended: slow)<pre><code>tailscale cert
 tailscale cert server.tail471ed.ts.net
-doas tailscale serve --bg http://127.0.0.1:2004
+doas tailscale serve --bg 2004
 doas tailscale funnel --bg 2004
 </code></pre>
 <ul>
@@ -968,6 +1075,7 @@ doas tailscale funnel --bg 2004
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/Tailscale/comments/14gccua/funnel_serve_multiple_ports/kd3yh39/">https://old.reddit.com/r/Tailscale/comments/14gccua/funnel_serve_multiple_ports/kd3yh39/</a></li>
 <li><a href="https://tailscale.com/kb/1106/taildrop">https://tailscale.com/kb/1106/taildrop</a></li>
 <li><a href="https://tailscale.com/s/resolvconf-overwrite">https://tailscale.com/s/resolvconf-overwrite</a></li>
 <li><a href="https://github.com/adyanth/openwrt-tailscale-enabler#readme">https://github.com/adyanth/openwrt-tailscale-enabler#readme</a></li>
@@ -5660,7 +5768,7 @@ services:
 <li><code>192.168.10.100:5230</code> # Run in Chromium</li>
 <li>Warning: Vercel is used to deploy static websites. (Like GitHub Pages)<ul>
 <li>Cannot run Docker image</li>
-<li>Loading is slow unless connected to Wi-Fi</li>
+<li>The first loading is slow unless connected to Wi-Fi</li>
 </ul>
 </li>
 </ul>
@@ -11239,7 +11347,7 @@ Exec=/usr/lib/notification-daemon-1.0/notification-daemon
 <ul>
 <li><h4>Enclose the shell command in double quotes</h4>
 <ul>
-<li><code>st -e tmux -c &quot;vim -c VimwikiIndex&quot;</code></li>
+<li><code>foot -e tmux new-session &#39;vim -c &quot;VimwikiMakeDiaryNote&quot;&#39;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -11247,13 +11355,12 @@ Exec=/usr/lib/notification-daemon-1.0/notification-daemon
 child exited with status 127
 </code></pre>
 </li>
-<li>Warning: the tmux doesn&#39;t work</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man tmux</code></li>
 <li><img src="../assets/2023-01-26_16:57:24.gif" alt="2023-01-26_16:57:24.gif"></li>
 <li><img src="../assets/2023-01-26_21-39.png" alt="2023-01-26_21-39.png"></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>

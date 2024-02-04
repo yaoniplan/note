@@ -12,13 +12,13 @@
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+04
 - Solo Leveling / 我独自升级 - 04
 - 师士传说 - 21
-- 仙武传 - 44 animation
-- 万界至尊 (Part1+2)- 50+34
-- 十方武圣 - 12
-- 太一剑仙传 - 16
-- 不死不灭之少年出山 - 11
+- 仙武传 - 45
+- 万界至尊 (Part1+2)- 50+37
+- 十方武圣 - 14
+- 太一剑仙传 - 17
+- 不死不灭之少年出山 - 13
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12
-- Law of Devil / 恶魔法则 - 18
+- Law of Devil / 恶魔法则 - 18 animation
 - 经验丰富的你和经验为零的我交往的故事 - 12
 - Undead Unluck / 不死不幸 - 15
 - The Kingdoms of Ruin / 破灭之国 - 12
