@@ -41,6 +41,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;make&quot;</h4>
+<ul>
+<li><code>doas make install</code> # Install a package</li>
+<li><code>doas make uninstall</code> # Uninstall a package</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>git clone https://github.com/hyprwm/contrib; cd contrib/grimblast/; doas make install</code> # Install the script</li>
+<li><code>nix profile install nixpkgs#hyprpicker</code> # Install dependencies (e.g. grim, slurp, hyprctl, hyprpicker, wl-copy, jq, notify-send)<ul>
+<li><code>grimblast check</code> # Check if required tools are installed</li>
+<li><code>grimblast copysave area $HOME/$(date +%F_%H-%M.png)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/contrib#manual">https://github.com/hyprwm/contrib#manual</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;wlsunset&quot;</h4>
 <ul>
 <li><code>wlsunset -l 28.2 -L 116.6</code></li>
@@ -62,6 +85,32 @@
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/kennylevinsen/wlsunset#Example">https://github.com/kennylevinsen/wlsunset#Example</a></li>
 <li><code>wlsunset -h</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;grim&quot;</h4>
+<ul>
+<li><code>grim -g &quot;$(slurp)&quot; - | wl-copy --type image/png</code> # Take a area screenshot<ul>
+<li><code>slurp | grim -g - - | wl-copy</code> # Maybe it&#39;s ok</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Use &quot;grimblast&quot;<ul>
+<li><code>grimblast copysave area $HOME/$(date +%F_%H-%M.png)</code></li>
+<li><code>grimblast check</code> # Check if required tools are installed</li>
+<li><code>nix profile install nixpkgs#grimblast</code> # Install dependencies</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#grim nixpkgk#slurp nixpkgs#jq</code> # Install dependencies</li>
+<li>Because to share screenshots with others in the open source world.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/">https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/</a></li>
 </ul>
 </li>
 </ul>
@@ -129,7 +178,7 @@ yaoniplan@tux ~ $
 yaoniplan@tux ~ $
 </code></pre>
 <ul>
-<li><code>doas pacman --sync libnotify</code> # The <code>notify-send</code> command is part of the <code>notify-send</code> package</li>
+<li><code>doas pacman --sync libnotify</code> # The <code>notify-send</code> command is part of the <code>libnotify</code> package</li>
 </ul>
 </li>
 </ul>
@@ -345,13 +394,22 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/wayst/config</code><pre><code>font = Fira Code
+font = [
+    &quot;Fira Code&quot;,
+    &quot;Noto Sans CJK SC&quot; # Support Chinese characters
+]
+font-size = 12
+</code></pre>
+</li>
 <li><code>-e</code> # Execute</li>
 <li><code>yay --sync wayst-git</code> # Install dependencies</li>
 <li>Because to try the fastest responsive terminal in Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/91861/wayst?tab=readme-ov-file#installation-from-aur">https://github.com/91861/wayst?tab=readme-ov-file#installation-from-aur</a></li>
+<li><a href="https://github.com/91861/wayst/blob/master/config.example">https://github.com/91861/wayst/blob/master/config.example</a></li>
+<li><a href="https://github.com/91861/wayst#installation-from-aur">https://github.com/91861/wayst#installation-from-aur</a></li>
 </ul>
 </li>
 </ul>
@@ -451,13 +509,17 @@ misc {
 <ul>
 <li><h4>Use &quot;fzf&quot;</h4>
 <ul>
-<li><code>vi ~/.bashrc</code> # Bind <code>Ctrl-j</code> key to <code>Enter</code> key (Like Bash)<pre><code>export FZF_DEFAULT_OPTS=&quot;--bind=ctrl-j:accept&quot;
-</code></pre>
-</li>
+<li><code>fzf</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>source ~/.bashrc</code> # Make it effective</li>
+<li><code>--reverse</code> # Put the search bar in the top of screen</li>
+<li><code>vi ~/.bashrc</code> # Bind <code>Ctrl-j</code> key to <code>Enter</code> key (Like Bash)<pre><code>export FZF_DEFAULT_OPTS=&quot;--bind=ctrl-j:accept&quot;
+</code></pre>
+<ul>
+<li><code>source ~/.bashrc</code> # Make changes effective</li>
+</ul>
+</li>
 <li>Because &quot;ani-cli&quot; depends on &#39;fzf&#39;.</li>
 </ul>
 </li>
@@ -1058,6 +1120,7 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--advertise-exit-node</code> # Enable Exit Node</li>
 <li><code>doas tailscale file cp ~/.config/clash/config.yaml android:</code> # Send a file to another device</li>
 <li><code>doas tailscale set --accept-dns=false</code> # Disable MagicDNS if don&#39;t want Tailscale to overwrite file <em>/etc/resolve.conf</em></li>
 <li><code>doas pacman --sync tailscale</code> # Install the dependencies</li>
@@ -1070,6 +1133,7 @@ doas tailscale funnel --bg 2004
 </code></pre>
 <ul>
 <li><a href="https://login.tailscale.com/admin/dns">https://login.tailscale.com/admin/dns</a> # Enable &#39;HTTPS Certificates&#39; before running the above code</li>
+<li><code>doas tailscale funnel --https=443 off</code> # Disable Funnel</li>
 </ul>
 </li>
 </ul>
@@ -5765,6 +5829,12 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Send a request using curl<pre><code>curl --request POST https://192.168.10.100:5230/api/v1/memo \
+    --header &quot;Content-Type: application/json&quot; \
+    --header &quot;Authorization: Bearer yourAccessToken&quot; \
+    --data &#39;{&quot;content&quot;:&quot;Hello, World!&quot;}&#39;
+</code></pre>
+</li>
 <li><code>192.168.10.100:5230</code> # Run in Chromium</li>
 <li>Warning: Vercel is used to deploy static websites. (Like GitHub Pages)<ul>
 <li>Cannot run Docker image</li>
@@ -5774,6 +5844,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.usememos.com/docs/security/access-tokens">https://www.usememos.com/docs/security/access-tokens</a></li>
 <li><a href="https://github.com/usememos/memos/issues/1975#issuecomment-1656998750">https://github.com/usememos/memos/issues/1975#issuecomment-1656998750</a></li>
 <li><a href="https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml">https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml</a></li>
 </ul>

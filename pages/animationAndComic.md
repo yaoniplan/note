@@ -18,11 +18,9 @@
 - 太一剑仙传 - 17
 - 不死不灭之少年出山 - 13
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12
-- Law of Devil / 恶魔法则 - 18 animation
+- Law of Devil / 恶魔法则 - 19
 - 经验丰富的你和经验为零的我交往的故事 - 12
-- Undead Unluck / 不死不幸 - 15
-- The Kingdoms of Ruin / 破灭之国 - 12
-- 逆天邪神3D - 20
+- 逆天邪神3D - 22 0902 animation
 - 铁路浪漫谭 - (Part1+2) 00+13
 - Ragna Crimson / 狩龙人拉格纳 - 14
 - 武映三千道 - 56
@@ -259,6 +257,8 @@
 - guard(end)
 
 ### Animation
+- The Kingdoms of Ruin / 破灭之国 - 12 # End of the first part
+- Undead Unluck / 不死不幸 - 16 0416 # Plot may be slow.
 - The Wrong Way to Use Healing Magic / 治愈魔法的错误使用方法 - 04 1501 # Plot may be slow.
 - Chained Soldier / 魔都精兵的奴隶 - 03 0524 # Plot may be slow.
 - Delicious in Dungeon / 迷宫饭 - 03 0534 # Plot may be slow.
