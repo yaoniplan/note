@@ -41,6 +41,37 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Check if Wayland is enabled in Firefox</h4>
+<ul>
+<li><code>about:support</code> # <code>/protocol</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>about:about</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Enable Wayland in Chromium</h4>
+<ul>
+<li><code>about:flags</code></li>
+<li>Search &quot;Preferred Ozone platform&quot;</li>
+<li>Set it to &quot;Wayland&quot;</li>
+<li>Restart the browser</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>I will search &quot;wayland&quot;. (Faster)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/Fedora/comments/rkzp78/make_chrome_run_on_wayland_permanently/hyvicuy/">https://old.reddit.com/r/Fedora/comments/rkzp78/make_chrome_run_on_wayland_permanently/hyvicuy/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;make&quot;</h4>
 <ul>
 <li><code>doas make install</code> # Install a package</li>
@@ -59,6 +90,24 @@
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/hyprwm/contrib#manual">https://github.com/hyprwm/contrib#manual</a></li>
 <li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;wf-recorder&quot;</h4>
+<ul>
+<li><code>wf-recorder -f out.gif --codec=gif</code> # Record a GIF</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-f</code> # File name</li>
+<li>Disadvantages: Large file, low quality</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ammen99/wf-recorder/issues/79#issue-591769918">https://github.com/ammen99/wf-recorder/issues/79#issue-591769918</a></li>
+<li><code>man wf-recorder</code> # <code>/-f</code></li>
 </ul>
 </li>
 </ul>
@@ -453,7 +502,7 @@ font-size = 12
 <ul>
 <li><h4>Use &quot;wl-clipboard&quot;</h4>
 <ul>
-<li><code>wl-copy</code> # Copy text to clipboard</li>
+<li><code>wl-copy</code> # Copy to clipboard</li>
 <li><code>wl-paste</code> # Paste text from clipboard</li>
 </ul>
 </li>
@@ -5836,16 +5885,11 @@ services:
 </code></pre>
 </li>
 <li><code>192.168.10.100:5230</code> # Run in Chromium</li>
-<li>Warning: Vercel is used to deploy static websites. (Like GitHub Pages)<ul>
-<li>Cannot run Docker image</li>
-<li>The first loading is slow unless connected to Wi-Fi</li>
-</ul>
-</li>
+<li>Warning: The first loading is slow unless connected to Wi-Fi</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://www.usememos.com/docs/security/access-tokens">https://www.usememos.com/docs/security/access-tokens</a></li>
-<li><a href="https://github.com/usememos/memos/issues/1975#issuecomment-1656998750">https://github.com/usememos/memos/issues/1975#issuecomment-1656998750</a></li>
 <li><a href="https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml">https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml</a></li>
 </ul>
 </li>
@@ -15447,10 +15491,10 @@ exec ~/.config/shell/autoGit.sh
 </ul>
 <hr>
 <ul>
-<li>[[abbreviation]]&quot;Graphics interchange format&quot; (<code>GIF</code>)</li>
+<li><h4>The abbreviation of &quot;Graphics interchange format&quot; is &quot;GIF&quot;</h4>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1666839996535_0.png" alt="image.png"></li>
-<li><a href="https://en.wikipedia.org/wiki/GIF">GIF - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GIF">https://en.wikipedia.org/wiki/GIF</a></li>
 </ul>
 </li>
 </ul>
