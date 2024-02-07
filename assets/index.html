@@ -41,6 +41,81 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;cloudflare&quot;</h4>
+<ul>
+<li>&#39;Worker &amp; Pages&#39; - &#39;Create application&#39; - &#39;Create Worker&#39; (Optional: Change name) - &#39;Deploy&#39; - &#39;Configure Worker&#39; - &#39;Quick edit&#39; - Paste the fllowing code - &#39;Save and deploy&#39; - &#39;Trigers&#39; - &#39;Add Custom Domain&#39; - &#39;Domain&#39; (your subdomain, note that your domain name must be in Cloudflare)</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim worker.js</code><pre><code>addEventListener(
+  &quot;fetch&quot;,event =&gt; {
+     let url=new URL(event.request.url);
+     url.hostname=&quot;memos.yaoniplan.eu.org&quot;; // Change it to your subdomain
+     url.protocol=&#39;https&#39;; // If the protocol is http, please change it to http
+     let request=new Request(url,event.request);
+     event. respondWith(
+       fetch(request)
+     )
+  }
+)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://blog.misaka.rest/2023/01/22/cf-wkrs-node/">https://blog.misaka.rest/2023/01/22/cf-wkrs-node/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;disc jockey&quot; is &quot;DJ&quot;.</h4>
+<ul>
+<li>A person<ul>
+<li>Play recorded music</li>
+<li>For an audience</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Driving not the car but the music.</li>
+<li>Because to help my brother download car music.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Disc_jockey">https://en.wikipedia.org/wiki/Disc_jockey</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;udiskie&quot;</h4>
+<ul>
+<li><code>udiskie &amp;</code> # Run in the background as a daemon<ul>
+<li><code>crontab -e</code> # Method one<pre><code>@reboot /home/yaoniplan/.nix-profile/bin/udiskie
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to mount a hard disk (or USB) automatically.<ul>
+<li>My brother needs temporary access to my computer to download some resources to his USB drive.</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#udiskie</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/storaged-project/udisks/issues/1085#issuecomment-1495662054">https://github.com/storaged-project/udisks/issues/1085#issuecomment-1495662054</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Check if Wayland is enabled in Firefox</h4>
 <ul>
 <li><code>about:support</code> # <code>/protocol</code></li>
@@ -18401,6 +18476,10 @@ echo &#39;source ~/powerlevel10k/powerlevel10k.zsh-theme&#39; &gt;&gt;~/.zshrc
 </ul>
 </li>
 <li>Mount in an empty directory under the <em>/mnt/</em> directory</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.pathname.com/fhs/2.2/fhs-3.11.html">https://www.pathname.com/fhs/2.2/fhs-3.11.html</a></li>
 </ul>
 </li>
 </ul>

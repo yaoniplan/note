@@ -21,17 +21,17 @@
 - Law of Devil / 恶魔法则 - 19
 - 经验丰富的你和经验为零的我交往的故事 - 12
 - 逆天邪神3D - 22
-- 武映三千道 - 56 animation
-- 仙逆 - 20
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+77
-- 洪荒灵尊 - 42
+- 武映三千道 - 58
+- 仙逆 - 22
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+78
+- 洪荒灵尊 - 46
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 33
-- Shrouding the Heavens / 遮天 - 41
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 102
-- 武神主宰 - 192/406
+- 大主宰 - 34
+- Shrouding the Heavens / 遮天 - 42
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 105
+- 武神主宰 - 192/406 animation
 - 独步逍遥 - 168/386
 - Perfect World / 完美世界 - 38/147
 - Against the Sky Supreme / 逆天至尊 - 270
