@@ -31,11 +31,11 @@
 - 大主宰 - 34
 - Shrouding the Heavens / 遮天 - 42
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 105
-- 武神主宰 - 192/406 animation
-- 独步逍遥 - 168/386
-- Perfect World / 完美世界 - 38/147
-- Against the Sky Supreme / 逆天至尊 - 270
-- 斗破苍穹年番 - 81
+- 武神主宰 - 192/409
+- 独步逍遥 - 168/388
+- Perfect World / 完美世界 - 38/148
+- Against the Sky Supreme / 逆天至尊 - 273
+- 斗破苍穹年番 - 81 animation
 - 绝世武魂 - 344
 - 万古神话 - 156
 

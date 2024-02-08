@@ -60,6 +60,7 @@
 )
 </code></pre>
 </li>
+<li>Because to add subdomain in Cloudflare.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -216,10 +217,12 @@
 <ul>
 <li><h4>Use &quot;grim&quot;</h4>
 <ul>
-<li><code>grim -g &quot;$(slurp)&quot; - | wl-copy --type image/png</code> # Take a area screenshot<ul>
-<li><code>slurp | grim -g - - | wl-copy</code> # Maybe it&#39;s ok</li>
+<li><code>grim -g &quot;$(slurp)&quot; $HOME/$(date +%F_%H-%M.png)</code> # Select a region and screenshot it<ul>
+<li><code>-g</code> # Geometry</li>
+<li><code>$HOME/$(date +%F_%H-%M.png)</code> # File name</li>
 </ul>
 </li>
+<li><code>grim -g &quot;$(slurp)&quot; - | wl-copy --type image/png</code> # Take a area screenshot and copy to clipboard</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -229,11 +232,12 @@
 <li><code>nix profile install nixpkgs#grimblast</code> # Install dependencies</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#grim nixpkgk#slurp nixpkgs#jq</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#grim nixpkgk#slurp</code> # Install dependencies</li>
 <li>Because to share screenshots with others in the open source world.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://sr.ht/~emersion/grim/#example-usage">https://sr.ht/~emersion/grim/#example-usage</a></li>
 <li><a href="https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/">https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/</a></li>
 </ul>
 </li>
@@ -242,8 +246,8 @@
 <ul>
 <li><h4>Use &quot;mako&quot;</h4>
 <ul>
-<li><code>notify-send &quot;Hello, $(whoami)!&quot; &quot;This is a example notification.&quot;</code><ul>
-<li><code>mako</code> # Run in the background</li>
+<li><code>notify-send &quot;Hello, $(whoami)!&quot; &quot;This is an example notification.&quot;</code><ul>
+<li><code>mako &amp;</code> # Run in the background as a daemon</li>
 </ul>
 </li>
 <li><code>vim ~/.config/mako/config</code><pre><code>sort=-time
@@ -282,7 +286,7 @@ default-timeout=0
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to use the fastest notification daemon on Wayland.</li>
-<li><code>doas pacman --sync mako</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#mako</code> # Install dependencies</li>
 <li>Solve the problem<pre><code>yaoniplan@tux ~ $ mako
 Failed to acquire service name: File exists
 Is a notification daemon already running?
@@ -302,7 +306,7 @@ yaoniplan@tux ~ $
 yaoniplan@tux ~ $
 </code></pre>
 <ul>
-<li><code>doas pacman --sync libnotify</code> # The <code>notify-send</code> command is part of the <code>libnotify</code> package</li>
+<li><code>nix profile install nixpkgs#libnotify</code> # The <code>notify-send</code> command is part of the <code>libnotify</code> package</li>
 </ul>
 </li>
 </ul>
