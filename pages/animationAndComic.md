@@ -1,4 +1,10 @@
 ### "Animation"
+- 北海道辣妹贼拉可爱 - 01 animation
+- 剑仙在此 - 37
+- 云中居三子 - 06
+- 异人君莫邪 - 04
+- 战国妖狐 - 01
+- 金属口红 - 01
 - 师兄啊师兄 - 21
 - 万古狂帝 - 05
 - 神藏 - 12
@@ -35,9 +41,9 @@
 - 独步逍遥 - 168/388
 - Perfect World / 完美世界 - 38/148
 - Against the Sky Supreme / 逆天至尊 - 273
-- 斗破苍穹年番 - 81 animation
-- 绝世武魂 - 344
-- 万古神话 - 156
+- 斗破苍穹年番 - 82
+- 绝世武魂 - 347
+- 万古神话 - 159
 
 ### Comic
 - 初次深交，请多指教 - 27
@@ -537,7 +543,6 @@
 - 在异世界迷宫开后宫第一季 - 12 # end of the first season
 - 君有云 - 24 # end of the first season
 - 风姿物语动画第一季 银河篇 - 20 # end of the first season
-- 剑仙在此 - 36 # end of the first season
 - 异世界药局 - 12 # ending
 - 铁拳 - 06 # end of the first season
 - 转生贤者的异世界生活 - 12 # end of the first season

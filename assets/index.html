@@ -106,6 +106,12 @@
 <li>My brother needs temporary access to my computer to download some resources to his USB drive.</li>
 </ul>
 </li>
+<li>Mount a hard disk without root permission manually<ul>
+<li><code>udisksctl mount --block-device /dev/sdd1</code> # Mount</li>
+<li>Use <code>lsblk</code> command to get <code>/dev/sdd1</code> block device</li>
+<li><code>cd /run/media/$(whoami)</code> # Your USB directory</li>
+</ul>
+</li>
 <li><code>nix profile install nixpkgs#udiskie</code> # Install dependencies</li>
 </ul>
 </li>
