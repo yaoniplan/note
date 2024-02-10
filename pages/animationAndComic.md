@@ -1,5 +1,7 @@
 ### "Animation"
-- 北海道辣妹贼拉可爱 - 01 animation
+- 真武巅峰 (Part1+2) - 40+33
+- 公主大人“拷问”的时间到了 - 01 0814 animation
+- 北海道辣妹贼拉可爱 - 01
 - 剑仙在此 - 37
 - 云中居三子 - 06
 - 异人君莫邪 - 04
@@ -392,7 +394,6 @@
 - 奇异贤伴 黑色天使 SYNDUALITY Noir - 04 # Resources loading freezes
 - 喜欢的人忘记戴眼镜了 - 07 1836 # The plot is too exaggerated
 - 不死女 轮堂鸦夜 - 06 1629 # The plot is too flat
-- 真武巅峰 (Part1+2) - 40+26 # End of the second part
 - The Ravages of Time / 火凤燎原 - 16 # End of the first part
 - 剑骨 - 05 0541 # The plot is too corny
 - 戍天伏魔录 - 02 # The target audience is thirteen or fourteen years old

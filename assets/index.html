@@ -41,6 +41,19 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Create a Firefox profile without cookies for testing purposes</h4>
+<ul>
+<li><code>firefox -CreateProfile testing_profile</code> # Create a profile</li>
+<li><code>firefox -P testing_profile</code> # Launch with the profile</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;cloudflare&quot;</h4>
 <ul>
 <li>&#39;Worker &amp; Pages&#39; - &#39;Create application&#39; - &#39;Create Worker&#39; (Optional: Change name) - &#39;Deploy&#39; - &#39;Configure Worker&#39; - &#39;Quick edit&#39; - Paste the fllowing code - &#39;Save and deploy&#39; - &#39;Trigers&#39; - &#39;Add Custom Domain&#39; - &#39;Domain&#39; (your subdomain, note that your domain name must be in Cloudflare)</li>
@@ -50,7 +63,7 @@
 <li><code>vim worker.js</code><pre><code>addEventListener(
   &quot;fetch&quot;,event =&gt; {
      let url=new URL(event.request.url);
-     url.hostname=&quot;memos.yaoniplan.eu.org&quot;; // Change it to your subdomain
+     url.hostname=&quot;server.tail471ed.ts.net&quot;; // Replace it with the website you want to proxy
      url.protocol=&#39;https&#39;; // If the protocol is http, please change it to http
      let request=new Request(url,event.request);
      event. respondWith(
@@ -8784,6 +8797,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: It does not work on February 10, 2024.</li>
 <li>Install the web browser extension named &quot;Header Editor&quot;</li>
 </ul>
 </li>
