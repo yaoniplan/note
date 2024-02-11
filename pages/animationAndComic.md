@@ -1,4 +1,28 @@
 ### "Animation"
+- 无人能敌 - 04
+- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821 animation
+- 休假日的坏人先生 - 01
+- 大宇宙时代 - 01
+- 月光下的异世界之旅 (Part1+2)- 12+01
+- 愚蠢天使与恶魔共舞 - 01
+- 你的人生是我来迟了 - 01
+- 圣祖之万相金澜 - 01
+- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155 animation
+- 外科医生爱丽丝 - 00
+- 剑域风云 (Part1+2) - 40+52 # End of the second part - 00
+- 通灵王 FLOWERS - 00
+- 到了30岁还是处男，似乎会变成魔法师 - 00
+- 勇气爆发BangBravern - 00
+- 月刊妄想科学 - 00
+- 魔女与野兽 - 00
+- 神武天尊 - 00
+- 九天玄帝诀 - 00
+- 一剑独尊 - 00
+- 最弱的驯养师开启的捡垃圾的旅途 - 00
+- 百千家的妖怪王子 - 00
+- 零食八江 - 00
+- 神龙星主 - 00
+- 万界独尊 - 00
 - 真武巅峰 (Part1+2) - 40+33
 - 公主大人“拷问”的时间到了 - 01 0814 animation
 - 北海道辣妹贼拉可爱 - 01
@@ -411,7 +435,6 @@
 - Expanding Sky! Precure光之美少女 - 01 # The target audience is children.
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
 - 一世独尊 - 26 # The plot is too corny
-- 剑域风云 (Part1+2) - 40+52 # End of the second part
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen years old
 - 混世机甲 - 01 1214 # The voice actors do not match their lips
 - 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen years old
@@ -482,7 +505,7 @@
 - 拥有超常技能的异世界流浪美食家 - 07 0020 # It is boring
 - 被解雇的暗黑士兵(30岁)慢生活的第二人生 - 07 1147 # It is boring
 - 进化果实～不知不觉踏上胜利的人生～ (Season1+2)- 12+07 1707 # It is boring
-- HIGH CARD - 07 1356 # It's boring
+- HIGH CARD / 至高之牌 - 07 1356 # It's boring
 - 混沌武士 - 26 # End
 - 文豪野犬 (Season1+2+3) - 12+12+00 # It's boring
 - 莎木 - 13 # End of the first season
@@ -532,7 +555,6 @@
 - 战千年第一季 - 16 # End of the first season
 - 史上最强男主角 - 48 # End of the first season
 - DOTA：龙之血 - 08 # End of the first, second and third season
-- 月光下的异世界之旅 - 12 # End of the first season
 - 力拔山河兮子唐 - 20 # End of the first season
 - 星武神诀第二季 - 40 # End of the second season
 - 神墓 - 16 # End of the first season

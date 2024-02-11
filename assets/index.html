@@ -41,6 +41,49 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;cloudflared&quot;</h4>
+<ul>
+<li><code>cloudflared tunnel login</code> # Copy and open a URL to verify</li>
+<li><code>cloudflared tunnel create memos2</code> # Create a tunnel</li>
+<li><code>vim ~/.cloudflared/config.yml</code><pre><code>url: http://localhost:5230
+tunnel: 6c24fc10-8436-4adf-9f75-f5bdacdeedf8
+credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdeedf8.json
+</code></pre>
+<ul>
+<li><code>cloudflared tunnel list</code> # Get the ID (e.g. 6c24fc10-8436-4adf-9f75-f5bdacdeedf8)</li>
+</ul>
+</li>
+<li><code>cloudflared tunnel route dns memos2 memos2.yaoniplan.eu.org</code> # Assign a CNAME record to tunnel subdomain</li>
+<li><code>cloudflared tunnel run memos2</code> # Run the tunnel</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>cloudflared tunnel delete memos2</code> # Delete a tunnel<ul>
+<li><code>cloudflared tunnel cleanup memos2</code> # Cleanup connection before deleting</li>
+</ul>
+</li>
+<li><code>doas pacman --sync cloudflared</code> # Install dependencies<ul>
+<li>Use nix will take a lot of time to compile</li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>Failed to add route: code: 1003, reason: Failed to create record alist.yaoniplan.eu.org with err An A, AAAA, or CNAME record with that host already exists. For more details, refer to &lt;https://developers.cloudflare.com/dns/manage-dns-records/troubleshooting/records-with-same-name/&gt;.
+</code></pre>
+<ul>
+<li><a href="https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/#create-dns-records">https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/#create-dns-records</a></li>
+<li>Remove existing records (e.g. CNAME)</li>
+</ul>
+</li>
+<li>Because to try to run some applications on the internect.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/">https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/</a></li>
+<li><code>cloudflared tunnel --help | less</code> # <code>/delete</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Create a Firefox profile without cookies for testing purposes</h4>
 <ul>
 <li><code>firefox -CreateProfile testing_profile</code> # Create a profile</li>
@@ -54,9 +97,50 @@
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;pm2&quot;</h4>
+<ul>
+<li><code>pm2 restart alist</code> # Restart after modifying the configuration file</li>
+<li><code>pm2 start ./alist -- server</code> # Start <code>./alist server</code> command</li>
+<li><code>pm2 save</code> # Save process list</li>
+<li><code>pm2 delete synctv</code> # Delete a process</li>
+<li><code>pm2 status</code> # List all processes</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to try to use a foreign server.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>pm2 --help | less</code> # <code>/delete</code> <code>/status</code> <code>/save</code></li>
+<li><a href="https://imnks.com/5984.html">https://imnks.com/5984.html</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;bemenu&quot;</h4>
+<ul>
+<li><code>bemenu-run --hb &#39;#467b96&#39; --hf &#39;#dfdfdf&#39; --tb &#39;#467b96&#39; --tf &#39;#dfdfdf&#39; -H 20 --fn &#39;Fira Code&#39; -p &#39;-&gt;&#39;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Use &#39;##&#39; to replace &#39;#&#39; to make command effective in Hyprland</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/">https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;cloudflare&quot;</h4>
 <ul>
 <li>&#39;Worker &amp; Pages&#39; - &#39;Create application&#39; - &#39;Create Worker&#39; (Optional: Change name) - &#39;Deploy&#39; - &#39;Configure Worker&#39; - &#39;Quick edit&#39; - Paste the fllowing code - &#39;Save and deploy&#39; - &#39;Trigers&#39; - &#39;Add Custom Domain&#39; - &#39;Domain&#39; (your subdomain, note that your domain name must be in Cloudflare)</li>
+<li>Use Tunnels<ul>
+<li>&#39;Create a tunnel&#39; - &#39;Cloudflared&#39; (Next) - &#39;Tunnel name&#39; (e.g. memos) - &#39;Save tunnel&#39; - &#39;Docker&#39; (Run command in your server) - &#39;Next&#39; - &#39;Subdomain&#39; (e.g. memos) - &#39;Domain&#39; (e.g. yaoniplan.eu.org) - &#39;Type&#39; (e.g. HTTP) - &#39;URL&#39; (e.g. localhost:5230) - &#39;Save&#39;</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -241,7 +325,10 @@
 <li><code>$HOME/$(date +%F_%H-%M.png)</code> # File name</li>
 </ul>
 </li>
-<li><code>grim -g &quot;$(slurp)&quot; - | wl-copy --type image/png</code> # Take a area screenshot and copy to clipboard</li>
+<li><code>grim -g &quot;$(slurp)&quot; - | wl-copy</code> # Take a area screenshot and copy to clipboard<ul>
+<li><code>-</code> # Send screenshot to stdout</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -256,6 +343,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.youtube.com/watch?v=J1L1qi-5dr0">https://www.youtube.com/watch?v=J1L1qi-5dr0</a></li>
 <li><a href="https://sr.ht/~emersion/grim/#example-usage">https://sr.ht/~emersion/grim/#example-usage</a></li>
 <li><a href="https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/">https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/</a></li>
 </ul>
@@ -266,7 +354,9 @@
 <li><h4>Use &quot;mako&quot;</h4>
 <ul>
 <li><code>notify-send &quot;Hello, $(whoami)!&quot; &quot;This is an example notification.&quot;</code><ul>
-<li><code>mako &amp;</code> # Run in the background as a daemon</li>
+<li><code>mako &amp;</code> # Run in the background as a daemon<pre><code>@reboot /home/yaoniplan/.nix-profile/bin/mako
+</code></pre>
+</li>
 </ul>
 </li>
 <li><code>vim ~/.config/mako/config</code><pre><code>sort=-time
@@ -474,7 +564,7 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li><code>Ctrl-c</code> # Close Tofi</li>
 </ul>
 </li>
-<li><code>yay --sync tofi</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#tofi</code> # Install dependencies</li>
 <li>Because to execute scripts quickly. (Like &quot;dmenu&quot;)</li>
 </ul>
 </li>
@@ -522,11 +612,18 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><code>-e</code> # Execute</li>
-<li><code>doas pacman --sync foot</code> # Install dependencies</li>
+<li>Solve the problem<pre><code>warning: &#39;C&#39; is not a UTF-8 locale, using &#39;C.UTF-8&#39; instead
+</code></pre>
+<ul>
+<li><code>LC_ALL=C.UTF-8 foot</code> # Temporarily</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#foot</code> # Install dependencies</li>
 <li>Because to try the fastest responsive terminal in Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://codeberg.org/dnkl/foot/issues/1067#issuecomment-452654">https://codeberg.org/dnkl/foot/issues/1067#issuecomment-452654</a></li>
 <li><code>man foot.ini</code></li>
 <li><code>man foot</code> # <code>/-e</code></li>
 <li>ChatGPT</li>
@@ -605,6 +702,10 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Examples<ul>
+<li><code>echo &quot;$(which mako)&quot; | wl-copy</code> # Copy file path to clipboard</li>
+</ul>
+</li>
 <li>Because to use Wayland.</li>
 <li><code>doas pacman --sync wl-clipboard</code> # Install dependencies</li>
 </ul>
@@ -727,10 +828,25 @@ misc {
 <ul>
 <li><h4>Use &quot;aria2c&quot;</h4>
 <ul>
-<li><code>aria2c yourURL</code></li>
+<li><code>touch ~/.config/aria2c/aria2.session</code></li>
+<li><code>vim ~/.config/aria2c/aria2.conf</code><pre><code>dir = /home/yaoniplan/.config/aria2c/
+enable-rpc = true
+rpc-allow-origin-all = true
+rpc-listen-all = true
+continue = true
+input-file = /home/lyaoniplan/.config/aria2c/aria2.session
+save-session = /home/lyaoniplan/.config/aria2c/aria2.session
+max-concurrent-downloads = 5
+</code></pre>
+</li>
+<li><code>aria2c --conf-path ~/.config/aria2c/aria2.conf</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Optional<ul>
+<li><code>rpc-listen-port = 47819</code> # Change the default 6800 port</li>
+</ul>
+</li>
 <li><code>nix profile install nixpkgs#aria2</code> # Install dependencies</li>
 </ul>
 </li>
@@ -3397,7 +3513,7 @@ fi
 <ul>
 <li><h4>Set the environment variable LOCALE_ARCHIVE in Nix</h4>
 <ul>
-<li><code>echo &#39;export LOCALE_ARCHIVE=&quot;/usr/lib/locale-archive&quot;&#39; &gt;&gt; ~/.bashrc</code></li>
+<li><code>echo &#39;export LOCALE_ARCHIVE=&quot;/usr/lib/locale/locale-archive&quot;&#39; &gt;&gt; ~/.bashrc</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -12126,8 +12242,10 @@ set number
 <hr>
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
-  <code>:set encoding=utf-8</code> # Display Chinese characters properly
-  <code>:set paste</code> # Fix indentation issues when pasting<ul>
+<ul>
+<li><code>:%s/$/ - 00/g</code> # Batch add a string (e.g. &#39; - 00&#39;) to the end of line</li>
+<li><code>:set encoding=utf-8</code> # Display Chinese characters properly</li>
+<li><code>:set paste</code> # Fix indentation issues when pasting</li>
 <li><code>%</code> # Jump the cursor to matching bracket</li>
 <li><code>&gt;&gt;</code> # Indent current line (like <code>&gt;l</code>, <code>v&gt;</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
@@ -12212,6 +12330,7 @@ set shiftwidth=4 &quot; Replace indentation with spaces
 <li><a href="https://medium.com/@Sohjiro/introduction-to-vim-buffers-dd966ff518d">https://medium.com/@Sohjiro/introduction-to-vim-buffers-dd966ff518d</a></li>
 <li><a href="https://stackoverflow.com/questions/19971023/how-to-go-back-to-previous-opened-file-in-vim">https://stackoverflow.com/questions/19971023/how-to-go-back-to-previous-opened-file-in-vim</a></li>
 <li><a href="https://vi.stackexchange.com/questions/2462/how-do-i-move-the-cursor-to-the-center-of-current-line">https://vi.stackexchange.com/questions/2462/how-do-i-move-the-cursor-to-the-center-of-current-line</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
