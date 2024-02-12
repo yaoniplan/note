@@ -62,7 +62,6 @@
 
 ## Network proxy
 - https://ikuuu.eu/user
-- https://sockboom.tv/user/
 - https://sub.ssrsub.com/#/dashboard
 - https://www.askahh.com/index.php/archives/101/
 - https://jichangtuijian.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
