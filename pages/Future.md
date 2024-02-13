@@ -71,7 +71,7 @@
 - https://www.burstlinker.com/
 
 ## Animation and comic
-- http://agedm3.com/
+- http://ysjdm2.com/
 - https://www.agedm.org/
 - https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/

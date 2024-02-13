@@ -70,7 +70,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </code></pre>
 <ul>
 <li><a href="https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/#create-dns-records">https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/#create-dns-records</a></li>
-<li>Remove existing records (e.g. CNAME)</li>
+<li>Remove conflicting records (e.g. CNAME)</li>
 </ul>
 </li>
 <li>Because to try to run some applications on the internect.</li>
@@ -103,16 +103,17 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <li><code>pm2 start ./alist -- server</code> # Start <code>./alist server</code> command</li>
 <li><code>pm2 save</code> # Save process list</li>
 <li><code>pm2 delete synctv</code> # Delete a process</li>
-<li><code>pm2 status</code> # List all processes</li>
+<li><code>pm2 list</code> # List all processes</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to try to use a foreign server.</li>
+<li><code>npm install -g pm2</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>pm2 --help | less</code> # <code>/delete</code> <code>/status</code> <code>/save</code></li>
-<li><a href="https://imnks.com/5984.html">https://imnks.com/5984.html</a></li>
+<li><a href="https://www.kejiwanjia.net/jiaocheng/51930.html">https://www.kejiwanjia.net/jiaocheng/51930.html</a></li>
 </ul>
 </li>
 </ul>
@@ -164,6 +165,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://imnks.com/5984.html">https://imnks.com/5984.html</a></li>
 <li><a href="https://blog.misaka.rest/2023/01/22/cf-wkrs-node/">https://blog.misaka.rest/2023/01/22/cf-wkrs-node/</a></li>
 </ul>
 </li>
@@ -341,7 +343,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <li><code>nix profile install nixpkgs#grimblast</code> # Install dependencies</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#grim nixpkgk#slurp</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#grim nixpkgs#slurp</code> # Install dependencies</li>
 <li>Because to share screenshots with others in the open source world.</li>
 </ul>
 </li>
@@ -350,6 +352,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <li><a href="https://www.youtube.com/watch?v=J1L1qi-5dr0">https://www.youtube.com/watch?v=J1L1qi-5dr0</a></li>
 <li><a href="https://sr.ht/~emersion/grim/#example-usage">https://sr.ht/~emersion/grim/#example-usage</a></li>
 <li><a href="https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/">https://old.reddit.com/r/linuxquestions/comments/untr5f/why_isnt_there_a_standard_way_to_take_screenshots/i8agsw8/</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -2115,7 +2118,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Text<ul>
 <li>Long press &#39;123&#39; and slide to comma # Enter punctuation marks quickly</li>
 <li>Long press the dollar sign # Select another country&#39;s currency unit symbol (e.g. ¥)</li>
-<li>Long press the double quotes # Choose the ASCII</li>
+<li>Long press the double quotes or disable &#39;Smart Punctuation&#39; # Choose the ASCII</li>
 <li>Long press space key # Move cursor quickly</li>
 <li>Double click / Long press # Select a word</li>
 <li>Triple click # Select a sentence</li>

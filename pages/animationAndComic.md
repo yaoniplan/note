@@ -1,4 +1,5 @@
 ### "Animation"
+- Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821 animation
 - 休假日的坏人先生 - 01
@@ -9,20 +10,16 @@
 - 圣祖之万相金澜 - 01
 - 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155 animation
 - 外科医生爱丽丝 - 01
-- 剑域风云 (Part1+2) - 40+52+26 animation
-- 通灵王 FLOWERS - 00
-- 到了30岁还是处男，似乎会变成魔法师 - 00
-- 勇气爆发BangBravern - 00
-- 月刊妄想科学 - 00
-- 魔女与野兽 - 00
-- 神武天尊 - 00
-- 九天玄帝诀 - 00
-- 一剑独尊 - 00
-- 最弱的驯养师开启的捡垃圾的旅途 - 00
-- 百千家的妖怪王子 - 00
-- 零食八江 - 00
-- 神龙星主 - 00
-- 万界独尊 - 00
+- 剑域风云 (Part1+2) - 40+52+32
+- 勇气爆发BangBravern - 01 0224 animation
+- 月刊妄想科学 - 01
+- 魔女与野兽 - 01
+- 九天玄帝诀 - 02
+- 最弱的驯养师开启的捡垃圾的旅途 - 01
+- 百千家的妖怪王子 - 01
+- 零食八江 - 01
+- 神龙星主 - 02
+- 万界独尊 - 00 animation
 - 真武巅峰 (Part1+2) - 40+33
 - 公主大人“拷问”的时间到了 - 01 0814 animation
 - 北海道辣妹贼拉可爱 - 01
@@ -287,6 +284,10 @@
 - guard(end)
 
 ### Animation
+- 一剑独尊 - 00 # Dynamic comic
+- 神武天尊 - 00 # Dynamic comics
+- 到了30岁还是处男，似乎会变成魔法师 - 01 0647 # A story about men and men
+- 通灵王 FLOWERS - 01 0455 # Target audience may be 13 or 14 years old
 - Ragna Crimson / 狩龙人拉格纳 - 15 1524 # Plot may be slow.
 - 铁路浪漫谭 - (Part1+2) 00+13 # End of the second part
 - The Kingdoms of Ruin / 破灭之国 - 12 # End of the first part
