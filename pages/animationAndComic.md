@@ -1,17 +1,17 @@
 ### "Animation"
 - Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
-- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821 animation
+- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821
 - 休假日的坏人先生 - 01
 - 大宇宙时代 - 01
 - 月光下的异世界之旅 (Part1+2)- 12+01
 - 愚蠢天使与恶魔共舞 - 01
 - 你的人生是我来迟了 - 01
 - 圣祖之万相金澜 - 01
-- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155 animation
+- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155
 - 外科医生爱丽丝 - 01
 - 剑域风云 (Part1+2) - 40+52+32
-- 勇气爆发BangBravern - 01 0224 animation
+- 勇气爆发BangBravern - 01 0224
 - 月刊妄想科学 - 01
 - 魔女与野兽 - 01
 - 九天玄帝诀 - 02
@@ -19,9 +19,9 @@
 - 百千家的妖怪王子 - 01
 - 零食八江 - 01
 - 神龙星主 - 02
-- 万界独尊 - 00 animation
+- 万界独尊 - 08 animation
 - 真武巅峰 (Part1+2) - 40+33
-- 公主大人“拷问”的时间到了 - 01 0814 animation
+- 公主大人“拷问”的时间到了 - 01 0814
 - 北海道辣妹贼拉可爱 - 01
 - 剑仙在此 - 37
 - 云中居三子 - 06
@@ -411,7 +411,7 @@
 - 镖人 - 15 # End of the first part
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
-- 风火战纪 - 01 animation # The plot is too corny
+- 风火战纪 - 01 # The plot is too corny
 - 夫妇联欢~回不去的夜晚 #NSFW - 03 # Resources loading freezes
 - BanG Dream! Its MyGO!!!!! - 10 0618 # Target audience is female
 - 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
