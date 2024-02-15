@@ -41,6 +41,27 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Generate a UUID randomly</h4>
+<ul>
+<li><code>uuidgen</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Other methods<ul>
+<li><code>cat /proc/sys/kernel/random/uuid</code></li>
+<li><code>python -c &#39;import uuid; print(uuid.uuid4())&#39;</code></li>
+</ul>
+</li>
+<li>Because to use vless on a foreign server.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;cloudflared&quot;</h4>
 <ul>
 <li><code>cloudflared tunnel login</code> # Copy and open a URL to verify</li>
@@ -171,6 +192,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.edony.ink/self-hosting-personal-memos-services/#cloudflare-r2-%E9%85%8D%E7%BD%AE">https://www.edony.ink/self-hosting-personal-memos-services/#cloudflare-r2-配置</a></li>
 <li><a href="https://www.usememos.com/docs/advanced-settings/cloudflare-r2">https://www.usememos.com/docs/advanced-settings/cloudflare-r2</a></li>
 <li><a href="https://imnks.com/5984.html">https://imnks.com/5984.html</a></li>
 <li><a href="https://blog.misaka.rest/2023/01/22/cf-wkrs-node/">https://blog.misaka.rest/2023/01/22/cf-wkrs-node/</a></li>

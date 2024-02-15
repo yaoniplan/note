@@ -62,7 +62,6 @@
 
 ## Network proxy
 - https://ikuuu.eu/user
-- https://sub.ssrsub.com/#/dashboard
 - https://www.askahh.com/index.php/archives/101/
 - https://jichangtuijian.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
 - https://acl4ssr-sub.github.io/
@@ -130,7 +129,7 @@
 
 ## E-book
 - https://mozilla.github.io/pdf.js/web/viewer.html
-- https://singlelogin.me/
+- https://en.wikipedia.org/wiki/Z-Library
 - https://pgaskin.net/ePubViewer/
 - https://epub-reader.online/#
 - https://cloudconvert.com/pdf-to-epub
