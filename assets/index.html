@@ -120,6 +120,10 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <ul>
 <li><h4>Use &quot;pm2&quot;</h4>
 <ul>
+<li><code>pm2 stop all</code> # Reduce memory usage temporarily<ul>
+<li><code>pm2 start all</code> # Start all stopped processes</li>
+</ul>
+</li>
 <li><code>pm2 restart alist</code> # Restart after modifying the configuration file</li>
 <li><code>pm2 start ./alist -- server</code> # Start <code>./alist server</code> command</li>
 <li><code>pm2 save</code> # Save process list</li>
@@ -146,10 +150,26 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Advantages<ul>
+<li>High compatibility with dmenu</li>
+</ul>
+</li>
+<li>Disadvantages<ul>
+<li>Set default values (Does not support configuration files)</li>
+</ul>
+</li>
 <li>Use &#39;##&#39; to replace &#39;#&#39; to make command effective in Hyprland</li>
+<li>Other theme<ul>
+<li>author<pre><code>bemenu-run -i -l 10 -w --scrollbar=autohide -n --fn &#39;SF Mono 16&#39; --nb &#39;#282C34&#39; --nf &#39;#ABB2BF&#39; --tb &#39;#282C34&#39; --tf &#39;#ABB2BF&#39; --fb &#39;#282C34&#39; --ff &#39;#ABB2BF&#39; --hf &#39;#ABB2BF&#39; --hb &#39;#3E4451&#39; --sb &#39;#282C34&#39; --sf &#39;#61AFEF&#39; --scb &#39;#282C34&#39; --scf &#39;#61AFEF&#39;
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/nix-community/home-manager/pull/4713#issue-2015985146">https://github.com/nix-community/home-manager/pull/4713#issue-2015985146</a></li>
+<li><a href="https://github.com/ayushnix/dotfiles/blob/2f32445283d337033a74f99d6e4a5ac32413ef51/dot_bash_profile#L35">https://github.com/ayushnix/dotfiles/blob/2f32445283d337033a74f99d6e4a5ac32413ef51/dot_bash_profile#L35</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/">https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/</a></li>
 </ul>
 </li>
@@ -165,7 +185,9 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li>Use Worker<ul>
-<li>&#39;Worker &amp; Pages&#39; - &#39;Create application&#39; - &#39;Create Worker&#39; (Optional: Change name) - &#39;Deploy&#39; - &#39;Configure Worker&#39; - &#39;Quick edit&#39; - Paste the fllowing code - &#39;Save and deploy&#39; - &#39;Trigers&#39; - &#39;Add Custom Domain&#39; - &#39;Domain&#39; (your subdomain, note that your domain name must be in Cloudflare)</li>
+<li>Worker &amp; Pages - Create application - Create Worker (Optional: Change name) - Deploy</li>
+<li>Configure Worker - Quick edit - Paste the fllowing code - Save and deploy</li>
+<li>Trigers - Add Custom Domain - Domain (your subdomain, note that your domain name must be in Cloudflare)</li>
 </ul>
 </li>
 <li>Use Tunnels<ul>
@@ -6131,7 +6153,7 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Send a request using curl<pre><code>curl --request POST https://192.168.10.100:5230/api/v1/memo \
+<li>Send a request using curl<pre><code>curl --request POST http://192.168.10.100:5230/api/v1/memo \
     --header &quot;Content-Type: application/json&quot; \
     --header &quot;Authorization: Bearer yourAccessToken&quot; \
     --data &#39;{&quot;content&quot;:&quot;Hello, World!&quot;}&#39;
