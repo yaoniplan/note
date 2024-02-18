@@ -120,6 +120,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <ul>
 <li><h4>Use &quot;pm2&quot;</h4>
 <ul>
+<li><code>pm2 monit</code> # View previous command</li>
 <li><code>pm2 stop all</code> # Reduce memory usage temporarily<ul>
 <li><code>pm2 start all</code> # Start all stopped processes</li>
 </ul>
@@ -180,7 +181,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <ul>
 <li>Use R2 (Need PayPal and debit card)<ul>
 <li>R2 - Create bucket - Bucket name (e.g. memos)</li>
-<li>Manage R2 API Tokens - Create API token - Token name (e.g. Memos Re Token) - Permissions (e.g. Admin Read &amp; Write) - Copy (e.g. Access Key ID, Secret Access Key, Endpoints)</li>
+<li>Manage R2 API Tokens - Create API token - Token name (e.g. Memos R2 Token) - Permissions (e.g. Admin Read &amp; Write) - Copy (e.g. Access Key ID, Secret Access Key, Endpoints)</li>
 <li>R2.dev subdomain - Allow Access - allow - Public R2.dev Bucket URL (copy)</li>
 </ul>
 </li>
@@ -191,7 +192,9 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li>Use Tunnels<ul>
-<li>&#39;Create a tunnel&#39; - &#39;Cloudflared&#39; (Next) - &#39;Tunnel name&#39; (e.g. memos) - &#39;Save tunnel&#39; - &#39;Docker&#39; (Run command in your server) - &#39;Next&#39; - &#39;Subdomain&#39; (e.g. memos) - &#39;Domain&#39; (e.g. yaoniplan.eu.org) - &#39;Type&#39; (e.g. HTTP) - &#39;URL&#39; (e.g. localhost:5230) - &#39;Save&#39;</li>
+<li>Zero Trust - Networks - Create a tunnel - Select your connector (e.g. Cloudflared)</li>
+<li>Tunnel name (e.g. memos) - Save tunnel - Choose your environment (e.g. Docker)</li>
+<li>Copy and run command in your server - Subdomain (e.g. memos) - Domain (e.g. yaoniplan.eu.org) - Type (e.g. HTTP) - URL (e.g. 127.0.0.1:5230)</li>
 </ul>
 </li>
 </ul>
@@ -6154,6 +6157,32 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use JavaScript<ul>
+<li>Double click to enter edit mode<pre><code>// Load jQuery from CDN
+var script = document.createElement(&#39;script&#39;);
+script.src = &#39;https://code.jquery.com/jquery-3.6.4.min.js&#39;;
+document.head.appendChild(script);
+
+// Define actions after jQuery is loaded
+script.onload = function() {
+    // Use jQuery ready function
+    $(function() {
+        // Use event delegation for dynamic elements
+        $(&#39;body&#39;).on(&#39;dblclick&#39;, &#39;.memo-wrapper .text-base, .memo-wrapper .more-action-btn&#39;, function() {
+            var btn = $(this).closest(&#39;.memo-wrapper&#39;).find(&#39;.more-action-btns-container .btn:nth-child(2)&#39;);
+            btn.click();
+
+            // Use setTimeout function for timeout
+            setTimeout(function() {
+                $(&#39;.dialog-container textarea.text-base&#39;).focus();
+            }, 200);
+        });
+    });
+};
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Send a request using curl<pre><code>curl --request POST http://192.168.10.100:5230/api/v1/memo \
     --header &quot;Content-Type: application/json&quot; \
     --header &quot;Authorization: Bearer yourAccessToken&quot; \
@@ -6165,6 +6194,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/usememos/memos/issues/2722#issuecomment-1884660058">https://github.com/usememos/memos/issues/2722#issuecomment-1884660058</a></li>
 <li><a href="https://www.usememos.com/docs/security/access-tokens">https://www.usememos.com/docs/security/access-tokens</a></li>
 <li><a href="https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml">https://github.com/usememos/memos/blob/bee6f278ba88246f1e8899e3f768533cac88870c/scripts/docker-compose.yaml</a></li>
 </ul>
@@ -6196,7 +6226,8 @@ services:
 <li><code>192.168.10.100:31000</code> # Run in web browser</li>
 </ul>
 </li>
-<li><em><strong>References</strong></em><ul>
+<li><h2><em><strong>References</strong></em></h2>
+<ul>
 <li><a href="https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275">https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275</a></li>
 <li><a href="https://github.com/szabodanika/microbin/blob/master/compose.yaml">https://github.com/szabodanika/microbin/blob/master/compose.yaml</a></li>
 <li>ChatGPT</li>
