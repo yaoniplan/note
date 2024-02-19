@@ -41,6 +41,39 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;synctv&quot;</h4>
+<ul>
+<li><code>vim ~/.config/synctv/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
+services:
+  synctv:
+    image: &#39;synctvorg/synctv:latest&#39;
+    container_name: synctv
+    restart: always
+    ports:
+      - &#39;8080:8080/tcp&#39;
+      - &#39;8080:8080/udp&#39;
+    volumes:
+      - ~/.config/synctv:/root/.synctv
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+      - TZ=Asia/Shanghai
+</code></pre>
+</li>
+<li><code>docker-compose up --detach</code> # Run in the background</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>192.168.10.100:8080</code> # Run in the Chromium</li>
+<li><code>root</code> # Account and password</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://synctv.wiki/#/quickstart?id=run">https://synctv.wiki/#/quickstart?id=run</a></li>
+<li><a href="https://github.com/synctv-org/synctv/blob/ad7752a16534b9e9d8cdb34d26a032669da5c2c6/script/docker-compose.yml">https://github.com/synctv-org/synctv/blob/ad7752a16534b9e9d8cdb34d26a032669da5c2c6/script/docker-compose.yml</a></li>
+</ul>
+</li>
 <li><h4>Generate a UUID randomly</h4>
 <ul>
 <li><code>uuidgen</code></li>
@@ -127,7 +160,10 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </li>
 <li><code>pm2 restart alist</code> # Restart after modifying the configuration file</li>
 <li><code>pm2 start ./alist -- server</code> # Start <code>./alist server</code> command</li>
-<li><code>pm2 save</code> # Save process list</li>
+<li><code>pm2 save</code> # Save process list<ul>
+<li><code>pm2 resurrect</code> # Resurrect dumped processes</li>
+</ul>
+</li>
 <li><code>pm2 delete synctv</code> # Delete a process</li>
 <li><code>pm2 list</code> # List all processes</li>
 </ul>
