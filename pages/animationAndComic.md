@@ -1,4 +1,5 @@
 ### "Animation"
+- BASTARD!!暗黑破坏神 S1E24 S2E1 0940 animation NSFW, funny style, science fiction
 - Pantheon / 万神殿 01
 - Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
@@ -20,7 +21,7 @@
 - 百千家的妖怪王子 - 01
 - 零食八江 - 01
 - 神龙星主 - 02
-- 万界独尊 - 65 animation
+- 万界独尊 - 83 animation
 - 真武巅峰 (Part1+2) - 40+33
 - 公主大人“拷问”的时间到了 - 01 0814
 - 北海道辣妹贼拉可爱 - 01
@@ -561,7 +562,6 @@
 - 星武神诀第二季 - 40 # End of the second season
 - 神墓 - 16 # End of the first season
 - 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
-- BASTARD！！暗黑破坏神第一季 - 24 # End of the first season
 - 黑门 - 12 # end of the first season
 - 苍兰诀- 12 # end of the first season
 - 黑之召唤士第一季 - 12 # end of the first season

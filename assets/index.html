@@ -41,6 +41,26 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;jq&quot;</h4>
+<ul>
+<li><code>echo &quot;$response&quot; | jq -r &#39;.content&#39;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>jq</code> # JSON query</li>
+<li><code>-r</code> # Raw output</li>
+<li><code>nix profile install nixpkgs#jq</code> # Install dependencies</li>
+<li>Because to extract the value of the <code>content</code> key from the JSON response.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man jq</code> # <code>/-r</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;synctv&quot;</h4>
 <ul>
 <li><code>vim ~/.config/synctv/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
