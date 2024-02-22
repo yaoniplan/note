@@ -95,6 +95,9 @@ services:
 <li><a href="https://github.com/synctv-org/synctv/blob/ad7752a16534b9e9d8cdb34d26a032669da5c2c6/script/docker-compose.yml">https://github.com/synctv-org/synctv/blob/ad7752a16534b9e9d8cdb34d26a032669da5c2c6/script/docker-compose.yml</a></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li><h4>Generate a UUID randomly</h4>
 <ul>
 <li><code>uuidgen</code></li>
@@ -133,6 +136,22 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Run multiple services<ul>
+<li><code>vim ~/.cloudflared/config.yml</code><pre><code>tunnel: 2ec7443a-fc35-4160-b260-fc3055089c5d
+credentials-file: /home/yaoniplan/.cloudflared/2ec7443a-fc35-4160-b260-fc3055089c5d.json
+
+ingress:
+  - hostname: alist.yaoniplan.eu.org
+    service: http://localhost:28465
+  - hostname: download.yaoniplan.eu.org
+    service: http://localhost:53420
+  - service: http_status:404
+</code></pre>
+</li>
+<li><code>cloudflared tunnel route dns alist alist.yaoniplan.eu.org</code> # Replace <code>alist</code> with other service (e.g. download)</li>
+<li><code>cloudflared tunnel run alist</code> # Replace <code>alist</code> with other service (e.g. download)</li>
+</ul>
+</li>
 <li><code>cloudflared tunnel delete memos2</code> # Delete a tunnel<ul>
 <li><code>cloudflared tunnel cleanup memos2</code> # Cleanup connection before deleting</li>
 </ul>
@@ -152,6 +171,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/#file-structure-for-public-hostnames">https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/configure-tunnels/local-management/configuration-file/#file-structure-for-public-hostnames</a></li>
 <li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/">https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-local-tunnel/</a></li>
 <li><code>cloudflared tunnel --help | less</code> # <code>/delete</code></li>
 </ul>
@@ -190,12 +210,13 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--name cloudflared-alist</code> # Set a name for the process</li>
 <li>Because to try to use a foreign server.</li>
 <li><code>npm install -g pm2</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>pm2 --help | less</code> # <code>/delete</code> <code>/status</code> <code>/save</code></li>
+<li><code>pm2 --help | less</code> # <code>/delete</code> <code>/status</code> <code>/save</code> <code>/name</code></li>
 <li><a href="https://github.com/Unitech/pm2">https://github.com/Unitech/pm2</a></li>
 </ul>
 </li>
@@ -251,7 +272,7 @@ credentials-file: /home/yaoniplan/.cloudflared/6c24fc10-8436-4adf-9f75-f5bdacdee
 <li>Use Tunnels<ul>
 <li>Zero Trust - Networks - Create a tunnel - Select your connector (e.g. Cloudflared)</li>
 <li>Tunnel name (e.g. memos) - Save tunnel - Choose your environment (e.g. Docker)</li>
-<li>Copy and run command in your server - Subdomain (e.g. memos) - Domain (e.g. yaoniplan.eu.org) - Type (e.g. HTTP) - URL (e.g. 127.0.0.1:5230)</li>
+<li>Copy and run command in your server - Subdomain (e.g. memos) - Domain (e.g. yaoniplan.eu.org) - Type (e.g. HTTP) - URL (e.g. localhost:5230)</li>
 </ul>
 </li>
 </ul>
@@ -973,7 +994,8 @@ max-concurrent-downloads = 5
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Optional<ul>
-<li><code>rpc-listen-port = 47819</code> # Change the default 6800 port</li>
+<li><code>rpc-listen-port = 47819</code> # Change default 6800 port</li>
+<li><code>rpc-secret = 4jJOSa9ePitWJV1G5dRAweJLv53bd7N/TzK71L1u8o8=</code> # Change default empty password (Use <code>openssl rand -base64 32</code> command to generate RPC secret)</li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#aria2</code> # Install dependencies</li>
@@ -981,6 +1003,7 @@ max-concurrent-downloads = 5
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://xnth97.github.io/2017/10/25/raspberry-pi/#%E5%AE%89%E8%A3%85-aria2">https://xnth97.github.io/2017/10/25/raspberry-pi/#安装-aria2</a></li>
+<li><code>man aria2c</code> # <code>/rpc options</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -2349,7 +2372,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Maps<ul>
-<li><code>Go to the nearby library / bank / ...</code></li>
+<li><code>Go to the nearby library / bank / toilet /...</code></li>
 </ul>
 </li>
 <li>Use Clock<ul>
@@ -2375,6 +2398,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Settings<ul>
+<li><code>What song is it</code> # Identify a song (Get song title or artist)</li>
 <li><code>Next song</code> # Play next music (Doesn&#39;t work: <code>Previous song</code>)</li>
 <li><code>Restart this device</code> # Solve some bugs</li>
 <li><code>Enable Night Shift</code> # Protect eyes</li>
