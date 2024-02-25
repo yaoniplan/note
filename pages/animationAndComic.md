@@ -1,5 +1,4 @@
 ### "Animation"
-- BASTARD!!暗黑破坏神 S1E24 S2E1 0940 animation NSFW, funny style, science fiction
 - Pantheon / 万神殿 01
 - Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
@@ -286,6 +285,7 @@
 - guard(end)
 
 ### Animation
+- BASTARD!!暗黑破坏神 S1E24 S2E14 1921 NSFW, funny style, science fiction, The second season animation lacks the attributes of the first season animation
 - 一剑独尊 - 00 # Dynamic comic
 - 神武天尊 - 00 # Dynamic comics
 - 到了30岁还是处男，似乎会变成魔法师 - 01 0647 # A story about men and men
