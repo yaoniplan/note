@@ -76,7 +76,6 @@
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
 - https://theporndude.com/
-- https://hanman.cyou/ # References: https://www.yy123.cyou/
 - http://www.mhxqiu2.com/
 - https://ikmmh.com/
 - https://toptoon.life
