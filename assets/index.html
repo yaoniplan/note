@@ -41,8 +41,73 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;violentmonkey&quot;</h4>
+<ul>
+<li><code>Ctrl-l</code> # Select line</li>
+<li><code>Ctrl-[</code> # Indent less</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to write a user script for a website.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>In <code>?</code> tab of the code editing page</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;obs&quot;</h4>
+<ul>
+<li><code>obs</code> # Configure recording settings to your preferences<pre><code># In Settings of File
+MPEG-4 (.mp4) # Recording Format
+1364x768 # Output (Scaled) Resolution
+60 # Common FPS Values
+%CCYY-%MM-%DD_%hh-%mm-%ss # Filename Formatting
+</code></pre>
+</li>
+<li>Add a source (e.g. Screen Capture) In Sources</li>
+<li>Leave only an audio mixer (e.g. Desktop Audio) to avoid recroding environment sound (e.g. computer fan, keyboarding)<ul>
+<li>Or use a microphone</li>
+</ul>
+</li>
+<li>Start Recording</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas pacman --sync obs-studio</code> # Install dependencies<ul>
+<li>Use Nix to install it will output errors<pre><code>error: Failed to initialize video.  Your GPU may not be supported, or your graphics drivers may need to be updated.
+</code></pre>
+</li>
+<li><code>echo &quot;127.0.0.1 localhost | doas tee -a /etc/hosts&quot;</code> # Solve the problem<pre><code>yaoniplan@tux ~ $ obs-cli recording start
+error: dial tcp: lookup localhost: Temporary failure in name resolution
+yaoniplan@tux ~ $  
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;JavaScript&quot;</h4>
 <ul>
+<li>Press Enter key to click next episode icon<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
+  if (event.key === &#39;Enter&#39;) {
+    let nextIcon = document.querySelector(&#39;.video-switch-icon.next-icon&#39;);
+    if (nextIcon) {
+      nextIcon.click();
+    }
+  }
+});
+</code></pre>
+</li>
 <li>Access iframe after DOM content loaded<pre><code>document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   var iframe = document.getElementById(&#39;playiframe&#39;);
 
@@ -55,10 +120,24 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>.video-switch-icon.next-icon</code> # Use <code>Ctrl-Shift-c</code> to find it</li>
+<li>In userscript manager<pre><code>// ==UserScript==
+// @key value
+// ==/UserScript==
+
+// Add your JavaScript code here.
+</code></pre>
+<ul>
+<li>Replace following key and value with yours</li>
+<li><code>// @name Press Enter key to click next episode</code> # Script name</li>
+<li><code>// @match https://www.agedm.org/*</code> # Match URL</li>
+</ul>
+</li>
 <li>Because to achieve semi-automation in the website.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://violentmonkey.github.io/api/metadata-block/">https://violentmonkey.github.io/api/metadata-block/</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -533,7 +612,10 @@ ingress:
 <ul>
 <li><h4>Use &quot;wlsunset&quot;</h4>
 <ul>
-<li><code>wlsunset -l 28.2 -L 116.6</code></li>
+<li><code>wlsunset -l 28.2 -L 116.6</code><ul>
+<li>Remember to run it in the background as a daemon at boot time</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -595,9 +677,7 @@ ingress:
 <li><h4>Use &quot;mako&quot;</h4>
 <ul>
 <li><code>notify-send &quot;Hello, $(whoami)!&quot; &quot;This is an example notification.&quot;</code><ul>
-<li><code>mako &amp;</code> # Run in the background as a daemon<pre><code>@reboot /home/yaoniplan/.nix-profile/bin/mako
-</code></pre>
-</li>
+<li><code>mako</code> # Remenber to run in the background as a daemon at boot time</li>
 </ul>
 </li>
 <li><code>vim ~/.config/mako/config</code><pre><code>sort=-time
@@ -986,7 +1066,10 @@ font-size = 12
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Bind `Super-f` key to toggle full screen
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Execute apps at launch
+exec-once = mako
+exec-once = wlsunset -l 28.2 -L 116.6
+# Bind `Super-f` key to toggle full screen
 bind = $mainMod, F, fullscreen, 0
 # Bind `Super-l` key to lock screen
 bind = $mainMod, L, exec, swaylock --color 000000; hyprctl dispatch dpms off
@@ -3860,6 +3943,10 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <ul>
 <li><h4>Use &quot;nix&quot;</h4>
 <ul>
+<li><code>nix profile install nixpkgs/24fe8bb4f552ad3926274d29e083b79d84707da6#obs-studio</code> # Install lower version packages<ul>
+<li><a href="https://www.nixhub.io/packages/obs-studio">https://www.nixhub.io/packages/obs-studio</a></li>
+</ul>
+</li>
 <li><code>nix search nixpkgs#firefox</code> # Search for the package<ul>
 <li><code>nix search nixpkgs opencv</code> # Another way</li>
 </ul>
