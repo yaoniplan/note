@@ -41,6 +41,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;swww&quot;</h4>
+<ul>
+<li><code>swww img /usr/share/hyprland/wall_anime_2K.png</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#swww</code> # Install dependencies</li>
+<li>Because to set wallpaper on Wayland.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/LGFae/swww#usage">https://github.com/LGFae/swww#usage</a></li>
+<li><a href="https://wiki.hyprland.org/Useful-Utilities/Wallpapers/">https://wiki.hyprland.org/Useful-Utilities/Wallpapers/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;violentmonkey&quot;</h4>
 <ul>
 <li><code>Ctrl-l</code> # Select line</li>
@@ -96,7 +114,7 @@ yaoniplan@tux ~ $
 </ul>
 <hr>
 <ul>
-<li><h4>Use &quot;JavaScript&quot;</h4>
+<li><h4>Use &quot;javascript&quot;</h4>
 <ul>
 <li>Press Enter key to click next episode icon<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
@@ -107,6 +125,19 @@ yaoniplan@tux ~ $
   }
 });
 </code></pre>
+<ul>
+<li>Press Enter key to go to next episode URL<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
+  if (event.key === &#39;Enter&#39;) {
+    let currentPageURL = window.location.href; // Get the current page URL
+    let pageNumber = currentPageURL.match(/\/(\d+)\.html$/)[1]; // Extract the page number from the URL
+    let nextPageNumber = parseInt(pageNumber) + 1; // Increment the page number
+    let nextPageURL = currentPageURL.replace(`/${pageNumber}.html`, `/${nextPageNumber}.html`); // Construct the next URL
+    window.location.href = nextPageURL; // Redirect to the next URL
+  }
+});
+</code></pre>
+</li>
+</ul>
 </li>
 <li>Access iframe after DOM content loaded<pre><code>document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   var iframe = document.getElementById(&#39;playiframe&#39;);
@@ -856,7 +887,12 @@ command! InsertCodeBlock :call InsertCodeBlock()
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Disadvantages: it has no completion feature.</li>
+<li>Advantages: Sort by frequency of use.</li>
+<li>Disadvantages<ul>
+<li>No support for custom keybindings.</li>
+<li>It has no completion feature.</li>
+</ul>
+</li>
 <li><code>&quot;$@&quot;</code> # All arguments</li>
 <li><code>${SHELL}</code> # The value of the SHELL environment variable</li>
 <li><code>:-</code> # Specify a default value if the variable is not set<ul>
@@ -890,6 +926,7 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/philj56/tofi/issues/101#issue-1702785890">https://github.com/philj56/tofi/issues/101#issue-1702785890</a></li>
 <li><a href="https://github.com/philj56/tofi/issues/34#issuecomment-1259924025">https://github.com/philj56/tofi/issues/34#issuecomment-1259924025</a></li>
 <li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
 <li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
@@ -924,9 +961,15 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Hotkeys<ul>
+<li><code>Ctrl-Shift-n</code> # New a terminal</li>
+</ul>
+</li>
 <li>Use &quot;fira code&quot;<ul>
 <li><code>doas pacman --sync ttf-fira-code</code> # Install dependencies</li>
 <li><code>vim ~/.config/foot/foot.ini</code><pre><code>font=Fira Code:size=12
+[colors]
+alpha=0.8 # transparency
 </code></pre>
 </li>
 <li>Restart Foot to make changes effective</li>
@@ -944,6 +987,7 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/swaywm/comments/kdtxik/dnklfoot_terminal_a_small_shoutout/gg3a274/">https://old.reddit.com/r/swaywm/comments/kdtxik/dnklfoot_terminal_a_small_shoutout/gg3a274/</a></li>
 <li><a href="https://codeberg.org/dnkl/foot/issues/1067#issuecomment-452654">https://codeberg.org/dnkl/foot/issues/1067#issuecomment-452654</a></li>
 <li><code>man foot.ini</code></li>
 <li><code>man foot</code> # <code>/-e</code></li>
@@ -1083,6 +1127,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc">https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc</a> # Anime mascot wallpaper</li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/xwit2h/drag_window/ir6rm9j/">https://old.reddit.com/r/hyprland/comments/xwit2h/drag_window/ir6rm9j/</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/">https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/">https://old.reddit.com/r/hyprland/comments/y92mo2/how_do_i_make_a_fullscreen_toggle_bind/k0tg5o1/</a></li>
