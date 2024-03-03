@@ -21,16 +21,11 @@
 - 零食八江 - 01
 - 神龙星主 - 02
 - 万界独尊 - 212
-- 真武巅峰 (Part1+2) - 40+43 animation
-- 公主大人“拷问”的时间到了 - 01 0814
-- 北海道辣妹贼拉可爱 - 01
-- 剑仙在此 - 37
-- 云中居三子 - 06
-- 异人君莫邪 - 04
-- 战国妖狐 - 01
-- 金属口红 - 01
-- 师兄啊师兄 - 21
-- 万古狂帝 - 05
+- 真武巅峰 (Part1+2) - 40+66
+- 云中居三子 - 13
+- 异人君莫邪 - 07
+- 师兄啊师兄 - 26
+- 万古狂帝 - 05 animation
 - 神藏 - 12
 - 深渊游戏 - 09
 - 魁拔之殊途 - 13
@@ -285,6 +280,11 @@
 - guard(end)
 
 ### Animation
+- 金属口红 - 02 1057 # Target audience may be 13 or 14 years old.
+- 战国妖狐 - 02 1330 # Target audience may be 13 or 14 years old.
+- 剑仙在此 - 41 0905 # Plot may be slow.
+- 北海道辣妹贼拉可爱 - 02 0033 # Target audience may be 13 or 14 years old.
+- 公主大人“拷问”的时间到了 - 02 0919 # Target audience may be 13 or 14 years old.
 - BASTARD!!暗黑破坏神 S1E24 S2E14 1921 NSFW, funny style, science fiction, The second season animation lacks the attributes of the first season animation
 - 一剑独尊 - 00 # Dynamic comic
 - 神武天尊 - 00 # Dynamic comics
