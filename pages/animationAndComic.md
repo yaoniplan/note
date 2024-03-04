@@ -25,13 +25,10 @@
 - 云中居三子 - 13
 - 异人君莫邪 - 07
 - 师兄啊师兄 - 26
-- 万古狂帝 - 05 animation
-- 神藏 - 12
-- 深渊游戏 - 09
-- 魁拔之殊途 - 13
-- The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 04
-- 独步万古 - 38
-- 大王饶命 - (Part1+2) 12+04
+- 万古狂帝 - 10
+- 深渊游戏 - 14
+- 独步万古 - 47
+- 大王饶命 - (Part1+2) 12+04 animation
 - 凡人修仙传 - 86
 - 指尖相触，恋恋不舍 - 04
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+04
@@ -280,6 +277,9 @@
 - guard(end)
 
 ### Animation
+- The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 08 0302 # Plot may be slow
+- 魁拔之殊途 - 13 # End of the this part
+- 神藏 - 12 # End of the first part
 - 金属口红 - 02 1057 # Target audience may be 13 or 14 years old.
 - 战国妖狐 - 02 1330 # Target audience may be 13 or 14 years old.
 - 剑仙在此 - 41 0905 # Plot may be slow.
