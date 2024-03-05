@@ -43,7 +43,10 @@
 <ul>
 <li><h4>Use &quot;swww&quot;</h4>
 <ul>
-<li><code>swww img /usr/share/hyprland/wall_anime_2K.png</code></li>
+<li><code>swww img /usr/share/hyprland/wall_anime_2K.png</code><ul>
+<li><code>swww-daemon</code> # Run in the background as a daemon at boot time</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -100,7 +103,7 @@ MPEG-4 (.mp4) # Recording Format
 <li>Use Nix to install it will output errors<pre><code>error: Failed to initialize video.  Your GPU may not be supported, or your graphics drivers may need to be updated.
 </code></pre>
 </li>
-<li><code>echo &quot;127.0.0.1 localhost | doas tee -a /etc/hosts&quot;</code> # Solve the problem<pre><code>yaoniplan@tux ~ $ obs-cli recording start
+<li><code>echo &quot;127.0.0.1 localhost&quot; | doas tee -a /etc/hosts</code> # Solve the problem<pre><code>yaoniplan@tux ~ $ obs-cli recording start
 error: dial tcp: lookup localhost: Temporary failure in name resolution
 yaoniplan@tux ~ $  
 </code></pre>

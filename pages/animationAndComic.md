@@ -28,8 +28,8 @@
 - 万古狂帝 - 10
 - 深渊游戏 - 14
 - 独步万古 - 47
-- 大王饶命 - (Part1+2) 12+04 animation
-- 凡人修仙传 - 86
+- 大王饶命 - (Part1+2) 12+12
+- 凡人修仙传 - 86 animation
 - 指尖相触，恋恋不舍 - 04
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+04
 - Solo Leveling / 我独自升级 - 04
