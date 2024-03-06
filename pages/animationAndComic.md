@@ -29,10 +29,9 @@
 - 深渊游戏 - 14
 - 独步万古 - 47
 - 大王饶命 - (Part1+2) 12+12
-- 凡人修仙传 - 86 animation
-- 指尖相触，恋恋不舍 - 04
-- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+04
-- Solo Leveling / 我独自升级 - 04
+- 凡人修仙传 - 91
+- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+08
+- Solo Leveling / 我独自升级 - 04 animation
 - 师士传说 - 21
 - 仙武传 - 45
 - 万界至尊 (Part1+2)- 50+37
@@ -277,6 +276,7 @@
 - guard(end)
 
 ### Animation
+- 指尖相触，恋恋不舍 - 05 0218 # Target audience may be female.
 - The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 08 0302 # Plot may be slow
 - 魁拔之殊途 - 13 # End of the this part
 - 神藏 - 12 # End of the first part

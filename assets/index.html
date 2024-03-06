@@ -41,6 +41,25 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;uv&quot;</h4>
+<ul>
+<li><code>uv pip install anki</code> # Install a package<ul>
+<li><code>uv venv</code> # Create a virtual environment at .venv before installing</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#uv</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;swww&quot;</h4>
 <ul>
 <li><code>swww img /usr/share/hyprland/wall_anime_2K.png</code><ul>
@@ -233,8 +252,10 @@ yaoniplan@tux ~ $
 <li><h4>Use &quot;cmus&quot;</h4>
 <ul>
 <li><code>5</code> # Display the directory browser<ul>
+<li><code>Ctrl-r</code> # Repeat current</li>
 <li><code>Ctrl-h</code> # Previous directory (The same as <code>../</code>)</li>
 <li><code>Ctrl-j</code> # Play (The same as <code>Enter</code>)</li>
+<li><code>:win-remove</code> # Delete a song from library (The same as <code>Delete</code>)</li>
 <li><code>a</code> # Add to library and move to next line</li>
 <li><code>-</code> # Reduce volume by 10% (Opposite: <code>+</code>)</li>
 <li><code>/</code> # Search</li>
@@ -968,6 +989,11 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Hotkeys<ul>
+<li><code>Shift-pageUp</code> # Scroll page up (Opposite: <code>Shift-pageDown</code>)</li>
+<li><code>Ctrl-Shift-r</code> # Search</li>
+<li><code>Ctrl-s</code> # Search for the next match (Opposite: <code>Ctrl-r</code>)</li>
+<li><code>Ctrl-Shift-w</code> # Extend current selection</li>
+<li><code>Ctrl-Shift-c</code> # Copy selected text to clipboard</li>
 <li><code>Ctrl-Shift-n</code> # New a terminal</li>
 </ul>
 </li>
@@ -1388,6 +1414,22 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Import apkg packages in batches for testing purposes<pre><code>for f in ~/Downloads/deck/*.apkg; do 
+    curl localhost:8765 --request POST --data &#39;{
+        &quot;action&quot;: &quot;importPackage&quot;,
+        &quot;version&quot;: 6,
+        &quot;params&quot;: {
+            &quot;path&quot;: &quot;&#39;$f&#39;&quot;
+        }
+    }&#39;
+done
+</code></pre>
+<ul>
+<li><code>~/Downloads/deck/*.apkg</code> # Your apkg packages path</li>
+<li><code>&#39;$f&#39;</code> # Enclose in single quotes to make variable effective</li>
+<li>Remember that full path and filename cannot contain spaces</li>
+</ul>
+</li>
 <li>Solve the problem by importing media files in batches<pre><code>    Error playing audio. This can be
 caused by a corrupt file, a file iOS does
   not support (eg .ogg), or an mp3 file
@@ -1412,9 +1454,10 @@ caused by a corrupt file, a file iOS does
 </li>
 <li>Sync server<pre><code>python -m venv ~/.config/anki/ # Create a virtual environment using the built-in `venv` module
 ~/.config/anki/bin/pip install anki # Install anki.syncserver in the virtual environment
-MAX_SYNC_PAYLOAD_MEGS=500; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
+MAX_SYNC_PAYLOAD_MEGS=1000; SYNC_USER1=admin:****** ~/.config/anki/bin/python -m anki.syncserver
 </code></pre>
 <ul>
+<li><code>SYNC_USER1=admin:*** SYNC_USER2=user:*** </code> # Multiple users</li>
 <li>Client (e.g. Linux, Android, iOS, etc.)<pre><code>http://192.168.10.100:8080/ # In &#39;Self-hosted sync server&#39; of &#39;Syncing&#39;
 admin # In &#39;user&#39; of &#39;Synchronize&#39;
 ****** # In &#39;password&#39; of &#39;Synchronize&#39;
@@ -1430,6 +1473,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://foosoft.net/projects/anki-connect/index.html#importpackage">https://foosoft.net/projects/anki-connect/index.html#importpackage</a></li>
 <li><a href="https://foosoft.net/projects/anki-connect/index.html#media-actions">https://foosoft.net/projects/anki-connect/index.html#media-actions</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/22180094">https://zhuanlan.zhihu.com/p/22180094</a> # media</li>
 <li><a href="https://docs.ankiweb.net/sync-server.html#with-pip">https://docs.ankiweb.net/sync-server.html#with-pip</a></li>
@@ -8661,13 +8705,23 @@ git push origin master
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Delete them one by one unless you are an adventurer</li>
 <li><code>-maxdepth 1</code> # Only the current directory</li>
 <li><code>f</code> # File</li>
+<li><code>rm -rf !(*.apkg)</code> # Remove files excluding &quot;.apkg&quot; extension<ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~/Downloads/deck $ rm -rf !(*.apkg)
+bash: !: event not found
+yaoniplan@tux ~/Downloads/deck $
+</code></pre>
+</li>
+<li><code>shopt -s extglob</code> # Set extglob shell option temporarily</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
 <li><img src="../assets/2023-03-13_14:58:24.png" alt="2023-03-13_14:58:24.png"></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15542,11 +15596,7 @@ AvatarPixelSize=150
 <li><code>/usr/share/sddm/faces/yaoniplan.face.icon</code> # Avatar file<ul>
 <li><code>/usr/share/sddm/faces/</code> # Add your coustomized picture to the avatar folder</li>
 <li><code>yaoniplan</code> # change it into yours user name</li>
-<li><code>.face.icon</code> # Keep it default</li>
-</ul>
-</li>
-<li>Change date and time format<ul>
-<li><code>sudo vim /usr/share/sddm/themes/sddm-chili/Main.qml</code><pre><code>                        text = new Date().toLocaleString(Qt.locale(&quot;en_US&quot;), &quot;ddd dd MMMM yyyy, hh:mm&quot;)
+<li><code>.face.icon</code> # Keep it default<pre><code>text = new Date().toLocaleString(Qt.locale(&quot;en_US&quot;), &quot;ddd dd MMMM yyyy, hh:mm&quot;)
 </code></pre>
 </li>
 </ul>

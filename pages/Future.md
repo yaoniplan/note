@@ -108,7 +108,6 @@
 - https://www.niceso.net/search/?q=Go
 - https://biaoyansu.com/
 - https://yapan.io/search?keyword=Bash
-- https://www.alipansou.com/
 - https://www.upyunso.com/
 - https://lzpanx.com/
 - https://feiyu100.cn/
