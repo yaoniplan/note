@@ -31,10 +31,10 @@
 - 大王饶命 - (Part1+2) 12+12
 - 凡人修仙传 - 91
 - Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+08
-- Solo Leveling / 我独自升级 - 04 animation
-- 师士传说 - 21
-- 仙武传 - 45
-- 万界至尊 (Part1+2)- 50+37
+- Solo Leveling / 我独自升级 - 08
+- 师士传说 - 26
+- 仙武传 - 50
+- 万界至尊 (Part1+2)- 50+43 animation
 - 十方武圣 - 14
 - 太一剑仙传 - 17
 - 不死不灭之少年出山 - 13

@@ -41,10 +41,35 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Extract &quot;.7z&quot; file</h4>
+<ul>
+<li><code>~/.venv/bin/ipython</code><pre><code class="language-python">import py7zr
+with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;r&#39;) as z:
+    z.extractall()
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>uv pip install ipython py7zr</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687">https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;uv&quot;</h4>
 <ul>
-<li><code>uv pip install anki</code> # Install a package<ul>
+<li><code>uv pip uninstall ani-cli</code> # Uninstall a package</li>
+<li><code>uv pip list</code> # List installed packages</li>
+<li><code>uv pip install anki</code> # Install a package</li>
+<li>Install Python tools globally temporarily (Like <code>pipx</code>)<ul>
 <li><code>uv venv</code> # Create a virtual environment at .venv before installing</li>
+<li><code>source ~/.venv/bin/activate</code></li>
+<li><code>uv pip install --system mov-cli</code></li>
 </ul>
 </li>
 </ul>
@@ -54,7 +79,21 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/astral-sh/uv/issues/1173">https://github.com/astral-sh/uv/issues/1173</a></li>
 <li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;internationalization&quot; is &quot;i18n&quot;.</h4>
+<ul>
+<li><code>18</code> # nternationalizatio (20 - 2)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Internationalization_and_localization">https://en.wikipedia.org/wiki/Internationalization_and_localization</a></li>
+<li><em>The Hard Thing About Hard Things</em> # <strong>Chapter 9: The End of the Beginning</strong></li>
 </ul>
 </li>
 </ul>
@@ -255,7 +294,7 @@ yaoniplan@tux ~ $
 <li><code>Ctrl-r</code> # Repeat current</li>
 <li><code>Ctrl-h</code> # Previous directory (The same as <code>../</code>)</li>
 <li><code>Ctrl-j</code> # Play (The same as <code>Enter</code>)</li>
-<li><code>:win-remove</code> # Delete a song from library (The same as <code>Delete</code>)</li>
+<li><code>D</code> # Delete a song from library (The same as <code>Delete</code>)</li>
 <li><code>a</code> # Add to library and move to next line</li>
 <li><code>-</code> # Reduce volume by 10% (Opposite: <code>+</code>)</li>
 <li><code>/</code> # Search</li>
@@ -4226,9 +4265,10 @@ $
 <ul>
 <li><h4>Use &quot;vimium c&quot;</h4>
 <ul>
+<li><code>^</code> # Previous tab</li>
 <li><code>gf</code> # Go to the next frame</li>
 <li><code>map &lt;c-m&gt; toggleMuteTab</code> # Ctrl-m</li>
-<li><code>yv</code> # Ctrl-f and <code>v</code> or <code>V</code><ul>
+<li><code>yv</code> # <code>Ctrl-f</code> and <code>v</code> or <code>V</code><ul>
 <li><code>y</code> # Yank</li>
 <li><code>v</code> # Visual</li>
 </ul>
@@ -9900,9 +9940,13 @@ services:
 </li>
 </ul>
 </li>
+<li>Change &#39;302 redirect&#39; to &#39;native proxy&#39; of &#39;WebDav policy&#39;<pre><code>Failed init storage: failed to refresh token: Too Many Requests
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/alist-org/alist/issues/4828#issuecomment-1668785945">https://github.com/alist-org/alist/issues/4828#issuecomment-1668785945</a></li>
 <li><a href="https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path">https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/main/docker-compose.yml">https://github.com/alist-org/alist/blob/main/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
@@ -11533,6 +11577,20 @@ df -h
 <li><img src="../assets/2023-02-05_19:55:32.gif" alt="2023-02-05_19:55:32.gif"></li>
 <li><a href="https://askubuntu.com/questions/484510/how-to-run-top-command-1-time-and-exit/484515#484515">https://askubuntu.com/questions/484510/how-to-run-top-command-1-time-and-exit/484515#484515</a></li>
 <li><a href="https://devhints.io/top">https://devhints.io/top</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;htop&quot;</h4>
+<ul>
+<li><code>/logseq</code> # Search a process</li>
+<li><code>k</code> # Kill a process</li>
+<li><code>Enter</code> # Comfirm deletion</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to delete some software that takes up a lot of processes.</li>
 </ul>
 </li>
 </ul>
