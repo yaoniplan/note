@@ -41,7 +41,7 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Extract &quot;.7z&quot; file</h4>
+<li><h4>Extract a &quot;.7z&quot; file</h4>
 <ul>
 <li><code>~/.venv/bin/ipython</code><pre><code class="language-python">import py7zr
 with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;r&#39;) as z:
@@ -61,12 +61,42 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;flatpak&quot;</h4>
+<ul>
+<li><code>flatpak install flathub io.github.KikoPlayProject.KikoPlay</code> # Install a package<ul>
+<li><code>install</code> # Replace it with <code>uninstall</code> to uninstall</li>
+</ul>
+</li>
+<li><code>flatpak search --columns=application kikoplay</code> # Output Application ID</li>
+<li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package</li>
+<li><code>flatpak list</code> # List installed packages</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Some software cannot run properly on Wayland.</li>
+<li>Set a mirror for Chinese users<pre><code>doas flatpak remote-add flathub https://mirror.sjtu.edu.cn/flathub/flathub.flatpakrepo
+</code></pre>
+<ul>
+<li><code>remote-add</code> # Replace it with <code>remote-modify</code> if exists</li>
+</ul>
+</li>
+<li><code>doas pacman --sync flatpak</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://seekstar.github.io/2021/12/30/%E7%BB%99flatpak%E6%B7%BB%E5%8A%A0%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90%2f">https://seekstar.github.io/2021/12/30/给flatpak添加国内镜像源%2f</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;uv&quot;</h4>
 <ul>
 <li><code>uv pip uninstall ani-cli</code> # Uninstall a package</li>
 <li><code>uv pip list</code> # List installed packages</li>
 <li><code>uv pip install anki</code> # Install a package</li>
-<li>Install Python tools globally temporarily (Like <code>pipx</code>)<ul>
+<li>Install Python tools globally temporarily (Like &quot;pipx&quot;, but complex)<ul>
 <li><code>uv venv</code> # Create a virtual environment at .venv before installing</li>
 <li><code>source ~/.venv/bin/activate</code></li>
 <li><code>uv pip install --system mov-cli</code></li>
@@ -1424,6 +1454,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>yt-dlp --skip-download --write-subs yourURL</code> # download subtitles only</li>
 <li><code>--max-downloads 1</code> # Download the latest one</li>
 <li><code>--yes-playlist</code> # Download the playlist</li>
 <li><code>--output</code> # Output filename template (e.g. <code>&quot;%(title)s.%(ext)s&quot;</code>)<ul>
@@ -8784,7 +8815,6 @@ D run rm &quot;${path}&quot;; playlist-remove current
 </code></pre>
 </li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
-<li><code>mpv --skip-download --write-subs yourURL</code> # download subtitles only</li>
 <li><code>Alt-Hyphen</code> # Zoom out video<ul>
 <li><code>Alt-Down</code> # Move video up</li>
 </ul>
@@ -8812,6 +8842,7 @@ D run rm &quot;${path}&quot;; playlist-remove current
 <li><code>--sub-file-paths=subtitles/</code> # For animation<ul>
 <li><code>subtitles/</code> # Replace it with your directory including subtitles</li>
 <li><code>--sub-file=&quot;subtitles/01.ass&quot;</code> # For movie</li>
+<li><code>v</code> # Visualize subtitle</li>
 </ul>
 </li>
 <li><code>m</code> # Mute (For NSFW)</li>
@@ -10278,6 +10309,7 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 <ul>
 <li><h4>Use &quot;curl&quot;</h4>
 <ul>
+<li><code>curl --remote-name https://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.db</code> # Download a file</li>
 <li><code>curl -v yaoniplan.eu.org</code></li>
 </ul>
 </li>
@@ -13376,16 +13408,6 @@ run -b &#39;~/.tmux/plugins/tpm/tpm&#39;
 </ul>
 <hr>
 <ul>
-<li><h4>The #punctuation of #Caret is <code>^</code></h4>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-01-14_14-20_1673677274796_0.png" alt="2023-01-14_14-20.png"></li>
-<li><a href="https://en.wikipedia.org/wiki/Caret">Caret - Wikipedia</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li>Add a README to #GitHub when using a bare #Git repository<ul>
 <li><code>mkdir ~/.github/</code></li>
 <li><code>vim ~/.github/README.md</code></li>
@@ -14064,7 +14086,6 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2022-12-25_16-48_1671958089734_0.png" alt="2022-12-25_16-48.png"></li>
 <li><a href="https://en.wikipedia.org/wiki/Tilde">https://en.wikipedia.org/wiki/Tilde</a></li>
 </ul>
 </li>
@@ -19628,10 +19649,20 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li>对我而言，<em><strong>米斯特软的</strong></em>教授了我如何更好地使用[[Logseq]]来管理生活和笔记<br>在[[v2ex]]上，据说  <ol>
 <li>ta退过学，退学前，就已经写了7年代码  </li>
 <li>退学原因：没有办法同时兼顾ta喜欢的和ta不喜欢的课程，疲于应付功课  </li>
-<li>总结：学历很重要，且不建议退学，除非已经铺好后路、拥有解决问题的能力- [[symbol]] <code>^</code>插入符</li>
+<li>总结：学历很重要，且不建议退学，除非已经铺好后路、拥有解决问题的能力- #### The punctuation of &quot;caret&quot; is &quot;^&quot;.</li>
 </ol>
+<ul>
+<li>Use in programming (e.g. Python) and mathematics</li>
+</ul>
 </li>
-<li></li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/Clouder0/ClouderBlog/blob/0327eebac74220d3cb9a32851d5a3ca1bccfba0e/content/zh-cn/post/python-tutorial.md#%E6%93%8D%E4%BD%9C%E7%AC%A6operators">https://github.com/Clouder0/ClouderBlog/blob/0327eebac74220d3cb9a32851d5a3ca1bccfba0e/content/zh-cn/post/python-tutorial.md#操作符operators</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Caret">https://en.wikipedia.org/wiki/Caret</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>我认为，手机端开源输入法并不怎么方便(大概是我不会配置的原因，然后Gboard-Google键盘凑合用了) #Idea</li>
 <li>我认为，初步 [[study]] 管理系统由以下部分组成：  <ol>
 <li>笔记([[Logseq]])</li>
