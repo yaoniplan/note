@@ -37,11 +37,9 @@
 - 万界至尊 (Part1+2)- 50+43
 - 十方武圣 - 16
 - 太一剑仙传 - 20
-- 不死不灭之少年出山 - 13 animation
-- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12
-- Law of Devil / 恶魔法则 - 19
-- 经验丰富的你和经验为零的我交往的故事 - 12
-- 逆天邪神3D - 22
+- 不死不灭之少年出山 - 16
+- Law of Devil / 恶魔法则 - 24
+- 逆天邪神3D - 23 0217 animation
 - 武映三千道 - 58
 - 仙逆 - 22
 - Swallowed Star / 吞噬星空 (Part1+2) - 26+78
@@ -276,6 +274,8 @@
 - guard(end)
 
 ### Animation
+- 经验丰富的你和经验为零的我交往的故事 - 12 # End of the first season
+- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12 # End of the second season
 - 指尖相触，恋恋不舍 - 05 0218 # Target audience may be female.
 - The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 08 0302 # Plot may be slow
 - 魁拔之殊途 - 13 # End of the this part
