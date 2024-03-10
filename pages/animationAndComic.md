@@ -39,10 +39,9 @@
 - 太一剑仙传 - 20
 - 不死不灭之少年出山 - 16
 - Law of Devil / 恶魔法则 - 24
-- 逆天邪神3D - 23 0217 animation
-- 武映三千道 - 58
-- 仙逆 - 22
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+78
+- 逆天邪神3D - 27
+- 仙逆 - 26
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+78 animation
 - 洪荒灵尊 - 46
 - learnC - 16 0714
 - A brief history - 13
@@ -274,6 +273,7 @@
 - guard(end)
 
 ### Animation
+- 武映三千道 - 60 # End of the season
 - 经验丰富的你和经验为零的我交往的故事 - 12 # End of the first season
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12 # End of the second season
 - 指尖相触，恋恋不舍 - 05 0218 # Target audience may be female.

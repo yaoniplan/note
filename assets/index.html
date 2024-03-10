@@ -63,18 +63,28 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <ul>
 <li><h4>Use &quot;flatpak&quot;</h4>
 <ul>
+<li><code>flatpak search kikoplay</code> # Search a package<ul>
+<li><code>--columns=application</code> # Print Application ID</li>
+</ul>
+</li>
 <li><code>flatpak install flathub io.github.KikoPlayProject.KikoPlay</code> # Install a package<ul>
 <li><code>install</code> # Replace it with <code>uninstall</code> to uninstall</li>
 </ul>
 </li>
-<li><code>flatpak search --columns=application kikoplay</code> # Output Application ID</li>
 <li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package</li>
 <li><code>flatpak list</code> # List installed packages</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: Some software cannot run properly on Wayland.</li>
-<li>Set a mirror for Chinese users<pre><code>doas flatpak remote-add flathub https://mirror.sjtu.edu.cn/flathub/flathub.flatpakrepo
+<li>Warning: Some software cannot run properly on Xwayland.<pre><code>yaoniplan@tux ~/Downloads $ QT_QPA_PLATFORM=&quot;xcb&quot; flatpak run io.github.KikoPlayProject.KikoPlay
+libpng warning: iCCP: known incorrect sRGB profile
+Cannot load libcuda.so.1
+Cannot load libcuda.so.1
+Failed to recognize file format.
+yaoniplan@tux ~/Downloads $ 
+</code></pre>
+</li>
+<li>Set a mirror if in China<pre><code>doas flatpak remote-add flathub https://mirror.sjtu.edu.cn/flathub/flathub.flatpakrepo
 </code></pre>
 <ul>
 <li><code>remote-add</code> # Replace it with <code>remote-modify</code> if exists</li>
@@ -3471,6 +3481,7 @@ crontab: &quot;/usr/bin/vi&quot; exited with status 127
 <li><code>EDITOR=$(which vi) crontab -e</code> # Try to use other editor (e.g. <em>emacs</em>, <em>nano</em>, etc.)</li>
 </ul>
 </li>
+<li><code>nix profile install nixpkgs#vi</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -6615,7 +6626,7 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: It takes 10-15 seconds to open the homepages.<ul>
+<li>Warning: It takes 10-15 seconds to open the homepage.<ul>
 <li><a href="https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&type=issues">https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&amp;type=issues</a></li>
 <li>Believe that latecomers (Author, you, or me) can change this situation</li>
 </ul>
@@ -13557,23 +13568,29 @@ backend = &quot;glx&quot;;
 </ul>
 <hr>
 <ul>
-<li><h4>Extract &quot;.zip&quot; files to a directory</h4>
+<li><h4>Extract a &quot;.zip&quot; file</h4>
 <ul>
-<li><code>unzip FiraCode.zip -d ./FiraCode/</code></li>
+<li><code>unzip FiraCode.zip</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-O GB18030</code> # If file name displays garbled characters</li>
-<li><code>-d</code> # Directory</li>
-<li><code>./</code> # The current directory</li>
-<li><code>FiraCode/</code> A directory</li>
+<li><code>-d ./FiraCode/</code> # An optional directory to which to extract files</li>
 <li><code>nix profile install nixpkgs#unzip</code> # Install dependencies</li>
+<li><code>python</code> # Another method<pre><code>&gt;&gt;&gt; import zipfile
+&gt;&gt;&gt; with zipfile.ZipFile(&#39;archive.zip&#39;, &#39;r&#39;) as zip_ref:
+...     zip_ref.extractall()
+... 
+&gt;&gt;&gt; 
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-01-12_18-32_1673519575373_0.png" alt="2023-01-12_18-32.png"></li>
 <li><a href="https://stackoverflow.com/questions/28249384/decompress-zip-with-given-encoding/45583116#45583116">https://stackoverflow.com/questions/28249384/decompress-zip-with-given-encoding/45583116#45583116</a></li>
-<li><code>man unzip</code></li>
+<li><code>man unzip</code> # <code>/-d</code></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15789,27 +15806,21 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Compress folder as a &quot;.zip&quot; file</h4>
+<li><h4>Compress as a &quot;.zip&quot; file</h4>
 <ul>
-<li><code>zip -r wallpaper.zip wallpaper/</code></li>
+<li><code>zip archive.zip *.mp3</code> # Zip a file</li>
+<li><code>zip -r wallpaper.zip wallpaper/</code> # Zip a directory</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>zip</code><ul>
-<li><code>doas emerge -aq zip</code> # Install it if you do not have it</li>
-<li><code>nix-shell --packages zip</code> # Method two</li>
-</ul>
-</li>
 <li><code>-r</code> # Recursive</li>
-<li><code>wallpaper/</code> # A folder you want to compress</li>
-<li><code>zip -er 21.zip 00*</code><ul>
 <li><code>-e</code> # Encrypt</li>
-</ul>
-</li>
+<li><code>wallpaper/</code> # A folder you want to compress</li>
+<li><code>nix profile install nixpkgs#zip</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man zip</code></li>
+<li><code>man zip</code> # <code>/-r</code> <code>/--encrypt</code></li>
 <li><img src="../assets/image_1669360589011_0.png" alt="image.png"></li>
 </ul>
 </li>
@@ -19612,9 +19623,23 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 <li>Solve a problem that the package cannot be installed</li>
 </ul>
 </li>
+<li>Use &quot;archlinuxcn&quot;<ul>
+<li><code>doas vim /etc/pacman.conf</code><pre><code>[archlinuxcn]
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+</code></pre>
+</li>
+<li><code>doas pacman --sync --refresh archlinuxcn-keyring</code></li>
+<li><code>doas pacman-key -lsign-key &quot;farseerfc@archlinux.org&quot;</code> # Locally sign trusted key to solve the problem<pre><code>error: archlinuxcn-keyring: signature from &quot;Jiachen YANG (Arch Linux Packager Signing Key) &lt;farseerfc@archlinux.org&gt;&quot; is marginal trust
+</code></pre>
+</li>
+<li><code>doas pacman --sync --refresh archlinuxcn-keyring</code> # Reinstall</li>
+<li>Because to use additional packaged executable software.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://mirrors.ustc.edu.cn/help/archlinuxcn.html">https://mirrors.ustc.edu.cn/help/archlinuxcn.html</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=267364">https://bbs.archlinux.org/viewtopic.php?id=267364</a></li>
 <li><code>man pacman</code></li>
 <li>ChatGPT</li>
