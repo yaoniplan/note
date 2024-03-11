@@ -41,12 +41,12 @@
 - Law of Devil / 恶魔法则 - 24
 - 逆天邪神3D - 27
 - 仙逆 - 26
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+78 animation
-- 洪荒灵尊 - 46
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+82
+- 洪荒灵尊 - 56
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 34
+- 大主宰 - 34 # animation
 - Shrouding the Heavens / 遮天 - 42
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 105
 - 武神主宰 - 192/409

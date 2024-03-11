@@ -41,6 +41,66 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;musikcube&quot;</h4>
+<ul>
+<li><code>musikcube</code></li>
+<li><code>Enter</code> # Select your music directory</li>
+<li><code>Space</code> # Select your music paths before using <code>Enter</code>, <code>rightArrow</code> key</li>
+<li><code>a</code> # Library<ul>
+<li><code>k</code> # Volume down 5%</li>
+<li><code>l</code> # Next song</li>
+</ul>
+</li>
+<li><code>s</code> # Settings</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#musikcube</code> # Install dependencies</li>
+<li>Because to play next song in the directory automatically.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://ostechnix.com/musikcube-cross-platform-commandline-music-player/">https://ostechnix.com/musikcube-cross-platform-commandline-music-player/</a></li>
+<li><a href="https://absolutelybaching.com/technical-articles/music-players-for-windows-a-comparative-review/musikcube-music-player/">https://absolutelybaching.com/technical-articles/music-players-for-windows-a-comparative-review/musikcube-music-player/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;tori&quot;</h4>
+<ul>
+<li><code>tori</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/tori.yaml</code><pre><code>playlists_dir: /mnt/server/al.jybest.ltd/
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/LeoRiether/tori/issues/3#issuecomment-1545925096">https://github.com/LeoRiether/tori/issues/3#issuecomment-1545925096</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;featuring&quot; is &quot;feat.&quot;.</h4>
+<ul>
+<li>Featured guest</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because saw it while listening to music.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Guest_appearance">https://en.wikipedia.org/wiki/Guest_appearance</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Extract a &quot;.7z&quot; file</h4>
 <ul>
 <li><code>~/.venv/bin/ipython</code><pre><code class="language-python">import py7zr
@@ -64,7 +124,7 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <li><h4>Use &quot;flatpak&quot;</h4>
 <ul>
 <li><code>flatpak search kikoplay</code> # Search a package<ul>
-<li><code>--columns=application</code> # Print Application ID</li>
+<li><code>--columns=application</code> # Get Application ID</li>
 </ul>
 </li>
 <li><code>flatpak install flathub io.github.KikoPlayProject.KikoPlay</code> # Install a package<ul>
@@ -330,6 +390,7 @@ yaoniplan@tux ~ $
 <ul>
 <li><h4>Use &quot;cmus&quot;</h4>
 <ul>
+<li><code>:unbind browser enter</code> # Remove a key binding using <code>Tab</code></li>
 <li><code>5</code> # Display the directory browser<ul>
 <li><code>Ctrl-r</code> # Repeat current</li>
 <li><code>Ctrl-h</code> # Previous directory (The same as <code>../</code>)</li>
@@ -351,6 +412,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man cmus</code> # <code>/unbind</code></li>
 <li><code>man cmus-tutorial</code></li>
 </ul>
 </li>

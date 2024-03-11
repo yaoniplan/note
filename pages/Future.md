@@ -131,7 +131,7 @@
 
 ## E-book
 - https://mozilla.github.io/pdf.js/web/viewer.html
-- https://en.wikipedia.org/wiki/Z-Library
+- https://en.wikipedia.org/wiki/Z-Library # In 'URL'
 - https://pgaskin.net/ePubViewer/
 - https://epub-reader.online/#
 - https://cloudconvert.com/pdf-to-epub
