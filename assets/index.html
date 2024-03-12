@@ -44,7 +44,6 @@
 <li><h4>Use &quot;musikcube&quot;</h4>
 <ul>
 <li><code>musikcube</code></li>
-<li><code>Enter</code> # Select your music directory</li>
 <li><code>Space</code> # Select your music paths before using <code>Enter</code>, <code>rightArrow</code> key</li>
 <li><code>a</code> # Library<ul>
 <li><code>k</code> # Volume down 5%</li>
@@ -55,11 +54,25 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/musikcube/hotkeys.json</code> # Enable Vi mode<pre><code>...
+&quot;key_down&quot;: &quot;j&quot;,
+&quot;key_left&quot;: &quot;h&quot;,
+&quot;key_right&quot;: &quot;l&quot;,
+&quot;key_up&quot;: &quot;k&quot;,
+...
+&quot;playback_next&quot;: &quot;M-l&quot;,
+&quot;playback_previous&quot;: &quot;M-j&quot;,
+&quot;playback_volume_down&quot;: &quot;M-k&quot;,
+&quot;playback_volume_up&quot;: &quot;M-i&quot;,
+...
+</code></pre>
+</li>
 <li><code>nix profile install nixpkgs#musikcube</code> # Install dependencies</li>
 <li>Because to play next song in the directory automatically.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/clangen/musikcube/wiki/vi-style-navigation-keys#overview">https://github.com/clangen/musikcube/wiki/vi-style-navigation-keys#overview</a></li>
 <li><a href="https://ostechnix.com/musikcube-cross-platform-commandline-music-player/">https://ostechnix.com/musikcube-cross-platform-commandline-music-player/</a></li>
 <li><a href="https://absolutelybaching.com/technical-articles/music-players-for-windows-a-comparative-review/musikcube-music-player/">https://absolutelybaching.com/technical-articles/music-players-for-windows-a-comparative-review/musikcube-music-player/</a></li>
 </ul>
@@ -80,6 +93,26 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/LeoRiether/tori/issues/3#issuecomment-1545925096">https://github.com/LeoRiether/tori/issues/3#issuecomment-1545925096</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;vmn&quot;</h4>
+<ul>
+<li><code>vmn</code></li>
+<li><code>Enter</code> # Play</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>--headless=yes</code> # No video output</li>
+<li><code>--library=/mnt/server/al.jybest.ltd/IU专辑合集/</code> # Directory contains music files</li>
+<li><code>--view=song-only</code> # Output complete paths of all audio files</li>
+<li><code>yay --sync vmn</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man vmn</code></li>
 </ul>
 </li>
 </ul>
@@ -408,10 +441,14 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/cmus/rc</code> # Show the directory in browser view<pre><code>cd /mnt/server/al.jybest.ltd/
+</code></pre>
+</li>
 <li><code>nix profile install nixpkgs#cmus</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/linuxquestions/comments/hbnmss/override_home_directory_in_cmus/ik0md15/">https://old.reddit.com/r/linuxquestions/comments/hbnmss/override_home_directory_in_cmus/ik0md15/</a></li>
 <li><code>man cmus</code> # <code>/unbind</code></li>
 <li><code>man cmus-tutorial</code></li>
 </ul>
@@ -8895,6 +8932,28 @@ yaoniplan@tux ~/Downloads/deck $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use scripts<ul>
+<li><code>git clone https://github.com/CogentRedTester/mpv-file-browser ~/.config/mpv/scripts/file-browser</code></li>
+<li><code>cp ~/.config/mpv/scripts/file-browser/docs/file_browser.conf ~/.config/mpv/script-opts/</code><pre><code>...
+root=~/,/
+...
+custom_keybinds=yes
+...
+</code></pre>
+</li>
+<li><code>vim ~/.config/mpv/script-opts/file-browser-keybinds.json</code><pre><code>[
+    {
+        &quot;comment&quot;: &quot;Delete the current file&quot;,
+        &quot;key&quot;: &quot;D&quot;,
+        &quot;command&quot;: [&quot;run&quot;, &quot;rm&quot;, &quot;%p%n&quot;],
+        &quot;command&quot;: [&quot;playlist-remove&quot;, &quot;current&quot;]
+    }
+]
+</code></pre>
+</li>
+<li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> to open file browser</li>
+</ul>
+</li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># D removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
 </code></pre>
@@ -8967,6 +9026,8 @@ D run rm &quot;${path}&quot;; playlist-remove current
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json</a></li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser?tab=readme-ov-file#basic">https://github.com/CogentRedTester/mpv-file-browser?tab=readme-ov-file#basic</a></li>
 <li><a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=281480">https://bbs.archlinux.org/viewtopic.php?id=281480</a></li>
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>

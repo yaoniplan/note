@@ -46,8 +46,8 @@
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 34 # animation
-- Shrouding the Heavens / 遮天 - 42
+- 大主宰 - 39
+- Shrouding the Heavens / 遮天 - 43 animation
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 105
 - 武神主宰 - 192/409
 - 独步逍遥 - 168/388
