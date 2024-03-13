@@ -47,8 +47,8 @@
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - 大主宰 - 39
-- Shrouding the Heavens / 遮天 - 43 animation
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 105
+- Shrouding the Heavens / 遮天 - 47
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 107 0447 animation
 - 武神主宰 - 192/409
 - 独步逍遥 - 168/388
 - Perfect World / 完美世界 - 38/148

@@ -41,6 +41,56 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;qutebrowser&quot;</h4>
+<ul>
+<li><code>org.qutebrowser.qutebrowser</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>:reload</code> # Reload the current tab</li>
+<li><code>:open alist.yaoniplan.eu.org</code> # Open URL in current tab<ul>
+<li><code>Ctrl-i</code> # Complete URL (The same as <code>Tab</code>)</li>
+<li><code>Ctrl-j</code> # Confirm (The same as <code>Enter</code>)</li>
+<li><code>Ctrl-[</code> # (The same as <code>Esc</code>)</li>
+<li><code>Ctrl-h</code> # Delete a letter (The same as <code>Del</code>)</li>
+</ul>
+</li>
+<li><code>d</code> # Close the current tab (The same as <code>Ctrl-w</code>)</li>
+<li><code>yy</code> # Copy URL to clipboard</li>
+<li><code>H</code> # Previous page</li>
+<li><code>i</code> # Insert text</li>
+<li><code>:help</code> # Open help pages</li>
+<li>Enable dark mode (Remember to restart it)<ul>
+<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code>c.colors.webpage.preferred_color_scheme = &#39;dark&#39;
+c.colors.webpage.darkmode.enabled = True
+c.colors.webpage.darkmode.algorithm = &quot;lightness-cielab&quot;
+c.colors.webpage.darkmode.threshold.text = 150
+c.colors.webpage.darkmode.threshold.background = 100
+c.colors.webpage.darkmode.policy.images = &#39;always&#39;
+c.colors.webpage.darkmode.grayscale.images = 0.35
+</code></pre>
+</li>
+<li><code>:set colors.webpage.darkmode.enabled true</code></li>
+<li><code>:set colors.webpage.bg black</code></li>
+</ul>
+</li>
+<li>Search tab<ul>
+<li><code>J</code> # Next tab</li>
+</ul>
+</li>
+<li><code>flatpak install flathub org.qutebrowser.qutebrowser</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/k2s3i1o/">https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/k2s3i1o/</a><ul>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/">https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/</a> # Maybe try it</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;musikcube&quot;</h4>
 <ul>
 <li><code>musikcube</code></li>
@@ -54,6 +104,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Use &quot;mpv&quot; as a music player to replace it on March 13, 2024.</li>
 <li><code>vim ~/.config/musikcube/hotkeys.json</code> # Enable Vi mode<pre><code>...
 &quot;key_down&quot;: &quot;j&quot;,
 &quot;key_left&quot;: &quot;h&quot;,
@@ -86,6 +137,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Use &quot;mpv&quot; as a music player to replace it on March 13, 2024.</li>
 <li><code>vim ~/.config/tori.yaml</code><pre><code>playlists_dir: /mnt/server/al.jybest.ltd/
 </code></pre>
 </li>
@@ -105,6 +157,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Use &quot;mpv&quot; as a music player to replace it on March 13, 2024.</li>
 <li><code>--headless=yes</code> # No video output</li>
 <li><code>--library=/mnt/server/al.jybest.ltd/IU专辑合集/</code> # Directory contains music files</li>
 <li><code>--view=song-only</code> # Output complete paths of all audio files</li>
@@ -164,7 +217,7 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <li><code>install</code> # Replace it with <code>uninstall</code> to uninstall</li>
 </ul>
 </li>
-<li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package</li>
+<li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package (Or <code>io.github.KikoPlayProject.KikoPlay</code>)</li>
 <li><code>flatpak list</code> # List installed packages</li>
 </ul>
 </li>
@@ -441,6 +494,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Use &quot;mpv&quot; as a music player to replace it on March 13, 2024.</li>
 <li><code>vim ~/.config/cmus/rc</code> # Show the directory in browser view<pre><code>cd /mnt/server/al.jybest.ltd/
 </code></pre>
 </li>
@@ -681,7 +735,7 @@ ingress:
 </li>
 <li>Use Worker<ul>
 <li>Workers &amp; Pages - Create application - Create Worker (Optional: Change name) - Deploy</li>
-<li>Configure Worker - Quick edit - Paste the fllowing code - Save and deploy</li>
+<li>Configure Worker - Edit Code - Paste the fllowing code - Save and deploy</li>
 <li>Trigers - Add Custom Domain - Domain (your subdomain, note that your domain name must be in Cloudflare)</li>
 </ul>
 </li>
@@ -1320,7 +1374,12 @@ font-size = 12
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Execute apps at launch
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Move windows like Vi mode
+bind = $mainMod SHIFT, H, movewindow, l
+bind = $mainMod SHIFT, L, movewindow, r
+bind = $mainMod SHIFT, K, movewindow, u
+bind = $mainMod SHIFT, J, movewindow, d
+# Execute apps at launch
 exec-once = mako
 exec-once = wlsunset -l 28.2 -L 116.6
 # Bind `Super-f` key to toggle full screen
@@ -1337,6 +1396,8 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467">https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467</a> # Switch app</li>
+<li><a href="https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/">https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc">https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc</a> # Anime mascot wallpaper</li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/xwit2h/drag_window/ir6rm9j/">https://old.reddit.com/r/hyprland/comments/xwit2h/drag_window/ir6rm9j/</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/">https://old.reddit.com/r/hyprland/comments/14u9p3v/turning_off_screens_after_locking_them/jrf09np/</a></li>
@@ -8954,8 +9015,10 @@ custom_keybinds=yes
 <li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> to open file browser</li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># D removes the current file
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># `D` removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
+# `Ctrl-l` Show playlist for 5 seconds (Default: `Fn-8`)
+CTRL+l show-text &quot;${playlist}&quot; 5000
 </code></pre>
 </li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
@@ -8991,7 +9054,6 @@ D run rm &quot;${path}&quot;; playlist-remove current
 </li>
 <li><code>m</code> # Mute (For NSFW)</li>
 <li><code>--playlist=computerScience.txt</code></li>
-<li><code>Fn-8</code> # Show playlist</li>
 <li><code>--http-proxy=http://192.168.10.100:7890</code><ul>
 <li><code>vim ~/.config/mpv/mpv.conf</code> # Another way<pre><code>--http-proxy=http://192.168.10.100:7890
 </code></pre>
@@ -9026,8 +9088,9 @@ D run rm &quot;${path}&quot;; playlist-remove current
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json</a></li>
-<li><a href="https://github.com/CogentRedTester/mpv-file-browser?tab=readme-ov-file#basic">https://github.com/CogentRedTester/mpv-file-browser?tab=readme-ov-file#basic</a></li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a></li>
 <li><a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=281480">https://bbs.archlinux.org/viewtopic.php?id=281480</a></li>
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
@@ -10117,8 +10180,15 @@ services:
 </li>
 </ul>
 </li>
-<li>Change &#39;302 redirect&#39; to &#39;native proxy&#39; of &#39;WebDav policy&#39;<pre><code>Failed init storage: failed to refresh token: Too Many Requests
+<li>Solve the problem<pre><code>Failed init storage: failed to refresh token: Too Many Requests
 </code></pre>
+<ul>
+<li><code>https://github.com/alist-org/alist/discussions/2697#discussion-4656809</code></li>
+<li>Follow the above URL to add a cloudflare worker and a custom domain</li>
+<li>Enable &#39;Web Proxy&#39;</li>
+<li>Enable &#39;use proxy URL&#39; in &#39;WebDAV policy&#39;</li>
+<li><code>https://al.yaoniplan.eu.org</code> # Download proxy URL (your custom domain)</li>
+</ul>
 </li>
 </ul>
 </li>
