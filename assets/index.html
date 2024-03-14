@@ -41,37 +41,85 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Interact with tofi</h4>
+<ul>
+<li><code>vim ~/.local/bin/mpvControl.sh</code><pre><code class="language-bash"># Interact with tofi
+selected_option=$(echo -e &quot;delete\nstop&quot; | tofi)
+
+case &quot;$selected_option&quot; in
+    &quot;delete&quot;)
+        echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;
+        ;;
+    &quot;play / pause&quot;)
+        echo cycle pause | socat - &quot;/tmp/mpvsocket&quot;
+        ;;
+esac
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to control &quot;mpv&quot; from the command-line via a script.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;qutebrowser&quot;</h4>
 <ul>
 <li><code>org.qutebrowser.qutebrowser</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>:reload</code> # Reload the current tab</li>
+<li>Use userscript</li>
+<li><code>;y</code> # Yank hint link</li>
+<li><code>go</code> # Edit the current URL</li>
+<li><code>Ctrl-h</code> # Homepage</li>
+<li><code>r</code> # Reload the current tab</li>
+<li><code>F</code> # Open link in new tab</li>
+<li><code>o</code> # Complete <code>:open </code> automatically (<code>O</code>: In new tab)<ul>
+<li><code>:open gh hyprland</code> # Search in GitHub</li>
+</ul>
+</li>
 <li><code>:open alist.yaoniplan.eu.org</code> # Open URL in current tab<ul>
 <li><code>Ctrl-i</code> # Complete URL (The same as <code>Tab</code>)</li>
 <li><code>Ctrl-j</code> # Confirm (The same as <code>Enter</code>)</li>
-<li><code>Ctrl-[</code> # (The same as <code>Esc</code>)</li>
-<li><code>Ctrl-h</code> # Delete a letter (The same as <code>Del</code>)</li>
+<li><code>Ctrl-[</code> # Cancel (The same as <code>Esc</code>)</li>
+<li><code>Ctrl-h</code> # Delete a letter (The same as <code>Backspace</code>)</li>
+</ul>
+</li>
+<li><code>/music</code> # Search text<ul>
+<li><code>Ctrl-j</code> # Enter</li>
+<li><code>n</code> # Next match</li>
 </ul>
 </li>
 <li><code>d</code> # Close the current tab (The same as <code>Ctrl-w</code>)</li>
 <li><code>yy</code> # Copy URL to clipboard</li>
 <li><code>H</code> # Previous page</li>
 <li><code>i</code> # Insert text</li>
-<li><code>:help</code> # Open help pages</li>
-<li>Enable dark mode (Remember to restart it)<ul>
-<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code>c.colors.webpage.preferred_color_scheme = &#39;dark&#39;
+<li><code>vim ~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/config.py</code><pre><code># Custom search engines
+c.url.searchengines = {
+    &quot;DEFAULT&quot;: &#39;https://google.com/search?q={}&#39;,
+    &quot;gh&quot;: &#39;https://github.com/search?q={}&#39;
+}
+# Custom hints
+c.fonts.hints = &#39;bold 15px&#39;
+c.colors.hints.fg = &#39;white&#39;
+c.colors.hints.bg = &#39;black&#39;
+c.hints.border = &#39;0px solid #E3BE23&#39;
+# Load automatically
+config.load_autoconfig()
+# Enable dark mode
+c.colors.webpage.preferred_color_scheme = &#39;dark&#39;
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.darkmode.algorithm = &quot;lightness-cielab&quot;
-c.colors.webpage.darkmode.threshold.text = 150
-c.colors.webpage.darkmode.threshold.background = 100
-c.colors.webpage.darkmode.policy.images = &#39;always&#39;
-c.colors.webpage.darkmode.grayscale.images = 0.35
+c.colors.webpage.bg black
 </code></pre>
-</li>
-<li><code>:set colors.webpage.darkmode.enabled true</code></li>
-<li><code>:set colors.webpage.bg black</code></li>
+<ul>
+<li><code>:config-source</code> # Make changes effective</li>
 </ul>
 </li>
 <li>Search tab<ul>
@@ -82,10 +130,13 @@ c.colors.webpage.darkmode.grayscale.images = 0.35
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/k2s3i1o/">https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/k2s3i1o/</a><ul>
-<li><a href="https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/">https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/</a> # Maybe try it</li>
-</ul>
-</li>
+<li><a href="https://www.ii.com/qutebrowser-configpy/">https://www.ii.com/qutebrowser-configpy/</a></li>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/">https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/</a></li>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/7kydgn/how_to_custom_a_command/driv86o/">https://old.reddit.com/r/qutebrowser/comments/7kydgn/how_to_custom_a_command/driv86o/</a></li>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/7gckl8/how_do_you_edit_the_current_url/dqiev2o/">https://old.reddit.com/r/qutebrowser/comments/7gckl8/how_do_you_edit_the_current_url/dqiev2o/</a></li>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/la7vcy/caretmode_hints/glmdl8w/">https://old.reddit.com/r/qutebrowser/comments/la7vcy/caretmode_hints/glmdl8w/</a></li>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/">https://old.reddit.com/r/qutebrowser/comments/zmqey6/an_update_on_the_status_of_dark_mode/j0dp5o4/</a></li>
+<li><code>:help</code> # Open help pages</li>
 </ul>
 </li>
 </ul>
@@ -217,7 +268,10 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <li><code>install</code> # Replace it with <code>uninstall</code> to uninstall</li>
 </ul>
 </li>
-<li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package (Or <code>io.github.KikoPlayProject.KikoPlay</code>)</li>
+<li><code>flatpak run io.github.KikoPlayProject.KikoPlay</code> # Run a package<ul>
+<li><code>io.github.KikoPlayProject.KikoPlay</code> # Another method</li>
+</ul>
+</li>
 <li><code>flatpak list</code> # List installed packages</li>
 </ul>
 </li>
@@ -1651,6 +1705,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <ul>
 <li><h4>Use &quot;anki&quot;</h4>
 <ul>
+<li><code>net.ankiweb.Anki</code> # Run</li>
 <li><code>d</code> # Decks</li>
 <li><code>/</code> # Search<ul>
 <li><code>Space</code> # Next step and card</li>
@@ -1717,7 +1772,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li>Click the sync button to sync the progress before and after learning</li>
 </ul>
 </li>
-<li><code>yay --sync anki</code> # Install dependencies</li>
+<li><code>flatpak install flathub net.ankiweb.Anki</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -8993,6 +9048,12 @@ yaoniplan@tux ~/Downloads/deck $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Control from command-line<ul>
+<li><code>mpv --input-ipc-server=/tmp/mpvsocket --playlist=/mnt/server/interestAndHobby/music/</code> # Reduce gap: <code>--prefetch-playlist=yes</code> Cache next song, <code>--no-audio-display</code> Don&#39;t show cover, <code>--save-position-on-quit</code> Watch later</li>
+<li><code>echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;</code> # Delete current song</li>
+<li><code>echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;D&quot; ] }&#39; | socat - /tmp/mpvsocket</code> # Another way that use shortcut keys</li>
+</ul>
+</li>
 <li>Use scripts<ul>
 <li><code>git clone https://github.com/CogentRedTester/mpv-file-browser ~/.config/mpv/scripts/file-browser</code></li>
 <li><code>cp ~/.config/mpv/scripts/file-browser/docs/file_browser.conf ~/.config/mpv/script-opts/</code><pre><code>...
@@ -9026,7 +9087,6 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><code>Alt-Down</code> # Move video up</li>
 </ul>
 </li>
-<li><code>--save-position-on-quit</code> # Watch later</li>
 <li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
 <li>Solve a problem about has no sound<ul>
 <li><code>-ao=pulse</code></li>
@@ -9088,6 +9148,8 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html">https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html</a></li>
+<li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
 <li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a></li>
@@ -9786,7 +9848,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/">https://hidde.blog/use-firefox-with-a-dark-theme-without-triggering-dark-themes-on-websites/</a> # Try it</li>
+<li><a href="https://github.com/m-khvoinitsky/dark-background-light-text-extension">https://github.com/m-khvoinitsky/dark-background-light-text-extension</a> # Install the extension</li>
 <li><a href="https://userstyles.org/styles/158321/global-dark-style-everything-to-dark-2018">https://userstyles.org/styles/158321/global-dark-style-everything-to-dark-2018</a></li>
 <li><a href="https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark">https://userstyles.org/styles/31267/global-dark-style-changes-everything-to-dark</a> # It works, but override all default themes</li>
 <li><a href="https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/">https://www.askvg.com/tip-force-mozilla-firefox-to-always-use-dark-or-light-theme-mode/</a></li>

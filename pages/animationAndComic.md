@@ -48,9 +48,9 @@
 - top10ModelsOfDeepThinking # 08
 - 大主宰 - 39
 - Shrouding the Heavens / 遮天 - 47
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 107 0447 animation
-- 武神主宰 - 192/409
-- 独步逍遥 - 168/388
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 115
+- 武神主宰 - 192/419
+- 独步逍遥 - 168/388 animation
 - Perfect World / 完美世界 - 38/148
 - Against the Sky Supreme / 逆天至尊 - 273
 - 斗破苍穹年番 - 82
