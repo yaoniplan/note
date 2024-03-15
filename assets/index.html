@@ -44,13 +44,13 @@
 <li><h4>Interact with tofi</h4>
 <ul>
 <li><code>vim ~/.local/bin/mpvControl.sh</code><pre><code class="language-bash"># Interact with tofi
-selected_option=$(echo -e &quot;delete\nstop&quot; | tofi)
+selected_option=$(echo -e &quot;delete\nplay/pause&quot; | tofi)
 
 case &quot;$selected_option&quot; in
     &quot;delete&quot;)
         echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;
         ;;
-    &quot;play / pause&quot;)
+    &quot;play/pause&quot;)
         echo cycle pause | socat - &quot;/tmp/mpvsocket&quot;
         ;;
 esac
@@ -75,14 +75,21 @@ esac
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Use userscript</li>
+<li>Use a userscript<ul>
+<li>Put your file (e.g. translate.sh) in <code>~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/userscripts/</code> # Method one</li>
+<li>Put your file (e.g. URL Redirector.user.js) in <code>~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/greasemonkey/</code> # Method two</li>
+<li><code>:greasemonkey-reload</code> # Make it effective</li>
+<li>Because to block advertisements and translate a word.</li>
+</ul>
+</li>
+<li><code>wq</code> # Restore tabs the next time you open qutebrowser</li>
 <li><code>;y</code> # Yank hint link</li>
 <li><code>go</code> # Edit the current URL</li>
-<li><code>Ctrl-h</code> # Homepage</li>
+<li><code>Ctrl-h</code> # Homepage (Startpage)</li>
 <li><code>r</code> # Reload the current tab</li>
 <li><code>F</code> # Open link in new tab</li>
 <li><code>o</code> # Complete <code>:open </code> automatically (<code>O</code>: In new tab)<ul>
-<li><code>:open gh hyprland</code> # Search in GitHub</li>
+<li><code>:open gh tofi</code> # Search in GitHub</li>
 </ul>
 </li>
 <li><code>:open alist.yaoniplan.eu.org</code> # Open URL in current tab<ul>
@@ -97,14 +104,26 @@ esac
 <li><code>n</code> # Next match</li>
 </ul>
 </li>
-<li><code>d</code> # Close the current tab (The same as <code>Ctrl-w</code>)</li>
+<li><code>d</code> # Close the current tab (The same as <code>Ctrl-w</code>)<ul>
+<li><code>u</code> # Undo closed tab</li>
+</ul>
+</li>
 <li><code>yy</code> # Copy URL to clipboard</li>
 <li><code>H</code> # Previous page</li>
 <li><code>i</code> # Insert text</li>
-<li><code>vim ~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/config.py</code><pre><code># Custom search engines
+<li><code>gt</code> # Search tab (Or <code>T</code>)<ul>
+<li><code>J</code> # Next tab</li>
+</ul>
+</li>
+<li><code>vim ~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/config.py</code><pre><code># Custom keybindings to translate a word in current page (See: `qute://settings/` to get setting and value)
+c.bindings.commands = {&quot;normal&quot;: {&quot;&lt;Ctrl+m&gt;&quot;: &quot;spawn --userscript playWithMPV.sh&quot;}}
+# Custom start page
+c.url.start_pages = &#39;https://github.com/yaoniplan/note/blob/development/pages/Future.md&#39;
+# Custom search engines
 c.url.searchengines = {
     &quot;DEFAULT&quot;: &#39;https://google.com/search?q={}&#39;,
     &quot;gh&quot;: &#39;https://github.com/search?q={}&#39;
+    &quot;t&quot;: &#39;https://translate.google.com/#auto/en/{}&#39;
 }
 # Custom hints
 c.fonts.hints = &#39;bold 15px&#39;
@@ -122,14 +141,11 @@ c.colors.webpage.bg black
 <li><code>:config-source</code> # Make changes effective</li>
 </ul>
 </li>
-<li>Search tab<ul>
-<li><code>J</code> # Next tab</li>
-</ul>
-</li>
 <li><code>flatpak install flathub org.qutebrowser.qutebrowser</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/">https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/</a></li>
 <li><a href="https://www.ii.com/qutebrowser-configpy/">https://www.ii.com/qutebrowser-configpy/</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/">https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/7kydgn/how_to_custom_a_command/driv86o/">https://old.reddit.com/r/qutebrowser/comments/7kydgn/how_to_custom_a_command/driv86o/</a></li>
@@ -9148,6 +9164,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://mim.mbirgin.com/?c=posts&id=200">https://mim.mbirgin.com/?c=posts&amp;id=200</a></li>
 <li><a href="https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html">https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html</a></li>
 <li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
 <li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
