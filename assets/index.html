@@ -71,17 +71,21 @@ esac
 <ul>
 <li><h4>Use &quot;qutebrowser&quot;</h4>
 <ul>
-<li><code>org.qutebrowser.qutebrowser</code></li>
+<li><code>qutebrowser</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Use a userscript<ul>
-<li>Put your file (e.g. translate.sh) in <code>~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/userscripts/</code> # Method one</li>
-<li>Put your file (e.g. URL Redirector.user.js) in <code>~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/greasemonkey/</code> # Method two</li>
+<li><code>:adblock-update</code> # Get adblock lists</li>
+<li>Right click</li>
+<li><code>Ctrl-Tab</code> # Toggle between two tabs</li>
+<li>Use userscripts<ul>
+<li>Put your file (e.g. <a href="https://github.com/AckslD/Qute-Translate/blob/master/translate">https://github.com/AckslD/Qute-Translate/blob/master/translate</a>) in <code>~/.config/qutebrowser/userscripts/</code> # Method one</li>
+<li>Put your file (e.g. URL Redirector.user.js) in <code>~/.config/qutebrowser/greasemonkey/</code> # Method two</li>
 <li><code>:greasemonkey-reload</code> # Make it effective</li>
 <li>Because to block advertisements and translate a word.</li>
 </ul>
 </li>
+<li><code>pp</code> # Paste URL from clipboard</li>
 <li><code>wq</code> # Restore tabs the next time you open qutebrowser</li>
 <li><code>;y</code> # Yank hint link</li>
 <li><code>go</code> # Edit the current URL</li>
@@ -115,10 +119,12 @@ esac
 <li><code>J</code> # Next tab</li>
 </ul>
 </li>
-<li><code>vim ~/.var/app/org.qutebrowser.qutebrowser/config/qutebrowser/config.py</code><pre><code># Custom keybindings to translate a word in current page (See: `qute://settings/` to get setting and value)
-c.bindings.commands = {&quot;normal&quot;: {&quot;&lt;Ctrl+m&gt;&quot;: &quot;spawn --userscript playWithMPV.sh&quot;}}
+<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code># Custom keybindings (See: `qute://settings/` to get setting and value)
+# Translate languages: auto, en, zh-CN, etc.
+# Play videos with mpv
+c.bindings.commands = {&quot;normal&quot;: {&quot;&lt;Ctrl+Shift-t&gt;&quot;: &quot;spawn --userscript translate --text&quot;, &quot;&lt;Ctrl-t&gt;&quot;: &quot;spawn --userscript translate&quot;, &quot;gM&quot;: &quot;hint links spawn mpv {hint-url}&quot;}}
 # Custom start page
-c.url.start_pages = &#39;https://github.com/yaoniplan/note/blob/development/pages/Future.md&#39;
+c.url.start_pages = &#39;~/note/assets/index.html&#39;
 # Custom search engines
 c.url.searchengines = {
     &quot;DEFAULT&quot;: &#39;https://google.com/search?q={}&#39;,
@@ -131,20 +137,22 @@ c.colors.hints.fg = &#39;white&#39;
 c.colors.hints.bg = &#39;black&#39;
 c.hints.border = &#39;0px solid #E3BE23&#39;
 # Load automatically
-config.load_autoconfig()
+config.load_autoconfig(True)
 # Enable dark mode
 c.colors.webpage.preferred_color_scheme = &#39;dark&#39;
 c.colors.webpage.darkmode.enabled = True
-c.colors.webpage.bg black
+c.colors.webpage.bg = &#39;black&#39;
 </code></pre>
 <ul>
+<li><code>:config-write-py</code> # Generate if <code>~/.config/qutebrowser/config.py</code> does not exist</li>
 <li><code>:config-source</code> # Make changes effective</li>
 </ul>
 </li>
-<li><code>flatpak install flathub org.qutebrowser.qutebrowser</code> # Install dependencies</li>
+<li><code>yay --sync qutebrowser</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py">https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/">https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/</a></li>
 <li><a href="https://www.ii.com/qutebrowser-configpy/">https://www.ii.com/qutebrowser-configpy/</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/">https://old.reddit.com/r/qutebrowser/comments/i6n71m/yank_hint_url/g0wtgd7/</a></li>
@@ -9068,6 +9076,7 @@ yaoniplan@tux ~/Downloads/deck $
 <li><code>mpv --input-ipc-server=/tmp/mpvsocket --playlist=/mnt/server/interestAndHobby/music/</code> # Reduce gap: <code>--prefetch-playlist=yes</code> Cache next song, <code>--no-audio-display</code> Don&#39;t show cover, <code>--save-position-on-quit</code> Watch later</li>
 <li><code>echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;</code> # Delete current song</li>
 <li><code>echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;D&quot; ] }&#39; | socat - /tmp/mpvsocket</code> # Another way that use shortcut keys</li>
+<li><code>for times in {1..5}; do echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;/&quot; ] }&#39; | socat - /tmp/mpvsocket; done</code> # Decrease 10% volume</li>
 </ul>
 </li>
 <li>Use scripts<ul>
