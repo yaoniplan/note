@@ -53,7 +53,7 @@
 - 独步逍遥 - 168/399
 - Perfect World / 完美世界 - 38/153
 - Against the Sky Supreme / 逆天至尊 - 283
-- 斗破苍穹年番 - 82 animation
+- 斗破苍穹年番 - 85 0725 animation
 - 绝世武魂 - 347
 - 万古神话 - 159
 
