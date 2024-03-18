@@ -53,9 +53,8 @@
 - 独步逍遥 - 168/399
 - Perfect World / 完美世界 - 38/153
 - Against the Sky Supreme / 逆天至尊 - 283
-- 斗破苍穹年番 - 85 0725 animation
-- 绝世武魂 - 347
-- 万古神话 - 159
+- 斗破苍穹年番 - 87
+- 万古神话 - 168 animation
 
 ### Comic
 - 初次深交，请多指教 - 27
@@ -273,6 +272,7 @@
 - guard(end)
 
 ### Animation
+- 绝世武魂 - 351 0316 # Plot may be slow
 - 武映三千道 - 60 # End of the season
 - 经验丰富的你和经验为零的我交往的故事 - 12 # End of the first season
 - The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12 # End of the second season
