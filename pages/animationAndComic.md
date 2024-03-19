@@ -1,5 +1,5 @@
 ### "Animation"
-- Pantheon / 万神殿 01
+- Pantheon / 万神殿 06 animation
 - Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821
@@ -54,7 +54,7 @@
 - Perfect World / 完美世界 - 38/153
 - Against the Sky Supreme / 逆天至尊 - 283
 - 斗破苍穹年番 - 87
-- 万古神话 - 168 animation
+- 万古神话 - 169
 
 ### Comic
 - 初次深交，请多指教 - 27

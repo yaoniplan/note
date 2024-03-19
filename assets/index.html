@@ -1141,7 +1141,6 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>mkdir /etc/swhkd/ &amp;&amp; doas ln -s ~/.config/swhkd/swhkdrc /etc/swhkd/swhkdrc</code></li>
 <li><code>swhks &amp;</code> # Run it before using the above command</li>
 <li><code>yay --sync swhkd-bin</code> # Install dependencies</li>
 </ul>
@@ -1461,6 +1460,8 @@ bind = $mainMod SHIFT, J, movewindow, d
 # Execute apps at launch
 exec-once = mako
 exec-once = wlsunset -l 28.2 -L 116.6
+# Bind `Alt-Enter` key to new a terminal
+bind = Alt, Return, foot -e tmux
 # Bind `Super-f` key to toggle full screen
 bind = $mainMod, F, fullscreen, 0
 # Bind `Super-l` key to lock screen
@@ -1475,6 +1476,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/">https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467">https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467</a> # Switch app</li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/">https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc">https://github.com/hyprwm/Hyprland/commit/2e3f0d5991874edb01f1bfe4ffc75701f8b398dc</a> # Anime mascot wallpaper</li>
@@ -5865,6 +5867,8 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>trans -player mpg123 :zh &quot;$*&quot; | less -R</code> # Translate English to Chinese</li>
 </ul>
 </li>
+<li><code>-speak</code> # Don&#39;t play translation (When NSFW)</li>
+<li><code>-no-ansi</code> # No print ANSI escape codes (e.g. <code>[4m</code>, <code>[24m</code>)</li>
 <li><code>-engine</code> # Specify a translation engine</li>
 <li><code>-list-engines</code> # List translation engines</li>
 <li><code>zh</code> # Replace it with country code (e.g. en)<ul>
@@ -5887,6 +5891,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man trans</code></li>
+<li><a href="https://github.com/soimort/translate-shell/issues/178#issuecomment-304537785">https://github.com/soimort/translate-shell/issues/178#issuecomment-304537785</a></li>
 <li><a href="https://github.com/soimort/translate-shell/issues/408">https://github.com/soimort/translate-shell/issues/408</a></li>
 </ul>
 </li>
@@ -10272,6 +10277,7 @@ services:
 <li>Solve the problem<pre><code>Failed init storage: failed to refresh token: Too Many Requests
 </code></pre>
 <ul>
+<li>Warning: There are limits (10 requests within 60 minutes) on the AList API, unless you use the API you applied for yourself. (Or use other drivers)</li>
 <li><a href="https://github.com/alist-org/alist/discussions/2697#discussion-4656809">https://github.com/alist-org/alist/discussions/2697#discussion-4656809</a></li>
 <li>Follow the above URL to add a cloudflare worker and a custom domain</li>
 <li>Enable &#39;Web Proxy&#39;</li>
@@ -10282,7 +10288,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/alist-org/alist/issues/4828#issuecomment-1668785945">https://github.com/alist-org/alist/issues/4828#issuecomment-1668785945</a></li>
+<li><a href="https://github.com/alist-org/alist/issues/4828#issuecomment-1646579013">https://github.com/alist-org/alist/issues/4828#issuecomment-1646579013</a></li>
 <li><a href="https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path">https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/main/docker-compose.yml">https://github.com/alist-org/alist/blob/main/docker-compose.yml</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562">https://github.com/alist-org/alist/issues/4160#issuecomment-1509490562</a></li>
