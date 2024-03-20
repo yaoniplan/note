@@ -4537,6 +4537,12 @@ $
 <ul>
 <li><h4>Use &quot;awk&quot;</h4>
 <ul>
+<li><code>awk -v RS=&#39;&#39; &#39;NR==1&#39;</code> # Extract the first paragraph<ul>
+<li><code>-v</code> # Assign value to variable</li>
+<li><code>RS</code> # Record separator</li>
+<li><code>NR</code> # Number of records</li>
+</ul>
+</li>
 <li><code>docker ps --format &quot;{{.Ports}}&quot; | awk -F&#39;[:/]&#39; &#39;{print $2}&#39;</code></li>
 <li><code>kill -STOP $(ps aux | grep -v grep | grep aola | awk &#39;{print $2}&#39;)</code></li>
 </ul>
@@ -4549,6 +4555,7 @@ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man gawk</code> # <code>\-v</code> <code>RS</code> <code>NR</code></li>
 <li>Manipulate columnar data # ChatGPT</li>
 </ul>
 </li>

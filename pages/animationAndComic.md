@@ -1,5 +1,4 @@
 ### "Animation"
-- Pantheon / 万神殿 06 animation
 - Code Geass Lelouch of Rebellion / 反叛的魯路修 - 00
 - 无人能敌 - 04
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821
@@ -272,6 +271,7 @@
 - guard(end)
 
 ### Animation
+- Pantheon / 万神殿 S1E8 S2E8 # Simulated world
 - 绝世武魂 - 351 0316 # Plot may be slow
 - 武映三千道 - 60 # End of the season
 - 经验丰富的你和经验为零的我交往的故事 - 12 # End of the first season
