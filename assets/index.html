@@ -41,9 +41,40 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;obsidian&quot;</h4>
+<ul>
+<li><code>Ctrl-p</code> # Open command palette<ul>
+<li>Find commonly used commands</li>
+</ul>
+</li>
+<li><code>Ctrl-o</code> # Open quick switcher<ul>
+<li>New a file</li>
+<li>Switch within files</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Tips<ul>
+<li>Leave professional things to professional software</li>
+<li>Do not all in one (Add plugins as needed)</li>
+</ul>
+</li>
+<li><code>flatpak install flathub md.obsidian.Obsidian</code> # Install dependencies</li>
+<li>Because to want my friends to quickly learn about a simple and fast Markdown note-taking software.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.youtube.com/watch?v=phEyrE5rRRg">https://www.youtube.com/watch?v=phEyrE5rRRg</a></li>
+<li>In &#39;Hotkeys&#39; of &#39;Options&#39; of &#39;Settings&#39;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Interact with tofi</h4>
 <ul>
-<li><code>vim ~/.local/bin/mpvControl.sh</code><pre><code class="language-bash"># Interact with tofi
+<li><code>vim ~/.local/bin/controlMpv.sh</code><pre><code class="language-bash"># Interact with tofi
 selected_option=$(echo -e &quot;delete\nplay/pause&quot; | tofi)
 
 case &quot;$selected_option&quot; in
@@ -52,6 +83,10 @@ case &quot;$selected_option&quot; in
         ;;
     &quot;play/pause&quot;)
         echo cycle pause | socat - &quot;/tmp/mpvsocket&quot;
+        ;;
+    *)
+        echo &quot;Invalid selection. Aborting.&quot;
+        exit 1
         ;;
 esac
 </code></pre>
@@ -80,7 +115,7 @@ esac
 <li><code>Ctrl-Tab</code> # Toggle between two tabs</li>
 <li>Use userscripts<ul>
 <li>Put your file (e.g. <a href="https://github.com/AckslD/Qute-Translate/blob/master/translate">https://github.com/AckslD/Qute-Translate/blob/master/translate</a>) in <code>~/.config/qutebrowser/userscripts/</code> # Method one</li>
-<li>Put your file (e.g. URL Redirector.user.js) in <code>~/.config/qutebrowser/greasemonkey/</code> # Method two</li>
+<li>Put your file (e.g. redirectUrl.user.js) in <code>~/.config/qutebrowser/greasemonkey/</code> # Method two</li>
 <li><code>:greasemonkey-reload</code> # Make it effective</li>
 <li>Because to block advertisements and translate a word.</li>
 </ul>
@@ -462,6 +497,11 @@ yaoniplan@tux ~ $
     window.location.href = nextPageURL; // Redirect to the next URL
   }
 });
+</code></pre>
+</li>
+<li>Redirect URL if your IP is blocked<pre><code>if (window.location.hostname === &quot;www.reddit.com&quot;) {
+  window.location.href = &quot;https://old.reddit.com&quot; + window.location.pathname + window.location.search;
+}
 </code></pre>
 </li>
 </ul>
@@ -2442,7 +2482,7 @@ Error: Failed to connect. Probable cause: Unknown
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnning: The clarity quality is a bit low</li>
+<li>Warnning: The clarity quality is a bit low, Wayland is not supported</li>
 <li><code>xdpyinfo | grep dimensions | awk &#39;{print $2}&#39;</code> # Get screen resolution</li>
 </ul>
 </li>
@@ -13138,6 +13178,8 @@ set number
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li><code>Ctrl-w :term</code> # New a terminal if tmux does not exist</li>
+<li><code>:!cat % | wl-copy</code> # Copy current file&#39;s content to clipboard</li>
 <li><code>:%s/$/ - 00/g</code> # Batch add a string (e.g. &#39; - 00&#39;) to the end of line</li>
 <li><code>:set encoding=utf-8</code> # Display Chinese characters properly</li>
 <li><code>:set paste</code> # Fix indentation issues when pasting</li>
