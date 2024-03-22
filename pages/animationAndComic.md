@@ -1,5 +1,5 @@
 ### "Animation"
-- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - 08 animation
+- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - 12 animation
 - 无人能敌 - 04
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821
 - 休假日的坏人先生 - 01
@@ -56,6 +56,7 @@
 - 万古神话 - 169
 
 ### Comic
+- 靠神级天赋无限成长 - 14
 - 初次深交，请多指教 - 27
 - 邪教教主 - 07
 - 色雕英雄传:一捅天下 - 09

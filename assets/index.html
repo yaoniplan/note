@@ -6446,24 +6446,6 @@ togglePDFDarkMode();
 </ul>
 <hr>
 <ul>
-<li><h4>Show the next 10 lines after the line</h4>
-<ul>
-<li><code>grep -A 10 &quot;Artificial&quot; note/pages/Future.md</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>-A</code> # After</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><code>man grep</code></li>
-<li><img src="../assets/2023-04-30_19-58.png" alt="2023-04-30_19-58.png"></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use &quot;ffmpeg&quot;</h4>
 <ul>
 <li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format<ul>
@@ -19737,11 +19719,25 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li>sudo pacman -Syu //同步(更新)库并更新包</li>
 </ul>
 </li>
-<li>[[linux]] [[arch]] [[卸载]]软件命令<ol>
-<li>grep -r &#39;桌面的软件名&#39; /usr/share/applications //查询路径</li>
-<li>sudo pacman -Qo 路径 //查询包名</li>
-<li>sudo pacman -Rs 包名 //删除软件包和不需要的依赖</li>
-</ol>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;grep&quot;</h4>
+<ul>
+<li><code>grep -x &quot;$current_wallpaper&quot; -A 1 &quot;$wallpaper_list&quot; | tail -1</code> # Get next wallpaper</li>
+<li><code>grep -A 10 &quot;Artificial&quot; note/pages/Future.md</code> # Show the next 10 lines after the line</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-x</code> # Exactly match</li>
+<li><code>-A</code> # After</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-04-30_19-58.png" alt="2023-04-30_19-58.png"></li>
+<li><code>man grep</code> # <code>-x</code> <code>-A</code></li>
+<li>ChatGPT</li>
+</ul>
 </li>
 </ul>
 <hr>
