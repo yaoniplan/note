@@ -41,6 +41,34 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>After trying the Emby for a few months #idea</h4>
+<ul>
+<li>Not many resources compared to some film and television websites</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;Really Simple Syndication&quot; is &quot;RSS&quot;.</h4>
+<ul>
+<li>The efficiency is not as high as active search when needed</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Like a small search engine</li>
+<li>Hope to save time and cost for all mankind<ul>
+<li>Like a product of the industrial revolution</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/RSS">https://en.wikipedia.org/wiki/RSS</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;obsidian&quot;</h4>
 <ul>
 <li><code>Ctrl-p</code> # Open command palette<ul>
@@ -1491,6 +1519,7 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
 <li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Move windows like Vi mode
 bind = $mainMod SHIFT, H, movewindow, l
@@ -1501,7 +1530,7 @@ bind = $mainMod SHIFT, J, movewindow, d
 exec-once = mako
 exec-once = wlsunset -l 28.2 -L 116.6
 # Bind `Alt-Enter` key to new a terminal
-bind = Alt, Return, foot -e tmux
+bind = Alt, Return, exec, foot -e tmux
 # Bind `Super-f` key to toggle full screen
 bind = $mainMod, F, fullscreen, 0
 # Bind `Super-l` key to lock screen
@@ -1516,6 +1545,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211">https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/">https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467">https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467</a> # Switch app</li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/">https://old.reddit.com/r/hyprland/comments/11c2lie/how_to_moveresize_windows_with_only_the_keyboard/jak96fw/</a></li>
@@ -1772,7 +1802,6 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <ul>
 <li><h4>Use &quot;anki&quot;</h4>
 <ul>
-<li><code>net.ankiweb.Anki</code> # Run</li>
 <li><code>d</code> # Decks</li>
 <li><code>/</code> # Search<ul>
 <li><code>Space</code> # Next step and card</li>
@@ -1781,6 +1810,10 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><code>y</code> # Sync</li>
+<li><code>b</code> # Browse<ul>
+<li><code>deck:自然拼读 is:learn</code> # Filter cards (e.g. learning) in deck (e.g. 自然拼读)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -1839,10 +1872,11 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li>Click the sync button to sync the progress before and after learning</li>
 </ul>
 </li>
-<li><code>flatpak install flathub net.ankiweb.Anki</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#anki</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://docs.ankiweb.net/searching.html#card-state">https://docs.ankiweb.net/searching.html#card-state</a></li>
 <li><a href="https://foosoft.net/projects/anki-connect/index.html#importpackage">https://foosoft.net/projects/anki-connect/index.html#importpackage</a></li>
 <li><a href="https://foosoft.net/projects/anki-connect/index.html#media-actions">https://foosoft.net/projects/anki-connect/index.html#media-actions</a></li>
 <li><a href="https://zhuanlan.zhihu.com/p/22180094">https://zhuanlan.zhihu.com/p/22180094</a> # media</li>
@@ -6078,6 +6112,12 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>find /mnt/grow/ -type d | grep -i books</code></li>
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
+</li>
+<li>Delete a file that cannot be deleted using <code>rm</code><pre><code># Get the index number (e.g. 20447344) of the file
+ls --inode
+# Use find with the inode number to remove the file
+find . type f -inum 20447344 -exec rm {} \;
+</code></pre>
 </li>
 <li>Move all FLV files in subdirectories to the current directory<pre><code>find . -maxdepth 2 -type f -name &quot;*.flv&quot; -exec mv {} . \;
 </code></pre>

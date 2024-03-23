@@ -61,7 +61,6 @@
 - https://bigjpg.com/
 
 ## Network proxy
-- https://ikuuu.eu/user
 - https://www.askahh.com/index.php/archives/101/
 - https://jichangtuijian.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
 - https://acl4ssr-sub.github.io/
@@ -104,7 +103,6 @@
 
 ## Web crawler
 - https://miaosou.fun/
-- https://www.niceso.net/search/?q=Go
 - https://biaoyansu.com/
 - https://yapan.io/search?keyword=Bash
 - https://www.upyunso.com/
