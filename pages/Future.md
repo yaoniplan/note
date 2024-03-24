@@ -104,7 +104,6 @@
 ## Web crawler
 - https://miaosou.fun/
 - https://biaoyansu.com/
-- https://yapan.io/search?keyword=Bash
 - https://www.upyunso.com/
 - https://lzpanx.com/
 - https://feiyu100.cn/
