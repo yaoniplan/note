@@ -13984,7 +13984,11 @@ backend = &quot;glx&quot;;
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-O GB18030</code> # If file name displays garbled characters</li>
 <li><code>-d ./FiraCode/</code> # An optional directory to which to extract files</li>
-<li><code>nix profile install nixpkgs#unzip</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#unzip</code> # Install dependencies<ul>
+<li>Warning: This <code>-O</code> option is no longer supported on March 24, 2024 when using Nix.</li>
+<li><code>doas pacman --sync unzip</code> # Install dependencies to solve the problem</li>
+</ul>
+</li>
 <li><code>python</code> # Another method<pre><code>&gt;&gt;&gt; import zipfile
 &gt;&gt;&gt; with zipfile.ZipFile(&#39;archive.zip&#39;, &#39;r&#39;) as zip_ref:
 ...     zip_ref.extractall()
