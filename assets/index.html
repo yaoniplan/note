@@ -41,6 +41,18 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>The abbreviation of &quot;electronic publication&quot; is &quot;epub&quot;.</h4>
+<ul>
+<li>Because mobile device compatibility is better than PDF.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/EPUB">https://en.wikipedia.org/wiki/EPUB</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>After trying the Emby for a few months #idea</h4>
 <ul>
 <li>Not many resources compared to some film and television websites</li>
@@ -372,19 +384,30 @@ c.colors.webpage.bg = &#39;black&#39;
 <ul>
 <li><h4>Extract a &quot;.7z&quot; file</h4>
 <ul>
-<li><code>~/.venv/bin/ipython</code><pre><code class="language-python">import py7zr
+<li><code>~/.venv/bin/ipython</code> # Method one<pre><code class="language-python">import py7zr
 with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;r&#39;) as z:
     z.extractall()
 </code></pre>
 </li>
+<li><code>7z x ~/Downloads/MTI.7z -o/mnt/grow/temporary/ankiDeck/</code> # Method two<ul>
+<li><code>7z l ~/Downloads/MTI.7z</code> # List it before extracting</li>
+<li><code>x</code> # Extract</li>
+<li><code>-o</code> # Output directory</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>uv pip install ipython py7zr</code> # Install dependencies</li>
+<li>Install dependencies<ul>
+<li><code>uv pip install ipython py7zr</code> # Method one</li>
+<li><code>nix profile install nixpkgs#p7zip</code> # Method two</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687">https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687</a></li>
+<li><code>man 7z</code> # <code>/letter</code> <code>/-o</code></li>
 </ul>
 </li>
 </ul>
@@ -1454,7 +1477,10 @@ alpha=0.8 # transparency
 <ul>
 <li><h4>Use &quot;wayst&quot;</h4>
 <ul>
-<li><code>wayst -e tmux</code></li>
+<li><code>wayst -e tmux</code><ul>
+<li><code>--title fzf</code> # Set window title when switching windows</li>
+</ul>
+</li>
 <li>Hotkey<ul>
 <li><code>Ctrl-Shift-d</code> # New a terminal</li>
 <li><code>Ctrl-d</code> # Close a terminal</li>
@@ -6169,6 +6195,9 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
+<li>Delete hidden files<pre><code>find . -type f -name &#39;.*&#39; -delete
+</code></pre>
+</li>
 <li>Delete a file that cannot be deleted using <code>rm</code><pre><code># Get the index number (e.g. 20447344) of the file
 ls --inode
 # Use find with the inode number to remove the file
@@ -9302,8 +9331,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
 <li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json</a></li>
-<li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a></li>
-<li><a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a> <a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=281480">https://bbs.archlinux.org/viewtopic.php?id=281480</a></li>
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
 <li><a href="https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265">https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265</a></li>
@@ -10339,6 +10367,7 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl</li>
 <li>Install AList if you don&#39;t have it<ul>
 <li><code>vi ~/.config/alist/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
 services:
@@ -10406,6 +10435,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/alist-org/alist/discussions/2061#discussioncomment-6538007">https://github.com/alist-org/alist/discussions/2061#discussioncomment-6538007</a></li>
 <li><a href="https://github.com/alist-org/alist/issues/4828#issuecomment-1646579013">https://github.com/alist-org/alist/issues/4828#issuecomment-1646579013</a></li>
 <li><a href="https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path">https://alist.nn.ci/guide/drivers/Alist%20V2%20V3.html#root-directory-path</a></li>
 <li><a href="https://github.com/alist-org/alist/blob/main/docker-compose.yml">https://github.com/alist-org/alist/blob/main/docker-compose.yml</a></li>
@@ -11131,7 +11161,7 @@ Include conf/extra/httpd-ssl.conf
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>less file.pdf</code></li>
-<li>Disadvantages: Font size is small on mobile</li>
+<li>Disadvantages: Font size is small on mobile device</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
