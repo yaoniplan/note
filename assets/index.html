@@ -41,6 +41,73 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;fbgrab&quot;</h4>
+<ul>
+<li><code>fbgrab screenshot.png</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: This method can only capture the tty screen.</li>
+<li>Solve the problem<pre><code>[yaoniplan@tux ~]$ fbgrab screenshot.png
+Error: Couldn&#39;t open /dev/fb0.
+</code></pre>
+<ul>
+<li><code>doas fbgrab screenshot.png</code> # Get permission to access the framebuffer device</li>
+</ul>
+</li>
+<li>Because to take a screenshot on server via SSH.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;near-filed communication&quot; is &quot;nfc&quot;.</h4>
+<ul>
+<li>A set of communication of protocols</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because need to use an electronic card on mobile phone.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Near-field_communication">https://en.wikipedia.org/wiki/Near-field_communication</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Try a transit card if on iPhone</h4>
+<ul>
+<li>Add a bank card (e.g. China UnionPay Debit Card)<ul>
+<li>Recharge the transit card</li>
+</ul>
+</li>
+<li>Add a transit card (e.g. Beijing T-Union Transit Card)<ul>
+<li>Wallet - Plus button - Transit Card</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to make taking transportation more convenient without opening payment software.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://support.apple.com/en-us/108373">https://support.apple.com/en-us/108373</a><ul>
+<li><code>en-us</code> # Replace it with your language (e.g. <code>zh-cn</code>)</li>
+</ul>
+</li>
+<li><a href="https://support.apple.com/en-us/HT208539">https://support.apple.com/en-us/HT208539</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;electronic publication&quot; is &quot;epub&quot;.</h4>
 <ul>
 <li>Because mobile device compatibility is better than PDF.</li>
@@ -10367,7 +10434,7 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl</li>
+<li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl if no rclone</li>
 <li>Install AList if you don&#39;t have it<ul>
 <li><code>vi ~/.config/alist/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
 services:

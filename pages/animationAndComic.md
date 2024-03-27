@@ -1,5 +1,5 @@
 ### "Animation"
-- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E18 0925 animation
+- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E20 0836 animation
 - 无人能敌 - 04
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 01 0821
 - 休假日的坏人先生 - 01
