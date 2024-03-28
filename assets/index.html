@@ -94,15 +94,21 @@ Error: Couldn&#39;t open /dev/fb0.
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to make taking transportation more convenient without opening payment software.</li>
+<li>Because to make taking transportation (e.g. bus, subway) more convenient<ul>
+<li>Without opening payment software</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://support.apple.com/en-us/108373">https://support.apple.com/en-us/108373</a><ul>
-<li><code>en-us</code> # Replace it with your language (e.g. <code>zh-cn</code>)</li>
+<li><code>en-us</code> # Replace it with your code (e.g. <code>zh-cn</code>, <code>ja-JP</code>, etc.)</li>
+<li><code>ja</code> # Japenese (Language code)</li>
+<li><code>JP</code> # Japan (Region code)</li>
 </ul>
 </li>
 <li><a href="https://support.apple.com/en-us/HT208539">https://support.apple.com/en-us/HT208539</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -643,7 +649,7 @@ yaoniplan@tux ~ $
 <ul>
 <li>Press Enter key to click next episode icon<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
-    let nextIcon = document.querySelector(&#39;.video-switch-icon.next-icon&#39;);
+    let nextIcon = document.querySelector(&#39;div.video-switch-icon:nth-child(3)&#39;);
     if (nextIcon) {
       nextIcon.click();
     }
@@ -681,7 +687,11 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>.video-switch-icon.next-icon</code> # Use <code>Ctrl-Shift-c</code> to find it</li>
+<li><code>div.video-switch-icon:nth-child(3)</code> # Get CSS selector<ul>
+<li>Use <code>Ctrl-Shift-c</code> then click (Locate the element&#39;s position in HTML</li>
+<li>Right-click the pop-up location - Copy - CSS Selector</li>
+</ul>
+</li>
 <li>In userscript manager<pre><code>// ==UserScript==
 // @key value
 // ==/UserScript==
@@ -962,7 +972,7 @@ ingress:
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>--name cloudflared-alist</code> # Set a name for the process</li>
-<li>Because to try to use a foreign server.</li>
+<li>Because to try to use a foreign server when no docker.</li>
 <li><code>npm install -g pm2</code> # Install dependencies</li>
 </ul>
 </li>
@@ -10716,9 +10726,9 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
 <li><code>git remote set-url --push origin git@192.168.10.100:/var/git/note.git</code> # Update the push URL</li>
-<li><code>git remote set-url --delete --push origin git@github.com:yaoniplan/note.git</code> # Delete the push URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
 </ul>
 </li>
