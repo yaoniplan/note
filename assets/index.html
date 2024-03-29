@@ -41,6 +41,41 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;ble.sh&quot;</h4>
+<ul>
+<li><code>Ctrl-f</code> # Insert the suggestion<ul>
+<li><code>Alt-f</code> # Insert only the first word of the suggestion</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install dependencies<pre><code>git clone --recursive https://github.com/akinomyoga/ble.sh ~/.config/ble.sh
+cd ~/.config/ble.sh &amp;&amp; make
+</code></pre>
+<ul>
+<li><code>vim ~/.bashrc</code> # Load it by default<pre><code># Add this lines at the top of .bashrc:
+[[ $- == *i* ]] &amp;&amp; source ~/.config/ble.sh/out/ble.sh --noattach
+
+# your bashrc settings come here...
+
+# Add this line at the end of .bashrc:
+[[ ${BLE_VERSION-} ]] &amp;&amp; ble-attach
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/akinomyoga/ble.sh/blob/master/README.md#13-set-up-bashrc">https://github.com/akinomyoga/ble.sh/blob/master/README.md#13-set-up-bashrc</a></li>
+<li><a href="https://github.com/akinomyoga/ble.sh/blob/master/README.md#generate">https://github.com/akinomyoga/ble.sh/blob/master/README.md#generate</a></li>
+<li><a href="https://github.com/akinomyoga/ble.sh/blob/master/README.md#33-use-auto-complete">https://github.com/akinomyoga/ble.sh/blob/master/README.md#33-use-auto-complete</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;fbgrab&quot;</h4>
 <ul>
 <li><code>fbgrab screenshot.png</code></li>
@@ -48,6 +83,14 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: This method can only capture the tty screen.</li>
+<li>Solve the problem<pre><code>[yaoniplan@tux ~]$ doas fbgrab -w 1366 -h 768 -b 16 -f framebuffer.dump fb.png
+Line length cannot be smaller than width
+[yaoniplan@tux ~]$ 
+</code></pre>
+<ul>
+<li><code>doas fbgrab -w 1366 -h 768 -b 16 -f framebuffer.dump -l 1366 fb.png</code> # Set the line length</li>
+</ul>
+</li>
 <li>Solve the problem<pre><code>[yaoniplan@tux ~]$ fbgrab screenshot.png
 Error: Couldn&#39;t open /dev/fb0.
 </code></pre>
@@ -95,7 +138,7 @@ Error: Couldn&#39;t open /dev/fb0.
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to make taking transportation (e.g. bus, subway) more convenient<ul>
-<li>Without opening payment software</li>
+<li>Without opening payment software manually</li>
 </ul>
 </li>
 </ul>
@@ -103,7 +146,7 @@ Error: Couldn&#39;t open /dev/fb0.
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://support.apple.com/en-us/108373">https://support.apple.com/en-us/108373</a><ul>
 <li><code>en-us</code> # Replace it with your code (e.g. <code>zh-cn</code>, <code>ja-JP</code>, etc.)</li>
-<li><code>ja</code> # Japenese (Language code)</li>
+<li><code>ja</code> # Japanese (Language code)</li>
 <li><code>JP</code> # Japan (Region code)</li>
 </ul>
 </li>
@@ -479,6 +522,7 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/NixOS/comments/rxr458/where_is_7z_in_nixos_repository/hrk1f9g/">https://old.reddit.com/r/NixOS/comments/rxr458/where_is_7z_in_nixos_repository/hrk1f9g/</a></li>
 <li><a href="https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687">https://stackoverflow.com/questions/32797851/how-to-read-contents-of-7z-file-using-python/63012687#63012687</a></li>
 <li><code>man 7z</code> # <code>/letter</code> <code>/-o</code></li>
 </ul>
@@ -3088,6 +3132,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://www.reddit.com/r/shortcuts/comments/11cnaf7/comment/ja4tl51/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/11cnaf7/comment/ja4tl51/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://www.reddit.com/r/shortcuts/comments/ioiigu/comment/g4e1snd/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/ioiigu/comment/g4e1snd/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
 <li>The add icon - Add Action - Open URLs - vlc-xcallback://x-callback-url/stream?url=<em>yourURL</em> - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
@@ -13185,6 +13230,11 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li><code>git clone https://yaoniplan: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@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
+<li><code>yaoniplan</code> # Replace it with your user name</li>
+<li><code>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</code> # Your PAT</li>
+</ul>
+</li>
 <li>Test some files<ul>
 <li><code>git reset --hard ca86a59</code> # Reset to previous version</li>
 <li><code>git clean --force -d</code> # Remove untracked files (directories)</li>
