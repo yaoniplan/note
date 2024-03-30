@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;wine&quot;</h4>
+<ul>
+<li><code>wine ~/.wine/drive_c/path/to/yourProgram.exe</code> # Run the installed package</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>sudo pacman --sync wine</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;ble.sh&quot;</h4>
 <ul>
 <li><code>Ctrl-f</code> # Insert the suggestion<ul>
@@ -733,7 +749,7 @@ yaoniplan@tux ~ $
 <li><em><strong>Notes</strong></em><ul>
 <li><code>div.video-switch-icon:nth-child(3)</code> # Get CSS selector<ul>
 <li>Use <code>Ctrl-Shift-c</code> then click (Locate the element&#39;s position in HTML</li>
-<li>Right-click the pop-up location - Copy - CSS Selector</li>
+<li>Right-click the pop-up location - Copy - CSS Selector (Or CSS Path)</li>
 </ul>
 </li>
 <li>In userscript manager<pre><code>// ==UserScript==
@@ -1146,7 +1162,7 @@ ingress:
 </ul>
 </li>
 <li>Mount a hard disk without root permission manually<ul>
-<li><code>udisksctl mount --block-device /dev/sdd1</code> # Mount</li>
+<li><code>udisksctl mount --block-device /dev/sdd1</code> # Mount (Replace <code>mount</code> with <code>unmount</code> to unmount)</li>
 <li>Use <code>lsblk</code> command to get <code>/dev/sdd1</code> block device</li>
 <li><code>cd /run/media/$(whoami)</code> # Your USB directory</li>
 </ul>
@@ -1613,8 +1629,7 @@ alpha=0.8 # transparency
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/wayst/config</code><pre><code>font = Fira Code
-font = [
+<li><code>vim ~/.config/wayst/config</code><pre><code>font = [
     &quot;Fira Code&quot;,
     &quot;Noto Sans CJK SC&quot; # Support Chinese characters
 ]
