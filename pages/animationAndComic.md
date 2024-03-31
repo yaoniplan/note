@@ -1,8 +1,7 @@
 ### "Animation"
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
-- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - 05 animation
-- 休假日的坏人先生 - 01
+- 休假日的坏人先生 - 01 animation
 - 大宇宙时代 - 01
 - 月光下的异世界之旅 (Part1+2)- 12+01
 - 愚蠢天使与恶魔共舞 - 01
@@ -272,6 +271,7 @@
 - guard(end)
 
 ### Animation
+- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - S1E12
 - Pantheon / 万神殿 S1E8 S2E8 # Simulated world
 - 绝世武魂 - 351 0316 # Plot may be slow
 - 武映三千道 - 60 # End of the season

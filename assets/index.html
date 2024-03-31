@@ -41,16 +41,49 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;waybar&quot;</h4>
+<ul>
+<li><code>waybar</code> # Remember to run it in the background as a daemon</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>~/.config/waybar/config.jsonc</li>
+<li>~/.config/waybar/style.css</li>
+<li><code>nix profile install nixpkgs#waybar</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/jakehamilton/dotfiles/tree/master/waybar">https://github.com/jakehamilton/dotfiles/tree/master/waybar</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;wine&quot;</h4>
 <ul>
 <li><code>wine ~/.wine/drive_c/path/to/yourProgram.exe</code> # Run the installed package</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem that no audio using PipeWire<ul>
+<li><code>doas pacman --sync lib32-pipewire</code></li>
+</ul>
+</li>
+<li>Solve the problem that network is unstable<ul>
+<li><code>doas vim /etc/pacman.conf</code> # This package (lib32-gnutls) is in the repository (multilib)<pre><code>[multilib]
+Include = /etc/pacman.d/mirrorlist
+</code></pre>
+</li>
+<li><code>doas pacman --sync --refresh lib32-gnutls</code></li>
+<li><code>doas setcap cap_net_raw+epi /usr/bin/wine-preloader</code></li>
+</ul>
+</li>
 <li><code>sudo pacman --sync wine</code> # Install dependencies</li>
+<li>Because niece&#39;s programming class requires Windows software to be installed on Linux.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.archlinux.org/title/wine">https://wiki.archlinux.org/title/wine</a> # <code>/sound</code> <code>/network</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -66,6 +99,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Flase trigger rate is higher than default. (Can&#39;t control it on March 30, 2024.)</li>
 <li>Install dependencies<pre><code>git clone --recursive https://github.com/akinomyoga/ble.sh ~/.config/ble.sh
 cd ~/.config/ble.sh &amp;&amp; make
 </code></pre>
@@ -1994,6 +2028,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li><code>--max-downloads 1</code> # Download the latest one</li>
 <li><code>--yes-playlist</code> # Download the playlist</li>
 <li><code>--output</code> # Output filename template (e.g. <code>&quot;%(title)s.%(ext)s&quot;</code>)<ul>
+<li><code>/mnt/grow/temporary/</code> # If full path is required</li>
 <li><code>&quot;%(playlist)s/</code> # A folder</li>
 <li><code>%(playlist_index)s</code> # A sequence</li>
 <li><code>%(title)s</code> # A file name</li>
