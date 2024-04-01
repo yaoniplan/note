@@ -59,6 +59,36 @@
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;uosc&quot;</h4>
+<ul>
+<li><code>vim ~/.config/mpv/input.conf</code><pre><code>Ctrl+p scripts-binding uosc/playlist # Display playlist
+o scripts-binding uosc/open-file # Open file
+Ctrl+s script-binding uosc/subtitles # Search subtitle
+p script-binding uosc/items # Display playlist
+</code></pre>
+<ul>
+<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code>autoload=yes
+</code></pre>
+</li>
+<li><code>vim ~/.config/mpv/mpv.conf</code><pre><code>keep-open=yes
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)&quot;</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442">https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442</a></li>
+<li><a href="https://github.com/tomasklaen/uosc#linux--macos">https://github.com/tomasklaen/uosc#linux--macos</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;wine&quot;</h4>
 <ul>
 <li><code>wine ~/.wine/drive_c/path/to/yourProgram.exe</code> # Run the installed package</li>
@@ -9414,13 +9444,30 @@ yaoniplan@tux ~/Downloads/deck $
 <li>Use scripts<ul>
 <li><code>git clone https://github.com/CogentRedTester/mpv-file-browser ~/.config/mpv/scripts/file-browser</code></li>
 <li><code>cp ~/.config/mpv/scripts/file-browser/docs/file_browser.conf ~/.config/mpv/script-opts/</code><pre><code>...
-root=~/,/
+# Replace `/mnt/` with your file directory
+root=~/,/mnt/
 ...
 custom_keybinds=yes
 ...
 </code></pre>
 </li>
 <li><code>vim ~/.config/mpv/script-opts/file-browser-keybinds.json</code><pre><code>[
+    {
+        &quot;key&quot;: &quot;k&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_up&quot;]
+    },
+    {
+        &quot;key&quot;: &quot;j&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_down&quot;]
+    },
+    {
+        &quot;key&quot;: &quot;l&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/down_dir&quot;]
+    },
+    {
+        &quot;key&quot;: &quot;h&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/up_dir&quot;]
+    },
     {
         &quot;comment&quot;: &quot;Delete the current file&quot;,
         &quot;key&quot;: &quot;D&quot;,
@@ -9498,6 +9545,8 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808">https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808</a></li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815">https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815</a></li>
 <li><a href="https://mim.mbirgin.com/?c=posts&id=200">https://mim.mbirgin.com/?c=posts&amp;id=200</a></li>
 <li><a href="https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html">https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html</a></li>
 <li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
@@ -17898,14 +17947,28 @@ You can edit this.
 <li>tool: timeshift(GUI), snapper(CLI)</li>
 </ul>
 </li>
-<li>[[GitHub]] search for filename in repo<ul>
-<li><code>yourfilename in:path</code> # You can edit &quot;yourfilename&quot;. <strong>But you just search for filename in one repo</strong>.</li>
-<li><code>filename:yourfilename</code> # You can edit &quot;yourfilename&quot;. <strong>But you should sign in to GitHub</strong>.</li>
-<li><em><strong>Reference</strong></em></li>
-<li><a href="https://stackoverflow.com/questions/18991908/is-it-possible-to-search-for-a-particular-filename-on-github">Is it possible to search fot a particular filename on GitHub?</a></li>
+</ul>
+<hr>
+<ul>
+<li>List GitHub syntax<ul>
+<li>Search for content in a repository<ul>
+<li><code> repo:YanG-1989/m3u 七龙珠</code> # (repo:aUser/aRepo theContent)</li>
 </ul>
 </li>
-<li></li>
+<li>Search for file name in a repository<ul>
+<li><code>yourFileName in:path</code></li>
+<li><code>filename:yourFileName</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Reference</strong></em><ul>
+<li><a href="https://stackoverflow.com/questions/18991908/is-it-possible-to-search-for-a-particular-filename-on-github">https://stackoverflow.com/questions/18991908/is-it-possible-to-search-for-a-particular-filename-on-github</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[i3]] i3bar hide<pre><code>bar {
         mode hide
         hidden_state hide

@@ -1,7 +1,7 @@
 ### "Animation"
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
-- 休假日的坏人先生 - 01 animation
+- 休假日的坏人先生 - 07 animation
 - 大宇宙时代 - 01
 - 月光下的异世界之旅 (Part1+2)- 12+01
 - 愚蠢天使与恶魔共舞 - 01

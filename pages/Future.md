@@ -142,7 +142,6 @@
 - https://www.yuque.com/supermemo/wiki/20rules
 
 ## Short message service
-- https://mytrashmobile.com
 - https://smsreceivefree.com/
 
 ## Video and audio
