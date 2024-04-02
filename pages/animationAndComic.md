@@ -1,9 +1,7 @@
 ### "Animation"
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
-- 休假日的坏人先生 - 07 animation
-- 大宇宙时代 - 01
-- 月光下的异世界之旅 (Part1+2)- 12+01
+- 月光下的异世界之旅 (Part1+2) - 12+01 animation
 - 愚蠢天使与恶魔共舞 - 01
 - 你的人生是我来迟了 - 01
 - 圣祖之万相金澜 - 01
@@ -271,6 +269,8 @@
 - guard(end)
 
 ### Animation
+- Mr. Villian's Day Off / 休假日的坏人先生 # S1E12, Exaggerated movements, Cute style (Panda, cat)
+- 大宇宙时代 - 01 # Target audience may not be me.
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - S1E12
 - Pantheon / 万神殿 S1E8 S2E8 # Simulated world
 - 绝世武魂 - 351 0316 # Plot may be slow

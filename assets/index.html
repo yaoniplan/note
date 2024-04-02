@@ -41,12 +41,97 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;hyprctl&quot;</h4>
+<ul>
+<li><code>hyprctl -j activewindow | jq -r &#39;&quot;\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])&quot;&#39; | </code><ul>
+<li>e.g. <code>690,22 654x355</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-j</code> # JSON</li>
+<li><code>\()</code> # Placeholders (Be replaced with actual values)</li>
+<li><code>.at[0]</code> # The first element (e.g. <code>690</code>) of the array (e.g. <code>at</code>)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man hyprctl</code> # <code>/-j</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;exit&quot;</h4>
+<ul>
+<li><code>exit 0</code> # Exit the script with a specific exit status<pre><code class="language-bash">if [[ &quot;$XDG_CURRENT_DESKTOP&quot; = &quot;Hyprland&quot; ]]; then
+    ...
+else
+    echo &quot;Error: Your \$XDG_CURRENT_DESKTOP is not Hyprland.&quot;
+    exit 0
+fi
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>$XDG_CURRENT_DESKTOP</code> # Get compositor name</li>
+<li><code>0</code> # Success (Opposite: <code>1</code>)</li>
+<li>Because to write a Bash script.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;eww&quot;</h4>
+<ul>
+<li><code>eww daemon</code> # Rember to run it in the background as a daemon</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/eww/eww.yuck</code><ul>
+<li>Example window<pre><code>(defwindow example
+           :monitor 0
+           :geometry (geometry :x &quot;0%&quot;
+                               :y &quot;20px&quot;
+                               :width &quot;90%&quot;
+                               :height &quot;30px&quot;
+                               :anchor &quot;top center&quot;)
+           :stacking &quot;fg&quot;
+           :reserve (struts :distance &quot;40px&quot; :side &quot;top&quot;)
+           :windowtype &quot;dock&quot;
+           :wm-ignore false
+  &quot;example content&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><code>eww open example</code> # Replace <code>open</code> with <code>close</code> to close a window</li>
+<li><code>nix profile install nixpkgs#eww</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>eww --help</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;waybar&quot;</h4>
 <ul>
 <li><code>waybar</code> # Remember to run it in the background as a daemon</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use &quot;nerd-fonts&quot; to display iconic font<ul>
+<li><code>doas pacman --sync nerd-fonts</code> # Install dependencies</li>
+</ul>
+</li>
 <li>~/.config/waybar/config.jsonc</li>
 <li>~/.config/waybar/style.css</li>
 <li><code>nix profile install nixpkgs#waybar</code> # Install dependencies</li>
@@ -9453,20 +9538,28 @@ custom_keybinds=yes
 </li>
 <li><code>vim ~/.config/mpv/script-opts/file-browser-keybinds.json</code><pre><code>[
     {
+        &quot;key&quot;: &quot;SPACE&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/play&quot;]
+    },
+    {
         &quot;key&quot;: &quot;k&quot;,
         &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_up&quot;]
+        &quot;flags&quot;: { &quot;repeatable&quot;: true} 
     },
     {
         &quot;key&quot;: &quot;j&quot;,
-        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_down&quot;]
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_down&quot;],
+        &quot;flags&quot;: { &quot;repeatable&quot;: true}
     },
     {
         &quot;key&quot;: &quot;l&quot;,
-        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/down_dir&quot;]
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/down_dir&quot;],
+        &quot;flags&quot;: { &quot;repeatable&quot;: true}
     },
     {
         &quot;key&quot;: &quot;h&quot;,
-        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/up_dir&quot;]
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/up_dir&quot;],
+        &quot;flags&quot;: { &quot;repeatable&quot;: true}
     },
     {
         &quot;comment&quot;: &quot;Delete the current file&quot;,
@@ -9477,7 +9570,8 @@ custom_keybinds=yes
 ]
 </code></pre>
 </li>
-<li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> to open file browser</li>
+<li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> (Or<code>menuKey</code>) to open file browser</li>
+<li><code>--player-operation-mode=pseudo-gui</code> # If you don&#39;t want to play it immediately (Select path using script)</li>
 </ul>
 </li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># `D` removes the current file
