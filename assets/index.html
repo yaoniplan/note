@@ -56,6 +56,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive">https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive</a></li>
 <li><code>man hyprctl</code> # <code>/-j</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -76,9 +77,9 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>$XDG_CURRENT_DESKTOP</code> # Get compositor name</li>
+<li><code>$XDG_CURRENT_DESKTOP</code> # Get current desktop</li>
 <li><code>0</code> # Success (Opposite: <code>1</code>)</li>
-<li>Because to write a Bash script.</li>
+<li>Because need to modify a Bash script to improve compatibility.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -132,13 +133,23 @@ fi
 <li><code>doas pacman --sync nerd-fonts</code> # Install dependencies</li>
 </ul>
 </li>
-<li>~/.config/waybar/config.jsonc</li>
+<li><code>vim ~/.config/waybar/config.jsonc</code> # Click to execute script<pre><code>{
+    &quot;layer&quot;: &quot;top&quot;,
+    &quot;modules-center&quot;: [&quot;clock&quot;],
+    &quot;clock&quot;: {
+        &quot;format-alt&quot;: &quot;{:%a, %d. %b  %H:%M}&quot;
+        &quot;on-click&quot;: &quot;bash ~/.local/bin/controlMpv.sh&quot;
+    }
+}
+</code></pre>
+</li>
 <li>~/.config/waybar/style.css</li>
 <li><code>nix profile install nixpkgs#waybar</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/jakehamilton/dotfiles/tree/master/waybar">https://github.com/jakehamilton/dotfiles/tree/master/waybar</a></li>
+<li><a href="https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar">https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar</a></li>
+<li><a href="https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config">https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config</a> # <code>man waybar</code> <code>/minimal</code></li>
 </ul>
 </li>
 </ul>
@@ -9574,7 +9585,9 @@ custom_keybinds=yes
 <li><code>--player-operation-mode=pseudo-gui</code> # If you don&#39;t want to play it immediately (Select path using script)</li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># `D` removes the current file
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
+l no-osd seek 5 exact
+# `D` removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
 # `Ctrl-l` Show playlist for 5 seconds (Default: `Fn-8`)
 CTRL+l show-text &quot;${playlist}&quot; 5000
@@ -9639,6 +9652,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/">https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808">https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815">https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815</a></li>
 <li><a href="https://mim.mbirgin.com/?c=posts&id=200">https://mim.mbirgin.com/?c=posts&amp;id=200</a></li>
@@ -16217,8 +16231,11 @@ yaoniplan@yaoniplan ~ $
 </ul>
 <hr>
 <ul>
-<li>Extract (decompress) <code>.tar.xz</code> file #Linux #Command<ul>
+<li><h4>Extract a &quot;.tar.xz&quot; file</h4>
+<ul>
 <li><code>tar -xf Nordic-darker-v40.tar.xz</code></li>
+</ul>
+</li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-x</code> # Extract</li>
 <li><code>-f</code> # File</li>
@@ -16227,10 +16244,8 @@ yaoniplan@yaoniplan ~ $
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1669561144343_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1669561567111_0.png" alt="image.png"></li>
-<li><code>man tar</code> # Search (by pressing &quot;<strong>/</strong>&quot;) &quot;<strong>-x</strong>&quot; or &quot;<strong>-f</strong>&quot; in manual page about tar</li>
-<li><a href="https://linuxhint.com/uncompress-tar-xz-files/">How to Uncompress Tar.xz Files?</a></li>
-</ul>
-</li>
+<li><code>man tar</code> # <code>/-x</code> <code>/-f</code></li>
+<li><a href="https://linuxhint.com/uncompress-tar-xz-files/">https://linuxhint.com/uncompress-tar-xz-files/</a></li>
 </ul>
 </li>
 </ul>
@@ -16705,7 +16720,7 @@ localhost:5900 # Server
 </ul>
 <hr>
 <ul>
-<li><h4>Decompress a <code>.xz</code> file in Unix-like</h4>
+<li><h4>Decompress a &quot;.xz&quot; file in Unix-like</h4>
 <ul>
 <li><code>xz -d ./FreeBSD-13.1-RELEASE-amd64-bootonly.iso.xz</code></li>
 </ul>
