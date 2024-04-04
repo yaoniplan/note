@@ -43,7 +43,7 @@
 <ul>
 <li><h4>Use &quot;hyprctl&quot;</h4>
 <ul>
-<li><code>hyprctl -j activewindow | jq -r &#39;&quot;\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])&quot;&#39; | </code><ul>
+<li><code>hyprctl -j activewindow | jq -r &#39;&quot;\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])&quot;&#39;</code><ul>
 <li>e.g. <code>690,22 654x355</code></li>
 </ul>
 </li>
@@ -129,26 +129,60 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Cannot modify the value of min-height (Save space)<ul>
+<li><code>vim ~/.config/waybar/config.jsonc</code> # This works, but the interactivity is gone<pre><code>{
+    ...
+    &quot;mode&quot;: &quot;overlay&quot;,
+    ...
+}
+</code></pre>
+</li>
+<li><a href="https://github.com/Alexays/Waybar/issues/185">https://github.com/Alexays/Waybar/issues/185</a></li>
+<li><a href="https://github.com/Alexays/Waybar/discussions/2594">https://github.com/Alexays/Waybar/discussions/2594</a></li>
+</ul>
+</li>
 <li>Use &quot;nerd-fonts&quot; to display iconic font<ul>
 <li><code>doas pacman --sync nerd-fonts</code> # Install dependencies</li>
 </ul>
 </li>
-<li><code>vim ~/.config/waybar/config.jsonc</code> # Click to execute script<pre><code>{
+<li><code>vim ~/.config/waybar/config.jsonc</code> # Click to execute script<pre><code class="language-json">{
     &quot;layer&quot;: &quot;top&quot;,
     &quot;modules-center&quot;: [&quot;clock&quot;],
     &quot;clock&quot;: {
-        &quot;format-alt&quot;: &quot;{:%a, %d. %b  %H:%M}&quot;
-        &quot;on-click&quot;: &quot;bash ~/.local/bin/controlMpv.sh&quot;
+        &quot;format-alt&quot;: &quot;{:%a, %d. %b  %H:%M}&quot;,
+        &quot;on-click&quot;: &quot;bash ~/.local/bin/controlMpv.sh&quot;,
+        &quot;tooltip-format&quot;: &quot;&lt;big&gt;{:%Y %B}&lt;/big&gt;\n&lt;tt&gt;&lt;small&gt;{calendar}&lt;/small&gt;&lt;/tt&gt;&quot;
     }
 }
 </code></pre>
+<ul>
+<li>Show calender on hover</li>
+</ul>
 </li>
-<li>~/.config/waybar/style.css</li>
+<li><code>vim ~/.config/waybar/style.css</code> # Simulate dynamic island<pre><code class="language-css">* {
+    /* Make the background transparent */
+    background-color: transparent;
+}
+
+.modules-center {
+    font-weight: bold; /* Make font bold */
+    padding: 0px 8px; /* Fill space for height and width */
+    background-color: rgba(0, 0, 0, 1); /* Set dark mode */
+    border-radius: 20px; /* Set rounded corner */
+}
+
+tooltip {
+    /* Set dark mode for calendar that pops up when mouse is hovered */
+    background-color: rgba(0, 0, 0, 1);
+}
+</code></pre>
+</li>
 <li><code>nix profile install nixpkgs#waybar</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar">https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar</a></li>
+<li><a href="https://github.com/Alexays/Waybar/issues/2737#issuecomment-1870214557">https://github.com/Alexays/Waybar/issues/2737#issuecomment-1870214557</a></li>
+<li><a href="https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar">https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar</a> # If on Hyprland</li>
 <li><a href="https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config">https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config</a> # <code>man waybar</code> <code>/minimal</code></li>
 </ul>
 </li>
@@ -1888,7 +1922,9 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Move windows like Vi mode
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Disable blur
+windowrulev2 = opacity 0 0,class:^(waybar)$
+# Move windows like Vi mode
 bind = $mainMod SHIFT, H, movewindow, l
 bind = $mainMod SHIFT, L, movewindow, r
 bind = $mainMod SHIFT, K, movewindow, u
@@ -1912,6 +1948,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/">https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/</a> # Disable blur</li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211">https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/">https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467">https://github.com/hyprwm/Hyprland/discussions/830#discussioncomment-3868467</a> # Switch app</li>

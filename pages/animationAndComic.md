@@ -1,8 +1,7 @@
 ### "Animation"
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
-- 愚蠢天使与恶魔共舞 - 06 animation
-- 你的人生是我来迟了 - 01
+- 你的人生是我来迟了 - 10 animation
 - 圣祖之万相金澜 - 01
 - 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155
 - 外科医生爱丽丝 - 01
@@ -268,6 +267,7 @@
 - guard(end)
 
 ### Animation
+- 愚蠢天使与恶魔共舞 - E01S12
 - 月光下的异世界之旅 (Part1+2) - S01E12.S02E13
 - Mr. Villian's Day Off / 休假日的坏人先生 # S1E12, Exaggerated movements, Cute style (Panda, cat)
 - 大宇宙时代 - 01 # Target audience may not be me.
