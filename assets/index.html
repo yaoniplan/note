@@ -4839,17 +4839,17 @@ perl: warning: Falling back to the standard locale (&quot;C&quot;).
 <ul>
 <li><h4>Fix API rate limiting issues in GitHub</h4>
 <ul>
-<li><code>doas vim /etc/nix/nix.conf</code><pre><code>access-tokens = github.com=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
+<li><code>doas vim /etc/nix/nix.conf</code><pre><code>access-tokens = github.com=yourPersonalAccessToken
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>export GITHUB_TOKEN=&quot;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&quot;</code> # Another way<ul>
+<li><code>export GITHUB_TOKEN=&quot;yourPersonalAccessToken&quot;</code> # Another way<ul>
 <li>Warning: It does not work sometimes.</li>
 </ul>
 </li>
-<li><code>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</code> # Replace it with your PAT<ul>
+<li><code>yourPersonalAccessToken</code> # Replace it with your PAT<ul>
 <li>In &quot;Personal access tokens&quot; of &quot;Developer Settings&quot;</li>
 <li>Need to grant &#39;repo&#39; access</li>
 </ul>
@@ -9110,7 +9110,7 @@ export EDITOR=vim
 <li>Type in terminal<pre><code>curl -L \
   -X PATCH \
   -H &quot;Accept: application/vnd.github+json&quot; \
-  -H &quot;Authorization: Bearer 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&quot; \
+  -H &quot;Authorization: Bearer yourPersonalAccessToken&quot; \
   -H &quot;X-GitHub-Api-Version: 2022-11-28&quot; \
   https://api.github.com/repos/yaoniplan/dotfiles \
   -d &#39;{&quot;description&quot;:&quot;Minimal dotfiles in Linux server&quot;}&#39;
@@ -9119,7 +9119,7 @@ export EDITOR=vim
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>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</code> # Replace it with your GitHub PAT<ul>
+<li><code>yourPersonalAccessToken</code> # Replace it with your GitHub PAT<ul>
 <li>Get it in &quot;Personal access tokens&quot; of &quot;Developer settings&quot;</li>
 <li>Remember to click the &quot;repo&quot; checkbox to grant this token access to the repository</li>
 </ul>
@@ -11161,10 +11161,10 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>curl -u 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: https://api.github.com/repos/philj56/tofi</code> # Solve the problem<pre><code>{&quot;message&quot;:&quot;API rate limit exceeded for 18.182.47.148. (But here&#39;s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting&quot;}
+<li><code>curl -u yourPersonalAccessToken: https://api.github.com/repos/philj56/tofi</code> # Solve the problem<pre><code>{&quot;message&quot;:&quot;API rate limit exceeded for 18.182.47.148. (But here&#39;s the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting&quot;}
 </code></pre>
 <ul>
-<li><code>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</code> # Replace it with your personal access token</li>
+<li><code>yourPersonalAccessToken</code> # Replace it with your personal access token</li>
 <li><code>curl -i https://api.github.com/rate_limit</code> # Check the rate limit information (e.g. limit: 60 requests per hour)</li>
 </ul>
 </li>
@@ -13496,9 +13496,9 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
-<li><code>git clone https://yaoniplan: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@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
+<li><code>git clone https://yaoniplan:yourPersonalAccessToken@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
-<li><code>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</code> # Your PAT</li>
+<li><code>yourPersonalAccessToken</code> # Replace it with yours</li>
 </ul>
 </li>
 <li>Test some files<ul>
