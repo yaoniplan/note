@@ -91,7 +91,7 @@ fi
 <ul>
 <li><h4>Use &quot;eww&quot;</h4>
 <ul>
-<li><code>eww daemon</code> # Rember to run it in the background as a daemon</li>
+<li><code>eww daemon</code> # Remember to run it in the background as a daemon</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -192,7 +192,6 @@ tooltip {
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
 <li><code>vim ~/.config/mpv/input.conf</code><pre><code>Ctrl+p scripts-binding uosc/playlist # Display playlist
-o scripts-binding uosc/open-file # Open file
 Ctrl+s script-binding uosc/subtitles # Search subtitle
 p script-binding uosc/items # Display playlist
 </code></pre>
@@ -341,7 +340,7 @@ Error: Couldn&#39;t open /dev/fb0.
 </ul>
 </li>
 <li>Add a transit card (e.g. Beijing T-Union Transit Card)<ul>
-<li>Wallet - Plus button - Transit Card</li>
+<li>Wallet - Add button - Transit Card</li>
 </ul>
 </li>
 </ul>
@@ -2484,16 +2483,34 @@ notes.forEach((note) =&gt; console.log(note));
 <ul>
 <li><h4>Use &quot;ish&quot;</h4>
 <ul>
+<li><code>mount -t ios . /mnt</code> # Mount a local folder and then <code>ls /mnt</code><ul>
+<li><code>umount /mnt</code> # Unmount it</li>
+</ul>
+</li>
+<li>Clipboard<ul>
+<li><code>cat /dev/clipboard</code> # <a href="https://github.com/ish-app/ish/issues/192#issuecomment-717605379">https://github.com/ish-app/ish/issues/192#issuecomment-717605379</a></li>
+<li><code>echo foo &gt; /dev/clipboard</code> # <a href="https://github.com/ish-app/ish/issues/192#issuecomment-717605036">https://github.com/ish-app/ish/issues/192#issuecomment-717605036</a></li>
+</ul>
+</li>
 <li><code>df -h</code> # Check disk free</li>
 <li><code>id</code> # Check current user (Like <code>whoami</code>)</li>
 <li>Connect to your server<pre><code>apk add openssh # Install dependencies
 adduser yaoniplan &amp;&amp; su yaoniplan # Add and substitute a user
 ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication keys for ssh and then connect
 </code></pre>
+<ul>
+<li><code>vi ~/.profile</code> # Execute automatically after opening iSH<pre><code>ssh yaoniplan@192.168.10.100
+</code></pre>
+</li>
+</ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: No Siri Shortcuts integration.<ul>
+<li><a href="https://github.com/ish-app/ish/issues/59">https://github.com/ish-app/ish/issues/59</a></li>
+</ul>
+</li>
 <li>Terminate SSH connection<ul>
 <li><code>Ctrl-b d</code> # Detach the current session if using tmux</li>
 <li><code>logout</code> # Exit the login shell</li>
@@ -2510,6 +2527,8 @@ https://mirrors.ustc.edu.cn/alpine/latest-stable/community
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ish-app/ish/issues/1581#issuecomment-1100768238">https://github.com/ish-app/ish/issues/1581#issuecomment-1100768238</a></li>
+<li><a href="https://github.com/ish-app/ish/issues/2139#issuecomment-1596681536">https://github.com/ish-app/ish/issues/2139#issuecomment-1596681536</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/alpine.html">https://mirrors.ustc.edu.cn/help/alpine.html</a></li>
 <li><a href="https://www.youtube.com/watch?v=-VBMYK3Sy54">https://www.youtube.com/watch?v=-VBMYK3Sy54</a></li>
 <li><a href="https://www.youtube.com/watch?v=R44NXv7QUek">https://www.youtube.com/watch?v=R44NXv7QUek</a></li>
@@ -9618,11 +9637,13 @@ custom_keybinds=yes
 ]
 </code></pre>
 </li>
-<li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> (Or<code>menuKey</code>) to open file browser</li>
+<li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> (Or <code>menuKey</code>) to open file browser</li>
 <li><code>--player-operation-mode=pseudo-gui</code> # If you don&#39;t want to play it immediately (Select path using script)</li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Reload after editing `~/.config/mpv/input.conf`
+CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
+# `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
 l no-osd seek 5 exact
 # `D` removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
@@ -9689,6 +9710,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/">https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/</a></li>
 <li><a href="https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/">https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808">https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815">https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815</a></li>

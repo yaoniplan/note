@@ -1,8 +1,8 @@
 ### "Animation"
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
-- 你的人生是我来迟了 - 10 animation
-- 圣祖之万相金澜 - 01
+- 你的人生是我来迟了 - 16
+- 圣祖之万相金澜 - 10 animation
 - 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 01 1155
 - 外科医生爱丽丝 - 01
 - 剑域风云 (Part1+2) - 40+52+32
