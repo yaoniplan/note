@@ -76,7 +76,6 @@
 - http://eroanimedougakan.blog.fc2.com/
 - https://theporndude.com/
 - https://ikmmh.com/
-- https://toptoon.life
 - https://www.yeseimg.com/
 
 ## Programming

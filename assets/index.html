@@ -47,6 +47,12 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Zoom in<ul>
+<li><code>Z</code> # Zoom fit</li>
+<li><code>W</code> # Width</li>
+<li><code>+</code> # Zoom in</li>
+</ul>
+</li>
 <li><code>-I</code> # Invert colors (Dark mode)<ul>
 <li><code>Shift-i</code> # Toggle</li>
 </ul>
@@ -56,6 +62,32 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://libreddit.northboot.xyz/r/linuxquestions/comments/mr8k85/is_there_a_good_dark_mode_pdf_reader_one_with/">https://libreddit.northboot.xyz/r/linuxquestions/comments/mr8k85/is_there_a_good_dark_mode_pdf_reader_one_with/</a></li>
+<li><code>man mupdf</code> # <code>/binding</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;zathura&quot;</h4>
+<ul>
+<li><code>zathura yourBook.pdf</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/zathura/zathurarc</code><pre><code>map i recolor
+set recolor-darkcolor &quot;#B0B002&quot;
+</code></pre>
+<ul>
+<li><code>i</code> # Press <code>i</code> to enable dark mode</li>
+</ul>
+</li>
+<li><code>Space/Shift-Space</code> # Scroll pages</li>
+<li><code>j/k/q</code> # Vi-like</li>
+<li><code>nix profile install nixpkgs#zathura</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/">https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/</a> # <code>/recolor</code></li>
 </ul>
 </li>
 </ul>
@@ -111,7 +143,7 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 <ul>
 <li><h4>Use &quot;exit&quot;</h4>
 <ul>
-<li><code>exit 0</code> # Exit the script with a specific exit status<pre><code class="language-bash">if [[ &quot;$XDG_CURRENT_DESKTOP&quot; = &quot;Hyprland&quot; ]]; then
+<li><code>vim ~/.local/bin/captureFullscreen2PNG.sh</code> # Exit the script with a specific exit status<pre><code class="language-bash">if [[ &quot;$XDG_CURRENT_DESKTOP&quot; = &quot;Hyprland&quot; ]]; then
     ...
 else
     echo &quot;Error: Your \$XDG_CURRENT_DESKTOP is not Hyprland.&quot;
@@ -1674,8 +1706,20 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Scroll page<ul>
-<li><code>Ctrl-n</code> # Next line</li>
+<li><code>B</code> # Close current buffer (The same as <code>Ctrl-Shift-Tab</code> in Chromium)</li>
+<li><code>T</code> # New tab in the current link<ul>
+<li><code>}</code> # Next tab</li>
+</ul>
+</li>
+<li><code>Ctrl-h</code> # History page<ul>
+<li><code>/search</code> # Search</li>
+<li><code>Ctrl-j</code> # Follow link (The same as <code>Enter</code>)</li>
+</ul>
+</li>
+<li>Scroll page (Vim-like)<ul>
+<li><code>Space</code> # Next page</li>
+<li><code>b</code> # Previous page</li>
+<li><code>j / Ctrl-n</code> # Next line</li>
 </ul>
 </li>
 <li>Other tools<ul>
@@ -1687,6 +1731,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>H</code> # Help</li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -2203,6 +2248,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Other methods<ul>
+<li><code>btm</code></li>
 <li><code>btop</code> # Use shortcut key <code>Ctrl-minus</code> to adjust terminal size</li>
 <li><code>cat /proc/net/dev | grep enp2s0</code></li>
 <li><code>ip -human-readable -statistics link show enp2s0</code></li>
@@ -2212,7 +2258,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><code>nix shell nixpkgs#nload</code> # Install dependencies<ul>
-<li>Replace <code>nload</code> with other dependencies (e.g. <code>vnstat</code>, <code>iftop</code>, <code>bmon</code>, <code>btop</code>, etc.)</li>
+<li>Replace <code>nload</code> with other dependencies (e.g. <code>bottom</code>, <code>vnstat</code>, <code>iftop</code>, <code>bmon</code>, <code>btop</code>, etc.)</li>
 </ul>
 </li>
 </ul>
@@ -6973,8 +7019,8 @@ file &#39;output02.wma&#39;
 <li>(<code>5d</code>: The fifth, <code>$d</code>: The last, <code>5d;7d</code>: Both the fifth and seventh)</li>
 </ul>
 </li>
-<li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code></li>
-<li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;)&quot;; done</code></li>
+<li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code> # Substitute (e.g. Correct spelling)</li>
+<li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;):; done</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -9047,6 +9093,8 @@ http://natas4.natas.labs.overthewire.org/
 <ul>
 <li><h4>Use the &quot;man&quot; tool in Linux</h4>
 <ul>
+<li><code>b</code> # Backward one window (The same as <code>Ctrl-b</code>)</li>
+<li><code>f</code> # Forward one window (The same as <code>Ctrl-f</code>)</li>
 <li><code>ma</code> # Mark with &quot;a&quot; letter</li>
 </ul>
 </li>
@@ -13701,8 +13749,10 @@ set number
 <li><code>%</code> # Jump the cursor to matching bracket</li>
 <li><code>&gt;&gt;</code> # Indent current line (like <code>&gt;l</code>, <code>v&gt;</code>)</li>
 <li><code>o</code> # Insert a new line below the cursor</li>
+<li><code>u</code> # Undo<ul>
 <li><code>Ctrl-r</code> # Redo</li>
-<li><code>u</code> # Undo</li>
+</ul>
+</li>
 <li><code>daw</code> # Delete a word<ul>
 <li><code>.</code> # Repeat last change</li>
 </ul>
