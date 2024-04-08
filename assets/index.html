@@ -41,6 +41,114 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Resize Linux swap partition</h4>
+<ul>
+<li><code>doas fdisk /dev/sda</code><ul>
+<li><code>p</code> # Print all partitions</li>
+<li><code>e</code> # Resize a partition (e.g. 15G)</li>
+<li><code>n</code> # New a partition (e.g. 3)</li>
+<li><code>t</code> # Type a partition (e.g. swap)</li>
+<li><code>w</code> # Write to disk</li>
+</ul>
+</li>
+<li><code>doas mkswap /dev/sda3</code> # Format the new swap partition</li>
+<li><code>doas swapon /dev/sda3</code>  # Activate it</li>
+<li><code>doas vim /etc/fstab</code> # Update<pre><code># /dev/sda3
+UUID=01eaba24-8d1e-4685-b00b-b30ca28514a2
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to solve the <code>[ERROR]: Out of memory, exiting.</code> problem.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://unix.stackexchange.com/a/224239">https://unix.stackexchange.com/a/224239</a></li>
+<li><code>m</code> # Print the memu</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;qpdfview&quot;</h4>
+<ul>
+<li><code>qpdfview yourBook.pdf</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-f</code> # Find text</li>
+<li><code>Ctrl-Shift-t</code> # Tool bar</li>
+<li><code>Ctrl-Shift-m</code> # Menu bar</li>
+<li><code>Ctrl-i</code> # Insert color (Dark mode)</li>
+<li><code>nix profile install nixpkgs#qpdfview</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>In &#39;Shortcuts&#39; of &#39;Settings&#39; of &#39;Edit&#39;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;evince&quot;</h4>
+<ul>
+<li><code>evince yourBook.pdf</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-i</code> # Insert color (Dark mode)</li>
+<li><code>nix profile install nixpkgs#evince</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>In &#39;Keyboard Shortcuts&#39; of &#39;File options&#39;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Understand &quot;RX&quot; and &quot;TX&quot;</h4>
+<ul>
+<li><code>RX</code> # Reception (Download)</li>
+<li><code>TX</code> # Transmission (Upload)</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because see it when using &quot;btm&quot;.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sioyek&quot;</h4>
+<ul>
+<li><code>:dark</code> # Toggle dark mode</li>
+<li><code>:number</code> # Jump to page by page number<ul>
+<li><code>t</code> # Table of contents (Better method)</li>
+</ul>
+</li>
+<li><code>q/j/k/gg/G/ma/</code> # Vim-like</li>
+<li><code>Space</code> # Scroll pages (Opposite: <code>Shift-Space</code>)</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>flatpak install flathub com.github.ahrm.sioyek</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ahrm/sioyek/blob/main/tutorial.pdf">https://github.com/ahrm/sioyek/blob/main/tutorial.pdf</a></li>
+<li><a href="https://sioyek-documentation.readthedocs.io/en/latest/">https://sioyek-documentation.readthedocs.io/en/latest/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;mupdf&quot;</h4>
 <ul>
 <li><code>mupdf -I yourBook.epub</code></li>
@@ -82,7 +190,7 @@ set recolor-darkcolor &quot;#B0B002&quot;
 </ul>
 </li>
 <li><code>Space/Shift-Space</code> # Scroll pages</li>
-<li><code>j/k/q</code> # Vi-like</li>
+<li><code>j/k/q</code> # Vim-like</li>
 <li><code>nix profile install nixpkgs#zathura</code> # Install dependencies</li>
 </ul>
 </li>
@@ -822,6 +930,7 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <ul>
 <li><h4>Use &quot;flatpak&quot;</h4>
 <ul>
+<li><code>flatpak override --user --filesystem=/home/$(whoami)/Downloads/ com.github.ahrm.sioyek</code> # Allow access to a directory</li>
 <li><code>flatpak search kikoplay</code> # Search a package<ul>
 <li><code>--columns=application</code> # Get Application ID</li>
 </ul>
@@ -856,6 +965,7 @@ yaoniplan@tux ~/Downloads $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://unix.stackexchange.com/questions/605285/how-to-always-run-a-flatpak-application-with-a-filesystem-permission/606194#606194">https://unix.stackexchange.com/questions/605285/how-to-always-run-a-flatpak-application-with-a-filesystem-permission/606194#606194</a></li>
 <li><a href="https://seekstar.github.io/2021/12/30/%E7%BB%99flatpak%E6%B7%BB%E5%8A%A0%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90%2f">https://seekstar.github.io/2021/12/30/给flatpak添加国内镜像源%2f</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -2248,7 +2358,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Other methods<ul>
-<li><code>btm</code></li>
+<li><code>btm</code> # <code>Shift-h/j/k/l</code>: Move focus, <code>j/k</code>: Move options, <code>/</code>: Search, <code>Ctrl-[</code>: Esc, <code>dd</code>: Delete a process</li>
 <li><code>btop</code> # Use shortcut key <code>Ctrl-minus</code> to adjust terminal size</li>
 <li><code>cat /proc/net/dev | grep enp2s0</code></li>
 <li><code>ip -human-readable -statistics link show enp2s0</code></li>
@@ -2264,6 +2374,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ClementTsang/bottom/issues/133">https://github.com/ClementTsang/bottom/issues/133</a></li>
 <li><a href="https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal">https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal</a></li>
 <li><code>man nload</code></li>
 </ul>
@@ -2598,8 +2709,8 @@ notes.forEach((note) =&gt; console.log(note));
 <li><code>df -h</code> # Check disk free</li>
 <li><code>id</code> # Check current user (Like <code>whoami</code>)</li>
 <li>Connect to your server<pre><code>apk add openssh # Install dependencies
-adduser yaoniplan &amp;&amp; su yaoniplan # Add and substitute a user
 ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication keys for ssh and then connect
+ssh-copy-id yaoniplan@192.168.10.100 # Connect to a remote machine without password
 </code></pre>
 <ul>
 <li><code>vi ~/.profile</code> # Execute automatically after opening iSH<pre><code>ssh yaoniplan@192.168.10.100
@@ -7019,7 +7130,10 @@ file &#39;output02.wma&#39;
 <li>(<code>5d</code>: The fifth, <code>$d</code>: The last, <code>5d;7d</code>: Both the fifth and seventh)</li>
 </ul>
 </li>
-<li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code> # Substitute (e.g. Correct spelling)</li>
+<li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code> # Substitute (e.g. Correct spelling)<ul>
+<li>(<code>3s</code>: Text in the third line)</li>
+</ul>
+</li>
 <li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;):; done</code></li>
 </ul>
 </li>
@@ -7339,6 +7453,7 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: The user experience is poor compared to novel and comic websites.</li>
 <li><code>docker-compose up --detach</code> # Run in the background</li>
 <li><code>192.168.10.100:4396</code> # Run in Chromium</li>
 <li>Support webview<pre><code>      - READER_APP_REMOTEWEBVIEWAPI=http://readerwebview:8050

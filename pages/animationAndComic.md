@@ -3,10 +3,8 @@
 - 无人能敌 - 10
 - 你的人生是我来迟了 - 16
 - 圣祖之万相金澜 - 12
-- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - 03 1530 animation
-- 外科医生爱丽丝 - 01
-- 剑域风云 (Part1+2) - 40+52+32
-- 勇气爆发BangBravern - 01 0224
+- 剑域风云 (Part1+2) - 40+52+48
+- 勇气爆发BangBravern - 03 1333 animation
 - 月刊妄想科学 - 01
 - 魔女与野兽 - 01
 - 九天玄帝诀 - 02
@@ -267,7 +265,9 @@
 - guard(end)
 
 ### Animation
-- 愚蠢天使与恶魔共舞 - E01S12
+- 外科医生爱丽丝 - 02 0431 # Target audience may be female.
+- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - S01E11 # Target audience may be female.
+- 愚蠢天使与恶魔共舞 - S01E12
 - 月光下的异世界之旅 (Part1+2) - S01E12.S02E13
 - Mr. Villian's Day Off / 休假日的坏人先生 # S1E12, Exaggerated movements, Cute style (Panda, cat)
 - 大宇宙时代 - 01 # Target audience may not be me.

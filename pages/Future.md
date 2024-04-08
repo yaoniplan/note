@@ -96,7 +96,7 @@
 - https://www.shiyanlou.com/
 
 ## Artificial intelligence
-- https://chat.openai.com # Sign up: New Incognito Window (Ctrl-Shift-N), A foreign email
+- https://chat.openai.com
 - https://github.com/xx025/carrot
 - https://bard.google.com/
 
