@@ -44,6 +44,7 @@
 <li><h4>Resize Linux swap partition</h4>
 <ul>
 <li><code>doas fdisk /dev/sda</code><ul>
+<li><code>m</code> # Print the memu</li>
 <li><code>p</code> # Print all partitions</li>
 <li><code>e</code> # Resize a partition (e.g. 15G)</li>
 <li><code>n</code> # New a partition (e.g. 3)</li>
@@ -53,19 +54,19 @@
 </li>
 <li><code>doas mkswap /dev/sda3</code> # Format the new swap partition</li>
 <li><code>doas swapon /dev/sda3</code>  # Activate it</li>
-<li><code>doas vim /etc/fstab</code> # Update<pre><code># /dev/sda3
-UUID=01eaba24-8d1e-4685-b00b-b30ca28514a2
-</code></pre>
-</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Manipulate hard disk partitions may result in data loss. (Unless you are an adventurer)</li>
+<li>Solve the problem about &#39;BTRFS error ... device total_bytes should be at most ...&#39;<pre><code>btrfs rescue fix-device-size /dev/sda2
+</code></pre>
+</li>
 <li>Because to solve the <code>[ERROR]: Out of memory, exiting.</code> problem.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://unix.stackexchange.com/a/224239">https://unix.stackexchange.com/a/224239</a></li>
-<li><code>m</code> # Print the memu</li>
+<li><a href="https://mtekk.us/archives/guides/fixing-the-btrfs-block-device-size-is-smaller-than-total_bytes-in-device-item-error/">https://mtekk.us/archives/guides/fixing-the-btrfs-block-device-size-is-smaller-than-total_bytes-in-device-item-error/</a></li>
+<li><a href="https://unix.stackexchange.com/questions/224156/how-to-safely-turn-off-swap-permanently-and-reclaim-the-space-on-debian-jessie/224239#224239">https://unix.stackexchange.com/questions/224156/how-to-safely-turn-off-swap-permanently-and-reclaim-the-space-on-debian-jessie/224239#224239</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -377,8 +378,8 @@ tooltip {
 <ul>
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
-<li><code>vim ~/.config/mpv/input.conf</code><pre><code>Ctrl+p scripts-binding uosc/playlist # Display playlist
-Ctrl+s script-binding uosc/subtitles # Search subtitle
+<li><code>vim ~/.config/mpv/input.conf</code><pre><code>Ctrl+p script-binding uosc/playlist # Display playlist
+# Display playlist
 p script-binding uosc/items # Display playlist
 </code></pre>
 <ul>
@@ -423,11 +424,41 @@ Include = /etc/pacman.d/mirrorlist
 <li><code>doas setcap cap_net_raw+epi /usr/bin/wine-preloader</code></li>
 </ul>
 </li>
-<li><code>sudo pacman --sync wine</code> # Install dependencies</li>
+<li>Solve the problem which is needed for .NET applications to work correctly.<ul>
+<li><code>yay --sync wine-mono</code></li>
+</ul>
+</li>
+<li>Fonts<ul>
+<li>Copy msyh.ttc and msyhbd.ttc from <a href="https://github.com/taveevut/Windows-10-Fonts-Default/tree/master">https://github.com/taveevut/Windows-10-Fonts-Default/tree/master</a> to <code>~/.wine/drive_c/windows/Fonts/</code></li>
+<li><code>vim ~/.wine/msyh_font.reg</code><pre><code>REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
+&quot;Lucida Sans Unicode&quot;=&quot;msyh.ttc&quot;
+&quot;Microsoft Sans Serif&quot;=&quot;msyh.ttc&quot;
+&quot;MS Sans Serif&quot;=&quot;msyh.ttc&quot;
+&quot;Tahoma&quot;=&quot;msyh.ttc&quot;
+&quot;Tahoma Bold&quot;=&quot;msyhbd.ttc&quot;
+&quot;msyh&quot;=&quot;msyh.ttc&quot;
+&quot;Arial&quot;=&quot;msyh.ttc&quot;
+&quot;Arial Black&quot;=&quot;msyh.ttc&quot;
+</code></pre>
+</li>
+<li><code>wine regedit ~/.wine/msyh_font.reg</code></li>
+<li><code>vim ~/.wine/system.reg</code><pre><code>...
+# Replace `Tahoma` with `msyh`
+&quot;MS Shell Dlg&quot;=&quot;msyh&quot;
+...
+</code></pre>
+</li>
+<li><code>wine winecfg</code> # Select &#39;Default Settings&#39;, &#39;Windows 10&#39;, and &#39;OK&#39;</li>
+</ul>
+</li>
+<li><code>yay --sync wine-staging-wow64</code> # Install dependencies</li>
 <li>Because niece&#39;s programming class requires Windows software to be installed on Linux.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://gist.github.com/dchaofei/f64a609e778bf3fdabff18dbd5710f9e">https://gist.github.com/dchaofei/f64a609e778bf3fdabff18dbd5710f9e</a></li>
 <li><a href="https://wiki.archlinux.org/title/wine">https://wiki.archlinux.org/title/wine</a> # <code>/sound</code> <code>/network</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -1132,7 +1163,7 @@ yaoniplan@tux ~ $
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>div.video-switch-icon:nth-child(3)</code> # Get CSS selector<ul>
-<li>Use <code>Ctrl-Shift-c</code> then click (Locate the element&#39;s position in HTML</li>
+<li>Use <code>Ctrl-Shift-c</code> then click (Locate the element&#39;s position in HTML)</li>
 <li>Right-click the pop-up location - Copy - CSS Selector (Or CSS Path)</li>
 </ul>
 </li>
@@ -1434,6 +1465,7 @@ ingress:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-y</code> # Paste from clipboard</li>
 <li>Advantages<ul>
 <li>High compatibility with dmenu</li>
 </ul>
@@ -2357,8 +2389,19 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use &quot;btm&quot;<ul>
+<li><code>f</code> # Freeze</li>
+<li><code>e</code> # Expand</li>
+<li><code>?</code> # Help</li>
+<li><code>Shift-h/j/k/l</code> # Move focus</li>
+<li><code>j/k</code> # Move options</li>
+<li><code>Ctrl-d/u</code> # Scroll down/up a half</li>
+<li><code>/</code> # Search</li>
+<li><code>Ctrl-[</code> # The same as <code>Esc</code></li>
+<li><code>dd</code> # Delete a process</li>
+</ul>
+</li>
 <li>Other methods<ul>
-<li><code>btm</code> # <code>Shift-h/j/k/l</code>: Move focus, <code>j/k</code>: Move options, <code>/</code>: Search, <code>Ctrl-[</code>: Esc, <code>dd</code>: Delete a process</li>
 <li><code>btop</code> # Use shortcut key <code>Ctrl-minus</code> to adjust terminal size</li>
 <li><code>cat /proc/net/dev | grep enp2s0</code></li>
 <li><code>ip -human-readable -statistics link show enp2s0</code></li>
@@ -6557,7 +6600,10 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><code>-player mpg123</code> # Player</li>
 <li><code>-proxy 192.168.10.100:7890</code> # Proxy</li>
-<li><code>doas emerge -aq app-i18n/translate-shell</code> # Install in Gentoo Linux</li>
+<li><code>doas emerge -aq app-i18n/translate-shell</code> # Install dependencies<ul>
+<li><code>nix profile install nixpkgs#translate-shell</code> # Another method</li>
+</ul>
+</li>
 <li>Because to learn an unclear word.</li>
 <li>Disadvantages<ul>
 <li>Playback &quot;Translations of &quot; during speech</li>
@@ -13169,6 +13215,7 @@ done
 <ul>
 <li><h4>Use &quot;wget&quot;</h4>
 <ul>
+<li><code>wget -O</code></li>
 <li><code>wget --continue yourURL</code> # Continue interrupted download</li>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
 </ul>
