@@ -4,9 +4,7 @@
 - 你的人生是我来迟了 - 16
 - 圣祖之万相金澜 - 12
 - 剑域风云 (Part1+2) - 40+52+48
-- 勇气爆发BangBravern - 03 1333 animation
-- 月刊妄想科学 - 01
-- 魔女与野兽 - 01
+- 魔女与野兽 - 05 animation
 - 九天玄帝诀 - 02
 - 最弱的驯养师开启的捡垃圾的旅途 - 01
 - 百千家的妖怪王子 - 01
@@ -265,6 +263,8 @@
 - guard(end)
 
 ### Animation
+- 月刊妄想科学 - 02 0143 # Target audience may be 13 or 14 years old.
+- 勇气爆发BangBravern - 06 1437 # Target audience may be 13 or 14 years old.
 - 外科医生爱丽丝 - 02 0431 # Target audience may be female.
 - 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - S01E11 # Target audience may be female.
 - 愚蠢天使与恶魔共舞 - S01E12

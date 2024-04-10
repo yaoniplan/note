@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Get the full path of a file</h4>
+<ul>
+<li><code>realpath msyh.ttc | wl-copy</code> # Copy the full path to clipboard</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to upload a file to remote machine.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Resize Linux swap partition</h4>
 <ul>
 <li><code>doas fdisk /dev/sda</code><ul>
@@ -298,11 +314,15 @@ fi
 </li>
 </ul>
 </li>
-<li><code>eww open example</code> # Replace <code>open</code> with <code>close</code> to close a window</li>
+<li><code>eww open example</code> # Replace <code>open</code> with <code>close</code> to close a window<ul>
+<li><code>eww list-windows</code> # Get name</li>
+</ul>
+</li>
 <li><code>nix profile install nixpkgs#eww</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://elkowar.github.io/eww/configuration.html#creating-your-first-window">https://elkowar.github.io/eww/configuration.html#creating-your-first-window</a></li>
 <li><code>eww --help</code></li>
 </ul>
 </li>
@@ -411,19 +431,6 @@ p script-binding uosc/items # Display playlist
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Solve the problem that no audio using PipeWire<ul>
-<li><code>doas pacman --sync lib32-pipewire</code></li>
-</ul>
-</li>
-<li>Solve the problem that network is unstable<ul>
-<li><code>doas vim /etc/pacman.conf</code> # This package (lib32-gnutls) is in the repository (multilib)<pre><code>[multilib]
-Include = /etc/pacman.d/mirrorlist
-</code></pre>
-</li>
-<li><code>doas pacman --sync --refresh lib32-gnutls</code></li>
-<li><code>doas setcap cap_net_raw+epi /usr/bin/wine-preloader</code></li>
-</ul>
-</li>
 <li>Solve the problem which is needed for .NET applications to work correctly.<ul>
 <li><code>yay --sync wine-mono</code></li>
 </ul>
@@ -443,14 +450,7 @@ Include = /etc/pacman.d/mirrorlist
 &quot;Arial Black&quot;=&quot;msyh.ttc&quot;
 </code></pre>
 </li>
-<li><code>wine regedit ~/.wine/msyh_font.reg</code></li>
-<li><code>vim ~/.wine/system.reg</code><pre><code>...
-# Replace `Tahoma` with `msyh`
-&quot;MS Shell Dlg&quot;=&quot;msyh&quot;
-...
-</code></pre>
-</li>
-<li><code>wine winecfg</code> # Select &#39;Default Settings&#39;, &#39;Windows 10&#39;, and &#39;OK&#39;</li>
+<li><code>wine regedit ~/.wine/msyh_font.reg</code> # Make changes effective</li>
 </ul>
 </li>
 <li><code>yay --sync wine-staging-wow64</code> # Install dependencies</li>
@@ -459,7 +459,6 @@ Include = /etc/pacman.d/mirrorlist
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://gist.github.com/dchaofei/f64a609e778bf3fdabff18dbd5710f9e">https://gist.github.com/dchaofei/f64a609e778bf3fdabff18dbd5710f9e</a></li>
-<li><a href="https://wiki.archlinux.org/title/wine">https://wiki.archlinux.org/title/wine</a> # <code>/sound</code> <code>/network</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -573,6 +572,7 @@ Error: Couldn&#39;t open /dev/fb0.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>transit card site:apple.com</code> # Google</li>
 <li><a href="https://support.apple.com/en-us/108373">https://support.apple.com/en-us/108373</a><ul>
 <li><code>en-us</code> # Replace it with your code (e.g. <code>zh-cn</code>, <code>ja-JP</code>, etc.)</li>
 <li><code>ja</code> # Japanese (Language code)</li>
@@ -966,7 +966,7 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <li><code>--columns=application</code> # Get Application ID</li>
 </ul>
 </li>
-<li><code>flatpak install flathub io.github.KikoPlayProject.KikoPlay</code> # Install a package<ul>
+<li><code>flatpak install io.github.KikoPlayProject.KikoPlay</code> # Install a package<ul>
 <li><code>install</code> # Replace it with <code>uninstall</code> to uninstall</li>
 </ul>
 </li>
@@ -1929,6 +1929,7 @@ command! InsertCodeBlock :call InsertCodeBlock()
 <li>Advantages: Sort by frequency of use.</li>
 <li>Disadvantages<ul>
 <li>No support for custom keybindings.</li>
+<li><a href="https://github.com/philj56/tofi/issues/101#issue-1702785890">https://github.com/philj56/tofi/issues/101#issue-1702785890</a></li>
 <li>It has no completion feature.</li>
 </ul>
 </li>
@@ -1965,7 +1966,6 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/philj56/tofi/issues/101#issue-1702785890">https://github.com/philj56/tofi/issues/101#issue-1702785890</a></li>
 <li><a href="https://github.com/philj56/tofi/issues/34#issuecomment-1259924025">https://github.com/philj56/tofi/issues/34#issuecomment-1259924025</a></li>
 <li><a href="https://github.com/philj56/tofi#performance">https://github.com/philj56/tofi#performance</a></li>
 <li><a href="https://github.com/philj56/tofi/blob/master/themes/dmenu">https://github.com/philj56/tofi/blob/master/themes/dmenu</a></li>
@@ -2391,7 +2391,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li><em><strong>Notes</strong></em><ul>
 <li>Use &quot;btm&quot;<ul>
 <li><code>f</code> # Freeze</li>
-<li><code>e</code> # Expand</li>
+<li><code>e</code> # Expand a widget</li>
 <li><code>?</code> # Help</li>
 <li><code>Shift-h/j/k/l</code> # Move focus</li>
 <li><code>j/k</code> # Move options</li>
@@ -5136,6 +5136,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <ul>
 <li><h4>Use &quot;nix&quot;</h4>
 <ul>
+<li><code>nix profile install github:abenz1267/walker</code> # Build a software (Spend a lot of time)</li>
 <li><code>nix profile install nixpkgs/24fe8bb4f552ad3926274d29e083b79d84707da6#obs-studio</code> # Install lower version packages<ul>
 <li><a href="https://www.nixhub.io/packages/obs-studio">https://www.nixhub.io/packages/obs-studio</a></li>
 </ul>
@@ -9986,10 +9987,10 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><em><strong>Notes</strong></em><ul>
 <li><code>su root</code> # Substitute to root user</li>
 <li><code>pacman --sync doas</code> # Install dependencies</li>
-<li><code>groupadd wheel</code> # Create a group in Linux</li>
-<li><code>usermod -aG wheel $(whoami)</code> # Add user to wheel group</li>
+<li><code>groupadd wheel</code> # Create a group if it does not exist</li>
+<li><code>usermod -aG wheel yaoniplan</code> # Add your user to wheel group</li>
 <li>Close and open terminal to make changes effective</li>
-<li>Because is easy to use.</li>
+<li>Because it is easier to use than &quot;sudo&quot;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -10985,7 +10986,13 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl if no rclone</li>
+<li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl if no rclone<ul>
+<li><code>PUT</code> # Method</li>
+<li><code>Authorization</code> <code>Basic username:password</code> # Headers</li>
+<li><code>File</code> <code>Shortcut Input</code> # Request Body</li>
+<li><a href="https://libreddit.baczek.me/r/workflow/comments/5t2ac1/request_webdav_action/">https://libreddit.baczek.me/r/workflow/comments/5t2ac1/request_webdav_action/</a></li>
+</ul>
+</li>
 <li>Install AList if you don&#39;t have it<ul>
 <li><code>vi ~/.config/alist/docker-compose.yml</code><pre><code>version: &#39;3.3&#39;
 services:
@@ -12268,11 +12275,20 @@ git push origin master
 <ul>
 <li><h4>Use &quot;kitty&quot;</h4>
 <ul>
-<li><code>vim ~/.config/kitty/kitty.conf</code><pre><code># Disable audio bell
+<li><code>vim ~/.config/kitty/kitty.conf</code><pre><code># Set cursor shape
+shell_integration no-cursor
+
+# Set fonts
+font_family      Fira Code
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+# Disable audio bell
 enable_audio_bell no
 
 # Set font size
-font_size 18.0
+font_size 12.0
 </code></pre>
 </li>
 </ul>
@@ -12282,8 +12298,9 @@ font_size 18.0
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953">https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953</a> # Make <code>cursor_shape block</code> work</li>
 <li><a href="https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
-<li><a href="https://sw.kovidgoyal.net/kitty/conf/#terminal-bell">https://sw.kovidgoyal.net/kitty/conf/#terminal-bell</a></li>
+<li><a href="https://sw.kovidgoyal.net/kitty/conf/#terminal-bell">https://sw.kovidgoyal.net/kitty/conf/#terminal-bell</a> # <code>/fonts</code></li>
 </ul>
 </li>
 </ul>
@@ -13215,7 +13232,7 @@ done
 <ul>
 <li><h4>Use &quot;wget&quot;</h4>
 <ul>
-<li><code>wget -O</code></li>
+<li><code>wget -O msyh.ttc https://raw.githubusercontent.com/taveevut/Windows-10-Fonts-Default/master/msyh.ttc</code></li>
 <li><code>wget --continue yourURL</code> # Continue interrupted download</li>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
 </ul>
@@ -17566,6 +17583,7 @@ exec ~/.config/shell/autoGit.sh
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -20726,7 +20744,7 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </code></pre>
 </li>
 <li><code>doas pacman --sync --refresh archlinuxcn-keyring</code></li>
-<li><code>doas pacman-key -lsign-key &quot;farseerfc@archlinux.org&quot;</code> # Locally sign trusted key to solve the problem<pre><code>error: archlinuxcn-keyring: signature from &quot;Jiachen YANG (Arch Linux Packager Signing Key) &lt;farseerfc@archlinux.org&gt;&quot; is marginal trust
+<li><code>doas pacman-key --lsign-key &quot;farseerfc@archlinux.org&quot;</code> # Locally sign trusted key to solve the problem<pre><code>error: archlinuxcn-keyring: signature from &quot;Jiachen YANG (Arch Linux Packager Signing Key) &lt;farseerfc@archlinux.org&gt;&quot; is marginal trust
 </code></pre>
 </li>
 <li><code>doas pacman --sync --refresh archlinuxcn-keyring</code> # Reinstall</li>
