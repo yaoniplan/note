@@ -91,7 +91,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 <li><code>doas fdisk /dev/sda</code><ul>
 <li><code>m</code> # Print the memu</li>
 <li><code>p</code> # Print all partitions</li>
-<li><code>e</code> # Resize a partition (e.g. 15G)</li>
+<li><code>e</code> # Resize a partition (e.g. 212.1G)</li>
 <li><code>n</code> # New a partition (e.g. 3)</li>
 <li><code>t</code> # Type a partition (e.g. swap)</li>
 <li><code>w</code> # Write to disk</li>
@@ -127,7 +127,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 <li><code>Ctrl-f</code> # Find text</li>
 <li><code>Ctrl-Shift-t</code> # Tool bar</li>
 <li><code>Ctrl-Shift-m</code> # Menu bar</li>
-<li><code>Ctrl-i</code> # Insert color (Dark mode)</li>
+<li><code>Ctrl-i</code> # Invert color (Dark mode)</li>
 <li><code>nix profile install nixpkgs#qpdfview</code> # Install dependencies</li>
 </ul>
 </li>
@@ -144,7 +144,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>Ctrl-i</code> # Insert color (Dark mode)</li>
+<li><code>Ctrl-i</code> # Invert color (Dark mode)</li>
 <li><code>nix profile install nixpkgs#evince</code> # Install dependencies</li>
 </ul>
 </li>
@@ -235,6 +235,7 @@ set recolor-darkcolor &quot;#B0B002&quot;
 <li><code>i</code> # Press <code>i</code> to enable dark mode</li>
 </ul>
 </li>
+<li><code>a/s</code> # Adjust window</li>
 <li><code>Space/Shift-Space</code> # Scroll pages</li>
 <li><code>j/k/q</code> # Vim-like</li>
 <li><code>nix profile install nixpkgs#zathura</code> # Install dependencies</li>
@@ -242,6 +243,7 @@ set recolor-darkcolor &quot;#B0B002&quot;
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/">https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/</a> # <code>/recolor</code></li>
+<li><code>man zathura</code> # <code>binding</code></li>
 </ul>
 </li>
 </ul>
@@ -1164,9 +1166,11 @@ yaoniplan@tux ~ $
 <li>Press Enter key to go to next episode URL<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
     let currentPageURL = window.location.href; // Get the current page URL
-    let pageNumber = currentPageURL.match(/\/(\d+)\.html$/)[1]; // Extract the page number from the URL
-    let nextPageNumber = parseInt(pageNumber) + 1; // Increment the page number
-    let nextPageURL = currentPageURL.replace(`/${pageNumber}.html`, `/${nextPageNumber}.html`); // Construct the next URL
+    let pageNumber = currentPageURL.match(/\/(\d+)\.(\w+)$/)[1]; // Extract the page number from the URL
+    let fileExtension = currentPageURL.match(/\/(\d+)\.(\w+)$/)[2]; // Extract the file extension from the URL
+    let nextPageNumber = parseInt(pageNumber, 10) + 1; // Increment the page number
+    let nextPageNumberPadded = String(nextPageNumber).padStart(pageNumber.length, &#39;0&#39;); // Zero-pad the next page number
+    let nextPageURL = currentPageURL.replace(`/${pageNumber}.${fileExtension}`, `/${nextPageNumberPadded}.${fileExtension}`); // Construct the next URL
     window.location.href = nextPageURL; // Redirect to the next URL
   }
 });
@@ -1501,6 +1505,7 @@ ingress:
 </li>
 <li>Disadvantages<ul>
 <li>Set default values (Does not support configuration files)</li>
+<li><a href="https://github.com/nix-community/home-manager/pull/4713#issue-2015985146">https://github.com/nix-community/home-manager/pull/4713#issue-2015985146</a></li>
 </ul>
 </li>
 <li>Use &#39;##&#39; to replace &#39;#&#39; to make command effective in Hyprland</li>
@@ -1513,7 +1518,6 @@ ingress:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/nix-community/home-manager/pull/4713#issue-2015985146">https://github.com/nix-community/home-manager/pull/4713#issue-2015985146</a></li>
 <li><a href="https://github.com/ayushnix/dotfiles/blob/2f32445283d337033a74f99d6e4a5ac32413ef51/dot_bash_profile#L35">https://github.com/ayushnix/dotfiles/blob/2f32445283d337033a74f99d6e4a5ac32413ef51/dot_bash_profile#L35</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/">https://old.reddit.com/r/hyprland/comments/135yiop/how_to_set_a_bemenurun_keybinding_on_hyprland/jilwtwn/</a></li>
 </ul>
@@ -1949,7 +1953,7 @@ command! InsertCodeBlock :call InsertCodeBlock()
 <li><h4>Use &quot;tofi&quot;</h4>
 <ul>
 <li><code>tofi-run &quot;$@&quot; | ${SHELL:-&quot;/bin/sh&quot;}</code><ul>
-<li><code>tofi-run --require-match=false | sh</code> # It&#39;s ok.</li>
+<li><code>tofi-run | sh</code> # It&#39;s ok.</li>
 </ul>
 </li>
 </ul>
@@ -6445,7 +6449,7 @@ yaoniplan is not in the sudoers file.
 </ul>
 <hr>
 <ul>
-<li><h4>Use &quot;Awesome&quot; WM in Linux</h4>
+<li><h4>Use &quot;awesome&quot;</h4>
 <ul>
 <li><code>Ctrl-Super-r</code> # Reload awesome</li>
 <li><code>Super-s</code> # Show hotkeys</li>
@@ -15925,14 +15929,32 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 <ul>
 <li><h4>Use &quot;clash&quot;</h4>
 <ul>
-<li><code>chmod u+x clash-linux-amd64-v1.12.0</code> # Run this command after <a href="https://web.archive.org/web/20231003084307/https://github.com/Dreamacro/clash/releases">downloading</a> and decompressing</li>
-<li><code>mv clash-linux-amd64-v1.12.0 clash</code></li>
-<li><code>sudo mv clash /usr/local/bin/</code></li>
-<li><code>clash</code> # Initialize</li>
+<li><code>chmod u+x clash-linux-amd64-v1.12.0</code> # Add user executable permission<ul>
+<li><a href="https://web.archive.org/web/20231003084307/https://github.com/Dreamacro/clash/releases">https://web.archive.org/web/20231003084307/https://github.com/Dreamacro/clash/releases</a></li>
+</ul>
+</li>
+<li><code>sudo mv clash-linux-amd64-v1.12.0 /usr/local/bin/clash</code> # Execute anywhere</li>
+<li><code>mv yourClashConfig.yaml ~/.config/clash/config.yaml</code> # Use your own configuration file</li>
+<li><code>clash</code> # Initialize and enable clash<ul>
+<li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
+<li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.bashrc</code><pre><code>setProxy() {
+<li><code>vim ~/.config/clash/config.yaml</code> # Select server automatically<pre><code class="language-yaml">- name: &quot;auto&quot;
+  type: url-test
+  proxies:
+    - ss1
+  url: &#39;http://www.gstatic.com/generate_204&#39;
+  interval: 300
+</code></pre>
+<ul>
+<li><code>ss1</code> # Replace it with other proxy</li>
+</ul>
+</li>
+<li><code>vim ~/.bashrc</code> # Edit it on other machines<pre><code>setProxy() {
     export http_proxy=&quot;192.168.10.105:7890&quot;
     export https_proxy=&quot;192.168.10.105:7890&quot;
     export no_proxy=&quot;localhost, 127.0.0.1&quot;
@@ -15944,16 +15966,11 @@ unsetProxy() {
 </code></pre>
 <ul>
 <li><code>source ~/.bashrc</code> # Remember to make it effective</li>
-<li><code>setProxy</code></li>
-<li><code>unsetProxy</code></li>
+<li><code>setProxy</code> # Enable proxy temporarily</li>
+<li><code>unsetProxy</code> # Disable proxy temporarily</li>
 </ul>
 </li>
-<li>Configure Clash<ul>
-<li><code>mv yourClashConfig.yaml config.yaml</code> # Rename it to <em>config.yaml</em> after downloading <em>yourClashConfig.yaml</em></li>
-<li><code>cp config.yaml ~/.config/clash/config.yaml</code></li>
-</ul>
-</li>
-<li>Set environment<ul>
+<li>Set environment globally<ul>
 <li><code>sudo vim /etc/environment</code><pre><code># Proxy
 export http_proxy=&quot;127.0.0.1:7890&quot;
 export https_proxy=&quot;127.0.0.1:7890&quot;
@@ -15962,35 +15979,26 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 </li>
 </ul>
 </li>
-<li>Enable Clash<ul>
-<li><code>clash</code> # Type it in your terminal</li>
-</ul>
-</li>
-<li>Optional: Set temporarily<ul>
-<li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
-<li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
-</ul>
-</li>
 <li>Solve the problem about <strong>address already in use</strong><pre><code>ERRO[0438] Start Mixed(http+socks) server error: listen tcp 127.0.0.1:7890: bind: address already in use
 </code></pre>
 <ul>
-<li><code>lsof -i :7890</code> # Get the PID<ul>
-<li><code>sudo emerge -aq sys-process/lsof</code> # Install it if you don&#39;t have it</li>
-</ul>
-</li>
+<li><code>lsof -i :7890</code> # Get the PID (<code>ps aux | grep clash</code>)</li>
 <li><code>kill yourPID</code> # Replace <em>yourPID</em> with <em>PID</em> you got</li>
-<li><img src="../assets/2022-12-18_10-45_1671331615432_0.png" alt="2022-12-18_10-45.png">
-<img src="../assets/2022-12-18_10-51_1671331879834_0.png" alt="2022-12-18_10-51.png"></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1663755770681_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1663755987926_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1663756259813_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1663756612709_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670750559717_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1670750573466_0.png" alt="image.png"></li>
 <li><img src="../assets/2023-01-12_14-32_1673505224282_0.png" alt="2023-01-12_14-32.png"></li>
-<li><a href="https://blog.csdn.net/weixin_42108437/article/details/106072810#commentBox">https://blog.csdn.net/weixin_42108437/article/details/106072810#commentBox</a></li>
-<li><a href="https://skyao.io/learning-linux-mint/docs/daily/network/clash.html">https://skyao.io/learning-linux-mint/docs/daily/network/clash.html</a></li>
+<li><a href="https://github.com/Hackl0us/SS-Rule-Snippet">https://github.com/Hackl0us/SS-Rule-Snippet</a></li>
+<li><a href="https://cdn.jsdelivr.net/gh/Hackl0us/SS-Rule-Snippet@master/LAZY_RULES/clash.yaml">https://cdn.jsdelivr.net/gh/Hackl0us/SS-Rule-Snippet@master/LAZY_RULES/clash.yaml</a></li>
+<li><a href="https://web.archive.org/web/20231130214526/https://skyao.io/learning-linux-mint/docs/daily/network/clash.html">https://web.archive.org/web/20231130214526/https://skyao.io/learning-linux-mint/docs/daily/network/clash.html</a></li>
 </ul>
 </li>
 </ul>
@@ -17002,7 +17010,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Use &quot;qemu&quot; in Linux</h4>
+<li><h4>Use &quot;qemu&quot;</h4>
 <ul>
 <li>Create a disk image<ul>
 <li><code>qemu-img create -f qcow2 ~/testQemu.cow 100G</code></li>
