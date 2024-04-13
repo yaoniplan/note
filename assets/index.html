@@ -41,6 +41,63 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>The abbreviation of &quot;HTTP Live Steaming&quot; is &quot;HLS&quot;.</h4>
+<ul>
+<li>An adaptive bitrate streaming protocol</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Split video content into smaller <strong>segments</strong></li>
+<li>Create a <strong>playlist</strong> file (e.g. playlist2160p.m3u8) containing the URLs for these segments</li>
+<li>Choose <strong>adaptive</strong> bitrates and resolutions based on bandwidth and device</li>
+<li>Deliver over <strong>HTTP(S)</strong> protocols (Compatible with web infrastructure)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/HTTP_Live_Streaming">https://en.wikipedia.org/wiki/HTTP_Live_Streaming</a></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;wofi&quot;</h4>
+<ul>
+<li><code>wofi --show dmenu</code> # Interact with user via script<pre><code>selected_option=$(echo -e &quot;full\nactive\nselect&quot; | wofi --show dmenu)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because that &quot;tofi&quot; software seems to be no longer mainstained.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man 7 wofi</code> # <code>/^mode</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;date&quot;</h4>
+<ul>
+<li><code>date +%s</code> # Seconds since the Epoch (1970-01-01 00:00 UTC)<ul>
+<li>(e.g. 1712921641)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to generate UNIX timestamp.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man date</code> # <code>/%s</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;okular&quot;</h4>
 <ul>
 <li><code>okular</code></li>
@@ -429,9 +486,9 @@ tooltip {
 <ul>
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
-<li><code>vim ~/.config/mpv/input.conf</code><pre><code>Ctrl+p script-binding uosc/playlist # Display playlist
-# Display playlist
-p script-binding uosc/items # Display playlist
+<li><code>vim ~/.config/mpv/input.conf</code><pre><code># Display playlist
+Ctrl+p script-binding uosc/playlist
+p script-binding uosc/items
 </code></pre>
 <ul>
 <li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code>autoload=yes
@@ -771,6 +828,7 @@ esac
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>:bind X config-cycle statusbar.show always never;;config-cycle tabs.show always never</code> # Hide/show both the statusbar and the tabs</li>
 <li><code>:adblock-update</code> # Get adblock lists</li>
 <li>Right click</li>
 <li><code>Ctrl-Tab</code> # Toggle between two tabs</li>
@@ -815,7 +873,12 @@ esac
 <li><code>J</code> # Next tab</li>
 </ul>
 </li>
-<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code># Custom keybindings (See: `qute://settings/` to get setting and value)
+<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code># Toggle status bar and tabs
+config.bind(&#39;X&#39;, &#39;config-cycle statusbar.show always never;; config-cycle tabs.show always never&#39;)
+# Hide tabs and status bar by default
+c.tabs.show = &#39;never&#39;
+c.statusbar.show = &#39;never&#39;
+# Custom keybindings (See: `qute://settings/` to get setting and value)
 # Translate languages: auto, en, zh-CN, etc.
 # Play videos with mpv
 c.bindings.commands = {&quot;normal&quot;: {&quot;&lt;Ctrl+Shift-t&gt;&quot;: &quot;spawn --userscript translate --text&quot;, &quot;&lt;Ctrl-t&gt;&quot;: &quot;spawn --userscript translate&quot;, &quot;gM&quot;: &quot;hint links spawn mpv {hint-url}&quot;}}
@@ -848,6 +911,7 @@ c.colors.webpage.bg = &#39;black&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/qutebrowser/qutebrowser/issues/6005">https://github.com/qutebrowser/qutebrowser/issues/6005</a> # <code>/status</code></li>
 <li><a href="https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py">https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/">https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/</a></li>
 <li><a href="https://www.ii.com/qutebrowser-configpy/">https://www.ii.com/qutebrowser-configpy/</a></li>
@@ -2195,7 +2259,10 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Disable blur
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Disable animation (Avoid including them in the picture when taking screenshots)
+# `hyprctl layers`: Get namespace (e.g. launcher, wofi)
+layerrule = noanim, wofi
+# Disable blur
 windowrulev2 = opacity 0 0,class:^(waybar)$
 # Move windows like Vi mode
 bind = $mainMod SHIFT, H, movewindow, l
@@ -2221,6 +2288,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/">https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/</a> # Disable animation</li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/">https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/</a> # Disable blur</li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211">https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211</a></li>
 <li><a href="https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/">https://old.reddit.com/r/hyprland/comments/118z40c/bind_the_enter_key_in_hyprland/j9m0r04/</a></li>
@@ -2595,6 +2663,10 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li>Group discussion</li>
 <li>Practice by doing</li>
 <li>Teach others</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Find relevant circles</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -9847,6 +9919,7 @@ yaoniplan@tux ~/Downloads/deck $
 <ul>
 <li><h4>Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>Ctrl-h</code> # Hardware decoding</li>
 <li><code>Shift-i</code> # Information</li>
 <li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
 <li><code>--vf=hflip</code> # Horizontal flip (Like in phone)</li>
@@ -9995,7 +10068,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
 <li><a href="https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265">https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Mpv#Key_bindings">https://wiki.gentoo.org/wiki/Mpv#Key_bindings</a></li>
-<li><code>man mpv</code> # <code>/Cache$</code></li>
+<li><code>man mpv</code> # <code>/Cache$</code> <code>/hardware</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -13271,7 +13344,7 @@ done
 <ul>
 <li><h4>Use &quot;wget&quot;</h4>
 <ul>
-<li><code>wget -O msyh.ttc https://raw.githubusercontent.com/taveevut/Windows-10-Fonts-Default/master/msyh.ttc</code></li>
+<li><code>wget --output-document=msyh.ttc https://raw.githubusercontent.com/taveevut/Windows-10-Fonts-Default/master/msyh.ttc</code></li>
 <li><code>wget --continue yourURL</code> # Continue interrupted download</li>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
 </ul>

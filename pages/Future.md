@@ -103,7 +103,6 @@
 ## Web crawler
 - https://miaosou.fun/
 - https://biaoyansu.com/
-- https://www.upyunso.com/
 - https://lzpanx.com/
 - https://feiyu100.cn/
 - https://www.panpanr.com/
