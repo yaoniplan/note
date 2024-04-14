@@ -41,6 +41,28 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;kickoff&quot;</h4>
+<ul>
+<li><code>kickoff</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Some custom keys don&#39;t work<ul>
+<li><code>ctrl+shift-v</code></li>
+<li><code>ctrl+[</code></li>
+</ul>
+</li>
+<li><code>vim ~/.config/kickoff/config.toml</code> # Customize</li>
+<li><code>nix profile install nixpkgs#kickoff</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/j0ru/kickoff/blob/main/assets/default_config.toml">https://github.com/j0ru/kickoff/blob/main/assets/default_config.toml</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;HTTP Live Steaming&quot; is &quot;HLS&quot;.</h4>
 <ul>
 <li>An adaptive bitrate streaming protocol</li>
@@ -69,7 +91,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because that &quot;tofi&quot; software seems to be no longer mainstained.</li>
+<li><code>vim ~/.config/wofi/config</code><pre><code># Like `wofi --show run` by default
+show=run
+</code></pre>
+</li>
+<li>Because that &quot;tofi&quot; software seems to be no longer maintained.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -148,9 +174,9 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 <li><code>doas fdisk /dev/sda</code><ul>
 <li><code>m</code> # Print the memu</li>
 <li><code>p</code> # Print all partitions</li>
-<li><code>e</code> # Resize a partition (e.g. 212.1G)</li>
+<li><code>e</code> # Resize a partition (e.g. 2)</li>
 <li><code>n</code> # New a partition (e.g. 3)</li>
-<li><code>t</code> # Type a partition (e.g. swap)</li>
+<li><code>t</code> # Change a partition type (e.g. swap)</li>
 <li><code>w</code> # Write to disk</li>
 </ul>
 </li>
@@ -223,6 +249,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2024-04-14-014830.png" alt="2024-04-14-014830.png"></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -828,7 +855,17 @@ esac
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>:bind X config-cycle statusbar.show always never;;config-cycle tabs.show always never</code> # Hide/show both the statusbar and the tabs</li>
+<li>Disadvantages: Do not support Chromium extensions<ul>
+<li><a href="https://github.com/qutebrowser/qutebrowser/issues/30">https://github.com/qutebrowser/qutebrowser/issues/30</a></li>
+</ul>
+</li>
+<li><code>gC</code> # Duplicate the current tab</li>
+<li>Open developer tools<ul>
+<li><code>wi</code> # Web inspector (<code>Ctrl-[</code>, <code>wIf</code>)</li>
+<li><code>:devtools</code> # Developer tools</li>
+<li>Right-click &#39;Inspect&#39;</li>
+</ul>
+</li>
 <li><code>:adblock-update</code> # Get adblock lists</li>
 <li>Right click</li>
 <li><code>Ctrl-Tab</code> # Toggle between two tabs</li>
@@ -891,7 +928,7 @@ c.url.searchengines = {
     &quot;t&quot;: &#39;https://translate.google.com/#auto/en/{}&#39;
 }
 # Custom hints
-c.fonts.hints = &#39;bold 15px&#39;
+c.fonts.hints = &#39;bold 15px Fira Code&#39;
 c.colors.hints.fg = &#39;white&#39;
 c.colors.hints.bg = &#39;black&#39;
 c.hints.border = &#39;0px solid #E3BE23&#39;
@@ -911,6 +948,7 @@ c.colors.webpage.bg = &#39;black&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.oxymagnesium.com/r/qutebrowser/comments/hxa58m/where_do_i_see_my_consolelogs/">https://libreddit.oxymagnesium.com/r/qutebrowser/comments/hxa58m/where_do_i_see_my_consolelogs/</a></li>
 <li><a href="https://github.com/qutebrowser/qutebrowser/issues/6005">https://github.com/qutebrowser/qutebrowser/issues/6005</a> # <code>/status</code></li>
 <li><a href="https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py">https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py</a></li>
 <li><a href="https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/">https://old.reddit.com/r/qutebrowser/comments/k1pr5z/greasemonkey_scripts_minimal_example/gdqyoaq/</a></li>
@@ -1217,7 +1255,15 @@ yaoniplan@tux ~ $
 <ul>
 <li><h4>Use &quot;javascript&quot;</h4>
 <ul>
-<li>Press Enter key to click next episode icon<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
+<li>Interact with video<pre><code class="language-javascript">// Enable full-screen mode for the video (Opposite: `webkitExitFullscreen`)
+document.querySelector(&#39;video&#39;).requestFullscreen();
+// Play the video (Replace `play` with `pause` to stop it)
+document.querySelector(&#39;video&#39;).play();
+// Set the video speed to 2.5
+document.querySelector(&#39;video&#39;).playbackRate = 2.5;
+</code></pre>
+</li>
+<li>Press Enter key to click next episode icon<pre><code class="language-javascript">document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
     let nextIcon = document.querySelector(&#39;div.video-switch-icon:nth-child(3)&#39;);
     if (nextIcon) {
@@ -1227,7 +1273,7 @@ yaoniplan@tux ~ $
 });
 </code></pre>
 <ul>
-<li>Press Enter key to go to next episode URL<pre><code>document.addEventListener(&#39;keydown&#39;, function(event) {
+<li>Press Enter key to go to next episode URL<pre><code class="language-javascript">document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
     let currentPageURL = window.location.href; // Get the current page URL
     let pageNumber = currentPageURL.match(/\/(\d+)\.(\w+)$/)[1]; // Extract the page number from the URL
@@ -1240,14 +1286,14 @@ yaoniplan@tux ~ $
 });
 </code></pre>
 </li>
-<li>Redirect URL if your IP is blocked<pre><code>if (window.location.hostname === &quot;www.reddit.com&quot;) {
+<li>Redirect URL if your IP is blocked<pre><code class="language-javascript">if (window.location.hostname === &quot;www.reddit.com&quot;) {
   window.location.href = &quot;https://old.reddit.com&quot; + window.location.pathname + window.location.search;
 }
 </code></pre>
 </li>
 </ul>
 </li>
-<li>Access iframe after DOM content loaded<pre><code>document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+<li>Access iframe after DOM content loaded<pre><code class="language-javascript">document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
   var iframe = document.getElementById(&#39;playiframe&#39;);
 
   if (iframe) {
@@ -1264,7 +1310,7 @@ yaoniplan@tux ~ $
 <li>Right-click the pop-up location - Copy - CSS Selector (Or CSS Path)</li>
 </ul>
 </li>
-<li>In userscript manager<pre><code>// ==UserScript==
+<li>In userscript manager<pre><code class="language-javascript">// ==UserScript==
 // @key value
 // ==/UserScript==
 
@@ -1280,6 +1326,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://dev.to/walternascimentobarroso/youtube-speed-control-with-javascript-4mfb">https://dev.to/walternascimentobarroso/youtube-speed-control-with-javascript-4mfb</a></li>
 <li><a href="https://violentmonkey.github.io/api/metadata-block/">https://violentmonkey.github.io/api/metadata-block/</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -2259,7 +2306,15 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Disable animation (Avoid including them in the picture when taking screenshots)
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Enable scratchpad
+# silently launch wayst in special workspace
+exec-once = [workspace special silent] wayst -e tmux new-session &#39;vim -c &quot;VimwikiMakeDiaryNote&quot;&#39;
+animations { 
+  # define special workspace animation
+  animation = specialWorkspace, 1, 4, default, slidevert 
+}
+bind = $mainMod, Space, togglespecialworkspace
+# Disable animation (Avoid including them in the picture when taking screenshots)
 # `hyprctl layers`: Get namespace (e.g. launcher, wofi)
 layerrule = noanim, wofi
 # Disable blur
@@ -2288,6 +2343,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/">https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/</a></li>
 <li><a href="https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/">https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/</a> # Disable animation</li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/">https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/</a> # Disable blur</li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211">https://github.com/hyprwm/Hyprland/issues/1337#issuecomment-1374832211</a></li>
@@ -9930,6 +9986,10 @@ yaoniplan@tux ~/Downloads/deck $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Drop a lot of frames to play high quality video on an old computer<ul>
+<li><a href="https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626">https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626</a></li>
+</ul>
+</li>
 <li>Control from command-line<ul>
 <li><code>mpv --input-ipc-server=/tmp/mpvsocket --playlist=/mnt/server/interestAndHobby/music/</code> # Reduce gap: <code>--prefetch-playlist=yes</code> Cache next song, <code>--no-audio-display</code> Don&#39;t show cover, <code>--save-position-on-quit</code> Watch later</li>
 <li><code>echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;</code> # Delete current song</li>
@@ -17843,8 +17903,11 @@ exec ~/.config/shell/autoGit.sh
 <ul>
 <li><h4>The punctuation of &quot;round brackets&quot; are &quot;()&quot;.</h4>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li>&quot;{}&quot; # Curly brackets</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1665110038472_0.png" alt="image.png"></li>
 <li><a href="https://en.wikipedia.org/wiki/Bracket">https://en.wikipedia.org/wiki/Bracket</a></li>
 </ul>
 </li>
@@ -19892,7 +19955,7 @@ You can edit this.
 <li><code>_</code> # 下划线代替空格</li>
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662343732619_0.png" alt="image.png"></li>
-<li><a href="https://www.aliyundrive.com/drive/folder/61b869cf0c818f983d684373a64fbabd93f5ca7c">Python编程：从入门到实践 (第2版) .pdf</a></li>
+<li>Python编程：从入门到实践 (第2版) .pdf</li>
 </ul>
 </li>
 </ul>
@@ -19932,7 +19995,6 @@ You can edit this.
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1662372438709_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1662382474722_0.png" alt="image.png"></li>
-<li><a href="https://blog.csdn.net/yxlshk/article/details/79944535">https://blog.csdn.net/yxlshk/article/details/79944535</a></li>
 <li><a href="https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192">https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192</a></li>
 </ul>
 </li>
@@ -19980,7 +20042,6 @@ You can edit this.
 <li><code>parameter</code> # 参数</li>
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662090282113_0.png" alt="image.png"></li>
-<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08</a></li>
 </ul>
 </li>
 <li>[[linux]] <code>ip address | grep inet</code><ul>
@@ -19993,7 +20054,6 @@ You can edit this.
 <li><em><strong>参考资料</strong></em></li>
 <li><img src="../assets/image_1662102184320_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1662102409468_0.png" alt="image.png"></li>
-<li><a href="https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08">https://www.aliyundrive.com/s/XmEsDZd9HoT/folder/61b86a0b8f36617c43f64d24a0384f163f0c5d08</a></li>
 </ul>
 </li>
 <li></li>
@@ -20097,12 +20157,6 @@ You can edit this.
 </ul>
 <hr>
 <ul>
-<li>[[symbol]]<code>{}</code>大括号(花括号)<ul>
-<li><em><strong>参考资料</strong></em></li>
-<li><a href="https://zh.wikipedia.org/wiki/%E6%8B%AC%E5%8F%B7" title="括号 - 维基百科，自由的百科全书">括号 - 维基百科，自由的百科全书</a></li>
-</ul>
-</li>
-<li></li>
 <li>[[Vim]]<code>:!</code>命令<ul>
 <li><code>:!python oeasy.py</code> //执行外部命令 <code>python oeasy.py</code></li>
 <li><em><strong>参考资料</strong></em></li>
