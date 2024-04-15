@@ -41,6 +41,37 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;imv&quot;</h4>
+<ul>
+<li><code>imv -r /mnt/yaoniplan/chinaTelecom/2024/04/</code><ul>
+<li><code>i</code> # Zoom in (Opposite: <code>o</code>)</li>
+<li><code>a</code> # Actual size (Restore original size)</li>
+<li><code>r</code> # Reset zoom and pan</li>
+<li><code>h/j/k/l</code> # Vim-like (Move pictures)</li>
+<li><code>]</code> # Next picture (Opposite: <code>[</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/imv/config</code><pre><code>[binds]
+p = exec notify-send &quot;$imv_current_file&quot;
+</code></pre>
+</li>
+<li>Warning: Display image information</li>
+<li><code>doas pacman --sync imv</code> # Install dependencies</li>
+<li>Because to view pictures on Wayland.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/kuhy/.dotfiles/blob/master/image/imv.org">https://github.com/kuhy/.dotfiles/blob/master/image/imv.org</a></li>
+<li><code>less /etc/imv_config</code></li>
+<li><code>man imv</code> # <code>/binds$</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;kickoff&quot;</h4>
 <ul>
 <li><code>kickoff</code></li>
@@ -268,7 +299,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>flatpak install flathub com.github.ahrm.sioyek</code> # Install dependencies</li>
+<li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
