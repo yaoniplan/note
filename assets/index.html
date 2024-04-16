@@ -41,6 +41,27 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;distrobox&quot;</h4>
+<ul>
+<li><code>distrobox create --image debian:latest --name debian-distrobox</code> # Create a Distrobox container<ul>
+<li><code>debian</code> # Replace it with other Linux distribution (e.g. <code>gentoo/stage3</code>)</li>
+</ul>
+</li>
+<li><code>distrobox list</code> # List your Distrobox container</li>
+<li><code>distrobox enter --name debian-distrobox</code> # Enter the container</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#distrobox</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man distrobox</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;imv&quot;</h4>
 <ul>
 <li><code>imv -r /mnt/yaoniplan/chinaTelecom/2024/04/</code><ul>
@@ -49,24 +70,72 @@
 <li><code>r</code> # Reset zoom and pan</li>
 <li><code>h/j/k/l</code> # Vim-like (Move pictures)</li>
 <li><code>]</code> # Next picture (Opposite: <code>[</code>)</li>
+<li><code>p</code> # Print image path</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Does not support web images in jpeg format. (But &quot;feh&quot; is OK)<ul>
+<li><code>imv https://alist.yaoniplan.eu.org/d/chinaTelecom/2024/03/26/6601c9e4474e8.jpeg</code></li>
+<li><a href="https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/">https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/</a></li>
+</ul>
+</li>
 <li><code>vim ~/.config/imv/config</code><pre><code>[binds]
 p = exec notify-send &quot;$imv_current_file&quot;
 </code></pre>
 </li>
-<li>Warning: Display image information</li>
 <li><code>doas pacman --sync imv</code> # Install dependencies</li>
 <li>Because to view pictures on Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/kuhy/.dotfiles/blob/master/image/imv.org">https://github.com/kuhy/.dotfiles/blob/master/image/imv.org</a></li>
-<li><code>less /etc/imv_config</code></li>
-<li><code>man imv</code> # <code>/binds$</code></li>
+<li><a href="https://github.com/kuhy/.dotfiles/blob/master/image/imv.org">https://github.com/kuhy/.dotfiles/blob/master/image/imv.org</a> # <code>/notify</code></li>
+<li><code>less /etc/imv_config</code> # <code>/current</code></li>
+<li><code>man imv</code> # <code>/binds$</code> <code>/^config</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;tdrop&quot;</h4>
+<ul>
+<li><code>WAYLAND_DISPLAY=no tdrop -mta wayst --app-id wayst1</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Make the window float if the window is not floating
+windowrulev2 = float, class:^(wayst1)$
+# Bind a global shortcut key to show and hide the window
+bind = $mainMod, W, exec, WAYLAND_DISPLAY=no tdrop -mta wayst --app-id wayst1
+</code></pre>
+</li>
+<li><code>nix profile install nixpkgs#tdrop</code> # Install dependencies</li>
+<li>Because to use the drop-down terminal on Wayland.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/16acbgy/how_to_reduce_this_window_size_in_hyprland/">https://libreddit.nohost.network/r/hyprland/comments/16acbgy/how_to_reduce_this_window_size_in_hyprland/</a> # <code>/float</code></li>
+<li><a href="https://github.com/noctuid/tdrop#wayland-support">https://github.com/noctuid/tdrop#wayland-support</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;hdrop&quot;</h4>
+<ul>
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code>bind = $mainMod, Enter, exec hdrop --floating kitty --class kitty1
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#hdrop</code> # Install dependencies</li>
+<li>Because to use the drop-down terminal on Wayland.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/Schweber/hdrop#example-bindings-in-hyprland-config">https://github.com/Schweber/hdrop#example-bindings-in-hyprland-config</a></li>
 </ul>
 </li>
 </ul>
@@ -1739,12 +1808,7 @@ ingress:
 <ul>
 <li><h4>Use &quot;udiskie&quot;</h4>
 <ul>
-<li><code>udiskie &amp;</code> # Run in the background as a daemon<ul>
-<li><code>crontab -e</code> # Method one<pre><code>@reboot /home/yaoniplan/.nix-profile/bin/udiskie
-</code></pre>
-</li>
-</ul>
-</li>
+<li><code>udiskie &amp;</code> # Remember to run in the background as a daemon</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -2224,6 +2288,7 @@ alpha=0.8 # transparency
 <li><h4>Use &quot;wayst&quot;</h4>
 <ul>
 <li><code>wayst -e tmux</code><ul>
+<li><code>--app-id wayst1</code> # Set window class for rule matching</li>
 <li><code>--title fzf</code> # Set window title when switching windows</li>
 </ul>
 </li>
@@ -3187,12 +3252,13 @@ doas tailscale funnel --bg 2004
 <ul>
 <li><code>apt install curl --yes</code> # Install a package<ul>
 <li><code>apt update</code> # Update it before Installing</li>
+<li><code>install</code> # Replace it with <code>autoremove</code> to return to previous state</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Set mirror<ul>
+<li>Set a mirror if on China<ul>
 <li><code>sudo sed -i &#39;s/deb.debian.org/mirrors.ustc.edu.cn/g&#39; /etc/apt/sources.list</code></li>
 <li><code>sudo sed -i &#39;s/http/https/g&#39; /etc/apt/sources.list</code></li>
 </ul>
@@ -3215,6 +3281,7 @@ services:
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man apt</code> # <code>/autoremove</code></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/debian.html">https://mirrors.ustc.edu.cn/help/debian.html</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -5529,6 +5596,10 @@ $
 <ul>
 <li><h4>Use &quot;vimium c&quot;</h4>
 <ul>
+<li><code>2gu</code> # Go up the URL hierarchy twice<ul>
+<li>From an issue to a code area on GitHub</li>
+</ul>
+</li>
 <li><code>^</code> # Previous tab</li>
 <li><code>gf</code> # Go to the next frame</li>
 <li><code>map &lt;c-m&gt; toggleMuteTab</code> # Ctrl-m</li>
@@ -10074,6 +10145,12 @@ custom_keybinds=yes
 </li>
 <li><code>mpv /mnt/server/来自分享/*全球*/</code> # Press <code>Ctrl-o</code> (Or <code>menuKey</code>) to open file browser</li>
 <li><code>--player-operation-mode=pseudo-gui</code> # If you don&#39;t want to play it immediately (Select path using script)</li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/87#issue-1557145715">https://github.com/CogentRedTester/mpv-file-browser/issues/87#issue-1557145715</a> # Support finding files<pre><code>user-input-module.lua -&gt; script-modules/user-input-module.lua
+find.lua -&gt; script-modules/file-browser-addons/find.lua
+user-input.lua -&gt; scripts/user-input.lua
+</code></pre>
+</li>
+<li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Reload after editing `~/.config/mpv/input.conf`
@@ -12497,6 +12574,12 @@ font_size 12.0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Selection mode needs to be improved. (To search and copy)<ul>
+<li><a href="https://github.com/kovidgoyal/kitty/issues/719">https://github.com/kovidgoyal/kitty/issues/719</a></li>
+</ul>
+</li>
+<li><code>--class kitty1</code> # Set window class for rule matching</li>
+<li><code>Ctrl-Shift-t</code> # New tab</li>
 <li>Because for quiet and readability.</li>
 </ul>
 </li>
@@ -12504,6 +12587,7 @@ font_size 12.0
 <li><a href="https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953">https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953</a> # Make <code>cursor_shape block</code> work</li>
 <li><a href="https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
 <li><a href="https://sw.kovidgoyal.net/kitty/conf/#terminal-bell">https://sw.kovidgoyal.net/kitty/conf/#terminal-bell</a> # <code>/fonts</code></li>
+<li><code>man kitty</code> # <code>/tabs$</code></li>
 </ul>
 </li>
 </ul>
