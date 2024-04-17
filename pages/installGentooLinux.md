@@ -143,7 +143,7 @@ auto-sync = yes
 cp --dereference /etc/resolv.conf /mnt/gentoo/etc/
 ```
 ### Notes
-- It is very important, because you may not beable to access the internet
+- It is very important because you may not be able to access the internet.
 ### References
 ```
 domain Home

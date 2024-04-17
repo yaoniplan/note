@@ -41,14 +41,48 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;zellij&quot;</h4>
+<ul>
+<li><code>Ctrl-p d</code> # Split the terminal down to new a pane (Pane down)<ul>
+<li><code>Alt-n</code> # New a pane</li>
+<li><code>Alt-k</code> # Move focus (Vim-like)</li>
+</ul>
+</li>
+<li><code>Ctrl-p e</code> # Make current pane floating (Pane embed)<ul>
+<li><code>Ctrl-p w</code> # Toggle floating pane</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#zellij</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://zellij.dev/tutorials/basic-functionality/">https://zellij.dev/tutorials/basic-functionality/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;distrobox&quot;</h4>
 <ul>
-<li><code>distrobox create --image debian:latest --name debian-distrobox</code> # Create a Distrobox container<ul>
+<li><code>distrobox create --image debian:latest --name debian-distrobox</code> # Create a container<ul>
 <li><code>debian</code> # Replace it with other Linux distribution (e.g. <code>gentoo/stage3</code>)</li>
 </ul>
 </li>
-<li><code>distrobox list</code> # List your Distrobox container</li>
-<li><code>distrobox enter --name debian-distrobox</code> # Enter the container</li>
+<li><code>distrobox enter --name debian-distrobox</code> # Enter a container<ul>
+<li><code>distrobox list</code> # Get container name</li>
+</ul>
+</li>
+<li><code>distrobox rm debian-distrobox</code> # Remove a container<ul>
+<li><code>rm</code> # Replace it with <code>stop</code> to stop it before removing if container is running</li>
+</ul>
+</li>
+<li><code>distrobox-export --bin /usr/bin/st --export-path ~/.local/bin/</code> # Export an application<ul>
+<li>Append <code> -delete</code> to the end of the line to delete the exported application</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -56,7 +90,11 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man distrobox</code></li>
+<li><img src="../assets/2024-04-16-230933.png" alt="2024-04-16-230933.png"></li>
+<li><code>man distrobox-export</code> # <code>/examples</code><ul>
+<li>Replace <code>export</code> with other action (e.g. <code>create</code>)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -124,7 +162,7 @@ bind = $mainMod, W, exec, WAYLAND_DISPLAY=no tdrop -mta wayst --app-id wayst1
 <ul>
 <li><h4>Use &quot;hdrop&quot;</h4>
 <ul>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code>bind = $mainMod, Enter, exec hdrop --floating kitty --class kitty1
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code>bind = $mainMod, Space, exec hdrop --floating kitty --class kitty1
 </code></pre>
 </li>
 </ul>
@@ -613,7 +651,9 @@ tooltip {
 <ul>
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
-<li><code>vim ~/.config/mpv/input.conf</code><pre><code># Display playlist
+<li><code>vim ~/.config/mpv/input.conf</code><pre><code># Play next in playlist
+Enter script-binding uosc/next
+# Display playlist
 Ctrl+p script-binding uosc/playlist
 p script-binding uosc/items
 </code></pre>
@@ -629,10 +669,16 @@ p script-binding uosc/items
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/mpv/scripts/uosc/main.lua</code><pre><code># Hide top bar controls
+top_bar_controls = no,
+</code></pre>
+</li>
 <li><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)&quot;</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/tomasklaen/uosc/discussions/878#discussioncomment-8952348">https://github.com/tomasklaen/uosc/discussions/878#discussioncomment-8952348</a></li>
+<li><a href="https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples">https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples</a></li>
 <li><a href="https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442">https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442</a></li>
 <li><a href="https://github.com/tomasklaen/uosc#linux--macos">https://github.com/tomasklaen/uosc#linux--macos</a></li>
 </ul>
@@ -2367,6 +2413,7 @@ font-size = 12
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Examples<ul>
+<li><code>wl-paste | imv -</code> # View pictures from clipboard</li>
 <li><code>echo &quot;$(which mako)&quot; | wl-copy</code> # Copy file path to clipboard</li>
 </ul>
 </li>
@@ -5596,6 +5643,7 @@ $
 <ul>
 <li><h4>Use &quot;vimium c&quot;</h4>
 <ul>
+<li><code>gi</code> # Copy image to the clipboard</li>
 <li><code>2gu</code> # Go up the URL hierarchy twice<ul>
 <li>From an issue to a code area on GitHub</li>
 </ul>
@@ -5619,7 +5667,7 @@ $
 <li><a href="https://github.com/gdh1995/vimium-c/issues/289#issue-811171738">https://github.com/gdh1995/vimium-c/issues/289#issue-811171738</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034">https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/discussions/794#discussion-4551520">https://github.com/gdh1995/vimium-c/discussions/794#discussion-4551520</a></li>
-<li><code>?</code></li>
+<li><code>?</code> # <code>/image</code></li>
 </ul>
 </li>
 </ul>
@@ -6717,7 +6765,7 @@ yaoniplan is not in the sudoers file.
 </ul>
 <hr>
 <ul>
-<li><h4>Use AUR in Arch Linux</h4>
+<li><h4>Use &quot;yay&quot;</h4>
 <ul>
 <li><code>git clone https://aur.archlinux.org/yay.git ~/.config/yay/</code></li>
 <li><code>cd ~/.config/yay/; makepkg -si</code></li>
@@ -6738,10 +6786,12 @@ export no_proxy=&quot;localhost, 192.168.10.100&quot;
 </ul>
 </li>
 <li>The abbreviation of &quot;arch user repository&quot; is &quot;aur&quot;.</li>
+<li>Because to use AUR to install some software.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/Jguer/yay">https://github.com/Jguer/yay</a></li>
+<li><a href="https://libreddit.privacydev.net/r/archlinux/comments/18eb1c4/usind_archlinux_inside_distrobox_with_aur/">https://libreddit.privacydev.net/r/archlinux/comments/18eb1c4/usind_archlinux_inside_distrobox_with_aur/</a> # <code>/yay-bin</code></li>
+<li><a href="https://github.com/Jguer/yay#source">https://github.com/Jguer/yay#source</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -12574,7 +12624,7 @@ font_size 12.0
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: Selection mode needs to be improved. (To search and copy)<ul>
+<li>Warnings: Selection mode needs to be improved. (To search and copy)<ul>
 <li><a href="https://github.com/kovidgoyal/kitty/issues/719">https://github.com/kovidgoyal/kitty/issues/719</a></li>
 </ul>
 </li>
@@ -16636,28 +16686,32 @@ app-editors/vim X
 </ul>
 <hr>
 <ul>
-<li><h4>Install ST (simple terminal) in Gentoo Linux</h4>
+<li><h4>Use &quot;st&quot;</h4>
 <ul>
-<li><code>doas vim /etc/portage/package.use/zz-autounmask</code><pre><code># required by /etc/portage/savedconfig/x11-terms/st
-x11-terms/st savedconfig
+<li><code>doas vim /etc/portage/savedconfig/x11-terms/st-0.9</code><pre><code># Set fonts
+static char *font = &quot;Liberation Mono:pixelsize=14:antialias=true:autohint=true&quot;;
 </code></pre>
+<ul>
+<li><code>sudo emerge st</code> # Recompile to make changes effective</li>
+</ul>
 </li>
-<li><code>sudo emerge -aq x11-terms/st</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>x11-terms/st savedconfig</code> # Set the USE flag for the package<ul>
-<li><code>x11-terms/st</code> # A package</li>
-<li><code>savedconfig</code> # A USE flag<ul>
+<li><code>doas vim /etc/portage/package.use/zz-autounmask</code><pre><code># required by /etc/portage/savedconfig/x11-terms/st
+# Set the USE flage (`savedconfig`) fo the package (`x11-terms/st`)
+x11-terms/st savedconfig
+</code></pre>
+<ul>
 <li>To save custom configuration files</li>
 <li>To avoid the file being lost</li>
 </ul>
 </li>
-</ul>
-</li>
+<li>Because to install ST (simple terminal) in Gentoo Linux.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://forums.gentoo.org/viewtopic-t-1158543-start-0.html">https://forums.gentoo.org/viewtopic-t-1158543-start-0.html</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/St">https://wiki.gentoo.org/wiki/St</a></li>
 </ul>
 </li>
