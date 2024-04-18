@@ -46,20 +46,52 @@
 <li><code>Ctrl-p d</code> # Split the terminal down to new a pane (Pane down)<ul>
 <li><code>Alt-n</code> # New a pane</li>
 <li><code>Alt-k</code> # Move focus (Vim-like)</li>
+<li><code>Alt-[</code> # Toggle layout</li>
 </ul>
 </li>
-<li><code>Ctrl-p e</code> # Make current pane floating (Pane embed)<ul>
+<li><code>Ctrl-p e</code> # Embed the pane in the middle or right of the tab<ul>
 <li><code>Ctrl-p w</code> # Toggle floating pane</li>
+</ul>
+</li>
+<li><code>Ctrl-t n</code> # New a tab<ul>
+<li><code>Ctrl-t 1</code> # Go to tab 1 (Or <code>h/l</code>)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/zellij/config.kdl</code><pre><code>keybinds {
+    unbind &quot;Ctrl h&quot; // unbind in all modes (To recover Backspace key)
+}
+</code></pre>
+</li>
 <li><code>nix profile install nixpkgs#zellij</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/zellij-org/zellij/discussions/2832#discussioncomment-7167742">https://github.com/zellij-org/zellij/discussions/2832#discussioncomment-7167742</a> # Toggle layout</li>
+<li><a href="https://zellij.dev/documentation/keybindings-binding.html#overriding-keys">https://zellij.dev/documentation/keybindings-binding.html#overriding-keys</a></li>
 <li><a href="https://zellij.dev/tutorials/basic-functionality/">https://zellij.dev/tutorials/basic-functionality/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;International Phonetic Alphabet&quot; is &quot;IPA&quot;</h4>
+<ul>
+<li><code>/ˌɪnfərˈmeɪʃən/</code><ul>
+<li><code>/ˌ/</code> # Secondary stress</li>
+<li><code>/ˈ/</code> # Primary stress</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to understand the stress part of a word.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>Tell me the International Phonetic Alphabet of word &#39;information&#39;</code> # ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -1568,7 +1600,10 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <ul>
 <li><h4>Use &quot;jq&quot;</h4>
 <ul>
-<li><code>echo &quot;$response&quot; | jq -r &#39;.content&#39;</code></li>
+<li><code>echo &quot;$response&quot; | jq -r &#39;.content&#39;</code><ul>
+<li><code>echo &quot;$response&quot; | jq .</code> # Get the key (e.g. <code>content</code>)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -4880,6 +4915,12 @@ crontab: &quot;/usr/bin/vi&quot; exited with status 127
 <li><code>~/.bash{rc,_profile}</code> # <code>~/.bashrc</code> and <code>~/.bash_profile</code></li>
 <li><code>:n</code> # Next file</li>
 <li><code>:p</code> # Previous file</li>
+<li>Scrool page<ul>
+<li><code>f</code> # Forward (Same as <code>Space</code> on Chromium)</li>
+<li><code>b</code> # Backward (Same as <code>Shift-Space</code> on Chromium)</li>
+<li><code>Ctrl-[ }</code> # Right one half screen width</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -5468,6 +5509,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#hello</code> # Install a package permantently<ul>
+<li><code>nix profile upgrade /nix/store/b0z563zg65fnxaqp612cbxv7x5y7pnz2-foot-1.16.2</code> # Upgrade a package</li>
 <li><code>nix profile remove /nix/store/2g3jazymqbjw9c390c3b7vw8xq3r8iny-hello-2.12.1</code> # Remove it</li>
 <li><code>nix profile list</code> # List installed packages</li>
 </ul>
@@ -5475,6 +5517,17 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~ $ nix upgrade-nix
+error: directory &#39;/home/yaoniplan/.nix-profile/bin&#39; does not appear to be part of a Nix profile
+yaoniplan@tux ~ $
+</code></pre>
+<ul>
+<li><code>ls -l $(which nix)</code> # Get Nix executable path</li>
+<li><code>nix profile remove /nix/store/smfmnz0ylx80wkbqbjibj7zcw4q668xp-nix-2.19.2/bin/nix</code> # Remove the package</li>
+<li><code>/nix/store/iwgkck1d64s5f26ngln540hpf06g28py-nix-2.20.1/bin/nix profile install nixpkgs#nix</code> # Reinstall the package</li>
+<li><a href="https://github.com/NixOS/nix/issues/5473#issuecomment-1309181669">https://github.com/NixOS/nix/issues/5473#issuecomment-1309181669</a></li>
+</ul>
+</li>
 <li>Solve the problem<pre><code>...
 It seems the build group nixbld already exists, but
 with the UID 967. This script can&#39;t really handle
@@ -10127,6 +10180,7 @@ yaoniplan@tux ~/Downloads/deck $
 <ul>
 <li><h4>Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>`</code> # Open the console for debugging (To test keybindings)</li>
 <li><code>Ctrl-h</code> # Hardware decoding</li>
 <li><code>Shift-i</code> # Information</li>
 <li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
@@ -10147,6 +10201,8 @@ yaoniplan@tux ~/Downloads/deck $
 <li><code>echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;</code> # Delete current song</li>
 <li><code>echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;D&quot; ] }&#39; | socat - /tmp/mpvsocket</code> # Another way that use shortcut keys</li>
 <li><code>for times in {1..5}; do echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;/&quot; ] }&#39; | socat - /tmp/mpvsocket; done</code> # Decrease 10% volume</li>
+<li><code>echo &#39;{ &quot;command&quot;: [&quot;get_property&quot;, &quot;path&quot;] }&#39; | socat - /tmp/mpvsocket | jq -r &#39;.data&#39; | sed &#39;s#/[^/]*$##&#39;</code> # Get file path</li>
+<li><code>#</code> # Delimiter (Avoid conflicts with the path)</li>
 </ul>
 </li>
 <li>Use scripts<ul>
@@ -10200,6 +10256,7 @@ find.lua -&gt; script-modules/file-browser-addons/find.lua
 user-input.lua -&gt; scripts/user-input.lua
 </code></pre>
 </li>
+<li><code>Ctrl-r</code> # Refresh playlist</li>
 <li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
@@ -14303,7 +14360,10 @@ set number
 </ul>
 </li>
 <li><code>:e#</code> or <code>C-6</code> # Switch between two files </li>
-<li><code>C-o</code> # Return to the previous cursor position</li>
+<li><code>C-o</code> # Return to the previous cursor position<ul>
+<li><code>&#39;&#39;</code> # Return to the previous line</li>
+</ul>
+</li>
 <li><code>C-p</code> # Previous keyword completion (in insert mode)</li>
 <li><code>C-n</code> # Next keyword completion</li>
 <li><code>C-[</code> # Esc key</li>
@@ -14766,6 +14826,7 @@ call plug#end()
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>Ctrl-[</code> # The same as <code>Esc</code> key (<code>Ctrl-c</code> is ok if no <code>[</code> key)<ul>
+<li><code>d$</code> # Same as <code>Ctrl-k</code> of Emacs mode</li>
 <li><code>Ctrl-l</code> # Clear screen</li>
 <li><code>k</code> # The same as <code>Ctrl-p</code> of Emacs mode</li>
 <li><code>/</code> # The same as <code>Ctrl-r</code> of Emacs mode</li>
@@ -15591,15 +15652,21 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>C-b C-o</code> # Move lower pane up (Make sure the cursor is in the up pane)</li>
 <li><code>C-b {</code> # Move the current pane up</li>
 <li><code>C-b !</code> # Break pane to a window</li>
-<li><code>C-b z</code> # Zoom</li>
-<li><code>C-b ;</code> # Last pane (previously used)</li>
+<li><code>C-b z</code> # Zoom (Make a pane larger or smaller)</li>
 <li><code>C-b ?</code> # Help</li>
-<li><code>C-b w</code> # Window of tree mode</li>
-<li><code>C-b c</code> # Create window</li>
+<li><code>C-b w</code> # Windows of tree mode</li>
+<li><code>C-b c</code> # Create a window<ul>
 <li><code>C-b l</code> # Last window (previously used)</li>
-<li><code>C-b &quot;</code> # Split vertically</li>
+</ul>
+</li>
+<li><code>C-b &quot;</code> # Split vertically<ul>
+<li><code>C-b ;</code> # Last pane (previously used)</li>
+</ul>
+</li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
+<li><code>bind-key f run-shell &quot;tmux popup&quot;</code> # Bind a key <code>C-b f</code> temporarily</li>
+<li><code>display-popup -w 50 -h 30 -E &quot;tmux new -s popup&quot;</code></li>
 <li><code>new-window</code> # New a window</li>
 <li><code>kill-pane</code> # The same as <code>C-b x</code></li>
 <li><code>join-pane -t 1</code> # Join pane</li>
@@ -15669,6 +15736,7 @@ set -g base-index 1
 <li><a href="https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd">https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd</a></li>
 <li><a href="https://github.com/tmux/tmux/wiki/Getting-Started">https://github.com/tmux/tmux/wiki/Getting-Started</a></li>
 <li><a href="https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/">https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
