@@ -685,9 +685,8 @@ tooltip {
 <ul>
 <li><code>vim ~/.config/mpv/input.conf</code><pre><code># Play next in playlist
 Enter script-binding uosc/next
-# Display playlist
+# Display playlist (Or `uosc/items`)
 Ctrl+p script-binding uosc/playlist
-p script-binding uosc/items
 </code></pre>
 <ul>
 <li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code>autoload=yes
@@ -1743,6 +1742,14 @@ ingress:
 <ul>
 <li><code>firefox -CreateProfile testing_profile</code> # Create a profile</li>
 <li><code>firefox -P testing_profile</code> # Launch with the profile</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Delete a profile<ul>
+<li><code>firefox -ProfileManager</code> # Select, Delete</li>
+<li><code>rm -rf ~/.mozilla/firefox/gazu9g2t.testing_profile</code> # Another method</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -7493,7 +7500,7 @@ togglePDFDarkMode();
 </ul>
 </li>
 <li><code>-c</code> # Config</li>
-<li><code>doas apt install opencc</code> # Install it in Ubuntu Server 22.04</li>
+<li><code>nix profile install nixpkgs#opencc</code> # Install dependencies</li>
 <li>Because to convert file names from Traditional Chinese to Simplified Chinese.</li>
 </ul>
 </li>
@@ -10180,6 +10187,13 @@ yaoniplan@tux ~/Downloads/deck $
 <ul>
 <li><h4>Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>vim ~/.config/mpv/mpv.conf</code><pre><code># Display filename as title (Avoid ads in title)
+title=${filename}
+</code></pre>
+<ul>
+<li><a href="https://snoo.habedieeh.re/r/mpv/comments/oq40gb/want_to_display_filename_as_title_of_video/">https://snoo.habedieeh.re/r/mpv/comments/oq40gb/want_to_display_filename_as_title_of_video/</a></li>
+</ul>
+</li>
 <li><code>`</code> # Open the console for debugging (To test keybindings)</li>
 <li><code>Ctrl-h</code> # Hardware decoding</li>
 <li><code>Shift-i</code> # Information</li>
@@ -10260,7 +10274,9 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Reload after editing `~/.config/mpv/input.conf`
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print and copy file path
+p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname ${path}`; echo `dirname ${path}` | wl-copy&quot;
+# Reload after editing `~/.config/mpv/input.conf`
 CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
 # `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
 l no-osd seek 5 exact
@@ -10271,8 +10287,8 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </code></pre>
 </li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
-<li><code>Alt-Hyphen</code> # Zoom out video<ul>
-<li><code>Alt-Down</code> # Move video up</li>
+<li><code>Alt-Hyphen</code> # Zoom out video (Opposite: <code>Alt-+</code>)<ul>
+<li><code>Alt-Down</code> # Move focus down</li>
 </ul>
 </li>
 <li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
@@ -11657,14 +11673,16 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 <ul>
 <li><h4>Add multiple push URLs in Git</h4>
 <ul>
-<li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code></li>
-<li><code>git remote set-url --add --push origin git@github.com:yaoniplan/note.git</code></li>
+<li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code><ul>
+<li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
+<li><code>192.168.10.100</code> # Replace it with <code>github.com</code></li>
+<li><code>/var/git/note.git</code> # Replace it with <code>yaoniplan/note.git</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
-<li><code>git remote set-url --push origin git@192.168.10.100:/var/git/note.git</code> # Update the push URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
 </ul>
 </li>
@@ -15659,14 +15677,13 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>C-b l</code> # Last window (previously used)</li>
 </ul>
 </li>
-<li><code>C-b &quot;</code> # Split vertically<ul>
+<li><code>C-b &quot;</code> # Split down (Split right: <code>C-b %</code>)<ul>
 <li><code>C-b ;</code> # Last pane (previously used)</li>
 </ul>
 </li>
 <li><code>C-b space</code> # switch to the next layout</li>
 <li><code>C-b :</code> # Prompt for a command (Vim-like)<ul>
-<li><code>bind-key f run-shell &quot;tmux popup&quot;</code> # Bind a key <code>C-b f</code> temporarily</li>
-<li><code>display-popup -w 50 -h 30 -E &quot;tmux new -s popup&quot;</code></li>
+<li><code>bind-key f display-popup -w 50 -h 30 -E &quot;tmux new -s popup&quot;</code> # Bind a key <code>C-b f</code> temporarily</li>
 <li><code>new-window</code> # New a window</li>
 <li><code>kill-pane</code> # The same as <code>C-b x</code></li>
 <li><code>join-pane -t 1</code> # Join pane</li>
