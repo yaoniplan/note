@@ -5,9 +5,7 @@
 - 圣祖之万相金澜 - 12
 - 剑域风云 (Part1+2) - 40+52+48
 - 九天玄帝诀 - 238
-- 最弱的驯养师开启的捡垃圾的旅途 - 04 0823 animation
-- 百千家的妖怪王子 - 01
-- 零食八江 - 01
+- 零食八江 - 01 animation
 - 神龙星主 - 02
 - 万界独尊 - 212
 - 真武巅峰 (Part1+2) - 40+66
@@ -263,6 +261,8 @@
 - guard(end)
 
 ### Animation
+- 百千家的妖怪王子 - 02 1113 # Target audience may be female.
+- 最弱的驯养师开启的捡垃圾的旅途 - S01E12
 - 魔女与野兽 - S01E12
 - 月刊妄想科学 - 02 0143 # Target audience may be 13 or 14 years old.
 - 勇气爆发BangBravern - 06 1437 # Target audience may be 13 or 14 years old.

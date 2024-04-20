@@ -41,6 +41,96 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;epr&quot;</h4>
+<ul>
+<li><code>epr yourBook.epub</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install dependencies<ul>
+<li><code>nix profile install nixpkgs#epr</code> # Method one</li>
+<li><code>yay --sync epr-git</code> # Method two</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/wustho/epr#installation">https://github.com/wustho/epr#installation</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;epy&quot;</h4>
+<ul>
+<li><code>epy yourBook.epub</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install dependencies<ul>
+<li><code>yay --sync epy</code> # Method one</li>
+<li><code>pipx install epy-reader</code> # Method two</li>
+<li><code>uv pip install epy-reader</code> # Method three</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/wustho/epy/issues/68#issuecomment-1301723938">https://github.com/wustho/epy/issues/68#issuecomment-1301723938</a> # install</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;baca&quot;</h4>
+<ul>
+<li><code>baca yourBook.epub</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Install dependencies<ul>
+<li><code>yay --sync baca-ereader-git</code> # Method one</li>
+<li><code>pipx install baca</code> # Method two</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/wustho/baca#installation">https://github.com/wustho/baca#installation</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;bk&quot;</h4>
+<ul>
+<li><code>bk yourBook.epub</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Does not support inline image</li>
+<li><code>nix profile install nixpkgs#bk</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/aeosynth/bk#comparison">https://github.com/aeosynth/bk#comparison</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;arianna&quot;</h4>
+<ul>
+<li><code>org.kde.arianna yourBook.epub</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>flatpak install arianna</code> # Install dependencies</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;zellij&quot;</h4>
 <ul>
 <li><code>Ctrl-p d</code> # Split the terminal down to new a pane (Pane down)<ul>
@@ -377,6 +467,9 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Could not load plug-in for file type &#39;EPUB&#39;<pre><code>qt.qpa.wayland: EGL not available
+</code></pre>
+</li>
 <li><code>Ctrl-f</code> # Find text</li>
 <li><code>Ctrl-Shift-t</code> # Tool bar</li>
 <li><code>Ctrl-Shift-m</code> # Menu bar</li>
@@ -397,6 +490,9 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Unable to open document &quot;file:///path/to/book.epub&quot;.<pre><code>File type Electronic book document (application/epub+zip) is not supported
+</code></pre>
+</li>
 <li><code>Ctrl-i</code> # Invert color (Dark mode)</li>
 <li><code>nix profile install nixpkgs#evince</code> # Install dependencies</li>
 </ul>
@@ -438,6 +534,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
 </ul>
 </li>
@@ -455,6 +552,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li>Zoom in<ul>
 <li><code>Z</code> # Zoom fit</li>
 <li><code>W</code> # Width</li>
@@ -482,6 +580,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>vim ~/.config/zathura/zathurarc</code><pre><code>map i recolor
 set recolor-darkcolor &quot;#B0B002&quot;
 </code></pre>
@@ -700,8 +799,10 @@ Ctrl+p script-binding uosc/playlist
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/mpv/scripts/uosc/main.lua</code><pre><code># Hide top bar controls
-top_bar_controls = no,
+<li><code>vim ~/.config/mpv/scripts/uosc/main.lua</code><pre><code># Hide top bar controls and title
+# Avoid the problem of always being on the screen
+top_bar_controls = no
+top_bar_title = no
 </code></pre>
 </li>
 <li><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)&quot;</code> # Install dependencies</li>
@@ -1328,6 +1429,7 @@ yaoniplan@tux ~/Downloads $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot support <code>uv pip install git+https://github.com/wustho/epr.git</code></li>
 <li><code>nix profile install nixpkgs#uv</code> # Install dependencies</li>
 </ul>
 </li>
@@ -2175,6 +2277,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>unzip -p file.epub &quot;*.h*&quot; | w3m -T text/html</code> # View epub file</li>
 <li><code>B</code> # Close current buffer (The same as <code>Ctrl-Shift-Tab</code> in Chromium)</li>
 <li><code>T</code> # New tab in the current link<ul>
 <li><code>}</code> # Next tab</li>
@@ -2200,6 +2303,7 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.kavin.rocks/r/commandline/comments/b40tt6/made_a_cli_epub_reader/">https://libreddit.kavin.rocks/r/commandline/comments/b40tt6/made_a_cli_epub_reader/</a> # <code>/w3m</code></li>
 <li><code>H</code> # Help</li>
 <li>ChatGPT</li>
 </ul>
@@ -2499,6 +2603,7 @@ animations {
   animation = specialWorkspace, 1, 4, default, slidevert 
 }
 bind = $mainMod, Space, togglespecialworkspace
+bind = $mainMod SHIFT, Space, movetoworkspace, special
 # Disable animation (Avoid including them in the picture when taking screenshots)
 # `hyprctl layers`: Get namespace (e.g. launcher, wofi)
 layerrule = noanim, wofi
@@ -2907,6 +3012,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Propose a hypothesis (To test it)</li>
 <li>Find relevant circles</li>
 </ul>
 </li>
@@ -5057,6 +5163,13 @@ Gateway=192.168.10.1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>systemctl status systemd-networkd &gt; network.log</code> # Analyze the configuration file if it doesn&#39;t work<pre><code>Apr 19 23:17:35 tux systemd-networkd[2408]: enp2s0:
+Configuring with /etc/systemd/network/20-ethernet.network.
+</code></pre>
+<ul>
+<li>Modify the specified configuration file</li>
+</ul>
+</li>
 <li>Set two static IP addresses in Arch Linux<pre><code>...
 
 [Address]
@@ -10274,8 +10387,8 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print and copy file path
-p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname ${path}`; echo `dirname ${path}` | wl-copy&quot;
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
+p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
 # Reload after editing `~/.config/mpv/input.conf`
 CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
 # `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
