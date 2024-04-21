@@ -47,36 +47,16 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Install dependencies<ul>
-<li><code>nix profile install nixpkgs#epr</code> # Method one</li>
-<li><code>yay --sync epr-git</code> # Method two</li>
-</ul>
-</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li><code>l</code> # Next screen (Opposite: <code>h</code>)</li>
+<li><code>t</code> # Table of contents</li>
+<li><code>?</code> # Help page</li>
+<li><code>nix profile install nixpkgs#epr</code> # Install dependencies</li>
+<li><code>pipx install epy-reader</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/wustho/epr#installation">https://github.com/wustho/epr#installation</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Use &quot;epy&quot;</h4>
-<ul>
-<li><code>epy yourBook.epub</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Install dependencies<ul>
-<li><code>yay --sync epy</code> # Method one</li>
-<li><code>pipx install epy-reader</code> # Method two</li>
-<li><code>uv pip install epy-reader</code> # Method three</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/wustho/epy/issues/68#issuecomment-1301723938">https://github.com/wustho/epy/issues/68#issuecomment-1301723938</a> # install</li>
 </ul>
 </li>
 </ul>
@@ -88,9 +68,8 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Install dependencies<ul>
-<li><code>yay --sync baca-ereader-git</code> # Method one</li>
-<li><code>pipx install baca</code> # Method two</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)<ul>
+<li><code>yay --sync baca-ereader-git</code> # Install dependencies</li>
 </ul>
 </li>
 </ul>
@@ -108,7 +87,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Does not support inline image</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>nix profile install nixpkgs#bk</code> # Install dependencies</li>
 </ul>
 </li>
@@ -121,11 +100,53 @@
 <ul>
 <li><h4>Use &quot;arianna&quot;</h4>
 <ul>
-<li><code>org.kde.arianna yourBook.epub</code></li>
+<li><code>org.kde.arianna</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>l</code> # Next screen (Opposite: <code>h</code>)</li>
 <li><code>flatpak install arianna</code> # Install dependencies</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;bookworm&quot;</h4>
+<ul>
+<li><code>/nix/store/phxpkf9ia91k58q00niavhi8w1k4fdr1-bookworm-unstable-2022-01-09/bin/com.github.babluboy.bookworm</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li><code>Ctrl-l</code> # Library</li>
+<li><code>Ctrl-+</code> # Zoom in (Opposite: <code>Ctrl--</code>)</li>
+<li><code>Space</code> # Next screen (Opposite: <code>Shift-Space</code>)</li>
+<li><code>nix profile install nixpkgs#bookworm</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/babluboy/bookworm#screenshots">https://github.com/babluboy/bookworm#screenshots</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;koreader&quot;</h4>
+<ul>
+<li><code>rocks.koreader.KOReader</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li><code>PageDown</code> # Next list (Opposite: <code>PageUp</code>)</li>
+<li><code>DownArrow</code> # Next screen (Opposite: <code>UpArrow</code>)</li>
+<li><code>t</code> # Table of contents</li>
+<li><code>flatpak install rocks.koreader.KOReader</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://koreader.rocks/user_guide/#keyboardshortcuts">https://koreader.rocks/user_guide/#keyboardshortcuts</a></li>
+<li><a href="https://github.com/koreader/koreader/wiki/Installation-on-desktop-linux#flatpak">https://github.com/koreader/koreader/wiki/Installation-on-desktop-linux#flatpak</a> # AppImage version can access the network (e.g. WebDAV)</li>
 </ul>
 </li>
 </ul>
@@ -534,11 +555,12 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li>Warnings: Cannot load inline web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ahrm/sioyek/releases">https://github.com/ahrm/sioyek/releases</a> # Extract <em>portable.zip</em> to get AppImage version</li>
 <li><a href="https://github.com/ahrm/sioyek/blob/main/tutorial.pdf">https://github.com/ahrm/sioyek/blob/main/tutorial.pdf</a></li>
 <li><a href="https://sioyek-documentation.readthedocs.io/en/latest/">https://sioyek-documentation.readthedocs.io/en/latest/</a></li>
 </ul>
@@ -552,7 +574,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li>Zoom in<ul>
 <li><code>Z</code> # Zoom fit</li>
 <li><code>W</code> # Width</li>
@@ -580,7 +602,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>vim ~/.config/zathura/zathurarc</code><pre><code>map i recolor
 set recolor-darkcolor &quot;#B0B002&quot;
 </code></pre>
@@ -1372,7 +1394,10 @@ with py7zr.SevenZipFile(&quot;./KikoPlay_1.0.1_Linux-x86_64.7z&quot;, mode=&#39;
 <ul>
 <li><h4>Use &quot;flatpak&quot;</h4>
 <ul>
-<li><code>flatpak override --user --filesystem=/home/$(whoami)/Downloads/ com.github.ahrm.sioyek</code> # Allow access to a directory</li>
+<li><code>flatpak override --user --filesystem=/home/$(whoami)/Downloads/ com.github.ahrm.sioyek</code> # Allow access to a directory<ul>
+<li><code>/home/$(whoami)/Downloads</code> # Replace it with other directory (e.g. <code>/mnt/$(whoami)</code>)</li>
+</ul>
+</li>
 <li><code>flatpak search kikoplay</code> # Search a package<ul>
 <li><code>--columns=application</code> # Get Application ID</li>
 </ul>
@@ -2277,8 +2302,8 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>unzip -p file.epub &quot;*.h*&quot; | w3m -T text/html</code> # View epub file</li>
-<li><code>B</code> # Close current buffer (The same as <code>Ctrl-Shift-Tab</code> in Chromium)</li>
+<li><code>unzip -p file.epub &quot;*.h*&quot; | w3m -T text/html</code> # View epub file (Does not support loading images)</li>
+<li><code>B</code> # Close current buffer (The same as <code>Alt-Left</code> in Chromium)</li>
 <li><code>T</code> # New tab in the current link<ul>
 <li><code>}</code> # Next tab</li>
 </ul>

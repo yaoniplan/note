@@ -5,10 +5,9 @@
 - 圣祖之万相金澜 - 12
 - 剑域风云 (Part1+2) - 40+52+48
 - 九天玄帝诀 - 238
-- 零食八江 - 01 animation
-- 神龙星主 - 02
-- 万界独尊 - 212
-- 真武巅峰 (Part1+2) - 40+66
+- 神龙星主 - 30
+- 万界独尊 - 212 animation
+- 真武巅峰 (Part1+2) - 40+68
 - 云中居三子 - 13
 - 异人君莫邪 - 07
 - 师兄啊师兄 - 26
@@ -261,6 +260,7 @@
 - guard(end)
 
 ### Animation
+- 零食八江 - 06 0704 # Interspersed with characters from other anime
 - 百千家的妖怪王子 - 02 1113 # Target audience may be female.
 - 最弱的驯养师开启的捡垃圾的旅途 - S01E12
 - 魔女与野兽 - S01E12
