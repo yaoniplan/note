@@ -47,7 +47,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)<ul>
+<li>Code indentation is incorrect (epy)</li>
+</ul>
+</li>
+<li><code>m</code> # Metadata</li>
 <li><code>l</code> # Next screen (Opposite: <code>h</code>)</li>
 <li><code>t</code> # Table of contents</li>
 <li><code>?</code> # Help page</li>
@@ -68,10 +72,8 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)<ul>
+<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>yay --sync baca-ereader-git</code> # Install dependencies</li>
-</ul>
-</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -555,11 +557,15 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/sioyek/prefs_user.config</code> # Set dark mode by default<pre><code>default_dark_mode
+</code></pre>
+</li>
 <li>Warnings: Cannot load inline web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://sioyek-documentation.readthedocs.io/en/latest/configuration.html">https://sioyek-documentation.readthedocs.io/en/latest/configuration.html</a></li>
 <li><a href="https://github.com/ahrm/sioyek/releases">https://github.com/ahrm/sioyek/releases</a> # Extract <em>portable.zip</em> to get AppImage version</li>
 <li><a href="https://github.com/ahrm/sioyek/blob/main/tutorial.pdf">https://github.com/ahrm/sioyek/blob/main/tutorial.pdf</a></li>
 <li><a href="https://sioyek-documentation.readthedocs.io/en/latest/">https://sioyek-documentation.readthedocs.io/en/latest/</a></li>
@@ -821,10 +827,10 @@ Ctrl+p script-binding uosc/playlist
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/mpv/scripts/uosc/main.lua</code><pre><code># Hide top bar controls and title
+<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code># Hide top bar controls and title
 # Avoid the problem of always being on the screen
-top_bar_controls = no
-top_bar_title = no
+top_bar_controls=no
+top_bar_title=no
 </code></pre>
 </li>
 <li><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)&quot;</code> # Install dependencies</li>
@@ -5188,7 +5194,7 @@ Gateway=192.168.10.1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>systemctl status systemd-networkd &gt; network.log</code> # Analyze the configuration file if it doesn&#39;t work<pre><code>Apr 19 23:17:35 tux systemd-networkd[2408]: enp2s0:
+<li><code>systemctl status systemd-networkd &gt; network.log</code> # Analyze the log file if not working properly<pre><code>Apr 19 23:17:35 tux systemd-networkd[2408]: enp2s0:
 Configuring with /etc/systemd/network/20-ethernet.network.
 </code></pre>
 <ul>

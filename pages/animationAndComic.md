@@ -6,8 +6,7 @@
 - 剑域风云 (Part1+2) - 40+52+48
 - 九天玄帝诀 - 238
 - 神龙星主 - 30
-- 万界独尊 - 212 animation
-- 真武巅峰 (Part1+2) - 40+68
+- 真武巅峰 (Part1+2) - 40+86 0204 animation
 - 云中居三子 - 13
 - 异人君莫邪 - 07
 - 师兄啊师兄 - 26
@@ -260,6 +259,7 @@
 - guard(end)
 
 ### Animation
+- 万界独尊 - 222 0810 # Plot may be slow.
 - 零食八江 - 06 0704 # Interspersed with characters from other anime
 - 百千家的妖怪王子 - 02 1113 # Target audience may be female.
 - 最弱的驯养师开启的捡垃圾的旅途 - S01E12
