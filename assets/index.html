@@ -140,6 +140,11 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
+<li>Delete a file<ul>
+<li><code>0</code> # Go to the end of book</li>
+<li><code>RightArrow</code> # Select delete button</li>
+</ul>
+</li>
 <li><code>PageDown</code> # Next list (Opposite: <code>PageUp</code>)</li>
 <li><code>DownArrow</code> # Next screen (Opposite: <code>UpArrow</code>)</li>
 <li><code>t</code> # Table of contents</li>
@@ -547,6 +552,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 <ul>
 <li><h4>Use &quot;sioyek&quot;</h4>
 <ul>
+<li><code>+</code> # Zoom in (Opposite: <code>-</code>)</li>
 <li><code>:dark</code> # Toggle dark mode</li>
 <li><code>:number</code> # Jump to page by page number<ul>
 <li><code>t</code> # Table of contents (Better method)</li>
@@ -557,14 +563,19 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/sioyek/prefs_user.config</code> # Set dark mode by default<pre><code>default_dark_mode
+<li><code>vim ~/.config/sioyek/prefs_user.config</code><pre><code># Set fonts for epub
+epub_css *{font-family: sans-serif;}
+# Set dark mode by default
+default_dark_mode 1
 </code></pre>
 </li>
 <li>Warnings: Cannot load inline web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
+<li><code>yay --sync sioyek-git</code></li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ahrm/sioyek/issues/706#issuecomment-1910112060">https://github.com/ahrm/sioyek/issues/706#issuecomment-1910112060</a> # font</li>
 <li><a href="https://sioyek-documentation.readthedocs.io/en/latest/configuration.html">https://sioyek-documentation.readthedocs.io/en/latest/configuration.html</a></li>
 <li><a href="https://github.com/ahrm/sioyek/releases">https://github.com/ahrm/sioyek/releases</a> # Extract <em>portable.zip</em> to get AppImage version</li>
 <li><a href="https://github.com/ahrm/sioyek/blob/main/tutorial.pdf">https://github.com/ahrm/sioyek/blob/main/tutorial.pdf</a></li>

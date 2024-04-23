@@ -6,9 +6,8 @@
 - 剑域风云 (Part1+2) - 40+52+48
 - 九天玄帝诀 - 238
 - 神龙星主 - 30
-- 真武巅峰 (Part1+2) - 40+86 0204 animation
-- 云中居三子 - 13
-- 异人君莫邪 - 07
+- 真武巅峰 (Part1+2) - 40+95 animation
+- 云中居三子 - 20
 - 师兄啊师兄 - 26
 - 万古狂帝 - 10
 - 深渊游戏 - 14
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 异人君莫邪 - S01E12
 - 万界独尊 - 222 0810 # Plot may be slow.
 - 零食八江 - 06 0704 # Interspersed with characters from other anime
 - 百千家的妖怪王子 - 02 1113 # Target audience may be female.
