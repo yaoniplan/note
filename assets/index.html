@@ -221,7 +221,7 @@
 <li><code>debian</code> # Replace it with other Linux distribution (e.g. <code>gentoo/stage3</code>)</li>
 </ul>
 </li>
-<li><code>distrobox enter --name debian-distrobox</code> # Enter a container<ul>
+<li><code>distrobox enter debian-distrobox</code> # Enter a container<ul>
 <li><code>distrobox list</code> # Get container name</li>
 </ul>
 </li>
@@ -552,6 +552,7 @@ error: Package ‘xpdf-4.05’ in /nix/store/bjv2qk3gg1iv69rbama3q9aprcp6d9wp-so
 <ul>
 <li><h4>Use &quot;sioyek&quot;</h4>
 <ul>
+<li><code>Shift-o</code> # Open previous book (e.g. <em>tutorial.pdf</em>)</li>
 <li><code>+</code> # Zoom in (Opposite: <code>-</code>)</li>
 <li><code>:dark</code> # Toggle dark mode</li>
 <li><code>:number</code> # Jump to page by page number<ul>
@@ -570,8 +571,7 @@ default_dark_mode 1
 </code></pre>
 </li>
 <li>Warnings: Cannot load inline web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
-<li><code>flatpak install com.github.ahrm.sioyek</code> # Install dependencies</li>
-<li><code>yay --sync sioyek-git</code></li>
+<li><code>yay --sync sioyek-git</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -627,7 +627,10 @@ set recolor-darkcolor &quot;#B0B002&quot;
 <li><code>i</code> # Press <code>i</code> to enable dark mode</li>
 </ul>
 </li>
-<li><code>a/s</code> # Adjust window</li>
+<li><code>a/s</code> # Adjust window<ul>
+<li><code>+</code> # Zoom in (Opposite: <code>-</code>)</li>
+</ul>
+</li>
 <li><code>Space/Shift-Space</code> # Scroll pages</li>
 <li><code>j/k/q</code> # Vim-like</li>
 <li><code>nix profile install nixpkgs#zathura</code> # Install dependencies</li>
@@ -823,8 +826,8 @@ tooltip {
 <ul>
 <li><code>vim ~/.config/mpv/input.conf</code><pre><code># Play next in playlist
 Enter script-binding uosc/next
-# Display playlist (Or `uosc/items`)
-Ctrl+p script-binding uosc/playlist
+# Display playlist (Or `uosc/playlist`)
+Ctrl+p script-binding uosc/items
 </code></pre>
 <ul>
 <li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code>autoload=yes
@@ -7676,7 +7679,10 @@ togglePDFDarkMode();
 <li><code>&amp;</code> # In the background</li>
 </ul>
 </li>
-<li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera</li>
+<li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera<ul>
+<li><code>ffplay -f v412 /dev/video0</code> # Display the video on screen</li>
+</ul>
+</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
 <li><code>ffmpeg -i input.wma -ss 00:00:00 -to 00:15:37 -c copy output.wma</code> # Cut a section</li>
 <li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c copy output.wma</code> # Merge videos<ul>
