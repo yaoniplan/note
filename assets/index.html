@@ -41,6 +41,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;subfinder&quot;</h4>
+<ul>
+<li><code>subfinder yaoniplan.eu.org</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warnings: Cannot find the latest subdomain names on April 25, 2024.</li>
+<li><code>nix shell nixpkgs#subfinder</code> # Install dependencies</li>
+<li>Because to find all subdomain names of a domain name.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>tldr subfinder</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;epr&quot;</h4>
 <ul>
 <li><code>epr yourBook.epub</code></li>
@@ -4287,7 +4305,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Next song</code> # Play next music (Doesn&#39;t work: <code>Previous song</code>)</li>
 <li><code>Restart this device</code> # Solve some bugs</li>
 <li><code>Enable Night Shift</code> # Protect eyes</li>
-<li><code>What date is it</code> # Replace <code>it</code> with <code>tomorrow</code> (e.g. the day after tomorrow, the end of the month)</li>
+<li><code>What date is it</code> # Replace <code>it</code> with <code>tomorrow</code> (e.g. the day after tomorrow, the end of the month, sunrise)</li>
 <li><code>Open Translate</code> # Open the application</li>
 <li><code>Increase volume by 40 percent</code></li>
 <li><code>Reduce the volume by 40 percent</code></li>
@@ -5736,11 +5754,6 @@ error:
 <li><code>echo &quot;experimental-features = nix-command flakes&quot; | doas tee -a /etc/nix/nix.conf</code></li>
 </ul>
 </li>
-<li>Uninstall itself<ul>
-<li><code>doas systemctl stop nix-daemon.socket nix-daemon.service</code> # Stop it</li>
-<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-{profile,defexpr,channels}</code> # Uninstall</li>
-</ul>
-</li>
 <li><code>doas vim /etc/nix/nix.conf</code> # Set mirror in Nix<pre><code>substituters = https://mirrors.ustc.edu.cn/nix-channels/store https://cache.nixos.org/
 </code></pre>
 <ul>
@@ -5753,6 +5766,7 @@ error:
 <li><code>wget -O- https://nixos.org/nix/install | sh</code> # Another way to install</li>
 <li><code>-O-</code> # The same as <code>-L</code> of <code>curl</code></li>
 <li><code>source ~/.nix-profile/etc/profile.d/nix.sh</code> # Apply changes</li>
+<li><code>doas rm -rf /nix/ /etc/nix/ ~/.nix-{profile,defexpr,channels}</code> # Uninstall</li>
 </ul>
 </li>
 </ul>
@@ -7135,7 +7149,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>trans -list-all</code> # Get it</li>
 </ul>
 </li>
-<li><code>-player mpg123</code> # Player</li>
+<li><code>-player mpg123</code> # Change default player to mpg123</li>
 <li><code>-proxy 192.168.10.100:7890</code> # Proxy</li>
 <li><code>doas emerge -aq app-i18n/translate-shell</code> # Install dependencies<ul>
 <li><code>nix profile install nixpkgs#translate-shell</code> # Another method</li>
