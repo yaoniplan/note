@@ -43,7 +43,7 @@
 <ul>
 <li><h4>Use &quot;subfinder&quot;</h4>
 <ul>
-<li><code>subfinder yaoniplan.eu.org</code></li>
+<li><code>subfinder -domain yaoniplan.eu.org</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -274,7 +274,7 @@
 <li><code>i</code> # Zoom in (Opposite: <code>o</code>)</li>
 <li><code>a</code> # Actual size (Restore original size)</li>
 <li><code>r</code> # Reset zoom and pan</li>
-<li><code>h/j/k/l</code> # Vim-like (Move pictures)</li>
+<li><code>h/j/k/l</code> # Vim-like (Pan pictures)</li>
 <li><code>]</code> # Next picture (Opposite: <code>[</code>)</li>
 <li><code>p</code> # Print image path</li>
 </ul>
@@ -7726,6 +7726,7 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code>sed -i &#39;1i#EXTM3U&#39; &quot;$playlist_file&quot;</code> # Insert <code>#EXTM3U</code> at the beginning of file</li>
 <li><code>sed -i &#39;5,7d&#39; ~/.ssh/config</code> # Delete the fifth through seventh lines from a file<ul>
 <li><code>-i</code> # In place (Without it, just simulate first)</li>
 <li><code>d</code> # Delete</li>
@@ -15879,6 +15880,22 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.tmux.conf</code><pre><code># Toggle floating scratchpad
+# Bind a key
+bind f if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
+    detach-client
+  } {
+    if-shell &quot;tmux has-session -t scratch&quot; {
+      display-popup -E &quot;tmux attach-session -t scratch&quot;
+    } {
+      display-popup -E &quot;tmux new-session -d -c &#39;#{pane_current_path}&#39; -s scratch &amp;&amp; tmux set-option -t scratch status off &amp;&amp; tmux attach-session -t scratch&quot;
+    }
+}
+</code></pre>
+<ul>
+<li><code>f</code> # Replace it with your desired key</li>
+</ul>
+</li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Hide status bar to show more space
 set -g status off
 </code></pre>
@@ -15920,6 +15937,7 @@ set -g base-index 1
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.lunar.icu/r/tmux/comments/olgte7/floating_popups_in_tmux/">https://libreddit.lunar.icu/r/tmux/comments/olgte7/floating_popups_in_tmux/</a></li>
 <li><code>man tmux</code> # <code>/mode-keys</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
 <li><a href="https://wiki.gentoo.org/wiki/Tmux">https://wiki.gentoo.org/wiki/Tmux</a></li>

@@ -10,13 +10,10 @@
 - 云中居三子 - 21
 - 师兄啊师兄 - 33
 - 万古狂帝 - 19
-- 独步万古 - 49 0259 animation
-- 大王饶命 - (Part1+2) 12+12
-- 凡人修仙传 - 91
-- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+08
-- Solo Leveling / 我独自升级 - 08
-- 师士传说 - 26
-- 仙武传 - 50
+- 独步万古 - 63
+- 凡人修仙传 - 98
+- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+12
+- 仙武传 - 57
 - 万界至尊 (Part1+2)- 50+43
 - 十方武圣 - 16
 - 太一剑仙传 - 20
@@ -257,6 +254,9 @@
 - guard(end)
 
 ### Animation
+- 师士传说 - S1E26
+- Solo Leveling / 我独自升级 - S1E12
+- 大王饶命 - S1E12.S2E12
 - 深渊游戏 - S1E16
 - 异人君莫邪 - S01E12
 - 万界独尊 - 222 0810 # Plot may be slow.
