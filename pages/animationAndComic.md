@@ -12,9 +12,8 @@
 - 万古狂帝 - 19
 - 独步万古 - 63
 - 凡人修仙传 - 98
-- Mashle: Magic and Muscles / 物理魔法使马修 (Part1+2)- 12+12
 - 仙武传 - 57
-- 万界至尊 (Part1+2)- 50+43
+- 万界至尊 (Part1+2)- 50+43 animation
 - 十方武圣 - 16
 - 太一剑仙传 - 20
 - 不死不灭之少年出山 - 16
@@ -254,6 +253,7 @@
 - guard(end)
 
 ### Animation
+- Mashle: Magic and Muscles / 物理魔法使马修 S1E12.S2E12
 - 师士传说 - S1E26
 - Solo Leveling / 我独自升级 - S1E12
 - 大王饶命 - S1E12.S2E12

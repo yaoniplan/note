@@ -48,7 +48,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warnings: Cannot find the latest subdomain names on April 25, 2024.</li>
-<li><code>nix shell nixpkgs#subfinder</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#subfinder</code> # Install dependencies</li>
 <li>Because to find all subdomain names of a domain name.</li>
 </ul>
 </li>
@@ -7694,7 +7694,7 @@ togglePDFDarkMode();
 </ul>
 </li>
 <li><code>ffmpeg -f v4l2 -i /dev/video0 output.mp4</code> # Capture video from camera<ul>
-<li><code>ffplay -f v412 /dev/video0</code> # Display the video on screen</li>
+<li><code>ffplay -f v4l2 /dev/video0</code> # Display the video on screen</li>
 </ul>
 </li>
 <li><code>ffmpeg -i input.wma -ss 00:00:25 -c copy output.wma</code> # From 00:00:25 to the end</li>
@@ -10450,7 +10450,9 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Copy the full path to clipboard
+Ctrl+shift+c run &quot;/bin/bash&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
+# Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
 p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
 # Reload after editing `~/.config/mpv/input.conf`
 CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
@@ -10521,6 +10523,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://redlib.private.coffee/r/mpv/comments/ifx6k3/how_do_you_copy_the_full_path_to_clipboard/">https://redlib.private.coffee/r/mpv/comments/ifx6k3/how_do_you_copy_the_full_path_to_clipboard/</a></li>
 <li><a href="https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/">https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/</a></li>
 <li><a href="https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/">https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808">https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808</a></li>
@@ -15882,18 +15885,14 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><em><strong>Notes</strong></em><ul>
 <li><code>vim ~/.tmux.conf</code><pre><code># Toggle floating scratchpad
 # Bind a key
-bind f if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
+bind-key -n M-Space if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
     detach-client
-  } {
-    if-shell &quot;tmux has-session -t scratch&quot; {
-      display-popup -E &quot;tmux attach-session -t scratch&quot;
-    } {
-      display-popup -E &quot;tmux new-session -d -c &#39;#{pane_current_path}&#39; -s scratch &amp;&amp; tmux set-option -t scratch status off &amp;&amp; tmux attach-session -t scratch&quot;
-    }
+} {
+    display-popup -E &quot;tmux new-session -A -s scratch&quot;
 }
 </code></pre>
 <ul>
-<li><code>f</code> # Replace it with your desired key</li>
+<li><code>M-Space</code> # Replace it with your desired key</li>
 </ul>
 </li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Hide status bar to show more space
@@ -15937,7 +15936,7 @@ set -g base-index 1
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.lunar.icu/r/tmux/comments/olgte7/floating_popups_in_tmux/">https://libreddit.lunar.icu/r/tmux/comments/olgte7/floating_popups_in_tmux/</a></li>
+<li><a href="https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/">https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/</a></li>
 <li><code>man tmux</code> # <code>/mode-keys</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
 <li><a href="https://wiki.gentoo.org/wiki/Tmux">https://wiki.gentoo.org/wiki/Tmux</a></li>
