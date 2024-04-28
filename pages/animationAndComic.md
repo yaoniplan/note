@@ -1,4 +1,5 @@
 ### "Animation"
+- 诛仙 (Season1) - 26 # End of the first season
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
 - 你的人生是我来迟了 - 16
@@ -13,19 +14,13 @@
 - 独步万古 - 63
 - 凡人修仙传 - 98
 - 仙武传 - 57
-- 万界至尊 (Part1+2)- 50+43 animation
-- 十方武圣 - 16
-- 太一剑仙传 - 20
-- 不死不灭之少年出山 - 16
-- Law of Devil / 恶魔法则 - 24
-- 逆天邪神3D - 27
-- 仙逆 - 26
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+82
-- 洪荒灵尊 - 56
+- 万界至尊 (Part1+2)- 50+57
+- 仙逆 - 33
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+90
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 39
+- 大主宰 - 39 animation
 - Shrouding the Heavens / 遮天 - 47
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 115
 - 武神主宰 - 192/419
@@ -253,6 +248,12 @@
 - guard(end)
 
 ### Animation
+- 洪荒灵尊 - S1E60
+- 逆天邪神3D - S1E30
+- Law of Devil / 恶魔法则 - S1E24
+- 不死不灭之少年出山 - S1E16
+- 太一剑仙传 - S1E20
+- 十方武圣 - S1E16
 - Mashle: Magic and Muscles / 物理魔法使马修 S1E12.S2E12
 - 师士传说 - S1E26
 - Solo Leveling / 我独自升级 - S1E12
@@ -526,7 +527,6 @@
 - 魔术士欧菲 (Season1+2)- 24+04 # It's boring
 - 终末的女武神 - 12 # End of the first season
 - 物之古物奇谭 - 03 0734 # It's boring
-- 诛仙 (Season1) - 26 # End of the first season
 - 狗与剪刀的正确用法 - 12 # End of the first season
 - 出包王女 - 06 0304 # It's boring
 - 宇崎酱想要玩耍 (season1+2) - 12+13 # End of the second season
