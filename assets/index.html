@@ -41,6 +41,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;tr&quot;</h4>
+<ul>
+<li><code>echo $XDG_DATA_DIRS | tr &#39;:&#39; &#39;\n&#39;</code> # Replace colons with newlines</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>echo $XDG_DATA_DIRS | sed &#39;s/:/\n/g&#39;</code> # Another method</li>
+<li>Because to make the output human-readable.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;subfinder&quot;</h4>
 <ul>
 <li><code>subfinder -domain yaoniplan.eu.org</code></li>
@@ -397,6 +414,11 @@ bind = $mainMod, W, exec, WAYLAND_DISPLAY=no tdrop -mta wayst --app-id wayst1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/wofi/style.css</code><pre><code>window {
+    font-size: 28px;
+}
+</code></pre>
+</li>
 <li><code>vim ~/.config/wofi/config</code><pre><code># Like `wofi --show run` by default
 show=run
 </code></pre>
@@ -405,6 +427,8 @@ show=run
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.youtube.com/watch?v=KfOYXvRMcIQ">https://www.youtube.com/watch?v=KfOYXvRMcIQ</a> # Beautify it using CSS</li>
+<li><code>man 5 wofi</code> # <code>/CSS SELECTOR</code></li>
 <li><code>man 7 wofi</code> # <code>/^mode</code></li>
 </ul>
 </li>
@@ -1248,7 +1272,9 @@ esac
 <li><code>J</code> # Next tab</li>
 </ul>
 </li>
-<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code># Toggle status bar and tabs
+<li><code>vim ~/.config/qutebrowser/config.py</code><pre><code># Bind the command to set playback speed to 2 to the key &#39;q&#39;
+config.bind(&#39;q&#39;, &#39;clear-messages ;; jseval document.querySelector(&quot;video, audio&quot;).playbackRate = 2&#39;)
+# Toggle status bar and tabs
 config.bind(&#39;X&#39;, &#39;config-cycle statusbar.show always never;; config-cycle tabs.show always never&#39;)
 # Hide tabs and status bar by default
 c.tabs.show = &#39;never&#39;
@@ -1286,6 +1312,7 @@ c.colors.webpage.bg = &#39;black&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.perennialte.ch/r/qutebrowser/comments/os9hed/qutebrowser_video_speed_controller/">https://libreddit.perennialte.ch/r/qutebrowser/comments/os9hed/qutebrowser_video_speed_controller/</a></li>
 <li><a href="https://libreddit.oxymagnesium.com/r/qutebrowser/comments/hxa58m/where_do_i_see_my_consolelogs/">https://libreddit.oxymagnesium.com/r/qutebrowser/comments/hxa58m/where_do_i_see_my_consolelogs/</a></li>
 <li><a href="https://github.com/qutebrowser/qutebrowser/issues/6005">https://github.com/qutebrowser/qutebrowser/issues/6005</a> # <code>/status</code></li>
 <li><a href="https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py">https://github.com/noctuid/dotfiles/blob/master/browsing/.config/qutebrowser/config.py</a></li>
@@ -2658,7 +2685,11 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Enable scratchpad
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Assign a window to a workspace
+windowrulev2 = workspace 1, class:^(firefox)$
+# Enable fullscreen for a window by default
+windowrulev2 = fullscreen, class:^(wayst1)$
+# Enable scratchpad
 # silently launch wayst in special workspace
 exec-once = [workspace special silent] wayst -e tmux new-session &#39;vim -c &quot;VimwikiMakeDiaryNote&quot;&#39;
 animations { 
@@ -2669,7 +2700,9 @@ bind = $mainMod, Space, togglespecialworkspace
 bind = $mainMod SHIFT, Space, movetoworkspace, special
 # Disable animation (Avoid including them in the picture when taking screenshots)
 # `hyprctl layers`: Get namespace (e.g. launcher, wofi)
+# For workspace to replace `1` with `0` (Avoid making it take longer for your eyes to adpat)
 layerrule = noanim, wofi
+animation = specialWorkspace, 0, 4, default
 # Disable blur
 windowrulev2 = opacity 0 0,class:^(waybar)$
 # Move windows like Vi mode
@@ -2696,6 +2729,8 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/">https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/</a></li>
+<li><a href="https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/">https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/</a></li>
 <li><a href="https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/">https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/</a></li>
 <li><a href="https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/">https://libreddit.kavin.rocks/r/hyprland/comments/11jjpn8/animation_for_specific_window/</a> # Disable animation</li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/">https://libreddit.nohost.network/r/hyprland/comments/10q5t3e/no_blur_on_hyprland/</a> # Disable blur</li>
@@ -4301,6 +4336,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Settings<ul>
+<li><code>repeat again</code> # Repeat reply</li>
 <li><code>What song is it</code> # Identify a song (Get song title or artist)</li>
 <li><code>Next song</code> # Play next music (Doesn&#39;t work: <code>Previous song</code>)</li>
 <li><code>Restart this device</code> # Solve some bugs</li>
@@ -6709,6 +6745,7 @@ set timeoutlen=0 ttimeoutlen=0
 <ul>
 <li><h4>Use &quot;vi&quot;</h4>
 <ul>
+<li><code>ZZ</code> # Same as <code>:wq</code></li>
 <li><code>:%s/espeak/gtts\-cli/g</code> # Replace espeak with gtts-cli globally</li>
 <li>Use four space for indenting temporarily<ul>
 <li><code>:set tabstop=4</code></li>
@@ -6725,6 +6762,7 @@ set timeoutlen=0 ttimeoutlen=0
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/">https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/</a></li>
 <li><code>:set all</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -11215,6 +11253,23 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;firefox&quot;</h4>
+<ul>
+<li>Open previous windows and tabs</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to restore previous tabs by default on startup.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox">https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox</a></li>
+<li><code>about:preferences</code> # In &#39;Startup&#39; of &#39;General&#39;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Set dark mode in Firefox</h4>
 <ul>
 <li><code>about:config</code><pre><code>ui.systemUsesDarkTheme
@@ -14727,6 +14782,7 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>ls ~/.cache/vim/swap/</code> # View the default swap file</li>
 <li>I don&#39;t recommend it, but you can organize swap files<ul>
 <li><code>mkdir ~/.vim/tmp/</code></li>
 <li><code>vim ~/.vimrc</code><pre><code>set directory^=$HOME/.vim/tmp//
@@ -15892,7 +15948,9 @@ bind-key -n M-Space if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
 }
 </code></pre>
 <ul>
-<li><code>M-Space</code> # Replace it with your desired key</li>
+<li><code>M-Space</code> # Replace it with your desired key (e.g. <code>M-f</code>)</li>
+<li><code>scratch</code> # Replace it with your desired name (e.g. <code>fzf</code>)</li>
+<li><code>display-popup -E &quot;tmux new-session -A -s fzf &#39;ls ~/.local/bin/ | fzf | sh&#39;&quot;</code> # Interact with fzf</li>
 </ul>
 </li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Hide status bar to show more space
