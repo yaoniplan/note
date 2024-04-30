@@ -24,8 +24,8 @@
 - Shrouding the Heavens / 遮天 - 54
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 126
 - 武神主宰 - 192/432
-- 独步逍遥 - 168/399 animation
-- Perfect World / 完美世界 - 38/153
+- 独步逍遥 - 168/412
+- Perfect World / 完美世界 - 38/153 animation
 - Against the Sky Supreme / 逆天至尊 - 283
 - 斗破苍穹年番 - 87
 - 万古神话 - 169

@@ -41,13 +41,33 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Use &quot;tr&quot;</h4>
+<li><h4>Use &quot;cut&quot;</h4>
 <ul>
-<li><code>echo $XDG_DATA_DIRS | tr &#39;:&#39; &#39;\n&#39;</code> # Replace colons with newlines</li>
+<li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Because to get the current brightness level percentage.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/Hummer12007/brightnessctl/issues/55#issuecomment-732945350">https://github.com/Hummer12007/brightnessctl/issues/55#issuecomment-732945350</a></li>
+<li><code>man cut</code> # <code>/-d</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;tr&quot;</h4>
+<ul>
+<li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39; | tr --delete &#39;%&#39;</code> # Delete a percentage character</li>
+<li><code>echo $XDG_DATA_DIRS | tr &#39;:&#39; &#39;\n&#39;</code> # Replace colons with newlines<ul>
 <li><code>echo $XDG_DATA_DIRS | sed &#39;s/:/\n/g&#39;</code> # Another method</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
 <li>Because to make the output human-readable.</li>
 </ul>
 </li>
@@ -82,7 +102,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)<ul>
+<li>Disadvantages<ul>
 <li>Code indentation is incorrect (epy)</li>
 </ul>
 </li>
@@ -107,7 +127,6 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>yay --sync baca-ereader-git</code> # Install dependencies</li>
 </ul>
 </li>
@@ -124,7 +143,6 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>nix profile install nixpkgs#bk</code> # Install dependencies</li>
 </ul>
 </li>
@@ -154,7 +172,6 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>Ctrl-l</code> # Library</li>
 <li><code>Ctrl-+</code> # Zoom in (Opposite: <code>Ctrl--</code>)</li>
 <li><code>Space</code> # Next screen (Opposite: <code>Shift-Space</code>)</li>
@@ -174,7 +191,6 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li>Delete a file<ul>
 <li><code>0</code> # Go to the end of book</li>
 <li><code>RightArrow</code> # Select delete button</li>
@@ -612,7 +628,6 @@ epub_css *{font-family: sans-serif;}
 default_dark_mode 1
 </code></pre>
 </li>
-<li>Warnings: Cannot load inline web image (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>yay --sync sioyek-git</code> # Install dependencies</li>
 </ul>
 </li>
@@ -633,7 +648,6 @@ default_dark_mode 1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li>Zoom in<ul>
 <li><code>Z</code> # Zoom fit</li>
 <li><code>W</code> # Width</li>
@@ -661,7 +675,6 @@ default_dark_mode 1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warnings: Cannot load inline web images (e.g. <a href="http://example.com/image.jpg">http://example.com/image.jpg</a>)</li>
 <li><code>vim ~/.config/zathura/zathurarc</code><pre><code>map i recolor
 set recolor-darkcolor &quot;#B0B002&quot;
 </code></pre>
@@ -2753,6 +2766,8 @@ misc {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-j/k</code> # Next/previous selection (Same as <code>Ctrl-n/p</code>)</li>
+<li><code>Ctrl-m</code> # Enter key</li>
 <li><code>--reverse</code> # Put the search bar in the top of screen</li>
 <li><code>vi ~/.bashrc</code> # Bind <code>Ctrl-j</code> key to <code>Enter</code> key (Like Bash)<pre><code>export FZF_DEFAULT_OPTS=&quot;--bind=ctrl-j:accept&quot;
 </code></pre>
@@ -9238,8 +9253,9 @@ static const Rule rules[] = {
 <li><code>doas emerge -q x11-wm/dwm</code> # Recompile it to make the changes effective</li>
 </ul>
 </li>
-<li><code>brightnessctl set &quot;$@&quot;%</code> # Adjust brightness in Bash script<ul>
-<li><code>doas pacman --sync brightnessctl</code> # Install dependencies</li>
+<li>Use &quot;brightnessctl&quot;<ul>
+<li><code>brightnessctl set 20%</code> # Adjust brightness to 20%</li>
+<li><code>nix profile install nixpkgs#brightnessctl</code> # Install dependencies</li>
 </ul>
 </li>
 </ul>
