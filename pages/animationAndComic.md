@@ -1,5 +1,5 @@
 ### "Animation"
-- 诛仙 (Season1) - 26 # End of the first season
+- 诛仙 - 26 animation
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - 10
 - 你的人生是我来迟了 - 16
@@ -25,10 +25,10 @@
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 126
 - 武神主宰 - 192/432
 - 独步逍遥 - 168/412
-- Perfect World / 完美世界 - 38/159 1352 animation
-- Against the Sky Supreme / 逆天至尊 - 283
-- 斗破苍穹年番 - 87
-- 万古神话 - 169
+- Perfect World / 完美世界 - 38/160
+- Against the Sky Supreme / 逆天至尊 - 297
+- 斗破苍穹年番 - 94
+- 万古神话 - 182
 
 ### Comic
 - 靠神级天赋无限成长 - 14
