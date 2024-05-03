@@ -1,7 +1,37 @@
 ### "Animation"
-- 诛仙 - 26 animation
-- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
-- 无人能敌 - 10
+- 转生贵族靠着鉴定技能一飞冲天 - 01 animation
+- 无职转生 ～到了异世界就拿出真本事～ - 01
+- 老夫老妻重返青春 - 01
+- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12 # End of the second part
+- 夜樱家的大作战 - 01 1059
+- 战队大失格
+- 单人房、日照一般、附天使
+- 一世之尊
+- 百家诀之江湖诡事录
+- THE NEW GATE
+- 杀手寓言
+- 怪兽8号
+- 魔王学院的不适任者
+- 魔法科高校的劣等生
+- 关于我转生变成史莱姆这档事
+- 星际庄的恋爱日记
+- 虹四动画 01
+- 永生 (Part1+2) - 12+10 # End of the second part
+- 散修之王
+- 怪物转生
+- 月光下的异世界之旅 (Part1+2) - S01E12.S02E13
+- 从Lv2开始开挂的原勇者候补悠闲的异世界生活
+- 转生七王子的魔法全解
+- 丹道至尊
+- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
+- 良禽不择木
+- 被称为废物的原英雄、被家里流放后随心所欲地活下去
+- 新干线变形机器人 改变世界
+- 无名记忆
+- 隐世宗门掌教
+- 声优广播的幕前幕后
+- 太古星神诀 - 02
+- 诛仙 - 33
 - 你的人生是我来迟了 - 16
 - 圣祖之万相金澜 - 12
 - 剑域风云 (Part1+2) - 40+52+48
@@ -248,6 +278,31 @@
 - guard(end)
 
 ### Animation
+- 与妖为邻 01 # Target audience may be 13 or 14 years old
+- 花野井君与相思病 01 # Target audience may be female
+- 虚无边境 01 # Target audience may be 13 or 14 years old
+- 失忆投捕 01 # Target audience may be 13 or 14 years old
+- 竞轮少女! 01 # Target audience may be female
+- 末班列车去哪里？ 01 # Target audience may be 13 or 14 years old
+- 狼与香辛料行商邂逅贤狼 01 # Target audience may be 13 or 14 years old
+- 我回来了，欢迎回来 01 # Target audience may be 13 or 14 years old
+- 渴求游戏之神 01 # Target audience may be 13 or 14 years old
+- 吸血鬼男子宿舍 01 # Target audience may be 13 or 14 years old
+- 神之一脚 01 # Target audience may be 13 or 14 years old
+- 百妖谱·司府篇 # Chinese traditions, but feels that something is weird and lacks the desire to watch
+- Love Live！虹咲学园学园偶像同好会 短篇动画 # Target audience may be female
+- 极速星舞 # Target audience may be 13 or 14 years old
+- 喂！蜻蜓 01 # Target audience may be 13 or 14 years old
+- 哭泣少女乐队 01 # Target audience may be female
+- 影之诗 # Target audience may be female
+- 夜晚的水母不会游泳 01 # Target audience may be female
+- 恋语轻唱 01 # Target audience may be female
+- 明明是个碍事配角、却被王子给宠爱了 01 # NSFW, Gay men
+- 假面骑士歌查德 - 01 0321 # Target audience may be 13 or 14 years old
+- 秘密的偶像公主 01 0007 # Target audience may be female
+- 蔚蓝档案 - 01 0909 # Target audience may be 13 or 14 years old
+- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
+- 无人能敌 - S1E12
 - 洪荒灵尊 - S1E60
 - 逆天邪神3D - S1E30
 - Law of Devil / 恶魔法则 - S1E24
@@ -270,7 +325,6 @@
 - 外科医生爱丽丝 - 02 0431 # Target audience may be female.
 - 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - S01E11 # Target audience may be female.
 - 愚蠢天使与恶魔共舞 - S01E12
-- 月光下的异世界之旅 (Part1+2) - S01E12.S02E13
 - Mr. Villian's Day Off / 休假日的坏人先生 # S1E12, Exaggerated movements, Cute style (Panda, cat)
 - 大宇宙时代 - 01 # Target audience may not be me.
 - 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - S1E12
@@ -390,7 +444,6 @@
 - 堕玄师 - 15 # End of the first part
 - 公司里的小小前辈 - 12 # End of the first part
 - 真阳武神 - 14 # End of the first part
-- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12 # End of the second part
 - 其实我是最强的？ - 12 # End of the first part
 - 庙不可言 - 12 # End of the first part
 - 虽然等级只有1级但固有技能是最强的 - 12 # End of the first part
@@ -406,7 +459,6 @@
 - Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04 # The plot is gentle
 - 四格勇者 - 10 # The plot is gentle
 - Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+12 # The plot is gentle
-- 永生 (Part1+2) - 12+10 # End of the second part
 - Spy Room / 间谍教室 - 08 # The plot is gentle
 - 山海际会 - 25 # End of the first part
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
@@ -439,7 +491,6 @@
 - 英雄教室 - 03 # The target audience is thirteen or fourteen years old
 - 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen years old
 - Expanding Sky! Precure光之美少女 - 01 # The target audience is children.
-- 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
 - 一世独尊 - 26 # The plot is too corny
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen years old
 - 混世机甲 - 01 1214 # The voice actors do not match their lips

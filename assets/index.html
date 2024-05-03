@@ -726,6 +726,10 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 <ul>
 <li><h4>Use &quot;hyprctl&quot;</h4>
 <ul>
+<li><code>hyprctl dispatch movetoworkspace &quot;1,address:0x583b23a8c460&quot;</code> # Fix window disappearing bug<ul>
+<li><code>hyprctl clients -j</code> # Get address (e.g. <code>0x583b23a8c460</code>)</li>
+</ul>
+</li>
 <li><code>hyprctl -j activewindow | jq -r &#39;&quot;\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])&quot;&#39;</code><ul>
 <li>e.g. <code>690,22 654x355</code></li>
 </ul>
@@ -739,6 +743,7 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/Hyprland/issues/1452#issuecomment-1408359676">https://github.com/hyprwm/Hyprland/issues/1452#issuecomment-1408359676</a> # Move a window to a workspace</li>
 <li><a href="https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive">https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive</a></li>
 <li><code>man hyprctl</code> # <code>/-j</code></li>
 <li>ChatGPT</li>
@@ -14582,6 +14587,11 @@ set number
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li><code>q:</code> # Command line mode (Query recent command)<ul>
+<li><code>/</code> # Search</li>
+<li><code>:q</code> # Quit</li>
+</ul>
+</li>
 <li><code>Ctrl-w :term</code> # New a terminal if tmux does not exist</li>
 <li><code>:!cat % | wl-copy</code> # Copy current file&#39;s content to clipboard</li>
 <li><code>:%s/$/ - 00/g</code> # Batch add a string (e.g. &#39; - 00&#39;) to the end of line</li>
