@@ -1,7 +1,7 @@
 ### "Animation"
 - 转生贵族靠着鉴定技能一飞冲天 - 04
-- 老夫老妻重返青春 - 01 animation
-- The Duke of Death and His Maid / 死神少爷与黑女仆 (Part1+2) - 12+12 # End of the second part
+- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E04 1425 animation
 - 夜樱家的大作战 - 01 1059
 - 战队大失格
 - 单人房、日照一般、附天使
@@ -277,7 +277,7 @@
 - guard(end)
 
 ### Animation
-- 无职转生 ～到了异世界就拿出真本事～ - S1E24.S2E13 2011 # Maybe just want to express the protagonist's decadence
+- 无职转生 - S1E24.S2E13 2011 # Maybe just want to express the protagonist's decadence
     - Except for the first two episodes, the rest were spent by pressing the fast forward button
 - 与妖为邻 01 # Target audience may be 13 or 14 years old
 - 花野井君与相思病 01 # Target audience may be female

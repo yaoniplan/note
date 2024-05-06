@@ -41,6 +41,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;nmap&quot;</h4>
+<ul>
+<li><code>nmap 192.168.10.0/24</code> # Scan all IP addresses (From <code>192.168.10.0</code> to <code>192.168.10.255</code>)</li>
+<li><code>nmap -sT -p- 192.168.10.100</code><ul>
+<li><code>-sT</code> # Scan TCP connect</li>
+<li><code>-p-</code> # Port (From 1 to 65535)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to scan all ports of an IP address.</li>
+<li><code>nix profile install nixpkgs#nmap</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man nmap</code> # <code>/-sT </code> <code>/-p-</code></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;cut&quot;</h4>
 <ul>
 <li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39;</code></li>
@@ -3166,6 +3189,7 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--range &quot;3 - 4&quot;</code> # Specify range (Without clicking next manually)</li>
 <li><code>cat ~/.local/state/ani-cli/ani-hsts</code> # View history<ul>
 <li><code>tac ~/.local/state/ani-cli/ani-hsts | less</code> # Another way</li>
 </ul>
@@ -14884,7 +14908,7 @@ doas systemctl start cronie
 </ul>
 <hr>
 <ul>
-<li><h4>Replace &quot;lsof&quot; command with &quot;ps&quot; command</h4>
+<li><h4>Use &quot;ps&quot;</h4>
 <ul>
 <li><code>ps aux | grep clash</code></li>
 <li><code>kill 3828</code></li>
@@ -16641,6 +16665,8 @@ export no_proxy=&quot;localhost, 127.0.0.1&quot;
 <li>Solve the problem about <strong>address already in use</strong><pre><code>ERRO[0438] Start Mixed(http+socks) server error: listen tcp 127.0.0.1:7890: bind: address already in use
 </code></pre>
 <ul>
+<li>Use &quot;lsof&quot;</li>
+<li><code>nix profile install nixpkgs#lsof</code> # Install dependencies</li>
 <li><code>lsof -i :7890</code> # Get the PID (<code>ps aux | grep clash</code>)</li>
 <li><code>kill yourPID</code> # Replace <em>yourPID</em> with <em>PID</em> you got</li>
 </ul>
