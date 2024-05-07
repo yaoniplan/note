@@ -1,11 +1,8 @@
 ### "Animation"
 - 转生贵族靠着鉴定技能一飞冲天 - 04
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
-- The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E04 1425 animation
-- 夜樱家的大作战 - 01 1059
-- 战队大失格
-- 单人房、日照一般、附天使
-- 一世之尊
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E05
+- 一世之尊 01 animation
 - 百家诀之江湖诡事录
 - THE NEW GATE
 - 杀手寓言
@@ -277,6 +274,9 @@
 - guard(end)
 
 ### Animation
+- 单人房、日照一般、附天使 - 02 0758 # Target audience may be 13 or 14 years old
+- 战队大失格 - 01 0127 # Target audience may be 13 or 14 years old
+- Mission: Yozakura Family / 夜樱家的大作战 - 03 0040 # Target audience may be 13 or 14 years old
 - 无职转生 - S1E24.S2E13 2011 # Maybe just want to express the protagonist's decadence
     - Except for the first two episodes, the rest were spent by pressing the fast forward button
 - 与妖为邻 01 # Target audience may be 13 or 14 years old
@@ -713,6 +713,8 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Kiki's Delivery Service / 魔女宅急便
+- Porco Rosso / 红猪
 - Braveheart
 - X-Men # (Part2011+2016)
 - Ex Machina / 机械姬 #NSFW # Accelerating the era of artificial intelligence
