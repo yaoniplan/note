@@ -2,8 +2,8 @@
 - 转生贵族靠着鉴定技能一飞冲天 - 04
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
 - The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E05
-- 一世之尊 01 animation
-- 百家诀之江湖诡事录
+- 一世之尊 13
+- 百家诀之江湖诡事录 - 05 animation
 - THE NEW GATE
 - 杀手寓言
 - 怪兽8号

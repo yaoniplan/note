@@ -7517,6 +7517,7 @@ find . type f -inum 20447344 -exec rm {} \;
 <ul>
 <li><h4>Use &quot;bash&quot;</h4>
 <ul>
+<li><code>if [[ -z &quot;$fileName&quot; ]]; then</code> # Check if the file name is empty</li>
 <li><code>if [[ -x /usr/bin/rsync ]]; then</code></li>
 <li><code>while true; do smplayer &#39;yourURL&#39; &amp;&amp; [[ $? -eq 0 ]]; done</code><ul>
 <li>Execute the command until it succeeds</li>
@@ -7527,6 +7528,7 @@ find . type f -inum 20447344 -exec rm {} \;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-z</code> # Zero (The length of string)</li>
 <li><code>-x</code> # Exist and executable</li>
 <li><code>$?</code> # Exit status</li>
 <li><code>-ne</code> # Not equal</li>
@@ -7539,7 +7541,7 @@ find . type f -inum 20447344 -exec rm {} \;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man bash</code> # Search &quot;-eq&quot;</li>
+<li><code>man bash</code> # <code>/-eq</code> <code>/^condition</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -11301,6 +11303,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 <ul>
 <li><h4>Use &quot;firefox&quot;</h4>
 <ul>
+<li><code>media.ffmpeg.vaapi.enabled</code> # Set to true to enable hardware decoding</li>
 <li>Open previous windows and tabs</li>
 </ul>
 </li>
@@ -11309,6 +11312,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>about:config</code> # <code>/vaapi</code></li>
 <li><a href="https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox">https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox</a></li>
 <li><code>about:preferences</code> # In &#39;Startup&#39; of &#39;General&#39;</li>
 </ul>
@@ -13613,6 +13617,7 @@ root       pts/0    192.168.10.105   8:38AM     - w
 <li><h4>Read input in Shell script</h4>
 <ul>
 <li><code>$#</code> # Number of argument<ul>
+<li><code>if [[ &quot;$#&quot; -ne 0 ]]</code></li>
 <li><code>if [[ &quot;$#&quot; -eq 2 ]]; then</code></li>
 <li><code>elif [[ &quot;$#&quot; -eq 1 ]]; then</code></li>
 </ul>
@@ -16022,17 +16027,17 @@ bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selec
 </code></pre>
 <ul>
 <li><code>doas emerge -aq x11-misc/xclip</code> # Install in Gentoo Linux</li>
-<li><code>xclip -selection clipboard</code> # Replace it with <code>wl-copy</code> in Wayland</li>
+<li><code>xclip -selection clipboard</code> # Replace it with <code>wl-copy</code> on Wayland</li>
 </ul>
 </li>
-<li><code>vim ~/.tmux.conf</code> # Set the escape time to 0<pre><code># Set the escape time to 0
+<li><code>vim ~/.tmux.conf</code> # Avoid triggering bound keys accidentally<pre><code># Set the escape time to 0
 set -sg escape-time 0
 </code></pre>
 <ul>
 <li><code>-s</code> # Sessions</li>
 </ul>
 </li>
-<li><code>vim ~/.tmux.conf</code> # solve a problem about <code>join-pane -t 0</code><pre><code># Set the base index to one
+<li><code>vim ~/.tmux.conf</code> # Solve a problem about <code>join-pane -t 0</code><pre><code># Set the base index to one
 set -g base-index 1
 </code></pre>
 </li>
