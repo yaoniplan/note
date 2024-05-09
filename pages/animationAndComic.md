@@ -3,10 +3,10 @@
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
 - The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E05
 - 一世之尊 13
-- 百家诀之江湖诡事录 - 05 animation
-- THE NEW GATE
-- 杀手寓言
-- 怪兽8号
+- 百家诀之江湖诡事录 - 12
+- THE NEW GATE 04
+- 杀手寓言 - 05
+- 怪兽8号 animation
 - 魔王学院的不适任者
 - 魔法科高校的劣等生
 - 关于我转生变成史莱姆这档事

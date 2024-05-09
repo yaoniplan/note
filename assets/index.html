@@ -651,7 +651,7 @@ epub_css *{font-family: sans-serif;}
 default_dark_mode 1
 </code></pre>
 </li>
-<li><code>yay --sync sioyek-git</code> # Install dependencies</li>
+<li><code>yay --sync sioyek-git</code> # Install dependencies (Maybe it does not release any more new versions)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -1259,8 +1259,9 @@ esac
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Disadvantages: Do not support Chromium extensions<ul>
-<li><a href="https://github.com/qutebrowser/qutebrowser/issues/30">https://github.com/qutebrowser/qutebrowser/issues/30</a></li>
+<li>Disadvantages<ul>
+<li><a href="https://github.com/qutebrowser/qutebrowser/issues/7286#issuecomment-1168130067">https://github.com/qutebrowser/qutebrowser/issues/7286#issuecomment-1168130067</a> # Some scripts are incompatible</li>
+<li><a href="https://github.com/qutebrowser/qutebrowser/issues/30">https://github.com/qutebrowser/qutebrowser/issues/30</a> # Do not support Chromium extensions</li>
 </ul>
 </li>
 <li><code>gC</code> # Duplicate the current tab</li>
@@ -1271,7 +1272,6 @@ esac
 </ul>
 </li>
 <li><code>:adblock-update</code> # Get adblock lists</li>
-<li>Right click</li>
 <li><code>Ctrl-Tab</code> # Toggle between two tabs</li>
 <li>Use userscripts<ul>
 <li>Put your file (e.g. <a href="https://github.com/AckslD/Qute-Translate/blob/master/translate">https://github.com/AckslD/Qute-Translate/blob/master/translate</a>) in <code>~/.config/qutebrowser/userscripts/</code> # Method one</li>
@@ -8952,14 +8952,17 @@ sleep &quot;$1&quot;; notification
 </ul>
 <hr>
 <ul>
-<li><h4>View the creation time of a file in Linux</h4>
+<li><h4>Use &quot;stat&quot;</h4>
 <ul>
 <li><code>stat b.txt</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>b.txt</code> # Replace it with a file name</li>
-<li>Because to know how long the crawler script has been working.</li>
+<li>Because to know how long the crawler script has been working.<ul>
+<li>View the creation time (Birth day) of a file</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
