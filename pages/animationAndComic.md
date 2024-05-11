@@ -7,8 +7,7 @@
 - THE NEW GATE 04
 - 杀手寓言 - 05
 - 怪兽8号 04 
-- 魔王学院的不适任者 - 07 1700 animation
-- 魔法科高校的劣等生
+- 魔法科高校的劣等生 animation
 - 关于我转生变成史莱姆这档事
 - 星际庄的恋爱日记
 - 虹四动画 01
@@ -274,6 +273,7 @@
 - guard(end)
 
 ### Animation
+- 魔王学院的不适任者 - S01E12.S02E02 1018 # Plot may be routine
 - 单人房、日照一般、附天使 - 02 0758 # Target audience may be 13 or 14 years old
 - 战队大失格 - 01 0127 # Target audience may be 13 or 14 years old
 - Mission: Yozakura Family / 夜樱家的大作战 - 03 0040 # Target audience may be 13 or 14 years old

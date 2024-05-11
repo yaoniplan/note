@@ -10569,10 +10569,12 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation">https://github.com/CogentRedTester/mpv-user-input?tab=readme-ov-file#installation</a></li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Copy the full path to clipboard
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print title (See https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst#property-list to get the property)
+p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send ${media-title}&quot;
+# Copy the full path to clipboard
 Ctrl+shift+c run &quot;/bin/bash&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
 # Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
-p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
+Ctrl+shift+x run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
 # Reload after editing `~/.config/mpv/input.conf`
 CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
 # `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
@@ -18346,6 +18348,7 @@ exec ~/.config/shell/autoGit.sh
 <ul>
 <li><h4>Search syntax in Google</h4>
 <ul>
+<li><code>define:test</code> # Use online dictionary</li>
 <li><code>artificial intelligence after:2023/03/27</code></li>
 </ul>
 </li>
@@ -18354,6 +18357,7 @@ exec ~/.config/shell/autoGit.sh
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://bbs.archlinux.org/viewtopic.php?id=124937">https://bbs.archlinux.org/viewtopic.php?id=124937</a></li>
 <li><a href="https://www.google.com/advanced_search">https://www.google.com/advanced_search</a></li>
 <li>ChatGPT</li>
 </ul>
