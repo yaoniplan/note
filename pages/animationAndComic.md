@@ -7,8 +7,7 @@
 - THE NEW GATE 04
 - 杀手寓言 - 05
 - 怪兽8号 04 
-- 魔法科高校的劣等生 animation
-- 关于我转生变成史莱姆这档事
+- 关于我转生变成史莱姆这档事 S01E04 0433 animation
 - 星际庄的恋爱日记
 - 虹四动画 01
 - 永生 (Part1+2) - 12+10 # End of the second part
@@ -273,6 +272,7 @@
 - guard(end)
 
 ### Animation
+- 魔法科高校的劣等生 S01E02 1209 # Plot may be slow
 - 魔王学院的不适任者 - S01E12.S02E02 1018 # Plot may be routine
 - 单人房、日照一般、附天使 - 02 0758 # Target audience may be 13 or 14 years old
 - 战队大失格 - 01 0127 # Target audience may be 13 or 14 years old

@@ -41,6 +41,52 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;dioxionary&quot;</h4>
+<ul>
+<li><code>dioxionary --read-aloud --online Jesus</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>dioxionary list</code> # List all queried words</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>dioxionary --help</code></li>
+<li><a href="https://github.com/vaaandark/dioxionary/releases">https://github.com/vaaandark/dioxionary/releases</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sdcv&quot;</h4>
+<ul>
+<li><code>sdcv Linux</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Download dictionary files<ul>
+<li><a href="https://github.com/skywind3000/ECDICT/releases">https://github.com/skywind3000/ECDICT/releases</a></li>
+<li><a href="https://web.archive.org/web/20140428004049/http://abloz.com/huzheng/stardict-dic/misc/">https://web.archive.org/web/20140428004049/http://abloz.com/huzheng/stardict-dic/misc/</a></li>
+<li><a href="https://github.com/BoboTiG/ebook-reader-dict/blob/master/docs/en/README.md#downloads">https://github.com/BoboTiG/ebook-reader-dict/blob/master/docs/en/README.md#downloads</a></li>
+</ul>
+</li>
+<li>Install downloaded dictionaries<ul>
+<li><code>doas tar --bzip2 -xf stardict-xfardic-gnu-linux-2.4.2.tar.bz2 -C /usr/share/stardict/dic/</code> # Extract &#39;.tar.bz2&#39;</li>
+<li><code>doas unzip dict-en-en.zip -d /usr/share/stardict/dic/dict-en-en/</code> # Extract &#39;.zip&#39;</li>
+</ul>
+</li>
+<li><code>nix profile install nixpkgs#sdcv</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>sdcv # StarDict console version</li>
+<li><code>man sdcv</code> # <code>/^file</code></li>
+<li><a href="https://askubuntu.com/questions/191125/is-there-an-offline-command-line-dictionary/191268#191268">https://askubuntu.com/questions/191125/is-there-an-offline-command-line-dictionary/191268#191268</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;dict&quot;</h4>
 <ul>
 <li><code>dict subject</code></li>
@@ -14904,7 +14950,7 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><code>Ctrl-upArrow</code> # The previous diary</li>
-<li><code>:VWS /Use VimWiki/</code> # Search &quot;Use VimWiki&quot;<ul>
+<li><code>:VWS /Use VimWiki/</code> # Search &#39;Use VimWiki&#39;<ul>
 <li><code>:VWS</code> # The alias of <code>:VimwikiSearch</code></li>
 <li><code>:VWS /\csymbol/</code><ul>
 <li><code>\c</code> # Case-insensitive</li>
@@ -14922,6 +14968,12 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.vimrc</code><pre><code>&quot; Change leader key from &#39;\&#39; to &#39; &#39;
+let mapleader = &quot; &quot;
+&quot; Map the keys to complete strings (`&lt;Left&gt;`: Move cursor one position to the left)
+nnoremap &lt;leader&gt;w/ :VimwikiSearch //&lt;Left&gt;
+</code></pre>
+</li>
 <li>Advantage: Wiki<ul>
 <li><code>Enter</code> # Press it to create a wiki file<ul>
 <li><code>../pages/Vim</code> # Create <code>~/vimwiki/pages/Vim.md</code> file</li>
@@ -14938,12 +14990,14 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://overflow.smnz.de/questions/446269/can-i-use-space-as-mapleader-in-vim">https://overflow.smnz.de/questions/446269/can-i-use-space-as-mapleader-in-vim</a></li>
 <li><code>:help VimwikiTable</code></li>
 <li><a href="https://www.reddit.com/r/vim/comments/8xzpkz/you_probably_dont_need_vimwiki/">https://www.reddit.com/r/vim/comments/8xzpkz/you_probably_dont_need_vimwiki/</a></li>
 <li><a href="https://samgriesemer.com/Vimwiki#Settings">https://samgriesemer.com/Vimwiki#Settings</a></li>
 <li><a href="https://gist.github.com/ovelny/72659e841c1dbcee173eb244c8609252">https://gist.github.com/ovelny/72659e841c1dbcee173eb244c8609252</a></li>
 <li><a href="https://vi.stackexchange.com/questions/19357/search-through-entire-vimwiki#:~:text=Vimwiki%20has%20a%20simple%20search,help%20pages%20%3Ah%20%3AVimwikiSearch%20">https://vi.stackexchange.com/questions/19357/search-through-entire-vimwiki#:~:text=Vimwiki%20has%20a%20simple%20search,help%20pages%20%3Ah%20%3AVimwikiSearch%20</a>.</li>
 <li><a href="https://github.com/vimwiki/vimwiki">https://github.com/vimwiki/vimwiki</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15948,28 +16002,16 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 <hr>
 <ul>
-<li><h4>Remove a symbolic link in #Linux</h4>
+<li><h4>Use &quot;ln&quot;</h4>
 <ul>
-<li><code>unlink ./i3/config</code></li>
+<li><code>ln --symbolic ~/.config/i3/config ./i3/config</code><ul>
+<li><code>ln</code> # Link</li>
 </ul>
 </li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2022-12-25_15-44_1671954303336_0.png" alt="2022-12-25_15-44.png"></li>
-<li><img src="../assets/2022-12-25_15-47_1671954471140_0.png" alt="2022-12-25_15-47.png"></li>
-<li><code>man unlink</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Create a symbolic link in #Linux</h4>
-<ul>
-<li><code>ln -s ~/.config/i3/config ./i3/config</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>ln</code> # Link</li>
-<li><code>-s</code> # Symbolic</li>
+<li><code>unlink ./i3/config</code> # Remove a symbolic link</li>
 <li><code>~/.config/i3/config</code> # A hard link</li>
 <li><code>./i3/config</code> # A symbolic link<ul>
 <li><code>mkdir ./i3/</code> # Make a directory before using the <em>ln</em> command</li>
@@ -15979,9 +16021,12 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>ls -l ./i3/config</code></li>
 </ul>
 </li>
+<li>Because to make a symbolic link on Linux.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2022-12-25_15-44_1671954303336_0.png" alt="2022-12-25_15-44.png"></li>
+<li><img src="../assets/2022-12-25_15-47_1671954471140_0.png" alt="2022-12-25_15-47.png"></li>
 <li><img src="../assets/2022-12-25_16-11_1671955932398_0.png" alt="2022-12-25_16-11.png"></li>
 <li><code>man ln</code></li>
 <li><a href="https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/">https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/</a></li>
