@@ -7,7 +7,7 @@
 - THE NEW GATE 04
 - 杀手寓言 - 05
 - 怪兽8号 04 
-- 关于我转生变成史莱姆这档事 S01E04 0433 animation
+- 关于我转生变成史莱姆这档事 S01E10 1730 animation
 - 星际庄的恋爱日记
 - 虹四动画 01
 - 永生 (Part1+2) - 12+10 # End of the second part

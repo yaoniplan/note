@@ -58,6 +58,32 @@
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;ftp&quot;</h4>
+<ul>
+<li><code>doas systemctl enable vsftpd --now</code> # Enable the daemon now</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas vim /etc/vsftpd.conf</code><pre><code># Set default directory for anonymous users
+anon_root=/mnt
+</code></pre>
+<ul>
+<li><code>doas systemctl restart vsftpd</code> # Restart to make it effective after editing configuration file</li>
+</ul>
+</li>
+<li><code>doas pacman --sync vsftpd</code> # Install dependencies</li>
+<li>Because to use FTP in software that does not support SFTP.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.gentoo.org/wiki/Vsftpd#Anonymous_read_access">https://wiki.gentoo.org/wiki/Vsftpd#Anonymous_read_access</a></li>
+<li><code>man 5 vsftpd.conf</code> # <code>/anon_root</code></li>
+<li><code>man vsftpd</code> # <code>/^file</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;sdcv&quot;</h4>
 <ul>
 <li><code>sdcv Linux</code></li>
@@ -7235,7 +7261,10 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>cronie</code> # Replace it with your service</li>
-<li><code>doas systemctl enable cronie --now</code> # One command that combines them</li>
+<li><code>doas systemctl enable cronie --now</code> # One command that combines them<ul>
+<li><code>enable</code> # Replace it with <code>disable</code> to disable</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -18443,7 +18472,12 @@ exec ~/.config/shell/autoGit.sh
 <li><code>bzcat /usr/share/doc/picom-9.1/picom.sample.conf.bz2 &gt; ~/.config/picom.conf</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>bunzip2 --keep dict-en-en.df.bz2</code> # Decompress (Keep original file)</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man bunzip2</code> # <code>/keep</code></li>
 <li><img src="../assets/image_1665997772943_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1665997788370_0.png" alt="image.png"></li>
 <li><a href="https://wiki.gentoo.org/wiki/Alacritty">https://wiki.gentoo.org/wiki/Alacritty</a></li>
