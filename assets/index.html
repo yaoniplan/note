@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>The abbreviation of &quot;scalable vector graphics&quot; is &quot;svg&quot;</h4>
+<ul>
+<li>An image format</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because clearer than pictures in other formats. (e.g. GIF, PNG, etc.)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/SVG#/media/File:Bitmap_VS_SVG.svg">https://en.wikipedia.org/wiki/SVG#/media/File:Bitmap_VS_SVG.svg</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;inkscape&quot;</h4>
 <ul>
 <li><code>t</code> # Text</li>
@@ -48,6 +64,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/note/index.html</code><pre><code class="language-html">&lt;head&gt;
+  &lt;link rel=&quot;icon&quot; type=&quot;image/svg+xml&quot; href=&quot;../assets/favicon.svg&quot;&gt;
+&lt;/head&gt;
+</code></pre>
+</li>
 <li><code>nix profile install nixpkgs#inkscape</code> # Install dependencies</li>
 <li>Because to create an SVG favicon for a website.</li>
 </ul>
@@ -82,6 +103,10 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Other clients<pre><code>192.168.10.100 # Server
+/grow # Path (Optional)
+</code></pre>
+</li>
 <li><code>doas vim /etc/vsftpd.conf</code><pre><code># Set default directory for anonymous users
 anon_root=/mnt
 </code></pre>
@@ -140,7 +165,7 @@ anon_root=/mnt
 <li>Solve the problem<pre><code>&#39;dict.conf&#39; doesn&#39;t specify any dict server
 </code></pre>
 <ul>
-<li><code>vim ~/.dictrc</code><pre><code>server dict.org
+<li><code>vim /etc/dict.conf</code> # Use online dictionaries<pre><code>server dict.org
 </code></pre>
 </li>
 </ul>
