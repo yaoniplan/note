@@ -1,15 +1,14 @@
 ### "Animation"
 - 转生贵族靠着鉴定技能一飞冲天 - 04
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
-- The Duke of Death and His Maid / 死神少爷与黑女仆 - S1E12.S2E12.S3E05
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E05
 - 一世之尊 13
 - 百家诀之江湖诡事录 - 12
 - THE NEW GATE 04
 - 杀手寓言 - 05
 - 怪兽8号 04 
-- 关于我转生变成史莱姆这档事 S01E10 1730 animation
-- 星际庄的恋爱日记
-- 虹四动画 01
+- Astro Note / アストロノオト / 星际庄的恋爱日记 06
+- 虹四动画 01 animation
 - 永生 (Part1+2) - 12+10 # End of the second part
 - 散修之王
 - 怪物转生
@@ -272,6 +271,7 @@
 - guard(end)
 
 ### Animation
+- 关于我转生变成史莱姆这档事 S01E15 1820 # Plot may be slow
 - 魔法科高校的劣等生 S01E02 1209 # Plot may be slow
 - 魔王学院的不适任者 - S01E12.S02E02 1018 # Plot may be routine
 - 单人房、日照一般、附天使 - 02 0758 # Target audience may be 13 or 14 years old
@@ -713,8 +713,9 @@
 - 刀剑神域(boring)
 
 ### Movie
-- Kiki's Delivery Service / 魔女宅急便
-- Porco Rosso / 红猪
+- Her # Interact with artificial intelligence through voice
+- Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
+- Porco Rosso / 红猪 # Taiwanese dubbing is cute
 - Braveheart
 - X-Men # (Part2011+2016)
 - Ex Machina / 机械姬 #NSFW # Accelerating the era of artificial intelligence
