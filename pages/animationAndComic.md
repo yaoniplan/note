@@ -8,12 +8,10 @@
 - 杀手寓言 - 05
 - 怪兽8号 04 
 - Astro Note / アストロノオト / 星际庄的恋爱日记 06
-- 虹四动画 01 animation
-- 永生 (Part1+2) - 12+10 # End of the second part
-- 散修之王
-- 怪物转生
-- 月光下的异世界之旅 (Part1+2) - S01E12.S02E13
-- 从Lv2开始开挂的原勇者候补悠闲的异世界生活
+- 永生 - S01E12.S02E12.S03E05
+- 散修之王 - 10
+- 怪物转生 - 07
+- 从Lv2开始开挂的原勇者候补悠闲的异世界生活 animation
 - 转生七王子的魔法全解
 - 丹道至尊
 - 妖神记 (Part1+2+3+4+5+6+7) - 40+40+40+52+52+52+52 # End of the seventh part
@@ -271,6 +269,8 @@
 - guard(end)
 
 ### Animation
+- 月光下的异世界之旅 - S01E12.S02E14 0805 # Plot may be slow
+- 虹四动画 02 # Target audience may be female
 - 关于我转生变成史莱姆这档事 S01E15 1820 # Plot may be slow
 - 魔法科高校的劣等生 S01E02 1209 # Plot may be slow
 - 魔王学院的不适任者 - S01E12.S02E02 1018 # Plot may be routine
