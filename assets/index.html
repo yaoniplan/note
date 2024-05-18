@@ -15062,8 +15062,12 @@ doas systemctl start cronie
 <li><em><strong>Notes</strong></em><ul>
 <li><code>vim ~/.vimrc</code><pre><code>&quot; Change leader key from &#39;\&#39; to &#39; &#39;
 let mapleader = &quot; &quot;
-&quot; Map the keys to complete strings (`&lt;Left&gt;`: Move cursor one position to the left)
+&quot; Map the keys to complete strings
+&quot; (n: normal; nore: non-recursive)
+&quot; (`&lt;Left&gt;`: Move cursor one position to the left)
 nnoremap &lt;leader&gt;w/ :VimwikiSearch //&lt;Left&gt;
+&quot; `&lt;CR&gt;` # Carriage Return (Same as `&lt;Enter&gt;`)
+nnoremap &lt;leader&gt;it :InsertTemplateText&lt;CR&gt;
 </code></pre>
 </li>
 <li>Advantage: Wiki<ul>
