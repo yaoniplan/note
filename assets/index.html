@@ -2897,6 +2897,8 @@ font-size = 12
 windowrulev2 = workspace 1, class:^(firefox)$
 # Enable fullscreen for a window by default
 windowrulev2 = fullscreen, class:^(wayst1)$
+# Execute script at boot time
+exec-once = ~/.local/bin/runAtBootTime.sh
 # Enable scratchpad
 # silently launch wayst in special workspace
 exec-once = [workspace special silent] wayst -e tmux new-session &#39;vim -c &quot;VimwikiMakeDiaryNote&quot;&#39;
