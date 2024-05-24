@@ -16,15 +16,12 @@
 - 丹道至尊 46
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E08
 - 良禽不择木 07
-- 隐世宗门掌教 07 animation
-- 声优广播的幕前幕后
-- 太古星神诀 - 02
-- 诛仙 - 33
-- 你的人生是我来迟了 - 16
-- 圣祖之万相金澜 - 12
-- 剑域风云 (Part1+2) - 40+52+48
-- 九天玄帝诀 - 238
-- 神龙星主 - 30
+- 隐世宗门掌教 21
+- 诛仙 - 36
+- 圣祖之万相金澜 - 19
+- 剑域风云 - S01E40.S02E52.S03E63
+- 九天玄帝诀 - 248
+- 神龙星主 - 30 animation
 - 真武巅峰 (Part1+2) - 40+95
 - 云中居三子 - 21
 - 师兄啊师兄 - 33
@@ -266,6 +263,9 @@
 - guard(end)
 
 ### Animation
+- 你的人生是我来迟了 - S01E16
+- 太古星神诀 - 07 0806 # Target audience may be 13 or 14 years old
+- 声优广播的幕前幕后 01 0800 # Target audience may be female
 - 无名记忆 03 0755 # Target audience may be 13 or 14 years old
 - 新干线变形机器人 改变世界 # Target audience may be 13 or 14 years old
 - 被称为废物的原英雄、被家里流放后随心所欲地活下去 06 1632 # Target audience may be 13 or 14 years old
