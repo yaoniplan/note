@@ -21,11 +21,11 @@
 - 圣祖之万相金澜 - 19
 - 剑域风云 - S01E40.S02E52.S03E63
 - 九天玄帝诀 - 248
-- 神龙星主 - 30 animation
-- 真武巅峰 (Part1+2) - 40+95
-- 云中居三子 - 21
-- 师兄啊师兄 - 33
-- 万古狂帝 - 19
+- 神龙星主 - 39
+- 真武巅峰 - S01E40.S02E95.S03E08
+- 云中居三子 - 25
+- 师兄啊师兄 - 38
+- 万古狂帝 - 19 animation
 - 独步万古 - 63
 - 凡人修仙传 - 98
 - 仙武传 - 57
@@ -507,7 +507,7 @@
     - https://ja.wikipedia.org/wiki/堕靡泥の星
 - Dr.Stone / 石纪元 (Part1+2+3) 24+11+11 # End of the third part
 - 勇者死了 - 12 # End of the first part
-- Rick and Morty - (Part1+2+3+4+5+6) #NSFW 11+10+10+10+10+06 # Fun seems to be gone
+- Rick and Morty / 瑞克和莫蒂 - #NSFW S01E11.S02E10.S03E10.S04E10.S05E10.S06E06 # Fun seems to be gone
 - Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
 - 神印王座 - 59 1425 # Slow pace
 - おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
