@@ -25,9 +25,8 @@
 - 真武巅峰 - S01E40.S02E95.S03E08
 - 云中居三子 - 25
 - 师兄啊师兄 - 38
-- 万古狂帝 - 19 animation
-- 独步万古 - 63
-- 凡人修仙传 - 98
+- 独步万古 - 70
+- 凡人修仙传 - 98 animation
 - 仙武传 - 57
 - 万界至尊 (Part1+2)- 50+57
 - 仙逆 - 33
@@ -263,6 +262,7 @@
 - guard(end)
 
 ### Animation
+- 万古狂帝 - S01E20
 - 你的人生是我来迟了 - S01E16
 - 太古星神诀 - 07 0806 # Target audience may be 13 or 14 years old
 - 声优广播的幕前幕后 01 0800 # Target audience may be female

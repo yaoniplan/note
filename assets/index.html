@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>The abbreviation of &quot;File Transfer Protocol&quot; is &quot;FTP&quot;</h4>
+<ul>
+<li>Communication</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to transfer files from a server to another.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol">https://en.wikipedia.org/wiki/File_Transfer_Protocol</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;basename&quot;</h4>
 <ul>
 <li><code>basename &quot;$(swww query | sed --silent &#39;s/.*image: //p&#39;)&quot;</code></li>
@@ -4535,6 +4551,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Set a timer for 7 minutes</code> # Boil a pot of water</li>
 <li><code>Stop the timer</code> # Stop it</li>
 <li><code>Set an alarm at fourteen</code> # Lunch break from 13:40</li>
+<li><code>Wake me up at five thirty</code> # <code>Cancel 05:30</code> to cancel</li>
 <li><code>Show alarms</code></li>
 <li><code>Delete all of them</code></li>
 </ul>
@@ -4560,6 +4577,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Restart this device</code> # Solve some bugs</li>
 <li><code>Enable Night Shift</code> # Protect eyes</li>
 <li><code>What date is it</code> # Replace <code>it</code> with <code>tomorrow</code> (e.g. the day after tomorrow, the end of the month, sunrise)</li>
+<li><code>What time is it</code> # <code>What time will it be in eight hours</code> (Current time plus eight hours)</li>
 <li><code>Open Translate</code> # Open the application</li>
 <li><code>Increase volume by 40 percent</code></li>
 <li><code>Reduce the volume by 40 percent</code></li>
@@ -10980,11 +10998,11 @@ pass = H2bvDv2jDfEuI3fMJ263WjkI
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>rclone copy --http-url https://www.cs.mun.ca/~boliver/70s :http: alist:/interestAndHobby/</code> # Copy remote to another remote</li>
+<li><code>rclone copy --http-url https://www.cs.mun.ca/~boliver/70s :http: alist:/interestAndHobby/</code> # Copy from remote to another</li>
 <li><code>rclone copy music:/ ~/music/</code> # Copy from remote to local</li>
 <li>Because to mount the AList to the local directory.</li>
 <li><code>doas apt install rclone</code> # Install it in Ubuntu Server 22.04</li>
-<li><code>rclone lsd yaoniplan:/</code> # Check it</li>
+<li><code>rclone lsd yaoniplan:/</code> # List directory</li>
 <li><code>crontab -e</code> # Run it at boot in Ubuntu Server 22.04<pre><code>@reboot /usr/bin/rclone mount yaoniplan:/ /mnt/yaoniplan/ &amp;
 </code></pre>
 <ul>
@@ -11005,7 +11023,7 @@ pass = H2bvDv2jDfEuI3fMJ263WjkI
 </ul>
 </li>
 <li>Mount to another computer<ul>
-<li><code>doas emerge -q net-fs/sshfs</code></li>
+<li><code>doas emerge -q net-fs/sshfs</code> # Install dependencies</li>
 <li><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/</code> # Mount</li>
 <li><code>fusermount -u /mnt/yaoniplan/</code> # Unmount that solve the problem<pre><code>yaoniplan@tux ~ $ &lt;3&gt;ERROR : /mnt/music/: Unmounted rclone mount
 </code></pre>
@@ -21426,7 +21444,7 @@ XMODIFIERS=@im=fcitx //添加这一行
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2023-04-30_19-58.png" alt="2023-04-30_19-58.png"></li>
-<li><code>man grep</code> # <code>-x</code> <code>-A</code></li>
+<li><code>man grep</code> # <code>/-x</code> <code>/-A</code> <code>/-B</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
