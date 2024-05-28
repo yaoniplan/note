@@ -41,6 +41,78 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;h-m-m&quot;</h4>
+<ul>
+<li><code>h-m-m</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>o</code> # Create a sibling node (Child node: <code>O</code>)<ul>
+<li><code>sibling</code> # Type your words</li>
+<li><code>Ctrl-w</code> # Delete a word</li>
+<li><code>Ctrl-c</code> # Cancel (The current operation) Or <code>Ctrl-[</code></li>
+<li><code>e</code> # Edit (Current node)</li>
+</ul>
+</li>
+<li><code>d</code> # Delete (Current node)<ul>
+<li><code>u</code> # Undo</li>
+</ul>
+</li>
+<li><code>S</code> # Rename (Current file)</li>
+<li><code>/</code> # Search<ul>
+<li><code>n</code> # Next (Opposite: <code>N</code>)</li>
+</ul>
+</li>
+<li><code>yay --sync h-m-m-git</code> # Install dependencies</li>
+<li>Because to use a mind mapping tool in the terminal.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/nadrad/h-m-m#default-key-bindings">https://github.com/nadrad/h-m-m#default-key-bindings</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Enable trash feature for files on Linux</h4>
+<ul>
+<li><code>vi ~/.bashrc</code><pre><code>alias rm=&#39;mv --target-directory=$HOME/.trash/&#39;
+</code></pre>
+<ul>
+<li><code>source ~/.bashrc</code> # Make changes effective</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Delete files may result in data loss. (Unless you are an adventurer)</li>
+<li><code>mkdir ~/.trash/</code> # Make the directory if no such directory</li>
+<li><code>doas crontab -e</code> # Enable scheduled deletion using root user<pre><code>00 18 * * * /home/yaoniplan/.local/bin/cleanTrash.sh
+</code></pre>
+<ul>
+<li><code>vim ~/.local/bin/cleanTrash.sh</code><pre><code>#!/usr/bin/env sh
+
+# Set variables
+trashDir=&quot;/home/yaoniplan/.trash&quot;
+
+# Delete files and directories older than 30 days
+find &quot;$trashDir&quot; -mindepth 1 -mtime +30 -delete
+</code></pre>
+</li>
+<li><code>chmod +x ~/.local/bin/cleanTrash.sh</code> # Change executable mode</li>
+</ul>
+</li>
+<li><code>\rm -rf ~/Downloads/trash</code> # Unalias to delete</li>
+<li>Because people in a forum mentioned this requirement.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;File Transfer Protocol&quot; is &quot;FTP&quot;</h4>
 <ul>
 <li>Communication</li>
@@ -7604,10 +7676,16 @@ find . type f -inum 20447344 -exec rm {} \;
 <li><code>{01..08}/</code> # Replace it with your subdirectory</li>
 </ul>
 </li>
+<li>Delete files and directories older than 30 days<pre><code>find &quot;$trashDir&quot; -mindepth 1 -mtime +30 -delete
+</code></pre>
+<ul>
+<li><code>-mtime</code> # Modify time</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man find</code></li>
+<li><code>man find</code> # <code>/-mtime</code></li>
 <li><img src="../assets/2023-05-06_00-13.png" alt="2023-05-06_00-13.png"></li>
 <li>ChatGPT</li>
 </ul>
@@ -13726,7 +13804,7 @@ fi
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-a</code> # --archive</li>
 <li><code>-v</code> # --verbose</li>
-<li>Because to copy file from one server to another.</li>
+<li>Because to keep the original modification time when copying files.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>

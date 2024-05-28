@@ -27,14 +27,14 @@
 - 师兄啊师兄 - 38
 - 独步万古 - 70
 - 凡人修仙传 - 103
-- 仙武传 - 57 animation
-- 万界至尊 (Part1+2)- 50+57
-- 仙逆 - 33
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+90
+- 仙武传 - 62
+- 万界至尊 - S01E50.S02E66
+- 仙逆 - 38
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+94
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 46
+- 大主宰 - 49 animation
 - Shrouding the Heavens / 遮天 - 54
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 126
 - 武神主宰 - 192/432
