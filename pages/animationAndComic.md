@@ -34,12 +34,12 @@
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 49 animation
-- Shrouding the Heavens / 遮天 - 54
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 126
-- 武神主宰 - 192/432
-- 独步逍遥 - 168/412
-- Perfect World / 完美世界 - 38/160
+- 大主宰 - 50
+- Shrouding the Heavens / 遮天 - 58
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 135
+- 武神主宰 - 192/441
+- 独步逍遥 - 168/420
+- Perfect World / 完美世界 - 38/161 0753 animation
 - Against the Sky Supreme / 逆天至尊 - 297
 - 斗破苍穹年番 - 94
 - 万古神话 - 182

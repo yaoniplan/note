@@ -64,7 +64,7 @@
 </ul>
 </li>
 <li><code>yay --sync h-m-m-git</code> # Install dependencies</li>
-<li>Because to use a mind mapping tool in the terminal.</li>
+<li>Because to use a mind map tool in the terminal.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -87,7 +87,7 @@
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: Delete files may result in data loss. (Unless you are an adventurer)</li>
 <li><code>mkdir ~/.trash/</code> # Make the directory if no such directory</li>
-<li><code>doas crontab -e</code> # Enable scheduled deletion using root user<pre><code>00 18 * * * /home/yaoniplan/.local/bin/cleanTrash.sh
+<li><code>doas crontab -e</code> # Enable scheduled deletion using root user (Solve permission denied problem)<pre><code>00 18 * * * /home/yaoniplan/.local/bin/cleanTrash.sh
 </code></pre>
 <ul>
 <li><code>vim ~/.local/bin/cleanTrash.sh</code><pre><code>#!/usr/bin/env sh
@@ -102,11 +102,12 @@ find &quot;$trashDir&quot; -mindepth 1 -mtime +30 -delete
 <li><code>chmod +x ~/.local/bin/cleanTrash.sh</code> # Change executable mode</li>
 </ul>
 </li>
-<li><code>\rm -rf ~/Downloads/trash</code> # Unalias to delete</li>
+<li><code>\rm -rf ~/Downloads/trash</code> # Unalias to delete (Solve directory not empty problem)</li>
 <li>Because people in a forum mentioned this requirement.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>man mv</code> # <code>/-t</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -4480,10 +4481,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </li>
 <li>Shortcuts<ul>
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
-<li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://www.reddit.com/r/shortcuts/comments/11cnaf7/comment/ja4tl51/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/11cnaf7/comment/ja4tl51/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
-<li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://www.reddit.com/r/shortcuts/comments/ioiigu/comment/g4e1snd/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/ioiigu/comment/g4e1snd/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
-<li>The add icon - Add Action - Open URLs - vlc-xcallback://x-callback-url/stream?url=<em>yourURL</em> - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
-<li>The add icon - Add Action - Dismiss Siri and Continue - Set Voice &amp; Data (4G, Primary) - done # <a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a>, <a href="https://www.reddit.com/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
+<li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
+<li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
+<li>The add icon - Add Action - Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
+<li>The add icon - Add Action - Dismiss Siri and Continue - Set Voice &amp; Data (4G, Primary) - done # <a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a>, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg">https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg</a></li>
 <li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
 <li>The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done</li>
 </ul>
