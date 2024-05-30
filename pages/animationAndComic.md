@@ -39,9 +39,9 @@
 - One Hundred Thousand Years of Qi Refining / 炼气十万年 - 135
 - 武神主宰 - 192/441
 - 独步逍遥 - 168/420
-- Perfect World / 完美世界 - 38/161 0753 animation
-- Against the Sky Supreme / 逆天至尊 - 297
-- 斗破苍穹年番 - 94
+- Perfect World / 完美世界 - 38/163
+- Against the Sky Supreme / 逆天至尊 - 305
+- 斗破苍穹年番 - 94 animation
 - 万古神话 - 182
 
 ### Comic
