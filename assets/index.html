@@ -47,6 +47,14 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warnings:<ul>
+<li>Configuration files sometimes do not take effect</li>
+<li>Chinese fonts can cause typesetting disorder</li>
+</ul>
+</li>
+<li><code>vim ~/.config/h-m-m/h-m-m.conf</code><pre><code>auto_save = true # Prevent accidental exits
+</code></pre>
+</li>
 <li><code>Space</code> # Toggle (Between collapse and expand)</li>
 <li><code>o</code> # Create a sibling node (Child node: <code>O</code>)<ul>
 <li><code>sibling</code> # Type your words</li>
@@ -8095,7 +8103,7 @@ file &#39;output02.wma&#39;
 <li>(<code>3s</code>: Text in the third line)</li>
 </ul>
 </li>
-<li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;); done</code><ul>
+<li><code>for f in *.wma; do mv &quot;$f&quot; &quot;$(echo &quot;$f&quot; | sed &#39;s/第....//g&#39;)&quot;; done</code><ul>
 <li><code>.</code> # Any single character</li>
 </ul>
 </li>
@@ -11106,7 +11114,8 @@ pass = H2bvDv2jDfEuI3fMJ263WjkI
 <li>Mount to another computer<ul>
 <li><code>doas emerge -q net-fs/sshfs</code> # Install dependencies</li>
 <li><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/</code> # Mount</li>
-<li><code>fusermount -u /mnt/yaoniplan/</code> # Unmount that solve the problem<pre><code>yaoniplan@tux ~ $ &lt;3&gt;ERROR : /mnt/music/: Unmounted rclone mount
+<li><code>fusermount -u /mnt/yaoniplan</code> # Unmount that solve the problem<pre><code>yaoniplan@tux ~ $ &lt;3&gt;ERROR : /mnt/music/: Unmounted rclone mount
+ls: cannot access &#39;/mnt/yaoniplan&#39;: Transport endpoint is not connected
 </code></pre>
 </li>
 <li><code>vim ~/.xprofile</code> # Run it at boot in Gentoo Linux<pre><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/ &amp;

@@ -1,5 +1,6 @@
 ### "Animation"
-- 转生贵族靠着鉴定技能一飞冲天 - 04
+- Viral Hit / 格斗实况 - 08
+- 转生贵族靠着鉴定技能一飞冲天 - 06 1243 animation
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
 - The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E05
 - 一世之尊 13
@@ -41,8 +42,8 @@
 - 独步逍遥 - 168/420
 - Perfect World / 完美世界 - 38/163
 - Against the Sky Supreme / 逆天至尊 - 305
-- 斗破苍穹年番 - 94 animation
-- 万古神话 - 182
+- 斗破苍穹年番 - 98
+- 万古神话 - 190
 
 ### Comic
 - 靠神级天赋无限成长 - 14
