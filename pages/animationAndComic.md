@@ -1,7 +1,6 @@
 ### "Animation"
 - Viral Hit / 格斗实况 - 08
-- 转生贵族靠着鉴定技能一飞冲天 - 06 1243 animation
-- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04
+- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04 animation
 - The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E05
 - 一世之尊 13
 - 百家诀之江湖诡事录 - 12
@@ -263,6 +262,7 @@
 - guard(end)
 
 ### Animation
+- 转生贵族靠着鉴定技能一飞冲天 - 08 1057 # Plot may be slow
 - 万古狂帝 - S01E20
 - 你的人生是我来迟了 - S01E16
 - 太古星神诀 - 07 0806 # Target audience may be 13 or 14 years old

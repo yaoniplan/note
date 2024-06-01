@@ -55,6 +55,10 @@
 <li><code>vim ~/.config/h-m-m/h-m-m.conf</code><pre><code>auto_save = true # Prevent accidental exits
 </code></pre>
 </li>
+<li><code>s</code> # Save<ul>
+<li><code>q</code> # Quit (<code>Q</code>: Without saving)</li>
+</ul>
+</li>
 <li><code>Space</code> # Toggle (Between collapse and expand)</li>
 <li><code>o</code> # Create a sibling node (Child node: <code>O</code>)<ul>
 <li><code>sibling</code> # Type your words</li>
@@ -3607,6 +3611,12 @@ notes.forEach((note) =&gt; console.log(note));
 <ul>
 <li><h4>Use &quot;ish&quot;</h4>
 <ul>
+<li>Start an HTTP server<ul>
+<li><code>git clone git@192.168.10.100:/var/git/note.git</code> # Download a directory containing index.html</li>
+<li><code>python3 -m http.server -d ~/note/ 2003</code> # Use module to serve directory listening on port</li>
+<li><code>localhost:2003</code> # Run in Safari</li>
+</ul>
+</li>
 <li><code>mount -t ios . /mnt</code> # Mount a local folder and then <code>ls /mnt</code><ul>
 <li><code>umount /mnt</code> # Unmount it</li>
 </ul>
@@ -7824,7 +7834,7 @@ find . type f -inum 20447344 -exec rm {} \;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man bash</code> # <code>/-eq</code> <code>/^condition</code></li>
+<li><code>man bash</code> # <code>/-eq</code> <code>/^condition</code> <code>/-z </code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -8785,12 +8795,19 @@ Manual # Proxy settings
 7891 # Port
 </code></pre>
 </li>
+<li>Solve the problem<pre><code>WARN[0000] /home/yaoniplan/parse/docker-compose.yml: `version` is obsolete
+</code></pre>
+<ul>
+<li><code>sed -i &#39;1d&#39; ~/parse/docker-compose.yml</code> # Delete the first line containing &#39;version&#39;</li>
+</ul>
+</li>
 <li>Because to run the network proxy tool in the server.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><code>docker-compose up --help | less</code></li>
+<li><a href="https://blog.n-z.jp/blog/2024-04-02-docker-compose-yaml-version.html">https://blog.n-z.jp/blog/2024-04-02-docker-compose-yaml-version.html</a></li>
 <li><img src="../assets/2023-04-16_18-39.png" alt="2023-04-16_18-39.png"></li>
 <li><a href="https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/">https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/</a></li>
 <li><a href="https://blog.vicat.top/archives/linux%E9%80%9A%E8%BF%87clash%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91#2-%E6%AD%A3%E6%88%8F%E8%BF%9B%E9%98%B6">https://blog.vicat.top/archives/linux通过clash来科学上网#2-正戏进阶</a></li>
@@ -10821,7 +10838,8 @@ user-input.lua -&gt; scripts/user-input.lua
 </ul>
 </li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print title (See https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst#property-list to get the property)
-p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send ${media-title}&quot;
+# If the length of media-title is zero, then print filename
+p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;if [[ -z &#39;${media-title}&#39; ]]; then notify-send &#39;${filename}&#39;; else notify-send &#39;${media-title}&#39;; fi&quot;
 # Copy the full path to clipboard
 Ctrl+shift+c run &quot;/bin/bash&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
 # Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
@@ -12146,6 +12164,7 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 <ul>
 <li><h4>Use &quot;docker&quot;</h4>
 <ul>
+<li><code>docker exec --interactive --tty diary sh</code> # Interact with container</li>
 <li><code>docker cp 11a6a5e253d7:/app /tmp/tmp.fWaKJndURz/</code> # Copy source code<ul>
 <li><code>11a6a5e253d7</code> # Container ID</li>
 <li><code>/app</code> # Working directory</li>
@@ -12258,6 +12277,9 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 <li><em><strong>Notes</strong></em><ul>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
+<li><code>git remote add origin git@100.65.173.16:/var/git/parse.git</code> # Add a remote named &#39;origin&#39;<pre><code>error: No such remote &#39;origin&#39;
+</code></pre>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
