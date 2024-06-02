@@ -41,6 +41,24 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;webdav&quot;</h4>
+<ul>
+<li><code>curl --user &quot;admin:jj&quot; --request MKCOL http://192.168.10.100:5244/dav/chinaTelecom/2024/06/02/</code> # Make a directory</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>MKCOL</code> # Replace it with <code>DELETE</code> to delete it</li>
+<li><code>--upload-file</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://gist.github.com/stokito/cf82ce965718ce87f36b78f7501d7940">https://gist.github.com/stokito/cf82ce965718ce87f36b78f7501d7940</a></li>
+<li><code>man curl</code> # <code>/-T</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;h-m-m&quot;</h4>
 <ul>
 <li><code>h-m-m</code></li>
@@ -4653,6 +4671,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Remind me to learn Reminders at 15:55 today</code></li>
 <li><code>Show / read reminders</code></li>
 <li><code>Remind me about this tomorrow at 10 AM</code> # Title of email or website</li>
+<li>Type a reminder in the app manually # Enable notifications</li>
+<li><a href="https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/">https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/</a></li>
 </ul>
 </li>
 <li>Use Calendar<ul>
@@ -14753,6 +14773,7 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li><code>git init ~/parse/</code> # Initialize Git repository in the directory to control version of files</li>
 <li><code>git clone https://yaoniplan:yourPersonalAccessToken@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
 <li><code>yourPersonalAccessToken</code> # Replace it with yours</li>
@@ -14771,9 +14792,9 @@ cp ./* ~/.local/share/rofi/themes/
 <li><code>git restore .</code> # Restore all files</li>
 </ul>
 </li>
-<li><code>git checkout -b bugFix</code> # The same as the following two commands<ul>
-<li><code>git branch bugFix</code> # Create a new branch</li>
-<li><code>git checkout bugFix</code> # Switch to the branch</li>
+<li><code>git checkout -b development</code> # The same as the following two commands<ul>
+<li><code>git branch development</code> # Create a new branch</li>
+<li><code>git checkout development</code> # Switch to the branch</li>
 </ul>
 </li>
 </ul>

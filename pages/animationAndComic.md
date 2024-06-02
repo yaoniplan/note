@@ -1,7 +1,7 @@
 ### "Animation"
 - Viral Hit / 格斗实况 - 08
-- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 04 animation
-- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E05
+- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 08
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E05 animation
 - 一世之尊 13
 - 百家诀之江湖诡事录 - 12
 - THE NEW GATE 04
