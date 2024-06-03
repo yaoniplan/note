@@ -41,14 +41,52 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Use &quot;webdav&quot;</h4>
+<li><h4>The abbreviation of &quot;Web Distributed Authoring and Versioning&quot; is &quot;WebDAV&quot;.</h4>
 <ul>
-<li><code>curl --user &quot;admin:jj&quot; --request MKCOL http://192.168.10.100:5244/dav/chinaTelecom/2024/06/02/</code> # Make a directory</li>
+<li>A set of extensions<ul>
+<li>Hyprtext Transfer Protocol</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>MKCOL</code> # Replace it with <code>DELETE</code> to delete it</li>
-<li><code>--upload-file</code></li>
+<li>Because to interact with data.<ul>
+<li>Upload files from local to remote</li>
+<li>Synchronize personal account data by logging in</li>
+<li>Share with the open source world</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/WebDAV">https://en.wikipedia.org/wiki/WebDAV</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;webdav&quot;</h4>
+<ul>
+<li><code>curl --user &quot;admin:jj&quot; --request MKCOL &quot;http://192.168.10.100:5244/dav/chinaTelecom/2024/06/02/&quot;</code> # Make a directory</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>MKCOL</code> # Make collection (folder)<ul>
+<li><code>DELETE</code> # Delete a folder (file)</li>
+<li><code>PROPFIND</code> # Properties find (Metadata: name, size, creation date, modification date, etc.)</li>
+<li>A list of files and folders in the root folder</li>
+<li><code>--upload-file</code> # Delete <code>--request </code> to solve the &#39;No host part in the URL&#39; problem</li>
+</ul>
+</li>
+<li>Encode special characters (e.g. spaces, Chinese characters, etc.)<pre><code>curl: (3) URL rejected: Malformed input to a URL function
+</code></pre>
+<ul>
+<li><code>node -e &#39;console.log(require(&quot;querystring&quot;).escape(&quot;《新闻联播》 20240602.m4a&quot;));&#39;</code> # Evaluate</li>
+<li><code>python -c &quot;import urllib.parse; print(urllib.parse.quote(&#39;《新闻联播》 20240602.m4a&#39;))&quot;</code> # Command</li>
+<li><code>%E3%80%8A%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD%E3%80%8B%2020240602.m4a</code></li>
+<li>Percent followed by two hexadecimal digits (e.g. <code>%E3%80%8A</code> is <code>《</code>, <code>%20</code> is Space)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -4669,7 +4707,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </li>
 <li>Use Reminders<ul>
 <li><code>Remind me to learn Reminders at 15:55 today</code></li>
-<li><code>Show / read reminders</code></li>
+<li><code>Read my reminders</code> # Read the upcoming schedule aloud</li>
 <li><code>Remind me about this tomorrow at 10 AM</code> # Title of email or website</li>
 <li>Type a reminder in the app manually # Enable notifications</li>
 <li><a href="https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/">https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/</a></li>
