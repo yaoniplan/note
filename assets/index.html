@@ -41,6 +41,26 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Select next match in Bash</h4>
+<ul>
+<li><code>Ctrl-i</code> # Get two or more matching results (The same as <code>Tab</code>)<ul>
+<li><code>Ctrl-n</code> # Next</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to autocomplete file name without copying and typing manually.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2024-06-04-091824.png" alt="2024-06-04-091824.png"></li>
+<li><img src="../assets/2024-06-04-092505.png" alt="2024-06-04-092505.png"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;Web Distributed Authoring and Versioning&quot; is &quot;WebDAV&quot;.</h4>
 <ul>
 <li>A set of extensions<ul>
@@ -71,11 +91,12 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>admin</code> # Replace it with your user (<code>jj</code>: your password)</li>
 <li><code>MKCOL</code> # Make collection (folder)<ul>
 <li><code>DELETE</code> # Delete a folder (file)</li>
 <li><code>PROPFIND</code> # Properties find (Metadata: name, size, creation date, modification date, etc.)</li>
 <li>A list of files and folders in the root folder</li>
-<li><code>--upload-file</code> # Delete <code>--request </code> to solve the &#39;No host part in the URL&#39; problem</li>
+<li><code>--upload-file yourFile.md</code> # Delete <code>--request </code> to solve the &#39;No host part in the URL&#39; problem</li>
 </ul>
 </li>
 <li>Encode special characters (e.g. spaces, Chinese characters, etc.)<pre><code>curl: (3) URL rejected: Malformed input to a URL function
@@ -1528,6 +1549,7 @@ Error: Couldn&#39;t open /dev/fb0.
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: It&#39;s an unfree software.</li>
 <li>Tips<ul>
 <li>Leave professional things to professional software</li>
 <li>Do not all in one (Add plugins as needed)</li>
@@ -1857,12 +1879,17 @@ yaoniplan@tux ~/Downloads $
 </code></pre>
 <ul>
 <li><code>remote-add</code> # Replace it with <code>remote-modify</code> if exists</li>
+<li><code>doas vim /var/lib/flatpak/repo/config</code> # Another way<pre><code>url=https://dl.flathub.org/repo/
+url-is-set=true
+</code></pre>
+</li>
 </ul>
 </li>
 <li><code>doas pacman --sync flatpak</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://barthalion.blog/test-driving-flathub-mirror-for-users-in-china/">https://barthalion.blog/test-driving-flathub-mirror-for-users-in-china/</a></li>
 <li><a href="https://unix.stackexchange.com/questions/605285/how-to-always-run-a-flatpak-application-with-a-filesystem-permission/606194#606194">https://unix.stackexchange.com/questions/605285/how-to-always-run-a-flatpak-application-with-a-filesystem-permission/606194#606194</a></li>
 <li><a href="https://seekstar.github.io/2021/12/30/%E7%BB%99flatpak%E6%B7%BB%E5%8A%A0%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E6%BA%90%2f">https://seekstar.github.io/2021/12/30/给flatpak添加国内镜像源%2f</a></li>
 <li>ChatGPT</li>
@@ -4230,6 +4257,7 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: It&#39;s an unfree software.</li>
 <li><code>Ctrl-o</code> # Open a file</li>
 <li><code>Ctrl-n</code> # New a file</li>
 <li><code>Ctrl-Shift-p</code> # Prompt a command palette</li>
@@ -5683,7 +5711,15 @@ address=192.168.10.10/24
 <li><h4>If $z={\frac{2+i}{1+i^2+i^5}}$, then $\bar{z}=$</h4>
 <ul>
 <li>$i^2=-1$ # Imaginary unit i formula</li>
-<li>If $z=a+bi$, then $\bar{z}=a-bi$ # Complex conjugate formula</li>
+<li>If $z=a+bi$, then $\bar{z}=a-bi$ # Complex conjugate formula<ul>
+<li>$bi\times(-1)$</li>
+</ul>
+</li>
+<li>Positive real number<ul>
+<li>Positive: The real part must be positive ($a&gt;0$)</li>
+<li>Real number: The imaginary part must be zero ($b=0$)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -5693,6 +5729,7 @@ address=192.168.10.10/24
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/List_of_universities_and_colleges_in_Beijing">https://en.wikipedia.org/wiki/List_of_universities_and_colleges_in_Beijing</a></li>
+<li>If $(a+i)^{2}i$ is a positive real number, then $a=$</li>
 <li>College Entrance Math in Jiangxi</li>
 <li>ChatGPT</li>
 </ul>
@@ -10899,7 +10936,7 @@ user-input.lua -&gt; scripts/user-input.lua
 # If the length of media-title is zero, then print filename
 p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;if [[ -z &#39;${media-title}&#39; ]]; then notify-send &#39;${filename}&#39;; else notify-send &#39;${media-title}&#39;; fi&quot;
 # Copy the full path to clipboard
-Ctrl+shift+c run &quot;/bin/bash&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
+Ctrl+shift+c run &quot;/bin/sh&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
 # Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
 Ctrl+shift+x run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
 # Reload after editing `~/.config/mpv/input.conf`
