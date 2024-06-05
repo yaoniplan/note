@@ -54,7 +54,6 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2024-06-04-091824.png" alt="2024-06-04-091824.png"></li>
 <li><img src="../assets/2024-06-04-092505.png" alt="2024-06-04-092505.png"></li>
 </ul>
 </li>
@@ -87,24 +86,22 @@
 <ul>
 <li><h4>Use &quot;webdav&quot;</h4>
 <ul>
-<li><code>curl --user &quot;admin:jj&quot; --request MKCOL &quot;http://192.168.10.100:5244/dav/chinaTelecom/2024/06/02/&quot;</code> # Make a directory</li>
+<li><code>curl --user &quot;admin:***&quot; --upload-file &quot;/mnt/grow/image/2024-06-04-171256.png&quot; &quot;http://192.168.10.100:5244/dav/$filePath/&quot;</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>admin</code> # Replace it with your user (<code>jj</code>: your password)</li>
-<li><code>MKCOL</code> # Make collection (folder)<ul>
+<li><code>admin:***</code> # Replace it with your username and password</li>
+<li><code>--upload-file &quot;/mnt/grow/image/2024-06-04-171256.png&quot;</code> # Replace it with <code>--request &lt;method&gt;</code><ul>
+<li><code>MKCOL</code> # Make collection (folder)</li>
 <li><code>DELETE</code> # Delete a folder (file)</li>
 <li><code>PROPFIND</code> # Properties find (Metadata: name, size, creation date, modification date, etc.)</li>
-<li>A list of files and folders in the root folder</li>
-<li><code>--upload-file yourFile.md</code> # Delete <code>--request </code> to solve the &#39;No host part in the URL&#39; problem</li>
 </ul>
 </li>
-<li>Encode special characters (e.g. spaces, Chinese characters, etc.)<pre><code>curl: (3) URL rejected: Malformed input to a URL function
+<li>Solve the proble by encoding special characters (e.g. spaces, Chinese characters, etc.)<pre><code>curl: (3) URL rejected: Malformed input to a URL function
 </code></pre>
 <ul>
 <li><code>node -e &#39;console.log(require(&quot;querystring&quot;).escape(&quot;《新闻联播》 20240602.m4a&quot;));&#39;</code> # Evaluate</li>
 <li><code>python -c &quot;import urllib.parse; print(urllib.parse.quote(&#39;《新闻联播》 20240602.m4a&#39;))&quot;</code> # Command</li>
-<li><code>%E3%80%8A%E6%96%B0%E9%97%BB%E8%81%94%E6%92%AD%E3%80%8B%2020240602.m4a</code></li>
 <li>Percent followed by two hexadecimal digits (e.g. <code>%E3%80%8A</code> is <code>《</code>, <code>%20</code> is Space)</li>
 </ul>
 </li>
@@ -112,7 +109,13 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://gist.github.com/stokito/cf82ce965718ce87f36b78f7501d7940">https://gist.github.com/stokito/cf82ce965718ce87f36b78f7501d7940</a></li>
-<li><code>man curl</code> # <code>/-T</code></li>
+<li><code>man curl</code> # <code>/^\s*-T</code><ul>
+<li><code>^</code> # Beginning of a line</li>
+<li><code>\s</code> # Space (Or <code> </code>)</li>
+<li><code>*</code> # Zero or more</li>
+<li><code>-T</code> # Replace it with other literal string (e.g. <code>-u</code>)</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -4721,7 +4724,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Maps<ul>
-<li><code>Go to the nearby library / bank / toilet /...</code></li>
+<li><code>Go to the nearby library</code> # (e.g. Bank, Toilet, School)</li>
 </ul>
 </li>
 <li>Use Clock<ul>
@@ -5720,6 +5723,10 @@ address=192.168.10.10/24
 <li>Real number: The imaginary part must be zero ($b=0$)</li>
 </ul>
 </li>
+<li>$|z|=\sqrt{(a-0)^{2}+(b-0)^{2}}$ # Modulus is the distance from the origin $(0,0)$ to the point $(a,b)$<ul>
+<li>$a^{2}+b^{2}=c^{2}$ # Pythagorean theorem in the right triangle</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -5728,8 +5735,11 @@ address=192.168.10.10/24
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Pythagorean_theorem#Complex_numbers">https://en.wikipedia.org/wiki/Pythagorean_theorem#Complex_numbers</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers">https://en.wikipedia.org/wiki/Absolute_value#Complex_numbers</a></li>
 <li><a href="https://en.wikipedia.org/wiki/List_of_universities_and_colleges_in_Beijing">https://en.wikipedia.org/wiki/List_of_universities_and_colleges_in_Beijing</a></li>
 <li>If $(a+i)^{2}i$ is a positive real number, then $a=$</li>
+<li>$p_{1}:|z|=2$</li>
 <li>College Entrance Math in Jiangxi</li>
 <li>ChatGPT</li>
 </ul>
@@ -5975,6 +5985,13 @@ fi
 <ul>
 <li><h4>Use mathematical formulas in Markdown</h4>
 <ul>
+<li>Default<ul>
+<li><code>$b=0$</code> # Equal</li>
+<li><code>$a&gt;0$</code> # Greater than</li>
+<li><code>$|z|=2$</code> # Modulus (Absolute value)</li>
+</ul>
+</li>
+<li><code>$|z|=\sqrt{a^{2}+b^{2}}$</code> # $|z|=\sqrt{a^{2}+b^{2}}$</li>
 <li><code>$radians=\frac{degrees}{180\degree}\times \pi$</code> # $radians=\frac{degrees}{180\degree}\times \pi$</li>
 <li><code>$e^{ax}-1\ne0$</code> # $e^{ax}-1\ne0$</li>
 <li><code>$6\times2^{2}$</code> # $6\times2^{2}$</li>
@@ -5984,6 +6001,7 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>\sqrt{}</code> # Square root</li>
 <li><code>\ne</code> # Not equal to</li>
 <li><code>\times</code></li>
 <li><code>^{}</code> # Superscript</li>
