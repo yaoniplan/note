@@ -8931,8 +8931,9 @@ services:
 <li><code>docker-compose exec yourApp sh</code></li>
 </ul>
 </li>
-<li>Update a Docker image<ul>
-<li><code>docker-compose pull</code> # Pull the latest version</li>
+<li>Update a Docker image (Depend on your docker-compose.yml)<ul>
+<li><code>docker-compose pull</code> # Pull a remote image</li>
+<li><code>docker-compose build</code> # Build a local image</li>
 <li><code>docker-compose up --detach</code></li>
 </ul>
 </li>
@@ -10544,36 +10545,6 @@ export EDITOR=vim
 <li><em><strong>References</strong></em><ul>
 <li><code>:help Codeium</code></li>
 <li><a href="https://github.com/Exafunction/codeium.vim#-installation-options">https://github.com/Exafunction/codeium.vim#-installation-options</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Set some configuraton for VimWiki</h4>
-<ul>
-<li><code>vim ~/.vimrc</code><pre><code class="language-vim">&quot; Make plugins named VimWiki work
-set nocompatible
-filetype plugin on
-syntax on
-
-&quot; Use Markdown syntax for VimWiki
-&quot; Replace `diary/` with `journals/`
-let g:vimwiki_list = [{
-    \ &#39;path&#39;: &#39;~/note/&#39;,
-    \ &#39;diary_rel_path&#39;: &#39;journals/&#39;,
-    \ &#39;syntax&#39;: &#39;markdown&#39;,
-    \ &#39;ext&#39;: &#39;.md&#39;}]
-&quot; Replace `[Vim](Vim)` with `[Vim](Vim.md)`
-&quot; Refer to https://github.com/vimwiki/vimwiki/issues/1210
-let g:vimwiki_markdown_link_ext = 1
-&quot; Disable all Concealing (level: 0-3)
-let g:vimwiki_conceallevel = 3
-&quot; Disable URL shortening
-let g:vimwiki_url_maxsave = 0
-&quot; Replace spaces in the file names with underscores
-let g:vimwiki_links_space_char = &#39;_&#39;
-</code></pre>
-</li>
 </ul>
 </li>
 </ul>
@@ -12361,6 +12332,18 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Build an image locally (To get speed and stability)<pre><code>services:
+  note:
+    build: .
+    container_name: note
+    restart: always
+    ports:
+      - 2003:80
+</code></pre>
+<ul>
+<li><code>build: .</code> # Replace it with <code>image: yaoniplan/note:latest</code> to pull from a Docker registry</li>
+</ul>
+</li>
 <li><code>docker login</code> # Solve a problem about &#39;net/http: TLS handshake timeout&#39;</li>
 <li>Disable proxy<ul>
 <li>Delete proxy configurations (e.g. <code>/etc/docker/daemon.json</code>, <code>~/.docker/config.json</code>)</li>
@@ -12432,34 +12415,6 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy">https://en.wikipedia.org/wiki/Pretty_Good_Privacy</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Add multiple push URLs in Git</h4>
-<ul>
-<li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code><ul>
-<li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
-<li><code>192.168.10.100</code> # Replace it with <code>github.com</code></li>
-<li><code>/var/git/note.git</code> # Replace it with <code>yaoniplan/note.git</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>git remote --verbose</code> # Check Git remote URL</li>
-<li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
-<li><code>git remote add origin git@100.65.173.16:/var/git/parse.git</code> # Add a remote named &#39;origin&#39;<pre><code>error: No such remote &#39;origin&#39;
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>git remote --help</code></li>
-<li><img src="../assets/2023-02-24_22:06:22.png" alt="2023-02-24_22:06:22.png"></li>
-<li><a href="https://blog.yowko.com/git-push-multiple-remote-repository/">https://blog.yowko.com/git-push-multiple-remote-repository/</a></li>
-<li><a href="https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f">https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f</a></li>
 </ul>
 </li>
 </ul>
@@ -14926,6 +14881,14 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code> # Add a push URL<ul>
+<li><code>git remote --verbose</code> # Check Git remote URL</li>
+<li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
+<li><code>git remote add origin git@100.65.173.16:/var/git/parse.git</code> # Add a remote named &#39;origin&#39;<pre><code>error: No such remote &#39;origin&#39;
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>git init ~/parse/</code> # Initialize Git repository in the directory to control version of files</li>
 <li><code>git clone https://yaoniplan:yourPersonalAccessToken@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
@@ -14953,6 +14916,9 @@ cp ./* ~/.local/share/rofi/themes/
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
+<li><code>192.168.10.100</code> # Replace it with <code>github.com</code></li>
+<li><code>/var/git/note.git</code> # Replace it with <code>yaoniplan/note.git</code></li>
 <li><code>97671e3:index.html</code> # Get it by using the following command<ul>
 <li><code>git log -1 --name-only</code></li>
 </ul>
@@ -15001,10 +14967,13 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-02-24_22:06:22.png" alt="2023-02-24_22:06:22.png"></li>
+<li><a href="https://blog.yowko.com/git-push-multiple-remote-repository/">https://blog.yowko.com/git-push-multiple-remote-repository/</a></li>
+<li><a href="https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f">https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f</a></li>
 <li><a href="https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794">https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794</a></li>
 <li><a href="https://hedzr.com/devops/git/git-tips-ls-tree-or-files/">https://hedzr.com/devops/git/git-tips-ls-tree-or-files/</a></li>
 <li><a href="https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911">https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911</a></li>
-<li><code>git restore --help</code></li>
+<li><code>git restore --help</code> # Replace <code>restore</code> with <code>remote</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
 <li><code>h</code></li>
 <li>ChatGPT</li>
@@ -15373,7 +15342,28 @@ doas systemctl start cronie
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.vimrc</code><pre><code>&quot; Change leader key from &#39;\&#39; to &#39; &#39;
+<li><code>vim ~/.vimrc</code> # Configure as needed<pre><code class="language-vim">&quot; Make plugins named VimWiki work
+set nocompatible
+filetype plugin on
+syntax on
+
+&quot; Use Markdown syntax for VimWiki
+&quot; Replace `diary/` with `journals/`
+let g:vimwiki_list = [{
+    \ &#39;path&#39;: &#39;~/.config/note/&#39;,
+    \ &#39;diary_rel_path&#39;: &#39;journals/&#39;,
+    \ &#39;syntax&#39;: &#39;markdown&#39;,
+    \ &#39;ext&#39;: &#39;.md&#39;}]
+&quot; Replace `[Vim](Vim)` with `[Vim](Vim.md)`
+&quot; Refer to https://github.com/vimwiki/vimwiki/issues/1210
+let g:vimwiki_markdown_link_ext = 1
+&quot; Disable all Concealing (level: 0-3)
+let g:vimwiki_conceallevel = 3
+&quot; Disable URL shortening
+let g:vimwiki_url_maxsave = 0
+&quot; Replace spaces in the file names with underscores
+let g:vimwiki_links_space_char = &#39;_&#39;
+&quot; Change leader key from &#39;\&#39; to &#39; &#39;
 let mapleader = &quot; &quot;
 &quot; Map the keys to complete strings
 &quot; (n: normal; nore: non-recursive)
