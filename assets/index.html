@@ -80,11 +80,13 @@ print(math.sqrt(25))
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>$\{x|x\ge1\}\cup{0}$</li>
+<li>$\{x|x\ge1\}\cup\{0\}$</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2024-06-11-120020.svg" alt="2024-06-11-120020.svg"></li>
 <li>College Entrance Math in Jiangxi</li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -788,8 +790,9 @@ anon_root=/mnt
 <li><a href="https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/">https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/</a></li>
 </ul>
 </li>
-<li><code>vim ~/.config/imv/config</code><pre><code>[binds]
+<li><code>vim ~/.config/imv/config</code> # Configure as needed<pre><code>[binds]
 p = exec notify-send &quot;$imv_current_file&quot;
+&lt;Shift+D&gt; = exec rm &quot;$imv_current_file&quot;; quit
 </code></pre>
 </li>
 <li><code>doas pacman --sync imv</code> # Install dependencies</li>
@@ -2640,6 +2643,19 @@ ingress:
 <ul>
 <li><h4>Use &quot;make&quot;</h4>
 <ul>
+<li><code>vim ~/.config/note/Makefile</code> # Simplify the process<pre><code>.PHONY: build up
+
+build:
+    docker-compose build
+
+up:
+    docker-compose up --detach
+</code></pre>
+<ul>
+<li><code>make build</code> # Execute command <code>docker-compose build</code></li>
+<li><code>make up</code> # Execute command <code>docker-command up --detach</code></li>
+</ul>
+</li>
 <li><code>doas make install</code> # Install a package</li>
 <li><code>doas make uninstall</code> # Uninstall a package</li>
 </ul>
@@ -4684,6 +4700,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Get File from Folder (VLC, audioBook.txt) - <strong>Split Text</strong> (File, New Lines) - Get Item from List (Random Item, Split Text) # Get each line of a file before playing audiobook randomly, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/">https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/</a></li>
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
@@ -5509,33 +5526,6 @@ services:
 <li><a href="https://github.com/jupyter/notebook">https://github.com/jupyter/notebook</a></li>
 <li><code>nix-shell --help</code></li>
 <li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Set a mirror in Docker</h4>
-<ul>
-<li><code>doas vi /etc/docker/daemon.json</code><pre><code>{
-  &quot;registry-mirrors&quot;: [&quot;https://docker.nju.edu.cn/&quot;]
-}
-</code></pre>
-</li>
-<li><code>doas systemctl restart docker</code> # Restart docker to apply changes</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>https://docker.nju.edu.cn/</code> # Replace it with a registry mirror in your country</li>
-<li><code>docker info</code> # Check the information about &#39;Registry Mirrors&#39;</li>
-<li>Because to improve the speed of downloading Docker images.<ul>
-<li><a href="https://github.com/docker/for-linux/issues/1430">https://github.com/docker/for-linux/issues/1430</a> # Another way</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm">https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm</a></li>
-<li>Google # <code>registry mirrors site:edu.cn</code></li>
 </ul>
 </li>
 </ul>
@@ -7911,7 +7901,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li>Delete a file that cannot be deleted using <code>rm</code><pre><code># Get the index number (e.g. 20447344) of the file
 ls --inode
 # Use find with the inode number to remove the file
-find . type f -inum 20447344 -exec rm {} \;
+find . -type f -inum 20447344 -exec rm {} \;
 </code></pre>
 </li>
 <li>Move all FLV files in subdirectories to the current directory<pre><code>find . -maxdepth 2 -type f -name &quot;*.flv&quot; -exec mv {} . \;
@@ -12361,9 +12351,29 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 <ul>
 <li><h4>Use &quot;docker&quot;</h4>
 <ul>
+<li><code>doas vi /etc/systemd/system/docker.service.d/proxy.conf</code> # Set a proxy if mirror fails<pre><code>[Service]
+Environment=&quot;HTTP_PROXY=http://192.168.10.100:7890&quot;
+Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
+</code></pre>
+<ul>
+<li><code>http://192.168.10.100:7890</code> # Replace it with your proxy</li>
+<li><code>doas systemctl daemon-reload &amp;&amp; doas systemctl restart docker</code> # Make changes effective</li>
+<li><code>docker info</code> # Check the information about &#39;HTTP Proxy&#39; or &#39;HTTPS Proxy&#39;</li>
+</ul>
+</li>
+<li><code>doas vi /etc/docker/daemon.json</code> # Set a mirror<pre><code>{
+  &quot;registry-mirrors&quot;: [&quot;https://docker.nju.edu.cn/&quot;]
+}
+</code></pre>
+<ul>
+<li><code>https://docker.nju.edu.cn/</code> # Replace it with a registry mirror in your country</li>
+<li><code>doas systemctl restart docker</code> # Restart docker to apply changes</li>
+<li><code>docker info</code> # Check the information about &#39;Registry Mirrors&#39;</li>
+</ul>
+</li>
 <li><code>docker exec --interactive --tty diary sh</code> # Interact with container</li>
 <li><code>docker cp 11a6a5e253d7:/app /tmp/tmp.fWaKJndURz/</code> # Copy source code<ul>
-<li><code>11a6a5e253d7</code> # Container ID</li>
+<li><code>11a6a5e253d7</code> # Container ID (Or <code>note</code>: NAMES)</li>
 <li><code>/app</code> # Working directory</li>
 <li><code>/tmp/tmp.fWaKJndURz</code> # Destination directory</li>
 </ul>
@@ -12385,6 +12395,10 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Because to improve the speed of downloading Docker images.<ul>
+<li><a href="https://github.com/docker/for-linux/issues/1430">https://github.com/docker/for-linux/issues/1430</a> # Another way</li>
+</ul>
+</li>
 <li>Build an image locally (To get speed and stability)<pre><code>services:
   note:
     build: .
@@ -12419,6 +12433,9 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5083215#gistcomment-5083215">https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5083215#gistcomment-5083215</a></li>
+<li><a href="https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm">https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm</a></li>
+<li>Google # <code>registry mirrors site:edu.cn</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>

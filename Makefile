@@ -1,10 +1,11 @@
+# Variables
+DOCKER_COMPOSE = docker-compose
+
+# Targets
 .PHONY: build up
 
-prepare:
-	./convertMarkdownToHtml.sh
-
-build: prepare
-	docker-compose build
+build:
+	$(DOCKER_COMPOSE) build
 
 up:
-	docker-compose up --detach
+	$(DOCKER_COMPOSE) up --detach
