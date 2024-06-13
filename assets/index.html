@@ -43,7 +43,7 @@
 <ul>
 <li><h4>Calculate the square root of a number in Python interpreter</h4>
 <ul>
-<li>Use <code>math</code> module<pre><code>import math
+<li><code>python</code> # Use <code>math</code> module<pre><code>import math
 print(math.sqrt(25))
 </code></pre>
 <ul>
@@ -52,7 +52,7 @@ print(math.sqrt(25))
 <li><code>25</code> # Argument</li>
 </ul>
 </li>
-<li>Use <code>**</code> operator<pre><code>print(25 ** 0.5)
+<li><code>python</code> # Use <code>**</code> operator<pre><code>print(25 ** 0.5)
 </code></pre>
 <ul>
 <li><code>**</code> # Exponentiation operator</li>
@@ -61,11 +61,17 @@ print(math.sqrt(25))
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to identify that $\sqrt{}$ is the principal square root function which outputs non-negative value.</li>
+<li>Because to verify that $\sqrt{}$ is the principal square root function which outputs non-negative value.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://libreddit.tux.pizza/r/askmath/comments/15ed9m3/is_there_an_internationally_agreed_upon/ju6uba1">https://libreddit.tux.pizza/r/askmath/comments/15ed9m3/is_there_an_internationally_agreed_upon/ju6uba1</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x%C2%B2_gives_x_and_not_in_4_why_it_only_gives_2/kj0ti76">https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x²_gives_x_and_not_in_4_why_it_only_gives_2/kj0ti76</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x%C2%B2_gives_x_and_not_in_4_why_it_only_gives_2/kiyv2v6">https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x²_gives_x_and_not_in_4_why_it_only_gives_2/kiyv2v6</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x%C2%B2_gives_x_and_not_in_4_why_it_only_gives_2/kj11hvz">https://libreddit.tux.pizza/r/learnmath/comments/19chijc/why_x²_gives_x_and_not_in_4_why_it_only_gives_2/kj11hvz</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6f3aqc">https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6f3aqc</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6e9d7n">https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6e9d7n</a></li>
+<li><a href="https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6ebz7h">https://libreddit.tux.pizza/r/learnmath/comments/10oebmz/is_square_root_always_a_positive_number/j6ebz7h</a></li>
 <li><img src="../assets/2024-06-11-104608.png" alt="2024-06-11-104608.png"></li>
 <li>ChatGPT</li>
 </ul>
@@ -75,16 +81,27 @@ print(math.sqrt(25))
 <ul>
 <li><h4>The domain of the function $y=\sqrt{x(x-1)}+\sqrt{x}$ is</h4>
 <ul>
-<li>In the function, for each value of $x$, $y$ must have unique value</li>
-<li>The expression under the square root must be non-negative</li>
+<li>Square root<ul>
+<li>Every nonnegative real number $x$ has a unique nonnegative square root</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>$\{x|x\ge1\}\cup\{0\}$</li>
+<li>$x(x-1)\ge0$ ($x=0$ and $x=1$) # $x\le0$ or $x\ge1$<ul>
+<li>If $x&lt;0$, then $x$ is negative and $x-1$ is negative, so $(x(x-1))$ is positive</li>
+<li>If $0&lt;x&lt;1$, then $x$ is positive and $x-1$ is negative, so $x(x-1)$ is negative</li>
+<li>If $x&gt;1$, then $x$ is positive and $x-1$ is positive, so $(x(x-1))$ is positive</li>
+</ul>
+</li>
+<li>$x\ge0$</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/2024-06-11-120020.svg" alt="2024-06-11-120020.svg"></li>
+<li><a href="https://en.wiktionary.org/wiki/principal_root">https://en.wiktionary.org/wiki/principal_root</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Domain_of_a_function#/media/File:Square_root_0_25.svg">https://en.wikipedia.org/wiki/Domain_of_a_function#/media/File:Square_root_0_25.svg</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Square_root">https://en.wikipedia.org/wiki/Square_root</a></li>
 <li>College Entrance Math in Jiangxi</li>
 <li>ChatGPT</li>
 </ul>
