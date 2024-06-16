@@ -41,6 +41,83 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;library&quot;</h4>
+<ul>
+<li><code>library listen ~/classical_music.tl.db</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>--random</code> # Playback shuffle</li>
+<li><code>pipx install xklb</code> # Install dependencies</li>
+<li>Because to listen to classical music.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/chapmanjacobd/library/tree/main/example_dbs">https://github.com/chapmanjacobd/library/tree/main/example_dbs</a> # <em>classical_music.tl.db</em></li>
+<li><a href="https://github.com/chapmanjacobd/library#examples">https://github.com/chapmanjacobd/library#examples</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sqlite&quot;</h4>
+<ul>
+<li><code>python</code><pre><code>import sqlite3
+connection = sqlite3.connect(&quot;aquarium.db&quot;)
+
+cursor = connection.cursor()
+cursor.execute(&quot;CREATE TABLE fish (name TEXT, species TEXT, tank_number INTEGER)&quot;)
+
+cursor.execute(&quot;INSERT INTO fish VALUES (&#39;Sammy&#39;, &#39;shark&#39;, 1)&quot;)
+cursor.execute(&quot;INSERT INTO fish VALUES (&#39;Jamie&#39;, &#39;cuttlefish&#39;, &#39;7&#39;)&quot;)
+connection.commit()
+
+rows = cursor.execute(&quot;SELECT name, species, tank_number FROM fish&quot;).fetchall()
+print(rows)
+
+new_tank_number = 2
+moved_fish_name = &quot;Sammy&quot;
+cursor.execute(
+  &quot;UPDATE fish SET tank_number = ? WHERE name = ?&quot;,
+  (new_tank_number, moved_fish_name)
+)
+connection.commit()
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Create</li>
+<li>Read</li>
+<li>Update</li>
+<li>Delete</li>
+<li><code>UPDATE ... SET ... = ? WHERE ... = ?, (..., ...)</code> # Update value in the row of the table<ul>
+<li><code>?</code> # Placeholder</li>
+</ul>
+</li>
+<li><code>SELECT ... FROM ...</code> # Select columns from the table</li>
+<li><code>connection.commit()</code> # Commit (Or save) the changes</li>
+<li><code>INSERT INTO fish VALUES ()</code> # Insert a row into the <code>fish</code> table<ul>
+<li><code>Sammy</code> # Insert the value into the <em>first</em> column (e.g. <code>name</code>)</li>
+</ul>
+</li>
+<li><code>CREATE TABLE fish ()</code> # Create a table named <code>fish</code><ul>
+<li><code>name</code> # Column (e.g. <code>species</code>, <code>tank_number</code>)</li>
+<li><code>TEXT</code> # Type (e.g. <code>INTEGER</code>)</li>
+</ul>
+</li>
+<li><code>connection.cursor().execute(&quot;&quot;)</code> # Use cursor to execute a SQL command</li>
+<li><code>sqlite3.connect(&quot;aquarium.db&quot;)</code> # Connect to the database named <em>aquarium.db</em></li>
+<li>Because to use a database to store data.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://mathpretty.com/16311.html">https://mathpretty.com/16311.html</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Calculate the square root of a number in Python interpreter</h4>
 <ul>
 <li><code>python</code> # Use <code>math</code> module<pre><code>import math
@@ -3209,7 +3286,7 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li><code>hyprctl version</code> # Get version of Hyprland</li>
 <li><code>hyprctl activewindow</code> # Get geometry of current window</li>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Assign a window to a workspace
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Assign a window to a workspace (Silent: `workspace 1 silent`)
 windowrulev2 = workspace 1, class:^(firefox)$
 # Enable fullscreen for a window by default
 windowrulev2 = fullscreen, class:^(wayst1)$
@@ -3255,6 +3332,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.hyprland.org/Configuring/Window-Rules/">https://wiki.hyprland.org/Configuring/Window-Rules/</a></li>
 <li><a href="https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/">https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/</a></li>
 <li><a href="https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/">https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/</a></li>
 <li><a href="https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/">https://libreddit.oxymagnesium.com/r/hyprland/comments/1ars1q7/a_drop_down_terminal_quakelike/kqm2i7i/</a></li>
@@ -10383,25 +10461,6 @@ http://natas4.natas.labs.overthewire.org/
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">https://en.wikipedia.org/wiki/Artificial_intelligence</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Add string &quot;230317&quot; to the beginning of each file name in one-liner Bash</h4>
-<ul>
-<li><code>for f in *; do mv &quot;$f&quot; &quot;230317$f&quot;; done</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>f</code> # A variable</li>
-<li><code>for f in *; do mv &quot;$f&quot; &quot;${f:6}&quot;; done</code> # Remove the first 6 letters</li>
-<li><code>for f in *; do mv &quot;$f&quot; &quot;${f:0:-6}&quot;; done</code> # Remove the last 6 letters</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><img src="../assets/2023-03-23_22:32:46.png" alt="2023-03-23_22:32:46.png"></li>
 </ul>
 </li>
 </ul>
@@ -21924,10 +21983,26 @@ Auto Capture Keyboard # Extended Features (Turn it off)
 </ul>
 <hr>
 <ul>
-<li>[[linux]] 隐藏文件和目录  <ol>
-<li>mv 文件名或目录名 .文件名或.目录名 //在文件名或目录名前，添加一个英文句点(<code>.</code>)</li>
-</ol>
+<li><h4>Use &quot;mv&quot;</h4>
+<ul>
+<li><code>for f in *; do mv &quot;$f&quot; &quot;230317$f&quot;; done</code> # Add string &quot;230317&quot; to the beginning of each file name</li>
+<li><code>mv ~/Download/Trash/ ~/.trash</code> # Rename to hidden directory</li>
+</ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>f</code> # A variable</li>
+<li><code>for f in *; do mv &quot;$f&quot; &quot;${f:6}&quot;; done</code> # Remove the first 6 letters</li>
+<li><code>for f in *; do mv &quot;$f&quot; &quot;${f:0:-6}&quot;; done</code> # Remove the last 6 letters</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/2023-03-23_22:32:46.png" alt="2023-03-23_22:32:46.png"></li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[linux]] 安装全套教程  <ol>
 <li><a href="https://github.com/LucasWang474/Arch-Configurations">https://github.com/LucasWang474/Arch-Configurations</a></li>
 <li><a href="https://www.youtube.com/c/EFLinuxMadeSimple/playlists">https://www.youtube.com/c/EFLinuxMadeSimple/playlists</a></li>

@@ -1,5 +1,4 @@
 ## "Website"
-- https://test.ustc.edu.cn/
 - http://natas9.natas.labs.overthewire.org # 9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 - https://www.xue8nav.com/
 - https://www.toptal.com/project-managers/tomato-timer#
@@ -48,6 +47,9 @@
 - https://yixi.tv/#/home
 - https://www.17track.net/zh-cn
 - https://www.cosdna.com/chs/
+
+## Network test
+- https://test.ustc.edu.cn/
 
 ## Virus detection
 - https://www.virustotal.com/gui/home/upload
