@@ -41,12 +41,55 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;matplotlib&quot;</h4>
+<ul>
+<li><code>python</code><pre><code>import matplotlib.pyplot as plt
+import numpy as np
+
+def f(x):
+  return np.sqrt(x * (x - 1)) + np.sqrt(x)
+
+x = np.linspace(-0.5, 2, 400)
+y = np.zeros_like(x)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>linspace(-0.5, 2, 400)</code><ul>
+<li><code>-0.5</code> # Starting point of the sequence</li>
+<li><code>2</code> # Ending point of the sequence</li>
+<li><code>400</code> # The number of points between them</li>
+</ul>
+</li>
+<li><code>plt.legend(loc=&#39;upper left&#39;)</code> # Adjust the position of the legend<ul>
+<li><code>loc=&#39;upper left&#39;</code> # Move the position of the legend to upper left corner</li>
+<li>From default lower right corner</li>
+</ul>
+</li>
+<li><code>plt.savefig(&#39;function.svg&#39;, format=&#39;svg&#39;, transparent=True)</code><ul>
+<li><code>savefig(&#39;...&#39;, ...)</code> # Save the current figure as an image file</li>
+<li><code>format=&#39;svg&#39;</code> # Set image format to SVG</li>
+<li><code>transparent=True</code> # Set image background to transparent</li>
+</ul>
+</li>
+<li>Because to plot graphs of mathematical functions.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;library&quot;</h4>
 <ul>
 <li><code>library listen ~/classical_music.tl.db</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>library next</code> # Playback next</li>
 <li><code>--random</code> # Playback shuffle</li>
 <li><code>pipx install xklb</code> # Install dependencies</li>
 <li>Because to listen to classical music.</li>
@@ -55,6 +98,7 @@
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/chapmanjacobd/library/tree/main/example_dbs">https://github.com/chapmanjacobd/library/tree/main/example_dbs</a> # <em>classical_music.tl.db</em></li>
 <li><a href="https://github.com/chapmanjacobd/library#examples">https://github.com/chapmanjacobd/library#examples</a></li>
+<li><code>library listen --help</code></li>
 </ul>
 </li>
 </ul>
@@ -62,20 +106,51 @@
 <ul>
 <li><h4>Use &quot;sqlite&quot;</h4>
 <ul>
-<li><code>python</code><pre><code>import sqlite3
+<li><code>python</code> # Create a connection<pre><code>import sqlite3
 connection = sqlite3.connect(&quot;aquarium.db&quot;)
-
 cursor = connection.cursor()
-cursor.execute(&quot;CREATE TABLE fish (name TEXT, species TEXT, tank_number INTEGER)&quot;)
-
+</code></pre>
+<ul>
+<li><code>connection</code> # Variable (e.g. <em>cursor</em>, etc.)</li>
+<li><code>sqlite3.connect(&quot;&quot;)</code> # Connect to (Or create) the database</li>
+<li><code>aquarium.db</code> # Database name</li>
+</ul>
+</li>
+<li><code>python</code> # Close the connection<pre><code>cursor.close()
+connection.close()
+</code></pre>
+<ul>
+<li><code>close()</code> # Close the connection (e.g. <code>connection</code>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Create<pre><code>cursor.execute(&quot;CREATE TABLE fish (name TEXT, species TEXT, tank_number INTEGER)&quot;)
 cursor.execute(&quot;INSERT INTO fish VALUES (&#39;Sammy&#39;, &#39;shark&#39;, 1)&quot;)
-cursor.execute(&quot;INSERT INTO fish VALUES (&#39;Jamie&#39;, &#39;cuttlefish&#39;, &#39;7&#39;)&quot;)
+cursor.execute(&quot;INSERT INTO fish VALUES (&#39;Jamie&#39;, &#39;cuttlefish&#39;, 7)&quot;)
 connection.commit()
-
-rows = cursor.execute(&quot;SELECT name, species, tank_number FROM fish&quot;).fetchall()
+</code></pre>
+<ul>
+<li><code>execute(&quot;&quot;)</code> # Execute a SQL command</li>
+<li><code>&quot;CREATE TABLE ... ()&quot;</code> # Create a table</li>
+<li><code>fish</code> # Table name</li>
+<li><code>name</code> # Column (e.g. <code>species</code>, <code>tank_number</code>)</li>
+<li><code>TEXT</code> # Type (e.g. <code>INTEGER</code>)</li>
+<li><code>&quot;INSERT INTO ... VALUES (&#39;...&#39;, &#39;...&#39;, ...)&quot;</code> # Insert a row into the table</li>
+<li><code>Sammy</code> # Insert the value into the <em>first</em> column (e.g. <code>name</code>)</li>
+<li><code>commit()</code> # Commit (Or save) changes to the database</li>
+</ul>
+</li>
+<li>Read<pre><code>rows = cursor.execute(&quot;SELECT name, species, tank_number FROM fish&quot;).fetchall()
 print(rows)
-
-new_tank_number = 2
+</code></pre>
+<ul>
+<li><code>&quot;SELECT ..., ..., ... FROM ...&quot;</code> # Select columns from the table</li>
+<li><code>fetchall()</code> # Retrieve all remaining rows of the query result as a list (<code>[]</code>) of tuples (<code>()</code>)</li>
+</ul>
+</li>
+<li>Update<pre><code>new_tank_number = 2
 moved_fish_name = &quot;Sammy&quot;
 cursor.execute(
   &quot;UPDATE fish SET tank_number = ? WHERE name = ?&quot;,
@@ -83,31 +158,22 @@ cursor.execute(
 )
 connection.commit()
 </code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Create</li>
-<li>Read</li>
-<li>Update</li>
-<li>Delete</li>
-<li><code>UPDATE ... SET ... = ? WHERE ... = ?, (..., ...)</code> # Update value in the row of the table<ul>
+<ul>
+<li><code>&quot;UPDATE ... SET ... = ? WHERE ... = ?&quot;, (..., ...)</code> # Update a value in the row of the table</li>
 <li><code>?</code> # Placeholder</li>
 </ul>
 </li>
-<li><code>SELECT ... FROM ...</code> # Select columns from the table</li>
-<li><code>connection.commit()</code> # Commit (Or save) the changes</li>
-<li><code>INSERT INTO fish VALUES ()</code> # Insert a row into the <code>fish</code> table<ul>
-<li><code>Sammy</code> # Insert the value into the <em>first</em> column (e.g. <code>name</code>)</li>
+<li>Delete<pre><code>released_fish_name = &quot;Sammy&quot;
+cursor.execute(
+  &quot;DELETE FROM fish WHERE name = ?&quot;,
+  (released_fish_name,)
+)
+connection.commit()
+</code></pre>
+<ul>
+<li><code>&quot;DELETE FROM ... WHERE ... = ?&quot;, (...,)</code> # Delete a row in the table</li>
 </ul>
 </li>
-<li><code>CREATE TABLE fish ()</code> # Create a table named <code>fish</code><ul>
-<li><code>name</code> # Column (e.g. <code>species</code>, <code>tank_number</code>)</li>
-<li><code>TEXT</code> # Type (e.g. <code>INTEGER</code>)</li>
-</ul>
-</li>
-<li><code>connection.cursor().execute(&quot;&quot;)</code> # Use cursor to execute a SQL command</li>
-<li><code>sqlite3.connect(&quot;aquarium.db&quot;)</code> # Connect to the database named <em>aquarium.db</em></li>
 <li>Because to use a database to store data.</li>
 </ul>
 </li>
@@ -376,7 +442,7 @@ print(math.sqrt(25))
 trashDir=&quot;/home/yaoniplan/.trash&quot;
 
 # Delete files and directories older than 30 days
-find &quot;$trashDir&quot; -mindepth 1 -mtime +30 -delete
+find &quot;$trashDir&quot; -mindepth 1 -ctime +30 -delete
 </code></pre>
 </li>
 <li><code>chmod +x ~/.local/bin/cleanTrash.sh</code> # Change executable mode</li>
@@ -4797,7 +4863,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
-<li>The add icon - Add Action - Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
+<li>Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> (Or nplayer-<a href="http://192.168.10.100:5244/d/*encodedFileName">http://192.168.10.100:5244/d/*encodedFileName</a>*) - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
 <li>The add icon - Add Action - Dismiss Siri and Continue - Set Voice &amp; Data (4G, Primary) - done # <a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a>, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg">https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg</a></li>
 <li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
 <li>The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done</li>
@@ -8006,16 +8072,16 @@ find . -type f -inum 20447344 -exec rm {} \;
 <li><code>{01..08}/</code> # Replace it with your subdirectory</li>
 </ul>
 </li>
-<li>Delete files and directories older than 30 days<pre><code>find &quot;$trashDir&quot; -mindepth 1 -mtime +30 -delete
+<li>Delete files and directories older than 30 days<pre><code>find &quot;$trashDir&quot; -mindepth 1 -ctime +30 -delete
 </code></pre>
 <ul>
-<li><code>-mtime</code> # Modify time</li>
+<li><code>-ctime</code> # Changed time</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man find</code> # <code>/-mtime</code></li>
+<li><code>man find</code> # <code>/^ *-ctime</code></li>
 <li><img src="../assets/2023-05-06_00-13.png" alt="2023-05-06_00-13.png"></li>
 <li>ChatGPT</li>
 </ul>
@@ -21853,6 +21919,7 @@ XMODIFIERS=@im=fcitx //添加这一行
 <ul>
 <li><h4>Use &quot;grep&quot;</h4>
 <ul>
+<li><code>grep --line-number fgpt ~/.bashrc</code> # Get the line number (Use <code>sed</code> command to delete the line)</li>
 <li><code>grep -x &quot;$current_wallpaper&quot; -A 1 &quot;$wallpaper_list&quot; | tail -1</code> # Get next wallpaper</li>
 <li><code>grep -A 10 &quot;Artificial&quot; note/pages/Future.md</code> # Show the next 10 lines after the line</li>
 </ul>
