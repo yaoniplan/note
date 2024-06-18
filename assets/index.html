@@ -51,11 +51,39 @@ def f(x):
 
 x = np.linspace(-0.5, 2, 400)
 y = np.zeros_like(x)
+
+valid_indices = (x &gt;= 0) &amp; (x &gt;= 1) | (x == 0)
+y[valid_indices] = f(x[valid_indices])
+
+plt.figure(figsize=(10, 6), facecolor=&#39;none&#39;)
+plt.style.use(&#39;dark_background&#39;)
+plt.plot(x, y, label=&#39;$f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;yellow&#39;)
+plt.axhline(0, color=&#39;white&#39;, linewidth=0.5)
+plt.axvline(0, color=&#39;white&#39;, linewidth=0.5)
+plt.grid(color=&#39;gray&#39;, linestyle=&#39;--&#39;, linewidth=0.5)
+plt.title(&#39;Plot of $f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;white&#39;)
+plt.xlabel(&#39;x&#39;, color=&#39;white&#39;)
+plt.ylabel(&#39;f(x)&#39;, color=&#39;white&#39;)
+plt.ylim(-0.5, 2.5)
+
+plt.fill_between(x, y, where=valid_indices, color=&#39;brown&#39;, alpha=0.5, label=&#39;Valid domain&#39;)
+
+plt.legend(loc=&#39;upper left&#39;)
+
+plt.savefig(&#39;function.svg&#39;, format=&#39;svg&#39;, transparent=True)
+plt.close()
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>style.use(&#39;dark_background&#39;)</code> # Set dark background style</li>
+<li><code>facecolor=&#39;none&#39;</code> # Set facecolor to transparent</li>
+<li><code>figsize=(10, 6)</code> # Set figure size to 10x6 inches</li>
+<li><code>==</code> # Equal to</li>
+<li><code>|</code> # Or</li>
+<li><code>&amp;</code> # And</li>
+<li><code>zeros_like(x)</code> # The same shape as x filled with zeros</li>
 <li><code>linspace(-0.5, 2, 400)</code><ul>
 <li><code>-0.5</code> # Starting point of the sequence</li>
 <li><code>2</code> # Ending point of the sequence</li>
@@ -120,7 +148,7 @@ cursor = connection.cursor()
 connection.close()
 </code></pre>
 <ul>
-<li><code>close()</code> # Close the connection (e.g. <code>connection</code>)</li>
+<li><code>close()</code> # Close the connection (e.g. <em>connection</em>)</li>
 </ul>
 </li>
 </ul>
@@ -135,10 +163,10 @@ connection.commit()
 <li><code>execute(&quot;&quot;)</code> # Execute a SQL command</li>
 <li><code>&quot;CREATE TABLE ... ()&quot;</code> # Create a table</li>
 <li><code>fish</code> # Table name</li>
-<li><code>name</code> # Column (e.g. <code>species</code>, <code>tank_number</code>)</li>
-<li><code>TEXT</code> # Type (e.g. <code>INTEGER</code>)</li>
+<li><code>name</code> # Column name (e.g. <em>species</em>, <em>tank_number</em>)</li>
+<li><code>TEXT</code> # Type name (e.g. <em>INTEGER</em>)</li>
 <li><code>&quot;INSERT INTO ... VALUES (&#39;...&#39;, &#39;...&#39;, ...)&quot;</code> # Insert a row into the table</li>
-<li><code>Sammy</code> # Insert the value into the <em>first</em> column (e.g. <code>name</code>)</li>
+<li><code>Sammy</code> # Insert the value into the <em>first</em> column (e.g. <em>name</em>)</li>
 <li><code>commit()</code> # Commit (Or save) changes to the database</li>
 </ul>
 </li>
@@ -179,6 +207,7 @@ connection.commit()
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://mathpretty.com/16311.html">https://mathpretty.com/16311.html</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
