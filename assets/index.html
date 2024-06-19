@@ -43,68 +43,96 @@
 <ul>
 <li><h4>Use &quot;matplotlib&quot;</h4>
 <ul>
-<li><code>python</code><pre><code>import matplotlib.pyplot as plt
+<li><code>python</code> # Import dependencies<pre><code>import matplotlib.pyplot as plt
 import numpy as np
-
-def f(x):
-  return np.sqrt(x * (x - 1)) + np.sqrt(x)
-
-x = np.linspace(-0.5, 2, 400)
-y = np.zeros_like(x)
-
-valid_indices = (x &gt;= 0) &amp; (x &gt;= 1) | (x == 0)
-y[valid_indices] = f(x[valid_indices])
-
-plt.figure(figsize=(10, 6), facecolor=&#39;none&#39;)
-plt.style.use(&#39;dark_background&#39;)
-plt.plot(x, y, label=&#39;$f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;yellow&#39;)
-plt.axhline(0, color=&#39;white&#39;, linewidth=0.5)
-plt.axvline(0, color=&#39;white&#39;, linewidth=0.5)
-plt.grid(color=&#39;gray&#39;, linestyle=&#39;--&#39;, linewidth=0.5)
-plt.title(&#39;Plot of $f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;white&#39;)
-plt.xlabel(&#39;x&#39;, color=&#39;white&#39;)
-plt.ylabel(&#39;f(x)&#39;, color=&#39;white&#39;)
-plt.ylim(-0.5, 2.5)
-
-plt.fill_between(x, y, where=valid_indices, color=&#39;brown&#39;, alpha=0.5, label=&#39;Valid domain&#39;)
-
-plt.legend(loc=&#39;upper left&#39;)
-
-plt.savefig(&#39;function.svg&#39;, format=&#39;svg&#39;, transparent=True)
+</code></pre>
+<ul>
+<li><code>plt</code> # For plotting</li>
+<li><code>np</code> # For numerical operations</li>
+</ul>
+</li>
+<li><code>python</code> # Save and close<pre><code>plt.savefig(&#39;function.svg&#39;, format=&#39;svg&#39;, transparent=True)
 plt.close()
 </code></pre>
+<ul>
+<li><code>savefig(&#39;...&#39;, ...)</code> # Save the current figure as an image file</li>
+<li><code>format=&#39;svg&#39;</code> # Set image format to SVG</li>
+<li><code>transparent=True</code> # Set image background to transparent</li>
+</ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>style.use(&#39;dark_background&#39;)</code> # Set dark background style</li>
-<li><code>facecolor=&#39;none&#39;</code> # Set facecolor to transparent</li>
-<li><code>figsize=(10, 6)</code> # Set figure size to 10x6 inches</li>
-<li><code>==</code> # Equal to</li>
-<li><code>|</code> # Or</li>
-<li><code>&amp;</code> # And</li>
-<li><code>zeros_like(x)</code> # The same shape as x filled with zeros</li>
-<li><code>linspace(-0.5, 2, 400)</code><ul>
+<li>Define functions and variables<pre><code>def f(x):
+  return np.sqrt(x * (x - 1)) + np.sqrt(x)
+x = np.linspace(-0.5, 2, 400)
+y = np.zeros_like(x)
+valid_indices = (x &gt;= 0) &amp; (x &gt;= 1) | (x == 0)
+y[valid_indices] = f(x[valid_indices])
+</code></pre>
+<ul>
+<li><code>linspace()</code> # Generate a linearly spaced array of numbers</li>
 <li><code>-0.5</code> # Starting point of the sequence</li>
 <li><code>2</code> # Ending point of the sequence</li>
 <li><code>400</code> # The number of points between them</li>
+<li><code>zeros_like(x)</code> # The same shape as x filled with zeros</li>
+<li><code>&amp;</code> # And</li>
+<li><code>|</code> # Or</li>
+<li><code>==</code> # Equal to</li>
 </ul>
 </li>
-<li><code>plt.legend(loc=&#39;upper left&#39;)</code> # Adjust the position of the legend<ul>
+<li>Set the curve<pre><code>plt.figure(figsize=(10, 6), facecolor=&#39;none&#39;)
+plt.style.use(&#39;dark_background&#39;)
+plt.plot(x, y, label=&#39;$f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;yellow&#39;)
+</code></pre>
+<ul>
+<li><code>figsize=(10, 6)</code> # Set figure size to 10x6 inches</li>
+<li><code>facecolor=&#39;none&#39;</code> # Set facecolor to transparent</li>
+<li><code>style.use(&#39;dark_background&#39;)</code> # Set dark background style</li>
+<li><code>plot.(x, y)</code> # Plot the function</li>
+<li><code>label=&#39;$f(x) = ...$&#39;</code> # Display a mathematical expression in LaTex syntax</li>
+</ul>
+</li>
+<li>Set the axes<pre><code>plt.axhline(0, color=&#39;white&#39;, linewidth=0.5)
+plt.axvline(0, color=&#39;white&#39;, linewidth=0.5)
+</code></pre>
+<ul>
+<li><code>ax</code> # Axes</li>
+<li><code>h</code> # Horizontal (<code>v</code>: Vertical)</li>
+<li><code>0</code> # Coordinate</li>
+<li><code>0.5</code> # Units</li>
+</ul>
+</li>
+<li>Set auxiliary markers<pre><code>plt.grid(color=&#39;gray&#39;, linestyle=&#39;--&#39;, linewidth=0.5)
+plt.title(&#39;Plot of $f(x) = \sqrt{x(x-1)} + \sqrt{x}$&#39;, color=&#39;white&#39;)
+plt.xlabel(&#39;x&#39;, color=&#39;white&#39;)
+plt.ylabel(&#39;f(x)&#39;, color=&#39;white&#39;)
+plt.ylim(-0.5, 2.5)
+</code></pre>
+<ul>
+<li><code>$...$</code> # Display a mathematical expression in LaTex syntax</li>
+<li><code>--</code> # Dashed lines</li>
+<li><code>xlabel</code> # Set the label for the x-axis</li>
+<li><code>ylabel</code> # Set the y-axis label</li>
+<li><code>ylim(-0.5, 2.5)</code> # Set the y-axis limits from -0.5 to 2.5</li>
+</ul>
+</li>
+<li>Set label and legend<pre><code>plt.fill_between(x, y, where=valid_indices, color=&#39;brown&#39;, alpha=0.5, label=&#39;Valid domain&#39;)
+plt.legend(loc=&#39;upper left&#39;)
+</code></pre>
+<ul>
+<li><code>fill_between(x, y, ...)</code> # Fill the area between the curve defined by <em>x</em> and <em>y</em></li>
+<li><code>label=&#39;Valid domain&#39;</code> # Display the label in the plot legend</li>
+<li><code>plt.legend()</code> # Adjust the position of the legend</li>
 <li><code>loc=&#39;upper left&#39;</code> # Move the position of the legend to upper left corner</li>
 <li>From default lower right corner</li>
-</ul>
-</li>
-<li><code>plt.savefig(&#39;function.svg&#39;, format=&#39;svg&#39;, transparent=True)</code><ul>
-<li><code>savefig(&#39;...&#39;, ...)</code> # Save the current figure as an image file</li>
-<li><code>format=&#39;svg&#39;</code> # Set image format to SVG</li>
-<li><code>transparent=True</code> # Set image background to transparent</li>
 </ul>
 </li>
 <li>Because to plot graphs of mathematical functions.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://mathpretty.com/13603.html">https://mathpretty.com/13603.html</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -7471,33 +7499,6 @@ set timeoutlen=0 ttimeoutlen=0
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
 <li><code>:help timeoutlen</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Use &quot;vi&quot;</h4>
-<ul>
-<li><code>ZZ</code> # Same as <code>:wq</code></li>
-<li><code>:%s/espeak/gtts\-cli/g</code> # Replace espeak with gtts-cli globally</li>
-<li>Use four space for indenting temporarily<ul>
-<li><code>:set tabstop=4</code></li>
-</ul>
-</li>
-<li><code>1G</code> # Move cursor to the first line</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to try to replace Vim with Vi and for portability.<ul>
-<li>Use external scripts and commands</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/">https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/</a></li>
-<li><code>:set all</code></li>
-<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15855,13 +15856,22 @@ call plug#end()
 </ul>
 <hr>
 <ul>
-<li><h4>Enable Vi mode in the Linux shell</h4>
+<li><h4>Use &quot;vi&quot;</h4>
 <ul>
-<li><code>set -o vi</code></li>
+<li><code>set -o vi</code> # Enable Vi mode in the Linux shell</li>
+<li><code>ZZ</code> # Same as <code>:wq</code></li>
+<li><code>:%s/espeak/gtts\-cli/g</code> # Replace espeak with gtts-cli globally</li>
+<li>Use four space for indenting temporarily<ul>
+<li><code>:set tabstop=4</code></li>
+</ul>
+</li>
+<li><code>1G</code> # Move cursor to the first line</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>!$</code> # The last argument of the last command (Or <code>$_</code>, <code>!!:$</code>, <code>Alt-Shift-Hypen</code>)</li>
 <li><code>Ctrl-[</code> # The same as <code>Esc</code> key (<code>Ctrl-c</code> is ok if no <code>[</code> key)<ul>
+<li><code>_</code> # Last argument of last command</li>
 <li><code>d$</code> # Same as <code>Ctrl-k</code> of Emacs mode</li>
 <li><code>Ctrl-l</code> # Clear screen</li>
 <li><code>k</code> # The same as <code>Ctrl-p</code> of Emacs mode</li>
@@ -15889,11 +15899,19 @@ Control-l: clear-screen
 $endif
 </code></pre>
 </li>
+<li>Because to try to replace Vim with Vi and for portability.<ul>
+<li>Use external scripts and commands</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/">https://libreddit.perennialte.ch/r/ish/comments/13198h8/permissions_issues_and_startup_commands/</a></li>
+<li><a href="https://unix.stackexchange.com/questions/197005/recover-last-argument-of-the-last-command-in-bash-vi-mode/202589#202589">https://unix.stackexchange.com/questions/197005/recover-last-argument-of-the-last-command-in-bash-vi-mode/202589#202589</a></li>
+<li><a href="https://unix.stackexchange.com/questions/155702/how-to-recall-last-argument-in-bash-with-vi-setting/157021#157021">https://unix.stackexchange.com/questions/155702/how-to-recall-last-argument-in-bash-with-vi-setting/157021#157021</a></li>
 <li><a href="https://unix.stackexchange.com/questions/104094/is-there-any-way-to-enable-ctrll-to-clear-screen-when-set-o-vi-is-set/104101#104101">https://unix.stackexchange.com/questions/104094/is-there-any-way-to-enable-ctrll-to-clear-screen-when-set-o-vi-is-set/104101#104101</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Bash">https://wiki.gentoo.org/wiki/Bash</a></li>
+<li><code>:set all</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
