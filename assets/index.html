@@ -41,6 +41,23 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;nvim&quot;</h4>
+<ul>
+<li><code>nix run github:jordanisaacs/neovim-flake hello.sh</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: It takes a long time to download and bulid the first time.</li>
+<li>Because to try to use nvim.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://jordanisaacs.github.io/neovim-flake/index.html#sec-default-tidal">https://jordanisaacs.github.io/neovim-flake/index.html#sec-default-tidal</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;matplotlib&quot;</h4>
 <ul>
 <li><code>python</code> # Import dependencies<pre><code>import matplotlib.pyplot as plt
@@ -4918,6 +4935,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Get Dictionary from Input (Contents of URL) - Get Dictionary Value (Value, data.content, Dictionary) - Repeat with Each (Dictionary Value) - Text (Repeat Item (Type: Dictionary; Key: name)) # Get a list of all file names from the API (JSON format), <a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
+<li>Get Time Between Dates (Current Date, 00:00, Minutes) - Calculate (1440, +, Time Between Dates) - Show Result (Calculation Result) # How many minutes are left today?, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
 <li>Convert Image (Shortcut Input, PNG) - Save to Photo Album (Converted Image, Recents) # Convert PDFs (Captured long screen) to PNGs, <a href="https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb">https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb</a></li>
 <li>Get File from Folder (VLC, audioBook.txt) - <strong>Split Text</strong> (File, New Lines) - Get Item from List (Random Item, Split Text) # Get each line of a file before playing audiobook randomly, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/">https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/</a></li>
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
@@ -4962,7 +4981,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Download a proxy sofware (e.g. Shadowrocket)<ul>
 <li>Get a Apple ID that has already purchased Shadowrocket</li>
 <li>Import subscriptions according to the tutorial</li>
-<li><a href="https://github.com/wlxuf/Shadowrocket#%E5%85%B3%E9%94%AE%E8%AF%8D%E5%88%97%E8%A1%A8">https://github.com/wlxuf/Shadowrocket#关键词列表</a> # Some useful settings</li>
+<li><a href="https://github.com/wlxuf/Shadowrocket">https://github.com/wlxuf/Shadowrocket</a> # Hide VPN icon and enable proxy logging</li>
+<li><a href="https://m.youtube.com/watch?v=heG4YCMyg9w">https://m.youtube.com/watch?v=heG4YCMyg9w</a> # Select a server automatically</li>
 <li><a href="https://github.com/hiddify/Hiddify-Server/wiki/Tutorial-for-ShadowRocket-app">https://github.com/hiddify/Hiddify-Server/wiki/Tutorial-for-ShadowRocket-app</a> # Some useful settings</li>
 </ul>
 </li>
@@ -12343,6 +12363,22 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Get file name list<pre><code>curl --location --request POST &#39;http://192.168.10.100:5244/api/fs/list&#39; \
+    --header &#39;Authorization: yourAlistToken&#39; \
+    --header &#39;Content-Type: application/json&#39; \
+    --data-raw &#39;{
+        &quot;path&quot;: &quot;/interestAndHobby/music&quot;,
+        &quot;password&quot;: &quot;***&quot;,
+        &quot;page&quot;: 1,
+        &quot;per_page&quot;: 0,
+        &quot;refresh&quot;: false
+    }&#39;
+</code></pre>
+<ul>
+<li><a href="https://github.com/alist-org/alist/issues/5836">https://github.com/alist-org/alist/issues/5836</a></li>
+<li><a href="https://alist.nn.ci/guide/api/fs.html#post-%E5%88%97%E5%87%BA%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95">https://alist.nn.ci/guide/api/fs.html#post-列出文件目录</a></li>
+</ul>
+</li>
 <li><code>curl --user admin:*** --upload-file ~/Downloads/trash/wall_anime2_8K.png http://192.168.10.100:5244/dav/189/2024/03/26/</code> # Send a file using curl if no rclone<ul>
 <li><code>PUT</code> # Method</li>
 <li><code>Authorization</code> <code>Basic username:password</code> # Headers</li>
@@ -16697,6 +16733,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><h4>Use &quot;tmux&quot;</h4>
 <ul>
+<li><code>C-b [</code> # Enter copy mode</li>
 <li><code>C-b ,</code> # Rename the current window</li>
 <li><code>C-b C-o</code> # Move lower pane up (Make sure the cursor is in the up pane)</li>
 <li><code>C-b {</code> # Move the current pane up</li>
@@ -16763,9 +16800,11 @@ set -g history-limit 50000
 <li><code>vim ~/.tmux.conf</code> # Copy text from tmux to clipboard in Linux<pre><code># Enable Vi mode
 set -g mode-keys vi
 bind -T copy-mode-vi &#39;v&#39; send -X begin-selection
+bind -T copy-mode-vi &#39;C-v&#39; { send -X begin-selection ; send -X rectangle-toggle }
 bind -T copy-mode-vi &#39;y&#39; send -X copy-pipe-and-cancel &quot;xclip -selection clipboard&quot;
 </code></pre>
 <ul>
+<li><code>Ctrl-v</code> # Visual block mode (Default: <code>Ctrl-b [ v Ctrl-v</code>)</li>
 <li><code>doas emerge -aq x11-misc/xclip</code> # Install in Gentoo Linux</li>
 <li><code>xclip -selection clipboard</code> # Replace it with <code>wl-copy</code> on Wayland</li>
 </ul>
@@ -16790,6 +16829,8 @@ set -g base-index 1
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/tmux/tmux/blob/c07e856d244d07ab2b65e72328fb9fe20747794b/regress/conf/01840240e807e837dbf76d85b4b938de.conf#L805">https://github.com/tmux/tmux/blob/c07e856d244d07ab2b65e72328fb9fe20747794b/regress/conf/01840240e807e837dbf76d85b4b938de.conf#L805</a></li>
+<li><a href="https://github.com/tmux/tmux/issues/992">https://github.com/tmux/tmux/issues/992</a></li>
 <li><a href="https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/">https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/</a></li>
 <li><code>man tmux</code> # <code>/mode-keys</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
@@ -19849,7 +19890,7 @@ You can edit this.
 </li>
 <li>Search for file name in a repository<ul>
 <li><code>yourFileName in:path</code></li>
-<li><code>filename:yourFileName</code></li>
+<li><code>path:**/yourFileName</code></li>
 </ul>
 </li>
 </ul>
