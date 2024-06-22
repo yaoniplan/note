@@ -41,6 +41,22 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;ffprobe&quot;</h4>
+<ul>
+<li><code>ffprobe -show_streams yourVideoFile.mp4</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to get video and audio information.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;nvim&quot;</h4>
 <ul>
 <li><code>nix run github:jordanisaacs/neovim-flake hello.sh</code></li>
@@ -52,7 +68,7 @@
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://jordanisaacs.github.io/neovim-flake/index.html#sec-default-tidal">https://jordanisaacs.github.io/neovim-flake/index.html#sec-default-tidal</a></li>
+<li><a href="https://github.com/jordanisaacs/neovim-flake#documentation">https://github.com/jordanisaacs/neovim-flake#documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -8492,6 +8508,14 @@ togglePDFDarkMode();
 <ul>
 <li><h4>Use &quot;ffmpeg&quot;</h4>
 <ul>
+<li><code>ffmpeg -i 5ac9704e-c8fc-4445-bc3c-db640271898d-B.mp4 -c:v libx265 -crf 28 -preset slow -c:a aac -b:a 128k 招生专业名称：计算机类.mp4</code> # Compress a file without losing much quality<ul>
+<li><code>-c:v</code> # Set video codec to libx265 (HEVC encoder: higher compression rate than H.264)</li>
+<li><code>-crf</code> # Set Constant Rate Factor to 28 (Higher value result in lower quality and smaller file size)</li>
+<li><code>-preset</code> # Set encoding preset to slow (Prioritize compression efficiency over encoding speed)</li>
+<li><code>-c:a</code> # Set audio codec to AAC (Good balance of quality and compression efficiency)</li>
+<li><code>-b:a</code> # Set audio bitrate to 128 kbps</li>
+</ul>
+</li>
 <li><code>ffmpeg -i 231012seeADentist.m4a 231012seeADentist.mp3</code> # Convert M4A to MP3 format<ul>
 <li><code>for f in *.mp4; do ffmpeg -i &quot;$f&quot; &quot;${f%.mp4}.mp3&quot;&amp; done</code> # In batches</li>
 <li><code>%</code> # Remove extension (e.g. <code>.mp4</code>)</li>
@@ -12363,7 +12387,19 @@ Ascending # Order direction
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Get file name list<pre><code>curl --location --request POST &#39;http://192.168.10.100:5244/api/fs/list&#39; \
+<li>Get token<pre><code>curl --request POST &#39;http://192.168.10.100:5244/api/auth/login&#39; \
+    --header &#39;Content-Type: application/json&#39; \
+    --data-raw &#39;{
+        &quot;username&quot;:&quot;guest&quot;,
+        &quot;password&quot;:&quot;guest&quot;
+    }&#39;
+</code></pre>
+<ul>
+<li><a href="https://github.com/alist-org/alist/discussions/2061#discussioncomment-8717854">https://github.com/alist-org/alist/discussions/2061#discussioncomment-8717854</a></li>
+<li><a href="https://alist.nn.ci/guide/api/auth.html#post-token%E8%8E%B7%E5%8F%96">https://alist.nn.ci/guide/api/auth.html#post-token获取</a></li>
+</ul>
+</li>
+<li>Get file name list<pre><code>curl --request POST &#39;http://192.168.10.100:5244/api/fs/list&#39; \
     --header &#39;Authorization: yourAlistToken&#39; \
     --header &#39;Content-Type: application/json&#39; \
     --data-raw &#39;{
@@ -16559,13 +16595,6 @@ complete -F _todo todocli
 </ul>
 <hr>
 <ul>
-<li><h4>The #punctuation of [[dollar sign]] is <code>$</code>.</h4>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/2023-01-02_15-15_1672643739341_0.png" alt="2023-01-02_15-15.png"></li>
-<li><a href="https://en.wikipedia.org/wiki/Dollar_sign">Dollar sign - Wikipedia</a>- ---</li>
-</ul>
-</li>
 <li><h4>Eating fried food can seriously damage body organs (e.g. mouth, throat, etc.). #idea</h4>
 </li>
 </ul>
@@ -21996,11 +22025,6 @@ XMODIFIERS=@im=fcitx //添加这一行
 </ul>
 <hr>
 <ul>
-<li>[[linux]] [[截图]]命令<ul>
-<li>flameshot gui //开始截图(没有 flameshot 的话，先安装 flameshot)</li>
-<li>deepin-screenshot //开始截图(没有 deepin-screenshot 的话，先安装 deepin-screenshot)</li>
-</ul>
-</li>
 <li>[[linux]] [[arch]] [[更新]]命令<ul>
 <li>sudo pacman -Sy //同步(更新)库(也可以测试源速度)</li>
 <li>sudo pacman -Syu //同步(更新)库并更新包</li>
@@ -22095,20 +22119,17 @@ Auto Capture Keyboard # Extended Features (Turn it off)
 </ul>
 <hr>
 <ul>
-<li>[[截图]] 软件(sudo pacman -S [[包名]] )  <ol>
-<li>Spectacle  </li>
-<li>deepin-screen-recorder  </li>
-<li>gnome或kde自带的截图 //查查包名 gnome-screenshot ； shutter  </li>
-<li>火焰截图（flameshot）<br>总结：flameshot，是目前包最小的，也是目前在用的。</li>
-</ol>
-</li>
 <li>[[Vim]] 快速跳转到某 [[行]] (这里的 n 为数字)  <ol>
 <li>ngg(nG)</li>
 <li>:n</li>
 </ol>
 </li>
-<li>[[linux]] <code>df</code> (disk free)显示[[磁盘]] 使用情况命令<br>参考资料<br><a href="https://www.linuxcool.com/df" title="df命令-显示磁盘空间使用情况">df命令-显示磁盘空间使用情况</a>
--- &gt;灭六国者六国也，非秦也。<strong>族秦者秦也，非天下也</strong>。(应用场景：某垄断被成功反垄断之时) #quote</li>
+<li>[[linux]] <code>df</code> (disk free)显示[[磁盘]] 使用情况命令<br>参考资料<br><a href="https://www.linuxcool.com/df" title="df命令-显示磁盘空间使用情况">df命令-显示磁盘空间使用情况</a></li>
+<li></li>
+<li><blockquote>
+<p>灭六国者六国也，非秦也。<strong>族秦者秦也，非天下也</strong>。(应用场景：某垄断被成功反垄断之时) #quote</p>
+</blockquote>
+</li>
 <li>[[鼠标]] 中键(三击)  <ol>
 <li>复制粘贴 //选择后，中键(三击)</li>
 <li>关闭浏览器标签</li>
@@ -22117,8 +22138,20 @@ Auto Capture Keyboard # Extended Features (Turn it off)
 <li>[[linux]] 一切皆文件</li>
 <li>[[math]] 科学记数法<br>一个数被写成一个实数<code>a</code>与一个10的n次<code>幂</code>的积<br><img src="../assets/Screenshot_from_2022-08-17_18-21-28_1660731701695_0.png" alt="Screenshot from 2022-08-17 18-21-28.png"><br>在计算机中用<code>e</code>来表示10的幂<br><img src="../assets/Screenshot_from_2022-08-17_18-23-26_1660731816642_0.png" alt="Screenshot from 2022-08-17 18-23-26.png"><br>Q: 怎么用？<br>A: 3e5<br>(3e5=3*$10^5$)<br>参考资料<br><a href="https://zh.wikipedia.org/wiki/%E7%A7%91%E5%AD%A6%E8%AE%B0%E6%95%B0%E6%B3%95" title="科学记数法">科学记数法</a></li>
 <li>[[Markdown]] 次方(上标)<br><em><strong>写法</strong></em><br><img src="../assets/Screenshot_from_2022-08-17_18-34-05_1660732498283_0.png" alt="Screenshot from 2022-08-17 18-34-05.png"><br><em><strong>预览</strong></em><br><img src="../assets/Screenshot_from_2022-08-17_18-34-17_1660732513304_0.png" alt="Screenshot from 2022-08-17 18-34-17.png"><br>参考资料<br><a href="https://www.jianshu.com/p/e74eb43960a1" title="Markdown数学公式语法">Markdown数学公式语法</a></li>
-<li>[[symbol]] <code>$</code>美元符号<br>参考资料<br><a href="https://zh.wikipedia.org/wiki/$" title="$">$</a>
--- [[linux]] 折腾 [[dwm]] 好累啊(主要是资源质量太低、时效性短，虽然 [[dwm]] 简洁高效，但是要配置的东西太多了，比如：显示亮度、没声音、网络代理、截图(据说 grim 可用)、笔记本触摸板……)</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The punctuation of &quot;dollar sign&quot; is &quot;$&quot;.</h4>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because the Shell language needs to use dollar sign to reuse variables.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://en.wikipedia.org/wiki/Dollar_sign">https://en.wikipedia.org/wiki/Dollar_sign</a></li>
+</ul>
+</li>
+<li>[[linux]] 折腾 [[dwm]] 好累啊(主要是资源质量太低、时效性短，虽然 [[dwm]] 简洁高效，但是要配置的东西太多了，比如：显示亮度、没声音、网络代理、截图(据说 grim 可用)、笔记本触摸板……)</li>
 </ul>
 <hr>
 <ul>
