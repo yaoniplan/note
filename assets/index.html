@@ -41,13 +41,73 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Use &quot;ffprobe&quot;</h4>
+<li><h4>Capture a long screenshot in Firefox</h4>
 <ul>
-<li><code>ffprobe -show_streams yourVideoFile.mp4</code></li>
+<li><code>Ctrl-Shift-s</code> # Select a region</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to get video and audio information.</li>
+<li>Because to share with others.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://askubuntu.com/questions/1413989/how-do-i-take-a-long-screenshot-in-linux/1414000#1414000">https://askubuntu.com/questions/1413989/how-do-i-take-a-long-screenshot-in-linux/1414000#1414000</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sing-box&quot;</h4>
+<ul>
+<li><code>tar -xf sing-box-1.10.0-alpha.16-linux-amd64.tar.gz</code></li>
+<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to use a faster proxy tool.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://senzyo.net/2024-2/">https://senzyo.net/2024-2/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;ffprobe&quot;</h4>
+<ul>
+<li><code>ffprobe yourVideoFile.mp4</code><ul>
+<li><code>-show_streams</code> # Show streams (e.g. video, audio)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to get video and audio information.<ul>
+<li>(Duration, bitrate, Video codec, resolution, audio codec, etc.)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Display the help message and exit if no arguments are provide</h4>
+<ul>
+<li><code>vim ~/.local/bin/getInformation.sh</code><pre><code>if [ &quot;$#&quot; -eq 0 ]; then
+    echo &quot;Usage: $(basename $0) &lt;arg1&gt; &lt;arg2&gt; ...&quot;
+    exit 1
+fi
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to make the Shell script more user-friendly.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -1037,6 +1097,8 @@ anon_root=/mnt
 </ul>
 </li>
 <li><code>vim ~/.config/imv/config</code> # Configure as needed<pre><code>[binds]
+# Copy path of current image to clipboard
+y = exec wl-copy &quot;$imv_current_file&quot;
 # Send a notification (e.g. /home/yaoniplan/.trash/2024-06-04-091824.png)
 p = exec notify-send &quot;$imv_current_file&quot;
 # Delete current image and quit
@@ -3409,6 +3471,7 @@ font-size = 12
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Examples<ul>
+<li><code>wl-copy &lt; /mnt/grow/image/2024-06-23-100503.png</code> # Copy file to clipboard</li>
 <li><code>wl-paste | imv -</code> # View pictures from clipboard</li>
 <li><code>echo &quot;$(which mako)&quot; | wl-copy</code> # Copy file path to clipboard</li>
 </ul>
@@ -4951,6 +5014,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
 <li>Get Dictionary from Input (Contents of URL) - Get Dictionary Value (Value, data.content, Dictionary) - Repeat with Each (Dictionary Value) - Text (Repeat Item (Type: Dictionary; Key: name)) # Get a list of all file names from the API (JSON format), <a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
 <li>Get Time Between Dates (Current Date, 00:00, Minutes) - Calculate (1440, +, Time Between Dates) - Show Result (Calculation Result) # How many minutes are left today?, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
 <li>Convert Image (Shortcut Input, PNG) - Save to Photo Album (Converted Image, Recents) # Convert PDFs (Captured long screen) to PNGs, <a href="https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb">https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb</a></li>
@@ -6103,10 +6167,14 @@ address=192.168.10.10/24
 <ul>
 <li><h4>If the sets $U=R$, $M=\{x|x&lt;1\}$, $N=\{x|-1&lt;x&lt;2\}$, then $\{x|x \ge 2\}=$</h4>
 <ul>
-<li>$C_u(M \cup N)$ # $U-(M \cup N)$<ul>
-<li>$C_u$ # Complement</li>
-<li>$\cup$ # Union of sets</li>
+<li>$C_U(M \cup N)$ # $U-(M \cup N)$<ul>
+<li>$C_U$ # Complement of a set</li>
+<li>$ \cup $ # Union of sets</li>
 <li>$U$ # Universal set</li>
+</ul>
+</li>
+<li>$C_U(A \cap B)$<ul>
+<li>$ \cap $ # Intersection of sets</li>
 </ul>
 </li>
 </ul>
@@ -6352,9 +6420,11 @@ fi
 <li><code>$\frac{2+i}{i}$</code> # $\frac{2+i}{i}$</li>
 <li><code>$\\{x|x\ge2\\}=U-(M \cup N)$</code> # $\{x|x\ge2\}=U-(M \cup N)$</li>
 <li><code>$\bar{z}=$</code> # $\bar{z}=$</li>
+<li><code>$A \cap B$</code> # $A \cap B$</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>\cap</code> # Intersection</li>
 <li><code>\sqrt{}</code> # Square root</li>
 <li><code>\ne</code> # Not equal to</li>
 <li><code>\times</code></li>
@@ -6374,7 +6444,7 @@ fi
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">https://en.wikibooks.org/wiki/LaTeX/Mathematics</a></li>
 <li><a href="https://docs.moodle.org/402/en/Using_TeX_Notation">https://docs.moodle.org/402/en/Using_TeX_Notation</a></li>
-<li><a href="https://wumbo.net/symbols/union/">https://wumbo.net/symbols/union/</a></li>
+<li><a href="https://wumbo.net/symbols/union/">https://wumbo.net/symbols/union/</a> # Replace <em>union</em> with other symbol (e.g. <em>intersection</em>)</li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -12839,6 +12909,12 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 <ul>
 <li><h4>Use &quot;curl&quot;</h4>
 <ul>
+<li><code>&#39;&quot;$filePath&quot;&#39;</code> # Enclose in single quotes to make variable effective<pre><code>...
+    --data-raw &#39;{
+        &quot;path&quot;: &quot;&#39;&quot;$filePath&quot;&#39;&quot;,
+...
+</code></pre>
+</li>
 <li><code>curl --remote-name https://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.db</code> # Download a file</li>
 <li><code>curl --verbose yaoniplan.eu.org</code></li>
 </ul>
