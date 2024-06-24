@@ -59,11 +59,30 @@
 <ul>
 <li><h4>Use &quot;sing-box&quot;</h4>
 <ul>
-<li><code>tar -xf sing-box-1.10.0-alpha.16-linux-amd64.tar.gz</code></li>
-<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code></li>
+<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
+<li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Replace <em>config.json</em> with your configuration</li>
+<li><code>vim ~/.bash_profile</code><pre><code># Set proxy
+export all_proxy=&quot;socks5://127.0.0.1:2333&quot;
+export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
+</code></pre>
+<ul>
+<li><code>all_proxy</code> # Both HTTP and HTTPS connections</li>
+</ul>
+</li>
+<li>Select a server<ul>
+<li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
+<li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>FATAL[0000] start service: initialize inbound/tun[0]: configure tun interface: operation not permitted
+</code></pre>
+<ul>
+<li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Add permission</li>
+</ul>
+</li>
 <li>Because to use a faster proxy tool.</li>
 </ul>
 </li>
@@ -84,7 +103,7 @@
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to get video and audio information.<ul>
-<li>(Duration, bitrate, Video codec, resolution, audio codec, etc.)</li>
+<li>(e.g. Duration, bitrate, video codec, resolution, audio codec, etc.)</li>
 </ul>
 </li>
 </ul>
@@ -98,7 +117,8 @@
 <ul>
 <li><h4>Display the help message and exit if no arguments are provide</h4>
 <ul>
-<li><code>vim ~/.local/bin/getInformation.sh</code><pre><code>if [ &quot;$#&quot; -eq 0 ]; then
+<li><code>vim ~/.local/bin/getInformation.sh</code><pre><code># If the number of arguments is equal to zero
+if [ &quot;$#&quot; -eq 0 ]; then
     echo &quot;Usage: $(basename $0) &lt;arg1&gt; &lt;arg2&gt; ...&quot;
     exit 1
 fi
@@ -12631,40 +12651,6 @@ ssh: connect to host 192.168.10.100 port 22: No route to host
 </ul>
 <hr>
 <ul>
-<li><h4>Install &quot;docker&quot; in Ubuntu Server 22.04</h4>
-<ul>
-<li>Follow the steps of this <a href="https://docs.docker.com/engine/install/ubuntu/">website</a></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>doas usermod -a -G docker yaoniplan</code> # Run the command without password<ul>
-<li><code>-a</code> # Append</li>
-<li><code>-G</code> # Group</li>
-<li><code>yaoniplan</code> # Replace it with your user</li>
-</ul>
-</li>
-<li><code>doas reboot</code> # Make the changes effective</li>
-<li><code>docker --version</code> # Verify the installation</li>
-<li>In Arch Linux<pre><code>doas pacman --sync docker # Install dependencies
-doas systemctl enable docker --enable # Enable now
-doas gpasswd --add $(whoami) docker # Add user to Docker group
-</code></pre>
-<ul>
-<li>Log out and log back to make changes effective</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/">https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/</a></li>
-<li><code>man usermod</code></li>
-<li><code>man docker</code></li>
-<li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use &quot;docker&quot;</h4>
 <ul>
 <li><code>doas vi /etc/systemd/system/docker.service.d/proxy.conf</code> # Set a proxy if mirror fails<pre><code>[Service]
@@ -12746,11 +12732,28 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 <li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the date-tagged image</li>
 </ul>
 </li>
+<li>Install dependencies In Ubuntu Server 22.04<ul>
+<li>Follow the steps of this <a href="https://docs.docker.com/engine/install/ubuntu/">website</a></li>
+<li><code>doas usermod --append --groups docker $(whoami)</code> # Run the command without password</li>
+<li><code>doas reboot</code> # Make the changes effective</li>
+</ul>
+</li>
+<li>Install dependencies in Arch Linux<pre><code>doas pacman --sync docker # Install dependencies
+doas systemctl enable docker --enable # Enable now
+doas gpasswd --add $(whoami) docker # Add user to Docker group
+</code></pre>
+<ul>
+<li>Log out and log back to make changes effective</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/">https://www.zdnet.com/article/docker-101-how-to-install-docker-on-ubuntu-server-22-04/</a></li>
 <li><a href="https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5083215#gistcomment-5083215">https://gist.github.com/y0ngb1n/7e8f16af3242c7815e7ca2f0833d3ea6?permalink_comment_id=5083215#gistcomment-5083215</a></li>
 <li><a href="https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm">https://sci.nju.edu.cn/9e/05/c30384a564741/page.htm</a></li>
+<li><code>man usermod</code> # <code>/^ *-a</code> <code>/^ *-G</code></li>
+<li><code>man docker</code></li>
 <li>Google # <code>registry mirrors site:edu.cn</code></li>
 <li>ChatGPT</li>
 </ul>
