@@ -41,6 +41,32 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;excel&quot;</h4>
+<ul>
+<li><code>Ctrl-z</code> # Undo</li>
+<li><code>Ctrl-y</code> # Redo</li>
+<li><code>Alt-q</code> # Query</li>
+<li>Use keyboard shortcuts<ul>
+<li>Long press <code>Alt</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Formulas<ul>
+<li><code>=M2*0.8</code> # 20% off price (M: column; 2: row)</li>
+</ul>
+</li>
+<li>Because to deal with a .xlsx file.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.office.com/launch/excel">https://www.office.com/launch/excel</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Capture a long screenshot in Firefox</h4>
 <ul>
 <li><code>Ctrl-Shift-s</code> # Select a region</li>
@@ -62,7 +88,7 @@
 <li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
 <li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Replace <em>config.json</em> with your configuration</li>
 <li><code>vim ~/.bash_profile</code><pre><code># Set proxy
-export all_proxy=&quot;socks5://127.0.0.1:2333&quot;
+export all_proxy=&quot;socks://127.0.0.1:2333&quot;
 export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
 </code></pre>
 <ul>
@@ -5449,7 +5475,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Disconnect<ul>
-<li><code>nmcli connection delete yourUUID</code> # Delete</li>
+<li><code>nmcli connection down yourUUID</code> # Disconnect</li>
 <li><code>nmcli connection show</code> # Get the yourUUID</li>
 </ul>
 </li>
