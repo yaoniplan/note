@@ -41,6 +41,40 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Open a department store in Dongguan, Guangdong</h4>
+<ul>
+<li>Don&#39;t join other brands</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>The other party may not perform the specific things metioned in the contract<ul>
+<li>Indoor and outdoor cameras must be included</li>
+<li>The glass door must include a glass frame and a glass fan</li>
+<li>Air conditioning must be available</li>
+<li>One-hand payment and one-hand delivery</li>
+<li>Bulid an artificial intelligence to answer questions about commodity information</li>
+</ul>
+</li>
+<li>Provide Free services<ul>
+<li>Hot water (Make hot instand noodles)</li>
+</ul>
+</li>
+<li>Business cooperation<ul>
+<li>Find each other</li>
+</ul>
+</li>
+<li>Wear seat belts for rear seats in small cars (Impose a fine of RMB 10, deduct 0 points, late payment fee will be RMB 0)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://www.gov.cn/banshi/2005-08/23/content_25575_2.htm">https://www.gov.cn/banshi/2005-08/23/content_25575_2.htm</a> # <code>/第五十一条</code></li>
+<li><a href="https://www.gov.cn/banshi/2005-08/23/content_25575_3.htm">https://www.gov.cn/banshi/2005-08/23/content_25575_3.htm</a> # <code>/第八十九条</code></li>
+<li><a href="https://www.gd.gov.cn/zwgk/wjk/zcfgk/content/post_2531572.html">https://www.gd.gov.cn/zwgk/wjk/zcfgk/content/post_2531572.html</a> # <code>/第五十五条</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;excel&quot;</h4>
 <ul>
 <li><code>Ctrl-z</code> # Undo</li>
@@ -85,7 +119,6 @@
 <ul>
 <li><h4>Use &quot;sing-box&quot;</h4>
 <ul>
-<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
 <li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Replace <em>config.json</em> with your configuration</li>
 <li><code>vim ~/.bash_profile</code><pre><code># Set proxy
 export all_proxy=&quot;socks://127.0.0.1:2333&quot;
@@ -93,6 +126,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
 </code></pre>
 <ul>
 <li><code>all_proxy</code> # Both HTTP and HTTPS connections</li>
+<li><code>2333</code> # Search &#39;listen_port&#39; to get the port</li>
 </ul>
 </li>
 <li>Select a server<ul>
@@ -103,6 +137,11 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Install dependencies<ul>
+<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
+<li><code>nix profile install nixpkgs#sing-box</code> # Another method</li>
+</ul>
+</li>
 <li>Solve the problem<pre><code>FATAL[0000] start service: initialize inbound/tun[0]: configure tun interface: operation not permitted
 </code></pre>
 <ul>
@@ -114,6 +153,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://senzyo.net/2024-2/">https://senzyo.net/2024-2/</a></li>
+<li><a href="https://libreddit.nohost.network/r/archlinux/comments/17v2ajb/singbox_proxy_drive_me_crazy/">https://libreddit.nohost.network/r/archlinux/comments/17v2ajb/singbox_proxy_drive_me_crazy/</a></li>
 </ul>
 </li>
 </ul>
@@ -5479,7 +5519,12 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>nmcli connection show</code> # Get the yourUUID</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#networkmanager</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#networkmanager</code> # Install dependencies<ul>
+<li><code>doas systemctl enable NetworkManager --now</code> # Solve the problem<pre><code>Error: NetworkManager is not running
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Because to connect to WiFi when there is no network cable.</li>
 <li>Solve the problem<pre><code>[yaoniplan@tux ~]$ lspci
 ...
@@ -6154,6 +6199,17 @@ address=192.168.10.10/24
 <li><code>192.168.10.100</code> # Replace it with your desired static IP address</li>
 <li><code>192.168.10.1</code> # Replace it with your default gataway<ul>
 <li><code>ip route | awk &#39;/default/ {print $3}&#39;</code> # Get it</li>
+</ul>
+</li>
+<li>Enable DHCP to get an IP address from another new router<ul>
+<li><code>doas vim /etc/systemd/network/enp2s0.network</code><pre><code>[Match]
+Name=enp2s0
+
+[Network]
+DHCP=yes
+</code></pre>
+</li>
+<li><code>doas systemctl restart systemd-networkd</code> # Apply changes</li>
 </ul>
 </li>
 </ul>
@@ -8671,6 +8727,7 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code>sed -i &#39;5s/$/ \&amp;/&#39; .profile</code> # Append the string at the end of the line</li>
 <li><code>sed -i &#39;1i#EXTM3U&#39; &quot;$playlist_file&quot;</code> # Insert <code>#EXTM3U</code> at the beginning of file</li>
 <li><code>sed -i &#39;5,7d&#39; ~/.ssh/config</code> # Delete the fifth through seventh lines from a file<ul>
 <li><code>-i</code> # In place (Without it, just simulate first)</li>
