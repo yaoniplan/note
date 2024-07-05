@@ -15,7 +15,6 @@
 - https://cn.piliapp.com/symbol
 - https://easydrawingtutorials.com
 - https://ximo.blog
-- https://searx.space
 - https://iconfont.cn
 - https://basic.smartedu.cn/
 - https://www.leleketang.com/

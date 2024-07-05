@@ -41,6 +41,40 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Increase the number in output filenames</h4>
+<ul>
+<li><code>i=1; for f in *.MOV; do ffmpeg -i &quot;$f&quot; -c:v libx265 -crf 28 -preset slow -c:a aac -b:a 128k 240627checkTheCigarettes${i}.mp4; i=$((i + 1)); done</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>${}</code> # Reference the value of a variable (<code>$</code> is ok, but <code>${}</code> is powerful)</li>
+<li><code>$(())</code> # Perform arithmetic operations (Calculate the value)</li>
+<li>Because to achieve semi-automation in the shell.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;a-shell&quot;</h4>
+<ul>
+<li><code>help -l</code> # List all installed packages</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to download a piece of music from YouTube in iPhone.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/">https://libreddit.nohost.network/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;the first floor&quot; is &quot;1F&quot;.</h4>
 <ul>
 <li><code>B1</code> # Basement level 1</li>
@@ -80,6 +114,15 @@
 </ul>
 </li>
 <li>Wear seat belts for rear seats in small cars (Impose a fine of RMB 10, deduct 0 points, late payment fee will be RMB 0)</li>
+<li>Require<ul>
+<li>Banknote detector</li>
+<li>Monitor</li>
+<li>Rice cooker</li>
+<li>Business license</li>
+<li>Fodd business license</li>
+<li>Health license</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -147,11 +190,12 @@
 <li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Replace <em>config.json</em> with your configuration</li>
 <li><code>vim ~/.bash_profile</code><pre><code># Set proxy
 export all_proxy=&quot;socks://127.0.0.1:2333&quot;
-export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24&quot;
+export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </code></pre>
 <ul>
 <li><code>all_proxy</code> # Both HTTP and HTTPS connections</li>
 <li><code>2333</code> # Search &#39;listen_port&#39; to get the port</li>
+<li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
 </li>
 <li>Select a server<ul>
@@ -5184,6 +5228,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Disadvantages<ul>
+<li>Can&#39;t add video (Except photo) to album</li>
 <li>No call recording</li>
 <li>Charging is slow in winter (Charged 37% in 76 minutes)</li>
 <li>There is no useful e-book reader (e.g. Moon+ Reader), web browser (e.g. Kiwi Browser), or web proxy tool (e.g. Clash)</li>
@@ -8170,6 +8215,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li>Because to learn an unclear word.</li>
 <li>Disadvantages<ul>
+<li>Does not support SOCKS5 proxy</li>
 <li>Playback &quot;Translations of &quot; during speech</li>
 </ul>
 </li>
@@ -8181,6 +8227,7 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man trans</code></li>
+<li><a href="https://github.com/soimort/translate-shell/issues/331#issuecomment-574175585">https://github.com/soimort/translate-shell/issues/331#issuecomment-574175585</a></li>
 <li><a href="https://github.com/soimort/translate-shell/issues/178#issuecomment-304537785">https://github.com/soimort/translate-shell/issues/178#issuecomment-304537785</a></li>
 <li><a href="https://github.com/soimort/translate-shell/issues/408">https://github.com/soimort/translate-shell/issues/408</a></li>
 </ul>
@@ -8217,25 +8264,6 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Tty_(Unix)">https://en.wikipedia.org/wiki/Tty_(Unix)</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Clone a development branch of repository with Git</h4>
-<ul>
-<li><code>git clone -b development git@192.168.10.100:/var/git/bookmark.git/ ~/.config/bookmark/</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>-b</code> # Branch</li>
-<li><code>development</code> # Replace it with your branch name</li>
-<li><code>~/.config/bookmark/</code> # Replace it with destination path (Optional)</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><code>git clone --help</code></li>
 </ul>
 </li>
 </ul>
@@ -8759,6 +8787,7 @@ file &#39;output02.wma&#39;
 <li><code>-i</code> # In place (Without it, just simulate first)</li>
 <li><code>d</code> # Delete</li>
 <li>(<code>5d</code>: The fifth, <code>$d</code>: The last, <code>5d;7d</code>: Both the fifth and seventh)</li>
+<li><code>/SOCKS5_SERVER\|SOCKS5_PORT/d</code> # Delete the line containing &quot;SOCKS&quot;</li>
 </ul>
 </li>
 <li><code>sed -i &#39;s/dotfilels/dotfiles/g&#39; ~/.bashrc</code> # Substitute (e.g. Correct spelling)<ul>
@@ -9406,6 +9435,18 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/note/docker-compose.yml</code> # Build an image locally (To get speed and stability)<pre><code>services:
+  note:
+    build: .
+    container_name: note
+    restart: always
+    ports:
+      - 2003:80
+</code></pre>
+<ul>
+<li><code>build: .</code> # Replace it with <code>image: yaoniplan/note:latest</code> to pull from a Docker registry</li>
+</ul>
+</li>
 <li>Access the shell of the container<ul>
 <li><code>docker-compose exec yourApp sh</code></li>
 </ul>
@@ -10620,22 +10661,6 @@ set -g history-limit 50000
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Sovle the problem &quot;/bin/bash: line 1: php: command not found&quot;</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Display the difference after using git add</h4>
-<ul>
-<li><code>git diff --cached</code></li>
-<li>After using git commit<ul>
-<li><code>git diff e869181..8b825a6</code></li>
-</ul>
-</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -12809,18 +12834,6 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to improve the speed of downloading Docker images.<ul>
 <li><a href="https://github.com/docker/for-linux/issues/1430">https://github.com/docker/for-linux/issues/1430</a> # Another way</li>
-</ul>
-</li>
-<li>Build an image locally (To get speed and stability)<pre><code>services:
-  note:
-    build: .
-    container_name: note
-    restart: always
-    ports:
-      - 2003:80
-</code></pre>
-<ul>
-<li><code>build: .</code> # Replace it with <code>image: yaoniplan/note:latest</code> to pull from a Docker registry</li>
 </ul>
 </li>
 <li><code>docker login</code> # Solve a problem about &#39;net/http: TLS handshake timeout&#39;</li>
@@ -15386,6 +15399,16 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li><code>git clone --branch development git@100.65.173.16:/var/git/diary.git/ ~/.config/diary/</code> # Clone <em>development</em> branch to <em>~/.config/diary/</em> directory<ul>
+<li><code>development</code> # Replace it with your branch name</li>
+<li><code>~/.config/diary/</code> # Replace it with destination path (Optional)</li>
+</ul>
+</li>
+<li><code>dotfiles rm --cached ~/.local/bin/openMyWebsite.sh</code> # Untrack a newly added file after using git add</li>
+<li><code>git diff --cached</code> # Display the difference after using git add<ul>
+<li><code>git diff e869181..8b825a6</code> # After using git commit</li>
+</ul>
+</li>
 <li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code> # Add a push URL<ul>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
@@ -15478,7 +15501,7 @@ yaoniplan@tux ~ $
 <li><a href="https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794">https://gist.github.com/Tamal/1cc77f88ef3e900aeae65f0e5e504794</a></li>
 <li><a href="https://hedzr.com/devops/git/git-tips-ls-tree-or-files/">https://hedzr.com/devops/git/git-tips-ls-tree-or-files/</a></li>
 <li><a href="https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911">https://stackoverflow.com/questions/9393409/ssh-could-not-resolve-hostname-github-com-name-or-service-not-known-fatal-th/38343911#38343911</a></li>
-<li><code>git restore --help</code> # Replace <code>restore</code> with <code>remote</code></li>
+<li><code>git restore --help</code> # Replace <code>restore</code> (e.g. <em>clone</em>) with <code>remote</code></li>
 <li><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></li>
 <li><code>h</code></li>
 <li>ChatGPT</li>
@@ -16501,6 +16524,7 @@ dotfiles config --local status.showUntrackedFiles no
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>git clone --branch development git@100.65.173.16:/var/git/diary.git/ ~/.config/diary/</code> # Clone <em>development</em> branch to <em>~/.config/diary/</em> directory</li>
 <li><code>dotfiles config --local status.showUntrackedFiles no</code> # Hide untracked files</li>
 <li>Replace &quot;.bashrc&quot; with your file name (e.g. .zshrc)</li>
 <li>Replace &quot;yaoniplan&quot; with your user name</li>

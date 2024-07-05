@@ -1,13 +1,9 @@
 ### "Animation"
 - Viral Hit / 格斗实况 - 08
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 08
-- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E06 1527 animation
-- 一世之尊 13
-- 百家诀之江湖诡事录 - 12
-- THE NEW GATE 04
-- 杀手寓言 - 05
-- 怪兽8号 04 
-- Astro Note / アストロノオト / 星际庄的恋爱日记 06
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E08
+- 杀手寓言 - 13
+- Astro Note / アストロノオト / 星际庄的恋爱日记 06 animation
 - 永生 - S01E12.S02E12.S03E05
 - 散修之王 - 10
 - 怪物转生 - 07
@@ -262,6 +258,10 @@
 - guard(end)
 
 ### Animation
+- 怪兽8号 - S01E12
+- THE NEW GATE 06 1110 # Plot may be slow
+- 百家诀之江湖诡事录 - S01E16
+- 一世之尊 S01E16
 - 转生贵族靠着鉴定技能一飞冲天 - 08 1057 # Plot may be slow
 - 万古狂帝 - S01E20
 - 你的人生是我来迟了 - S01E16
