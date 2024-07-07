@@ -6,10 +6,8 @@
 - Astro Note / アストロノオト / 星际庄的恋爱日记 S01E12
 - 永生 - S01E12.S02E12.S03E14
 - 散修之王 - 17
-- 丹道至尊 46 animation
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E08
-- 良禽不择木 07
-- 隐世宗门掌教 21
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E26
+- 隐世宗门掌教 21 animation
 - 诛仙 - 36
 - 圣祖之万相金澜 - 19
 - 剑域风云 - S01E40.S02E52.S03E63
@@ -255,6 +253,8 @@
 - guard(end)
 
 ### Animation
+- 丹道至尊 46 # Plot may be slow
+- 良禽不择木 09 0305 # Plot may be slow
 - 从Lv2开始开挂的原勇者候补悠闲的异世界生活 07 0827 # Plot may be slow
 - 怪物转生 - 09 1800 # Plot may be slow
 - 怪兽8号 - S01E12
