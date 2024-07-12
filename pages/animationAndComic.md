@@ -1,4 +1,11 @@
 ### "Animation"
+- 精灵小姐瘦不了 S01E00 #NSFW
+- 我的妻子不具感情 S01E02
+- 小市民系列 S01E01
+- 擅长逃跑的少主殿下 S01E01
+- 金蚕往事 S01E08
+- Tower of God / 神之塔 S01E13.S02E01
+- 幻宠师 - 08
 - Viral Hit / 格斗实况 - 08
 - Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 08
 - The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E08
@@ -7,33 +14,22 @@
 - 永生 - S01E12.S02E12.S03E14
 - 散修之王 - 17
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E26
-- 隐世宗门掌教 21 animation
-- 诛仙 - 36
-- 圣祖之万相金澜 - 19
-- 剑域风云 - S01E40.S02E52.S03E63
+- 隐世宗门掌教 33
+- 诛仙 - 38
+- 圣祖之万相金澜 - 25
+- 剑域风云 - S01E40.S02E52.S03E76
 - 九天玄帝诀 - 248
-- 神龙星主 - 39
-- 真武巅峰 - S01E40.S02E95.S03E08
-- 云中居三子 - 25
-- 师兄啊师兄 - 38
-- 独步万古 - 70
-- 凡人修仙传 - 103
-- 仙武传 - 62
-- 万界至尊 - S01E50.S02E66
-- 仙逆 - 38
-- Swallowed Star / 吞噬星空 (Part1+2) - 26+94
+- 凡人修仙传 - 109
+- 仙武传 - 68
+- 万界至尊 - S01E50.S02E78
+- 仙逆 - 44
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- 大主宰 - 50
-- Shrouding the Heavens / 遮天 - 58
-- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 135
-- 武神主宰 - 192/441
-- 独步逍遥 - 168/420
-- Perfect World / 完美世界 - 38/163
-- Against the Sky Supreme / 逆天至尊 - 305
-- 斗破苍穹年番 - 98
-- 万古神话 - 190
+- Shrouding the Heavens / 遮天 - 64
+- 武神主宰 - 192/453
+- 独步逍遥 - 168/432
+- Against the Sky Supreme / 逆天至尊 - 321
 
 ### Comic
 - 靠神级天赋无限成长 - 14
@@ -253,6 +249,19 @@
 - guard(end)
 
 ### Animation
+- 物语系列外传季&怪物季 S01E01 0538 # Target audience may be female
+- 天穗之咲稻姬 S01E01 # Target audience may be 13 or 14 years old 
+- 万古神话 - 191 0822 # Plot may be slow
+- 斗破苍穹年番 - 101 0813 # Plot may be slow
+- Perfect World / 完美世界 - 38/167 1223 # Plot may be slow
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 144 0300 # Plot may be slow
+- 大主宰 - 52 1308 # Plot may be slow
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+101 0944 # Plot may be slow
+- 独步万古 - 71 0440 # Plot may be slow
+- 师兄啊师兄 - 40 1355 # Plot may be slow
+- 云中居三子 - S01E26 # Plot may be slow
+- 真武巅峰 - S01E40.S02E95.S03E09 0451 # Plot may be slow
+- 神龙星主 - 42 0314 # Plot may be slow
 - 丹道至尊 46 # Plot may be slow
 - 良禽不择木 09 0305 # Plot may be slow
 - 从Lv2开始开挂的原勇者候补悠闲的异世界生活 07 0827 # Plot may be slow
