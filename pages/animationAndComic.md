@@ -1,14 +1,12 @@
 ### "Animation"
-- 擅长逃跑的殿下 S01E00
-- 古连泰沙U S01E00
-- 杖与剑的魔剑谭 S01E00
-- 妖精的尾巴 百年任务 S01E00
-- 秘密的偶像公主 S01E00
-- 身为VTuber的我因为忘记关台而成了传说 S01E00
-- 筋肉人 完美超人始祖篇 S01E00
-- 我们这一家NEXT S01E00
-- 少女如草花绽放 S01E00
-- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E00
+- 恶魔的破坏 S01E00
+- 擅长逃跑的殿下 S01E02
+- 古连泰沙U S01E02
+- 杖与剑的魔剑谭 S01E02
+- 妖精的尾巴 百年任务 S01E02
+- 身为VTuber的我因为忘记关台而成了传说 S01E02
+- 筋肉人 完美超人始祖篇 S01E01
+- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E00 animation
 - 魔导具师妲莉亚永不妥协 S01E00
 - 大叔新人冒险者被最强小队拼死锻炼后无敌了。 S01E00
 - 三国杀：太平天书 S01E00
@@ -291,6 +289,9 @@
 - guard(end)
 
 ### Animation
+- 少女如草花绽放 S01E02 1810 # Target audience may be female
+- 我们这一家NEXT S01E01 # Target audience may 13 or 14 years old
+- 秘密的偶像公主 S01E01 0007 # Target audience may be female
 - 物语系列外传季&怪物季 S01E01 0538 # Target audience may be female
 - 天穗之咲稻姬 S01E01 # Target audience may be 13 or 14 years old 
 - 万古神话 - 191 0822 # Plot may be slow

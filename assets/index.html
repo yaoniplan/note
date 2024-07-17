@@ -62,6 +62,11 @@
 <ul>
 <li><h4>If vectors $a=(0,1)$, $b=(2,x)$, $b\perp(b-4a)$, then $x=$</h4>
 <ul>
+<li>$|\vec{c}|=1$ # A unit vector has a magnitude of 1<ul>
+<li>$\vec{c} \cdot \vec{c}=|\vec{c}| |\vec{c}| \cos\theta=1$</li>
+</ul>
+</li>
+<li>$(\vec{a}-\vec{c})\cdot(\vec{b}-\vec{c})=\vec{a} \cdot \vec{b}-\vec{a} \cdot \vec{c}-\vec{c} \cdot \vec{b}+\vec{c} \cdot \vec{c}$ # Distributive property of the dot product</li>
 <li>$u \cdot v=0$ # Two vectors are perpendicular if their dot product is zero</li>
 <li>$u \cdot v = u_{1}v_{1}+u_{2}v_{2}$ # Vector multiplication</li>
 <li>$u - v=(u_{1}-v_{1},u_{2}-v_{2})$ # Vector subtraction</li>
@@ -70,7 +75,7 @@
 <li><em><strong>Notes</strong></em><ul>
 <li>$4a=4 \cdot (0,1)=(0,4)$ # Each component of the vector is multiplied by scalar (A single number)</li>
 <li>Express $\overrightarrow{AD}$ in terms of vectors $\vec{b}$ and $\vec{c}$<ul>
-<li>$\overrightarrow{BD}=2\overrightarrow{DC}$ # Point D divides side BC into three equal parts (BD:DC = 2:1, BD=$\frac{2}{3}$BC)</li>
+<li>$\overrightarrow{BD}=2\overrightarrow{DC}$ # Point D divides side BC into three equal parts (BD:DC = 2:1, $BD=\frac{2}{3}$BC)</li>
 <li>Vector = scalar + direction</li>
 <li>$\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BD}$ # Position vector addition</li>
 <li>$\overrightarrow{BC}=\overrightarrow{AC}-\overrightarrow{AB}$ # Position vector subtraction</li>
@@ -137,7 +142,7 @@
 </ul>
 <hr>
 <ul>
-<li><h4>Open a department store in Dongguan, Guangdong on June 30, 2024</h4>
+<li><h4>Open a department store in Dongguan City, Guangdong Province, China. (2024-06-30)</h4>
 <ul>
 <li>Don&#39;t join other brands</li>
 </ul>
@@ -5360,7 +5365,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Maps<ul>
-<li><code>Go to the nearby library</code> # (e.g. Bank, Toilet, School)</li>
+<li><code>Go to the nearby library</code> # (e.g. Bank, Toilet, School, Government affairs service center)</li>
 <li><code>End navigation</code></li>
 </ul>
 </li>
@@ -5390,6 +5395,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Use Settings<ul>
+<li><code>What can you do</code> # Discover new commands</li>
+<li><code>Enable light mode</code> # Replace <code>light</code> with <code>dark</code> to toggle</li>
 <li><code>Scan the QR code</code> # Open code scanner</li>
 <li><code>repeat again</code> # Repeat reply</li>
 <li><code>What song is it</code> # Identify a song (Get song title or artist)</li>
@@ -5398,7 +5405,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Enable Night Shift</code> # Protect eyes</li>
 <li><code>What date is it</code> # Replace <code>it</code> with <code>tomorrow</code> (e.g. the day after tomorrow, the end of the month, sunrise)</li>
 <li><code>What time is it</code> # <code>What time will it be in eight hours</code> (Current time plus eight hours)</li>
-<li><code>Open Translate</code> # Open the application</li>
+<li><code>Open Translate</code> # Open the application (e.g. Email)</li>
 <li><code>Increase volume by 40 percent</code></li>
 <li><code>Reduce the volume by 40 percent</code></li>
 <li><code>Take a screenshot</code></li>
@@ -5406,7 +5413,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li><code>Yes</code> # Confirm</li>
 <li><code>Disable Wi-Fi / Enable Cellular Data</code> # When need a more stable network</li>
 <li><code>Enable Wi-Fi / Disable Cellular Data</code> # When need local area network</li>
-<li><code>How much is 1699 dollars in Chinese Yuan?</code> # Convert Dollars to Chinese Yuan (Exchange rate)</li>
+<li><code>How much is 1699 dollars in Chinese Yuan?</code> # Convert Dollars to Chinese Yuan (Exchange rate) <code>What&#39;s 100 Euros in Dollars</code></li>
 <li><code>What is the current time</code> # Get time when watching video</li>
 <li><code>What is the current battery</code> # Get battery When watching video</li>
 <li><code>Enable flashlight</code> # Light the way in dark environment</li>
@@ -5625,6 +5632,19 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Enable hotspot<ul>
+<li><code>nmcli device wifi hotspot con-name yaoniplan ssid yaoniplan password yaoniplan</code></li>
+<li><code>nmcli connection delete bfc2c6fa-eb8c-472c-b278-5953ec224e33</code> # Delte the hotspot</li>
+<li><code>nmcli connection show</code> # Get the UUID</li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>Jul 16 16:33:19 tux NetworkManager[376]: &lt;warn&gt;  [1721118799.2087] device (wlan0): ip:shared4: could not start dnsmasq: Could not find &quot;dnsmasq&quot; binary
+</code></pre>
+<ul>
+<li><code>doas pacman --sync dnsmasq</code></li>
+<li><a href="https://libreddit.nohost.network/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/ed8id5l/">https://libreddit.nohost.network/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/ed8id5l/</a></li>
+</ul>
+</li>
 <li><code>nmcli device wifi list</code> # Get the SSID</li>
 <li>Connect to a wired network<ul>
 <li><code>nmcli connection up eno1</code> # Connect</li>
@@ -8836,6 +8856,11 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code> sed &#39;$agit -C /root/.config/note/ pull o rigin development&#39; ~/.profile</code> # Append string to the last line<ul>
+<li><code>$</code> # Match the last line (<code>3</code>: The third line)</li>
+<li><code>a</code> # Append</li>
+</ul>
+</li>
 <li><code>sed -i &#39;5s/$/ \&amp;/&#39; .profile</code> # Append the string at the end of the line</li>
 <li><code>sed -i &#39;1i#EXTM3U&#39; &quot;$playlist_file&quot;</code> # Insert <code>#EXTM3U</code> at the beginning of file</li>
 <li><code>sed -i &#39;5,7d&#39; ~/.ssh/config</code> # Delete the fifth through seventh lines from a file<ul>
