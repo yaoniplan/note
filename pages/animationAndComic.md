@@ -6,18 +6,13 @@
 - 妖精的尾巴 百年任务 S01E02
 - 身为VTuber的我因为忘记关台而成了传说 S01E02
 - 筋肉人 完美超人始祖篇 S01E01
-- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E00 animation
-- 魔导具师妲莉亚永不妥协 S01E00
-- 大叔新人冒险者被最强小队拼死锻炼后无敌了。 S01E00
-- 三国杀：太平天书 S01E00
-- 哎咕岛消失的舔甜歌姬 S01E00
-- 魔法少女与恶曾是敌人。 S01E00
-- 天庭板砖侠 S01E00
-- 眷思量 S01E00
-- 剑道第一仙 - 20 已完结 S01E00
-- 多数欠 S01E00
-- 你与我最后的战场，亦或是世界起始的圣战 S01E00
-- 魔王军最强的魔术师是人类 S01E00
+- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E03
+- 魔导具师妲莉亚永不妥协 S01E02
+- 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E03
+- 三国杀：太平天书 S01E06
+- 眷思量 S01E15.S02E09
+- 多数欠 S01E03
+- 魔王军最强的魔术师是人类 S01E00 animation
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E00
 - 雀魂 杠！！ S01E00
 - 元尊 S01E00
@@ -289,6 +284,11 @@
 - guard(end)
 
 ### Animation
+- 你与我最后的战场，亦或是世界起始的圣战 S01E01 0615 # Plot may be slow
+- 剑道第一仙 S01E20.S02E02 # Target audience may be 13 or 14 years old
+- 天庭板砖侠 S01E01 0235 # Target audience may be 13 or 14 years old
+- 魔法少女与恶曾是敌人 S01E01 0422 # Target audience may be female
+- 哎咕岛消失的舔甜歌姬 S01E01 0054 # Target audience may be 7 or 8 years old
 - 少女如草花绽放 S01E02 1810 # Target audience may be female
 - 我们这一家NEXT S01E01 # Target audience may 13 or 14 years old
 - 秘密的偶像公主 S01E01 0007 # Target audience may be female

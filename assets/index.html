@@ -5220,6 +5220,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
 <li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
 <li>Get Dictionary from Input (Contents of URL) - Get Dictionary Value (Value, data.content, Dictionary) - Repeat with Each (Dictionary Value) - Text (Repeat Item (Type: Dictionary; Key: name)) # Get a list of all file names from the API (JSON format), <a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
 <li>Get Time Between Dates (Current Date, 00:00, Minutes) - Calculate (1440, +, Time Between Dates) - Show Result (Calculation Result) # How many minutes are left today?, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
@@ -5355,7 +5356,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </li>
 <li>Use Phone<ul>
 <li><code>Call my brother</code> # (New contact - Add related name)</li>
-<li><code>Show my phone number</code> # Replace <code>my</code> with <code>my father&#39;s</code></li>
+<li><code>Show my phone number</code> # Replace <code>my</code> with <code>my father&#39;s</code> (Replace <code>phone number</code> with <code>email address</code>)</li>
 </ul>
 </li>
 <li>Use Notes<ul>
@@ -15845,7 +15846,7 @@ set -g @continuum-save-interval &#39;1&#39;
 <ul>
 <li><h4>Use &quot;crontab&quot;</h4>
 <ul>
-<li><code>crontab -e</code><pre><code>* * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
+<li><code>crontab -e</code><pre><code>* * * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
 @reboot /usr/bin/touch /home/yaoniplan/testTwo.md
 30 16 * * * /usr/bin/bash $HOME/.local/bin/pushCode.sh
 </code></pre>
@@ -15853,7 +15854,10 @@ set -g @continuum-save-interval &#39;1&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>* * * * *</code> # Every minute when the computer is running</li>
+<li><code>* * * * *</code> # Every minute when the computer is running<ul>
+<li><code>*/5 * * * *</code> # Every 5 minutes</li>
+</ul>
+</li>
 <li><code>/usr/bin/bash</code> # Path of command<ul>
 <li><code>which bash</code> # Get it</li>
 </ul>

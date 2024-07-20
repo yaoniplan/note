@@ -73,12 +73,9 @@
 - http://yhdm.in/
 - http://ysjdm2.com/
 - https://www.agedm.org/
-- https://everythingmoe.com/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
 - https://theporndude.com/
-- https://ikmmh.com/
-- https://www.yeseimg.com/
 
 ## Programming
 - https://www.w3schools.com/
@@ -140,9 +137,6 @@
 - https://limboy.me/posts/what-i-wish-i-knew-when-i-was-20/
 - https://jovica.org/posts/advanced_learner/
 - https://www.yuque.com/supermemo/wiki/20rules
-
-## Short message service
-- https://smsreceivefree.com/
 
 ## Video and audio
 - https://fdownload.app/en/facebook-to-mp3
