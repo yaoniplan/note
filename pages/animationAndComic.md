@@ -12,8 +12,7 @@
 - 三国杀：太平天书 S01E06
 - 眷思量 S01E15.S02E09
 - 多数欠 S01E03
-- 魔王军最强的魔术师是人类 S01E00 animation
-- 不时用俄语小声说真心话的邻桌艾莉同学 S01E00
+- 不时用俄语小声说真心话的邻桌艾莉同学 S01E02 1416 animation
 - 雀魂 杠！！ S01E00
 - 元尊 S01E00
 - 民调局异闻录 S01E00
@@ -67,7 +66,6 @@
 - Against the Sky Supreme / 逆天至尊 - 321
 
 ### Comic
-- 靠神级天赋无限成长 - 14
 - 初次深交，请多指教 - 27
 - 邪教教主 - 07
 - 色雕英雄传:一捅天下 - 09
@@ -230,6 +228,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 靠神级天赋无限成长 - 30 # Plot may be slow
 - 醒来之后，变成黄油反派 - 37 # The plot may be slow
 - 满溢游泳池 - 105 # End
 - 从1级开始的异世界骑士 - 206 # The plot is too slow
@@ -284,6 +283,7 @@
 - guard(end)
 
 ### Animation
+- 魔王军最强的魔术师是人类 S01E01 1737 # Target audience may be 13 or 14 years old
 - 你与我最后的战场，亦或是世界起始的圣战 S01E01 0615 # Plot may be slow
 - 剑道第一仙 S01E20.S02E02 # Target audience may be 13 or 14 years old
 - 天庭板砖侠 S01E01 0235 # Target audience may be 13 or 14 years old
