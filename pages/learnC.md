@@ -1,10 +1,12 @@
 # References
 - ChatGPT
+
 # Basic concept
 ```c
 // \n # Newline
 // \t # Tab
 ```
+
 # Date types
 ```c
 // int    # Integers
@@ -12,10 +14,12 @@
 // char   # Characters
 // double # Double-precision floating-point numbers
 ```
+
 # Variables
 ```c
 int myNumber;
 ```
+
 # Operators
 ```c
 // + # Addition
@@ -25,6 +29,7 @@ int myNumber;
 // % # Remainder
 int result = myNumber1 + myNumber2;
 ```
+
 # Control structures
 ```c
 // if-else statements
@@ -37,6 +42,7 @@ if (myNumber > 10) {
     printf("The number is less than or equal to 10");
 }
 ```
+
 # Functions
 ```c
 int add(int num1, int num2) {

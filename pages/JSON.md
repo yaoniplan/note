@@ -1,5 +1,5 @@
 - # Introduction
-  JSON (JavaScript Object Notation) is an open standard file format and date interchange format
+  JSON (JavaScript Object Notation) is an open standard file format and data interchange format
 - # Data Types Syntax
 	- ## 1. Strings
 	  ```json

@@ -1,5 +1,18 @@
 ### "Animation"
-- 恶魔的破坏 S01E00
+- Apotheosis / 百炼成神 - S01E52.S02E36
+- 沧元图 - 30
+- 神武天尊2024 04
+- 白色闪电 04
+- 从路人角色开始的探索英雄谭 06
+- 亚托莉 -我挚爱的时光- 04
+- 恋爱无法用双子除尽 03
+- 灵武大陆 07
+- 深夜冲击 05
+- 一念永恒 - S01E52.S02E54.S03E08
+- 夜晚游玩生活 S01E03 #NSFW
+- 异世界失格 S01E04
+- 斩神之凡尘神域 S01E02
+- 恶魔的破坏 S01E03 animation
 - 擅长逃跑的殿下 S01E02
 - 古连泰沙U S01E02
 - 杖与剑的魔剑谭 S01E02
@@ -12,65 +25,45 @@
 - 三国杀：太平天书 S01E06
 - 眷思量 S01E15.S02E09
 - 多数欠 S01E03
-- 不时用俄语小声说真心话的邻桌艾莉同学 S01E02 1416 animation
-- 雀魂 杠！！ S01E00
-- 元尊 S01E00
-- 民调局异闻录 S01E00
-- 鹿乃子乃子乃子虎视眈眈 S01E00
+- 不时用俄语小声说真心话的邻桌艾莉同学 S01E03
+- 元尊 S01E11
+- 民调局异闻录 S01E12.S02E03
 - 异世界自杀小队 S01E00
-- 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E00
-- 百变的七仓同学 S01E00
-- 黄昏失焦 S01E00
-- 我会招架一切 反误会的世界最强想成为冒险者 S01E00
-- 拉面红猫 S01E00
-- 风云变2024 S01E00
-- 前辈是男孩子 S01E00
-- 2.5次元的诱惑 S01E00
-- 尼尔：自动人形 Ver1.1a 第2部分 S01E00
-- 地下城里的人们 S01E00
-- 这个世界漏洞百出 S01E00
-- 现代误译 S01E00
-- 陆地键仙 S01E00
-- 金吾卫之风起金陵 S01E00
-- 再见，地球 S01E00
-- 精灵小姐瘦不了 S01E00 #NSFW
-- 我的妻子不具感情 S01E02
-- 小市民系列 S01E01
-- 擅长逃跑的少主殿下 S01E01
-- 金蚕往事 S01E08
-- Tower of God / 神之塔 S01E13.S02E01
-- 幻宠师 - 08
-- Viral Hit / 格斗实况 - 08
-- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 08
-- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E08
-- 杀手寓言 - 13
-- Astro Note / アストロノオト / 星际庄的恋爱日记 S01E12
-- 永生 - S01E12.S02E12.S03E14
-- 散修之王 - 17
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E26
-- 隐世宗门掌教 33
-- 诛仙 - 38
-- 圣祖之万相金澜 - 25
-- 剑域风云 - S01E40.S02E52.S03E76
-- 九天玄帝诀 - 248
-- 凡人修仙传 - 109
-- 仙武传 - 68
-- 万界至尊 - S01E50.S02E78
-- 仙逆 - 44
+- 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E03
+- 我会招架一切 反误会的世界最强想成为冒险者 S01E04
+- 风云变2024 S01E12
+- 2.5次元的诱惑 S01E04
+- 这个世界漏洞百出 S01E04
+- 现代误译 S01E03
+- 陆地键仙 S01E33
+- 金吾卫之风起金陵 S01E13
+- 精灵小姐瘦不了 S01E00 #NSFW #Weight-loss-exercise 1310
+- 小市民系列 S01E03
+- 擅长逃跑的少主殿下 S01E04
+- Tower of God / 神之塔 S01E13.S02E04
+- 幻宠师 - 11
+- Viral Hit / 格斗实况 - 12
+- 杀手寓言 - 17
+- 永生 - S01E12.S02E12.S03E16.S04E01
+- 散修之王 - 21
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52
+- 隐世宗门掌教 40
+- 诛仙 - 46
+- 剑域风云 - S01E40.S02E52.S03E82
+- 凡人修仙传 - 112
+- 仙逆 - 47
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 64
-- 武神主宰 - 192/453
-- 独步逍遥 - 168/432
-- Against the Sky Supreme / 逆天至尊 - 321
+- Shrouding the Heavens / 遮天 - 68
+- 武神主宰 - 192/459
+- 独步逍遥 - 168/439
+- Against the Sky Supreme / 逆天至尊 - 323
 
 ### Comic
-- 初次深交，请多指教 - 27
-- 邪教教主 - 07
-- 色雕英雄传:一捅天下 - 09
-- 今晚就决定吃你了 - 90 # Method: Page 28, 50
-- 陌生的未婚妻 - 31
+- 初次深交，请多指教 - 56
+- 邪教教主 - 21 50%
+- 色雕英雄传:一捅天下 - 40
 - 卖身给上司 - 95
 - Panty Note / 裤裤笔记 - 166
 - 没有道侣就会死 - 90
@@ -228,6 +221,8 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 陌生的未婚妻 - 43 # Plot may be slow
+- 今晚就决定吃你了 - S01E106 # Method: Page 28, 50, 反家庭PUA
 - 靠神级天赋无限成长 - 30 # Plot may be slow
 - 醒来之后，变成黄油反派 - 37 # The plot may be slow
 - 满溢游泳池 - 105 # End
@@ -283,6 +278,29 @@
 - guard(end)
 
 ### Animation
+- 爆上战队奔奔者 # Target audience may be 13 or 14 years old
+- 小兵传奇 S01E05 0841 # Target audience may be 13 or 14 years old
+- 我的三体 01 0339 # Maybe it would be better to replace the cube man with anime characters
+- 败犬女主太多了 S01E04 0854 # Target audience may be 13 or 14 years old 
+- 为何我的世界被遗忘了？01 0410 # Target audience may 13 or 14 years old
+- 卡片战斗先导者 02 0106 # Target audience may be 13 or 14 years old
+- 万界至尊 - S01E50.S02E84 0338 # Plot may be slow
+- 仙武传 - 69 0808 # Target audience may 13 or 14 years old
+- 九天玄帝诀 - S01E248
+- 圣祖之万相金澜 - S01E26
+- Astro Note / アストロノオト / 星际庄的恋爱日记 S01E12
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E12
+- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 09 0406 # Target audience may be elder people
+- 金蚕往事 S01E09 0842 # Target audience may be 13 or 14 years old
+- 我的妻子不具感情 S01E04 1840 # Target audience may be 13 or 14 years old
+- 再见，地球 S01E01 1500 # Target audience may be female
+- 地下城里的人们 S01E02 0620 # Plot may be slow
+- 前辈是男孩子 S01E01 0548 # Target audience may be pseudo-girl
+- 拉面红猫 S01E03 0005 # Target audience may be 13 or 14 years old
+- 黄昏失焦 S01E01 0047 # Target audience may be gay men
+- 百变的七仓同学 S01E02 1816 # Target audience may be 13 or 14 years old
+- 鹿乃子乃子乃子虎视眈眈 S01E01 0440 # Target audience may be female
+- 雀魂 杠！！ S01E00 # Target audience may be people who can play mahjong
 - 魔王军最强的魔术师是人类 S01E01 1737 # Target audience may be 13 or 14 years old
 - 你与我最后的战场，亦或是世界起始的圣战 S01E01 0615 # Plot may be slow
 - 剑道第一仙 S01E20.S02E02 # Target audience may be 13 or 14 years old
@@ -439,7 +457,6 @@
 - The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
     - Funny style
 - 七侯笔录 - 07 1501 # The plot is slow
-- 沧元图 - 26 # End of the first part
 - 修罗武神 - 16 # End of the first part
 - Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow
@@ -460,7 +477,6 @@
 - Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 06 1418 # The plot is slow
 - A Returner's Magic Should Be Special / 归还者的魔法要特别 - 04 0847 # The plot is slow
 - 催眠麦克风 - (Part1+2) 00+06 # The plot is slow
-- Apotheosis / 百炼成神 - 52 # End of the first part
 - Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.
 - The Saint's Magic Power Is Omnipotent / 圣女魔力无所不能 - (Part1+2) 00+02 1649 # The plot is slow.
 - B-PROJECT ～热烈＊Love Call～ - 02 # The plot is a bit confusing
@@ -535,7 +551,6 @@
 - 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
 - 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 # The plot is too flat
 - 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen years old
-- 一念永恒 (Part1+2) - 52+54 # End of the second part
 - 勇者赫鲁库 - 03 1022 # The plot progress is too slow
 - 无脑魔女 - 05 # The target audience is thirteen or fourteen years old
 - 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen years old
@@ -764,6 +779,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- 邵氏影业 (一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将)
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute

@@ -170,13 +170,17 @@
 <li>Monitor</li>
 <li>Rice cooker</li>
 <li>Business license</li>
-<li>Food business license</li>
-<li>Health license</li>
+<li>Food business license (Maybe just record it)</li>
+<li>Health certificate</li>
+<li>Real estate certificate</li>
+<li>Lease contract</li>
 </ul>
 </li>
+<li>Because to help my cousin&#39;s family pay off their debts by providing food services.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="http://txjy.syggs.mofcom.gov.cn/">http://txjy.syggs.mofcom.gov.cn/</a> # Enter the brand name in the &quot;特许品牌&quot; to query the company registration information</li>
 <li><a href="https://www.gov.cn/banshi/2005-08/23/content_25575_2.htm">https://www.gov.cn/banshi/2005-08/23/content_25575_2.htm</a> # <code>/第五十一条</code></li>
 <li><a href="https://www.gov.cn/banshi/2005-08/23/content_25575_3.htm">https://www.gov.cn/banshi/2005-08/23/content_25575_3.htm</a> # <code>/第八十九条</code></li>
 <li><a href="https://www.gd.gov.cn/zwgk/wjk/zcfgk/content/post_2531572.html">https://www.gd.gov.cn/zwgk/wjk/zcfgk/content/post_2531572.html</a> # <code>/第五十五条</code></li>
@@ -249,7 +253,16 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 <li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
 </li>
-<li>Select a server<ul>
+<li>Select a server<pre><code>{
+  &quot;experimental&quot;: {
+    &quot;clash_api&quot;: {
+      &quot;external_controller&quot;: &quot;0.0.0.0:9090&quot;,
+      &quot;secret&quot;: &quot;&quot;
+    }
+  },
+}
+</code></pre>
+<ul>
 <li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
 <li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
 </ul>
@@ -1310,6 +1323,9 @@ p = exec notify-send &quot;$imv_current_file&quot;
 # Delete current image and quit
 &lt;Shift+D&gt; = exec rm &quot;$imv_current_file&quot;; quit
 </code></pre>
+<ul>
+<li><code>;</code> # Execute in order (e.g. Copy path and then send a notification)</li>
+</ul>
 </li>
 <li><code>doas pacman --sync imv</code> # Install dependencies</li>
 <li>Because to view pictures on Wayland.</li>
@@ -1662,6 +1678,21 @@ default_dark_mode 1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use slideshow<pre><code>git clone https://github.com/crvdgc/latex-beamer-flake
+cd latext-beamer-flake &amp;&amp; rm -rf .git &amp;&amp; git init
+git add . &amp;&amp; nix build
+</code></pre>
+<ul>
+<li><code>vim ./slides.md</code> # Write slides</li>
+<li><code>nix build</code> # Bulid slides</li>
+<li><code>zathura ./result/latex-beamer-demo.pdf</code> # View slides</li>
+<li><code>Ctrl-n</code> # Hide statusbar</li>
+<li><code>Space/Shift-Space</code> # Scroll pages</li>
+<li><code>g</code> # Go to the top (Opposite: <code>G</code>)</li>
+<li><code>ma</code> # Mark (Return mark: <code>&#39;a</code>)</li>
+</ul>
+</li>
+<li><code>/</code> # Search</li>
 <li><code>Tab</code> # Table of contents</li>
 <li><code>vim ~/.config/zathura/zathurarc</code><pre><code>map i recolor
 set recolor-darkcolor &quot;#B0B002&quot;
@@ -1674,12 +1705,13 @@ set recolor-darkcolor &quot;#B0B002&quot;
 <li><code>+</code> # Zoom in (Opposite: <code>-</code>)</li>
 </ul>
 </li>
-<li><code>Space/Shift-Space</code> # Scroll pages</li>
 <li><code>j/k/q</code> # Vim-like</li>
 <li><code>nix profile install nixpkgs#zathura</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/crvdgc/latex-beamer-flake#usage">https://github.com/crvdgc/latex-beamer-flake#usage</a></li>
+<li><a href="https://github.com/pwmt/zathura/issues/103#issuecomment-2086835877">https://github.com/pwmt/zathura/issues/103#issuecomment-2086835877</a> # <code>/slide</code></li>
 <li><a href="https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/">https://libreddit.kavin.rocks/r/linuxmasterrace/comments/y12t6s/can_someone_point_me_to_a_good_pdf_viewer/</a> # <code>/recolor</code></li>
 <li><code>man zathura</code> # <code>binding</code></li>
 </ul>
@@ -1714,6 +1746,9 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 <ul>
 <li><h4>Use &quot;hyprctl&quot;</h4>
 <ul>
+<li><code>hyprctl version</code> # Get version of Hyprland</li>
+<li><code>hyprctl activewindow</code> # Get geometry of current window</li>
+<li><code>hyprctl dispatch exit</code> # Exit hyprland</li>
 <li><code>hyprctl dispatch movetoworkspace &quot;1,address:0x583b23a8c460&quot;</code> # Fix window disappearing bug<ul>
 <li><code>hyprctl clients -j</code> # Get address (e.g. <code>0x583b23a8c460</code>)</li>
 </ul>
@@ -1731,6 +1766,7 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/12dhbuk/how_to_exitlogout_of_hyprland/jf6dfsv">https://libreddit.nohost.network/r/hyprland/comments/12dhbuk/how_to_exitlogout_of_hyprland/jf6dfsv</a></li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/1452#issuecomment-1408359676">https://github.com/hyprwm/Hyprland/issues/1452#issuecomment-1408359676</a> # Move a window to a workspace</li>
 <li><a href="https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive">https://github.com/equk/dotfiles/blob/master/configs/bin/screenactive</a></li>
 <li><code>man hyprctl</code> # <code>/-j</code></li>
@@ -2522,22 +2558,25 @@ url-is-set=true
 <li><code>uv pip uninstall ani-cli</code> # Uninstall a package</li>
 <li><code>uv pip list</code> # List installed packages</li>
 <li><code>uv pip install anki</code> # Install a package</li>
-<li>Install Python tools globally temporarily (Like &quot;pipx&quot;, but complex)<ul>
-<li><code>uv venv</code> # Create a virtual environment at .venv before installing</li>
-<li><code>source ~/.venv/bin/activate</code></li>
-<li><code>uv pip install --system mov-cli</code></li>
+<li>Install Python tools globally (The ImportError problem makes it impossible to use)<ul>
+<li><code>uv tool install xklb</code> # Replace <code>install</code> with <code>uninstall</code> to uninstall</li>
+<li><code>uv tool list</code> # List installed tools</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--index-url https://pypi.tuna.tsinghua.edu.cn/simple/</code> # Use a mirror (Improve download speed)</li>
 <li>Warnings: Cannot support <code>uv pip install git+https://github.com/wustho/epr.git</code></li>
 <li><code>nix profile install nixpkgs#uv</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/astral-sh/uv/issues/1173">https://github.com/astral-sh/uv/issues/1173</a></li>
+<li><a href="https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&type=issues">https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&amp;type=issues</a></li>
+<li><a href="https://github.com/astral-sh/uv/issues/5450">https://github.com/astral-sh/uv/issues/5450</a></li>
+<li><a href="https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376">https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376</a></li>
 <li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
+<li><code>uv help tool</code></li>
 </ul>
 </li>
 </ul>
@@ -2647,7 +2686,14 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 </li>
 <li>Press Enter key to click next episode icon<pre><code class="language-javascript">document.addEventListener(&#39;keydown&#39;, function(event) {
   if (event.key === &#39;Enter&#39;) {
-    let nextIcon = document.querySelector(&#39;div.video-switch-icon:nth-child(3)&#39;);
+    let url = window.location.href;
+    let nextIcon = null;
+
+    if (url.includes(&quot;https://github.com&quot;)) {
+      nextIcon = document.querySelector(&#39;a[rel=&quot;next&quot;]&#39;);
+    } else if (url.includes(&quot;https://www.google.com&quot;))
+      nextIcon = document.querySelector(&#39;a#pnnext&#39;);
+    
     if (nextIcon) {
       nextIcon.click();
     }
@@ -3581,7 +3627,11 @@ alpha=0.8 # transparency
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#foot</code> # Install dependencies</li>
-<li>Because to try the fastest responsive terminal in Wayland.</li>
+<li>Because to try the fastest responsive terminal in Wayland.<ul>
+<li><a href="https://github.com/dabisu/sakura">https://github.com/dabisu/sakura</a></li>
+<li><a href="https://github.com/ii8/havoc/issues/53">https://github.com/ii8/havoc/issues/53</a> # Without CJK fonts support by default</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -3712,8 +3762,6 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>hyprctl version</code> # Get version of Hyprland</li>
-<li><code>hyprctl activewindow</code> # Get geometry of current window</li>
 <li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Assign a window to a workspace (Silent: `workspace 1 silent`)
 windowrulev2 = workspace 1, class:^(firefox)$
 # Enable fullscreen for a window by default
@@ -3753,6 +3801,8 @@ bind = $mainMod, L, exec, swaylock --color 000000; hyprctl dispatch dpms off
 misc {
     mouse_move_enables_dpms = false
     key_press_enables_dpms = true
+    # Exit Hyprland to take effect (If need to turn off the text at the bottom of the screen)
+    disable_splash_rendering = true
 }
 </code></pre>
 </li>
@@ -3760,6 +3810,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt">https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt</a></li>
 <li><a href="https://wiki.hyprland.org/Configuring/Window-Rules/">https://wiki.hyprland.org/Configuring/Window-Rules/</a></li>
 <li><a href="https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/">https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/</a></li>
 <li><a href="https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/">https://red.artemislena.eu/r/hyprland/comments/15xlykt/disabling_workspace_animations/</a></li>
@@ -5220,6 +5271,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>) - URL Encode (Decode, URL) # Beautify JSON format, <a href="https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
 <li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
 <li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
 <li>Get Dictionary from Input (Contents of URL) - Get Dictionary Value (Value, data.content, Dictionary) - Repeat with Each (Dictionary Value) - Text (Repeat Item (Type: Dictionary; Key: name)) # Get a list of all file names from the API (JSON format), <a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
@@ -5229,7 +5281,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
-<li>Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> (Or nplayer-<a href="http://192.168.10.100:5244/d/*encodedFileName">http://192.168.10.100:5244/d/*encodedFileName</a>*) - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
+<li>Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> (Or <code>nplayer-http://192.168.10.100:5244/d/encodedFileName</code>) - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
 <li>The add icon - Add Action - Dismiss Siri and Continue - Set Voice &amp; Data (4G, Primary) - done # <a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a>, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg">https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg</a></li>
 <li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
 <li>The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done</li>
@@ -5246,6 +5298,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Web<ul>
+<li>Settings - Safari - Advanced - Website Data - Search a domain (e.g. 192.168.10.100) - Restart Safari # Clear a page cache for HTML page changes to take effect (Or new a private tab)</li>
 <li>Click on the top of screen # Go to the top of web</li>
 <li>Long press the scroll bar and drag to the bottom # Go to the bottom of web</li>
 </ul>
@@ -5280,6 +5333,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Disadvantages<ul>
+<li>Cannot set the automatic screen lock time to 30 seconds (Or Never) through parameters # Can only open the page (<code>prefs:root=DISPLAY&amp;path=AUTOLOCK/30</code>) and then tap manually <a href="https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337">https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337</a> <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082</a></li>
+<li>Mail app does not send real-time notifications # Can only open it manually and pull down to refresh <a href="https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/">https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/</a></li>
 <li>Can&#39;t add video (Except photo) to album</li>
 <li>No call recording</li>
 <li>Charging is slow in winter (Charged 37% in 76 minutes)</li>
@@ -12321,6 +12376,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 <ul>
 <li><h4>Use &quot;firefox&quot;</h4>
 <ul>
+<li><code>about:support</code> # <code>/version</code></li>
 <li><code>media.ffmpeg.vaapi.enabled</code> # Set to true to enable hardware decoding</li>
 <li>Open previous windows and tabs</li>
 </ul>
@@ -12333,6 +12389,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 <li><code>about:config</code> # <code>/vaapi</code></li>
 <li><a href="https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox">https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox</a></li>
 <li><code>about:preferences</code> # In &#39;Startup&#39; of &#39;General&#39;</li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -12905,7 +12962,7 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 <li><code>docker ps --all</code> # Get &quot;CONTAINER ID&quot;</li>
 </ul>
 </li>
-<li><code>docker rmi a3adcb495939</code> # Remove a image<ul>
+<li><code>docker rmi a3adcb495939</code> # Remove an image<ul>
 <li><code>docker images</code> # Get &quot;IMAGE ID&quot;</li>
 </ul>
 </li>
@@ -12913,10 +12970,7 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because to improve the speed of downloading Docker images.<ul>
-<li><a href="https://github.com/docker/for-linux/issues/1430">https://github.com/docker/for-linux/issues/1430</a> # Another way</li>
-</ul>
-</li>
+<li>Because to improve the speed of downloading Docker images.</li>
 <li><code>docker login</code> # Solve a problem about &#39;net/http: TLS handshake timeout&#39;</li>
 <li>Disable proxy<ul>
 <li>Delete proxy configurations (e.g. <code>/etc/docker/daemon.json</code>, <code>~/.docker/config.json</code>)</li>
@@ -12936,7 +12990,7 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 <li><code>docker push yaoniplan/note:$(date +%F)</code> # Push the date-tagged image</li>
 </ul>
 </li>
-<li>Install dependencies In Ubuntu Server 22.04<ul>
+<li>Install dependencies in Ubuntu Server 22.04<ul>
 <li>Follow the steps of this <a href="https://docs.docker.com/engine/install/ubuntu/">website</a></li>
 <li><code>doas usermod --append --groups docker $(whoami)</code> # Run the command without password</li>
 <li><code>doas reboot</code> # Make the changes effective</li>
@@ -12977,7 +13031,7 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 <li><code>yl</code></li>
 </ul>
 </li>
-<li>To Search languages in other countries (e.g. <em>Japanese</em>)</li>
+<li>Because to search languages in other countries (e.g. <em>Japanese</em>).</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -12993,7 +13047,7 @@ doas gpasswd --add $(whoami) docker # Add user to Docker group
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://nn.ci/posts/github-actions.html">https://nn.ci/posts/github-actions.html</a></li>
+<li><a href="https://web.archive.org/web/20221127112602/https://nn.ci/posts/github-actions.html">https://web.archive.org/web/20221127112602/https://nn.ci/posts/github-actions.html</a></li>
 <li><a href="https://en.wikipedia.org/wiki/CI/CD">https://en.wikipedia.org/wiki/CI/CD</a></li>
 </ul>
 </li>
@@ -14310,6 +14364,22 @@ version for the right syntax to use near
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man tree</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sort&quot;</h4>
+<ul>
+<li><code>sort --reverse music01.txt &gt; music02.txt</code> # Arrange the file names in the file in reverse order</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to find out the files that failed to upload.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15694,7 +15764,11 @@ set number
 </ul>
 </li>
 <li><code>Ctrl-w :term</code> # New a terminal if tmux does not exist</li>
-<li><code>:!cat % | wl-copy</code> # Copy current file&#39;s content to clipboard</li>
+<li><code>:!cat % | wl-copy</code> # Copy current file&#39;s content to clipboard<ul>
+<li><code>!</code> # Execute external commands (e.g. cat, rm, etc.)</li>
+<li><code>%</code> # Current file</li>
+</ul>
+</li>
 <li><code>:%s/$/ - 00/g</code> # Batch add a string (e.g. &#39; - 00&#39;) to the end of line</li>
 <li><code>:set encoding=utf-8</code> # Display Chinese characters properly</li>
 <li><code>:set paste</code> # Fix indentation issues when pasting</li>
@@ -16005,6 +16079,7 @@ nnoremap &lt;leader&gt;it :InsertTemplateText&lt;CR&gt;
 </li>
 </ul>
 </li>
+<li><code>git clone https://github.com/vimwiki/vimwiki ~/.vim/pack/vendor/start/vimwiki</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -16747,6 +16822,7 @@ complete -F _todo todocli
 <li><code>Replace</code> # Bristles may trap bacteria leading to reinfection</li>
 </ul>
 </li>
+<li>Don&#39;t brush teeth sideways, brush up and down</li>
 </ul>
 </li>
 </ul>
@@ -18705,7 +18781,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li>&quot;Miscellaneous&quot; (<code>Misc</code>) #abbreviation</li>
+<li>The abbreviation of the &quot;Miscellaneous&quot; is &quot;misc&quot;.</li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1669463491145_0.png" alt="image.png"></li>
 </ul>

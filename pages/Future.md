@@ -75,7 +75,6 @@
 - https://www.agedm.org/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
-- https://theporndude.com/
 
 ## Programming
 - https://www.w3schools.com/
