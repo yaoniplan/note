@@ -342,12 +342,23 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/nvim/init.lua</code> # Manage plugins using built-in package manager<pre><code>-- Call their setup function
+require(&#39;noice&#39;).setup()
+</code></pre>
+<ul>
+<li><code>git clone https://github.com/folke/noice.nvim ~/.config/nvim/pack/vendor/start/noice.nvim</code> # Install a plugin (e.g. nui.nvim)</li>
+</ul>
+</li>
 <li>Warning: It takes a long time to download and bulid the first time.</li>
 <li>Because to try to use nvim.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://programmingpercy.tech/blog/learn-how-to-use-neovim-as-ide/#enabling-language-server-protocolsupport">https://programmingpercy.tech/blog/learn-how-to-use-neovim-as-ide/#enabling-language-server-protocolsupport</a></li>
+<li><a href="https://github.com/rcallaby/Learn-Vim-and-NeoVim/blob/main/Lessons/Part-14-Using-Lua-In-NeoVIM/usingLua.md#loading-the-plugin">https://github.com/rcallaby/Learn-Vim-and-NeoVim/blob/main/Lessons/Part-14-Using-Lua-In-NeoVIM/usingLua.md#loading-the-plugin</a></li>
+<li><a href="https://www.youtube.com/watch?v=O-VcTY0umMc">https://www.youtube.com/watch?v=O-VcTY0umMc</a></li>
 <li><a href="https://github.com/jordanisaacs/neovim-flake#documentation">https://github.com/jordanisaacs/neovim-flake#documentation</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -8643,32 +8654,6 @@ find . -type f -inum 20447344 -exec rm {} \;
 </ul>
 <hr>
 <ul>
-<li><h4>Manage plugins with built-in package manager in Vim</h4>
-<ul>
-<li><code>git clone https://github.com/vimwiki/vimwiki ~/.vim/pack/vendor/start/vimwiki</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Update a plugin<ul>
-<li><code>git -C ~/.vim/pack/vendor/start/vimwiki/ pull</code></li>
-</ul>
-</li>
-<li>Remove a plugin<ul>
-<li><code>mv ~/.vim/pack/vendor/start/vimwiki/ /tmp/</code></li>
-</ul>
-</li>
-<li>Because it is more convenient than traditional plugin managers.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-<li><a href="https://missing-semester-cn.github.io/2020/editors/">https://missing-semester-cn.github.io/2020/editors/</a></li>
-<li><a href="https://vimhelp.org/repeat.txt.html#packages">https://vimhelp.org/repeat.txt.html#packages</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use &quot;Spacemacs&quot; in Emacs</h4>
 <ul>
 <li><code>SPC f t</code> # File tree</li>
@@ -15831,6 +15816,13 @@ set number
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Manage plugins with built-in package manager<ul>
+<li><code>git clone https://github.com/vimwiki/vimwiki ~/.vim/pack/vendor/start/vimwiki</code> # Install a plugin</li>
+<li><code>git -C ~/.vim/pack/vendor/start/vimwiki/ pull</code> # Update a plugin</li>
+<li><code>mv ~/.vim/pack/vendor/start/vimwiki/ /tmp/</code> # Remove a plugin</li>
+<li>Because it is more convenient than traditional plugin managers.</li>
+</ul>
+</li>
 <li><code>vim ~/.vimrc</code> # Replace tab characters with spaces<pre><code class="language-vim">&quot; Use spaces for indenting
 set expandtab &quot; Replace tab characters with spaces
 set tabstop=4 &quot; Insert 4 spaces when expandtab is enabled
@@ -15849,6 +15841,8 @@ set shiftwidth=4 &quot; Replace indentation with spaces
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://missing-semester-cn.github.io/2020/editors/">https://missing-semester-cn.github.io/2020/editors/</a></li>
+<li><a href="https://vimhelp.org/repeat.txt.html#packages">https://vimhelp.org/repeat.txt.html#packages</a></li>
 <li><a href="https://codingshower.com/vim-set-tab-to-n-spaces/">https://codingshower.com/vim-set-tab-to-n-spaces/</a></li>
 <li><code>:help /\v</code></li>
 <li><code>:help .</code></li>

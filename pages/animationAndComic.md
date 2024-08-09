@@ -13,8 +13,7 @@
 - 异世界失格 S01E04
 - 斩神之凡尘神域 S01E02
 - 擅长逃跑的殿下 S01E05
-- 杖与剑的魔剑谭 S01E02 animation
-- 妖精的尾巴 百年任务 S01E02
+- 妖精的尾巴 百年任务 S01E02 animation
 - 身为VTuber的我因为忘记关台而成了传说 S01E02
 - 筋肉人 完美超人始祖篇 S01E01
 - 异世界悠闲纪行 ～边养娃边当冒险者～ S01E03
@@ -276,6 +275,7 @@
 - guard(end)
 
 ### Animation
+- 杖与剑的魔剑谭 S01E04 1554 # Plot may be slow
 - 古连泰沙U S01E03 1619 # Target audience may be 13 or 14 years old
 - 恶魔的破坏 S01E07 1544 # Plot may be slow
 - 爆上战队奔奔者 # Target audience may be 13 or 14 years old
@@ -779,7 +779,7 @@
 - 刀剑神域(boring)
 
 ### Movie
-- 邵氏影业 (一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探)
+- 邵氏影业 (一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环)
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute
