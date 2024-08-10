@@ -13,13 +13,9 @@
 - 异世界失格 S01E04
 - 斩神之凡尘神域 S01E02
 - 擅长逃跑的殿下 S01E05
-- 妖精的尾巴 百年任务 S01E02 animation
-- 身为VTuber的我因为忘记关台而成了传说 S01E02
-- 筋肉人 完美超人始祖篇 S01E01
-- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E03
-- 魔导具师妲莉亚永不妥协 S01E02
-- 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E03
-- 三国杀：太平天书 S01E06
+- 魔导具师妲莉亚永不妥协 S01E04
+- 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E05
+- 三国杀：太平天书 S01E06 animation
 - 眷思量 S01E15.S02E09
 - 多数欠 S01E03
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E03
@@ -275,6 +271,10 @@
 - guard(end)
 
 ### Animation
+- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E04 0445 # Target audience may be 13 or 14 years old
+- 筋肉人 完美超人始祖篇 S01E02 0456 # Target audience may be 13 or 14 years old
+- 身为VTuber的我因为忘记关台而成了传说 S01E03 1133 # Target audience may be female
+- 妖精的尾巴 百年任务 S01E05 0450 # Target audience may be 13 or 14 years old
 - 杖与剑的魔剑谭 S01E04 1554 # Plot may be slow
 - 古连泰沙U S01E03 1619 # Target audience may be 13 or 14 years old
 - 恶魔的破坏 S01E07 1544 # Plot may be slow
@@ -779,7 +779,9 @@
 - 刀剑神域(boring)
 
 ### Movie
-- 邵氏影业 (一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环)
+- Shaw Brothers / 邵氏影业 
+    - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
+    - 侠士行, 保镖
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute
