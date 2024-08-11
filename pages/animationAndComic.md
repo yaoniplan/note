@@ -15,9 +15,8 @@
 - 擅长逃跑的殿下 S01E05
 - 魔导具师妲莉亚永不妥协 S01E04
 - 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E05
-- 三国杀：太平天书 S01E06 animation
-- 眷思量 S01E15.S02E09
-- 多数欠 S01E03
+- 眷思量 S01E15.S02E15
+- 多数欠 S01E03 animation
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E03
 - 元尊 S01E11
 - 民调局异闻录 S01E12.S02E03
@@ -271,6 +270,7 @@
 - guard(end)
 
 ### Animation
+- 三国杀：太平天书 S01E08 0751 # Target audience may be 13 or 14 years old
 - 异世界悠闲纪行 ～边养娃边当冒险者～ S01E04 0445 # Target audience may be 13 or 14 years old
 - 筋肉人 完美超人始祖篇 S01E02 0456 # Target audience may be 13 or 14 years old
 - 身为VTuber的我因为忘记关台而成了传说 S01E03 1133 # Target audience may be female
@@ -781,7 +781,7 @@
 ### Movie
 - Shaw Brothers / 邵氏影业 
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
-    - 侠士行, 保镖
+    - 侠士行, 保镖, 倩女幽魂
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute
