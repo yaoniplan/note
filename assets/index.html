@@ -3788,7 +3788,13 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Assign a window to a workspace (Silent: `workspace 1 silent`)
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Combine two commands into one line
+bind = $mainMod, C, exec, hyprctl dispatch resizeactive exact 48% 95% &amp;&amp; hyprctl dispatch centerwindow
+# Make window 50% of screen width
+bind = $mainMod, C, resizeactive, exact 48% 95%
+# Make window centered
+bind = $mainMod, C, centerwindow
+# Assign a window to a workspace (Silent: `workspace 1 silent`)
 windowrulev2 = workspace 1, class:^(firefox)$
 # Enable fullscreen for a window by default
 windowrulev2 = fullscreen, class:^(wayst1)$
@@ -3836,6 +3842,8 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9">https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9</a> # <code>/centerwindow</code></li>
+<li><a href="https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966">https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966</a> # <code>/resizeactive</code></li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt">https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt</a></li>
 <li><a href="https://wiki.hyprland.org/Configuring/Window-Rules/">https://wiki.hyprland.org/Configuring/Window-Rules/</a></li>
 <li><a href="https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/">https://libreddit.baczek.me/r/hyprland/comments/18o5d18/open_window_on_initial_workspace_opened_rather/</a></li>
@@ -6927,7 +6935,7 @@ yaoniplan@tux /tmp/tmp.ItcK2amanT $
 <li><code>nix-shell --command &#39;jupyter notebook&#39; --packages jupyter</code> # Use temporarily</li>
 <li><code>nix shell nixpkgs#firefox --command firefox yourURL</code> # Use temporarily</li>
 <li><code>nix-shell --packages python310Packages.numpy python310Packages.opencv4</code> # Another way</li>
-<li><code>nix shell nixpkgs#fortune nixpkgs#cowsay --command bash -c &quot;fortune | cowsay&quot;</code></li>
+<li><code>nix shell nixpkgs#fortune nixpkgs#cowsay --command sh -c &#39;fortune | cowsay&#39;</code></li>
 </ul>
 </li>
 <li><code>nix profile install nixpkgs#hello</code> # Install a package permantently<ul>
@@ -22604,6 +22612,22 @@ Auto Capture Keyboard # Extended Features (Turn it off)
 <li>三击(中键)</li>
 </ol>
 </li>
+<li><h4>Use &quot;readlink&quot;</h4>
+<ul>
+<li><code>readlink $(which tree)</code> # Read the hard link</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to replace <code>ls -l $(which tree)</code>.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://nixos.asia/en/nix-first">https://nixos.asia/en/nix-first</a> # <code>/readlink</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li>[[linux]]基础命令  <ul>
 <li><code>passwd 用户名</code> //为用户设置密码(password 的简称)</li>
 <li><code>useradd 用户名</code> //添加用户</li>
