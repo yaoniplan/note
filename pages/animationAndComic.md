@@ -782,7 +782,7 @@
 ### Movie
 - Shaw Brothers / 邵氏影业 
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
-    - 侠士行, 保镖, 倩女幽魂, 倾国倾城
+    - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋 00:57:05
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute
