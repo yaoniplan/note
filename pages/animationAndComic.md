@@ -19,8 +19,7 @@
 - 眷思量 S01E15.S02E15
 - 多数欠 S01E04
 - 元尊 S01E14
-- 民调局异闻录 S01E12.S02E03 animation
-- 异世界自杀小队 S01E00
+- 异世界自杀小队 S01E00 animation
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E03
 - 我会招架一切 反误会的世界最强想成为冒险者 S01E04
 - 风云变2024 S01E12
@@ -270,6 +269,7 @@
 - guard(end)
 
 ### Animation
+- 民调局异闻录 S01E12.S02E05 0900 # Target audience may be 13 or  14 years old
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E05 2101 # Plot may be slow
 - 三国杀：太平天书 S01E08 0751 # Target audience may be 13 or 14 years old
 - 异世界悠闲纪行 ～边养娃边当冒险者～ S01E04 0445 # Target audience may be 13 or 14 years old
