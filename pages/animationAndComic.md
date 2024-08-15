@@ -52,10 +52,10 @@
 - Against the Sky Supreme / 逆天至尊 - 323
 
 ### Comic
+- 长腿姐姐 / 卖身给上司 - 48 # Feel like the ending details weren't explained clearly
 - 初次深交，请多指教 - 56
 - 邪教教主 - 21 50%
 - 色雕英雄传:一捅天下 - 40
-- 卖身给上司 - 95
 - Panty Note / 裤裤笔记 - 166
 - 没有道侣就会死 - 90
 - 傀儡 - 277

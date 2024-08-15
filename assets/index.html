@@ -71,7 +71,7 @@
 </ul>
 </li>
 <li>$|\vec{c}|=1$ # A unit vector has a magnitude of 1<ul>
-<li>$\vec{c} \cdot \vec{c}=|\vec{c}| |\vec{c}| \cos\theta$</li>
+<li>$\vec{c} \cdot \vec{c}=|\vec{c}| |\vec{c}| \cos\theta$ # Dot product formula</li>
 <li>$u \cdot v=0$ # Two vectors are perpendicular ($\cos90\degree$) if their dot product is zero</li>
 </ul>
 </li>
@@ -175,6 +175,7 @@
 </li>
 <li>Wear seat belts for rear seats in small cars (Impose a fine of RMB 10, deduct 0 points, late payment fee will be RMB 0)</li>
 <li>Require<ul>
+<li>Shelves</li>
 <li>Banknote detector</li>
 <li>Monitor</li>
 <li>Rice cooker</li>
@@ -1105,6 +1106,11 @@ anon_root=/mnt
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Other methods (e.g. enumerate DNS, etc.)<ul>
+<li><code>pipx install sublist3r</code> # Install dependencies</li>
+<li><code>sublist3r --domain yaoniplan.eu.org</code></li>
+</ul>
+</li>
 <li>Warnings: Cannot find the latest subdomain names on April 25, 2024.</li>
 <li><code>nix profile install nixpkgs#subfinder</code> # Install dependencies</li>
 <li>Because to find all subdomain names of a domain name.</li>
@@ -1336,6 +1342,12 @@ anon_root=/mnt
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>imv - &lt; &lt;(wl-paste --type image/png)</code> # View an image from clipboard<ul>
+<li><code>-</code> # Read from standard input</li>
+<li><code>&lt;</code> # Redirect the contents</li>
+<li><code>&lt;()</code> # Create a temporary file</li>
+</ul>
+</li>
 <li>Warning: Does not support web images in jpeg format. (But &quot;feh&quot; is OK)<ul>
 <li><code>imv https://alist.yaoniplan.eu.org/d/chinaTelecom/2024/03/26/6601c9e4474e8.jpeg</code></li>
 <li><a href="https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/">https://libreddit.northboot.xyz/r/swaywm/comments/fpovat/what_image_viewer_is_recommended_for_sway_use/</a></li>
@@ -3754,7 +3766,7 @@ font-size = 12
 <li><em><strong>Notes</strong></em><ul>
 <li>Examples<ul>
 <li><code>wl-copy &lt; /mnt/grow/image/2024-06-23-100503.png</code> # Copy file to clipboard</li>
-<li><code>wl-paste | imv -</code> # View pictures from clipboard</li>
+<li><code>wl-paste --type image/png | imv -</code> # View an image from clipboard</li>
 <li><code>echo &quot;$(which mako)&quot; | wl-copy</code> # Copy file path to clipboard</li>
 </ul>
 </li>
@@ -7123,6 +7135,7 @@ $
 <li><h4>Use &quot;vimium c&quot;</h4>
 <ul>
 <li><code>p</code> # Search selected words in search engine when in visual mode</li>
+<li><code>map &lt;f6&gt; copyWindowInfo type=&quot;tab&quot; format=&quot;${title}&quot;</code> # Copy page title</li>
 <li><code>gi</code> # Copy image to the clipboard</li>
 <li><code>2gu</code> # Go up the URL hierarchy twice<ul>
 <li>From an issue to a code area on GitHub</li>
@@ -7144,6 +7157,7 @@ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/discussions/938">https://github.com/gdh1995/vimium-c/discussions/938</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/1133#issuecomment-2125555652">https://github.com/gdh1995/vimium-c/issues/1133#issuecomment-2125555652</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/289#issue-811171738">https://github.com/gdh1995/vimium-c/issues/289#issue-811171738</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034">https://github.com/gdh1995/vimium-c/issues/842#issuecomment-1426803034</a></li>
@@ -15854,6 +15868,7 @@ set number
 set expandtab &quot; Replace tab characters with spaces
 set tabstop=4 &quot; Insert 4 spaces when expandtab is enabled
 set shiftwidth=4 &quot; Replace indentation with spaces
+set smartindent &quot; Adjust indentation based on syntax automatically
 </code></pre>
 </li>
 <li><code>:e</code> # Edit<ul>
