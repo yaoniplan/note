@@ -3800,7 +3800,9 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Combine two commands into one line
+<li><code>vim ~/.config/hypr/hyprland.conf</code><pre><code># Switch between windows in a floating workspace
+bind = ALT, Tab, exec, hyprctl dispatch cyclenext &amp;&amp; hyprctl dispatch bringactivetotop
+# Combine two commands into one line
 bind = $mainMod, C, exec, hyprctl dispatch resizeactive exact 48% 95% &amp;&amp; hyprctl dispatch centerwindow
 # Make window 50% of screen width
 bind = $mainMod, C, resizeactive, exact 48% 95%
@@ -3854,6 +3856,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/hyprland/comments/165pra4/active_window_on_top/jyg2p0x">https://libreddit.nohost.network/r/hyprland/comments/165pra4/active_window_on_top/jyg2p0x</a></li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9">https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9</a> # <code>/centerwindow</code></li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966">https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966</a> # <code>/resizeactive</code></li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt">https://libreddit.nohost.network/r/hyprland/comments/1c31ufa/how_to_remove_this_line_at_bottom/kzdpbkt</a></li>
@@ -7150,13 +7153,23 @@ $
 </ul>
 </li>
 <li><code>W</code> # Move current tab to next window</li>
-<li>Add a search engine in &#39;Custom search engines&#39;<pre><code>bili|bilibili: https://search.bilibili.com/all?keyword=%s \
-  blank=https://www.bilibili.com/ BiliBili
+<li>Add a search engine in &#39;Custom search engines&#39;<pre><code>tr: https://translate.google.com/?sl=auto&amp;tl=en&amp;text=%s
+pp: https://www.perplexity.ai/search?q=%s blank=https://www.perplexity.ai
 </code></pre>
+<ul>
+<li><code>&amp;</code> # A separator (Between parameters)</li>
+<li><code>pp</code> # An alias (Customizable)</li>
+<li><code>search</code> # Search functionality</li>
+<li><code>?</code> # A separator (Between the base URL and the query parameters)</li>
+<li><code>q=</code> # A query parameter</li>
+<li><code>%s</code> # A placeholder (Vimium C will replace it with your search query)</li>
+<li><code>blank=https://www.perplexity.ai</code> # If the search query is empty then open it (Optional)</li>
+</ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://airespo.com/resources/how-to-set-perplexity-ai-as-default-search-engine-in-chrome/">https://airespo.com/resources/how-to-set-perplexity-ai-as-default-search-engine-in-chrome/</a> # <code>/perplexity.ai</code></li>
 <li><a href="https://github.com/gdh1995/vimium-c/discussions/938">https://github.com/gdh1995/vimium-c/discussions/938</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/1133#issuecomment-2125555652">https://github.com/gdh1995/vimium-c/issues/1133#issuecomment-2125555652</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/289#issue-811171738">https://github.com/gdh1995/vimium-c/issues/289#issue-811171738</a></li>
@@ -9667,36 +9680,6 @@ Manual # Proxy settings
 <li><img src="../assets/2023-04-16_18-39.png" alt="2023-04-16_18-39.png"></li>
 <li><a href="https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/">https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/</a></li>
 <li><a href="https://blog.vicat.top/archives/linux%E9%80%9A%E8%BF%87clash%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91#2-%E6%AD%A3%E6%88%8F%E8%BF%9B%E9%98%B6">https://blog.vicat.top/archives/linux通过clash来科学上网#2-正戏进阶</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Add the line number plus one to the end of each line in Vim</h4>
-<ul>
-<li><code>:%s/$/\=printf(&#39;%02d&#39;, line(&#39;.&#39;)+1).&#39;.MP4&#39;/g</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>\=</code> # Expression</li>
-<li><code>printf()</code> # A funcation</li>
-<li><code>%02d</code><ul>
-<li>An integer</li>
-<li>Zero-padding</li>
-<li>Two digits</li>
-</ul>
-</li>
-<li><code>line(&#39;.&#39;)+1</code> # The line number plus one</li>
-<li><code>:%s/\v\d{2}\.MP4$//g</code> # Remove what this command generates<ul>
-<li><code>\v</code> # Very magic mode</li>
-<li><code>\d{2}</code> # Two digits</li>
-<li><code>\</code> # Escape character</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -15784,6 +15767,20 @@ set number
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li><code>:%s/$/\=printf(&#39;%02d&#39;, line(&#39;.&#39;)+1).&#39;.MP4&#39;/g</code> # Add the line number plus one to the end of each line<ul>
+<li><code>\=</code> # Expression</li>
+<li><code>printf()</code> # A funcation</li>
+<li><code>%02d</code> # A zero-padded two-digit integer (Optional)</li>
+<li><code>line(&#39;.&#39;)+1</code> # Add 1 to the current line number</li>
+<li><code>.&#39;.MP4&#39;</code> # Concatenate the formatted number with <code>.MP4</code> (Optional)</li>
+</ul>
+</li>
+<li><code>:%s/\v\d{2}\.MP4$//g</code> # Remove what the above command generates<ul>
+<li><code>\v</code> # Very magic mode</li>
+<li><code>\d{2}</code> # Two digits</li>
+<li><code>\</code> # Escape character</li>
+</ul>
+</li>
 <li><code>q:</code> # Command line mode (Query recent command)<ul>
 <li><code>/</code> # Search</li>
 <li><code>:q</code> # Quit</li>
