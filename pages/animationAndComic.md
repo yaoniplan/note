@@ -21,9 +21,9 @@
 - 元尊 S01E14
 - 异世界自杀小队 S01E10
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E06
-- 我会招架一切 反误会的世界最强想成为冒险者 S01E04 animation
-- 风云变2024 S01E12
-- 2.5次元的诱惑 S01E04
+- 我会招架一切 反误会的世界最强想成为冒险者 S01E07
+- 风云变2024 S01E15
+- 2.5次元的诱惑 S01E04 animation
 - 这个世界漏洞百出 S01E04
 - 现代误译 S01E03
 - 陆地键仙 S01E33
@@ -269,6 +269,7 @@
 - guard(end)
 
 ### Animation
+- 地灵曲 43
 - 民调局异闻录 S01E12.S02E05 0900 # Target audience may be 13 or  14 years old
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E05 2101 # Plot may be slow
 - 三国杀：太平天书 S01E08 0751 # Target audience may be 13 or 14 years old
