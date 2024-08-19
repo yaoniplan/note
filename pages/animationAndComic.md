@@ -23,9 +23,8 @@
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E06
 - 我会招架一切 反误会的世界最强想成为冒险者 S01E07
 - 风云变2024 S01E15
-- 2.5次元的诱惑 S01E04 animation
-- 这个世界漏洞百出 S01E04
-- 现代误译 S01E03
+- 2.5次元的诱惑 S01E07
+- 现代误译 S01E03 animation
 - 陆地键仙 S01E33
 - 金吾卫之风起金陵 S01E13
 - 精灵小姐瘦不了 S01E00 #NSFW #Weight-loss-exercise 1310
@@ -269,6 +268,7 @@
 - guard(end)
 
 ### Animation
+- 这个世界漏洞百出 S01E05 1005 # Plot may be slow
 - 地灵曲 43
 - 民调局异闻录 S01E12.S02E05 0900 # Target audience may be 13 or  14 years old
 - 不时用俄语小声说真心话的邻桌艾莉同学 S01E05 2101 # Plot may be slow
