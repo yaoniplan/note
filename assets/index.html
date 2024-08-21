@@ -40,90 +40,79 @@
 </head>
 <body>
   <article class="markdown-body">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>yaoniplan</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../assets/github-markdown-dark.css">
-  <link rel="stylesheet" href="../assets/katex.min.css">
-  <script defer src="../assets/katex.min.js"></script>
-  <script defer src="../assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-  <script>
-    // Render all KaTeX expressions on the page
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ]
-      });
-    });
-  </script>
-  <style>
-    .markdown-body {
-      box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
-    }
-    @media (max-width: 767px) {
-      .markdown-body {
-        padding: 15px;
-      }
-    }
-    body {
-      background-color: #0d1117;
-    }
-  </style>
-</head>
-<body>
-  <article class="markdown-body">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>yaoniplan</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../assets/github-markdown-dark.css">
-  <link rel="stylesheet" href="../assets/katex.min.css">
-  <script defer src="../assets/katex.min.js"></script>
-  <script defer src="../assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-  <script>
-    // Render all KaTeX expressions on the page
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ]
-      });
-    });
-  </script>
-  <style>
-    .markdown-body {
-      box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
-    }
-    @media (max-width: 767px) {
-      .markdown-body {
-        padding: 15px;
-      }
-    }
-    body {
-      background-color: #0d1117;
-    }
-  </style>
-</head>
-<body>
-  <article class="markdown-body">
+<ul>
+<li><h4>Try to follow the Docker Compose specification</h4>
+<ul>
+<li><code>compose.yaml</code> # Replace docker-compose.yml</li>
+<li><code>docker compose</code> # Replace docker-compose</li>
+<li>Delete the first line containing &#39;version&#39; to remove obsolete warning</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to make Docker simpler.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://docs.docker.com/compose/compose-application-model/">https://docs.docker.com/compose/compose-application-model/</a></li>
+<li><a href="https://dev.to/pradumnasaraf/stop-versioning-your-docker-compose-file-1f41">https://dev.to/pradumnasaraf/stop-versioning-your-docker-compose-file-1f41</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>View system information without third-party tools</h4>
+<ul>
+<li><code>cat /proc/cpuinfo</code> # CPU information<ul>
+<li>Number of processors</li>
+<li>Number of CPU cores of the processor</li>
+<li>Model name</li>
+</ul>
+</li>
+<li><code>cat /proc/version</code> # Kernel version</li>
+<li><code>cat /proc/meminfo</code> # Memory information</li>
+<li><code>cat /proc/partitions</code> # Disk partitions</li>
+<li><code>cat /proc/filesystems</code> # File systems<ul>
+<li><code>nodev</code> # No device</li>
+<li>What file system types are currently used by disks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to view the basic information of a computer.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki-power.com/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86">https://wiki-power.com/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;sheets&quot;</h4>
+<ul>
+<li><code>=SUM(E2:E126)</code> # Calculate the sum of this range<ul>
+<li><code>=</code> # Start a formula</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because the user experience is better than &quot;excel&quot;.<ul>
+<li>Support dark mode</li>
+<li>Open files faster</li>
+<li>Simple user interface</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://drive.google.com/drive/home">https://drive.google.com/drive/home</a></li>
+<li><code>A simple cheat sheet about Google Sheets software</code> # ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
 <ul>
 <li><h4>Fetch an icon of a website</h4>
 <ul>
@@ -432,7 +421,7 @@ fi
 <ul>
 <li><h4>Use &quot;nvim&quot;</h4>
 <ul>
-<li><code>nix run github:jordanisaacs/neovim-flake hello.sh</code></li>
+<li><code>nix run github:jordanisaacs/neovim-flake</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -3894,6 +3883,8 @@ bind = $mainMod, C, resizeactive, exact 48% 95%
 bind = $mainMod, C, centerwindow
 # Assign a window to a workspace (Silent: `workspace 1 silent`)
 windowrulev2 = workspace 1, class:^(firefox)$
+# Set size for floating windows (Make sure the window is floating and not full screen by default)
+windowrulev2 = size 1000 600, class:^(firefox)$, title:^(Save As)$
 # Enable fullscreen for a window by default
 windowrulev2 = fullscreen, class:^(wayst1)$
 # Execute script at boot time
@@ -3940,6 +3931,7 @@ misc {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/hyprwm/Hyprland/issues/3566#issuecomment-1858861625">https://github.com/hyprwm/Hyprland/issues/3566#issuecomment-1858861625</a> # <code>/size</code></li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/165pra4/active_window_on_top/jyg2p0x">https://libreddit.nohost.network/r/hyprland/comments/165pra4/active_window_on_top/jyg2p0x</a></li>
 <li><a href="https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9">https://libreddit.nohost.network/r/hyprland/comments/18won1q/center_single_window_on_master_layout_and_prevent/kg0dvq9</a> # <code>/centerwindow</code></li>
 <li><a href="https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966">https://github.com/hyprwm/Hyprland/issues/2948#issuecomment-2283235966</a> # <code>/resizeactive</code></li>
@@ -4394,24 +4386,6 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Set a mirror for npm</h4>
-<ul>
-<li><code>vi ~/.npmrc</code><pre><code>registry=https://npmreg.proxy.ustclug.org/
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Improve the speed (e.g. <code>npm install express</code>)</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://mirrors.ustc.edu.cn/help/npm.html">https://mirrors.ustc.edu.cn/help/npm.html</a></li>
 </ul>
 </li>
 </ul>
@@ -9135,35 +9109,53 @@ curl --head --silent https://google.com
 </ul>
 <hr>
 <ul>
-<li><h4>The abbreviation of &quot;Node Package Manager&quot; is &quot;npm&quot;.</h4>
+<li><h4>Use &quot;npm&quot;</h4>
 <ul>
-<li><code>doas npm install -g marked</code> # Install a package</li>
+<li><code>npm install --global marked</code> # Install a package</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>doas npm uninstall -g marked-katex-extension</code> # Uninstall<ul>
+<li><code>vi ~/.npmrc</code> # Set a mirror<pre><code>registry=https://npmreg.proxy.ustclug.org/
+</code></pre>
+<ul>
+<li>Because to improve the speed. (e.g. <code>npm install express</code>)</li>
+</ul>
+</li>
+<li><code>npm uninstall -g marked-katex-extension</code> # Uninstall<ul>
 <li><code>npm list -g</code> # List installed packages</li>
 </ul>
 </li>
-<li><code>-g</code> # Global</li>
-<li><code>doas emerge -aq net-libs/nodejs</code> # Install in Gentoo Linux</li>
-<li><code>doas pacman -S npm</code> # Install in Arch Linux</li>
+<li>Install dependencies<ul>
+<li><code>emerge -aq net-libs/nodejs</code> # Install in Gentoo Linux</li>
+<li><code>pacman -S npm</code> # Install in Arch Linux</li>
+</ul>
+</li>
 <li>Because to convert Markdown to HTML in script.<ul>
 <li><code>marked -i yaoniplan.md -o yaoniplan.html</code></li>
+</ul>
+</li>
+<li>Solve the problem<pre><code>npm error code ERR_INVALID_URL
+npm error Invalid URL
+</code></pre>
+<ul>
+<li>Add <code>http://</code> to your proxy</li>
 </ul>
 </li>
 <li>Solve the problem about SQLite3<ul>
 <li><code>npm uninstall sqlite3</code></li>
 <li><code>npm --force cache clean</code></li>
-<li><code>doas npm install sqlite3</code></li>
+<li><code>npm install sqlite3</code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man npm</code></li>
+<li><a href="https://stackoverflow.com/questions/69768980/how-to-resolve-code-err-invalid-url-in-angular-cli-installation/69838005#69838005">https://stackoverflow.com/questions/69768980/how-to-resolve-code-err-invalid-url-in-angular-cli-installation/69838005#69838005</a></li>
+<li><a href="https://mirrors.ustc.edu.cn/help/npm.html">https://mirrors.ustc.edu.cn/help/npm.html</a></li>
 <li><a href="https://discuss.codecademy.com/t/problem-installing-sqlite3/434837/26">https://discuss.codecademy.com/t/problem-installing-sqlite3/434837/26</a></li>
 <li><a href="https://github.com/markedjs/marked">https://github.com/markedjs/marked</a></li>
+<li><code>npm help install</code> # <code>/-g</code></li>
+<li><code>man npm</code> # Node package manager</li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -9714,6 +9706,7 @@ services:
 <li><code>docker-compose pull</code> # Pull a remote image</li>
 <li><code>docker-compose build</code> # Build a local image</li>
 <li><code>docker-compose up --detach</code></li>
+<li><code>--file ~/.config/departmentStore/compose.yaml</code> # Use absolute path</li>
 </ul>
 </li>
 <li><code>docker-compose logs</code> # View logs</li>
@@ -9758,12 +9751,13 @@ Manual # Proxy settings
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><code>docker compose --help | less</code></li>
 <li><code>docker-compose up --help | less</code></li>
 <li><a href="https://blog.n-z.jp/blog/2024-04-02-docker-compose-yaml-version.html">https://blog.n-z.jp/blog/2024-04-02-docker-compose-yaml-version.html</a></li>
 <li><img src="../assets/2023-04-16_18-39.png" alt="2023-04-16_18-39.png"></li>
 <li><a href="https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/">https://www.aimeow.com/zai-ubuntu-serverzhong-tong-guo-docker-composebu-shu-clash/</a></li>
 <li><a href="https://blog.vicat.top/archives/linux%E9%80%9A%E8%BF%87clash%E6%9D%A5%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91#2-%E6%AD%A3%E6%88%8F%E8%BF%9B%E9%98%B6">https://blog.vicat.top/archives/linux通过clash来科学上网#2-正戏进阶</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -11629,6 +11623,7 @@ title=${filename}
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: Drop a lot of frames to play high quality video on an old computer in video speed mode (e.g. 3x, 2x, etc.)<ul>
 <li><a href="https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626">https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626</a></li>
+<li>Maybe it&#39;s because it&#39;s running on Wayland</li>
 </ul>
 </li>
 <li>Control from command-line<ul>
@@ -15851,6 +15846,10 @@ set number
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li><code>*</code> # Search for the word under the cursor<ul>
+<li><code>n</code> # Jump to the next (Opposite: <code>N</code>)</li>
+</ul>
+</li>
 <li><code>:%s/$/\=printf(&#39;%02d&#39;, line(&#39;.&#39;)+1).&#39;.MP4&#39;/g</code> # Add the line number plus one to the end of each line<ul>
 <li><code>\=</code> # Expression</li>
 <li><code>printf()</code> # A funcation</li>
@@ -15902,10 +15901,6 @@ set number
 <li><code>W</code> # The same as <code>w</code>, but ignore symbol (punctuation)</li>
 <li><code>I</code> # Insert text before the first non-blank in the line</li>
 <li><code>A</code> # Append text at the end of the line</li>
-<li><code>q:</code> # Command line mode<ul>
-<li><code>/use vim</code> # The same as reverse search history command like Bash</li>
-</ul>
-</li>
 <li><code>/\vtext|vim</code> # Search for text with multiple keywords<ul>
 <li><code>\v</code> # Very magic</li>
 </ul>
@@ -16046,7 +16041,12 @@ set -g @continuum-save-interval &#39;1&#39;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>* * * * *</code> # Every minute when the computer is running<ul>
-<li><code>*/5 * * * *</code> # Every 5 minutes</li>
+<li><code>*/5 * * * *</code> # Every 5 minutes is an interval</li>
+<li><code>*</code> # Every</li>
+<li><code>/</code> # Interval</li>
+<li><code>0 */6 * * *</code> # Every 6 hours is an interval</li>
+<li><code>0</code> # Specify the exact minute of the hour (0th minute)</li>
+<li>24 Hours divided by 6 Hours equals 4 intervals</li>
 </ul>
 </li>
 <li><code>/usr/bin/bash</code> # Path of command<ul>
@@ -17303,13 +17303,14 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 bind-key -n M-Space if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
     detach-client
 } {
-    display-popup -E &quot;tmux new-session -A -s scratch&quot;
+    display-popup -E -w 100% -h 50% &quot;tmux new-session -A -s scratch&quot;
 }
 </code></pre>
 <ul>
 <li><code>M-Space</code> # Replace it with your desired key (e.g. <code>M-f</code>)</li>
 <li><code>scratch</code> # Replace it with your desired name (e.g. <code>fzf</code>)</li>
 <li><code>display-popup -E &quot;tmux new-session -A -s fzf &#39;ls ~/.local/bin/ | fzf | sh&#39;&quot;</code> # Interact with fzf</li>
+<li><code>-w 100% -h 50%</code> # Customize the width and height (Optional)</li>
 </ul>
 </li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Hide status bar to show more space
@@ -17357,7 +17358,7 @@ set -g base-index 1
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/tmux/tmux/blob/c07e856d244d07ab2b65e72328fb9fe20747794b/regress/conf/01840240e807e837dbf76d85b4b938de.conf#L805">https://github.com/tmux/tmux/blob/c07e856d244d07ab2b65e72328fb9fe20747794b/regress/conf/01840240e807e837dbf76d85b4b938de.conf#L805</a></li>
 <li><a href="https://github.com/tmux/tmux/issues/992">https://github.com/tmux/tmux/issues/992</a></li>
-<li><a href="https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/">https://redlib.freedit.eu/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/</a></li>
+<li><a href="https://libreddit.nohost.network/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/">https://libreddit.nohost.network/r/tmux/comments/129ct3a/is_there_a_way_to_pin_a_slipt_pane/</a></li>
 <li><code>man tmux</code> # <code>/mode-keys</code></li>
 <li><img src="../assets/tmux_status_line_diagram_1671845222091_0.png" alt="tmux_status_line_diagram.png"></li>
 <li><a href="https://wiki.gentoo.org/wiki/Tmux">https://wiki.gentoo.org/wiki/Tmux</a></li>
@@ -23061,12 +23062,6 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </ul>
 </li>
 </ul>
-  </article>
-</body>
-</html>
-  </article>
-</body>
-</html>
   </article>
 </body>
 </html>
