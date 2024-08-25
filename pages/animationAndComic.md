@@ -26,7 +26,7 @@
 - 2.5次元的诱惑 S01E07
 - 陆地键仙 S01E40
 - 金吾卫之风起金陵 S01E16
-- 精灵小姐瘦不了 S01E00 #NSFW #Weight-loss-exercise 1310 animation
+- 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 animation
 - 小市民系列 S01E03
 - 擅长逃跑的少主殿下 S01E04
 - Tower of God / 神之塔 S01E13.S02E04
