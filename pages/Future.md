@@ -66,7 +66,6 @@
 - https://acl4ssr-sub.github.io/
 - https://oluceps.github.io/clash2sing-box/
 - https://github.com/ermaozi/get_subscribe
-- https://github.com/freefq/free
 - https://www.burstlinker.com/
 
 ## Animation and comic
