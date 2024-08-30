@@ -106,7 +106,7 @@
 <li><h4>Save the browser text as a file in iPhone Shortcuts</h4>
 <ul>
 <li>Open directory where the file is located<ul>
-<li>Open <code>Saved File</code> in i<code>Files</code></li>
+<li>Open <code>Saved File</code> in <code>Files</code></li>
 </ul>
 </li>
 </ul>
@@ -147,6 +147,17 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Search for matching rows<ul>
+<li>Get file from <code>Shortcuts</code> at path <code>departmentStore1.csv</code></li>
+<li>Dictate text<ul>
+<li>Language <code>Chinese (China Mainland)</code> (Depend on product name you sell)</li>
+</ul>
+</li>
+<li>Match <code>.*Dictated Text.*</code> in <code>File</code></li>
+<li>Choose from <code>Matches</code></li>
+<li>Copy <code>Chosen Item</code> to clipboard (Optional)</li>
+</ul>
+</li>
 <li>Get file name including file extension (Another way)<ul>
 <li>File</li>
 <li>Get Details of Files</li>
@@ -6716,6 +6727,31 @@ COPY . /usr/share/nginx/html/
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vi compose.yaml</code> # Start at boot<pre><code>services:
+  todo:
+    build: .
+    container_name: todo
+    restart: always
+    ports:
+      - &quot;2006:80&quot;
+</code></pre>
+<ul>
+<li><code>docker compose up --detach</code> # Run in the background</li>
+</ul>
+</li>
+<li><code>vi Dockerfile</code> # A lightweight method<pre><code>FROM busybox
+COPY . /app
+CMD httpd -f -p 80 -h /app
+</code></pre>
+<ul>
+<li><code>FROM busybox</code> # Use BusyBox as the base image</li>
+<li><code>COPY . /app</code> # Copy files from your local file system into Docker image</li>
+<li><code>CMD</code> # Execute commands when the container is running</li>
+<li><code>-f</code> # Run in the foreground</li>
+<li><code>-p 80</code> # Bind the HTTP server to port 80</li>
+<li><code>-h /app</code> # Specify the home directory for the server as <code>/app</code></li>
+</ul>
+</li>
 <li><code>yaoniplan</code> # Replace it with your desired name</li>
 <li><code>2003</code> # Replace it with your desired port</li>
 <li>Update it<ul>
@@ -6725,6 +6761,7 @@ COPY . /usr/share/nginx/html/
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>httpd --help</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -9459,6 +9496,7 @@ curl --head --silent https://google.com
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--registry https://npmreg.proxy.ustclug.org/</code> # temporarily</li>
 <li><code>vi ~/.npmrc</code> # Set a mirror<pre><code>registry=https://npmreg.proxy.ustclug.org/
 </code></pre>
 <ul>
@@ -12980,29 +13018,6 @@ dns_servers_eno1=&quot;192.168.10.1&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Use SSH without password in Unix-like</h4>
-<ul>
-<li><code>ssh-copy-id git@192.168.10.100</code> # Run it in local</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>git@192.168.10.100</code> # Replace it with server</li>
-<li>In fact, it appends client&#39;s <em>id_rsa.pub</em> content to server&#39;s <em>~/.ssh/authorized_keys</em> file<ul>
-<li><code>ssh-keygen</code> # Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh-copy-id git@192.168.10.100
-/usr/bin/ssh-copy-id: ERROR: No identities found
-</code></pre>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://wiki.gentoo.org/wiki/SSH#Server">https://wiki.gentoo.org/wiki/SSH#Server</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Create a user in Gentoo Linux</h4>
 <ul>
 <li><code>useradd -m -G users,wheel,audio -s /bin/bash testUser</code></li>
@@ -15197,6 +15212,15 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>ssh-copy-id git@192.168.10.100</code> # Use without password (Run it in local)<ul>
+<li><code>git@192.168.10.100</code> # Replace it with server</li>
+<li>In fact, it appends client&#39;s <em>id_rsa.pub</em> content to server&#39;s <em>~/.ssh/authorized_keys</em> file</li>
+<li><code>ssh-keygen</code> # Solve the problem<pre><code>yaoniplan@ubuntu2204:~$ ssh-copy-id git@192.168.10.100
+/usr/bin/ssh-copy-id: ERROR: No identities found
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>ssh yaoniplan@192.168.10.100 &quot;bash -lc &#39;source ~/.local/bin/downloadOffline.sh \&quot;$clipboardContent\&quot;&#39;&quot;</code> # Use local variable</li>
 <li><code>ssh yaoniplan@192.168.10.100 &#39;bash -c &quot;source ~/.local/bin/runContainer.sh&quot;&#39; &amp;</code> # Execute command temporarily</li>
 <li><code>bandit0</code> # Username<ul>
@@ -15237,9 +15261,9 @@ Unit ssh.service could not be found.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man ssh</code></li>
-<li><a href="https://wiki.gentoo.org/wiki/SSH">https://wiki.gentoo.org/wiki/SSH</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/SSH#Server">https://wiki.gentoo.org/wiki/SSH#Server</a></li>
 <li><a href="https://overthewire.org/wargames/bandit/bandit0.html">https://overthewire.org/wargames/bandit/bandit0.html</a></li>
+<li><code>man ssh</code></li>
 </ul>
 </li>
 </ul>
