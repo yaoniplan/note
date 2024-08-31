@@ -40,48 +40,138 @@
 </head>
 <body>
   <article class="markdown-body">
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>yaoniplan</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="stylesheet" href="../assets/github-markdown-dark.css">
-  <link rel="stylesheet" href="../assets/katex.min.css">
-  <script defer src="../assets/katex.min.js"></script>
-  <script defer src="../assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-  <script>
-    // Render all KaTeX expressions on the page
-    document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        delimiters: [
-          { left: "$$", right: "$$", display: true },
-          { left: "$", right: "$", display: false }
-        ]
-      });
-    });
-  </script>
-  <style>
-    .markdown-body {
-      box-sizing: border-box;
-      min-width: 200px;
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 45px;
-    }
-    @media (max-width: 767px) {
-      .markdown-body {
-        padding: 15px;
-      }
-    }
-    body {
-      background-color: #0d1117;
-    }
-  </style>
-</head>
-<body>
-  <article class="markdown-body">
+<ul>
+<li><h4>Use &quot;eval&quot;</h4>
+<ul>
+<li><code>eval rsync -av &quot;$option&quot;</code> # Handle the variable containing spaces correctly</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>yaoniplan@tux ~/.config $ syncFiles.sh store                   
+receiving incremental file list
+rsync: [sender] change_dir &quot;/home/yaoniplan/.config/store /home/yaoniplan&quot; failed: No such file or directory (2)
+
+sent 8 bytes  received 8 bytes  32.00 bytes/sec
+total size is 0  speedup is 0.00
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1852) [Receiver=3.3.0]
+rsync: [Receiver] write error: Broken pipe (32)
+yaoniplan@tux ~/.config $
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Allow others in your WLAN to access the API</h4>
+<ul>
+<li><code>vim ~/.config/store/serverSideQuery/app.py</code><pre><code>if __name__ == &#39;__main__&#39;:
+  app.run(debug=True)
+</code></pre>
+<ul>
+<li>Replace <code>debug=True</code> with <code>host=&#39;0.0.0.0&#39;, port=5000</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>http://192.168.10.100:5000</code></li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Set up a Flask web server</h4>
+<ul>
+<li>Imports<pre><code>from flask import Flask, request, jsonify
+import sqlite3
+</code></pre>
+</li>
+<li>Create a new Flask web application instance named <code>app</code><pre><code>app = Flask(__name__)
+</code></pre>
+</li>
+<li>Function to get a product by barcode<pre><code>def get_product_by_barcode(barcode):
+    conn = sqlite3.connect(&#39;products.db&#39;)
+    cursor = conn.cursor()
+    cursor.execute(&quot;SELECT name, price, image_url FROM products WHERE barcode=?&quot;, (barcode,))
+    product = cursor.fetchone()
+    conn.close()
+    return product
+</code></pre>
+</li>
+<li>Route to search for a product<pre><code>@app.route(&#39;/search_product&#39;, methods=[&#39;GET&#39;])
+def search_product():
+    barcode = request.args.get(&#39;barcode&#39;)
+    product = get_product_by_barcode(barcode)
+    
+    if product:
+        return jsonify({&quot;name&quot;: product[0], &quot;price&quot;: product[1], &quot;image_url&quot;: product[2]})
+    else:
+        return jsonify({&quot;error&quot;: &quot;Product not found&quot;}), 404
+</code></pre>
+</li>
+<li>Application runner<pre><code>if __name__ == &#39;__main__&#39;:
+    app.run(host=&#39;0.0.0.0&#39;, port=5000)
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Add a new product<pre><code># Function to add a new product
+def add_product(barcode, name, price, image_url):
+    conn = sqlite3.connect(&#39;products.db&#39;)
+    cursor = conn.cursor()
+    cursor.execute(&quot;INSERT INTO products (barcode, name, price, image_url) VALUES (?, ?, ?, ?)&quot;, (barcode, name, price, image_url))
+    conn.commit()
+    conn.close()
+
+# Route to add a new product
+@app.route(&#39;/add_product&#39;, methods=[&#39;POST&#39;])
+def add_product_route():
+    data = request.json
+    barcode = data.get(&#39;barcode&#39;)
+    name = data.get(&#39;name&#39;)
+    price = data.get(&#39;price&#39;)
+    image_url = data.get(&#39;image_url&#39;)
+    
+    # Validate input data
+    if not all([barcode, name, price, image_url]):
+        return jsonify({&quot;error&quot;: &quot;Missing data&quot;}), 400
+
+    # Add product to database
+    add_product(barcode, name, price, image_url)
+    return jsonify({&quot;message&quot;: &quot;Product added successfully&quot;}), 201
+</code></pre>
+</li>
+<li>Add the new product to the database<pre><code>curl --request POST http://192.168.10.100:5000/add_product
+    --header &quot;Content-Type: application/json&quot;
+    --data &#39;{
+        &quot;barcode&quot;: &quot;6934567890123&quot;,
+        &quot;name&quot;: &quot;Water&quot;,
+        &quot;price&quot;: 1,
+        &quot;image_url&quot;: &quot;http://example.com/image.jpg&quot;
+    }&#39;
+</code></pre>
+</li>
+<li>Get prodect details<pre><code>curl http://192.168.10.100:5000/search_product?barcode=6934567890123
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
 <ul>
 <li><h4>Understand product barcode</h4>
 <ul>
@@ -105,13 +195,29 @@
 <ul>
 <li><h4>Save the browser text as a file in iPhone Shortcuts</h4>
 <ul>
+<li>If <code>Shortcut Input</code> <code>does not have any value</code><ul>
+<li><code>Text</code> # <code>Clipboard</code></li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li><code>Text</code> # <code>Shortcut Input</code></li>
+</ul>
+</li>
+<li>End If</li>
+<li>Ask for <code>Text</code> with <code>Enter file name:</code></li>
+<li>Set name of <code>If Result</code> to <code>Provided Input</code></li>
+<li>Save <code>Renamed Item</code> to <code>Downloads</code><ul>
+<li>Subpath # <code>Provided Input</code></li>
+</ul>
+</li>
+<li>Open <code>Saved File</code> in <code>Files</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
 <li>Open directory where the file is located<ul>
 <li>Open <code>Saved File</code> in <code>Files</code></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
 <li>Because to save text as file.</li>
 </ul>
 </li>
@@ -7014,6 +7120,7 @@ DHCP=yes
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li>TL;DR # Too long; didn&#39;t read</li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -20671,17 +20778,33 @@ You can edit this.
 </li>
 <li><blockquote>
 <p>There is no tiger in the mountain, the monkey is the king. #quote
--- [[python]] name good habits</p>
+-- #### python name good habits</p>
 </blockquote>
 <ul>
 <li><code>in English</code> # You can fluently read english tutorial after a while.</li>
 <li><code>camelCase</code> # lower camel case</li>
 <li><code>CamelCase</code> # upper camel case</li>
-<li><em><strong>References</strong></em></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>Server-Side Query</code> # serverSideQuery<ul>
+<li>Begin with a lowercase letter</li>
+<li>Use only letters and numbers; avoid special characters</li>
+<li>For each subsequent words, start with an uppercase letter</li>
+<li>Eliminate all spaces between words</li>
+<li>Merge all words into a single continuous string</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
 <li><img src="../assets/image_1663594757809_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1663594795061_0.png" alt="image.png"></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li>[[python]]check class<ul>
 <li><code>type()</code> # This is a function that check class.</li>
 <li><em><strong>References</strong></em></li>
@@ -23414,9 +23537,6 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </ul>
 </li>
 </ul>
-  </article>
-</body>
-</html>
   </article>
 </body>
 </html>
