@@ -1,5 +1,5 @@
 ### "Animation"
-- 剑来
+- 剑来 - S01E05
 - Apotheosis / 百炼成神 - S01E52.S02E36
 - 沧元图 - 30
 - 神武天尊2024 04
@@ -26,9 +26,8 @@
 - 2.5次元的诱惑 S01E07
 - 陆地键仙 S01E40
 - 金吾卫之风起金陵 S01E16
-- 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 animation
-- 小市民系列 S01E03
-- 擅长逃跑的少主殿下 S01E04
+- 小市民系列 S01E08
+- 擅长逃跑的少主殿下 S01E04 animation
 - Tower of God / 神之塔 S01E13.S02E04
 - 幻宠师 - 11
 - Viral Hit / 格斗实况 - 12
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 # Plot may be a bit repetitive
 - 现代误译 S01E06 0616 # Target audience may be middle-aged people
 - 这个世界漏洞百出 S01E05 1005 # Plot may be slow
 - 地灵曲 43
