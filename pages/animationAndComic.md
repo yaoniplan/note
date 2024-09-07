@@ -27,12 +27,10 @@
 - 陆地键仙 S01E40
 - 金吾卫之风起金陵 S01E16
 - 小市民系列 S01E08
-- 擅长逃跑的少主殿下 S01E04 animation
-- Tower of God / 神之塔 S01E13.S02E04
-- 幻宠师 - 11
-- Viral Hit / 格斗实况 - 12
-- 杀手寓言 - 17
-- 永生 - S01E12.S02E12.S03E16.S04E01
+- 擅长逃跑的少主殿下 S01E09
+- 幻宠师 - 16
+- 杀手寓言 - 21
+- 永生 - S01E12.S02E12.S03E16.S04E01 animation
 - 散修之王 - 21
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52
 - 隐世宗门掌教 40
@@ -55,6 +53,7 @@
 - Panty Note / 裤裤笔记 - 232
 - 傀儡 - 331
 - 谁说理组没正妹 - 87 comic
+    - https://www.hanman100.com/index.php/chapter-28044.html
 - 开局签到至尊丹田 - 256
 - 超级神基因 - 170
 - 帝王app - 75
@@ -258,6 +257,8 @@
 - guard(end)
 
 ### Animation
+- Viral Hit / 格斗实况 - S01E12
+- Tower of God / 神之塔 S01E13.S02E09 0739 # Plot may be slow
 - 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 # Plot may be a bit repetitive
 - 现代误译 S01E06 0616 # Target audience may be middle-aged people
 - 这个世界漏洞百出 S01E05 1005 # Plot may be slow
