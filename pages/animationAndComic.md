@@ -30,12 +30,11 @@
 - 擅长逃跑的少主殿下 S01E09
 - 幻宠师 - 16
 - 杀手寓言 - 21
-- 永生 - S01E12.S02E12.S03E16.S04E01 animation
-- 散修之王 - 21
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52
-- 隐世宗门掌教 40
-- 诛仙 - 46
-- 剑域风云 - S01E40.S02E52.S03E82
+- 永生 - S01E12.S02E12.S03E16.S04E07
+- 散修之王 - 26 0849
+- 隐世宗门掌教 52
+- 诛仙 - 52
+- 剑域风云 - S01E40.S02E52.S03E82 animation
 - 凡人修仙传 - 112
 - 仙逆 - 47
 - learnC - 16 0714
@@ -257,6 +256,7 @@
 - guard(end)
 
 ### Animation
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
 - Viral Hit / 格斗实况 - S01E12
 - Tower of God / 神之塔 S01E13.S02E09 0739 # Plot may be slow
 - 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 # Plot may be a bit repetitive
