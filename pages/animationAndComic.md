@@ -34,9 +34,9 @@
 - 散修之王 - 26 0849
 - 隐世宗门掌教 52
 - 诛仙 - 52
-- 剑域风云 - S01E40.S02E52.S03E82 animation
-- 凡人修仙传 - 112
-- 仙逆 - 47
+- 剑域风云 - S01E40.S02E52.S03E94
+- 凡人修仙传 - 118
+- 仙逆 - 47 animation
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
