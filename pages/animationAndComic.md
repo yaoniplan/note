@@ -36,13 +36,13 @@
 - 诛仙 - 52
 - 剑域风云 - S01E40.S02E52.S03E94
 - 凡人修仙传 - 118
-- 仙逆 - 47 animation
+- 仙逆 - 53
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 68
-- 武神主宰 - 192/459
-- 独步逍遥 - 168/439
+- Shrouding the Heavens / 遮天 - 73
+- 武神主宰 - 192/471
+- 独步逍遥 - 168/439 animation
 - Against the Sky Supreme / 逆天至尊 - 323
 
 ### Comic
