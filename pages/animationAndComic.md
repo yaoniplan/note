@@ -1,6 +1,6 @@
 ### "Animation"
-- 剑来 - S01E05
-- Apotheosis / 百炼成神 - S01E52.S02E36
+- 剑来 - S01E06
+- Apotheosis / 百炼成神 - S01E52.S02E36 animation
 - 沧元图 - 30
 - 神武天尊2024 04
 - 白色闪电 04
@@ -42,8 +42,7 @@
 - top10ModelsOfDeepThinking # 08
 - Shrouding the Heavens / 遮天 - 73
 - 武神主宰 - 192/471
-- 独步逍遥 - 168/439 animation
-- Against the Sky Supreme / 逆天至尊 - 323
+- Against the Sky Supreme / 逆天至尊 - 339
 
 ### Comic
 - 初次深交，请多指教 - 56
@@ -256,6 +255,7 @@
 - guard(end)
 
 ### Animation
+- 独步逍遥 - 168/444 0433 # Plot may be slow
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
 - Viral Hit / 格斗实况 - S01E12
 - Tower of God / 神之塔 S01E13.S02E09 0739 # Plot may be slow
