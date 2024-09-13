@@ -1,7 +1,7 @@
 ### "Animation"
 - 剑来 - S01E06
-- Apotheosis / 百炼成神 - S01E52.S02E36 animation
-- 沧元图 - 30
+- Apotheosis / 百炼成神 - S01E52.S02E42
+- 沧元图 - 30 animation
 - 神武天尊2024 04
 - 白色闪电 04
 - 从路人角色开始的探索英雄谭 06
