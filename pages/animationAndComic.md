@@ -1,10 +1,8 @@
 ### "Animation"
 - 剑来 - S01E06
 - Apotheosis / 百炼成神 - S01E52.S02E42
-- 沧元图 - 30 animation
-- 神武天尊2024 04
-- 白色闪电 04
-- 从路人角色开始的探索英雄谭 06
+- 神武天尊2024 10
+- 从路人角色开始的探索英雄谭 06 animation
 - 亚托莉 -我挚爱的时光- 04
 - 恋爱无法用双子除尽 03
 - 灵武大陆 07
@@ -255,6 +253,8 @@
 - guard(end)
 
 ### Animation
+- 白色闪电 05 0918 # Target audience may be 13 or 14 years old
+- 沧元图 - S01E30
 - 独步逍遥 - 168/444 0433 # Plot may be slow
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
 - Viral Hit / 格斗实况 - S01E12
