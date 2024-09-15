@@ -2,8 +2,7 @@
 - 剑来 - S01E06
 - Apotheosis / 百炼成神 - S01E52.S02E42
 - 神武天尊2024 10
-- 从路人角色开始的探索英雄谭 06 animation
-- 亚托莉 -我挚爱的时光- 04
+- 亚托莉 -我挚爱的时光- 04 animation
 - 恋爱无法用双子除尽 03
 - 灵武大陆 07
 - 深夜冲击 05
@@ -253,6 +252,7 @@
 - guard(end)
 
 ### Animation
+- 从路人角色开始的探索英雄谭 S01E12
 - 白色闪电 05 0918 # Target audience may be 13 or 14 years old
 - 沧元图 - S01E30
 - 独步逍遥 - 168/444 0433 # Plot may be slow
