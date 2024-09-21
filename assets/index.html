@@ -41,6 +41,352 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use Cloudflare D1 as a backend</h4>
+<ul>
+<li><code>npm create cloudflare@latest -- products</code> # Create a project</li>
+<li><code>npx wrangler d1 create products</code> # Create a database</li>
+<li><code>vi ~/.config/store/products/wrangler.toml</code> # Append to end of file<pre><code>[[d1_databases]]
+binding = &quot;DB&quot;
+database_name = &quot;products&quot;
+database_id = &quot;&lt;unique-ID-for-your-database&gt;&quot;
+</code></pre>
+</li>
+<li><code>vi ~/.config/store/products/products.sql</code> # Configure your D1 database<pre><code>DROP TABLE IF EXISTS products;
+CREATE TABLE IF NOT EXISTS products (
+    barcode TEXT PRIMARY KEY,
+    name TEXT,
+    price TEXT
+);
+INSERT INTO products (barcode, name, price) VALUES
+(&#39;6934567890123&#39;,&#39;water1&#39;,&#39;1&#39;),
+(&#39;6934567890124&#39;,&#39;water2&#39;,&#39;2&#39;),
+(&#39;6934567890125&#39;,&#39;water3&#39;,&#39;3&#39;);
+</code></pre>
+<ul>
+<li><code>npx wrangler d1 execute products --local --file=./products.sql</code> # Test locally first</li>
+<li><code>npx wrangler d1 execute products --local --command=&quot;SELECT * FROM products&quot;</code> # Validate your data</li>
+</ul>
+</li>
+<li><code>vi ~/.config/store/products/src/index.ts</code> # Configure your Worker<pre><code>export interface Env {
+  DB: D1Database;  // The D1 database binding
+}
+
+const JSON_HEADERS = { &quot;Content-Type&quot;: &quot;application/json&quot; };
+
+export default {
+  async fetch(request: Request, env: Env): Promise&lt;Response&gt; {
+    const url = new URL(request.url);
+    const pathname = url.pathname;
+    const method = request.method;
+
+    try {
+      if (pathname === &quot;/search_product&quot; &amp;&amp; method === &quot;GET&quot;) {
+        const barcode = url.searchParams.get(&quot;barcode&quot;);
+        const name = url.searchParams.get(&quot;name&quot;);
+
+        // Ensure at least one search parameter is provided
+        if (!barcode &amp;&amp; !name) {
+          return new Response(
+            JSON.stringify({ error: &quot;Missing barcode or name&quot; }),
+            { status: 400, headers: JSON_HEADERS }
+          );
+        }
+
+        let query = &quot;SELECT barcode, name, price FROM products WHERE &quot;;
+        const params: string[] = [];
+
+        if (barcode) {
+          query += &quot;barcode = ?&quot;;
+          params.push(barcode);
+        }
+
+        if (name) {
+          if (params.length &gt; 0) {
+            query += &quot; OR &quot;; // If there&#39;s already a condition, use OR
+          }
+          query += &quot;name LIKE ?&quot;;
+          params.push(`%${name}%`);
+        }
+
+        const stmt = env.DB.prepare(query);
+        const results = await stmt.bind(...params).all();
+
+        return new Response(
+          JSON.stringify(results.results),
+          { headers: JSON_HEADERS }
+        );
+      }
+
+      if (pathname === &quot;/add_product&quot; &amp;&amp; method === &quot;POST&quot;) {
+        const data = await request.json();
+        const { barcode, name, price } = data;
+
+        if (!barcode || !name || !price) {
+          return new Response(
+            JSON.stringify({ error: &quot;Missing data&quot; }),
+            { status: 400, headers: JSON_HEADERS }
+          );
+        }
+
+        await env.DB.prepare(
+          &quot;INSERT INTO products (barcode, name, price) VALUES (?, ?, ?)&quot;
+        ).bind(barcode, name, price).run();
+
+        return new Response(
+          JSON.stringify({ message: &quot;Product added successfully&quot; }),
+          { status: 201, headers: JSON_HEADERS }
+        );
+      }
+
+      if (pathname === &quot;/delete_product&quot; &amp;&amp; method === &quot;DELETE&quot;) {
+        const barcode = url.searchParams.get(&quot;barcode&quot;);
+
+        if (!barcode) {
+          return new Response(
+            JSON.stringify({ error: &quot;Missing barcode&quot; }),
+            { status: 400, headers: JSON_HEADERS }
+          );
+        }
+
+        await env.DB.prepare(
+          &quot;DELETE FROM products WHERE barcode = ?&quot;
+        ).bind(barcode).run();
+
+        return new Response(
+          JSON.stringify({ message: &quot;Product deleted successfully&quot; }),
+          { headers: JSON_HEADERS }
+        );
+      }
+
+      if (pathname === &quot;/update_product&quot; &amp;&amp; method === &quot;PUT&quot;) {
+        const data = await request.json();
+        const { barcode, name, price } = data;
+
+        if (!barcode || !name || price == null) {
+          return new Response(
+            JSON.stringify({ error: &quot;Missing barcode, name, or price&quot; }),
+            { status: 400, headers: JSON_HEADERS }
+          );
+        }
+
+        // Check if the product exists before updating
+        const existingProduct = await env.DB.prepare(
+          &quot;SELECT 1 FROM products WHERE barcode = ?&quot;
+        ).bind(barcode).first();
+
+        if (!existingProduct) {
+          return new Response(
+            JSON.stringify({ error: &quot;Product not found&quot; }),
+            { status: 404, headers: JSON_HEADERS }
+          );
+        }
+
+        await env.DB.prepare(
+          &quot;UPDATE products SET name = ?, price = ? WHERE barcode = ?&quot;
+        ).bind(name, price, barcode).run();
+
+        return new Response(
+          JSON.stringify({ message: &quot;Product updated successfully&quot; }),
+          { headers: JSON_HEADERS }
+        );
+      }
+
+      return new Response(
+        &quot;Route not found&quot;,
+        { status: 404 }
+      );
+
+    } catch (error) {
+      return new Response(
+        JSON.stringify({ error: &quot;Database error&quot; }),
+        { status: 500, headers: JSON_HEADERS }
+      );
+    }
+  },
+} satisfies ExportedHandler&lt;Env&gt;;
+</code></pre>
+<ul>
+<li><code>npx wrangler dev</code> # Develop locally</li>
+<li><code>npx wrangler d1 execute products --remote --file=./products.sql</code> # Import the data into the production version of your database</li>
+<li><code>npx wrangler d1 execute products --remote --command=&quot;SELECT * FROM products&quot;</code> # Validate the data</li>
+<li><code>npx wrangler deploy</code> # Deploy your Worker on the Internet</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Create (Add the new product to the database)<pre><code>curl --request POST http://localhost:8787/add_product \
+    --header &quot;Content-Type: application/json&quot; \
+    --data &#39;{
+        &quot;barcode&quot;: &quot;6934567890123&quot;,
+        &quot;name&quot;: &quot;water&quot;,
+        &quot;price&quot;: 1
+    }&#39;
+</code></pre>
+</li>
+<li>Read (Get product by barcode)<pre><code>curl http://localhost:8787/search_product?barcode=6934567890123
+</code></pre>
+<ul>
+<li><code>barcode</code> # Replace it with <code>name</code> to get product by name</li>
+</ul>
+</li>
+<li>Update (Update the information of a product)<pre><code>curl --request PUT &quot;http://localhost:8787/update_product&quot; \
+    --header &quot;Content-Type: application/json&quot; \
+    --data &#39;{
+        &quot;barcode&quot;: &quot;6934567890123&quot;
+        &quot;name&quot;: &quot;water2&quot;
+        &quot;price&quot;: 2
+    }&#39;
+</code></pre>
+</li>
+<li>Delete (Delete product by barcode)<pre><code>curl --request DELETE http://localhost:8787/delete_product?barcode=6934567890123
+</code></pre>
+</li>
+<li>Because to open the database to the Internet for easy query.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://developers.cloudflare.com/d1/get-started/">https://developers.cloudflare.com/d1/get-started/</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Change wallpaper color in iPhone Shortcuts</h4>
+<ul>
+<li>Get <code>All</code> wallpapers</li>
+<li>Get <code>Random Item</code> from <code>Wallpapers</code></li>
+<li>Switch to <code>Item from List</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to randomize the color of the wallpaper.<ul>
+<li>Make sure add the other three colors of wallpaper (Silver, Gold, Deep purple) before running.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/ydd9ir/ios_162_beta_set_wallpaper_photo_you_can_now_set/itu067k/">https://libreddit.nohost.network/r/shortcuts/comments/ydd9ir/ios_162_beta_set_wallpaper_photo_you_can_now_set/itu067k/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use Systemd timers</h4>
+<ul>
+<li><code>doas vi /etc/systemd/system/checkIn.timer</code><pre><code>[Unit]
+Description=Check in
+
+[Timer]
+OnCalendar=12:30
+
+[Install]
+WantedBy=timers.target
+</code></pre>
+</li>
+<li><code>doas vi /etc/systemd/system/checkIn.service</code><pre><code>[Unit]
+Description=Check in
+
+[Service]
+ExecStart=/home/yaoniplan/.config/store/signIn/.venv/bin/python3 /home/yaoniplan/.config/store/signIn/autoSignIn.py
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas systemctl enable checkIn.timer --now</code> # Enable the timer now</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;selenium&quot;</h4>
+<ul>
+<li>Imports<pre><code>from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import time
+</code></pre>
+</li>
+<li>Define a function<pre><code>def auto_sign_in_and_check_in(driver, username, password):
+    # Log in (Update with actual selector)
+    username_field = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, &quot;#user_login&quot;))
+    )
+    password_field = driver.find_element(By.CSS_SELECTOR, &quot;#password&quot;)
+    submit_button = driver.find_element(By.CSS_SELECTOR, &quot;#userlogin-submit&quot;)
+
+    # Fill in the username and password
+    username_field.send_keys(username)
+    password_field.send_keys(password)
+
+    # Click the submit button
+    submit_button.click()
+
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, &quot;i.pps-icon.pps-icon-close-clear&quot;)) # Update with actual selector
+    )
+
+    # Click the pps icon
+    pps_icon = driver.find_element(By.CSS_SELECTOR, &quot;i.pps-icon.pps-icon-close-clear&quot;) # Update with actual selector
+    pps_icon.click()
+            
+    # Wait for the page to load after login (Update with actual selector)
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, &quot;div.login_text.mobie a.slide-user-menu&quot;))
+    )
+
+    # Click the slide user menu (Update with actual selector)
+    slide_user_menu = driver.find_element(By.CSS_SELECTOR, &quot;div.login_text.mobie a.slide-user-menu&quot;)
+    slide_user_menu.click()
+
+    # Wait for the page to load after login (Update with actual selector)
+    WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.CSS_SELECTOR, &quot;.meiriqiandao &gt; span:nth-child(1)&quot;))
+    )
+
+    # Click the check-in button
+    check_in_button = driver.find_element(By.CSS_SELECTOR, &quot;.meiriqiandao &gt; span:nth-child(1)&quot;)  # Update with actual selector
+    check_in_button.click()
+</code></pre>
+</li>
+<li><pre><code># Setup WebDriver
+driver = webdriver.Chrome()  # Make sure to have the appropriate WebDriver executable
+
+# Open the login URL (Replace with the actual URL)
+driver.get(&quot;https://example.com/login&quot;)
+</code></pre>
+</li>
+<li>Call the function<pre><code># Update with the actual username and password
+auto_sign_in_and_check_in(driver, &quot;yourUsername&quot;, &quot;yourPassword&quot;)
+
+# Wait to see the result before closing (adjust as needed)
+time.sleep(5)
+
+# Optionally, close the browser after the task is completed
+driver.quit()
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to complete some repetitive but meaningless work. (e.g. check-in)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;eval&quot;</h4>
 <ul>
 <li><code>eval rsync -av &quot;$option&quot;</code> # Handle the variable containing spaces correctly</li>
@@ -157,7 +503,7 @@ def add_product_route():
         &quot;barcode&quot;: &quot;6934567890123&quot;,
         &quot;name&quot;: &quot;Water&quot;,
         &quot;price&quot;: 1,
-        &quot;image_url&quot;: &quot;http://example.com/image.jpg&quot;
+        &quot;image_url&quot;: &quot;http://example.com/image.png&quot;
     }&#39;
 </code></pre>
 </li>
@@ -228,79 +574,6 @@ def add_product_route():
 </ul>
 <hr>
 <ul>
-<li><h4>Delete matching rows in iPhone Shortcuts</h4>
-<ul>
-<li>Dictionary<ul>
-<li><code>File</code> <code>departmentStore1.csv</code></li>
-</ul>
-</li>
-<li>Get file from <code>Shortcuts</code> at path <code>File</code></li>
-<li>Ask for <code>Text</code> with <code>What do you want to search for?</code></li>
-<li>Match <code>.*Provided Input.*</code> in <code>File</code><ul>
-<li>Regular expression</li>
-</ul>
-</li>
-<li>Choose from <code>Matches</code></li>
-<li>Replace <code>Chosen Item  </code> with in <code>File</code><ul>
-<li>Paste the line break you copied after &#39;Chosen Item&#39; (To prevent blank lines)</li>
-</ul>
-</li>
-<li>Save <code>Updated Text</code> to <code>Shortcuts</code><ul>
-<li>Subpath <code>File</code></li>
-<li>Overwrite If File Exists (Enable)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Search for matching rows<ul>
-<li>Get file from <code>Shortcuts</code> at path <code>departmentStore1.csv</code></li>
-<li>Dictate text<ul>
-<li>Language <code>Chinese (China Mainland)</code> (Depend on product name you sell)</li>
-</ul>
-</li>
-<li>Match <code>.*Dictated Text.*</code> in <code>File</code></li>
-<li>Choose from <code>Matches</code></li>
-<li>Copy <code>Chosen Item</code> to clipboard (Optional)</li>
-</ul>
-</li>
-<li>Get file name including file extension (Another way)<ul>
-<li>File</li>
-<li>Get Details of Files</li>
-<li>Text (<code>Name</code>.<code>File Extension</code>)</li>
-<li>Set Variable</li>
-</ul>
-</li>
-<li>Remove a line break<ul>
-<li>Copy the line breaks in the text file and paste them into the replace operation</li>
-</ul>
-</li>
-<li>Because to build a small cash register software.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/">https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Modify specific value</h4>
-<ul>
-<li><code>Get File from Folder</code> - <code>Replace Text</code> - <code>Save File</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to build a small cash register software.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/">https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Save selection as file in iPhone Shortcuts</h4>
 <ul>
 <li><code>Text</code><ul>
@@ -323,7 +596,39 @@ def add_product_route():
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>``</li>
+<li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Save the entire text content of a webpage as file in iPhone Shortcuts</h4>
+<ul>
+<li><code>var result = [];</code> # Initialize an empty array</li>
+<li><code>body = document.body;</code> # Get the entire body of the document</li>
+<li>Create a selection object and a range object<pre><code>sel = window.getSelection();
+range = document.createRange();
+</code></pre>
+</li>
+<li><code>range.selectNodeContents(body);</code> # Select the contents of the body</li>
+<li><code>sel.removeAllRanges();</code> # Clear any existing selections</li>
+<li><code>sel.addRange(range);</code> # Add the new range to the selection</li>
+<li><code>selString = sel.toString();</code> # Convert the selected content to a string</li>
+<li><code>completion(selString);</code> # Call a function named <code>completion</code> with the selected string</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Run JavaScript on Web Page (Shortcut Input, paste the code above) - Ask fro Input (Text, Enter file name:, config.json) - Set Name (JavaScript Result, Provided Input) - Save File (Renamed Item, Downloads, Provided Input) - Open File (Saved File, Files)<ul>
+<li><code>completion(document.body.innerText);</code> # Easier method</li>
+<li><code>Set Name</code> # This will change the document type</li>
+</ul>
+</li>
+<li>Because just like saving a file with <code>Ctrl-s</code> in browser.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq">https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq</a></li>
+<li>ChatGPT</li>
 </ul>
 </li>
 </ul>
@@ -340,56 +645,6 @@ def add_product_route():
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Get barcode in iPhone Shortcuts</h4>
-<ul>
-<li>Scan QR or barcode</li>
-<li>Get text from <code>QR/Barcode</code></li>
-<li>Copy <code>Text</code> to clipboard (Optional)</li>
-<li>Show <code>Text</code> (Optional)</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to build a small cash register software.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://www.youtube.com/watch?v=4Kemgg3FSjw">https://www.youtube.com/watch?v=4Kemgg3FSjw</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Get unit price in iPhone Shortcuts</h4>
-<ul>
-<li>Run <code>Get Barcode</code></li>
-<li>Set variable <code>Product barcode</code> to <code>Shortcut Result</code></li>
-<li>Get file from <code>Shortcuts</code> at path <code>departmentStore1.csv</code></li>
-<li>Match <code>Product barcode.*</code> in <code>File</code><ul>
-<li><code>.</code> # Represent any single charater</li>
-<li><code>*</code> # The preceding character can appear zero or more times</li>
-</ul>
-</li>
-<li>Split <code>Matches</code> by <code>Custom</code> <code>,</code></li>
-<li>Get <code>Item at Index</code> <code>3</code> from <code>Split Text</code></li>
-<li>Set variable <code>Product price</code> to <code>Item from List</code></li>
-<li>Show <code>Product price</code> (Optional)</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to build a small cash register software.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>vi departmentStore1.csv</code><pre><code>Product barcode,name,price
-6901234567890,water,1
-</code></pre>
-</li>
-<li><a href="https://utgd.net/article/9410">https://utgd.net/article/9410</a></li>
 </ul>
 </li>
 </ul>
@@ -792,6 +1047,24 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 <li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
 </li>
+<li>Direct (Do not use a proxy for domains)<pre><code>[
+  &quot;route&quot;: {
+    &quot;rules&quot;: [
+      {
+        &quot;domain_suffix&quot;: [
+          &quot;example.com&quot;,
+          &quot;example2.com&quot;
+        ],
+        &quot;outbound&quot;: &quot;direct&quot;
+      },
+      {
+        ...
+      }
+    ]
+  }
+]
+</code></pre>
+</li>
 <li>Select a server<pre><code>{
   &quot;experimental&quot;: {
     &quot;clash_api&quot;: {
@@ -824,6 +1097,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://gist.github.com/yangchuansheng/5182974442015feeeeb058de543a00fd#file-gistfile1-txt-L245">https://gist.github.com/yangchuansheng/5182974442015feeeeb058de543a00fd#file-gistfile1-txt-L245</a></li>
 <li><a href="https://forum.qubes-os.org/t/how-to-bypass-the-gfw-on-qubes-os-when-youre-in-china-qubes-os/14957">https://forum.qubes-os.org/t/how-to-bypass-the-gfw-on-qubes-os-when-youre-in-china-qubes-os/14957</a></li>
 <li><a href="https://libreddit.nohost.network/r/archlinux/comments/17v2ajb/singbox_proxy_drive_me_crazy/">https://libreddit.nohost.network/r/archlinux/comments/17v2ajb/singbox_proxy_drive_me_crazy/</a></li>
 </ul>
@@ -881,6 +1155,7 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-^</code> # Switch to next tab in normal mode (file)</li>
 <li><code>&quot;+y</code> # Copy text into clipboard<ul>
 <li><code>&quot;</code> # Specify the register</li>
 <li><code>+</code> # System clipboard register</li>
@@ -1102,10 +1377,21 @@ connection.commit()
 </ul>
 </li>
 <li>Because to use a database to store data.</li>
+<li>Use SQLite command line<ul>
+<li><code>sqlite3 products.db .dump &gt; products.sql</code> # Generate the SQL dump</li>
+<li><code>sqlite3 products.db &#39;SELECT * FROM products;&#39;</code> # Execute a SQL statement</li>
+<li><code>sqlite3 products.db</code> # Interact with the database</li>
+<li><code>.tables</code> # Get tables (In an interactive shell)</li>
+<li><code>SELECT * FROM products;</code> # Select all entries from a table</li>
+<li><code>nix profile install nixpkgs#sqlite</code> # Install dependencies</li>
+<li>Because to show it quickly temporarily.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://mathpretty.com/16311.html">https://mathpretty.com/16311.html</a></li>
+<li><code>tldr sqlite3</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -3122,6 +3408,12 @@ url-is-set=true
 <ul>
 <li><h4>Use &quot;uv&quot;</h4>
 <ul>
+<li>Build a Python project<ul>
+<li><code>uv init</code> # Create a new Python project in the current directory</li>
+<li><code>uv add selenium</code> # Add a selenium package to the project</li>
+<li><code>uv run checkIn.py</code> # Run a script in the project&#39;s environment</li>
+</ul>
+</li>
 <li><code>uv pip uninstall ani-cli</code> # Uninstall a package</li>
 <li><code>uv pip list</code> # List installed packages</li>
 <li><code>uv pip install anki</code> # Install a package</li>
@@ -3143,6 +3435,7 @@ url-is-set=true
 <li><a href="https://github.com/astral-sh/uv/issues/5450">https://github.com/astral-sh/uv/issues/5450</a></li>
 <li><a href="https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376">https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376</a></li>
 <li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
+<li><code>tldr uv</code></li>
 <li><code>uv help tool</code></li>
 </ul>
 </li>
@@ -3417,20 +3710,72 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <ul>
 <li><h4>Use &quot;jq&quot;</h4>
 <ul>
-<li><code>echo &quot;$response&quot; | jq -r &#39;.content&#39;</code><ul>
-<li><code>echo &quot;$response&quot; | jq .</code> # Get the key (e.g. <code>content</code>)</li>
+<li><code>echo &quot;$response&quot; | jq --raw-output &#39;.content&#39;</code><ul>
+<li><code>echo &quot;$response&quot; | jq .</code> # Get the key (e.g. <code>content</code>, <code>&#39;.data.content[].name&#39;</code>)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>.data.content[] | select(.is_dir == false) | &quot;\(.name | @uri)?sign=\(.sign)&quot;</code><ul>
+<li><code>select(.is_dir == false)</code> # Filter items where <code>is_dir</code> is <code>false</code></li>
+<li><code>&quot;\()&quot;</code> # Embed the value of a field or expression inside a string</li>
+<li><code>@uri</code> # Uniform resource identifier (Encode a string)</li>
+</ul>
+</li>
+<li>Navigate to the <code>name</code> field within each object in the <code>content</code> array inside the <code>data</code> object, extract each <code>name</code> value<ul>
+<li><code>.data</code> # Access the <code>data</code> key in the JSON object</li>
+<li><code>.content</code> # Access the <code>content</code> array</li>
+<li><code>[]</code> # Iterate over each element of the <code>content</code> array</li>
+<li><code>.name</code> # Access the <code>name</code> field of each object in the <code>content</code> array</li>
+</ul>
+</li>
 <li><code>jq</code> # JSON query</li>
-<li><code>-r</code> # Raw output</li>
 <li><code>nix profile install nixpkgs#jq</code> # Install dependencies</li>
 <li>Because to extract the value of the <code>content</code> key from the JSON response.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><code>vi example.json</code><pre><code>{
+  &quot;code&quot;: 200,
+  &quot;message&quot;: &quot;success&quot;,
+  &quot;data&quot;: {
+    &quot;content&quot;: [
+      {
+        &quot;name&quot;: &quot;001 music&quot;,
+        &quot;size&quot;: 0,
+        &quot;is_dir&quot;: true,
+        &quot;modified&quot;: &quot;2022-04-04T01:49:16+08:00&quot;,
+        &quot;created&quot;: &quot;2022-04-04T01:49:16+08:00&quot;,
+        &quot;sign&quot;: &quot;&quot;,
+        &quot;thumb&quot;: &quot;&quot;,
+        &quot;type&quot;: 1,
+        &quot;hashinfo&quot;: &quot;null&quot;,
+        &quot;hash_info&quot;: null
+      },
+      {
+        &quot;name&quot;: &quot;002 music&quot;,
+        &quot;size&quot;: 0,
+        &quot;is_dir&quot;: true,
+        &quot;modified&quot;: &quot;2022-04-04T01:49:17+08:00&quot;,
+        &quot;created&quot;: &quot;2022-04-04T01:49:17+08:00&quot;,
+        &quot;sign&quot;: &quot;&quot;,
+        &quot;thumb&quot;: &quot;&quot;,
+        &quot;type&quot;: 1,
+        &quot;hashinfo&quot;: &quot;null&quot;,
+        &quot;hash_info&quot;: null
+      }
+    ]
+  }
+}
+</code></pre>
+<ul>
+<li><code>jq -r &#39;.data.content[].name&#39;</code><pre><code>001 music
+002 music
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>man jq</code> # <code>/-r</code></li>
 <li>ChatGPT</li>
 </ul>
@@ -5839,6 +6184,132 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Get a JSON value<pre><code>- Dictate Text
+- Text (your URL)
+- Get Contents of URL (Text)
+  &quot;&quot;&quot;
+  curl \
+    -H &#39;Content-Type: application/json&#39; \
+    -d &#39;{&quot;contents&quot;:[{&quot;parts&quot;:[{&quot;text&quot;:&quot;Explain how AI works&quot;}]}]}&#39; \
+    -X POST &#39;https://generativelanguage.googleapis.com/...&#39;
+  &quot;&quot;&quot;
+    - Method (POST)
+    - Headers (Content-Type, application/json)
+    - Request Body (JSON)
+        - Dictionary (contents)
+        - Dictionary (parts)
+        - Text (text, Dictated Text)
+    - https://aistudio.google.com/app/apikey
+    - https://zhile.io/2023/12/24/gemini-pro-proxy.html
+- Get Dictionary Value (Value, candidates.1.content.parts.1.text, Contents of URL)
+  &quot;&quot;&quot;
+  {
+    &quot;candidates&quot;: [
+      {
+        &quot;content&quot;: {
+          &quot;parts&quot;: [
+            {
+              &quot;text&quot;: &quot;## AI: A Simplified Explanation
+              ...
+  &quot;&quot;&quot;
+- Speak Text (Dictionary Value)
+- https://libreddit.nohost.network/r/shortcuts/comments/11hbokj/parsing_json_help/jasqcgh
+</code></pre>
+</li>
+<li>Modify specific value<pre><code>- File (iCloud Drive &gt; Shortcust &gt; departmentStore1)
+- Get File from Folder (File Extension, File)
+- Get Name (File)
+- Text (Name.File Extension)
+- Set Variable (Filename, Text)
+- Run Shortcuts (Search For Matching Rows)
+- Split Text (Shortcut Result, Custom, `,`)
+- Get Item from List (Item at Index, 1, Split Text)
+- Set Variable (Product barcode, Item from List)
+- Get Item from List (Item at Index, 2, Split Text)
+- Set Variable (Product name, Item from List)
+- Get Item from List (Item at Index, 3, Split Text)
+- Set Variable (Product price, Item from List)
+- Choose from Menu (Product barcode, Product name, Product price)
+    - Ask for Input (Text, Product barcode, Product barcode)
+    - Replace Text (`Product barcode, Product name, Product price`, `Provided Input, Product name, Product price`, File)
+    - Save File (Updated Text, Shortcuts, Filename, Enable &#39;Overwrite If File Exists&#39;)
+    - Quick Look (Saved File, Optional)
+    - The remaining two options in the menu can be modified accordingly according to the steps of the first option
+- https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/
+</code></pre>
+</li>
+<li>Delete matching rows<pre><code>- File (iCloud Drive &gt; Shortcuts &gt; departmentStore1)
+- Get Details of Files (Name, File)
+- Text (`Name`.`File Extension`)
+- Set Variable (File name, Text)
+- Ask for Input (Text, What do you want to search for?)
+- Match Text (`.*Provided Input.*`, File)
+- Choose from List (Matches)
+- Replace Text (`Choose Item  `, File)
+    - Paste the line break you copied after &#39;Chosen Item&#39; (To prevent blank lines)
+- Save File (Updated Text, Shortcuts, File name, Enable &#39;Overwrite If File Exists&#39;)
+- https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/
+</code></pre>
+</li>
+<li>Search for matching rows<pre><code>- Get File from Folder (Shortcuts, departmentStore1.csv)
+- Choose from Menu (Dictate, Scan, Type)
+    - Dictate text (China Mainland) (Depend on product name you sell)
+    - Run Shortcuts (Get Barcode)
+    - Ask for Input
+- Match Text (`.*Dictated Text.*`, File)
+- Choose from List (Matches)
+</code></pre>
+</li>
+<li>Get unit price<pre><code>- Run Shortcut (Get Barcode)
+- Set Variable (Product barcode, Shortcut Result)
+- Get File from Folder (Shortcuts, departmentStore1.csv)
+    - `vi departmentStore1.csv`
+      &quot;&quot;&quot;
+      barcode,name,price
+      6901234567890,water,1
+      &quot;&quot;&quot;
+- Match Text (`Product barcode.*`, File)
+    - `.` # Represent any single charater
+    - `*` # The preceding character can appear zero or more times
+- Split Text (Matches, Custom, `,`)
+- Get Dictionary from Input (Item at Index, 3, Split Text)
+- Set Variable (Product price, Item from List)
+- Show Result (Product price, Optional)
+- https://utgd.net/article/9410
+</code></pre>
+</li>
+<li>Get barcode<pre><code>- Scan QR or Barcode
+- Get Text from Input (QR/Barcode)
+- Copy to Clipboard (Text, Optional)
+- Show Result (Text, Optional)
+- https://www.youtube.com/watch?v=4Kemgg3FSjw
+</code></pre>
+</li>
+<li>Select JSON arrays<pre><code>- Get Dictionary from Input (Contents of URL)
+- Replace Text (`clickReturn`, Dictionary)
+    - Delete the line break to display it normally in the list
+- Choose from List (Updated Text)
+</code></pre>
+</li>
+<li>Display a notification for a few seconds<pre><code>- Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
+  &quot;&quot;&quot;
+  let notification = new Notification();
+  notification.title = &quot;English&quot;;
+  notification.body = &quot;`Translated Text`&quot;;
+  notification.identifier = &quot;my.music.notification&quot;;
+  notification.schedule();
+  Script.complete();
+  
+  Notification.removeDelivered([&quot;my.music.notification&quot;]);
+  Script.complete();
+  &quot;&quot;&quot;
+- https://libreddit.nohost.network/r/shortcuts/comments/16p7iwp/how_can_i_make_notifications_clear/k1p96sz
+</code></pre>
+</li>
+<li>Switch App Store region temporarily<pre><code>- https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/
+</code></pre>
+</li>
+<li>Dismiss Siri and Continue - Open URLs (<code>weixin://widget/pay</code>) # Open WeChat payment code, <a href="https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1">https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1</a></li>
 <li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>) - URL Encode (Decode, URL) # Beautify JSON format, <a href="https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
 <li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
 <li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
@@ -8262,12 +8733,14 @@ UEFI VBOX CD-ROM VB2-01700376
 </ul>
 <hr>
 <ul>
-<li><h4>View system log in Systemd</h4>
+<li><h4>Use &quot;journalctl&quot;</h4>
 <ul>
 <li><code>journalctl -e</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--since &quot;2024-09-02 08:00:00&quot;</code> # From time</li>
+<li><code>--until &quot;2024-09-02 09:00:00&quot;</code> # To time</li>
 <li><code>-e</code> # End</li>
 <li>Because to debug scripts that don&#39;t work properly.</li>
 </ul>
@@ -9607,6 +10080,7 @@ curl --head --silent https://google.com
 <li><code>vi ~/.npmrc</code> # Set a mirror<pre><code>registry=https://npmreg.proxy.ustclug.org/
 </code></pre>
 <ul>
+<li><code>npm get registry</code> # Get the current registry URL</li>
 <li>Because to improve the speed. (e.g. <code>npm install express</code>)</li>
 </ul>
 </li>
@@ -10618,6 +11092,10 @@ sleep &quot;$1&quot;; notification
 <li><code>q</code> # Quit</li>
 </ul>
 </li>
+<li><code>xdg-settings get default-web-browser</code> # View default browser<ul>
+<li>Because to use the command <code>xdg-open https://yaoniplan.eu.org</code>.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -10898,22 +11376,6 @@ x11-misc/dmenu savedconfig
 <ul>
 <li>A directory</li>
 <li>In Unix-like operating system</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>View the default browser in Linux</h4>
-<ul>
-<li><code>xdg-settings get default-web-browser</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to use the command <code>xdg-open https://yaoniplan.eu.org</code>.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -11334,6 +11796,11 @@ set -g history-limit 50000
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use &quot;js-beautify&quot;<ul>
+<li><code>wl-paste | js-beautify</code> # Format code</li>
+<li><code>uv tool install jsbeautifier</code> # Install dependencies</li>
+</ul>
+</li>
 <li>Because to make the code more readable<ul>
 <li>marked.min.js</li>
 </ul>
@@ -13497,7 +13964,7 @@ Environment=&quot;HTTPS_PROXY=http://192.168.10.100:7890&quot;
 <li><code>https://docker.nju.edu.cn/</code> # Replace it with a registry mirror in your country</li>
 <li><code>doas systemctl restart docker</code> # Restart docker to apply changes</li>
 <li><code>docker info</code> # Check the information about &#39;Registry Mirrors&#39;</li>
-<li><a href="https://51.ruyo.net/18687.html">https://51.ruyo.net/18687.html</a> # Another way using your own registry mirror</li>
+<li><a href="https://blog.lty520.faith/%E5%8D%9A%E6%96%87/%E8%87%AA%E5%BB%BAdocker-hub%E5%8A%A0%E9%80%9F%E9%95%9C%E5%83%8F/#%E6%96%B9%E6%A1%88%E4%BA%8C%E4%BD%BF%E7%94%A8-cloudflare-worker-%E6%90%AD%E5%BB%BA">https://blog.lty520.faith/%E5%8D%9A%E6%96%87/%E8%87%AA%E5%BB%BAdocker-hub%E5%8A%A0%E9%80%9F%E9%95%9C%E5%83%8F/#%E6%96%B9%E6%A1%88%E4%BA%8C%E4%BD%BF%E7%94%A8-cloudflare-worker-%E6%90%AD%E5%BB%BA</a> # Another way using your own registry mirror</li>
 </ul>
 </li>
 <li><code>docker exec --interactive --tty diary sh</code> # Interact with container</li>
@@ -16152,6 +16619,12 @@ cp ./* ~/.local/share/rofi/themes/
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use a GitHub mirror when can&#39;t access the Internet<ul>
+<li><a href="https://github.com/nICEnnnnnnnLee/GithubSoEasy">https://github.com/nICEnnnnnnnLee/GithubSoEasy</a></li>
+<li><code>git clone https://git.yaoniplan.eu.org/yaoniplan/dotfiles</code></li>
+<li><code>https://git.yaoniplan.eu.org/loginyyy?ko=1</code> # Access this link first to authorize before using the GitHub front end</li>
+</ul>
+</li>
 <li><code>add</code> # Replace it with <code>delete</code> to delete the push URL</li>
 <li><code>192.168.10.100</code> # Replace it with <code>github.com</code></li>
 <li><code>/var/git/note.git</code> # Replace it with <code>yaoniplan/note.git</code></li>
@@ -16330,6 +16803,7 @@ set number
 <li><code>%02d</code> # A zero-padded two-digit integer (Optional)</li>
 <li><code>line(&#39;.&#39;)+1</code> # Add 1 to the current line number</li>
 <li><code>.&#39;.MP4&#39;</code> # Concatenate the formatted number with <code>.MP4</code> (Optional)</li>
+<li><code>:%s/$/\=printf(line(&#39;.&#39;))/g</code> # This works too</li>
 </ul>
 </li>
 <li><code>:%s/\v\d{2}\.MP4$//g</code> # Remove what the above command generates<ul>
@@ -16510,7 +16984,8 @@ set -g @continuum-save-interval &#39;1&#39;
 <ul>
 <li><h4>Use &quot;crontab&quot;</h4>
 <ul>
-<li><code>crontab -e</code><pre><code>* * * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
+<li><code>crontab -e</code><pre><code>0~59 8 * * * $HOME/.config/checkIn/.venv/bin/python $HOME/.config/checkIn/checkIn.py
+* * * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
 @reboot /usr/bin/touch /home/yaoniplan/testTwo.md
 30 16 * * * /usr/bin/bash $HOME/.local/bin/pushCode.sh
 </code></pre>
@@ -16519,6 +16994,10 @@ set -g @continuum-save-interval &#39;1&#39;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>* * * * *</code> # Every minute when the computer is running<ul>
+<li><code>53,54,55 11 * * *</code> # At 11:53, 11:54, and 11:55</li>
+<li><code>53</code> # 53rd minute</li>
+<li><code>11</code> # 11th hour</li>
+<li><code>0~59 8 * * *</code> # At a random minute between 8:00 and 8:59</li>
 <li><code>*/5 * * * *</code> # Every 5 minutes is an interval</li>
 <li><code>*</code> # Every</li>
 <li><code>/</code> # Interval</li>
