@@ -11,9 +11,7 @@
 - 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E11
 - 元尊 S01E26
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E11
-- 风云变2024 S01E15 animation
-- 2.5次元的诱惑 S01E07
-- 陆地键仙 S01E40
+- 陆地键仙 S01E40 animation
 - 金吾卫之风起金陵 S01E16
 - 小市民系列 S01E08
 - 擅长逃跑的少主殿下 S01E09
@@ -244,6 +242,8 @@
 - guard(end)
 
 ### Animation
+- 2.5次元的诱惑 S01E11 11:59 # Target audience may be people who like cosplay
+- 风云变2024 S01E17 0354 # Target audience may be 13 or 14 years old
 - 我会招架一切 反误会的世界最强想成为冒险者 S01E12
 - 异世界自杀小队 S01E10
 - 多数欠 S01E05 1420 # Target audience may be 13 or 14 years old
