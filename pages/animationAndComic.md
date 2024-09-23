@@ -11,23 +11,19 @@
 - 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E11
 - 元尊 S01E26
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E11
-- 陆地键仙 S01E40 animation
-- 金吾卫之风起金陵 S01E16
-- 小市民系列 S01E08
-- 擅长逃跑的少主殿下 S01E09
-- 幻宠师 - 16
-- 杀手寓言 - 21
-- 永生 - S01E12.S02E12.S03E16.S04E07
-- 散修之王 - 26 0849
-- 隐世宗门掌教 52
-- 诛仙 - 52
-- 剑域风云 - S01E40.S02E52.S03E94
-- 凡人修仙传 - 118
-- 仙逆 - 53
+- 陆地键仙 S01E49
+- 小市民系列 S01E10
+- 擅长逃跑的少主殿下 S01E11
+- 杀手寓言 - 21 animation
+- 永生 - S01E12.S02E12.S03E16.S04E09
+- 散修之王 - 29
+- 剑域风云 - S01E40.S02E52.S03E98
+- 凡人修仙传 - 120
+- 仙逆 - 55
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 73
+- Shrouding the Heavens / 遮天 - 75
 - 武神主宰 - 192/471
 - Against the Sky Supreme / 逆天至尊 - 339
 
@@ -242,6 +238,10 @@
 - guard(end)
 
 ### Animation
+- 诛仙 - S01E26.S02E26
+- 幻宠师 - S01E16
+- 隐世宗门掌教 S01E52
+- 金吾卫之风起金陵 S01E16
 - 2.5次元的诱惑 S01E11 11:59 # Target audience may be people who like cosplay
 - 风云变2024 S01E17 0354 # Target audience may be 13 or 14 years old
 - 我会招架一切 反误会的世界最强想成为冒险者 S01E12

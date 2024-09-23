@@ -41,7 +41,45 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Use Cloudflare D1 as a backend</h4>
+<li><h4>Set up a profile</h4>
+<ul>
+<li>Typing SVG<pre><code>![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hello%20there%2C%20I&#39;m%20yaoniplan%20%F0%9F%91%8B)
+</code></pre>
+<ul>
+<li><code>&amp;font=Fira%20Code</code></li>
+<li>Remember to encode the string</li>
+</ul>
+</li>
+<li>Skill icons<pre><code>![skills](https://skillicons.dev/icons?i=arch,bash)
+</code></pre>
+<ul>
+<li><code>bash</code> # Replace it with other icon id</li>
+<li><code>&amp;perline=14</code></li>
+</ul>
+</li>
+<li>Repo cards<pre><code>[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&amp;repo=note)](https://github.com/yaoniplan/note)
+</code></pre>
+<ul>
+<li><code>&amp;theme=dark</code></li>
+<li><code>&amp;show_owner=true</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Becuase to highlight my skills and experience.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/anuraghazra/github-readme-stats#themes">https://github.com/anuraghazra/github-readme-stats#themes</a></li>
+<li><a href="https://github.com/tandpfun/skill-icons#example">https://github.com/tandpfun/skill-icons#example</a></li>
+<li><a href="https://github.com/DenverCoder1/readme-typing-svg#-quick-setup">https://github.com/DenverCoder1/readme-typing-svg#-quick-setup</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;wrangler&quot;</h4>
 <ul>
 <li><code>npm create cloudflare@latest -- products</code> # Create a project</li>
 <li><code>npx wrangler d1 create products</code> # Create a database</li>
@@ -242,7 +280,10 @@ export default {
 <li>Delete (Delete product by barcode)<pre><code>curl --request DELETE http://localhost:8787/delete_product?barcode=6934567890123
 </code></pre>
 </li>
-<li>Because to open the database to the Internet for easy query.</li>
+<li>Because to open the database to the Internet for easy query.<ul>
+<li>Use Cloudflare D1 as a backend</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -253,6 +294,22 @@ export default {
 </ul>
 <hr>
 <ul>
+<li><h4>Integrate Cloudflare Workers KV for low-latency access</h4>
+<ul>
+<li><code>npx wrangler kv namespace create products</code> # Create a KV namespace</li>
+<li><code>vi ~/.config/store/products/wrangler.toml</code><pre><code>[[kv_namespaces]]
+binding = &quot;products&quot;
+id = &quot;&lt;your-kv-namespace-id&gt;&quot;
+</code></pre>
+</li>
+<li><code>vi ~/.config/store/products/src/index.ts</code><pre><code>// Adjust as needed
+</code></pre>
+</li>
+<li><code>npx wrangler deploy</code> # Deploy your Worker on the Internet</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em></li>
+<li><em><strong>References</strong></em></li>
 <li><h4>Change wallpaper color in iPhone Shortcuts</h4>
 <ul>
 <li>Get <code>All</code> wallpapers</li>
@@ -3710,20 +3767,21 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <ul>
 <li><h4>Use &quot;jq&quot;</h4>
 <ul>
-<li><code>echo &quot;$response&quot; | jq --raw-output &#39;.content&#39;</code><ul>
-<li><code>echo &quot;$response&quot; | jq .</code> # Get the key (e.g. <code>content</code>, <code>&#39;.data.content[].name&#39;</code>)</li>
-</ul>
-</li>
+<li><code>echo &quot;$response&quot; | jq --raw-output &#39;.content&#39;</code> # Replace <code>.content</code> with the desired key for filtering</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>.[].url</code><ul>
+<li><code>.[]</code> # Iterate over each object</li>
+</ul>
+</li>
 <li><code>.data.content[] | select(.is_dir == false) | &quot;\(.name | @uri)?sign=\(.sign)&quot;</code><ul>
 <li><code>select(.is_dir == false)</code> # Filter items where <code>is_dir</code> is <code>false</code></li>
 <li><code>&quot;\()&quot;</code> # Embed the value of a field or expression inside a string</li>
 <li><code>@uri</code> # Uniform resource identifier (Encode a string)</li>
 </ul>
 </li>
-<li>Navigate to the <code>name</code> field within each object in the <code>content</code> array inside the <code>data</code> object, extract each <code>name</code> value<ul>
+<li><code>.data.content[].name</code> # Navigate to the <code>name</code> field within each object in the <code>content</code> array inside the <code>data</code> object, extract each <code>name</code> value<ul>
 <li><code>.data</code> # Access the <code>data</code> key in the JSON object</li>
 <li><code>.content</code> # Access the <code>content</code> array</li>
 <li><code>[]</code> # Iterate over each element of the <code>content</code> array</li>
@@ -3770,7 +3828,7 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 }
 </code></pre>
 <ul>
-<li><code>jq -r &#39;.data.content[].name&#39;</code><pre><code>001 music
+<li><code>jq --raw-output &#39;.data.content[].name&#39;</code><pre><code>001 music
 002 music
 </code></pre>
 </li>
@@ -6313,10 +6371,21 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>) - URL Encode (Decode, URL) # Beautify JSON format, <a href="https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
 <li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
 <li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
-<li>Get Dictionary from Input (Contents of URL) - Get Dictionary Value (Value, data.content, Dictionary) - Repeat with Each (Dictionary Value) - Text (Repeat Item (Type: Dictionary; Key: name)) # Get a list of all file names from the API (JSON format), <a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
+<li>Get a list of all file names from the API (JSON format)<pre><code>- Get Dictionary from Input (Contents of URL)
+- Get Dictionary Value (Value, data.content, Dictionary)
+- Repeat with Each (Dictionary Value)
+- Text (Repeat Item (Type: Dictionary; Key: name))
+- https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09
+</code></pre>
+</li>
 <li>Get Time Between Dates (Current Date, 00:00, Minutes) - Calculate (1440, +, Time Between Dates) - Show Result (Calculation Result) # How many minutes are left today?, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
 <li>Convert Image (Shortcut Input, PNG) - Save to Photo Album (Converted Image, Recents) # Convert PDFs (Captured long screen) to PNGs, <a href="https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb">https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb</a></li>
-<li>Get File from Folder (VLC, audioBook.txt) - <strong>Split Text</strong> (File, New Lines) - Get Item from List (Random Item, Split Text) # Get each line of a file before playing audiobook randomly, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/">https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/</a></li>
+<li>Get each line of a file before playing audiobook randomly<pre><code>- Get File from Folder (VLC, audioBook.txt)
+- Split Text (File, New Lines)
+- Get Item from List (Random Item, Split Text)
+- https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/
+</code></pre>
+</li>
 <li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
