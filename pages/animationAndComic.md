@@ -1,4 +1,9 @@
 ### "Animation"
+- 战神联盟 16
+- 义妹生活 animation
+- 神墓 - 16 # End of the first season
+- 天影
+- 无尽神域
 - 剑来 - S01E06
 - Apotheosis / 百炼成神 - S01E52.S02E42
 - 神武天尊2024 10
@@ -14,7 +19,7 @@
 - 陆地键仙 S01E49
 - 小市民系列 S01E10
 - 擅长逃跑的少主殿下 S01E11
-- 杀手寓言 - 21 animation
+- 杀手寓言 - 24
 - 永生 - S01E12.S02E12.S03E16.S04E09
 - 散修之王 - 29
 - 剑域风云 - S01E40.S02E52.S03E98
@@ -24,8 +29,8 @@
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - Shrouding the Heavens / 遮天 - 75
-- 武神主宰 - 192/471
-- Against the Sky Supreme / 逆天至尊 - 339
+- 武神主宰 - 192/479
+- Against the Sky Supreme / 逆天至尊 - 342
 
 ### Comic
 - 初次深交，请多指教 - 56
@@ -238,6 +243,7 @@
 - guard(end)
 
 ### Animation
+- 笼中人 04 0823 # Target audience maybe 13 or 14 years old
 - 诛仙 - S01E26.S02E26
 - 幻宠师 - S01E16
 - 隐世宗门掌教 S01E52
@@ -676,7 +682,6 @@
 - DOTA：龙之血 - 08 # End of the first, second and third season
 - 力拔山河兮子唐 - 20 # End of the first season
 - 星武神诀第二季 - 40 # End of the second season
-- 神墓 - 16 # End of the first season
 - 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
 - 黑门 - 12 # end of the first season
 - 苍兰诀- 12 # end of the first season
