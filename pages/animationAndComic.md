@@ -1,10 +1,9 @@
 ### "Animation"
 - 战神联盟 16
-- 义妹生活 animation
-- 神墓 - 16 # End of the first season
-- 天影
-- 无尽神域
-- 剑来 - S01E06
+- 神墓 - 24 animation
+- 天影 - 04
+- 无尽神域 - 14
+- 剑来 - S01E08
 - Apotheosis / 百炼成神 - S01E52.S02E42
 - 神武天尊2024 10
 - 亚托莉 -我挚爱的时光- 10
@@ -243,6 +242,7 @@
 - guard(end)
 
 ### Animation
+- 义妹生活 02 # Target audience maybe 13 or 14 years old
 - 笼中人 04 0823 # Target audience maybe 13 or 14 years old
 - 诛仙 - S01E26.S02E26
 - 幻宠师 - S01E16

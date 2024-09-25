@@ -43,6 +43,13 @@
 <ul>
 <li><h4>Set up a profile</h4>
 <ul>
+<li>Contribution snake<pre><code>&lt;picture&gt;
+  &lt;source media=&quot;(prefers-color-scheme: dark)&quot; srcset=&quot;https://raw.githubusercontent.com/yaoniplan/yaoniplan/output/github-contribution-grid-snake-dark.svg&quot;&gt;
+  &lt;source media=&quot;(prefers-color-scheme: light)&quot; srcset=&quot;https://raw.githubusercontent.com/yaoniplan/yaoniplan/output/github-contribution-grid-snake.svg&quot;&gt;
+  &lt;img alt=&quot;github-snake&quot; src=&quot;https://raw.githubusercontent.com/yaoniplan/yaoniplan/output/github-contribution-grid-snake.svg&quot;&gt;
+&lt;/picture&gt;
+</code></pre>
+</li>
 <li>Typing SVG<pre><code>![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Hello%20there%2C%20I&#39;m%20yaoniplan%20%F0%9F%91%8B)
 </code></pre>
 <ul>
@@ -53,24 +60,67 @@
 <li>Skill icons<pre><code>![skills](https://skillicons.dev/icons?i=arch,bash)
 </code></pre>
 <ul>
-<li><code>bash</code> # Replace it with other icon id</li>
+<li><code>arch</code> # Replace it with other icon id (e.g. debian)</li>
 <li><code>&amp;perline=14</code></li>
 </ul>
 </li>
 <li>Repo cards<pre><code>[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=yaoniplan&amp;repo=note)](https://github.com/yaoniplan/note)
 </code></pre>
 <ul>
-<li><code>&amp;theme=dark</code></li>
+<li><code>&amp;theme=dark</code> # Replace <code>dark</code> with other theme (e.g. cobalt)</li>
 <li><code>&amp;show_owner=true</code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use GitHub Actions<ul>
+<li><code>vi ~/.config/yaoniplan/.github/workflows/main.yml</code><pre><code>name: generate animation
+
+on:
+  # Run automatically every 24 hours
+  schedule:
+    - cron: &quot;0 */24 * * *&quot;
+  # Allows to manually run the job at any time
+  workflow_dispatch:
+  # Run on every push on the development branch
+  push:
+    branches:
+    - development
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Generates a snake game from a GitHub user (&lt;github_user_name&gt;) contributions graph, output a svg animation at &lt;svg_out_path&gt;
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      # Push the content of &lt;build_dir&gt; to a branch
+      # The content will be available at https://raw.githubusercontent.com/&lt;github_user&gt;/&lt;repository&gt;/&lt;target_branch&gt;/&lt;file&gt;, or as github page
+      - name: push github-contribution-grid-snake.svg to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Becuase to highlight my skills and experience.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/Platane/snk#usage">https://github.com/Platane/snk#usage</a> # dist: distribution</li>
 <li><a href="https://github.com/anuraghazra/github-readme-stats#themes">https://github.com/anuraghazra/github-readme-stats#themes</a></li>
 <li><a href="https://github.com/tandpfun/skill-icons#example">https://github.com/tandpfun/skill-icons#example</a></li>
 <li><a href="https://github.com/DenverCoder1/readme-typing-svg#-quick-setup">https://github.com/DenverCoder1/readme-typing-svg#-quick-setup</a></li>
@@ -6242,6 +6292,18 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Open in Vim<pre><code># Receive Files input from
+# If there&#39;s no input: Ask For Files
+- Put File (Shortcut Input)
+    - Disable &#39;Show When Run&#39;
+- Text (Name.File Extension)
+- Execute Command (vim complete filename, exit)
+- Get file (complete filename)
+    - Disable &#39;Show When Run&#39;
+- Save File (File, Shortcuts, complete filename)
+- https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/
+</code></pre>
+</li>
 <li>Get a JSON value<pre><code>- Dictate Text
 - Text (your URL)
 - Get Contents of URL (Text)
@@ -16661,7 +16723,14 @@ cp ./* ~/.local/share/rofi/themes/
 </li>
 </ul>
 </li>
-<li><code>git init ~/parse/</code> # Initialize Git repository in the directory to control version of files</li>
+<li><code>git init ~/parse/</code> # Initialize Git repository in the directory to control version of files<ul>
+<li><code>git add --all</code></li>
+<li><code>git commit --message=&quot;First commit&quot;</code></li>
+<li><code>git remote add origin git@github.com:yaoniplan/yaoniplan.git</code></li>
+<li>New a repository in GitHub</li>
+<li><code>git push origin master</code></li>
+</ul>
+</li>
 <li><code>git clone https://yaoniplan:yourPersonalAccessToken@github.com/yaoniplan/diary</code> # Clone a private repository<ul>
 <li><code>yaoniplan</code> # Replace it with your user name</li>
 <li><code>yourPersonalAccessToken</code> # Replace it with yours</li>
