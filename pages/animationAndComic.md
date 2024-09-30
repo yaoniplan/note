@@ -8,10 +8,9 @@
 - 神武天尊2024 12
 - 亚托莉 -我挚爱的时光- 11
 - 一念永恒 - S01E52.S02E54.S03E16
-- 夜晚游玩生活 S01E07 #NSFW animation
-- 异世界失格 S01E09
+- 夜晚游玩生活 S01E07 #NSFW
 - 斩神之凡尘神域 S01E08
-- 擅长逃跑的殿下 S01E10
+- 擅长逃跑的殿下 S01E10 animation
 - 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E11
 - 元尊 S01E26
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E11
@@ -242,6 +241,7 @@
 - guard(end)
 
 ### Animation
+- 异世界失格 S01E12
 - 义妹生活 02 # Target audience maybe 13 or 14 years old
 - 笼中人 04 0823 # Target audience maybe 13 or 14 years old
 - 诛仙 - S01E26.S02E26
