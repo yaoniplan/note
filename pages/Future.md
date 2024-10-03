@@ -118,7 +118,6 @@
 ## E-mail
 - http://mail.0du.win/
 - https://mail.google.com/mail/u/0/#inbox
-- https://outlook.live.com/mail/0/junkemail
 - https://temp-mail.org/en/
 
 ## E-book

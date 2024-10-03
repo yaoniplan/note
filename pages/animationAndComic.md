@@ -19,15 +19,15 @@
 - 杀手寓言 - 25
 - 永生 - S01E12.S02E12.S03E16.S04E10
 - 散修之王 - 30
-- 剑域风云 - S01E40.S02E52.S03E98 animation
-- 凡人修仙传 - 120
-- 仙逆 - 55
+- 剑域风云 - S01E40.S02E52.S03E100
+- 凡人修仙传 - 121
+- 仙逆 - 56
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 75
-- 武神主宰 - 192/479
-- Against the Sky Supreme / 逆天至尊 - 342
+- Shrouding the Heavens / 遮天 - 77
+- 武神主宰 - 192/480
+- Against the Sky Supreme / 逆天至尊 - 344 animation
 
 ### Comic
 - 初次深交，请多指教 - 56
