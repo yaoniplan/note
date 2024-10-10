@@ -1,5 +1,5 @@
 ### "Animation"
-- 战神联盟 16
+- 战神联盟 16 animation
 - 神墓 - 24
 - 天影 - 04
 - 无尽神域 - 15
@@ -27,7 +27,7 @@
 - top10ModelsOfDeepThinking # 08
 - Shrouding the Heavens / 遮天 - 77
 - 武神主宰 - 192/480
-- Against the Sky Supreme / 逆天至尊 - 344 animation
+- Against the Sky Supreme / 逆天至尊 - 347
 
 ### Comic
 - 初次深交，请多指教 - 56
