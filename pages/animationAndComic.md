@@ -1,6 +1,6 @@
 ### "Animation"
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E02
-- 辰星降临之国的妮娜 animation
+- 辰星降临之国的妮娜
 - 愿来世为他人
 - Haigakura 稗记舞咏
 - 妖怪学校的新人教师！
@@ -18,29 +18,25 @@
 - 一个人的异世界攻略
 - 胆大党
 - 神选
-- 机械手臂
-- 一兆游戏
-- 蓝箱
-- 再见龙生，你好人生
-- 真的要结婚吗
-- 灵武大陆 19
-- 常轨脱离Creative
-- 蘑菇狗
-- 决斗大师 LOST ～追忆的水晶～
-- 刀剑神域外传 Gun Gale Online 第二季
-- 当不成魔法师的女孩
-- 到了联谊会上发现连一个女生都没有
-- 虎鹤妖师录
-- 柔光魔女股份有限公司
-- 龙珠大魔
-- 重来吧，魔王大人！R
-- 蓝色监狱
-- 地。-关于地球的运动
-- 暗杀女仆冥土小姐
-- 被逐出队伍的治愈师，其实是最强的
-- 魔王2099
-- 无尽神域
-- 乱马1/2
+- 机械手臂 animation
+- 一兆游戏 S01E04
+- 再见龙生，你好人生 S01E03
+- 真的要结婚吗 S01E03
+- 灵武大陆 28
+- 常轨脱离Creative S01E02
+- 蘑菇狗 S01E03
+- 决斗大师 LOST ～追忆的水晶～ S01E01
+- 当不成魔法师的女孩 S01E02
+- 虎鹤妖师录 S01E03
+- 柔光魔女股份有限公司 - S01E02
+- 龙珠大魔 S01E01
+- Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E03
+- 蓝色监狱 S01E24.S02E2
+- 地。-关于地球的运动 S01E03
+- 暗杀女仆冥土小姐 S01E02
+- 被逐出队伍的治愈师，其实是最强的 S01E02
+- 魔王2099 S01E01
+- 乱马1/2 S01E02
 - 战神联盟 21
 - 神墓 - 26
 - 天影 - 06
@@ -275,6 +271,9 @@
 - guard(end)
 
 ### Animation
+- 蓝箱 S01E02 # Target audience may be 13 or 14 years old
+- 刀剑神域外传 Gun Gale Online 第二季 1859 Target audience may be female
+- 到了联谊会上发现连一个女生都没有 S01E02 1123 # Maybe the target audience is gay men even though the voice is female
 - 杀手寓言 S01E25
 - 小市民系列 S01E10
 - 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E12
@@ -627,7 +626,6 @@
 - プリンセス ロード〜薔薇と髑髏の紋章〜 - #NSFW 01 # The rest of the resources were not found
 - THE レイプマン RAPEMAN アニメ・バージョン「Target1由香」「Target2真紀」- #NSFW 01 # End of the first part
 - ミネルバの剣士 - 05 #NSFW End of the first part
-- Demon Lord, Retry! / 重来吧，魔王大人！- 12 # End of the first season
 - 星河至尊 - 157 # End of the first part
 - 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
 - Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
