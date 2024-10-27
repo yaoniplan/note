@@ -13,12 +13,11 @@
 - 重生大小姐正在攻克龙帝殿下
 - 成为名垂青史的反派大小姐吧
 - 科学×冒险与生存！
-- 缉妖录之启程篇
-- 悲喜渔生
-- 一个人的异世界攻略
-- 胆大党
-- 神选
-- 机械手臂 animation
+- 缉妖录之启程篇 animation
+- 悲喜渔生 S01E04
+- 一个人的异世界攻略 S01E05
+- 胆大党 S01E04
+- 神选 S01E06
 - 一兆游戏 S01E04
 - 再见龙生，你好人生 S01E03
 - 真的要结婚吗 S01E03
@@ -271,6 +270,7 @@
 - guard(end)
 
 ### Animation
+- 机械手臂 S01E03 0246 # Target audience may be 13 or 14 years old
 - 蓝箱 S01E02 # Target audience may be 13 or 14 years old
 - 刀剑神域外传 Gun Gale Online 第二季 1859 Target audience may be female
 - 到了联谊会上发现连一个女生都没有 S01E02 1123 # Maybe the target audience is gay men even though the voice is female
