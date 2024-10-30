@@ -6,12 +6,7 @@
 - 妖怪学校的新人教师！
 - 缘结甘神家
 - 少年白马醉春风2
-- 食草老龙被冠以恶龙之名
-- 村井之恋
-- Re：从零开始的异世界生活 第三季
-- Acro Trip
-- 重生大小姐正在攻克龙帝殿下
-- 成为名垂青史的反派大小姐吧 animation
+- 食草老龙被冠以恶龙之名 animation
 - 科学×冒险与生存！ S01E03
 - 缉妖录之启程篇 S01E12
 - 悲喜渔生 S01E04
@@ -270,6 +265,11 @@
 - guard(end)
 
 ### Animation
+- 村井之恋 # It's a TV series
+- Re：从零开始的异世界生活 第三季 # Target audience may be 13 or 14 years old
+- Acro Trip S01E01 1144 # Target audience may be female
+- 重生大小姐正在攻克龙帝殿下 S01E01 1256 # Target audience may be female
+- 成为名垂青史的反派大小姐吧 S01E01 0139 # Target audience may be female
 - 机械手臂 S01E03 0246 # Target audience may be 13 or 14 years old
 - 蓝箱 S01E02 # Target audience may be 13 or 14 years old
 - 刀剑神域外传 Gun Gale Online 第二季 1859 Target audience may be female
