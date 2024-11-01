@@ -72,7 +72,6 @@
 ## Animation and comic
 - http://yhdm.in/
 - http://ysjdm2.com/
-- https://www.agedm.org/
 - http://www.yinghuavideo.com/new/
 - http://eroanimedougakan.blog.fc2.com/
 
