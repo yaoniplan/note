@@ -1,10 +1,7 @@
 ### "Animation"
-- 最狂辅助职业【话术士】世界最强战团听我号令 S01E02
-- 辰星降临之国的妮娜
-- 愿来世为他人
-- Haigakura 稗记舞咏
-- 妖怪学校的新人教师！
-- 缘结甘神家 animation
+- 最狂辅助职业【话术士】世界最强战团听我号令 S01E02 animation
+- 愿来世为他人 S01E04
+- 缘结甘神家 S01E02 0609
 - 少年白马醉春风 S01E20.S01E17
 - 食草老龙被冠以恶龙之名 S01E12.S02E05
 - 科学×冒险与生存！ S01E03
@@ -265,6 +262,9 @@
 - guard(end)
 
 ### Animation
+- 辰星降临之国的妮娜 S01E01 1346 # Target audience may be 13 or 14 years old
+- Haigakura 稗记舞咏 S01E02 1513 # Target audience may be 13 or 14 years old
+- 妖怪学校的新人教师！ S01E02 # Target audience may be 13 or 14 years old
 - 村井之恋 # It's a TV series
 - Re：从零开始的异世界生活 第三季 # Target audience may be 13 or 14 years old
 - Acro Trip S01E01 1144 # Target audience may be female
@@ -282,8 +282,8 @@
 - 擅长逃跑的殿下 S01E12
 - 亚托莉 -我挚爱的时光- S01E13
 - 异世界失格 S01E12
-- 义妹生活 02 # Target audience maybe 13 or 14 years old
-- 笼中人 04 0823 # Target audience maybe 13 or 14 years old
+- 义妹生活 02 # Target audience may be 13 or 14 years old
+- 笼中人 04 0823 # Target audience may be 13 or 14 years old
 - 诛仙 - S01E26.S02E26
 - 幻宠师 - S01E16
 - 隐世宗门掌教 S01E52
