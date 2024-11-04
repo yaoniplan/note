@@ -1,17 +1,15 @@
 ### "Animation"
-- 最狂辅助职业【话术士】世界最强战团听我号令 S01E02 animation
+- 最狂辅助职业【话术士】世界最强战团听我号令 S01E05
 - 愿来世为他人 S01E04
-- 缘结甘神家 S01E02 0609
 - 少年白马醉春风 S01E20.S01E17
 - 食草老龙被冠以恶龙之名 S01E12.S02E05
 - 科学×冒险与生存！ S01E03
 - 缉妖录之启程篇 S01E12
-- 悲喜渔生 S01E04
-- 一个人的异世界攻略 S01E05
-- 胆大党 S01E04
-- 神选 S01E06
-- 一兆游戏 S01E04
-- 再见龙生，你好人生 S01E03
+- 悲喜渔生 S01E05
+- 一个人的异世界攻略 S01E06
+- 胆大党 S01E05
+- 一兆游戏 S01E06
+- 再见龙生，你好人生 S01E03 animation
 - 真的要结婚吗 S01E03
 - 灵武大陆 28
 - 常轨脱离Creative S01E02
@@ -262,6 +260,8 @@
 - guard(end)
 
 ### Animation
+- 神选 S01E07 1306 # Target audience may be 13 or 14 years old
+- 缘结甘神家 S01E02 1936 # Target audience may be 13 or 14 years old
 - 辰星降临之国的妮娜 S01E01 1346 # Target audience may be 13 or 14 years old
 - Haigakura 稗记舞咏 S01E02 1513 # Target audience may be 13 or 14 years old
 - 妖怪学校的新人教师！ S01E02 # Target audience may be 13 or 14 years old
