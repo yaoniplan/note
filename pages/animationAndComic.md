@@ -10,11 +10,10 @@
 - 胆大党 S01E05
 - 一兆游戏 S01E06
 - 真的要结婚吗 S01E06
-- 灵武大陆 28 animation
-- 常轨脱离Creative S01E02
-- 蘑菇狗 S01E03
-- 决斗大师 LOST ～追忆的水晶～ S01E01
-- 当不成魔法师的女孩 S01E02
+- 灵武大陆 34
+- 蘑菇狗 S01E05
+- 决斗大师 LOST ～追忆的水晶～ S01E02
+- 当不成魔法师的女孩 S01E02 animation
 - 虎鹤妖师录 S01E03
 - 柔光魔女股份有限公司 - S01E02
 - 龙珠大魔 S01E01
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 常轨脱离Creative S01E02 # Target audience maybe female
 - 再见龙生，你好人生 S01E05 0852 # Maybe The plot is slow
 - 神选 S01E07 1306 # Target audience may be 13 or 14 years old
 - 缘结甘神家 S01E02 1936 # Target audience may be 13 or 14 years old
