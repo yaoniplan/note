@@ -15,8 +15,7 @@
 - 决斗大师 LOST ～追忆的水晶～ S01E02
 - 当不成魔法师的女孩 S01E06
 - 虎鹤妖师录 S01E07
-- 柔光魔女股份有限公司 - S01E03 1534 animation
-- 龙珠大魔 S01E01
+- 龙珠大魔 S01E01 animation
 - Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E03
 - 蓝色监狱 S01E24.S02E2
 - 地。-关于地球的运动 S01E03
@@ -258,6 +257,7 @@
 - guard(end)
 
 ### Animation
+- 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female
 - 常轨脱离Creative S01E02 # Target audience maybe female
 - 再见龙生，你好人生 S01E05 0852 # Maybe The plot is slow
 - 神选 S01E07 1306 # Target audience may be 13 or 14 years old
