@@ -15,8 +15,8 @@
 - 决斗大师 LOST ～追忆的水晶～ S01E02
 - 当不成魔法师的女孩 S01E06
 - 虎鹤妖师录 S01E07
-- 龙珠大魔 S01E01 animation
-- Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E03
+- 龙珠大魔 S01E05
+- Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E03 animation
 - 蓝色监狱 S01E24.S02E2
 - 地。-关于地球的运动 S01E03
 - 暗杀女仆冥土小姐 S01E02
