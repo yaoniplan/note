@@ -30,11 +30,10 @@
 - 剑来 - S01E16
 - Apotheosis / 百炼成神 - S01E52.S02E51
 - 神武天尊2024 19
-- 一念永恒 - S01E52.S02E54.S03E18 animation
+- 一念永恒 - S01E52.S02E54.S03E23
 - 夜晚游玩生活 S01E08 #NSFW
-- 斩神之凡尘神域 S01E15
-- 陆地键仙 S01E55
-- 永生 - S01E12.S02E12.S03E16.S04E12
+- 陆地键仙 S01E65
+- 永生 - S01E12.S02E12.S03E16.S04E12 animation
 - 散修之王 - 31
 - 剑域风云 - S01E40.S02E52.S03E103
 - 凡人修仙传 - 123
@@ -257,6 +256,7 @@
 - guard(end)
 
 ### Animation
+- 斩神之凡尘神域 S01E15
 - 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female
 - 常轨脱离Creative S01E02 # Target audience maybe female
 - 再见龙生，你好人生 S01E05 0852 # Maybe The plot is slow
