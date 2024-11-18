@@ -33,11 +33,9 @@
 - 一念永恒 - S01E52.S02E54.S03E23
 - 夜晚游玩生活 S01E08 #NSFW
 - 陆地键仙 S01E65
-- 永生 - S01E12.S02E12.S03E16.S04E12 animation
-- 散修之王 - 31
-- 剑域风云 - S01E40.S02E52.S03E103
-- 凡人修仙传 - 123
-- 仙逆 - 57
+- 永生 - S01E12.S02E12.S03E16.S04E16
+- 散修之王 - 37
+- 仙逆 - 57 animation
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
@@ -256,6 +254,8 @@
 - guard(end)
 
 ### Animation
+- 凡人修仙传 - 124
+- 剑域风云 - S01E40.S02E52.S03E104
 - 斩神之凡尘神域 S01E15
 - 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female
 - 常轨脱离Creative S01E02 # Target audience maybe female
