@@ -1,9 +1,9 @@
 ### "Animation"
-- 最狂辅助职业【话术士】世界最强战团听我号令 S01E05
-- 愿来世为他人 S01E04
-- 少年白马醉春风 S01E20.S01E17
-- 食草老龙被冠以恶龙之名 S01E12.S02E05
-- 科学×冒险与生存！ S01E03
+- 最狂辅助职业【话术士】世界最强战团听我号令 S01E08
+- 愿来世为他人 S01E07
+- 少年白马醉春风 S01E20.S01E19
+- 食草老龙被冠以恶龙之名 S01E12.S02E07
+- 科学×冒险与生存！ S01E03 animation
 - 缉妖录之启程篇 S01E12
 - 悲喜渔生 S01E05
 - 一个人的异世界攻略 S01E06
@@ -35,13 +35,13 @@
 - 陆地键仙 S01E65
 - 永生 - S01E12.S02E12.S03E16.S04E16
 - 散修之王 - 37
-- 仙逆 - 57 animation
+- 仙逆 - 63
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 78
-- 武神主宰 - 192/482
-- Against the Sky Supreme / 逆天至尊 - 348
+- Shrouding the Heavens / 遮天 - 83
+- 武神主宰 - 192/494
+- Against the Sky Supreme / 逆天至尊 - 357
 
 ### Comic
 - 初次深交，请多指教 - 56
