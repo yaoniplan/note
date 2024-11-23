@@ -3,11 +3,9 @@
 - 德里科的托儿所 - S01E12
 - 大道朝天 S01E09
 - 牧神记 S01E05
-- 妻子变成小学生 S01E01 animation
-- 转生贵族凭鉴定技能扭转人生
-- 叹息的亡灵好想隐退
-- 精灵幻想记
-- 长生界
+- 妻子变成小学生 S01E08
+- 精灵幻想记 S01E01 animation
+- 长生界 S01E05
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E08
 - 愿来世为他人 S01E07
 - 少年白马醉春风 S01E20.S01E19
@@ -263,6 +261,7 @@
 - guard(end)
 
 ### Animation
+- 叹息的亡灵好想隐退 S01E03 0804 # Target audience maybe 13 or 14 years old
 - 青之壬生狼 S01E02 0029 # Target audience maybe 13 or 14 years old
 - 新网球王子 U-17 世界杯 半决赛 0040 # Seems to lack the passion element (Compared to this *Blue Lock* animation)
 - 银翼超人 0225 # It's a TV series.
