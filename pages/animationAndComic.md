@@ -4,7 +4,7 @@
 - 大道朝天 S01E09
 - 牧神记 S01E05
 - 妻子变成小学生 S01E08
-- 精灵幻想记 S01E01 animation
+- 精灵幻想记 S01E10 animation
 - 长生界 S01E05
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E08
 - 愿来世为他人 S01E07
@@ -829,7 +829,7 @@
 ### Movie
 - Shaw Brothers / 邵氏影业 
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
-    - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋
+    - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋, 儒侠 001211
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
 - Porco Rosso / 红猪 # Taiwanese dubbing is cute
