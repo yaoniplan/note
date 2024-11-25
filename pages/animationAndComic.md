@@ -4,22 +4,20 @@
 - 大道朝天 S01E09
 - 牧神记 S01E05
 - 妻子变成小学生 S01E08
-- 精灵幻想记 S01E10 animation
+- 精灵幻想记 S01E12.S02E07
 - 长生界 S01E05
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E08
 - 愿来世为他人 S01E07
-- 少年白马醉春风 S01E20.S01E19
-- 食草老龙被冠以恶龙之名 S01E12.S02E07
+- 少年白马醉春风 S01E20.S01E20
+- 食草老龙被冠以恶龙之名 S01E12.S02E08
 - 科学×冒险与生存！ S01E03
 - 缉妖录之启程篇 S01E12
-- 悲喜渔生 S01E05
-- 一个人的异世界攻略 S01E06
-- 胆大党 S01E05
-- 一兆游戏 S01E06
-- 真的要结婚吗 S01E06
-- 灵武大陆 34
-- 蘑菇狗 S01E05
-- 决斗大师 LOST ～追忆的水晶～ S01E02
+- 一个人的异世界攻略 S01E09
+- 胆大党 S01E08
+- 一兆游戏 S01E09
+- 真的要结婚吗 S01E08
+- 灵武大陆 39
+- 决斗大师 LOST ～追忆的水晶～ S01E02 animation
 - 当不成魔法师的女孩 S01E06
 - 虎鹤妖师录 S01E07
 - 龙珠大魔 S01E05
@@ -261,6 +259,8 @@
 - guard(end)
 
 ### Animation
+- 蘑菇狗 S01E07 1403 # Target audience maybe 13 or 14 years old
+- 悲喜渔生 S01E07 1623 # Target audience maybe 13 or 14 years old
 - 叹息的亡灵好想隐退 S01E03 0804 # Target audience maybe 13 or 14 years old
 - 青之壬生狼 S01E02 0029 # Target audience maybe 13 or 14 years old
 - 新网球王子 U-17 世界杯 半决赛 0040 # Seems to lack the passion element (Compared to this *Blue Lock* animation)
