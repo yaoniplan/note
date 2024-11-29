@@ -1,5 +1,5 @@
 ### "Animation"
-- 英雄联盟 - S01E09.S02E06
+- 英雄联盟 - S01E09.S02E06 animation
 - 德里科的托儿所 - S01E12
 - 大道朝天 S01E09
 - 牧神记 S01E05
@@ -25,28 +25,26 @@
 - 蓝色监狱 S01E24.S02E8
 - 地。-关于地球的运动 S01E09
 - 暗杀女仆冥土小姐 S01E08
-- 被逐出队伍的治愈师，其实是最强的 S01E08 1239 animation
-- 魔王2099 S01E05
-- 乱马1/2 S01E06
-- 战神联盟 31
-- 神墓 - 31
-- 天影 - 11
-- 无尽神域 - 29
-- 剑来 - S01E16
-- Apotheosis / 百炼成神 - S01E52.S02E51
-- 神武天尊2024 19
-- 一念永恒 - S01E52.S02E54.S03E23
+- 魔王2099 S01E07
+- 乱马1/2 S01E08
+- 战神联盟 34
+- 神墓 - 33
+- 天影 - 13
+- 无尽神域 - 32
+- 剑来 - S01E17
+- Apotheosis / 百炼成神 - S01E52.S02E52
+- 神武天尊2024 20
+- 一念永恒 - S01E52.S02E54.S03E25
 - 夜晚游玩生活 S01E08 #NSFW
-- 陆地键仙 S01E65
-- 永生 - S01E12.S02E12.S03E16.S04E16
-- 散修之王 - 37
-- 仙逆 - 63
+- 陆地键仙 S01E69
+- 散修之王 - 38
+- 仙逆 - 64
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 83
-- 武神主宰 - 192/494
-- Against the Sky Supreme / 逆天至尊 - 357
+- Shrouding the Heavens / 遮天 - 85
+- 武神主宰 - 192/498
+- Against the Sky Supreme / 逆天至尊 - 361
 
 ### Comic
 - 初次深交，请多指教 - 56
@@ -259,6 +257,9 @@
 - guard(end)
 
 ### Animation
+- 可塑性记忆 S01E02 1048 # Target audience maybe 13 or 14 years old
+- 永生 - S01E12.S02E12.S03E16.S04E16
+- 被逐出队伍的治愈师，其实是最强的 S01E08 1857 # The animation doesn't seem to show the passion of the title
 - 蘑菇狗 S01E07 1403 # Target audience maybe 13 or 14 years old
 - 悲喜渔生 S01E07 1623 # Target audience maybe 13 or 14 years old
 - 叹息的亡灵好想隐退 S01E03 0804 # Target audience maybe 13 or 14 years old
