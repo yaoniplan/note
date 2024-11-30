@@ -1,4 +1,13 @@
 ### "Animation"
+- Murder Mystery of the Dead
+- 噗妮露是可爱史莱姆
+- MF Ghost / 极速车魂 - 12 # End of the first part
+- 蜀山奇仙录 - S01E00
+- 愿来世为他人 - S01E00
+- 神道帝尊 - S01E16
+- 蛮荒仙界 - S01E22
+- 我能无限顿悟 - S01E013
+- 武逆 - S01E06
 - 英雄联盟 - S01E09.S02E06 animation
 - 德里科的托儿所 - S01E12
 - 大道朝天 S01E09
@@ -257,6 +266,7 @@
 - guard(end)
 
 ### Animation
+- 暂停！智序重组 - S01E01 0159 # Target audience maybe 13 or 14 years old
 - 可塑性记忆 S01E02 1048 # Target audience maybe 13 or 14 years old
 - 永生 - S01E12.S02E12.S03E16.S04E16
 - 被逐出队伍的治愈师，其实是最强的 S01E08 1857 # The animation doesn't seem to show the passion of the title
@@ -481,7 +491,6 @@
 - Dog Signal / 爱犬讯号 - 04 0354 # Dog training tips, but I don't have a puppy at home
 - Seven Deadly Sins / 七大罪 默示录的四骑士 - 13 0956 # Plot may be slow.
 - 九辰风云录 - 40 # End of the first part
-- MF Ghost / 极速车魂 - 12 # End of the first part
 - 傲世九重天 - 12 # End of the first part
 - 王者荣耀：荣耀之章 - 01 # There are advertisements at the beginning and end, for marketing purposes
 - Spy x Family / 间谍过家家 (season1+2) - 12+13+12 # End
