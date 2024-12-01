@@ -1,4 +1,5 @@
 ### "Animation"
+- 五行战神 - S01E69
 - Murder Mystery of the Dead
 - 噗妮露是可爱史莱姆
 - MF Ghost / 极速车魂 - 12 # End of the first part
@@ -594,7 +595,6 @@
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
 - My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
 - 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
-- 五行战神 - 21 # Resources loading freezes
 - 镖人 - 15 # End of the first part
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
