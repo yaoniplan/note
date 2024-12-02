@@ -1,15 +1,14 @@
 ### "Animation"
+- 卡徒 - S01E02
 - 五行战神 - S01E69
 - Murder Mystery of the Dead
-- 噗妮露是可爱史莱姆
-- MF Ghost / 极速车魂 - 12 # End of the first part
-- 蜀山奇仙录 - S01E00
-- 愿来世为他人 - S01E00
+- MF Ghost / 极速车魂 - S01E12.S02E08
+- 蜀山奇仙录 - S01E10.S02E10
 - 神道帝尊 - S01E16
 - 蛮荒仙界 - S01E22
 - 我能无限顿悟 - S01E013
 - 武逆 - S01E06
-- 英雄联盟 - S01E09.S02E06 animation
+- 英雄联盟 - S01E09.S02E07 animation
 - 德里科的托儿所 - S01E12
 - 大道朝天 S01E09
 - 牧神记 S01E05
@@ -267,6 +266,7 @@
 - guard(end)
 
 ### Animation
+- 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
 - 暂停！智序重组 - S01E01 0159 # Target audience maybe 13 or 14 years old
 - 可塑性记忆 S01E02 1048 # Target audience maybe 13 or 14 years old
 - 永生 - S01E12.S02E12.S03E16.S04E16
