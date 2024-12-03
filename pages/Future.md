@@ -70,6 +70,7 @@
 - https://www.burstlinker.com/
 
 ## Animation and comic
+- https://netflix-1uh.pages.dev/ (Source: https://github.com/pulkitpareek18/netflix)
 - http://www.dmand5.com/
 - http://yhdm.in/
 - http://ysjdm2.com/
