@@ -11,9 +11,8 @@
 - 英雄联盟 - S01E09.S02E09
 - 大道朝天 S01E10
 - 牧神记 S01E07
-- 妻子变成小学生 S01E08 animation
-- 精灵幻想记 S01E12.S02E07
-- 长生界 S01E05
+- 妻子变成小学生 S01E10
+- 长生界 S01E05 animation
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E08
 - 愿来世为他人 S01E07
 - 少年白马醉春风 S01E20.S01E20
@@ -265,6 +264,7 @@
 - guard(end)
 
 ### Animation
+- 精灵幻想记 S01E12.S02E09 0758 # Plot maybe slow
 - 德里科的托儿所 - S01E13
 - 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
 - 暂停！智序重组 - S01E01 0159 # Target audience maybe 13 or 14 years old
