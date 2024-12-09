@@ -36,21 +36,20 @@
 - 乱马1/2 S01E09
 - 战神联盟 37
 - 神墓 - 35
-- 天影 - 14 0211 animation
-- 无尽神域 - 32
-- 剑来 - S01E17
-- Apotheosis / 百炼成神 - S01E52.S02E52
-- 神武天尊2024 20
-- 一念永恒 - S01E52.S02E54.S03E25
+- 天影 - 15
+- 无尽神域 - 36
+- 剑来 - S01E19
+- 神武天尊2024 22
+- 一念永恒 - S01E52.S02E54.S03E26
 - 夜晚游玩生活 S01E08 #NSFW
-- 陆地键仙 S01E69
-- 散修之王 - 38
-- 仙逆 - 64
+- 陆地键仙 S01E72
+- 散修之王 - 39
+- 仙逆 - 66
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 85
-- 武神主宰 - 192/498
+- Shrouding the Heavens / 遮天 - 86
+- 武神主宰 - 192/498 animation
 - Against the Sky Supreme / 逆天至尊 - 361
 
 ### Comic
@@ -264,6 +263,7 @@
 - guard(end)
 
 ### Animation
+- Apotheosis / 百炼成神 - S01E52.S02E52
 - 精灵幻想记 S01E12.S02E09 0758 # Plot maybe slow
 - 德里科的托儿所 - S01E13
 - 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
