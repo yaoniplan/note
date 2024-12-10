@@ -1,14 +1,12 @@
 ### "Animation"
-- 卡徒 - S01E02
-- 五行战神 - S01E69
-- Murder Mystery of the Dead
-- MF Ghost / 极速车魂 - S01E12.S02E08
-- 蜀山奇仙录 - S01E10.S02E10
-- 神道帝尊 - S01E16
-- 蛮荒仙界 - S01E22
-- 我能无限顿悟 - S01E013
-- 武逆 - S01E06
-- 英雄联盟 - S01E09.S02E09
+- 卡徒 - S01E03
+- 五行战神 - S01E71
+- MF Ghost / 极速车魂 - S01E12.S02E10
+- 神道帝尊 - S01E19
+- 蛮荒仙界 - S01E25
+- 我能无限顿悟 - S01E016
+- 武逆 - S01E07
+- 英雄联盟 - S01E09.S02E09 animation
 - 大道朝天 S01E10
 - 牧神记 S01E07
 - 妻子变成小学生 S01E10
@@ -49,8 +47,8 @@
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - Shrouding the Heavens / 遮天 - 86
-- 武神主宰 - 192/498 animation
-- Against the Sky Supreme / 逆天至尊 - 361
+- 武神主宰 - 192/500
+- Against the Sky Supreme / 逆天至尊 - 363
 
 ### Comic
 - 初次深交，请多指教 - 56
@@ -60,7 +58,7 @@
 - 傀儡 - 331
 - 谁说理组没正妹 - 87 comic
     - https://www.hanman100.com/index.php/chapter-28044.html
-- 开局签到至尊丹田 - 256
+- 开局签到至尊丹田 - 347
 - 超级神基因 - 170
 - 帝王app - 75
 - 暖味，完結
@@ -263,6 +261,8 @@
 - guard(end)
 
 ### Animation
+- 蜀山奇仙录 - S01E10.S02E10
+- Murder Mystery of the Dead / 谋杀之谜：亡者的秘密 - S01E01 1011 # Target audience maybe female
 - Apotheosis / 百炼成神 - S01E52.S02E52
 - 精灵幻想记 S01E12.S02E09 0758 # Plot maybe slow
 - 德里科的托儿所 - S01E13
