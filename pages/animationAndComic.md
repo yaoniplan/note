@@ -8,19 +8,17 @@
 - 武逆 - S01E07
 - 英雄联盟 - S01E09.S02E09
 - 大道朝天 S01E11
-- 牧神记 S01E07 animation
-- 妻子变成小学生 S01E10
-- 长生界 S01E07
-- 最狂辅助职业【话术士】世界最强战团听我号令 S01E10
-- 愿来世为他人 S01E09
-- 少年白马醉春风 S01E20.S01E22
-- 食草老龙被冠以恶龙之名 S01E12.S02E10
-- 科学×冒险与生存！ S01E03
-- 缉妖录之启程篇 S01E12
-- 一个人的异世界攻略 S01E10
-- 胆大党 S01E09
-- 一兆游戏 S01E10
-- 真的要结婚吗 S01E10
+- 牧神记 S01E08
+- 妻子变成小学生 S01E11
+- 长生界 S01E08
+- 最狂辅助职业【话术士】世界最强战团听我号令 S01E11
+- 愿来世为他人 S01E10
+- 少年白马醉春风 S01E20.S01E23
+- 食草老龙被冠以恶龙之名 S01E12.S02E11
+- 一个人的异世界攻略 S01E11
+- 胆大党 S01E10
+- 一兆游戏 S01E11
+- 真的要结婚吗 S01E10 animation
 - 灵武大陆 42
 - 决斗大师 LOST ～追忆的水晶～ S01E02
 - 当不成魔法师的女孩 S01E09
@@ -56,10 +54,10 @@
 - 色雕英雄传:一捅天下 - 40
 - Panty Note / 裤裤笔记 - 232
 - 傀儡 - 331
-- 谁说理组没正妹 - 87 comic
+- 谁说理组没正妹 - 102 comic
     - https://www.hanman100.com/index.php/chapter-28044.html
 - 开局签到至尊丹田 - 347
-- 超级神基因 - 170
+- 超级神基因 - 312
 - 帝王app - 75
 - 暖味，完結
 - 生物学 全
@@ -261,6 +259,8 @@
 - guard(end)
 
 ### Animation
+- 缉妖录之启程篇 - S01E12
+- 科学×冒险与生存！ S01E03 # It seems that no one has translated it into Chinese. (No resources found)
 - 蜀山奇仙录 - S01E10.S02E10
 - Murder Mystery of the Dead / 谋杀之谜：亡者的秘密 - S01E01 1011 # Target audience maybe female
 - Apotheosis / 百炼成神 - S01E52.S02E52
