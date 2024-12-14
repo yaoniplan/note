@@ -18,12 +18,11 @@
 - 一个人的异世界攻略 S01E11
 - 胆大党 S01E10
 - 一兆游戏 S01E11
-- 真的要结婚吗 S01E10 animation
-- 灵武大陆 42
-- 决斗大师 LOST ～追忆的水晶～ S01E02
-- 当不成魔法师的女孩 S01E09
-- 虎鹤妖师录 S01E10
-- 龙珠大魔 S01E08
+- 真的要结婚吗 S01E11
+- 灵武大陆 44
+- 当不成魔法师的女孩 S01E11
+- 虎鹤妖师录 S01E12
+- 龙珠大魔 S01E08 animation
 - Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E10
 - 蓝色监狱 S01E24.S02E9
 - 地。-关于地球的运动 S01E10
@@ -259,6 +258,7 @@
 - guard(end)
 
 ### Animation
+- 决斗大师 LOST ～追忆的水晶～ S01E02 # It seems that no one has translated it into Chinese. (No resources found)
 - 缉妖录之启程篇 - S01E12
 - 科学×冒险与生存！ S01E03 # It seems that no one has translated it into Chinese. (No resources found)
 - 蜀山奇仙录 - S01E10.S02E10
