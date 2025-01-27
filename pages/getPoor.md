@@ -17,6 +17,6 @@
 - Develop an addiction (e.g. gambling, alcoholism, drug)
 
 # References
-- https://v2ex.com/t/917767 # 18, 29 floor
+- https://web.archive.org/web/20230424220454/https://v2ex.com/t/917767 # 18, 29 floor
 - https://www.chongbuluo.com/thread-4802-1-1.html
 - https://seedtime.com/10-ways-to-become-or-stay-poor/

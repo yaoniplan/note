@@ -1,43 +1,61 @@
 ### "Animation"
-- 卡徒 - S01E06
-- 五行战神 - S01E77
-- MF Ghost / 极速车魂 - S01E12.S02E12
-- 神道帝尊 - S01E26
-- 蛮荒仙界 - S01E31
-- 我能无限顿悟 - S01E22
-- 武逆 - S01E14
-- 大道朝天 S01E14
-- 牧神记 S01E11
-- 长生界 S01E11
-- 愿来世为他人 S01E12
-- 少年白马醉春风 S01E20.S01E26
-- 食草老龙被冠以恶龙之名 S01E12.S02E12
-- 一兆游戏 S01E13
-- 灵武大陆 50
-- 虎鹤妖师录 S01E13 animation
-- 龙珠大魔 S01E11
-- 蓝色监狱 S01E24.S02E12
-- 地。-关于地球的运动 S01E13
-- 乱马1/2 S01E12
-- 战神联盟 43
-- 神墓 - 38
-- 天影 - 18
-- 无尽神域 - 41
-- 神武天尊2024 24
-- 一念永恒 - S01E52.S02E54.S03E29
-- 陆地键仙 S01E77
-- 散修之王 - 42
-- 仙逆 - 68
+- 不知为何我和尼特且宅的女忍者开始了同居生活 S01E01
+- 重生的猫骑士与精灵娘的日常 S01E01 1348
+- 魔域英雄传说 S01E01
+- 众星齐聚 -Uni:Birth- S01E01
+- 坂本日常 S01E01
+- 吸吸吸吸吸血鬼 S01E01
+- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E01
+- 魔神创造传 S01E01
+- 我的幸福婚姻 S01E01 2040
+- 这公司有我喜欢的人 S01E00
+- 上班族转生异世界当上了四天王不是很正常吗 S01E01
+- 我的可爱对黑岩目高不管用 S01E01 1100 # Doesn't seem realistic
+- 全修。 S01E01
+- 无名记忆 S01E01
+- 群花绽放，彷如修罗 S01E01
+- 终将成为最强炼金术师？ S01E01
+- 蜂蜜柠檬碳酸水 S01E01
+- 永恒剑祖 S01E01
+- The Ravages of Time / 火凤燎原 - S01E16.S01E01
+- 不幸职业【鉴定士】实则最强 S01E01
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E01
+- 魔法制造者 ～异世界魔法的制作方法～ S01E01
+- 左手上篮 S01E01
+- 沧元图 - S01E30
+- 虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS S01E01
+- 我和班上最讨厌的女生结婚了。 - S01E01 animation
+- 欢迎来到日本，精灵小姐。 - S01E03
+- 中年男的异世界网购生活 - S01E02
+- Solo Leveling / 我独自升级 - S01E12.S02E04
+- 卡徒 - S01E10
+- 神道帝尊 - S01E33
+- 蛮荒仙界 - S01E39
+- 我能无限顿悟 - S01E30
+- 武逆 - S01E18
+- 牧神记 S01E15
+- 长生界 S01E14
+- 一兆游戏 S01E16
+- 灵武大陆 56
+- 龙珠大魔 S01E15
+- 地。-关于地球的运动 S01E18
+- 神墓 - 42
+- 无尽神域 - 49
+- 一念永恒 - S01E52.S02E54.S03E33
+- 陆地键仙 S01E85
+- 散修之王 - 46
+- 仙逆 - 72
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 89
-- 武神主宰 - 192/506
-- Against the Sky Supreme / 逆天至尊 - 370
+- Shrouding the Heavens / 遮天 - 93
+- 武神主宰 - 514
+- Against the Sky Supreme / 逆天至尊 - 378
 
 ### Comic
+- 这一世我要当独行玩家 45
+- 任务至上主义 167
 - 死灵法师的进化特质 39
-- 死灵法师的进化特质 30
 - 力量点满？我可是亡灵法师啊！ 75
 - 绝对回归 25
 - 全民末日：我，病毒君王 46
@@ -141,6 +159,8 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 转生者 18 # Plot maybe slow
+- 我杀了学院玩家 15 # Plot may be slow
 - 游戏大师 15 # Plot may be slow
 - 月影剑帝 54 # plot may be slow
 - 身患绝症的天才 6 # Plot maybe slow
@@ -260,6 +280,32 @@
 - guard(end)
 
 ### Animation
+- 五行战神 - S01E80
+- 大道朝天 S01E16
+- 蓝色监狱 S01E24.S02E14
+- 战神联盟 S01E48
+- 喜欢的冲绳妹说方言 S01E01 1116 # Feudal superstition in reality
+- 想摆脱公主教育的我 S01E01 0803 # Target audience maybe 13 or 14 years old
+- 战队红战士在异世界当冒险者 S01E01 0034 # Target audience maybe 13 or 14 years old
+- 魔法使的约定 # Target audience maybe female
+- 中年上班族转生恶役 S01E01 0123 # Target audience maybe female
+- 灰色：幻影扳机 S01E01 2118 # Target audience maybe female
+- 刹那之花 S01E01 1213 # Target audience maybe female
+- 终究、与你相恋。 S01E1 0448 # One girl and four boys? (From the comments section)
+- 想星的大天使 Myth of Emotions S01E01 0340 # Target audience maybe 13 or 14 years old
+- 魔农传记 S01E01 0650 # Target audience maybe 13 or 14 years old
+- 黄昏旅店 - S01E01 0656 # Target audience maybe female
+- 天影 - 20 0620 # Target audience maybe 13 or 14 years old
+- 乱马1/2 S01E12
+- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12
+- 食草老龙被冠以恶龙之名 S01E12.S02E12
+- 少年白马醉春风 S01E20.S02E26
+- 愿来世为他人 S01E12
+- MF Ghost / 极速车魂 - S01E12.S02E12
+- 神武天尊2024 S01E24
+- 黑色残骸 S01E23 0226 # Plot may be slow
+- Darling in the Franxx / 比翼之吻 S01E24
+- 虎鹤妖师录 S01E14 1526 # Plot may be slow
 - 胆大党 S01E12
 - 一个人的异世界攻略 S01E12
 - 最狂辅助职业【话术士】世界最强战团听我号令 S01E12
@@ -336,7 +382,6 @@
 - 恋爱无法用双子除尽 05 0324 # Target audience may be female
 - 从路人角色开始的探索英雄谭 S01E12
 - 白色闪电 05 0918 # Target audience may be 13 or 14 years old
-- 沧元图 - S01E30
 - 独步逍遥 - 168/444 0433 # Plot may be slow
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
 - Viral Hit / 格斗实况 - S01E12
@@ -459,7 +504,6 @@
 - 十方武圣 - S1E16
 - Mashle: Magic and Muscles / 物理魔法使马修 S1E12.S2E12
 - 师士传说 - S1E26
-- Solo Leveling / 我独自升级 - S1E12
 - 大王饶命 - S1E12.S2E12
 - 深渊游戏 - S1E16
 - 异人君莫邪 - S01E12
@@ -620,7 +664,6 @@
 - 奇异贤伴 黑色天使 SYNDUALITY Noir - 04 # Resources loading freezes
 - 喜欢的人忘记戴眼镜了 - 07 1836 # The plot is too exaggerated
 - 不死女 轮堂鸦夜 - 06 1629 # The plot is too flat
-- The Ravages of Time / 火凤燎原 - 16 # End of the first part
 - 剑骨 - 05 0541 # The plot is too corny
 - 戍天伏魔录 - 02 # The target audience is thirteen or fourteen years old
 - 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
@@ -647,7 +690,6 @@
 - 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
     - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
     - https://ja.wikipedia.org/wiki/堕靡泥の星
-- Dr.Stone / 石纪元 (Part1+2+3) 24+11+11 # End of the third part
 - 勇者死了 - 12 # End of the first part
 - Rick and Morty / 瑞克和莫蒂 - #NSFW S01E11.S02E10.S03E10.S04E10.S05E10.S06E06 # Fun seems to be gone
 - Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
@@ -813,7 +855,6 @@
 - 异种族风俗娘评鉴指南 - 第一季完结
 - 斗破苍穹缘起 - 完结
 - 诸天纪 - 26（第一季完结）
-- 武动乾坤 第三季 - 12（第三季完结）
 - 谎颜 - 16（完结）
 - 搜玄录之宸灵纪 - 合集篇（第一季完结）
 - 万古仙穹 - 12（第一二三四季完结）
