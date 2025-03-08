@@ -1,56 +1,55 @@
 ### "Animation"
-- 不知为何我和尼特且宅的女忍者开始了同居生活 S01E01
-- 重生的猫骑士与精灵娘的日常 S01E01 1348
-- 魔域英雄传说 S01E01
-- 众星齐聚 -Uni:Birth- S01E01
-- 坂本日常 S01E01
-- 吸吸吸吸吸血鬼 S01E01
-- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E01
-- 魔神创造传 S01E01
-- 我的幸福婚姻 S01E01 2040
-- 这公司有我喜欢的人 S01E00
-- 上班族转生异世界当上了四天王不是很正常吗 S01E01
+- 金牌得主 S01E09
+- 发现自己转生成猫的大叔 S01E20
+- 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E09
+- 君子无疾 S01E04
+- 虽然我是注定没落的贵族，闲来无事只好来深究魔法 S01E09
+- 天久鹰央的事件病历簿 S01E08
+- 重生的猫骑士与精灵娘的日常 S01E06 #NSFW animation
+- 坂本日常 S01E09
+- 吸吸吸吸吸血鬼 S01E08
+- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E06 animation
+- 这公司有我喜欢的人 S01E00 animation
+- 上班族转生异世界当上了四天王不是很正常吗 S01E08
 - 我的可爱对黑岩目高不管用 S01E01 1100 # Doesn't seem realistic
-- 全修。 S01E01
+- 全修。 S01E07
 - 无名记忆 S01E01
-- 群花绽放，彷如修罗 S01E01
-- 终将成为最强炼金术师？ S01E01
-- 蜂蜜柠檬碳酸水 S01E01
-- 永恒剑祖 S01E01
-- The Ravages of Time / 火凤燎原 - S01E16.S01E01
-- 不幸职业【鉴定士】实则最强 S01E01
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E01
-- 魔法制造者 ～异世界魔法的制作方法～ S01E01
-- 左手上篮 S01E01
-- 沧元图 - S01E30
-- 虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS S01E01
-- 我和班上最讨厌的女生结婚了。 - S01E01 animation
+- 群花绽放，彷如修罗 S01E03 1802 animation
+- 蜂蜜柠檬碳酸水 S01E05
+- 永恒剑祖 S01E21
+- The Ravages of Time / 火凤燎原 - S01E16.S01E07
+- 不幸职业【鉴定士】实则最强 S01E05 0524
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E07
+- 魔法制造者 ～异世界魔法的制作方法～ S01E06
+- 左手上篮 S01E08.S02E09
+- 沧元图 - S01E43
+- 我和班上最讨厌的女生结婚了。 - S01E04
 - 欢迎来到日本，精灵小姐。 - S01E03
 - 中年男的异世界网购生活 - S01E02
-- Solo Leveling / 我独自升级 - S01E12.S02E04
-- 卡徒 - S01E10
-- 神道帝尊 - S01E33
-- 蛮荒仙界 - S01E39
-- 我能无限顿悟 - S01E30
-- 武逆 - S01E18
-- 牧神记 S01E15
-- 长生界 S01E14
-- 一兆游戏 S01E16
-- 灵武大陆 56
-- 龙珠大魔 S01E15
-- 地。-关于地球的运动 S01E18
-- 神墓 - 42
-- 无尽神域 - 49
-- 一念永恒 - S01E52.S02E54.S03E33
-- 陆地键仙 S01E85
-- 散修之王 - 46
-- 仙逆 - 72
+- Solo Leveling / 我独自升级 - S01E12.S02E07
+- 卡徒 - S01E13
+- 神道帝尊 - S01E41
+- 蛮荒仙界 - S01E47
+- 我能无限顿悟 - S01E38
+- 武逆 - S01E22
+- 牧神记 S01E19
+- 长生界 S01E18
+- 一兆游戏 S01E20
+- 灵武大陆 64
+- 龙珠大魔 S01E19
+- 地。-关于地球的运动 S01E22
+- 神墓 - 43
+- 无尽神域 - 59
+- 一念永恒 - S01E52.S02E54.S03E38
+- 陆地键仙 S01E95
+- 散修之王 - 51
+- 仙逆 - 77
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 93
-- 武神主宰 - 514
-- Against the Sky Supreme / 逆天至尊 - 378
+- Shrouding the Heavens / 遮天 - 98
+- 武神主宰 - 524
+- Against the Sky Supreme / 逆天至尊 - 388
 
 ### Comic
 - 这一世我要当独行玩家 45
@@ -159,7 +158,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
-- 转生者 18 # Plot maybe slow
+- 转生者 18 # Plot may be slow
 - 我杀了学院玩家 15 # Plot may be slow
 - 游戏大师 15 # Plot may be slow
 - 月影剑帝 54 # plot may be slow
@@ -280,6 +279,12 @@
 - guard(end)
 
 ### Animation
+- 魔域英雄传说 S01E05 # Target audience may be 13 or 14 years old
+- 不知为何我和尼特且宅的女忍者开始了同居生活 S01E07 0746 # NEETs are no longer NEETs and the plot may be slow
+- 众星齐聚 -Uni:Birth- S01E03 2138 # Target audience maybe 13 or 14 years old
+- 终将成为最强炼金术师？ S01E03 0157 # Target audience maybe 13 or 14 years old
+- 魔神创造传 S01E02 # Target audience maybe 13 or 14 years old
+- 虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS S01E03 1243 # Target audience maybe 13 or 14 years old
 - 五行战神 - S01E80
 - 大道朝天 S01E16
 - 蓝色监狱 S01E24.S02E14

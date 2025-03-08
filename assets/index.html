@@ -41,6 +41,104 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;cloudpaste&quot;</h4>
+<ul>
+<li>Create two KV Namespaces<ul>
+<li><code>PASTE_STORE</code></li>
+<li><code>UPLOAD_STATUS</code></li>
+</ul>
+</li>
+<li>Create a R2 Bucket<ul>
+<li><code>cloudpaste-files</code></li>
+</ul>
+</li>
+<li>Create a Worker<ul>
+<li>Variables and Secrets<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Plaintext</td>
+<td>ADMIN_PASSWORD</td>
+<td>your-password-here</td>
+</tr>
+<tr>
+<td>Plaintext</td>
+<td>ADMIN_USERNAME</td>
+<td>your-username-here</td>
+</tr>
+</tbody></table>
+</li>
+<li>Bindings<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>R2 bucket</td>
+<td>FILE_STORE</td>
+<td>cloudpaste-files</td>
+</tr>
+<tr>
+<td>KV namespace</td>
+<td>PASTE_STORE</td>
+<td>PASTE_STORE</td>
+</tr>
+<tr>
+<td>KV namespace</td>
+<td>UPLOAD_STATUS</td>
+<td>UPLOAD_STATUS</td>
+</tr>
+</tbody></table>
+</li>
+<li>Copy and paste <a href="https://raw.githubusercontent.com/ling-drag0n/CloudPaste/refs/heads/main/worker.js">worker.js</a> to Worker</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Upload text<pre><code>curl --request POST &#39;https://cloudpaste.yaoniplan.eu.org/api/paste&#39; \
+  --header &#39;Content-Type: application/json&#39; \
+  --header &#39;Authorization: Basic Encode-username:password-with-base64&#39; \
+  --data &#39;{
+    &quot;content&quot;: &quot;This is a secret message&quot;,
+    &quot;password&quot;: &quot;&quot;,
+    &quot;expiresIn&quot;: &quot;1h&quot;,
+    &quot;isMarkdown&quot;: true,
+    &quot;customId&quot;: &quot;&quot;,
+    &quot;maxViews&quot;: 0,
+    &quot;note&quot;: &quot;&quot;
+  }&#39;
+</code></pre>
+</li>
+<li>Upload file<pre><code>curl --request POST &#39;https://cloudpaste.yaoniplan.eu.org/api/file&#39; \
+  --header &#39;Authorization: Basic Encode-username:password-with-base64&#39; \
+  --form &#39;files=@/home/yaoniplan/Downloads/CloudPaste/worker.js&#39; \
+  --form &#39;expiresIn=1d&#39; \
+  --form &#39;maxViews=0&#39;
+</code></pre>
+</li>
+<li>Get text content<pre><code>curl --request GET https://cloudpaste.yaoniplan.eu.org/api/paste/iYyHIDXr
+</code></pre>
+</li>
+<li>Because to share information temporarily and stably.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ling-drag0n/CloudPaste">https://github.com/ling-drag0n/CloudPaste</a> # <code>/manual</code> <code>/api endpoint</code></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;yofi&quot;</h4>
 <ul>
 <li><code>yofi</code></li>
@@ -227,7 +325,7 @@ List of audio encoders:
 <li>Warnings: No Internet connection</li>
 <li><code>yay --sync waydroid</code> # Install dependencies (Install <code>waydroid-image-gapps</code> if the download of Android images is slow)<ul>
 <li><code>doas waydroid init -s GAPPS</code> # Init waydroid with GApps support</li>
-<li><code>doas systemctl enable --now waydroid-container</code> # Start waydroid-container service</li>
+<li><code>doas systemctl start waydroid-container</code> # Start waydroid-container service</li>
 <li><code>waydroid session start</code> # Start waydroid session</li>
 </ul>
 </li>
@@ -765,6 +863,7 @@ h1 {
 <li><em><strong>Notes</strong></em><ul>
 <li><code>qrencode --type=ansiutf8 &quot;hello&quot;</code> # Print to terminal</li>
 <li><code>qrencode --output=output.png &quot;Your text or URL here&quot;</code> # Save it</li>
+<li><code>nix profile install nixpkgs#qrencode</code> # Install dependencies</li>
 <li>Because to implement the feature of aggregating QR codes.</li>
 </ul>
 </li>
@@ -2070,7 +2169,7 @@ range = document.createRange();
 <li><em><strong>Notes</strong></em><ul>
 <li>Run JavaScript on Web Page (Shortcut Input, paste the code above) - Ask fro Input (Text, Enter file name:, config.json) - Set Name (JavaScript Result, Provided Input) - Save File (Renamed Item, Downloads, Provided Input) - Open File (Saved File, Files)<ul>
 <li><code>completion(document.body.innerText);</code> # Easier method</li>
-<li><code>Set Name</code> # This will change the document type</li>
+<li><code>Set Name</code> # This will change the document type (Used to rename the file name)</li>
 </ul>
 </li>
 <li>Because just like saving a file with <code>Ctrl-s</code> in browser.</li>
@@ -4477,6 +4576,7 @@ Error: Couldn&#39;t open /dev/fb0.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://blog.ning.moe/posts/Mobile-Number-Portability/">https://blog.ning.moe/posts/Mobile-Number-Portability/</a></li>
 <li><a href="https://www.189.cn/gs/sy_ycgg/113077.html">https://www.189.cn/gs/sy_ycgg/113077.html</a></li>
 <li><a href="https://en.wikipedia.org/wiki/List_of_mobile_network_operators_in_Asia_and_Oceania#China_(mainland)">https://en.wikipedia.org/wiki/List_of_mobile_network_operators_in_Asia_and_Oceania#China_(mainland)</a></li>
 </ul>
@@ -6076,7 +6176,11 @@ font-size = 12
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/hypr/hyprland.conf</code> # Enable as needed<pre><code># Fullscreen window (Hide window status bar)
+<li><code>vim ~/.config/hypr/hyprland.conf</code> # Enable as needed<pre><code>ecosystem {
+    # Disable this dialog after upgrading hyprland
+    no_update_news = true
+}
+# Fullscreen window (Hide window status bar)
 bind = $mainMod SHIFT, F, fullscreenstate, 0, 2
 # Switch between windows in a floating workspace
 bind = ALT, Tab, exec, hyprctl dispatch cyclenext &amp;&amp; hyprctl dispatch bringactivetotop
@@ -7654,6 +7758,23 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Check if it is text or file type<pre><code>- Text (Text|Safari web page|Rich text|URL)
+- Set Variable (Text type, Text)
+- Get Type (Shortcut Input)
+- Match Text (Text type, Type)
+- If (Matches, has any value)
+    - Comment (Do something with the text)
+- Otherwise
+    - Comment (Do something with the file)
+- End If
+- https://libreddit.eu.org/r/shortcuts/comments/qioiaa/checking_if_a_text_contains_any_of_the_items_of_a/hilbcih
+</code></pre>
+</li>
+<li>Compress image (Temporarily share some pictures with people who have poor network)<pre><code>- Convert Image (Shortcut Input, JPEG)
+- Resize Image (Converted Image, Percentage, 30)
+- https://libreddit.eu.org/r/shortcuts/comments/v4dk41/compress_images_shortcut_for_automation_please/ib4834u
+</code></pre>
+</li>
 <li>Show random words (Sometimes use random English words as username)<pre><code># Put the words in the text below (Offline is faster than online)
 # You can use action (Get Contents of URL) to get words if you want to use it online
 # Source: https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english.txt 
@@ -7851,10 +7972,23 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>Switch App Store region temporarily<pre><code>- https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/
 </code></pre>
 </li>
-<li>Dismiss Siri and Continue - Open URLs (<code>weixin://widget/pay</code>) # Open WeChat payment code, <a href="https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1">https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1</a></li>
+<li>Open WeChat payment code<pre><code>- Dismiss Siri and Continue
+- Open URLs (e.g. `weixin://widget/pay`, `alipays://platformapi/startapp?appId=2018121962599426&amp;page=pages%2FphoneTraffic%2FphoneTraffic%3FpageSource%3Dshouye`)
+- https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1
+- https://sspai.com/post/68497
+</code></pre>
+</li>
 <li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>) - URL Encode (Decode, URL) # Beautify JSON format, <a href="https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
 <li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
 <li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
+<li>Extract all values from a JSON structure<pre><code>- Get Dictionary from Input (Contents of URL)
+- Repeat with Each (Dictionary)
+- Get Dictionary Value (Value, url, Repeat Item)
+- End Repeat
+- Combine Text (Repeat Results, New Lines)
+- Artificial intelligence
+</code></pre>
+</li>
 <li>Get a list of all file names from the API (JSON format)<pre><code>- Get Dictionary from Input (Contents of URL)
 - Get Dictionary Value (Value, data.content, Dictionary)
 - Repeat with Each (Dictionary Value)
@@ -7889,6 +8023,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Text<ul>
+<li>Long press first word and slide down one line # Select the whole line</li>
 <li>Long press &#39;123&#39; and slide to comma # Enter punctuation marks quickly</li>
 <li>Long press the dollar sign # Select another country&#39;s currency unit symbol (e.g. ¥)</li>
 <li>Long press the double quotes or disable &#39;Smart Punctuation&#39; # Choose the ASCII</li>
@@ -7916,6 +8051,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to improve the efficiency of mobile phone use.</li>
 <li>Remove update notifications and tags in the Settings<ul>
+<li><a href="https://ios.cfw.guide/blocking-updates/">https://ios.cfw.guide/blocking-updates/</a></li>
 <li><a href="https://sysin.org/blog/disable-ios-update/">https://sysin.org/blog/disable-ios-update/</a></li>
 </ul>
 </li>
@@ -7939,6 +8075,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Disadvantages<ul>
+<li>Doesn&#39;t have an infrared transmitter like Android phones to directly control the air conditioner in the dormitory</li>
 <li>Cannot set the automatic screen lock time to 30 seconds (Or Never) through parameters # Can only open the page (<code>prefs:root=DISPLAY&amp;path=AUTOLOCK/30</code>) and then tap manually <a href="https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337">https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337</a> <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082</a></li>
 <li>Mail app does not send real-time notifications # Can only open it manually and pull down to refresh <a href="https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/">https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/</a></li>
 <li>Can&#39;t add video (Except photo) to album</li>
@@ -12839,6 +12976,10 @@ static const char *scratchpadcmd[] = { &quot;st&quot;, &quot;-t&quot;, scratchpa
 <li><a href="https://github.com/bandithijo/dmenu-websearch">https://github.com/bandithijo/dmenu-websearch</a></li>
 </ul>
 </li>
+<li>As calculator<ul>
+<li><a href="https://github.com/philj56/tofi/issues/172#issuecomment-2346453033">https://github.com/philj56/tofi/issues/172#issuecomment-2346453033</a></li>
+</ul>
+</li>
 <li><code>doas vim /etc/portage/package.use/zz-autounmask</code><pre><code># Save configuration after reinstalling
 # Required by /etc/portage/savedconfig/x11-misc/dmenu
 x11-misc/dmenu savedconfig
@@ -15753,7 +15894,7 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man curl</code> # <code>/^ *-s</code></li>
+<li><code>man curl</code> # <code>/^ *-s</code> <code>/^ *-O</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -18154,6 +18295,10 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li>Switch to another branch of Git<ul>
+<li><code>git switch gh-pages</code> # Switch to &quot;gh-pages&quot; branch</li>
+</ul>
+</li>
 <li>On a new computer<ul>
 <li><code>git config --global user.email &quot;yaoniplan@gmail.com&quot;</code> # Set user email</li>
 <li><code>git config --global user.name &quot;yaoniplan&quot;</code> # Set user name</li>
@@ -18305,6 +18450,9 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1669443599775_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1669454072538_0.png" alt="image.png"></li>
+<li><a href="https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git">https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git</a></li>
 <li><img src="../assets/2023-02-24_22:06:22.png" alt="2023-02-24_22:06:22.png"></li>
 <li><a href="https://blog.yowko.com/git-push-multiple-remote-repository/">https://blog.yowko.com/git-push-multiple-remote-repository/</a></li>
 <li><a href="https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f">https://gist.github.com/miztiik/647c3b67a9c3c3e8a5c857436a59477f</a></li>
@@ -18410,6 +18558,11 @@ set number
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li>Copy selected text to the clipboard<ul>
+<li><code>Ctrl-v</code> # Visual Block mode (Select text)</li>
+<li><code>:w !wl-copy</code> # Write the selected text to a command, pipes it to <code>wl-copy</code></li>
+</ul>
+</li>
 <li>Record a repeating action<ul>
 <li><code>qd</code> # Start recording as <em>d</em></li>
 <li><code>q</code> # Stop recording</li>
@@ -18598,7 +18751,6 @@ set smartindent &quot; Adjust indentation based on syntax automatically
 <li><a href="https://medium.com/@Sohjiro/introduction-to-vim-buffers-dd966ff518d">https://medium.com/@Sohjiro/introduction-to-vim-buffers-dd966ff518d</a></li>
 <li><a href="https://stackoverflow.com/questions/19971023/how-to-go-back-to-previous-opened-file-in-vim">https://stackoverflow.com/questions/19971023/how-to-go-back-to-previous-opened-file-in-vim</a></li>
 <li><a href="https://vi.stackexchange.com/questions/2462/how-do-i-move-the-cursor-to-the-center-of-current-line">https://vi.stackexchange.com/questions/2462/how-do-i-move-the-cursor-to-the-center-of-current-line</a></li>
-<li>Add a demo.gif here</li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -20733,6 +20885,13 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Volumn control<ul>
+<li>Audio Effects selection - gain - 1.5</li>
+<li>Adjust the video&#39;s volume slider to change the default volume</li>
+<li><a href="https://github.com/polywock/globalSpeed/issues/196#issuecomment-1109283484">https://github.com/polywock/globalSpeed/issues/196#issuecomment-1109283484</a></li>
+<li><a href="https://github.com/polywock/globalSpeed/issues/292#issuecomment-1343084217">https://github.com/polywock/globalSpeed/issues/292#issuecomment-1343084217</a></li>
+</ul>
+</li>
 <li>Create a &quot;state&quot; in &quot;Shortcut Editor&quot; # Another way<ul>
 <li>Click on &quot;NoKey&quot; and press your desired shortcut key (e.g. <em>Alt-s</em>)</li>
 </ul>
@@ -21511,20 +21670,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Switch to another branch of Git</h4>
-<ul>
-<li><code>git switch gh-pages</code> # Switch to &quot;gh-pages&quot; branch</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1669443599775_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1669454072538_0.png" alt="image.png"></li>
-<li><a href="https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git">https://stackoverflow.com/questions/47630950/how-can-i-switch-to-another-branch-in-git</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li>Remove package from @world set #Gentoo #Linux<ul>
 <li><code>sudo emerge --deselect sys-kernel/gentoo-kernel-bin</code></li>
 <li><em><strong>Notes</strong></em><ul>
@@ -21589,29 +21734,6 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><img src="../assets/image_1669358913831_0.png" alt="image.png"></li>
 <li><a href="https://www.ventoy.net/en/plugin_plugson.html">https://www.ventoy.net/en/plugin_plugson.html</a></li>
 <li><a href="https://github.com/ventoy/Ventoy/releases">https://github.com/ventoy/Ventoy/releases</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Use &quot;chmod&quot;</h4>
-<ul>
-<li><code>sudo chmod -R 777 ~/note/grow/029_googleTranslateExtension2.0.12_0/</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>-R</code> # recursive</li>
-<li><code>777</code> # the first &quot;7&quot; are permissions of <strong>user</strong>; the second &quot;7&quot; are permissions of <strong>user&#39;s group</strong>; the third &quot;7&quot; are permissions of <strong>others</strong><ul>
-<li><code>permissions</code> # read, write and execute</li>
-<li><code>7</code> # $2^2 + 2^1 + 2^0$</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><img src="../assets/image_1668671601715_0.png" alt="image.png"></li>
-<li><img src="../assets/image_1668671715909_0.png" alt="image.png"></li>
-<li><code>man chmod</code></li>
 </ul>
 </li>
 </ul>
@@ -23594,23 +23716,39 @@ You can edit this.
 <li><img src="../assets/image_1662426776813_0.png" alt="image.png"></li>
 </ul>
 </li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;chmod&quot;</h4>
 <ul>
+<li><code>find node_modules/ -type f -exec chmod a-x {} \;</code></li>
+<li><code>chmod -R a+X .wrangler/</code></li>
+<li><code>sudo chmod -R 777 ~/note/grow/029_googleTranslateExtension2.0.12_0/</code></li>
 <li><code>chmod a+x /usr/bin/sleep.py</code></li>
 </ul>
 </li>
-<li><p><em><strong>Notes</strong></em></p>
-<ul>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-R</code> # recursive</li>
+<li><code>777</code> # the first &quot;7&quot; are permissions of <strong>user</strong>; the second &quot;7&quot; are permissions of <strong>user&#39;s group</strong>; the third &quot;7&quot; are permissions of <strong>others</strong><ul>
+<li><code>permissions</code> # read, write and execute</li>
+<li><code>7</code> # $2^2 + 2^1 + 2^0$</li>
+</ul>
+</li>
 <li><code>a</code> # All (Users and groups)<ul>
 <li><code>u</code> # User (Current user)</li>
 </ul>
 </li>
 <li><code>+</code> # Grant (Opposite: <code>-</code>)</li>
-<li><code>x</code> # Execute (Permission)</li>
+<li><code>x</code> # Execute (Permission)<ul>
+<li><code>X</code> # All directories (Excluding files)</li>
 </ul>
 </li>
-<li><p><em><strong>References</strong></em></p>
-<ul>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><img src="../assets/image_1668671601715_0.png" alt="image.png"></li>
+<li><img src="../assets/image_1668671715909_0.png" alt="image.png"></li>
+<li><code>man chmod</code></li>
 <li><code>chmod</code> # Change mode</li>
 <li><img src="../assets/image_1662430025877_0.png" alt="image.png"></li>
 <li><img src="../assets/image_1662427435091_0.png" alt="image.png"></li>
@@ -24997,10 +25135,19 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li><code>arch-chroot /mnt</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li>After the modification is completed<ul>
+<li><code>exit</code> # Exit the chroot environment</li>
+<li><code>umount /mnt</code> # Unmount the filesystem</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
 <li><code>lsblk</code></li>
 <li><code>fdisk -l</code></li>
 <li><a href="https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3">https://forum.endeavouros.com/t/chroot-into-a-btrfs-uefi-system-from-live-media/15986/3</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
