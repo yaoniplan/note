@@ -1,57 +1,55 @@
 ### "Animation"
+- 随兴旅-That's Journey- S01E01
+- 长歌行 - S01E04 0743 animation
+- 凡人修仙传 - 135
 - 金牌得主 S01E09
 - 发现自己转生成猫的大叔 S01E20
 - 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E09
 - 君子无疾 S01E04
 - 虽然我是注定没落的贵族，闲来无事只好来深究魔法 S01E09
 - 天久鹰央的事件病历簿 S01E08
-- 重生的猫骑士与精灵娘的日常 S01E06 #NSFW animation
 - 坂本日常 S01E09
 - 吸吸吸吸吸血鬼 S01E08
-- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E06 animation
+- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E09
 - 这公司有我喜欢的人 S01E00 animation
-- 上班族转生异世界当上了四天王不是很正常吗 S01E08
-- 我的可爱对黑岩目高不管用 S01E01 1100 # Doesn't seem realistic
-- 全修。 S01E07
-- 无名记忆 S01E01
-- 群花绽放，彷如修罗 S01E03 1802 animation
-- 蜂蜜柠檬碳酸水 S01E05
-- 永恒剑祖 S01E21
-- The Ravages of Time / 火凤燎原 - S01E16.S01E07
-- 不幸职业【鉴定士】实则最强 S01E05 0524
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E07
-- 魔法制造者 ～异世界魔法的制作方法～ S01E06
-- 左手上篮 S01E08.S02E09
-- 沧元图 - S01E43
-- 我和班上最讨厌的女生结婚了。 - S01E04
-- 欢迎来到日本，精灵小姐。 - S01E03
-- 中年男的异世界网购生活 - S01E02
-- Solo Leveling / 我独自升级 - S01E12.S02E07
-- 卡徒 - S01E13
-- 神道帝尊 - S01E41
-- 蛮荒仙界 - S01E47
-- 我能无限顿悟 - S01E38
-- 武逆 - S01E22
-- 牧神记 S01E19
-- 长生界 S01E18
-- 一兆游戏 S01E20
-- 灵武大陆 64
-- 龙珠大魔 S01E19
-- 地。-关于地球的运动 S01E22
-- 神墓 - 43
-- 无尽神域 - 59
-- 一念永恒 - S01E52.S02E54.S03E38
-- 陆地键仙 S01E95
-- 散修之王 - 51
-- 仙逆 - 77
+- 上班族转生异世界当上了四天王不是很正常吗 S01E10
+- 全修。 S01E10
+- 永恒剑祖 S01E26
+- The Ravages of Time / 火凤燎原 - S01E16.S02E09
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E09
+- 魔法制造者 ～异世界魔法的制作方法～ S01E08
+- 沧元图 - S01E45
+- 我和班上最讨厌的女生结婚了。 - S01E11
+- 欢迎来到日本，精灵小姐。 - S01E03 animation
+- 中年男的异世界网购生活 - S01E04
+- Solo Leveling / 我独自升级 - S01E12.S02E11
+- 我能无限顿悟 - S01E45
+- 武逆 - S01E24
+- 牧神记 S01E22
+- 长生界 S01E26
+- 一兆游戏 S01E23
+- 灵武大陆 67
+- 龙珠大魔 S01E20
+- 无尽神域 - 65
+- 一念永恒 - S01E52.S02E54.S03E41
+- 陆地键仙 S01E101
+- 仙逆 - 80
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 98
-- 武神主宰 - 524
-- Against the Sky Supreme / 逆天至尊 - 388
+- Shrouding the Heavens / 遮天 - 101
+- 武神主宰 - 530
+- Against the Sky Supreme / 逆天至尊 - 394
 
 ### Comic
+- 世上最好的青梅竹马 42
+- 恶次人生 #NSFW 13
+- 转世镖师 107
+- 道诡异仙 26
+- 我在末世摆地摊 37
+- 神赐之手 51
+- 从哥布林到哥布林神 45
+- 我有九千万亿舔狗金 527
 - 这一世我要当独行玩家 45
 - 任务至上主义 167
 - 死灵法师的进化特质 39
@@ -158,6 +156,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 贪食的降临 47 # Chapter 47 doesn't seem to be connected with the previous plot.
 - 转生者 18 # Plot may be slow
 - 我杀了学院玩家 15 # Plot may be slow
 - 游戏大师 15 # Plot may be slow
@@ -279,7 +278,19 @@
 - guard(end)
 
 ### Animation
-- 魔域英雄传说 S01E05 # Target audience may be 13 or 14 years old
+- 散修之王 - 52
+- 神墓 - 43
+- 地。-关于地球的运动 S01E25
+- 重生的猫骑士与精灵娘的日常 S01E11 0512 #NSFW # Plot maybe slow
+- 不幸职业【鉴定士】实则最强 S01E08 0541 #NSFW # Plot maybe slow
+- 蛮荒仙界 - S01E48
+- 神道帝尊 - S01E48
+- 卡徒 - S01E13
+- 左手上篮 S01E08.S02E09
+- Honey Lemon Soda / 蜂蜜柠檬碳酸水 S01E06 0859 # Target audience maybe 13 or 14 years old
+- Flower and Asura / 群花绽放，彷如修罗 S01E04 1520 # This animation teaches broadcasting (e.g. abdominal breathing)
+- 我的可爱对黑岩目高不管用 S01E01 1100 # Doesn't seem realistic
+- 魔域英雄传说 S01E05 # Target audience maybe 13 or 14 years old
 - 不知为何我和尼特且宅的女忍者开始了同居生活 S01E07 0746 # NEETs are no longer NEETs and the plot may be slow
 - 众星齐聚 -Uni:Birth- S01E03 2138 # Target audience maybe 13 or 14 years old
 - 终将成为最强炼金术师？ S01E03 0157 # Target audience maybe 13 or 14 years old
@@ -342,7 +353,6 @@
 - 青之壬生狼 S01E02 0029 # Target audience maybe 13 or 14 years old
 - 新网球王子 U-17 世界杯 半决赛 0040 # Seems to lack the passion element (Compared to this *Blue Lock* animation)
 - 银翼超人 0225 # It's a TV series.
-- 凡人修仙传 - 124
 - 剑域风云 - S01E40.S02E52.S03E104
 - 斩神之凡尘神域 S01E15
 - 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female

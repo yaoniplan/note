@@ -41,6 +41,59 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;iwctl&quot;</h4>
+<ul>
+<li><code>iwctl device list</code> # List available devices (e.g. <code>wlan0</code>)</li>
+<li><code>iwctl station wlan0 scan</code> # Scan for available Wi-Fi networks (Refresh)</li>
+<li><code>iwctl station wlan0 get-networks</code> # List scanned networks (e.g. <code>iPhone</code>)</li>
+<li><code>iwctl station wlan0 connect iPhone</code> # Connect to a network</li>
+<li>Type the network passphrase for iPhone psk if prompt this message</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas systemctl start iwd</code> # Start IWD service to solve the problem<pre><code>yaoniplan@tux ~ $ iwctl
+Waiting for IWD to start...
+</code></pre>
+</li>
+<li><code>iwctl</code> # Interactive mode<ul>
+<li><code>station wlan0 scan</code> # Scan to refresh</li>
+<li><code>station wlan0 get-networks</code> # Get WiFi network name</li>
+<li><code>station wlan0 connect &quot;iPhone&quot;</code> # Replace <code>iPhone</code> with your WiFi name</li>
+</ul>
+</li>
+<li>Because to connect to WiFi (e.g. Hotspot) without <code>nmcli</code> software.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>iwctl # Internet wireless control</li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;dig&quot;</h4>
+<ul>
+<li><code>dig +short TXT _psl.dpdns.org</code><pre><code>&quot;https://github.com/publicsuffix/list/pull/2414&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>+short</code> # Return TXT record&#39;s value only (Without additional metadata)</li>
+<li>Because to query the DNS TXT record. (Associated with the subdomain <code>_psl.dpdns.org</code>)</li>
+<li><code>nix profile install nixpkgs#dig</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>The abbreviation of &quot;Public Suffix List&quot; is &quot;psl&quot;.</li>
+<li><a href="https://github.com/publicsuffix/list/pull/2414">https://github.com/publicsuffix/list/pull/2414</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;cloudpaste&quot;</h4>
 <ul>
 <li>Create two KV Namespaces<ul>
@@ -183,17 +236,18 @@ execute=Control+j Control+m Return KP_Enter Control+y
 insert-selected=Control+i
 </code></pre>
 </li>
-<li><code>Ctrl-n</code> # Next line (Opposite: <code>Ctrl-p</code>)</li>
-<li><code>Ctrl-[</code> # Exit (Same as: <code>Esc</code>)</li>
-<li><code>--list-executables-in-path</code> # List excutables in the PATH environment variable</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-n</code> # Next line (Opposite: <code>Ctrl-p</code>)</li>
+<li><code>Ctrl-[</code> # Exit (Same as: <code>Esc</code>)</li>
+<li><code>--list-executables-in-path</code> # List excutables in the PATH environment variable</li>
+<li><code>--dmenu</code> # Use dmenu compatibility mode</li>
 <li><code>nix profile install nixpkgs#fuzzel</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man fuzzel.ini</code> # <code>/colors</code></li>
+<li><code>man fuzzel.ini</code> # <code>/colors</code> <code>/--dmenu</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -945,7 +999,7 @@ async function handleRequest(request) {
 <ul>
 <li>Check Out<pre><code>- Text
   &quot;&quot;&quot;
-  shortcuts://x-callback-url/run-shortcut?name=getBarcode&amp;x-cancel=shortcuts://run-shortcut?name=openShoppingCart&amp;x-success
+  shortcuts://x-callback-url/run-shortcut?name=getBarcode&amp;x-cancel=shortcuts://run-shortcut?name=openShoppingCart
   &quot;&quot;&quot;
 - Open Text
 </code></pre>
@@ -956,7 +1010,7 @@ async function handleRequest(request) {
     - Add QR/Barcode to Barcode
     - Text (Barcode)
     - Set variable `All barcode` to `Text`
-    - Replace `click return key` wiht `:1,` in `All barcode`
+    - Replace `click return key` with `:1,` in `All barcode`
     - Set variable `Formatted barcode` to `Updated Text`
     - Text (https://example.com/?cart=`Formatted barcode`:1)
     - Set variable `URL` to `Text`
@@ -6671,6 +6725,21 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>doas vim /nix/store/q8vgwi1qizpp5m4n7afsa2an7x9f9fpv-ani-cli-4.9/bin/.ani-cli-wrapped</code> # Modify script to use a custom external menu<pre><code>external_menu() {
+    #rofi &quot;$1&quot; -sort -dmenu -i -width 1500 -p &quot;$2&quot;
+    fuzzel --dmenu &quot;$1&quot; -i -l 0 -p &quot;$2&quot;
+}
+
+launcher() {
+    [ &quot;$use_external_menu&quot; = &quot;0&quot; ] &amp;&amp; [ -z &quot;$1&quot; ] &amp;&amp; set -- &quot;+m&quot; &quot;$2&quot;
+    #[ &quot;$use_external_menu&quot; = &quot;0&quot; ] &amp;&amp; fzf &quot;$1&quot; --reverse --cycle --prompt &quot;$2&quot;
+    [ &quot;$use_external_menu&quot; = &quot;0&quot; ] &amp;&amp; fuzzel --dmenu -i -l 20 -p &quot;$2&quot;
+    #[ &quot;$use_external_menu&quot; = &quot;1&quot; ] &amp;&amp; external_menu &quot;$1&quot; &quot;$2&quot;
+    [ &quot;$use_external_menu&quot; = &quot;1&quot; ] &amp;&amp; fuzzel --dmenu -i -l 20 -p &quot;$2&quot;
+}
+</code></pre>
+</li>
+<li><code>--rofi</code> # Use rofi instead of fzf for the interactive menu</li>
 <li><code>--range &quot;3 - 4&quot;</code> # Specify range (Without clicking next manually)</li>
 <li><code>cat ~/.local/state/ani-cli/ani-hsts</code> # View history<ul>
 <li><code>tac ~/.local/state/ani-cli/ani-hsts | less</code> # Another way</li>
@@ -6684,7 +6753,8 @@ admin # In &#39;user&#39; of &#39;Synchronize&#39;
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/pystardust/ani-cli/discussions/1003#discussioncomment-4815461">https://github.com/pystardust/ani-cli/discussions/1003#discussioncomment-4815461</a></li>
 <li><a href="https://www.youtube.com/watch?v=gscwIwRaIo8">https://www.youtube.com/watch?v=gscwIwRaIo8</a></li>
-<li>ChatGPT</li>
+<li><code>ani-cli --help</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -7758,6 +7828,14 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Decode URL<pre><code>- Text (Shortcut Input)
+- URL Encode (Decode, Text)
+- Quick Look (URL Encoded Text)
+</code></pre>
+<ul>
+<li>Remember to enable &#39;Show in Share Sheet&#39; in Details</li>
+</ul>
+</li>
 <li>Check if it is text or file type<pre><code>- Text (Text|Safari web page|Rich text|URL)
 - Set Variable (Text type, Text)
 - Get Type (Shortcut Input)
@@ -8197,7 +8275,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>Use Settings<ul>
 <li><code>What can you do</code> # Discover new commands</li>
 <li><code>Enable light mode</code> # Replace <code>light</code> with <code>dark</code> to toggle</li>
-<li><code>Scan the QR code</code> # Open code scanner</li>
+<li><code>Open the QR code scanner / Scan the QR code</code> # Open code scanner</li>
 <li><code>repeat again</code> # Repeat reply</li>
 <li><code>What song is it</code> # Identify a song (Get song title or artist)</li>
 <li><code>Next song</code> # Play next music (Doesn&#39;t work: <code>Previous song</code>)</li>
@@ -8259,7 +8337,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><a href="https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/">https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/</a></li>
 <li><a href="https://developer.apple.com/siri/">https://developer.apple.com/siri/</a></li>
 <li>iPhone 14 Pro</li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -18177,11 +18255,14 @@ URxvt.scrollstyle: rxvt
 <hr>
 <ul>
 <li><h4>Use Rofi theme</h4>
-<pre><code>git clone https://github.com/newmanls/rofi-themes-collection
+<ul>
+<li>Put theme.rasi files into the themes directory<pre><code>git clone https://github.com/newmanls/rofi-themes-collection
 cd rofi-themes-collection
 mkdir -p ~/.local/share/rofi/themes/
 cp ./* ~/.local/share/rofi/themes/
 </code></pre>
+</li>
+</ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>rofi -show drun</code> # Show drun mode</li>
