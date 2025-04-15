@@ -1,47 +1,38 @@
 ### "Animation"
+- 罪恶装备斗争：双重指标 S01E02 0420 animation
+- 乡下大叔成为剑圣 S01E02
 - 随兴旅-That's Journey- S01E01
-- 长歌行 - S01E04 0743 animation
-- 凡人修仙传 - 135
-- 金牌得主 S01E09
-- 发现自己转生成猫的大叔 S01E20
-- 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E09
-- 君子无疾 S01E04
-- 虽然我是注定没落的贵族，闲来无事只好来深究魔法 S01E09
-- 天久鹰央的事件病历簿 S01E08
+- 长歌行 - S01E07
+- 凡人修仙传 - 137
+- 发现自己转生成猫的大叔 S01E25
+- 君子无疾 S01E08
 - 坂本日常 S01E09
 - 吸吸吸吸吸血鬼 S01E08
 - 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E09
-- 这公司有我喜欢的人 S01E00 animation
-- 上班族转生异世界当上了四天王不是很正常吗 S01E10
-- 全修。 S01E10
-- 永恒剑祖 S01E26
-- The Ravages of Time / 火凤燎原 - S01E16.S02E09
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E09
-- 魔法制造者 ～异世界魔法的制作方法～ S01E08
-- 沧元图 - S01E45
-- 我和班上最讨厌的女生结婚了。 - S01E11
-- 欢迎来到日本，精灵小姐。 - S01E03 animation
-- 中年男的异世界网购生活 - S01E04
-- Solo Leveling / 我独自升级 - S01E12.S02E11
-- 我能无限顿悟 - S01E45
-- 武逆 - S01E24
-- 牧神记 S01E22
-- 长生界 S01E26
-- 一兆游戏 S01E23
-- 灵武大陆 67
-- 龙珠大魔 S01E20
-- 无尽神域 - 65
-- 一念永恒 - S01E52.S02E54.S03E41
-- 陆地键仙 S01E101
-- 仙逆 - 80
+- 永恒剑祖 S01E34
+- The Ravages of Time / 火凤燎原 - S01E16.S02E13
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
+- 沧元图 - S01E49
+- 我能无限顿悟 - S01E51
+- 武逆 - S01E29
+- 牧神记 S01E25
+- 灵武大陆 70
+- 无尽神域 - 71
+- 一念永恒 - S01E52.S02E54.S03E44
+- 陆地键仙 S01E107
+- 仙逆 - 83
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 101
-- 武神主宰 - 530
-- Against the Sky Supreme / 逆天至尊 - 394
+- Shrouding the Heavens / 遮天 - 104
+- 武神主宰 - 535
+- Against the Sky Supreme / 逆天至尊 - 400
 
 ### Comic
+- 穿入VR成为性域猎人 #NSFW 56
+- 异世界转生之后宫养成记 #NSFW 54
+- 只活到今天的轮回骑士 44
+- 被召唤到异世界，然后成为半龙骑士长 #NSFW 37
 - 世上最好的青梅竹马 42
 - 恶次人生 #NSFW 13
 - 转世镖师 107
@@ -278,6 +269,21 @@
 - guard(end)
 
 ### Animation
+- 龙珠大魔 S01E20
+- 一兆游戏 S01E26
+- 长生界 S01E26
+- Solo Leveling / 我独自升级 - S01E12.S02E13
+- 欢迎来到日本，精灵小姐。 - S01E04 0417 # Maybe I'm not the target audience
+- 这公司有我喜欢的人 S01E01 # Maybe I'm not the target audience
+- 中年男的异世界网购生活 - S01E05 1327 # The plot is a bit leisurely, without any ups and downs (A middle-aged man and a little girl? Maybe I'm not the target audience)
+- 我和班上最讨厌的女生结婚了。 - S01E12
+- 魔法制造者 ～异世界魔法的制作方法～ S01E09 0344 # Plot maybe slow
+- 全修。 S01E12
+- 上班族转生异世界当上了四天王不是很正常吗 S01E12
+- 天久鹰央的事件病历簿 S01E12
+- 虽然我是注定没落的贵族，闲来无事只好来深究魔法 S01E12
+- 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E10 1142 # Plot maybe slow
+- 金牌得主 S01E13
 - 散修之王 - 52
 - 神墓 - 43
 - 地。-关于地球的运动 S01E25

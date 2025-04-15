@@ -41,6 +41,77 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;bun&quot;</h4>
+<ul>
+<li><code>bun add -g @enclosed/cli</code> # Replace <code>add</code> with <code>remove</code> to remove it</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because it is faster than npm.</li>
+<li><code>curl https://bun.sh/install | bash</code> # Install dependencies</li>
+<li><code>bun pm ls -g</code> # List installed packages globally</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Speed<pre><code># Pnpm
+yaoniplan@tux ~ $ pnpm install @enclosed/cli -g
+Packages: +95
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 105, reused 0, downloaded 95, added 95, done
+
+/home/yaoniplan/.local/share/pnpm/global/5:
++ @enclosed/cli 1.15.0
+
+Done in 10.2s using pnpm v10.8.0
+yaoniplan@tux ~ $ pnpm uninstall @enclosed/cli -g
+Already up to date
+
+/home/yaoniplan/.local/share/pnpm/global/5:
+- @enclosed/cli 1.15.0
+
+Done in 564ms using pnpm v10.8.0
+yaoniplan@tux ~ $
+
+# Bun
+yaoniplan@tux ~ $ bun add @enclosed/cli -g
+bun add v1.2.9 (9a329c04)
+
+installed @enclosed/cli@1.15.0 with binaries:
+ - enclosed
+
+1 package installed [9.32s]
+yaoniplan@tux ~ $ bun remove @enclosed/cli -g
+bun remove v1.2.9 (9a329c04)
+
+- @enclosed/cli
+1 package removed [5.00ms]
+yaoniplan@tux ~ $
+</code></pre>
+</li>
+<li><a href="https://github.com/oven-sh/bun/issues/1863#issuecomment-1401169766">https://github.com/oven-sh/bun/issues/1863#issuecomment-1401169766</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;pnpm&quot;</h4>
+<ul>
+<li><code>pnpm install @enclosed/cli -g</code> # Replace <code>install</code> with <code>uninstall</code> to uninstall it</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because it can solve the error reported by npm command.</li>
+<li><code>nix profile install nixpkgs#pnpm</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;iwctl&quot;</h4>
 <ul>
 <li><code>iwctl device list</code> # List available devices (e.g. <code>wlan0</code>)</li>
@@ -51,7 +122,7 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>doas systemctl start iwd</code> # Start IWD service to solve the problem<pre><code>yaoniplan@tux ~ $ iwctl
+<li><code>doas systemctl enable iwd --now</code> # Run IWD service at boot time to solve the problem<pre><code>yaoniplan@tux ~ $ iwctl
 Waiting for IWD to start...
 </code></pre>
 </li>
@@ -65,7 +136,8 @@ Waiting for IWD to start...
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>iwctl # Internet wireless control</li>
+<li>The abbreviation of &quot;internet wireless control&quot; is &quot;iwctl&quot;.</li>
+<li><code>man iwctl</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -216,7 +288,7 @@ Waiting for IWD to start...
 anchor=top
 # Set the window width to 100 characters
 width=100
-# Set font and font size
+# Set font (Or FiraCode Nerd Font to display iconic font) and font size
 font=Fira Code:size=14
 # Set prompt
 prompt=&quot;-&gt; &quot;
@@ -229,6 +301,20 @@ inner-pad=0
 [border]
 width=0
 radius=0
+
+# Change to a more modern theme
+[colors]
+background=1e1e2edd
+text=cdd6f4ff
+prompt=bac2deff
+placeholder=7f849cff
+input=cdd6f4ff
+match=f38ba8ff
+selection=585b70ff
+selection-text=cdd6f4ff
+selection-match=f38ba8ff
+counter=7f849cff
+border=f38ba8ff
 
 [key-bindings]
 # Use `Ctrl-m` to Confirm (Same as: `Enter`)
@@ -247,6 +333,7 @@ insert-selected=Control+i
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/catppuccin/fuzzel/blob/main/themes/catppuccin-mocha/red.ini">https://github.com/catppuccin/fuzzel/blob/main/themes/catppuccin-mocha/red.ini</a></li>
 <li><code>man fuzzel.ini</code> # <code>/colors</code> <code>/--dmenu</code></li>
 <li>Artificial intelligence</li>
 </ul>
@@ -2492,11 +2579,17 @@ EOF
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Install yt-dlp<pre><code>pip install chardet requests -q --disable-pip-version-check
+pip install yt-dlp -q --disable-pip-version-check -i https://pypi.tuna.tsinghua.edu.cn/simple/
+</code></pre>
+</li>
 <li>Because to download a piece of music from YouTube in iPhone.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/">https://libreddit.nohost.network/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/</a></li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/">https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/</a></li>
+<li><a href="https://github.com/net00-1/SW-DLT/blob/master/src/SW_DLT.py#L80">https://github.com/net00-1/SW-DLT/blob/master/src/SW_DLT.py#L80</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -2626,7 +2719,7 @@ export all_proxy=&quot;socks://127.0.0.1:2333&quot;
 export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </code></pre>
 <ul>
-<li><code>all_proxy</code> # Both HTTP and HTTPS connections</li>
+<li><code>all_proxy</code> # Both HTTP and HTTPS connections (Sometimes doesn&#39;t work, try both http_proxy and https_proxy)</li>
 <li><code>2333</code> # Search &#39;listen_port&#39; to get the port</li>
 <li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
@@ -3180,7 +3273,7 @@ print(math.sqrt(25))
 <li><em><strong>Notes</strong></em><ul>
 <li>Warnings:<ul>
 <li>Configuration files sometimes do not take effect</li>
-<li>Chinese fonts can cause typesetting disorder</li>
+<li>CJK (Chinese, Japanese, and Korean) fonts can cause typesetting disorder</li>
 </ul>
 </li>
 <li><code>vim ~/.config/h-m-m/h-m-m.conf</code><pre><code>auto_save = true # Prevent accidental exits
@@ -4343,6 +4436,16 @@ fi
 <li>Show calender on hover</li>
 </ul>
 </li>
+<li><code>vim ~/.config/waybar/config.jsonc</code> # Display temperature<pre><code>&quot;modules-right&quot;: [&quot;temperature&quot;],
+&quot;temperature&quot;: {
+    // &quot;thermal-zone&quot;: 0,
+    // &quot;hwmon-path&quot;: &quot;/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp2_input&quot;,
+    // &quot;critical-threshold&quot;: 80,
+    // &quot;format-critical&quot;: &quot;{temperatureC}°C &quot;,
+    &quot;format&quot;: &quot;{temperatureC}°C&quot;
+}
+</code></pre>
+</li>
 <li><code>vim ~/.config/waybar/style.css</code> # Simulate dynamic island<pre><code class="language-css">* {
     /* Make the background transparent */
     background-color: transparent;
@@ -4351,7 +4454,7 @@ fi
 .modules-center {
     font-weight: bold; /* Make font bold */
     padding: 0px 8px; /* Fill space for height and width */
-    background-color: rgba(0, 0, 0, 1); /* Set dark mode */
+    /* background-color: rgba(0, 0, 0, 1); */ /* Set dark mode */
     border-radius: 20px; /* Set rounded corners */
 }
 
@@ -4368,6 +4471,8 @@ tooltip {
 <li><a href="https://github.com/Alexays/Waybar/issues/2737#issuecomment-1870214557">https://github.com/Alexays/Waybar/issues/2737#issuecomment-1870214557</a></li>
 <li><a href="https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar">https://wiki.hyprland.org/Useful-Utilities/Status-Bars/#waybar</a> # If on Hyprland</li>
 <li><a href="https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config">https://github.com/Alexays/Waybar/wiki/Configuration#minimal-config</a> # <code>man waybar</code> <code>/minimal</code></li>
+<li>The abbreviation of &quot;dardware monitoring&quot; is &quot;hwmon&quot;.</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -5035,6 +5140,7 @@ url-is-set=true
 <li>Install Python tools globally (The ImportError problem makes it impossible to use)<ul>
 <li><code>uv tool install xklb</code> # Replace <code>install</code> with <code>uninstall</code> to uninstall</li>
 <li><code>uv tool install git+https://github.com/grqz/yt-dlp.git@ie/bilibili/pi_fallbk</code> # From package source (Install patched software)</li>
+<li><code>uv tool install git+https://github.com/yt-dlp/yt-dlp.git@refs/pull/12048/head</code> # Install the specific commit from the PR</li>
 <li><code>uv tool list</code> # List installed tools</li>
 </ul>
 </li>
@@ -5054,6 +5160,7 @@ url-is-set=true
 <li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
 <li><code>tldr uv</code></li>
 <li><code>uv help tool</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -6527,6 +6634,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li><code>Ctrl-d/u</code> # Scroll down/up a half</li>
 <li><code>/</code> # Search</li>
 <li><code>Ctrl-[</code> # The same as <code>Esc</code></li>
+<li><code>P</code> # Show the complete command of process name</li>
 <li><code>dd</code> # Delete a process</li>
 </ul>
 </li>
@@ -6546,6 +6654,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ClementTsang/bottom/issues/572#issuecomment-916165075">https://github.com/ClementTsang/bottom/issues/572#issuecomment-916165075</a></li>
 <li><a href="https://github.com/ClementTsang/bottom/issues/133">https://github.com/ClementTsang/bottom/issues/133</a></li>
 <li><a href="https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal">https://askubuntu.com/questions/257263/how-to-display-network-traffic-in-the-terminal</a></li>
 <li><code>man nload</code></li>
@@ -6560,6 +6669,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--get-url</code> # Get direct url (e.g. <a href="https://example.com/sample.m4a">https://example.com/sample.m4a</a>)</li>
 <li><code>yt-dlp --flat-playlist --default-search ytsearch20 &quot;linux tutorial&quot; -O &quot;#EXTINF:%(duration_string)s,%(title)s&quot; -O &quot;%(webpage_url)s&quot; -O &quot;&quot; | awk &#39;BEGIN { print &quot;#EXTM3U\n&quot; } { print $0 }&#39; &gt;&gt; playlistOne.m3u</code> # Write to a M3U file</li>
 <li><code>yt-dlp --skip-download --ignore-errors --print-to-file url playlist.txt &quot;yourPlaylistUrl&quot;</code> # Extract playlist URL to file<ul>
 <li><code>yt-dlp &quot;yourPlaylistUrl&quot; --flat-playlist --dump-json | jq -r .url &gt;&gt; ~/playlist.txt</code> # Another way</li>
@@ -6589,6 +6699,7 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li><a href="https://github.com/ytdl-org/youtube-dl/issues/28633#issuecomment-812823807">https://github.com/ytdl-org/youtube-dl/issues/28633#issuecomment-812823807</a></li>
 <li><a href="https://redlib.freedit.eu/r/youtubedl/comments/unsaho/how_to_extract_individual_videos_links_from/">https://redlib.freedit.eu/r/youtubedl/comments/unsaho/how_to_extract_individual_videos_links_from/</a></li>
 <li><code>man yt-dlp</code> # <code>/template examples</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -7828,6 +7939,43 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>yt-dlp<pre><code>- Text (yt-dlp --get-url `Shortcut Input`)
+- Execute Command (Text)
+    - no (run in extension) # Open the app to execute the commands?
+    - Disable &#39;Show When Run&#39;
+- Text (outplayer://`output`)
+- Open URLs (Text)
+</code></pre>
+</li>
+<li>Random password<pre><code>- Text (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
+- Text (abcdefghijklmnopqrstuvwxyz)
+- Text (0123456789)
+- Text (!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~)
+- List (Select Variable - Select a Magic Variable - Variable Name)
+    - Uppercase letters
+    - Lowercase letters
+    - Number
+    - Special characters
+- Ask for Input (Number, Password length)
+    - 18 # Default Number
+- Choose from List (List)
+    - What character types are to be used? # Prompt
+    - Enable &#39;Select Multiple&#39;
+    - Enable &#39;Select All Initially&#39;
+- Combine Text (Chosen Item, Custom)
+- Split Text (Combined Text, Every Character)
+- Repeat (Provided Input)
+    - Get Item from List (Random Item, Split Text)
+    - Add to Variable (Item from List, tmp)
+- End Repeat
+- Combine Text (`tmp`, Custom)
+- Text (Combined Text)
+- Show Alert (Text)
+    - Copy to clipboard? # Title
+- Copy to Clipboard (Text)
+- https://libreddit.eu.org/r/shortcuts/comments/10bhcxr/the_best_strong_password_generator_shortcut_i/lfbetmp/
+</code></pre>
+</li>
 <li>Decode URL<pre><code>- Text (Shortcut Input)
 - URL Encode (Decode, Text)
 - Quick Look (URL Encoded Text)
@@ -7919,9 +8067,11 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
     - Disable &#39;Show When Run&#39;
 - Text (Name.File Extension)
 - Execute Command (vim complete filename, exit)
+- Wait to Return
 - Get file (complete filename)
     - Disable &#39;Show When Run&#39;
-- Save File (File, Shortcuts, complete filename)
+- Save File (File)
+    - Enable &#39;Overwrite If File Exists&#39;
 - https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/
 </code></pre>
 </li>
@@ -8056,9 +8206,35 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 - https://sspai.com/post/68497
 </code></pre>
 </li>
-<li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>) - URL Encode (Decode, URL) # Beautify JSON format, <a href="https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.nohost.network/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
-<li>Select Photos - Set Variable (Image, Photos) - Put File (Image) - Text (convert Image.<strong>File Extension</strong> -channel RGB -negate Output file name.png) - Execute Command (Text) - Get File (Output file name.png) # Invert image using a-Shell, <a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
-<li>Text (comment) - If (Text, is, Comment) - Nothing # Comment some actions, <a href="https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.nohost.network/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
+<li>Beautify JSON format<pre><code>- URL (`data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;`)
+- URL Encode (Decode, URL)
+- https://libreddit.eu.org/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/
+</code></pre>
+</li>
+<li>Invert image using a-Shell<pre><code>- Select Photos
+- Set Variable (Image, Photos)
+- Put File (`Image`)
+- Text (Current Date)
+    - Custom # Date Format
+    - yyyy-MM-dd-HHmmss (e.g. 2025-09-09-094100)
+- Set Variable (Output file name, Text)
+- Text (convert `Image`.`File Extension` -channel RGB -negate `Output file name`.png)
+- Execute Command (Text)
+- Get File (Output file name.png)
+- Save to Photo Album (File, Recents)
+- Quick Look (Saved Photo Media)
+- https://libreddit.eu.org/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2
+</code></pre>
+</li>
+<li>Comment out some actions<pre><code>- Text (Comment)
+- If (Text, is, Comment)
+    - Nothing
+- Otherwise
+    - all the actions you want to comment out
+- End If (Tips: Press and hold this action and drag it downwards to perform batch operations)
+- https://libreddit.eu.org/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89
+</code></pre>
+</li>
 <li>Extract all values from a JSON structure<pre><code>- Get Dictionary from Input (Contents of URL)
 - Repeat with Each (Dictionary)
 - Get Dictionary Value (Value, url, Repeat Item)
@@ -8074,7 +8250,12 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 - https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09
 </code></pre>
 </li>
-<li>Get Time Between Dates (Current Date, 00:00, Minutes) - Calculate (1440, +, Time Between Dates) - Show Result (Calculation Result) # How many minutes are left today?, <a href="https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.tux.pizza/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
+<li>How many minutes are left today?<pre><code>- Get Time Between Dates (Current Date, 00:00, Minutes)
+- Calculate (1440, +, Time Between Dates)
+- Show Result (Calculation Result)
+- https://libreddit.eu.org/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/
+</code></pre>
+</li>
 <li>Convert Image (Shortcut Input, PNG) - Save to Photo Album (Converted Image, Recents) # Convert PDFs (Captured long screen) to PNGs, <a href="https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb">https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb</a></li>
 <li>Get each line of a file before playing audiobook randomly<pre><code>- Get File from Folder (VLC, audioBook.txt)
 - Split Text (File, New Lines)
@@ -8082,10 +8263,34 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 - https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/
 </code></pre>
 </li>
-<li>Get Weather Forecast (Daily, Current Location) - Get Details of Weather Conditions (Sunrise Time, Weather Conditions) - <strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time) - Create Alarm (Item from List, Get Up, Disable &#39;Show When Run&#39;) - Adjust Date (Subtract, 510, minutes, Item from List) - Create Alarm (Adjusted Date, Go To Bed, Disable &#39;Show When Run&#39;) # Adjust 8-hour sleep time based on sunrise time, <a href="https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://old.reddit.com/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
+<li>Adjust 8-hour sleep time based on sunrise time<pre><code>- Get Weather Forecast (Daily, Current Location)
+- Get Details of Weather Conditions (Sunrise Time, Weather Conditions)
+- **Get Item from List** (Item at Index, 2, Sunrise Time)
+- Adjust Date (Add, 60, minutes, Item from List)
+- Set Variable (Up, Adjusted Date)
+- Create Alarm (`Up`, Get Up)
+    - Disable &#39;Show When Run&#39;
+- Show Notification (Alarm)
+    - Time # Title
+    - None # Date Format
+    - Short # Time Format
+- Adjust Date (Subtract, 510, minutes, Item from List)
+- Set Variable (Down, Adjusted Date)
+- Create Alarm (Adjusted Date, Go To Bed)
+    - Disable &#39;Show When Run&#39;
+- https://libreddit.eu.org/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/
+</code></pre>
+</li>
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
-<li>Open URLs - vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em> (Or <code>nplayer-http://192.168.10.100:5244/d/encodedFileName</code>) - done # <a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
+<li>Use URL Scheme<pre><code>- Text
+    - vlc-x-callback://x-callback-url/stream?url=*yourURL*
+    - Or `nplayer-http://192.168.10.100:5244/d/encodedFileName`
+    - Or `outplayer://*yourURL*`
+- Open URLs (Text)
+- https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812
+</code></pre>
+</li>
 <li>Make Siri mute if &#39;Dismiss Siri and Continue&#39; doesn&#39;t work<pre><code>- The add icon
 - Add Action
 - Dismiss Siri and Continue
@@ -8534,7 +8739,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><code>nmcli connection show</code> # Get the yourUUID</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#networkmanager</code> # Install dependencies<ul>
+<li><code>doas pacman --sync networkmanager</code> # Install dependencies<ul>
 <li><code>doas systemctl enable NetworkManager --now</code> # Solve the problem<pre><code>Error: NetworkManager is not running
 </code></pre>
 </li>
@@ -14221,7 +14426,10 @@ title=${filename}
 <li><a href="https://snoo.habedieeh.re/r/mpv/comments/oq40gb/want_to_display_filename_as_title_of_video/">https://snoo.habedieeh.re/r/mpv/comments/oq40gb/want_to_display_filename_as_title_of_video/</a></li>
 </ul>
 </li>
-<li><code>`</code> # Open the console for debugging (To test keybindings)</li>
+<li><code>`</code> # Open the console for debugging (To test keybindings)<ul>
+<li><code>set video-rotate 90</code> # Set rotation to 90 degrees</li>
+</ul>
+</li>
 <li><code>Ctrl-h</code> # Hardware decoding (May reduce CPU usage)</li>
 <li><code>Shift-i</code> # Information</li>
 <li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
@@ -14275,34 +14483,53 @@ custom_keybinds=yes
 </li>
 <li><code>vim ~/.config/mpv/script-opts/file-browser-keybinds.json</code><pre><code>[
     {
+        &quot;key&quot;: &quot;Ctrl+[&quot;,
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/close&quot;]
+    },
+    {
         &quot;key&quot;: &quot;SPACE&quot;,
         &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/play&quot;]
     },
     {
         &quot;key&quot;: &quot;k&quot;,
-        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_up&quot;]
-        &quot;flags&quot;: { &quot;repeatable&quot;: true} 
+        &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_up&quot;],
+        &quot;flags&quot;: { &quot;repeatable&quot;: true }
     },
     {
         &quot;key&quot;: &quot;j&quot;,
         &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/scroll_down&quot;],
-        &quot;flags&quot;: { &quot;repeatable&quot;: true}
+        &quot;flags&quot;: { &quot;repeatable&quot;: true }
     },
     {
         &quot;key&quot;: &quot;l&quot;,
         &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/down_dir&quot;],
-        &quot;flags&quot;: { &quot;repeatable&quot;: true}
+        &quot;flags&quot;: { &quot;repeatable&quot;: true }
     },
     {
         &quot;key&quot;: &quot;h&quot;,
         &quot;command&quot;: [&quot;script-binding&quot;, &quot;file_browser/dynamic/up_dir&quot;],
-        &quot;flags&quot;: { &quot;repeatable&quot;: true}
+        &quot;flags&quot;: { &quot;repeatable&quot;: true }
     },
     {
-        &quot;comment&quot;: &quot;Delete the current file&quot;,
+        &quot;comment&quot;: &quot;Delete the current file and directory&quot;,
         &quot;key&quot;: &quot;D&quot;,
-        &quot;command&quot;: [&quot;run&quot;, &quot;rm&quot;, &quot;%p%n&quot;],
-        &quot;command&quot;: [&quot;playlist-remove&quot;, &quot;current&quot;]
+        &quot;command&quot;: [
+            [&quot;run&quot;, &quot;rm&quot;, &quot;-r&quot;, &quot;-f&quot;, &quot;%p%n&quot;],
+            [&quot;script-binding&quot;, &quot;file_browser/dynamic/reload&quot;]
+        ]
+    },
+    {
+        &quot;comment&quot;: &quot;opens the currently selected items in a new mpv window&quot;,
+        &quot;key&quot;: &quot;M&quot;,
+        &quot;command&quot;: [&quot;run&quot;, &quot;mpv&quot;, &quot;%p%n&quot;]
+    },
+    {
+        &quot;comment&quot;: &quot;Copy filepath to clipboard&quot;,
+        &quot;key&quot;: &quot;Ctrl+c&quot;,
+        &quot;command&quot;: [
+            [&quot;run&quot;, &quot;sh&quot;, &quot;-c&quot;, &quot;echo -n &#39;%F&#39; | wl-copy&quot;],
+            [&quot;run&quot;, &quot;notify-send&quot;, &quot;%F&quot;]
+        ]
     }
 ]
 </code></pre>
@@ -14318,7 +14545,11 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input#installation">https://github.com/CogentRedTester/mpv-user-input#installation</a></li>
 </ul>
 </li>
-<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Print title (See https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst#property-list to get the property)
+<li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Rotate the screen clockwise
+r add video-rotate 90
+# Rotate the screen counterclockwise
+Shift+r add video-rotate -90
+# Print title (See https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst#property-list to get the property)
 # If the length of media-title is zero, then print filename
 p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;if [[ -z &#39;${media-title}&#39; ]]; then notify-send &#39;${filename}&#39;; else notify-send &#39;${media-title}&#39;; fi&quot;
 # Copy the full path to clipboard
@@ -14395,6 +14626,7 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://wiki.archlinux.org/title/Mpv#Key_bindings">https://wiki.archlinux.org/title/Mpv#Key_bindings</a></li>
 <li><a href="https://redlib.private.coffee/r/mpv/comments/ifx6k3/how_do_you_copy_the_full_path_to_clipboard/">https://redlib.private.coffee/r/mpv/comments/ifx6k3/how_do_you_copy_the_full_path_to_clipboard/</a></li>
 <li><a href="https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/">https://old.reddit.com/r/mpv/comments/vc2mvc/restart_mpv_with_keybinding/</a></li>
 <li><a href="https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/">https://old.reddit.com/r/mpv/comments/l9ez04/mpv_inputconf_not_working/htayzg7/</a></li>
@@ -14405,7 +14637,8 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
 <li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/file-browser-keybinds.json</a></li>
-<li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a> <a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
+<li><a href="https://github.com/CogentRedTester/mpv-file-browser#basic">https://github.com/CogentRedTester/mpv-file-browser#basic</a></li>
+<li><a href="https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem">https://askubuntu.com/questions/1412462/mpv-accidently-got-no-sound-problem</a></li>
 <li><a href="https://bbs.archlinux.org/viewtopic.php?id=281480">https://bbs.archlinux.org/viewtopic.php?id=281480</a></li>
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
 <li><a href="https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265">https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265</a></li>
@@ -18376,6 +18609,13 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li>Test a PR<ul>
+<li><code>git clone https://github.com/yt-dlp/yt-dlp &amp;&amp; cd yt-dlp</code> # Clone repository</li>
+<li><code>git fetch origin pull/12048/head:pr-12048</code> # Fetch the PR</li>
+<li><code>git checkout pr-12048</code> # Switch to the PR branch</li>
+<li><code>./yt-dlp.sh --skip-download --ignore-errors --print-to-file url ../rockefeller.txt &quot;https://m.ximalaya.com/album/14321728&quot;</code> # Verify that the PR fixes the bug</li>
+</ul>
+</li>
 <li>Switch to another branch of Git<ul>
 <li><code>git switch gh-pages</code> # Switch to &quot;gh-pages&quot; branch</li>
 </ul>
@@ -21647,7 +21887,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 <ul>
 <li><code>git clone https://github.com/MarianArlt/sddm-chili</code></li>
 <li><code>doas mv ~/sddm-chili /usr/share/sddm/themes/</code></li>
-<li><code>doas vim /usr/share/sddm/sddm.conf.d/00default.conf</code><pre><code>[Theme]
+<li><code>doas vim /etc/sddm.conf</code><pre><code>[Theme]
 # Current theme name
 Current=sddm-chili
 </code></pre>
@@ -21655,11 +21895,6 @@ Current=sddm-chili
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>/usr/share/sddm/sddm.conf.d/00default.conf</code> # SDDM&#39;s config file<ul>
-<li><code>doas updatedb</code> # Update a database for mlocate</li>
-<li><code>locate sddm.conf</code> # Locate file including &quot;sddm.conf&quot; text</li>
-</ul>
-</li>
 <li><code>doas emerge --ask dev-qt/qtquickcontrols</code> # Solve an error<pre><code>file:///usr/share/sddm/themes/sddm-chili//Main.qml:22:1: module &quot;QtQuick.Controls&quot; is not installed
 </code></pre>
 </li>
@@ -21708,6 +21943,7 @@ background=assets/background.png
 <li><a href="https://github.com/MarianArlt/sddm-chili/issues/15#issuecomment-1764010005">https://github.com/MarianArlt/sddm-chili/issues/15#issuecomment-1764010005</a></li>
 <li><a href="https://askubuntu.com/questions/43458/how-can-i-take-a-screenshot-of-the-login-screen">https://askubuntu.com/questions/43458/how-can-i-take-a-screenshot-of-the-login-screen</a></li>
 <li><a href="https://github.com/MarianArlt/sddm-chili">https://github.com/MarianArlt/sddm-chili</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -25085,7 +25321,7 @@ smart_boards on
 <ul>
 <li><h4>Use &quot;locate&quot;</h4>
 <ul>
-<li><code>locate awesome</code></li>
+<li><code>locate awesome</code> # Locate file including &quot;awesome&quot; text</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
