@@ -57,7 +57,10 @@
 ## Picture
 - https://image.online-convert.com/convert/mp4-to-gif
 - https://web.baimiaoapp.com/
-- https://www.remove.bg/zh
+- https://dewatermark.ai/upload
+- https://photiu.ai/
+- https://snapedit.app/auto-light/upload
+- https://www.remove.bg/
 - https://bigjpg.com/
 
 ## Network proxy
@@ -66,14 +69,15 @@
 - https://acl4ssr-sub.github.io/
 - https://clash2sfa.xmdhs.com/
 - https://oluceps.github.io/clash2sing-box/
+- https://github.com/somemoo/v2rayfree
 - https://github.com/ermaozi/get_subscribe
 - https://www.burstlinker.com/
 
 ## Animation and comic
 - http://www.dmand5.com/
+- http://agedm2.com/
 - http://yhdm.in/
 - http://www.iyinghua.com/new/
-- https://libretv.pages.dev/
 - http://eroanimedougakan.blog.fc2.com/
 
 ## Programming
@@ -94,6 +98,7 @@
 - https://www.shiyanlou.com/
 
 ## Artificial intelligence
+- https://app.egnes-ai.com
 - https://chat.openai.com
 - https://github.com/xx025/carrot
 - https://bard.google.com/
@@ -131,12 +136,15 @@
 - https://www.yuedu.pro/
 
 ## Study methods
+- https://m.bilibili.com/space/478031441 # Jiangxi College Entrance Examination
 - https://limboy.me/posts/words-to-myself/
 - https://limboy.me/posts/what-i-wish-i-knew-when-i-was-20/
 - https://jovica.org/posts/advanced_learner/
 - https://www.yuque.com/supermemo/wiki/20rules
 
 ## Video and audio
+- https://music.amazon.com/artists/B000SX6G8E/sia # Get top songs by an Artist
+- https://music.gdstudio.xyz/ # Play music online
 - https://fdownload.app/en/facebook-to-mp3
 - https://convertio.co/azw3-epub/
 - https://spotifydown.com/
