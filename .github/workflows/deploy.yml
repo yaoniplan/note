@@ -1,0 +1,40 @@
+name: Build and Deploy Journals
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install marked
+        run: npm install -g marked
+
+      - name: Run conversion script
+        run: |
+          chmod +x ./convertMarkdownToHtml.sh
+          ./convertMarkdownToHtml.sh
+
+      - name: Prepare publish directory
+        run: |
+          mkdir public
+          cp index.html public/
+          cp -r assets public/
+          cp CNAME public/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./public
