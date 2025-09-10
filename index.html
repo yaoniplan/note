@@ -26375,6 +26375,40 @@ style = &quot;Italic&quot;
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;alacritty&quot;</h4>
+<ul>
+<li><code>alacritty --command tmux</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/alacritty/alacritty.toml</code><pre><code># Set fonts
+[font]
+size = 12.0
+
+[font.normal]
+family = &quot;FiraCode Nerd Font&quot;
+style = &quot;Regular&quot;
+
+[font.bold]
+family = &quot;FiraCode Nerd Font&quot;
+style = &quot;Bold&quot;
+
+[font.italic]
+family = &quot;FiraCode Nerd Font&quot;
+style = &quot;Italic&quot;
+</code></pre>
+</li>
+<li><code>doas pacman --sync alacritty</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man alacritty</code> # <code>/--command</code></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Assign applications to workspace in #i3</h4>
 <ul>
 <li><code>assign [class=&quot;st-256color&quot;] number 1</code></li>
