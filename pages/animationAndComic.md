@@ -13,9 +13,8 @@
 - 每日男公关 S01E19
 - 假面骑士加布 S01E49
 - 男女之间的友情存在吗？（不，不存在!!） S01E01 animation
-- 紫云寺家的兄弟姐妹 S01E01 animation
-- 凡人修仙传 - 152
-- 沧元图 - S01E65
+- 凡人修仙传 - 159
+- 沧元图 - S01E65 animation
 - 牧神记 S01E41
 - 灵武大陆 95
 - 一念永恒 - S01E52.S02E54.S03E59
@@ -301,6 +300,7 @@
 - guard(end)
 
 ### Animation
+- 紫云寺家的兄弟姐妹 S01E02 # Target audience maybe 13 or 14 years old
 - 药屋少女的呢喃 S01E15 0609 # Plot maybe slow
 - 拜托请穿上，鹰峰同学 #NSFW S01E02 1824 # Are there no classmates next to the seat at this moment?
 - Anne Shirly / 安妮·雪莉 S01E03 1144 # Target audience maybe 13 or 14 years old
