@@ -21569,6 +21569,15 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Solve the problem<pre><code>sessions should be nested with care, unset $TMUX to force
+</code></pre>
+<ul>
+<li><code>vim .profile</code> # In iSH on iPhone<pre><code># Start tmux only if not already inside tmux
+[ -z &quot;$TMUX&quot; ] &amp;&amp; tmux new-session &#39;vim -c &quot;VimwikiMakeDiaryNote&quot;&#39;
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Toggle floating scratchpad
 # Bind a key
 bind-key -n M-Space if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
