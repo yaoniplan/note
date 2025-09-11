@@ -14,9 +14,9 @@
 - 假面骑士加布 S01E49
 - 男女之间的友情存在吗？（不，不存在!!） S01E01 animation
 - 凡人修仙传 - 159
-- 牧神记 S01E41 animation
-- 灵武大陆 95
-- 一念永恒 - S01E52.S02E54.S03E59
+- 牧神记 S01E47
+- 灵武大陆 107
+- 一念永恒 - S01E52.S02E54.S03E59 TODO
 - 陆地键仙 S01E138
 - 仙逆 - 99
 - learnC - 16 0714
@@ -160,6 +160,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 4000年后重生异世界的大魔导师 Chapter 64 Page 50 # Plot maybe slow
 - 开局自带狗头，我成了一方妖尊 Chapter 21 Page 7 # Target audience maybe 13 or 14 years old
 - 下水道漫游指南 Chapter 92 # The ending seemed too hasty.
 - 妹妹消失的第一百天 Chapter 96 # The ending was  changed to Chapter 74.

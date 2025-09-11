@@ -115,7 +115,7 @@
       1. The first ordered list item.
       2. The second ordered list item.
       
-          ![Tux, the Linux mascot](../assets/tux.png)
+          ![Tux, the Linux mascot](./assets/tux.png)
       
       3. The third ordered list item.
       ```
@@ -180,7 +180,7 @@
       ```
 - # Image 
   ```
-  ![garden](../assets/garden.png)
+  ![garden](./assets/garden.png)
   ```
 - # Escape character 
   ```

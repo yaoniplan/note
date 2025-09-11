@@ -45,7 +45,7 @@ done
 fileName=".png"
 # The function
 sendToClipboard() {
-    echo -n "![$fileName](../assets/$fileName)" | xclip -selection clipboard
+    echo -n "![$fileName](./assets/$fileName)" | xclip -selection clipboard
 }
 # Call it
 sendToClipboard
