@@ -16,8 +16,7 @@
 - 凡人修仙传 - 159
 - 牧神记 S01E47
 - 灵武大陆 107
-- 一念永恒 - S01E52.S02E54.S03E59 TODO
-- 陆地键仙 S01E138
+- 陆地键仙 S01E138 TODO
 - 仙逆 - 99
 - learnC - 16 0714
 - A brief history - 13
@@ -160,6 +159,8 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 全球惊悚：开局万亿冥币 Chapter 24 Page 147 # Plot maybe slow
+- 无职者/Pick Me Up! Chapter 8 Page 50 # Plot maybe slow
 - 4000年后重生异世界的大魔导师 Chapter 64 Page 50 # Plot maybe slow
 - 开局自带狗头，我成了一方妖尊 Chapter 21 Page 7 # Target audience maybe 13 or 14 years old
 - 下水道漫游指南 Chapter 92 # The ending seemed too hasty.
@@ -300,6 +301,7 @@
 - guard(end)
 
 ### Animation
+- 一念永恒 - S01E52.S02E54.S03E59
 - 沧元图 - S01E66 0312 # Plot maybe slow
 - 紫云寺家的兄弟姐妹 S01E02 # Target audience maybe 13 or 14 years old
 - 药屋少女的呢喃 S01E15 0609 # Plot maybe slow
