@@ -21583,12 +21583,18 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 [ -z &quot;$TMUX&quot; ] &amp;&amp; tmux new-session &#39;vimwiki-sync.sh&#39;
 </code></pre>
 </li>
-<li><code>vim ~/.bashrc</code> # On Linux<pre><code># If not in a tmux session
-if [ -z &quot;$TMUX&quot; ]; then
-  SESSION=&quot;note&quot;
-  # Check if tmux session &quot;note&quot; exists
-  if ! tmux has-session -t &quot;$SESSION&quot; &gt;/dev/null 2&gt;&amp;1; then
-    # Create session &quot;note&quot; and run your sync script
+<li><code>vim ~/.bashrc</code> # In Kitty on Linux<pre><code>SESSION=&quot;note&quot;
+
+# Check if tmux session named $SESSION exists
+if ! tmux has-session -t &quot;$SESSION&quot; &gt;/dev/null 2&gt;&amp;1; then
+  # Session doesn&#39;t exist yet
+
+  # If TMUX is non-empty (we are inside a tmux shell),
+  # temporarily unset TMUX to avoid nested warning
+  if [ -n &quot;$TMUX&quot; ]; then
+    # Run without TMUX set
+    TMUX= tmux new-session -s &quot;$SESSION&quot; &#39;vimwiki-sync.sh&#39;
+  else
     tmux new-session -s &quot;$SESSION&quot; &#39;vimwiki-sync.sh&#39;
   fi
 fi
