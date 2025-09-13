@@ -16,7 +16,7 @@
 - 凡人修仙传 - 159
 - 牧神记 S01E47
 - 灵武大陆 107
-- 陆地键仙 S01E138 TODO
+- 陆地键仙 S01E139 TODO
 - 仙逆 - 99
 - learnC - 16 0714
 - A brief history - 13
@@ -159,6 +159,8 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 镇国神婿 Chapter 30 Page 12 # Plot maybe slow
+- 邪神降世，我有一座大凶狱 Chapter 74 Page 12 # The font is too small.
 - 全球惊悚：开局万亿冥币 Chapter 24 Page 147 # Plot maybe slow
 - 无职者/Pick Me Up! Chapter 8 Page 50 # Plot maybe slow
 - 4000年后重生异世界的大魔导师 Chapter 64 Page 50 # Plot maybe slow
