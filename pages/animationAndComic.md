@@ -16,8 +16,8 @@
 - 凡人修仙传 - 159
 - 牧神记 S01E47
 - 灵武大陆 107
-- 陆地键仙 S01E139 TODO
-- 仙逆 - 99
+- 陆地键仙 S01E150
+- 仙逆 - 99 TODO
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
@@ -26,6 +26,7 @@
 - Against the Sky Supreme / 逆天至尊 - 431
 
 ### Comic
+- 异狱暴君：我的影子能无限进化 Chapter 34
 - 老蛇修仙传 Chapter 55
 - 穹顶之上 Chapter 139
 - 唯我可见的高塔攻略 Chapter 79
