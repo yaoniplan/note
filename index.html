@@ -250,6 +250,8 @@ prefer-no-csd
 // Run at boot time
 spawn-at-startup &quot;~/.local/bin/runAtBootTime.sh&quot;
 binds {
+    // Enable fake fullscreen
+    Mod+Ctrl+Shift+F { toggle-windowed-fullscreen; }
     // Vim-like navigation (Try commenting or modifying the shortcut keys if there is a conflict)
     Mod+J { focus-window-or-workspace-down; }
     Mod+K { focus-window-or-workspace-up; }
