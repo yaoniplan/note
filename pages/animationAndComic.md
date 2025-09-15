@@ -1,4 +1,5 @@
 ### "Animation"
+- 鬼吹灯之南海归墟
 - 诡秘之主 S01E07
 - 帝乃三姐妹原来很好搞定。 S01E06
 - 魔天记 S01E10
@@ -17,11 +18,11 @@
 - 牧神记 S01E47
 - 灵武大陆 107
 - 陆地键仙 S01E150
-- 仙逆 - 99 TODO
+- 仙逆 - 106
 - learnC - 16 0714
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 120
+- Shrouding the Heavens / 遮天 - 120 TODO
 - 武神主宰 - 568
 - Against the Sky Supreme / 逆天至尊 - 431
 
