@@ -2958,41 +2958,6 @@ def add_product_route():
 </ul>
 <hr>
 <ul>
-<li><h4>Save the browser text as a file in iPhone Shortcuts</h4>
-<ul>
-<li>If <code>Shortcut Input</code> <code>does not have any value</code><ul>
-<li><code>Text</code> # <code>Clipboard</code></li>
-</ul>
-</li>
-<li>Otherwise<ul>
-<li><code>Text</code> # <code>Shortcut Input</code></li>
-</ul>
-</li>
-<li>End If</li>
-<li>Ask for <code>Text</code> with <code>Enter file name:</code></li>
-<li>Set name of <code>If Result</code> to <code>Provided Input</code></li>
-<li>Save <code>Renamed Item</code> to <code>Downloads</code><ul>
-<li>Subpath # <code>Provided Input</code></li>
-</ul>
-</li>
-<li>Open <code>Saved File</code> in <code>Files</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Open directory where the file is located<ul>
-<li>Open <code>Saved File</code> in <code>Files</code></li>
-</ul>
-</li>
-<li>Because to save text as file.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022">https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Save selection as file in iPhone Shortcuts</h4>
 <ul>
 <li><code>Text</code><ul>
@@ -3015,38 +2980,6 @@ def add_product_route():
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Save the entire text content of a webpage as file in iPhone Shortcuts</h4>
-<ul>
-<li><code>var result = [];</code> # Initialize an empty array</li>
-<li><code>body = document.body;</code> # Get the entire body of the document</li>
-<li>Create a selection object and a range object<pre><code>sel = window.getSelection();
-range = document.createRange();
-</code></pre>
-</li>
-<li><code>range.selectNodeContents(body);</code> # Select the contents of the body</li>
-<li><code>sel.removeAllRanges();</code> # Clear any existing selections</li>
-<li><code>sel.addRange(range);</code> # Add the new range to the selection</li>
-<li><code>selString = sel.toString();</code> # Convert the selected content to a string</li>
-<li><code>completion(selString);</code> # Call a function named <code>completion</code> with the selected string</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Run JavaScript on Web Page (Shortcut Input, paste the code above) - Ask fro Input (Text, Enter file name:, config.json) - Set Name (JavaScript Result, Provided Input) - Save File (Renamed Item, Downloads, Provided Input) - Open File (Saved File, Files)<ul>
-<li><code>completion(document.body.innerText);</code> # Easier method</li>
-<li><code>Set Name</code> # This will change the document type (Used to rename the file name)</li>
-</ul>
-</li>
-<li>Because just like saving a file with <code>Ctrl-s</code> in browser.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq">https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq</a></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -8924,6 +8857,29 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Save the entire text content of a webpage as file (Because just like saving a file with <code>Ctrl-s</code> in browser)<pre><code># Core: `Set Name` # This will change the document type (Used to rename the file name)
+- Run JavaScript on Web Page (Shortcut Input, `completion(document.body.innerText);`)
+- Ask for Input (Text, Enter file name:, config.json)
+- Set Name (JavaScript Result, Provided Input)
+- Save File (Renamed Item, Downloads, Provided Input)
+- Open File (Saved File, Files)
+- https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq
+- Artificial intelligence
+</code></pre>
+</li>
+<li>Save the browser text as a file<pre><code>- If `Shortcut Input` `does not have any value`
+    - `Text` # `Clipboard`
+- Otherwise
+    - `Text` # `Shortcut Input`
+- End If
+- Ask for `Text` with `Enter file name:`
+- Set name of `If Result` to `Provided Input`
+- Save `Renamed Item` to `Downloads`
+    - Subpath # `Provided Input`
+- Open `Saved File` in `Files`
+- https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022
+</code></pre>
+</li>
 <li>Generate a barcode<pre><code>- https://discuss.whatever.social/r/shortcuts/comments/w0kwki/1d_barcode_generator/llq92c6
 </code></pre>
 </li>
