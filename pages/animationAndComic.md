@@ -1,5 +1,5 @@
 ### "Animation"
-- 鬼吹灯之南海归墟 S01E01
+- 鬼吹灯之南海归墟 S01E01 TODO
 - 诡秘之主 S01E07
 - 帝乃三姐妹原来很好搞定。 S01E06
 - 魔天记 S01E10
@@ -23,8 +23,8 @@
 - A brief history - 13
 - top10ModelsOfDeepThinking # 08
 - Shrouding the Heavens / 遮天 - 126
-- 武神主宰 - 568 TODO
-- Against the Sky Supreme / 逆天至尊 - 431
+- 武神主宰 - 582
+- Against the Sky Supreme / 逆天至尊 - 445
 
 ### Comic
 - 异狱暴君：我的影子能无限进化 Chapter 34
