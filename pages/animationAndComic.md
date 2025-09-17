@@ -1,6 +1,5 @@
 ### "Animation"
-- 鬼吹灯之南海归墟 S01E01 TODO
-- 诡秘之主 S01E07
+- 诡秘之主 S01E13 TODO
 - 帝乃三姐妹原来很好搞定。 S01E06
 - 魔天记 S01E10
 - 太古战魂 S01E33
@@ -27,6 +26,7 @@
 - Against the Sky Supreme / 逆天至尊 - 445
 
 ### Comic
+- 万界守门人 Chapter 89
 - 异狱暴君：我的影子能无限进化 Chapter 34
 - 老蛇修仙传 Chapter 55
 - 穹顶之上 Chapter 139
@@ -161,6 +161,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 称霸末世 Chapter 48 Page 15 # The plot may be a little far-fetched and the painting style may be a little awkward.
 - 镇国神婿 Chapter 30 Page 12 # Plot maybe slow
 - 邪神降世，我有一座大凶狱 Chapter 74 Page 12 # The font is too small.
 - 全球惊悚：开局万亿冥币 Chapter 24 Page 147 # Plot maybe slow
@@ -305,6 +306,7 @@
 - guard(end)
 
 ### Animation
+- 鬼吹灯之南海归墟 S01E02 0248 # Plot maybe slow
 - 一念永恒 - S01E52.S02E54.S03E59
 - 沧元图 - S01E66 0312 # Plot maybe slow
 - 紫云寺家的兄弟姐妹 S01E02 # Target audience maybe 13 or 14 years old
