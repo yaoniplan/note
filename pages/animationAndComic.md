@@ -1,9 +1,5 @@
 ### "Animation"
-- 诡秘之主 S01E13 TODO
-- 帝乃三姐妹原来很好搞定。 S01E06
-- 魔天记 S01E10
-- 太古战魂 S01E33
-- 神国之上 S01E09
+- 神国之上 S01E09 TODO
 - 诛仙 - S01E26.S02E26.S03E10
 - 余烬行者 S01E10
 - 宗门里除了我都是卧底 S01E89
@@ -306,6 +302,10 @@
 - guard(end)
 
 ### Animation
+- 太古战魂 S01E34 0648 # Plot maybe slow
+- 魔天记 S01E16
+- 帝乃三姐妹原来很好搞定。 S01E07 0151 # Target audience maybe female
+- 诡秘之主 S01E13
 - 鬼吹灯之南海归墟 S01E02 0248 # Plot maybe slow
 - 一念永恒 - S01E52.S02E54.S03E59
 - 沧元图 - S01E66 0312 # Plot maybe slow
