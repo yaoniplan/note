@@ -1,6 +1,6 @@
 ### "Animation"
-- 神国之上 S01E09 TODO
-- 诛仙 - S01E26.S02E26.S03E10
+- 神国之上 S01E16
+- 诛仙 - S01E26.S02E26.S03E10 TODO
 - 余烬行者 S01E10
 - 宗门里除了我都是卧底 S01E89
 - 我的师兄太强了 S01E40
@@ -22,6 +22,7 @@
 - Against the Sky Supreme / 逆天至尊 - 445
 
 ### Comic
+- 王游戏 Chapter 50 # Although the plot may be a little illogical, it is fascinating.
 - 万界守门人 Chapter 89
 - 异狱暴君：我的影子能无限进化 Chapter 34
 - 老蛇修仙传 Chapter 55
