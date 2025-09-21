@@ -8857,512 +8857,708 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>The add icon (Automation) - Create Personal Autoamtion (Time of Day - Sunrise - Daily) - Start Timer (1 second)</li>
 </ul>
 </li>
-<li>Shortcuts<ul>
-<li>Save the entire text content of a webpage as file<pre><code># Because just like saving a file with `Ctrl-s` in browser
-# Core: `Set Name` # This will change the document type (Used to rename the file name)
-- Run JavaScript on Web Page (Shortcut Input, `completion(document.body.innerText);`)
-- Ask for Input (Text, Enter file name:, config.json)
-- Set Name (JavaScript Result, Provided Input)
-- Save File (Renamed Item, Downloads, Provided Input)
-- Open File (Saved File, Files)
-- https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq
-- Artificial intelligence
-</code></pre>
-</li>
-<li>Save the browser text as a file<pre><code>- If `Shortcut Input` `does not have any value`
-    - `Text` # `Clipboard`
-- Otherwise
-    - `Text` # `Shortcut Input`
-- End If
-- Ask for `Text` with `Enter file name:`
-- Set name of `If Result` to `Provided Input`
-- Save `Renamed Item` to `Downloads`
-    - Subpath # `Provided Input`
-- Open `Saved File` in `Files`
-- https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022
-</code></pre>
-</li>
-<li>Generate a barcode<pre><code>- https://discuss.whatever.social/r/shortcuts/comments/w0kwki/1d_barcode_generator/llq92c6
-</code></pre>
-</li>
-<li>Replace file name&#39;s extension with <code>.mp3</code> using regular expression<pre><code># Because to extract audio files using yt-dlp tool
-- Text (\.[^\.]+$)
-- Set Variable (Regex, Text)
-- Replace Text (Regex, .mp3, Filename)
-- Set Variable (Filename, Updated Text)
-</code></pre>
-</li>
-<li>Stitch into a long image<pre><code># This is not intelligent enough.
-# First, you need to capture multiple pictures.
-# Then cut off the excess parts of each picture.
-# Finnally delete the multiple pictures you just captured.
-- Resize Image (Shortcut Input, Size, 800, )
-- Combine Image (Resized Image, Ask Each Time)
-- Save to Photo Album (Combined Image, Ask Each Time)
-- https://joanneinhk.com/shortcut-combine-photos/
-</code></pre>
-</li>
-<li>Get URLs from input<pre><code># Because to extract the URL from a piece of text
-- Get URLs from Input (Shortcut Input)
-- Artificial intelligence
-</code></pre>
-</li>
-<li>Format data and time (<code>2025-04-22T01:52:00Z</code>)<pre><code>- Adjusted Date (Add, 1, day, Current Date)
-- Text (Adjusted Date)
-    - Custom # Date Format
-    - yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
-- Set Variables (Expire at, Text)
-</code></pre>
-</li>
-<li>Count down by times instead of time<pre><code># Because to get the first place in Duolingo ranking
-# Estimate the number of points left to win the first place
-# (Average score per round: 25 points)
-# e.g. The difference is on thousand points,
-# so the number of times needs to be set to 40 through the voice assistant Siri
-# 1. Save a number to file
-# 2. Read this number from the file
-- Text (countdown-configuration.txt)
-- Set Variables (Configuration file name, Text)
-- Get File from Folder (Shortcuts, Text)
-    - Disable &#39;Error If Not Found&#39;
-- Number (File)
-- If (File, does not have any value)
-    - Ask for Input (Number, How many times?)
-    - Save File (Provided Input, Shortcuts)
-        - Disable &#39;Ask Where To Save&#39;
-        - `Configuration file name` # Subpath
-        - Enable &#39;Overwrite If File Exists&#39;
-- Otherwise
-    - If (Number, is greater than, 0)
-        - Calculate (Number, -, 1)
-        - Save File (Calculation Result, Shortcuts)
-            - Disable &#39;Ask Where To Save&#39;
-            - `Configuration file name` # Subpath
-            - Enable &#39;Overwrite If File Exists&#39;
-        - If (Calculation Result, is, 0)
-            - Speak Text (You have finished it.)
-                - Siri Voice 4 # Voice
-            - Ask for Input (Number, How many times?)
-            - Save File (Provided Input, Shortcuts)
-                - Disable &#39;Ask Where To Save&#39;
-                - `Configuration file name` # Subpath
-                - Enable &#39;Overwrite If File Exists&#39;
-            - Speak Text (Provided Input)
-                - Siri Voice 4 # Voice
-        - Otherwise
-            - Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
-              &quot;&quot;&quot;
-              let notification = new Notification();
-              notification.title = &quot;Times&quot;;
-              notification.body = &quot;`Calculation Result`&quot;;
-              notification.identifier = &quot;my.music.notification&quot;;
-              notification.schedule();
-              Script.complete();
-
-              Notification.removeDelivered([&quot;my.music.notification&quot;]);
-              Script.complete();
-              &quot;&quot;&quot;
-            - Speak Text (Calculation Result)
-                - Siri Voice 4 # Voice
-        - End If
-    - Otherwise
-        - Ask for Input (Number, How many times?)
-        - Save File (Provided Input, Shortcuts)
-            - Disable &#39;Ask Where To Save&#39;
-            - `Configuration file name` # Subpath
-            - Enable &#39;Overwrite If File Exists&#39;
-        - Speak Text (Provided Input)
-            - Siri Voice 4 # Voice
-    - End If
-- End If
-- https://safereddit.com/r/shortcuts/comments/ajdq6d/data_storage_part_1_storing_simple_values/
-- https://nadnosliw.wordpress.com/2021/10/28/persistent-variables-for-ios-and-ipados-shortcuts/
-</code></pre>
-</li>
-<li>Get the current Tailscale status (To determine whether to use a public IP or an intranet IP)<pre><code>- Get Status
-    - Disalbe &#39;Show When Run&#39;
-- Text (Status)
-    - Click on &#39;Connected&#39; (Output Yes or No)
-- Set Variables (Tailscale status, Text)
-- Text (Yes)
-- Set Variables (True, Text)
-- If (`Tailscale status`, is, `True`)
-    - Do something
-- Otherwise
-    - Do something
-- End If
-</code></pre>
-</li>
-<li>yt-dlp<pre><code>- Text (yt-dlp --get-url `Shortcut Input`)
-- Execute Command (Text)
-    - no (run in extension) # Open the app to execute the commands?
-    - Disable &#39;Show When Run&#39;
-- Text (outplayer://`output`)
-- Open URLs (Text)
-</code></pre>
-</li>
-<li>Random password<pre><code>- Text (ABCDEFGHIJKLMNOPQRSTUVWXYZ)
-- Text (abcdefghijklmnopqrstuvwxyz)
-- Text (0123456789)
-- Text (!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~)
-- List (Select Variable - Select a Magic Variable - Variable Name)
-    - Uppercase letters
-    - Lowercase letters
-    - Number
-    - Special characters
-- Ask for Input (Number, Password length)
-    - 18 # Default Number
-- Choose from List (List)
-    - What character types are to be used? # Prompt
-    - Enable &#39;Select Multiple&#39;
-    - Enable &#39;Select All Initially&#39;
-- Combine Text (Chosen Item, Custom)
-- Split Text (Combined Text, Every Character)
-- Repeat (Provided Input)
-    - Get Item from List (Random Item, Split Text)
-    - Add to Variable (Item from List, tmp)
-- End Repeat
-- Combine Text (`tmp`, Custom)
-- Text (Combined Text)
-- Show Alert (Text)
-    - Copy to clipboard? # Title
-- Copy to Clipboard (Text)
-- https://libreddit.eu.org/r/shortcuts/comments/10bhcxr/the_best_strong_password_generator_shortcut_i/lfbetmp/
-</code></pre>
-</li>
-<li>Decode URL<pre><code>- Text (Shortcut Input)
-- URL Encode (Decode, Text)
-- Quick Look (URL Encoded Text)
-</code></pre>
+<li>Shortcuts</li>
+<li>Detect the number of lines of the file
+```<ul>
+<li><p>Because to format a line of json text into a human-readable format.</p>
 <ul>
-<li>Remember to enable &#39;Show in Share Sheet&#39; in Details</li>
+<li>Split Text (Text, New Lines)</li>
 </ul>
 </li>
-<li>Check if it is text or file type<pre><code>- Text (Text|Safari web page|Rich text|URL)
-- Set Variable (Text type, Text)
-- Get Type (Shortcut Input)
-- Match Text (Text type, Type)
-- If (Matches, has any value)
-    - Comment (Do something with the text)
-- Otherwise
-    - Comment (Do something with the file)
-- End If
-- https://libreddit.eu.org/r/shortcuts/comments/qioiaa/checking_if_a_text_contains_any_of_the_items_of_a/hilbcih
-</code></pre>
+<li><p>Count (Items, Split Text)</p>
 </li>
-<li>Compress image (Temporarily share some pictures with people who have poor network)<pre><code>- Convert Image (Shortcut Input, JPEG)
-- Resize Image (Converted Image, Percentage, 30)
-- https://libreddit.eu.org/r/shortcuts/comments/v4dk41/compress_images_shortcut_for_automation_please/ib4834u
+<li><p>If (Count, is less than or equal to, 1)</p>
+<pre><code>- Save the entire text content of a webpage as file
 </code></pre>
-</li>
-<li>Show random words (Sometimes use random English words as username)<pre><code># Put the words in the text below (Offline is faster than online)
-# You can use action (Get Contents of URL) to get words if you want to use it online
-# Source: https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english.txt 
-- Text
-  &#39;&#39;&#39;
-  the
-  of
-  and
-  ...
-  &#39;&#39;&#39;
-- Split Text (Text, New Lines)
-- Get Item from List (Random Item, Split Text)
-- Add to Variable (Item from List, Words)
-- Show Result (Words)
-- https://safereddit.com/r/shortcuts/comments/abouso/random_words_generator_request/ed24shu/
+<h1>Because just like saving a file with <code>Ctrl-s</code> in browser</h1>
+<h1>Core: <code>Set Name</code> # This will change the document type (Used to rename the file name)</h1>
+<ul>
+<li>Run JavaScript on Web Page (Shortcut Input, <code>completion(document.body.innerText);</code>)</li>
+<li>Ask for Input (Text, Enter file name:, config.json)</li>
+<li>Set Name (JavaScript Result, Provided Input)</li>
+<li>Save File (Renamed Item, Downloads, Provided Input)</li>
+<li>Open File (Saved File, Files)</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq">https://libreddit.nohost.network/r/shortcuts/comments/r22gfe/getting_contents_of_webpage_behind_a_login/hm2mmhq</a></li>
+<li>Artificial intelligence</li>
+</ul>
+<pre><code>- Save the browser text as a file
 </code></pre>
+<ul>
+<li>If <code>Shortcut Input</code> <code>does not have any value</code><ul>
+<li><code>Text</code> # <code>Clipboard</code></li>
+</ul>
 </li>
-<li>Encode audio as a base64 string<pre><code># Encode
-- Select File
-- Base64 Encode (Encode, File)
-- Copy to Clipboard (Base64 Encoded)
-
-# Decode
-- Text (yourEncodedAudioString)
-- Base64 Encode (Decode, Text)
-- Play Sound (Base64 Encoded)
-- https://libreddit.nohost.network/r/shortcuts/comments/ocryy9/i_just_want_a_shortcut_to_play_a_specific_sound/h3xr7y9/
+<li>Otherwise<ul>
+<li><code>Text</code> # <code>Shortcut Input</code></li>
+</ul>
+</li>
+<li>End If</li>
+<li>Ask for <code>Text</code> with <code>Enter file name:</code></li>
+<li>Set name of <code>If Result</code> to <code>Provided Input</code></li>
+<li>Save <code>Renamed Item</code> to <code>Downloads</code><ul>
+<li>Subpath # <code>Provided Input</code></li>
+</ul>
+</li>
+<li>Open <code>Saved File</code> in <code>Files</code></li>
+<li><a href="https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022">https://discussions.apple.com/thread/254774502?answerId=258905532022#258905532022</a></li>
+</ul>
+<pre><code>- Generate a barcode
 </code></pre>
-</li>
-<li>Share Wi-Fi QR code<pre><code># This is the core. You can use Get Network Details action to get Wi-Fi name automatically,
-# But it does not support automatically getting the current connected Wi-Fi password
-# You can only manually copy the password in the Password of the Information icon of WLAN of Settings
-- Text (`WIFI:S:yourSsid;T:WPA;P:yourPassword;;`)
-- Generate QR Code (Text)
-- Quick Look (QR Code)
-- https://libreddit.nohost.network/r/shortcuts/comments/11te5ir/need_help_with_wifi_qr_code_generation/jdxly01
+<ul>
+<li><a href="https://discuss.whatever.social/r/shortcuts/comments/w0kwki/1d_barcode_generator/llq92c6">https://discuss.whatever.social/r/shortcuts/comments/w0kwki/1d_barcode_generator/llq92c6</a></li>
+</ul>
+<pre><code>- Replace file name&#39;s extension with `.mp3` using regular expression
 </code></pre>
-</li>
-<li>Check if a dictionary only contains one list<pre><code>- Get Contents of URL (Text)
-- Get Dictionary from Input (Contents of URL)
-- Count (Items, Dictionary)
-- If (Count, is, 1)
-    - Text (Dictionary)
-- Otherwise
-    - Replace Text (`Press return key`, , Dictionary)
-    - Choose from List (Updated Text)
-- End If
+<h1>Because to extract audio files using yt-dlp tool</h1>
+<ul>
+<li>Text (.[^.]+$)</li>
+<li>Set Variable (Regex, Text)</li>
+<li>Replace Text (Regex, .mp3, Filename)</li>
+<li>Set Variable (Filename, Updated Text)</li>
+</ul>
+<pre><code>- Stitch into a long image
 </code></pre>
-</li>
-<li>Arrange the dictionary in reverse order<pre><code>Get Dictionary from Input (Contents of URL)
-Replace Text (Dictionary)
-Filter Files (Updated Text)
-    Last Modified Date (Sort by)
-    Latest First (Order)
-Choose from List (Files)
-Get Dictionary Value (Value, timestamp, Chosen Item)
-Set Variable (Timestamp, Dictionary Value)
-https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
+<h1>This is not intelligent enough.</h1>
+<h1>First, you need to capture multiple pictures.</h1>
+<h1>Then cut off the excess parts of each picture.</h1>
+<h1>Finnally delete the multiple pictures you just captured.</h1>
+<ul>
+<li>Resize Image (Shortcut Input, Size, 800, )</li>
+<li>Combine Image (Resized Image, Ask Each Time)</li>
+<li>Save to Photo Album (Combined Image, Ask Each Time)</li>
+<li><a href="https://joanneinhk.com/shortcut-combine-photos/">https://joanneinhk.com/shortcut-combine-photos/</a></li>
+</ul>
+<pre><code>- Get URLs from input
 </code></pre>
-</li>
-<li>Open in Vim<pre><code># Receive Files input from
-# If there&#39;s no input: Ask For Files
-- Put File (Shortcut Input)
-    - Disable &#39;Show When Run&#39;
-- Text (Name.File Extension)
-- Execute Command (vim complete filename, exit)
-- Wait to Return
-- Get file (complete filename)
-    - Disable &#39;Show When Run&#39;
-- Save File (File)
-    - Enable &#39;Overwrite If File Exists&#39;
-- https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/
+<h1>Because to extract the URL from a piece of text</h1>
+<ul>
+<li>Get URLs from Input (Shortcut Input)</li>
+<li>Artificial intelligence</li>
+</ul>
+<pre><code>- Format data and time (`2025-04-22T01:52:00Z`)
 </code></pre>
+<ul>
+<li>Adjusted Date (Add, 1, day, Current Date)</li>
+<li>Text (Adjusted Date)<ul>
+<li>Custom # Date Format</li>
+<li>yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;</li>
+</ul>
 </li>
-<li>Get a JSON value<pre><code>- Dictate Text
-- Text (your URL)
-- Get Contents of URL (Text)
-  &quot;&quot;&quot;
-  curl \
-    -H &#39;Content-Type: application/json&#39; \
-    -d &#39;{&quot;contents&quot;:[{&quot;parts&quot;:[{&quot;text&quot;:&quot;Explain how AI works&quot;}]}]}&#39; \
-    -X POST &#39;https://generativelanguage.googleapis.com/...&#39;
-  &quot;&quot;&quot;
-    - Method (POST)
-    - Headers (Content-Type, application/json)
-    - Request Body (JSON)
-        - Dictionary (contents)
-        - Dictionary (parts)
-        - Text (text, Dictated Text)
-    - https://aistudio.google.com/app/apikey
-    - https://zhile.io/2023/12/24/gemini-pro-proxy.html
-- Get Dictionary Value (Value, candidates.1.content.parts.1.text, Contents of URL)
-  &quot;&quot;&quot;
-  {
-    &quot;candidates&quot;: [
+<li>Set Variables (Expire at, Text)</li>
+</ul>
+<pre><code>- Count down by times instead of time
+</code></pre>
+<h1>Because to get the first place in Duolingo ranking</h1>
+<h1>Estimate the number of points left to win the first place</h1>
+<h1>(Average score per round: 25 points)</h1>
+<h1>e.g. The difference is on thousand points,</h1>
+<h1>so the number of times needs to be set to 40 through the voice assistant Siri</h1>
+<h1>1. Save a number to file</h1>
+<h1>2. Read this number from the file</h1>
+<ul>
+<li>Text (countdown-configuration.txt)</li>
+<li>Set Variables (Configuration file name, Text)</li>
+<li>Get File from Folder (Shortcuts, Text)<ul>
+<li>Disable &#39;Error If Not Found&#39;</li>
+</ul>
+</li>
+<li>Number (File)</li>
+<li>If (File, does not have any value)<ul>
+<li>Ask for Input (Number, How many times?)</li>
+<li>Save File (Provided Input, Shortcuts)<ul>
+<li>Disable &#39;Ask Where To Save&#39;</li>
+<li><code>Configuration file name</code> # Subpath</li>
+<li>Enable &#39;Overwrite If File Exists&#39;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>If (Number, is greater than, 0)<ul>
+<li>Calculate (Number, -, 1)</li>
+<li>Save File (Calculation Result, Shortcuts)<ul>
+<li>Disable &#39;Ask Where To Save&#39;</li>
+<li><code>Configuration file name</code> # Subpath</li>
+<li>Enable &#39;Overwrite If File Exists&#39;</li>
+</ul>
+</li>
+<li>If (Calculation Result, is, 0)<ul>
+<li>Speak Text (You have finished it.)<ul>
+<li>Siri Voice 4 # Voice</li>
+</ul>
+</li>
+<li>Ask for Input (Number, How many times?)</li>
+<li>Save File (Provided Input, Shortcuts)<ul>
+<li>Disable &#39;Ask Where To Save&#39;</li>
+<li><code>Configuration file name</code> # Subpath</li>
+<li>Enable &#39;Overwrite If File Exists&#39;</li>
+</ul>
+</li>
+<li>Speak Text (Provided Input)<ul>
+<li>Siri Voice 4 # Voice</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li><p>Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
+&quot;&quot;&quot;
+let notification = new Notification();
+notification.title = &quot;Times&quot;;
+notification.body = &quot;<code>Calculation Result</code>&quot;;
+notification.identifier = &quot;my.music.notification&quot;;
+notification.schedule();
+Script.complete();</p>
+<p>Notification.removeDelivered([&quot;my.music.notification&quot;]);
+Script.complete();
+&quot;&quot;&quot;</p>
+</li>
+<li><p>Speak Text (Calculation Result)</p>
+<ul>
+<li>Siri Voice 4 # Voice</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>End If</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>Ask for Input (Number, How many times?)</li>
+<li>Save File (Provided Input, Shortcuts)<ul>
+<li>Disable &#39;Ask Where To Save&#39;</li>
+<li><code>Configuration file name</code> # Subpath</li>
+<li>Enable &#39;Overwrite If File Exists&#39;</li>
+</ul>
+</li>
+<li>Speak Text (Provided Input)<ul>
+<li>Siri Voice 4 # Voice</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>End If</li>
+</ul>
+</li>
+<li>End If</li>
+<li><a href="https://safereddit.com/r/shortcuts/comments/ajdq6d/data_storage_part_1_storing_simple_values/">https://safereddit.com/r/shortcuts/comments/ajdq6d/data_storage_part_1_storing_simple_values/</a></li>
+<li><a href="https://nadnosliw.wordpress.com/2021/10/28/persistent-variables-for-ios-and-ipados-shortcuts/">https://nadnosliw.wordpress.com/2021/10/28/persistent-variables-for-ios-and-ipados-shortcuts/</a></li>
+</ul>
+<pre><code>- Get the current Tailscale status (To determine whether to use a public IP or an intranet IP)
+</code></pre>
+<ul>
+<li>Get Status<ul>
+<li>Disalbe &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li>Text (Status)<ul>
+<li>Click on &#39;Connected&#39; (Output Yes or No)</li>
+</ul>
+</li>
+<li>Set Variables (Tailscale status, Text)</li>
+<li>Text (Yes)</li>
+<li>Set Variables (True, Text)</li>
+<li>If (<code>Tailscale status</code>, is, <code>True</code>)<ul>
+<li>Do something</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>Do something</li>
+</ul>
+</li>
+<li>End If</li>
+</ul>
+<pre><code>- yt-dlp
+</code></pre>
+<ul>
+<li>Text (yt-dlp --get-url <code>Shortcut Input</code>)</li>
+<li>Execute Command (Text)<ul>
+<li>no (run in extension) # Open the app to execute the commands?</li>
+<li>Disable &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li>Text (outplayer://<code>output</code>)</li>
+<li>Open URLs (Text)</li>
+</ul>
+<pre><code>- Random password
+</code></pre>
+<ul>
+<li>Text (ABCDEFGHIJKLMNOPQRSTUVWXYZ)</li>
+<li>Text (abcdefghijklmnopqrstuvwxyz)</li>
+<li>Text (0123456789)</li>
+<li>Text (!&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[]^_`{|}~)</li>
+<li>List (Select Variable - Select a Magic Variable - Variable Name)<ul>
+<li>Uppercase letters</li>
+<li>Lowercase letters</li>
+<li>Number</li>
+<li>Special characters</li>
+</ul>
+</li>
+<li>Ask for Input (Number, Password length)<ul>
+<li>18 # Default Number</li>
+</ul>
+</li>
+<li>Choose from List (List)<ul>
+<li>What character types are to be used? # Prompt</li>
+<li>Enable &#39;Select Multiple&#39;</li>
+<li>Enable &#39;Select All Initially&#39;</li>
+</ul>
+</li>
+<li>Combine Text (Chosen Item, Custom)</li>
+<li>Split Text (Combined Text, Every Character)</li>
+<li>Repeat (Provided Input)<ul>
+<li>Get Item from List (Random Item, Split Text)</li>
+<li>Add to Variable (Item from List, tmp)</li>
+</ul>
+</li>
+<li>End Repeat</li>
+<li>Combine Text (<code>tmp</code>, Custom)</li>
+<li>Text (Combined Text)</li>
+<li>Show Alert (Text)<ul>
+<li>Copy to clipboard? # Title</li>
+</ul>
+</li>
+<li>Copy to Clipboard (Text)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/10bhcxr/the_best_strong_password_generator_shortcut_i/lfbetmp/">https://libreddit.eu.org/r/shortcuts/comments/10bhcxr/the_best_strong_password_generator_shortcut_i/lfbetmp/</a></li>
+</ul>
+<pre><code>- Decode URL
+</code></pre>
+<ul>
+<li>Text (Shortcut Input)</li>
+<li>URL Encode (Decode, Text)</li>
+<li>Quick Look (URL Encoded Text)</li>
+</ul>
+<pre><code>  - Remember to enable &#39;Show in Share Sheet&#39; in Details
+- Check if it is text or file type
+</code></pre>
+<ul>
+<li>Text (Text|Safari web page|Rich text|URL)</li>
+<li>Set Variable (Text type, Text)</li>
+<li>Get Type (Shortcut Input)</li>
+<li>Match Text (Text type, Type)</li>
+<li>If (Matches, has any value)<ul>
+<li>Comment (Do something with the text)</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>Comment (Do something with the file)</li>
+</ul>
+</li>
+<li>End If</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/qioiaa/checking_if_a_text_contains_any_of_the_items_of_a/hilbcih">https://libreddit.eu.org/r/shortcuts/comments/qioiaa/checking_if_a_text_contains_any_of_the_items_of_a/hilbcih</a></li>
+</ul>
+<pre><code>- Compress image (Temporarily share some pictures with people who have poor network)
+</code></pre>
+<ul>
+<li>Convert Image (Shortcut Input, JPEG)</li>
+<li>Resize Image (Converted Image, Percentage, 30)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/v4dk41/compress_images_shortcut_for_automation_please/ib4834u">https://libreddit.eu.org/r/shortcuts/comments/v4dk41/compress_images_shortcut_for_automation_please/ib4834u</a></li>
+</ul>
+<pre><code>- Show random words (Sometimes use random English words as username)
+</code></pre>
+<h1>Put the words in the text below (Offline is faster than online)</h1>
+<h1>You can use action (Get Contents of URL) to get words if you want to use it online</h1>
+<h1>Source: <a href="https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english.txt">https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english.txt</a></h1>
+<ul>
+<li>Text
+&#39;&#39;&#39;
+the
+of
+and
+...
+&#39;&#39;&#39;</li>
+<li>Split Text (Text, New Lines)</li>
+<li>Get Item from List (Random Item, Split Text)</li>
+<li>Add to Variable (Item from List, Words)</li>
+<li>Show Result (Words)</li>
+<li><a href="https://safereddit.com/r/shortcuts/comments/abouso/random_words_generator_request/ed24shu/">https://safereddit.com/r/shortcuts/comments/abouso/random_words_generator_request/ed24shu/</a></li>
+</ul>
+<pre><code>- Encode audio as a base64 string
+</code></pre>
+<h1>Encode</h1>
+<ul>
+<li>Select File</li>
+<li>Base64 Encode (Encode, File)</li>
+<li>Copy to Clipboard (Base64 Encoded)</li>
+</ul>
+<h1>Decode</h1>
+<ul>
+<li>Text (yourEncodedAudioString)</li>
+<li>Base64 Encode (Decode, Text)</li>
+<li>Play Sound (Base64 Encoded)</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/ocryy9/i_just_want_a_shortcut_to_play_a_specific_sound/h3xr7y9/">https://libreddit.nohost.network/r/shortcuts/comments/ocryy9/i_just_want_a_shortcut_to_play_a_specific_sound/h3xr7y9/</a></li>
+</ul>
+<pre><code>- Share Wi-Fi QR code
+</code></pre>
+<h1>This is the core. You can use Get Network Details action to get Wi-Fi name automatically,</h1>
+<h1>But it does not support automatically getting the current connected Wi-Fi password</h1>
+<h1>You can only manually copy the password in the Password of the Information icon of WLAN of Settings</h1>
+<ul>
+<li>Text (<code>WIFI:S:yourSsid;T:WPA;P:yourPassword;;</code>)</li>
+<li>Generate QR Code (Text)</li>
+<li>Quick Look (QR Code)</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/11te5ir/need_help_with_wifi_qr_code_generation/jdxly01">https://libreddit.nohost.network/r/shortcuts/comments/11te5ir/need_help_with_wifi_qr_code_generation/jdxly01</a></li>
+</ul>
+<pre><code>- Check if a dictionary only contains one list
+</code></pre>
+<ul>
+<li>Get Contents of URL (Text)</li>
+<li>Get Dictionary from Input (Contents of URL)</li>
+<li>Count (Items, Dictionary)</li>
+<li>If (Count, is, 1)<ul>
+<li>Text (Dictionary)</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>Replace Text (<code>Press return key</code>, , Dictionary)</li>
+<li>Choose from List (Updated Text)</li>
+</ul>
+</li>
+<li>End If</li>
+</ul>
+<pre><code>- Arrange the dictionary in reverse order
+</code></pre>
+<p>  Get Dictionary from Input (Contents of URL)
+  Replace Text (Dictionary)
+  Filter Files (Updated Text)
+      Last Modified Date (Sort by)
+      Latest First (Order)
+  Choose from List (Files)
+  Get Dictionary Value (Value, timestamp, Chosen Item)
+  Set Variable (Timestamp, Dictionary Value)
+  <a href="https://m.youtube.com/watch?v=dhu9INl2KOg">https://m.youtube.com/watch?v=dhu9INl2KOg</a> # Use filter</p>
+<pre><code>- Open in Vim
+</code></pre>
+<h1>Receive Files input from</h1>
+<h1>If there&#39;s no input: Ask For Files</h1>
+<ul>
+<li>Put File (Shortcut Input)<ul>
+<li>Disable &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li>Text (Name.File Extension)</li>
+<li>Execute Command (vim complete filename, exit)</li>
+<li>Wait to Return</li>
+<li>Get file (complete filename)<ul>
+<li>Disable &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li>Save File (File)<ul>
+<li>Enable &#39;Overwrite If File Exists&#39;</li>
+</ul>
+</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/">https://libreddit.nohost.network/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/</a></li>
+</ul>
+<pre><code>- Get a JSON value
+</code></pre>
+<ul>
+<li>Dictate Text</li>
+<li>Text (your URL)</li>
+<li>Get Contents of URL (Text)
+&quot;&quot;&quot;
+curl <br>  -H &#39;Content-Type: application/json&#39; <br>  -d &#39;{&quot;contents&quot;:[{&quot;parts&quot;:[{&quot;text&quot;:&quot;Explain how AI works&quot;}]}]}&#39; <br>  -X POST &#39;<a href="https://generativelanguage.googleapis.com/">https://generativelanguage.googleapis.com/</a>...&#39;
+&quot;&quot;&quot;<ul>
+<li>Method (POST)</li>
+<li>Headers (Content-Type, application/json)</li>
+<li>Request Body (JSON)<ul>
+<li>Dictionary (contents)</li>
+<li>Dictionary (parts)</li>
+<li>Text (text, Dictated Text)</li>
+</ul>
+</li>
+<li><a href="https://aistudio.google.com/app/apikey">https://aistudio.google.com/app/apikey</a></li>
+<li><a href="https://zhile.io/2023/12/24/gemini-pro-proxy.html">https://zhile.io/2023/12/24/gemini-pro-proxy.html</a></li>
+</ul>
+</li>
+<li>Get Dictionary Value (Value, candidates.1.content.parts.1.text, Contents of URL)
+&quot;&quot;&quot;
+{
+  &quot;candidates&quot;: [
+{
+  &quot;content&quot;: {
+    &quot;parts&quot;: [
       {
-        &quot;content&quot;: {
-          &quot;parts&quot;: [
-            {
-              &quot;text&quot;: &quot;## AI: A Simplified Explanation
-              ...
-  &quot;&quot;&quot;
-- Speak Text (Dictionary Value)
-- https://libreddit.nohost.network/r/shortcuts/comments/11hbokj/parsing_json_help/jasqcgh
+        &quot;text&quot;: &quot;## AI: A Simplified Explanation
+        ...
+&quot;&quot;&quot;</li>
+<li>Speak Text (Dictionary Value)</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/11hbokj/parsing_json_help/jasqcgh">https://libreddit.nohost.network/r/shortcuts/comments/11hbokj/parsing_json_help/jasqcgh</a></li>
+</ul>
+<pre><code>- Modify specific value
+</code></pre>
+<ul>
+<li>File (iCloud Drive &gt; Shortcust &gt; departmentStore1)</li>
+<li>Get File from Folder (File Extension, File)</li>
+<li>Get Name (File)</li>
+<li>Text (Name.File Extension)</li>
+<li>Set Variable (Filename, Text)</li>
+<li>Run Shortcuts (Search For Matching Rows)</li>
+<li>Split Text (Shortcut Result, Custom, <code>,</code>)</li>
+<li>Get Item from List (Item at Index, 1, Split Text)</li>
+<li>Set Variable (Product barcode, Item from List)</li>
+<li>Get Item from List (Item at Index, 2, Split Text)</li>
+<li>Set Variable (Product name, Item from List)</li>
+<li>Get Item from List (Item at Index, 3, Split Text)</li>
+<li>Set Variable (Product price, Item from List)</li>
+<li>Choose from Menu (Product barcode, Product name, Product price)<ul>
+<li>Ask for Input (Text, Product barcode, Product barcode)</li>
+<li>Replace Text (<code>Product barcode, Product name, Product price</code>, <code>Provided Input, Product name, Product price</code>, File)</li>
+<li>Save File (Updated Text, Shortcuts, Filename, Enable &#39;Overwrite If File Exists&#39;)</li>
+<li>Quick Look (Saved File, Optional)</li>
+<li>The remaining two options in the menu can be modified accordingly according to the steps of the first option</li>
+</ul>
+</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/">https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/</a></li>
+</ul>
+<pre><code>- Delete matching rows
+</code></pre>
+<ul>
+<li>File (iCloud Drive &gt; Shortcuts &gt; departmentStore1)</li>
+<li>Get Details of Files (Name, File)</li>
+<li>Text (<code>Name</code>.<code>File Extension</code>)</li>
+<li>Set Variable (File name, Text)</li>
+<li>Ask for Input (Text, What do you want to search for?)</li>
+<li>Match Text (<code>.*Provided Input.*</code>, File)</li>
+<li>Choose from List (Matches)</li>
+<li>Replace Text (<code>Choose Item  </code>, File)<ul>
+<li>Paste the line break you copied after &#39;Chosen Item&#39; (To prevent blank lines)</li>
+</ul>
+</li>
+<li>Save File (Updated Text, Shortcuts, File name, Enable &#39;Overwrite If File Exists&#39;)</li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/">https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/</a></li>
+</ul>
+<pre><code>- Search for matching rows
+</code></pre>
+<ul>
+<li>Get File from Folder (Shortcuts, departmentStore1.csv)</li>
+<li>Choose from Menu (Dictate, Scan, Type)<ul>
+<li>Dictate text (China Mainland) (Depend on product name you sell)</li>
+<li>Run Shortcuts (Get Barcode)</li>
+<li>Ask for Input</li>
+</ul>
+</li>
+<li>Match Text (<code>.*Dictated Text.*</code>, File)</li>
+<li>Choose from List (Matches)</li>
+</ul>
+<pre><code>- Get unit price
+</code></pre>
+<ul>
+<li>Run Shortcut (Get Barcode)</li>
+<li>Set Variable (Product barcode, Shortcut Result)</li>
+<li>Get File from Folder (Shortcuts, departmentStore1.csv)<ul>
+<li><code>vi departmentStore1.csv</code>
+&quot;&quot;&quot;
+barcode,name,price
+6901234567890,water,1
+&quot;&quot;&quot;</li>
+</ul>
+</li>
+<li>Match Text (<code>Product barcode.*</code>, File)<ul>
+<li><code>.</code> # Represent any single charater</li>
+<li><code>*</code> # The preceding character can appear zero or more times</li>
+</ul>
+</li>
+<li>Split Text (Matches, Custom, <code>,</code>)</li>
+<li>Get Dictionary from Input (Item at Index, 3, Split Text)</li>
+<li>Set Variable (Product price, Item from List)</li>
+<li>Show Result (Product price, Optional)</li>
+<li><a href="https://utgd.net/article/9410">https://utgd.net/article/9410</a></li>
+</ul>
+<pre><code>- Get barcode
+</code></pre>
+<ul>
+<li>Scan QR or Barcode</li>
+<li>Get Text from Input (QR/Barcode)</li>
+<li>Copy to Clipboard (Text, Optional)</li>
+<li>Show Result (Text, Optional)</li>
+<li><a href="https://www.youtube.com/watch?v=4Kemgg3FSjw">https://www.youtube.com/watch?v=4Kemgg3FSjw</a></li>
+</ul>
+<pre><code>- Select JSON arrays
+</code></pre>
+<ul>
+<li>Get Dictionary from Input (Contents of URL)</li>
+<li>Replace Text (<code>clickReturn</code>, Dictionary)<ul>
+<li>Delete the line break to display it normally in the list</li>
+</ul>
+</li>
+<li>Choose from List (Updated Text)</li>
+</ul>
+<pre><code>- Display a notification for a few seconds
+</code></pre>
+<ul>
+<li><p>Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
+&quot;&quot;&quot;
+let notification = new Notification();
+notification.title = &quot;English&quot;;
+notification.body = &quot;<code>Translated Text</code>&quot;;
+notification.identifier = &quot;my.music.notification&quot;;
+notification.schedule();
+Script.complete();</p>
+<p>Notification.removeDelivered([&quot;my.music.notification&quot;]);
+Script.complete();
+&quot;&quot;&quot;</p>
+</li>
+<li><p><a href="https://libreddit.nohost.network/r/shortcuts/comments/16p7iwp/how_can_i_make_notifications_clear/k1p96sz">https://libreddit.nohost.network/r/shortcuts/comments/16p7iwp/how_can_i_make_notifications_clear/k1p96sz</a></p>
+</li>
+</ul>
+<pre><code>- Switch App Store region temporarily
+</code></pre>
+<ul>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/">https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/</a></li>
+</ul>
+<pre><code>- Open WeChat payment code
+</code></pre>
+<ul>
+<li>Dismiss Siri and Continue</li>
+<li>Open URLs (e.g. <code>weixin://widget/pay</code>, <code>alipays://platformapi/startapp?appId=2018121962599426&amp;page=pages%2FphoneTraffic%2FphoneTraffic%3FpageSource%3Dshouye</code>)</li>
+<li><a href="https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1">https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1</a></li>
+<li><a href="https://sspai.com/post/68497">https://sspai.com/post/68497</a></li>
+</ul>
+<pre><code>- Beautify JSON format
+</code></pre>
+<ul>
+<li>URL (<code>data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;</code>)</li>
+<li>URL Encode (Decode, URL)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/">https://libreddit.eu.org/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/</a></li>
+</ul>
+<pre><code>- Invert image using a-Shell
+</code></pre>
+<ul>
+<li>Select Photos</li>
+<li>Set Variable (Image, Photos)</li>
+<li>Put File (<code>Image</code>)</li>
+<li>Text (Current Date)<ul>
+<li>Custom # Date Format</li>
+<li>yyyy-MM-dd-HHmmss (e.g. 2025-09-09-094100)</li>
+</ul>
+</li>
+<li>Set Variable (Output file name, Text)</li>
+<li>Text (convert <code>Image</code>.<code>File Extension</code> -channel RGB -negate <code>Output file name</code>.png)</li>
+<li>Execute Command (Text)</li>
+<li>Get File (Output file name.png)</li>
+<li>Save to Photo Album (File, Recents)</li>
+<li>Quick Look (Saved Photo Media)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2">https://libreddit.eu.org/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2</a></li>
+</ul>
+<pre><code>- Comment out some actions
+</code></pre>
+<ul>
+<li>Text (Comment)</li>
+<li>If (Text, is, Comment)<ul>
+<li>Nothing</li>
+</ul>
+</li>
+<li>Otherwise<ul>
+<li>all the actions you want to comment out</li>
+</ul>
+</li>
+<li>End If (Tips: Press and hold this action and drag it downwards to perform batch operations)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89">https://libreddit.eu.org/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89</a></li>
+</ul>
+<pre><code>- Extract all values from a JSON structure
+</code></pre>
+<ul>
+<li>Get Dictionary from Input (Contents of URL)</li>
+<li>Repeat with Each (Dictionary)<ul>
+<li>Get Dictionary Value (Value, url, Repeat Item)</li>
+</ul>
+</li>
+<li>End Repeat</li>
+<li>Combine Text (Repeat Results, New Lines)</li>
+<li>Artificial intelligence</li>
+</ul>
+<pre><code>- Get a list of all file names from the API (JSON format)
+</code></pre>
+<ul>
+<li>Get Dictionary from Input (Contents of URL)</li>
+<li>Get Dictionary Value (Value, data.content, Dictionary)</li>
+<li>Repeat with Each (Dictionary Value)</li>
+<li>Text (Repeat Item (Type: Dictionary; Key: name))</li>
+<li><a href="https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09">https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09</a></li>
+</ul>
+<pre><code>- How many minutes are left today?
+</code></pre>
+<ul>
+<li>Get Time Between Dates (Current Date, 00:00, Minutes)</li>
+<li>Calculate (1440, +, Time Between Dates)</li>
+<li>Show Result (Calculation Result)</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/">https://libreddit.eu.org/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/</a></li>
+</ul>
+<pre><code>- Convert PDFs (Captured long screen) to PNGs
+</code></pre>
+<ul>
+<li>Convert Image (Shortcut Input, PNG)</li>
+<li>Save to Photo Album (Converted Image, Recents)<ul>
+<li>Tap on Recents, then tap on Variables, and select Ask Each Time # Save to a specific album</li>
+</ul>
+</li>
+<li><a href="https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb">https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb</a></li>
+<li><a href="https://safereddit.com/r/shortcuts/comments/nz3r51/when_making_a_shortcut_to_save_photos_to_album_is/h1nnrrk">https://safereddit.com/r/shortcuts/comments/nz3r51/when_making_a_shortcut_to_save_photos_to_album_is/h1nnrrk</a></li>
+</ul>
+<pre><code>- Get each line of a file before playing audiobook randomly
+</code></pre>
+<ul>
+<li>Get File from Folder (VLC, audioBook.txt)</li>
+<li>Split Text (File, New Lines)</li>
+<li>Get Item from List (Random Item, Split Text)</li>
+<li><a href="https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/">https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/</a></li>
+</ul>
+<pre><code>- Adjust 8-hour sleep time based on sunrise time
+</code></pre>
+<ul>
+<li>Get Weather Forecast (Daily, Current Location)</li>
+<li>Get Details of Weather Conditions (Sunrise Time, Weather Conditions)</li>
+<li><strong>Get Item from List</strong> (Item at Index, 2, Sunrise Time)</li>
+<li>Adjust Date (Add, 60, minutes, Item from List)</li>
+<li>Set Variable (Up, Adjusted Date)</li>
+<li>Create Alarm (<code>Up</code>, Get Up)<ul>
+<li>Disable &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li>Show Notification (Alarm)<ul>
+<li>Time # Title</li>
+<li>None # Date Format</li>
+<li>Short # Time Format</li>
+</ul>
+</li>
+<li>Adjust Date (Subtract, 510, minutes, Item from List)</li>
+<li>Set Variable (Down, Adjusted Date)</li>
+<li>Create Alarm (Adjusted Date, Go To Bed)<ul>
+<li>Disable &#39;Show When Run&#39;</li>
+</ul>
+</li>
+<li><a href="https://libreddit.eu.org/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/">https://libreddit.eu.org/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/</a></li>
+</ul>
+<pre><code>- The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51
+- The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd
+- Use URL Scheme
+</code></pre>
+<ul>
+<li>Text<ul>
+<li>vlc-x-callback://x-callback-url/stream?url=<em>yourURL</em></li>
+<li>Or <code>nplayer-http://192.168.10.100:5244/d/encodedFileName</code></li>
+<li>Or <code>outplayer://*yourURL*</code></li>
+</ul>
+</li>
+<li>Open URLs (Text)</li>
+<li><a href="https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812">https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812</a></li>
+</ul>
+<pre><code>- Make Siri mute if &#39;Dismiss Siri and Continue&#39; doesn&#39;t work
+</code></pre>
+<ul>
+<li>The add icon</li>
+<li>Add Action</li>
+<li>Dismiss Siri and Continue</li>
+<li>Set Voice &amp; Data (4G, Primary)</li>
+<li>Press power button and say thank you</li>
+<li><a href="https://www.youtube.com/watch?v=8bw_QEaTBq8">https://www.youtube.com/watch?v=8bw_QEaTBq8</a></li>
+<li><a href="https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg">https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg</a></li>
+<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/1347p9i/dismiss_siri_and_continue_command_broken/l0eicy9/">https://libreddit.nohost.network/r/shortcuts/comments/1347p9i/dismiss_siri_and_continue_command_broken/l0eicy9/</a></li>
+</ul>
+<pre><code>- The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done
+- The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done
 </code></pre>
 </li>
-<li>Modify specific value<pre><code>- File (iCloud Drive &gt; Shortcust &gt; departmentStore1)
-- Get File from Folder (File Extension, File)
-- Get Name (File)
-- Text (Name.File Extension)
-- Set Variable (Filename, Text)
-- Run Shortcuts (Search For Matching Rows)
-- Split Text (Shortcut Result, Custom, `,`)
-- Get Item from List (Item at Index, 1, Split Text)
-- Set Variable (Product barcode, Item from List)
-- Get Item from List (Item at Index, 2, Split Text)
-- Set Variable (Product name, Item from List)
-- Get Item from List (Item at Index, 3, Split Text)
-- Set Variable (Product price, Item from List)
-- Choose from Menu (Product barcode, Product name, Product price)
-    - Ask for Input (Text, Product barcode, Product barcode)
-    - Replace Text (`Product barcode, Product name, Product price`, `Provided Input, Product name, Product price`, File)
-    - Save File (Updated Text, Shortcuts, Filename, Enable &#39;Overwrite If File Exists&#39;)
-    - Quick Look (Saved File, Optional)
-    - The remaining two options in the menu can be modified accordingly according to the steps of the first option
-- https://libreddit.nohost.network/r/shortcuts/comments/11b75to/is_there_a_way_to_replace_a_string_in_a_txt_not/j9x6pnz/
-</code></pre>
-</li>
-<li>Delete matching rows<pre><code>- File (iCloud Drive &gt; Shortcuts &gt; departmentStore1)
-- Get Details of Files (Name, File)
-- Text (`Name`.`File Extension`)
-- Set Variable (File name, Text)
-- Ask for Input (Text, What do you want to search for?)
-- Match Text (`.*Provided Input.*`, File)
-- Choose from List (Matches)
-- Replace Text (`Choose Item  `, File)
-    - Paste the line break you copied after &#39;Chosen Item&#39; (To prevent blank lines)
-- Save File (Updated Text, Shortcuts, File name, Enable &#39;Overwrite If File Exists&#39;)
-- https://libreddit.nohost.network/r/shortcuts/comments/10qbaug/cant_remove_a_line_break/j6rxf92/
-</code></pre>
-</li>
-<li>Search for matching rows<pre><code>- Get File from Folder (Shortcuts, departmentStore1.csv)
-- Choose from Menu (Dictate, Scan, Type)
-    - Dictate text (China Mainland) (Depend on product name you sell)
-    - Run Shortcuts (Get Barcode)
-    - Ask for Input
-- Match Text (`.*Dictated Text.*`, File)
-- Choose from List (Matches)
-</code></pre>
-</li>
-<li>Get unit price<pre><code>- Run Shortcut (Get Barcode)
-- Set Variable (Product barcode, Shortcut Result)
-- Get File from Folder (Shortcuts, departmentStore1.csv)
-    - `vi departmentStore1.csv`
-      &quot;&quot;&quot;
-      barcode,name,price
-      6901234567890,water,1
-      &quot;&quot;&quot;
-- Match Text (`Product barcode.*`, File)
-    - `.` # Represent any single charater
-    - `*` # The preceding character can appear zero or more times
-- Split Text (Matches, Custom, `,`)
-- Get Dictionary from Input (Item at Index, 3, Split Text)
-- Set Variable (Product price, Item from List)
-- Show Result (Product price, Optional)
-- https://utgd.net/article/9410
-</code></pre>
-</li>
-<li>Get barcode<pre><code>- Scan QR or Barcode
-- Get Text from Input (QR/Barcode)
-- Copy to Clipboard (Text, Optional)
-- Show Result (Text, Optional)
-- https://www.youtube.com/watch?v=4Kemgg3FSjw
-</code></pre>
-</li>
-<li>Select JSON arrays<pre><code>- Get Dictionary from Input (Contents of URL)
-- Replace Text (`clickReturn`, Dictionary)
-    - Delete the line break to display it normally in the list
-- Choose from List (Updated Text)
-</code></pre>
-</li>
-<li>Display a notification for a few seconds<pre><code>- Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
-  &quot;&quot;&quot;
-  let notification = new Notification();
-  notification.title = &quot;English&quot;;
-  notification.body = &quot;`Translated Text`&quot;;
-  notification.identifier = &quot;my.music.notification&quot;;
-  notification.schedule();
-  Script.complete();
-  
-  Notification.removeDelivered([&quot;my.music.notification&quot;]);
-  Script.complete();
-  &quot;&quot;&quot;
-- https://libreddit.nohost.network/r/shortcuts/comments/16p7iwp/how_can_i_make_notifications_clear/k1p96sz
-</code></pre>
-</li>
-<li>Switch App Store region temporarily<pre><code>- https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/
-</code></pre>
-</li>
-<li>Open WeChat payment code<pre><code>- Dismiss Siri and Continue
-- Open URLs (e.g. `weixin://widget/pay`, `alipays://platformapi/startapp?appId=2018121962599426&amp;page=pages%2FphoneTraffic%2FphoneTraffic%3FpageSource%3Dshouye`)
-- https://gist.github.com/JamesHopbourn/046bc341e7debfd0c86e3b388d983c53#%E5%BE%AE%E4%BF%A1
-- https://sspai.com/post/68497
-</code></pre>
-</li>
-<li>Beautify JSON format<pre><code>- URL (`data:text/html;charset=utf-8,&lt;script&gt;document.write(encodeURIComponent(JSON.stringify(Shortcut Input,null,2)))&lt;/script&gt;`)
-- URL Encode (Decode, URL)
-- https://libreddit.eu.org/r/shortcuts/comments/gqq43h/dictionaryjson_pretty_print/
-</code></pre>
-</li>
-<li>Invert image using a-Shell<pre><code>- Select Photos
-- Set Variable (Image, Photos)
-- Put File (`Image`)
-- Text (Current Date)
-    - Custom # Date Format
-    - yyyy-MM-dd-HHmmss (e.g. 2025-09-09-094100)
-- Set Variable (Output file name, Text)
-- Text (convert `Image`.`File Extension` -channel RGB -negate `Output file name`.png)
-- Execute Command (Text)
-- Get File (Output file name.png)
-- Save to Photo Album (File, Recents)
-- Quick Look (Saved Photo Media)
-- https://libreddit.eu.org/r/shortcuts/comments/1cdhddj/open_in_vim_via_ashell_then_save_in_original/l1fk0e2
-</code></pre>
-</li>
-<li>Comment out some actions<pre><code>- Text (Comment)
-- If (Text, is, Comment)
-    - Nothing
-- Otherwise
-    - all the actions you want to comment out
-- End If (Tips: Press and hold this action and drag it downwards to perform batch operations)
-- https://libreddit.eu.org/r/shortcuts/comments/prkg46/does_anybody_want_the_ability_to_comment_out/hdkig89
-</code></pre>
-</li>
-<li>Extract all values from a JSON structure<pre><code>- Get Dictionary from Input (Contents of URL)
-- Repeat with Each (Dictionary)
-    - Get Dictionary Value (Value, url, Repeat Item)
-- End Repeat
-- Combine Text (Repeat Results, New Lines)
-- Artificial intelligence
-</code></pre>
-</li>
-<li>Get a list of all file names from the API (JSON format)<pre><code>- Get Dictionary from Input (Contents of URL)
-- Get Dictionary Value (Value, data.content, Dictionary)
-- Repeat with Each (Dictionary Value)
-- Text (Repeat Item (Type: Dictionary; Key: name))
-- https://medium.com/@richardmoult75/parsing-json-api-lists-with-shortcuts-20df08aedf09
-</code></pre>
-</li>
-<li>How many minutes are left today?<pre><code>- Get Time Between Dates (Current Date, 00:00, Minutes)
-- Calculate (1440, +, Time Between Dates)
-- Show Result (Calculation Result)
-- https://libreddit.eu.org/r/shortcuts/comments/uh862o/trying_to_make_a_program_that_tells_me_how_many/i74iy1h/
-</code></pre>
-</li>
-<li>Convert PDFs (Captured long screen) to PNGs<pre><code>- Convert Image (Shortcut Input, PNG)
-- Save to Photo Album (Converted Image, Recents)
-    - Tap on Recents, then tap on Variables, and select Ask Each Time # Save to a specific album
-- https://libreddit.tux.pizza/r/ios/comments/epz3wf/how_to_save_a_full_screen_screenshot_as_image_and/femykyb
-- https://safereddit.com/r/shortcuts/comments/nz3r51/when_making_a_shortcut_to_save_photos_to_album_is/h1nnrrk
-</code></pre>
-</li>
-<li>Get each line of a file before playing audiobook randomly<pre><code>- Get File from Folder (VLC, audioBook.txt)
-- Split Text (File, New Lines)
-- Get Item from List (Random Item, Split Text)
-- https://libreddit.tux.pizza/r/shortcuts/comments/ma5b8z/last_line_of_file/
-</code></pre>
-</li>
-<li>Adjust 8-hour sleep time based on sunrise time<pre><code>- Get Weather Forecast (Daily, Current Location)
-- Get Details of Weather Conditions (Sunrise Time, Weather Conditions)
-- **Get Item from List** (Item at Index, 2, Sunrise Time)
-- Adjust Date (Add, 60, minutes, Item from List)
-- Set Variable (Up, Adjusted Date)
-- Create Alarm (`Up`, Get Up)
-    - Disable &#39;Show When Run&#39;
-- Show Notification (Alarm)
-    - Time # Title
-    - None # Date Format
-    - Short # Time Format
-- Adjust Date (Subtract, 510, minutes, Item from List)
-- Set Variable (Down, Adjusted Date)
-- Create Alarm (Adjusted Date, Go To Bed)
-    - Disable &#39;Show When Run&#39;
-- https://libreddit.eu.org/r/shortcuts/comments/r7yezo/automation_8_hours_before_sunrise/hn42v2l/
-</code></pre>
-</li>
-<li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
-<li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
-<li>Use URL Scheme<pre><code>- Text
-    - vlc-x-callback://x-callback-url/stream?url=*yourURL*
-    - Or `nplayer-http://192.168.10.100:5244/d/encodedFileName`
-    - Or `outplayer://*yourURL*`
-- Open URLs (Text)
-- https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812
-</code></pre>
-</li>
-<li>Make Siri mute if &#39;Dismiss Siri and Continue&#39; doesn&#39;t work<pre><code>- The add icon
-- Add Action
-- Dismiss Siri and Continue
-- Set Voice &amp; Data (4G, Primary)
-- Press power button and say thank you
-- https://www.youtube.com/watch?v=8bw_QEaTBq8
-- https://libreddit.tux.pizza/r/shortcuts/comments/p9kppq/how_do_i_get_siri_to_not_say_ok_or_done_after/j4kq3pg
-- https://libreddit.nohost.network/r/shortcuts/comments/1347p9i/dismiss_siri_and_continue_command_broken/l0eicy9/
-</code></pre>
-</li>
-<li>The add icon - Add Action - Categories - Scripting - Set Personal Hotspot - done</li>
-<li>The add icon - Add Action - Set VPN (Set On Demand, On, Tailscale) - done</li>
 </ul>
 </li>
 <li>Text<ul>
