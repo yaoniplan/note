@@ -7924,9 +7924,10 @@ notes.forEach((note) =&gt; console.log(note));
 <ul>
 <li><h4>Use &quot;ish&quot;</h4>
 <ul>
-<li>Open VLC (Print a clickable hyperlink)<pre><code>printf &#39;\e]8;;%s\e\\%s\e]8;;\e\\\n&#39; &quot;vlc-x-callback://x-callback-url/stream?url=$episode&quot; &quot;Tap to Play in VLC&quot;
+<li>Open VLC (By printing a clickable link)<pre><code>printf &#39;\e]8;;%s\e\\%s\e]8;;\e\\\n&#39; &quot;vlc-x-callback://x-callback-url/stream?url=$episode&quot; &quot;Tap to Play in VLC&quot;
 </code></pre>
 <ul>
+<li><code>vlc-x-callback://x-callback-url/stream?url=</code> # Url scheme (e.g. <code>x-web-search://?q=</code>)</li>
 <li><a href="https://github.com/pystardust/ani-cli/issues/988#issuecomment-1504109768">https://github.com/pystardust/ani-cli/issues/988#issuecomment-1504109768</a></li>
 <li><a href="https://github.com/pystardust/ani-cli/pull/1105/files">https://github.com/pystardust/ani-cli/pull/1105/files</a></li>
 </ul>
