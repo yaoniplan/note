@@ -1,11 +1,9 @@
 ### "Animation"
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
-- 余烬行者 S01E10 TODO
-- 宗门里除了我都是卧底 S01E89
-- 我的师兄太强了 S01E40
-- 大猿魂 S01E11
-- 吞天记 S01E33
+- 宗门里除了我都是卧底 S01E100
+- 我的师兄太强了 S01E48
+- 吞天记 S01E37 0334 TODO
 - 每日男公关 S01E19
 - 假面骑士加布 S01E49
 - 男女之间的友情存在吗？（不，不存在!!） S01E01 animation
@@ -22,7 +20,7 @@
 - Against the Sky Supreme / 逆天至尊 - 445
 
 ### Comic
-- 王游戏 Chapter 50 # Although the plot may be a little illogical, it is fascinating.
+- 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
 - 万界守门人 Chapter 89
 - 异狱暴君：我的影子能无限进化 Chapter 34
 - 老蛇修仙传 Chapter 55
@@ -303,6 +301,8 @@
 - guard(end)
 
 ### Animation
+- 大猿魂 S01E12 1511 # Target audience maybe 13 or 14 years old
+- 余烬行者 S01E10 0459 # Target audience maybe 13 or 14 years old
 - 太古战魂 S01E34 0648 # Plot maybe slow
 - 魔天记 S01E16
 - 帝乃三姐妹原来很好搞定。 S01E07 0151 # Target audience maybe female
