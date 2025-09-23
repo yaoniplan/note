@@ -3,10 +3,7 @@
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
 - 我的师兄太强了 S01E48
-- 吞天记 S01E37 0334 TODO
-- 每日男公关 S01E19
-- 假面骑士加布 S01E49
-- 男女之间的友情存在吗？（不，不存在!!） S01E01 animation
+- 男女之间的友情存在吗？（不，不存在!!） S01E01 TODO
 - 凡人修仙传 - 159
 - 牧神记 S01E47
 - 灵武大陆 107
@@ -301,6 +298,9 @@
 - guard(end)
 
 ### Animation
+- 假面骑士加布 S01E50 # Although the final villain was defeated hastily, the plot was fascinating.
+- 每日男公关 S01E19 # Plot maybe slow
+- 吞天记 S01E40
 - 大猿魂 S01E12 1511 # Target audience maybe 13 or 14 years old
 - 余烬行者 S01E10 0459 # Target audience maybe 13 or 14 years old
 - 太古战魂 S01E34 0648 # Plot maybe slow
