@@ -1,22 +1,18 @@
 ### "Animation"
+- 神明渴求着游戏。 S01E06
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
 - 我的师兄太强了 S01E48
-- 男女之间的友情存在吗？（不，不存在!!） S01E01 TODO
-- 凡人修仙传 - 159
-- 牧神记 S01E47
-- 灵武大陆 107
-- 陆地键仙 S01E150
-- 仙逆 - 106
-- learnC - 16 0714
-- A brief history - 13
-- top10ModelsOfDeepThinking # 08
-- Shrouding the Heavens / 遮天 - 126
-- 武神主宰 - 582
-- Against the Sky Supreme / 逆天至尊 - 445
+- 凡人修仙传 - 161
+- 牧神记 S01E49
+- 仙逆 - 107
+- Shrouding the Heavens / 遮天 - 128
+- 武神主宰 - 583
+- Against the Sky Supreme / 逆天至尊 - 445 TODO
 
 ### Comic
+- 末世重生：我靠开箱子问鼎巅峰 Chapter 67
 - 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
 - 万界守门人 Chapter 89
 - 异狱暴君：我的影子能无限进化 Chapter 34
@@ -298,6 +294,9 @@
 - guard(end)
 
 ### Animation
+- 陆地键仙 S01E150
+- 灵武大陆 108 0613 # Plot maybe slow
+- 男女之间的友情存在吗？（不，不存在!!） S01E04 0741 # Target audience maybe 13 or 14 years old
 - 假面骑士加布 S01E50 # Although the final villain was defeated hastily, the plot was fascinating.
 - 每日男公关 S01E19 # Plot maybe slow
 - 吞天记 S01E40
