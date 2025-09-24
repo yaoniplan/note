@@ -1,5 +1,5 @@
 ### "Animation"
-- 神明渴求着游戏。 S01E06
+- Gods' Games We Play / 神明渴求着游戏。 S01E10 TODO # Introduced many kinds of gameplay.
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
@@ -9,7 +9,7 @@
 - 仙逆 - 107
 - Shrouding the Heavens / 遮天 - 128
 - 武神主宰 - 583
-- Against the Sky Supreme / 逆天至尊 - 445 TODO
+- Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
 - 末世重生：我靠开箱子问鼎巅峰 Chapter 67
