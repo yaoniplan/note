@@ -1,5 +1,5 @@
 ### "Animation"
-- Gods' Games We Play / 神明渴求着游戏。 S01E10 TODO # Introduced many kinds of gameplay.
+- 神墓 S01E16.S02E27.S01E07 TODO
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
@@ -294,6 +294,7 @@
 - guard(end)
 
 ### Animation
+- Gods' Games We Play / 神明渴求着游戏。 S01E13 # Introduced many kinds of gameplay.
 - 陆地键仙 S01E150
 - 灵武大陆 108 0613 # Plot maybe slow
 - 男女之间的友情存在吗？（不，不存在!!） S01E04 0741 # Target audience maybe 13 or 14 years old
@@ -415,7 +416,6 @@
 - 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E10 1142 # Plot maybe slow
 - 金牌得主 S01E13
 - 散修之王 - 52
-- 神墓 - 43
 - 地。-关于地球的运动 S01E25
 - 重生的猫骑士与精灵娘的日常 S01E11 0512 #NSFW # Plot maybe slow
 - 不幸职业【鉴定士】实则最强 S01E08 0541 #NSFW # Plot maybe slow

@@ -98,6 +98,9 @@
 - https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md
 - https://www.shiyanlou.com/
 
+## Work
+- https://work2icu.org/en/display
+
 ## Artificial intelligence
 - https://app.egnes-ai.com
 - https://chat.openai.com
@@ -137,6 +140,7 @@
 - https://www.yuedu.pro/
 
 ## Study methods
+- https://611study.icu/en/display
 - https://m.bilibili.com/space/478031441 # Jiangxi College Entrance Examination
 - https://limboy.me/posts/words-to-myself/
 - https://limboy.me/posts/what-i-wish-i-knew-when-i-was-20/
