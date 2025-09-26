@@ -1,5 +1,6 @@
 ### "Animation"
-- 神墓 S01E16.S02E27.S01E07 TODO
+- 龙族 S01E16.S02E04 1336 TODO
+- 神墓 S01E16.S02E27.S01E09
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
@@ -294,6 +295,7 @@
 - guard(end)
 
 ### Animation
+- 苍兰诀 S01E13 0529 # Target audience maybe 13 or 14 years old
 - Gods' Games We Play / 神明渴求着游戏。 S01E13 # Introduced many kinds of gameplay.
 - 陆地键仙 S01E150
 - 灵武大陆 108 0613 # Plot maybe slow
@@ -937,7 +939,6 @@
 - 长夜开拓者 - 11 # It's boring.
 - 石少侠 精编版 - 18 # End of the first season
 - 仙武苍穹 - 48 # End of the first season
-- 龙族 - 16 # End of the first season
 - joker game / 鬼牌游戏 - 12 # End of the first season
 - B: The Beginning / B：彼之初 - 12 # End of the first season
 - 战千年第一季 - 16 # End of the first season
@@ -947,7 +948,6 @@
 - 星武神诀第二季 - 40 # End of the second season
 - 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
 - 黑门 - 12 # end of the first season
-- 苍兰诀- 12 # end of the first season
 - 黑之召唤士第一季 - 12 # end of the first season
 - 在异世界迷宫开后宫第一季 - 12 # end of the first season
 - 风姿物语动画第一季 银河篇 - 20 # end of the first season
