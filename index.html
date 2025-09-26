@@ -19756,6 +19756,8 @@ cp ./* ~/.local/share/rofi/themes/
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
 <li>Stash<ul>
+<li><code>git stash push -u -m &quot;auto-stash-$timestamp&quot;</code> # Save current changes to a new stash entry (<code>-u</code>: Include untracked files)</li>
+<li><code>git stash pop</code> # Apply and remove stashed changes from stash list</li>
 <li><code>git stash list</code> # List all stashes</li>
 <li><code>git stash show -p stash@{0}</code> # Show detailed changes stored in that stash</li>
 <li><code>git stash clear</code> # Clear all stashes</li>
