@@ -1,6 +1,27 @@
 ### "Animation"
-- 拾荒者统治 S01E03
-- 龙族 S01E16.S02E09 0304 TODO
+- 地狱老师
+- 神椿市建设中
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
+- 通灵妃
+- 新 吊带袜天使
+- 无职英雄 ～技能什么的毫无用处～
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
+- 与游戏中心的少女异文化交流的故事
+- 杀手旅店
+- 小城日常
+- 废渊战鬼
+- 肥宅勇者
+- 活死喵之夜
+- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～
+- 琉璃的宝石
+- 公爵千金的家庭教师
+- 怪兽8号 S01E12.S02E00
+- 气绝勇者与暗杀公主 S01E01 1034
+- 云深不知梦 S01E03
+- 桃源暗鬼 S01E01 1353
+- 最近的侦探真没用 S01E02 0445
+- The Water Magician / 水属性的魔法师 S01E01 0459 TODO
+- 龙族 S01E16.S02E13
 - 神墓 S01E16.S02E27.S01E09
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
@@ -14,6 +35,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
+- 诡浊仙道 Chapter 63
 - 转生座 Chapter 98
 - 末世重生：我靠开箱子问鼎巅峰 Chapter 67
 - 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
@@ -297,6 +319,7 @@
 - guard(end)
 
 ### Animation
+- 拾荒者统治 S01E12 # Although the style is strange, it is fascinating.
 - 苍兰诀 S01E13 0529 # Target audience maybe 13 or 14 years old
 - Gods' Games We Play / 神明渴求着游戏。 S01E13 # Introduced many kinds of gameplay.
 - 陆地键仙 S01E150
@@ -390,7 +413,6 @@
 - 胡乱的深见君 - S01E01 0027 # Target audience may be gay men
 - 武逆 - S01E30
 - 我能无限顿悟 - S01E52
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
 - The Ravages of Time / 火凤燎原 - S01E16.S02E16
 - 永恒剑祖 S01E40
 - 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E11 0027 # Target audience maybe 13 or 14 years old
@@ -536,7 +558,6 @@
 - 从路人角色开始的探索英雄谭 S01E12
 - 白色闪电 05 0918 # Target audience may be 13 or 14 years old
 - 独步逍遥 - 168/444 0433 # Plot may be slow
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52 380
 - Viral Hit / 格斗实况 - S01E12
 - Tower of God / 神之塔 S01E13.S02E09 0739 # Plot may be slow
 - 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 # Plot may be a bit repetitive
@@ -602,7 +623,6 @@
 - 良禽不择木 09 0305 # Plot may be slow
 - 从Lv2开始开挂的原勇者候补悠闲的异世界生活 07 0827 # Plot may be slow
 - 怪物转生 - 09 1800 # Plot may be slow
-- 怪兽8号 - S01E12
 - THE NEW GATE 06 1110 # Plot may be slow
 - 百家诀之江湖诡事录 - S01E16
 - 一世之尊 S01E16
