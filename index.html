@@ -7924,6 +7924,11 @@ notes.forEach((note) =&gt; console.log(note));
 <ul>
 <li><h4>Use &quot;ish&quot;</h4>
 <ul>
+<li>Use local time (e.g. CST: China standard time) to unify Git commit time<pre><code>apk add tzdata
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+echo &quot;Asia/Shanghai&quot; &gt; /etc/timezone
+</code></pre>
+</li>
 <li>Open VLC (By printing a clickable link)<pre><code>printf &#39;\e]8;;%s\e\\%s\e]8;;\e\\\n&#39; &quot;vlc-x-callback://x-callback-url/stream?url=$episode&quot; &quot;Tap to Play in VLC&quot;
 </code></pre>
 <ul>
