@@ -1,5 +1,6 @@
 ### "Animation"
-- 龙族 S01E16.S02E04 1336 TODO
+- 拾荒者统治 S01E03
+- 龙族 S01E16.S02E09 0304 TODO
 - 神墓 S01E16.S02E27.S01E09
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
@@ -13,6 +14,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
+- 转生座 Chapter 98
 - 末世重生：我靠开箱子问鼎巅峰 Chapter 67
 - 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
 - 万界守门人 Chapter 89
