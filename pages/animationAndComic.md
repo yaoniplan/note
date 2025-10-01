@@ -5,8 +5,7 @@
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24
 - 杀手旅店 S01E04 0215
 - 废渊战鬼 S01E03
-- 肥宅勇者 S01E08 TODO
-- 活死喵之夜
+- 活死喵之夜 S01E01 TODO
 - 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～
 - 琉璃的宝石
 - 公爵千金的家庭教师
@@ -169,6 +168,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 全民转职：无职的我终结了神明！ Chapter 62 Page 120 # Plot maybe slow
 - 无限升级in武林 Chapter 2 Page 8 # There is no sense of urgency (according to the setting, the protagonist should not be so lazy)
 - 称霸末世 Chapter 48 Page 15 # The plot may be a little far-fetched and the painting style may be a little awkward.
 - 镇国神婿 Chapter 30 Page 12 # Plot maybe slow
@@ -315,6 +315,7 @@
 - guard(end)
 
 ### Animation
+- 肥宅勇者 S01E09 1305 # The protagonist has changed? (Although the opening setting is quite fresh)
 - 拾荒者统治 S01E12 # Although the style is strange, it is fascinating.
 - 苍兰诀 S01E13 0529 # Target audience maybe 13 or 14 years old
 - Gods' Games We Play / 神明渴求着游戏。 S01E13 # Introduced many kinds of gameplay.
