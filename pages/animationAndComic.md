@@ -4,8 +4,8 @@
 - 无职英雄 ～技能什么的毫无用处～ S01E01
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24
 - 杀手旅店 S01E04 0215
-- 废渊战鬼
-- 肥宅勇者
+- 废渊战鬼 S01E03
+- 肥宅勇者 S01E08 TODO
 - 活死喵之夜
 - 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～
 - 琉璃的宝石
@@ -15,7 +15,7 @@
 - 云深不知梦 S01E03
 - 桃源暗鬼 S01E01 1353
 - 最近的侦探真没用 S01E02 0445
-- The Water Magician / 水属性的魔法师 S01E01 0459 TODO
+- The Water Magician / 水属性的魔法师 S01E01 0459
 - 龙族 S01E16.S02E13
 - 神墓 S01E16.S02E27.S01E09
 - 神国之上 S01E16
@@ -169,6 +169,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 无限升级in武林 Chapter 2 Page 8 # There is no sense of urgency (according to the setting, the protagonist should not be so lazy)
 - 称霸末世 Chapter 48 Page 15 # The plot may be a little far-fetched and the painting style may be a little awkward.
 - 镇国神婿 Chapter 30 Page 12 # Plot maybe slow
 - 邪神降世，我有一座大凶狱 Chapter 74 Page 12 # The font is too small.
