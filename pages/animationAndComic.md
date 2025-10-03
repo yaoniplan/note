@@ -29,6 +29,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
+- 终极肆意神豪系统 Chapter 65
 - 诡浊仙道 Chapter 63
 - 转生座 Chapter 98
 - 末世重生：我靠开箱子问鼎巅峰 Chapter 67
