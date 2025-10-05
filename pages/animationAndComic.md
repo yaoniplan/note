@@ -169,6 +169,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 称霸废土：我在末世执掌仙门 Chapter 20 Page 54 # Plot connection is not smooth.
 - 全民转职：无职的我终结了神明！ Chapter 62 Page 120 # Plot maybe slow
 - 无限升级in武林 Chapter 2 Page 8 # There is no sense of urgency (according to the setting, the protagonist should not be so lazy)
 - 称霸末世 Chapter 48 Page 15 # The plot may be a little far-fetched and the painting style may be a little awkward.
