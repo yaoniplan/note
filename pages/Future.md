@@ -76,6 +76,7 @@
 ## Animation and comic
 - http://www.dmand5.com/
 - http://agedm2.com/
+- https://yhdm.one/
 - https://tv.pei.ee/
 - https://www.youkutv.us/
 - http://yhdm.in/
