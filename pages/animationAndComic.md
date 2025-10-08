@@ -28,6 +28,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
+- 残命天才生存法 Chapter 53
 - 终极肆意神豪系统 Chapter 65
 - 诡浊仙道 Chapter 63
 - 转生座 Chapter 98
