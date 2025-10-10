@@ -79,7 +79,6 @@
 - https://yhdm6.top/
 - https://yhdm.one/
 - https://tv.pei.ee/
-- https://www.youkutv.us/
 - http://yhdm.in/
 - http://www.iyinghua.com/new/
 - http://eroanimedougakan.blog.fc2.com/
