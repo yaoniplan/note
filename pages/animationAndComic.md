@@ -1,4 +1,5 @@
 ### "Animation"
+- 启运丹田：开局签到至尊丹田 S01E06
 - 地狱老师 S01E10 1129
 - Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
 - 无职英雄 ～技能什么的毫无用处～ S01E01
@@ -9,7 +10,7 @@
 - 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E01
 - 公爵千金的家庭教师 S01E01
 - 怪兽8号 S01E12.S02E11
-- 云深不知梦 S01E13 TODO
+- 云深不知梦 S01E15 TODO
 - 桃源暗鬼 S01E01 1353
 - 最近的侦探真没用 S01E02 0445
 - The Water Magician / 水属性的魔法师 S01E01 0459
@@ -317,6 +318,7 @@
 - guard(end)
 
 ### Animation
+- 绝世神皇 S01E03 0459 # The plot is old-fashioned.
 - 气绝勇者与暗杀公主 S01E12 # The biggest attraction is the female characters
 - 肥宅勇者 S01E09 1305 # The protagonist has changed? (Although the opening setting is quite fresh)
 - 拾荒者统治 S01E12 # Although the style is strange, it is fascinating.
