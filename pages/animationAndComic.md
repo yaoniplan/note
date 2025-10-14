@@ -11,8 +11,7 @@
 - 公爵千金的家庭教师 S01E01
 - 怪兽8号 S01E12.S02E11
 - 云深不知梦 S01E16
-- 桃源暗鬼 S01E03 1544 TODO
-- 最近的侦探真没用 S01E02 0445
+- 最近的侦探真没用 S01E04 0359 TODO
 - The Water Magician / 水属性的魔法师 S01E01 0459
 - 龙族 S01E16.S02E13
 - 神墓 S01E16.S02E27.S01E09
@@ -28,6 +27,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
+- 强制催眠/发小碰不得 #NSFW Chapter 8
 - 末日苟活：蟑螂给我叠buff Chapter 77
 - 残命天才生存法 Chapter 53
 - 终极肆意神豪系统 Chapter 65
@@ -318,6 +318,7 @@
 - guard(end)
 
 ### Animation
+- 桃源暗鬼 S01E05 0429 # Target audience maybe 13 or 14 years old
 - 绝世神皇 S01E03 0459 # The plot is old-fashioned.
 - 气绝勇者与暗杀公主 S01E12 # The biggest attraction is the female characters
 - 肥宅勇者 S01E09 1305 # The protagonist has changed? (Although the opening setting is quite fresh)

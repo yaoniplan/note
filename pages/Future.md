@@ -142,6 +142,7 @@
 - https://www.yuedu.pro/
 
 ## Study methods
+- https://github.com/TapXWorld/ChinaTextbook
 - https://611study.icu/en/display
 - https://m.bilibili.com/space/478031441 # Jiangxi College Entrance Examination
 - https://limboy.me/posts/words-to-myself/
