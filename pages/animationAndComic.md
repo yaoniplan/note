@@ -12,8 +12,7 @@
 - 怪兽8号 S01E12.S02E11
 - 云深不知梦 S01E16
 - 最近的侦探真没用 S01E04 0359
-- The Water Magician / 水属性的魔法师 S01E03 TODO
-- 龙族 S01E16.S02E13
+- 龙族 S01E16.S02E15 TODO
 - 神墓 S01E16.S02E27.S01E09
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
@@ -318,6 +317,7 @@
 - guard(end)
 
 ### Animation
+- The Water Magician / 水属性的魔法师 S01E04 0323 # Plot maybe slow
 - 桃源暗鬼 S01E05 0429 # Target audience maybe 13 or 14 years old
 - 绝世神皇 S01E03 0459 # The plot is old-fashioned.
 - 气绝勇者与暗杀公主 S01E12 # The biggest attraction is the female characters
