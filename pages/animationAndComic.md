@@ -12,8 +12,8 @@
 - 怪兽8号 S01E12.S02E11
 - 云深不知梦 S01E16
 - 最近的侦探真没用 S01E04 0359
-- 龙族 S01E16.S02E15 TODO
-- 神墓 S01E16.S02E27.S01E09
+- 龙族 S01E16.S02E16
+- 神墓 S01E16.S02E27.S01E11 TODO
 - 神国之上 S01E16
 - 诛仙 - S01E26.S02E26.S03E17
 - 宗门里除了我都是卧底 S01E100
@@ -26,7 +26,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
-- 强制催眠/发小碰不得 #NSFW Chapter 8
+- 强制催眠/发小碰不得 #NSFW Chapter 49 Page 150
 - 末日苟活：蟑螂给我叠buff Chapter 77
 - 残命天才生存法 Chapter 53
 - 终极肆意神豪系统 Chapter 65
