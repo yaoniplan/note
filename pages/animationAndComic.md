@@ -13,9 +13,8 @@
 - 云深不知梦 S01E16
 - 最近的侦探真没用 S01E04 0359
 - 龙族 S01E16.S02E16
-- 神墓 S01E16.S02E27.S01E11 TODO
-- 神国之上 S01E16
-- 诛仙 - S01E26.S02E26.S03E17
+- 神墓 S01E16.S02E27.S03E12
+- 诛仙 - S01E26.S02E26.S03E24 TODO
 - 宗门里除了我都是卧底 S01E100
 - 我的师兄太强了 S01E48
 - 凡人修仙传 - 161
@@ -26,7 +25,7 @@
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
-- 强制催眠/发小碰不得 #NSFW Chapter 49 Page 150
+- 强制催眠/发小碰不得 #NSFW Chapter 86
 - 末日苟活：蟑螂给我叠buff Chapter 77
 - 残命天才生存法 Chapter 53
 - 终极肆意神豪系统 Chapter 65
@@ -317,6 +316,7 @@
 - guard(end)
 
 ### Animation
+- 神国之上 S01E17
 - The Water Magician / 水属性的魔法师 S01E04 0323 # Plot maybe slow
 - 桃源暗鬼 S01E05 0429 # Target audience maybe 13 or 14 years old
 - 绝世神皇 S01E03 0459 # The plot is old-fashioned.
