@@ -14,11 +14,8 @@
 - 最近的侦探真没用 S01E04 0359
 - 龙族 S01E16.S02E16
 - 神墓 S01E16.S02E27.S03E12
-- 诛仙 - S01E26.S02E26.S03E24 TODO
-- 宗门里除了我都是卧底 S01E100
-- 我的师兄太强了 S01E48
-- 凡人修仙传 - 161
-- 牧神记 S01E49
+- 凡人修仙传 - 165
+- 牧神记 S01E52 TODO
 - 仙逆 - 107
 - Shrouding the Heavens / 遮天 - 128
 - 武神主宰 - 583
@@ -316,6 +313,9 @@
 - guard(end)
 
 ### Animation
+- 我的师兄太强了 S01E48
+- 宗门里除了我都是卧底 S01E100
+- 诛仙 - S01E26.S02E26.S03E26
 - 神国之上 S01E17
 - The Water Magician / 水属性的魔法师 S01E04 0323 # Plot maybe slow
 - 桃源暗鬼 S01E05 0429 # Target audience maybe 13 or 14 years old
