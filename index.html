@@ -13044,6 +13044,10 @@ togglePDFDarkMode();
 <ul>
 <li><h4>Use &quot;ffmpeg&quot;</h4>
 <ul>
+<li><code>ffmpeg -i file.mp4 -vn -c:a libmp3lame -q:a 5 output.mp3</code> # Convert MP4 to MP3 (yt-dlp&#39;s default MP3 conversion)<ul>
+<li><code>-vn</code> # No video</li>
+</ul>
+</li>
 <li><code>ffmpeg -i 5ac9704e-c8fc-4445-bc3c-db640271898d-B.mp4 -c:v libx265 -crf 28 -preset slow -c:a aac -b:a 128k 招生专业名称：计算机类.mp4</code> # Compress a file without losing much quality<ul>
 <li><code>-c:v</code> # Set video codec to libx265 (HEVC encoder: higher compression rate than H.264)</li>
 <li><code>-crf</code> # Set Constant Rate Factor to 28 (Higher value result in lower quality and smaller file size)</li>
