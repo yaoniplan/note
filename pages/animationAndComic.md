@@ -15,8 +15,8 @@
 - 龙族 S01E16.S02E16
 - 神墓 S01E16.S02E27.S03E12
 - 凡人修仙传 - 165
-- 牧神记 S01E52 TODO
-- 仙逆 - 107
+- 牧神记 S01E53
+- 仙逆 - 108 TODO
 - Shrouding the Heavens / 遮天 - 128
 - 武神主宰 - 583
 - Against the Sky Supreme / 逆天至尊 - 447
