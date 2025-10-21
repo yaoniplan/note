@@ -16,9 +16,9 @@
 - 神墓 S01E16.S02E27.S03E12
 - 凡人修仙传 - 165
 - 牧神记 S01E53
-- 仙逆 - 108 TODO
-- Shrouding the Heavens / 遮天 - 128
-- 武神主宰 - 583
+- 仙逆 - 111
+- Shrouding the Heavens / 遮天 - 132
+- 武神主宰 - 590 TODO
 - Against the Sky Supreme / 逆天至尊 - 447
 
 ### Comic
