@@ -12620,6 +12620,13 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>find /mnt/yaoniplan/ | grep -i speed</code></li>
 </ul>
 </li>
+<li>Search for specific files with the find command<pre><code>- `find . -type f -size 1033c ! -executable`
+</code></pre>
+<ul>
+<li><code>c</code> # Count in bytes (A byte is the smallest commonly used unit of file size)</li>
+<li><code>-5c</code> # Smaller than 5 bytes (Opposite: <code>+5c</code>)</li>
+</ul>
+</li>
 <li>Delete hidden files<pre><code>find . -type f -name &#39;.*&#39; -delete
 </code></pre>
 </li>
@@ -12649,7 +12656,10 @@ find . -type f -inum 20447344 -exec rm {} \;
 <li><em><strong>References</strong></em><ul>
 <li><code>man find</code> # <code>/^ *-ctime</code></li>
 <li><img src="./assets/2023-05-06_00-13.png" alt="2023-05-06_00-13.png"></li>
-<li>ChatGPT</li>
+<li><img src="./assets/2023-02-05_20:11:35.png" alt="2023-02-05_20:11:35.png"></li>
+<li><a href="https://askubuntu.com/questions/1108882/find-a-file-based-on-specifications/1432795#1432795">https://askubuntu.com/questions/1108882/find-a-file-based-on-specifications/1432795#1432795</a></li>
+<li><a href="https://overthewire.org/wargames/bandit/bandit6.html">https://overthewire.org/wargames/bandit/bandit6.html</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -18851,26 +18861,6 @@ fi
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://www.tecmint.com/empty-delete-file-content-linux/">https://www.tecmint.com/empty-delete-file-content-linux/</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Search for specific files with the find command</h4>
-<ul>
-<li><code>find . -type f -size 1033c ! -executable</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>f</code> # File</li>
-<li><code>c</code> # Bytes</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><code>man find</code></li>
-<li><img src="./assets/2023-02-05_20:11:35.png" alt="2023-02-05_20:11:35.png"></li>
-<li><a href="https://askubuntu.com/questions/1108882/find-a-file-based-on-specifications/1432795#1432795">https://askubuntu.com/questions/1108882/find-a-file-based-on-specifications/1432795#1432795</a></li>
-<li><a href="https://overthewire.org/wargames/bandit/bandit6.html">https://overthewire.org/wargames/bandit/bandit6.html</a></li>
 </ul>
 </li>
 </ul>
