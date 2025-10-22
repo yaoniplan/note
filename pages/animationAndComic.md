@@ -1,6 +1,8 @@
 ### "Animation"
-- 启运丹田：开局签到至尊丹田 S01E06
-- 地狱老师 S01E10 1129
+- 武碎星河 S01E14
+- 神在囧途 S01E11
+- 启运丹田：开局签到至尊丹田 S01E09
+- 地狱老师 S01E13 1521 TODO # Childhood memories
 - Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
 - 无职英雄 ～技能什么的毫无用处～ S01E01
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24
@@ -18,8 +20,8 @@
 - 牧神记 S01E53
 - 仙逆 - 111
 - Shrouding the Heavens / 遮天 - 132
-- 武神主宰 - 590 TODO
-- Against the Sky Supreme / 逆天至尊 - 447
+- 武神主宰 - 592
+- Against the Sky Supreme / 逆天至尊 - 455
 
 ### Comic
 - 强制催眠/发小碰不得 #NSFW Chapter 86
@@ -313,6 +315,7 @@
 - guard(end)
 
 ### Animation
+- 万剑王座 S01E05 0559 # The cartoon style is rough.
 - 我的师兄太强了 S01E48
 - 宗门里除了我都是卧底 S01E100
 - 诛仙 - S01E26.S02E26.S03E26
