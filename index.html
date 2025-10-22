@@ -26246,12 +26246,16 @@ You can edit this.
 <li><h4>Use &quot;regex&quot;</h4>
 <ul>
 <li><code>\.(mp3|m4a|wav|wma|flac|aac|ogg)$</code> # Check if a file is an audio file</li>
+<li><code>\.[^\.]+$</code> # Extract file extensions</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>\</code> # Escape</li>
+<li><code>[]</code> # Character class (Match any single character from the list inside)</li>
+<li><code>^</code> # Negation (Except)</li>
+<li><code>+</code> # Quantifier (One or more)</li>
 <li><code>()</code> # Capture a group</li>
-<li><code>|</code> # OR</li>
+<li><code>|</code> # OR (One of them)</li>
 <li><code>$</code> # At the end of the string</li>
 </ul>
 </li>
