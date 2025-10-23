@@ -1,9 +1,9 @@
 ### "Animation"
-- 武碎星河 S01E14
+- 武碎星河 S01E23
 - 神在囧途 S01E11
 - 启运丹田：开局签到至尊丹田 S01E09
-- 地狱老师 S01E13 1521 TODO # Childhood memories
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E12
+- 地狱老师 S01E13 1521 # Childhood memories
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 0101 TODO
 - 无职英雄 ～技能什么的毫无用处～ S01E01
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24
 - 杀手旅店 S01E04 0215
@@ -167,6 +167,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 99强化木棍 Chapter 88 Page 30 # Plot maybe slow
 - 称霸废土：我在末世执掌仙门 Chapter 20 Page 54 # Plot connection is not smooth.
 - 全民转职：无职的我终结了神明！ Chapter 62 Page 120 # Plot maybe slow
 - 无限升级in武林 Chapter 2 Page 8 # There is no sense of urgency (according to the setting, the protagonist should not be so lazy)

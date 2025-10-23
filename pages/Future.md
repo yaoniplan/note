@@ -84,6 +84,7 @@
 - http://eroanimedougakan.blog.fc2.com/
 
 ## Programming
+- https://sqlbolt.com/lesson/select_queries_with_constraints
 - https://www.w3schools.com/
 - https://www.theodinproject.com/
 - https://www.datacamp.com/
