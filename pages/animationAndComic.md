@@ -3,9 +3,8 @@
 - 神在囧途 S01E11
 - 启运丹田：开局签到至尊丹田 S01E09
 - 地狱老师 S01E13 1521 # Childhood memories
-- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 0101 TODO
-- 无职英雄 ～技能什么的毫无用处～ S01E01
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24
+- 无职英雄 ～技能什么的毫无用处～ S01E05
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E24 432 0207 TODO
 - 杀手旅店 S01E04 0215
 - 废渊战鬼 S01E03
 - 活死喵之夜 S01E01
@@ -316,6 +315,7 @@
 - guard(end)
 
 ### Animation
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 1828 # Plot maybe a bit boring
 - 万剑王座 S01E05 0559 # The cartoon style is rough.
 - 我的师兄太强了 S01E48
 - 宗门里除了我都是卧底 S01E100
