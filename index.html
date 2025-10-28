@@ -7956,6 +7956,13 @@ notes.forEach((note) =&gt; console.log(note));
 <ul>
 <li><h4>Use &quot;ish&quot;</h4>
 <ul>
+<li>Use bash instead of default ash<pre><code># If /bin/bash is exists and is executable, start it with exec
+[ -x /bin/bash ] &amp;&amp; exec /bin/bash
+</code></pre>
+<ul>
+<li>Then you can edit <code>~/.bashrc</code> instead of <code>~/.profile</code></li>
+</ul>
+</li>
 <li>Use local time (e.g. CST: China standard time) to unify Git commit time<pre><code>apk add tzdata
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo &quot;Asia/Shanghai&quot; &gt; /etc/timezone
