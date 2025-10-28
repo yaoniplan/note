@@ -41,6 +41,29 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;greetd&quot;</h4>
+<ul>
+<li><code>doas systemctl enable greetd.service --now</code> # Enable greetd service</li>
+<li><code>doas systemctl disable sddm.service --now</code> # Disable other display manager (e.g. SDDM) service</li>
+<li><code>doas vim /etc/greetd/config.toml</code> # Set the default session to start Niri<pre><code>[default_session]
+user = &quot;yaoniplan&quot;
+command = &quot;agreety --cmd niri-session&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to experience a faster display manager. (To replace &quot;sddm&quot;)</li>
+<li><code>doas pacman --sync greetd</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;P.S.&quot; in English</h4>
 <ul>
 <li><code>P.S. If you don&#39;t have this plan, please close the issue at any time.</code> # Postscript</li>
