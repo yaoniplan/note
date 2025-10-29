@@ -43,8 +43,8 @@
 <ul>
 <li><h4>Use &quot;greetd&quot;</h4>
 <ul>
-<li><code>doas systemctl enable greetd.service --now</code> # Enable greetd service</li>
-<li><code>doas systemctl disable sddm.service --now</code> # Disable other display manager (e.g. SDDM) service</li>
+<li><code>doas systemctl disable sddm.service</code> # Disable other display manager (e.g. SDDM) service</li>
+<li><code>doas systemctl enable greetd.service</code> # Enable greetd service</li>
 <li><code>doas vim /etc/greetd/config.toml</code> # Set the default session to start Niri<pre><code>[default_session]
 command = &quot;agreety --cmd niri-session&quot;
 user = &quot;yaoniplan&quot;
