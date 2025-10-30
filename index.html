@@ -54,6 +54,24 @@ user = &quot;yaoniplan&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Prevent system messages from being printed over tuigreet<pre><code>doas mkdir /etc/systemd/system/greetd.service.d/
+doas systemctl daemon-reload # Make the directory visible
+</code></pre>
+<ul>
+<li><code>doas vim /etc/systemd/system/greetd.service.d/no_spam.conf</code><pre><code>[Service]
+Type=idle
+StandardOutput=tty
+# Without this errors will spam on screen
+StandardError=journal
+# Without these bootlogs will spam on screen
+TTYReset=true
+TTYVHangup=true
+TTYVTDisallocate=true
+</code></pre>
+</li>
+<li><a href="https://github.com/apognu/tuigreet/issues/68#issuecomment-1586359960">https://github.com/apognu/tuigreet/issues/68#issuecomment-1586359960</a></li>
+</ul>
+</li>
 <li>Test mode<pre><code>GREETD_SOCK=/run/greetd-514.sock tuigreet --time
 </code></pre>
 <ul>
@@ -3455,6 +3473,7 @@ WantedBy=multi-user.target
 <ul>
 <li><code>doas systemctl enable sing-box --now</code> # Enable it now</li>
 <li><code>systemctl status sing-box</code> # Check status (Green circle instead of gray one)</li>
+<li><code>doas systemctl restart sing-box</code> # Restart to update after modifying <em>yourConfig.json</em></li>
 <li><a href="https://github.com/SagerNet/sing-box/blob/dev-next/release/local/sing-box.service">https://github.com/SagerNet/sing-box/blob/dev-next/release/local/sing-box.service</a></li>
 </ul>
 </li>
@@ -3466,12 +3485,12 @@ WantedBy=multi-user.target
 </ul>
 </li>
 <li><code>vim ~/.bash_profile</code><pre><code># Set proxy
-export all_proxy=&quot;socks://127.0.0.1:2333&quot;
+export all_proxy=&quot;socks://127.0.0.1:2334&quot;
 export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </code></pre>
 <ul>
 <li><code>all_proxy</code> # Both HTTP and HTTPS connections (Sometimes doesn&#39;t work, try both http_proxy and https_proxy)</li>
-<li><code>2333</code> # Search &#39;listen_port&#39; to get the port</li>
+<li><code>2334</code> # Search &#39;listen_port&#39; to get the port</li>
 <li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
 </li>
