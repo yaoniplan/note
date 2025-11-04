@@ -3312,6 +3312,22 @@ EOF
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Manage sensitive data across platforms (Use <code>.env</code> and <code>python-dotenv</code>)<ul>
+<li><code>vim ~group/todoist/.env</code> # Store your sensitive data in this file<pre><code>TODOIST_API_TOKEN=27d7...
+</code></pre>
+</li>
+<li><code>echo &quot;.env&quot; &gt;&gt; .gitignore</code> # Prevent it from being accidentally committed</li>
+<li><code>pip install python-dotenv</code> # Install dependencies</li>
+<li><code>vim ~group/todoist/main.py</code> # Import and load<pre><code>from todoist_api_python.api import TodoistAPI
+from dotenv import load_dotenv
+import os
+
+load_dotenv() # Load the `.env` into environment variables
+TOKEN = os.getenv(&quot;TODOIST_API_TOKEN&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>vim ~/Documents/.bashrc</code> # Create aliases<pre><code>alias ll=ls -l
 </code></pre>
 <ul>
@@ -8987,6 +9003,28 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Customize the information displayed in the list<pre><code>- Text
+  &#39;&#39;&#39;
+  # Display title (N: name; TEL: telephone)
+  BEGIN:VCARD
+  VERSION:3.0
+  N:Title
+  TEL:-
+  END:VCARD
+
+  # Display title and subtitle
+  BEGIN:VCARD
+  VERSION:3.0
+  N:Title
+  TEL:Subtitle
+  END:VCARD
+  &#39;&#39;&#39;
+- Set Name (Text, vCard.vcf)
+- Choose from List (Phone Numbers)
+    - Set Renamed Item&#39;s Type from Text (Text) to Contact (Phone Numbers)
+- https://redlib.catsarch.com/r/shortcuts/comments/1hoirb4/how_to_base64_encode_an_image_for_vcards_without/m4a0net
+</code></pre>
+</li>
 <li>Play local audio and video files with the URL scheme of VLC<pre><code>- URL Encode (Encode, Shortcut Input)
 - URL (vlc-x-callback://x-callback-url/stream?url=file:///private/var/mobile/Containers/Data/Application/E806D041-5D33-4BFD-8893-03FEC57A4485/Documents/URL Encoded Text)
 - Open URLs (URL)
