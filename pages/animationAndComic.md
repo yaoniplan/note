@@ -7,7 +7,7 @@
 - 地狱老师 S01E13 1521 # Childhood memories
 - 无职英雄 ～技能什么的毫无用处～ S01E05
 - 杀手旅店 / 异人旅馆 S01E05 1906
-- 废渊战鬼 S01E07 0342 TODO
+- 废渊战鬼 S01E07 TODO
 - 活死喵之夜 S01E01
 - 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E01
 - 公爵千金的家庭教师 S01E01
@@ -167,6 +167,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 欢迎来到异世界便利店 #NSFW Chapter 26 # The ending seemed too hasty.
 - 99强化木棍 Chapter 88 Page 30 # Plot maybe slow
 - 称霸废土：我在末世执掌仙门 Chapter 20 Page 54 # Plot connection is not smooth.
 - 全民转职：无职的我终结了神明！ Chapter 62 Page 120 # Plot maybe slow
@@ -204,6 +205,7 @@
 - 全球冰封：我打造了末日安全屋 S01E252 # Target audience maybe 13 or 14 years old
 - 秘密教学 - 183 # Feel like it is out of touch with the real world
 - 没有道侣就会死 - 90
+- 韓道修 Chapter 28 # 因贪心多次被关进监狱，哪怕成为算命大师帮他人算命，也计算不了上天为他自己安排的命运
 - 神级公务员 # 搞笑
 - 死了都要爱爱 # 野心 能力 失败
 - 本能解决师 # 变异 适应
