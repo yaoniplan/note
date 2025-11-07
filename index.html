@@ -2762,27 +2762,6 @@ database_id = &quot;&lt;unique-ID-for-your-database&gt;&quot;
 </ul>
 <hr>
 <ul>
-<li><h4>Change wallpaper color in iPhone Shortcuts</h4>
-<ul>
-<li>Get <code>All</code> wallpapers</li>
-<li>Get <code>Random Item</code> from <code>Wallpapers</code></li>
-<li>Switch to <code>Item from List</code></li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because to randomize the color of the wallpaper.<ul>
-<li>Make sure add the other three colors of wallpaper (Silver, Gold, Deep purple) before running.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://libreddit.nohost.network/r/shortcuts/comments/ydd9ir/ios_162_beta_set_wallpaper_photo_you_can_now_set/itu067k/">https://libreddit.nohost.network/r/shortcuts/comments/ydd9ir/ios_162_beta_set_wallpaper_photo_you_can_now_set/itu067k/</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use Systemd timers</h4>
 <ul>
 <li><code>doas vi /etc/systemd/system/checkIn.timer</code><pre><code>[Unit]
@@ -9028,6 +9007,17 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Change random wallpapers without repeating<pre><code># Because to randomize the color of the wallpaper.
+# Make sure add the other three colors of wallpaper (Silver, Gold, Deep purple) before running.
+# Without repeating: Compare the names of current and random wallpapers (If true, rerun this Shortcut; otherwise, switch.)
+# Get Name (Name)
+    # Set Wallpapers&#39;s Type from Wallpaper (Wallpaper) to File (Name)
+- Get `All` wallpapers
+- Get `Random Item` from `Wallpapers`
+- Switch to `Item from List`
+- https://libreddit.nohost.network/r/shortcuts/comments/ydd9ir/ios_162_beta_set_wallpaper_photo_you_can_now_set/itu067k/
+</code></pre>
+</li>
 <li>Customize the information displayed in the list<pre><code>- Text
   &#39;&#39;&#39;
   # Display title (N: name; TEL: telephone)
