@@ -8,9 +8,7 @@
 - 地狱老师 S01E13 1521 # Childhood memories
 - 无职英雄 ～技能什么的毫无用处～ S01E05
 - 杀手旅店 / 异人旅馆 S01E05 1906
-- 废渊战鬼 S01E09 TODO
-- 活死喵之夜 S01E01
-- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E01
+- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E02 TODO
 - 公爵千金的家庭教师 S01E01
 - 怪兽8号 S01E12.S02E11
 - 云深不知梦 S01E16
@@ -25,6 +23,9 @@
 - Against the Sky Supreme / 逆天至尊 - 455
 
 ### Comic
+- 盗脸人生 Chapter 18
+    - 欺诈诱发了人类的贪婪（你贪收益，他贪你的本金） # Chapter 9
+    - 人心难测（说是一套，做又是另一套） # Chapter 30
 - 强制催眠/发小碰不得 #NSFW Chapter 86
 - 末日苟活：蟑螂给我叠buff Chapter 77
 - 残命天才生存法 Chapter 53
@@ -319,6 +320,8 @@
 - guard(end)
 
 ### Animation
+- 活死喵之夜 S01E06 0552 # Plot maybe slow
+- 废渊战鬼 S01E10 0026 # Plot maybe slow
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52 432
 - Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 1828 # Plot maybe a bit boring
 - 万剑王座 S01E05 0559 # The cartoon style is rough.
