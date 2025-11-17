@@ -1,4 +1,5 @@
 ### "Animation"
+- 仙帝归来 S01E06
 - 天命大神皇 S01E21
 - 克金玩家 S01E22
 - 天相 S01E04
@@ -8,10 +9,7 @@
 - 地狱老师 S01E13 1521 # Childhood memories
 - 无职英雄 ～技能什么的毫无用处～ S01E05
 - 杀手旅店 / 异人旅馆 S01E05 1906
-- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E03 TODO
-- 公爵千金的家庭教师 S01E01
-- 怪兽8号 S01E12.S02E11
-- 云深不知梦 S01E16
+- 云深不知梦 S01E17 TODO
 - 最近的侦探真没用 S01E04 0359
 - 龙族 S01E16.S02E16
 - 神墓 S01E16.S02E27.S03E12
@@ -320,6 +318,9 @@
 - guard(end)
 
 ### Animation
+- 怪兽8号 S01E12.S02E11
+- 公爵千金的家庭教师 S01E02 0940 # Little girl and big brother?
+- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E04 0316 # Plot maybe slow
 - 活死喵之夜 S01E06 0552 # Plot maybe slow
 - 废渊战鬼 S01E10 0026 # Plot maybe slow
 - 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52 432
