@@ -364,7 +364,8 @@ binds {
     // Use parameters
     Mod+T { spawn &quot;alacritty&quot; &quot;-e&quot; &quot;tmux&quot;; }
     // Change launcher
-    Mod+D { spawn &quot;sh&quot; &quot;-c&quot; &quot;tofi-run | sh&quot;; }
+    //Mod+D { spawn &quot;sh&quot; &quot;-c&quot; &quot;tofi-run | sh&quot;; }
+    Mod+D { spawn-sh &quot;tofi-run | sh&quot;; }
 }
 </code></pre>
 </li>
