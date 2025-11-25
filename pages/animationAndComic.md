@@ -12,8 +12,7 @@
 - 无职英雄 ～技能什么的毫无用处～ S01E05
 - 杀手旅店 / 异人旅馆 S01E05 1906
 - 云深不知梦 S01E21
-- 最近的侦探真没用 S01E04 0359 TODO
-- 龙族 S01E16.S02E16
+- 龙族 S01E16.S02E17 TODO
 - 神墓 S01E16.S02E27.S03E12
 - 凡人修仙传 - 165
 - 牧神记 S01E53
@@ -320,6 +319,7 @@
 - guard(end)
 
 ### Animation
+- 最近的侦探真没用 S01E04 0359 # Target audience maybe 13 or 14 years old
 - 我在天庭收废品 S01E40
 - 怪兽8号 S01E12.S02E11
 - 公爵千金的家庭教师 S01E02 0940 # Little girl and big brother?
