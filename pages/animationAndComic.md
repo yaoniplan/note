@@ -1,0 +1,1125 @@
+### "Animation"
+- 玄界之门 S01E03
+- 九阳武神 S01E03
+- 孤雄 S01E09
+- 仙帝归来 S01E06
+- 天命大神皇 S01E21
+- 克金玩家 S01E22
+- 天相 S01E04
+- 武碎星河 S01E23
+- 神在囧途 S01E11
+- 启运丹田：开局签到至尊丹田 S01E09
+- 地狱老师 S01E13 1521 # Childhood memories
+- 无职英雄 ～技能什么的毫无用处～ S01E05
+- 杀手旅店 / 异人旅馆 S01E05 1906
+- 云深不知梦 S01E21
+- 龙族 S01E16.S02E22 0708 TODO
+- 神墓 S01E16.S02E27.S03E12
+- 凡人修仙传 - 165
+- 牧神记 S01E53
+- 仙逆 - 111
+- Shrouding the Heavens / 遮天 - 132
+- 武神主宰 - 592
+- Against the Sky Supreme / 逆天至尊 - 455
+
+### Comic
+- 名门家族的剑术天才 Chapter 121 Page 25
+- 盗脸人生 Chapter 18
+    - 欺诈诱发了人类的贪婪（你贪收益，他贪你的本金） # Chapter 9
+    - 人心难测（说是一套，做又是另一套） # Chapter 30
+- 强制催眠/发小碰不得 #NSFW Chapter 86
+- 末日苟活：蟑螂给我叠buff Chapter 77
+- 残命天才生存法 Chapter 53
+- 终极肆意神豪系统 Chapter 65
+- 诡浊仙道 Chapter 63
+- 转生座 Chapter 98
+- 末世重生：我靠开箱子问鼎巅峰 Chapter 67
+- 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
+- 万界守门人 Chapter 89
+- 异狱暴君：我的影子能无限进化 Chapter 34
+- 老蛇修仙传 Chapter 55
+- 穹顶之上 Chapter 139
+- 唯我可见的高塔攻略 Chapter 79
+- 高武进化：从觉醒怪兽之王开始 Chapter 55
+- 绝对剑感 Chapter 145
+- 太监转世 Chapter 52
+- 我靠无敌被动打出成吨伤害！ Chapter 105
+- 再不死我就统治魔界了 Chapter 112
+- 我，进化，恶魔 Chapter 116
+- 神级升级系统 S01E182
+- 开局就无敌 S01E118
+- 我只想安静地打游戏 S01E129
+- 这个勇者是金钱至上主义者 S01E120
+- 某天成为魔神 S01E264
+- 重生不当舔王，我独自氪金升级 # 237
+- 穿入VR成为性域猎人 #NSFW 56
+- 异世界转生之后宫养成记 #NSFW 54
+- 只活到今天的轮回骑士 44
+- 被召唤到异世界，然后成为半龙骑士长 #NSFW 37
+- 世上最好的青梅竹马 42
+- 恶次人生 #NSFW 13
+- 转世镖师 107
+- 道诡异仙 26
+- 我在末世摆地摊 37
+- 神赐之手 51
+- 从哥布林到哥布林神 45
+- 我有九千万亿舔狗金 527
+- 这一世我要当独行玩家 45
+- 任务至上主义 167
+- 死灵法师的进化特质 39
+- 力量点满？我可是亡灵法师啊！ 75
+- 绝对回归 25
+- 全民末日：我，病毒君王 46
+- 以王之力重生 64
+- 登陆未来一万年 178
+- 死灵法师！我即是天灾 S01E143
+- 帝霸 117
+- 初次深交，请多指教 - 56
+- 邪教教主 - 21 50%
+- 色雕英雄传:一捅天下 - 40
+- Panty Note / 裤裤笔记 - 232
+- 傀儡 - 331
+- 谁说理组没正妹 - 102 comic
+    - https://www.hanman100.com/index.php/chapter-28044.html
+- 开局签到至尊丹田 - 347
+- 超级神基因 - 312
+- 帝王app - 75
+- 暖味，完結
+- 生物学 全
+- 失踪 全
+- 双性人 Bodychange 全
+- 青春男女 全
+- 索多玛的儿部 全
+- 他的那里 全
+- 他的女人 全
+- 天使的眼淚 全
+- 危险同居 全
+- 中毒 全
+- 我的秘密砲友 全
+- 我的女友是女优  全
+- 我的色色夜说全
+- 我与JN結婚了 全
+- 无法盛开的花 全
+- 无法停止的甜蜜关系 全
+- 无法隐藏 全
+- 小野猫驯服手册 全
+- 校园梦精记 全
+- 心動！ MY OFFICE LADYS第季
+- 心動！ MY OFFICE LADYS 第二季
+- 心動！ MY OFFICE LADYS 第三季
+- 亚哈路第1季 全
+- 亚哈路第2季 全
+- 一夜灰姑娘 全，
+- 诱感放映机 全
+- 赞助者 全
+- 猪圈 全
+- 助教开麦拉 全
+- 租爱套房 全
+- LOVE不动产11集全
+- Rental Love 33集全
+- 奇美拉命室（SEFIROT）30集全
+- si亡天使43集全
+- sweet sound 31集全
+- Video 32集全
+- 抱歉姐是bt 32集全
+- 暴徒50集全
+- 变成狗的男人 S01E26 # 剧情引人入胜，但似乎结尾有点匆忙
+- 赤红之堂27集全
+- 丑闻第一季25集全
+- 丑闻第二季17集全
+- 恶nv来了请小心12集全
+- 品尝欧巴26集全
+- 复仇 S01E29 # 剧情引人入胜，结尾有点仓促
+- 感xing变态16集全
+- 跟公司最wx男人接吻的味道12集全
+- 混混店店派遣员12集全
+- 祸乱41集全
+- 觉醒 S01E34 # 剧情引人入胜，但似乎结尾有点匆忙
+- 今天在哪嘞12集全
+- 禁断的欺诈之夜第1季30集全
+- 禁断的欺诈之夜第2季36集全
+- 看见si亡的男人50集全
+- 秘密story 第1季116集全
+- 秘密Story第2手90集全
+- 秘密Story 第3季25集全
+- 魔鬼22集全
+- 目标就是你的内ku 24集全
+- 偶像狙击手40集全
+- 啪啪啪t教所第一季30集全
+- 啪啪啪t教所第二季30集全
+- 青涩男孩初体验10集全
+- 人外社区20集全
+- 水蛭20集 全
+- 她的秘密空间54集全
+- 透视nv子游泳部13集全
+- 危险jiao换18集全
+- 想象狂热42集全
+- 新進训育60集全
+- 野兽 25集全
+- 一夜灰姑娘16集全
+- 咦．在厨房里15集全
+- 浴室里的秘密采访9集全
+- 侄nv睡着之后16集全
+- 猪仔农场 S01E16 # 身材变好（刻意练习）后能否多交几个异性朋友？
+- 转学第一天6集全
+- The Day那一天全
+- 男人驯兽师 全
+- 上流社会 全
+- 神的禮物 全
+- 危险的爱全
+- 為爱而生 法葡克超 全
+
+### Comic
+- 欢迎来到异世界便利店 #NSFW Chapter 26 # The ending seemed too hasty.
+- 99强化木棍 Chapter 88 Page 30 # Plot maybe slow
+- 称霸废土：我在末世执掌仙门 Chapter 20 Page 54 # Plot connection is not smooth.
+- 全民转职：无职的我终结了神明！ Chapter 62 Page 120 # Plot maybe slow
+- 无限升级in武林 Chapter 2 Page 8 # There is no sense of urgency (according to the setting, the protagonist should not be so lazy)
+- 称霸末世 Chapter 48 Page 15 # The plot may be a little far-fetched and the painting style may be a little awkward.
+- 镇国神婿 Chapter 30 Page 12 # Plot maybe slow
+- 邪神降世，我有一座大凶狱 Chapter 74 Page 12 # The font is too small.
+- 全球惊悚：开局万亿冥币 Chapter 24 Page 147 # Plot maybe slow
+- 无职者/Pick Me Up! Chapter 8 Page 50 # Plot maybe slow
+- 4000年后重生异世界的大魔导师 Chapter 64 Page 50 # Plot maybe slow
+- 开局自带狗头，我成了一方妖尊 Chapter 21 Page 7 # Target audience maybe 13 or 14 years old
+- 下水道漫游指南 Chapter 92 # The ending seemed too hasty.
+- 妹妹消失的第一百天 Chapter 96 # The ending was  changed to Chapter 74.
+- 归来的异世界王者 Chapter 104 Page 65 # Plot maybe slow
+- 鄙人独善作死 Chapter 53 Page 24 # The plot of the story is inconsistent
+- 天华书库大公子 Chapter 26 Page 50 # Plot maybe slow
+- 多杀我几次，我就无敌了 Chapter 87 Page 146 # Plot maybe slow
+- 成为塔防游戏里的暴君 Chapter 66 Page 47 # Plot maybe slow
+- 死灵法师：亡灵支配者 Chapter 8 Page 36 # Plot maybe slow
+- 顶级气运，悄悄修炼千年 Chapter 188 Page 36 # Plot maybe slow
+- 领主大人的金币用不完 Chapter 98 Page 211 # Plot maybe slow
+- 入手神话级专属装备 Chapter 55 Page 27 # Plot maybe slow
+- 为智慧文明生活而来 S01E27 # Plot maybe slow
+- 这一世我要当至尊 S01E312 # Plot maybe slow
+- 蛊真人 S01E101 # It is discontinued.
+- 看见血条的我，处刑神明！ S01E198 # It is discontinued.
+- 我的左手能变异 S01E85 # Plot maybe slow
+- 贪食的降临 47 # Chapter 47 doesn't seem to be connected with the previous plot.
+- 转生者 18 # Plot may be slow
+- 我杀了学院玩家 15 # Plot may be slow
+- 游戏大师 15 # Plot may be slow
+- 月影剑帝 54 # plot may be slow
+- 身患绝症的天才 6 # Plot maybe slow
+- 地下城见闻录 S01E25 # Plot maybe slow
+- 全球冰封：我打造了末日安全屋 S01E252 # Target audience maybe 13 or 14 years old
+- 秘密教学 - 183 # Feel like it is out of touch with the real world
+- 没有道侣就会死 - 90
+- 韓道修 Chapter 28 # 因贪心多次被关进监狱，哪怕成为算命大师帮他人算命，也计算不了上天为他自己安排的命运
+- 神级公务员 # 搞笑
+- 死了都要爱爱 # 野心 能力 失败
+- 本能解决师 # 变异 适应
+- 脱光光小岛 # 脱离社会时，个人生存综合能力最重要；处于社会时，资源（包括但不限于经济，人力，物力）最重要
+- 危险的女人（小姨子的秘密）# 与权贵发生摩擦时，冷静反省并拿起法律的武器利用自身所学维护身为公民的合法权益
+- 斯德哥尔摩症候群 # 恐惧使人与坏人为伍
+- 赎罪营 # 字体太小了
+- 玩火 # 看着太难受了*
+- 我统治的世界 # 敬人者，人恒敬之
+- 手感/人妻性解放 # 看到名字，就不想看了
+- 30CM立约人(第一季、第二季) # 恶魔 契约
+- Commission # NTR
+- Heaven # 只有被选择的权利
+- Killing Time # Fairy tale ending
+- Scandal / 丑闻 (season1+2+3) # 在金字塔结构的食物链中，上层创造出了规则 (e.g. 食物没有选择权)
+- TEAM PLAY # 思考的理性的行动，并为之承担责任，这也许是成长的体现
+- 指导女大生 # 53, It is boring
+- White Girl (Part1,2) # 狮子搏兔，狮子眼中的兔子可能是地狱
+- 暧昧女剧场 # 像极了动画中帧数很少的动态漫画，没有看下去的欲望
+- 帮人家画嘛 # 似乎烂尾了
+- 处子猎人 # 17, It is boring
+- 大叔 # 经过时间、技术等资源的洗礼后，后来者也可以居上
+- 对我而言不简单的女人 # 强者，持续扬长补短；弱者，持续怨天尤人
+- 二十再重来 # 假设我来自未来，现在的我把握住影响自我的赛点，来到过去没有企及的高度
+- 粉红报告书 # 38, It is boring
+- 福冈的女人们 # Funny
+- 把你玩坏掉 # Funny
+- 幻想中的她 # 机会之悲
+- 灰姑娘的哥哥们 # 灰姑娘变成了满足他们个人利益的筹码
+- 激情分享屋 # Fairy tale ending
+- Run away / 记忆交换所 # Cyber, 真心希望的东西，一定要想方设法去得到; Punk, 弱肉强食依旧是千古不移的规律，要用实力让对手恐惧
+- 教练教教我 # Fairy tale endingh
+- Today's menu / 今天的老公 # Funny, 多重人格
+- 恶梦 # 2023-06-29 只有第一季 (What a pity!)
+- 傀儡玛莉 # 傀儡可以不是玛莉，但是我们都可以成为她 (Under the control)
+- 离婚报告书1 # 紧扣主题，每几章为一个小故事，Funny
+- 离婚报告书2 # 紧扣主题，每几章为一个小故事，Funny
+- 恋爱大排档 # 匆匆结尾
+- 蒙面女王 # 匆匆结尾
+- 哪里坏坏 # 每几章为一个小故事
+- 泥沼 # 在与人打交道的行业中，有的人（身处其中的人）想要逃离充满污泥的沼泽，有的人（即将进入的人）不得不陷入这个泥沼
+- 奴家思想 # 权利至上 (End of the first part)
+- 女朋友 # 也许是短篇，也许被删减了，也许...
+- 女友的小套房 # 图小，背景颜色为白色
+- Ophelia / 欧菲利亚 # Ophelia 承受了非人的痛苦，要想成功解救，必须借助于人力（即别人的力量）
+- 破茧 # The background color is white
+- 奇怪的超商 - Part 1 + 2 # It is funny
+- 千里寻爱 # 珍惜当下
+- 情欲灵药 # 开放式结尾？
+- 人家说的你都做（合租女友）# 匆匆结尾？
+- 少女成长日记 # Resource not found
+- 蛇精潮穴 # 光说不做，最终即使冲动鲁莽地行动了，也于事无补，反而终结了自己的一生
+- 淫stagram # 似乎烂尾了
+- 神秘社区美容院 # 上学等待放学，上班等待下班，今年等待明年，这不应该是人生的意义
+- 长腿姐姐 / 卖身给上司 - 48 # Feel like the ending details weren't explained clearly
+- 陌生的未婚妻 - 43 # Plot may be slow
+- 今晚就决定吃你了 - S01E106 # Method: Page 28, 50, 反家庭PUA
+- 靠神级天赋无限成长 - 30 # Plot may be slow
+- 醒来之后，变成黄油反派 - 37 # The plot may be slow
+- 满溢游泳池 - 105 # End
+- 从1级开始的异世界骑士 - 206 # The plot is too slow
+- 最强饭桶 - 86 # Reduce intelligence quotient
+- 美丽新世界 - 157 # Reduce intelligence quotient
+- 超导体鲁蛇/可愛的家夥/Sweet Guy # 看过，再看觉得 boring
+- 妖女之祸 # 看过，再看大概现实本就如此残酷
+- 偷窥第一季完結 # 看过，再看封面就看不下去
+- 女宿舍管理员 # 画风像是给儿童看的
+- 运动员女孩已完结 # 没有找到此漫画
+- by chance (偶然) 完结 # 看过，印象中还好，不是很糟糕
+- 恋爱辅助器+外传,完结 # 看过，猎奇，第一遍还好，不想二刷
+- MY WIVES # 看过，不想再看
+- 诗恩 # 看留言，不想看了
+- H校园 # 看了留言和一些，不想看了
+- 出轨 # 看了留言，不想看了
+- H—mate # 看到名字，不想看了
+- 新面孔 # 没找到此漫画
+- 假戏真做 # 看不下去，可能取材于现实
+- 17种性幻想 # 看留言，说被 ntr 了
+- 制服的诱惑 # 分成几个角色篇章，还可以
+- 危险性游戏 # 还可以
+- 月红夜花 # 机会来了，就要好好把握住
+- 诱感第一季（小姨子） # 现实 复杂
+- 诱感第二季（大嫂） # 阶级 玩偶 起点
+- 堕落游戏 # boring
+- 同学会 # 冲动 自知之明 自娱自乐
+- 不敬业的小姐姐楼凤 # 还可以
+- 淑女花苑第一二季 # 现实 残酷
+- 朋友的qi子：有你在的家 # 取材于现实 作者自述
+- 要交换吗 # 换个角度
+- 同居（拼房）# 强加的善意不是善意
+- 双重恋爱 # 友谊的小船翻了 为什么
+- 啵啵啵 # 天上掉的一直都是陷阱 社会 毒打 现实 赌博 自取灭亡 家破人亡 弱者被允许存活 凭什么
+- 欲求王 # 世界为资本服务
+- love导航G # 看过 boring
+- 低速男高速女 # 傻人有傻福
+- 调教家政妇 # 看过，不想看了
+- 圈套 # 科学技术是第一生产力
+- 肤浅女 # Broken family 虎穴 狼窝 蚂蚁洞 对于个人，人间如炼狱 赌博是将命运交予他人，家破人亡只是一句话的事 太残忍了*
+- 腥紅之壁 # 第一季完结 恐怖
+- dream girl（我的机器女友） # 现实不是做梦
+- 装备我最强- 132 # boring
+- 榜上玩家的归还 - 58 # boring
+- 开局送挂：不按套路修仙 - 65 # boring 月更
+- 登录武林系统 - 117(第一季完结)
+- 冲突(end)
+- 偶然(end)
+- 深夜便利店(end)
+- 操控者(end)
+- 坏血(end)
+- guard(end)
+
+### Animation
+- 最近的侦探真没用 S01E04 0359 # Target audience maybe 13 or 14 years old
+- 我在天庭收废品 S01E40
+- 怪兽8号 S01E12.S02E11
+- 公爵千金的家庭教师 S01E02 0940 # Little girl and big brother?
+- 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E04 0316 # Plot maybe slow
+- 活死喵之夜 S01E06 0552 # Plot maybe slow
+- 废渊战鬼 S01E10 0026 # Plot maybe slow
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52 432
+- Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 1828 # Plot maybe a bit boring
+- 万剑王座 S01E05 0559 # The cartoon style is rough.
+- 我的师兄太强了 S01E48
+- 宗门里除了我都是卧底 S01E100
+- 诛仙 - S01E26.S02E26.S03E26
+- 神国之上 S01E17
+- The Water Magician / 水属性的魔法师 S01E04 0323 # Plot maybe slow
+- 桃源暗鬼 S01E05 0429 # Target audience maybe 13 or 14 years old
+- 绝世神皇 S01E03 0459 # The plot is old-fashioned.
+- 气绝勇者与暗杀公主 S01E12 # The biggest attraction is the female characters
+- 肥宅勇者 S01E09 1305 # The protagonist has changed? (Although the opening setting is quite fresh)
+- 拾荒者统治 S01E12 # Although the style is strange, it is fascinating.
+- 苍兰诀 S01E13 0529 # Target audience maybe 13 or 14 years old
+- Gods' Games We Play / 神明渴求着游戏。 S01E13 # Introduced many kinds of gameplay.
+- 陆地键仙 S01E150
+- 灵武大陆 108 0613 # Plot maybe slow
+- 男女之间的友情存在吗？（不，不存在!!） S01E04 0741 # Target audience maybe 13 or 14 years old
+- 假面骑士加布 S01E50 # Although the final villain was defeated hastily, the plot was fascinating.
+- 每日男公关 S01E19 # Plot maybe slow
+- 吞天记 S01E40
+- 大猿魂 S01E12 1511 # Target audience maybe 13 or 14 years old
+- 余烬行者 S01E10 0459 # Target audience maybe 13 or 14 years old
+- 太古战魂 S01E34 0648 # Plot maybe slow
+- 魔天记 S01E16
+- 帝乃三姐妹原来很好搞定。 S01E07 0151 # Target audience maybe female
+- 诡秘之主 S01E13
+- 鬼吹灯之南海归墟 S01E02 0248 # Plot maybe slow
+- 一念永恒 - S01E52.S02E54.S03E59
+- 沧元图 - S01E66 0312 # Plot maybe slow
+- 紫云寺家的兄弟姐妹 S01E02 # Target audience maybe 13 or 14 years old
+- 药屋少女的呢喃 S01E15 0609 # Plot maybe slow
+- 拜托请穿上，鹰峰同学 #NSFW S01E02 1824 # Are there no classmates next to the seat at this moment?
+- Anne Shirly / 安妮·雪莉 S01E03 1144 # Target audience maybe 13 or 14 years old
+- 真･武士传 剑勇传说 S01E18 0102 # Plot maybe slow
+- 推理要在晚餐后 S01E12
+- 九龙大众浪漫 S01E06 2248 # Plot maybe slow
+- 时光流逝，饭菜依旧美味 S01E02 0837 # Target audience maybe female
+- 魔女守护者 S01E10 1706 # Target audience maybe 13 or 14 years old
+- 我为刀宗 S01E08 0949 # Target audience maybe 13 or 14 years old
+- 测不准的阿波连同学 S01E07 1453 # Target audience maybe 13 or 14 years old
+- 灵笼 S01E16.S02E09 0404 # Plot maybe slow
+- 三国演义 S01E11 # There is no beauty like the one in the animation 'The Ravages of Time'
+- 鲲吞天下之掌门归来 S01E12
+- 最强升级 S01E40
+- 逆战之路 S01E10
+- 万古最强宗 S01E36
+- 向火而生 S01E06
+- 魔幻仙踪 S01E26 # Plot is ups and downs, fascinating, and educational (When I was a kid)
+- 无尽神域 - S01E80
+- 坂本日常 S01E11 # Target audience maybe 13 or 14 years old
+- 君子无疾 S01E16
+- 画江湖之不良人 (Part1+2+3+4+5+6+7) 54+40+40+13+12+12+12
+- 航海王谈恋爱 S01E05
+- 鬼人幻灯抄 S01E03 0334 # Target audience maybe 13 or 14 years old
+- 夏日口袋 S01E02 0425 # Target audience maybe 13 or 14 years old
+- 正义使者 -我的英雄学院之非法英雄- S01E02 0030 # Target audience maybe 13 or 14 years old
+- 中禅寺老师的灵怪讲义实录 老师会把谜题全都解开的。 S01E02 0439 # Target audience maybe female
+- #COMPASS2.0 战斗天赋解析系统 S01E02 1410 # Target audience maybe 13 or 14 years old
+- 机动战士高达 GQuuuuuuX S01E02 # Target audience maybe 13 or 14 years old
+- 直至魔女消逝 S01E03 0038 # Target audience maybe female
+- 启示录酒店 S01E03 0033 # Plot maybe slow
+- 华Doll*-Reinterpretation of Flowering- S01E02 0221 # Target audience maybe 13 or 14 years old
+- 圣女因太过完美不够可爱而被废除婚约并卖到邻国 S01E05 0339 # Target audience maybe female
+- 记忆缝线 S1E02 0954 # Plot maybe slow
+- 三岁开始做王者 / 最强的国王，第二次的人生要做什么？ S01E12
+- 外星人姆姆 S01E02 0111 # Target audience maybe female
+- 瞬间治疗却被视为无用而被流放的天才治疗师 S01E12
+- 阳光马达棒球场！ S01E05 # Target audience maybe those who like to watch baseball
+- 忍者与杀手二人组的日常生活 S01E01 0320 # Target audience maybe female
+- 防风少年 S01E02 0558 # Target audience maybe 13 or 14 years old
+- 镇魂街 S01E01 # Target audience maybe 13 or 14 years old
+- 炎炎消防队 S01E02 0102 # Plot maybe slow
+- 神统记 S01E12
+- Moonrise / 月出之战 S01E10 0540 # Plot maybe slow
+- 名侦探柯南 S01E01 # Target audience maybe 13 or 14 years old, and the plot maybe slow (I watched it when I was a child)
+- 搞笑漫画日和GO S05E12
+- 乡下大叔成为剑圣 S01E03 1138 # There seems to be no passion
+- 罪恶装备斗争：双重指标 S01E04 0654 # Plot maybe slow
+- 古典乐★之星 S01E01 # A bit aesthetically fatigued (It feels like all the characters look the same)
+- 小市民系列 S01E11 0856 # Plot maybe slow
+- mono女孩 S01E02 0607 # Target audience maybe female
+- LAZARUS S01E06 2127 # Plot maybe slow
+- 干杂活我乃最强 S01E05 0755 # Target audience maybe 13 or 14 years old
+- 海贼王 # Target audience maybe 13 or 14 years old, and the plot maybe slow (I watched it when I was a child)
+- 快藏起来！玛琪娜同学!! #NSFW S01E12
+- 受到猩猩神的庇护的大小姐在王立骑士团受到宠爱 S01E02 2216 # Target audience maybe female
+- 爱有些沉重的黑暗精灵从异世界追过来了 #NSFW S01E02 1203 # Plot maybe slow
+- 君有云 - S01E24.S02E06 1303 # Plot maybe slow
+- 大侠请上功 S01E07 # Target audience maybe 13 or 14 years old
+- 超能立方 S01E12
+- 荒神录之玲珑山 S01E01 # Target audience maybe 13 or 14 years old
+- 天命大主宰 S01E40
+- 武炼巅峰 S01E48
+- 徒弟个个是大佬 S01E40
+- 全球高武 S01E16
+- 万界主宰 S01E32
+- 山海伏魔录 S01E01 0517 # Target audience maybe 13 or 14 years old
+- 无聊就完结 S01E01 0131 # Target audience maybe 13 or 14 years old
+- 斗战天下 S01E12 # Target audience maybe 13 or 14 years old
+- 天都异录 S01E02 1414 # Target audience maybe 13 or 14 years old
+- 都市古仙医 S01E01 # Plot maybe cliched
+- 小仙之瑶 S01E13 0349 # Plot maybe slow
+- 胡乱的深见君 - S01E01 0027 # Target audience may be gay men
+- 武逆 - S01E30
+- 我能无限顿悟 - S01E52
+- The Ravages of Time / 火凤燎原 - S01E16.S02E16
+- 永恒剑祖 S01E40
+- 脱离了A级队伍的我，和从前的徒弟们前往迷宫深处。 S01E11 0027 # Target audience maybe 13 or 14 years old
+- 吸吸吸吸吸血鬼 S01E10 0700 # Target audience maybe 13 or 14 years old
+- 发现自己转生成猫的大叔 S01E26 0011 # Target audience maybe uncles
+- 长歌行 - S01E08 1024 # Target audience maybe female
+- 随兴旅-That's Journey- S01E02 1714 # Target audience maybe female
+- 少年歌行血染天启篇 S01E1 1442 # Target audience maybe female
+- 摇滚乐是淑女的嗜好 S01E01 0200 # Target audience maybe female
+- 公主的管弦乐团 S01E01 0326 # Target audience maybe female
+- 打了300年的史莱姆 不知不觉就练到了满级 S01E02 0305 # Target audience maybe female
+- 你与偶像光之美少女♪ S01E01 0014 # Target audience maybe female
+- 前桥魔女 S01E01 0045 # Target audience maybe female
+- 龙珠大魔 S01E20
+- 一兆游戏 S01E26
+- 长生界 S01E26
+- Solo Leveling / 我独自升级 - S01E12.S02E13
+- 欢迎来到日本，精灵小姐。 - S01E04 0417 # Maybe I'm not the target audience
+- 这公司有我喜欢的人 S01E01 # Maybe I'm not the target audience
+- 中年男的异世界网购生活 - S01E05 1327 # The plot is a bit leisurely, without any ups and downs (A middle-aged man and a little girl? Maybe I'm not the target audience)
+- 我和班上最讨厌的女生结婚了。 - S01E12
+- 魔法制造者 ～异世界魔法的制作方法～ S01E09 0344 # Plot maybe slow
+- 全修。 S01E12
+- 上班族转生异世界当上了四天王不是很正常吗 S01E12
+- 天久鹰央的事件病历簿 S01E12
+- 虽然我是注定没落的贵族，闲来无事只好来深究魔法 S01E12
+- 关于我拥有超弱技能果实大师能无限吃下技能果实这档事 S01E10 1142 # Plot maybe slow
+- 金牌得主 S01E13
+- 散修之王 - 52
+- 地。-关于地球的运动 S01E25
+- 重生的猫骑士与精灵娘的日常 S01E11 0512 #NSFW # Plot maybe slow
+- 不幸职业【鉴定士】实则最强 S01E08 0541 #NSFW # Plot maybe slow
+- 蛮荒仙界 - S01E48
+- 神道帝尊 - S01E48
+- 卡徒 - S01E13
+- 左手上篮 S01E08.S02E09
+- Honey Lemon Soda / 蜂蜜柠檬碳酸水 S01E06 0859 # Target audience maybe 13 or 14 years old
+- Flower and Asura / 群花绽放，彷如修罗 S01E04 1520 # This animation teaches broadcasting (e.g. abdominal breathing)
+- 我的可爱对黑岩目高不管用 S01E01 1100 # Doesn't seem realistic
+- 魔域英雄传说 S01E05 # Target audience maybe 13 or 14 years old
+- 不知为何我和尼特且宅的女忍者开始了同居生活 S01E07 0746 # NEETs are no longer NEETs and the plot may be slow
+- 众星齐聚 -Uni:Birth- S01E03 2138 # Target audience maybe 13 or 14 years old
+- 终将成为最强炼金术师？ S01E03 0157 # Target audience maybe 13 or 14 years old
+- 魔神创造传 S01E02 # Target audience maybe 13 or 14 years old
+- 虽然是公会柜台小姐，但是因为讨厌加班所以要去单挑BOSS S01E03 1243 # Target audience maybe 13 or 14 years old
+- 五行战神 - S01E80
+- 大道朝天 S01E16
+- 蓝色监狱 S01E24.S02E14
+- 战神联盟 S01E48
+- 喜欢的冲绳妹说方言 S01E01 1116 # Feudal superstition in reality
+- 想摆脱公主教育的我 S01E01 0803 # Target audience maybe 13 or 14 years old
+- 战队红战士在异世界当冒险者 S01E01 0034 # Target audience maybe 13 or 14 years old
+- 魔法使的约定 # Target audience maybe female
+- 中年上班族转生恶役 S01E01 0123 # Target audience maybe female
+- 灰色：幻影扳机 S01E01 2118 # Target audience maybe female
+- 刹那之花 S01E01 1213 # Target audience maybe female
+- 终究、与你相恋。 S01E1 0448 # One girl and four boys? (From the comments section)
+- 想星的大天使 Myth of Emotions S01E01 0340 # Target audience maybe 13 or 14 years old
+- 魔农传记 S01E01 0650 # Target audience maybe 13 or 14 years old
+- 黄昏旅店 - S01E01 0656 # Target audience maybe female
+- 天影 - 20 0620 # Target audience maybe 13 or 14 years old
+- 乱马1/2 S01E12
+- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12
+- 食草老龙被冠以恶龙之名 S01E12.S02E12
+- 少年白马醉春风 S01E20.S02E26
+- 愿来世为他人 S01E12
+- MF Ghost / 极速车魂 - S01E12.S02E12
+- 神武天尊2024 S01E24
+- 黑色残骸 S01E23 0226 # Plot may be slow
+- Darling in the Franxx / 比翼之吻 S01E24
+- 虎鹤妖师录 S01E14 1526 # Plot may be slow
+- 胆大党 S01E12
+- 一个人的异世界攻略 S01E12
+- 最狂辅助职业【话术士】世界最强战团听我号令 S01E12
+- 当不成魔法师的女孩 S01E12
+- 真的要结婚吗 S01E12
+- 妻子变成小学生 S01E12
+- 英雄联盟 - S01E09.S02E09
+- 夜晚游玩生活 S01E08 #NSFW
+- 剑来 - S01E26
+- 魔王2099 S01E09 1407 # Target audience maybe 13 or 14 years old
+- 暗杀女仆冥土小姐 S01E11 1555 # Target audience maybe 13 or 14 years old
+- Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E11 1317 # Plot maybe slow
+- 决斗大师 LOST ～追忆的水晶～ S01E02 # It seems that no one has translated it into Chinese. (No resources found)
+- 缉妖录之启程篇 - S01E12
+- 科学×冒险与生存！ S01E03 # It seems that no one has translated it into Chinese. (No resources found)
+- 蜀山奇仙录 - S01E10.S02E10
+- Murder Mystery of the Dead / 谋杀之谜：亡者的秘密 - S01E01 1011 # Target audience maybe female
+- Apotheosis / 百炼成神 - S01E52.S02E52
+- 精灵幻想记 S01E12.S02E09 0758 # Plot maybe slow
+- 德里科的托儿所 - S01E13
+- 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
+- 暂停！智序重组 - S01E01 0159 # Target audience maybe 13 or 14 years old
+- 可塑性记忆 S01E02 1048 # Target audience maybe 13 or 14 years old
+- 永生 - S01E12.S02E12.S03E16.S04E16
+- 被逐出队伍的治愈师，其实是最强的 S01E08 1857 # The animation doesn't seem to show the passion of the title
+- 蘑菇狗 S01E07 1403 # Target audience maybe 13 or 14 years old
+- 悲喜渔生 S01E07 1623 # Target audience maybe 13 or 14 years old
+- 叹息的亡灵好想隐退 S01E03 0804 # Target audience maybe 13 or 14 years old
+- 青之壬生狼 S01E02 0029 # Target audience maybe 13 or 14 years old
+- 新网球王子 U-17 世界杯 半决赛 0040 # Seems to lack the passion element (Compared to this *Blue Lock* animation)
+- 银翼超人 0225 # It's a TV series.
+- 剑域风云 - S01E40.S02E52.S03E104
+- 斩神之凡尘神域 S01E15
+- 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female
+- 常轨脱离Creative S01E02 # Target audience maybe female
+- 再见龙生，你好人生 S01E05 0852 # Maybe The plot is slow
+- 神选 S01E07 1306 # Target audience may be 13 or 14 years old
+- 缘结甘神家 S01E02 1936 # Target audience may be 13 or 14 years old
+- 辰星降临之国的妮娜 S01E01 1346 # Target audience may be 13 or 14 years old
+- Haigakura 稗记舞咏 S01E02 1513 # Target audience may be 13 or 14 years old
+- 妖怪学校的新人教师！ S01E02 # Target audience may be 13 or 14 years old
+- 村井之恋 # It's a TV series
+- Re：从零开始的异世界生活 第三季 # Target audience may be 13 or 14 years old
+- Acro Trip S01E01 1144 # Target audience may be female
+- 重生大小姐正在攻克龙帝殿下 S01E01 1256 # Target audience may be female
+- 成为名垂青史的反派大小姐吧 S01E01 0139 # Target audience may be female
+- 机械手臂 S01E03 0246 # Target audience may be 13 or 14 years old
+- 蓝箱 S01E02 # Target audience may be 13 or 14 years old
+- 刀剑神域外传 Gun Gale Online 第二季 1859 Target audience may be female
+- 到了联谊会上发现连一个女生都没有 S01E02 1123 # Maybe the target audience is gay men even though the voice is female
+- 杀手寓言 S01E25
+- 靠废柴技能状态异常成为最强的我将蹂躏一切 S01E12
+- 元尊 S01E26
+- 大叔新人冒险者被最强小队拼死锻炼后无敌了 S01E12
+- 擅长逃跑的殿下 S01E12
+- 亚托莉 -我挚爱的时光- S01E13
+- 异世界失格 S01E12
+- 义妹生活 02 # Target audience may be 13 or 14 years old
+- 笼中人 04 0823 # Target audience may be 13 or 14 years old
+- 幻宠师 - S01E16
+- 隐世宗门掌教 S01E52
+- 金吾卫之风起金陵 S01E16
+- 2.5次元的诱惑 S01E11 11:59 # Target audience may be people who like cosplay
+- 风云变2024 S01E17 0354 # Target audience may be 13 or 14 years old
+- 我会招架一切 反误会的世界最强想成为冒险者 S01E12
+- 异世界自杀小队 S01E10
+- 多数欠 S01E05 1420 # Target audience may be 13 or 14 years old
+- 眷思量 S01E15.S02E15
+- 魔导具师妲莉亚永不妥协 S01E06 0027 # Target audience may be female
+- 深夜冲击 06 0349 # Target audience may female
+- 恋爱无法用双子除尽 05 0324 # Target audience may be female
+- 从路人角色开始的探索英雄谭 S01E12
+- 白色闪电 05 0918 # Target audience may be 13 or 14 years old
+- 独步逍遥 - 168/444 0433 # Plot may be slow
+- Viral Hit / 格斗实况 - S01E12
+- Tower of God / 神之塔 S01E13.S02E09 0739 # Plot may be slow
+- 精灵小姐瘦不了 S01E05 #NSFW #Weight-loss-exercise 1310 # Plot may be a bit repetitive
+- 现代误译 S01E06 0616 # Target audience may be middle-aged people
+- 这个世界漏洞百出 S01E05 1005 # Plot may be slow
+- 地灵曲 43
+- 民调局异闻录 S01E12.S02E05 0900 # Target audience may be 13 or  14 years old
+- 不时用俄语小声说真心话的邻桌艾莉同学 S01E05 2101 # Plot may be slow
+- 三国杀：太平天书 S01E08 0751 # Target audience may be 13 or 14 years old
+- 异世界悠闲纪行 ～边养娃边当冒险者～ S01E04 0445 # Target audience may be 13 or 14 years old
+- 筋肉人 完美超人始祖篇 S01E02 0456 # Target audience may be 13 or 14 years old
+- 身为VTuber的我因为忘记关台而成了传说 S01E03 1133 # Target audience may be female
+- 妖精的尾巴 百年任务 S01E05 0450 # Target audience may be 13 or 14 years old
+- 杖与剑的魔剑谭 S01E04 1554 # Plot may be slow
+- 古连泰沙U S01E03 1619 # Target audience may be 13 or 14 years old
+- 恶魔的破坏 S01E07 1544 # Plot may be slow
+- 爆上战队奔奔者 # Target audience may be 13 or 14 years old
+- 小兵传奇 S01E05 0841 # Target audience may be 13 or 14 years old
+- 我的三体 01 0339 # Maybe it would be better to replace the cube man with anime characters
+- 败犬女主太多了 S01E04 0854 # Target audience may be 13 or 14 years old
+- 为何我的世界被遗忘了？01 0410 # Target audience may 13 or 14 years old
+- 卡片战斗先导者 02 0106 # Target audience may be 13 or 14 years old
+- 万界至尊 - S01E50.S02E84 0338 # Plot may be slow
+- 仙武传 - 69 0808 # Target audience may 13 or 14 years old
+- 九天玄帝诀 - S01E248
+- 圣祖之万相金澜 - S01E26
+- Astro Note / アストロノオト / 星际庄的恋爱日记 S01E12
+- The Duke of Death and His Maid / 死神少爷与黑女仆 - S01E12.S02E12.S03E12
+- Grandpa and Grandma Turn Young Again / 老夫老妻重返青春 - 09 0406 # Target audience may be elder people
+- 金蚕往事 S01E09 0842 # Target audience may be 13 or 14 years old
+- 我的妻子不具感情 S01E04 1840 # Target audience may be 13 or 14 years old
+- 再见，地球 S01E01 1500 # Target audience may be female
+- 地下城里的人们 S01E02 0620 # Plot may be slow
+- 前辈是男孩子 S01E01 0548 # Target audience may be pseudo-girl
+- 拉面红猫 S01E03 0005 # Target audience may be 13 or 14 years old
+- 黄昏失焦 S01E01 0047 # Target audience may be gay men
+- 百变的七仓同学 S01E02 1816 # Target audience may be 13 or 14 years old
+- 鹿乃子乃子乃子虎视眈眈 S01E01 0440 # Target audience may be female
+- 雀魂 杠！！ S01E00 # Target audience may be people who can play mahjong
+- 魔王军最强的魔术师是人类 S01E01 1737 # Target audience may be 13 or 14 years old
+- 你与我最后的战场，亦或是世界起始的圣战 S01E01 0615 # Plot may be slow
+- 剑道第一仙 S01E20.S02E02 # Target audience may be 13 or 14 years old
+- 天庭板砖侠 S01E01 0235 # Target audience may be 13 or 14 years old
+- 魔法少女与恶曾是敌人 S01E01 0422 # Target audience may be female
+- 哎咕岛消失的舔甜歌姬 S01E01 0054 # Target audience may be 7 or 8 years old
+- 少女如草花绽放 S01E02 1810 # Target audience may be female
+- 我们这一家NEXT S01E01 # Target audience may 13 or 14 years old
+- 秘密的偶像公主 S01E01 0007 # Target audience may be female
+- 物语系列外传季&怪物季 S01E01 0538 # Target audience may be female
+- 天穗之咲稻姬 S01E01 # Target audience may be 13 or 14 years old
+- 万古神话 - 191 0822 # Plot may be slow
+- 斗破苍穹年番 - 101 0813 # Plot may be slow
+- Perfect World / 完美世界 - 38/167 1223 # Plot may be slow
+- One Hundred Thousand Years of Qi Refining / 炼气十万年 - 144 0300 # Plot may be slow
+- 大主宰 - 52 1308 # Plot may be slow
+- Swallowed Star / 吞噬星空 (Part1+2) - 26+101 0944 # Plot may be slow
+- 独步万古 - 71 0440 # Plot may be slow
+- 师兄啊师兄 - 40 1355 # Plot may be slow
+- 云中居三子 - S01E26 # Plot may be slow
+- 真武巅峰 - S01E40.S02E95.S03E09 0451 # Plot may be slow
+- 神龙星主 - 42 0314 # Plot may be slow
+- 丹道至尊 46 # Plot may be slow
+- 良禽不择木 09 0305 # Plot may be slow
+- 从Lv2开始开挂的原勇者候补悠闲的异世界生活 07 0827 # Plot may be slow
+- 怪物转生 - 09 1800 # Plot may be slow
+- THE NEW GATE 06 1110 # Plot may be slow
+- 百家诀之江湖诡事录 - S01E16
+- 一世之尊 S01E16
+- 转生贵族靠着鉴定技能一飞冲天 - 08 1057 # Plot may be slow
+- 万古狂帝 - S01E20
+- 你的人生是我来迟了 - S01E16
+- 太古星神诀 - 07 0806 # Target audience may be 13 or 14 years old
+- 声优广播的幕前幕后 01 0800 # Target audience may be female
+- 无名记忆 03 0755 # Target audience may be 13 or 14 years old
+- 新干线变形机器人 改变世界 # Target audience may be 13 or 14 years old
+- 被称为废物的原英雄、被家里流放后随心所欲地活下去 06 1632 # Target audience may be 13 or 14 years old
+- 月光下的异世界之旅 - S01E12.S02E14 0805 # Plot may be slow
+- 虹四动画 02 # Target audience may be female
+- 关于我转生变成史莱姆这档事 S01E15 1820 # Plot may be slow
+- 魔法科高校的劣等生 S01E02 1209 # Plot may be slow
+- 魔王学院的不适任者 - S01E12.S02E02 1018 # Plot may be routine
+- 单人房、日照一般、附天使 - 02 0758 # Target audience may be 13 or 14 years old
+- 战队大失格 - 01 0127 # Target audience may be 13 or 14 years old
+- Mission: Yozakura Family / 夜樱家的大作战 - 03 0040 # Target audience may be 13 or 14 years old
+- 无职转生 - S1E24.S2E13 2011 # Maybe just want to express the protagonist's decadence
+    - Except for the first two episodes, the rest were spent by pressing the fast forward button
+- 与妖为邻 01 # Target audience may be 13 or 14 years old
+- 花野井君与相思病 01 # Target audience may be female
+- 虚无边境 01 # Target audience may be 13 or 14 years old
+- 失忆投捕 01 # Target audience may be 13 or 14 years old
+- 竞轮少女! 01 # Target audience may be female
+- 末班列车去哪里？ 01 # Target audience may be 13 or 14 years old
+- 狼与香辛料行商邂逅贤狼 01 # Target audience may be 13 or 14 years old
+- 我回来了，欢迎回来 01 # Target audience may be 13 or 14 years old
+- 渴求游戏之神 01 # Target audience may be 13 or 14 years old
+- 吸血鬼男子宿舍 01 # Target audience may be 13 or 14 years old
+- 神之一脚 01 # Target audience may be 13 or 14 years old
+- 百妖谱·司府篇 # Chinese traditions, but feels that something is weird and lacks the desire to watch
+- Love Live！虹咲学园学园偶像同好会 短篇动画 # Target audience may be female
+- 极速星舞 # Target audience may be 13 or 14 years old
+- 喂！蜻蜓 01 # Target audience may be 13 or 14 years old
+- 哭泣少女乐队 01 # Target audience may be female
+- 影之诗 # Target audience may be female
+- 夜晚的水母不会游泳 01 # Target audience may be female
+- 恋语轻唱 01 # Target audience may be female
+- 明明是个碍事配角、却被王子给宠爱了 01 # NSFW, Gay men
+- 假面骑士歌查德 - 01 0321 # Target audience may be 13 or 14 years old
+- 秘密的偶像公主 01 0007 # Target audience may be female
+- 蔚蓝档案 - 01 0909 # Target audience may be 13 or 14 years old
+- Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
+- 无人能敌 - S1E12
+- 洪荒灵尊 - S1E60
+- 逆天邪神3D - S1E30
+- Law of Devil / 恶魔法则 - S1E24
+- 不死不灭之少年出山 - S1E16
+- 太一剑仙传 - S1E20
+- 十方武圣 - S1E16
+- Mashle: Magic and Muscles / 物理魔法使马修 S1E12.S2E12
+- 师士传说 - S1E26
+- 大王饶命 - S1E12.S2E12
+- 深渊游戏 - S1E16
+- 异人君莫邪 - S01E12
+- 万界独尊 - 222 0810 # Plot may be slow.
+- 零食八江 - 06 0704 # Interspersed with characters from other anime
+- 百千家的妖怪王子 - 02 1113 # Target audience may be female.
+- 最弱的驯养师开启的捡垃圾的旅途 - S01E12
+- 魔女与野兽 - S01E12
+- 月刊妄想科学 - 02 0143 # Target audience may be 13 or 14 years old.
+- 勇气爆发BangBravern - 06 1437 # Target audience may be 13 or 14 years old.
+- 外科医生爱丽丝 - 02 0431 # Target audience may be female.
+- 反派大小姐等级99～我是隐藏BOSS但不是魔王～ - S01E11 # Target audience may be female.
+- 愚蠢天使与恶魔共舞 - S01E12
+- Mr. Villian's Day Off / 休假日的坏人先生 # S1E12, Exaggerated movements, Cute style (Panda, cat)
+- 大宇宙时代 - 01 # Target audience may not be me.
+- 轮回七次的反派大小姐，在前敌国享受随心所欲的新婚生活 - S1E12
+- Pantheon / 万神殿 S1E8 S2E8 # Simulated world
+- 绝世武魂 - 351 0316 # Plot may be slow
+- 武映三千道 - 60 # End of the season
+- 经验丰富的你和经验为零的我交往的故事 - 12 # End of the first season
+- The Eminence in Shadow / 我想成为影之强者! - (Part1+2) 20+12 # End of the second season
+- 指尖相触，恋恋不舍 - 05 0218 # Target audience may be female.
+- The Unwanted Undead Adventurer / 事与愿违的不死冒险者 - 08 0302 # Plot may be slow
+- 魁拔之殊途 - 13 # End of the this part
+- 神藏 - 12 # End of the first part
+- 金属口红 - 02 1057 # Target audience may be 13 or 14 years old.
+- 战国妖狐 - 02 1330 # Target audience may be 13 or 14 years old.
+- 剑仙在此 - 41 0905 # Plot may be slow.
+- 北海道辣妹贼拉可爱 - 02 0033 # Target audience may be 13 or 14 years old.
+- 公主大人“拷问”的时间到了 - 02 0919 # Target audience may be 13 or 14 years old.
+- BASTARD!!暗黑破坏神 S1E24 S2E14 1921 NSFW, funny style, science fiction, The second season animation lacks the attributes of the first season animation
+- 一剑独尊 - 00 # Dynamic comic
+- 神武天尊 - 00 # Dynamic comics
+- 到了30岁还是处男，似乎会变成魔法师 - 01 0647 # A story about men and men
+- 通灵王 FLOWERS - 01 0455 # Target audience may be 13 or 14 years old
+- Ragna Crimson / 狩龙人拉格纳 - 15 1524 # Plot may be slow.
+- 铁路浪漫谭 - (Part1+2) 00+13 # End of the second part
+- The Kingdoms of Ruin / 破灭之国 - 12 # End of the first part
+- Undead Unluck / 不死不幸 - 16 0416 # Plot may be slow.
+- The Wrong Way to Use Healing Magic / 治愈魔法的错误使用方法 - 04 1501 # Plot may be slow.
+- Chained Soldier / 魔都精兵的奴隶 - 03 0524 # Plot may be slow.
+- Delicious in Dungeon / 迷宫饭 - 03 0534 # Plot may be slow.
+- 从红月开始 - 07 0651 # Plot may be slow.
+- Dog Signal / 爱犬讯号 - 04 0354 # Dog training tips, but I don't have a puppy at home
+- Seven Deadly Sins / 七大罪 默示录的四骑士 - 13 0956 # Plot may be slow.
+- 九辰风云录 - 40 # End of the first part
+- 傲世九重天 - 12 # End of the first part
+- 王者荣耀：荣耀之章 - 01 # There are advertisements at the beginning and end, for marketing purposes
+- Spy x Family / 间谍过家家 (season1+2) - 12+13+12 # End
+- 近战法师 - 09 0104 # Plot may be slow.
+- The Strongest Tank's Labyrinth Raids / 最强肉盾的迷宫攻略 拥有稀少技能体力9999的肉盾 - 03 0122 # Plot may be slow.
+- Pon no Michi / 碰之道 - 03 0952 # Daily life of playing mahjong
+- Sasaki and Peeps / 佐佐木与文鸟小哔 - 02 1144 # Plot may be slow. If I had the same abilities as the protagonist, I will ...
+- My Instant Death Ability Is So Overpowered / 秒杀外挂太强了，异世界的家伙们根本就不是对手 - 03 0909 # Plot may be slow.
+- Ishura / 异修罗 - 02 0521 # Plot may be slow.
+- Fluffy Paradise / 为了在异世界也能抚摸毛茸茸而努力 - 02 0800 # Target audience may be 13 or 14 years old.
+- 弱角友崎同学 (Part1+2) 00+02 0835 # Target audience may be 13 or 14 years old.
+- 枕刀歌 02 # Picture quality is unique.
+- Stardust Telepath / 星灵感应 - 01 0405 # The target audience may be female.
+- 武双姝 12 # End of the first part
+- 命运拳台 - 01 0530 # Target audience is 13 or 14 years old
+- The Dangers in My Heart / 我心里危险的东西 第二季 - 00+01 # It's emotional.
+- Migi & Dali / 米奇与达利 - 13 # End of the first part
+- 三十六骑 - 10 0248 # The plot is slow
+- 锦衣神匠 - 13 # End of the first part
+- The Vexations of a Shut-In Vampire Princess / 家里蹲吸血姬的郁闷 - 09 1201 # The plot is slow
+- Firefighter! Daigo of Fire Company M / 特搜组大吾救国的橘色部队 - 12 0138 # It might be more interesting if science ficiton or other elements can be added
+- 捡走被人悔婚的千金，教会她坏坏的幸福生活 - 11 # The plot is slow
+- The Yuzuki Family's Four Sons / 柚木家的四兄弟 - 03 # The plot is slow
+- A Girl & Her Guard Dog / 大小姐与看门狗 - 10 0535 # The plot is slow
+- The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
+    - Funny style
+- 七侯笔录 - 07 1501 # The plot is slow
+- 修罗武神 - 16 # End of the first part
+- Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
+- Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow
+- KAMIERABI - 02 0653 # The plot is slow
+- 16bit的感动 ANOTHER LAYER - 05 1851 # The plot is slow
+- 异空战歌 - 15 # End of the first part
+- My Daughter Left the Nest and Returned an S-Rank Adventurer / 因想当冒险者而前往大都市的女儿已经升到了S级 - 02 # The plot is slow
+- 绊之Allele第二季 - 00+01 0008 # The target audience may be female.
+- 赛马娘 Pretty Derby Season 3 - 01 # The target audience may be female.
+- 超时空护卫队 - 01 0004 # The is a TV drama.
+- 仙魔大战 - 01 1052 # The target audience is thirteen or fourteen years old
+- 明日方舟：冬隐归路 - 01 0509 # The plot is slow
+- Paradox Live the Animation - 05 0551 # The plot is slow
+- I'm in Love with the Villainess / 我推是反派大小姐 - 07 0716 # The plot is slow
+- The 100 Girlfriends Who Really, Really, Really, Really, Really Love You / 超超超超超喜欢你的100个女朋友 - 03 0250 # The plot is slow
+- OVERTAKE! - 03 0446 # The plot is slow
+- Protocol: Rain / 我们的雨色协议 - 04 0510 # The plot is slow
+- Butareba: The Story of a Man Turned into a Pig / 猪肝倒是热热再吃啊 - 06 1418 # The plot is slow
+- A Returner's Magic Should Be Special / 归还者的魔法要特别 - 04 0847 # The plot is slow
+- 催眠麦克风 - (Part1+2) 00+06 # The plot is slow
+- Jujutsu Kaisen / 咒术回战 (Part1+2) - 24+14 1639 # The plot is slow.
+- The Saint's Magic Power Is Omnipotent / 圣女魔力无所不能 - (Part1+2) 00+02 1649 # The plot is slow.
+- B-PROJECT ～热烈＊Love Call～ - 02 # The plot is a bit confusing
+- A Playthrough of a Certain Dude's VRMMO Life / 某大叔的VRMMO活动记 - 02 1814 # The plot is slow
+- The Demon Sword Master of Excalibur Academy / 圣剑学院的魔剑使 - 02 0031 # The plot is slow
+- SHY / 腼腆英雄 - 02 0506 # The target audience may be female.
+- Kawagoe Boys Sing / 川越 Boys Sing - 04 0524 # The plot is too gentle
+- Ron Kamonohashi / 鸭乃桥论的禁忌推理 - 02 0633 # The plot is too slow
+- Stardust Telepath / 星灵感应 - 02 0036 # The target audience may be female.
+- I Shall Survive Using Potitons! / 靠着魔法药水在异世界活下去！ - 02 0441 # The target audience may be female.
+- Amaim Warrior at the Borderline / 境界战机：极钢的装鬼 - 02 0426 # The plot is too slow.
+- The Family Circumstances of the Irregular Witch / 凹凸魔女的母女故事 - 02 0635 # The audience may be female.
+- The Idolmaster Million Live! / 偶像大师 百万现场 - 01 # The target audience is women.
+- Tearmoon Empire / 堤亚穆帝国物语～从断头台开始，公主重生后的逆转人生～ - 02 0431 # The target audience is women.
+- My New Boss Is Goofy / 新上司是天然呆 - 02 1521 # It is too exaggerated.
+- 神澜奇域无双珠 - 45 # End
+- 灵剑尊 - 240/429 0801 # The plot is too slow
+- 僵尸百分百～在变成僵尸之前想做的100件事～ - 09 # End of the first part
+- 第一序列 - 16 # End of the first part
+- 世界尽头的圣骑士 - (Part1+2) 00+02 # The plot is too slow
+- 女友成双 - 01 # Resources loading freezes
+- 七魔剑支配天下 - 02 # The target audience is thirteen or fourteen years old
+- 高达创战元宇宙 - 03 # The target audience is thirteen or fourteen years old
+- 葬送的芙莉莲 - 02 # The plot is too slow
+- 哥布林杀手 - (Part1+2) 00+02 2006 # The plot is not attractive enough
+- 地下忍者 - 02 2036 # The plot is a bit abnormal
+- Link Click / 时光代理人 (Part1+2) - 11+12 # Resources were not found
+- 航海王总集篇 - 00 # Resources were not found
+- 圣墟 - 00 # dynamic comic
+- 希望的力量～大人光之美少女'23～ - 01 # The target audience is women.
+- 少年歌行外传 暗河传 - 01 1442 # The target audience is thirteen or fourteen years old
+- 有药 - 01 02:00 # The target audience is thirteen or fourteen years old
+- 魔装传说 - 01 0446 # The target audience is thirteen or fourteen years old
+- 堕玄师 - 15 # End of the first part
+- 公司里的小小前辈 - 12 # End of the first part
+- 真阳武神 - 14 # End of the first part
+- 其实我是最强的？ - 12 # End of the first part
+- 庙不可言 - 12 # End of the first part
+- 虽然等级只有1级但固有技能是最强的 - 12 # End of the first part
+- 虫王战队超王者 - 30 # The plot is gentle
+- 不灭神王 - 19 # Update speed is slow
+- 满怀美梦的少年是现实主义者 - 12 # End of the first part
+- 政宗君的复仇 (Part1+2) - 12+12 # End of the second part
+- AI电子基因 - 11 # The plot is too gentle
+- 圣者无双～上班族、在异世界的存活之道 - 12 # End of the first part
+- 转生成自动贩卖机的我今天也在迷宫徘徊 - 12 # End of the first part
+- The Masterful cat Is Depressed Again Today / 能干的猫今天也忧郁 - 11 0210 # The plot is too gentle
+- My Happy Marriage / 我的幸福婚约 - 12 0705 # The plot is too gentle
+- Fly Me to the Moon / 总之就是非常可爱 (Part1+2+3) - 12+12+04 # The plot is gentle
+- 四格勇者 - 10 # The plot is gentle
+- Rent A Girlfriend / 租借女友 (Part1+2+3) - 12+12+12 # The plot is gentle
+- Spy Room / 间谍教室 - 08 # The plot is gentle
+- 山海际会 - 25 # End of the first part
+- Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
+- My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
+- 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
+- 镖人 - 15 # End of the first part
+- Ultraman Tiga / 迪迦奥特曼 - 52 # End
+- 物物语 (Part1+2) - 12+06 # The plot is too gentle
+- 风火战纪 - 01 # The plot is too corny
+- 夫妇联欢~回不去的夜晚 #NSFW - 03 # Resources loading freezes
+- BanG Dream! Its MyGO!!!!! - 10 0618 # Target audience is female
+- 死神千年血战篇 (Part1+2) - 13+03 # Resources loading freezes
+- LV1魔王与独居废勇者 - 06 0839 # The plot is too slow
+- 奇异贤伴 黑色天使 SYNDUALITY Noir - 04 # Resources loading freezes
+- 喜欢的人忘记戴眼镜了 - 07 1836 # The plot is too exaggerated
+- 不死女 轮堂鸦夜 - 06 1629 # The plot is too flat
+- 剑骨 - 05 0541 # The plot is too corny
+- 戍天伏魔录 - 02 # The target audience is thirteen or fourteen years old
+- 打工吧！魔王大人 (Part1+2) - 12+11 1735 # The pace of the plot is too slow
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 # The plot is too flat
+- 白圣女与黑牧师 - 02 0537 # The target audience is thirteen or fourteen years old
+- 勇者赫鲁库 - 03 1022 # The plot progress is too slow
+- 无脑魔女 - 05 # The target audience is thirteen or fourteen years old
+- 披着狼皮的羊 - 03 # The target audience is thirteen or fourteen years old
+- 女神有点灵 - 05 1049 # The target audience is thirteen or fourteen years old
+- 黑暗集会 - 02 # Horror theme
+- 英雄教室 - 03 # The target audience is thirteen or fourteen years old
+- 幻日的夜羽 - 03 1116 # The target audience is thirteen or fourteen years old
+- Expanding Sky! Precure光之美少女 - 01 # The target audience is children.
+- 一世独尊 - 26 # The plot is too corny
+- 身为悲剧始作俑者的最强邪恶BOSS女王为民竭心尽力 - 02 0629 # The target audience is thirteen or fourteen years old
+- 混世机甲 - 01 1214 # The voice actors do not match their lips
+- 七魔剑支配天下 - 01 0824 # The target audience is thirteen or fourteen years old
+- 谎言游戏 - 03 0733 # The target audience is thirteen or fourteen years old
+- 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen years old
+- AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen years old
+- 十方剑圣 - 02 0354 # Old story
+- 地狱乐 - 13 # End of the first part
+- 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
+- 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
+    - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
+    - https://ja.wikipedia.org/wiki/堕靡泥の星
+- 勇者死了 - 12 # End of the first part
+- Rick and Morty / 瑞克和莫蒂 - #NSFW S01E11.S02E10.S03E10.S04E10.S05E10.S06E06 # Fun seems to be gone
+- Dragon Knight 4 / ドラゴンナイト4 # Captain's responsibility
+- 神印王座 - 59 1425 # Slow pace
+- おいら女蛮(スケバン) - #NSFW 01 (No end but only one episode) # https://en.wikipedia.org/wiki/Oira_Sukeban
+- 熱砂の惑星 - #NSFW 02 # Stockholm syndrome (Apply and prevent)
+- Tsugunai / ツグナヒ 褐色ビチギャル・茗子 ～鬼棒の轍～ / 赎罪日 - #NSFW 04 # End of the part one
+    - https://tube.hentaistream.com/tsugunai-episode-04
+- おとぎばなしの鬼ごっこ / 你所不知道的童話故事 - #NSFW 02 # Update too slow
+- 新・エンジェル - #NSFW 05 # End of the first part
+- プリンセス ロード〜薔薇と髑髏の紋章〜 - #NSFW 01 # The rest of the resources were not found
+- THE レイプマン RAPEMAN アニメ・バージョン「Target1由香」「Target2真紀」- #NSFW 01 # End of the first part
+- ミネルバの剣士 - 05 #NSFW End of the first part
+- 星河至尊 - 157 # End of the first part
+- 向涟苍士献上纯洁 - #NSFW 04 # Stop updating
+- Danganronpa / 弹丸论破3 -The End of 希望之峰学园- (Part0+1+2+3+4) - 13+11+12+1+1 # End of the fourth part
+- Grimgar of Fantasy and Ash / 灰与幻想的格林姆迦尔 - 12 # Team: tank, logistics, captain (End of the first part)
+- Death Parade / 死亡游行 - 12 # End of the first part
+- 冰火魔厨 - 04/78 1122 # For children or teens and slow pace
+- Your Lie in April / 四月是你的谎言 - 22 # End of the first part
+- 赘婿 - 04 1523 # Commercials and alternate history that lowers intelligence quotient
+- Blade & Soul - 02 # Not found resource
+- Edens Zero / 伊甸星原 (Part1+2) - 25+01 # Plot predictable
+- Dead Mount Death Play / 亡骸游戏 - 04 1010 # Slow pace
+- 六道的恶女们 - 04 # For children or teens
+- Now and Then, Here and There / 此时此刻的我 - 13 # End of the first part.
+- Lupine the Third / 鲁邦三世 (Part1+2+3) - (23+155+16) # It is boring
+- 熊熊勇闯异世界 - 03 0605 # It is boring
+- 末日时在做什么？有没有空？可以来拯救吗？ - 05 1013 # It is boring
+- 冰海战记 (Part1+2) - 24+15 1438 # It is boring
+- 九州缥缈录 - 13 # End of the first part
+- Heavenly Delusion / 天国大魔境 - 02 2042 # It is boring
+- 无神世界中的神明活动 - 02 0603 # It is boring
+- Show Time! ~想要做唱歌的大姐姐/Show Time! 唱歌的大姐姐也想做 (Season1+2) - 08+08 # End of the second season
+- 异世界悠闲农家 - 12 # End of the first season
+- 冰剑的魔术师将要统一世界 - 12 # End of the first season
+- 爹地拍档 - 12 # End of the first season
+- 万事屋斋藤到异世界 - 12 # End of the first season
+- 关于邻家的天使大人不知不觉把我惯成了废人这档子事 - 12 # End of the first season
+- 万古剑神 - 26 # End of the first season
+- 阿鲁斯的巨兽 - 12 0407 # It is boring
+- 大雪海的凯纳 - 11 0644 # It is boring
+- 英雄王，为了穷尽武道而转生～然后，成为世界最强的见习骑士♀～ - 10 0051 # It is boring
+- 尼尔:机械纪元 - 06 0421 # It is boring
+- 风姿物语 (第一季+第二季) - 20+20 # End of the second season
+- 狩火之王 - 07 # It is boring
+- 银砂糖师与黑妖精 - 09 0227 # It is boring
+- 我捡起了一地属性 - 09 0955 # It is boring
+- 防御全开 - 22 0340 # It is boring
+- 生而为狗 我很幸福(无修版) - 09 # It is boring
+- 我能复制天赋 - 27 # Resource error
+- 不相信人类的冒险者们好像要去拯救世界 - 08 0232 # It is boring
+- 拥有超常技能的异世界流浪美食家 - 07 0020 # It is boring
+- 被解雇的暗黑士兵(30岁)慢生活的第二人生 - 07 1147 # It is boring
+- 进化果实～不知不觉踏上胜利的人生～ (Season1+2)- 12+07 1707 # It is boring
+- HIGH CARD / 至高之牌 - 07 1356 # It's boring
+- 混沌武士 - 26 # End
+- 文豪野犬 (Season1+2+3) - 12+12+00 # It's boring
+- 莎木 - 13 # End of the first season
+- 魔法使黎明期 - 03 0152 # It's boring
+- 式守同学不只可爱而已 - 10 0502 # It's boring
+- 这个治疗有点烦 - 12 # It's humorous, end of the first season
+- 鲁邦ZERO - 06 # End of the season
+- 遗迹守护者 - 06 # End of the series
+- 来自深渊 (Season1+2) - 13+12 # End of the second season
+- 绝代双骄 - 18 # End of the first season
+- 星域四万年 - 16 # End of the first season
+- 炼气练了3000年 - 16 # End of the first season
+- 魔术士欧菲 (Season1+2)- 24+04 # It's boring
+- 终末的女武神 - 12 # End of the first season
+- 物之古物奇谭 - 03 0734 # It's boring
+- 狗与剪刀的正确用法 - 12 # End of the first season
+- 出包王女 - 06 0304 # It's boring
+- 宇崎酱想要玩耍 (season1+2) - 12+13 # End of the second season
+- 致不灭的你 (第一季+第二季) - 20+11 1252 # It's boring
+- 无限世界 - 09 0527 # It's boring
+- Engage Kiss/契约之吻 - 13 # End of the first season
+- 今天的明日香 - 20 # End of the first season.
+- 无良公会/不道德公会 - 12 # End of the first season.
+- 三体 - 06 # It's boring and eath episode has about five commercials.
+- 七界第一仙 - 94 # It is boring.
+- 继母的拖油瓶是我的前女友 - 12 # End of the first season.
+- 金装的维尔梅 - 12 # End of the first season.
+- Cyberpunk: Edgerunners/赛博朋克：边缘行者 - 10 # End of the first season.
+- 我能看到成功率/I can see the success rate (第一季+第二季+第三季+第四季) - 26+26+30+54 # End of the fourth season.
+- 点满农民相关技能后，不知为何就变强了 - 12 # End of the first season.
+- 电锯人 - 12 # End of the first season.
+- 星源之主 - 48 # End of the first season.
+- 我靠充值当武帝 - 60 # End of the first season.
+- 彼得·格里尔的贤者时间 (第一季+第二季) - 12+12 # End of the second season.
+- 银河之心 - 10 # It's boring.
+- 星辰变 (第一季+第二季+第三季+第四季+第五季 - 12+12+12+16+01 # The fifth season is boring
+- 赌博默示录 (第一季+第二季+番外) - 26+26+24
+- 神级龙卫 - 26 # End of the first season.
+- 异世界归来的舅舅 - 10 # It's boring.
+- 长夜开拓者 - 11 # It's boring.
+- 石少侠 精编版 - 18 # End of the first season
+- 仙武苍穹 - 48 # End of the first season
+- joker game / 鬼牌游戏 - 12 # End of the first season
+- B: The Beginning / B：彼之初 - 12 # End of the first season
+- 战千年第一季 - 16 # End of the first season
+- 史上最强男主角 - 48 # End of the first season
+- DOTA：龙之血 - 08 # End of the first, second and third season
+- 力拔山河兮子唐 - 20 # End of the first season
+- 星武神诀第二季 - 40 # End of the second season
+- 最近雇佣的女仆有点怪第一季 - 11 # End of the first season
+- 黑门 - 12 # end of the first season
+- 黑之召唤士第一季 - 12 # end of the first season
+- 在异世界迷宫开后宫第一季 - 12 # end of the first season
+- 风姿物语动画第一季 银河篇 - 20 # end of the first season
+- 异世界药局 - 12 # ending
+- 铁拳 - 06 # end of the first season
+- 转生贤者的异世界生活 - 12 # end of the first season
+- 仙墓 - 17(boring)
+- 人间最得意 - 10(x)
+- 世界顶尖的暗杀者转生为异世界贵族 - 09(x)
+- 狂神魔尊 - 62（断更了）
+- 我气哭了百万修炼者 - 34（没追了）
+- 仙王的日常生活 - （没追了）
+- 铂金终局 - 12（x节奏太慢）
+- 斗破 - 13（完结)
+- 六花的勇者12（第一季完结，有生之年系列）
+- 因为不是真正的伙伴而被逐出勇者队伍，流落到边境展开慢活人生 - 10(x)
+- 万域封神-01/16 （剧情不吸引）
+- 镜双城-07（x剧情平缓）
+- 幻游猎人-09（剧情不吸引）
+- 雪鹰领主-52/67（看不下去了）
+- 平凡职业成就世界最强 第二季-04/12（第二季完结）
+- 失格纹的最强贤者-01/12（完结）
+- 万域之王-09/11（剧情缓慢）
+- 兵主奇魂-05/12（第一季完结）
+- 盾之勇者成名录第二季 - 02（看不下去了）
+- 我立于百万生命之上 第二季（完结）
+- 异世界超能魔术师第一季（完结）
+- 如果究极进化的完全沉浸RPG比现实更垃圾的话第一季（完结）
+- 哥斯拉 奇点 - 08（看不下去）
+- 龙蛇演义 - 16（已完结）
+- 我的异界之旅 - 40（已完结）
+- 万族之劫 第二季 - 30/16（看不下去）
+- 史上最强大魔王转生为村民A - 06（看不下去）
+- 时空之隙 - 06（看不下去）
+- 骸骨骑士大人异世界冒险中 - 07（看不下去）
+- 乙女游戏世界对路人角色很不友好 - 07（看不下去）
+- 勇者辞职不干了 - 04（看不下去）
+- 派对浪客诸葛孔明 - 12（第一季完结）
+- 间谍过家家 - 12（第一季完结）
+- 开局一座山第一季 - 12（第一季完结）
+- 寻剑 - 12（第一季完结）
+- 你真是个天才 - 24（已完结）
+- 幻梦山海谣 -（看不下去）
+- 极道龙神 - 01(看不下去）
+- 我！天命大反派 - (x,动态漫）
+- 修仙狂徒 - (动态漫）
+- 新围棋少年 -(儿童看的）
+- 我家师父超凶哒 -(动态漫）
+- 暂停！让我查攻略 -（儿童看的）
+- 仙帝归来 - (动态漫）
+- 唐寅在异界 - (动态漫）
+- 异种族风俗娘评鉴指南 - 第一季完结
+- 斗破苍穹缘起 - 完结
+- 诸天纪 - 26（第一季完结）
+- 谎颜 - 16（完结）
+- 搜玄录之宸灵纪 - 合集篇（第一季完结）
+- 万古仙穹 - 12（第一二三四季完结）
+- Terror in Resonance / 东京残响（第一季完结）
+- blood-c(season 1 end)
+- 死亡代理人(season 1 end)
+- 骷髅人(season 1 end)
+- 大剑(season 1 end)
+- 无赖勇者的鬼畜美学(season 1 end)
+- 妖精的旋律(season 1 end)
+- 死囚乐园(season 1 end)
+- Death Note / 死亡笔记26(season 1 end)
+- 学园默示录(boring)
+- 寄生兽(boring)
+- another(boring)
+- 吸血鬼同盟(boring)
+- 黑执事(boring)
+- 暗杀教室(boring)
+- 樱通信(boring)
+- 我的狐仙女友(boring)
+- 女生万岁(boring)
+- 美少女死神 还我H之魂！(boring)
+- 百花缭乱 武士少女(boring)
+- 恶魔高校(boring)
+- 日在校园(boring)
+- 约会大作战(boring)
+- 噬血狂袭(boring)
+- 尸体派对(boring)
+- 进击的巨人(boring)
+- 新妹魔王的契约者(boring)
+- 记忆女神的女儿们(boring)
+- 鬼泣(boring)
+- 东京暗鸦(boring)
+- 东京ESP(boring)
+- 刀剑神域(boring)
+
+### Movie
+- Shaw Brothers / 邵氏影业
+    - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
+    - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋, 儒侠, 龙门金剑
+    - https://al.chirmyram.com/mov/%E7%94%B5%E5%BD%B1/%E5%90%88%E9%9B%86/%E9%82%B5%E6%B0%8F%E7%94%B5%E5%BD%B1
+- Her # Interact with artificial intelligence through voice
+- Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
+- Porco Rosso / 红猪 # Taiwanese dubbing is cute
+- Braveheart
+- X-Men # (Part2011+2016)
+- Ex Machina / 机械姬 #NSFW # Accelerating the era of artificial intelligence
+- https://alist.qyide.com/
+- Ice Age / 冰川时代 # (Part1+2+3+Christmas+)
+- Schindler's List / 辛德勒的名单 # Business protected some Jews while making war profits
+- Farewell My Concubine / 霸王别姬 # Tragedy of the times #NSFW
+- 同学麦娜丝 #NSFW
+- https://movie.douban.com/top250
+- Oppenheimer / 奥本海默 # Do not forget who we are when making a significant contribution
+    - Father of atomic bomb
+    - https://www.youtube.com/watch?v=n8H7Jibx-c0 # 'Now I am Become Death, the Destroyer of Worlds'
+- Interstellar / 星际效应 # Do meaningful things
+- EI Camino: A Breaking Bad Movie / 绝命毒师 # Money is not everything, but in our society many things are inseparable from money
+- Jojo Rabbit / 乔乔的异想世界 # Learn to be independent
+- Joker / 小丑 # What should people at the bottom of society do to become happy?
+- The Truman Show / 楚门的世界 # Just keep looking and you will find the life you want
+- The Avengers / 复仇者联盟 # End of the part one # 01:24:00
+    - https://pan.pengcheng.team/剧集/电影/漫威电影宇宙
+- Ready Player One / 头号玩家 # Punk defeats Cyber
+- Titanic / 泰坦尼克号 # 'You jump, i jump'
+- The Girl Who Leapt Through Time / 穿越时空的少女 # Time waits for no one
+- Forrest Gump / 阿甘正传 # God rewards work
+- Alita: Battle Angel / 阿丽塔：战斗天使 # End of the first part
+    - Hardware limit
+- Modern Times / 摩登时代 # End
+- The Shawshank Redemption / 肖申克的救赎 # End
+- The Legend of 1900 / 海上钢琴师 # End
+- Avatar / 阿凡达 # End of the first, second season.
+- Iron Man / 钢铁侠 # End of the first, second and third season
+- The Great Gatsby / 了不起的盖茨比 # Through flashbacks, a friend of Gatsby recalls Gatsby's experiences, which is fascinating.
+
+### Novel
+- 重生之医技强国 - 夜的邂逅
