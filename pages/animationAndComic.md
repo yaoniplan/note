@@ -1,4 +1,6 @@
 ### "Animation"
+- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E03
+- 万古剑帝 S01E34
 - 玄界之门 S01E03
 - 九阳武神 S01E03
 - 孤雄 S01E09
@@ -496,7 +498,6 @@
 - 黄昏旅店 - S01E01 0656 # Target audience maybe female
 - 天影 - 20 0620 # Target audience maybe 13 or 14 years old
 - 乱马1/2 S01E12
-- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12
 - 食草老龙被冠以恶龙之名 S01E12.S02E12
 - 少年白马醉春风 S01E20.S02E26
 - 愿来世为他人 S01E12
