@@ -33,6 +33,7 @@
 - Against the Sky Supreme / 逆天至尊 - 455
 
 ### Comic
+- 从零开始无限进化 Chapter 31
 - 名门家族的剑术天才 Chapter 121 Page 25
 - 盗脸人生 Chapter 18
     - 欺诈诱发了人类的贪婪（你贪收益，他贪你的本金） # Chapter 9
