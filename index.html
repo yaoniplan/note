@@ -19969,6 +19969,10 @@ cp ./* ~/.local/share/rofi/themes/
 <ul>
 <li><h4>Use &quot;git&quot;</h4>
 <ul>
+<li>Get latest 1 commit hash<ul>
+<li><code>git log -1 --format=%H</code> # Full commit hash (40 characters)</li>
+</ul>
+</li>
 <li>Stash (Like a scratchpad)<ul>
 <li><code>git stash push -u -m &quot;auto-stash-$timestamp&quot;</code> # Save current changes to a new stash entry (<code>-u</code>: Include untracked files)</li>
 <li><code>git stash pop</code> # Apply and remove stashed changes from stash list</li>
