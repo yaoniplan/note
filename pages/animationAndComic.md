@@ -29,7 +29,7 @@
 - 牧神记 S01E59
 - 仙逆 - 117
 - Shrouding the Heavens / 遮天 - 138
-- 武神主宰 - 594 TODO
+- 武神主宰 - 595 TODO
 - Against the Sky Supreme / 逆天至尊 - 455
 
 ### Comic
