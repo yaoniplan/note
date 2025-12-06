@@ -30,7 +30,7 @@
 - 仙逆 - 117
 - Shrouding the Heavens / 遮天 - 138
 - 武神主宰 - 604
-- Against the Sky Supreme / 逆天至尊 - 455 TODO
+- Against the Sky Supreme / 逆天至尊 - 456 TODO
 
 ### Comic
 - 从零开始无限进化 Chapter 31
