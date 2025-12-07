@@ -4,7 +4,6 @@
 - 凌天独尊 S01E47
 - 大唐乘风录 S01E13
 - 双生武魂 S01E48
-- 为喵人生
 - 开局地摊卖大力
 - 缥缈剑仙传 S01E39
 - 龙魂 S01E01
@@ -31,7 +30,7 @@
 - 仙逆 - 117
 - Shrouding the Heavens / 遮天 - 138
 - 武神主宰 - 604
-- Against the Sky Supreme / 逆天至尊 - 461 TODO
+- Against the Sky Supreme / 逆天至尊 - 462 TODO
 
 ### Comic
 - 从零开始无限进化 Chapter 31
