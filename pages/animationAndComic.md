@@ -7,8 +7,7 @@
 - 大唐乘风录 S01E13
 - 双生武魂 S01E48
 - 开局地摊卖大力 S01E18
-- 缥缈剑仙传 S01E39 TODO
-- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E03
+- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E03 TODO
 - 万古剑帝 S01E34
 - 玄界之门 S01E03
 - 九阳武神 S01E03
@@ -333,6 +332,7 @@
 - guard(end)
 
 ### Animation
+- 缥缈剑仙传 S01E40
 - 龙魂 S01E02 1704 # Plot maybe slow
 - 最近的侦探真没用 S01E04 0359 # Target audience maybe 13 or 14 years old
 - 我在天庭收废品 S01E40
