@@ -1,5 +1,5 @@
 ### "Animation"
-- 身为暗杀者的我明显比勇者还强 S01E02
+- 宗门里除了我都是卧底 S01E107
 - 三线轮洄 S01E03
 - 荒古恩仇录•破风篇 S01E28
 - 傲世丹神 S01E03
@@ -7,8 +7,7 @@
 - 大唐乘风录 S01E13
 - 双生武魂 S01E48
 - 开局地摊卖大力 S01E18
-- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E03 TODO
-- 万古剑帝 S01E34
+- 万古剑帝 S01E34 TODO
 - 玄界之门 S01E03
 - 九阳武神 S01E03
 - 孤雄 S01E09
@@ -332,6 +331,8 @@
 - guard(end)
 
 ### Animation
+- 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E04 1138 # Plot maybe slow
+- 身为暗杀者的我明显比勇者还强 S01E09 0306 # Plot maybe slow
 - 缥缈剑仙传 S01E40
 - 龙魂 S01E02 1704 # Plot maybe slow
 - 最近的侦探真没用 S01E04 0359 # Target audience maybe 13 or 14 years old
@@ -345,7 +346,6 @@
 - Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 1828 # Plot maybe a bit boring
 - 万剑王座 S01E05 0559 # The cartoon style is rough.
 - 我的师兄太强了 S01E48
-- 宗门里除了我都是卧底 S01E100
 - 诛仙 - S01E26.S02E26.S03E26
 - 神国之上 S01E17
 - The Water Magician / 水属性的魔法师 S01E04 0323 # Plot maybe slow
