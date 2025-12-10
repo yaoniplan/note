@@ -1,4 +1,5 @@
 ### "Animation"
+- Apotheosis / 百炼成神 - S01E52.S02E52.S03E02
 - 宗门里除了我都是卧底 S01E107
 - 三线轮洄 S01E03
 - 荒古恩仇录•破风篇 S01E28
@@ -534,7 +535,6 @@
 - 科学×冒险与生存！ S01E03 # It seems that no one has translated it into Chinese. (No resources found)
 - 蜀山奇仙录 - S01E10.S02E10
 - Murder Mystery of the Dead / 谋杀之谜：亡者的秘密 - S01E01 1011 # Target audience maybe female
-- Apotheosis / 百炼成神 - S01E52.S02E52
 - 精灵幻想记 S01E12.S02E09 0758 # Plot maybe slow
 - 德里科的托儿所 - S01E13
 - 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
