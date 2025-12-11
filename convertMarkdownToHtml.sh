@@ -21,7 +21,7 @@ convertMarkdownToHtml() {
   <meta name="viewport" content="width=device-width, initial-scale=1">\
   <title>yaoniplan</title>\
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">\
-  <link rel="stylesheet" href="./assets/github-markdown-dark.css">\
+  <link rel="stylesheet" href="./assets/github-markdown.css">\
   <link rel="stylesheet" href="./assets/katex.min.css">\
   <script defer src="./assets/katex.min.js"></script>\
   <script defer src="./assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>\
@@ -49,8 +49,10 @@ convertMarkdownToHtml() {
         padding: 15px;\
       }\
     }\
-    body {\
-      background-color: #0d1117;\
+    @media (prefers-color-scheme: dark) {\
+      body {\
+        background-color: #0d1117;\
+      }\
     }\
   </style>\
 </head>\
