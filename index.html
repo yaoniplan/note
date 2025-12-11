@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>yaoniplan</title>
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-  <link rel="stylesheet" href="./assets/github-markdown-dark.css">
+  <link rel="stylesheet" href="./assets/github-markdown.css">
   <link rel="stylesheet" href="./assets/katex.min.css">
   <script defer src="./assets/katex.min.js"></script>
   <script defer src="./assets/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
@@ -33,8 +33,10 @@
         padding: 15px;
       }
     }
-    body {
-      background-color: #0d1117;
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0d1117;
+      }
     }
   </style>
 </head>
@@ -12891,7 +12893,7 @@ find . -type f -inum 20447344 -exec rm {} \;
 &lt;head&gt;\
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\
   &lt;title&gt;yaoniplan&lt;/title&gt;\
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/github-markdown-dark.css&quot;&gt;\
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/github-markdown.css&quot;&gt;\
   &lt;style&gt;\
     .markdown-body {\
       box-sizing: border-box;\
@@ -12903,6 +12905,11 @@ find . -type f -inum 20447344 -exec rm {} \;
     @media (max-width: 767px) {\
       .markdown-body {\
         padding: 15px;\
+      }\
+    }\
+    @media (prefers-color-scheme: dark) {\
+      body {\
+        background-color: #0d1117;\
       }\
     }\
   &lt;/style&gt;\
@@ -12920,11 +12927,21 @@ find . -type f -inum 20447344 -exec rm {} \;
 </ul>
 </li>
 <li><code>~/note/index.html</code> # Replace it with your index.html</li>
+<li>Enable dark mode only<ul>
+<li>Replace github-markdown.css with github-markdown-dark.css</li>
+<li>Unwrap it with <code>@media (prefers-color-scheme: dark)</code><pre><code>body {\
+  background-color: #0d1117;\
+}\
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Because to convert Markdown to HTML.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><a href="https://github.com/sindresorhus/github-markdown-css#usage">https://github.com/sindresorhus/github-markdown-css#usage</a></li>
+<li>Artificial intelligence</li>
 <li><code>man sed</code></li>
 </ul>
 </li>
