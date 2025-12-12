@@ -78,7 +78,6 @@
 - https://www.868dm.com/
 - https://yhdm6.top/
 - https://yhdm.one/
-- https://tv.pei.ee/
 - http://eroanimedougakan.blog.fc2.com/
 
 ## Programming
