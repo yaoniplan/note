@@ -180,6 +180,7 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 我在末世给别人升级 Chapter 43 Page 12 # Plot maybe slow
 - 欢迎来到异世界便利店 #NSFW Chapter 26 # The ending seemed too hasty.
 - 99强化木棍 Chapter 88 Page 30 # Plot maybe slow
 - 称霸废土：我在末世执掌仙门 Chapter 20 Page 54 # Plot connection is not smooth.
