@@ -332,6 +332,7 @@
 - guard(end)
 
 ### Animation
+- 山河剑心 S01E16 # 武侠剧情，角色立体
 - 孤雄 S01E09
 - 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E04 1138 # Plot maybe slow
 - 身为暗杀者的我明显比勇者还强 S01E09 0306 # Plot maybe slow
