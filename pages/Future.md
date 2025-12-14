@@ -77,7 +77,7 @@
 - https://www.skr2.cc/
 - https://www.868dm.com/
 - https://yhdm6.top/
-- https://yhdm.one/
+- https://yhdm.one/latest/
 - http://eroanimedougakan.blog.fc2.com/
 
 ## Programming
