@@ -13,7 +13,7 @@
 - 九阳武神 S01E05
 - 仙帝归来 S01E09
 - 天命大神皇 S01E32
-- 克金玩家 S01E22 TODO
+- 克金玩家 S01E23 TODO
 - 天相 S01E04
 - 武碎星河 S01E23
 - 神在囧途 S01E11
@@ -985,6 +985,7 @@
 - 我能看到成功率/I can see the success rate (第一季+第二季+第三季+第四季) - 26+26+30+54 # End of the fourth season.
 - 点满农民相关技能后，不知为何就变强了 - 12 # End of the first season.
 - 电锯人 - 12 # End of the first season.
+    - Chainsaw Man - The Movie: Reze Arc / 电锯人剧场版：蕾塞篇
 - 星源之主 - 48 # End of the first season.
 - 我靠充值当武帝 - 60 # End of the first season.
 - 彼得·格里尔的贤者时间 (第一季+第二季) - 12+12 # End of the second season.
