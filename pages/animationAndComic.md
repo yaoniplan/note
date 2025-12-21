@@ -1,4 +1,5 @@
 ### "Animation"
+- 永生 - S01E12.S02E12.S03E16.S04E16.S05E03
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E02
 - 宗门里除了我都是卧底 S01E107
 - 三线轮洄 S01E03
@@ -13,7 +14,7 @@
 - 九阳武神 S01E05
 - 仙帝归来 S01E09
 - 天命大神皇 S01E32
-- 克金玩家 S01E25 TODO
+- 克金玩家 S01E26 0431 TODO
 - 天相 S01E04
 - 武碎星河 S01E23
 - 神在囧途 S01E11
@@ -542,7 +543,6 @@
 - 噗妮露是可爱史莱姆 - S01E01 0230 # The target audience maybe 13 or 14 years old
 - 暂停！智序重组 - S01E01 0159 # Target audience maybe 13 or 14 years old
 - 可塑性记忆 S01E02 1048 # Target audience maybe 13 or 14 years old
-- 永生 - S01E12.S02E12.S03E16.S04E16
 - 被逐出队伍的治愈师，其实是最强的 S01E08 1857 # The animation doesn't seem to show the passion of the title
 - 蘑菇狗 S01E07 1403 # Target audience maybe 13 or 14 years old
 - 悲喜渔生 S01E07 1623 # Target audience maybe 13 or 14 years old
