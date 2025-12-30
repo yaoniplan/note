@@ -36,6 +36,8 @@
 - Against the Sky Supreme / 逆天至尊 - 468
 
 ### Comic
+- 历史典故 Chapter 3
+- 不变的法则 Chapter 35
 - 从零开始无限进化 Chapter 31
 - 名门家族的剑术天才 Chapter 121 Page 25
 - 盗脸人生 Chapter 18
