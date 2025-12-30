@@ -1,4 +1,7 @@
 ### "Animation"
+- 山海经密码 S01E02
+- 剑来 - S01E26.S02E03
+- 光阴之外 S01E02
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E03
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E02
 - 宗门里除了我都是卧底 S01E107
@@ -14,10 +17,10 @@
 - 九阳武神 S01E05
 - 仙帝归来 S01E09
 - 天命大神皇 S01E32
-- 克金玩家 S01E26 0431 TODO
+- 克金玩家 S01E26
 - 天相 S01E12
-- 武碎星河 S01E23
-- 神在囧途 S01E11
+- 武碎星河 S01E29 0344 TODO
+- 神在囧途 S01E29
 - 启运丹田：开局签到至尊丹田 S01E09
 - 地狱老师 S01E13 1521 # Childhood memories
 - 无职英雄 ～技能什么的毫无用处～ S01E05
@@ -529,7 +532,6 @@
 - 妻子变成小学生 S01E12
 - 英雄联盟 - S01E09.S02E09
 - 夜晚游玩生活 S01E08 #NSFW
-- 剑来 - S01E26
 - 魔王2099 S01E09 1407 # Target audience maybe 13 or 14 years old
 - 暗杀女仆冥土小姐 S01E11 1555 # Target audience maybe 13 or 14 years old
 - Demon Lord, Retry! / 重来吧，魔王大人！ S01E12.S02E11 1317 # Plot maybe slow
@@ -1096,6 +1098,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- 美丽人生 # Positive optimism seems to increase the success rate?
 - Shaw Brothers / 邵氏影业
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
     - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋, 儒侠, 龙门金剑
