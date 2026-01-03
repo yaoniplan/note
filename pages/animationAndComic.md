@@ -23,16 +23,14 @@
 - 神在囧途 S01E29
 - 启运丹田：开局签到至尊丹田 S01E09
 - 地狱老师 S01E13 1521 # Childhood memories
-- 无职英雄 ～技能什么的毫无用处～ S01E05
-- 杀手旅店 / 异人旅馆 S01E05 1906
-- 云深不知梦 S01E21
-- 龙族 S01E16.S02E22
-- 神墓 S01E16.S02E27.S03E18
-- 凡人修仙传 - 171
-- 牧神记 S01E59
-- 仙逆 - 117
-- Shrouding the Heavens / 遮天 - 138
-- 武神主宰 - 604
+- 云深不知梦 S01E26
+- 龙族 S01E16.S02E24
+- 神墓 S01E16.S02E27.S03E22
+- 凡人修仙传 - 175
+- 牧神记 S01E63
+- 仙逆 - 121
+- Shrouding the Heavens / 遮天 - 142
+- 武神主宰 - 607 0318 TODO
 - Against the Sky Supreme / 逆天至尊 - 468
 
 ### Comic
@@ -338,6 +336,8 @@
 - guard(end)
 
 ### Animation
+- 杀手旅店 / 异人旅馆 S01E05 1906 # Plot maybe slow
+- 无职英雄 ～技能什么的毫无用处～ S01E12
 - 山河剑心 S01E16 # 武侠剧情，角色立体
 - 孤雄 S01E09
 - 武动乾坤 S01E12.S02E12.S03E12.S04E12.S05E12.S06E04 1138 # Plot maybe slow
