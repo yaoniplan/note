@@ -1,9 +1,10 @@
 ### "Animation"
-- 山海经密码 S01E02
-- 剑来 - S01E26.S02E03
+- 超凡进化 S01E14
+- 山海经密码 S01E03
+- 剑来 - S01E26.S02E04
 - 光阴之外 S01E02
-- 永生 - S01E12.S02E12.S03E16.S04E16.S05E03
-- Apotheosis / 百炼成神 - S01E52.S02E52.S03E02
+- 永生 - S01E12.S02E12.S03E16.S04E16.S05E05
+- Apotheosis / 百炼成神 - S01E52.S02E52.S03E05
 - 宗门里除了我都是卧底 S01E107
 - 三线轮洄 S01E03
 - 荒古恩仇录•破风篇 S01E28
@@ -30,8 +31,8 @@
 - 牧神记 S01E63
 - 仙逆 - 121
 - Shrouding the Heavens / 遮天 - 142
-- 武神主宰 - 607 0318 TODO
-- Against the Sky Supreme / 逆天至尊 - 468
+- 武神主宰 - 612
+- Against the Sky Supreme / 逆天至尊 - 476
 
 ### Comic
 - 历史典故 Chapter 3
@@ -1104,6 +1105,7 @@
 - Shaw Brothers / 邵氏影业
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
     - 侠士行, 保镖, 倩女幽魂, 倾国倾城, 倾城之恋, 儒侠, 龙门金剑
+    - 乾隆下扬州
     - https://al.chirmyram.com/mov/%E7%94%B5%E5%BD%B1/%E5%90%88%E9%9B%86/%E9%82%B5%E6%B0%8F%E7%94%B5%E5%BD%B1
 - Her # Interact with artificial intelligence through voice
 - Kiki's Delivery Service / 魔女宅急便 # Taiwanese dubbing is cute
