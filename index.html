@@ -4165,7 +4165,8 @@ print(math.sqrt(25))
 <ul>
 <li><h4>Use &quot;webdav&quot;</h4>
 <ul>
-<li><code>curl --user &quot;admin:***&quot; --upload-file &quot;/mnt/grow/image/2024-06-04-171256.png&quot; &quot;http://192.168.10.100:5244/dav/$filePath/&quot;</code></li>
+<li><code>http://admin:***@192.168.10.100:5244/dav/$filePath/index.js</code> # Download (Access a specific file)</li>
+<li><code>curl --user &quot;admin:***&quot; --upload-file &quot;/mnt/grow/image/2024-06-04-171256.png&quot; &quot;http://192.168.10.100:5244/dav/$filePath/&quot;</code> # Upload</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -4196,6 +4197,7 @@ print(math.sqrt(25))
 <li><code>-T</code> # Replace it with other literal string (e.g. <code>-u</code>)</li>
 </ul>
 </li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -17269,12 +17271,14 @@ Ascending # Order direction
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-a</code> # Algorithm</li>
 <li><code>256</code> # Replace it with other algorithm (e.g. <em>512</em>)</li>
+<li><code>openssl sha256 index.js</code> # Another method</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man shasum</code></li>
 <li><img src="./assets/2023-02-26_11:59:36.png" alt="2023-02-26_11:59:36.png"></li>
 <li><a href="https://ubuntu.com/download/server">https://ubuntu.com/download/server</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -18616,18 +18620,20 @@ doas make install
 </ul>
 <hr>
 <ul>
-<li><h4>Use sha512sum to verify the checksum</h4>
+<li><h4>Use &quot;sha512sum&quot; to verify the checksum</h4>
 <ul>
 <li><code>sha512sum -c CHECKSUM.SHA512-FreeBSD-13.1-RELEASE-amd64 FreeBSD-13.1-RELEASE-amd64-disc1.iso</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-c</code> # Check</li>
+<li><code>openssl sha512 index.js</code> # Another method</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man sha512sum</code></li>
 <li><img src="./assets/2023-02-08_10:54:57.png" alt="2023-02-08_10:54:57.png"></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -18966,9 +18972,13 @@ df -h
 </ul>
 <hr>
 <ul>
-<li><h4>Generate random string in Linux</h4>
+<li><h4>Use &quot;openssl&quot;</h4>
 <ul>
-<li><code>openssl rand -base64 22</code></li>
+<li><code>openssl md5 index.js</code> # Calculate an MD5 hash (checksum)<ul>
+<li><code>md5sum index.js</code> # Another method</li>
+</ul>
+</li>
+<li><code>openssl rand -base64 22</code> # Generate a random string</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -18978,6 +18988,7 @@ df -h
 <li><em><strong>References</strong></em><ul>
 <li><code>man openssl</code></li>
 <li><a href="https://linuxhint.com/generate-random-string-bash/">https://linuxhint.com/generate-random-string-bash/</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
