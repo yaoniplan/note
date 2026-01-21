@@ -1,6 +1,6 @@
 ### "Animation"
-- 泛而不精的我被逐出勇者队伍 S01E02
-- 仙剑奇侠传叁 S01E04
+- 泛而不精的我被逐出勇者队伍 S01E03
+- 仙剑奇侠传叁 S01E04 TODO
 - 超凡进化 S01E14
 - 山海经密码 S01E03
 - 剑来 - S01E26.S02E04
@@ -19,20 +19,18 @@
 - 玄界之门 S01E10
 - 九阳武神 S01E10
 - 仙帝归来 S01E14
-- 天相 S01E12 TODO
-- 武碎星河 S01E29 0344 TODO
-- 神在囧途 S01E29
+- 天相 S01E15
+- 武碎星河 S01E48
+- 神在囧途 S01E36
 - 启运丹田：开局签到至尊丹田 S01E09
 - 地狱老师 S01E13 1521 # Childhood memories
-- 云深不知梦 S01E26
-- 龙族 S01E16.S02E24
-- 神墓 S01E16.S02E27.S03E22
-- 凡人修仙传 - 175
-- 牧神记 S01E63
-- 仙逆 - 121
-- Shrouding the Heavens / 遮天 - 142
-- 武神主宰 - 612
-- Against the Sky Supreme / 逆天至尊 - 476
+- 神墓 S01E16.S02E27.S03E25
+- 凡人修仙传 - 176
+- 牧神记 S01E66
+- 仙逆 - 124
+- Shrouding the Heavens / 遮天 - 145
+- 武神主宰 - 618
+- Against the Sky Supreme / 逆天至尊 - 481
 
 ### Comic
 - 历史典故 Chapter 3
@@ -337,6 +335,8 @@
 - guard(end)
 
 ### Animation
+- 龙族 S01E16.S02E24
+- 云深不知梦 S01E26
 - 克金玩家 S01E26
 - 天命大神皇 S01E40
 - 万古剑帝 S01E40
