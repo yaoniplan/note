@@ -1,4 +1,8 @@
 ### "Animation"
+- 29岁单身冒险家的日常 S01E04
+- 安闲领主的愉快领地防卫 S01E04 # Magic is amazing
+- 中国奇谭 S02E06
+- 勇者处刑 S01E04
 - 厄里斯的圣杯  S01E04 TODO
 - 史上最强炼体老祖 S01E04
 - MF Ghost / 极速车魂 - S01E12.S02E12.S03E04
@@ -330,6 +334,8 @@
 - guard(end)
 
 ### Animation
+- 拜托了双子星 S01E13
+- 以死亡游戏为生 S01E03 1835 # The plot seems to be incoherent
 - 地狱老师 S01E13 1521 # Plot maybe slow
 - 启运丹田：开局签到至尊丹田 S01E09 # Stop updating
 - 仙帝归来 S01E16
