@@ -14,11 +14,9 @@
 - 光阴之外 S01E07
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E09
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E10
-- 宗门里除了我都是卧底 S01E120 TODO
-- 傲世丹神 S01E10
-- 大唐乘风录 S01E20
-- 开局地摊卖大力 S01E23
-- 玄界之门 S01E11
+- 宗门里除了我都是卧底 S01E123
+- 大唐乘风录 S01E22
+- 玄界之门 S01E11 TODO
 - 九阳武神 S01E12
 - 天相 S01E16
 - 武碎星河 S01E50
@@ -334,6 +332,8 @@
 - guard(end)
 
 ### Animation
+- 开局地摊卖大力 S01E24
+- 傲世丹神 S01E12
 - 拜托了双子星 S01E13
 - 以死亡游戏为生 S01E03 1835 # The plot seems to be incoherent
 - 地狱老师 S01E13 1521 # Plot maybe slow
