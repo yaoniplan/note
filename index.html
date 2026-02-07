@@ -11477,6 +11477,9 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 <ul>
 <li>Custom key mappings<pre><code>map gh LinkHints.activateHover
 </code></pre>
+<ul>
+<li>Then press <code>menuButton</code> to pop-up context menu</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -11486,6 +11489,7 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914">https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562">https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562</a></li>
 </ul>
 </li>
@@ -27482,6 +27486,17 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </li>
 <li><code>doas pacman --sync --refresh archlinuxcn-keyring</code> # Reinstall</li>
 <li>Because to use additional packaged executable software.</li>
+</ul>
+</li>
+<li>Install &quot;.deb&quot; on Arch Linux<ul>
+<li>Warning: This installation method is prone to missing dependencies (Causing the application to fail to launch)</li>
+<li><code>yay --sync debtap</code> # Install dependencies</li>
+<li><code>doas debtap --update</code> # Initialize itself (first-time setup)<pre><code>Error: You must run at least once &quot;debtap -u&quot; with root privileges (preferably recently), before running this script
+</code></pre>
+</li>
+<li><code>debtap app.deb</code> # Convert <code>.deb</code> to Arch package (Generate a <code>.pkg.tar.zst</code> package)</li>
+<li><code>doas pacman --upgrade app.pkg.tar.zst</code> # Install the converted package</li>
+<li><code>doas pacman --remove --recursive app</code> # Uninstall</li>
 </ul>
 </li>
 </ul>
