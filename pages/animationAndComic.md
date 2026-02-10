@@ -20,13 +20,11 @@
 - 九阳武神 S01E14
 - 天相 S01E18
 - 武碎星河 S01E54
-- 神在囧途 S01E38 TODO
-- 神墓 S01E16.S02E27.S03E26
-- 凡人修仙传 - 176
-- 牧神记 S01E67
-- 仙逆 - 125
-- Shrouding the Heavens / 遮天 - 146
-- 武神主宰 - 620
+- 神墓 S01E16.S02E27.S03E28
+- 牧神记 S01E69
+- 仙逆 - 127
+- Shrouding the Heavens / 遮天 - 148
+- 武神主宰 - 620 TODO
 - Against the Sky Supreme / 逆天至尊 - 484
 
 ### Comic
@@ -332,6 +330,8 @@
 - guard(end)
 
 ### Animation
+- 凡人修仙传 - 176
+- 神在囧途 S01E40
 - 开局地摊卖大力 S01E24
 - 傲世丹神 S01E12
 - 拜托了双子星 S01E13
