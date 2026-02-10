@@ -43,6 +43,26 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;streamlink&quot;</h4>
+<ul>
+<li><code>streamlink --stream-segment-threads 3 --player-no-close --player mpv --player-args &#39;--speed=2&#39; &quot;https://example.com/index.m3u8&quot; best</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>--stream-segment-threads 3</code> # Use 3 threads to download segments in parallel</li>
+<li><code>--player-no-close</code> # Prevent Streamlink from terminating the player when the stream ends</li>
+<li><code>--player-args &#39;--speed=2&#39;</code> # Pass arguments to the player</li>
+<li>Because to speed up buffering for an HLS link. (Make playback smoother)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://billy2011.github.io/streamlink-27/issues.html#multi-threaded-streaming">https://billy2011.github.io/streamlink-27/issues.html#multi-threaded-streaming</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;todoist&quot;</h4>
 <ul>
 <li><code>todoist add --project-name &quot;Inbox&quot; &quot;Test todoist add feature&quot;</code> # Add a task to Inbox</li>
@@ -27073,6 +27093,10 @@ XMODIFIERS=@im=fcitx //添加这一行
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Develop a local extension<ul>
+<li><a href="https://gist.github.com/hammerill/08e43cbb8796acccc5f042df71427eef">https://gist.github.com/hammerill/08e43cbb8796acccc5f042df71427eef</a></li>
+</ul>
+</li>
 <li>Another way in Gentoo Linux<ul>
 <li><code>doas vim /etc/chromium/default</code><pre><code>CHROMIUM_FLAGS=&quot;--force-dark-mode --enable-features=WebContentsForceDark&quot;
 </code></pre>
