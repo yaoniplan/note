@@ -1,6 +1,6 @@
 ### "Animation"
-- 29岁单身冒险家的日常 S01E04 TODO
-- 安闲领主的愉快领地防卫 S01E04 # Magic is amazing
+- 29岁单身冒险家的日常 S01E06
+- 安闲领主的愉快领地防卫 S01E04 # Magic is amazing TODO
 - 中国奇谭 S02E06
 - 勇者处刑 S01E04
 - 厄里斯的圣杯  S01E04
