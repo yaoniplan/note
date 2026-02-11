@@ -1,5 +1,5 @@
 ### "Animation"
-- 29岁单身冒险家的日常 S01E04
+- 29岁单身冒险家的日常 S01E04 TODO
 - 安闲领主的愉快领地防卫 S01E04 # Magic is amazing
 - 中国奇谭 S02E06
 - 勇者处刑 S01E04
@@ -24,8 +24,8 @@
 - 牧神记 S01E69
 - 仙逆 - 127
 - Shrouding the Heavens / 遮天 - 148
-- 武神主宰 - 620 TODO
-- Against the Sky Supreme / 逆天至尊 - 484
+- 武神主宰 - 630
+- Against the Sky Supreme / 逆天至尊 - 490
 
 ### Comic
 - 历史典故 Chapter 3
