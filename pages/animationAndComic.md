@@ -1,17 +1,18 @@
 ### "Animation"
+- 地狱乐 S01E13.S02E06
+- 择天记 S01E05
+- 成何体统 S01E24.S02E06
 - 29岁单身冒险家的日常 S01E06
 - 安闲领主的愉快领地防卫 S01E06 # Magic is amazing
 - 中国奇谭 S02E08
 - 勇者处刑 S01E05
 - 厄里斯的圣杯 S01E05
-- 史上最强炼体老祖 S01E07 0507 TODO
-- MF Ghost / 极速车魂 - S01E12.S02E12.S03E05
-- 深空彼岸 S01E05
-- 泛而不精的我被逐出勇者队伍 S01E05
-- 仙剑奇侠传叁 S01E08
-- 山海经密码 S01E07 # Great visuals, lackluster plot
-- 剑来 - S01E26.S02E09
-- 光阴之外 S01E07
+- MF Ghost / 极速车魂 - S01E12.S02E12.S03E07
+- 深空彼岸 S01E07
+- 泛而不精的我被逐出勇者队伍 S01E07
+- 仙剑奇侠传叁 S01E09
+- 剑来 - S01E26.S02E10
+- 光阴之外 S01E07 TODO
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E09
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E10
 - 宗门里除了我都是卧底 S01E123
@@ -330,6 +331,8 @@
 - guard(end)
 
 ### Animation
+- 山海经密码 S01E07 # Great visuals, lackluster plot
+- 史上最强炼体老祖 S01E08 0806 # Plot maybe slow
 - 凡人修仙传 - 176
 - 神在囧途 S01E40
 - 开局地摊卖大力 S01E24
@@ -910,7 +913,6 @@
 - 莱莎的炼金工房～常暗女王与秘密藏身处 - 02 0259 # The target audience is thirteen or fourteen years old
 - AYAKA 绫岛奇谭 - 02 1843 # The target audience is thirteen and fourteen years old
 - 十方剑圣 - 02 0354 # Old story
-- 地狱乐 - 13 # End of the first part
 - 在异世界获得超强能力的我，在现实世界照样无敌～等级提升改变人生命运～ - 13 # End of the first part
 - 堕靡泥の星 - 05 # Looking back at history, monitoring human footprints, the essence of Auschwitz has not disappeared.
     - https://en.wikipedia.org/wiki/Auschwitz_concentration_camp
