@@ -49,6 +49,11 @@
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--hls-start-offset 2:00</code> # Skip the first 2 minutes (Recommended, because it loads faster)<ul>
+<li><code>--player-passthrough hls</code> # Hand the raw HLS URL directly to mpv (instead of piping data)</li>
+<li><code>--player-args &#39;--start 00:02:00&#39;</code> # Combine this option to achive the function of skipping the opening theme (But it will be slower)</li>
+</ul>
+</li>
 <li><code>--stream-segment-threads 3</code> # Use 3 threads to download segments in parallel</li>
 <li><code>--player-no-close</code> # Prevent Streamlink from terminating the player when the stream ends</li>
 <li><code>--player-args &#39;--speed=2&#39;</code> # Pass arguments to the player</li>
@@ -3356,6 +3361,7 @@ EOF
 <li><code>pbpaste &gt; add.py</code> # Paste clipboard into <code>add.py</code></li>
 <li><code>pbcopy &lt; list.py</code> # Copy <code>list.py</code> file contents into clipboard</li>
 <li><code>python list.py --json id url | pbcopy</code> # Copy the output of the command to the clipboard</li>
+<li><code>python list.py --refresh 2&gt;&amp;1 | pbcopy</code> # Copy error messages to the clipboard (Use <code>2&gt;&amp;1</code> to redirect stderr to stdout)</li>
 </ul>
 </li>
 <li>Manage sensitive data across platforms (Use <code>.env</code> and <code>python-dotenv</code>)<ul>
