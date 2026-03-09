@@ -1,5 +1,12 @@
 ### "Animation"
-- 转生七王子的魔法全解 S01E12.S02E00
+- 修仙者大战超能力 S01E03
+- 绝世战魂 S01E167
+- 修罗武神 S01E16.S02E04
+- 盗妖行 S01E07
+- 龙破九天 S01E15
+- 驭灵师 S01E04
+- 和机器人啪啪啪能算在经验人数里吗？？ #NSFW S01E04
+- 转生七王子的魔法全解 S01E12.S02E10
 - 地狱乐 S01E13.S02E06
 - 择天记 S01E05
 - 成何体统 S01E24.S02E06
@@ -17,9 +24,9 @@
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E12
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E12
 - 宗门里除了我都是卧底 S01E129
-- 大唐乘风录 S01E22 TODO
-- 玄界之门 S01E13
-- 九阳武神 S01E14
+- 大唐乘风录 S01E25
+- 玄界之门 S01E16
+- 九阳武神 S01E16 0819 TODO
 - 天相 S01E18
 - 武碎星河 S01E54
 - 神墓 S01E16.S02E27.S03E28
@@ -332,6 +339,7 @@
 - guard(end)
 
 ### Animation
+- 古诺希亚 / Gnosia S01E12 0349 # Plot maybe slow
 - 靠你啦！战神系统 S01E16
 - 山海经密码 S01E07 # Great visuals, lackluster plot
 - 史上最强炼体老祖 S01E08 0806 # Plot maybe slow
@@ -807,7 +815,6 @@
 - The Record of Boy Hanada / 花田少年史 - 25 # End of the first part
     - Funny style
 - 七侯笔录 - 07 1501 # The plot is slow
-- 修罗武神 - 16 # End of the first part
 - Berserk of Gluttony / 暴食狂战士 - 08 # The plot is slow
 - Shangri-La Frontier / 香格里拉·弗陇提亚～屎作猎人向神作发起挑战～ - 09 # The plot is slow
 - KAMIERABI - 02 0653 # The plot is slow

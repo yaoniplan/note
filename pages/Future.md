@@ -76,7 +76,7 @@
 ## Animation and comic
 - https://www.skr2.cc/
 - https://www.868dm.com/
-- https://yhdm6.top/
+- https://yhdm6a.com/
 - https://yhdm.one/latest/
 - http://eroanimedougakan.blog.fc2.com/
 
