@@ -392,8 +392,6 @@ binds {
     Mod+Shift+L { move-column-right; }
     // Switch previous window
     Mod+Tab { focus-window-previous; }
-    // Toggle overview
-    Mod+O { toggle-overview; }
     // Use parameters
     Mod+T { spawn &quot;alacritty&quot; &quot;-e&quot; &quot;tmux&quot;; }
     // Change launcher
@@ -3352,6 +3350,7 @@ EOF
 <ul>
 <li><h4>Use &quot;a-shell&quot;</h4>
 <ul>
+<li><code>open &quot;https://yaoniplan.eu.org&quot;</code> # Open url in browser</li>
 <li><code>help -l</code> # List all installed packages</li>
 <li><code>pickFolder</code> # Grant a‑Shell access to any directory (e.g. VLC) outside its sandbox.</li>
 </ul>
@@ -3395,6 +3394,7 @@ pip install yt-dlp yt-dlp-ejs yt-dlp-apple-webkit-jsi -q --disable-pip-version-c
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452">https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452</a> # <code>open url</code></li>
 <li><a href="https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212">https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212</a></li>
 <li><a href="https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/">https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/</a></li>
 <li><a href="https://github.com/net00-1/SW-DLT/blob/master/src/SW_DLT.py#L80">https://github.com/net00-1/SW-DLT/blob/master/src/SW_DLT.py#L80</a></li>
@@ -21712,6 +21712,7 @@ complete -F _todo todocli
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>if [ &quot;$slug&quot; != &quot;null&quot; ] &amp;&amp; [ -n &quot;$slug&quot; ]; then</code> # Use two separate <code>[</code> commands combined with <code>&amp;&amp;</code> outside the brackets (POSIX-compliant)</li>
 <li><code>-gt</code> # Greater than</li>
 </ul>
 </li>
