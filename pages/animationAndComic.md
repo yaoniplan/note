@@ -8,9 +8,7 @@
 - 盗妖行 S01E09
 - 龙破九天 S01E17
 - 驭灵师 S01E05
-- 和机器人啪啪啪能算在经验人数里吗？？ #NSFW S01E04 TODO
-- 转生七王子的魔法全解 S01E12.S02E10
-- 地狱乐 S01E13.S02E06
+- 地狱乐 S01E13.S02E06 TODO
 - 择天记 S01E05
 - 成何体统 S01E24.S02E06
 - 29岁单身冒险家的日常 S01E06
@@ -342,6 +340,8 @@
 - guard(end)
 
 ### Animation
+- 转生七王子的魔法全解 S01E12.S02E12
+- 和机器人啪啪啪能算在经验人数里吗？？ #NSFW S01E09
 - 古诺希亚 / Gnosia S01E12 0349 # Plot maybe slow
 - 靠你啦！战神系统 S01E16
 - 山海经密码 S01E07 # Great visuals, lackluster plot
