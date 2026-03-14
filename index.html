@@ -3636,6 +3636,21 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 <li><a href="https://board.zash.run.place/">https://board.zash.run.place/</a></li>
 </ul>
 </li>
+<li>Make it accessible on WLAN<pre><code>{
+  &quot;inbounds&quot;: [
+    {
+      &quot;listen&quot;: &quot;0.0.0.0&quot;,
+      &quot;listen_port&quot;: 7890,
+      &quot;tag&quot;: &quot;mixed-in&quot;,
+      &quot;type&quot;: &quot;mixed&quot;
+    }
+  ],
+}
+</code></pre>
+<ul>
+<li>Change listen from <code>127.0.0.1</code> to <code>0.0.0.0</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
