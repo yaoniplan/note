@@ -10089,6 +10089,60 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><code>nmcli device wifi hotspot con-name yaoniplan ssid yaoniplan password yaoniplan</code></li>
 <li><code>nmcli connection delete bfc2c6fa-eb8c-472c-b278-5953ec224e33</code> # Delte the hotspot</li>
 <li><code>nmcli connection show</code> # Get the UUID</li>
+<li><a href="https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140">https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140</a> (Try this command line on the new system next time)</li>
+<li>Use &quot;nm-connection-editor&quot; if cli doesn&#39;t work</li>
+<li><code>nm-connection-editor</code><table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Connection type</td>
+<td>Wi-Fi</td>
+</tr>
+<tr>
+<td>Connection name</td>
+<td>Hotspot</td>
+</tr>
+<tr>
+<td>SSID</td>
+<td>yaoniplan</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>Hotspot</td>
+</tr>
+<tr>
+<td>Device</td>
+<td>wlan0 (80:56:F2:44:E2:98)</td>
+</tr>
+<tr>
+<td>Wi-Fi Security</td>
+<td>WPA/WPA2/WPA3 Personal</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>yaoniplan</td>
+</tr>
+<tr>
+<td>IPv4 Settings Method</td>
+<td>Shared to other computers</td>
+</tr>
+<tr>
+<td>IPv6 Settings Method</td>
+<td>Shared to other computers</td>
+</tr>
+</tbody></table>
+</li>
+<li><code>cat /proc/sys/net/ipv4/ip_forward</code> # If it returns <code>0</code>, enable it</li>
+<li><code>doas vim /etc/sysctl.d/99-ipforward.conf</code> # Enable this feature will allow your phone to connect to the internet<pre><code>net.ipv4.ip_forward=1
+</code></pre>
+</li>
+<li><code>doas sysctl -p /etc/sysctl.d/99-ipforward.conf</code> # Make changes effective permanently</li>
+<li><a href="https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/">https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/</a></li>
+<li><code>doas pacman --sync network-manager-applet</code> # Install dependencies</li>
 </ul>
 </li>
 <li>Solve the problem<pre><code>Jul 16 16:33:19 tux NetworkManager[376]: &lt;warn&gt;  [1721118799.2087] device (wlan0): ip:shared4: could not start dnsmasq: Could not find &quot;dnsmasq&quot; binary
@@ -10140,7 +10194,7 @@ Error: Failed to add/activate new connection: Not authorized to control networki
 <li><em><strong>References</strong></em><ul>
 <li><code>lspci</code> # List PCI devices</li>
 <li><code>nmcli</code> # Network manager command line</li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
