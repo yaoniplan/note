@@ -3648,7 +3648,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 }
 </code></pre>
 <ul>
-<li>Change listen from <code>127.0.0.1</code> to <code>0.0.0.0</code></li>
+<li>Change listen from <code>127.0.0.1</code> to <code>0.0.0.0</code> (Remember to combine the external_controller above)</li>
 </ul>
 </li>
 </ul>
@@ -10085,7 +10085,8 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Enable hotspot<ul>
+<li>Enable hotspot if your computer has a wireless network card (Wi-Fi adapter)<ul>
+<li><code>ip address</code> # Check if there is a wireless interface (e.g. <code>wlan0</code>)</li>
 <li><code>nmcli device wifi hotspot con-name yaoniplan ssid yaoniplan password yaoniplan</code></li>
 <li><code>nmcli connection delete bfc2c6fa-eb8c-472c-b278-5953ec224e33</code> # Delte the hotspot</li>
 <li><code>nmcli connection show</code> # Get the UUID</li>
