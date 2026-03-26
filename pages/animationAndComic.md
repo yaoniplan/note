@@ -1,6 +1,6 @@
 ### "Animation"
-- 转职阎王，我执掌了生死簿 #AI S01E06
-- 末世：S级机甲开局，我无敌了 #AI S01E08
+- 转职阎王，我执掌了生死簿 #AI S01E15
+- 末世：S级机甲开局，我无敌了 #AI S01E08 TODO
 - 被家族抛弃，我觉醒九亿属性点 #AI S01E08
 - 修仙者大战超能力 S01E17
 - 绝世战魂 S01E168
@@ -23,19 +23,15 @@
 - 剑来 - S01E26.S02E15
 - 光阴之外 S01E14
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E16
-- Apotheosis / 百炼成神 - S01E52.S02E52.S03E12 TODO
-- 宗门里除了我都是卧底 S01E129
-- 大唐乘风录 S01E25
-- 玄界之门 S01E16
-- 九阳武神 S01E19
-- 天相 S01E22
-- 武碎星河 S01E60
-- 神墓 S01E16.S02E27.S03E32
-- 牧神记 S01E73
-- 仙逆 - 131
-- Shrouding the Heavens / 遮天 - 152
-- 武神主宰 - 638
-- Against the Sky Supreme / 逆天至尊 - 495
+- Apotheosis / 百炼成神 - S01E52.S02E52.S03E17
+- 宗门里除了我都是卧底 S01E137
+- 玄界之门 S01E20
+- 神墓 S01E16.S02E27.S03E34
+- 牧神记 S01E75
+- 仙逆 - 133
+- Shrouding the Heavens / 遮天 - 154
+- 武神主宰 - 642
+- Against the Sky Supreme / 逆天至尊 - 499
 
 ### Comic
 - 历史典故 Chapter 3
@@ -340,6 +336,10 @@
 - guard(end)
 
 ### Animation
+- 武碎星河 S01E60
+- 天相 S01E25 1211 # Plot maybe slow
+- 九阳武神 S01E20
+- 大唐乘风录 S01E26
 - 转生七王子的魔法全解 S01E12.S02E12
 - 和机器人啪啪啪能算在经验人数里吗？？ #NSFW S01E09
 - 古诺希亚 / Gnosia S01E12 0349 # Plot maybe slow
