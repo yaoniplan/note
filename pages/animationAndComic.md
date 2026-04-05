@@ -1,27 +1,20 @@
 ### "Animation"
+- 搜神记 S01E03
 - 转职阎王，我执掌了生死簿 #AI S01E15
-- 末世：S级机甲开局，我无敌了 #AI S01E08 TODO
-- 被家族抛弃，我觉醒九亿属性点 #AI S01E08
-- 修仙者大战超能力 S01E17
-- 绝世战魂 S01E168
-- 修罗武神 S01E16.S02E04
-- 盗妖行 S01E09
-- 龙破九天 S01E17
-- 驭灵师 S01E05
-- 地狱乐 S01E13.S02E09
-- 择天记 S01E08
-- 成何体统 S01E24.S02E10
-- 29岁单身冒险家的日常 S01E10
-- 安闲领主的愉快领地防卫 S01E10 # Magic is amazing
+- 被家族抛弃，我觉醒九亿属性点 #AI S01E16
+- 绝世战魂 S01E170
+- 修罗武神 S01E16.S02E07
+- 盗妖行 S01E13
+- 龙破九天 S01E21
+- 驭灵师 S01E07
+- 地狱乐 S01E13.S02E11
+- 择天记 S01E11
+- 成何体统 S01E24.S02E11
 - 中国奇谭 S02E09
-- 勇者处刑 S01E11
-- 厄里斯的圣杯 S01E11
-- MF Ghost / 极速车魂 - S01E12.S02E12.S03E12
-- 深空彼岸 S01E12
-- 泛而不精的我被逐出勇者队伍 S01E12
-- 仙剑奇侠传叁 S01E14
-- 剑来 - S01E26.S02E15
-- 光阴之外 S01E14
+- 深空彼岸 S01E13
+- 仙剑奇侠传叁 S01E15
+- 剑来 - S01E26.S02E17
+- 光阴之外 S01E14 TODO
 - 永生 - S01E12.S02E12.S03E16.S04E16.S05E16
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E17
 - 宗门里除了我都是卧底 S01E137
@@ -98,9 +91,6 @@
 - 开局签到至尊丹田 - 347
 - 超级神基因 - 312
 - 帝王app - 75
-- 暖味，完結
-- 生物学 全
-- 失踪 全
 - 双性人 Bodychange 全
 - 青春男女 全
 - 索多玛的儿部 全
@@ -184,6 +174,10 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- Bodychange / 双性人 #NSFW Chapter 33 # 外貌也是一个交际的加分项（尽量不要做对外表有害的事）
+- 失踪 #NSFW Chapter 28 # 每个人都希望事情能按自己的想法发展，但往往事与愿违（能否换条路线达到类似的效果？）
+- 生物学 #NSFW # No resource found
+- 暖味 #NSFW # No resource found
 - 我在末世给别人升级 Chapter 43 Page 12 # Plot maybe slow
 - 欢迎来到异世界便利店 #NSFW Chapter 26 # The ending seemed too hasty.
 - 99强化木棍 Chapter 88 Page 30 # Plot maybe slow
@@ -336,6 +330,15 @@
 - guard(end)
 
 ### Animation
+- 泛而不精的我被逐出勇者队伍 S01E12
+- 末世：S级机甲开局，我无敌了 #AI S01E13 # The visual transitions were choppy, but the ending theme song had a nice melody
+- 身为魔族的我想向勇者小队的可爱女孩告白 S01E13
+- MF Ghost / 极速车魂 - S01E12.S02E12.S03E13
+- 厄里斯的圣杯 S01E12
+- 勇者处刑 S01E12
+- 安闲领主的愉快领地防卫 S01E12 # Magic is amazing
+- 29岁单身冒险家的日常 S01E12
+- 修仙者大战超能力 S01E19 0834 # Target audience maybe 13 or 14 years old
 - 武碎星河 S01E60
 - 天相 S01E25 1211 # Plot maybe slow
 - 九阳武神 S01E20

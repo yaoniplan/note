@@ -371,7 +371,17 @@ l = step_right 10
 <li><code>Super-Shift-=</code> # Increase column height by 10% (Opposite: <code>Super-Shift--</code>)</li>
 </ul>
 </li>
-<li><code>vim ~/.config/niri/config.kdl</code> # Configure as needed<pre><code>// Set corner radius of the highlight in the recent windows switcher
+<li><code>vim ~/.config/niri/config.kdl</code> # Configure as needed<pre><code>// Input device configuration.
+input {
+    // Make the mouse warp to the center of newly focused windows (Even if the mouse is outside the window)
+    warp-mouse-to-focus mode=&quot;center-xy-always&quot;
+}
+// Animation settings.
+animations {
+    // Turn off all animations to make it faster
+    off
+}
+// Set corner radius of the highlight in the recent windows switcher
 recent-windows {
     highlight {
         corner-radius 14
@@ -422,6 +432,7 @@ binds {
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus">https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus</a></li>
 <li><a href="https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html">https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html</a> # <code>/round</code></li>
 <li><a href="https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl">https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl</a> # <code>/overview</code></li>
 <li><a href="https://wiki.archlinux.org/title/Niri">https://wiki.archlinux.org/title/Niri</a> # <code>/focus</code></li>
@@ -3371,10 +3382,16 @@ EOF
 <ul>
 <li><code>open &quot;https://yaoniplan.eu.org&quot;</code> # Open url in browser</li>
 <li><code>help -l</code> # List all installed packages</li>
-<li><code>pickFolder</code> # Grant a‑Shell access to any directory (e.g. VLC) outside its sandbox.</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Bookmark<ul>
+<li><code>deletemark Documents_1</code> # Delete a bookmark</li>
+<li><code>showmarks</code> # Show all bookmarks (e.g. ~Documents, ~Downloads, ~group, etc.)</li>
+<li><code>pickFolder</code> # Grant a‑Shell access to any directory (e.g. VLC) outside its sandbox.</li>
+<li><a href="https://github.com/holzschu/a-shell/issues/332#issuecomment-951036713">https://github.com/holzschu/a-shell/issues/332#issuecomment-951036713</a> # Because to prevent this <code>pickFolder</code> command from creating invalid bookmarks</li>
+</ul>
+</li>
 <li>Clipboard<ul>
 <li><code>pbpaste &gt; add.py</code> # Paste clipboard into <code>add.py</code></li>
 <li><code>pbcopy &lt; list.py</code> # Copy <code>list.py</code> file contents into clipboard</li>
@@ -5478,37 +5495,33 @@ tooltip {
 <ul>
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
-<li><code>vim ~/.config/mpv/input.conf</code><pre><code># Play next in playlist
+<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code> # Configure as needed<pre><code># Hide UI when mpv autohides the cursor
+# Avoid the problem of always being on the screen
+autohide=yes
+# Load next automatically
+autoload=yes
+</code></pre>
+</li>
+<li><code>vim ~/.config/mpv/input.conf</code> # Configure as needed<pre><code># Play next in playlist
 Enter script-binding uosc/next
 # Display playlist (Or `uosc/playlist`)
 Ctrl+p script-binding uosc/items
+# Toggle the entire UI
+# Avoid accidentally placing the mouse on the controller
+Tab script-binding uosc/toggle-ui
 </code></pre>
-<ul>
-<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code><pre><code>autoload=yes
-</code></pre>
-</li>
-<li><code>vim ~/.config/mpv/mpv.conf</code><pre><code>keep-open=yes
-</code></pre>
-</li>
-</ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code> # Configure as needed<pre><code># Hide top bar controls and title
-# Avoid the problem of always being on the screen
-top_bar_controls=no
-top_bar_title=no
-</code></pre>
-</li>
 <li><code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/tomasklaen/uosc/HEAD/installers/unix.sh)&quot;</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/tomasklaen/uosc/discussions/878#discussioncomment-8952348">https://github.com/tomasklaen/uosc/discussions/878#discussioncomment-8952348</a></li>
 <li><a href="https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples">https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples</a></li>
 <li><a href="https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442">https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442</a></li>
 <li><a href="https://github.com/tomasklaen/uosc#linux--macos">https://github.com/tomasklaen/uosc#linux--macos</a></li>
+<li>osc # On-screen controller</li>
 </ul>
 </li>
 </ul>
@@ -7302,7 +7315,10 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li>Use &quot;fira code&quot;<ul>
 <li><code>doas pacman --sync ttf-fira-code</code> # Install dependencies</li>
 <li><code>nix profile install nixpkgs#nerd-fonts.fira-code</code> # Install dependencies with icons</li>
-<li><code>vim ~/.config/foot/foot.ini</code><pre><code># font=FiraCode Nerd Font:size=12
+<li><code>vim ~/.config/foot/foot.ini</code> # Configure as needed<pre><code># Set tmux as the default shell
+[main]
+shell=tmux
+# font=FiraCode Nerd Font:size=12
 font=Fira Code:size=12
 [colors]
 alpha=0.8 # transparency
@@ -9082,6 +9098,11 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4>Some tips in iPhone 14 Pro</h4>
 <ul>
+<li>Podcasts<ul>
+<li>Follow Show - Library - Long press on the show - Settings - Oldest To Newest</li>
+<li><a href="https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o">https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o</a> # Display from the earliest episode instead of the latest one</li>
+</ul>
+</li>
 <li>Maps<ul>
 <li>Double-tap and swipe up to zoom in on the map</li>
 <li><a href="https://libreddit.nohost.network/r/applemaps/comments/yd14si/why_is_it_so_difficult_to_add_a_place_as_home/ivf2ilp/#ivf2ilp">https://libreddit.nohost.network/r/applemaps/comments/yd14si/why_is_it_so_difficult_to_add_a_place_as_home/ivf2ilp/#ivf2ilp</a> # Set an exact location as home</li>
@@ -15940,7 +15961,10 @@ title=${filename}
 <li><code>set video-rotate 90</code> # Set rotation to 90 degrees</li>
 </ul>
 </li>
-<li><code>Ctrl-h</code> # Hardware decoding (May reduce CPU usage)</li>
+<li><code>Ctrl-h</code> # Hardware decoding (May reduce CPU usage)<ul>
+<li><code>--hwdec=auto --hwdec-codes=all</code> # Enable hardware decoding for every codec your GPU supports</li>
+</ul>
+</li>
 <li><code>Shift-i</code> # Information</li>
 <li><code>mpv av://v4l2:/dev/video0</code> # Capture and display live video from a camera<ul>
 <li><code>--vf=hflip</code> # Horizontal flip (Like in phone)</li>
@@ -15966,7 +15990,19 @@ yaoniplan@tux ~ $
 <li><a href="https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n">https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n</a></li>
 </ul>
 </li>
-<li>Warning: Drop a lot of frames to play high quality video on an old computer in video speed mode (e.g. 3x, 2x, etc.)<ul>
+<li><code>mpv --ytdl-format=&#39;bv*[vcodec^=avc1][height&lt;=720]+ba/b&#39;</code> # Solve the problem that drop a lot of frames to play high quality video on an old computer in video speed mode (e.g. 3x, 2x, etc.)<ul>
+<li><code>b</code> # Best</li>
+<li><code>v</code> # Video</li>
+<li><code>*</code> # A wildcard (Any stream that matches the following criteria)</li>
+<li><code>codec</code> # Coder and decoder</li>
+<li><code>[]</code> # Filters (Conditions)</li>
+<li><code>^=</code> # Starts with</li>
+<li><code>&lt;=</code> # Less than or equal to</li>
+<li><code>720</code> # 720 pixels</li>
+<li><code>+</code> # Combine with</li>
+<li><code>a</code> # Audio</li>
+<li><code>/</code> # Or (Fallback to yt-dlp&#39;s default selector)</li>
+<li>Remember to combine it with hardware decoding</li>
 <li><a href="https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626">https://github.com/mpv-player/mpv/issues/10564#issuecomment-1615683626</a></li>
 <li>Maybe it&#39;s because it&#39;s running on Wayland</li>
 </ul>
