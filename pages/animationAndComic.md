@@ -1,5 +1,6 @@
 ### "Animation"
-- 搜神记 S01E03
+- 大道独行之蝶龙变 S01E02
+- 搜神记 S01E03 TODO
 - 转职阎王，我执掌了生死簿 #AI S01E15
 - 被家族抛弃，我觉醒九亿属性点 #AI S01E16
 - 绝世战魂 S01E170
@@ -19,12 +20,12 @@
 - Apotheosis / 百炼成神 - S01E52.S02E52.S03E18
 - 宗门里除了我都是卧底 S01E140
 - 玄界之门 S01E21
-- 神墓 S01E16.S02E27.S03E34 TODO
-- 牧神记 S01E75
-- 仙逆 - 133
-- Shrouding the Heavens / 遮天 - 154
-- 武神主宰 - 642
-- Against the Sky Supreme / 逆天至尊 - 499
+- 神墓 S01E16.S02E27.S03E36
+- 牧神记 S01E77
+- 仙逆 - 135
+- Shrouding the Heavens / 遮天 - 156
+- 武神主宰 - 645
+- Against the Sky Supreme / 逆天至尊 - 502
 
 ### Comic
 - 历史典故 Chapter 3
