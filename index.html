@@ -43,6 +43,91 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;podman&quot;</h4>
+<ul>
+<li><code>vim Dockerfile</code> # Define the container image<pre><code>FROM python:3.12-alpine
+
+RUN apk add --no-cache git ffmpeg gcc musl-dev python3-dev libffi-dev
+
+WORKDIR /app
+
+# Clone + Install yt-dlp (Do this only once, utilizing caching)
+RUN git clone https://github.com/4ft35t/yt-dlp.git &amp;&amp; \
+    cd yt-dlp &amp;&amp; \
+    git checkout fix-ximalaya-album &amp;&amp; \
+    pip install --no-cache-dir -e . --break-system-packages
+
+WORKDIR /workspace
+</code></pre>
+</li>
+<li><code>vim Makefile</code> # Automate build and run the container<pre><code>IMAGE_NAME := yt-dlp:custom
+PROXY      := http://host.docker.internal:7890
+
+# Default URL (can be overridden)
+URL ?= https://www.ximalaya.com/album/47769867
+
+# ================= build =================
+build:
+    podman build -t $(IMAGE_NAME) .
+
+# ================= run =================
+run:
+    podman run --rm -it \
+        -v &quot;$(PWD):/workspace:z&quot; \
+        -e http_proxy=$(PROXY) \
+        -e https_proxy=$(PROXY) \
+        -e no_proxy=&quot;localhost,127.0.0.1&quot; \
+        $(IMAGE_NAME) \
+        yt-dlp $(URL)
+
+# ================= run with args =================
+# Usage: make dl URL=xxx
+dl:
+    podman run --rm -it \
+        -v &quot;$(PWD):/workspace:z&quot; \
+        -e http_proxy=$(PROXY) \
+        -e https_proxy=$(PROXY) \
+        $(IMAGE_NAME) \
+        yt-dlp $(URL)
+
+# ================= shell =================
+shell:
+    podman run --rm -it \
+        -v &quot;$(PWD):/workspace:z&quot; \
+        -e http_proxy=$(PROXY) \
+        -e https_proxy=$(PROXY) \
+        $(IMAGE_NAME) \
+        sh
+
+# ================= clean =================
+clean:
+    podman rmi $(IMAGE_NAME) || true
+
+.PHONY: build run dl shell clean
+</code></pre>
+<ul>
+<li><code>make shell</code> #</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>doas pacman --sync --refresh podman</code> # Install dependencies</li>
+<li>Advantages: rootless, daemonless</li>
+<li>Because I need to test some commands, but I don&#39;t want to pollute the host machine (environment isolation).<pre><code>git clone https://github.com/4ft35t/yt-dlp.git &amp;&amp; cd yt-dlp &amp;&amp; git checkout fix-ximalaya-album
+./yt-dlp.sh https://www.ximalaya.com/album/4555085
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918">https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918</a> # test commands</li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;sdiff&quot;</h4>
 <ul>
 <li><code>sdiff -o merged.kdl config.kdl.old config.kdl.new</code></li>
@@ -343,6 +428,7 @@ l = step_right 10
 <li>Hyprland will cause the computer fan to spin wildly</li>
 </ul>
 </li>
+<li><code>Super-Shift-p</code> # Power off the monitor (sleep display)</li>
 <li><code>niri --version</code> # Print version</li>
 <li><code>Alt-Tab</code> # Switch windows<ul>
 <li><code>niri msg -j windows</code> # Get a list of open windows</li>
@@ -1010,9 +1096,7 @@ VITE_ENABLE_DEVTOOLS=false
 </code></pre>
 </li>
 <li><details><summary>cloudpaste-old</summary>
-<p>
-
-<ul>
+<p><ul>
 <li><h4>Use &quot;cloudpaste-old&quot;</h4>
 <ul>
 <li>Create two KV Namespaces<ul>
@@ -3386,6 +3470,8 @@ EOF
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Bookmark<ul>
+<li><code>renamemark Documents_1 Shortcuts</code> # Rename bookmark</li>
+<li><code>jump iCloud</code> # Jump to the bookmark</li>
 <li><code>deletemark Documents_1</code> # Delete a bookmark</li>
 <li><code>showmarks</code> # Show all bookmarks (e.g. ~Documents, ~Downloads, ~group, etc.)</li>
 <li><code>pickFolder</code> # Grant a‑Shell access to any directory (e.g. VLC) outside its sandbox.</li>
@@ -3430,6 +3516,7 @@ pip install yt-dlp yt-dlp-ejs yt-dlp-apple-webkit-jsi -q --disable-pip-version-c
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/holzschu/a-shell">https://github.com/holzschu/a-shell</a> # <code>/pickFolder</code></li>
 <li><a href="https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452">https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452</a> # <code>open url</code></li>
 <li><a href="https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212">https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212</a></li>
 <li><a href="https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/">https://libreddit.eu.org/r/shortcuts/comments/17vgexp/seeking_inspiration_how_do_you_use_ashell_and/k9c13mo/</a></li>
@@ -8239,6 +8326,39 @@ https://mirrors.ustc.edu.cn/alpine/latest-stable/community
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;printf&quot;</h4>
+<ul>
+<li><code>printf &quot;file &#39;%s&#39;\n&quot; *.m4a | sort &gt; list.txt</code> # For files<pre><code>file &#39;output01.m4a&#39;
+file &#39;output02.m4a&#39;
+...
+</code></pre>
+<ul>
+<li><code>$(&lt;files.txt)</code> # For a file containing the filenames (Replace <code>*.m4a</code> with it)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>&lt;files.txt</code> # File redirection (Open the file and send its content to whatever is reading from standard input)<ul>
+<li><code>$(&lt;files.txt)</code> is faster than <code>$(cat files.txt)</code> (Because it reads the file directly)</li>
+</ul>
+</li>
+<li><code>$()</code> # Command substitution (Execute the command inside and replace it with the output)</li>
+<li><code>%s</code> # Insert a string here (Placeholder)</li>
+<li><code>\n</code> # Newline</li>
+<li>Because it is better than <code>sed</code>.<ul>
+<li>No regex needed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Rename file in batches</h4>
 <ul>
 <li><code>for file in *.m4a; do mv &quot;$file&quot; &quot;$(echo &quot;$file&quot; | sed -E &#39;s/\[[0-9]+\]//g&#39;)&quot;; done</code></li>
@@ -9098,6 +9218,29 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4>Some tips in iPhone 14 Pro</h4>
 <ul>
+<li>Bookmarklet (e.g. duplicate tab)<ul>
+<li>Share icon - Add Bookmark - Save (Name it like Duplicate Tab) - Bookmarks icon - Long press the bookmark to edit - <code>javascript:(function(){window.open(location.href,&#39;_blank&#39;).focus();})();</code> (Replace URL with it) - Save</li>
+<li>Warning: It doesn&#39;t work on <code>https://gist.githubusercontent.com</code> (Or <code>https://raw.githubusercontent.com</code>)</li>
+</ul>
+</li>
+<li>Spotlight (Hide files and content from Spotlight search)<ul>
+<li>Settings - Siri &amp; Search - Files - Disable &#39;Show Content in Search&#39;</li>
+<li>Because I usually search for shortcuts and apps, I want them to apeear at the top instead of irrelevant files.</li>
+<li>Disable &#39;Show App in Search&#39; (For specific app) if you want to search for a shortcut, but what appears at the top is an irrelevant application</li>
+</ul>
+</li>
+<li>Widget (e.g. Click a Scriptable widget to run a shortcut)<ul>
+<li><code>Open URL</code> # When Interacting</li>
+<li><code>shortcuts://run-shortcut?name=Todo</code> # URL</li>
+<li>Comment out <code>xxx.url = &quot;some-url&quot;</code> in the JavaScript code to ensure the URL can be opened</li>
+<li>Because onece you use <code>.url</code> in the JavaScript code, this setting will be overwritten</li>
+<li>Recommend placing a &#39;Go to Home Screen&#39; action at the top of this shortcut</li>
+<li>Because tapping the Scriptable widget will open Scriptable and Shortcuts before running the shortcut</li>
+<li>Long-press on the Home Screen - Tap &quot;+&quot; - Pick an app - Choose a widget size - Tap Add Widget</li>
+<li>Drag one widget on top of another (Become a stack)</li>
+<li><a href="https://redlib.nadeko.net/r/Scriptable/comments/lhjzaa/scrolling_stack_agenda/gmxknnb">https://redlib.nadeko.net/r/Scriptable/comments/lhjzaa/scrolling_stack_agenda/gmxknnb</a> # Apple doesn&#39;t support widget scrolling, so I used Smart Stack to fake it.</li>
+</ul>
+</li>
 <li>Podcasts<ul>
 <li>Follow Show - Library - Long press on the show - Settings - Oldest To Newest</li>
 <li><a href="https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o">https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o</a> # Display from the earliest episode instead of the latest one</li>
@@ -11563,6 +11706,12 @@ $
 <ul>
 <li><h4>Use &quot;awk&quot;</h4>
 <ul>
+<li><code>awk &#39;{printf &quot;%02d. %s\n&quot;, NR, $0}&#39; files.txt &gt; numbered.txt</code> # Print line number (2 digits) + <code>. </code> + full line<ul>
+<li><code>{}</code> # Action block (Run <code>printf</code> using <code>NR</code> and <code>$0</code>)</li>
+<li><code>%</code> # Placeholder (<code>NR</code> for first, <code>$0</code> for second)</li>
+<li><code>$0</code> # Whole line</li>
+</ul>
+</li>
 <li><code>awk -v RS=&#39;&#39; &#39;NR==1&#39;</code> # Extract the first paragraph<ul>
 <li><code>-v</code> # Assign value to variable</li>
 <li><code>RS</code> # Record separator</li>
@@ -13435,11 +13584,19 @@ togglePDFDarkMode();
 </ul>
 </li>
 <li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c copy output.wma</code> # Merge videos<ul>
-<li><code>vi fileList.txt</code><pre><code>file &#39;output01.wma&#39;
+<li><code>ls *.wma | sort | sed &quot;s/^/file &#39;/;s/$/&#39;/&quot; &gt; fileList.txt</code> # Generate file list<pre><code>file &#39;output01.wma&#39;
 file &#39;output02.wma&#39;
+...
 </code></pre>
 </li>
 <li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c:v copy -c:a aac -b:a 128K _20250527135448-1050-1350.mp4</code> # Solve the problem<pre><code>Could not find tag for codec pcm_alaw in stream #1, codec not currently supported in container
+</code></pre>
+</li>
+<li><code>ffmpeg -f concat -safe 0 -i fileList.txt -c:a libmp3lame -b:a 128k output.mp3</code> # Sovle the problem<pre><code># Re-encode once (slower but perfect)
+# Remove timestamp issues completely
+# Fixes small gaps/inconsistencies
+# Produces a &quot;proper&quot; continues file
+[mp3 @ 0x55d244686b80] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2040011366339 &gt;= 2040011366337
 </code></pre>
 </li>
 </ul>
@@ -13467,6 +13624,10 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code>sed &quot;s/^/file &#39;/;s/$/&#39;/&quot;</code> # Do this substitution, and then do this other substitution<ul>
+<li><code>;</code> # Seperator (The logic is the same as in Shell command)</li>
+</ul>
+</li>
 <li><code> sed &#39;$agit -C /root/.config/note/ pull origin development&#39; ~/.profile</code> # Append string to the last line<ul>
 <li><code>$</code> # Match the last line (<code>3</code>: The third line)</li>
 <li><code>a</code> # Append</li>
@@ -13519,6 +13680,25 @@ file &#39;output02.wma&#39;
 <li><img src="./assets/2023-04-30_20-54.png" alt="2023-04-30_20-54.png"></li>
 <li><code>man sed</code> # <code>/delete</code></li>
 <li>ChatGPT</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;nl&quot;</h4>
+<ul>
+<li><code>nl -w2 -s&#39;. &#39; files.txt</code> #</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-w</code> # Width of number</li>
+<li><code>-s</code> # Seperator of number</li>
+<li>Because to add line numbers to the contents of a file.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>man nl</code> # <code>/separator</code> <code>/width</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -19302,7 +19482,7 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>-P</code> # Port</li>
+<li><code>-P</code> # Port (Optional)</li>
 <li><code>root</code> # Replace it with your user</li>
 <li><code>192.168.10.100</code> # Replace it with your remote ip address</li>
 <li><code>/root/test.md</code> # Replace it with your remote file</li>
@@ -21978,9 +22158,14 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><code>kill-pane</code> # The same as <code>C-b x</code></li>
 <li><code>join-pane -t 1</code> # Join pane</li>
 <li><code>break-pane</code> # Break pane to a window</li>
-<li><code>move-window -t 2:2</code> # Move window to another session</li>
+<li><code>move-window -s 40:24 -t 20:</code> # Move window to another session</li>
 <li><code>kill-session -t 15</code> # Kill session target 15</li>
-<li><code>kill-window -t 1</code> # Kill window 1</li>
+<li><code>kill-window -t 40:24</code> # Kill window <code>24</code> inside session <code>40</code> (<session>:<window>)<pre><code>(6) - 40: 2 windows   ← session (name 40)
+(7) ├─&gt; - 1: bash-    ← window (index 1)
+(8) │   └─&gt; 0: bash*  ← pane (index 0)
+(9) ├─&gt; - 24: bash-
+</code></pre>
+</li>
 <li><code>kill-pane -t 1</code> # Kill pane 1</li>
 <li><code>C-b arrowKey</code> # Change the active pane</li>
 <li><code>split-window -h</code> # Horizontal</li>
@@ -22001,7 +22186,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 [ -z &quot;$TMUX&quot; ] &amp;&amp; tmux new-session &#39;vimwiki-sync.sh&#39;
 </code></pre>
 </li>
-<li><code>vim ~/.bashrc</code> # In Kitty on Linux<pre><code>SESSION=&quot;note&quot;
+<li><code>vim ~/.bashrc</code> # In Kitty on Linux<pre><code>SESSION=&quot;1&quot;
 
 # Check if tmux session named $SESSION exists
 if ! tmux has-session -t &quot;$SESSION&quot; &gt;/dev/null 2&gt;&amp;1; then
@@ -22089,7 +22274,7 @@ set -g base-index 1
 <li><a href="https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd">https://gist.github.com/russelldb/06873e0ad4f5ba1c4eec1b673ff4d4cd</a></li>
 <li><a href="https://github.com/tmux/tmux/wiki/Getting-Started">https://github.com/tmux/tmux/wiki/Getting-Started</a></li>
 <li><a href="https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/">https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -22217,9 +22402,7 @@ Temporarily changing some use flag for all packages might be the better option.
 <li><details><summary>logseq-0.8.8.ebuild</summary>
 <pre><code>
 # Copyright 1999-2022 Gentoo Authors
-# Distributed under the terms of the GNU General Public License v2
-
-<p>EAPI=8</p>
+# Distributed under the terms of the GNU General Public License v2<p>EAPI=8</p>
 <p>inherit unpacker</p>
 <p>DESCRIPTION=&quot;A privacy-first, open-source platform for knowledge management and collaboration&quot;
 HOMEPAGE=&quot;<a href="https://logseq.com/">https://logseq.com/</a>&quot;
@@ -22235,6 +22418,7 @@ KEYWORDS=&quot;~amd64&quot;</p>
 <p>BDEPEND=&quot;&quot;</p>
 <p>src_unpack() {
 unpack_zip ${A}
+
 }</p>
 <p>src_install() {</p>
 <pre><code>dodir &quot;/opt/logseq&quot;
