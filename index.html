@@ -43,85 +43,392 @@
 <body>
   <article class="markdown-body">
 <ul>
-<li><h4>Use &quot;podman&quot;</h4>
+<li><h4>Use &quot;appman&quot;</h4>
 <ul>
-<li><code>vim Dockerfile</code> # Define the container image<pre><code>FROM python:3.12-alpine
-
-RUN apk add --no-cache git ffmpeg gcc musl-dev python3-dev libffi-dev
-
-WORKDIR /app
-
-# Clone + Install yt-dlp (Do this only once, utilizing caching)
-RUN git clone https://github.com/4ft35t/yt-dlp.git &amp;&amp; \
-    cd yt-dlp &amp;&amp; \
-    git checkout fix-ximalaya-album &amp;&amp; \
-    pip install --no-cache-dir -e . --break-system-packages
-
-WORKDIR /workspace
-</code></pre>
-</li>
-<li><code>vim Makefile</code> # Automate build and run the container<pre><code>IMAGE_NAME := yt-dlp:custom
-PROXY      := http://host.docker.internal:7890
-
-# Default URL (can be overridden)
-URL ?= https://www.ximalaya.com/album/47769867
-
-# ================= build =================
-build:
-    podman build -t $(IMAGE_NAME) .
-
-# ================= run =================
-run:
-    podman run --rm -it \
-        -v &quot;$(PWD):/workspace:z&quot; \
-        -e http_proxy=$(PROXY) \
-        -e https_proxy=$(PROXY) \
-        -e no_proxy=&quot;localhost,127.0.0.1&quot; \
-        $(IMAGE_NAME) \
-        yt-dlp $(URL)
-
-# ================= run with args =================
-# Usage: make dl URL=xxx
-dl:
-    podman run --rm -it \
-        -v &quot;$(PWD):/workspace:z&quot; \
-        -e http_proxy=$(PROXY) \
-        -e https_proxy=$(PROXY) \
-        $(IMAGE_NAME) \
-        yt-dlp $(URL)
-
-# ================= shell =================
-shell:
-    podman run --rm -it \
-        -v &quot;$(PWD):/workspace:z&quot; \
-        -e http_proxy=$(PROXY) \
-        -e https_proxy=$(PROXY) \
-        $(IMAGE_NAME) \
-        sh
-
-# ================= clean =================
-clean:
-    podman rmi $(IMAGE_NAME) || true
-
-.PHONY: build run dl shell clean
-</code></pre>
-<ul>
-<li><code>make shell</code> #</li>
+<li><code>appman search rustdesk</code> # Search a package<ul>
+<li><code>install</code> # Replace <code>search</code> with it to install</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Because I want to manage AppImage using a single command.</li>
+<li>Install<pre><code>wget -q https://raw.githubusercontent.com/ivan-hc/AM/main/AM-INSTALLER &amp;&amp; chmod a+x ./AM-INSTALLER &amp;&amp; ./AM-INSTALLER &amp;&amp; rm ./AM-INSTALLER
+</code></pre>
+</li>
+<li>Uninstall<pre><code>rm ~/.local/bin/appman
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ivan-hc/AM">https://github.com/ivan-hc/AM</a> # <code>/wget</code></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use pastebin online</h4>
+<ul>
+<li><code>curl --upload-file help1.md https://paste.c-net.org</code> # Upload file</li>
+<li><code>curl --data &quot;Hello, world!&quot; https://paste.c-net.org</code> # Upload text</li>
+<li><code>curl https://paste.c-net.org/Example</code> # Download</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because I need to record some status text temporarily.<ul>
+<li>You can use this idea as a reference to generate your own services on Cloudflare.<pre><code class="language-javascript">// I won&#39;t paste thoughtless code here.
+// (To prevent difficulties during future maintenance)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>curl https://paste.c-net.org</code> # <code>/--data</code> <code>/--upload-file</code></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>I store the source code for some small projects (e.g. ani) under this directory (~/.local/src/). #idea<pre><code>yaoniplan@tux ~/.local/src/ani $ tree .
+.
+├── main.py
+├── pyproject.toml
+├── README.md
+└── uv.lock
+
+1 directory, 4 files
+yaoniplan@tux ~/.local/src/ani $
+</code></pre>
+<ul>
+<li>Because I don&#39;t wnat to create a separate GitHub repository for a small project.<ul>
+<li>And to manage them using a single dotfiles command.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>The abbreviation of &quot;the first quarter of the year&quot; is &quot;Q1&quot;</h4>
+<ul>
+<li><code>Q</code> # Quarter</li>
+<li><code>1</code> # The first</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because I often hear it in the financial reports of some commercial companies.<ul>
+<li>In three-month blocks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;matugen&quot;</h4>
+<ul>
+<li><code>matugen image /tmp/wallhaven-4g8o8q.jpg --source-color-index 0</code> # Generate a color scheme (Place it after the image switching command)</li>
+<li><code>vim ~/.config/matugen/config.toml</code> # Configure as needed<pre><code>[config]
+
+[config.wallpaper]
+# Set wallpaper automatically while generating a color scheme
+set = true
+command = &quot;awww img --transition-type any {{ image }}&quot;
+
+[templates.niri]
+input_path = &#39;~/.config/matugen/templates/niri-colors.kdl&#39;
+output_path = &#39;~/.config/niri/colors.kdl&#39;
+post_hook = &#39;niri msg action load-config-file&#39;
+
+[templates.mako]
+input_path = &#39;~/.config/matugen/templates/mako&#39;
+output_path = &#39;~/.config/mako/mako-colors&#39;
+post_hook = &#39;makoctl reload&#39;
+</code></pre>
+</li>
+<li>Niri<ul>
+<li><code>vim ~/.config/matugen/templates/niri-colors.kdl</code><pre><code>layout {
+    background-color &quot;transparent&quot;
+
+    focus-ring {
+        active-color   &quot;{{colors.primary.default.hex}}&quot;
+        inactive-color &quot;{{colors.outline.default.hex}}&quot;
+        urgent-color   &quot;{{colors.error.default.hex}}&quot;
+    }
+
+    border {
+        active-color   &quot;{{colors.primary.default.hex}}&quot;
+        inactive-color &quot;{{colors.outline.default.hex}}&quot;
+        urgent-color   &quot;{{colors.error.default.hex}}&quot;
+    }
+
+    shadow {
+        color &quot;{{colors.shadow.default.hex}}70&quot;
+    }
+
+    tab-indicator {
+        active-color   &quot;{{colors.primary.default.hex}}&quot;
+        inactive-color &quot;{{colors.outline.default.hex}}&quot;
+        urgent-color   &quot;{{colors.error.default.hex}}&quot;
+    }
+
+    insert-hint {
+        color &quot;{{colors.primary.default.hex}}80&quot;
+    }
+}
+
+// Set colors for application with focus ring
+window-rule {
+    focus-ring {
+        active-color &quot;{{colors.primary.default.hex}}&quot;
+        inactive-color &quot;{{colors.outline.default.hex}}&quot;
+        urgent-color &quot;{{colors.error.default.hex}}&quot;
+    }
+}
+</code></pre>
+</li>
+<li><code>vim ~/.config/niri/config.kdl</code><pre><code>layout {
+    focus-ring {
+        off
+    }
+    background-color &quot;transparent&quot;
+    border {
+        width 3
+    }
+    shadow {}
+}
+
+// Enable a focus-ring (And disable border) separately for a specific application
+window-rule {
+    match app-id=&quot;^dropdown$&quot;
+    
+    border { off }
+    
+    focus-ring {
+        on
+        width 3
+    }
+}
+
+include &quot;./colors.kdl&quot;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Mako<ul>
+<li><code>vim ~/.config/matugen/templates/mako</code><pre><code># Material You colors
+
+background-color={{colors.on_primary.default.hex}}
+text-color={{colors.tertiary.default.hex}}
+border-color={{colors.tertiary_container.default.hex}}
+# Per-mode settings
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}
+</code></pre>
+</li>
+<li><code>vim ~/.config/mako/config</code><pre><code>...
+# Add this line to the last line,
+# and there cannot be any syntax like`[xxx=xxx]` before it,
+# otherwise it will cause an error
+# `Unable to parse configuration file (fr.emersion.Mako.InvalidConfig)`
+include=~/.config/mako/mako-colors
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because I want the Niri&#39;s window border color to change automatically when the wallpaper is changed.</li>
+<li><code>nix profile install nixpkgs#matugen</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://niri-wm.github.io/niri/Configuration%3A-Include.html">https://niri-wm.github.io/niri/Configuration%3A-Include.html</a></li>
+<li><a href="https://github.com/InioX/matugen/blob/main/example/config.toml">https://github.com/InioX/matugen/blob/main/example/config.toml</a></li>
+<li><a href="https://github.com/InioX/matugen/issues/249#issuecomment-3807418299">https://github.com/InioX/matugen/issues/249#issuecomment-3807418299</a> # <code>/source color</code></li>
+<li><a href="https://github.com/InioX/matugen-themes/tree/main/templates">https://github.com/InioX/matugen-themes/tree/main/templates</a> # <code>/niri</code> <code>/mako</code></li>
+<li><a href="https://github.com/InioX/matugen-themes#niri">https://github.com/InioX/matugen-themes#niri</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Choose one with a wider range of applicability #idea</h4>
+<ul>
+<li>Shortcuts vs Python<ul>
+<li>I&#39;ve recently been writing some iPhone shortcuts to increase efficiency. (Automate some repetitive operations)</li>
+<li>However, I&#39;ve found that some features of programming languages are difficult to find corresponding operations within the first method.</li>
+<li>Secondly, I need to rewrite the script on the computer.</li>
+<li>Finally, I discovered that second method works on both mobile (iPhone + a-Shell) and desktop platforms.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Of course, this doesn&#39;t mean I don&#39;t need to to use the Shortcuts actions at all;<ul>
+<li>rather, it means we use this software (a-Shell or Scriptable) to replace some operations that are difficult to perform.</li>
+<li>We can learn from its design philosophy, and it provides an interactive interface</li>
+</ul>
+</li>
+<li>The &#39;Run Script&#39; action of Scriptable (JavaScript) can also be used for multi-line text.<ul>
+<li>Use <code>args.shortcutParameter</code> to pass a file to avoid special characters</li>
+<li>It can also be used for asynchronous operations.</li>
+<li><a href="https://docs.jellycuts.com/Documentation/Scriptable/runScriptInline.html">https://docs.jellycuts.com/Documentation/Scriptable/runScriptInline.html</a></li>
+</ul>
+</li>
+<li>Selection criteria<ul>
+<li>Solve just one problem, or a whole class of problems</li>
+</ul>
+</li>
+<li>Advantages<ul>
+<li>Reduce future switching costs (Save time and effort in the future)</li>
+<li>Create compound value (One-time investment, multiple returns)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Learning from its strengths and compensating for its weaknesses</li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;quickshell&quot;</h4>
+<ul>
+<li><code>QT_QUICK_BACKEND=software quickshell -c ~/.config/quickshell/</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix proifle install nixpkgs#quickshell</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;z&quot;</h4>
+<ul>
+<li><code>z ~/.config/niri/</code> # The same as <code>cd ~/.config/niri/</code><ul>
+<li><code>z niri</code> # cd into directory (highest ranked) matching niri</li>
+<li><code>zi</code> # Interact using fzf (View the cd history)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile install nixpkgs#zoxide</code> # Install dependencies</li>
+<li><code>vim ~/.bashrc</code> # Setup it on bash shell<pre><code>## Replace the `cd` command (The same as `alias cd=z`)
+#eval &quot;$(zoxide init --cmd cd bash)&quot;
+eval &quot;$(zoxide init bash)&quot;
+</code></pre>
+<ul>
+<li><code>source ~/.bashrc</code> # Make changes effective</li>
+</ul>
+</li>
+<li>Because to experience a smarter cd command.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ajeetdsouza/zoxide#getting-started">https://github.com/ajeetdsouza/zoxide#getting-started</a> # <code>/zoxide init</code> <code>/--cmd</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;podman&quot;</h4>
+<ul>
+<li><code>vim Dockerfile</code> # Define the container image<pre><code>FROM python:3.12-alpine
+
+RUN apk add --no-cache git ffmpeg
+
+RUN git clone https://github.com/4ft35t/yt-dlp.git &amp;&amp; \
+    cd yt-dlp &amp;&amp; \
+    git checkout fix-ximalaya-album
+</code></pre>
+</li>
+<li><code>vim Makefile</code> # Build and run the container automatically<pre><code>IMAGE=yt-dlp-test
+PROXY=http://host.docker.internal:7890
+
+build:
+    podman build --tag $(IMAGE_NAME) .
+
+shell:
+    podman run --rm --interactive --tty \
+      --volume &quot;$(PWD):/workspace&quot; \
+      --wordir /yt-dlp \
+      --env http_proxy=$(PROXY) \
+      --env https_proxy=$(PROXY) \
+      $(IMAGE) \
+      sh
+
+clean:
+    podman rmi $(IMAGE) || true
+</code></pre>
+<ul>
+<li><code>--volume</code> # Mount a volume into the container (Similar to a shared directory)</li>
+<li><code>--workdir</code> # Set the default working directory inside the container</li>
+<li><code>--env</code> # Set environment variables in container</li>
+<li><code>make build</code> # Build the image (Contenient to reuse image)</li>
+<li><code>make shell</code> # Run that command into the shell environment</li>
+<li><code>./yt-dlp.sh &quot;https://example.com/sample.mp3&quot;</code> # Download to <code>/yt-dlp</code></li>
+<li><code>cp sample.mp3 /workspace</code> # Copy to <code>/workspace</code> (Shared directory)</li>
+<li>Use <code>Tab</code> (Instead of spaces) to solve the problem<pre><code>Makefile:17: *** missing separator.  Stop.
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>podman images</code> # List images (<code>--all</code>)</li>
+<li><code>podman start qinglong</code> # Start the container</li>
+<li><code>podman stop qinglong || podman kill qinglong</code> # Stop (Or kill) the running container</li>
+<li><code>podman run -d --name qinglong -p 5700:5700 -v ~/.config/qinglong:/ql/data docker.io/whyour/qinglong:debian</code> # Run a container in the background</li>
+<li><code>podman exec qinglong task Cp0204_ChinaTelecomMonitor/telecom_monitor.py now</code> # Execute a command inside a running container<ul>
+<li><code>env --unset=http_proxy --unset=https_proxy</code> # Remove variable from the environment (Place the command after container name)</li>
+</ul>
+</li>
+<li>Enable proxy (For containers)<pre><code>-e http_proxy=http://host.docker.internal:7890
+-e https_proxy=http://host.docker.internal:7890
+</code></pre>
+</li>
 <li><code>doas pacman --sync --refresh podman</code> # Install dependencies</li>
 <li>Advantages: rootless, daemonless</li>
 <li>Because I need to test some commands, but I don&#39;t want to pollute the host machine (environment isolation).<pre><code>git clone https://github.com/4ft35t/yt-dlp.git &amp;&amp; cd yt-dlp &amp;&amp; git checkout fix-ximalaya-album
-./yt-dlp.sh https://www.ximalaya.com/album/4555085
+./yt-dlp.sh --simulate https://www.ximalaya.com/album/4555085
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918">https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918</a> # test commands</li>
+<li><code>podman exec --help</code></li>
+<li><code>podman run --help</code></li>
+<li><code>man env</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -153,6 +460,40 @@ clean:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.local/share/streamlink/plugins/hlsadskip.py</code> # Customize a plugin<ul>
+<li>Warning: Not recommended (Because there are not many people writing scripts)</li>
+<li>I modify the official script (<code>/usr/lib/python3.14/site-packages/streamlink/stream/hls/hls.py</code>), but because I want to identify advertising feature of (<code>https://example.com/api.php/provide/vod</code>), there are many types that need to be marked.<pre><code>1. /20260604/*
+https://example.com/20260603/sample.ts
+https://example.com/20260603/sample.ts
+https://example.com/20260604/sample.ts
+https://example.com/20260604/sample.ts
+...
+https://example.com/20260603/sample.ts
+https://example.com/20260603/sample.ts
+2. sample59836*
+https://example.com/sample000072.ts
+https://example.com/sample000073.ts
+https://example.com/sample598368.ts
+https://example.com/sample598369.ts
+...
+https://example.com/sample000074.ts
+https://example.com/sample000075.ts
+3. ... (e.g. file name has no characteristics)
+</code></pre>
+</li>
+<li><code>python -c &quot;import streamlink; print(streamlink.__path__)&quot;</code> # Refer to official plugins</li>
+</ul>
+</li>
+<li><code>curl -s $(streamlink --stream-url example.com/index.m3u8 best)</code> # Check the HLS playlist content</li>
+<li><code>vim ~/.config/streamlink/config</code> # Configure as needed<pre><code># Ignore every segment that ends with 0493367.ts, 0493368.ts, ...
+hls-segment-ignore-names=0493367,0493368,0493369,0493370,0493371,0493372,0493373
+# Set the default stream quality to best (run without `best` at the end)
+default-stream=best
+</code></pre>
+<ul>
+<li><code>--config ~/.local/src/ani/streamlink.conf</code> # Load custom config file</li>
+</ul>
+</li>
 <li><code>--hls-start-offset 2:00</code> # Skip the first 2 minutes (Recommended, because it loads faster)<ul>
 <li><code>--player-passthrough hls</code> # Hand the raw HLS URL directly to mpv (instead of piping data)</li>
 <li><code>--player-args &#39;--start 00:02:00&#39;</code> # Combine this option to achive the function of skipping the opening theme (But it will be slower)</li>
@@ -160,12 +501,21 @@ clean:
 </li>
 <li><code>--stream-segment-threads 3</code> # Use 3 threads to download segments in parallel</li>
 <li><code>--player-no-close</code> # Prevent Streamlink from terminating the player when the stream ends</li>
-<li><code>--player-args &#39;--speed=2&#39;</code> # Pass arguments to the player</li>
+<li><code>--player-args &#39;--speed=2&#39;</code> # Pass arguments to the player<ul>
+<li><code>--player-args &quot;--include=\&quot;$HOME/.local/src/ani/mpv.conf\&quot; --force-media-title=\&quot;$vod_name / $vod_title\&quot;&quot;</code><pre><code># Wrap all mpv args in a double quoted string to solve the problem
+error: No plugin can handle URL: --force-media-title=剑风传奇 / 第08集
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Because to speed up buffering for an HLS link. (Make playback smoother)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://streamlink.github.io/cli/plugin-sideloading.html">https://streamlink.github.io/cli/plugin-sideloading.html</a></li>
+<li><a href="https://github.com/streamlink/streamlink/discussions/3946#discussioncomment-1246504">https://github.com/streamlink/streamlink/discussions/3946#discussioncomment-1246504</a> # HLS playlist</li>
 <li><a href="https://billy2011.github.io/streamlink-27/issues.html#multi-threaded-streaming">https://billy2011.github.io/streamlink-27/issues.html#multi-threaded-streaming</a></li>
+<li><code>man streamlink</code> # <code>/hls-segment-ignore-names</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -365,26 +715,9 @@ TTYVTDisallocate=true
 </ul>
 <hr>
 <ul>
-<li><h4>Type the midline horizontal ellipsis (⋯) in Linux</h4>
-<ul>
-<li><code>Ctrl-Shift-u</code> # Unicode</li>
-<li><code>.0</code> # Choose it</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Because the menu button of this Cloudflare website uses this character.</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li>Artificial intelligence</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
 <li><h4>Use &quot;swayimg&quot;</h4>
 <ul>
-<li><code>swayimg --type image/png | swayimg -</code> # From clipboard<ul>
+<li><code>wl-paste --type image/png | swayimg -</code> # From clipboard<ul>
 <li><code>swayimg &quot;exec://curl -sL https://example.com/sample.png&quot;</code> # From a URL to an image</li>
 <li><code>curl -sL https://example.com/sample.png | swayimg -</code> # Method two</li>
 </ul>
@@ -428,8 +761,30 @@ l = step_right 10
 <li>Hyprland will cause the computer fan to spin wildly</li>
 </ul>
 </li>
+<li><code>Super-v</code> # Toggle between floating and tiling<ul>
+<li><code>Super-Shift-h/j/k/l</code> # Move window (Prevent floating windows from obscuring the content of tiled windows)</li>
+</ul>
+</li>
 <li><code>Super-Shift-p</code> # Power off the monitor (sleep display)</li>
+<li><code>niri msg outputs</code> # View monitor name (e.g. LVDS-1) and resolution (e.g. 1366x768)</li>
 <li><code>niri --version</code> # Print version</li>
+<li>Use scratchpad<ul>
+<li><code>nix profile install github.com:argosnothing/niri-scratchpad-rs</code> # Install dependencies</li>
+<li><code>vim ~/.config/niri/config.kdl</code><pre><code>// Set matched window to floating
+window-rule {
+    match app-id &quot;^chrome-.*-Default$&quot;
+    match app-id &quot;^note$&quot;
+    open-floating true
+}
+// Spawn if not running
+Mod+Space { spawn &quot;niri-scratchpad&quot; &quot;target&quot; &quot;--spawn&quot; &quot;alacritty --class note -e vim -c VimwikiMakeDiaryNote&quot; &quot;appid&quot; &quot;note&quot;; }
+// Define a static workspace named `stash`
+workspace &quot;stash&quot; { }
+</code></pre>
+</li>
+<li><a href="https://github.com/argosnothing/niri-scratchpad-rs">https://github.com/argosnothing/niri-scratchpad-rs</a></li>
+</ul>
+</li>
 <li><code>Alt-Tab</code> # Switch windows<ul>
 <li><code>niri msg -j windows</code> # Get a list of open windows</li>
 <li><code>niri msg action focus-window --id 12</code> # Focus a window by id</li>
@@ -448,16 +803,46 @@ l = step_right 10
 <li><code>Super-q</code> # Quit focused window</li>
 <li><code>Super-t</code> # Open terminal</li>
 <li><code>Super-f</code> # Maximize column (Toggle)<ul>
-<li><code>Super-Shift-f</code> # Fullscreen window (Toggle)</li>
+<li><code>Super-Shift-f</code> # Fullscreen window (Or <code>Super-m</code>)</li>
 </ul>
 </li>
 <li><code>Super-[</code> # Move window left (Opposite: <code>Super-]</code>)</li>
 <li><code>Super-Shift-e</code> # Exit Niri (To test whether the hidden feature works at startup)</li>
-<li><code>Super-r</code> # Toggle between preset column widths (e.g. one third, one half and two thirds, opposite about heights: <code>Super-Shift-r</code>)<ul>
+<li><code>Super-r</code> # Toggle between preset column widths (e.g. one third, one half and two thirds, opposite: <code>Super-Shift-r</code>)<ul>
 <li><code>Super-Shift-=</code> # Increase column height by 10% (Opposite: <code>Super-Shift--</code>)</li>
 </ul>
 </li>
-<li><code>vim ~/.config/niri/config.kdl</code> # Configure as needed<pre><code>// Input device configuration.
+<li><code>vim ~/.config/niri/config.kdl</code> # Configure as needed<pre><code>// Make mpv config profile (pause_on_focus_lost_video) effective when switching Niri workspace
+debug {
+    deactivate-unfocused-windows
+}
+// Enable a focus-ring (And disable border) separately for a specific application
+window-rule {
+    match app-id=&quot;^dropdown$&quot;
+
+    border { off }
+
+    focus-ring {
+        on
+        width 3
+        active-color &quot;#7fc8ff&quot;
+        inactive-color &quot;#505050&quot;
+    }
+}
+layout {
+    // If the workspace has only one window, center it.
+    always-center-single-column
+}
+// Enable blur
+window-rule {
+    exclude app-id=&quot;^mpv$&quot;
+    opacity 0.8
+    background-effect {
+        xray true
+        blur true
+    }
+}
+// Input device configuration.
 input {
     // Make the mouse warp to the center of newly focused windows (Even if the mouse is outside the window)
     warp-mouse-to-focus mode=&quot;center-xy-always&quot;
@@ -490,6 +875,8 @@ hotkey-overlay {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+    // The exclude directive is particularly suitable for special cases.
+    exclude app-id=&quot;^dropdown$&quot;
 }
 // Uncomment to disable title bar
 prefer-no-csd
@@ -513,11 +900,19 @@ binds {
     //Mod+D { spawn &quot;sh&quot; &quot;-c&quot; &quot;tofi-run | sh&quot;; }
     Mod+D { spawn-sh &quot;tofi-run | sh&quot;; }
 }
+
+// Include other configuration files
+// Since it&#39;s executed sequentially, remember to put it at the bottom.
+include &quot;./colors.kdl&quot;
 </code></pre>
 </li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://niri-wm.github.io/niri/Configuration%3A-Debug-Options.html#deactivate-unfocused-windows">https://niri-wm.github.io/niri/Configuration%3A-Debug-Options.html#deactivate-unfocused-windows</a></li>
+<li><a href="https://niri-wm.github.io/niri/Configuration%3A-Include.html">https://niri-wm.github.io/niri/Configuration%3A-Include.html</a> # <code>/include</code></li>
+<li><a href="https://niri-wm.github.io/niri/Configuration:-Layout.html">https://niri-wm.github.io/niri/Configuration:-Layout.html</a> # <code>/center</code></li>
+<li><a href="https://niri-wm.github.io/niri/Configuration:-Window-Rules">https://niri-wm.github.io/niri/Configuration:-Window-Rules</a> # <code>/exclude</code></li>
 <li><a href="https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus">https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus</a></li>
 <li><a href="https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html">https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html</a> # <code>/round</code></li>
 <li><a href="https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl">https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl</a> # <code>/overview</code></li>
@@ -627,6 +1022,11 @@ binds {
 <ul>
 <li><h4>Use &quot;qinglong&quot;</h4>
 <ul>
+<li>Disable hitokoto (a one-sentence quote) for a specific Python script<pre><code>from notify import send # Qinglong built-in notify
+...
+send(&quot;Daily&quot;, content, HITOKOTO=&quot;false&quot;) # `, HITOKOTO=&quot;false&quot;`: Disable it
+</code></pre>
+</li>
 <li>Add random delays # &#39;Before Execution&#39; of &#39;Scheduled Tasks&#39;<pre><code>RANDOM_DELAY=$((RANDOM % 3600))
 echo &quot;随机延时 ${RANDOM_DELAY} 秒&quot;
 sleep ${RANDOM_DELAY}
@@ -655,6 +1055,7 @@ sleep ${RANDOM_DELAY}
 </li>
 <li>China Telecom phone charges, calls, and data usage monitoring<ul>
 <li><code>requests</code> # &#39;Python3&#39; of &#39;Dependency Management&#39;</li>
+<li><code>pycryptodome</code> # &#39;Python3&#39; of &#39;Dependency Management&#39;</li>
 <li><code>TELECOM_USER</code> # &#39;Name&#39; of &#39;Environment Variables&#39;</li>
 <li><code>189xxxx5678password</code> # &#39;Value&#39; of &#39;Environment Variables&#39;</li>
 <li><code>ql repo https://github.com/Cp0204/ChinaTelecomMonitor.git &quot;telecom_monitor&quot; &quot;&quot; &quot;telecom_class|notify&quot;</code> # Paste in &#39;Name&#39; of &#39;Subscription Management&#39;</li>
@@ -668,9 +1069,10 @@ sleep ${RANDOM_DELAY}
 </ul>
 </li>
 <li>iKuuu check in<ul>
-<li><code>IKUUU_EMAIL</code> # &#39;Name&#39; of &#39;Environment Variables&#39;</li>
-<li><code>hello@world.com</code> # &#39;Value&#39; of &#39;Environment Variables&#39;</li>
-<li><code>IKUUU_PWD</code> # &#39;Name&#39; of &#39;Environemnt Variables&#39;</li>
+<li><code>IKUUU_COOKIE</code> # &#39;Name&#39; of &#39;Environemnt Variables&#39;<pre><code># Get cookie by typing this code in Chromium Console
+document.cookie
+</code></pre>
+</li>
 <li><code>xxxxxx</code> # &#39;Value&#39; of &#39;Environment Variables&#39;</li>
 <li><code>axios</code> # &#39;NodeJS&#39; of &#39;Dependency Management&#39;</li>
 <li><code>ql repo https://github.com/zb81/ql-ikuuu.git &quot;checkin|traffic&quot; &quot;&quot; &quot;qlApi|utils&quot;</code> # Paste in &#39;Name&#39; of &#39;Subscription Management&#39;</li>
@@ -682,6 +1084,7 @@ sleep ${RANDOM_DELAY}
 <li><code>ql repo https://github.com/Chikit-L/AutoSign.git &quot;huaxiashuyu.js|yuchen.py&quot; &quot;&quot; &quot;&quot; &quot;&quot;</code> # Add specific scripts from subscription to scheduled tasks<ul>
 <li><code>&quot;huaxiashuyu.js|yuchen.py&quot;</code> # Whitelist</li>
 <li><a href="https://github.com/Chikit-L/AutoSign/issues/1">https://github.com/Chikit-L/AutoSign/issues/1</a></li>
+<li><a href="https://github.com/Chikit-L/AutoSign/issues/2">https://github.com/Chikit-L/AutoSign/issues/2</a></li>
 </ul>
 </li>
 <li>天翼云盘签到<pre><code>vistal8/tianyiyun # Name
@@ -740,12 +1143,11 @@ Android # Platform
 <li><code>vi ~/.config/qinglong/compose.yaml</code><pre><code>services:
   qinglong:
     image: whyour/qinglong:latest
+    container_name: qinglong
     volumes:
-      - ./data:/ql/data
+      - ~/.config/qinglong:/ql/data
     ports:
       - &quot;5700:5700&quot;
-    environment:
-      QlBaseUrl: &#39;/&#39;
     restart: always
 </code></pre>
 </li>
@@ -782,6 +1184,7 @@ Android # Platform
 <li><a href="https://github.com/whyour/qinglong/issues/1151">https://github.com/whyour/qinglong/issues/1151</a> # API</li>
 <li><a href="https://github.com/whyour/qinglong/blob/master/docker/docker-compose.yml">https://github.com/whyour/qinglong/blob/master/docker/docker-compose.yml</a></li>
 <li><a href="https://qinglong.ukenn.top/#/%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/put_crons_run">https://qinglong.ukenn.top/#/定时任务/put_crons_run</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -3464,11 +3867,27 @@ EOF
 <ul>
 <li><h4>Use &quot;a-shell&quot;</h4>
 <ul>
+<li><code>openurl vlc://https://example.com/sample.mp4</code> # Open with url scheme</li>
 <li><code>open &quot;https://yaoniplan.eu.org&quot;</code> # Open url in browser</li>
 <li><code>help -l</code> # List all installed packages</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Toolbar<ul>
+<li><code>config --toolbar</code> #  # Create a configuration file to change the toolbar</li>
+<li><code>vim ~/Documents/.toolbarDefinition</code> # Configure as needed<pre><code># Bind `Ctrl-l` (`\u{000C}`: ASCII) to the trash button icon
+trash              insertString    \u{000C}
+# Arrows:
+# This is the default on iPhones:
+#arrow.left.and.right           systemAction            left.right
+#arrow.up.and.down                      systemAction            up.down
+# You can also use the four-arrows-button if you need more space for other buttons:
+arrow.up.and.down.and.arrow.left.and.right              systemAction    up.down.left.right
+</code></pre>
+</li>
+<li>Restart to make changes effective</li>
+</ul>
+</li>
 <li>Bookmark<ul>
 <li><code>renamemark Documents_1 Shortcuts</code> # Rename bookmark</li>
 <li><code>jump iCloud</code> # Jump to the bookmark</li>
@@ -3502,10 +3921,17 @@ TOKEN = os.getenv(&quot;TODOIST_API_TOKEN&quot;)
 <li><a href="https://doist.github.io/todoist-api-python/">https://doist.github.io/todoist-api-python/</a></li>
 </ul>
 </li>
-<li><code>vim ~/Documents/.bashrc</code> # Create aliases<pre><code>alias ll=ls -l
+<li><code>vim ~/Documents/.profile</code> # Configure as needed<pre><code># Set alias
+alias ll=&#39;ls -l&#39;
+# Set PATH to execute scripts anywhere
+export PATH=$HOME/Documents/.local/bin:$PATH
+# Set PS1 to enable color
+#export PS1=&#39;[\W]\$&#39;
+export PS1=&#39;\[\e[1;32m\][\W]\[\e[1;34m\]\$\[\e[0m\] &#39;
 </code></pre>
 <ul>
-<li><code>source ~/Documents/.bashrc</code> # Make changes effective</li>
+<li><a href="https://github.com/holzschu/a-shell/issues/37">https://github.com/holzschu/a-shell/issues/37</a> # The Vi mode is not currently supported for shell</li>
+<li><code>source ~/Documents/.profile</code> # Make changes effective (Or restart)</li>
 </ul>
 </li>
 <li>Install yt-dlp<pre><code>pip install chardet requests certifi mutagen -q --disable-pip-version-check --upgrade
@@ -3516,6 +3942,7 @@ pip install yt-dlp yt-dlp-ejs yt-dlp-apple-webkit-jsi -q --disable-pip-version-c
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/holzschu/a-shell/issues/607#issuecomment-1500293770">https://github.com/holzschu/a-shell/issues/607#issuecomment-1500293770</a> # <code>$PATH</code></li>
 <li><a href="https://github.com/holzschu/a-shell">https://github.com/holzschu/a-shell</a> # <code>/pickFolder</code></li>
 <li><a href="https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452">https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452</a> # <code>open url</code></li>
 <li><a href="https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212">https://github.com/holzschu/a-shell/discussions/533#discussioncomment-5502212</a></li>
@@ -3648,7 +4075,9 @@ pip install yt-dlp yt-dlp-ejs yt-dlp-apple-webkit-jsi -q --disable-pip-version-c
 <li><code>doas vim /etc/systemd/system/sing-box.service</code> # Run at boot time<pre><code>[Unit]
 Description=sing-box service
 Documentation=https://sing-box.sagernet.org
-After=network.target nss-lookup.target
+# Add `network-online.target` to make sure the network is online before starting sing-box
+# to prevent traffic from devices connected to the hotspot from bypassing the proxy
+After=network.target nss-lookup.target network-online.target
 
 [Service]
 CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_SYS_PTRACE CAP_DAC_READ_SEARCH
@@ -3665,8 +4094,11 @@ WantedBy=multi-user.target
 <ul>
 <li><code>doas systemctl enable sing-box --now</code> # Enable it now</li>
 <li><code>systemctl status sing-box</code> # Check status (Green circle instead of gray one)</li>
+<li><code>doas systemctl daemon-reload</code> # Reload after modified the unit file<pre><code>Warning: The unit file, source configuration file or drop-ins of sing-box.service changed on disk. Run &#39;systemctl daemon-reload&#39; to reload units.
+</code></pre>
+</li>
 <li><code>doas systemctl restart sing-box</code> # Restart to update after modifying <em>yourConfig.json</em></li>
-<li><a href="https://github.com/SagerNet/sing-box/blob/dev-next/release/local/sing-box.service">https://github.com/SagerNet/sing-box/blob/dev-next/release/local/sing-box.service</a></li>
+<li><a href="https://github.com/SagerNet/sing-box/blob/testing/release/local/sing-box.service">https://github.com/SagerNet/sing-box/blob/testing/release/local/sing-box.service</a></li>
 </ul>
 </li>
 <li><code>doas sing-box run -c ~/.config/sing-box/config.json</code> # Replace <em>config.json</em> with your configuration (Make sure in the Tun mode)<ul>
@@ -3759,7 +4191,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Install dependencies<ul>
-<li><code>doas mv sing-box-1.10.0-alpha.16-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
+<li><code>doas mv sing-box-1.12.12-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
 <li><code>nix profile install nixpkgs#sing-box</code> # Another method</li>
 </ul>
 </li>
@@ -5098,6 +5530,10 @@ show=run
 <ul>
 <li><h4>Use &quot;date&quot;</h4>
 <ul>
+<li><code>date --date=&quot;now + 6 minutes&quot; &#39;+%H:%M&#39;</code> # Print the current time plus 6 minutes<ul>
+<li>(e.g. 23:47 -&gt; 23:53)</li>
+</ul>
+</li>
 <li><code>date +%s</code> # Seconds since the Epoch (1970-01-01 00:00 UTC)<ul>
 <li>(e.g. 1712921641)</li>
 </ul>
@@ -5582,15 +6018,20 @@ tooltip {
 <ul>
 <li><h4>Use &quot;uosc&quot;</h4>
 <ul>
-<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code> # Configure as needed<pre><code># Hide UI when mpv autohides the cursor
+<li><code>vim ~/.config/mpv/script-opts/uosc.conf</code> # Configure as needed<pre><code># Hide logo and &#39;Drop files and URLs to play here&#39;
+disable_elements=idle_indicator
+# Hide UI when mpv autohides the cursor
 # Avoid the problem of always being on the screen
 autohide=yes
 # Load next automatically
+# You can add `script-opts=uosc-autoload=no` to customized mpv config file (e.g. ~/.local/src/ani/mpv.conf) to disable
 autoload=yes
 </code></pre>
 </li>
 <li><code>vim ~/.config/mpv/input.conf</code> # Configure as needed<pre><code># Play next in playlist
 Enter script-binding uosc/next
+# Play previous in playlist
+Shift+Enter script-binding uosc/prev
 # Display playlist (Or `uosc/playlist`)
 Ctrl+p script-binding uosc/items
 # Toggle the entire UI
@@ -5605,7 +6046,9 @@ Tab script-binding uosc/toggle-ui
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples">https://github.com/tomasklaen/uosc/blob/e6a5fd981dadcc2a0d30ded64b7bcbd4481692cd/README.md#examples</a></li>
+<li><a href="https://github.com/tomasklaen/uosc/discussions/1004">https://github.com/tomasklaen/uosc/discussions/1004</a> # <code>/script-opts</code></li>
+<li><a href="https://github.com/tomasklaen/uosc/discussions/951">https://github.com/tomasklaen/uosc/discussions/951</a> # <code>/idle_indicator</code></li>
+<li><a href="https://github.com/tomasklaen/uosc/blob/main/README.md#examples">https://github.com/tomasklaen/uosc/blob/main/README.md#examples</a></li>
 <li><a href="https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442">https://github.com/tomasklaen/uosc/issues/464#issuecomment-1459930442</a></li>
 <li><a href="https://github.com/tomasklaen/uosc#linux--macos">https://github.com/tomasklaen/uosc#linux--macos</a></li>
 <li>osc # On-screen controller</li>
@@ -6319,6 +6762,17 @@ url-is-set=true
 <li><code>uv init</code> # Create a new Python project in the current directory</li>
 <li><code>uv add selenium</code> # Add a selenium package to the project</li>
 <li><code>uv run checkIn.py</code> # Run a script in the project&#39;s environment</li>
+<li><code>uv tool install --editable .</code> # Install globally in development mode (Update by modifying the source code)<pre><code># Solve the problem about
+# &#39;No executables are provided by package `ani`; removing tool&#39;
+# pyproject.toml
+[project.scripts]
+ani = &quot;main:main&quot;
+</code></pre>
+</li>
+<li><code>vim ~/.local/bin/ani</code> # Add to the executable environment if the above method sometimes does not work<pre><code>#!/usr/bin/env sh
+exec uv run --directory ~/.local/src/ani main.py
+</code></pre>
+</li>
 </ul>
 </li>
 <li><code>uv pip install anki</code> # Replace <code>install</code> with <code>uninstall</code> to uninstall it<ul>
@@ -6367,25 +6821,25 @@ url-is-set=true
 </ul>
 <hr>
 <ul>
-<li><h4>Use &quot;swww&quot;</h4>
+<li><h4>Use &quot;awww&quot;</h4>
 <ul>
-<li><code>swww query</code> # query information</li>
-<li><code>swww img /usr/share/hyprland/wall_anime_2K.png</code><ul>
-<li><code>swww-daemon</code> # Run in the background as a daemon at boot time</li>
+<li><code>awww query</code> # Query information</li>
+<li><code>awww img /usr/share/hypr/wall_anime_2K.png</code> # Use this image as wallpaper<ul>
+<li><code>awww-daemon</code> # Run in the background as a daemon at boot time</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>--transition-type any</code> # Fashion</li>
-<li><code>nix profile install nixpkgs#swww</code> # Install dependencies</li>
+<li><code>nix profile install nixpkgs#awww</code> # Install dependencies</li>
 <li>Because to set wallpaper on Wayland.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/LGFae/swww#usage">https://github.com/LGFae/swww#usage</a></li>
+<li><a href="https://codeberg.org/LGFae/awww#usage">https://codeberg.org/LGFae/awww#usage</a></li>
 <li><a href="https://wiki.hyprland.org/Useful-Utilities/Wallpapers/">https://wiki.hyprland.org/Useful-Utilities/Wallpapers/</a></li>
-<li><code>swww img --help | less</code> # <code>/transition</code></li>
+<li><code>awww img --help | less</code> # <code>/transition</code></li>
 </ul>
 </li>
 </ul>
@@ -6601,7 +7055,34 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <ul>
 <li><h4>Use &quot;jq&quot;</h4>
 <ul>
+<li><code>curl https://example.com/xxx | jq -f patch.jq &gt; config.json.01</code><pre><code>.route.rules |= (
+[
+  {
+    domain_suffix: [
+      &quot;apple.com&quot;,
+      &quot;icloud.com&quot;,
+      &quot;icloud-content.com&quot;,
+      &quot;mzstatic.com&quot;,
+      &quot;appstore.com&quot;,
+      &quot;apple-cloudkit.com&quot;
+    ]
+    outbound: &quot;direct&quot;
+  }
+] + .
+)
+</code></pre>
+<ul>
+<li><code>.route.rules</code> # Modify this field</li>
+<li><code>|= ( ... )</code> # Update the selected value in place</li>
+<li><code>[ ... ] + .</code> # Prepend to the existing array</li>
+</ul>
+</li>
 <li><code>echo &quot;$response&quot; | jq --raw-output &#39;.content&#39;</code> # Replace <code>.content</code> with the desired key for filtering</li>
+<li><code>curl -s https://example.com/xxx | jq &#39;.url.current = &quot;https://example.com/next.mp3&quot; | .url.next = &quot;https://example.com/theOneAfterNext.mp3&quot;&#39;</code> # Modify specific value<ul>
+<li><code>=</code> # Assign (Update)</li>
+<li><code>|</code> # Do multiple things in sequence</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -6670,7 +7151,7 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 </ul>
 </li>
 <li><code>man jq</code> # <code>/-r</code></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -6912,6 +7393,41 @@ ingress:
 <li>Is signed so it can&#39;t be faked without secret key</li>
 </ul>
 </li>
+<li>Speed up (Reduced from 500ms to 300ms in China)<ul>
+<li>Set a CNAME record<table>
+<thead>
+<tr>
+<th>key</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Type</td>
+<td>CNAME</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>state</td>
+</tr>
+<tr>
+<td>Target</td>
+<td>cf.090227.xyz</td>
+</tr>
+<tr>
+<td>Proxy status</td>
+<td>disabled</td>
+</tr>
+<tr>
+<td>TTL</td>
+<td>Auto</td>
+</tr>
+</tbody></table>
+</li>
+<li>Worker - Domains - Add Domain - Route pattern - <code>state.yaoniplan.eu.org/*</code> - Add route</li>
+<li>Warning: The first fetch every 5 minutes takes 1-2 seconds (Use asynchronous operations to eliminate Worker cold starts)</li>
+<li><a href="https://monkeywie.cn/posts/cf-worker-fast-ip#worker-%E4%BC%98%E9%80%89%E5%AE%9E%E8%B7%B5">https://monkeywie.cn/posts/cf-worker-fast-ip#worker-优选实践</a></li>
+</ul>
+</li>
 <li><code>vim worker.js</code><pre><code>addEventListener(
   &quot;fetch&quot;,event =&gt; {
      let url=new URL(event.request.url);
@@ -7049,10 +7565,11 @@ help:
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-f</code> # File name</li>
 <li>Disadvantages: Large file, low quality</li>
+<li><code>nix profile install nixpkgs#wf-recorder</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/ammen99/wf-recorder/issues/79#issue-591769918">https://github.com/ammen99/wf-recorder/issues/79#issue-591769918</a></li>
+<li><a href="https://github.com/ammen99/wf-recorder/issues/79#issue-591769918">https://github.com/ammen99/wf-recorder/issues/79#issue-591769918</a> # <code>/gif</code></li>
 <li><code>man wf-recorder</code> # <code>/-f</code></li>
 </ul>
 </li>
@@ -7136,7 +7653,7 @@ help:
 <li><code>mako</code> # Remenber to run in the background as a daemon at boot time</li>
 </ul>
 </li>
-<li><code>vim ~/.config/mako/config</code><pre><code>sort=-time
+<li><code>vim ~/.config/mako/config</code> # Configure as needed<pre><code>sort=-time
 layer=overlay
 background-color=#2e34407f
 width=450
@@ -7145,8 +7662,9 @@ border-size=3
 border-color=#99c0d0
 # Rounded corners
 border-radius=12
-icons=0
-max-icon-size=64
+# Enable icons
+icons=1
+icon-path=/home/yaoniplan/.nix-profile/share/icons/Papirus-Dark:/usr/share/icons/breeze-dark
 default-timeout=5000
 ignore-timeout=0
 font=&quot;Noto Sans CJK SC&quot; 14
@@ -7165,6 +7683,8 @@ default-timeout=0
 </code></pre>
 <ul>
 <li><code>7f</code> # Alpha channel (transparent)</li>
+<li><code>/home/yaoniplan/.nix-profile/share/icons/Papirus-Dark</code> # Change icon path with yours</li>
+<li><code>breeze-dark</code> # Change icon theme name with yours</li>
 <li><code>Noto Sans CJK SC</code> # Changet font name with yours</li>
 <li><code>makoctl reload</code> # Reload configuration file to make changes effective</li>
 </ul>
@@ -7204,9 +7724,10 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://redlib.nadeko.net/r/swaywm/comments/cf0c6o/how_to_get_icons_to_show_up_in_mako_notifications/eu7f134">https://redlib.nadeko.net/r/swaywm/comments/cf0c6o/how_to_get_icons_to_show_up_in_mako_notifications/eu7f134</a></li>
 <li><a href="https://cascade.moe/posts/hyprland-configure/#mako">https://cascade.moe/posts/hyprland-configure/#mako</a></li>
-<li><code>man 5 mako</code> # <code>/COLORS</code></li>
-<li>ChatGPT</li>
+<li><code>man 5 mako</code> # <code>/COLORS</code> <code>/icon-path</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -7289,6 +7810,11 @@ yaoniplan@tux ~ $
 <ul>
 <li><h4>Use &quot;tofi&quot;</h4>
 <ul>
+<li><code>echo -e &quot;one\ntwo\nthree&quot; | tofi --height 300 --horizontal=false</code><ul>
+<li><code>--horizontal=false</code> # Disable horizontal (Even if it&#39;s enabled in the configuration file)</li>
+<li>CLI parameters can override config</li>
+</ul>
+</li>
 <li><code>tofi-run &quot;$@&quot; | ${SHELL:-&quot;/bin/sh&quot;}</code><ul>
 <li><code>tofi-run | sh</code> # It&#39;s ok.</li>
 </ul>
@@ -7307,6 +7833,7 @@ yaoniplan@tux ~ $
 <li><a href="https://github.com/philj56/tofi/pull/202/files">https://github.com/philj56/tofi/pull/202/files</a> # Support this completion feature by modifying these files to build the software from source code</li>
 <li><a href="https://github.com/philj56/tofi/issues/142#issuecomment-2339503983">https://github.com/philj56/tofi/issues/142#issuecomment-2339503983</a> # Support -p prompt flag (Like dmenu)</li>
 <li><a href="https://github.com/philj56/tofi/issues/159">https://github.com/philj56/tofi/issues/159</a> # No support <code>-l</code> option</li>
+<li><a href="https://github.com/philj56/tofi/pull/244/changes">https://github.com/philj56/tofi/pull/244/changes</a> # Support that navigate to last item from the first item by pressing the up arrow</li>
 </ul>
 </li>
 <li><code>&quot;$@&quot;</code> # All arguments</li>
@@ -7407,13 +7934,15 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 shell=tmux
 # font=FiraCode Nerd Font:size=12
 font=Fira Code:size=12
-[colors]
+[colors-dark]
 alpha=0.8 # transparency
+blur=true
 </code></pre>
 </li>
 <li>Restart Foot to make changes effective</li>
 </ul>
 </li>
+<li><code>--app-id=dropdown</code> # Set the app-id property on the Wayland window to dropdown</li>
 <li><code>-e</code> # Execute</li>
 <li>Solve the problem<pre><code>warning: &#39;C&#39; is not a UTF-8 locale, using &#39;C.UTF-8&#39; instead
 </code></pre>
@@ -7654,25 +8183,32 @@ misc {
 <ul>
 <li><h4>Use &quot;fzf&quot;</h4>
 <ul>
-<li><code>fzf</code></li>
+<li><code>echo -e &quot;1\n2\n3&quot; | fzf</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--pointer=&#39;➤&#39;</code> # Replace the default pointer &#39;▌&#39; to the current line with &#39;➤&#39;</li>
+<li><code>--sync --bind &#39;start:pos(10)&#39;</code> # Put the cursor on the 10th item<ul>
+<li><a href="https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845">https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845</a></li>
+</ul>
+</li>
 <li><code>Ctrl-j/k</code> # Next/previous selection (Same as <code>Ctrl-n/p</code>)</li>
 <li><code>Ctrl-m</code> # Enter key</li>
+<li><code>--prompt &#39;Search: &#39;</code> # Replace the default input prompt &#39;&gt; &#39; with it</li>
 <li><code>--reverse</code> # Put the search bar in the top of screen</li>
+<li><code>--tac</code> # Arrange the input lines in reverse order</li>
 <li><code>vi ~/.bashrc</code> # Bind <code>Ctrl-j</code> key to <code>Enter</code> key (Like Bash)<pre><code>export FZF_DEFAULT_OPTS=&quot;--bind=ctrl-j:accept&quot;
 </code></pre>
 <ul>
 <li><code>source ~/.bashrc</code> # Make changes effective</li>
 </ul>
 </li>
-<li>Because &quot;ani-cli&quot; depends on &#39;fzf&#39;.</li>
+<li>Because to try using a more general launcher on multiple platforms (And use the fastest launching terminal as the window)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797">https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -7856,7 +8392,10 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li><code>/</code> # Search</li>
 <li><code>Ctrl-[</code> # The same as <code>Esc</code></li>
 <li><code>P</code> # Show the complete command of process name</li>
+<li><code>p</code> # Sort by PID</li>
+<li><code>t</code> # Tree mode (Show the children of PID)</li>
 <li><code>dd</code> # Delete a process</li>
+<li><a href="https://github.com/ClementTsang/bottom/issues/1113">https://github.com/ClementTsang/bottom/issues/1113</a> # Missing process multi-select functionality (To select multiple processes and then view their parent-child relationships)</li>
 </ul>
 </li>
 <li>Other methods<ul>
@@ -7890,6 +8429,15 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/yt-dlp/plugins/yhdm/yt_dlp_plugins/extractor/yhdm.py</code> # Add a custom extractor<ul>
+<li><code>yhdm</code> # Replace it with your extractor name</li>
+<li><code>file $(which yt-dlp)</code> # Refer to the official extractor<pre><code># ~/.local/share/uv/tools/yt-dlp/lib/python*/site-packages/yt_dlp/extractor/*.py
+yaoniplan@tux ~ $ file $(which yt-dlp)
+/home/yaoniplan/.local/bin/yt-dlp: symbolic link to /home/yaoniplan/.local/share/uv/tools/yt-dlp/bin/yt-dlp
+</code></pre>
+</li>
+</ul>
+</li>
 <li>Solve the problem<pre><code>ERROR: [youtube] kJQP7kiw5Fk: Sign in to confirm you’re not a bot.
 Use --cookies-from-browser or --cookies for the authentication. See
 https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp
@@ -7899,14 +8447,29 @@ for tips on effectively exporting YouTube cookies
 </code></pre>
 <ul>
 <li><code>--cookies-from-browser chromium</code> # Read the cookies from Chromium&#39;s profile directory automatically</li>
+<li><code>--cookies all.txt</code> # Read/dump cookies from/to file (Netscape format)<pre><code>`yt-dlp --cookies-from-browser chromium --cookies all.txt` # Get all cookies
+`grep -E &quot;(^#|example\.com)&quot; all.txt &gt; example.txt` # Extract cookies of a specific website
+</code></pre>
+</li>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/6919#issuecomment-2295023221">https://github.com/yt-dlp/yt-dlp/issues/6919#issuecomment-2295023221</a> # Doesn&#39;t work on iOS a-Shell</li>
 <li><a href="https://github.com/net00-1/SW-DLT/issues/86#issuecomment-2756144910">https://github.com/net00-1/SW-DLT/issues/86#issuecomment-2756144910</a> # Work on iOS a-Shell</li>
 <li>Use <code>internalbrowser</code> command to login YouTube, then use <code>--cookies-from-browser safari</code></li>
 </ul>
 </li>
-<li><code>--get-url</code> # Get direct url (e.g. <a href="https://example.com/sample.m4a">https://example.com/sample.m4a</a>)</li>
-<li><code>yt-dlp --flat-playlist --default-search ytsearch20 &quot;linux tutorial&quot; -O &quot;#EXTINF:%(duration_string)s,%(title)s&quot; -O &quot;%(webpage_url)s&quot; -O &quot;&quot; | awk &#39;BEGIN { print &quot;#EXTM3U\n&quot; } { print $0 }&#39; &gt;&gt; playlistOne.m3u</code> # Write to a M3U file</li>
+<li><code>--get-url</code> # Get direct url (e.g. <a href="https://example.com/sample.m4a">https://example.com/sample.m4a</a>) (Same as <code>--print url</code>)<ul>
+<li><code>--print-json</code> # Get a lot of information</li>
+</ul>
+</li>
+<li><code>yt-dlp --flat-playlist --default-search ytsearch20 &quot;linux tutorial&quot; -O &quot;#EXTINF:%(duration_string)s,%(title)s&quot; -O &quot;%(webpage_url)s&quot; -O &quot;&quot; | awk &#39;BEGIN { print &quot;#EXTM3U\n&quot; } { print $0 }&#39; &gt;&gt; playlistOne.m3u</code> # Write to a M3U file<ul>
+<li><code>--flat-playlist</code> # Remove it if show <code>NA</code> for duration and title</li>
+<li><a href="https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md">https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md</a> # List all search engines (search prefixes)</li>
+</ul>
+</li>
 <li><code>yt-dlp --skip-download --ignore-errors --print-to-file url playlist.txt &quot;yourPlaylistUrl&quot;</code> # Extract playlist URL to file<ul>
+<li><code>--simulate</code> # Same as <code>--skip-download</code></li>
+<li><code>--print-to-file url</code> # Append url to file</li>
+<li><code>--print url &quot;yourPlaylistUrl&quot; &gt; playlist.txt</code> # Override file (If you are just refresh expired links)</li>
+<li><code>--abort-on-error</code> # Stop the continuous printing error</li>
 <li><code>yt-dlp &quot;yourPlaylistUrl&quot; --flat-playlist --dump-json | jq -r .url &gt;&gt; ~/playlist.txt</code> # Another way</li>
 </ul>
 </li>
@@ -7930,6 +8493,8 @@ for tips on effectively exporting YouTube cookies
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/yt-dlp/yt-dlp/blob/master/README.md#plugins">https://github.com/yt-dlp/yt-dlp/blob/master/README.md#plugins</a></li>
+<li><a href="https://github.com/jaainil/yt-dlp-doc/blob/main/docs/plugins/installing-plugins-for-yt-dlp.md#plugin-directory-structure">https://github.com/jaainil/yt-dlp-doc/blob/main/docs/plugins/installing-plugins-for-yt-dlp.md#plugin-directory-structure</a></li>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/4628">https://github.com/yt-dlp/yt-dlp/issues/4628</a></li>
 <li><a href="https://github.com/ytdl-org/youtube-dl/issues/28633#issuecomment-812823807">https://github.com/ytdl-org/youtube-dl/issues/28633#issuecomment-812823807</a></li>
 <li><a href="https://redlib.freedit.eu/r/youtubedl/comments/unsaho/how_to_extract_individual_videos_links_from/">https://redlib.freedit.eu/r/youtubedl/comments/unsaho/how_to_extract_individual_videos_links_from/</a></li>
@@ -8129,6 +8694,23 @@ check_for_updates = False
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;tac&quot;</h4>
+<ul>
+<li><code>tac ~/.local/state/ani-cli/ani-hsts | less</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because I discovered it in the parameters (<code>--tac</code>) of &quot;fzf&quot;.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>tac # &quot;cat&quot; spelled backwards</li>
+<li>Artitificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>The abbreviation of &quot;All Clear&quot; is &quot;AC&quot;.</h4>
 <ul>
 <li>In a calculator</li>
@@ -8262,7 +8844,7 @@ echo &quot;Asia/Shanghai&quot; &gt; /etc/timezone
 <li><a href="https://github.com/pystardust/ani-cli/pull/1105/files">https://github.com/pystardust/ani-cli/pull/1105/files</a></li>
 </ul>
 </li>
-<li><code>apk add less</code>  # Install GNU less (Git’s default pager) to enable colored <code>git diff</code></li>
+<li><code>apk add less</code> # Install GNU less (Git’s default pager) to enable colored <code>git diff</code></li>
 <li>Start an HTTP server<ul>
 <li><code>git clone git@192.168.10.100:/var/git/note.git</code> # Download a directory containing index.html</li>
 <li><code>python3 -m http.server -d ~/note/ 2003</code> # Use module to serve directory listening on port</li>
@@ -8285,7 +8867,33 @@ ssh-keygen &amp;&amp; ssh yaoniplan@192.168.10.100 # Generate authentication key
 ssh-copy-id yaoniplan@192.168.10.100 # Connect to a remote machine without password
 </code></pre>
 <ul>
-<li><code>vi ~/.profile</code> # Execute automatically after opening iSH<pre><code>ssh yaoniplan@192.168.10.100
+<li><code>vi ~/.profile</code> # Execute automatically after opening iSH<pre><code>#alias v=vim
+ssh yaoniplan@192.168.10.100
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Connect to your iPhone (From other device)<pre><code># It&#39;s a little useless, and it&#39;s needs to run continuously in the background (Use a-Shell instead)
+apk add openssh # Install dependencies
+ssh-copy-id root@10.42.0.70 # Connect without password next time
+ssh root@10.42.0.70 # Connect
+</code></pre>
+<ul>
+<li><code>vim /etc/ssh/sshd_config</code> # Allow root user login<pre><code># `/usr/sbin/sshd -D -e` # `-D`: Don&#39;t run in the background; `-e`: Print error in the terminal
+# If you got an error &#39;User root not allowed because account is locked&#39;
+#PermitRootLogin prohibit-password
+PermitRootLogin yes
+</code></pre>
+</li>
+<li><code>ssh-keygen -A</code> # Generate host keys of all default key types<pre><code>iPhone:/mnt# /usr/sbin/sshd
+sshd: no hostkeys available -- exiting.
+</code></pre>
+</li>
+<li><code>passwd root</code> # Set a password for root<pre><code>Failed password for root from 100.80.81.110 port 44080 ssh2
+</code></pre>
+</li>
+<li><code>/usr/sbin/sshd</code> # Execute with an absolute path<pre><code>iPhone:/mnt# sshd
+sshd re-exec requires execution with an absolute path
 </code></pre>
 </li>
 </ul>
@@ -8293,8 +8901,9 @@ ssh-copy-id yaoniplan@192.168.10.100 # Connect to a remote machine without passw
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: No Siri Shortcuts integration.<ul>
-<li><a href="https://github.com/ish-app/ish/issues/59">https://github.com/ish-app/ish/issues/59</a></li>
+<li>Warning<ul>
+<li><a href="https://github.com/ish-app/ish/issues/59">https://github.com/ish-app/ish/issues/59</a> # No Siri Shortcuts integration.</li>
+<li><a href="https://github.com/ish-app/ish/issues/2305">https://github.com/ish-app/ish/issues/2305</a> # Cannot display hidden files in Files app (Because I need to package necessary dot files)</li>
 </ul>
 </li>
 <li>Terminate SSH connection<ul>
@@ -8302,8 +8911,10 @@ ssh-copy-id yaoniplan@192.168.10.100 # Connect to a remote machine without passw
 <li><code>logout</code> # Exit the login shell</li>
 </ul>
 </li>
-<li><code>vi /etc/apk/repositories</code> # Set mirror<pre><code>https://mirrors.ustc.edu.cn/alpine/latest-stable/main
-https://mirrors.ustc.edu.cn/alpine/latest-stable/community
+<li><code>vi /etc/apk/repositories</code> # Upgrade version<pre><code>#http://apk.ish.app/v3.14-2023-05-19/main
+#http://apk.ish.app/v3.14-2023-05-19/community
+http://dl-cdn.alpinelinux.org/alpine/v3.18/main
+http://dl-cdn.alpinelinux.org/alpine/v3.18/community
 </code></pre>
 <ul>
 <li><code>apk update</code> # Update repository indexes to take effect</li>
@@ -8313,13 +8924,15 @@ https://mirrors.ustc.edu.cn/alpine/latest-stable/community
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/ish-app/ish/discussions/1428#discussioncomment-804269">https://github.com/ish-app/ish/discussions/1428#discussioncomment-804269</a> # <code>/upgrade</code></li>
+<li><a href="https://github.com/ish-app/ish/wiki/Running-an-SSH-server">https://github.com/ish-app/ish/wiki/Running-an-SSH-server</a></li>
 <li><a href="https://github.com/ish-app/ish/issues/1581#issuecomment-1100768238">https://github.com/ish-app/ish/issues/1581#issuecomment-1100768238</a></li>
 <li><a href="https://github.com/ish-app/ish/issues/2139#issuecomment-1596681536">https://github.com/ish-app/ish/issues/2139#issuecomment-1596681536</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/alpine.html">https://mirrors.ustc.edu.cn/help/alpine.html</a></li>
 <li><a href="https://www.youtube.com/watch?v=-VBMYK3Sy54">https://www.youtube.com/watch?v=-VBMYK3Sy54</a></li>
 <li><a href="https://www.youtube.com/watch?v=R44NXv7QUek">https://www.youtube.com/watch?v=R44NXv7QUek</a></li>
 <li><code>apk -h</code></li>
-<li><code>man ssh-keygen</code></li>
+<li><code>man ssh-keygen</code> # <code>/-A</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -9216,8 +9829,44 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 <hr>
 <ul>
-<li><h4>Some tips in iPhone 14 Pro</h4>
+<li><h4>Some tips in iPhone 14 Pro (iOS 16.7.2)</h4>
 <ul>
+<li>Phone<ul>
+<li>Double-press the power button to end calls.</li>
+</ul>
+</li>
+<li>TestFlight<ul>
+<li>TestFlight builds expire <strong>after 90 days</strong> unless the developer uploads a new build<pre><code>&quot;Copilot&quot; Beta Has Expired
+</code></pre>
+</li>
+</ul>
+</li>
+<li>VoiceOver<ul>
+<li><del>Swipe down with two fingers from the top of the screen to hear the content of the screen. # Simplified VoiceOver</del></li>
+<li>Double-tap with two fingers # Pause or play media playback</li>
+<li>Triple-click the power button # Toggle VoiceOver</li>
+<li>Tap with one finger # Speak and select item</li>
+<li>Swipe left with one finger # Move to previous item (Opposite: Swipe right)</li>
+<li>Double-tap with one finger # Activate selected item</li>
+<li>Swipe down with two fingers # Speak the entire screen from the selected item</li>
+<li>Tap with two fingers # Pause or continue speaking</li>
+<li>Swipe up on the Home Indicator # Return to the Home Screen</li>
+<li>Swipe right with four fingers # Switch to last open app (Opposite: Swipe left with four fingers)</li>
+<li>Drag one finger up from the bottom edge of the screen until you feel a vibration, then lift your finger # Go to the Home Screen<ul>
+<li>Drag one finger up from the bottom edge of the screen until you feel the second vibration, then lift your finger # Open the App Switcher</li>
+</ul>
+</li>
+<li>Rotor<ul>
+<li>Use two fingers to rotate # Hear VoiceOver say &quot;Language&quot;</li>
+<li>Swipe up or down with one finger # Switch between default and rotor languages</li>
+</ul>
+</li>
+<li>Swipe with three fingers # Scroll page</li>
+<li><a href="https://ionic.io/docs/accessibility/voiceover">https://ionic.io/docs/accessibility/voiceover</a> # <code>/pause</code></li>
+<li><a href="https://support.apple.com/en-bw/guide/iphone/iph3e2e2281/ios">https://support.apple.com/en-bw/guide/iphone/iph3e2e2281/ios</a> # VoiceOver common gestures</li>
+<li><a href="https://support.apple.com/is-is/guide/iphone/iph3e2e2329/ios">https://support.apple.com/is-is/guide/iphone/iph3e2e2329/ios</a> # VoiceOver special gestures</li>
+</ul>
+</li>
 <li>Bookmarklet (e.g. duplicate tab)<ul>
 <li>Share icon - Add Bookmark - Save (Name it like Duplicate Tab) - Bookmarks icon - Long press the bookmark to edit - <code>javascript:(function(){window.open(location.href,&#39;_blank&#39;).focus();})();</code> (Replace URL with it) - Save</li>
 <li>Warning: It doesn&#39;t work on <code>https://gist.githubusercontent.com</code> (Or <code>https://raw.githubusercontent.com</code>)</li>
@@ -9239,6 +9888,25 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Long-press on the Home Screen - Tap &quot;+&quot; - Pick an app - Choose a widget size - Tap Add Widget</li>
 <li>Drag one widget on top of another (Become a stack)</li>
 <li><a href="https://redlib.nadeko.net/r/Scriptable/comments/lhjzaa/scrolling_stack_agenda/gmxknnb">https://redlib.nadeko.net/r/Scriptable/comments/lhjzaa/scrolling_stack_agenda/gmxknnb</a> # Apple doesn&#39;t support widget scrolling, so I used Smart Stack to fake it.</li>
+<li><code>Run a shortcut</code> # Script (Replace it with your Scriptable script name)</li>
+<li><code>Run Script</code> # When Interacting</li>
+<li><code>Todo</code> # Parameter (Replace it with your shortcut name)</li>
+<li><a href="https://docs.scriptable.app/args/#widgetparameter">https://docs.scriptable.app/args/#widgetparameter</a> # If you define a Parameter in widget config on the Home Screen<pre><code>//Safari.open(`shortcuts://run-shortcut?name=${encodeURIComponent(args.widgetParameter)}`);
+// Define the name of the shortcut you want to run
+let shortcutName = args.widgetParameter;
+
+// Create a URL to run the shortcut
+let url = &quot;shortcuts://run-shortcut?name=&quot; + encodeURIComponent(shortcutName);
+
+// Open the URL to execute the shortcut
+Safari.open(url);
+</code></pre>
+</li>
+<li>Other parameter (I use it to save text to file as backup)<pre><code># `[0]`: The first argument
+const filename = args.plainTexts[0];
+const content = args.plainTexts[1];
+</code></pre>
+</li>
 </ul>
 </li>
 <li>Podcasts<ul>
@@ -9257,15 +9925,126 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Relax my eyes (Philosophy: 20-20-20)<pre><code># Core: The Set Focus action has a feature similar to a timer.
+# Automation (When turning Personal off, do Run Shortcut, remember to disable Ask Before Running)
+- Get Device Details (Current Brightness)
+- Set Variable (previousBrightness, Current Brightness)
+- Set Brightness (0%)
+- Wait (20 seconds)
+- Set Brightness (previousBrightness)
+- Adjust Date (Add, 20, minutes, Current Date)
+- Set Focus (Personal, On, Time, Adjusted Date)
+- https://redlib.catsarch.com/r/shortcuts/comments/1g8wpiy/202020_rule_for_eye_strain/lt2bboc
+</code></pre>
+</li>
+<li>Random date<pre><code># Because to obtian the photo date.
+- Random Number (1, 1050)
+- Adjust Date (Subtract, Random Number, days, Current Date)
+- Find Photos (All Photos, Date Taken, is on, Adjusted Date)
+  &quot;&quot;&quot;
+  Time Taken # Sort by
+  Oldest First # Order
+  &quot;&quot;&quot;
+- https://redlib.catsarch.com/r/shortcuts/comments/18czwf9/need_help_ios_shortcut_for_deleting_random_photos/kcf8d1v
+- https://redlib.catsarch.com/r/shortcuts/comments/1or6395/how_to_generate_random_date/nnp897f
+</code></pre>
+</li>
+<li>Exit loop when conditions are met<pre><code># Because to ensure that photos exists for that random date.
+- Text (True)
+- Set Variable (Bool, Text)
+- Repeat (5 times)
+  - Get Variable (Bool)
+  - If (Bool)
+    - Your actions here
+    - If (Something, has any value)
+      - Text (False)
+      - Set Variable (Bool, text)
+    - Otherwise
+      - Nothing
+    - End If
+  - Otherwise
+    - Nothing
+  - End If
+- End Repeat
+- https://redlib.catsarch.com/r/shortcuts/comments/9md86f/how_to_exit_repeat/e7dtqcd
+</code></pre>
+</li>
+<li>Replace one exact line with another line<pre><code># The reason for not using Replace Text action is that special characters might appear in regular expression mode
+- Run Inline Script
+  &quot;&quot;&quot;
+  // Input: text from Shortcuts
+  const text = `Todo`;
+
+  // Exact line to find
+  const oldLine = &quot;Chosen Item&quot;;
+
+  // New line to replace it with
+  const newLine = &quot;Provided Input&quot;;
+
+  // Replace matching lines
+  const rows = text
+    .split(&quot;\n&quot;)
+    .map(line =&gt; line === oldLine ? newLine : line);
+
+  // Return updated text to Shortcuts
+  Script.setShortcutOutput(rows.join(&quot;\n&quot;));
+  Script.complete();
+  &quot;&quot;&quot;
+- Artificial intelligence
+</code></pre>
+</li>
+<li>Delete one exact line<pre><code># The reason for not using Replace Text action is that special characters might appear in regular expression mode
+- Run Inline Script
+  &quot;&quot;&quot;
+  // Input: text from Shortcuts
+  const text = `Todo`;
+
+  // Exact line to delete
+  const lineToDelete = &quot;Chosen Item&quot;;
+
+  // Remove matching lines (Special characters are OK)
+  const rows = text
+    .split(&quot;\n&quot;)
+    .filter(line =&gt; line !== lineToDelete);
+
+  // Return updated text
+  Script.setShortcutOutput(rows.join(&quot;\n&quot;));
+  Script.complete();
+  &quot;&quot;&quot;
+- Artificial intelligence
+</code></pre>
+</li>
+<li>Delete blank lines in multiple lines<pre><code>- Replace Text (\n\s*$, ,Text)
+  - Regular Expression # Enable
+</code></pre>
+</li>
+<li>SVG to base64<pre><code># If you need to use @icon in an userscript manager,
+# please remove the line breaks to ensure they are on a single line.
+- Base64 Encode (Encode, File)
+- Text (data:image/svg+xml;base64,$Base64 Encoded)
+    - None # Line Breaks
+- Copy to Clipboard (Text)
+- https://redlib.catsarch.com/r/shortcuts/comments/1ngxsqp/icon_helpshortcut_help/ne7glvo
+</code></pre>
+</li>
 <li>Remove a key-value pair<pre><code>Replace Text (&quot;id&quot;:&quot;id&quot;,, &quot;&quot;, Dictionary)
 - https://discuss.whatever.social/r/shortcuts/comments/bbzbh1/remove_a_dictionary_item/ekmjjvs
 </code></pre>
 </li>
-<li>Extract specific values from a dictionary<pre><code>- Repeat with Each (Contents of URL)
-    - Get Dictionary Value (Value, url, Repeat Item)
-    - Get Dictionary Value (Value, name, Repeat Item)
-    - Set Dictionary Value (URL, Name, Dictionary)
-    - Set Variable (Engines, Dictionary)
+<li>Get key from &#39;Choose from List&#39; on a dictionary<pre><code>- Choose from List (Variable)
+- Ask for Input (Text, Content)
+  - Chosen Item (Change Dictionry to Name to get key instead of value) # Default Answer
+- https://red.artemislena.eu/r/shortcuts/comments/1jcb3ln/how_to_get_key_from_choose_from_list_on_a/mi171ax
+</code></pre>
+</li>
+<li>Extract specific values from a dictionary<pre><code># Reveal Action (Jump to and highlight where a variable is coming from)
+- Repeat with Each (Dictionary)
+  - Get Dictionary Value (Value, name, Repeat Item)
+  - Get Dictionary Value (Value, url, Repeat Item)
+  - Set Dictionary Value (Name, URL, Dictionary)
+    - Ensure that the source of this dictionary variable is itself
+  - Set Variable (Engines, Dictionary)
+    - Ensure that the source of this dictionary variable is previous action
 - End Repeat
 - Choose from List (Engines)
 - https://stackoverflow.com/questions/59499608/extracting-specific-values-from-a-dictionary-in-ios-shortcuts-to-display-in-a-ch/64053474#64053474
@@ -9373,7 +10152,8 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 - Set Variables (Expire at, Text)
 </code></pre>
 </li>
-<li>Count down by times instead of time<pre><code># Because to get the first place in Duolingo ranking
+<li>Count down by times instead of time<pre><code># The Get File from Folder action: 1. retrieve file content 2.determine if the file exists
+# Because to get the first place in Duolingo ranking
 # Estimate the number of points left to win the first place
 # (Average score per round: 25 points)
 # e.g. The difference is on thousand points,
@@ -9434,6 +10214,7 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
             - Siri Voice 4 # Voice
     - End If
 - End If
+- https://redlib.catsarch.com/r/shortcuts/comments/1g6g67u/shortcut_to_see_if_a_file_already_exists_locally/lsj3sfq
 - https://safereddit.com/r/shortcuts/comments/ajdq6d/data_storage_part_1_storing_simple_values/
 - https://nadnosliw.wordpress.com/2021/10/28/persistent-variables-for-ios-and-ipados-shortcuts/
 </code></pre>
@@ -9695,18 +10476,19 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 - Choose from List (Updated Text)
 </code></pre>
 </li>
-<li>Display a notification for a few seconds<pre><code>- Run Inline Script (Paste the following code, toggle off &quot;Show When Run&quot;)
+<li>Display a notification (Support multi-line text) for a few seconds<pre><code>- Text (Pulling)
+- Run Script (Notification, Text)
   &quot;&quot;&quot;
   let notification = new Notification();
-  notification.title = &quot;English&quot;;
-  notification.body = &quot;`Translated Text`&quot;;
+  notification.title = args.plainTexts[0];
+  notification.body = args.plainTexts[1];
   notification.identifier = &quot;my.music.notification&quot;;
   notification.schedule();
-  Script.complete();
-  
   Notification.removeDelivered([&quot;my.music.notification&quot;]);
   Script.complete();
   &quot;&quot;&quot;
+    - Notification # Add the first item as title under Texts
+    - Text # Add the second item as body under Texts
 - https://libreddit.nohost.network/r/shortcuts/comments/16p7iwp/how_can_i_make_notifications_clear/k1p96sz
 </code></pre>
 </li>
@@ -9870,6 +10652,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Overseas Apple ID # To download software (e.g. ChatGPT, Google Translate, etc.)<ul>
+<li><a href="https://bull.eu.org/posts/appleid_america/">https://bull.eu.org/posts/appleid_america/</a></li>
 <li><a href="https://web.archive.org/web/20230727113153/https://support.token.im/hc/zh-cn/articles/360008124173-%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8C%E9%9D%9E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E5%8C%BA-Apple-ID-%2C">https://web.archive.org/web/20230727113153/https://support.token.im/hc/zh-cn/articles/360008124173-如何注册非中国大陆区-Apple-ID-%2C</a> # Tutorial</li>
 <li><a href="https://www.meiguodizhi.com/">https://www.meiguodizhi.com/</a> # Get information about United States</li>
 </ul>
@@ -9892,7 +10675,22 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>No general long screenshot feature (Except in Safari web pages)</li>
 <li>Doesn&#39;t have an infrared transmitter like Android phones to directly control the air conditioner in the dormitory</li>
 <li>Cannot set the automatic screen lock time to 30 seconds (Or Never) through parameters # Can only open the page (<code>prefs:root=DISPLAY&amp;path=AUTOLOCK/30</code>) and then tap manually <a href="https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337">https://gist.github.com/deanlyoung/368e274945a6929e0ea77c4eca345560?permalink_comment_id=5082337#gistcomment-5082337</a> <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082">https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12264354082</a></li>
-<li>Mail app does not send real-time notifications # Can only open it manually and pull down to refresh <a href="https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/">https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/</a></li>
+<li>Mail app does not send real-time notifications # Can only open it manually and pull down to refresh <a href="https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/">https://libreddit.tux.pizza/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/</a><pre><code># https://redlib.catsarch.com/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/ls3uri1
+# https://redlib.catsarch.com/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/jgijxau
+# https://redlib.catsarch.com/r/iphone/comments/12o6w6f/mail_do_not_send_real_time_notifications_until/jghlpvq
+- Settings - Notifications - Mail - Customize Notifications - Gmail - Alerts
+- Settings - Mail - Accounts - Fetch New Data - Every 15 Minutes
+- Forward emails from Gmail to iCloud (mail.google.com - Settings - Forwarding and POP/IMAP)
+</code></pre>
+</li>
+<li>Can&#39;t triple-click power button to run a shortcut<pre><code># A hacky (and inelegant) approach
+# Because it is unresponsive sometimes to triple-tap the back of the iPhone. (Maybe it&#39;s the phone case causing the issue?)
+- Settings - Accessibility - Accessibility Shortcut - Magnifier
+- Shortcuts - Automation (When &#39;Magnifier&#39; is opened, then Go to Home Screen)
+- Shortcuts - Automation (When &#39;Magnifier&#39; is opened, then Run Shortcut)
+- https://redlib.catsarch.com/r/shortcuts/comments/yikc1t/
+</code></pre>
+</li>
 <li>Can&#39;t add video (Except photo) to album</li>
 <li>No call recording (Under iOS 18.1)</li>
 <li>Charging is slow in winter (Charged 37% in 76 minutes)</li>
@@ -9980,7 +10778,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Use Maps<ul>
-<li><code>Go to the nearby library</code> # (e.g. Bank, Toilet, School, Government affairs service center)</li>
+<li><code>Go (Or Take me) to the nearby library</code> # (e.g. Bank, Toilet, School, Government affairs service center)</li>
 <li><code>End navigation</code></li>
 </ul>
 </li>
@@ -10075,7 +10873,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/">https://ios.gadgethacks.com/how-to/18-siri-commands-every-iphone-owner-should-know-0385294/</a></li>
 <li><a href="https://developer.apple.com/siri/">https://developer.apple.com/siri/</a></li>
-<li>iPhone 14 Pro</li>
+<li>iPhone 14 Pro (iOS 16.7.2)</li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -10307,6 +11105,8 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </li>
 <li><code>doas sysctl -p /etc/sysctl.d/99-ipforward.conf</code> # Make changes effective permanently</li>
 <li><a href="https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/">https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/</a></li>
+<li>Use &quot;iw&quot;</li>
+<li><code>iw dev wlan0 station dump</code> # Know how many people (station) have connected to my hotspot</li>
 <li><code>doas pacman --sync network-manager-applet</code> # Install dependencies</li>
 </ul>
 </li>
@@ -11376,6 +12176,10 @@ fi
 <ul>
 <li><h4>Use &quot;convert&quot;</h4>
 <ul>
+<li><code>convert input.png pnm:- | potrace --svg --output output.svg -</code> # Convert image to svg<ul>
+<li><code>convert input.png -background white -alpha background pnm:- | potrace --svg --output output.svg -</code> # If your PNG has transparency and you want a white background</li>
+</ul>
+</li>
 <li><code>convert ~/note/assets/2024-06-06-124844.jpeg -channel RGB -negate ~/note/assets/2024-06-06-124844.jpeg</code> # Invert colors (Dark mode)</li>
 <li><code>convert +append 230614102157.jpg 230614102435.jpg 221128keyboardManual.jpg</code></li>
 <li><code>convert 231012seeADentist.HEIC 231012seeADentist.png</code></li>
@@ -11386,12 +12190,12 @@ fi
 <li><code>convert -append math{01..04}.png mathVertically.png</code></li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#imagemagick</code> # Install the dependency</li>
+<li><code>nix profile install nixpkgs#imagemagick nixpkgs#potrace</code> # Install the dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://superuser.com/questions/1194468/invert-colors-with-imagemagick/1194469#1194469">https://superuser.com/questions/1194468/invert-colors-with-imagemagick/1194469#1194469</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -12288,6 +13092,8 @@ UEFI VBOX CD-ROM VB2-01700376
 </li>
 <li><code>--until &quot;2024-09-02 09:00:00&quot;</code> # To time</li>
 <li><code>-e</code> # End</li>
+<li><code>--unit=sing-box</code> # Show messages for the specified systemd unit</li>
+<li><code>--follow</code> # Show only the most recent logs</li>
 <li>Because to debug scripts that don&#39;t work properly.</li>
 </ul>
 </li>
@@ -12361,7 +13167,7 @@ services:
 </ul>
 <hr>
 <ul>
-<li><h4>Set an alias in Linux Bash</h4>
+<li><h4>Use &quot;alias&quot;</h4>
 <ul>
 <li><code>alias dotfiles=&#39;/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;</code><ul>
 <li><code>dotfiles</code> # Replace it with your desired alias</li>
@@ -12385,6 +13191,12 @@ services:
 <li><code>yaoniplan</code> # Replace it with your user</li>
 <li><code>192.168.10.100</code> # Replace it with your host name</li>
 <li><code>ssh yaoniplan</code> # The same as <code>ssh yaoniplan@192.168.10.100</code></li>
+</ul>
+</li>
+<li>Because mobile keyboards are too small.<ul>
+<li>Long command</li>
+<li>Hign frequency use</li>
+<li>No further modifications (Except for the first time)</li>
 </ul>
 </li>
 </ul>
@@ -13184,6 +13996,7 @@ find . -type f -inum 20447344 -exec rm {} \;
 &lt;!DOCTYPE html&gt;\
 &lt;html&gt;\
 &lt;head&gt;\
+  &lt;meta charset=&quot;UTF-8&quot;&gt;\
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\
   &lt;title&gt;yaoniplan&lt;/title&gt;\
   &lt;link rel=&quot;stylesheet&quot; href=&quot;./assets/github-markdown.css&quot;&gt;\
@@ -13219,6 +14032,7 @@ find . -type f -inum 20447344 -exec rm {} \;
 <li>No space after backslash</li>
 </ul>
 </li>
+<li><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> # Use UTF-8 encoding (To avoid garbled text)</li>
 <li><code>~/note/index.html</code> # Replace it with your index.html</li>
 <li>Enable dark mode only<ul>
 <li>Replace github-markdown.css with github-markdown-dark.css</li>
@@ -13334,6 +14148,12 @@ notification &quot;$1&quot;
 </ul>
 </li>
 <li><code>if [[ n -eq 42 ]]; then</code></li>
+<li><code>[ -e &quot;$file&quot; ] &amp;&amp; echo &quot;yes&quot; || echo &quot;no&quot;</code> # If file exist then output yes, otherwise output no<ul>
+<li><code>-e</code> # Exist</li>
+<li><code>&amp;&amp;</code> # And (then)</li>
+<li><code>||</code> # Or (otherwise)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -13352,7 +14172,7 @@ notification &quot;$1&quot;
 <li><em><strong>References</strong></em><ul>
 <li><code>man date</code> # <code>/%j</code></li>
 <li><code>read --help</code></li>
-<li><code>man bash</code> # <code>/-eq</code> <code>/^condition</code> <code>/-z </code></li>
+<li><code>man bash</code> # <code>/-eq</code> <code>/^condition</code> <code>/-z </code> <code>/^ +-e</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -13624,6 +14444,13 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code>sed -i &#39;s|^http://|https://|&#39; audiobook.txt</code> # Replace <code>http://</code> (Lines that start with it) with <code>https://</code><ul>
+<li><code>-i &#39;&#39;</code> # Set a backup suffix (Or <code>-i &#39;.bak&#39;</code>) to solve the problem (For BSD sed)<pre><code>sed: 1: &quot;audiobook ...&quot;: command a expects \ followed by text
+</code></pre>
+</li>
+</ul>
+</li>
+<li><code>sed --silent &#39;375,$p&#39; config.json</code> # Print from line 375 to the last line</li>
 <li><code>sed &quot;s/^/file &#39;/;s/$/&#39;/&quot;</code> # Do this substitution, and then do this other substitution<ul>
 <li><code>;</code> # Seperator (The logic is the same as in Shell command)</li>
 </ul>
@@ -13679,7 +14506,7 @@ file &#39;output02.wma&#39;
 <li><img src="./assets/2023-06-11_21-44.png" alt="2023-06-11_21-44.png"></li>
 <li><img src="./assets/2023-04-30_20-54.png" alt="2023-04-30_20-54.png"></li>
 <li><code>man sed</code> # <code>/delete</code></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -14757,6 +15584,33 @@ sleep &quot;$1&quot;; notification
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://en.wikipedia.org/wiki/Not_safe_for_work">https://en.wikipedia.org/wiki/Not_safe_for_work</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;file&quot;</h4>
+<ul>
+<li><code>file --extension --brief /tmp/05.png | cut -d/ -f1</code> # Get real format</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to solve the problem.<pre><code>yaoniplan@tux ~ $ matugen image /tmp/05.png --source-color-index 0
+Format error decoding Png: Invalid PNG signature.
+Error:
+   0: Failed to generate base16 color schemes.
+   1: Format error decoding Png: Invalid PNG signature.
+   2: Invalid PNG signature.
+
+Backtrace omitted. Run with RUST_BACKTRACE=1 environment variable to display it.
+Run with RUST_BACKTRACE=full to include source snippets.
+yaoniplan@tux ~ $
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -16130,6 +16984,24 @@ yaoniplan@tux ~/Downloads/deck $
 <ul>
 <li><h4>Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>vim ~/.local/src/ani/mpv.conf</code> # Pause on focus lost for video<pre><code>[pause_on_focus_lost_video]
+profile-cond=not focused and get(&#39;current-tracks/video/image&#39;) == false
+profile-restore=copy
+pause=yes
+</code></pre>
+<ul>
+<li><a href="https://redlib.catsarch.com/r/mpv/comments/ty2vfk/is_there_a_way_to_automatically_pause_mpv_when/">https://redlib.catsarch.com/r/mpv/comments/ty2vfk/is_there_a_way_to_automatically_pause_mpv_when/</a></li>
+</ul>
+</li>
+<li><code>--include=~/.local/src/ani/mpv.conf</code> # Specifiy configuration file to be parsed after the default ones<ul>
+<li>The same as <code>--profile=ani</code> + auto fallback when no ani profile<pre><code># ~/.config/mpv/mpv.conf
+[ani]
+#--fullscreen=yes
+# Your ani profile here
+</code></pre>
+</li>
+</ul>
+</li>
 <li><code>vim ~/.config/mpv/mpv.conf</code><pre><code># Display filename as title (Avoid ads in title)
 title=${filename}
 </code></pre>
@@ -16138,11 +17010,13 @@ title=${filename}
 </ul>
 </li>
 <li><code>`</code> # Open the console for debugging (To test keybindings)<ul>
+<li><code>show-text &quot;${path}&quot;</code> # Show text on the OSD</li>
+<li><code>load-input-conf ~/.config/mpv/input.conf</code> # Reload key bindings from a file without restarting the player</li>
 <li><code>set video-rotate 90</code> # Set rotation to 90 degrees</li>
 </ul>
 </li>
 <li><code>Ctrl-h</code> # Hardware decoding (May reduce CPU usage)<ul>
-<li><code>--hwdec=auto --hwdec-codes=all</code> # Enable hardware decoding for every codec your GPU supports</li>
+<li><code>--hwdec=auto --hwdec-codecs=all</code> # Enable hardware decoding for every codec your GPU supports</li>
 </ul>
 </li>
 <li><code>Shift-i</code> # Information</li>
@@ -16155,6 +17029,13 @@ title=${filename}
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vi ~/.config/mpv/mpv.conf</code> # Disable vulkan output<pre><code>MESA-INTEL: warning: Ivy Bridge Vulkan support is incomplete
+MESA-INTEL: warning: ../mesa-26.1.1/src/intel/vulkan_hasvk/anv_formats.c:790: FINISHME: support more multi-planar formats with DRM modifiers
+</code></pre>
+<ul>
+<li><code>--gpu-api=opengl</code> # Use OpenGL instead of Vulkan</li>
+</ul>
+</li>
 <li><code>vi ~/.config/mpv/mpv.conf</code> # Specify the path of the downloader (Use patched software temporarily)<pre><code>script-opts-append=ytdl_hook-ytdl_path=/home/yaoniplan/.local/bin/yt-dlp
 </code></pre>
 </li>
@@ -16166,6 +17047,7 @@ Exiting... (Errors when loading file)
 yaoniplan@tux ~ $
 </code></pre>
 <ul>
+<li><code>--ytdl-raw-options=cookies=~/example.txt</code> # Or use cookie (Pass options to <code>yt-dlp</code>)</li>
 <li><code>yt-dlp -o - &lt;URL&gt; | mpv -</code> # Play the video that yt-dlp command can download</li>
 <li><a href="https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n">https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n</a></li>
 </ul>
@@ -16193,7 +17075,11 @@ yaoniplan@tux ~ $
 <li><code>echo &#39;run rm &quot;${path}&quot;; playlist-remove current&#39; | socat - &quot;/tmp/mpvsocket&quot;</code> # Delete current song</li>
 <li><code>echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;D&quot; ] }&#39; | socat - /tmp/mpvsocket</code> # Another way that use shortcut keys</li>
 <li><code>for times in {1..5}; do echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;/&quot; ] }&#39; | socat - /tmp/mpvsocket; done</code> # Decrease 10% volume</li>
-<li><code>echo &#39;{ &quot;command&quot;: [&quot;get_property&quot;, &quot;path&quot;] }&#39; | socat - /tmp/mpvsocket | jq -r &#39;.data&#39; | sed &#39;s#/[^/]*$##&#39;</code> # Get file path</li>
+<li><code>echo &#39;{ &quot;command&quot;: [&quot;get_property&quot;, &quot;path&quot;] }&#39; | socat - /tmp/mpvsocket | jq -r &#39;.data&#39; | sed &#39;s#/[^/]*$##&#39;</code> # Get file path<pre><code># Values of get_property
+metadata # Get metadata
+metadata/title # Get title
+</code></pre>
+</li>
 <li><code>#</code> # Delimiter (Avoid conflicts with the path)</li>
 </ul>
 </li>
@@ -16277,6 +17163,21 @@ user-input.lua -&gt; scripts/user-input.lua
 <li><a href="https://github.com/CogentRedTester/mpv-user-input#installation">https://github.com/CogentRedTester/mpv-user-input#installation</a></li>
 </ul>
 </li>
+<li>Enable danmaku<ul>
+<li>Warning: Frequent frame drops (causing dizziness) and some anime (e.g. Berserk S01E18) are missing danmaku</li>
+<li><code>git clone https://github.com/Tony15246/uosc_danmaku ~/.config/mpv/scripts/uosc_danmaku</code></li>
+<li><code>vim ~/.config/mpv/script-opts/uosc_danmaku.conf</code> # Configure as needed<pre><code># Bind shortcut keys
+open_search_danmaku_menu_key=Ctrl+d
+show_danmaku_keyboard_key=Shift+d
+# The frame rate drops are severe, even with this `vf_fps=yes` enabled
+# (maybe my computer&#39;s performance is insufficient)
+vf_fps=yes
+</code></pre>
+</li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/224">https://github.com/Tony15246/uosc_danmaku/issues/224</a></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714">https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714</a></li>
+</ul>
+</li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Rotate the screen clockwise
 r add video-rotate 90
 # Rotate the screen counterclockwise
@@ -16284,18 +17185,18 @@ Shift+r add video-rotate -90
 # Print title (See https://github.com/mpv-player/mpv/blob/master/DOCS/man/input.rst#property-list to get the property)
 # If the length of media-title is zero, then print filename
 p run &quot;/bin/sh&quot; &quot;-c&quot; &quot;if [[ -z &#39;${media-title}&#39; ]]; then notify-send &#39;${filename}&#39;; else notify-send &#39;${media-title}&#39;; fi&quot;
-# Copy the full path to clipboard
-Ctrl+shift+c run &quot;/bin/sh&quot; &quot;-c&quot; &quot;echo &#39;${path}&#39; | wl-copy&quot;
+# Copy the full file path (Or URL) to clipboard
+Ctrl+shift+c run &quot;/bin/sh&quot; &quot;-c&quot; &quot;echo -n &#39;${path}&#39; | wl-copy&quot;; show-text &quot;${path}&quot;
 # Print and copy file path (Wrap `${path}` in quotes to avoid spaces in file names)
 Ctrl+shift+x run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &#39;${path}&#39;`; echo `dirname &#39;${path}&#39;` | wl-copy&quot;
 # Reload after editing `~/.config/mpv/input.conf`
-CTRL+r run &quot;mpv&quot; &quot;${path}&quot;; quit-watch-later
+Ctrl+r load-input-conf ~/.config/mpv/input.conf; show-text &quot;input.conf reloaded&quot;
 # `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
 l no-osd seek 5 exact
 # `D` removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
 # `Ctrl-l` Show playlist for 5 seconds (Default: `Fn-8`)
-CTRL+l show-text &quot;${playlist}&quot; 5000
+Ctrl+l show-text &quot;${playlist}&quot; 5000
 </code></pre>
 </li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
@@ -16320,7 +17221,10 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><code>--player-operation-mode=cplayer</code> # Display in the terminal instead of a separate window (If you want to disable pseudo-gui temporarily)</li>
 </ul>
 </li>
-<li><code>--start=00:54:00</code> # For test</li>
+<li><code>--start=00:54:00</code> # For test<ul>
+<li><code>--end=-11</code> # Stop 11 seconds before the end</li>
+</ul>
+</li>
 <li><code>--mute=yes</code> # For NSFW</li>
 <li><code>G</code> # Increase size of subtitle</li>
 <li><code>--sub-file-paths=subtitles/</code> # For animation<ul>
@@ -16376,7 +17280,8 @@ CTRL+l show-text &quot;${playlist}&quot; 5000
 <li><a href="https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087">https://superuser.com/questions/663247/is-it-possible-to-delete-an-mp3-file-currently-played-in-mplayer/854087#854087</a></li>
 <li><a href="https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265">https://github.com/mpv-player/mpv/issues/11985#issuecomment-1646557265</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Mpv#Key_bindings">https://wiki.gentoo.org/wiki/Mpv#Key_bindings</a></li>
-<li><code>man mpv</code> # <code>/Cache$</code> <code>/hardware</code></li>
+<li><code>man mpv</code> # <code>/Cache$</code> <code>/hardware</code> <code>/^ +metadata$</code></li>
+<li>OSD # On-Screen Display</li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -17124,6 +18029,10 @@ media.cache_resume_threshold
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Hope that browsers can provide APIs to list current tab&#39;s history<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/discussions/1227">https://github.com/gdh1995/vimium-c/discussions/1227</a> (I don&#39;t want to long-press the back/forward button with the <strong>mouse</strong>)</li>
+</ul>
+</li>
 <li>Copy an image&#39;s address in &#39;Custom key mappings&#39;<pre><code>map yI LinkHints.activateOpenImage sed=&quot;s@^@vimium://copy/@g&quot;
 </code></pre>
 <ul>
@@ -18869,6 +19778,10 @@ font_size 12.0
 <li><code>kitty_mod</code> # <code>Ctrl-Shift</code> (Default)</li>
 <li><code>kitty tmux</code> # Run a program (Solve the problem of manually running <code>tmux</code> program after creating a new tab)</li>
 <li><code>--class kitty1</code> # Set window class for rule matching</li>
+<li><code>Ctrl-Shift-u</code> # Unicode<ul>
+<li><code>.0</code> # Choose the midline horizontal ellipsis (⋯, the menu button of Cloudflare website)</li>
+</ul>
+</li>
 <li><code>Ctrl-Shift-t</code> # New tab<ul>
 <li><code>Ctrl-Tab</code> # Next tab (Opposite: <code>Ctrl-Shift-Tab</code>)</li>
 <li><code>Ctrl-Shift-q</code> # Close a tab</li>
@@ -19110,14 +20023,19 @@ version for the right syntax to use near
 </ul>
 <hr>
 <ul>
-<li><h4>Use base64 to decode</h4>
+<li><h4>Use &quot;base64&quot;</h4>
 <ul>
+<li><code>echo &quot;data:image/svg+xml;base64,$(base64 -w 0 icon.svg)&quot; | wl-copy</code> # Output SVG as Base64 with no line breaks</li>
 <li><code>echo &quot;b3ViV1lmMmtCcQ==&quot; | base64 --decode</code></li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-w</code> # Wrap encoded lines after COLS character (default 76)</li>
 <li><code>|</code> # Redirect the output</li>
-<li>Because to pass the Natas8 level of overthewire.org.</li>
+<li>Because to pass the Natas8 level of overthewire.org.<ul>
+<li>And to set a custom icon for a user script.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -19457,6 +20375,7 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--remove-source-files</code> # The same as <code>mv</code> command (But safer in script)</li>
 <li><code>-a</code> # --archive</li>
 <li><code>-v</code> # --verbose</li>
 <li>Because to keep the original modification time when copying files.</li>
@@ -19871,6 +20790,16 @@ done
 <ul>
 <li><h4>Use &quot;wget&quot;</h4>
 <ul>
+<li><code>wget -q -O - https://raw.githubusercontent.com/ivan-hc/AM/main/AM-INSTALLER | sh</code> # Download and execute a script without saving<pre><code># If you got this error, it means it&#39;s just written in a way that
+# requires being executed from a file rather than from a pipe.
+sh: line 152: syntax error near unexpected token `)&#39;
+</code></pre>
+<ul>
+<li><code>-q</code> # --quiet (Turn off Wget&#39;s output)</li>
+<li><code>-O</code> # --output-document= (Specify the output filename)</li>
+<li><code>-</code> # Stdout (Print to standard output)</li>
+</ul>
+</li>
 <li><code>wget --output-document=msyh.ttc https://raw.githubusercontent.com/taveevut/Windows-10-Fonts-Default/master/msyh.ttc</code></li>
 <li><code>wget --continue yourURL</code> # Continue interrupted download</li>
 <li><code>wget -r -np -nH --cut-dirs=2 -R &quot;index.html*&quot; https://data.gpo.zugaina.org/src_prepare-overlay/x11-terms/xst/</code></li>
@@ -19899,11 +20828,11 @@ export https_proxy=&quot;192.168.10.105:7890&quot;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><code>man wget</code></li>
+<li><code>man wget</code> # <code>/-q</code></li>
 <li><img src="./assets/2023-01-28_21:59:03.gif" alt="2023-01-28_21:59:03.gif"></li>
 <li><a href="https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776">https://stackoverflow.com/questions/273743/using-wget-to-recursively-fetch-a-directory-with-arbitrary-files-in-it/273776#273776</a></li>
 <li><a href="https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730">https://stackoverflow.com/questions/23446635/how-to-download-http-directory-with-all-files-and-sub-directories-as-they-appear/26269730#26269730</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -19939,6 +20868,20 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--icon=/home/yaoniplan/.nix-profile/share/icons/Tela/16/actions/bell.svg</code> # Enable icon (The most stable method is the absolute path)<pre><code># Write the full file paths to a file
+tree -if ~/.nix-profile/share/icons/Tela \
+  | grep -E &#39;\.(png|svg)$&#39; \
+  | sed &#39;s/ -&gt; .*//&#39; \
+  | sort -u &gt; ~/.icons-list
+</code></pre>
+<ul>
+<li><code>vim ~/.local/bin/remindMe.sh</code> # Enable random icon<pre><code>random_icon=$(shuf -n1 ~/.icons-list)
+notify-send --icon=&quot;$random_icon&quot; ...
+</code></pre>
+</li>
+<li><code>nix profile install nixpkgs#tela-icon-theme</code> # Install dependencies</li>
+</ul>
+</li>
 <li><code>--expire-time=3600000</code> # Display for 3600000 milliseconds (Focus on one thing)</li>
 <li>Install notify-send<ul>
 <li><code>doas emerge -aq x11-libs/libnotify</code></li>
@@ -19970,6 +20913,7 @@ Exec=/usr/lib/notification-daemon-1.0/notification-daemon
 <li><a href="https://specifications.freedesktop.org/icon-naming-spec/latest/ar01s04.html">https://specifications.freedesktop.org/icon-naming-spec/latest/ar01s04.html</a></li>
 <li><a href="https://unix.stackexchange.com/questions/701206/how-do-i-notify-send-a-long-command">https://unix.stackexchange.com/questions/701206/how-do-i-notify-send-a-long-command</a></li>
 <li><a href="https://stackoverflow.com/questions/20285697/error-in-spawning-a-dbus-launch-what-is-that">https://stackoverflow.com/questions/20285697/error-in-spawning-a-dbus-launch-what-is-that</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -20376,6 +21320,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 </code></pre>
 </li>
 <li><code>dotfiles pull origin development</code> # Someone else pull the development branch</li>
+<li><code>dotfiles pull origin development:master</code> # Pull master branch when in development branch</li>
 <li>Because sometimes the submitted information has typos.</li>
 </ul>
 </li>
@@ -20410,6 +21355,18 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 </ul>
 </li>
 <li><code>git remote set-url --add --push origin git@192.168.10.100:/var/git/note.git</code> # Add a push URL<ul>
+<li><code>git config edit</code> # Edit config file directly (Easier method)<pre><code>[remote &quot;origin&quot;]
+    url = git@github.com:yaoniplan/note.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+    pushurl = git@github.com:yaoniplan/note.git
+[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+[branch &quot;development&quot;]
+    remote = origin
+    merge = refs/heads/development
+</code></pre>
+</li>
 <li><code>git remote --verbose</code> # Check Git remote URL</li>
 <li><code>git remote set-url origin git@192.168.10.107:/var/git/note.git</code> # Update the fetch URL</li>
 <li><code>git remote add origin git@100.65.173.16:/var/git/parse.git</code> # Add a remote named &#39;origin&#39;<pre><code>error: No such remote &#39;origin&#39;
@@ -20442,6 +21399,10 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 </li>
 <li><code>dotfiles ls-files</code> # List tracked files</li>
 <li><code>dotfiles commit --message=&quot;Set the default volume to 60 percent (without any arguments)&quot;</code> # Set commit message</li>
+<li><code>git commit</code> # Write multiline message in an editor<ul>
+<li>Type multiline message at the top (Only lines not starting with <code>#</code> will be saved as the commit message)</li>
+</ul>
+</li>
 <li><code>dotfiles push git@192.168.10.100:/var/git/dotfiles.git development</code> # Push to a specific remote URL</li>
 <li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
 <li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>
@@ -20625,6 +21586,7 @@ fi
 <li><code>yy 14p</code> # Copy the line and paste it 14 times</li>
 <li><code>Ctrl-v 14j</code> # Enter visual block mode and select the column of 14 numbers</li>
 <li><code>g Ctrl-a</code> # Increment numbers sequentially (Opposite: <code>Ctrl-x</code>)</li>
+<li><code>2026-06-20</code> # Treat a number as negative (e.g. <code>-20</code> -&gt; <code>-19</code>) if it is preceded by a <code>-</code> sign (Unless you select a number in VISUAL mode)</li>
 </ul>
 </li>
 <li><code>&lt;C-r&gt;=strftime(&#39;%F&#39;)</code> # Insert date and time after the cursor (Output: 2023-02-24) in insert mode<ul>
@@ -21700,6 +22662,12 @@ dotfiles config --local status.showUntrackedFiles no
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Ignore files in a specific directory<pre><code>rm -rf ~/.local/src/ani/.git/ # Remove nested Git
+vim ~/.local/src/ani/.gitignore # Edit
+dotfiles add ~/.local/src/ani # Add this directory
+dotfiles commit --message=&quot;Add ani cli project&quot;
+</code></pre>
+</li>
 <li><code>git clone --branch development git@100.65.173.16:/var/git/diary.git/ ~/.config/diary/</code> # Clone <em>development</em> branch to <em>~/.config/diary/</em> directory</li>
 <li><code>dotfiles config --local status.showUntrackedFiles no</code> # Hide untracked files</li>
 <li>Replace &quot;.bashrc&quot; with your file name (e.g. .zshrc)</li>
@@ -21709,6 +22677,7 @@ dotfiles config --local status.showUntrackedFiles no
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b">https://fwuensche.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b</a></li>
 <li><a href="https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280049">https://medium.com/@simontoth/best-way-to-manage-your-dotfiles-2c45bb280049</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -22109,7 +23078,10 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>unlink ./i3/config</code> # Remove a symbolic link</li>
+<li><code>unlink ./i3/config</code> # Remove a symbolic link<ul>
+<li>Warning: this <code>unlink</code> command is dangerous, not recommended. (Otherwise normal files may be accidentally deleted.)</li>
+</ul>
+</li>
 <li><code>~/.config/i3/config</code> # A hard link</li>
 <li><code>./i3/config</code> # A symbolic link<ul>
 <li><code>mkdir ./i3/</code> # Make a directory before using the <em>ln</em> command</li>
@@ -22179,32 +23151,6 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Solve the problem<pre><code>sessions should be nested with care, unset $TMUX to force
-</code></pre>
-<ul>
-<li><code>vim .profile</code> # In iSH on iPhone<pre><code># Start tmux only if not already inside tmux
-[ -z &quot;$TMUX&quot; ] &amp;&amp; tmux new-session &#39;vimwiki-sync.sh&#39;
-</code></pre>
-</li>
-<li><code>vim ~/.bashrc</code> # In Kitty on Linux<pre><code>SESSION=&quot;1&quot;
-
-# Check if tmux session named $SESSION exists
-if ! tmux has-session -t &quot;$SESSION&quot; &gt;/dev/null 2&gt;&amp;1; then
-  # Session doesn&#39;t exist yet
-
-  # If TMUX is non-empty (we are inside a tmux shell),
-  # temporarily unset TMUX to avoid nested warning
-  if [ -n &quot;$TMUX&quot; ]; then
-    # Run without TMUX set
-    TMUX= tmux new-session -s &quot;$SESSION&quot; &#39;vimwiki-sync.sh&#39;
-  else
-    tmux new-session -s &quot;$SESSION&quot; &#39;vimwiki-sync.sh&#39;
-  fi
-fi
-</code></pre>
-</li>
-</ul>
-</li>
 <li><code>vim ~/.tmux.conf</code><pre><code># Toggle floating scratchpad
 # Bind a key
 bind-key -n M-Space if-shell -F &#39;#{==:#{session_name},scratch}&#39; {
@@ -22260,6 +23206,7 @@ set -g base-index 1
 </li>
 <li><code>tmux attach-session -t 1</code> # Attach session 1</li>
 <li><code>tmux kill-server</code> # kill all server (e.g. sessions, windows, and panes)</li>
+<li><code>tmux new &#39;curl https://paste.c-net.org; exec bash&#39;</code> # Run a command</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -23451,11 +24398,10 @@ yaoniplan@yaoniplan ~ $
 <li>because it has a link to share anyone.</li>
 </ul>
 </li>
-</ul>
-<hr>
-<ul>
 <li>Nordic-darker theme installation<ul>
 <li><code>sudo cp -r Nordic-darker/ /usr/share/themes/</code></li>
+</ul>
+</li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>Nordic-darker/</code> # The theme folder<ul>
 <li><code>tar -xf Nordic-darker.tar.xz</code> # Extract the file if you download it</li>
@@ -23468,8 +24414,6 @@ yaoniplan@yaoniplan ~ $
 <li><img src="./assets/image_1669564625171_0.png" alt="image.png"></li>
 <li><img src="./assets/image_1669564715389_0.png" alt="image.png"></li>
 <li><a href="https://github.com/EliverLara/Nordic#installation">https://github.com/EliverLara/Nordic#installation</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -23503,8 +24447,7 @@ yaoniplan@yaoniplan ~ $
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><img src="./assets/image_1669557601380_0.png" alt="image.png"></li>
-<li><pre><code>yaoniplan@yaoniplan ~/note $ sudo echo &quot;=x11-base/xorg-server-1.11.99.2&quot; sudo &gt;&gt; /etc/portage/package.unmask
+<li><img src="./assets/image_1669557601380_0.png" alt="image.png"><pre><code>yaoniplan@yaoniplan ~/note $ sudo echo &quot;=x11-base/xorg-server-1.11.99.2&quot; sudo &gt;&gt; /etc/portage/package.unmask
 bash: /etc/portage/package.unmask: Permission denied
 </code></pre>
 </li>
@@ -23551,27 +24494,29 @@ bash: /etc/portage/package.unmask: Permission denied
 </ul>
 <hr>
 <ul>
-<li>Rofi installation #i3 #Gentoo #Linuxn<ul>
-<li><code>sudo emerge -aq x11-misc/rofi</code></li>
-<li><code>sudo vim ~/.config/i3/config</code><ul>
-<li><pre><code># start dmenu (a program launcher)
+<li><h4>Use &quot;rofi&quot;</h4>
+<ul>
+<li><code>Ctrl-Space</code> # Autocomplete</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/i3/config</code><pre><code># start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec &quot;rofi -modi drun,run -show drun&quot;
 </code></pre>
 </li>
+<li><code>nix profile install nixpkgs#rofi</code> # Install dependencies<ul>
+<li><code>sudo emerge --ask --quiet x11-misc/rofi</code> # Install on Gentoo Linux</li>
 </ul>
 </li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>-a</code> # Ask</li>
-<li><code>-q</code> # Quiet</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/image_1669537514100_0.png" alt="image.png"></li>
 <li><code>man emerge</code> # Type (by pressing &quot;<strong>/</strong>&quot;) &quot;<strong>--ask</strong>&quot; or &quot;<strong>--quiet</strong>&quot; in manual page about emerge</li>
-</ul>
-</li>
+<li><code>man 5 rofi-keys</code> # <code>/Control\+space</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -23598,7 +24543,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 </ul>
 <hr>
 <ul>
-<li><h4>Enable audio or sound in Gentoo Linux</h4>
+<li><h4>Enable audio or sound on Gentoo Linux</h4>
 <ul>
 <li><code>cd /usr/src/linux</code></li>
 <li><code>doas make menuconfig</code></li>
@@ -23670,7 +24615,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 </ul>
 <hr>
 <ul>
-<li><h4>Install google-chrome in Gentoo Linux</h4>
+<li><h4>Install google-chrome on Gentoo Linux</h4>
 <ul>
 <li><code>sudo vim /etc/portage/package.license</code><pre><code>www-client/google-chrome google-chrome
 </code></pre>
@@ -23891,7 +24836,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><code>-bios /usr/share/ovmf/x64/OVMF.fd</code> # 64bit UEFI</li>
 <li><code>ssh yaoniplan@192.168.10.105 -p 60022</code> # Connect it</li>
 <li><code>doas pacman -S qemu-full</code> # Install dependencies</li>
-<li><code>doas pacman -S remmina</code> # Install the VNC client (Another way)<pre><code># Click the &quot;New connection profile&quot; icon
+<li><code>doas pacman -S remmina</code> # Install the VNC client (Another way)<pre><code># Click the &#39;New connection profile&#39; icon
 Remmina VNC plugin for GNOME and KVM # Protocol
 localhost:5900 # Server
 # Click the &quot;Save&quot; button
@@ -24596,6 +25541,7 @@ exec ~/.config/shell/autoGit.sh
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>&quot;{}&quot; # Curly brackets</li>
+<li>&quot;[]&quot; # Square brackets</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -26997,7 +27943,41 @@ for_window [class=&quot;^st-256color$&quot;] move scratchpad
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/alacritty/alacritty.toml</code><pre><code># Set fonts
+<li>Vi mode (Like tmux&#39;s <code>Ctrl-b [</code>)<ul>
+<li><code>Ctrl-Shift-Space</code> # Toggle (Then you can use Vi-like keybinds)</li>
+<li><code>i</code> # Exit Vi mode</li>
+<li><code>Ctrl-Shift-c</code> # Copy without exiting Vi mode (If you need to copy in order)</li>
+</ul>
+</li>
+<li><code>vim ~/.config/alacritty/alacritty.toml</code> # Configure as needed<pre><code># Set theme
+[general]
+import = [
+  &quot;~/.config/alacritty/themes/themes/catppuccin_mocha.toml&quot;
+  #&quot;~/.config/alacritty/themes/themes/tokyo_night.toml&quot;
+]
+
+# Set key bindings
+[keyboard]
+bindings = [
+  # Map `Ctrl-m` to `Enter`
+  { key = &quot;m&quot;, mods= &quot;Control&quot;, chars = &quot;\u000d&quot; },
+  # Similar &#39;y&#39; of tmux
+  { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;Copy&quot; },
+  { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
+  { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ToggleViMode&quot; },
+  { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ScrollToBottom&quot; },
+  # Similar &#39;q&#39; of tmux
+  { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
+  { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ToggleViMode&quot; },
+  { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ScrollToBottom&quot; },
+  # Similar &#39;Ctrl-[&#39; of tmux in copy mode
+  { key = &quot;[&quot;, mods = &quot;Control&quot;, mode = &quot;Search&quot;, action = &quot;SearchCancel&quot; },
+  { key = &quot;[&quot;, mods = &quot;Control&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
+  # Similar &#39;Ctrl-m&#39; of tmux search
+  { key = &quot;m&quot;, mods = &quot;Control&quot;, mode = &quot;Search|Vi&quot;, action = &quot;SearchConfirm&quot; },
+]
+
+# Set fonts
 [font]
 size = 12.0
 
@@ -27013,11 +27993,22 @@ style = &quot;Bold&quot;
 family = &quot;FiraCode Nerd Font&quot;
 style = &quot;Italic&quot;
 </code></pre>
+<ul>
+<li><code>\u000d</code> # Use <code>showkey --ascii</code> (Hex: <code>0x0d</code>) to get <code>0d</code> (suffix), then combine it with <code>\u00</code> (prefix)</li>
+<li>Clone the themes directory only (If cloning the entire repository is slow)<pre><code>git clone --filter=blob:none --sparse --depth=1 https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+cd ~/.config/alacritty/themes
+git sparse-checkout set themes
+</code></pre>
+</li>
+</ul>
 </li>
 <li><code>doas pacman --sync alacritty</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://alacritty.org/releases/0.17.0/config-alacritty-bindings.html">https://alacritty.org/releases/0.17.0/config-alacritty-bindings.html</a></li>
+<li><a href="https://wiki.archlinux.org/title/Alacritty#Vi_mode_and_copy/paste">https://wiki.archlinux.org/title/Alacritty#Vi_mode_and_copy/paste</a></li>
+<li><a href="https://github.com/alacritty/alacritty-theme">https://github.com/alacritty/alacritty-theme</a></li>
 <li><code>man alacritty</code> # <code>/--command</code></li>
 <li>Artificial intelligence</li>
 </ul>
@@ -27140,7 +28131,10 @@ smart_boards on
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>awesome</code> # Replace it with your desired file name</li>
-<li><code>doas emerge -aq sys-apps/mlocate</code> # Install it in Gentoo Linux</li>
+<li><code>nix profile install nixpkgs#mlocate</code> # Install dependencies<ul>
+<li><code>doas emerge -aq sys-apps/mlocate</code> # Install on Gentoo Linux</li>
+</ul>
+</li>
 <li><code>doas updatedb</code> # Update the database before locating</li>
 <li><code>doas groupadd mlocate</code> # Add a group to solve the problem<pre><code>[yaoniplan@tux:~]$ sudo updatedb
 updatedb: can not find group `mlocate&#39;
@@ -27336,7 +28330,13 @@ XMODIFIERS=@im=fcitx //添加这一行
 </li>
 <li><h4>Use &quot;chromium&quot;</h4>
 <ul>
+<li><code>exec chromium --app=https://chat.deepseek.com</code> # Open the site in app mode<ul>
+<li><code>exec</code> # Replace the shell process with the given command</li>
+</ul>
+</li>
 <li>Keyboard shortcuts<ul>
+<li><code>Tab Space</code> # Select and confirm in Cloudflare verification page (Because I don&#39;t want to move the cursor to click manually)</li>
+<li><code>Shift-Esc Shift-Enter</code> # Open task manager and redirect to the corresponding page (Find the cause of excessive resource usage)</li>
 <li><code>Ctrl-Shift-n</code> # New a incognito (private) tab</li>
 <li><code>Ctrl-j</code> # Open &quot;Downloads&quot; tab then <code>Ctrl-w</code> to close it (To close the download bar)</li>
 <li><code>Fn-11</code> # Toggle full screen (Click the three vertical dots - Click the full screen mode icon - Click the &quot;X&quot; button)</li>
@@ -27861,6 +28861,7 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </li>
 <li><h4>Use &quot;github&quot;</h4>
 <ul>
+<li><code>&quot;- ####&quot;</code> # Search for an exact string (In double quotes)</li>
 <li><code>https://api.github.com/users/yaoniplan</code> # Get account created time (date)</li>
 <li><code>https://api.github.com/repos/yaoniplan/note</code> # Get repository created time (date)</li>
 </ul>
@@ -27894,6 +28895,33 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/Clouder0/ClouderBlog/blob/0327eebac74220d3cb9a32851d5a3ca1bccfba0e/content/zh-cn/post/python-tutorial.md#%E6%93%8D%E4%BD%9C%E7%AC%A6operators">https://github.com/Clouder0/ClouderBlog/blob/0327eebac74220d3cb9a32851d5a3ca1bccfba0e/content/zh-cn/post/python-tutorial.md#操作符operators</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Caret">https://en.wikipedia.org/wiki/Caret</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;python&quot;</h4>
+<ul>
+<li><code>url = url.replace(&quot;http://&quot;, &quot;https://&quot;, 1)</code> # Replace http:// with https://<ul>
+<li><code>1</code> # The first one</li>
+</ul>
+</li>
+<li><code>subprocess.Popen([&quot;openurl&quot;, f&quot;vlc://{url}&quot;])</code> # Open the subprocess to execute this command<ul>
+<li><code>Popen()</code> # Process open</li>
+<li><code>[]</code> # Define a Python list</li>
+<li><code>f</code> # Formatted (Insert the value of a variable into the string)</li>
+<li><code>{}</code> # Evaluate the expression inside, convert it to string, and inject it into the spot</li>
+<li><code>([ ... ], start_new_session=True)</code> # Prevent command from exiting after the script has exited</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because sometimes it is necessary to fine-tune the scripts written by AI.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -27975,15 +29003,37 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <li>[[ventoy]]测试(环境：usb2.0电脑 和 usb3.0u盘)<br>速度(gpt)：$\overline{33}$MB/s<br>速度(dos)：$\overline{100}$MB/s<br>结论：在这种情况下，以root权限处理文件，u盘格式dos的速度更快 #Idea</li>
 <li>[有效学习：处理知识的20条规则([[anki]])](<a href="https://www.yuque.com/supermemo/wiki/20rules">https://www.yuque.com/supermemo/wiki/20rules</a>)</li>
 <li></li>
-<li>我陷入了沉思：(关于壁纸)  <ol>
-<li>理论上，找壁纸和欣赏壁纸都需要花费时间和精力成本(所以，我决定放弃跟壁纸有关的事情)</li>
-<li>但是，我有时有一种壁纸能促进生产力的感觉(in the [[future]] ，调查研究实验壁纸)</li>
-</ol>
-</li>
 <li>in the [[future]] ，专业大概率选择 [[计算机科学与技术]]</li>
 <li><blockquote>
 <p>虽千万人吾往矣(即使面对千万人的阻止，我也要勇往直前) #quote</p>
 </blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>About wallpaper #idea</h4>
+<ul>
+<li>理论上，找壁纸和欣赏壁纸都需要花费时间和精力成本(所以，我决定放弃跟壁纸有关的事情)</li>
+<li>但是，我有时有一种壁纸能促进生产力的感觉(in the future ，调查研究实验壁纸)</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>I find fractals mathematically beautiful, but they consume too many computing resources (and are not friendly to older computer)<ul>
+<li><code>glpaper LVDS-1 mandelbrot.frag</code> # Run a small OpenGL-style &quot;shader wallpaper&quot;</li>
+<li><code>nix profile install nixpkgs#glpaper</code> # Install dependencies</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>vim mandelbrot.frag</code> # Configure as needed<pre><code>//float time = 0.0; // Static
+uniform float time; // Dynamic
+
+vec2 resolution = vec2(1366.0, 768.0); // Adjust to your screen
+</code></pre>
+</li>
+<li><a href="https://github.com/satellitecomponent/Neurite">https://github.com/satellitecomponent/Neurite</a></li>
+</ul>
 </li>
 </ul>
 <hr>

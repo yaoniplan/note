@@ -64,7 +64,7 @@
 - https://bigjpg.com/
 
 ## Network proxy
-- https://www.askahh.com/index.php/archives/101/
+- https://www.askahh.com/archives/17/
 - https://jichangtuijian.com/%E5%85%8D%E8%B4%B9ssr%E5%92%8Cv2ray%E6%9C%BA%E5%9C%BA.html
 - https://acl4ssr-sub.github.io/
 - https://clash2sfa.xmdhs.com/
