@@ -1,34 +1,29 @@
 ### "Animation"
-- 欺诈游戏 S01E01
-- 大道独行之蝶龙变 S01E02
-- 搜神记 S01E03 TODO
-- 转职阎王，我执掌了生死簿 #AI S01E15
-- 被家族抛弃，我觉醒九亿属性点 #AI S01E16
-- 绝世战魂 S01E170
-- 修罗武神 S01E16.S02E07
-- 盗妖行 S01E13
-- 龙破九天 S01E21
-- 驭灵师 S01E07
-- 地狱乐 S01E13.S02E11
-- 择天记 S01E11
-- 成何体统 S01E24.S02E11
-- 中国奇谭 S02E09
-- 深空彼岸 S01E13
-- 仙剑奇侠传叁 S01E15
-- 剑来 - S01E26.S02E17
-- 光阴之外 S01E16
-- 永生 - S01E12.S02E12.S03E16.S04E16.S05E18
-- Apotheosis / 百炼成神 - S01E52.S02E52.S03E18
-- 宗门里除了我都是卧底 S01E140
-- 玄界之门 S01E21
-- 神墓 S01E16.S02E27.S03E36
-- 牧神记 S01E77
-- 仙逆 - 135
-- Shrouding the Heavens / 遮天 - 156
-- 武神主宰 - 645
-- Against the Sky Supreme / 逆天至尊 - 502
+- 斩神之凡尘神域 S01E15
+- 万人之上 S01E05
+- 凡人修仙传 - 180
+- 镖人 S01E15.S02E02 ani
+- 盘龙 S01E10
+- 逆天邪神 S01E30.S02E12
+- 将夜 S01E10
+- Liar Game / 欺诈游戏 S01E11
+- 大道独行之蝶龙变 S01E12
+- 盗妖行 S01E38
+- 择天记 S01E23
+- 深空彼岸 S01E25
+- 光阴之外 S01E27
+- 神墓 S01E16.S02E27.S03E48
+- 牧神记 S01E88
+- 仙逆 146
+- Shrouding the Heavens / 遮天 168
+- 武神主宰 668
+- Against the Sky Supreme / 逆天至尊 525
 
 ### Comic
+- 杀手巴德罗 Chapter 104
+- 魔道转生记 Chapter 52
+- 全职觉醒 Chapter 140
+- 寒冰末日：我屯了千亿物资 Chapter 104 # A similar storyline (but with humourous and relaxing elements)
 - 历史典故 Chapter 3
 - 不变的法则 Chapter 35
 - 从零开始无限进化 Chapter 31
@@ -332,6 +327,30 @@
 - guard(end)
 
 ### Animation
+- 最强的职业不是勇者也不是贤者好像是鉴定士(伪)的样子 S01E12
+- Apotheosis / 百炼成神 S01E52.S02E52.S03E26
+- 成何体统 S01E24.S02E24
+- 驭灵师 S01E18
+- 绝世战魂 S01E180
+- Berserk / 剑风传奇 S01E25.S02E12.S03E07 0407 # Only the first version (1997) is recommended
+    - (1997 / Memorial Edition / the Golden Age Arc film trilogy - 2016 - 2017)
+- 女神“异世界转生想成为什么”我“勇者的肋骨” S01E04 0539 # It feels like the production budget for this anime was seriously lacking.
+- 玄界之门 S01E26
+- 宗门里除了我都是卧底 S01E152
+- 永生 S01E12.S02E12.S03E16.S04E16.S05E26
+- 龙破九天 S01E37 0606 # Plot predictable
+- 被家族抛弃，我觉醒九亿属性点 #AI S01E29 0350 # The visual transitions were choppy
+- 转职阎王，我执掌了生死簿 #AI S01E20
+- 搜神记 S01E07 1318 # Plot maybe slow
+- 三岁开始做王者 / 最强的国王，第二次的人生要做什么？ / 最強王者的第二人生 S01E12.S02E04 1027 # Plot maybe slow
+- 剑来 - S01E26.S02E27
+- 仙剑奇侠传叁 S01E16 1144 # The plot wasn't engaging (Perhaps because I'd already seen the TV version)
+- 中国奇谭 S02E09
+- 地狱乐 S01E13.S02E12
+- 修罗武神 S01E16.S02E16
+- Ho Ta Ru Ko / 螢子 #NSFW S01E03
+- けらく[快楽]の王 #NSFW S01E03
+- 御先祖賛江 / 続・御先祖賛江 #NSFW S01E08
 - 泛而不精的我被逐出勇者队伍 S01E12
 - 末世：S级机甲开局，我无敌了 #AI S01E13 # The visual transitions were choppy, but the ending theme song had a nice melody
 - 身为魔族的我想向勇者小队的可爱女孩告白 S01E13
@@ -351,7 +370,6 @@
 - 靠你啦！战神系统 S01E16
 - 山海经密码 S01E07 # Great visuals, lackluster plot
 - 史上最强炼体老祖 S01E08 0806 # Plot maybe slow
-- 凡人修仙传 - 176
 - 神在囧途 S01E40
 - 开局地摊卖大力 S01E24
 - 傲世丹神 S01E12
@@ -450,7 +468,6 @@
 - 华Doll*-Reinterpretation of Flowering- S01E02 0221 # Target audience maybe 13 or 14 years old
 - 圣女因太过完美不够可爱而被废除婚约并卖到邻国 S01E05 0339 # Target audience maybe female
 - 记忆缝线 S1E02 0954 # Plot maybe slow
-- 三岁开始做王者 / 最强的国王，第二次的人生要做什么？ S01E12
 - 外星人姆姆 S01E02 0111 # Target audience maybe female
 - 瞬间治疗却被视为无用而被流放的天才治疗师 S01E12
 - 阳光马达棒球场！ S01E05 # Target audience maybe those who like to watch baseball
@@ -589,7 +606,6 @@
 - 新网球王子 U-17 世界杯 半决赛 0040 # Seems to lack the passion element (Compared to this *Blue Lock* animation)
 - 银翼超人 0225 # It's a TV series.
 - 剑域风云 - S01E40.S02E52.S03E104
-- 斩神之凡尘神域 S01E15
 - 柔光魔女股份有限公司 - S01E03 1759 # Target audience maybe female
 - 常轨脱离Creative S01E02 # Target audience maybe female
 - 再见龙生，你好人生 S01E05 0852 # Maybe The plot is slow
@@ -743,7 +759,6 @@
 - Code Geass Lelouch of the Rebellion / 反叛的魯路修 - S01E25.S02E25
 - 无人能敌 - S1E12
 - 洪荒灵尊 - S1E60
-- 逆天邪神3D - S1E30
 - Law of Devil / 恶魔法则 - S1E24
 - 不死不灭之少年出山 - S1E16
 - 太一剑仙传 - S1E20
@@ -898,7 +913,6 @@
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
 - My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
 - 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
-- 镖人 - 15 # End of the first part
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
 - 风火战纪 - 01 # The plot is too corny
