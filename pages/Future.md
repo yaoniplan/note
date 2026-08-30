@@ -78,6 +78,8 @@
 - https://www.868dm.com/
 - https://yhdm6a.com/
 - https://yhdm.one/latest/
+- https://kaliscan.me/latest
+- https://kagane.to/search?sort=updated_at,desc&exg
 - http://eroanimedougakan.blog.fc2.com/
 
 ## Programming

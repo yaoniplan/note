@@ -43,21 +43,37 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;split&quot;</h4>
+<ul>
+<li><code>split -n 4 index.js</code> # Split it into 4 equal parts</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>--additional-suffix=.js</code> # Set the suffix</li>
+<li>Because AI can only read limited content.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;appman&quot;</h4>
 <ul>
 <li><code>appman search rustdesk</code> # Search a package<ul>
-<li><code>install</code> # Replace <code>search</code> with it to install</li>
+<li><code>search</code> # Replace it with <code>install</code> (<code>remove</code>) to install (remove)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>appman --relocate</code> # Remove and reinstall apps in another location (e.g. <code>.local/appman</code>)</li>
 <li>Because I want to manage AppImage using a single command.</li>
-<li>Install<pre><code>wget -q https://raw.githubusercontent.com/ivan-hc/AM/main/AM-INSTALLER &amp;&amp; chmod a+x ./AM-INSTALLER &amp;&amp; ./AM-INSTALLER &amp;&amp; rm ./AM-INSTALLER
-</code></pre>
-</li>
-<li>Uninstall<pre><code>rm ~/.local/bin/appman
-</code></pre>
+<li><code>wget -q https://raw.githubusercontent.com/ivan-hc/AM/main/AM-INSTALLER &amp;&amp; chmod a+x ./AM-INSTALLER &amp;&amp; ./AM-INSTALLER &amp;&amp; rm ./AM-INSTALLER</code> # Install depeendencies<ul>
+<li><code>rm ~/.local/bin/appman</code> # Uninstall dependencies</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -408,12 +424,16 @@ clean:
 <li><code>podman start qinglong</code> # Start the container</li>
 <li><code>podman stop qinglong || podman kill qinglong</code> # Stop (Or kill) the running container</li>
 <li><code>podman run -d --name qinglong -p 5700:5700 -v ~/.config/qinglong:/ql/data docker.io/whyour/qinglong:debian</code> # Run a container in the background</li>
+<li><code>podman logs openlist</code> # Fetch the logs of openlist container (name)</li>
 <li><code>podman exec qinglong task Cp0204_ChinaTelecomMonitor/telecom_monitor.py now</code> # Execute a command inside a running container<ul>
 <li><code>env --unset=http_proxy --unset=https_proxy</code> # Remove variable from the environment (Place the command after container name)</li>
 </ul>
 </li>
-<li>Enable proxy (For containers)<pre><code>-e http_proxy=http://host.docker.internal:7890
--e https_proxy=http://host.docker.internal:7890
+<li>Enable proxy (For containers)<pre><code>--env http_proxy=http://host.docker.internal:7890 \
+--env https_proxy=http://host.docker.internal:7890 \
+## Unset proxy
+#--env http_proxy=&quot;&quot; \
+#--env https_proxy=&quot;&quot; \
 </code></pre>
 </li>
 <li><code>doas pacman --sync --refresh podman</code> # Install dependencies</li>
@@ -426,6 +446,7 @@ clean:
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918">https://github.com/yt-dlp/yt-dlp/issues/11327#issuecomment-2899634918</a> # test commands</li>
+<li><code>podman logs --help</code></li>
 <li><code>podman exec --help</code></li>
 <li><code>podman run --help</code></li>
 <li><code>man env</code></li>
@@ -725,21 +746,55 @@ TTYVTDisallocate=true
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/swayimg/config</code> # Configure as needed<pre><code>[keys.viewer]
-h = step_left 10
-j = step_down 10
-k = step_up 10
-l = step_right 10
+<li><code>vim ~/.config/swayimg/init.lua</code> # Configure as needed<pre><code>-- Copy image to clipboard
+swayimg.viewer.on_key(&quot;c&quot;, function()
+  local file = os.tmpname() .. &quot;.png&quot;
+  -- Export the currently displayed frame as PNG.
+  swayimg.viewer.export(file)
+  -- Copy the PNG to the Wayland clipboard.
+  os.execute(&quot;wl-copy --type image/png &lt; &quot; .. string.format(&quot;%q&quot;, file))
+  -- Remove the temporary file.
+  os.remove(file)
+end)
+
+-- move image across the window
+swayimg.viewer.on_key(&quot;h&quot;, function()
+  local pos = swayimg.viewer.get_position()
+  swayimg.viewer.set_abs_position(pos.x + 10, pos.y)
+end)
+
+swayimg.viewer.on_key(&quot;j&quot;, function()
+  local pos = swayimg.viewer.get_position()
+  swayimg.viewer.set_abs_position(pos.x, pos.y - 10)
+end)
+
+swayimg.viewer.on_key(&quot;k&quot;, function()
+  local pos = swayimg.viewer.get_position()
+  swayimg.viewer.set_abs_position(pos.x, pos.y + 10)
+end)
+
+swayimg.viewer.on_key(&quot;l&quot;, function()
+  local pos = swayimg.viewer.get_position()
+  swayimg.viewer.set_abs_position(pos.x - 10, pos.y)
+end)
+
+-- exit from application
+swayimg.viewer.on_key(&quot;q&quot;, function()
+  swayimg.exit()
+end)
+
+-- Hide text overlay by default on startup
+swayimg.text.visible = false
 </code></pre>
 </li>
 <li><code>f</code> # full screen</li>
-<li><code>i</code> # Information</li>
+<li><code>t</code> # Text information</li>
 <li><code>-</code> # Zoom -10 (Opposite: <code>=</code>)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/artemsen/swayimg/blob/master/extra/swayimgrc">https://github.com/artemsen/swayimg/blob/master/extra/swayimgrc</a> # <code>/step</code></li>
-<li><code>less /usr/share/swayimg/swayimgrc</code> # <code>man swayimgrc</code></li>
+<li><a href="https://github.com/artemsen/swayimg/blob/master/CONFIG.md">https://github.com/artemsen/swayimg/blob/master/CONFIG.md</a> # <code>/export</code></li>
+<li><a href="https://github.com/artemsen/swayimg/blob/master/extra/example.lua">https://github.com/artemsen/swayimg/blob/master/extra/example.lua</a></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -789,7 +844,6 @@ workspace &quot;stash&quot; { }
 <li><code>niri msg -j windows</code> # Get a list of open windows</li>
 <li><code>niri msg action focus-window --id 12</code> # Focus a window by id</li>
 <li><code>niri msg action focus-window-previous</code> # Focus previous window</li>
-<li><a href="https://github.com/ficcdaf/scripts/blob/main/niri/window-picker.py">https://github.com/ficcdaf/scripts/blob/main/niri/window-picker.py</a></li>
 </ul>
 </li>
 <li><code>Super-o</code> # Toggle the overview (Or move your cursor to the top-left corner of the screen)</li>
@@ -858,7 +912,15 @@ recent-windows {
         corner-radius 14
     }
 }
-// Open Kitty with 1/3 of the screen width by default
+// Open floating windows with 1/2 of the screen width by default
+window-rule {
+    match app-id=r#&quot;^chrome-127\.0\.0\.1__-Default$&quot;#
+    //default-column-width { fixed 677; }
+    //default-window-height { fixed 748; }
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.98; }
+}
+// Open tiling windows with 1/3 of the screen width by default
 window-rule {
     match app-id=&quot;^kitty$&quot;
     default-column-width { proportion 0.33333; }
@@ -915,6 +977,7 @@ include &quot;./colors.kdl&quot;
 <li><a href="https://niri-wm.github.io/niri/Configuration:-Window-Rules">https://niri-wm.github.io/niri/Configuration:-Window-Rules</a> # <code>/exclude</code></li>
 <li><a href="https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus">https://github.com/niri-wm/niri/blob/main/docs/wiki/Configuration%3A-Input.md#warp-mouse-to-focus</a></li>
 <li><a href="https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html">https://yalter.github.io/niri/Configuration%3A-Recent-Windows.html</a> # <code>/round</code></li>
+<li><a href="https://github.com/niri-wm/niri/wiki/Configuration:-Window-Rules#default-floating-position">https://github.com/niri-wm/niri/wiki/Configuration:-Window-Rules#default-floating-position</a></li>
 <li><a href="https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl">https://github.com/YaLTeR/niri/blob/main/resources/default-config.kdl</a> # <code>/overview</code></li>
 <li><a href="https://wiki.archlinux.org/title/Niri">https://wiki.archlinux.org/title/Niri</a> # <code>/focus</code></li>
 <li><a href="https://github.com/YaLTeR/niri/wiki/FAQ">https://github.com/YaLTeR/niri/wiki/FAQ</a> # <code>/draw-border-with-background</code></li>
@@ -1855,24 +1918,34 @@ List of audio encoders:
 <li><h4>Use &quot;yazi&quot;</h4>
 <ul>
 <li><code>yazi</code><ul>
-<li><code>S</code> # Search file contents in the current directory and subdirectories (Use <code>rg</code>)</li>
+<li><code>; chromium &quot;$1&quot;</code> # Open the current file (e.g. index.html) in a browser</li>
+<li><code>;</code> # Run a shell command using <code>sh</code></li>
+<li><code>G</code> # Move cursor to the bottom (Opposite: <code>g g</code>)</li>
+<li><code>Tab</code> # View file times (created/modified)</li>
+<li><code>J</code> # Scroll down in the preview (Opposite: <code>K</code>)</li>
+<li><code>S</code> # Search file contents in the current directory and subdirectories using <code>rg</code></li>
 <li><code>.</code> # Show or hide dotfiles</li>
 <li><code>q</code> # Quit</li>
 <li><code>~</code> # Open the help menu</li>
-<li><code>g&lt;Space&gt;</code> # Go to the path you want to go</li>
-<li><code>cc</code> # Copy file path (The same as <code>realpath</code>)</li>
+<li><code>g &lt;Space&gt;</code> # Go to the path you want to go</li>
+<li><code>c c</code> # Copy file path (The same as <code>realpath</code>)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>ya pack --add grappas/wl-clipboard</code> # Install this plugin if clipboard doesn&#39;t work</li>
-<li><code>vim ~/.config/yazi/keymap.toml</code> # Configure keybindings<pre><code>[[manager.prepend_keymap]]
+<li><code>ya pkg add grappas/wl-clipboard</code> # Install this plugin if clipboard doesn&#39;t work<ul>
+<li><code>add</code> # Replace it with <code>delete</code> to delete</li>
+<li><code>ya pkg list</code> # List all packages (e.g. <code>yazi-rs/plugins:piper</code>)</li>
+<li><code>ya pkg add GianniBYoung/rsync</code> # Use rsync (Remember to add <a href="https://github.com/GianniBYoung/rsync.yazi#remember-last-target">https://github.com/GianniBYoung/rsync.yazi#remember-last-target</a> bind)</li>
+</ul>
+</li>
+<li><code>vim ~/.config/yazi/keymap.toml</code> # Configure keybindings<pre><code>[[mgr.prepend_keymap]]
 on   = [ &quot;g&quot;, &quot;b&quot; ]
 run  = &quot;cd ~/.local/bin&quot;
 desc = &quot;Goto ~/.local/bin&quot;
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ &quot;&lt;C-j&gt;&quot; ]
 run  = &quot;open&quot;
 desc = &quot;Open file or enter directory&quot;
@@ -1883,6 +1956,10 @@ desc = &quot;Open file or enter directory&quot;
 <li><code>/tachi</code> # Search for the directory you watn to delete</li>
 <li><code>d</code> # Delete (Move it to <code>~/.local/share/Trash/</code>)</li>
 <li><code>y</code> # Yes</li>
+<li><code>g t</code> # Go to trash bin</li>
+<li>If it keeps showing loading, just delete the orphaned files in these two folders (<code>./files</code> and <code>./info</code>)</li>
+<li><code>Shift-o</code> # Open selected files interactively (e.g. Restore selected files)</li>
+<li><code>D</code> # Delete files permanently</li>
 </ul>
 </li>
 <li>Because to use the fastest file manager.</li>
@@ -1892,6 +1969,7 @@ desc = &quot;Open file or enter directory&quot;
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/grappas/wl-clipboard.yazi#installation">https://github.com/grappas/wl-clipboard.yazi#installation</a></li>
 <li><a href="https://yazi-rs.github.io/docs/quick-start">https://yazi-rs.github.io/docs/quick-start</a></li>
+<li><code>man yazi</code> # <code>/bind</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -2828,6 +2906,7 @@ yaoniplan@tux ~/Downloads $
 <li><code>&amp;theme=dark</code> # Replace <code>dark</code> with other theme (e.g. cobalt)</li>
 <li><code>&amp;show_owner=true</code></li>
 <li><code>&amp;border_color=3c4043</code></li>
+<li><code>&amp;description_lines_count=2</code></li>
 </ul>
 </li>
 </ul>
@@ -2905,7 +2984,10 @@ jobs:
 <ul>
 <li><h4>Use &quot;wrangler&quot;</h4>
 <ul>
-<li><code>npm create cloudflare@latest -- products</code> # Create a project</li>
+<li><code>npm create cloudflare@latest -- products</code> # Create a project<ul>
+<li><code>wrangler init m3u8-filter --yes</code> # Another method</li>
+</ul>
+</li>
 <li><code>npx wrangler d1 create products</code> # Create a database</li>
 <li><code>vi ~/.config/store/products/wrangler.toml</code> # Append to end of file<pre><code>[[d1_databases]]
 binding = &quot;DB&quot;
@@ -3078,7 +3160,7 @@ export default {
 <li><code>npx wrangler d1 execute products --remote --file=./products.sql</code> # Import the data into the production version of your database</li>
 <li><code>wrangler d1 export DB --output products.sql --remote</code> # Export the database (Optional: For backup)</li>
 <li><code>npx wrangler d1 execute products --remote --command=&quot;SELECT * FROM products&quot;</code> # Validate the data</li>
-<li><code>npx wrangler deploy</code> # Deploy your Worker on the Internet</li>
+<li><code>npx wrangler deploy</code> # Deploy your Worker on the Internet (<code>--domain api.yaoniplan.eu.org</code>: Bind custom domain)</li>
 </ul>
 </li>
 </ul>
@@ -3147,6 +3229,7 @@ CREATE TABLE IF NOT EXISTS users (
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://developers.cloudflare.com/d1/get-started/">https://developers.cloudflare.com/d1/get-started/</a></li>
+<li><code>wrangler deploy --help</code> # <code>/domain</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -3253,8 +3336,8 @@ const CORS_HEADERS = {
 </li>
 </ul>
 </li>
-<li><code>npx wrangler kv key put --binding=feedback &quot;$(date +%s%3N)&quot; &quot;A small bottle of detergent&quot;</code> # Write a key-value pair</li>
-<li><code>npx wrangler kv key get --binding=feedback &quot;1730448992271&quot; --text</code> # Get a value of key (e.g. 1730448992271)</li>
+<li><code>npx wrangler kv key put --binding=feedback &quot;$(date +%s%3N)&quot; &quot;A small bottle of detergent&quot; --remote</code> # Write a key-value pair</li>
+<li><code>npx wrangler kv key get --binding=feedback &quot;1730448992271&quot; --text --remote</code> # Get a value of key (e.g. 1730448992271)</li>
 <li><code>npx wrangler deploy</code> # Deploy your Worker on the Internet</li>
 </ul>
 </li>
@@ -3406,7 +3489,7 @@ import time
     check_in_button.click()
 </code></pre>
 </li>
-<li><pre><code># Setup WebDriver
+<li>Setup a WebDriver<pre><code># Setup WebDriver
 driver = webdriver.Chrome()  # Make sure to have the appropriate WebDriver executable
 
 # Open the login URL (Replace with the actual URL)
@@ -3430,7 +3513,7 @@ driver.quit()
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -3873,6 +3956,10 @@ EOF
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Warning: Variables are not supported<ul>
+<li><a href="https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&type=issues">https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&amp;type=issues</a></li>
+</ul>
+</li>
 <li>Toolbar<ul>
 <li><code>config --toolbar</code> #  # Create a configuration file to change the toolbar</li>
 <li><code>vim ~/Documents/.toolbarDefinition</code> # Configure as needed<pre><code># Bind `Ctrl-l` (`\u{000C}`: ASCII) to the trash button icon
@@ -3882,7 +3969,11 @@ trash              insertString    \u{000C}
 #arrow.left.and.right           systemAction            left.right
 #arrow.up.and.down                      systemAction            up.down
 # You can also use the four-arrows-button if you need more space for other buttons:
-arrow.up.and.down.and.arrow.left.and.right              systemAction    up.down.left.right
+#arrow.up.and.down.and.arrow.left.and.right              systemAction    up.down.left.right
+arrow.up              systemAction            up
+arrow.down            systemAction            down
+arrow.left            systemAction            left
+arrow.right           systemAction            right
 </code></pre>
 </li>
 <li>Restart to make changes effective</li>
@@ -4117,6 +4208,24 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 <li><code>2334</code> # Search &#39;listen_port&#39; to get the port</li>
 <li><code>100.65.173.16</code> # Use no_proxy (Remember to new a terminal to make changes effective)</li>
 </ul>
+</li>
+<li>Specific (Use specific proxy for specific domains)<pre><code>[
+  &quot;route&quot;: {
+    &quot;rules&quot;: [
+      {
+        &quot;domain_suffix&quot;: [
+          &quot;example.com&quot;,
+          &quot;example2.com&quot;
+        ],
+        &quot;outbound&quot;: &quot;Asia-Japan-01-Vless&quot;
+      },
+      {
+        ...
+      }
+    ]
+  }
+]
+</code></pre>
 </li>
 <li>Direct (Do not use a proxy for domains)<pre><code>[
   &quot;route&quot;: {
@@ -5456,8 +5565,8 @@ bind = $mainMod, W, exec, WAYLAND_DISPLAY=no tdrop -mta wayst --app-id wayst1
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: Some custom keys don&#39;t work<ul>
-<li><code>ctrl+shift+v</code></li>
+<li>Warning: Some custom keys don&#39;t work (e.g. <code>ctrl+shift+v</code>)<ul>
+<li>First launch is a bit slower than &#39;tofi&#39;</li>
 </ul>
 </li>
 <li><code>vim ~/.config/kickoff/config.toml</code> # Customize<pre><code>[keybindings]
@@ -5820,6 +5929,7 @@ set recolor-darkcolor &quot;#B0B002&quot;
 <li><h4>Understand a &quot;.m3u&quot; file</h4>
 <ul>
 <li><code>vi ~/playlist.m3u</code><pre><code>#EXTM3U
+#EXTALBUMARTURL:https://example.com/cover1.jpg
 #EXTINF:-1 tvg-name=&quot;LoveNrture&quot; group-title=&quot;•4K&quot;,Love Nrture 4K「自然」
 https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 </code></pre>
@@ -5827,6 +5937,7 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>EXTALBUMARTURL</code> # Set song cover (Optional, when no embedded ablum art)</li>
 <li><code>EXT</code> # Extended</li>
 <li><code>INF</code> # Information</li>
 <li><code>-1</code> # Indefinite (Unknown duration)</li>
@@ -5836,7 +5947,7 @@ https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/YanG-1989/m3u/blob/main/Gather.m3u">https://github.com/YanG-1989/m3u/blob/main/Gather.m3u</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -6760,7 +6871,8 @@ url-is-set=true
 <ul>
 <li>Build a Python project<ul>
 <li><code>uv init</code> # Create a new Python project in the current directory</li>
-<li><code>uv add selenium</code> # Add a selenium package to the project</li>
+<li><code>uv add selenium</code> # Add a selenium package to the project (Opposite: <code>remove</code>)</li>
+<li><code>uv tree</code> # Display the project&#39;s dependency tree</li>
 <li><code>uv run checkIn.py</code> # Run a script in the project&#39;s environment</li>
 <li><code>uv tool install --editable .</code> # Install globally in development mode (Update by modifying the source code)<pre><code># Solve the problem about
 # &#39;No executables are provided by package `ani`; removing tool&#39;
@@ -6786,6 +6898,15 @@ exec uv run --directory ~/.local/src/ani main.py
 <li><code>uv tool list</code> # List installed tools</li>
 </ul>
 </li>
+<li>Call script from anywhere<ul>
+<li>Warning: it&#39;s not portable when some devices (e.g. iPhone) can&#39;t install <code>uv</code> command (Not recommended)</li>
+<li><code>uv add --script ~/.local/bin/chinese-to-pinyin.py pypinyin</code> # Add the dependency to the specified Python script</li>
+<li><code>vim ~/.local/bin/chinese-to-pinyin.py</code> # Update the shebang to use <code>uv run --script</code> to execute this script<pre><code>#!/usr/bin/env -S uv run --script
+##!/usr/bin/env python
+</code></pre>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -6795,12 +6916,13 @@ exec uv run --directory ~/.local/src/ani main.py
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/11665#issuecomment-2505987367">https://github.com/yt-dlp/yt-dlp/issues/11665#issuecomment-2505987367</a></li>
-<li><a href="https://docs-next.astral.sh/uv/guides/tools/#installing-tools">https://docs-next.astral.sh/uv/guides/tools/#installing-tools</a></li>
+<li><a href="https://docs.astral.sh/uv/guides/tools/#installing-tools">https://docs.astral.sh/uv/guides/tools/#installing-tools</a></li>
 <li><a href="https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&type=issues">https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&amp;type=issues</a></li>
 <li><a href="https://github.com/astral-sh/uv/issues/5450">https://github.com/astral-sh/uv/issues/5450</a></li>
 <li><a href="https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376">https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376</a></li>
-<li><a href="https://github.com/astral-sh/uv#getting-started">https://github.com/astral-sh/uv#getting-started</a></li>
+<li><a href="https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies">https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies</a></li>
 <li><code>tldr uv</code></li>
+<li><code>uv help add</code> # <code>/script</code></li>
 <li><code>uv help tool</code></li>
 <li>Artificial intelligence</li>
 </ul>
@@ -7055,7 +7177,46 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <ul>
 <li><h4>Use &quot;jq&quot;</h4>
 <ul>
-<li><code>curl https://example.com/xxx | jq -f patch.jq &gt; config.json.01</code><pre><code>.route.rules |= (
+<li>Construct JSON data from scratch<pre><code>jq --null-input \
+  --arg title &quot;乱世书&quot; \
+  --argjson current_index 0 \
+  --rawfile urls luanshishu.txt &#39;
+{
+  title: $title,
+  current_index: $current_index,
+  url: [$urls | split(&quot;\n&quot;)[] | select(. != &quot;&quot;)]
+}
+&#39; &gt; luanshishu.json
+</code></pre>
+<ul>
+<li><code>jq --raw-output &#39;.url[.current_index : .current_index + 3][]&#39; luanshishu.json</code> # Get next 3 URLs from an array</li>
+<li><code>jq --raw-output &#39;.url[.current_index - 1]&#39; luanshishu.json</code> # Get current URL from an array</li>
+<li><code>jq &#39;.current_index = 2&#39; luanshishu.json &gt; luanshishu.json</code> # Update the current index (absolute)</li>
+<li><code>jq &#39;.current_index += 3&#39; luanshishu.json  &gt; luanshishu.json</code> # Update the current index (relative)</li>
+<li><code>jq --rawfile new_urls luanshishu.txt &#39;.url = ($new_urls | split(&quot;\n&quot;) | map(select(length &gt; 0)))&#39; luanshishu.json &gt; luanshishu.json.tmp &amp;&amp; mv luanshishu.json.tmp luanshishu.json</code> # Update an array</li>
+<li><code>jq &#39;.url | length&#39; launshishu.json</code> # Count the number of elements in an array</li>
+</ul>
+</li>
+<li>Construct JSON data from scratch<ul>
+<li><code>jq --null-input --arg title &quot;yourTitle&quot; --arg pinyin &quot;yourPinyin&quot; --arg source &quot;yourSource&quot; --arg official &quot;yourOfficial&quot; --arg update &quot;yourUpdate&quot; --argjson previous null --arg current &quot;yourCurrent&quot; --arg next &quot;yourNext&quot; --argjson is_near_end false --from-file template.json</code></li>
+<li><code>vi ~/template.json</code><pre><code>{
+  &quot;title&quot;: $title,
+  &quot;pinyin&quot;: $pinyin,
+  &quot;source&quot;: $source,
+  &quot;official&quot;: $official,
+  &quot;update&quot;: $update,
+  &quot;url&quot;: {
+    &quot;previous&quot;: $previous,
+    &quot;current&quot;: $current,
+    &quot;next&quot;: $next
+  },
+  &quot;is_near_end&quot;: $is_near_end
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><code>curl https://example.com/xxx | jq --from-file patch.jq &gt; config.json.01</code><pre><code>.route.rules |= (
 [
   {
     domain_suffix: [
@@ -7086,6 +7247,7 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--join-output</code> # Removes the trailing newline (As an input parameter for the next operation)</li>
 <li><code>[.[] | {(.timestamp): .message}]</code> # Output matches your required format</li>
 <li><code>.[].url</code><ul>
 <li><code>.[]</code> # Iterate over each object</li>
@@ -7104,7 +7266,6 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 <li><code>.name</code> # Access the <code>name</code> field of each object in the <code>content</code> array</li>
 </ul>
 </li>
-<li><code>jq</code> # JSON query</li>
 <li><code>nix profile install nixpkgs#jq</code> # Install dependencies</li>
 <li>Because to extract the value of the <code>content</code> key from the JSON response.</li>
 </ul>
@@ -7151,6 +7312,7 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 </ul>
 </li>
 <li><code>man jq</code> # <code>/-r</code></li>
+<li><code>jq</code> # JSON query</li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -8187,6 +8349,13 @@ misc {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>--no-sort</code> # Don&#39;t sort the result (Prevent the write order from being disrupted during searches)</li>
+<li><code>--bind=&#39;ctrl-p:transform:[[ ${FZF_POS:-0} -eq 1 ]] &amp;&amp; echo print-query+abort || echo up&#39;</code> # Bind an event to a key<ul>
+<li><code>transform</code> # Execute an external shell command to run its output as a new fzf action</li>
+<li><code>$FZF_POS</code> # Define vertical position of the cursor in the list staring from 1</li>
+</ul>
+</li>
+<li><code>--height=~100%</code> # Adjust the height automatically (<code>~</code>) in the range (<code>100%</code>)</li>
 <li><code>--pointer=&#39;➤&#39;</code> # Replace the default pointer &#39;▌&#39; to the current line with &#39;➤&#39;</li>
 <li><code>--sync --bind &#39;start:pos(10)&#39;</code> # Put the cursor on the 10th item<ul>
 <li><a href="https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845">https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845</a></li>
@@ -8203,11 +8372,13 @@ misc {
 <li><code>source ~/.bashrc</code> # Make changes effective</li>
 </ul>
 </li>
+<li><code>nix profile add nixpkgs#fzf</code> # Install dependencies</li>
 <li>Because to try using a more general launcher on multiple platforms (And use the fastest launching terminal as the window)</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797">https://github.com/junegunn/fzf/discussions/2576#discussioncomment-1130797</a></li>
+<li><code>man fzf</code> # <code>/height</code> <code>/--bind=</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -8278,6 +8449,15 @@ max-concurrent-downloads = 5
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Because we need to reduce the download time for a file that is downloading very slowly.</li>
+<li><code>aria2c -x4 -s4 -k1M &#39;https://example.com/sample.mp3&#39;</code> # Download in parallel with multiple threads<ul>
+<li><code>-x</code> # <code>--max-connection-per-server=</code></li>
+<li><code>-s</code> # <code>--split=</code></li>
+<li><code>-k</code> # <code>--min-split-size=</code></li>
+<li><code>axel -n 4 &#39;https://example.com/sample.mp3&#39;</code> # Another method</li>
+<li><code>nix profile add nixpkgs#axel</code> # Install dependencies</li>
+</ul>
+</li>
 <li>Optional<ul>
 <li><code>rpc-listen-port = 47819</code> # Change default 6800 port</li>
 <li><code>rpc-secret = 4jJOSa9ePitWJV1G5dRAweJLv53bd7N/TzK71L1u8o8=</code> # Change default empty password (Use <code>openssl rand -base64 32</code> command to generate RPC secret)</li>
@@ -8288,7 +8468,7 @@ max-concurrent-downloads = 5
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://xnth97.github.io/2017/10/25/raspberry-pi/#%E5%AE%89%E8%A3%85-aria2">https://xnth97.github.io/2017/10/25/raspberry-pi/#安装-aria2</a></li>
-<li><code>man aria2c</code> # <code>/rpc options</code></li>
+<li><code>man aria2c</code> # <code>/rpc options</code> <code>/-x,</code> <code>/-s,</code> <code>/-k,</code></li>
 <li>ChatGPT</li>
 </ul>
 </li>
@@ -8447,7 +8627,7 @@ for tips on effectively exporting YouTube cookies
 </code></pre>
 <ul>
 <li><code>--cookies-from-browser chromium</code> # Read the cookies from Chromium&#39;s profile directory automatically</li>
-<li><code>--cookies all.txt</code> # Read/dump cookies from/to file (Netscape format)<pre><code>`yt-dlp --cookies-from-browser chromium --cookies all.txt` # Get all cookies
+<li><code>--cookies ~/.config/yt-dlp/all.txt</code> # Read/dump cookies from/to file (Netscape format)<pre><code>`yt-dlp --cookies-from-browser chromium --cookies all.txt` # Get all cookies
 `grep -E &quot;(^#|example\.com)&quot; all.txt &gt; example.txt` # Extract cookies of a specific website
 </code></pre>
 </li>
@@ -8700,7 +8880,7 @@ check_for_updates = False
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Because I discovered it in the parameters (<code>--tac</code>) of &quot;fzf&quot;.</li>
+<li>Because I discovered it in the parameters (<code>--tac</code>) of &#39;fzf&#39;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -9831,6 +10011,11 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4>Some tips in iPhone 14 Pro (iOS 16.7.2)</h4>
 <ul>
+<li>Share<ul>
+<li>Settings - Siri &amp; Search - DeepSeek - Disable &#39;Learn from this App&#39;</li>
+<li>Hide Share suggestions from a specific app (Because it appears too frequently)</li>
+</ul>
+</li>
 <li>Phone<ul>
 <li>Double-press the power button to end calls.</li>
 </ul>
@@ -12190,7 +12375,7 @@ fi
 <li><code>convert -append math{01..04}.png mathVertically.png</code></li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#imagemagick nixpkgs#potrace</code> # Install the dependencies</li>
+<li><code>nix profile add nixpkgs#imagemagick nixpkgs#potrace</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -12557,29 +12742,6 @@ map &lt;v-lh_open&gt; LinkHints.click mode=&quot;incognito&quot; incognito=false
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/891#issuecomment-1483856671">https://github.com/gdh1995/vimium-c/issues/891#issuecomment-1483856671</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Simulate hover in Vimium C</h4>
-<ul>
-<li>Custom key mappings<pre><code>map gh LinkHints.activateHover
-</code></pre>
-<ul>
-<li>Then press <code>menuButton</code> to pop-up context menu</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li>Warning: Require fine-tuning to fully function.</li>
-<li>Click on the letter <code>g</code>, then on the letter <code>h</code></li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914">https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914</a></li>
-<li><a href="https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562">https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562</a></li>
 </ul>
 </li>
 </ul>
@@ -14444,6 +14606,12 @@ file &#39;output02.wma&#39;
 <ul>
 <li><h4>Use &quot;sed&quot;</h4>
 <ul>
+<li><code>tail -3 sample.txt | sed &#39;1!G;h;$!d&#39;</code> # Reverse order (Similar to <code>tac</code> when no <code>tac</code>)<ul>
+<li><code>!</code> # Except (Exclude)</li>
+<li><code>G</code> # Append hold space (Buffer) to pattern space (Current line being processed)</li>
+<li><code>h</code> # Copy pattern space to hold space</li>
+</ul>
+</li>
 <li><code>sed -i &#39;s|^http://|https://|&#39; audiobook.txt</code> # Replace <code>http://</code> (Lines that start with it) with <code>https://</code><ul>
 <li><code>-i &#39;&#39;</code> # Set a backup suffix (Or <code>-i &#39;.bak&#39;</code>) to solve the problem (For BSD sed)<pre><code>sed: 1: &quot;audiobook ...&quot;: command a expects \ followed by text
 </code></pre>
@@ -15017,8 +15185,7 @@ services:
 <li><code>192.168.10.100:31000</code> # Run in web browser</li>
 </ul>
 </li>
-<li><h2><em><strong>References</strong></em></h2>
-<ul>
+<li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275">https://github.com/szabodanika/microbin/issues/110#issuecomment-1317918275</a></li>
 <li><a href="https://github.com/szabodanika/microbin/blob/master/compose.yaml">https://github.com/szabodanika/microbin/blob/master/compose.yaml</a></li>
 <li>ChatGPT</li>
@@ -16984,6 +17151,7 @@ yaoniplan@tux ~/Downloads/deck $
 <ul>
 <li><h4>Use &quot;mpv&quot;</h4>
 <ul>
+<li><code>--wayland-app-id=player</code> # Set a specific app id for Wayland</li>
 <li><code>vim ~/.local/src/ani/mpv.conf</code> # Pause on focus lost for video<pre><code>[pause_on_focus_lost_video]
 profile-cond=not focused and get(&#39;current-tracks/video/image&#39;) == false
 profile-restore=copy
@@ -17010,6 +17178,7 @@ title=${filename}
 </ul>
 </li>
 <li><code>`</code> # Open the console for debugging (To test keybindings)<ul>
+<li><code>seek 00:30:15 absolute</code> # Jump to 00:30:15 quickly without a mouse (Same as <code>set time-pos 00:30:15</code>: better for HLS link)</li>
 <li><code>show-text &quot;${path}&quot;</code> # Show text on the OSD</li>
 <li><code>load-input-conf ~/.config/mpv/input.conf</code> # Reload key bindings from a file without restarting the player</li>
 <li><code>set video-rotate 90</code> # Set rotation to 90 degrees</li>
@@ -17084,6 +17253,7 @@ metadata/title # Get title
 </ul>
 </li>
 <li>Use scripts<ul>
+<li><code>curl https://raw.githubusercontent.com/iiiGerardoiii/mpv-hold-to-speedup/refs/heads/main/hold-to-speedup.lua &gt; ~/.config/mpv/scripts/hold-to-speedup.lua</code> # Press and hold double speed, release to default speed</li>
 <li><code>git clone https://github.com/CogentRedTester/mpv-file-browser ~/.config/mpv/scripts/file-browser</code></li>
 <li><code>cp ~/.config/mpv/scripts/file-browser/docs/file_browser.conf ~/.config/mpv/script-opts/</code><pre><code>...
 # Replace `/mnt/` with your file directory
@@ -17165,17 +17335,30 @@ user-input.lua -&gt; scripts/user-input.lua
 </li>
 <li>Enable danmaku<ul>
 <li>Warning: Frequent frame drops (causing dizziness) and some anime (e.g. Berserk S01E18) are missing danmaku</li>
-<li><code>git clone https://github.com/Tony15246/uosc_danmaku ~/.config/mpv/scripts/uosc_danmaku</code></li>
+<li><code>git clone https://github.com/Tony15246/uosc_danmaku ~/.config/mpv/scripts/uosc_danmaku</code> # Install dependencies</li>
 <li><code>vim ~/.config/mpv/script-opts/uosc_danmaku.conf</code> # Configure as needed<pre><code># Bind shortcut keys
 open_search_danmaku_menu_key=Ctrl+d
 show_danmaku_keyboard_key=Shift+d
+# Set the custom danmaku API (Compatible with DanDanPlay)
+api_server=https://example1.com|test1,https://example2.com|test2
+# Load danmaku automatically
+auto_load=yes
+autoload_for_url=yes
+# Set the custom danmaku style (Reduce the sensation of dizziness)
+opacity=1 # The font is 100% not transparent
+displayarea=0.12 # The danmaku only take up 12% of the screen
+scrolltime=25 # Take 25s for a danmaku to scroll across the screen
 # The frame rate drops are severe, even with this `vf_fps=yes` enabled
 # (maybe my computer&#39;s performance is insufficient)
 vf_fps=yes
 </code></pre>
 </li>
-<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/224">https://github.com/Tony15246/uosc_danmaku/issues/224</a></li>
-<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714">https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714</a></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/307#issue-3665862881">https://github.com/Tony15246/uosc_danmaku/issues/307#issue-3665862881</a> # <code>/auto_load</code></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/297#issuecomment-3394021304">https://github.com/Tony15246/uosc_danmaku/issues/297#issuecomment-3394021304</a> # <code>/api_server</code></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/224">https://github.com/Tony15246/uosc_danmaku/issues/224</a> # <code>/vf_fps</code></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714">https://github.com/Tony15246/uosc_danmaku/issues/111#issuecomment-2603857714</a> # <code>/uosc_danmaku.conf</code></li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku/issues/266#issue-3304402156">https://github.com/Tony15246/uosc_danmaku/issues/266#issue-3304402156</a> # danmaku style</li>
+<li><a href="https://github.com/Tony15246/uosc_danmaku">https://github.com/Tony15246/uosc_danmaku</a> # <code>/api_server</code> <code>/danmaku_menu_key</code> <code>/displayarea</code></li>
 </ul>
 </li>
 <li><code>vi ~/.config/mpv/input.conf</code> # Bind a shortcut key<pre><code># Rotate the screen clockwise
@@ -17200,8 +17383,9 @@ Ctrl+l show-text &quot;${playlist}&quot; 5000
 </code></pre>
 </li>
 <li><code>mpv --cache=no</code> # For online streaming (Forward and back very fast, without caching the entire file)</li>
-<li><code>Alt-Hyphen</code> # Zoom out video (Opposite: <code>Alt-+</code>)<ul>
+<li><code>Alt-Hyphen</code> # Zoom out image or video (Opposite: <code>Alt-+</code>)<ul>
 <li><code>Alt-Down</code> # Move focus down (<a href="https://libreddit.tux.pizza/r/linuxquestions/comments/mqcsdm/comment/gvluu1q/">Pan video</a>)</li>
+<li><code>Alt-Backspace</code> # Reset pan/zoom to default</li>
 </ul>
 </li>
 <li><code>l</code> # Set A loop point, set B loop point, and clear A-B loop</li>
@@ -17448,7 +17632,8 @@ q # Quit config
 <li>WebDAV<pre><code>n # n) New remote
 yaoniplan # name
 31 # Storage of WebDAV
-http://192.168.10.100:5244/dav # URL
+http://localhost:5244/dav # URL
+#http://192.168.10.100:5244/dav # URL
 4 # vendor of other
 admin # user of AList
 ****** # password of AList
@@ -18008,9 +18193,15 @@ media.cache_resume_threshold
 <ul>
 <li><h4>Use &quot;vimium c&quot;</h4>
 <ul>
+<li><code>map t visitPreviousTab</code> # Switch between tabs (Same as <code>Ctrl-Shift-a Enter</code> in Chromium)</li>
+<li><code>map ;f toggleWindow</code> # Full screen (Same as <code>Fn-11</code> in Chromium)</li>
+<li><code>map x confirm ask=&quot;Are you sure to close tabs?&quot; minRepeat=1 $then=&quot;removeTab&quot;</code> # Add a confirmation prompt</li>
 <li>Don&#39;t let pages steal the focus in loading # Enable in &#39;Miscellaneous options&#39;</li>
 <li><code>p</code> # Search selected words in search engine when in visual mode</li>
-<li><code>map &lt;f6&gt; copyWindowInfo type=&quot;tab&quot; format=&quot;${title}&quot;</code> # Copy page title</li>
+<li><code>map &lt;f6&gt; copyWindowInfo type=&quot;tab&quot; format=&quot;${title}&quot;</code> # Copy page title<ul>
+<li><code>map ;t copyCurrentTitle</code> # Another method</li>
+</ul>
+</li>
 <li><code>yi</code> # Copy image to the clipboard</li>
 <li><code>2gu</code> # Go up the URL hierarchy twice<ul>
 <li>From an issue to a code area on GitHub</li>
@@ -18029,17 +18220,54 @@ media.cache_resume_threshold
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Warning: Hope that browsers can provide APIs to list current tab&#39;s history<ul>
+<li><p>Warning: Hope that browsers can provide APIs to list current tab&#39;s history</p>
+<ul>
 <li><a href="https://github.com/gdh1995/vimium-c/discussions/1227">https://github.com/gdh1995/vimium-c/discussions/1227</a> (I don&#39;t want to long-press the back/forward button with the <strong>mouse</strong>)</li>
 </ul>
 </li>
-<li>Copy an image&#39;s address in &#39;Custom key mappings&#39;<pre><code>map yI LinkHints.activateOpenImage sed=&quot;s@^@vimium://copy/@g&quot;
+<li><p>Disable temporarily</p>
+<pre><code>map &#39; openUrl url=&quot;vimium://status\u0020toggle\u0020^\u0020&#39;&quot;
+</code></pre>
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/425#issuecomment-912160424">https://github.com/gdh1995/vimium-c/issues/425#issuecomment-912160424</a></li>
+</ul>
+</li>
+<li><p>Scroll full page</p>
+<pre><code>map s scrollFullPageDown dir=0.92
+map w scrollFullPageUp dir=-0.92
+</code></pre>
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/490#issuecomment-966904235">https://github.com/gdh1995/vimium-c/issues/490#issuecomment-966904235</a></li>
+</ul>
+</li>
+<li><p>Map a key to trigger multiple actions</p>
+<pre><code>map &lt;v-unhover&gt; LinkHints.unhoverLast
+run j unhover+scrollDown
+</code></pre>
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/901#issuecomment-1483865025">https://github.com/gdh1995/vimium-c/issues/901#issuecomment-1483865025</a></li>
+</ul>
+</li>
+<li><p>Simulate hover</p>
+<pre><code>map gh LinkHints.activateHover
+#map q LinkHints.unhoverLast # Unhover
+</code></pre>
+<ul>
+<li>Then press <code>menuButton</code> to pop-up context menu</li>
+<li>Warning: Require fine-tuning to fully function.</li>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914">https://github.com/gdh1995/vimium-c/issues/1233#issuecomment-2388237914</a></li>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562">https://github.com/gdh1995/vimium-c/issues/909#issuecomment-1516857562</a></li>
+</ul>
+</li>
+<li><p>Copy an image&#39;s address in &#39;Custom key mappings&#39;</p>
+<pre><code>map yI LinkHints.activateOpenImage sed=&quot;s@^@vimium://copy/@g&quot;
 </code></pre>
 <ul>
 <li>If failed to copy image to the clipboard</li>
 </ul>
 </li>
-<li>Add a search engine in &#39;Custom search engines&#39;<pre><code># Search engine
+<li><p>Add a search engine in &#39;Custom search engines&#39;</p>
+<pre><code># Search engine
 # https://github.com/OrO-c/EveOneSearch
 # https://www.magicalapk.com/api3/system/api/rules
 tr: https://translate.google.com/?sl=auto&amp;tl=en&amp;text=%s
@@ -18058,6 +18286,8 @@ pp: https://www.perplexity.ai/search?q=%s blank=https://www.perplexity.ai
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/gdh1995/vimium-c/wiki/List-of-all-commands">https://github.com/gdh1995/vimium-c/wiki/List-of-all-commands</a></li>
+<li><a href="https://github.com/gdh1995/vimium-c/issues/847#issuecomment-1593323165">https://github.com/gdh1995/vimium-c/issues/847#issuecomment-1593323165</a> # <code>/confirm</code></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/1220#issuecomment-2422200245">https://github.com/gdh1995/vimium-c/issues/1220#issuecomment-2422200245</a></li>
 <li><a href="https://airespo.com/resources/how-to-set-perplexity-ai-as-default-search-engine-in-chrome/">https://airespo.com/resources/how-to-set-perplexity-ai-as-default-search-engine-in-chrome/</a> # <code>/perplexity.ai</code></li>
 <li><a href="https://github.com/gdh1995/vimium-c/discussions/938">https://github.com/gdh1995/vimium-c/discussions/938</a></li>
@@ -20375,7 +20605,6 @@ fi
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>--remove-source-files</code> # The same as <code>mv</code> command (But safer in script)</li>
 <li><code>-a</code> # --archive</li>
 <li><code>-v</code> # --verbose</li>
 <li>Because to keep the original modification time when copying files.</li>
@@ -20488,8 +20717,8 @@ root       pts/0    192.168.10.105   8:38AM     - w
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
 <li><a href="https://www.redhat.com/sysadmin/process-script-inputs">https://www.redhat.com/sysadmin/process-script-inputs</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -22181,14 +22410,19 @@ gtk-application-prefer-dark-theme=1
 <li><code>Use GTK</code> # Click it</li>
 </ul>
 </li>
+<li><code>pkg-config --modversion gtk+-3.0</code> # Check the version of GTK (e.g. 3.24.52)<ul>
+<li><code>gtk-launch --version</code> # Another way</li>
+</ul>
+</li>
 <li><code>doas reboot</code> # Make it work (Maybe just restart browser)</li>
 <li>It works on the notify-send command.</li>
 </ul>
 </li>
-<li>References<ul>
+<li><em><strong>References</strong></em><ul>
 <li><img src="./assets/2023-01-16_11-23_1673839448253_0.png" alt="2023-01-16_11-23.png"></li>
 <li><a href="https://unix.stackexchange.com/questions/63389/how-can-i-use-adwaita-dark-for-all-applications-in-gnome-3">https://unix.stackexchange.com/questions/63389/how-can-i-use-adwaita-dark-for-all-applications-in-gnome-3</a></li>
 <li><a href="https://forums.gentoo.org/viewtopic-t-1079650-start-0.html">https://forums.gentoo.org/viewtopic-t-1079650-start-0.html</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -22662,6 +22896,33 @@ dotfiles config --local status.showUntrackedFiles no
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Modify the most recent commit push<pre><code># I should commit these two files (selector.py, README.md) instead of (selector.py, main.py)
+# Reset (soft) the most recent commit back to the workspace (Retaining changes)
+dotfiles reset --soft HEAD~1
+
+# Confirm the current staging status (You should see main.py and selector.py staged)
+dotfiles status
+
+# Remove main.py from staging (but keep local modifications)
+dotfiles restore --staged main.py
+
+# Add README.md to staging (you have local changes now)
+dotfiles add README.md
+
+# Make sure status only contains selector.py and README.md in staged
+dotfiles status
+
+# Recommit
+dotfiles commit --message=&quot;docs: update README and adjust fzf height&quot;
+
+# Force push to overwrite remote error commit
+dotfiles push --force origin development
+</code></pre>
+</li>
+<li>Delete remote unnecessary branch<pre><code># I should push to the master branch, but I accidentally created and pushed to the main branch
+dotfiles push origin --delete main
+</code></pre>
+</li>
 <li>Ignore files in a specific directory<pre><code>rm -rf ~/.local/src/ani/.git/ # Remove nested Git
 vim ~/.local/src/ani/.gitignore # Edit
 dotfiles add ~/.local/src/ani # Add this directory
@@ -23958,12 +24219,17 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 <li>Disable all hotkeys except itself (Enable the hotkey only) for the Global Speed extension<ul>
 <li>Create a &quot;state&quot; in &quot;Shortcut Editor&quot; (In options.html)</li>
 <li>Click on &quot;NoKey&quot; and press your desired shortcut key (e.g. <code>Alt-s</code>)</li>
-<li>Remeber to avoid hotkeys conflicts with other extension (e.g. Vimium )</li>
+<li>Remeber to avoid hotkeys conflicts with other extension (e.g. Vimium)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Press and hold double speed, release to default speed<ul>
+<li>Fast forward - Space - 2 - Long press</li>
+<li><a href="https://github.com/polywock/globalSpeed/issues/895#issuecomment-4748703258">https://github.com/polywock/globalSpeed/issues/895#issuecomment-4748703258</a></li>
+</ul>
+</li>
 <li>Enable web page full screen playback<ul>
 <li>Because sometimes don&#39;t want to fill the entire screen</li>
 <li>Tab capture (In extension&#39;s options.html) - Create - Click the Assign icon to open <code>about://extensions/shortcuts</code> keyboard shortcuts</li>
@@ -27947,8 +28213,11 @@ for_window [class=&quot;^st-256color$&quot;] move scratchpad
 <li><code>Ctrl-Shift-Space</code> # Toggle (Then you can use Vi-like keybinds)</li>
 <li><code>i</code> # Exit Vi mode</li>
 <li><code>Ctrl-Shift-c</code> # Copy without exiting Vi mode (If you need to copy in order)</li>
+<li><code>/</code> # Search</li>
+<li><code>Enter</code> # Open the URL under the current cursor</li>
 </ul>
 </li>
+<li><code>Ctrl-Shift-o</code> # Open the hinting URL with <code>xdg-open</code></li>
 <li><code>vim ~/.config/alacritty/alacritty.toml</code> # Configure as needed<pre><code># Set theme
 [general]
 import = [
@@ -28375,6 +28644,14 @@ XMODIFIERS=@im=fcitx //添加这一行
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>Ctrl-z</code> # Undo (Opposite: <code>Ctrl-y</code>)</li>
+<li><code>vim ~/.local/src/com/chromium-flags.conf</code> # Example<pre><code># Disable first-run experience on first launch a fresh profile (e.g. `--user-data-dir=/tmp/com_reader_73nq8tg6`)
+--no-first-run
+# Hide scrollbars when reading comics
+--hide-scrollbars
+</code></pre>
+</li>
+<li><code>about:settings/downloads</code> # Change downloads location to <code>/home/yaoniplan</code></li>
 <li>Develop a local extension<ul>
 <li><a href="https://gist.github.com/hammerill/08e43cbb8796acccc5f042df71427eef">https://gist.github.com/hammerill/08e43cbb8796acccc5f042df71427eef</a></li>
 </ul>
@@ -28862,11 +29139,13 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <li><h4>Use &quot;github&quot;</h4>
 <ul>
 <li><code>&quot;- ####&quot;</code> # Search for an exact string (In double quotes)</li>
+<li><code>https://github.com/yaoniplan/dotfiles/commit/9850876</code> # Review the commit message</li>
 <li><code>https://api.github.com/users/yaoniplan</code> # Get account created time (date)</li>
 <li><code>https://api.github.com/repos/yaoniplan/note</code> # Get repository created time (date)</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>9850876</code> # Replace it with commit id (The first 7 characters are enough)</li>
 <li><code>api.</code> # Add it before <code>github.com/</code></li>
 <li><code>users/</code> # Add it after <code>github.com/</code></li>
 <li><code>yaoniplan</code> # Replace it with a name of user</li>
@@ -28902,6 +29181,10 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <ul>
 <li><h4>Use &quot;python&quot;</h4>
 <ul>
+<li><code>print(real_url, end=&#39;&#39;)</code> # Output without a trailing newline<ul>
+<li><code>, end=&#39;&#39;</code> # Set the ending string to an empty string (As an input parameter for the next operation)</li>
+</ul>
+</li>
 <li><code>url = url.replace(&quot;http://&quot;, &quot;https://&quot;, 1)</code> # Replace http:// with https://<ul>
 <li><code>1</code> # The first one</li>
 </ul>
