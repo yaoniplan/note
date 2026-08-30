@@ -1,26 +1,60 @@
 ### "Animation"
-- 斩神之凡尘神域 S01E15
-- 万人之上 S01E05
-- 凡人修仙传 - 180
-- 镖人 S01E15.S02E02 ani
-- 盘龙 S01E10
-- 逆天邪神 S01E30.S02E12
-- 将夜 S01E10
-- Liar Game / 欺诈游戏 S01E11
-- 大道独行之蝶龙变 S01E12
-- 盗妖行 S01E38
-- 择天记 S01E23
-- 深空彼岸 S01E25
-- 光阴之外 S01E27
-- 神墓 S01E16.S02E27.S03E48
-- 牧神记 S01E88
-- 仙逆 146
-- Shrouding the Heavens / 遮天 168
-- 武神主宰 668
-- Against the Sky Supreme / 逆天至尊 525
+- 爱丽丝与特蕾丝的虚幻工厂 #NSFW #movie 010800 ani
+- 掌门低调点 S01E05 ani
+- 蓝兰岛漂流记 S01E07 #NSFW
+- 李熊猫 S01E02
+- 顾长歌：我！天命大反派 #AI S01E04
+- 太古神尊 S01E05
+- 苏东坡与杭州的故事 S01E03
+- 择日飞升 S01E05
+- 万古至尊：李云霄传 S01E07
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52.S10E05 437
+- 东大高武学院 S01E05
+- 被追放的转生重骑士用游戏知识开无双 S01E05
+- 描绘直至生命尽头 S01E05
+- 落第贤者的学院无双 第二回转生，S等级作弊魔术师冒险记 S01E07
+- 地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～ S01E12.S02E06
+- 我家的弟弟们真是让您费心了 S01E02
+- 鬼之花嫁 S01E04
+- 穹庐下的魔女 S01E03
+- 才女的侍从 在满是高岭之花的贵族学校暗中照顾（毫无生活自理能力的）学院第一大小姐 S01E03
+- 说了不打算爱我的公爵继承人，不知为何对我宠爱有加 S01E02
+- My Adventures with Superman / 我与超人的冒险 S01E10.S02E01
+- 世界在起舞 S01E01
+- 与奔跑在透明之夜的你，谈一场看不见的恋爱 S01E02
+- Clevatess / 克雷瓦提斯 S01E04
+- 奇招百出的维多利亚 S01E02
+- 最强出涸皇子的暗跃帝位争夺 S01E03
+- 被遗弃圣女的异世界美食之旅 用隐藏技能召唤了露营车 S01E02
+- 转学后班上的清纯可爱美少女，竟是小时候玩在一起的哥儿们 S01E03
+- 百日成王 S01E08
+- 二十世纪电气目录 S01E04
+- 世界最强的后卫 ～迷宫国的新人探索者～ S01E03
+- 研讨同组的染谷同学原来是女优这事 #NSFW S01E01
+- LV999的村民 S01E04
+- 启运丹田：开局签到至尊丹田 S01E21
+- 我独自盗墓 S01E03
+- 斩神之凡尘神域 S01E15.S02E06
+- 万人之上 S01E06
+- 凡人修仙传 - 182
+- 镖人 S01E15.S02E06
+- 逆天邪神 S01E30.S02E18
+- 将夜 S01E15
+- Liar Game / 欺诈游戏 S01E20
+- 盗妖行 S01E48
+- 光阴之外 S01E33
+- 牧神记 S01E94
+- 仙逆 155
+- 武神主宰 686
+- Against the Sky Supreme / 逆天至尊 544
 
-### Comic
-- 杀手巴德罗 Chapter 104
+### "Comic"
+- 末日物流中心 Chapter 0 com
+- 我欲封天 Chapter 26
+- 从水猴子开始成神 Chapter 22
+- 读世天才 Chapter 34
+- 天魔的不凡重生 Chapter 204
+- 杀手巴德罗 Chapter 104 com
 - 魔道转生记 Chapter 52
 - 全职觉醒 Chapter 140
 - 寒冰末日：我屯了千亿物资 Chapter 104 # A similar storyline (but with humourous and relaxing elements)
@@ -171,6 +205,8 @@
 - 為爱而生 法葡克超 全
 
 ### Comic
+- 末日重启 Chapter 153 (Extra chapter: 154-168)
+- 超越回归的大魔导师 Chapter 125 # Maybe adding love elements will make reader feel relaxed
 - Bodychange / 双性人 #NSFW Chapter 33 # 外貌也是一个交际的加分项（尽量不要做对外表有害的事）
 - 失踪 #NSFW Chapter 28 # 每个人都希望事情能按自己的想法发展，但往往事与愿违（能否换条路线达到类似的效果？）
 - 生物学 #NSFW # No resource found
@@ -327,11 +363,27 @@
 - guard(end)
 
 ### Animation
+- 云月大陆 #AI S01E01 0420 # The visual transitions were choppy
+- Shrouding the Heavens / 遮天 173 0838 # Plot maybe slow
+- 择天记 S01E26
+- 大道独行之蝶龙变 S01E16
+- 盘龙 S01E20
+- 与你相恋到生命尽头 S01E02 0338 # Girl and gril (lesbian)
+- 摩绪 S01E01 # Target audience maybe 13 or 14 years old
+- 『你们先走我断后』，于是10年后我成为了传说 S01E04 # Target audience maybe 13 or 14 years old
+- Chainsmoker Cat / 尼古喵喵 S01E04 0344 #NSFW # Dominated by desire? (Without a goal) It's enough to know that these are bad habits.
+- 游戏BUG修复中 #AI S01E01 0739 # The visual transitions were choppy
+- 万古神帝 #AI S01E01 0259 # The visual transitions were choppy
+- 白猫Project ZERO CHRONICLE / 白猫计划 零之纪元 S01E01 1901 # The plot seems to be arranged inexplicably
+- 无上神帝 S01E29 0545 # Target audience maybe 13 or 14 years old
+- 神墓 S01E16.S02E27.S03E52
+- 深空彼岸 S01E26
+- 梅比乌斯之尘 S01E02 1206 # Target audience maybe 13 or 14 years old
+- 绝世战魂 S01E180.S02E01 0723 # The visuals are too stiff
 - 最强的职业不是勇者也不是贤者好像是鉴定士(伪)的样子 S01E12
 - Apotheosis / 百炼成神 S01E52.S02E52.S03E26
 - 成何体统 S01E24.S02E24
 - 驭灵师 S01E18
-- 绝世战魂 S01E180
 - Berserk / 剑风传奇 S01E25.S02E12.S03E07 0407 # Only the first version (1997) is recommended
     - (1997 / Memorial Edition / the Golden Age Arc film trilogy - 2016 - 2017)
 - 女神“异世界转生想成为什么”我“勇者的肋骨” S01E04 0539 # It feels like the production budget for this anime was seriously lacking.
@@ -376,7 +428,6 @@
 - 拜托了双子星 S01E13
 - 以死亡游戏为生 S01E03 1835 # The plot seems to be incoherent
 - 地狱老师 S01E13 1521 # Plot maybe slow
-- 启运丹田：开局签到至尊丹田 S01E09 # Stop updating
 - 仙帝归来 S01E16
 - 双生武魂 S01E60
 - 凌天独尊 S01E60
@@ -404,7 +455,6 @@
 - 异世界默示录米诺戈拉 ～从灭亡的文明开始的世界征服～ S01E04 0316 # Plot maybe slow
 - 活死喵之夜 S01E06 0552 # Plot maybe slow
 - 废渊战鬼 S01E10 0026 # Plot maybe slow
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52 432
 - Dr.Stone / 石纪元 S01E24.S02E11.S03E11.S04E14 1828 # Plot maybe a bit boring
 - 万剑王座 S01E05 0559 # The cartoon style is rough.
 - 我的师兄太强了 S01E48
@@ -522,7 +572,7 @@
 - 你与偶像光之美少女♪ S01E01 0014 # Target audience maybe female
 - 前桥魔女 S01E01 0045 # Target audience maybe female
 - 龙珠大魔 S01E20
-- 一兆游戏 S01E26
+- Trillion Game / 一兆游戏 S01E26
 - 长生界 S01E26
 - Solo Leveling / 我独自升级 - S01E12.S02E13
 - 欢迎来到日本，精灵小姐。 - S01E04 0417 # Maybe I'm not the target audience
@@ -911,7 +961,6 @@
 - Spy Room / 间谍教室 - 08 # The plot is gentle
 - 山海际会 - 25 # End of the first part
 - Rurouni Kenshin / 浪客剑心 - 05 Too many episodes
-- My Adventures With Superman / 我与超人的冒险 - 09 0217 # Resources loading freezes
 - 堀与宫村 (Part1+2) - 10+06 1059 # The plot progress is too slow
 - Ultraman Tiga / 迪迦奥特曼 - 52 # End
 - 物物语 (Part1+2) - 12+06 # The plot is too gentle
@@ -1025,7 +1074,7 @@
 - 致不灭的你 (第一季+第二季) - 20+11 1252 # It's boring
 - 无限世界 - 09 0527 # It's boring
 - Engage Kiss/契约之吻 - 13 # End of the first season
-- 今天的明日香 - 20 # End of the first season.
+- 今天的明日香 - S01E20 #NSFW # End of the first season.
 - 无良公会/不道德公会 - 12 # End of the first season.
 - 三体 - 06 # It's boring and eath episode has about five commercials.
 - 七界第一仙 - 94 # It is boring.
@@ -1146,6 +1195,7 @@
 - 刀剑神域(boring)
 
 ### Movie
+- Decorado / 楚门之鼠 #NSFW # Like an animated *The Truman Show*
 - 美丽人生 # Positive optimism seems to increase the success rate?
 - Shaw Brothers / 邵氏影业
     - 一乐也, 七侠五义, 七煞, 万人斩, 不了情, 中华丈夫, 五毒, 五毒天罗, 五虎将, 五虎屠龙, 亚洲秘密警探, 仇连环
