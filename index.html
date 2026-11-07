@@ -43,6 +43,167 @@
 <body>
   <article class="markdown-body">
 <ul>
+<li><h4>Use &quot;time&quot;</h4>
+<ul>
+<li><code>time timeout 3 foot</code> # More general method</li>
+<li><code>time foot -e false</code> # Measure startup time<ul>
+<li><code>-e</code> # Execute (command)</li>
+<li><code>false</code> # Exit with a failure (non-zero) status code</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to measure startup time.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Test<pre><code># Foot
+real	0m0.051s
+user	0m0.041s
+sys	0m0.015s
+# Alacritty
+real	0m0.117s
+user	0m0.072s
+sys	0m0.044s
+</code></pre>
+</li>
+<li><a href="https://github.com/alacritty/alacritty/issues/782">https://github.com/alacritty/alacritty/issues/782</a></li>
+<li><code>man foot</code> # <code>/  -e</code></li>
+<li><code>man false</code></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;wbg&quot;</h4>
+<ul>
+<li><code>wbg /tmp/wallhaven-e8w6ww-blurred.jpeg &amp;</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/matugen/config.toml</code> # Configure as needed<pre><code>[config]
+
+[config.wallpaper]
+# Set wallpaper automatically while generating a color scheme
+set = true
+command = &quot;awww img --transition-type any {{ image }}&quot;
+#command = &quot;awww img --transition-type any {{ image }} &amp; pkill wbg &amp; magick{{ image }} -resize 10% -blur 0x2 /tmp/wbg-blurred.png &amp;&amp; wbg /tmp/wbg-blurred.png&quot;
+</code></pre>
+</li>
+<li><code>vim ~/.config/niri/config.kdl</code> # Configure as needed<pre><code>layout {
+    // Set transparent workspace background color.
+    background-color &quot;transparent&quot;
+}
+// Put wbg (Or awww-daemon) inside the overview backdrop
+layer-rule {
+    //match namespace=&quot;^wallpaper$&quot;
+    match namespace=&quot;^awww-daemon$&quot;
+    place-within-backdrop true
+}
+// Disable the workspace shadows in the overview.
+overview {
+    workspace-shadow {
+        off
+    }
+}
+</code></pre>
+<ul>
+<li><code>niri msg layers</code> # Get namespace</li>
+</ul>
+</li>
+<li>Because we need to set a blurred wallpaper in Niri overview mode.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/niri-wm/niri/blob/main/docs/wiki/Overview.md">https://github.com/niri-wm/niri/blob/main/docs/wiki/Overview.md</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;cargo&quot;</h4>
+<ul>
+<li><code>cargo install --list</code> # List installed packages</li>
+<li><code>cargo install --git https://github.com/akirco/vod</code> # Install from a Git repository</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because we need to see which repository it was installed from when you forget.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;svgo&quot;</h4>
+<ul>
+<li><code>svgo assets/skills-light.svg</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>vim assets/svgo.config.js</code> # Add svgo config for Safari-compatible SVG optimization<pre><code>/**
+ * SVGO Configuration
+ * 
+ * Custom preset to ensure SVG grid layouts render correctly on Safari (iOS/macOS).
+ * Disabling these specific plugins prevents elements from overlapping at the origin (0,0):
+ * 
+ * - collapseGroups &amp; moveGroupAttrsToElems: Preserves &lt;g transform=&quot;...&quot;&gt; wrappers, 
+ *   as Safari (WebKit) ignores transform attributes placed directly on &lt;svg&gt; tags.
+ * - cleanupIds: Prevents gradient and mask bleed by keeping original IDs intact.
+ * 
+ * Usage Example:
+ * curl -s &quot;https://skillicons.dev/icons?i=bash,linux,docker&amp;theme=light&quot; | svgo --config svgo.config.js -i - -o skills-light.svg
+ */
+module.exports = {
+  plugins: [
+    {
+      name: &#39;preset-default&#39;,
+      params: {
+        overrides: {
+          collapseGroups: false,
+          moveGroupAttrsToElems: false,
+          cleanupIds: false
+        },
+      },
+    }
+  ],
+};
+</code></pre>
+</li>
+<li>Because we need to compress the size of the SVG file.</li>
+<li><code>nix profile add nixpkgs#svgo</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;rg&quot;</h4>
+<ul>
+<li><code>rg history .</code> # Find and print all lines containing the string &#39;history&#39; in the current directory and its subdirectories recursively</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because it is simpler than &#39;grep&#39;</li>
+<li><code>nix profile add nixpkgs#ripgrep</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;split&quot;</h4>
 <ul>
 <li><code>split -n 4 index.js</code> # Split it into 4 equal parts</li>
@@ -66,6 +227,7 @@
 <li><code>search</code> # Replace it with <code>install</code> (<code>remove</code>) to install (remove)</li>
 </ul>
 </li>
+<li><code>appman files</code> # List installed apps</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -79,6 +241,7 @@
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/ivan-hc/AM">https://github.com/ivan-hc/AM</a> # <code>/wget</code></li>
+<li><code>appman -h</code> # <code>/files,</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -87,7 +250,10 @@
 <ul>
 <li><h4>Use pastebin online</h4>
 <ul>
-<li><code>curl --upload-file help1.md https://paste.c-net.org</code> # Upload file</li>
+<li><code>curl --upload-file help1.md https://paste.c-net.org</code> # Upload file<ul>
+<li><code>wl-paste | curl --upload-file - https://paste.c-net.org/fs.png</code> # If you copied a png</li>
+</ul>
+</li>
 <li><code>curl --data &quot;Hello, world!&quot; https://paste.c-net.org</code> # Upload text</li>
 <li><code>curl https://paste.c-net.org/Example</code> # Download</li>
 </ul>
@@ -357,7 +523,7 @@ include=~/.config/mako/mako-colors
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>nix profile install nixpkgs#zoxide</code> # Install dependencies</li>
-<li><code>vim ~/.bashrc</code> # Setup it on bash shell<pre><code>## Replace the `cd` command (The same as `alias cd=z`)
+<li><code>vim ~/.bashrc</code> # Set up for Bash<pre><code>## Replace the `cd` command (The same as `alias cd=z`)
 #eval &quot;$(zoxide init --cmd cd bash)&quot;
 eval &quot;$(zoxide init bash)&quot;
 </code></pre>
@@ -365,11 +531,24 @@ eval &quot;$(zoxide init bash)&quot;
 <li><code>source ~/.bashrc</code> # Make changes effective</li>
 </ul>
 </li>
+<li><code>vim ~/.profile</code> # Setup up for <code>/bin/sh</code> (e.g. Alpine Linux)<pre><code>eval &quot;$(zoxide init posix)&quot;
+</code></pre>
+<ul>
+<li><code>--hook prompt</code> # Sovle the problem<pre><code>[~]# source ~/.profile
+zoxide: PWD hooks are not supported on POSIX shells.
+        Use &#39;zoxide init posix --hook prompt&#39; instead.
+[~]#
+</code></pre>
+</li>
+<li><code>--cmd cd</code> # Replace the default <code>cd</code></li>
+</ul>
+</li>
 <li>Because to experience a smarter cd command.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/ajeetdsouza/zoxide#getting-started">https://github.com/ajeetdsouza/zoxide#getting-started</a> # <code>/zoxide init</code> <code>/--cmd</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -422,7 +601,7 @@ clean:
 <li><em><strong>Notes</strong></em><ul>
 <li><code>podman images</code> # List images (<code>--all</code>)</li>
 <li><code>podman start qinglong</code> # Start the container</li>
-<li><code>podman stop qinglong || podman kill qinglong</code> # Stop (Or kill) the running container</li>
+<li><code>podman kill qinglong</code> # Kill the running container</li>
 <li><code>podman run -d --name qinglong -p 5700:5700 -v ~/.config/qinglong:/ql/data docker.io/whyour/qinglong:debian</code> # Run a container in the background</li>
 <li><code>podman logs openlist</code> # Fetch the logs of openlist container (name)</li>
 <li><code>podman exec qinglong task Cp0204_ChinaTelecomMonitor/telecom_monitor.py now</code> # Execute a command inside a running container<ul>
@@ -571,21 +750,26 @@ error: No plugin can handle URL: --force-media-title=剑风传奇 / 第08集
 <ul>
 <li><h4>Use &quot;greetd&quot;</h4>
 <ul>
-<li><code>doas systemctl disable sddm</code> # Disable other display manager (e.g. SDDM)</li>
 <li><code>doas systemctl enable greetd</code> # Enable greetd</li>
 <li><code>doas vim /etc/greetd/config.toml</code> # Set the default session to start Niri<pre><code>[default_session]
-command = &quot;agreety --cmd niri-session&quot;
+#command = &quot;agreety --cmd niri-session&quot;
+command = &quot;tuigreet --time --cmd niri-session --background matrix&quot;
 user = &quot;yaoniplan&quot;
 </code></pre>
 </li>
+<li><code>doas systemctl disable sddm</code> # Disable other display manager (e.g. SDDM)</li>
 <li><code>doas reboot</code> # Reboot to make changes effective</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Prevent system messages from being printed over tuigreet<pre><code>doas mkdir /etc/systemd/system/greetd.service.d/
-doas systemctl daemon-reload # Make the directory visible
+<li>Prevent system messages from being printed over tuigreet<pre><code>[   19.360542] ACPI BIOS Error (bug): Attempt to CreateField of length zero (20251212/dsopcode-133)
+[   19.360662] ACPI Error: Aborting method \_SB.WMID.WQBC due to previous error (AE_AML_OPERAND_VALUE) (20251212/psparse-529)
+[   19.363940] ACPI BIOS Error (bug): Attempt to CreateField of length zero (20251212/dsopcode-133)
+[   19.363988] ACPI Error: Aborting method \_SB.WMID.WQBC due to previous error (AE_AML_OPERAND_VALUE) (20251212/psparse-529)
 </code></pre>
 <ul>
+<li><code>doas mkdir /etc/systemd/system/greetd.service.d/</code> # Create a &quot;drop-in&quot; override directory for the <code>greetd</code></li>
+<li><code>doas systemctl daemon-reload</code> # Make the directory visible</li>
 <li><code>doas vim /etc/systemd/system/greetd.service.d/no_spam.conf</code><pre><code>[Service]
 Type=idle
 StandardOutput=tty
@@ -597,12 +781,51 @@ TTYVHangup=true
 TTYVTDisallocate=true
 </code></pre>
 </li>
+<li><code>doas systemctl edit greetd</code> # Use official edit command if you don&#39;t want to create directory manually<pre><code>[Service]
+Type=idle
+StandardInput=tty
+StandardOutput=tty
+StandardError=journal
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes
+</code></pre>
+</li>
+<li><code>systemctl cat greetd</code> # Check to verify</li>
+<li>Delete all comments that is already there when the editor opens to solve the problem<pre><code>yaoniplan@tux /etc/systemd/system $ doas systemctl edit greetd
+doas (yaoniplan@tux) password:
+Found modifications outside of the staging area, which would be discarded.
+/etc/systemd/system/greetd.service.d/override.conf: after editing, new contents are empty, not writing file.
+yaoniplan@tux /etc/systemd/system $
+</code></pre>
+</li>
 <li><a href="https://github.com/apognu/tuigreet/issues/68#issuecomment-1586359960">https://github.com/apognu/tuigreet/issues/68#issuecomment-1586359960</a></li>
+</ul>
+</li>
+<li>Another method (If the above method fails)<ul>
+<li>Modify the current entry manually to facilitate immediate testing<pre><code>doas sed -i &#39;s|^options .*|&amp; quiet loglevel=3|&#39; /boot/loader/entries/2025-01-06_17-26-24_linux.conf
+</code></pre>
+</li>
+<li><code>doas reboot</code> # Reboot to test</li>
+<li>Make the kernel parameter persistent<pre><code>doas mkdir -p /etc/kernel/install.d
+
+doas tee /etc/kernel/install.d/50-quiet.conf &lt;&lt; &#39;EOF&#39;
+#!/bin/sh
+# Automatically append quiet loglevel=3 when new boot entries are created
+[ &quot;$1&quot; = &quot;add&quot; ] || exit 0
+sed -i &#39;s|^options .*|&amp; quiet loglevel=3|&#39; &quot;$3&quot;
+EOF
+
+doas chmod +x /etc/kernel/install.d/50-quiet.conf
+</code></pre>
+</li>
 </ul>
 </li>
 <li>Test mode<pre><code>GREETD_SOCK=/run/greetd-514.sock tuigreet --time
 </code></pre>
 <ul>
+<li><code>tuigreet --mock</code> # Another method</li>
+<li><code>--background matrix</code> # Select Matrix as the default background</li>
 <li><code>--time</code> # Print the date and time at the top of the screen</li>
 <li><code>doas pacman --sync greetd-tuigreet</code> # Install a frontend (Instead of the default frontend greetd-agreety)</li>
 </ul>
@@ -615,6 +838,7 @@ TTYVTDisallocate=true
 <li><a href="https://github.com/apognu/tuigreet/issues/22#issuecomment-856681479">https://github.com/apognu/tuigreet/issues/22#issuecomment-856681479</a> (To test parameter configuration)</li>
 <li><a href="https://github.com/YaLTeR/niri/issues/1833#issuecomment-2984473136">https://github.com/YaLTeR/niri/issues/1833#issuecomment-2984473136</a> (To make Niri launch normally)</li>
 <li><code>man tuigreet</code></li>
+<li><code>tuigreet --help</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -842,6 +1066,9 @@ workspace &quot;stash&quot; { }
 </li>
 <li><code>Alt-Tab</code> # Switch windows<ul>
 <li><code>niri msg -j windows</code> # Get a list of open windows</li>
+<li><code>niri msg --json focused-window</code> # Get focused window id</li>
+<li><code>niri msg --json workspaces</code> # Get workspace ID and index</li>
+<li><code>niri msg action move-window-to-workspace --window-id 66 4</code> # Move window (<code>id</code>) to workspace (<code>index</code>)</li>
 <li><code>niri msg action focus-window --id 12</code> # Focus a window by id</li>
 <li><code>niri msg action focus-window-previous</code> # Focus previous window</li>
 </ul>
@@ -950,10 +1177,12 @@ binds {
     // Vim-like navigation (Try commenting or modifying the shortcut keys if there is a conflict)
     Mod+J { focus-window-or-workspace-down; }
     Mod+K { focus-window-or-workspace-up; }
-    Mod+Shift+H { move-column-left; }
+    //Mod+Shift+H { move-column-left; }
+    Mod+Shift+H { spwan &quot;sh&quot; &quot;-c&quot; &quot;for i in $(seq 1 20); do niri msg action move-column-left; done&quot; }
     Mod+Shift+J { move-window-down-or-to-workspace-down; }
     Mod+Shift+K { move-window-up-or-to-workspace-up; }
-    Mod+Shift+L { move-column-right; }
+    //Mod+Shift+L { move-column-right; }
+    Mod+Shift+L { spwan-sh &quot;for i in $(seq 1 20); do niri msg action move-column-right; done&quot; }
     // Switch previous window
     Mod+Tab { focus-window-previous; }
     // Use parameters
@@ -1060,6 +1289,31 @@ include &quot;./colors.kdl&quot;
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;backblaze&quot;</h4>
+<ul>
+<li>Add a CNAME DNS record<pre><code>CNAME # Type
+image # Name
+f004.backblazeb2.com # IPv4 address
+</code></pre>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Warning: Setting a bucket to public costs a dollor</li>
+<li>Because we need to stable access to the images in the project.<ul>
+<li>Create a new release - Select tag - assets - Create new tag - Attach binaries by dropping them here or selecting them - Publish release</li>
+<li><code>https://github.com/yaoniplan/dotfiles/releases/download/assets/2026-05-08T16.58.42Z.gif</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://web.archive.org/web/20260908235856/https://www.ralphminderhoud.com/blog/deliver-backblaze-b2-cloudflare-cdn/">https://web.archive.org/web/20260908235856/https://www.ralphminderhoud.com/blog/deliver-backblaze-b2-cloudflare-cdn/</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Understand &quot;World Chase Tag&quot; (WCT)</h4>
 <ul>
 <li>A team-based sport<ul>
@@ -1101,12 +1355,60 @@ sleep ${RANDOM_DELAY}
 </li>
 <li>Enable task execution result notification # &#39;Configuration Files&#39;<ul>
 <li><code>iCloud</code> # SMTP_SERVICE</li>
-<li><code>smtp.mail.me.com</code> # SMTP_SERVER</li>
-<li><code>true</code> # SMTP_SSL</li>
+<li><code>smtp.mail.me.com:587</code> # SMTP_SERVER</li>
+<li><code>false</code> # SMTP_SSL</li>
 <li><code>yaoniplan@icloud.com</code> # SMTP_EMAIL</li>
 <li><code>xxxx-xxxx-xxxx-xxxx</code> # SMTP_PASSWORD</li>
 <li><code>yaoniplan@icloud.com</code> # SMTP_NAME</li>
-<li><a href="https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json">https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json</a></li>
+<li><a href="https://github.com/nodemailer/nodemailer/blob/a67b18203defb32f8e890fbb0ba018e826752563/src/well-known/services.json#L196">https://github.com/nodemailer/nodemailer/blob/a67b18203defb32f8e890fbb0ba018e826752563/src/well-known/services.json#L196</a></li>
+<li><code>vim ~/.config/qinglong/scripts/Cp0204_ChinaTelecomMonitor/notify.py</code> # Modify the smtp function if you got <code>[Errno 104] Connection reset by peer</code><pre><code>yaoniplan@tux ~/.config/qinglong/scripts $ git diff Cp0204_ChinaTelecomMonitor/notify.py notify.py
+diff --git a/Cp0204_ChinaTelecomMonitor/notify.py b/notify.py
+index 0bc81ff..16ecda0 100644
+--- a/Cp0204_ChinaTelecomMonitor/notify.py
++++ b/notify.py
+@@ -710,11 +710,25 @@ def smtp(title: str, content: str) -&gt; None:
+     message[&quot;Subject&quot;] = Header(title, &quot;utf-8&quot;)
+
+     try:
+-        smtp_server = (
+-            smtplib.SMTP_SSL(push_config.get(&quot;SMTP_SERVER&quot;))
+-            if push_config.get(&quot;SMTP_SSL&quot;) == &quot;true&quot;
+-            else smtplib.SMTP(push_config.get(&quot;SMTP_SERVER&quot;))
+-        )
++        server = push_config.get(&quot;SMTP_SERVER&quot;)
++        use_ssl = push_config.get(&quot;SMTP_SSL&quot;) == &quot;true&quot;
++
++        if use_ssl:
++            # Implicit SSL (port 465)
++            smtp_server = smtplib.SMTP_SSL(server, timeout=15)
++        else:
++            # STARTTLS (port 587)
++            # Support both &quot;host&quot; and &quot;host:port&quot;
++            if &quot;:&quot; in server:
++                host, port = server.rsplit(&quot;:&quot;, 1)
++                port = int(port)
++            else:
++                host, port = server, 587
++            smtp_server = smtplib.SMTP(host, port, timeout=15)
++            smtp_server.ehlo()
++            smtp_server.starttls()
++            smtp_server.ehlo()
++
+         smtp_server.login(
+             push_config.get(&quot;SMTP_EMAIL&quot;), push_config.get(&quot;SMTP_PASSWORD&quot;)
+         )
+@@ -723,7 +737,7 @@ def smtp(title: str, content: str) -&gt; None:
+             email_to_list,
+             message.as_bytes(),
+         )
+-        smtp_server.close()
++        smtp_server.quit()
+         print(&quot;SMTP 邮件 推送成功！&quot;)
+     except Exception as e:
+         print(f&quot;SMTP 邮件 推送失败！{e}&quot;)
+yaoniplan@tux ~/.config/qinglong/scripts $
+</code></pre>
+</li>
 </ul>
 </li>
 <li>Enable account login notification (And new tasks) # &#39;Notification Settings&#39; of &#39;System Settings&#39;<ul>
@@ -1278,7 +1580,7 @@ Android # Platform
 </ul>
 <hr>
 <ul>
-<li><h4>Use &quot;SMTP&quot;</h4>
+<li><h4>Use &quot;smtp&quot;</h4>
 <ul>
 <li>Configure iCloud SMTP server<ul>
 <li>Log in <a href="https://appleid.apple.com/">https://appleid.apple.com/</a></li>
@@ -1304,7 +1606,7 @@ Android # Platform
 <td>iCloud</td>
 </tr>
 <tr>
-<td>SMTP Server</td>
+<td>Server</td>
 <td>smtp.mail.me.com</td>
 </tr>
 <tr>
@@ -1313,7 +1615,7 @@ Android # Platform
 </tr>
 <tr>
 <td>SSL</td>
-<td>True</td>
+<td>False</td>
 </tr>
 <tr>
 <td>Username</td>
@@ -1330,9 +1632,9 @@ Android # Platform
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://support.apple.com/en-us/102525">https://support.apple.com/en-us/102525</a></li>
-<li><a href="https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json#L108">https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json#L108</a></li>
+<li><a href="https://github.com/nodemailer/nodemailer/blob/a67b18203defb32f8e890fbb0ba018e826752563/src/well-known/services.json#L196">https://github.com/nodemailer/nodemailer/blob/a67b18203defb32f8e890fbb0ba018e826752563/src/well-known/services.json#L196</a></li>
 <li><a href="https://smartreach.io/blog/masterclass/smtp/icloud-smtp-settings/#:~:text=Step%201:,after%20testing%20of%20email%20system%2e">https://smartreach.io/blog/masterclass/smtp/icloud-smtp-settings/#:~:text=Step%201:,after%20testing%20of%20email%20system%2e</a></li>
-<li><a href="https://mailtrap.io/blog/icloud-smtp/#:~:text=And%20here's%20how%20you%20can%20obtain%20one:,Select%20App-Specific%20Passwords%20under%20Sign-In%20and%20Security%2e">https://mailtrap.io/blog/icloud-smtp/#:~:text=And%20here&#39;s%20how%20you%20can%20obtain%20one:,Select%20App-Specific%20Passwords%20under%20Sign-In%20and%20Security%2e</a></li>
+<li><a href="https://mailtrap.io/blog/icloud-smtp/#:~:text=And%20here&#39;s%20how%20you%20can%20obtain%20one:,Select%20App-Specific%20Passwords%20under%20Sign-In%20and%20Security%2e">https://mailtrap.io/blog/icloud-smtp/#:~:text=And%20here&#39;s%20how%20you%20can%20obtain%20one:,Select%20App-Specific%20Passwords%20under%20Sign-In%20and%20Security%2e</a></li>
 <li><a href="https://support.apple.com/guide/icloud/add-and-manage-email-aliases-mm6b1a490a/icloud">https://support.apple.com/guide/icloud/add-and-manage-email-aliases-mm6b1a490a/icloud</a> # Create an email alias for privacy</li>
 <li>Artificial intelligence</li>
 </ul>
@@ -1411,6 +1713,26 @@ yaoniplan@tux ~ $
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>pnpm config set global-bin-dir ~/.local/share/pnpm/bin</code> # Solve the problem<pre><code>yaoniplan@tux ~/.local/src/deepseek-harness $ pnpm add -g @deepseek-ai/dsh
+[ERROR] The configured global bin directory &quot;/home/yaoniplan/.local/share/pnpm/bin/bin&quot; is not in PATH
+Run &quot;pnpm setup&quot; to update your shell configuration.
+yaoniplan@tux ~/.local/src/deepseek-harness $ pnpm config get global-bin-dir
+undefined
+yaoniplan@tux ~/.local/src/deepseek-harness $
+</code></pre>
+<ul>
+<li><code>vim ~/.bashrc</code> # Add to path<pre><code># pnpm
+export PNPM_HOME=&quot;$HOME/.local/share/pnpm/bin&quot;
+case &quot;:$PATH:&quot; in
+  *&quot;:$PNPM_HOME:&quot;*) ;;
+  *) export PATH=&quot;$PNPM_HOME:$PATH&quot; ;;
+esac
+# pnpm end
+</code></pre>
+</li>
+<li><code>source ~/.bashrc</code> # Remember to make changes effective</li>
+</ul>
+</li>
 <li>Because it can solve the error reported by npm command. (Stable)</li>
 <li><code>nix profile install nixpkgs#pnpm</code> # Install dependencies</li>
 </ul>
@@ -1918,7 +2240,7 @@ List of audio encoders:
 <li><h4>Use &quot;yazi&quot;</h4>
 <ul>
 <li><code>yazi</code><ul>
-<li><code>; chromium &quot;$1&quot;</code> # Open the current file (e.g. index.html) in a browser</li>
+<li><code>; chromium %h</code> # Open the hovered file (e.g. index.html) in a browser</li>
 <li><code>;</code> # Run a shell command using <code>sh</code></li>
 <li><code>G</code> # Move cursor to the bottom (Opposite: <code>g g</code>)</li>
 <li><code>Tab</code> # View file times (created/modified)</li>
@@ -1928,7 +2250,10 @@ List of audio encoders:
 <li><code>q</code> # Quit</li>
 <li><code>~</code> # Open the help menu</li>
 <li><code>g &lt;Space&gt;</code> # Go to the path you want to go</li>
+<li><code>g h</code> # Go home</li>
+<li><code>Z</code> # Jump to a directory via zoxide</li>
 <li><code>c c</code> # Copy file path (The same as <code>realpath</code>)</li>
+<li><code>, r</code> # Sort randomly</li>
 </ul>
 </li>
 </ul>
@@ -1936,9 +2261,15 @@ List of audio encoders:
 <li><em><strong>Notes</strong></em><ul>
 <li><code>ya pkg add grappas/wl-clipboard</code> # Install this plugin if clipboard doesn&#39;t work<ul>
 <li><code>add</code> # Replace it with <code>delete</code> to delete</li>
-<li><code>ya pkg list</code> # List all packages (e.g. <code>yazi-rs/plugins:piper</code>)</li>
+<li><code>ya pkg list</code> # List all packages (e.g. <code>yazi-rs/flavors:catppuccin-mocha</code>)</li>
 <li><code>ya pkg add GianniBYoung/rsync</code> # Use rsync (Remember to add <a href="https://github.com/GianniBYoung/rsync.yazi#remember-last-target">https://github.com/GianniBYoung/rsync.yazi#remember-last-target</a> bind)</li>
+<li><code>ya pkg add AnirudhG07/custom-shell</code> # Use default shell (Remember to add <a href="https://github.com/AnirudhG07/custom-shell.yazi#recommended-keybindings">https://github.com/AnirudhG07/custom-shell.yazi#recommended-keybindings</a> bind)</li>
 </ul>
+</li>
+<li><code>vim ~/.config/yazi/theme.toml</code> # Configure themes<pre><code>[flavor]
+dark = &quot;catppuccin-mocha&quot;
+#light = &quot;catppuccin-latte&quot;
+</code></pre>
 </li>
 <li><code>vim ~/.config/yazi/keymap.toml</code> # Configure keybindings<pre><code>[[mgr.prepend_keymap]]
 on   = [ &quot;g&quot;, &quot;b&quot; ]
@@ -1952,8 +2283,9 @@ desc = &quot;Open file or enter directory&quot;
 </code></pre>
 </li>
 <li><code>v</code> # Visial mode (Selection mode, select multiple and delete in batches)</li>
+<li><code>&lt;Space&gt;</code> # Select current item (Toggle)</li>
 <li>Delete a directory<ul>
-<li><code>/tachi</code> # Search for the directory you watn to delete</li>
+<li><code>/tachi</code> # Search for the directory you want to delete</li>
 <li><code>d</code> # Delete (Move it to <code>~/.local/share/Trash/</code>)</li>
 <li><code>y</code> # Yes</li>
 <li><code>g t</code> # Go to trash bin</li>
@@ -1963,10 +2295,11 @@ desc = &quot;Open file or enter directory&quot;
 </ul>
 </li>
 <li>Because to use the fastest file manager.</li>
-<li><code>nix profile install nixpkgs#yazi</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#yazi</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://yazi-rs.github.io/docs/configuration/keymap/#mgr.shell">https://yazi-rs.github.io/docs/configuration/keymap/#mgr.shell</a> # <code>/%h</code></li>
 <li><a href="https://github.com/grappas/wl-clipboard.yazi#installation">https://github.com/grappas/wl-clipboard.yazi#installation</a></li>
 <li><a href="https://yazi-rs.github.io/docs/quick-start">https://yazi-rs.github.io/docs/quick-start</a></li>
 <li><code>man yazi</code> # <code>/bind</code></li>
@@ -2986,9 +3319,13 @@ jobs:
 <ul>
 <li><code>npm create cloudflare@latest -- products</code> # Create a project<ul>
 <li><code>wrangler init m3u8-filter --yes</code> # Another method</li>
+<li><code>wrangler delete</code> # Delete a Worker (If you no longer need it)</li>
 </ul>
 </li>
-<li><code>npx wrangler d1 create products</code> # Create a database</li>
+<li><code>npx wrangler d1 create products</code> # Create a database<ul>
+<li><code>delete</code> # Replace <code>create</code> with it to delete</li>
+</ul>
+</li>
 <li><code>vi ~/.config/store/products/wrangler.toml</code> # Append to end of file<pre><code>[[d1_databases]]
 binding = &quot;DB&quot;
 database_name = &quot;products&quot;
@@ -3230,6 +3567,7 @@ CREATE TABLE IF NOT EXISTS users (
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://developers.cloudflare.com/d1/get-started/">https://developers.cloudflare.com/d1/get-started/</a></li>
 <li><code>wrangler deploy --help</code> # <code>/domain</code></li>
+<li><code>wrangler --help | less</code> # <code>/delete</code></li>
 <li>Artificial intelligence</li>
 </ul>
 </li>
@@ -3950,14 +4288,16 @@ EOF
 <ul>
 <li><h4>Use &quot;a-shell&quot;</h4>
 <ul>
+<li><code>config --cursorShape block --permanent</code> # Configure cursor shape</li>
 <li><code>openurl vlc://https://example.com/sample.mp4</code> # Open with url scheme</li>
 <li><code>open &quot;https://yaoniplan.eu.org&quot;</code> # Open url in browser</li>
 <li><code>help -l</code> # List all installed packages</li>
+<li><code>pkg install which</code> # Install a package (List: <code>pkg list</code>)</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: Variables are not supported<ul>
-<li><a href="https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&type=issues">https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&amp;type=issues</a></li>
+<li><a href="https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&amp;type=issues">https://github.com/search?q=repo%3Aholzschu%2Fa-shell+variable+command&amp;type=issues</a></li>
 </ul>
 </li>
 <li>Toolbar<ul>
@@ -4012,7 +4352,8 @@ TOKEN = os.getenv(&quot;TODOIST_API_TOKEN&quot;)
 <li><a href="https://doist.github.io/todoist-api-python/">https://doist.github.io/todoist-api-python/</a></li>
 </ul>
 </li>
-<li><code>vim ~/Documents/.profile</code> # Configure as needed<pre><code># Set alias
+<li><code>vim ~/Documents/.profile</code> # Configure as needed<pre><code># ~/Documents/.bashrc (If it does not take effect in `.profile`)
+# Set alias
 alias ll=&#39;ls -l&#39;
 # Set PATH to execute scripts anywhere
 export PATH=$HOME/Documents/.local/bin:$PATH
@@ -4033,6 +4374,7 @@ pip install yt-dlp yt-dlp-ejs yt-dlp-apple-webkit-jsi -q --disable-pip-version-c
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/holzschu/a-Shell-commands/tree/master/packages">https://github.com/holzschu/a-Shell-commands/tree/master/packages</a> # <code>/printf</code> <code>/which</code></li>
 <li><a href="https://github.com/holzschu/a-shell/issues/607#issuecomment-1500293770">https://github.com/holzschu/a-shell/issues/607#issuecomment-1500293770</a> # <code>$PATH</code></li>
 <li><a href="https://github.com/holzschu/a-shell">https://github.com/holzschu/a-shell</a> # <code>/pickFolder</code></li>
 <li><a href="https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452">https://github.com/holzschu/a-shell/issues/57#issuecomment-627962452</a> # <code>open url</code></li>
@@ -4196,7 +4538,7 @@ WantedBy=multi-user.target
 <li><code>-D ~/.config/sing-box/</code> # Specify a directory for caching rule sets (Avoid repeated downloads that may cause startup failures)</li>
 <li><a href="https://tisyang.github.io/post/2024-09-12-a-simple-config-of-sing-box/#%E8%87%AA%E5%90%AF%E5%8A%A8%E7%AE%A1%E7%90%86">https://tisyang.github.io/post/2024-09-12-a-simple-config-of-sing-box/#自启动管理</a></li>
 <li><a href="https://sing-box.sagernet.org/configuration/inbound/tun/#structure">https://sing-box.sagernet.org/configuration/inbound/tun/#structure</a></li>
-<li><a href="https://www.youtube.com/watch?v=mvOEesYsGBw&list=PLUelRCCHFxBkgoTlp4GkzMLdjBol59j9u">https://www.youtube.com/watch?v=mvOEesYsGBw&amp;list=PLUelRCCHFxBkgoTlp4GkzMLdjBol59j9u</a></li>
+<li><a href="https://www.youtube.com/watch?v=mvOEesYsGBw&amp;list=PLUelRCCHFxBkgoTlp4GkzMLdjBol59j9u">https://www.youtube.com/watch?v=mvOEesYsGBw&amp;list=PLUelRCCHFxBkgoTlp4GkzMLdjBol59j9u</a></li>
 </ul>
 </li>
 <li><code>vim ~/.bash_profile</code><pre><code># Set proxy
@@ -4245,6 +4587,68 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 ]
 </code></pre>
 </li>
+<li>SMTP (Do not use a proxy for SMTP ports)<pre><code>{
+  &quot;route&quot;: {
+    &quot;rules&quot;: [
+      {
+        &quot;port&quot;: [465, 587],
+        &quot;network&quot;: &quot;tcp&quot;,
+        &quot;outbound&quot;: &quot;direct&quot;
+      },
+      {
+        ...
+      }
+    ]
+  }
+}
+</code></pre>
+<ul>
+<li>Fix iCloud SMTP (<code>smtp.mail.me.com</code>) connection failure caused by sing-box TUN/proxy routing.<pre><code># Error 1
+SMTP 邮件 服务启动
+SMTP 邮件 推送失败！[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)
+# Error 2
+unexpected eof while reading
+# Error 3
+Didn&#39;t find STARTTLS in server response, trying anyway...
+write:errno=32
+# SMTP traffic was being routed through sing-box TUN
+17.156.200.36 via 172.19.0.2 dev tun0 table 2022 src 172.19.0.1 uid 1000 cache
+# Doesn&#39;t work
+[Documents]$ nc -v smtp.mail.me.com 587
+found 0 associations
+found 1 connections:
+     1: flags=82&lt;CONNECTED,PREFERRED&gt;
+        outif en2
+        src 10.42.0.225 port 55484
+        dst 17.156.192.29 port 587
+        rank info not available
+        TCP aux info available
+
+Connection to smtp.mail.me.com port 587 [tcp/submission] succeeded!
+# Work
+[Documents]$ nc -v smtp.mail.me.com 587
+220 iCloud SMTP - outbound.mr.icloud.com 3.10.5 (2634B29-9d9a9736810a)
+found 0 associations
+found 1 connections:
+     1: flags=82&lt;CONNECTED,PREFERRED&gt;
+        outif pdp_ip0
+        src 100.109.224.160 port 55485
+        dst 17.156.200.36 port 587
+        rank info not available
+        TCP aux info available
+
+Connection to smtp.mail.me.com port 587 [tcp/submission] succeeded!
+[Documents]$
+</code></pre>
+</li>
+<li><code>465</code> # <code>unexpected eof while reading</code>.</li>
+<li><code>587</code> # TCP connection succeeded, but no <code>220</code> SMTP banner; server sent <code>FIN</code>.</li>
+<li><code>ip route get 17.156.200.36</code> # <code>via 172.19.0.2 dev tun0 table 2022</code> → SMTP was routed through sing-box TUN.</li>
+<li>Bypassing TUN via <code>eno1</code> immediately returned <code>220 iCloud SMTP</code>.</li>
+<li><code>nc -v smtp.mail.me.com 587</code> # Use &quot;nc&quot;</li>
+<li><code>nix profile add nixpkgs#nc</code> # Install dependencies</li>
+</ul>
+</li>
 <li>Block (Used to block ads)<pre><code>[
   &quot;route&quot;: {
     &quot;rules&quot;: [
@@ -4279,6 +4683,14 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 <li><a href="https://clash.razord.top/">https://clash.razord.top/</a></li>
 <li><a href="https://yacd.haishan.me/">https://yacd.haishan.me/</a></li>
 <li><a href="https://board.zash.run.place/">https://board.zash.run.place/</a></li>
+<li><code>nix profile add nixpkgs#clashtui</code> # Or use &quot;clashtui&quot; to select a server<pre><code>- `?` # Help
+- `3` # Switch to &#39;Proxies&#39; tab
+- `h/j/k/l` # Navigate in &#39;Proxies&#39; tab
+- `t` # Test in &#39;Proxies&#39; tab
+- `s d` # Sort by delay
+- `Ctrl-m` # Same as Enter key
+</code></pre>
+</li>
 </ul>
 </li>
 <li>Make it accessible on WLAN<pre><code>{
@@ -4300,7 +4712,7 @@ export no_proxy=&quot;127.0.0.1, localhost, 192.168.10.0/24, 100.65.173.16&quot;
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Install dependencies<ul>
-<li><code>doas mv sing-box-1.12.12-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
+<li><code>doas mv sing-box-1.14.0-linux-amd64/sing-box /usr/local/bin/sing-box</code> # Install <a href="https://github.com/SagerNet/sing-box/releases/">dependencies</a></li>
 <li><code>nix profile install nixpkgs#sing-box</code> # Another method</li>
 </ul>
 </li>
@@ -5219,6 +5631,7 @@ anon_root=/mnt
 <ul>
 <li><h4>Use &quot;tr&quot;</h4>
 <ul>
+<li><code>... | tr --delete &#39;\n&#39;</code> # Delete newline characters</li>
 <li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39; | tr --delete &#39;%&#39;</code> # Delete a percentage character</li>
 <li><code>echo $XDG_DATA_DIRS | tr &#39;:&#39; &#39;\n&#39;</code> # Replace colons with newlines<ul>
 <li><code>echo $XDG_DATA_DIRS | sed &#39;s/:/\n/g&#39;</code> # Another method</li>
@@ -5231,7 +5644,7 @@ anon_root=/mnt
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -6895,7 +7308,8 @@ exec uv run --directory ~/.local/src/ani main.py
 <li><code>uv tool install xklb</code> # Replace <code>install</code> with <code>uninstall</code> to uninstall</li>
 <li><code>uv tool install git+https://github.com/grqz/yt-dlp.git@ie/bilibili/pi_fallbk</code> # From package source (Install patched software)</li>
 <li><code>uv tool install git+https://github.com/yt-dlp/yt-dlp.git@refs/pull/12048/head</code> # Install the specific commit from the PR</li>
-<li><code>uv tool list</code> # List installed tools</li>
+<li><code>uv tool list</code> # List installed tools (<code>--outdated</code>)</li>
+<li><code>uv tool upgrade yt-dlp</code> # Upgrade the tool</li>
 </ul>
 </li>
 <li>Call script from anywhere<ul>
@@ -6917,7 +7331,7 @@ exec uv run --directory ~/.local/src/ani main.py
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/yt-dlp/yt-dlp/issues/11665#issuecomment-2505987367">https://github.com/yt-dlp/yt-dlp/issues/11665#issuecomment-2505987367</a></li>
 <li><a href="https://docs.astral.sh/uv/guides/tools/#installing-tools">https://docs.astral.sh/uv/guides/tools/#installing-tools</a></li>
-<li><a href="https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&type=issues">https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&amp;type=issues</a></li>
+<li><a href="https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&amp;type=issues">https://github.com/search?q=repo%3Aastral-sh%2Fuv+ImportError&amp;type=issues</a></li>
 <li><a href="https://github.com/astral-sh/uv/issues/5450">https://github.com/astral-sh/uv/issues/5450</a></li>
 <li><a href="https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376">https://github.com/astral-sh/uv/issues/3560#issuecomment-2258821376</a></li>
 <li><a href="https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies">https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies</a></li>
@@ -7525,6 +7939,11 @@ ingress:
 <ul>
 <li><h4>Use &quot;cloudflare&quot;</h4>
 <ul>
+<li>Use Pages<ul>
+<li>Workers &amp; Pages - parse (Your pages name) - Settings - Connect (Git repository) - yaoniplan (Git account) - dotfiles (Repository) - development (Production branch) - None (Framework preset, if your site is static) - .local/src/parse (Path of Root directory, if your site is in a subdirectory) (<code>.local/src/parse/*</code> # Include paths of Build watch paths)</li>
+<li>Notifications - Add - Pages (Product) - Select - Cloudflare Pages parse project updates (Notification name) - Add email recipient - <a href="mailto:yaoniplan@gmail.com">yaoniplan@gmail.com</a> (Notification email) - parse (Pages projects) - Create</li>
+</ul>
+</li>
 <li>Use R2 (Need PayPal and debit card)<ul>
 <li>R2 - Create bucket - Bucket name (e.g. memos)</li>
 <li>Manage R2 API Tokens - Create API token - Token name (e.g. Memos R2 Token) - Permissions (e.g. Admin Read &amp; Write) - Copy (e.g. Access Key ID, Secret Access Key, Endpoints)</li>
@@ -7721,17 +8140,20 @@ help:
 <ul>
 <li><h4>Use &quot;wf-recorder&quot;</h4>
 <ul>
-<li><code>wf-recorder -f out.gif --codec=gif</code> # Record a GIF</li>
+<li><code>wf-recorder --codec=gif --output LVDS-1 --file out.gif</code> # Record a GIF</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>-f</code> # File name</li>
+<li><code>wf-recorder --list-output</code> # List the available outputs (e.g. <code>LVDS-1</code>)</li>
+<li>Bind to a key<pre><code>pgrep -x wf-recorder &gt;/dev/null &amp;&amp; pkill -INT -x wf-recorder &amp;&amp; notify-send &#39;Record finished&#39; || wf-recorder -y -c gif -f ~/$(date +%Y-%m-%dT%H:%M:%SZ).gif  &amp;
+</code></pre>
+</li>
 <li>Disadvantages: Large file, low quality</li>
 <li><code>nix profile install nixpkgs#wf-recorder</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/ammen99/wf-recorder/issues/79#issue-591769918">https://github.com/ammen99/wf-recorder/issues/79#issue-591769918</a> # <code>/gif</code></li>
+<li><a href="https://github.com/ammen99/wf-recorder/issues/283#issuecomment-2441302861">https://github.com/ammen99/wf-recorder/issues/283#issuecomment-2441302861</a></li>
 <li><code>man wf-recorder</code> # <code>/-f</code></li>
 </ul>
 </li>
@@ -8218,12 +8640,13 @@ font-size = 12
 <li><code>echo &quot;$(which mako)&quot; | wl-copy</code> # Copy file path to clipboard</li>
 </ul>
 </li>
+<li><code>wl-paste --list-types</code> # List the offered types</li>
 <li>Because to use Wayland.</li>
 <li><code>doas pacman --sync wl-clipboard</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -8355,13 +8778,24 @@ misc {
 <li><code>$FZF_POS</code> # Define vertical position of the cursor in the list staring from 1</li>
 </ul>
 </li>
+<li><code>--info-command=&#39;printf &quot;%s/%s&quot; &quot;$FZF_POS&quot; &quot;$FZF_INFO&quot;&#39;</code> # Prepend current cursor position onto the standard status display<ul>
+<li>Display <code>3/15/100</code> if cursor is on the 3rd item out of 15 matches from 100 total entries</li>
+<li><code>--info-command</code> # Replace default status line with the output of a custom shell command</li>
+<li><code>%s</code> # Insert a text string (Format specifier)</li>
+<li><code>$FZF_INFO</code> # Default status text <code>[matched items]/[total items]</code> (e.g. <code>15/100</code>)</li>
+</ul>
+</li>
 <li><code>--height=~100%</code> # Adjust the height automatically (<code>~</code>) in the range (<code>100%</code>)</li>
 <li><code>--pointer=&#39;➤&#39;</code> # Replace the default pointer &#39;▌&#39; to the current line with &#39;➤&#39;</li>
 <li><code>--sync --bind &#39;start:pos(10)&#39;</code> # Put the cursor on the 10th item<ul>
 <li><a href="https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845">https://github.com/junegunn/fzf/blob/838ac7554bdbae2f457f2c4969e1b38f1c28c946/CHANGELOG.md?plain=1#L1845</a></li>
 </ul>
 </li>
+<li><code>--multi</code> # Enable multi-select with <code>Tab</code> / <code>Shift-Tab</code></li>
+<li><code>Ctrl-/</code> # Make the list wrap (Or <code>Alt-/</code>)</li>
 <li><code>Ctrl-j/k</code> # Next/previous selection (Same as <code>Ctrl-n/p</code>)</li>
+<li><code>Ctrl-f/b</code> # Move the cursor forward/backward one character (Same as <code>Right-arrow</code>)</li>
+<li><code>PgDn</code> # Scroll down one page (Opposite: <code>PgUp</code>)</li>
 <li><code>Ctrl-m</code> # Enter key</li>
 <li><code>--prompt &#39;Search: &#39;</code> # Replace the default input prompt &#39;&gt; &#39; with it</li>
 <li><code>--reverse</code> # Put the search bar in the top of screen</li>
@@ -8610,8 +9044,9 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>vim ~/.config/yt-dlp/plugins/yhdm/yt_dlp_plugins/extractor/yhdm.py</code> # Add a custom extractor<ul>
+<li><code>~/.config</code> # Replace it with your <code>$XDG_CONFIG_HOME</code></li>
 <li><code>yhdm</code> # Replace it with your extractor name</li>
-<li><code>file $(which yt-dlp)</code> # Refer to the official extractor<pre><code># ~/.local/share/uv/tools/yt-dlp/lib/python*/site-packages/yt_dlp/extractor/*.py
+<li><code>file $(which yt-dlp)</code> # Refer to the official extractor (Priority: built-in &lt; custom)<pre><code># ~/.local/share/uv/tools/yt-dlp/lib/python*/site-packages/yt_dlp/extractor/*.py
 yaoniplan@tux ~ $ file $(which yt-dlp)
 /home/yaoniplan/.local/bin/yt-dlp: symbolic link to /home/yaoniplan/.local/share/uv/tools/yt-dlp/bin/yt-dlp
 </code></pre>
@@ -8649,6 +9084,7 @@ for tips on effectively exporting YouTube cookies
 <li><code>--simulate</code> # Same as <code>--skip-download</code></li>
 <li><code>--print-to-file url</code> # Append url to file</li>
 <li><code>--print url &quot;yourPlaylistUrl&quot; &gt; playlist.txt</code> # Override file (If you are just refresh expired links)</li>
+<li><code>--flat-playlist --print url</code> # Output a list of html url (if we don&#39;t need to extract the real media url)</li>
 <li><code>--abort-on-error</code> # Stop the continuous printing error</li>
 <li><code>yt-dlp &quot;yourPlaylistUrl&quot; --flat-playlist --dump-json | jq -r .url &gt;&gt; ~/playlist.txt</code> # Another way</li>
 </ul>
@@ -9316,7 +9752,7 @@ doas tailscale funnel --bg 2004
 </ol>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://en.wikipedia.org/wiki/Laws_of_robotics#Isaac_Asimov's_%22Three_Laws_of_Robotics%22">https://en.wikipedia.org/wiki/Laws_of_robotics#Isaac_Asimov&#39;s_&quot;Three_Laws_of_Robotics%22</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Laws_of_robotics#Isaac_Asimov&#39;s_%22Three_Laws_of_Robotics%22">https://en.wikipedia.org/wiki/Laws_of_robotics#Isaac_Asimov&#39;s_&quot;Three_Laws_of_Robotics%22</a></li>
 </ul>
 </li>
 </ul>
@@ -10011,6 +10447,11 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <ul>
 <li><h4>Some tips in iPhone 14 Pro (iOS 16.7.2)</h4>
 <ul>
+<li>Settings<ul>
+<li>True Tone: enable: warmer tone (automatically adapt); disable: cooler tone</li>
+<li><a href="https://redlib.catsarch.com/r/iphone/comments/13vlqyi/your_thoughts_on_true_tone_display/jm6lyd0">https://redlib.catsarch.com/r/iphone/comments/13vlqyi/your_thoughts_on_true_tone_display/jm6lyd0</a></li>
+</ul>
+</li>
 <li>Share<ul>
 <li>Settings - Siri &amp; Search - DeepSeek - Disable &#39;Learn from this App&#39;</li>
 <li>Hide Share suggestions from a specific app (Because it appears too frequently)</li>
@@ -10057,6 +10498,10 @@ libncursesw.so.6 =&gt; /usr/lib/libncursesw.so.6 (0x00007f052e943000)
 <li>Warning: It doesn&#39;t work on <code>https://gist.githubusercontent.com</code> (Or <code>https://raw.githubusercontent.com</code>)</li>
 </ul>
 </li>
+<li>App Library<ul>
+<li><a href="https://redlib.catsarch.com/r/iphonehelp/comments/1ixnmpk/how_to_delete_app_from_app_library/meno6p9">https://redlib.catsarch.com/r/iphonehelp/comments/1ixnmpk/how_to_delete_app_from_app_library/meno6p9</a> # Delete apps (Tested but not needed) from App Library (Press and hold the icon)</li>
+</ul>
+</li>
 <li>Spotlight (Hide files and content from Spotlight search)<ul>
 <li>Settings - Siri &amp; Search - Files - Disable &#39;Show Content in Search&#39;</li>
 <li>Because I usually search for shortcuts and apps, I want them to apeear at the top instead of irrelevant files.</li>
@@ -10087,7 +10532,8 @@ let url = &quot;shortcuts://run-shortcut?name=&quot; + encodeURIComponent(shortc
 Safari.open(url);
 </code></pre>
 </li>
-<li>Other parameter (I use it to save text to file as backup)<pre><code># `[0]`: The first argument
+<li>Other parameter (I use it to save text to file as backup)<pre><code># This can resolve errors ralated to special characters
+# `[0]`: The first argument
 const filename = args.plainTexts[0];
 const content = args.plainTexts[1];
 </code></pre>
@@ -10110,13 +10556,66 @@ const content = args.plainTexts[1];
 </ul>
 </li>
 <li>Shortcuts<ul>
+<li>Check if the URL is valid<pre><code>- Get Contents of URL (URL Encoded Text)
+  &#39;&#39;&#39;
+  # Method
+  GET
+  # Headers
+  Range # Key
+  bytes=0-0 # Text
+  &#39;&#39;&#39;
+- If (File Size, is larger than, 0, KB)
+</code></pre>
+</li>
+<li>Let English Siri speak Chinese<pre><code>- Because English speech engine cannot recognize Chinese through Siri. (Using Speak Text action)
+- Make Spoken Audio from Text (Text)
+  &#39;&#39;&#39;
+  Chinese (China Mainland) # Language
+  Siri Voice 2 # Voice
+  &#39;&#39;&#39;
+- Play Sound (Spoken Audio)
+- Artificial intelligence
+</code></pre>
+</li>
+<li>Get the value of the key in the first object<pre><code>- Get Item from List (First Item, Dictionary)
+- Get Dictionary Value (Value, audio, Item from List)
+- Artificial intelligence
+</code></pre>
+</li>
+<li>View the files as plain text (although Quick Look cannot read the file type)<pre><code># Key: Force the file suffix to `.txt` through the &#39;Set Name&#39; action
+- Folder (iCloud Drive &gt; Scriptable &gt; state)
+- Get Contents of Folder (Folder)
+- Choose from List (Contents of Folder)
+- Set Name (Chosen Item, Chosen Item.txt)
+- Quick Look (Renamed Item)
+- Artificial intelligence
+</code></pre>
+</li>
+<li>Open multiple URLs in a browser (With URL Scheme)<pre><code># Just like the for loop in Linux Bash
+# Safari URL schemes (`com-apple-mobilesafari-tab:` or `x-safari-`)
+- Text
+  &#39;&#39;&#39;
+  https://example1.com
+  https://example2.com
+  &#39;&#39;&#39;
+- Split Text (Text, New Lines)
+- Repeat with Each (Split Text)
+  - Replace Text (^, googlechrome://, Repeat Item)
+  - Open URLs (Updated Text)
+- End Repeat
+- Artificial intelligence
+</code></pre>
+</li>
 <li>Relax my eyes (Philosophy: 20-20-20)<pre><code># Core: The Set Focus action has a feature similar to a timer.
 # Automation (When turning Personal off, do Run Shortcut, remember to disable Ask Before Running)
-- Get Device Details (Current Brightness)
-- Set Variable (previousBrightness, Current Brightness)
-- Set Brightness (0%)
-- Wait (20 seconds)
-- Set Brightness (previousBrightness)
+# This is an automatic trigger (used by the system Automation)
+# Then you can write a manual trigger (used by users to control the switch via voice)
+# (by modifying a Boolean value so the automatic trigger can read it)
+- ...
+- Vibrate Device
+- Speak Text (Take a break)
+  - Siri Voice 4 # Voice
+- Lock Screen
 - Adjust Date (Add, 20, minutes, Current Date)
 - Set Focus (Personal, On, Time, Adjusted Date)
 - https://redlib.catsarch.com/r/shortcuts/comments/1g8wpiy/202020_rule_for_eye_strain/lt2bboc
@@ -10155,16 +10654,16 @@ const content = args.plainTexts[1];
 </code></pre>
 </li>
 <li>Replace one exact line with another line<pre><code># The reason for not using Replace Text action is that special characters might appear in regular expression mode
-- Run Inline Script
+- Run Script
   &quot;&quot;&quot;
   // Input: text from Shortcuts
-  const text = `Todo`;
+  const text = args.plainTexts[0];
 
   // Exact line to find
-  const oldLine = &quot;Chosen Item&quot;;
+  const oldLine = args.plainTexts[1];
 
   // New line to replace it with
-  const newLine = &quot;Provided Input&quot;;
+  const newLine = args.plainTexts[2];
 
   // Replace matching lines
   const rows = text
@@ -10179,13 +10678,13 @@ const content = args.plainTexts[1];
 </code></pre>
 </li>
 <li>Delete one exact line<pre><code># The reason for not using Replace Text action is that special characters might appear in regular expression mode
-- Run Inline Script
+- Run Script
   &quot;&quot;&quot;
   // Input: text from Shortcuts
-  const text = `Todo`;
+  const text = args.plainTexts[0];
 
   // Exact line to delete
-  const lineToDelete = &quot;Chosen Item&quot;;
+  const lineToDelete = args.plainTexts[1];
 
   // Remove matching lines (Special characters are OK)
   const rows = text
@@ -10422,7 +10921,7 @@ const content = args.plainTexts[1];
 - Execute Command (Text)
     - no (run in extension) # Open the app to execute the commands?
     - Disable &#39;Show When Run&#39;
-- Text (outplayer://`output`)
+- Text (outplayer://x-callback-url/play?url=&lt;ENCODED_URL&gt;)
 - Open URLs (Text)
 </code></pre>
 </li>
@@ -10770,11 +11269,12 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>The add icon - Add Action - Get Network Details (Cellular, Radio Technology) - if (Network Details, Does not have any value) - ... # Get state of airplane mode to save battery while sleeping, <a href="https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51">https://snoo.habedieeh.re/r/shortcuts/comments/11cnaf7/comment/ja4tl51</a></li>
 <li>The add icon - Add Action - Adjust Date - Set Variable - ... # To play yesterday&#39;s CCTV News, <a href="https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd">https://libreddit.freedit.eu/r/shortcuts/comments/ioiigu/comment/g4e1snd</a></li>
 <li>Use URL Scheme<pre><code>- Text
-    - vlc-x-callback://x-callback-url/stream?url=*yourURL*
+    - vlc-x-callback://x-callback-url/stream?url=&lt;ENCODED_URL&gt;
     - Or `nplayer-http://192.168.10.100:5244/d/encodedFileName`
-    - Or `outplayer://*yourURL*`
+    - Or `outplayer://x-callback-url/play?url=&lt;ENCODED_URL&gt;`
 - Open URLs (Text)
 - https://stackoverflow.com/questions/32549439/stream-to-vlc-for-ios-via-url-scheme/68077812#68077812
+- https://github.com/joshkerr/plex-outplayer-tamper/blob/main/AGENTS.md
 </code></pre>
 </li>
 <li>Make Siri mute if &#39;Dismiss Siri and Continue&#39; doesn&#39;t work<pre><code>- The add icon
@@ -10803,6 +11303,9 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Web<ul>
+<li>Tap the URL bar - Type a phrase - Click Find &quot;yourPhrase&quot; # Find on Page</li>
+<li>Tap the share icon - Scroll down - Find on Page # Another way</li>
+<li><a href="https://redlib.catsarch.com/r/iphone/comments/1iwhniu/maybe_this_isnt_news_but_you_can_find_words_on_a/mee3ied">https://redlib.catsarch.com/r/iphone/comments/1iwhniu/maybe_this_isnt_news_but_you_can_find_words_on_a/mee3ied</a></li>
 <li>Settings - Safari - Advanced - Website Data - Search a domain (e.g. 192.168.10.100) - Restart Safari # Clear a page cache for HTML page changes to take effect (Or new a private tab)</li>
 <li>Click on the top of screen # Go to the top of web</li>
 <li>Long press the scroll bar and drag to the bottom # Go to the bottom of web</li>
@@ -10919,7 +11422,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li><code>Subject one</code> # Take theory practice exams before booking (2023-08-21)<ul>
 <li><a href="https://archive.org/download/2022_penalties_of_subject_one">https://archive.org/download/2022_penalties_of_subject_one</a></li>
 <li><a href="https://zh.wikipedia.org/zh-cn/%E4%BA%A4%E9%80%9A%E9%81%95%E4%BE%8B%E8%A8%98%E5%88%86%E5%88%B6#%E8%AE%B0%E5%88%86%E9%A1%B9%E7%9B%AE">https://zh.wikipedia.org/zh-cn/交通違例記分制#记分项目</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Driver's_license_in_China#Types_of_license">https://en.wikipedia.org/wiki/Driver&#39;s_license_in_China#Types_of_license</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Driver&#39;s_license_in_China#Types_of_license">https://en.wikipedia.org/wiki/Driver&#39;s_license_in_China#Types_of_license</a></li>
 <li>Traffic police gesture</li>
 </ul>
 </li>
@@ -10952,6 +11455,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Use Phone<ul>
+<li><code>Call 1oooo</code> # Call 10000</li>
 <li><code>Call my brother</code> # (New contact - Add related name)</li>
 <li><code>Show my phone number</code> # Replace <code>my</code> with <code>my father&#39;s</code> (Replace <code>phone number</code> with <code>email address</code>)</li>
 </ul>
@@ -10969,6 +11473,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </li>
 <li>Use Clock<ul>
 <li><code>Set a timer for 7 minutes</code> # Boil a pot of water</li>
+<li><code>How much time is left</code> # Check remaining time</li>
 <li><code>Stop the timer</code> # Stop it</li>
 <li><code>Set an alarm at fourteen</code> # Lunch break from 13:40</li>
 <li><code>Wake me up at five thirty</code> # <code>Cancel 05:30</code> to cancel</li>
@@ -10978,7 +11483,12 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </li>
 <li>Use Reminders<ul>
 <li><code>Remind me to learn Reminders at 15:55 today</code></li>
-<li><code>Read my reminders</code> # Read the upcoming schedule aloud</li>
+<li><code>Read my reminders</code> # Read the upcoming schedule aloud (<code>for today</code>)</li>
+<li><code>Show my reminders</code> # Show the schedule (If you don&#39;t want Siri to read it aloud)</li>
+<li><code>Set my reminder to [Pay the utility bill] as completed</code> # Mark as done</li>
+<li><code>Complete my reminder to [Play basketball]</code> # Another way</li>
+<li><code>Mark [Wash clothes] as complete</code> # Another way</li>
+<li>Improve accuracy (speak a little faster, don&#39;t have obvious pauses, enunciate clearly)</li>
 <li><code>Remind me about this tomorrow at 10 AM</code> # Title of email or website</li>
 <li>Type a reminder in the app manually # Enable notifications</li>
 <li><a href="https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/">https://libreddit.tux.pizza/r/iphone/comments/xs6cx1/iphone_14_pro_reminders_does_not_work/</a></li>
@@ -10993,9 +11503,10 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Use Settings<ul>
+<li><code>Lock my phone</code> # Lock Screen (Sometimes it&#39;s inconvenient to press the power button)</li>
 <li><code>What can you do</code> # Discover new commands</li>
 <li><code>Enable light mode</code> # Replace <code>light</code> with <code>dark</code> to toggle</li>
-<li><code>Open the QR code scanner / Scan the QR code</code> # Open code scanner</li>
+<li><code>Open the QR code scanner / Scan [the/a] QR code</code> # Open code scanner</li>
 <li><code>repeat again</code> # Repeat reply</li>
 <li><code>Play the album by Sia</code> # Play album by a specific artist</li>
 <li><code>Play Love Story by Tayler Swift</code> # Play music by a specific artist</li>
@@ -11034,7 +11545,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>Use Podcasts<ul>
 <li><code>Play podcasts about computer</code> # Prepare for posts that need English communication</li>
 <li><code>Stop podcasts</code> # Stop</li>
-<li><code>Continue podcasts</code> # Continue</li>
+<li><code>play podcasts</code> # Continue</li>
 </ul>
 </li>
 <li>Use Voice Memos<ul>
@@ -11804,6 +12315,7 @@ services:
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>-R</code> # If garbled characters appear</li>
 <li><code>~/.bash{rc,_profile}</code> # <code>~/.bashrc</code> and <code>~/.bash_profile</code></li>
 <li><code>:n</code> # Next file</li>
 <li><code>:p</code> # Previous file</li>
@@ -12128,7 +12640,27 @@ DHCP=yes
 </li>
 <li><em><strong>References</strong></em><ul>
 <li>TL;DR # Too long; didn&#39;t read</li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><h4>Use &quot;cht.sh&quot;</h4>
+<ul>
+<li><code>cht.sh --shell</code> # Interact with it</li>
+<li><code>curl cht.sh/ls</code> # View <code>ls</code> command examples</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile add nixpkgs#cht-sh</code> # Install dependencies</li>
+<li>Because to view the basic usage of a command quickly.</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><a href="https://github.com/chubin/cheat.sh/issues/361#issue-1388130613">https://github.com/chubin/cheat.sh/issues/361#issue-1388130613</a> # <code>/shell</code></li>
+<li><code>curl cheat.sh</code> # View the homepage</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -12181,7 +12713,7 @@ fi
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
+<li><a href="https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button">https://www.reddit.com/r/NixOS/comments/y4k9iz/comment/jnrouk7/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
 </ul>
 </li>
 </ul>
@@ -12450,6 +12982,10 @@ perl: warning: Falling back to the standard locale (&quot;C&quot;).
 <ul>
 <li><h4>Use &quot;nix&quot;</h4>
 <ul>
+<li><code>nix repl</code> # Read-Eval-Print Loop (Like Python interpreter, math calculator)<ul>
+<li><code>:doc builtins.path</code> # View the documentation for the built-in function</li>
+</ul>
+</li>
 <li><code>nix eval nixpkgs#smartcat.meta.homepage</code> # Get the home page in metadata<pre><code>&quot;https://github.com/efugier/smartcat&quot;
 </code></pre>
 <ul>
@@ -12502,6 +13038,7 @@ perl: warning: Falling back to the standard locale (&quot;C&quot;).
 <li><code>nix profile rollback --to 90</code> # Roll back to version 90 (Because the new version has some bugs)</li>
 <li><code>nix profile history</code> # Get the version number (e.g. 90)</li>
 <li><code>nix profile remove /nix/store/2g3jazymqbjw9c390c3b7vw8xq3r8iny-hello-2.12.1</code> # Remove it</li>
+<li><code>nix profile add github:argosnothing/niri-scratchpad-rs/2.4</code> # Install the tag 2.4 pre-release</li>
 <li><code>nix profile list</code> # List installed packages</li>
 </ul>
 </li>
@@ -12628,6 +13165,7 @@ error:
 <li><a href="https://ghedam.at/a-tour-of-nix-flakes">https://ghedam.at/a-tour-of-nix-flakes</a></li>
 <li><a href="https://mirrors.ustc.edu.cn/help/nix-channels.html">https://mirrors.ustc.edu.cn/help/nix-channels.html</a></li>
 <li><a href="https://github.com/NixOS/nix">https://github.com/NixOS/nix</a></li>
+<li><code>nix registry list</code> # List flakes (e.g. nixpkgs)</li>
 <li><code>nix profile --help</code></li>
 <li><code>man curl</code></li>
 <li>Artificial intelligence</li>
@@ -12913,7 +13451,7 @@ services.xserver.displayManager.autoLogin.user = &quot;yaoniplan&quot;;
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button">https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
+<li><a href="https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button">https://www.reddit.com/r/NixOS/comments/9dcwdk/comment/e5h69kt/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button</a></li>
 <li><a href="https://nixos.wiki/wiki/Awesome">https://nixos.wiki/wiki/Awesome</a></li>
 <li><a href="https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/">https://www.reddit.com/r/NixOS/comments/10c72dy/how_do_i_setup_nixos_plasma_wayland_in/</a></li>
 <li><a href="https://nixos.wiki/wiki/KDE">https://nixos.wiki/wiki/KDE</a></li>
@@ -13699,7 +14237,7 @@ yaoniplan is not in the sudoers file.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://archlinux.org/mirrorlist/?country=China&protocol=http">https://archlinux.org/mirrorlist/?country=China&amp;protocol=http</a></li>
+<li><a href="https://archlinux.org/mirrorlist/?country=China&amp;protocol=http">https://archlinux.org/mirrorlist/?country=China&amp;protocol=http</a></li>
 <li><a href="https://archlinuxstudio.github.io/ArchLinuxTutorial/#/uk/rookie/basic_install?id=_0-disable-reflector">https://archlinuxstudio.github.io/ArchLinuxTutorial/#/uk/rookie/basic_install?id=_0-disable-reflector</a></li>
 <li>ChatGPT</li>
 </ul>
@@ -13868,6 +14406,12 @@ s/230512[0-9]\{6\}/230512seeADentist/g&#39;)&quot;; done
 <li><code>cronie</code> # Replace it with your service</li>
 <li><code>doas systemctl enable cronie --now</code> # One command that combines them<ul>
 <li><code>enable</code> # Replace it with <code>disable</code> to disable</li>
+</ul>
+</li>
+<li><code>doas systemctl stop sing-box</code> # Stop it to solve the problem<pre><code>cp: cannot create regular file &#39;/usr/local/bin/sing-box&#39;: Text file busy
+</code></pre>
+<ul>
+<li><code>doas systemctl start sing-box</code> # Remember to start it after copying (upgrading)</li>
 </ul>
 </li>
 </ul>
@@ -14316,6 +14860,7 @@ notification &quot;$1&quot;
 <li><code>||</code> # Or (otherwise)</li>
 </ul>
 </li>
+<li><code>... 2&gt;/dev/null</code> # Redirect standard error to null (Hide the error output and display the normal output)</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -14507,16 +15052,16 @@ togglePDFDarkMode();
 }
 </code></pre>
 </li>
-<li><code>vi ./cn2an.txt</code> # Use the tab key between them<pre><code>一    1
-二    2
-三    3
-四    4
-五    5
-六    6
-七    7
-八    8
-九    9
-十    10
+<li><code>vi ./cn2an.txt</code> # Use the tab key between them<pre><code>一	1
+二	2
+三	3
+四	4
+五	5
+六	6
+七	7
+八	8
+九	9
+十	10
 </code></pre>
 </li>
 </ul>
@@ -15113,7 +15658,7 @@ services:
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Warning: It takes 10-15 seconds to open the homepage.<ul>
-<li><a href="https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&type=issues">https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&amp;type=issues</a></li>
+<li><a href="https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&amp;type=issues">https://github.com/search?q=repo%3Ausememos%2Fmemos+slow&amp;type=issues</a></li>
 <li>Believe that latecomers (Author, you, or me) can change this situation</li>
 </ul>
 </li>
@@ -15707,6 +16252,7 @@ sleep &quot;$1&quot;; notification
 <ul>
 <li><h4>Use &quot;xdg-mime&quot;</h4>
 <ul>
+<li><code>cat /usr/share/mime/mime.cache | strings | grep &#39;/&#39; | sort -u</code> # List all MIME type</li>
 <li><code>xdg-mime query default audio/mpeg</code> # Query the default application for the type</li>
 <li><code>xdg-mime default feh.desktop image/png</code> # Set a default application for the type</li>
 </ul>
@@ -17217,6 +17763,7 @@ yaoniplan@tux ~ $
 </code></pre>
 <ul>
 <li><code>--ytdl-raw-options=cookies=~/example.txt</code> # Or use cookie (Pass options to <code>yt-dlp</code>)</li>
+<li><code>--ytdl-raw-options=cookies-from-browser=chromium,js-runtimes=deno,remote-components=ejs:github</code> # Solve the problem <code>Sign in confirm you&#39;re not a bot</code></li>
 <li><code>yt-dlp -o - &lt;URL&gt; | mpv -</code> # Play the video that yt-dlp command can download</li>
 <li><a href="https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n">https://libreddit.nohost.network/r/mpv/comments/opoorx/mpv_with_ytdlp/j7exh1n/#j7exh1n</a></li>
 </ul>
@@ -17245,6 +17792,7 @@ yaoniplan@tux ~ $
 <li><code>echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;D&quot; ] }&#39; | socat - /tmp/mpvsocket</code> # Another way that use shortcut keys</li>
 <li><code>for times in {1..5}; do echo &#39;{ &quot;command&quot;: [ &quot;keypress&quot;, &quot;/&quot; ] }&#39; | socat - /tmp/mpvsocket; done</code> # Decrease 10% volume</li>
 <li><code>echo &#39;{ &quot;command&quot;: [&quot;get_property&quot;, &quot;path&quot;] }&#39; | socat - /tmp/mpvsocket | jq -r &#39;.data&#39; | sed &#39;s#/[^/]*$##&#39;</code> # Get file path<pre><code># Values of get_property
+playlist
 metadata # Get metadata
 metadata/title # Get title
 </code></pre>
@@ -17453,7 +18001,7 @@ Ctrl+l show-text &quot;${playlist}&quot; 5000
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/custom-keybinds.md#codes">https://github.com/CogentRedTester/mpv-file-browser/blob/master/docs/custom-keybinds.md#codes</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808">https://github.com/CogentRedTester/mpv-file-browser/issues/44#issue-1140618808</a></li>
 <li><a href="https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815">https://github.com/CogentRedTester/mpv-file-browser/discussions/75#discussion-4477815</a></li>
-<li><a href="https://mim.mbirgin.com/?c=posts&id=200">https://mim.mbirgin.com/?c=posts&amp;id=200</a></li>
+<li><a href="https://mim.mbirgin.com/?c=posts&amp;id=200">https://mim.mbirgin.com/?c=posts&amp;id=200</a></li>
 <li><a href="https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html">https://filmsbykris.com/scripts/MyNotes/colored/MPV%20remote%20socket%20commands%20for%20script%20control%20and%20server%20use-23PXxpiD.html</a></li>
 <li><a href="https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/">https://alexherbo2.github.io/config/mpv/control-mpv-from-the-command-line/</a></li>
 <li><a href="https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164">https://github.com/mpv-player/mpv/blob/73a06ffae663e9fb78c5dff4b6bd01a637296a69/etc/input.conf#L164</a></li>
@@ -17994,41 +18542,41 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 <hr>
 <ul>
-<li><h4>Redirect URL form &quot;cn.bing.com&quot; to &quot;<a href="http://www.bing.com">www.bing.com</a>&quot;</h4>
+<li><h4>Redirect URL form &quot;cn.bing.com&quot; to &quot;www.bing.com&quot;</h4>
 <ul>
 <li><code>vim headerEditorConfig.json</code><pre><code class="language-json">{
-    &quot;request&quot;: [
-        {
-            &quot;enable&quot;: true,
-            &quot;name&quot;: &quot;bing-cn-to-www&quot;,
-            &quot;ruleType&quot;: &quot;redirect&quot;,
-            &quot;matchType&quot;: &quot;prefix&quot;,
-            &quot;pattern&quot;: &quot;https://cn.bing.com&quot;,
-            &quot;exclude&quot;: &quot;&quot;,
-            &quot;group&quot;: &quot;bing-redirect&quot;,
-            &quot;isFunction&quot;: false,
-            &quot;action&quot;: &quot;redirect&quot;,
-            &quot;to&quot;: &quot;https://www.bing.com&quot;
-        }
-    ],
-    &quot;sendHeader&quot;: [
-        {
-            &quot;enable&quot;: true,
-            &quot;name&quot;: &quot;bing&quot;,
-            &quot;ruleType&quot;: &quot;modifySendHeader&quot;,
-            &quot;matchType&quot;: &quot;regexp&quot;,
-            &quot;pattern&quot;: &quot;^http(s?)://www\\.bing\\.com/(.*)&quot;,
-            &quot;exclude&quot;: &quot;&quot;,
-            &quot;group&quot;: &quot;bing-direct&quot;,
-            &quot;isFunction&quot;: false,
-            &quot;action&quot;: {
-                &quot;name&quot;: &quot;x-forwarded-for&quot;,
-                &quot;value&quot;: &quot;8.8.8.8&quot;
-            }
-        }
-    ],
-    &quot;receiveHeader&quot;: [],
-    &quot;receiveBody&quot;: []
+  &quot;request&quot;: [
+      {
+          &quot;enable&quot;: true,
+          &quot;name&quot;: &quot;bing-cn-to-www&quot;,
+          &quot;ruleType&quot;: &quot;redirect&quot;,
+          &quot;matchType&quot;: &quot;prefix&quot;,
+          &quot;pattern&quot;: &quot;https://cn.bing.com&quot;,
+          &quot;exclude&quot;: &quot;&quot;,
+          &quot;group&quot;: &quot;bing-redirect&quot;,
+          &quot;isFunction&quot;: false,
+          &quot;action&quot;: &quot;redirect&quot;,
+          &quot;to&quot;: &quot;https://www.bing.com&quot;
+      }
+  ],
+  &quot;sendHeader&quot;: [
+      {
+          &quot;enable&quot;: true,
+          &quot;name&quot;: &quot;bing&quot;,
+          &quot;ruleType&quot;: &quot;modifySendHeader&quot;,
+          &quot;matchType&quot;: &quot;regexp&quot;,
+          &quot;pattern&quot;: &quot;^http(s?)://www\\.bing\\.com/(.*)&quot;,
+          &quot;exclude&quot;: &quot;&quot;,
+          &quot;group&quot;: &quot;bing-direct&quot;,
+          &quot;isFunction&quot;: false,
+          &quot;action&quot;: {
+              &quot;name&quot;: &quot;x-forwarded-for&quot;,
+              &quot;value&quot;: &quot;8.8.8.8&quot;
+          }
+      }
+  ],
+  &quot;receiveHeader&quot;: [],
+  &quot;receiveBody&quot;: []
 }
 </code></pre>
 </li>
@@ -18040,7 +18588,7 @@ export GOOGLE_DEFAULT_CLIENT_SECRET=&quot;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&qu
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://web.archive.org/web/20230305023028/https://webcache.googleusercontent.com/search?q=cache:1b6OzRW_AoAJ:https://www.chongbuluo.com/thread-15049-1-1.html&cd=5&hl=en&ct=clnk&gl=hk">https://web.archive.org/web/20230305023028/https://webcache.googleusercontent.com/search?q=cache:1b6OzRW_AoAJ:https://www.chongbuluo.com/thread-15049-1-1.html&amp;cd=5&amp;hl=en&amp;ct=clnk&amp;gl=hk</a></li>
+<li><a href="https://web.archive.org/web/20230305023028/https://webcache.googleusercontent.com/search?q=cache:1b6OzRW_AoAJ:https://www.chongbuluo.com/thread-15049-1-1.html&amp;cd=5&amp;hl=en&amp;ct=clnk&amp;gl=hk">https://web.archive.org/web/20230305023028/https://webcache.googleusercontent.com/search?q=cache:1b6OzRW_AoAJ:https://www.chongbuluo.com/thread-15049-1-1.html&amp;cd=5&amp;hl=en&amp;ct=clnk&amp;gl=hk</a></li>
 <li><a href="https://web.archive.org/web/20230608085940/https://www.v2ex.com/t/914329">https://web.archive.org/web/20230608085940/https://www.v2ex.com/t/914329</a></li>
 </ul>
 </li>
@@ -18270,6 +18818,9 @@ run j unhover+scrollDown
 <pre><code># Search engine
 # https://github.com/OrO-c/EveOneSearch
 # https://www.magicalapk.com/api3/system/api/rules
+# https://github.com/magicblack/maccms10/blob/master/说明文档/API接口说明.txt
+# https://example.com/api.php/provide/vod?wd=死亡笔记 # Get ids values
+# https://example.com/api.php/provide/vod?ac=detail&amp;ids=60591 # Get video links (Or `ac=videolist`)
 tr: https://translate.google.com/?sl=auto&amp;tl=en&amp;text=%s
 pp: https://www.perplexity.ai/search?q=%s blank=https://www.perplexity.ai
 </code></pre>
@@ -18529,7 +19080,7 @@ api.Hints.style(&quot; \
 <li><a href="https://github.com/brookhong/Surfingkeys/issues/166#issuecomment-270044552">https://github.com/brookhong/Surfingkeys/issues/166#issuecomment-270044552</a></li>
 <li><a href="https://github.com/brookhong/Surfingkeys/blob/master/docs/API.md">https://github.com/brookhong/Surfingkeys/blob/master/docs/API.md</a></li>
 <li><a href="https://gist.github.com/coramuirgen/94ba1d587cb2093c71f6ef4f0b371069">https://gist.github.com/coramuirgen/94ba1d587cb2093c71f6ef4f0b371069</a></li>
-<li><a href="https://gitlab-com.translate.goog/-/snippets/1985201?_x_tr_sl=auto&_x_tr_tl=zh-CN&_x_tr_hl=en-US">https://gitlab-com.translate.goog/-/snippets/1985201?_x_tr_sl=auto&amp;_x_tr_tl=zh-CN&amp;_x_tr_hl=en-US</a></li>
+<li><a href="https://gitlab-com.translate.goog/-/snippets/1985201?_x_tr_sl=auto&amp;_x_tr_tl=zh-CN&amp;_x_tr_hl=en-US">https://gitlab-com.translate.goog/-/snippets/1985201?_x_tr_sl=auto&amp;_x_tr_tl=zh-CN&amp;_x_tr_hl=en-US</a></li>
 <li><a href="https://github.com/brookhong/Surfingkeys#follow-links">https://github.com/brookhong/Surfingkeys#follow-links</a></li>
 </ul>
 </li>
@@ -19034,7 +19585,7 @@ inoremap ``` ```&lt;CR&gt;```&lt;Up&gt;
 <li><code>:help &lt;CR&gt;</code></li>
 <li><code>:help &lt;Left&gt;</code></li>
 <li>Add a demo.gif here</li>
-<li><a href="https://www.reddit.com/r/vim/comments/949jmp/comment/e3jaotv/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/vim/comments/949jmp/comment/e3jaotv/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
+<li><a href="https://www.reddit.com/r/vim/comments/949jmp/comment/e3jaotv/?utm_source=share&amp;utm_medium=web2x&amp;context=3">https://www.reddit.com/r/vim/comments/949jmp/comment/e3jaotv/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
 </ul>
 </li>
 </ul>
@@ -19077,7 +19628,10 @@ Plug &#39;dbridges/vim-markdown-runner&#39;
 ...
 </code></pre>
 </li>
-<li><code>curl --remote-name https://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.db</code> # Download a file</li>
+<li><code>curl --remote-name https://mirrors.ustc.edu.cn/archlinux/extra/os/x86_64/extra.db</code> # Download a file<ul>
+<li><code>curl -L -o &quot;music.mp3&quot; &quot;https://api.example.com/?type=url&amp;id=3410735419&quot;</code> # Specify filename</li>
+</ul>
+</li>
 <li><code>curl --verbose yaoniplan.eu.org</code></li>
 </ul>
 </li>
@@ -20028,7 +20582,7 @@ font_size 12.0
 <li><a href="https://sw.kovidgoyal.net/kitty/actions/">https://sw.kovidgoyal.net/kitty/actions/</a> # <code>/goto_tab</code></li>
 <li><a href="https://safereddit.com/r/neovim/comments/1ayq2tn/blinking_cursor_using_kitty_tmux_in_neovim/">https://safereddit.com/r/neovim/comments/1ayq2tn/blinking_cursor_using_kitty_tmux_in_neovim/</a> # Disable cursor blinking</li>
 <li><a href="https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953">https://github.com/kovidgoyal/kitty/issues/4458#issuecomment-1006355953</a> # Make <code>cursor_shape block</code> work</li>
-<li><a href="https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
+<li><a href="https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&amp;utm_medium=web2x&amp;context=3">https://www.reddit.com/r/KittyTerminal/comments/m3dnrq/comment/gqpeiii/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
 <li><a href="https://sw.kovidgoyal.net/kitty/conf/#terminal-bell">https://sw.kovidgoyal.net/kitty/conf/#terminal-bell</a> # <code>/fonts</code></li>
 <li><code>man kitty</code> # <code>/tabs$</code></li>
 <li>Artificial intelligence</li>
@@ -20131,7 +20685,7 @@ doas make install
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/2023-02-07_18:37:33.gif" alt="2023-02-07_18:37:33.gif"></li>
-<li><a href="https://www.reddit.com/r/i3wm/comments/hxhtpc/comment/fz6epw7/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/i3wm/comments/hxhtpc/comment/fz6epw7/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
+<li><a href="https://www.reddit.com/r/i3wm/comments/hxhtpc/comment/fz6epw7/?utm_source=share&amp;utm_medium=web2x&amp;context=3">https://www.reddit.com/r/i3wm/comments/hxhtpc/comment/fz6epw7/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
 <li><a href="https://i3wm.org/docs/userguide.html#move_direction">https://i3wm.org/docs/userguide.html#move_direction</a></li>
 <li><a href="https://i3wm.org/docs/userguide.html#resizingconfig">https://i3wm.org/docs/userguide.html#resizingconfig</a></li>
 </ul>
@@ -20832,8 +21386,8 @@ Unit ssh.service could not be found.
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
-<li><a href="https://www.perplexity.ai/?s=u&uuid=da362756-fc63-4229-951d-c069779a15d1">https://www.perplexity.ai/?s=u&amp;uuid=da362756-fc63-4229-951d-c069779a15d1</a></li>
-<li><a href="https://www.perplexity.ai/?s=u&uuid=0e72c679-3244-4e3a-90a4-d1e2084d0d84">https://www.perplexity.ai/?s=u&amp;uuid=0e72c679-3244-4e3a-90a4-d1e2084d0d84</a></li>
+<li><a href="https://www.perplexity.ai/?s=u&amp;uuid=da362756-fc63-4229-951d-c069779a15d1">https://www.perplexity.ai/?s=u&amp;uuid=da362756-fc63-4229-951d-c069779a15d1</a></li>
+<li><a href="https://www.perplexity.ai/?s=u&amp;uuid=0e72c679-3244-4e3a-90a4-d1e2084d0d84">https://www.perplexity.ai/?s=u&amp;uuid=0e72c679-3244-4e3a-90a4-d1e2084d0d84</a></li>
 </ul>
 </li>
 </ul>
@@ -21633,7 +22187,10 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 </ul>
 </li>
 <li><code>dotfiles push git@192.168.10.100:/var/git/dotfiles.git development</code> # Push to a specific remote URL</li>
-<li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file</li>
+<li><code>git show 97671e3:index.html</code> # Show the last committed complete content of a file<ul>
+<li><code>dotfiles show HEAD:.local/bin/archive.sh &gt; /tmp/archive.sh.old</code> # Test the pre-modified version</li>
+</ul>
+</li>
 <li><code>git restore .config/i3/config</code> # Discard changes of the file<ul>
 <li><code>git restore .</code> # Restore all files</li>
 </ul>
@@ -21789,7 +22346,7 @@ fi
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://serverfault.com/questions/139451/where-is-a-good-permanent-place-to-install-custom-bash-scripts">https://serverfault.com/questions/139451/where-is-a-good-permanent-place-to-install-custom-bash-scripts</a></li>
-<li><a href="https://www.reddit.com/r/archlinux/comments/j35cfc/comment/g79rysk/?utm_source=share&utm_medium=web2x&context=3">https://www.reddit.com/r/archlinux/comments/j35cfc/comment/g79rysk/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
+<li><a href="https://www.reddit.com/r/archlinux/comments/j35cfc/comment/g79rysk/?utm_source=share&amp;utm_medium=web2x&amp;context=3">https://www.reddit.com/r/archlinux/comments/j35cfc/comment/g79rysk/?utm_source=share&amp;utm_medium=web2x&amp;context=3</a></li>
 </ul>
 </li>
 </ul>
@@ -21810,6 +22367,10 @@ fi
 <ul>
 <li><h4>Use &quot;vim&quot;</h4>
 <ul>
+<li><code>ciw</code> # Change inner word<ul>
+<li><code>i</code> # Inner</li>
+</ul>
+</li>
 <li><code>:w | !pushCode.sh</code> # Save file, then run a shell command (<code>|</code>: A command separator)</li>
 <li>Increment a sequence<ul>
 <li><code>yy 14p</code> # Copy the line and paste it 14 times</li>
@@ -22107,12 +22668,13 @@ set -g @continuum-save-interval &#39;1&#39;
 <ul>
 <li><h4>Use &quot;crontab&quot;</h4>
 <ul>
-<li><code>crontab -e</code><pre><code>0~59 8 * * * $HOME/.config/checkIn/.venv/bin/python $HOME/.config/checkIn/checkIn.py
+<li><code>crontab -e</code> # Edit<pre><code>0~59 8 * * * $HOME/.config/checkIn/.venv/bin/python $HOME/.config/checkIn/checkIn.py
 * * * * * /usr/bin/bash /home/yaoniplan/.tmux/plugins/tmux-resurrect/scripts/save.sh
 @reboot /usr/bin/touch /home/yaoniplan/testTwo.md
 30 16 * * * /usr/bin/bash $HOME/.local/bin/pushCode.sh
 </code></pre>
 </li>
+<li><code>crontab -l</code> # List if you don&#39;t want to edit</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -22149,6 +22711,7 @@ doas systemctl start cronie
 </li>
 </ul>
 </li>
+<li><code>doas pacman --sync --refresh cron</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -22896,6 +23459,11 @@ dotfiles config --local status.showUntrackedFiles no
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>dotfiles log --oneline ~/.local/bin/ani/providers/myself.py</code> # Display a commit history for the file<ul>
+<li><code>dotfiles show cb3b5b6:.local/bin/ani/providers/myself.py</code> # Show the version</li>
+<li><code>dotfiles restore --source=cb3b5b6 ~/.local/bin/ani/providers/myself.py</code> # Restore to the version</li>
+</ul>
+</li>
 <li>Modify the most recent commit push<pre><code># I should commit these two files (selector.py, README.md) instead of (selector.py, main.py)
 # Reset (soft) the most recent commit back to the workspace (Retaining changes)
 dotfiles reset --soft HEAD~1
@@ -23332,7 +23900,11 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <ul>
 <li><h4>Use &quot;ln&quot;</h4>
 <ul>
-<li><code>ln --symbolic ~/.config/i3/config ./i3/config</code><ul>
+<li><code>ln --symbolic ~/Documents/.config/yt-dlp ~/Library/Preferences/yt-dlp</code> # Link a folder to another folder<pre><code># Create a relative symbolic link (Avoid invalidation after updates)
+python3 -c &#39;import os; l=os.path.expanduser(&quot;~/Library/Preferences/yt-dlp&quot;); t=os.path.expanduser(&quot;~/Documents/.config/yt-dlp&quot;); os.path.lexists(l) and os.unlink(l); os.symlink(os.path.relpath(t,os.path.dirname(l)),l); print(os.readlink(l))&#39;
+</code></pre>
+</li>
+<li><code>ln --symbolic ~/.config/i3/config ./i3/config</code> # Link a file to another file<ul>
 <li><code>ln</code> # Link</li>
 </ul>
 </li>
@@ -23361,6 +23933,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><img src="./assets/2022-12-25_16-11_1671955932398_0.png" alt="2022-12-25_16-11.png"></li>
 <li><code>man ln</code></li>
 <li><a href="https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/">https://www.freecodecamp.org/news/dotfiles-what-is-a-dot-file-and-how-to-create-it-in-mac-and-linux/</a></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -23625,19 +24198,16 @@ KEYWORDS=&quot;~amd64&quot;</p>
 <p>DEPEND=&quot;${RDEPEND}&quot;</p>
 <p>BDEPEND=&quot;&quot;</p>
 <p>src_unpack() {
-unpack_zip ${A}
-
+  unpack_zip ${A}
 }</p>
 <p>src_install() {</p>
-<pre><code>dodir &quot;/opt/logseq&quot;
-insinto &quot;/opt/logseq&quot;
-cd &quot;${WORKDIR}/Logseq-linux-x64/&quot;
-doins -r &quot;.&quot;
-fperms +x &quot;/opt/logseq/Logseq&quot;
-cd &quot;/opt/logseq&quot;
-
-dosym &quot;/opt/logseq/Logseq&quot; &quot;/usr/bin/Logseq&quot;
-</code></pre>
+<p>  dodir &quot;/opt/logseq&quot;
+  insinto &quot;/opt/logseq&quot;
+  cd &quot;${WORKDIR}/Logseq-linux-x64/&quot;
+  doins -r &quot;.&quot;
+  fperms +x &quot;/opt/logseq/Logseq&quot;
+  cd &quot;/opt/logseq&quot;</p>
+<p>  dosym &quot;/opt/logseq/Logseq&quot; &quot;/usr/bin/Logseq&quot;</p>
 <p>}
 </code></pre></p>
 </details></li>
@@ -24018,7 +24588,7 @@ SUBSYSTEM==&quot;leds&quot;, ACTION==&quot;add&quot;, KERNEL==&quot;*::kbd_backl
 <li><img src="./assets/image_1670917598838_0.png" alt="image.png"></li>
 <li><img src="./assets/image_1670920536029_0.png" alt="image.png"></li>
 <li><a href="https://www.oreilly.com/library/view/linux-multimedia-hacks/0596100760/ch01s02.html">https://www.oreilly.com/library/view/linux-multimedia-hacks/0596100760/ch01s02.html</a></li>
-<li><a href="https://dev.to/fmtweisszwerg/how-to-capture-a-screenshot-of-the-single-window-you-want-using-command-line-59hc#:~:text=To%20capture%20a%20screenshot%20of%20the%20selected%20window%20using%20import,ID%22%20with%20%2Dwindow%20option.&text=Finally%2C%20the%20screenshot%20is%20saved%20in%20the%20current%20directory">https://dev.to/fmtweisszwerg/how-to-capture-a-screenshot-of-the-single-window-you-want-using-command-line-59hc#:~:text=To%20capture%20a%20screenshot%20of%20the%20selected%20window%20using%20import,ID%22%20with%20%2Dwindow%20option.&amp;text=Finally%2C%20the%20screenshot%20is%20saved%20in%20the%20current%20directory</a>!</li>
+<li><a href="https://dev.to/fmtweisszwerg/how-to-capture-a-screenshot-of-the-single-window-you-want-using-command-line-59hc#:~:text=To%20capture%20a%20screenshot%20of%20the%20selected%20window%20using%20import,ID%22%20with%20%2Dwindow%20option.&amp;text=Finally%2C%20the%20screenshot%20is%20saved%20in%20the%20current%20directory">https://dev.to/fmtweisszwerg/how-to-capture-a-screenshot-of-the-single-window-you-want-using-command-line-59hc#:~:text=To%20capture%20a%20screenshot%20of%20the%20selected%20window%20using%20import,ID%22%20with%20%2Dwindow%20option.&amp;text=Finally%2C%20the%20screenshot%20is%20saved%20in%20the%20current%20directory</a>!</li>
 </ul>
 </li>
 </ul>
@@ -25013,7 +25583,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/image_1669434287891_0.png" alt="image.png"></li>
 <li><img src="./assets/image_1669433474004_0.png" alt="image.png"></li>
-<li><a href="https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet#:~:text=Package%20removal,-Recommended%20method&text=The%20recommended%20way%20to%20remove,run%20depclean%20as%20given%20below.">Gentoo Cheat Sheet - Gentoo Wiki</a></li>
+<li><a href="https://wiki.gentoo.org/wiki/Gentoo_Cheat_Sheet#:~:text=Package%20removal,-Recommended%20method&amp;text=The%20recommended%20way%20to%20remove,run%20depclean%20as%20given%20below.">Gentoo Cheat Sheet - Gentoo Wiki</a></li>
 </ul>
 </li>
 </ul>
@@ -25080,7 +25650,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 </li>
 <li>Install the OS<pre><code>qemu-system-x86_64 -m 8G -enable-kvm \
-  -bios /usr/share/ovmf/x64/OVMF.fd \
+  -bios /usr/share/ovmf/x64/OVMF.4m.fd \
   -nic user,hostfwd=tcp::60022-:22 \
   -cdrom /mnt/grow/230504archlinux-2023.05.03-x86_64.iso \
   -drive file=~/testQemu.cow,format=qcow2 \
@@ -25088,7 +25658,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </code></pre>
 </li>
 <li>Run the machine<pre><code>qemu-system-x86_64 -m 8G -smp 4 -enable-kvm \
-  -bios /usr/share/ovmf/x64/OVMF.fd \
+  -bios /usr/share/ovmf/x64/OVMF.4m.fd \
   -nic user,hostfwd=tcp::60022-:22 \
   ~/testQemu.cow -audiodev pa,id=sound0 \
   -device ich9-intel-hda \
@@ -25098,7 +25668,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>-display sdl,gl=on -vga virtio</code> # Enable 3D acceleration if you cannot enter the desktop after entering the password in the window manager</li>
+<li><code>-display sdl,gl=on -device virtio-vga-gl</code> # Enable 3D acceleration if you cannot enter the desktop after entering the password in the window manager</li>
 <li><code>-bios /usr/share/ovmf/x64/OVMF.fd</code> # 64bit UEFI</li>
 <li><code>ssh yaoniplan@192.168.10.105 -p 60022</code> # Connect it</li>
 <li><code>doas pacman -S qemu-full</code> # Install dependencies</li>
@@ -25112,10 +25682,11 @@ localhost:5900 # Server
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://redlib-1.privadency.com/r/virtualization/comments/vlom7u/cant_get_virtiovirgl_3d_acceleration_to_work_on/ip9cu2f">https://redlib-1.privadency.com/r/virtualization/comments/vlom7u/cant_get_virtiovirgl_3d_acceleration_to_work_on/ip9cu2f</a> # <code>/virtio-vga-gl</code></li>
 <li><a href="https://pkgbuild.com/~tpowa/archboot/web/archboot.html">https://pkgbuild.com/~tpowa/archboot/web/archboot.html</a></li>
 <li><a href="https://leedev.org/2015/12/13/arch-linux-qemu.html">https://leedev.org/2015/12/13/arch-linux-qemu.html</a></li>
 <li><a href="https://ict4g.net/adolfo/notes/admin/qemu-virtual-machines.html">https://ict4g.net/adolfo/notes/admin/qemu-virtual-machines.html</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -25379,7 +25950,7 @@ exec ~/.config/shell/autoGit.sh
 <li><img src="./assets/image_1667206240340_0.png" alt="image.png"></li>
 <li><img src="./assets/image_1667206449974_0.png" alt="image.png"></li>
 <li><a href="https://github.com/sethfair/logseq-focus-mode">sethfair/logseq-focus-mode: The Focus Mode plugin for Logseq allows you to quickly switch into a distraction-free &quot;zen&quot; mode by toggling into full-screen and hiding elements like the sidebar or properties section.</a></li>
-<li><a href="https://www.youtube.com/watch?v=aYSbvGgLo9s&t=463s">How to Write Using Logseq (Long Form Writing Setup) - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=aYSbvGgLo9s&amp;t=463s">How to Write Using Logseq (Long Form Writing Setup) - YouTube</a></li>
 </ul>
 </li>
 </ul>
@@ -25402,7 +25973,7 @@ exec ~/.config/shell/autoGit.sh
 <li><em><strong>Notes</strong></em><ul>
 <li><code>111j</code> # scroll to bottom (means move down 111 lines)</li>
 <li>Optional: Change default [[shortcut keys]] (e.g. <em>gg</em>) for the plugin (#Logseq-vim-shortcuts ) and the #application (#Logseq )<ul>
-<li><code>sudo vim ~/.logseq/settings/logseq-vim-shortcuts.json</code><pre><code class="language-json">    &quot;top&quot;: &quot;g g&quot;,
+<li><code>sudo vim ~/.logseq/settings/logseq-vim-shortcuts.json</code><pre><code class="language-json">  &quot;top&quot;: &quot;g g&quot;,
 </code></pre>
 </li>
 <li>Change it after pressing the <em>g</em> key and the <em>s</em> key to display this page
@@ -26504,7 +27075,7 @@ You can edit this.
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/philc/vimium#keyboard-bindings">https://github.com/philc/vimium#keyboard-bindings</a></li>
-<li><a href="https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Ctab-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts">https://support.google.com/chrome/answer/157179?hl=en&amp;co=GENIE.Platform%3DDesktop#zippy=%2Ctab-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts</a></li>
+<li><a href="https://support.google.com/chrome/answer/157179?hl=en&amp;co=GENIE.Platform%3DDesktop#zippy=%2Ctab-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts">https://support.google.com/chrome/answer/157179?hl=en&amp;co=GENIE.Platform%3DDesktop#zippy=%2Ctab-window-shortcuts%2Cgoogle-chrome-feature-shortcuts%2Caddress-bar-shortcuts%2Cwebpage-shortcuts%2Cmouse-shortcuts</a></li>
 </ul>
 </li>
 </ul>
@@ -27895,7 +28466,7 @@ You can edit this.
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/image_1662357498836_0.png" alt="image.png"></li>
-<li><a href="https://www.chongbuluo.com/forum.php?mod=viewthread&tid=11022">https://www.chongbuluo.com/forum.php?mod=viewthread&amp;tid=11022</a></li>
+<li><a href="https://www.chongbuluo.com/forum.php?mod=viewthread&amp;tid=11022">https://www.chongbuluo.com/forum.php?mod=viewthread&amp;tid=11022</a></li>
 </ul>
 </li>
 </ul>
@@ -28230,19 +28801,19 @@ import = [
 bindings = [
   # Map `Ctrl-m` to `Enter`
   { key = &quot;m&quot;, mods= &quot;Control&quot;, chars = &quot;\u000d&quot; },
-  # Similar &#39;y&#39; of tmux
+  # Similar to &#39;y&#39; in tmux
   { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;Copy&quot; },
   { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
   { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ToggleViMode&quot; },
   { key = &quot;y&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ScrollToBottom&quot; },
-  # Similar &#39;q&#39; of tmux
+  # Similar to &#39;q&#39; in tmux
   { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
   { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ToggleViMode&quot; },
   { key = &quot;q&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ScrollToBottom&quot; },
-  # Similar &#39;Ctrl-[&#39; of tmux in copy mode
+  # Similar to &#39;Ctrl-[&#39; in tmux copy mode
   { key = &quot;[&quot;, mods = &quot;Control&quot;, mode = &quot;Search&quot;, action = &quot;SearchCancel&quot; },
   { key = &quot;[&quot;, mods = &quot;Control&quot;, mode = &quot;Vi|~Search&quot;, action = &quot;ClearSelection&quot; },
-  # Similar &#39;Ctrl-m&#39; of tmux search
+  # Similar to &#39;Ctrl-m&#39; in tmux search
   { key = &quot;m&quot;, mods = &quot;Control&quot;, mode = &quot;Search|Vi&quot;, action = &quot;SearchConfirm&quot; },
 ]
 
@@ -28301,7 +28872,7 @@ git sparse-checkout set themes
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/image_1661510403963_0.png" alt="image.png"></li>
 <li><img src="./assets/image_1661519327603_0.png" alt="image.png"></li>
-<li><a href="https://www.youtube.com/watch?v=lvLExb1SUzM&ab_channel=EF-LinuxMadeSimple">https://www.youtube.com/watch?v=lvLExb1SUzM&amp;ab_channel=EF-LinuxMadeSimple</a></li>
+<li><a href="https://www.youtube.com/watch?v=lvLExb1SUzM&amp;ab_channel=EF-LinuxMadeSimple">https://www.youtube.com/watch?v=lvLExb1SUzM&amp;ab_channel=EF-LinuxMadeSimple</a></li>
 <li><a href="https://i3wm.org/docs/userguide.html#assign_workspace">https://i3wm.org/docs/userguide.html#assign_workspace</a></li>
 </ul>
 </li>
@@ -28427,7 +28998,7 @@ updatedb: can not find group `mlocate&#39;
 <li><a href="https://fontawesome.com/cheatsheet">https://fontawesome.com/cheatsheet</a> //<code>ctrl + c</code> 即可复制 (如果找不到可以复制的图标的话)</li>
 <li>如果没有awesome字体，请安装 ttf-font-awesome</li>
 <li><em><strong>References</strong></em></li>
-<li><a href="https://www.youtube.com/watch?v=Bw5sDLOvN20&ab_channel=GerryStudios">https://www.youtube.com/watch?v=Bw5sDLOvN20&amp;ab_channel=GerryStudios</a></li>
+<li><a href="https://www.youtube.com/watch?v=Bw5sDLOvN20&amp;ab_channel=GerryStudios">https://www.youtube.com/watch?v=Bw5sDLOvN20&amp;ab_channel=GerryStudios</a></li>
 </ul>
 </li>
 <li>主机快照timeshift(快照可存其他盘，非系统盘) future #Idea</li>
@@ -28553,7 +29124,7 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li><em><strong>例子</strong></em></li>
 </ul>
 <pre><code>bar {
-    position top
+  position top
 }
 </code></pre>
 <ul>
@@ -28644,6 +29215,11 @@ XMODIFIERS=@im=fcitx //添加这一行
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>File selector<ul>
+<li><code>/</code> # Search from root directory</li>
+<li><code>Ctrl-f</code> # Search from current directory</li>
+</ul>
+</li>
 <li><code>Ctrl-z</code> # Undo (Opposite: <code>Ctrl-y</code>)</li>
 <li><code>vim ~/.local/src/com/chromium-flags.conf</code> # Example<pre><code># Disable first-run experience on first launch a fresh profile (e.g. `--user-data-dir=/tmp/com_reader_73nq8tg6`)
 --no-first-run
@@ -28778,17 +29354,19 @@ XMODIFIERS=@im=fcitx //添加这一行
 <li><code>grep --line-number fgpt ~/.bashrc</code> # Get the line number (Use <code>sed</code> command to delete the line)</li>
 <li><code>grep -x &quot;$current_wallpaper&quot; -A 1 &quot;$wallpaper_list&quot; | tail -1</code> # Get next wallpaper</li>
 <li><code>grep -A 10 &quot;Artificial&quot; note/pages/Future.md</code> # Show the next 10 lines after the line</li>
+<li><code>grep -B 1 -A 6 &#39;&quot;port&quot;&#39; config.json</code> # Show the previous line and the next 6 lines after each matching line</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-x</code> # Exactly match</li>
 <li><code>-A</code> # After</li>
+<li><code>-B</code> # Before</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><img src="./assets/2023-04-30_19-58.png" alt="2023-04-30_19-58.png"></li>
 <li><code>man grep</code> # <code>/-x</code> <code>/-A</code> <code>/-B</code></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -29181,6 +29759,12 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <ul>
 <li><h4>Use &quot;python&quot;</h4>
 <ul>
+<li><code>:.2f</code> # Format a number as a floating-point with 2 decimal places<ul>
+<li><code>:</code> # The start of the format specifier</li>
+<li><code>.2</code> # Set the precision to 2 digits after the decimal point</li>
+<li><code>f</code> # Format as a float (fixed-point)</li>
+</ul>
+</li>
 <li><code>print(real_url, end=&#39;&#39;)</code> # Output without a trailing newline<ul>
 <li><code>, end=&#39;&#39;</code> # Set the ending string to an empty string (As an input parameter for the next operation)</li>
 </ul>
@@ -29284,7 +29868,7 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 </ol>
 </li>
 <li>[[ventoy]]测试(环境：usb2.0电脑 和 usb3.0u盘)<br>速度(gpt)：$\overline{33}$MB/s<br>速度(dos)：$\overline{100}$MB/s<br>结论：在这种情况下，以root权限处理文件，u盘格式dos的速度更快 #Idea</li>
-<li>[有效学习：处理知识的20条规则([[anki]])](<a href="https://www.yuque.com/supermemo/wiki/20rules">https://www.yuque.com/supermemo/wiki/20rules</a>)</li>
+<li><a href="https://www.yuque.com/supermemo/wiki/20rules">有效学习：处理知识的20条规则([[anki]])</a></li>
 <li></li>
 <li>in the [[future]] ，专业大概率选择 [[计算机科学与技术]]</li>
 <li><blockquote>
@@ -29396,21 +29980,45 @@ vec2 resolution = vec2(1366.0, 768.0); // Adjust to your screen
 </blockquote>
 </li>
 <li>To do<ul>
-<li>Important and urgent<pre><code>
-</code></pre>
+<li>Important and urgent<pre><code></code></pre>
 </li>
-<li>Important not urgent<pre><code>
-</code></pre>
+<li>Important not urgent<pre><code></code></pre>
 </li>
-<li>Urgent not important<pre><code>
-</code></pre>
+<li>Urgent not important<pre><code></code></pre>
 </li>
-<li>Not urgent not important<pre><code>
-</code></pre>
+<li>Not urgent not important<pre><code></code></pre>
 </li>
 </ul>
 </li>
+<li><h4>Use &quot;english&quot;</h4>
+<ul>
+<li>Capitalize the first letter of every proper noun (e.g. Bash).</li>
+<li>Pronounce the preceding vowel with its long sound and keep the &#39;e&#39; silent when a word ends in &#39;e&#39;<ul>
+<li><code>preceding</code> # Coming directly before something else in order or position. (e.g. in &quot;<strong>ate</strong>&quot;, &#39;a&#39; is the preceding vowel of &#39;e&#39;)</li>
+<li><code>vowel</code> # The letters <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, <em>u</em> representing speech sounds made without obstructing airflfow. (e.g. <em>a</em> in <em>cat</em>, <em>o</em> in <em>dog</em>)</li>
+<li><code>long vowel sound</code> # A vowel sound pronounced the same as its alphabet letter name. (e.g. <em>a</em> in <em>make</em>, <em>i</em> in <em>time</em>, <em>u</em> in <em>use</em>)</li>
+<li><code>silent e</code> (Or <code>magic e</code>) # An unpronounced &#39;e&#39; at the end of a word that alters the sound of the vowel before it. (e.g. <em>cake</em>, <em>bike</em>, <em>home</em>)</li>
 </ul>
+</li>
+<li>Use &#39;does&#39; when the subject is third-person singular<ul>
+<li><code>does</code> # The third-person singular form of the verb <em>do</em> in the simple present tense. (e.g. &quot;He <strong>does</strong> his work&quot;, &quot;<strong>Does</strong> she know?&quot;)</li>
+<li><code>subject</code> # The noun or pronoun that performs the action or is described in a sentence. (e.g. in &quot;<strong>The cat</strong> sleeps&quot;, &quot;<strong>The cat</strong>&quot; is the subject)</li>
+<li><code>third-person</code> # The grammatical perspective referring to someone or something other than the speaker (<em>I/We</em>) or listener (<em>you</em>). (e.g. he, she, it, they, or proper name like <em>David</em>)</li>
+<li><code>singular</code> # Refer to exactly one person, place, thing, or concept, as opposed to plural. (e.g. a dog, she, water vs. plural dogs, they)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li>Because to make the expression more standardized. (Easy to understand)</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li>Artificial intelligence</li>
+</ul>
+</li>
+</ul>
+<hr>
   </article>
 </body>
 </html>

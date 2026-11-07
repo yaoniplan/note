@@ -1,4 +1,4 @@
-## "Website"
+## "website"
 - http://natas9.natas.labs.overthewire.org # 9. Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd
 - https://www.toptal.com/project-managers/tomato-timer#
 - https://new.polebrief.com/edit
@@ -71,7 +71,6 @@
 - https://oluceps.github.io/clash2sing-box/
 - https://github.com/somemoo/v2rayfree
 - https://github.com/ermaozi/get_subscribe
-- https://www.burstlinker.com/
 
 ## Animation and comic
 - https://www.skr2.cc/
@@ -80,7 +79,6 @@
 - https://yhdm.one/latest/
 - https://kaliscan.me/latest
 - https://kagane.to/search?sort=updated_at,desc&exg
-- http://eroanimedougakan.blog.fc2.com/
 
 ## Programming
 - https://sqlbolt.com/lesson/select_queries_with_constraints
@@ -158,3 +156,8 @@
 - https://spotifydown.com/
 - https://ytgoconverter.com/en56/
 - https://www.yt2conv.com/v102/
+
+## Bible
+- https://www.fuyin.tv
+- https://www.bible.com/zh-CN/videos
+- https://www.god.tv/
