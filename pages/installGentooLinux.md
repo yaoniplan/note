@@ -328,7 +328,7 @@ emerge -q app-admin/sysklogd
 rc-update add sysklogd default
 ```
 
-# Configure corn daemon (Optional)
+# Configure cron daemon (Optional)
 ```
 emerge -q sys-process/cronie
 rc-update add cronie default

@@ -1,96 +1,87 @@
-### "Animation"
-- 爱丽丝与特蕾丝的虚幻工厂 #NSFW #movie 010800 ani
-- 掌门低调点 S01E05 ani
-- 蓝兰岛漂流记 S01E07 #NSFW
-- 李熊猫 S01E02
-- 顾长歌：我！天命大反派 #AI S01E04
-- 太古神尊 S01E05
-- 苏东坡与杭州的故事 S01E03
-- 择日飞升 S01E05
-- 万古至尊：李云霄传 S01E07
-- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52.S10E05 437
-- 东大高武学院 S01E05
-- 被追放的转生重骑士用游戏知识开无双 S01E05
-- 描绘直至生命尽头 S01E05
-- 落第贤者的学院无双 第二回转生，S等级作弊魔术师冒险记 S01E07
-- 地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～ S01E12.S02E06
-- 我家的弟弟们真是让您费心了 S01E02
-- 鬼之花嫁 S01E04
-- 穹庐下的魔女 S01E03
-- 才女的侍从 在满是高岭之花的贵族学校暗中照顾（毫无生活自理能力的）学院第一大小姐 S01E03
-- 说了不打算爱我的公爵继承人，不知为何对我宠爱有加 S01E02
-- My Adventures with Superman / 我与超人的冒险 S01E10.S02E01
-- 世界在起舞 S01E01
-- 与奔跑在透明之夜的你，谈一场看不见的恋爱 S01E02
-- Clevatess / 克雷瓦提斯 S01E04
-- 奇招百出的维多利亚 S01E02
-- 最强出涸皇子的暗跃帝位争夺 S01E03
-- 被遗弃圣女的异世界美食之旅 用隐藏技能召唤了露营车 S01E02
-- 转学后班上的清纯可爱美少女，竟是小时候玩在一起的哥儿们 S01E03
-- 百日成王 S01E08
-- 二十世纪电气目录 S01E04
-- 世界最强的后卫 ～迷宫国的新人探索者～ S01E03
+### "animation"
+- 掌门低调点 S01E08
+- 蓝兰岛漂流记 S01E08 #NSFW
+- 李熊猫 S01E03
+- 顾长歌：我！天命大反派 #AI S01E06
+- 太古神尊 S01E07
+- 苏东坡与杭州的故事 S01E04
+- 择日飞升 S01E06
+- 万古至尊：李云霄传 S01E08
+- 妖神记 S01E40.S02E40.S03E40.S04E52.S05E52.S06E52.S07E52.S08E52.S09E52.S10E07 442
+- 东大高武学院 S01E06
+- 被追放的转生重骑士用游戏知识开无双 S01E11
+- 描绘直至生命尽头 S01E06
+- 落第贤者的学院无双 第二回转生，S等级作弊魔术师冒险记 S01E08
+- 我家的弟弟们真是让您费心了 S01E03
+- 鬼之花嫁 S01E05 #NSFW
+- 穹庐下的魔女 S01E04
+- 才女的侍从 在满是高岭之花的贵族学校暗中照顾（毫无生活自理能力的）学院第一大小姐 S01E04
+- My Adventures with Superman / 我与超人的冒险 S01E10.S02E02
+- 世界在起舞 S01E02
+- 与奔跑在透明之夜的你，谈一场看不见的恋爱 S01E03
+- Clevatess / 克雷瓦提斯 S01E05
+- 奇招百出的维多利亚 S01E03
+- 最强出涸皇子的暗跃帝位争夺 S01E04
+- 被遗弃圣女的异世界美食之旅 用隐藏技能召唤了露营车 S01E03
+- 转学后班上的清纯可爱美少女，竟是小时候玩在一起的哥儿们 S01E04
+- 百日成王 S01E09
+- 二十世纪电气目录 S01E05
+- 世界最强的后卫 ～迷宫国的新人探索者～ S01E04
 - 研讨同组的染谷同学原来是女优这事 #NSFW S01E01
-- LV999的村民 S01E04
-- 启运丹田：开局签到至尊丹田 S01E21
-- 我独自盗墓 S01E03
-- 斩神之凡尘神域 S01E15.S02E06
-- 万人之上 S01E06
-- 凡人修仙传 - 182
-- 镖人 S01E15.S02E06
-- 逆天邪神 S01E30.S02E18
-- 将夜 S01E15
-- Liar Game / 欺诈游戏 S01E20
-- 盗妖行 S01E48
-- 光阴之外 S01E33
-- 牧神记 S01E94
-- 仙逆 155
-- 武神主宰 686
+- LV999的村民 S01E05
+- 启运丹田：开局签到至尊丹田 S01E24
+- 我独自盗墓 S01E05
+- 斩神之凡尘神域 S01E15.S02E07
+- 万人之上 S01E08
+- 凡人修仙传 - 184
+- 镖人 S01E15.S02E08
+- 逆天邪神 S01E30.S02E19
+- 将夜 S01E19
+- Liar Game / 欺诈游戏 S01E22
+- 盗妖行 S01E49
+- 光阴之外 S01E36
+- 牧神记 S01E95
+- 仙逆 158
+- 武神主宰 689 ani
 - Against the Sky Supreme / 逆天至尊 544
 
-### "Comic"
-- 末日物流中心 Chapter 0 com
+### "comic"
+- 这一世我要开后宫 #NSFW Chapter 5
+- 一不小心，名垂千史 Chapter 1
+- 末日物流中心 Chapter 1
 - 我欲封天 Chapter 26
 - 从水猴子开始成神 Chapter 22
 - 读世天才 Chapter 34
 - 天魔的不凡重生 Chapter 204
-- 杀手巴德罗 Chapter 104 com
-- 魔道转生记 Chapter 52
-- 全职觉醒 Chapter 140
-- 寒冰末日：我屯了千亿物资 Chapter 104 # A similar storyline (but with humourous and relaxing elements)
-- 历史典故 Chapter 3
-- 不变的法则 Chapter 35
-- 从零开始无限进化 Chapter 31
-- 名门家族的剑术天才 Chapter 121 Page 25
-- 盗脸人生 Chapter 18
+- 杀手巴德罗 Chapter 105
+- 魔道转生记 Chapter 53
+- 全职觉醒 Chapter 141
+- 寒冰末日：我屯了千亿物资 Chapter 105 # A similar storyline (but with humourous and relaxing elements)
+- 不变的法则 Chapter 36
+- 从零开始无限进化 Chapter xxx 误入桃花源
+- 名门家族的剑术天才 Chapter 124
+- 盗脸人生 Chapter xx 吕敏舒 20
     - 欺诈诱发了人类的贪婪（你贪收益，他贪你的本金） # Chapter 9
     - 人心难测（说是一套，做又是另一套） # Chapter 30
-- 强制催眠/发小碰不得 #NSFW Chapter 86
-- 末日苟活：蟑螂给我叠buff Chapter 77
-- 残命天才生存法 Chapter 53
-- 终极肆意神豪系统 Chapter 65
-- 诡浊仙道 Chapter 63
-- 转生座 Chapter 98
-- 末世重生：我靠开箱子问鼎巅峰 Chapter 67
-- 王游戏 Chapter 125 # Although the plot may be a little illogical, it is fascinating.
-- 万界守门人 Chapter 89
-- 异狱暴君：我的影子能无限进化 Chapter 34
-- 老蛇修仙传 Chapter 55
-- 穹顶之上 Chapter 139
-- 唯我可见的高塔攻略 Chapter 79
-- 高武进化：从觉醒怪兽之王开始 Chapter 55
-- 绝对剑感 Chapter 145
-- 太监转世 Chapter 52
-- 我靠无敌被动打出成吨伤害！ Chapter 105
-- 再不死我就统治魔界了 Chapter 112
-- 我，进化，恶魔 Chapter 116
-- 神级升级系统 S01E182
-- 开局就无敌 S01E118
-- 我只想安静地打游戏 S01E129
-- 这个勇者是金钱至上主义者 S01E120
-- 某天成为魔神 S01E264
-- 重生不当舔王，我独自氪金升级 # 237
-- 穿入VR成为性域猎人 #NSFW 56
+- 强制催眠/发小碰不得 #NSFW Chapter 87
+- 末日苟活：蟑螂给我叠buff Chapter 77 歌利亚晶石
+- 残命天才生存法 Chapter 57
+- 终极肆意神豪系统 Chapter 67
+- 诡浊仙道 Chapter 64
+- 转生座 Chapter 99
+- 末世重生：我靠开箱子问鼎巅峰 Chapter 68
+- 王游戏 Chapter 126 # Although the plot may be a little illogical, it is fascinating.
+- 万界守门人 Chapter 90
+- 异狱暴君：我的影子能无限进化 Chapter 35
+- 老蛇修仙传 Chapter 56
+- 唯我可见的高塔攻略 Chapter 81
+- 绝对剑感 Chapter 150
+- 我靠无敌被动打出成吨伤害！ Chapter 106
+- 神级升级系统 S01E191
+- 这个勇者是金钱至上主义者 #NSFW S01E121
+- 某天成为魔神 S01E270
+- 重生不当舔王，我独自氪金升级 # 250
+- 穿入VR成为性域猎人 #NSFW 56 com
 - 异世界转生之后宫养成记 #NSFW 54
 - 只活到今天的轮回骑士 44
 - 被召唤到异世界，然后成为半龙骑士长 #NSFW 37
@@ -117,8 +108,7 @@
 - 色雕英雄传:一捅天下 - 40
 - Panty Note / 裤裤笔记 - 232
 - 傀儡 - 331
-- 谁说理组没正妹 - 102 comic
-    - https://www.hanman100.com/index.php/chapter-28044.html
+- 谁说理组没正妹 - 102
 - 开局签到至尊丹田 - 347
 - 超级神基因 - 312
 - 帝王app - 75
@@ -204,7 +194,36 @@
 - 危险的爱全
 - 為爱而生 法葡克超 全
 
-### Comic
+### "novel"
+- 无极！ - 吃红薯不
+- 苟在初圣魔门当人材 - 鹤守月满池
+- 蛊真人 - 蛊真人
+- 我只想安静的做个苟道中人 - 爆炸小拿铁 #NSFW 第二卷 第419章 大逆不道！ nov
+- 乱世书 - 姬叉 #NSFW Chapter 286
+- 苟在武道世界成圣 - 在水中的纸老虎 Chapter 660
+
+### "publication"
+- Three Days to See / 假如给我三天光明 Chapter 2 pub
+- The Secret of Childhood / 童年的秘密
+- The Pragmatic Programmer / 程序员修炼之道
+- A Philosophy of Software Design / 软件设计的哲学
+- Domain-Driven Design / 领域驱动设计
+- The Diary of a Young Girl / 安妮日记 - 009-A005-4 七月九日　星期四
+
+### novel
+- 重生之医技强国 - 夜的邂逅
+
+### comic
+- 監獄女囚 #NSFW Chapter 105
+- 童顏繼母 #NSFW Chapter 50
+- 我只想安静地打游戏 S01E129 # It's dead (No more updates)
+- 开局就无敌 S01E118 # It's dead (No more updates)
+- 我，进化，恶魔 Chapter 117 # Plot maybe slow
+- 再不死我就统治魔界了 Chapter 116
+- 太监转世 Chapter 52 # Target audience maybe 13 or 14 years old
+- 高武进化：从觉醒怪兽之王开始 Chapter 56 # Plot maybe slow
+- 穹顶之上 Chapter 139
+- 历史典故 Chapter 3
 - 末日重启 Chapter 153 (Extra chapter: 154-168)
 - 超越回归的大魔导师 Chapter 125 # Maybe adding love elements will make reader feel relaxed
 - Bodychange / 双性人 #NSFW Chapter 33 # 外貌也是一个交际的加分项（尽量不要做对外表有害的事）
@@ -362,7 +381,21 @@
 - 坏血(end)
 - guard(end)
 
-### Animation
+### animation
+- ドSなペット / 抖S的宠物 #NSFW S01E02 (Illegal) (Fantasy moment)
+- 催眠性指导 #NSFW S01E06 # (Illegal) 权力使人屈服? 欺诈(礼貌 & 常识 & 私心)让懵懂无知的人信以为真? (Fantasy moment)
+- 公主騎士奧莉維亞 調教 #NSFW S01E02 # 在最危急的时刻求助于他人(无异于引颈受戮)
+- 漆黒のシャガ / 漆黑的射干 #NSFW S01E03 # 愿能造福于整个社会(不管你是人是妖)
+- 指先案内人 #NSFW S01E03 # (Illegal) 服务少数人的科技让坏人更坏?
+- みだれうち / 學生妹淫亂的時期 #NSFW S01E01 0448 # Illegal
+- 1LDK＋J系 いきなり同居？密着!?初エッチ!!? / 1LDK+JK 突然間展開同居？極度貼近!?初體驗!？ #NSFW S01E05 0704 # In different scenarios: in the quilt, in the school stairwell, in the bathroom
+- ヒナギクヴァージンロストクラブへようこそ / 歡迎來到雛菊處女迷失俱樂部 #NSFW S01E02 # Science fiction film (Fantasy moment)
+- うさみみボウケンタン～セクハラしながら世界を救え～ / 兔耳冒險譚1 #NSFW S01E04 # Knowledge saved the world
+- 好みじゃないけど-ムカつく姉と相性抜群エッチ- / 雖然不是自己的菜-與討厭姐姐的超契合H- #NSFW S01E02 # Strong body and graceful posture
+- 家庭教師X催眠2 #NSFW S01E02 # Magic hypnosis collar
+- 说了不打算爱我的公爵继承人，不知为何对我宠爱有加 S01E03 0347 # Target audience maybe 13 or 14 years old
+- 地狱模式 ～喜欢速通游戏的玩家在废设定异世界无双～ S01E12.S02E07 0908 # Target audience maybe 13 or 14 years old
+- 爱丽丝与特蕾丝的虚幻工厂 #NSFW #movie
 - 云月大陆 #AI S01E01 0420 # The visual transitions were choppy
 - Shrouding the Heavens / 遮天 173 0838 # Plot maybe slow
 - 择天记 S01E26
@@ -1169,7 +1202,7 @@
 - 无赖勇者的鬼畜美学(season 1 end)
 - 妖精的旋律(season 1 end)
 - 死囚乐园(season 1 end)
-- Death Note / 死亡笔记26(season 1 end)
+- Death Note / 死亡笔记 26(season 1 end)
 - 学园默示录(boring)
 - 寄生兽(boring)
 - another(boring)
@@ -1194,7 +1227,9 @@
 - 东京ESP(boring)
 - 刀剑神域(boring)
 
-### Movie
+### "movie"
+- Inside Out / 头脑特工队 # Emotions in the brain control our physical actions
+- Where is Anne Frank / 消失的安妮日記
 - Decorado / 楚门之鼠 #NSFW # Like an animated *The Truman Show*
 - 美丽人生 # Positive optimism seems to increase the success rate?
 - Shaw Brothers / 邵氏影业
@@ -1236,6 +1271,3 @@
 - Avatar / 阿凡达 # End of the first, second season.
 - Iron Man / 钢铁侠 # End of the first, second and third season
 - The Great Gatsby / 了不起的盖茨比 # Through flashbacks, a friend of Gatsby recalls Gatsby's experiences, which is fascinating.
-
-### Novel
-- 重生之医技强国 - 夜的邂逅
