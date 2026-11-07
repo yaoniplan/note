@@ -1,9 +1,4 @@
 ### "animation"
-- 指先案内人1-3 #NSFW
-- 漆黑的射干1-3 #NSFW
-- 公主騎士奧莉維亞 調教1-2 #NSFW
-- 催眠性指导1-6 #NSFW
-- ドSなペット / 抖S的宠物 #NSFW
 - 掌门低调点 S01E08
 - 蓝兰岛漂流记 S01E08 #NSFW
 - 李熊猫 S01E03
@@ -387,6 +382,11 @@
 - guard(end)
 
 ### animation
+- ドSなペット / 抖S的宠物 #NSFW S01E02 (Illegal) (Fantasy moment)
+- 催眠性指导 #NSFW S01E06 # (Illegal) 权力使人屈服? 欺诈(礼貌 & 常识 & 私心)让懵懂无知的人信以为真? (Fantasy moment)
+- 公主騎士奧莉維亞 調教 #NSFW S01E02 # 在最危急的时刻求助于他人(无异于引颈受戮)
+- 漆黒のシャガ / 漆黑的射干 #NSFW S01E03 # 愿能造福于整个社会(不管你是人是妖)
+- 指先案内人 #NSFW S01E03 # (Illegal) 服务少数人的科技让坏人更坏?
 - みだれうち / 學生妹淫亂的時期 #NSFW S01E01 0448 # Illegal
 - 1LDK＋J系 いきなり同居？密着!?初エッチ!!? / 1LDK+JK 突然間展開同居？極度貼近!?初體驗!？ #NSFW S01E05 0704 # In different scenarios: in the quilt, in the school stairwell, in the bathroom
 - ヒナギクヴァージンロストクラブへようこそ / 歡迎來到雛菊處女迷失俱樂部 #NSFW S01E02 # Science fiction film (Fantasy moment)

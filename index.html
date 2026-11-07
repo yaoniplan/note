@@ -5631,8 +5631,10 @@ anon_root=/mnt
 <ul>
 <li><h4>Use &quot;tr&quot;</h4>
 <ul>
+<li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39; | tr --delete &#39;%&#39;</code> # Delete a percentage character<ul>
 <li><code>... | tr --delete &#39;\n&#39;</code> # Delete newline characters</li>
-<li><code>brightnessctl --machine-readable | cut --delimiter=&#39;,&#39; --fields=&#39;4&#39; | tr --delete &#39;%&#39;</code> # Delete a percentage character</li>
+</ul>
+</li>
 <li><code>echo $XDG_DATA_DIRS | tr &#39;:&#39; &#39;\n&#39;</code> # Replace colons with newlines<ul>
 <li><code>echo $XDG_DATA_DIRS | sed &#39;s/:/\n/g&#39;</code> # Another method</li>
 </ul>
@@ -29995,7 +29997,7 @@ vec2 resolution = vec2(1366.0, 768.0); // Adjust to your screen
 <li>Capitalize the first letter of every proper noun (e.g. Bash).</li>
 <li>Pronounce the preceding vowel with its long sound and keep the &#39;e&#39; silent when a word ends in &#39;e&#39;<ul>
 <li><code>preceding</code> # Coming directly before something else in order or position. (e.g. in &quot;<strong>ate</strong>&quot;, &#39;a&#39; is the preceding vowel of &#39;e&#39;)</li>
-<li><code>vowel</code> # The letters <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, <em>u</em> representing speech sounds made without obstructing airflfow. (e.g. <em>a</em> in <em>cat</em>, <em>o</em> in <em>dog</em>)</li>
+<li><code>vowel</code> # The letters <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em>, <em>u</em> representing speech sounds made without obstructing airflow. (e.g. <em>a</em> in <em>cat</em>, <em>o</em> in <em>dog</em>)</li>
 <li><code>long vowel sound</code> # A vowel sound pronounced the same as its alphabet letter name. (e.g. <em>a</em> in <em>make</em>, <em>i</em> in <em>time</em>, <em>u</em> in <em>use</em>)</li>
 <li><code>silent e</code> (Or <code>magic e</code>) # An unpronounced &#39;e&#39; at the end of a word that alters the sound of the vowel before it. (e.g. <em>cake</em>, <em>bike</em>, <em>home</em>)</li>
 </ul>
