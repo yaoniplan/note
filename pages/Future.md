@@ -47,6 +47,8 @@
 - https://www.cosdna.com/chs/
 
 ## Network test
+- https://test.nju.edu.cn/
+- https://fast.com/
 - https://test.ustc.edu.cn/
 
 ## Virus detection
@@ -77,8 +79,6 @@
 - https://www.868dm.com/
 - https://yhdm6a.com/
 - https://yhdm.one/latest/
-- https://kaliscan.me/latest
-- https://kagane.to/search?sort=updated_at,desc&exg
 
 ## Programming
 - https://sqlbolt.com/lesson/select_queries_with_constraints
