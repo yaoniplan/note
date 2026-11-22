@@ -522,7 +522,6 @@ include=~/.config/mako/mako-colors
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>nix profile install nixpkgs#zoxide</code> # Install dependencies</li>
 <li><code>vim ~/.bashrc</code> # Set up for Bash<pre><code>## Replace the `cd` command (The same as `alias cd=z`)
 #eval &quot;$(zoxide init --cmd cd bash)&quot;
 eval &quot;$(zoxide init bash)&quot;
@@ -543,6 +542,7 @@ zoxide: PWD hooks are not supported on POSIX shells.
 <li><code>--cmd cd</code> # Replace the default <code>cd</code></li>
 </ul>
 </li>
+<li><code>nix profile add nixpkgs#zoxide</code> # Install dependencies</li>
 <li>Because to experience a smarter cd command.</li>
 </ul>
 </li>
@@ -708,6 +708,7 @@ error: No plugin can handle URL: --force-media-title=剑风传奇 / 第08集
 </li>
 </ul>
 </li>
+<li><code>uv tool install streamlink</code> # Install dependencies</li>
 <li>Because to speed up buffering for an HLS link. (Make playback smoother)</li>
 </ul>
 </li>
@@ -750,14 +751,16 @@ error: No plugin can handle URL: --force-media-title=剑风传奇 / 第08集
 <ul>
 <li><h4>Use &quot;greetd&quot;</h4>
 <ul>
-<li><code>doas systemctl enable greetd</code> # Enable greetd</li>
 <li><code>doas vim /etc/greetd/config.toml</code> # Set the default session to start Niri<pre><code>[default_session]
 #command = &quot;agreety --cmd niri-session&quot;
-command = &quot;tuigreet --time --cmd niri-session --background matrix&quot;
-user = &quot;yaoniplan&quot;
+command = &quot;tuigreet --time --cmd niri-session&quot;
 </code></pre>
 </li>
-<li><code>doas systemctl disable sddm</code> # Disable other display manager (e.g. SDDM)</li>
+<li><code>doas systemctl disable sddm</code> # Disable other display manager (e.g. SDDM)<ul>
+<li><code>systemctl cat display-manager</code> # Get your display manager (e.g. lightdm)</li>
+</ul>
+</li>
+<li><code>doas systemctl enable greetd</code> # Enable greetd</li>
 <li><code>doas reboot</code> # Reboot to make changes effective</li>
 </ul>
 </li>
@@ -923,6 +926,7 @@ doas chmod +x /etc/kernel/install.d/50-quiet.conf
 <li><code>q</code> # Quit (The same as <code>Esc</code>)</li>
 </ul>
 </li>
+<li><code>nix profile add nixpkgs#swappy</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -970,7 +974,26 @@ doas chmod +x /etc/kernel/install.d/50-quiet.conf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>vim ~/.config/swayimg/init.lua</code> # Configure as needed<pre><code>-- Copy image to clipboard
+<li><code>vim ~/.config/swayimg/init.lua</code> # Configure as needed<pre><code>-- Toggle image dark mode (Invert colors)
+swayimg.viewer.on_key(&quot;i&quot;, function()
+  local image = swayimg.viewer.get_image()
+  if not image then return end
+  -- Restore original image.
+  if image.path:match(&quot;%.dark%.png$&quot;) then
+    swayimg.viewer.open_path(image.path:sub(1, -11))
+    os.remove(image.path)
+    return
+  end
+  local file = os.tmpname() .. &quot;.dark.png&quot;
+  -- Invert image colors.
+  os.execute((image.path:sub(1, 7) == &quot;exec://&quot; and image.path:sub(8) .. &quot; | magick -&quot; or &quot;magick &quot; .. string.format(&quot;%q&quot;, image.path)) .. &quot; -negate &quot; .. string.format(&quot;%q&quot;, file))
+  -- Open inverted image.
+  if io.open(file, &quot;rb&quot;) then
+    swayimg.viewer.open_path(file)
+  end
+end)
+
+-- Copy image to clipboard
 swayimg.viewer.on_key(&quot;c&quot;, function()
   local file = os.tmpname() .. &quot;.png&quot;
   -- Export the currently displayed frame as PNG.
@@ -1097,11 +1120,18 @@ workspace &quot;stash&quot; { }
 debug {
     deactivate-unfocused-windows
 }
+// Enable fullscreen by default for a specific application
+window-rule {
+    match app-id=r#&quot;qemu-system-x86_64&quot;#
+    open-fullscreen true
+}
 // Enable a focus-ring (And disable border) separately for a specific application
 window-rule {
     match app-id=&quot;^dropdown$&quot;
 
-    border { off }
+    border {
+        off
+    }
 
     focus-ring {
         on
@@ -1109,10 +1139,23 @@ window-rule {
         active-color &quot;#7fc8ff&quot;
         inactive-color &quot;#505050&quot;
     }
+
+    open-floating true
+    default-floating-position x=0 y=0 relative-to=&quot;top&quot;
+    default-window-height { proportion 0.3; }
+    default-column-width { proportion 0.6; }
+    geometry-corner-radius 0 0 12 12
+    clip-to-geometry true
 }
 layout {
     // If the workspace has only one window, center it.
     always-center-single-column
+    // You can enable drop shadows for windows.
+    shadow {
+        // Uncomment the next line to enable shadows.
+        on
+        ...
+    }
 }
 // Enable blur
 window-rule {
@@ -1144,7 +1187,7 @@ window-rule {
     match app-id=r#&quot;^chrome-127\.0\.0\.1__-Default$&quot;#
     //default-column-width { fixed 677; }
     //default-window-height { fixed 748; }
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.5; } //0.35
     default-window-height { proportion 0.98; }
 }
 // Open tiling windows with 1/3 of the screen width by default
@@ -1178,15 +1221,15 @@ binds {
     Mod+J { focus-window-or-workspace-down; }
     Mod+K { focus-window-or-workspace-up; }
     //Mod+Shift+H { move-column-left; }
-    Mod+Shift+H { spwan &quot;sh&quot; &quot;-c&quot; &quot;for i in $(seq 1 20); do niri msg action move-column-left; done&quot; }
+    Mod+Shift+H { spawn &quot;sh&quot; &quot;-c&quot; &quot;for i in $(seq 1 20); do niri msg action move-column-left; done&quot;; }
     Mod+Shift+J { move-window-down-or-to-workspace-down; }
     Mod+Shift+K { move-window-up-or-to-workspace-up; }
     //Mod+Shift+L { move-column-right; }
-    Mod+Shift+L { spwan-sh &quot;for i in $(seq 1 20); do niri msg action move-column-right; done&quot; }
+    Mod+Shift+L { spawn-sh &quot;for i in $(seq 1 20); do niri msg action move-column-right; done&quot;; }
     // Switch previous window
     Mod+Tab { focus-window-previous; }
     // Use parameters
-    Mod+T { spawn &quot;alacritty&quot; &quot;-e&quot; &quot;tmux&quot;; }
+    Mod+T { spawn-sh &quot;alacritty msg create-window --class terminal || alacritty --class terminal&quot;; }
     // Change launcher
     //Mod+D { spawn &quot;sh&quot; &quot;-c&quot; &quot;tofi-run | sh&quot;; }
     Mod+D { spawn-sh &quot;tofi-run | sh&quot;; }
@@ -2251,6 +2294,7 @@ List of audio encoders:
 <li><code>~</code> # Open the help menu</li>
 <li><code>g &lt;Space&gt;</code> # Go to the path you want to go</li>
 <li><code>g h</code> # Go home</li>
+<li><code>H</code> # Back to previous directory (Opposite: <code>L</code>)</li>
 <li><code>Z</code> # Jump to a directory via zoxide</li>
 <li><code>c c</code> # Copy file path (The same as <code>realpath</code>)</li>
 <li><code>, r</code> # Sort randomly</li>
@@ -2268,7 +2312,7 @@ List of audio encoders:
 </li>
 <li><code>vim ~/.config/yazi/theme.toml</code> # Configure themes<pre><code>[flavor]
 dark = &quot;catppuccin-mocha&quot;
-#light = &quot;catppuccin-latte&quot;
+#light = &quot;catppuccin-latte&quot; # Optional, if you also use a light theme
 </code></pre>
 </li>
 <li><code>vim ~/.config/yazi/keymap.toml</code> # Configure keybindings<pre><code>[[mgr.prepend_keymap]]
@@ -2277,7 +2321,7 @@ run  = &quot;cd ~/.local/bin&quot;
 desc = &quot;Goto ~/.local/bin&quot;
 
 [[mgr.prepend_keymap]]
-on   = [ &quot;&lt;C-j&gt;&quot; ]
+on   = [ &quot;&lt;C-m&gt;&quot; ]
 run  = &quot;open&quot;
 desc = &quot;Open file or enter directory&quot;
 </code></pre>
@@ -2772,7 +2816,7 @@ h1 {
 <li><em><strong>Notes</strong></em><ul>
 <li><code>qrencode --type=ansiutf8 &quot;hello&quot;</code> # Print to terminal</li>
 <li><code>qrencode --output=output.png &quot;Your text or URL here&quot;</code> # Save it</li>
-<li><code>nix profile install nixpkgs#qrencode</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#qrencode</code> # Install dependencies</li>
 <li>Because to implement the feature of aggregating QR codes.</li>
 </ul>
 </li>
@@ -7038,7 +7082,8 @@ c.statusbar.show = &#39;never&#39;
 # Play videos with mpv
 c.bindings.commands = {&quot;normal&quot;: {&quot;&lt;Ctrl+Shift-t&gt;&quot;: &quot;spawn --userscript translate --text&quot;, &quot;&lt;Ctrl-t&gt;&quot;: &quot;spawn --userscript translate&quot;, &quot;gM&quot;: &quot;hint links spawn --detach mpv {hint-url}&quot;}}
 # Custom start page
-c.url.start_pages = &#39;~/.config/note/assets/index.html&#39;
+#c.url.start_pages = &#39;~/.config/note/assets/index.html&#39;
+c.url.start_pages = &#39;https://yaoniplan.eu.org/https://note.yaoniplan.eu.org/pages/Future.md&#39;
 # Custom search engines
 c.url.searchengines = {
     &quot;DEFAULT&quot;: &#39;https://google.com/search?q={}&#39;,
@@ -7327,7 +7372,7 @@ exec uv run --directory ~/.local/src/ani main.py
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>--index-url https://pypi.tuna.tsinghua.edu.cn/simple/</code> # Use a mirror (Improve download speed)</li>
-<li><code>nix profile install nixpkgs#uv</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#uv</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -7545,7 +7590,7 @@ document.querySelector(&#39;video&#39;).playbackRate = 2.5;
 </ul>
 </li>
 <li>Because it faster than &quot;neofetch&quot;.</li>
-<li><code>nix profile install nixpkgs#fastfetch</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#fastfetch</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -8217,7 +8262,7 @@ help:
 <li><code>nix profile install nixpkgs#grimblast</code> # Install dependencies</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#grim nixpkgs#slurp</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#grim nixpkgs#slurp</code> # Install dependencies</li>
 <li>Because to share screenshots with others in the open source world.</li>
 </ul>
 </li>
@@ -8242,15 +8287,15 @@ help:
 <li><code>vim ~/.config/mako/config</code> # Configure as needed<pre><code>sort=-time
 layer=overlay
 background-color=#2e34407f
-width=450
-height=150
+width=300
+height=100
 border-size=3
 border-color=#99c0d0
 # Rounded corners
 border-radius=12
-# Enable icons
-icons=1
-icon-path=/home/yaoniplan/.nix-profile/share/icons/Papirus-Dark:/usr/share/icons/breeze-dark
+## Enable icons
+#icons=1
+#icon-path=/home/yaoniplan/.nix-profile/share/icons/Papirus-Dark:/usr/share/icons/breeze-dark
 default-timeout=5000
 ignore-timeout=0
 font=&quot;Noto Sans CJK SC&quot; 14
@@ -8284,7 +8329,7 @@ default-timeout=0
 </ul>
 </li>
 <li>Because to use the fastest notification daemon on Wayland.</li>
-<li><code>nix profile install nixpkgs#mako</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#mako</code> # Install dependencies</li>
 <li>Solve the problem<pre><code>yaoniplan@tux ~ $ mako
 Failed to acquire service name: File exists
 Is a notification daemon already running?
@@ -8304,7 +8349,7 @@ yaoniplan@tux ~ $
 yaoniplan@tux ~ $
 </code></pre>
 <ul>
-<li><code>nix profile install nixpkgs#libnotify</code> # The <code>notify-send</code> command is part of the <code>libnotify</code> package</li>
+<li><code>nix profile add nixpkgs#libnotify</code> # The <code>notify-send</code> command is part of the <code>libnotify</code> package</li>
 </ul>
 </li>
 </ul>
@@ -8453,10 +8498,14 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li><code>Ctrl-u</code> # Clear a line</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#tofi</code> # Install dependencies (From source code using the following command)<ul>
+<li><code>nix profile add nixpkgs#tofi</code> # Install dependencies (From source code using the following command)<ul>
 <li><code>git clone https://github.com/philj56/tofi</code></li>
 <li><code>meson setup build &amp;&amp; ninja -C build &amp;&amp; doas ninja -C build install</code></li>
-<li><code>nix profile install nixpkgs#meson nixpkgs#ninja</code> # Install build dependencies</li>
+<li><code>nix profile add nixpkgs#meson nixpkgs#ninja</code> # Install build dependencies<pre><code>nix-shell -p gcc meson ninja pkg-config scdoc wayland-protocols wayland-scanner freetype harfbuzz cairo pango wayland libxkbcommon
+rm -rf build/
+meson setup build &amp;&amp; ninja -C build &amp;&amp; doas ninja -C build install
+</code></pre>
+</li>
 </ul>
 </li>
 <li>Because to execute scripts quickly. (Like &quot;dmenu&quot;)</li>
@@ -8498,6 +8547,19 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>vim ~/.config/foot/foot.ini</code> # Configure as needed<pre><code>[main]
+# Set tmux as the default shell
+shell=tmux
+# Set a font
+font=FiraCode Nerd Font Mono:size=12
+#font=Fira Code:size=12
+#[colors-dark]
+#alpha=0.8 # transparency
+#blur=true
+# Set the theme
+include=~/.config/foot/themes/catppuccin-mocha.ini
+</code></pre>
+</li>
 <li>Enable daemon mode<ul>
 <li><code>foot --server</code> # Remember to run in the background as a daemon</li>
 <li><code>footclient</code> # New the terminal</li>
@@ -8512,20 +8574,13 @@ font = /usr/share/fonts/TTF/FiraCode-Regular.ttf
 <li><code>Ctrl-Shift-n</code> # New a terminal</li>
 </ul>
 </li>
-<li>Use &quot;fira code&quot;<ul>
-<li><code>doas pacman --sync ttf-fira-code</code> # Install dependencies</li>
-<li><code>nix profile install nixpkgs#nerd-fonts.fira-code</code> # Install dependencies with icons</li>
-<li><code>vim ~/.config/foot/foot.ini</code> # Configure as needed<pre><code># Set tmux as the default shell
-[main]
-shell=tmux
-# font=FiraCode Nerd Font:size=12
-font=Fira Code:size=12
-[colors-dark]
-alpha=0.8 # transparency
-blur=true
+<li>Set a theme<pre><code>mkdir -p ~/.config/foot/themes
+curl -fsSL -o ~/.config/foot/themes/catppuccin-mocha.ini \
+  https://raw.githubusercontent.com/catppuccin/foot/main/themes/catppuccin-mocha.ini
 </code></pre>
 </li>
-<li>Restart Foot to make changes effective</li>
+<li>Use &quot;fira code&quot;<ul>
+<li><code>nix profile add nixpkgs#nerd-fonts.fira-code</code> # Install dependencies with icons</li>
 </ul>
 </li>
 <li><code>--app-id=dropdown</code> # Set the app-id property on the Wayland window to dropdown</li>
@@ -8536,7 +8591,7 @@ blur=true
 <li><code>LC_ALL=C.UTF-8 foot</code> # Temporarily</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#foot</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#foot</code> # Install dependencies</li>
 <li>Because to try the fastest responsive terminal in Wayland.<ul>
 <li><a href="https://github.com/dabisu/sakura">https://github.com/dabisu/sakura</a></li>
 <li><a href="https://github.com/ii8/havoc/issues/53">https://github.com/ii8/havoc/issues/53</a> # Without CJK fonts support by default</li>
@@ -8899,7 +8954,7 @@ max-concurrent-downloads = 5
 <li><code>rpc-secret = 4jJOSa9ePitWJV1G5dRAweJLv53bd7N/TzK71L1u8o8=</code> # Change default empty password (Use <code>openssl rand -base64 32</code> command to generate RPC secret)</li>
 </ul>
 </li>
-<li><code>nix profile install nixpkgs#aria2</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#aria2</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -8968,6 +9023,10 @@ c.TerminalInteractiveShell.emacs_bindings_in_vi_insert_mode = False
 <ul>
 <li><h4>Use &quot;termux&quot;</h4>
 <ul>
+<li><code>su --command reboot</code> # Reboot (Require root access)<ul>
+<li>Because the power button on my old Android phone has stopped working</li>
+</ul>
+</li>
 <li>Connect to your server<pre><code>pkg upgrade &amp;&amp; pkg install openssh # Upgrade and install dependencies
 ssh yaoniplan@192.168.10.100 # Connect to your server
 </code></pre>
@@ -8982,6 +9041,8 @@ ssh yaoniplan@192.168.10.100 # Connect to your server
 <li>Search string <em>android-5-github-debug_universal</em> and then click it</li>
 </ul>
 </li>
+<li><code>man su</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -9974,7 +10035,10 @@ int main() {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li><code>nix profile install nixpkgs#python311Packages.gtts</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#python311Packages.gtts</code> # Install dependencies<ul>
+<li><code>uv tool install gTTS</code> # Another way</li>
+</ul>
+</li>
 <li><code>gtts-cli -l en -o e.mp3 &quot;hello test for ai&quot; --debug</code> # Debug<pre><code>...
 Error: Failed to connect. Probable cause: Unknown
 ...
@@ -9984,7 +10048,7 @@ Error: Failed to connect. Probable cause: Unknown
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><a href="https://github.com/pndurette/gTTS/discussions/275#discussioncomment-351592">https://github.com/pndurette/gTTS/discussions/275#discussioncomment-351592</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -10543,6 +10607,8 @@ const content = args.plainTexts[1];
 </ul>
 </li>
 <li>Podcasts<ul>
+<li>Library - ⋯ - Follow a show by URL...</li>
+<li><a href="https://github.com/f/awesome-deeplinks#podcasts">https://github.com/f/awesome-deeplinks#podcasts</a> # Add a podcast by a RSS feed or <code>podcast://a-rss-feed-url</code></li>
 <li>Follow Show - Library - Long press on the show - Settings - Oldest To Newest</li>
 <li><a href="https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o">https://lr.vern.cc/r/ios/comments/155uqa8/help_with_the_podcast_app/m6lzb6o</a> # Display from the earliest episode instead of the latest one</li>
 </ul>
@@ -11179,6 +11245,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </code></pre>
 </li>
 <li>Switch App Store region temporarily<pre><code>- https://libreddit.nohost.network/r/shortcuts/comments/mpaivg/app_store_region_switcher/
+
 </code></pre>
 </li>
 <li>Open WeChat payment code<pre><code>- Dismiss Siri and Continue
@@ -11329,6 +11396,16 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li>Because to improve the efficiency of mobile phone use.</li>
+<li>Restore iPhone (e.g. iPhone 6s Plus)<ul>
+<li>Poweroff - Connect iPhone to computer - Enter Recovery Mode (e.g. Power + Home)</li>
+<li><code>doas pacman --sync --refresh usbutils usbmuxd &amp;&amp; nix profile add nixpkgs#idevicerestore</code> # Install dependencies</li>
+<li><code>doas systemctl start usbmuxd</code></li>
+<li><code>doas idevicerestore --erase iPhone_5.5_15.8.8_19H422_Restore.ipsw</code></li>
+<li>Because the passcode for this iPhone has been forgotten.</li>
+<li><a href="https://ipsw.me/install/iPhone8,2/19H422/">https://ipsw.me/install/iPhone8,2/19H422/</a></li>
+<li>Artificial intelligence</li>
+</ul>
+</li>
 <li>Don&#39;t upgrade the system version, otherwise it will slow down the system<ul>
 <li>My brother has an iPhone 6s Plus, and it became slower after upgrading the system</li>
 <li>It&#39;s not a lag (Apple&#39;s animations are smooth), but it&#39;s a slow loading of content</li>
@@ -11534,6 +11611,7 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 </ul>
 </li>
 <li>Use Calculator<ul>
+<li><code>Random number between one and 100</code> # Random a number</li>
 <li><code>8904 - 1367</code></li>
 <li>Eight thousand nine hundred and four minus one thousand three hundred sixty seven</li>
 <li>Eight nine zero four minus one three six seven</li>
@@ -11547,7 +11625,14 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <li>Use Podcasts<ul>
 <li><code>Play podcasts about computer</code> # Prepare for posts that need English communication</li>
 <li><code>Stop podcasts</code> # Stop</li>
-<li><code>play podcasts</code> # Continue</li>
+<li><code>Play podcasts</code> # Play</li>
+<li><code>Resume podcast</code> # Resume</li>
+<li><code>Previous/Next</code> # Previous/Next episode</li>
+<li><code>Raise/Lower the volume</code> # Adjust the volume</li>
+<li><code>Fast forward five minutes</code> # Forward</li>
+<li><code>Go back one minute</code> # Backward</li>
+<li><a href="https://redlib.zanity.net/r/shortcuts/comments/b1se74/continue_playing_podcast_that_was_playing/eint6ek">https://redlib.zanity.net/r/shortcuts/comments/b1se74/continue_playing_podcast_that_was_playing/eint6ek</a></li>
+<li><a href="https://www.macrumors.com/how-to/play-podcasts-on-homepod/">https://www.macrumors.com/how-to/play-podcasts-on-homepod/</a></li>
 </ul>
 </li>
 <li>Use Voice Memos<ul>
@@ -11741,18 +11826,30 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <ul>
 <li><h4>Use &quot;nmcli&quot;</h4>
 <ul>
-<li><code>nmcli device wifi connect yourSSID password yourPassword</code> # Connect</li>
+<li><code>nmcli device wifi connect yourSSID password yourPassword</code> # Connect a wifi<ul>
+<li><code>nmcli device wifi list</code> # Get the SSID</li>
+</ul>
+</li>
+<li><code>nmcli device wifi hotspot ssid yaoniplan password yaoniplan</code> # Create and start a hotspot<ul>
+<li>If your computer has a wireless network card (Wi-Fi adapter)</li>
+<li><code>nmcli connection up Hotspot</code> # Connect manually (After rebooting)</li>
+<li><code>nmcli connection show Hotspot</code> # Check the value of <code>connection.autoconnect</code></li>
+<li><code>nmcli connection modify Hotspot autoconnect yes</code> # Enable autoconnect</li>
+<li><code>nmcli connection delete bfc2c6fa-eb8c-472c-b278-5953ec224e33</code> # Delte the hotspot</li>
+</ul>
+</li>
+<li><code>nmcli connection down yourUUID</code> # Disconnect<ul>
+<li><code>nmcli connection show</code> # Get the yourUUID</li>
+</ul>
+</li>
+<li><code>nmcli connection up eno1</code> # Connect to a wired network<ul>
+<li><code>nmcli device status</code> # Get the DEVICE</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
-<li>Enable hotspot if your computer has a wireless network card (Wi-Fi adapter)<ul>
-<li><code>ip address</code> # Check if there is a wireless interface (e.g. <code>wlan0</code>)</li>
-<li><code>nmcli device wifi hotspot con-name yaoniplan ssid yaoniplan password yaoniplan</code></li>
-<li><code>nmcli connection delete bfc2c6fa-eb8c-472c-b278-5953ec224e33</code> # Delte the hotspot</li>
-<li><code>nmcli connection show</code> # Get the UUID</li>
-<li><a href="https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140">https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140</a> (Try this command line on the new system next time)</li>
-<li>Use &quot;nm-connection-editor&quot; if cli doesn&#39;t work</li>
-<li><code>nm-connection-editor</code><table>
+<li><code>nm-connection-editor</code> # Use GUI to enable hotspot<table>
 <thead>
 <tr>
 <th>Key</th>
@@ -11796,43 +11893,31 @@ https://m.youtube.com/watch?v=dhu9INl2KOg # Use filter
 <td>Shared to other computers</td>
 </tr>
 </tbody></table>
-</li>
+<ul>
 <li><code>cat /proc/sys/net/ipv4/ip_forward</code> # If it returns <code>0</code>, enable it</li>
 <li><code>doas vim /etc/sysctl.d/99-ipforward.conf</code> # Enable this feature will allow your phone to connect to the internet<pre><code>net.ipv4.ip_forward=1
 </code></pre>
 </li>
 <li><code>doas sysctl -p /etc/sysctl.d/99-ipforward.conf</code> # Make changes effective permanently</li>
+<li>Reboot to make changes effective</li>
 <li><a href="https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/">https://redlib.perennialte.ch/r/linuxquestions/comments/1d67ovf/</a></li>
 <li>Use &quot;iw&quot;</li>
 <li><code>iw dev wlan0 station dump</code> # Know how many people (station) have connected to my hotspot</li>
+<li><code>ip address</code> # Check if there is a wireless interface (e.g. <code>wlan0</code>)</li>
 <li><code>doas pacman --sync network-manager-applet</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#iw</code> # Install dependencies</li>
 </ul>
 </li>
-<li>Solve the problem<pre><code>Jul 16 16:33:19 tux NetworkManager[376]: &lt;warn&gt;  [1721118799.2087] device (wlan0): ip:shared4: could not start dnsmasq: Could not find &quot;dnsmasq&quot; binary
+<li>Solve the problem if you get stuck during the connection phase (The loading indicator just keeps spinning)<pre><code>Jul 16 16:33:19 tux NetworkManager[376]: &lt;warn&gt;  [1721118799.2087] device (wlan0):
+ip:shared4: could not start dnsmasq: Could not find &quot;dnsmasq&quot; binary
 </code></pre>
 <ul>
-<li><code>doas pacman --sync dnsmasq</code></li>
+<li>NetworkManager&#39;s sharing mode uses <code>dnsmasq</code> to assign address to mobile devices</li>
+<li><code>doas pacman --sync dnsmasq</code> # Install dependencies</li>
 <li><a href="https://libreddit.nohost.network/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/ed8id5l/">https://libreddit.nohost.network/r/archlinux/comments/acjn5g/networkmanager_hotspot_error_ip_configuration/ed8id5l/</a></li>
+<li><a href="https://wiki.archlinux.org/title/NetworkManager#Sharing_internet_connection_over_Wi-Fi">https://wiki.archlinux.org/title/NetworkManager#Sharing_internet_connection_over_Wi-Fi</a></li>
 </ul>
 </li>
-<li><code>nmcli device wifi list</code> # Get the SSID</li>
-<li>Connect to a wired network<ul>
-<li><code>nmcli connection up eno1</code> # Connect</li>
-<li><code>nmcli device status</code> # Get the DEVICE</li>
-</ul>
-</li>
-<li>Disconnect<ul>
-<li><code>nmcli connection down yourUUID</code> # Disconnect</li>
-<li><code>nmcli connection show</code> # Get the yourUUID</li>
-</ul>
-</li>
-<li><code>doas pacman --sync networkmanager</code> # Install dependencies<ul>
-<li><code>doas systemctl enable NetworkManager --now</code> # Solve the problem<pre><code>Error: NetworkManager is not running
-</code></pre>
-</li>
-</ul>
-</li>
-<li>Because to connect to WiFi when there is no network cable.</li>
 <li>Solve the problem<pre><code>[yaoniplan@tux ~]$ lspci
 ...
 03:00.0 Network controller: Broadcom Inc. and subsidiaries BCM43142 802.11b/g/n (rev 01)
@@ -11852,9 +11937,18 @@ Error: Failed to add/activate new connection: Not authorized to control networki
 <li><code>doas nmcli device wifi connect CMCC-ENQy password 1234567a</code> # Run the command with root privileges</li>
 </ul>
 </li>
+<li><code>doas pacman --sync networkmanager</code> # Install dependencies<ul>
+<li><code>doas systemctl enable NetworkManager --now</code> # Solve the problem<pre><code>Error: NetworkManager is not running
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Because to connect to WiFi when there is no network cable.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
+<li><a href="https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140">https://gist.github.com/narate/d3f001c97e1c981a59f94cd76f041140</a></li>
+<li><code>curl cheat.sh/nmcli</code></li>
 <li><code>lspci</code> # List PCI devices</li>
 <li><code>nmcli</code> # Network manager command line</li>
 <li>Artificial intelligence</li>
@@ -12332,11 +12426,12 @@ services:
 <li><code>Ctrl-[ }</code> # Right one half screen width</li>
 </ul>
 </li>
+<li><code>nix profile add nixpkgs#less</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>h</code></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -12637,7 +12732,7 @@ DHCP=yes
 </li>
 <li><em><strong>Notes</strong></em><ul>
 <li><code>links</code> # Replace it with your desired command</li>
-<li><code>nix shell nixpkgs#tldr</code> # Install dependencies temporarily</li>
+<li><code>nix profile add nixpkgs#tldr</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -12895,6 +12990,7 @@ fi
 <ul>
 <li><h4>Use &quot;convert&quot;</h4>
 <ul>
+<li><code>magick input.png -gravity center -crop 70%x70%+0+0 +repage output.png</code> # Crop a square image to 70% from the center</li>
 <li><code>convert input.png pnm:- | potrace --svg --output output.svg -</code> # Convert image to svg<ul>
 <li><code>convert input.png -background white -alpha background pnm:- | potrace --svg --output output.svg -</code> # If your PNG has transparency and you want a white background</li>
 </ul>
@@ -14794,6 +14890,10 @@ find . -type f -inum 20447344 -exec rm {} \;
 <ul>
 <li><h4>Use &quot;bash&quot;</h4>
 <ul>
+<li><code>diff -qr --exclude={.venv,__pycache__} /mnt/isoFile/src/com/ ~/.local/src/com/</code> # Brace expansion<pre><code># Generate every combination (Paste the prefix and suffix around each element)
+diff -qr --exclude=.venv --exclude=__pycache__ /mnt/isoFile/src/com/ ~/.local/src/com/
+</code></pre>
+</li>
 <li><code>echo &quot;$((width + width / 10))&quot;</code> # Add value (10% of the width) to the original width<ul>
 <li><code>$(())</code> # Perform basic arithmetic operations</li>
 <li>Because to check if it is an odd or even day<pre><code class="language-bash">if [[ $(( $(date +%-j) % 2)) -eq 1 ]]; then
@@ -16687,7 +16787,7 @@ static const Rule rules[] = {
 </li>
 <li>Use &quot;brightnessctl&quot;<ul>
 <li><code>brightnessctl set 20%</code> # Adjust brightness to 20%</li>
-<li><code>nix profile install nixpkgs#brightnessctl</code> # Install dependencies</li>
+<li><code>nix profile add nixpkgs#brightnessctl</code> # Install dependencies</li>
 </ul>
 </li>
 </ul>
@@ -16698,7 +16798,7 @@ static const Rule rules[] = {
 <li><a href="https://fedoramagazine.org/lets-try-dwm-dynamic-window-manger/">https://fedoramagazine.org/lets-try-dwm-dynamic-window-manger/</a></li>
 <li><a href="https://dwm.suckless.org/tutorial/">https://dwm.suckless.org/tutorial/</a></li>
 <li><a href="https://wiki.gentoo.org/wiki/Dwm">https://wiki.gentoo.org/wiki/Dwm</a></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -17657,13 +17757,21 @@ git push origin master
 </ul>
 <hr>
 <ul>
-<li><h4>Use the &quot;diff&quot; command to compare two files in Ubuntu Server 22.04</h4>
+<li><h4>Use &quot;diff&quot;</h4>
 <ul>
+<li><code>diff -qr --exclude={.venv,__pycache__} /mnt/isoFile/src/com/ ~/.local/src/com/</code> # Compare two directory trees</li>
 <li><code>diff countTheNumberOfVowelsAndConsonants.c testCountTheNumberOfVowelsAndConsonants.c</code></li>
 </ul>
 </li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>-q</code> # Brief</li>
+<li><code>-r</code> # Recursive</li>
+<li>Because to compare two files.</li>
+</ul>
+</li>
 <li><em><strong>References</strong></em><ul>
-<li>ChatGPT</li>
+<li><code>man diff</code></li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -17926,6 +18034,7 @@ Ctrl+shift+x run &quot;/bin/sh&quot; &quot;-c&quot; &quot;notify-send `dirname &
 Ctrl+r load-input-conf ~/.config/mpv/input.conf; show-text &quot;input.conf reloaded&quot;
 # `l` go forward 5 seconds (Optional: `no-osd`, `exact`)
 l no-osd seek 5 exact
+k seek -60
 # `D` removes the current file
 D run rm &quot;${path}&quot;; playlist-remove current
 # `Ctrl-l` Show playlist for 5 seconds (Default: `Fn-8`)
@@ -18049,13 +18158,13 @@ Ctrl+l show-text &quot;${playlist}&quot; 5000
 <li><code>pacman --sync doas</code> # Install dependencies</li>
 <li><code>groupadd wheel</code> # Create a group if it does not exist</li>
 <li><code>usermod -aG wheel yaoniplan</code> # Add your user to wheel group</li>
-<li>Close and open terminal to make changes effective</li>
+<li>Reboot to make changes effective</li>
 <li>Because it is easier to use than &quot;sudo&quot;.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>man doas.conf</code></li>
-<li>ChatGPT</li>
+<li>Artificial intelligence</li>
 </ul>
 </li>
 </ul>
@@ -18239,6 +18348,7 @@ pass = H2bvDv2jDfEuI3fMJ263WjkI
 <li><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/</code> # Mount</li>
 <li><code>fusermount -u /mnt/yaoniplan</code> # Unmount that solve the problem<pre><code>yaoniplan@tux ~ $ &lt;3&gt;ERROR : /mnt/music/: Unmounted rclone mount
 ls: cannot access &#39;/mnt/yaoniplan&#39;: Transport endpoint is not connected
+
 </code></pre>
 </li>
 <li><code>vim ~/.xprofile</code> # Run it at boot in Gentoo Linux<pre><code>sshfs yaoniplan@192.168.10.100:/mnt/yaoniplan/ /mnt/yaoniplan/ &amp;
@@ -18687,14 +18797,24 @@ media.cache_resume_threshold
 <li>Open previous windows and tabs</li>
 </ul>
 </li>
+<li>Disale network proxy (Open a webpage that restricts proxy access)<ul>
+<li><code>about:config</code><pre><code>network.proxy.type
+</code></pre>
+</li>
+<li>Set it to a value (e.g. 0), the default &#39;Use system proxy settings&#39; is 5</li>
+<li>Or search for <code>proxy</code> in <code>about:preferences</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile add nixpkgs#firefox</code> # Install dependencies</li>
 <li>Because to customize the browser to make it more efficient.</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
 <li><code>about:config</code> # <code>/vaapi</code></li>
+<li><a href="https://searchfox.org/firefox-main/source/netwerk/base/nsIProtocolProxyService.idl#333">https://searchfox.org/firefox-main/source/netwerk/base/nsIProtocolProxyService.idl#333</a></li>
 <li><a href="https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox">https://www.mail.com/blog/posts/how-to-restore-tabs/124/#Restore%20browsing%20session%20and%20tabs%20in%20Firefox</a></li>
 <li><code>about:preferences</code> # In &#39;Startup&#39; of &#39;General&#39;</li>
 <li>Artificial intelligence</li>
@@ -18773,6 +18893,14 @@ media.cache_resume_threshold
 <li><p>Warning: Hope that browsers can provide APIs to list current tab&#39;s history</p>
 <ul>
 <li><a href="https://github.com/gdh1995/vimium-c/discussions/1227">https://github.com/gdh1995/vimium-c/discussions/1227</a> (I don&#39;t want to long-press the back/forward button with the <strong>mouse</strong>)</li>
+</ul>
+</li>
+<li><p>Set color of hint using custom CSS for Vimium C UI</p>
+<pre><code class="language-css">.LH, .D&gt;.LH { background: black; font-weight: bold; font-size: 15px; color: white;}
+.LH { border: /*!DPI*/ 0px solid lightgreen; }
+</code></pre>
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c/wiki/Style-the-UI-of-Vimium-C-using-Custom-CSS">https://github.com/gdh1995/vimium-c/wiki/Style-the-UI-of-Vimium-C-using-Custom-CSS</a></li>
 </ul>
 </li>
 <li><p>Disable temporarily</p>
@@ -18887,21 +19015,6 @@ map &lt;v-lh&gt; LinkHints.activate
 <li><a href="https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites">https://github.com/gdh1995/vimium-c/wiki/Map-a-key-to-different-commands-on-different-websites</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/602#issuecomment-1094111805">https://github.com/gdh1995/vimium-c/issues/602#issuecomment-1094111805</a></li>
 <li><a href="https://github.com/gdh1995/vimium-c/issues/869#issuecomment-1435837660">https://github.com/gdh1995/vimium-c/issues/869#issuecomment-1435837660</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Use Vimium C for color of hint</h4>
-<ul>
-<li>Custom CSS for Vimium C UI<pre><code class="language-css">.LH, .D&gt;.LH { background: black; font-weight: bold; font-size: 15px; color: white;}
-.LH { border: /*!DPI*/ 0px solid lightgreen; }
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/gdh1995/vimium-c/wiki/Style-the-UI-of-Vimium-C-using-Custom-CSS">https://github.com/gdh1995/vimium-c/wiki/Style-the-UI-of-Vimium-C-using-Custom-CSS</a></li>
 </ul>
 </li>
 </ul>
@@ -21316,6 +21429,7 @@ root       pts/0    192.168.10.105   8:38AM     - w
 <li><code>doas systemctl enable sshd --now</code> # Enable sshd now on the machine you want to connect to solve the problem<pre><code>[yaoniplan@tux ~]$ ssh yaoniplan
 ssh: connect to host 100.80.81.110 port 22: Connection refused
 [yaoniplan@tux ~]$
+
 </code></pre>
 </li>
 </ul>
@@ -21937,66 +22051,6 @@ URxvt.scrollstyle: rxvt
 <li><code>rofi -show keys</code></li>
 <li><a href="https://stackoverflow.com/questions/4009412/how-to-use-arguments-from-previous-command">https://stackoverflow.com/questions/4009412/how-to-use-arguments-from-previous-command</a></li>
 <li><a href="https://www.redhat.com/sysadmin/shortcuts-command-line-navigation">https://www.redhat.com/sysadmin/shortcuts-command-line-navigation</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4>Use Rofi theme</h4>
-<ul>
-<li>Put theme.rasi files into the themes directory<pre><code>git clone https://github.com/newmanls/rofi-themes-collection
-cd rofi-themes-collection
-mkdir -p ~/.local/share/rofi/themes/
-cp ./* ~/.local/share/rofi/themes/
-</code></pre>
-</li>
-</ul>
-</li>
-<li><em><strong>Notes</strong></em><ul>
-<li><code>rofi -show drun</code> # Show drun mode</li>
-<li><code>Rofi Theme Selector</code> # Type it in Rofi search bar<ul>
-<li><code>Enter</code> # Preview</li>
-<li><code>Esc</code> # Cancel</li>
-<li><code>Alt-a</code> # Accept</li>
-<li><code>Ctrl-Tab</code> # Toggle mode</li>
-</ul>
-</li>
-<li>Beautiful  <ul>
-<li><table>
-<thead>
-<tr>
-<th>theme</th>
-<th>theme</th>
-<th>theme</th>
-<th>theme</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>spotlight-dark</td>
-<td>squared-nord</td>
-<td>rounded-blue-dark</td>
-<td>dmenu by Qball</td>
-</tr>
-<tr>
-<td>nord-TwoLines</td>
-<td>nord-oneline</td>
-<td>sidebar-v2 by Qball</td>
-<td></td>
-</tr>
-</tbody></table>
-</li>
-</ul>
-</li>
-<li>features<ul>
-<li>Font: big</li>
-<li>Color: dark</li>
-<li>Icon (optional)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><em><strong>References</strong></em><ul>
-<li><a href="https://github.com/newmanls/rofi-themes-collection">https://github.com/newmanls/rofi-themes-collection</a></li>
 </ul>
 </li>
 </ul>
@@ -22979,6 +23033,10 @@ gtk-application-prefer-dark-theme=1
 <li><code>gtk-launch --version</code> # Another way</li>
 </ul>
 </li>
+<li>Set the XDG Desktop Portal&#39;s color-scheme (e.g. <code>xdg-desktop-portal-gnome</code>)<ul>
+<li><code>gsettings set org.gnome.desktop.interface color-scheme &#39;prefer-dark&#39;</code> # Set the system preference</li>
+</ul>
+</li>
 <li><code>doas reboot</code> # Make it work (Maybe just restart browser)</li>
 <li>It works on the notify-send command.</li>
 </ul>
@@ -23334,7 +23392,7 @@ backend = &quot;glx&quot;;
 <li><em><strong>Notes</strong></em><ul>
 <li><code>-O GB18030</code> # If file name displays garbled characters</li>
 <li><code>-d ./FiraCode/</code> # An optional directory to which to extract files</li>
-<li><code>nix profile install nixpkgs#unzip</code> # Install dependencies<ul>
+<li><code>nix profile add nixpkgs#unzip</code> # Install dependencies<ul>
 <li>Warning: This <code>-O</code> option is no longer supported on March 24, 2024 when using Nix.</li>
 <li><code>doas pacman --sync unzip</code> # Install dependencies to solve the problem</li>
 </ul>
@@ -23454,7 +23512,7 @@ dotfiles push -u origin master
 <li>Second machine<pre><code>git clone --bare https://github.com/yaoniplan/dotfiles.git $HOME/.dotfiles
 echo &quot;alias dotfiles=&#39;git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/&#39;&quot; &gt;&gt; $HOME/.bashrc
 source ~/.bashrc
-dotfiles checkout
+dotfiles checkout # dotfiles checkout development (Switch to this branch)
 dotfiles config --local status.showUntrackedFiles no
 </code></pre>
 </li>
@@ -23903,7 +23961,7 @@ echo 976 &gt; /sys/class/backlight/intel_backlight/brightness
 <li><h4>Use &quot;ln&quot;</h4>
 <ul>
 <li><code>ln --symbolic ~/Documents/.config/yt-dlp ~/Library/Preferences/yt-dlp</code> # Link a folder to another folder<pre><code># Create a relative symbolic link (Avoid invalidation after updates)
-python3 -c &#39;import os; l=os.path.expanduser(&quot;~/Library/Preferences/yt-dlp&quot;); t=os.path.expanduser(&quot;~/Documents/.config/yt-dlp&quot;); os.path.lexists(l) and os.unlink(l); os.symlink(os.path.relpath(t,os.path.dirname(l)),l); print(os.readlink(l))&#39;
+python3 -c &quot;import os; l=os.path.expanduser(&#39;~/Library/Preferences/yt-dlp&#39;); t=os.path.expanduser(&#39;~/Documents/.config/yt-dlp&#39;); os.path.lexists(l) and os.unlink(l); os.symlink(os.path.relpath(t,os.path.dirname(l)),l); print(os.readlink(l))&quot;
 </code></pre>
 </li>
 <li><code>ln --symbolic ~/.config/i3/config ./i3/config</code> # Link a file to another file<ul>
@@ -24043,6 +24101,7 @@ set -g base-index 1
 <li><code>tmux attach-session -t 1</code> # Attach session 1</li>
 <li><code>tmux kill-server</code> # kill all server (e.g. sessions, windows, and panes)</li>
 <li><code>tmux new &#39;curl https://paste.c-net.org; exec bash&#39;</code> # Run a command</li>
+<li><code>nix profile add nixpkgs#tmux</code> # Install dependencies</li>
 </ul>
 </li>
 <li><em><strong>References</strong></em><ul>
@@ -24797,6 +24856,88 @@ div &gt; .vimiumHintMarker &gt; .matchingCharacter {
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Shortcuts<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Bind</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Seek</td>
+<td>h</td>
+<td>-5 Seconds</td>
+</tr>
+<tr>
+<td>Seek</td>
+<td>l</td>
+<td>5 Seconds</td>
+</tr>
+<tr>
+<td>Seek</td>
+<td>k</td>
+<td>-60 Seconds</td>
+</tr>
+<tr>
+<td>Seek</td>
+<td>j</td>
+<td>60 Seconds</td>
+</tr>
+<tr>
+<td>Fullscreen</td>
+<td>Shift-f</td>
+<td></td>
+</tr>
+<tr>
+<td>Pause</td>
+<td>Space</td>
+<td>Toggle (URL conditions Allowlist)</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>*</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>/</td>
+<td>-0.02</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>=</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Mute</td>
+<td>Ctrl-m</td>
+<td>Toggle</td>
+</tr>
+<tr>
+<td>Fast forward</td>
+<td>Space</td>
+<td>2 (Long press) (URL conditions Allowlist)</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Alt-s</td>
+<td>Toggle</td>
+</tr>
+</tbody></table>
+</li>
+<li>Make it disappear in the right click menu<ul>
+<li>Turn off the checkbox in Menu Shortcuts</li>
+<li><a href="https://github.com/polywock/globalSpeed/issues/749#issuecomment-3187445760">https://github.com/polywock/globalSpeed/issues/749#issuecomment-3187445760</a></li>
+</ul>
+</li>
+<li>Disable for a specific website<ul>
+<li>Hope to be able to bind a shortcut key instead of clicking it manually</li>
+<li>URL conditions - Blocklist - Create - Starts with - <a href="https://example.com">https://example.com</a></li>
+<li>Show more (⋮) - Allow shortcuts on example.com # Another way</li>
+<li><a href="https://github.com/polywock/globalSpeed/issues/755#issuecomment-3204230400">https://github.com/polywock/globalSpeed/issues/755#issuecomment-3204230400</a></li>
+</ul>
+</li>
 <li>Press and hold double speed, release to default speed<ul>
 <li>Fast forward - Space - 2 - Long press</li>
 <li><a href="https://github.com/polywock/globalSpeed/issues/895#issuecomment-4748703258">https://github.com/polywock/globalSpeed/issues/895#issuecomment-4748703258</a></li>
@@ -25338,13 +25479,53 @@ bash: /etc/portage/package.unmask: Permission denied
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
+<li>Use Rofi theme by putting theme.rasi files into the themes directory<pre><code>git clone https://github.com/newmanls/rofi-themes-collection
+cd rofi-themes-collection
+mkdir -p ~/.local/share/rofi/themes/
+cp ./themes/* ~/.local/share/rofi/themes/
+</code></pre>
+<ul>
+<li><code>rofi -show drun</code> # Show drun mode</li>
+<li><code>Rofi Theme Selector</code> # Type it in Rofi search bar</li>
+<li><code>Enter</code> # Preview</li>
+<li><code>Esc</code> # Cancel</li>
+<li><code>Alt-a</code> # Accept</li>
+<li><code>Ctrl-Tab</code> # Toggle mode</li>
+<li><table>
+<thead>
+<tr>
+<th>theme</th>
+<th>theme</th>
+<th>theme</th>
+<th>theme</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>spotlight-dark</td>
+<td>squared-nord</td>
+<td>rounded-blue-dark</td>
+<td>dmenu by Qball</td>
+</tr>
+<tr>
+<td>nord-TwoLines</td>
+<td>nord-oneline</td>
+<td>sidebar-v2 by Qball</td>
+<td></td>
+</tr>
+</tbody></table>
+</li>
+<li>Font: big</li>
+<li>Color: dark</li>
+<li>Icon (optional)</li>
+</ul>
+</li>
 <li><code>vim ~/.config/i3/config</code><pre><code># start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec &quot;rofi -modi drun,run -show drun&quot;
 </code></pre>
 </li>
-<li><code>nix profile install nixpkgs#rofi</code> # Install dependencies<ul>
+<li><code>nix profile add nixpkgs#rofi</code> # Install dependencies<ul>
 <li><code>sudo emerge --ask --quiet x11-misc/rofi</code> # Install on Gentoo Linux</li>
 </ul>
 </li>
@@ -25424,7 +25605,10 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 </li>
 <li><code>alsamixer</code><ul>
 <li>Press the <code>M</code> key to unmute if display <code>MM</code></li>
+<li>Press <code>upArrow</code> key to increase the volume</li>
 <li>Press the <code>Escape</code> key to exit the interface</li>
+<li><code>nix profile add nixpkgs#alsa-utils</code> # Install dependencies</li>
+<li>Reboot to make changes effective</li>
 </ul>
 </li>
 <li>Use &quot;pactl&quot;<ul>
@@ -25673,6 +25857,7 @@ DISPLAYMANAGER=&quot;sddm&quot;
 <li><code>-display sdl,gl=on -device virtio-vga-gl</code> # Enable 3D acceleration if you cannot enter the desktop after entering the password in the window manager</li>
 <li><code>-bios /usr/share/ovmf/x64/OVMF.fd</code> # 64bit UEFI</li>
 <li><code>ssh yaoniplan@192.168.10.105 -p 60022</code> # Connect it</li>
+<li><code>Ctrl-Alt-f</code> # Fullscreen</li>
 <li><code>doas pacman -S qemu-full</code> # Install dependencies</li>
 <li><code>doas pacman -S remmina</code> # Install the VNC client (Another way)<pre><code># Click the &#39;New connection profile&#39; icon
 Remmina VNC plugin for GNOME and KVM # Protocol
@@ -28778,7 +28963,10 @@ for_window [class=&quot;^st-256color$&quot;] move scratchpad
 <ul>
 <li><h4>Use &quot;alacritty&quot;</h4>
 <ul>
-<li><code>alacritty --command tmux</code></li>
+<li><code>alacritty --command tmux</code><ul>
+<li><code>--class note</code> # Set a specific app id for Wayland</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -28824,15 +29012,15 @@ bindings = [
 size = 12.0
 
 [font.normal]
-family = &quot;FiraCode Nerd Font&quot;
+family = &quot;FiraCode Nerd Font Mono&quot;
 style = &quot;Regular&quot;
 
 [font.bold]
-family = &quot;FiraCode Nerd Font&quot;
+family = &quot;FiraCode Nerd Font Mono&quot;
 style = &quot;Bold&quot;
 
 [font.italic]
-family = &quot;FiraCode Nerd Font&quot;
+family = &quot;FiraCode Nerd Font Mono&quot;
 style = &quot;Italic&quot;
 </code></pre>
 <ul>
@@ -29613,6 +29801,22 @@ sudo vim /home/用户名/.zshrc //编辑 .zshrc 并添加 source ~/powerlevel10k
 </ul>
 <hr>
 <ul>
+<li><h4>Use &quot;man&quot;</h4>
+<ul>
+<li><code>man man</code></li>
+</ul>
+</li>
+<li><em><strong>Notes</strong></em><ul>
+<li><code>nix profile add nixpkgs#man</code> # Install dependencies</li>
+</ul>
+</li>
+<li><em><strong>References</strong></em><ul>
+<li><code>tldr man</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
 <li><h4>Use &quot;pacman&quot;</h4>
 <ul>
 <li><code>doas pacman --sync mplayer</code> # Install a package</li>
@@ -29722,6 +29926,10 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 <li><code>https://github.com/yaoniplan/dotfiles/commit/9850876</code> # Review the commit message</li>
 <li><code>https://api.github.com/users/yaoniplan</code> # Get account created time (date)</li>
 <li><code>https://api.github.com/repos/yaoniplan/note</code> # Get repository created time (date)</li>
+<li>Subscribe an issue (Notify me via email)<ul>
+<li>Click <strong>Subscribe</strong> under <strong>Notifications</strong> in the right sidebar</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><em><strong>Notes</strong></em><ul>
@@ -29982,13 +30190,17 @@ vec2 resolution = vec2(1366.0, 768.0); // Adjust to your screen
 </blockquote>
 </li>
 <li>To do<ul>
-<li>Important and urgent<pre><code></code></pre>
+<li>Important and urgent<pre><code>
+</code></pre>
 </li>
-<li>Important not urgent<pre><code></code></pre>
+<li>Important not urgent<pre><code>
+</code></pre>
 </li>
-<li>Urgent not important<pre><code></code></pre>
+<li>Urgent not important<pre><code>
+</code></pre>
 </li>
-<li>Not urgent not important<pre><code></code></pre>
+<li>Not urgent not important<pre><code>
+</code></pre>
 </li>
 </ul>
 </li>
